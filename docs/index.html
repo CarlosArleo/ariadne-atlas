@@ -10,7 +10,7 @@
        OBSIDIAN DARK CANVAS DESIGN TOKENS
        ============================================================ */
     :root {
-        --bg: #121214; /* FA Cup Charcoal Background */
+        --bg: #121214; /* Soft Dark Charcoal */
         --surface: rgba(24, 24, 27, 0.75);
         --surface-solid: #18181b;
         --text-primary: #f8fafc;
@@ -231,7 +231,7 @@
         <span class="source-badge" id="source-badge">Loading...</span>
     </div>
     <div style="display:flex; gap:10px; align-items:center;">
-        <button class="file-btn" onclick="openCqsModal()" title="How is CQS calculated?">📊 CQS Score Guide</button>
+        <button class="btn-action" onclick="openCqsModal()" title="How is CQS calculated?">CQS Score Guide</button>
         <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
         <button class="btn-action" onclick="resetFilters()">Reset All Filters</button>
     </div>
@@ -315,7 +315,7 @@
         <div class="inspector-card">
             <h3>Dataset Source</h3>
             <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
-                📂 Load top_candidates.json
+                Load top_candidates.json
                 <input type="file" id="file-uploader" accept=".json" style="display:none;">
             </label>
         </div>
@@ -325,7 +325,7 @@
 <!-- Dossier Modal -->
 <div class="modal-backdrop" id="dossier-modal" onclick="if(event.target===this) closeDossierModal();">
     <div class="modal-box">
-        <button class="modal-close" onclick="closeDossierModal()">✕</button>
+        <button class="modal-close" onclick="closeDossierModal()">&times;</button>
         <div id="modal-content"></div>
     </div>
 </div>
@@ -333,7 +333,7 @@
 <!-- CQS Score Guide Modal -->
 <div class="modal-backdrop" id="cqs-modal" onclick="if(event.target===this) closeCqsModal();">
     <div class="modal-box" style="max-width:720px;">
-        <button class="modal-close" onclick="closeCqsModal()">✕</button>
+        <button class="modal-close" onclick="closeCqsModal()">&times;</button>
         <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v2)</h2>
         <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
             A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
@@ -588,7 +588,7 @@ function updateBadge(sourceName, isFallback) {
     document.getElementById('stat-max-cqs').textContent = maxCqs;
 
     if (isFallback) {
-        badge.textContent = `⚠ ${sourceName}`;
+        badge.textContent = `Reconstructed: ${sourceName}`;
         badge.style.background = 'rgba(244, 63, 94, 0.15)';
         badge.style.color = '#f43f5e';
     } else {
@@ -670,8 +670,8 @@ function renderEmpty() {
     document.getElementById('source-badge').textContent = 'No Data';
     document.getElementById('canvas-container').innerHTML =
         '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--text-muted);font-size:0.9rem;gap:12px;">' +
-        '<span>⚠️ Browser blocked local JSON fetch (CORS). Click below to load <code>top_candidates.json</code>:</span>' +
-        '<button class="btn-action" onclick="document.getElementById(\'file-uploader\').click()" style="background:#0284c7;color:#fff;">📂 Select top_candidates.json File</button>' +
+        '<span>Browser blocked local JSON fetch (CORS). Click below to load <code>top_candidates.json</code>:</span>' +
+        '<button class="btn-action" onclick="document.getElementById(\'file-uploader\').click()" style="background:#0284c7;color:#fff;">Select top_candidates.json File</button>' +
         '</div>';
     document.getElementById('cqs-card-list').innerHTML = '';
 }
@@ -1040,7 +1040,7 @@ function renderSharedPathways(pathways) {
     return pathways.map(pw => {
         const cleanId = pw.replace(/^reactome:/i, '');
         const reactomeUrl = `https://reactome.org/content/detail/${cleanId}`;
-        return `<a href="${reactomeUrl}" target="_blank" class="pw-badge" title="Open ${pw} in Reactome.org">${pw} ↗</a>`;
+        return `<a href="${reactomeUrl}" target="_blank" class="pw-badge" title="Open ${pw} in Reactome.org">${pw}</a>`;
     }).join(' ');
 }
 
@@ -1162,7 +1162,7 @@ function openDossierModal(candId) {
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
             <a href="${c.logFile}" target="_blank" class="btn-log">
-                📄 View Raw Discovery Log JSON
+                View Raw Discovery Log JSON
             </a>
             <span style="font-size:0.75rem; color:#64748b;">${c.fileName}</span>
         </div>
