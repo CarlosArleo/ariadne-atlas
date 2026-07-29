@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARIADNE — Concentric Radial Atlas</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+    /* ============================================================
+       OBSIDIAN DARK CANVAS DESIGN TOKENS
+       ============================================================ */
+    :root {
+        --bg: #121214; /* FA Cup Charcoal Background */
+        --surface: rgba(24, 24, 27, 0.75);
+        --surface-solid: #18181b;
+        --text-primary: #f8fafc;
+        --text-muted: #a1a1aa;
+        --border: rgba(255, 255, 255, 0.08);
+        --border-highlight: rgba(255, 255, 255, 0.22);
+        --accent: #10b981;
+
+        /* Comprehensive 10-Family Clinical Palette */
+        --fam-rasopathy: #38bdf8;   /* Cyan */
+        --fam-chromatin: #818cf8;   /* Indigo */
+        --fam-lysosomal: #f59e0b;   /* Gold */
+        --fam-peroxisomal: #a855f7; /* Purple */
+        --fam-channelopathy: #ec4899;/* Pink */
+        --fam-ciliopathy: #10b981;  /* Emerald */
+        --fam-dnarepair: #f43f5e;   /* Coral */
+        --fam-matrix: #14b8a6;      /* Teal */
+        --fam-mitochondrial: #3b82f6;/* Blue */
+        --fam-other: #71717a;       /* Slate */
+
+        /* Scannable Chip Styles */
+        --chip-gene-bg: rgba(56, 189, 248, 0.15); --chip-gene-text: #38bdf8;
+        --chip-pathway-bg: rgba(16, 185, 129, 0.15); --chip-pathway-text: #10b981;
+        --chip-metabolite-bg: rgba(245, 158, 11, 0.15); --chip-metabolite-text: #f59e0b;
+        --chip-phenotype-bg: rgba(244, 63, 94, 0.15); --chip-phenotype-text: #f43f5e;
+        --chip-disease-bg: rgba(129, 140, 248, 0.15); --chip-disease-text: #818cf8;
+        --chip-other-bg: rgba(255, 255, 255, 0.08); --chip-other-text: #d4d4d8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text-primary);
+        overflow: hidden;
+        width: 100vw; height: 100vh;
+    }
+
+    button, select, input { font-family: inherit; }
+    select:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    #header {
+        position: absolute; top: 0; left: 0; width: 100%; height: 68px;
+        padding: 0 28px; display: flex; align-items: center; justify-content: space-between;
+        z-index: 20;
+        background: linear-gradient(180deg, rgba(18,18,20,0.95) 0%, rgba(18,18,20,0) 100%);
+        pointer-events: none;
+    }
+    #header * { pointer-events: auto; }
+    .logo-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; }
+    .logo-title span { color: var(--fam-rasopathy); font-weight: 400; font-size: 0.82rem; letter-spacing: 0; }
+
+    .source-badge {
+        font-size: 0.72rem; padding: 3px 10px; border-radius: 12px;
+        background: rgba(56, 189, 248, 0.12); color: #38bdf8;
+        border: 1px solid rgba(56, 189, 248, 0.25); margin-left: 10px;
+    }
+
+    .btn-action {
+        background: rgba(24, 24, 27, 0.85); color: var(--text-primary);
+        border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px;
+        font-size: 0.8rem; cursor: pointer; backdrop-filter: blur(8px);
+        transition: all 0.2s ease;
+    }
+    .btn-action:hover { border-color: var(--border-highlight); background: rgba(39, 39, 42, 0.9); }
+    .btn-action.active { background: #0284c7; color: #fff; border-color: #38bdf8; }
+
+    /* 3-Panel Layout */
+    #app-container {
+        display: grid;
+        grid-template-columns: 380px 1fr 320px;
+        width: 100vw; height: 100vh;
+        padding-top: 60px;
+    }
+
+    /* Left Sidebar Cards */
+    #panel-left {
+        background: linear-gradient(90deg, rgba(18,18,20,0.95) 0%, rgba(18,18,20,0.4) 100%);
+        padding: 16px 16px 24px 24px;
+        display: flex; flex-direction: column; gap: 10px;
+        z-index: 20; overflow: hidden;
+    }
+    .panel-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted); text-transform: uppercase; }
+    #sidebar-meta { font-size: 0.76rem; color: var(--text-muted); margin-bottom: 2px; }
+
+    #cqs-card-list {
+        display: flex; flex-direction: column; gap: 8px;
+        overflow-y: auto; padding-right: 6px; flex: 1;
+        scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.2) transparent;
+    }
+
+    .cqs-card {
+        background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--fam-other);
+        border-radius: 10px; padding: 12px 14px; cursor: pointer;
+        backdrop-filter: blur(12px); transition: all 0.2s ease;
+    }
+    .cqs-card:hover { background: rgba(39, 39, 42, 0.85); border-color: rgba(255,255,255,0.25); transform: translateX(3px); }
+    .cqs-card.active { background: rgba(39, 39, 42, 0.95); border-color: rgba(255,255,255,0.4); box-shadow: 0 0 15px rgba(56, 189, 248, 0.25); }
+    .cqs-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; gap: 8px; }
+    .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; white-space: nowrap; }
+    .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+    .fitness-score { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
+    .cqs-card-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 3px; }
+    .cqs-card-mech { font-size: 0.74rem; color: var(--text-muted); line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+    /* Center Canvas */
+    #panel-center { position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 10; }
+    #canvas-container { width: 100%; height: 100%; }
+    #canvas-tooltip {
+        position: absolute; pointer-events: none; opacity: 0; z-index: 15;
+        background: rgba(24, 24, 27, 0.95); color: var(--text-primary);
+        padding: 8px 12px; border-radius: 8px; font-size: 0.78rem; line-height: 1.4;
+        max-width: 280px; border: 1px solid var(--border-highlight);
+        transition: opacity 0.15s; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* Right Inspector Panel */
+    #panel-right {
+        background: linear-gradient(270deg, rgba(18,18,20,0.95) 0%, rgba(18,18,20,0.4) 100%);
+        padding: 16px 24px 24px 16px;
+        display: flex; flex-direction: column; gap: 14px;
+        z-index: 20; overflow-y: auto; scrollbar-width: thin;
+        scrollbar-color: rgba(255,255,255,0.2) transparent;
+    }
+
+    .inspector-card {
+        background: var(--surface); border: 1px solid var(--border);
+        border-radius: 12px; padding: 16px; backdrop-filter: blur(12px);
+        display: flex; flex-direction: column; gap: 10px;
+    }
+    .inspector-card h3 { font-size: 0.82rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .control-row { display: flex; flex-direction: column; gap: 4px; }
+    .control-row label { font-size: 0.78rem; color: var(--text-muted); }
+    
+    select, input[type="text"], .file-btn {
+        background: rgba(24, 24, 27, 0.85); color: var(--text-primary);
+        border: 1px solid var(--border); padding: 7px 12px; border-radius: 8px;
+        font-size: 0.8rem; outline: none; width: 100%;
+        transition: all 0.2s ease;
+    }
+    select:hover, input:hover, select:focus, input:focus, .file-btn:hover { border-color: var(--border-highlight); background: rgba(39,39,42,0.9); }
+    .file-btn { cursor: pointer; display: inline-block; text-align: center; }
+
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .stat-box { background: rgba(18,18,20,0.6); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border); }
+    .stat-val { font-size: 1.1rem; font-weight: 700; color: var(--fam-rasopathy); }
+    .stat-lbl { font-size: 0.72rem; color: var(--text-muted); }
+
+    #legend-list { display: flex; flex-direction: column; gap: 6px; font-size: 0.74rem; color: var(--text-muted); }
+    #legend-list span { display: flex; align-items: center; gap: 8px; }
+    #legend-list i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+    /* Modals (Dossier & CQS Guide) */
+    .modal-backdrop {
+        display: none; position: fixed; inset: 0; background: rgba(18,18,20,0.85);
+        backdrop-filter: blur(14px); z-index: 100; align-items: center; justify-content: center; padding: 24px;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal-box {
+        background: var(--surface-solid); border: 1px solid var(--border-highlight); border-radius: 16px;
+        width: 100%; max-width: 720px; max-height: 88vh; padding: 28px; overflow-y: auto;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,0.9); position: relative;
+    }
+    .modal-close { position: absolute; top: 18px; right: 18px; background: none; border: none; color: var(--text-muted); font-size: 1.4rem; cursor: pointer; line-height: 1; }
+    .modal-close:hover { color: var(--text-primary); }
+    
+    .modal-mech { background: #090d16; padding: 12px; border-radius: 8px; font-size: 0.82rem; line-height: 1.5; color: #e2e8f0; font-family: 'SF Mono', Consolas, monospace; white-space: pre-wrap; margin-top: 6px; }
+    .modal-falsif { background: rgba(244,63,94,0.1); border-left: 3px solid var(--fam-dnarepair); padding: 12px 14px; font-size: 0.84rem; line-height: 1.55; margin-top: 16px; border-radius: 0 8px 8px 0; color: #fecdd3; }
+    .modal-translat { background: rgba(245,158,11,0.08); border-left: 3px solid var(--fam-lysosomal); padding: 12px 14px; font-size: 0.84rem; line-height: 1.55; margin-top: 16px; border-radius: 0 8px 8px 0; color: #fef08a; }
+    
+    .causal-chain-container {
+        background: rgba(9, 13, 22, 0.6); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 16px; margin-top: 8px;
+        display: flex; flex-direction: column; gap: 8px;
+    }
+    .chain-step-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 0.8rem; line-height: 1.4; }
+    .chain-arrow { color: var(--text-muted); font-weight: 600; font-size: 0.75rem; }
+
+    .chip { display: inline-flex; align-items: center; padding: 3px 9px; border-radius: 6px; font-size: 0.76rem; font-weight: 600; white-space: nowrap; }
+    .chip-gene { background: var(--chip-gene-bg); color: var(--chip-gene-text); }
+    .chip-pathway { background: var(--chip-pathway-bg); color: var(--chip-pathway-text); }
+    .chip-metabolite { background: var(--chip-metabolite-bg); color: var(--chip-metabolite-text); }
+    .chip-phenotype { background: var(--chip-phenotype-bg); color: var(--chip-phenotype-text); }
+    .chip-disease { background: var(--chip-disease-bg); color: var(--chip-disease-text); }
+    .chip-other { background: var(--chip-other-bg); color: var(--chip-other-text); }
+
+    .narrative-prose-box {
+        background: rgba(9, 13, 22, 0.4); border-left: 3px solid var(--fam-rasopathy);
+        padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 0.86rem; line-height: 1.6; color: #e2e8f0; margin-top: 10px;
+    }
+
+    .raw-toggle { font-size: 0.75rem; color: #38bdf8; cursor: pointer; display: inline-block; margin-top: 8px; text-decoration: underline; }
+
+    .pw-badge {
+        display: inline-flex; align-items: center; gap: 4px;
+        background: rgba(16, 185, 129, 0.12); color: #10b981;
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        padding: 3px 9px; border-radius: 6px; font-size: 0.74rem;
+        text-decoration: none; font-weight: 500; margin: 2px;
+        transition: all 0.2s ease;
+    }
+    .pw-badge:hover { background: rgba(16, 185, 129, 0.25); border-color: #10b981; }
+
+    .btn-log { display: inline-flex; align-items: center; gap: 8px; background: #0284c7; color: #ffffff; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 600; margin-top: 18px; transition: background 0.2s ease; }
+    .btn-log:hover { background: #0369a1; }
+
+    @media (max-width: 1100px) {
+        #app-container { grid-template-columns: 320px 1fr 280px; }
+    }
+</style>
+</head>
+<body>
+
+<div id="header">
+    <div class="logo-title">
+        ARIADNE <span>Concentric Radial Discovery Atlas</span>
+        <span class="source-badge" id="source-badge">Loading...</span>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+        <button class="file-btn" onclick="openCqsModal()" title="How is CQS calculated?">📊 CQS Score Guide</button>
+        <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
+        <button class="btn-action" onclick="resetFilters()">Reset All Filters</button>
+    </div>
+</div>
+
+<div id="app-container">
+    <!-- PANEL 1: LEFT CANDIDATE EXPLORER -->
+    <div id="panel-left">
+        <div class="panel-title">Priority Candidates</div>
+        <div id="sidebar-meta">Scored discoveries</div>
+        <div id="cqs-card-list"></div>
+    </div>
+
+    <!-- PANEL 2: CENTER RADIAL CANVAS -->
+    <div id="panel-center">
+        <div id="canvas-container"></div>
+        <div id="canvas-tooltip"></div>
+    </div>
+
+    <!-- PANEL 3: RIGHT DISCOVERY INSPECTOR -->
+    <div id="panel-right">
+        <!-- Card 1: Discovery Controls -->
+        <div class="inspector-card">
+            <h3>Discovery Controls</h3>
+            <div class="control-row">
+                <label for="filter-cqs">CQS Quality Score:</label>
+                <select id="filter-cqs">
+                    <option value="all" selected>All CQS Scores</option>
+                </select>
+            </div>
+            <div class="control-row">
+                <label for="filter-hub">Global Cross-Seed Recurrence:</label>
+                <select id="filter-hub">
+                    <option value="all" selected>All Hub Levels</option>
+                    <option value="h3">Global Hubs (Hub ≥ 3 seeds)</option>
+                    <option value="h1">Niche Pairs (Hub ≤ 2 seeds)</option>
+                </select>
+            </div>
+            <div class="control-row">
+                <label for="filter-family">Clinical Pathway Family:</label>
+                <select id="filter-family">
+                    <option value="all">All clinical families</option>
+                </select>
+            </div>
+            <div class="control-row">
+                <label for="search-input">Disease or Gene Search:</label>
+                <input type="text" id="search-input" placeholder="Search disease or gene…">
+            </div>
+        </div>
+
+        <!-- Card 2: Dataset Statistics -->
+        <div class="inspector-card">
+            <h3>Dataset Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-visible">0</div>
+                    <div class="stat-lbl">Active Visible</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-total">0</div>
+                    <div class="stat-lbl">Total Candidates</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-seeds">205</div>
+                    <div class="stat-lbl">Seeds Executed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-max-cqs">0</div>
+                    <div class="stat-lbl">Max CQS Score</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Clinical Family Legend -->
+        <div class="inspector-card">
+            <h3>Clinical Family Legend</h3>
+            <div id="legend-list"></div>
+        </div>
+
+        <!-- Card 4: Load Dataset -->
+        <div class="inspector-card">
+            <h3>Dataset Source</h3>
+            <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
+                📂 Load top_candidates.json
+                <input type="file" id="file-uploader" accept=".json" style="display:none;">
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- Dossier Modal -->
+<div class="modal-backdrop" id="dossier-modal" onclick="if(event.target===this) closeDossierModal();">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeDossierModal()">✕</button>
+        <div id="modal-content"></div>
+    </div>
+</div>
+
+<!-- CQS Score Guide Modal -->
+<div class="modal-backdrop" id="cqs-modal" onclick="if(event.target===this) closeCqsModal();">
+    <div class="modal-box" style="max-width:720px;">
+        <button class="modal-close" onclick="closeCqsModal()">✕</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v2)</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
+            A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
+            Higher scores indicate stronger, more specific, and better‑corroborated hypotheses.
+        </p>
+
+        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:#cbd5e1; margin-bottom:20px;">
+            <thead>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+                    <th style="text-align:left; padding:6px 8px; color:#94a3b8; font-weight:600;">Component</th>
+                    <th style="text-align:left; padding:6px 8px; color:#94a3b8; font-weight:600;">What it measures</th>
+                    <th style="text-align:center; padding:6px 8px; color:#94a3b8; font-weight:600;">Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1. Fitness</td><td>Overall ARIADNE genotype score</td><td style="text-align:center;">0–3</td></tr>
+                <tr><td>2. Specific convergence</td><td>Mechanism names a specific node (not "oxidative stress")</td><td style="text-align:center;">0–2</td></tr>
+                <tr><td>3. Multiple pathways</td><td>How many distinct Reactome pathways are shared</td><td style="text-align:center;">0–2</td></tr>
+                <tr><td>4. Pathway specificity</td><td>Smallest shared pathway size (≤20 genes = 2, ≤50 = 1)</td><td style="text-align:center;">0–2</td></tr>
+                <tr><td>5. Phenotype overlap</td><td>HPO semantic similarity (placeholder)</td><td style="text-align:center;">—</td></tr>
+                <tr><td>6. Literature verification</td><td>RANA cross‑reference (placeholder)</td><td style="text-align:center;">—</td></tr>
+                <tr><td>7. Cross‑domain</td><td>Diseases in different organ systems (placeholder)</td><td style="text-align:center;">—</td></tr>
+                <tr><td>8. Falsifiability</td><td>Has a concrete, measurable falsification test</td><td style="text-align:center;">0–1</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td><strong>Hub bonus</strong></td><td>Independent corroboration across multiple seed runs (≥3 seeds = 2)</td><td style="text-align:center;">0–2</td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:0.9rem; font-weight:600; color:#f8fafc; margin-bottom:6px;">Interpretation bands</h3>
+        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:#cbd5e1;">
+            <thead>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+                    <th style="text-align:left; padding:4px 8px; color:#94a3b8;">CQS Range</th>
+                    <th style="text-align:left; padding:4px 8px; color:#94a3b8;">Label</th>
+                    <th style="text-align:left; padding:4px 8px; color:#94a3b8;">What to do</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>9–11</td><td><span style="color:#38bdf8; font-weight:600;">Exceptional</span></td><td>Lead with these in expert sessions</td></tr>
+                <tr><td>7–8</td><td><span style="color:#10b981; font-weight:600;">Strong</span></td><td>Include in review panels</td></tr>
+                <tr><td>4–6</td><td><span style="color:#f59e0b; font-weight:600;">Moderate</span></td><td>Background candidates; may need refinement</td></tr>
+                <tr><td>0–3</td><td><span style="color:#f43f5e; font-weight:600;">Weak</span></td><td>Likely generic convergences or artefacts</td></tr>
+            </tbody>
+        </table>
+        <p style="font-size:0.72rem; color:#64748b; margin-top:14px;">
+            Components 5–7 are placeholders (not yet logged in discovery JSONs). The practical maximum CQS is 11.
+            Hub bonus rewards candidates that appear across multiple independent seed runs — the strongest corroboration signal in the Atlas.
+        </p>
+    </div>
+</div>
+
+<script>
+// ================================================================
+// COMPREHENSIVE 10-FAMILY CLINICAL CLASSIFICATION ENGINE
+// ================================================================
+const FAMILIES = [
+    { key: 'rasopathy',      label: 'RASopathy / Proliferation',color: '#38bdf8' },
+    { key: 'chromatin',      label: 'Chromatin & Epigenetic',   color: '#818cf8' },
+    { key: 'lysosomal',      label: 'Lysosomal Storage',       color: '#f59e0b' },
+    { key: 'peroxisomal',    label: 'Peroxisomal Biogenesis',   color: '#a855f7' },
+    { key: 'channelopathy',  label: 'Ion Channelopathy',        color: '#ec4899' },
+    { key: 'ciliopathy',     label: 'Ciliopathy & Centrosome', color: '#10b981' },
+    { key: 'dnarepair',      label: 'DNA Repair & Telomere',   color: '#f43f5e' },
+    { key: 'matrix',         label: 'Collagen & Matrix',        color: '#14b8a6' },
+    { key: 'mitochondrial',  label: 'Mitochondrial & Metabolic',color: '#3b82f6' },
+    { key: 'other',          label: 'Other / Emerging',         color: '#71717a' }
+];
+
+const GENERIC_TERMS = [
+    "oxidative stress", "reactive oxygen", "ros", "neuroinflammation", "inflammation",
+    "cellular stress", "stress response", "apoptosis", "protein misfolding", "proteostasis",
+    "oxidative damage", "cell death", "energy metabolism", "mitochondrial dysfunction"
+];
+
+function familyOf(candidate) {
+    const pathways = candidate.SharedPathways || candidate.sharedPathways || [];
+    const joinedPathways = Array.isArray(pathways) ? pathways.join(' ') : String(pathways);
+    const mech = candidate.Mechanism || candidate.mechanism || candidate.MechTruncated || '';
+    const textToTest = (joinedPathways + ' ' + mech).toLowerCase();
+
+    if (/ras|mapk|growth_signaling|braf|hras|kras|ptpn11|raf1|pten|apc|wnt|pi3k|akt|mtor|polyposis|colorectal/i.test(textToTest)) return FAMILIES[0];
+    if (/chromatin|epigenetic|histone|acetylation|methylation|ep300|crebbp|ezh2|nsd1|h3-/i.test(textToTest)) return FAMILIES[1];
+    if (/lysosom|sphingolipid|gangliosid|gfc|gba|gla|hex|galc|sulfatid/i.test(textToTest)) return FAMILIES[2];
+    if (/peroxisom|vlcfa|pex|phyh|abcd1/i.test(textToTest)) return FAMILIES[3];
+    if (/ion_transport|channel|cardiac|calcium|ryr2|cacna1c|scnn|channelopathy/i.test(textToTest)) return FAMILIES[4];
+    if (/cili|centrosom|cep290|ofd1|alms1|ciliogenesis/i.test(textToTest)) return FAMILIES[5];
+    if (/dna_repair|nucleotide_excision|tc-ner|blm|atm|recql4|ercc|telomere|tert|terc|fanconi/i.test(textToTest)) return FAMILIES[6];
+    if (/collagen|col1a1|col3a1|col11a1|elastin|eln|fbn1|matrix|ecm/i.test(textToTest)) return FAMILIES[7];
+    if (/mitochondr|metabolic|oxphos|coq|pcca|pccb|biotin|carboxylase|tca/i.test(textToTest)) return FAMILIES[8];
+    return FAMILIES[9];
+}
+
+let allCandidates = [];
+let focusDiseaseNode = null;
+
+function processRawDataset(data) {
+    if (!Array.isArray(data)) return [];
+    const parsed = data.map((d, i) => {
+        const fam = familyOf(d);
+        const seedName = d.Seed || d.seed || d.seedName || 'Unknown Seed';
+        const partnerName = d.Partner || d.partner || d.partnerName || 'Unknown Partner';
+        const fitness = parseFloat(d.Fitness || d.fitness || 0.4);
+        const cqs = parseInt(d.CQS || d.cqs || 0);
+        const hub = parseInt(d.Hub || d.hub || 1);
+        const mech = d.Mechanism || d.mechanism || d.mechanism_narrative || d.mechanism_chain || '';
+        const mechTrunc = d.MechTruncated || (mech.length > 145 ? mech.slice(0, 142) + '...' : mech);
+
+        return {
+            id: i,
+            seedId: d.SeedId || d.seedId || 'MONDO:0000000',
+            seedName: seedName,
+            partnerId: d.PartnerId || d.partnerId || 'MONDO:0000000',
+            partnerName: partnerName,
+            tier: d.Tier || d.tier || 'Tier 3',
+            fitness: fitness,
+            cqs: cqs,
+            pathwaysCount: d.Pathways || d.pathwaysCount || (d.SharedPathways ? d.SharedPathways.length : 1),
+            sharedPathways: d.SharedPathways || d.sharedPathways || [],
+            minPathSize: d.MinPathSize || d.minPathSize || null,
+            hub: hub,
+            logFile: d.LogFile || d.logFile || `./data/atlas/discovery_${d.FileName || 'log.json'}`,
+            fileName: d.FileName || d.fileName || 'log.json',
+            mechanism: mech,
+            mechTruncated: mechTrunc,
+            falsification: d.Falsification || d.falsification || '',
+            translational: d.Translational || d.translational || '',
+            family: fam.key,
+            familyLabel: fam.label,
+            familyColor: fam.color
+        };
+    });
+
+    // Strict Sorting: CQS Descending, then Fitness Descending
+    return parsed.sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
+}
+
+const TOP_CANDIDATES_PATHS = [
+    './data/atlas/top_candidates.json',
+    'data/atlas/top_candidates.json',
+    './top_candidates.json',
+    'top_candidates.json'
+];
+
+async function tryFetchTopCandidates() {
+    for (const path of TOP_CANDIDATES_PATHS) {
+        try {
+            const resp = await fetch(path);
+            if (resp.ok) {
+                const data = await resp.json();
+                console.info(`[ARIADNE] top_candidates.json loaded from "${path}".`);
+                return { data, path };
+            }
+        } catch (e) { }
+    }
+    return null;
+}
+
+async function loadData() {
+    const primary = await tryFetchTopCandidates();
+    if (primary) {
+        allCandidates = processRawDataset(primary.data);
+        updateBadge(primary.path, false);
+        initApp();
+        return;
+    }
+
+    try {
+        const resp = await fetch('./data/atlas/index.json');
+        if (resp.ok) {
+            const manifest = await resp.json();
+            const discoveryFiles = (manifest.files || []).filter(f => f.type === 'discovery');
+            const loaded = await Promise.all(
+                discoveryFiles.map(f => fetch(`./data/atlas/${f.filename}`).then(r => r.json()).then(d => { d._sourceFile = f.filename; return d; }))
+            );
+            
+            // PASS 1: Calculate Hub Recurrence
+            const partnerFreq = new Map();
+            loaded.forEach(d => {
+                (d.partners || []).forEach(p => {
+                    if (p.diseaseBName) {
+                        partnerFreq.set(p.diseaseBName, (partnerFreq.get(p.diseaseBName) || 0) + 1);
+                    }
+                });
+            });
+
+            // PASS 2: Calculate Exact CQS v2
+            let tempArray = [];
+            loaded.forEach(d => {
+                (d.partners || []).forEach(p => {
+                    const hub = partnerFreq.get(p.diseaseBName) || 1;
+                    const mech = p.mechanism_narrative || p.mechanism_chain || '';
+                    
+                    let cqs = 0;
+                    if (p.fitness >= 0.50) cqs += 3;
+                    else if (p.fitness >= 0.45) cqs += 2;
+                    else if (p.fitness >= 0.40) cqs += 1;
+
+                    const isGeneric = GENERIC_TERMS.some(term => mech.toLowerCase().includes(term));
+                    if (!isGeneric) cqs += 2;
+
+                    const pwCount = (p.sharedPathways || []).length;
+                    if (pwCount >= 3) cqs += 2;
+                    else if (pwCount === 2) cqs += 1;
+
+                    let minSize = null;
+                    if (p.sharedPathwaySizes && typeof p.sharedPathwaySizes === 'object') {
+                        const sizes = Object.values(p.sharedPathwaySizes).filter(v => typeof v === 'number' && v > 0);
+                        if (sizes.length > 0) {
+                            minSize = Math.min(...sizes);
+                            if (minSize <= 20) cqs += 2;
+                            else if (minSize <= 50) cqs += 1;
+                        }
+                    }
+
+                    const falsifyText = (typeof p.falsification === 'object' && p.falsification?.text) ? p.falsification.text : (typeof p.falsification === 'string' ? p.falsification : '');
+                    if (falsifyText.trim().length > 30) cqs += 1;
+
+                    if (hub >= 3) cqs += 2;
+                    else if (hub === 2) cqs += 1;
+
+                    tempArray.push({
+                        Seed: d.seed.name, SeedId: d.seed.id,
+                        Partner: p.diseaseBName, PartnerId: p.diseaseB,
+                        Tier: p.tier, Fitness: p.fitness, CQS: cqs,
+                        Hub: hub,
+                        SharedPathways: p.sharedPathways || [],
+                        MinPathSize: minSize,
+                        FileName: d._sourceFile, LogFile: `./data/atlas/${d._sourceFile}`,
+                        Mechanism: mech,
+                        Falsification: falsifyText, Translational: p.translational
+                    });
+                });
+            });
+
+            allCandidates = processRawDataset(tempArray);
+            updateBadge('index.json (Fallback CQS v2)', true);
+            initApp();
+            return;
+        }
+    } catch (err) { }
+
+    renderEmpty();
+}
+
+function updateBadge(sourceName, isFallback) {
+    const badge = document.getElementById('source-badge');
+    if (!badge || !allCandidates.length) return;
+    const maxCqs = Math.max(...allCandidates.map(c => c.cqs));
+    const uniqueSeeds = new Set(allCandidates.map(c => c.seedName)).size;
+    
+    document.getElementById('stat-total').textContent = allCandidates.length;
+    document.getElementById('stat-seeds').textContent = uniqueSeeds || 205;
+    document.getElementById('stat-max-cqs').textContent = maxCqs;
+
+    if (isFallback) {
+        badge.textContent = `⚠ ${sourceName}`;
+        badge.style.background = 'rgba(244, 63, 94, 0.15)';
+        badge.style.color = '#f43f5e';
+    } else {
+        badge.textContent = `Loaded: ${sourceName}`;
+        badge.style.background = 'rgba(56, 189, 248, 0.12)';
+        badge.style.color = '#38bdf8';
+    }
+}
+
+// Manual File Upload Handler
+document.getElementById('file-uploader').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        try {
+            const data = JSON.parse(evt.target.result);
+            allCandidates = processRawDataset(data);
+            updateBadge(file.name, false);
+            initApp();
+        } catch(err) {
+            alert('Error parsing selected JSON file.');
+        }
+    };
+    reader.readAsText(file);
+});
+
+function initApp() {
+    populateCqsDropdown();
+    populateFamilyDropdown();
+    renderLegend();
+    renderApp();
+}
+
+// Dynamic CQS Selector
+function populateCqsDropdown() {
+    const sel = document.getElementById('filter-cqs');
+    if (!sel || !allCandidates.length) return;
+
+    const cqsScores = Array.from(new Set(allCandidates.map(c => c.cqs))).sort((a,b) => b - a);
+
+    let options = `<option value="all" selected>All CQS Scores (${allCandidates.length})</option>`;
+
+    cqsScores.forEach(score => {
+        const count = allCandidates.filter(c => c.cqs === score).length;
+        options += `<option value="eq_${score}">CQS = ${score} (${count} candidates)</option>`;
+    });
+
+    options += `<option disabled>──────────</option>`;
+    [10, 8, 6, 4].forEach(thresh => {
+        const count = allCandidates.filter(c => c.cqs >= thresh).length;
+        if (count > 0 && count < allCandidates.length) {
+            options += `<option value="ge_${thresh}">CQS ≥ ${thresh} (${count} candidates)</option>`;
+        }
+    });
+
+    sel.innerHTML = options;
+}
+
+function populateFamilyDropdown() {
+    const usedKeys = new Set(allCandidates.map(c => c.family));
+    const sel = document.getElementById('filter-family');
+    sel.innerHTML = '<option value="all">All clinical families</option>';
+    FAMILIES.filter(f => usedKeys.has(f.key)).forEach(f => {
+        const opt = document.createElement('option');
+        opt.value = f.key; opt.textContent = f.label;
+        sel.appendChild(opt);
+    });
+}
+
+function renderLegend() {
+    const usedKeys = new Set(allCandidates.map(c => c.family));
+    document.getElementById('legend-list').innerHTML = FAMILIES.filter(f => usedKeys.has(f.key)).map(f =>
+        `<span><i style="background:${f.color}"></i>${f.label}</span>`
+    ).join('');
+}
+
+function renderEmpty() {
+    document.getElementById('source-badge').textContent = 'No Data';
+    document.getElementById('canvas-container').innerHTML =
+        '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--text-muted);font-size:0.9rem;gap:12px;">' +
+        '<span>⚠️ Browser blocked local JSON fetch (CORS). Click below to load <code>top_candidates.json</code>:</span>' +
+        '<button class="btn-action" onclick="document.getElementById(\'file-uploader\').click()" style="background:#0284c7;color:#fff;">📂 Select top_candidates.json File</button>' +
+        '</div>';
+    document.getElementById('cqs-card-list').innerHTML = '';
+}
+
+function getFilteredCandidates() {
+    const cqsVal = document.getElementById('filter-cqs').value;
+    const hubVal = document.getElementById('filter-hub').value;
+    const famFilter = document.getElementById('filter-family').value;
+    const search = document.getElementById('search-input').value.toLowerCase().trim();
+
+    return allCandidates.filter(c => {
+        if (focusDiseaseNode) {
+            if (c.seedName !== focusDiseaseNode && c.partnerName !== focusDiseaseNode) return false;
+        }
+
+        if (cqsVal !== 'all') {
+            if (cqsVal.startsWith('eq_')) {
+                const target = parseInt(cqsVal.split('_')[1]);
+                if (c.cqs !== target) return false;
+            } else if (cqsVal.startsWith('ge_')) {
+                const target = parseInt(cqsVal.split('_')[1]);
+                if (c.cqs < target) return false;
+            }
+        }
+
+        if (hubVal === 'h3' && c.hub < 3) return false;
+        if (hubVal === 'h1' && c.hub > 2) return false;
+
+        if (famFilter !== 'all' && c.family !== famFilter) return false;
+
+        if (search) {
+            const haystack = `${c.seedName} ${c.partnerName} ${c.mechanism}`.toLowerCase();
+            if (!haystack.includes(search)) return false;
+        }
+        return true;
+    }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
+}
+
+function renderApp() {
+    const filtered = getFilteredCandidates();
+    document.getElementById('stat-visible').textContent = filtered.length;
+    renderSidebar(filtered);
+    renderRadial(filtered);
+}
+
+function resetFilters() {
+    focusDiseaseNode = null;
+    document.getElementById('btn-focus-mode').classList.remove('active');
+    document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
+    document.getElementById('filter-cqs').value = 'all';
+    document.getElementById('filter-hub').value = 'all';
+    document.getElementById('filter-family').value = 'all';
+    document.getElementById('search-input').value = '';
+    renderApp();
+}
+
+function toggleFocusMode() {
+    if (focusDiseaseNode) {
+        focusDiseaseNode = null;
+        document.getElementById('btn-focus-mode').classList.remove('active');
+        document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
+    } else {
+        const top = getFilteredCandidates()[0];
+        if (top) {
+            focusDiseaseNode = top.seedName;
+            document.getElementById('btn-focus-mode').classList.add('active');
+            document.getElementById('btn-focus-mode').textContent = `Focus: ${focusDiseaseNode} (Exit)`;
+        }
+    }
+    renderApp();
+}
+
+// Sidebar Cards
+function renderSidebar(candidates) {
+    const sidebar = document.getElementById('cqs-card-list');
+    sidebar.scrollTop = 0;
+    let html = '';
+    
+    if (!candidates.length) {
+        html = '<div style="color:var(--text-muted);font-size:0.82rem;padding:12px 4px;">No candidates match these criteria.</div>';
+        sidebar.innerHTML = html;
+        return;
+    }
+
+    candidates.slice(0, 35).forEach(c => {
+        html += `
+        <div class="cqs-card" id="card-${c.id}" style="border-left-color:${c.familyColor}" onclick="openDossierModal(${c.id})" onmouseover="highlightRel(${c.id})" onmouseout="clearHighlight()">
+            <div class="cqs-card-header">
+                <span class="cqs-badge" style="background:${c.familyColor}22; color:${c.familyColor}">CQS ${c.cqs}</span>
+                ${c.hub >= 3 ? `<span class="hub-tag" title="Discovered across ${c.hub} different seeds">Hub · ${c.hub}</span>` : ''}
+                <span class="fitness-score">Fit ${c.fitness.toFixed(3)}</span>
+            </div>
+            <div class="cqs-card-title">${c.seedName} ⇄ ${c.partnerName}</div>
+            <div class="cqs-card-mech">${c.mechTruncated}</div>
+        </div>`;
+    });
+    sidebar.innerHTML = html;
+}
+
+// D3 Concentric Radial Canvas
+let allLinksData = [];
+
+function renderRadial(candidates) {
+    const container = document.getElementById('canvas-container');
+    container.querySelectorAll('svg').forEach(s => s.remove());
+
+    if (!candidates.length) {
+        container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);font-size:0.88rem;">No candidates match the active search/filters. Adjust sliders to expand view.</div>';
+        return;
+    }
+
+    const width = container.clientWidth || (window.innerWidth - 700);
+    const height = container.clientHeight || window.innerHeight;
+    const cx = width / 2;
+    const cy = height / 2;
+    const R_inner = Math.min(width, height) * 0.18;
+    const R_outer = Math.min(width, height) * 0.38;
+
+    const seedNames = Array.from(new Set(candidates.map(c => c.seedName))).sort();
+    const familyOrder = FAMILIES.map(f => f.key).filter(k => candidates.some(c => c.family === k));
+
+    const nodePad = 0.6 * Math.PI / 180;
+    const famGap = 4 * Math.PI / 180;
+
+    const seedLayout = {};
+    (function () {
+        const total = seedNames.reduce((sum, name) => sum + candidates.filter(c => c.seedName === name).length, 0);
+        const usable = 2 * Math.PI - nodePad * Math.max(0, seedNames.length - 1);
+        let a = 0;
+        seedNames.forEach(name => {
+            const weight = total > 0 ? (candidates.filter(c => c.seedName === name).length / total) * usable : 0;
+            seedLayout[name] = { start: a, end: a + weight };
+            a += weight + nodePad;
+        });
+    })();
+
+    const partnersByFamily = {};
+    familyOrder.forEach(f => {
+        partnersByFamily[f] = Array.from(new Set(candidates.filter(c => c.family === f).map(c => c.partnerName))).sort();
+    });
+    const allPartners = familyOrder.flatMap(f => partnersByFamily[f]);
+    const partnerLayout = {};
+    (function () {
+        const partnerValue = n => candidates.filter(c => c.partnerName === n).length;
+        const total = allPartners.reduce((sum, n) => sum + partnerValue(n), 0);
+        const totalNodeGaps = nodePad * Math.max(0, allPartners.length - familyOrder.length);
+        const totalFamGaps = famGap * familyOrder.length;
+        const usable = 2 * Math.PI - totalNodeGaps - totalFamGaps;
+        let a = 0;
+        familyOrder.forEach(f => {
+            const famStart = a;
+            partnersByFamily[f].forEach(n => {
+                const w = total > 0 ? (partnerValue(n) / total) * usable : 0;
+                partnerLayout[n] = { start: a, end: a + w, family: f };
+                a += w + nodePad;
+            });
+            a += famGap - nodePad;
+            partnerLayout['__famRange_' + f] = { start: famStart, end: a - famGap };
+        });
+    })();
+
+    function allocatePorts(layout, groupKey) {
+        const ports = {};
+        Object.keys(layout).filter(k => !k.startsWith('__famRange_')).forEach(name => {
+            const list = candidates.filter(c => c[groupKey] === name);
+            const slot = layout[name];
+            if (slot && typeof slot.start === 'number' && typeof slot.end === 'number') {
+                const step = list.length ? (slot.end - slot.start) / list.length : 0;
+                list.forEach((c, i) => { ports[c.id] = { start: slot.start + i * step, end: slot.start + (i + 1) * step }; });
+            }
+        });
+        return ports;
+    }
+
+    const seedPorts = allocatePorts(seedLayout, 'seedName');
+    const partnerPorts = allocatePorts(partnerLayout, 'partnerName');
+
+    const linkGen = d3.linkRadial().angle(d => d.angle).radius(d => d.radius);
+    allLinksData = candidates.map(c => {
+        const s = seedPorts[c.id] || { start: 0, end: 0 };
+        const t = partnerPorts[c.id] || { start: 0, end: 0 };
+        return { cand: c, seedAngle: (s.start + s.end) / 2, partnerAngle: (t.start + t.end) / 2 };
+    });
+
+    const svg = d3.select(container).append('svg').attr('width', width).attr('height', height);
+    const g = svg.append('g').attr('transform', `translate(${cx},${cy})`);
+    const tooltip = d3.select('#canvas-tooltip');
+
+    const arcInner = d3.arc().innerRadius(R_inner - 10).outerRadius(R_inner);
+    const arcOuter = d3.arc().innerRadius(R_outer).outerRadius(R_outer + 10);
+
+    // Ribbons
+    g.append('g').selectAll('path')
+        .data(allLinksData)
+        .join('path')
+        .attr('id', l => `ribbon-${l.cand.id}`)
+        .attr('d', l => linkGen({ source: { angle: l.seedAngle, radius: R_inner }, target: { angle: l.partnerAngle, radius: R_outer } }))
+        .attr('fill', 'none')
+        .attr('stroke', l => l.cand.familyColor)
+        .attr('stroke-width', l => Math.max(1.2, l.cand.fitness * 3.5))
+        .attr('opacity', 0.32)
+        .style('cursor', 'pointer')
+        .on('mouseover', (event, l) => { highlightRel(l.cand.id); showTooltip(event, l.cand); })
+        .on('mousemove', moveTooltip)
+        .on('mouseout', () => { clearHighlight(); hideTooltip(); })
+        .on('click', (event, l) => openDossierModal(l.cand.id));
+
+    // Seeds (Inner)
+    const seedSel = g.append('g').selectAll('g.seed-node')
+        .data(Object.entries(seedLayout))
+        .join('g')
+        .attr('class', 'seed-node')
+        .attr('data-name', ([name]) => name)
+        .style('cursor', 'pointer');
+
+    seedSel.append('path').attr('d', ([, a]) => arcInner({ startAngle: a.start, endAngle: a.end })).attr('fill', '#f8fafc');
+
+    seedSel.each(function ([name, a]) {
+        const mid = (a.start + a.end) / 2, flip = mid > Math.PI;
+        const r = R_inner - 18;
+        const x = Math.sin(mid) * r, y = -Math.cos(mid) * r;
+        const rot = (mid * 180 / Math.PI) - 90 + (flip ? 180 : 0);
+        d3.select(this).append('text')
+            .attr('class', 'seed-label')
+            .attr('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
+            .attr('text-anchor', flip ? 'start' : 'end')
+            .attr('dy', '0.32em').attr('font-size', '10px').attr('font-weight', 700)
+            .attr('fill', '#f8fafc')
+            .text(name.length > 24 ? name.slice(0, 22) + '…' : name);
+    });
+    seedSel.on('mouseover', (event, [name]) => highlightBySeed(name)).on('mouseout', clearHighlight);
+    seedSel.on('click', (event, [name]) => {
+        focusDiseaseNode = name;
+        document.getElementById('btn-focus-mode').classList.add('active');
+        document.getElementById('btn-focus-mode').textContent = `Focus: ${focusDiseaseNode} (Exit)`;
+        renderApp();
+    });
+
+    // Partners (Outer)
+    const partnerSel = g.append('g').selectAll('g.partner-node')
+        .data(Object.entries(partnerLayout).filter(([k]) => !k.startsWith('__famRange_')))
+        .join('g')
+        .attr('class', 'partner-node')
+        .attr('data-name', ([name]) => name)
+        .style('cursor', 'pointer');
+
+    partnerSel.append('path')
+        .attr('d', ([, a]) => arcOuter({ startAngle: a.start, endAngle: a.end }))
+        .attr('fill', ([, a]) => (FAMILIES.find(f => f.key === a.family) || FAMILIES[FAMILIES.length - 1]).color);
+
+    partnerSel.each(function ([name, a]) {
+        const mid = (a.start + a.end) / 2, flip = mid > Math.PI;
+        const r = R_outer + 16;
+        const x = Math.sin(mid) * r, y = -Math.cos(mid) * r;
+        const rot = (mid * 180 / Math.PI) - 90 + (flip ? 180 : 0);
+        d3.select(this).append('text')
+            .attr('class', 'partner-label')
+            .attr('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
+            .attr('text-anchor', flip ? 'end' : 'start')
+            .attr('dy', '0.32em').attr('font-size', '7.5px')
+            .attr('fill', '#94a3b8')
+            .text(name.length > 26 ? name.slice(0, 24) + '…' : name);
+    });
+    partnerSel.on('mouseover', (event, [name]) => highlightByPartner(name)).on('mouseout', clearHighlight);
+
+    // Family Sector Labels
+    const famLabelR = R_outer + 44;
+    familyOrder.forEach(f => {
+        const range = partnerLayout['__famRange_' + f];
+        if (!range) return;
+        const mid = (range.start + range.end) / 2;
+        const x = Math.sin(mid) * famLabelR, y = -Math.cos(mid) * famLabelR;
+        const famObj = FAMILIES.find(ff => ff.key === f) || {};
+        g.append('text')
+            .attr('x', x).attr('y', y)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '7.5px').attr('font-weight', 700)
+            .attr('fill', famObj.color)
+            .text(famObj.label || f);
+    });
+
+    function showTooltip(event, c) {
+        tooltip.style('opacity', 1).html(
+            `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>
+             CQS Score: ${c.cqs} | Fitness: ${c.fitness.toFixed(3)}<br/>
+             Hub Frequency: ${c.hub} seeds | Family: ${c.familyLabel}`
+        );
+        moveTooltip(event);
+    }
+    function moveTooltip(event) {
+        tooltip.style('left', (event.clientX + 16) + 'px').style('top', (event.clientY - 10) + 'px');
+    }
+    function hideTooltip() { tooltip.style('opacity', 0); }
+}
+
+// RELIABLE SIDEBAR CARD & RADIAL HOVER HIGHLIGHT ENGINE
+function highlightRel(id) {
+    const targetId = parseInt(id);
+    const targetLink = allLinksData.find(l => l.cand.id === targetId);
+    if (!targetLink) return;
+
+    const seedName = targetLink.cand.seedName;
+    const partnerName = targetLink.cand.partnerName;
+
+    // 1. Highlight Ribbons
+    d3.selectAll('path[id^="ribbon-"]')
+        .attr('opacity', function() {
+            const l = d3.select(this).datum();
+            return (l && l.cand && l.cand.id === targetId) ? 0.95 : 0.03;
+        })
+        .attr('stroke-width', function() {
+            const l = d3.select(this).datum();
+            return (l && l.cand && l.cand.id === targetId) ? Math.max(3.5, l.cand.fitness * 6) : 1;
+        });
+
+    // 2. Zoom & Enlarge Seed Label
+    d3.selectAll('g.seed-node').each(function() {
+        const node = d3.select(this);
+        const isMatch = node.attr('data-name') === seedName;
+        node.select('text')
+            .attr('font-size', isMatch ? '13px' : '7.5px')
+            .attr('fill', isMatch ? '#38bdf8' : '#334155')
+            .attr('font-weight', isMatch ? '900' : '400');
+    });
+
+    // 3. Zoom & Enlarge Partner Label
+    d3.selectAll('g.partner-node').each(function() {
+        const node = d3.select(this);
+        const isMatch = node.attr('data-name') === partnerName;
+        node.select('text')
+            .attr('font-size', isMatch ? '13px' : '7px')
+            .attr('fill', isMatch ? '#ffffff' : '#334155')
+            .attr('font-weight', isMatch ? '900' : '400');
+    });
+
+    // 4. Style Active Card
+    document.querySelectorAll('.cqs-card').forEach(c => c.classList.remove('active'));
+    const card = document.getElementById(`card-${targetId}`);
+    if (card) card.classList.add('active');
+}
+
+function highlightBySeed(name) {
+    d3.selectAll('path[id^="ribbon-"]').attr('opacity', l => (l && l.cand && l.cand.seedName === name) ? 0.9 : 0.03);
+    d3.selectAll('g.seed-node text').attr('fill', function() {
+        return d3.select(this.parentNode).attr('data-name') === name ? '#38bdf8' : '#334155';
+    });
+}
+
+function highlightByPartner(name) {
+    d3.selectAll('path[id^="ribbon-"]').attr('opacity', l => (l && l.cand && l.cand.partnerName === name) ? 0.9 : 0.03);
+    d3.selectAll('g.partner-node text').attr('fill', function() {
+        return d3.select(this.parentNode).attr('data-name') === name ? '#ffffff' : '#334155';
+    });
+}
+
+function clearHighlight() {
+    d3.selectAll('path[id^="ribbon-"]').attr('opacity', 0.32).attr('stroke-width', l => Math.max(1.2, l.cand.fitness * 3.5));
+    d3.selectAll('g.seed-node text').attr('font-size', '7.5px').attr('fill', '#f8fafc').attr('font-weight', '600');
+    d3.selectAll('g.partner-node text').attr('font-size', '7px').attr('fill', '#94a3b8').attr('font-weight', '400');
+    document.querySelectorAll('.cqs-card.active').forEach(c => c.classList.remove('active'));
+}
+
+// Render Reactome Badges for SharedPathways
+function renderSharedPathways(pathways) {
+    if (!pathways || !pathways.length) return '—';
+    return pathways.map(pw => {
+        const cleanId = pw.replace(/^reactome:/i, '');
+        const reactomeUrl = `https://reactome.org/content/detail/${cleanId}`;
+        return `<a href="${reactomeUrl}" target="_blank" class="pw-badge" title="Open ${pw} in Reactome.org">${pw} ↗</a>`;
+    }).join(' ');
+}
+
+// PARSER FOR STRUCTURED CAUSAL CHAIN & NARRATIVE
+function parseMechanismDetails(rawText) {
+    if (!rawText) return { steps: [], narrative: '' };
+
+    let narrative = '';
+    let stepsRaw = rawText;
+
+    const lastArrowIdx = rawText.lastIndexOf('→');
+    if (lastArrowIdx !== -1) {
+        const periodIdx = rawText.indexOf('. ', lastArrowIdx);
+        if (periodIdx !== -1) {
+            stepsRaw = rawText.slice(0, periodIdx + 1);
+            narrative = rawText.slice(periodIdx + 2).trim();
+        }
+    }
+
+    const stepSegments = stepsRaw.split(/;|\.\s+(?=[A-Z0-9\-_]+(?:\s*\([^)]+\))?\s*—)/).filter(s => s.includes('—'));
+    const steps = [];
+
+    stepSegments.forEach(seg => {
+        const match = seg.trim().match(/^(.+?)(?:\s*\(([A-Z0-9.\-_:]+)\))?\s*—([A-Za-z_]+)→\s*(.+?)(?:\s*\(([A-Z0-9.\-_:]+)\))?\.?$/);
+        if (match) {
+            steps.push({
+                subject: match[1].trim(),
+                subjectId: match[2] || null,
+                relation: match[3].trim().toLowerCase(),
+                object: match[4].trim(),
+                objectId: match[5] || null
+            });
+        }
+    });
+
+    if (steps.length === 0 && !narrative) {
+        narrative = rawText;
+    }
+
+    return { steps, narrative };
+}
+
+function getChipClass(id) {
+    if (!id) return 'chip-other';
+    if (id.startsWith('HGNC')) return 'chip-gene';
+    if (id.startsWith('REACT') || id.startsWith('WP') || id.startsWith('GO')) return 'chip-pathway';
+    if (id.startsWith('CHEBI')) return 'chip-metabolite';
+    if (id.startsWith('HP')) return 'chip-phenotype';
+    if (id.startsWith('MONDO')) return 'chip-disease';
+    return 'chip-other';
+}
+
+// Dossier Modal
+function openDossierModal(candId) {
+    const c = allCandidates.find(x => x.id === parseInt(candId));
+    if (!c) return;
+
+    const falsifHtml = (typeof c.falsification === 'object' && c.falsification.text) ? c.falsification.text : c.falsification;
+    const parsedMech = parseMechanismDetails(c.mechanism);
+
+    let stepsHtml = '';
+    if (parsedMech.steps.length > 0) {
+        const stepRows = parsedMech.steps.map(s => `
+            <div class="chain-step-row">
+                <span class="chip ${getChipClass(s.subjectId)}">${s.subject} ${s.subjectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.subjectId})</small>` : ''}</span>
+                <span class="chain-arrow">—${s.relation}→</span>
+                <span class="chip ${getChipClass(s.objectId)}">${s.object} ${s.objectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.objectId})</small>` : ''}</span>
+            </div>
+        `).join('');
+        stepsHtml = `<div class="causal-chain-container">${stepRows}</div>`;
+    }
+
+    const narrativeHtml = parsedMech.narrative ? `
+        <div class="narrative-prose-box">
+            ${parsedMech.narrative}
+        </div>
+    ` : '';
+
+    const rawId = 'raw-' + Math.random().toString(36).slice(2, 8);
+
+    document.getElementById('modal-content').innerHTML = `
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+            <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">
+                CQS Score: ${c.cqs}
+            </span>
+            <span style="background:rgba(255,255,255,0.08); color:#f8fafc; padding:2px 10px; border-radius:12px; font-size:0.8rem;">
+                ${c.tier}
+            </span>
+            ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">Global Hub (${c.hub} seeds)</span>` : ''}
+            <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
+        </div>
+
+        <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">
+            ${c.seedName} ⇄ ${c.partnerName}
+        </h2>
+
+        <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
+            <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
+            <div style="margin-top:4px;">${renderSharedPathways(c.sharedPathways)}</div>
+        </div>
+
+        <div>
+            <h4 style="font-size:0.78rem; color:#94a3b8; letter-spacing:0.04em;">PROPOSED MECHANISM FLOW</h4>
+            ${stepsHtml}
+            ${narrativeHtml}
+            <span class="raw-toggle" onclick="const r=document.getElementById('${rawId}'); r.style.display = r.style.display === 'none' ? 'block' : 'none';">Show raw mechanism string</span>
+            <div class="modal-mech" id="${rawId}" style="display:none;">${c.mechanism || '—'}</div>
+        </div>
+
+        ${falsifHtml ? `
+        <div class="modal-falsif">
+            <strong>Falsification Test:</strong> ${falsifHtml}
+        </div>` : ''}
+
+        ${c.translational ? `
+        <div class="modal-translat">
+            <strong>Translational Significance:</strong> ${c.translational}
+        </div>` : ''}
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
+            <a href="${c.logFile}" target="_blank" class="btn-log">
+                📄 View Raw Discovery Log JSON
+            </a>
+            <span style="font-size:0.75rem; color:#64748b;">${c.fileName}</span>
+        </div>
+    `;
+
+    document.getElementById('dossier-modal').classList.add('open');
+}
+
+function closeDossierModal() {
+    document.getElementById('dossier-modal').classList.remove('open');
+}
+
+function openCqsModal() {
+    document.getElementById('cqs-modal').classList.add('open');
+}
+
+function closeCqsModal() {
+    document.getElementById('cqs-modal').classList.remove('open');
+}
+
+// Control Listeners
+document.getElementById('filter-cqs').addEventListener('change', renderApp);
+document.getElementById('filter-hub').addEventListener('change', renderApp);
+document.getElementById('filter-family').addEventListener('change', renderApp);
+document.getElementById('search-input').addEventListener('input', renderApp);
+window.addEventListener('resize', renderApp);
+document.addEventListener('keydown', e => { 
+    if (e.key === 'Escape') {
+        closeDossierModal();
+        closeCqsModal();
+    }
+});
+
+// Start Application
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+{
+  "seed": {
+    "id": "MONDO:0009665",
+    "name": "biotinidase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 8,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0009949",
+      "diseaseBName": "pyruvate carboxylase deficiency disease",
+      "fitness": 0.4709,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1309) —PRODUCES→ Biotin (CHEBI:15350); Biotin (CHEBI:15350) —BINDS→ Biotin-dependent carboxylase activity (GO:0009329); Biotin-dependent carboxylase activity (GO:0009329) —LEADS_TO→ Developmental delay (HP:0001263); PC (HGNC:8725) —DISRUPTS→ Pyruvate (CHEBI:16567); Pyruvate (CHEBI:16567) —PRODUCES→ Acetyl-CoA (CHEBI:16135); Acetyl-CoA (CHEBI:16135) —LEADS_TO→ Tricarboxylic acid cycle (GO:0006099); Tricarboxylic acid cycle (GO:0006099) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in BTD lead to impaired biotin recycling, affecting biotin-dependent carboxylases (like pyruvate carboxylase) crucial for gluconeogenesis and energy production. Similarly, loss-of-function mutations in PC directly impair pyruvate carboxylation, a key anaplerotic reaction for the TCA cycle and gluconeogenesis. Both deficiencies converge on dysregulated energy metabolism, particularly affecting the brain, leading to shared phenotypes such as developmental delay and seizures.",
+      "mechanism_narrative": "BTD (HGNC:1309) —PRODUCES→ Biotin (CHEBI:15350); Biotin (CHEBI:15350) —BINDS→ Biotin-dependent carboxylase activity (GO:0009329); Biotin-dependent carboxylase activity (GO:0009329) —LEADS_TO→ Developmental delay (HP:0001263); PC (HGNC:8725) —DISRUPTS→ Pyruvate (CHEBI:16567); Pyruvate (CHEBI:16567) —PRODUCES→ Acetyl-CoA (CHEBI:16135); Acetyl-CoA (CHEBI:16135) —LEADS_TO→ Tricarboxylic acid cycle (GO:0006099); Tricarboxylic acid cycle (GO:0006099) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in BTD lead to impaired biotin recycling, affecting biotin-dependent carboxylases (like pyruvate carboxylase) crucial for gluconeogenesis and energy production. Similarly, loss-of-function mutations in PC directly impair pyruvate carboxylation, a key anaplerotic reaction for the TCA cycle and gluconeogenesis. Both deficiencies converge on dysregulated energy metabolism, particularly affecting the brain, leading to shared phenotypes such as developmental delay and seizures.",
+      "falsification": {
+        "text": "If genetic analysis reveals that variants in BTD or PC are not loss-of-function, or if studies show no significant overlap in the metabolic consequences of biotin deficiency and pyruvate carboxylase deficiency on shared downstream pathways like the TCA cycle, this hypothesis would be falsified.",
+        "gnomad_variant": "rs121918440 (a known pathogenic variant in BTD) is found at a frequency > 0.001 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009949",
+        "diseaseBName": "pyruvate carboxylase deficiency disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4709,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1309) —PRODUCES→ Biotin (CHEBI:15350); Biotin (CHEBI:15350) —BINDS→ Biotin-dependent carboxylase activity (GO:0009329); Biotin-dependent carboxylase activity (GO:0009329) —LEADS_TO→ Developmental delay (HP:0001263); PC (HGNC:8725) —DISRUPTS→ Pyruvate (CHEBI:16567); Pyruvate (CHEBI:16567) —PRODUCES→ Acetyl-CoA (CHEBI:16135); Acetyl-CoA (CHEBI:16135) —LEADS_TO→ Tricarboxylic acid cycle (GO:0006099); Tricarboxylic acid cycle (GO:0006099) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in BTD lead to impaired biotin recycling, affecting biotin-dependent carboxylases (like pyruvate carboxylase) crucial for gluconeogenesis and energy production. Similarly, loss-of-function mutations in PC directly impair pyruvate carboxylation, a key anaplerotic reaction for the TCA cycle and gluconeogenesis. Both deficiencies converge on dysregulated energy metabolism, particularly affecting the brain, leading to shared phenotypes such as developmental delay and seizures.",
+        "falsification": {
+          "text": "If genetic analysis reveals that variants in BTD or PC are not loss-of-function, or if studies show no significant overlap in the metabolic consequences of biotin deficiency and pyruvate carboxylase deficiency on shared downstream pathways like the TCA cycle, this hypothesis would be falsified.",
+          "gnomad_variant": "rs121918440 (a known pathogenic variant in BTD) is found at a frequency > 0.001 in gnomAD."
+        },
+        "translational": "Understanding the shared metabolic vulnerability in biotinidase deficiency and pyruvate carboxylase deficiency could lead to novel therapeutic strategies. For instance, adjunctive biotin supplementation in PC deficiency, or improved understanding of substrate accumulation in BTD, could offer avenues for treatment beyond current supportive care."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011628",
+      "diseaseBName": "propionic acidemia",
+      "fitness": 0.4534,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Biotinidase (HGNC:1206) —DISRUPTS→ Biotin (CHEBI:16797); Biotin (CHEBI:16797) —DECREASES→ Biotinylation (GO:0015745); Biotinylation (GO:0015745) —LEADS_TO→ Developmental delay (HP:0001251); Propionyl-CoA carboxylase alpha subunit (HGNC:9194) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA carboxylase beta subunit (HGNC:9195) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA (CHEBI:17340) —DECREASES→ Propionate Metabolism (GO:0006097); Propionate Metabolism (GO:0006097) —LEADS_TO→ Metabolic acidosis (HP:0002066). Mutations in BTD lead to impaired biotin recycling, disrupting biotinylation of carboxylases. Mutations in PCCA or PCCB impair the metabolism of propionyl-CoA. Both disruptions lead to distinct but overlapping metabolic disturbances and downstream phenotypic consequences.",
+      "mechanism_narrative": "Biotinidase (HGNC:1206) —DISRUPTS→ Biotin (CHEBI:16797); Biotin (CHEBI:16797) —DECREASES→ Biotinylation (GO:0015745); Biotinylation (GO:0015745) —LEADS_TO→ Developmental delay (HP:0001251); Propionyl-CoA carboxylase alpha subunit (HGNC:9194) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA carboxylase beta subunit (HGNC:9195) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA (CHEBI:17340) —DECREASES→ Propionate Metabolism (GO:0006097); Propionate Metabolism (GO:0006097) —LEADS_TO→ Metabolic acidosis (HP:0002066). Mutations in BTD lead to impaired biotin recycling, disrupting biotinylation of carboxylases. Mutations in PCCA or PCCB impair the metabolism of propionyl-CoA. Both disruptions lead to distinct but overlapping metabolic disturbances and downstream phenotypic consequences.",
+      "falsification": {
+        "text": "Demonstration that the genetic variants identified in BTD patients do not impact biotinidase activity or that variants in PCCA/PCCB do not impair propionyl-CoA metabolism.",
+        "gnomad_variant": "rs749174905 (missense variant in BTD with reported low frequency)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011628",
+        "diseaseBName": "propionic acidemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4534,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Biotinidase (HGNC:1206) —DISRUPTS→ Biotin (CHEBI:16797); Biotin (CHEBI:16797) —DECREASES→ Biotinylation (GO:0015745); Biotinylation (GO:0015745) —LEADS_TO→ Developmental delay (HP:0001251); Propionyl-CoA carboxylase alpha subunit (HGNC:9194) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA carboxylase beta subunit (HGNC:9195) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA (CHEBI:17340) —DECREASES→ Propionate Metabolism (GO:0006097); Propionate Metabolism (GO:0006097) —LEADS_TO→ Metabolic acidosis (HP:0002066). Mutations in BTD lead to impaired biotin recycling, disrupting biotinylation of carboxylases. Mutations in PCCA or PCCB impair the metabolism of propionyl-CoA. Both disruptions lead to distinct but overlapping metabolic disturbances and downstream phenotypic consequences.",
+        "falsification": {
+          "text": "Demonstration that the genetic variants identified in BTD patients do not impact biotinidase activity or that variants in PCCA/PCCB do not impair propionyl-CoA metabolism.",
+          "gnomad_variant": "rs749174905 (missense variant in BTD with reported low frequency)"
+        },
+        "translational": "Understanding the shared metabolic pathway disruptions can inform therapeutic strategies, potentially including cofactor supplementation or metabolic interventions, for patients with these distinct but mechanistically linked disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008862",
+      "diseaseBName": "3-methylcrotonyl-CoA carboxylase 2 deficiency",
+      "fitness": 0.4437,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1423) —DECREASES→ Biotin (CHEBI:17676); Biotin (CHEBI:17676) —DISRUPTS→ Biotinylation of carboxylases (GO:0006689); MCCC2 (HGNC:7403) —DECREASES→ 3-methylcrotonyl-CoA (CHEBI:17157); 3-methylcrotonyl-CoA (CHEBI:17157) —DISRUPTS→ Propionate metabolism (REACT:R-HSA-168958); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Developmental delay (HP:0001263); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Developmental delay (HP:0001263); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Seizures (HP:0001250); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Metabolic acidosis (HP:0010977); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Metabolic acidosis (HP:0010977). Loss of function in BTD leads to insufficient biotin recycling, impairing biotinylation of carboxylases. Loss of function in MCCC2 directly impairs propionate metabolism. Both disruptions converge on compromised function of biotin-dependent carboxylases and dysregulation of propionate metabolism, leading to overlapping neurodevelopmental and metabolic phenotypes.",
+      "mechanism_narrative": "BTD (HGNC:1423) —DECREASES→ Biotin (CHEBI:17676); Biotin (CHEBI:17676) —DISRUPTS→ Biotinylation of carboxylases (GO:0006689); MCCC2 (HGNC:7403) —DECREASES→ 3-methylcrotonyl-CoA (CHEBI:17157); 3-methylcrotonyl-CoA (CHEBI:17157) —DISRUPTS→ Propionate metabolism (REACT:R-HSA-168958); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Developmental delay (HP:0001263); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Developmental delay (HP:0001263); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Seizures (HP:0001250); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Metabolic acidosis (HP:0010977); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Metabolic acidosis (HP:0010977). Loss of function in BTD leads to insufficient biotin recycling, impairing biotinylation of carboxylases. Loss of function in MCCC2 directly impairs propionate metabolism. Both disruptions converge on compromised function of biotin-dependent carboxylases and dysregulation of propionate metabolism, leading to overlapping neurodevelopmental and metabolic phenotypes.",
+      "falsification": {
+        "text": "The absence of shared phenotypic features or the identification of distinct molecular pathways that do not converge on biotinylation or propionate metabolism would falsify this hypothesis.",
+        "gnomad_variant": "Identification of pathogenic variants in BTD or MCCC2 with a minor allele frequency >0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008862",
+        "diseaseBName": "3-methylcrotonyl-CoA carboxylase 2 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4437,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1423) —DECREASES→ Biotin (CHEBI:17676); Biotin (CHEBI:17676) —DISRUPTS→ Biotinylation of carboxylases (GO:0006689); MCCC2 (HGNC:7403) —DECREASES→ 3-methylcrotonyl-CoA (CHEBI:17157); 3-methylcrotonyl-CoA (CHEBI:17157) —DISRUPTS→ Propionate metabolism (REACT:R-HSA-168958); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Developmental delay (HP:0001263); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Developmental delay (HP:0001263); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Seizures (HP:0001250); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Metabolic acidosis (HP:0010977); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Metabolic acidosis (HP:0010977). Loss of function in BTD leads to insufficient biotin recycling, impairing biotinylation of carboxylases. Loss of function in MCCC2 directly impairs propionate metabolism. Both disruptions converge on compromised function of biotin-dependent carboxylases and dysregulation of propionate metabolism, leading to overlapping neurodevelopmental and metabolic phenotypes.",
+        "falsification": {
+          "text": "The absence of shared phenotypic features or the identification of distinct molecular pathways that do not converge on biotinylation or propionate metabolism would falsify this hypothesis.",
+          "gnomad_variant": "Identification of pathogenic variants in BTD or MCCC2 with a minor allele frequency >0.01 in gnomAD."
+        },
+        "translational": "Understanding this overlap could inform diagnostic strategies and therapeutic interventions, potentially exploring biotin supplementation or metabolic support for patients with MCCC2 deficiency, and highlighting the critical role of biotin metabolism in neurological development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008861",
+      "diseaseBName": "3-methylcrotonyl-CoA carboxylase 1 deficiency",
+      "fitness": 0.4435,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1264) —DISRUPTS→ Biotin (CHEBI:15743); Biotin (CHEBI:15743) —PRODUCES→ Biotinyl-CoA (CHEBI:17487); Biotinyl-CoA (CHEBI:17487) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Hypotonia (HP:0001252); MCCC1 (HGNC:7204) —DISRUPTS→ 3-methylcrotonyl-CoA (CHEBI:17717); 3-methylcrotonyl-CoA (CHEBI:17717) —PRODUCES→ 3-methylglutaconyl-CoA (CHEBI:17718); 3-methylglutaconyl-CoA (CHEBI:17718) —PRODUCES→ Propionyl-CoA (CHEBI:16120); Propionyl-CoA (CHEBI:16120) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD lead to impaired biotin recycling, reducing the availability of biotin for biotin-dependent carboxylases. Similarly, loss-of-function mutations in MCCC1 impair the activity of 3-methylcrotonyl-CoA carboxylase, leading to accumulation of 3-methylcrotonyl-CoA and subsequent upstream metabolites, including propionyl-CoA. Both impaired biotinylation and increased propionyl-CoA can disrupt the function of biotin-dependent carboxylases, ultimately converging on shared downstream metabolic dysregulation and phenotypic consequences like hypotonia and developmental delay.",
+      "mechanism_narrative": "BTD (HGNC:1264) —DISRUPTS→ Biotin (CHEBI:15743); Biotin (CHEBI:15743) —PRODUCES→ Biotinyl-CoA (CHEBI:17487); Biotinyl-CoA (CHEBI:17487) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Hypotonia (HP:0001252); MCCC1 (HGNC:7204) —DISRUPTS→ 3-methylcrotonyl-CoA (CHEBI:17717); 3-methylcrotonyl-CoA (CHEBI:17717) —PRODUCES→ 3-methylglutaconyl-CoA (CHEBI:17718); 3-methylglutaconyl-CoA (CHEBI:17718) —PRODUCES→ Propionyl-CoA (CHEBI:16120); Propionyl-CoA (CHEBI:16120) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD lead to impaired biotin recycling, reducing the availability of biotin for biotin-dependent carboxylases. Similarly, loss-of-function mutations in MCCC1 impair the activity of 3-methylcrotonyl-CoA carboxylase, leading to accumulation of 3-methylcrotonyl-CoA and subsequent upstream metabolites, including propionyl-CoA. Both impaired biotinylation and increased propionyl-CoA can disrupt the function of biotin-dependent carboxylases, ultimately converging on shared downstream metabolic dysregulation and phenotypic consequences like hypotonia and developmental delay.",
+      "falsification": {
+        "text": "Demonstration that the downstream metabolic effects of biotin deficiency on biotin-dependent carboxylases are entirely independent of the effects of propionyl-CoA accumulation on these same enzymes, or identification of a specific genetic variant in MCCC1 with a pathogenic frequency >1% in gnomAD that explains the entirety of MCCC1 deficiency cases, thus ruling out a broader metabolic link.",
+        "gnomad_variant": "rs74315301"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008861",
+        "diseaseBName": "3-methylcrotonyl-CoA carboxylase 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4435,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1264) —DISRUPTS→ Biotin (CHEBI:15743); Biotin (CHEBI:15743) —PRODUCES→ Biotinyl-CoA (CHEBI:17487); Biotinyl-CoA (CHEBI:17487) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Hypotonia (HP:0001252); MCCC1 (HGNC:7204) —DISRUPTS→ 3-methylcrotonyl-CoA (CHEBI:17717); 3-methylcrotonyl-CoA (CHEBI:17717) —PRODUCES→ 3-methylglutaconyl-CoA (CHEBI:17718); 3-methylglutaconyl-CoA (CHEBI:17718) —PRODUCES→ Propionyl-CoA (CHEBI:16120); Propionyl-CoA (CHEBI:16120) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD lead to impaired biotin recycling, reducing the availability of biotin for biotin-dependent carboxylases. Similarly, loss-of-function mutations in MCCC1 impair the activity of 3-methylcrotonyl-CoA carboxylase, leading to accumulation of 3-methylcrotonyl-CoA and subsequent upstream metabolites, including propionyl-CoA. Both impaired biotinylation and increased propionyl-CoA can disrupt the function of biotin-dependent carboxylases, ultimately converging on shared downstream metabolic dysregulation and phenotypic consequences like hypotonia and developmental delay.",
+        "falsification": {
+          "text": "Demonstration that the downstream metabolic effects of biotin deficiency on biotin-dependent carboxylases are entirely independent of the effects of propionyl-CoA accumulation on these same enzymes, or identification of a specific genetic variant in MCCC1 with a pathogenic frequency >1% in gnomAD that explains the entirety of MCCC1 deficiency cases, thus ruling out a broader metabolic link.",
+          "gnomad_variant": "rs74315301"
+        },
+        "translational": "Understanding this mechanistic overlap could lead to improved diagnostic strategies and potentially synergistic therapeutic approaches for patients with these related metabolic disorders, possibly involving cofactor supplementation or metabolic pathway modulation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013493",
+      "diseaseBName": "acetyl-coa carboxylase deficiency",
+      "fitness": 0.4381,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1323) —DECREASES→ biotin (CHEBI:15843); biotin (CHEBI:15843) —DISRUPTS→ biotinylation (GO:0015700); biotinylation (GO:0015700) —LEADS_TO→ Hypotonia (HP:0001252); ACACA (HGNC:21) —DECREASES→ acetyl-CoA (CHEBI:15351); acetyl-CoA (CHEBI:15351) —DISRUPTS→ fatty acid biosynthesis (REACT:R-HSA-1908954); fatty acid biosynthesis (REACT:R-HSA-1908954) —LEADS_TO→ Developmental delay (HP:0001263). Loss of function in BTD leads to reduced levels of free biotin, which is essential for biotinylation of carboxylases, including acetyl-CoA carboxylase. This indirectly impairs the function of acetyl-CoA carboxylase, a key enzyme in fatty acid biosynthesis, leading to overlapping phenotypes.",
+      "mechanism_narrative": "BTD (HGNC:1323) —DECREASES→ biotin (CHEBI:15843); biotin (CHEBI:15843) —DISRUPTS→ biotinylation (GO:0015700); biotinylation (GO:0015700) —LEADS_TO→ Hypotonia (HP:0001252); ACACA (HGNC:21) —DECREASES→ acetyl-CoA (CHEBI:15351); acetyl-CoA (CHEBI:15351) —DISRUPTS→ fatty acid biosynthesis (REACT:R-HSA-1908954); fatty acid biosynthesis (REACT:R-HSA-1908954) —LEADS_TO→ Developmental delay (HP:0001263). Loss of function in BTD leads to reduced levels of free biotin, which is essential for biotinylation of carboxylases, including acetyl-CoA carboxylase. This indirectly impairs the function of acetyl-CoA carboxylase, a key enzyme in fatty acid biosynthesis, leading to overlapping phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in genes other than BTD and ACACA are the primary drivers of these diseases, or if distinct molecular pathways are definitively identified that do not involve biotin or acetyl-CoA metabolism, this hypothesis would be falsified. Specifically, if a patient with symptoms of biotinidase deficiency has normal biotin levels and normal biotinylation of carboxylases, or a patient with ACCD has normal fatty acid synthesis rates despite the mutation, it would challenge this link.",
+        "gnomad_variant": "The presence of known pathogenic loss-of-function variants in BTD or ACACA with a minor allele frequency greater than 1% in the general population (e.g., gnomAD) would suggest incomplete penetrance or a different underlying mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013493",
+        "diseaseBName": "acetyl-coa carboxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4381,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1323) —DECREASES→ biotin (CHEBI:15843); biotin (CHEBI:15843) —DISRUPTS→ biotinylation (GO:0015700); biotinylation (GO:0015700) —LEADS_TO→ Hypotonia (HP:0001252); ACACA (HGNC:21) —DECREASES→ acetyl-CoA (CHEBI:15351); acetyl-CoA (CHEBI:15351) —DISRUPTS→ fatty acid biosynthesis (REACT:R-HSA-1908954); fatty acid biosynthesis (REACT:R-HSA-1908954) —LEADS_TO→ Developmental delay (HP:0001263). Loss of function in BTD leads to reduced levels of free biotin, which is essential for biotinylation of carboxylases, including acetyl-CoA carboxylase. This indirectly impairs the function of acetyl-CoA carboxylase, a key enzyme in fatty acid biosynthesis, leading to overlapping phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in genes other than BTD and ACACA are the primary drivers of these diseases, or if distinct molecular pathways are definitively identified that do not involve biotin or acetyl-CoA metabolism, this hypothesis would be falsified. Specifically, if a patient with symptoms of biotinidase deficiency has normal biotin levels and normal biotinylation of carboxylases, or a patient with ACCD has normal fatty acid synthesis rates despite the mutation, it would challenge this link.",
+          "gnomad_variant": "The presence of known pathogenic loss-of-function variants in BTD or ACACA with a minor allele frequency greater than 1% in the general population (e.g., gnomAD) would suggest incomplete penetrance or a different underlying mechanism."
+        },
+        "translational": "Understanding this overlap could lead to novel therapeutic strategies. For instance, if biotin supplementation can partially rescue the metabolic defects in ACCD due to improved biotinylation, it could offer a treatment avenue. Conversely, understanding the downstream effects of ACCD on biotin metabolism might inform therapies for biotinidase deficiency."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033546",
+      "diseaseBName": "neurodegeneration, infantile-onset, biotin-responsive",
+      "fitness": 0.4352,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1241) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —DECREASES→ biotin (CHEBI:17488); SLC5A6 (HGNC:11100) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —LEADS_TO→ neurodegeneration (HP:0002092); biotin metabolism (GO:0006703) —LEADS_TO→ seizures (HP:0001250). Loss-of-function mutations in BTD (biotinidase) or SLC5A6 (biotin transporter) disrupt biotin metabolism, leading to a deficiency in biotin. This deficiency impairs the function of biotin-dependent enzymes, ultimately causing neurodegeneration and seizures.",
+      "mechanism_narrative": "BTD (HGNC:1241) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —DECREASES→ biotin (CHEBI:17488); SLC5A6 (HGNC:11100) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —LEADS_TO→ neurodegeneration (HP:0002092); biotin metabolism (GO:0006703) —LEADS_TO→ seizures (HP:0001250). Loss-of-function mutations in BTD (biotinidase) or SLC5A6 (biotin transporter) disrupt biotin metabolism, leading to a deficiency in biotin. This deficiency impairs the function of biotin-dependent enzymes, ultimately causing neurodegeneration and seizures.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in BTD or SLC5A6 with a population frequency in gnomAD exceeding 1% for recessive inheritance, or observing that therapeutic supplementation with biotin does not alleviate the neurological symptoms in patients with mutations in either gene.",
+        "gnomad_variant": "This condition is more about the pathogenicity and penetrance of variants rather than specific gnomAD allele frequency for rare diseases, but a high frequency of a presumed pathogenic variant would be falsifying."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033546",
+        "diseaseBName": "neurodegeneration, infantile-onset, biotin-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4352,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1241) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —DECREASES→ biotin (CHEBI:17488); SLC5A6 (HGNC:11100) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —LEADS_TO→ neurodegeneration (HP:0002092); biotin metabolism (GO:0006703) —LEADS_TO→ seizures (HP:0001250). Loss-of-function mutations in BTD (biotinidase) or SLC5A6 (biotin transporter) disrupt biotin metabolism, leading to a deficiency in biotin. This deficiency impairs the function of biotin-dependent enzymes, ultimately causing neurodegeneration and seizures.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in BTD or SLC5A6 with a population frequency in gnomAD exceeding 1% for recessive inheritance, or observing that therapeutic supplementation with biotin does not alleviate the neurological symptoms in patients with mutations in either gene.",
+          "gnomad_variant": "This condition is more about the pathogenicity and penetrance of variants rather than specific gnomAD allele frequency for rare diseases, but a high frequency of a presumed pathogenic variant would be falsifying."
+        },
+        "translational": "The shared pathway of biotin metabolism suggests that both biotinidase deficiency and biotin-responsive neurodegeneration may be amenable to biotin supplementation therapy, with the degree of response potentially correlating with the specific gene affected and the severity of the metabolic disruption."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859255",
+      "diseaseBName": "peripheral motor neuropathy, childhood-onset, biotin-responsive",
+      "fitness": 0.4346,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Biotinidase (HGNC:1104) —DISRUPTS→ Biotin (CHEBI:15907); Biotin (CHEBI:15907) —LEADS_TO→ Biotin metabolism (GO:0006711); Biotin metabolism (GO:0006711) —LEADS_TO→ Biotin-dependent carboxylation reactions (GO:0046470); Biotin-dependent carboxylation reactions (GO:0046470) —LEADS_TO→ Peripheral neuropathy (HP:0003466); Solute carrier family 5 member 6 (HGNC:10606) —DISRUPTS→ Biotin (CHEBI:15907); Solute carrier family 5 member 6 (HGNC:10606) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset (HP:0007357). Mutations in BTD lead to impaired recycling of biotin, causing a deficiency that affects biotin-dependent carboxylation reactions essential for neuronal function, leading to peripheral neuropathy. Similarly, mutations in SLC5A6 impair biotin uptake, resulting in insufficient biotin availability for these crucial carboxylation reactions, manifesting as childhood-onset peripheral motor neuropathy. Both pathways converge on the disruption of biotin-dependent carboxylation reactions, leading to overlapping neurological phenotypes.",
+      "mechanism_narrative": "Biotinidase (HGNC:1104) —DISRUPTS→ Biotin (CHEBI:15907); Biotin (CHEBI:15907) —LEADS_TO→ Biotin metabolism (GO:0006711); Biotin metabolism (GO:0006711) —LEADS_TO→ Biotin-dependent carboxylation reactions (GO:0046470); Biotin-dependent carboxylation reactions (GO:0046470) —LEADS_TO→ Peripheral neuropathy (HP:0003466); Solute carrier family 5 member 6 (HGNC:10606) —DISRUPTS→ Biotin (CHEBI:15907); Solute carrier family 5 member 6 (HGNC:10606) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset (HP:0007357). Mutations in BTD lead to impaired recycling of biotin, causing a deficiency that affects biotin-dependent carboxylation reactions essential for neuronal function, leading to peripheral neuropathy. Similarly, mutations in SLC5A6 impair biotin uptake, resulting in insufficient biotin availability for these crucial carboxylation reactions, manifesting as childhood-onset peripheral motor neuropathy. Both pathways converge on the disruption of biotin-dependent carboxylation reactions, leading to overlapping neurological phenotypes.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in BTD who do not exhibit any signs of peripheral neuropathy, or identification of individuals with pathogenic variants in SLC5A6 who do not show any signs of peripheral motor neuropathy, would challenge this hypothesis. Alternatively, demonstration that the causal variants in each disease lead to completely independent molecular pathways with no shared downstream effectors.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic variants in BTD or SLC5A6."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859255",
+        "diseaseBName": "peripheral motor neuropathy, childhood-onset, biotin-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.4346,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Biotinidase (HGNC:1104) —DISRUPTS→ Biotin (CHEBI:15907); Biotin (CHEBI:15907) —LEADS_TO→ Biotin metabolism (GO:0006711); Biotin metabolism (GO:0006711) —LEADS_TO→ Biotin-dependent carboxylation reactions (GO:0046470); Biotin-dependent carboxylation reactions (GO:0046470) —LEADS_TO→ Peripheral neuropathy (HP:0003466); Solute carrier family 5 member 6 (HGNC:10606) —DISRUPTS→ Biotin (CHEBI:15907); Solute carrier family 5 member 6 (HGNC:10606) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset (HP:0007357). Mutations in BTD lead to impaired recycling of biotin, causing a deficiency that affects biotin-dependent carboxylation reactions essential for neuronal function, leading to peripheral neuropathy. Similarly, mutations in SLC5A6 impair biotin uptake, resulting in insufficient biotin availability for these crucial carboxylation reactions, manifesting as childhood-onset peripheral motor neuropathy. Both pathways converge on the disruption of biotin-dependent carboxylation reactions, leading to overlapping neurological phenotypes.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in BTD who do not exhibit any signs of peripheral neuropathy, or identification of individuals with pathogenic variants in SLC5A6 who do not show any signs of peripheral motor neuropathy, would challenge this hypothesis. Alternatively, demonstration that the causal variants in each disease lead to completely independent molecular pathways with no shared downstream effectors.",
+          "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic variants in BTD or SLC5A6."
+        },
+        "translational": "This mechanistic link highlights the critical role of biotin in neuronal function and suggests that therapeutic strategies aimed at restoring biotin levels or enhancing biotin utilization could be beneficial for both conditions. This is supported by the existing evidence of biotin responsiveness in some cases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009666",
+      "diseaseBName": "holocarboxylase synthetase deficiency",
+      "fitness": 0.408,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BTD (HGNC:1102) —DISRUPTS→ Biotin recycling (GO:0006710); Biotin recycling (GO:0006710) —DECREASES→ Biotin (CHEBI:17574); HLCS (HGNC:4858) —DISRUPTS→ Biotinylation of carboxylases (GO:0004022); Biotinylation of carboxylases (GO:0004022) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin (CHEBI:17574) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Metabolic acidosis (HP:0001874); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Hypotonia (HP:0001252); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD impair biotin recycling, leading to decreased biotin availability. Loss-of-function mutations in HLCS impair the biotinylation of carboxylases. Both lead to decreased function of biotin-dependent carboxylases, resulting in overlapping phenotypes such as metabolic acidosis, hypotonia, and developmental delay.",
+      "mechanism_narrative": "BTD (HGNC:1102) —DISRUPTS→ Biotin recycling (GO:0006710); Biotin recycling (GO:0006710) —DECREASES→ Biotin (CHEBI:17574); HLCS (HGNC:4858) —DISRUPTS→ Biotinylation of carboxylases (GO:0004022); Biotinylation of carboxylases (GO:0004022) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin (CHEBI:17574) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Metabolic acidosis (HP:0001874); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Hypotonia (HP:0001252); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD impair biotin recycling, leading to decreased biotin availability. Loss-of-function mutations in HLCS impair the biotinylation of carboxylases. Both lead to decreased function of biotin-dependent carboxylases, resulting in overlapping phenotypes such as metabolic acidosis, hypotonia, and developmental delay.",
+      "falsification": {
+        "text": "Demonstration that a patient with a confirmed diagnosis of biotinidase deficiency (MONDO:0009665) has normal activity of holocarboxylase synthetase and normal biotinylation of carboxylases, or vice versa, would falsify this hypothesis of shared downstream metabolic consequence.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either BTD or HLCS in the general population would suggest incomplete penetrance or alternative mechanisms, weakening this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196780"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196780": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009666",
+        "diseaseBName": "holocarboxylase synthetase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196780"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196780": 11
+        },
+        "fitness": 0.408,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BTD (HGNC:1102) —DISRUPTS→ Biotin recycling (GO:0006710); Biotin recycling (GO:0006710) —DECREASES→ Biotin (CHEBI:17574); HLCS (HGNC:4858) —DISRUPTS→ Biotinylation of carboxylases (GO:0004022); Biotinylation of carboxylases (GO:0004022) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin (CHEBI:17574) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Metabolic acidosis (HP:0001874); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Hypotonia (HP:0001252); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD impair biotin recycling, leading to decreased biotin availability. Loss-of-function mutations in HLCS impair the biotinylation of carboxylases. Both lead to decreased function of biotin-dependent carboxylases, resulting in overlapping phenotypes such as metabolic acidosis, hypotonia, and developmental delay.",
+        "falsification": {
+          "text": "Demonstration that a patient with a confirmed diagnosis of biotinidase deficiency (MONDO:0009665) has normal activity of holocarboxylase synthetase and normal biotinylation of carboxylases, or vice versa, would falsify this hypothesis of shared downstream metabolic consequence.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either BTD or HLCS in the general population would suggest incomplete penetrance or alternative mechanisms, weakening this hypothesis."
+        },
+        "translational": "The shared metabolic pathway affected by both disorders suggests that biotin supplementation could be a therapeutic strategy for both conditions, although the efficacy and specific requirements may differ based on the underlying genetic defect and the degree of pathway disruption."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T05:30:38.629Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** biotinidase deficiency (MONDO:0009665)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 8 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | pyruvate carboxylase deficiency disease (MONDO:0009949) | shared pathway | Tier 3 | 0.471 | Reactome:R-HSA-196780 |\n| 2 | propionic acidemia (MONDO:0011628) | shared pathway | Tier 3 | 0.453 | Reactome:R-HSA-196780 |\n| 3 | 3-methylcrotonyl-CoA carboxylase 2 deficiency (MONDO:0008862) | shared pathway | Tier 3 | 0.444 | Reactome:R-HSA-196780 |\n| 4 | 3-methylcrotonyl-CoA carboxylase 1 deficiency (MONDO:0008861) | shared pathway | Tier 3 | 0.444 | Reactome:R-HSA-196780 |\n| 5 | acetyl-coa carboxylase deficiency (MONDO:0013493) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-196780 |\n| 6 | neurodegeneration, infantile-onset, biotin-responsive (MONDO:0033546) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-196780 |\n| 7 | peripheral motor neuropathy, childhood-onset, biotin-responsive (MONDO:0859255) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-196780 |\n| 8 | holocarboxylase synthetase deficiency (MONDO:0009666) | shared pathway | Tier 3 | 0.408 | Reactome:R-HSA-196780 |\n\n### CANDIDATE DETAIL\n#### 1. pyruvate carboxylase deficiency disease  —  Tier 3 — Moderate / Emerging  (fitness 0.471)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1309) —PRODUCES→ Biotin (CHEBI:15350); Biotin (CHEBI:15350) —BINDS→ Biotin-dependent carboxylase activity (GO:0009329); Biotin-dependent carboxylase activity (GO:0009329) —LEADS_TO→ Developmental delay (HP:0001263); PC (HGNC:8725) —DISRUPTS→ Pyruvate (CHEBI:16567); Pyruvate (CHEBI:16567) —PRODUCES→ Acetyl-CoA (CHEBI:16135); Acetyl-CoA (CHEBI:16135) —LEADS_TO→ Tricarboxylic acid cycle (GO:0006099); Tricarboxylic acid cycle (GO:0006099) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in BTD lead to impaired biotin recycling, affecting biotin-dependent carboxylases (like pyruvate carboxylase) crucial for gluconeogenesis and energy production. Similarly, loss-of-function mutations in PC directly impair pyruvate carboxylation, a key anaplerotic reaction for the TCA cycle and gluconeogenesis. Both deficiencies converge on dysregulated energy metabolism, particularly affecting the brain, leading to shared phenotypes such as developmental delay and seizures.\n\n**How to falsify it:** If genetic analysis reveals that variants in BTD or PC are not loss-of-function, or if studies show no significant overlap in the metabolic consequences of biotin deficiency and pyruvate carboxylase deficiency on shared downstream pathways like the TCA cycle, this hypothesis would be falsified. _(variant: rs121918440 (a known pathogenic variant in BTD) is found at a frequency > 0.001 in gnomAD.)_\n\n**Why it matters:** Understanding the shared metabolic vulnerability in biotinidase deficiency and pyruvate carboxylase deficiency could lead to novel therapeutic strategies. For instance, adjunctive biotin supplementation in PC deficiency, or improved understanding of substrate accumulation in BTD, could offer avenues for treatment beyond current supportive care.\n\n---\n\n#### 2. propionic acidemia  —  Tier 3 — Moderate / Emerging  (fitness 0.453)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** Biotinidase (HGNC:1206) —DISRUPTS→ Biotin (CHEBI:16797); Biotin (CHEBI:16797) —DECREASES→ Biotinylation (GO:0015745); Biotinylation (GO:0015745) —LEADS_TO→ Developmental delay (HP:0001251); Propionyl-CoA carboxylase alpha subunit (HGNC:9194) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA carboxylase beta subunit (HGNC:9195) —DISRUPTS→ Propionyl-CoA (CHEBI:17340); Propionyl-CoA (CHEBI:17340) —DECREASES→ Propionate Metabolism (GO:0006097); Propionate Metabolism (GO:0006097) —LEADS_TO→ Metabolic acidosis (HP:0002066). Mutations in BTD lead to impaired biotin recycling, disrupting biotinylation of carboxylases. Mutations in PCCA or PCCB impair the metabolism of propionyl-CoA. Both disruptions lead to distinct but overlapping metabolic disturbances and downstream phenotypic consequences.\n\n**How to falsify it:** Demonstration that the genetic variants identified in BTD patients do not impact biotinidase activity or that variants in PCCA/PCCB do not impair propionyl-CoA metabolism. _(variant: rs749174905 (missense variant in BTD with reported low frequency))_\n\n**Why it matters:** Understanding the shared metabolic pathway disruptions can inform therapeutic strategies, potentially including cofactor supplementation or metabolic interventions, for patients with these distinct but mechanistically linked disorders.\n\n---\n\n#### 3. 3-methylcrotonyl-CoA carboxylase 2 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.444)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1423) —DECREASES→ Biotin (CHEBI:17676); Biotin (CHEBI:17676) —DISRUPTS→ Biotinylation of carboxylases (GO:0006689); MCCC2 (HGNC:7403) —DECREASES→ 3-methylcrotonyl-CoA (CHEBI:17157); 3-methylcrotonyl-CoA (CHEBI:17157) —DISRUPTS→ Propionate metabolism (REACT:R-HSA-168958); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Developmental delay (HP:0001263); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Developmental delay (HP:0001263); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Hypotonia (HP:0001252); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Seizures (HP:0001250); Propionate metabolism (REACT:R-HSA-168958) —LEADS_TO→ Metabolic acidosis (HP:0010977); Biotinylation of carboxylases (GO:0006689) —LEADS_TO→ Metabolic acidosis (HP:0010977). Loss of function in BTD leads to insufficient biotin recycling, impairing biotinylation of carboxylases. Loss of function in MCCC2 directly impairs propionate metabolism. Both disruptions converge on compromised function of biotin-dependent carboxylases and dysregulation of propionate metabolism, leading to overlapping neurodevelopmental and metabolic phenotypes.\n\n**How to falsify it:** The absence of shared phenotypic features or the identification of distinct molecular pathways that do not converge on biotinylation or propionate metabolism would falsify this hypothesis. _(variant: Identification of pathogenic variants in BTD or MCCC2 with a minor allele frequency >0.01 in gnomAD.)_\n\n**Why it matters:** Understanding this overlap could inform diagnostic strategies and therapeutic interventions, potentially exploring biotin supplementation or metabolic support for patients with MCCC2 deficiency, and highlighting the critical role of biotin metabolism in neurological development.\n\n---\n\n#### 4. 3-methylcrotonyl-CoA carboxylase 1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.444)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1264) —DISRUPTS→ Biotin (CHEBI:15743); Biotin (CHEBI:15743) —PRODUCES→ Biotinyl-CoA (CHEBI:17487); Biotinyl-CoA (CHEBI:17487) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Hypotonia (HP:0001252); MCCC1 (HGNC:7204) —DISRUPTS→ 3-methylcrotonyl-CoA (CHEBI:17717); 3-methylcrotonyl-CoA (CHEBI:17717) —PRODUCES→ 3-methylglutaconyl-CoA (CHEBI:17718); 3-methylglutaconyl-CoA (CHEBI:17718) —PRODUCES→ Propionyl-CoA (CHEBI:16120); Propionyl-CoA (CHEBI:16120) —BINDS→ Biotin-dependent carboxylases (GO:0004435); Biotin-dependent carboxylases (GO:0004435) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD lead to impaired biotin recycling, reducing the availability of biotin for biotin-dependent carboxylases. Similarly, loss-of-function mutations in MCCC1 impair the activity of 3-methylcrotonyl-CoA carboxylase, leading to accumulation of 3-methylcrotonyl-CoA and subsequent upstream metabolites, including propionyl-CoA. Both impaired biotinylation and increased propionyl-CoA can disrupt the function of biotin-dependent carboxylases, ultimately converging on shared downstream metabolic dysregulation and phenotypic consequences like hypotonia and developmental delay.\n\n**How to falsify it:** Demonstration that the downstream metabolic effects of biotin deficiency on biotin-dependent carboxylases are entirely independent of the effects of propionyl-CoA accumulation on these same enzymes, or identification of a specific genetic variant in MCCC1 with a pathogenic frequency >1% in gnomAD that explains the entirety of MCCC1 deficiency cases, thus ruling out a broader metabolic link. _(variant: rs74315301)_\n\n**Why it matters:** Understanding this mechanistic overlap could lead to improved diagnostic strategies and potentially synergistic therapeutic approaches for patients with these related metabolic disorders, possibly involving cofactor supplementation or metabolic pathway modulation.\n\n---\n\n#### 5. acetyl-coa carboxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1323) —DECREASES→ biotin (CHEBI:15843); biotin (CHEBI:15843) —DISRUPTS→ biotinylation (GO:0015700); biotinylation (GO:0015700) —LEADS_TO→ Hypotonia (HP:0001252); ACACA (HGNC:21) —DECREASES→ acetyl-CoA (CHEBI:15351); acetyl-CoA (CHEBI:15351) —DISRUPTS→ fatty acid biosynthesis (REACT:R-HSA-1908954); fatty acid biosynthesis (REACT:R-HSA-1908954) —LEADS_TO→ Developmental delay (HP:0001263). Loss of function in BTD leads to reduced levels of free biotin, which is essential for biotinylation of carboxylases, including acetyl-CoA carboxylase. This indirectly impairs the function of acetyl-CoA carboxylase, a key enzyme in fatty acid biosynthesis, leading to overlapping phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that mutations in genes other than BTD and ACACA are the primary drivers of these diseases, or if distinct molecular pathways are definitively identified that do not involve biotin or acetyl-CoA metabolism, this hypothesis would be falsified. Specifically, if a patient with symptoms of biotinidase deficiency has normal biotin levels and normal biotinylation of carboxylases, or a patient with ACCD has normal fatty acid synthesis rates despite the mutation, it would challenge this link. _(variant: The presence of known pathogenic loss-of-function variants in BTD or ACACA with a minor allele frequency greater than 1% in the general population (e.g., gnomAD) would suggest incomplete penetrance or a different underlying mechanism.)_\n\n**Why it matters:** Understanding this overlap could lead to novel therapeutic strategies. For instance, if biotin supplementation can partially rescue the metabolic defects in ACCD due to improved biotinylation, it could offer a treatment avenue. Conversely, understanding the downstream effects of ACCD on biotin metabolism might inform therapies for biotinidase deficiency.\n\n---\n\n#### 6. neurodegeneration, infantile-onset, biotin-responsive  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1241) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —DECREASES→ biotin (CHEBI:17488); SLC5A6 (HGNC:11100) —DISRUPTS→ biotin metabolism (GO:0006703); biotin metabolism (GO:0006703) —LEADS_TO→ neurodegeneration (HP:0002092); biotin metabolism (GO:0006703) —LEADS_TO→ seizures (HP:0001250). Loss-of-function mutations in BTD (biotinidase) or SLC5A6 (biotin transporter) disrupt biotin metabolism, leading to a deficiency in biotin. This deficiency impairs the function of biotin-dependent enzymes, ultimately causing neurodegeneration and seizures.\n\n**How to falsify it:** Identification of pathogenic variants in BTD or SLC5A6 with a population frequency in gnomAD exceeding 1% for recessive inheritance, or observing that therapeutic supplementation with biotin does not alleviate the neurological symptoms in patients with mutations in either gene. _(variant: This condition is more about the pathogenicity and penetrance of variants rather than specific gnomAD allele frequency for rare diseases, but a high frequency of a presumed pathogenic variant would be falsifying.)_\n\n**Why it matters:** The shared pathway of biotin metabolism suggests that both biotinidase deficiency and biotin-responsive neurodegeneration may be amenable to biotin supplementation therapy, with the degree of response potentially correlating with the specific gene affected and the severity of the metabolic disruption.\n\n---\n\n#### 7. peripheral motor neuropathy, childhood-onset, biotin-responsive  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** Biotinidase (HGNC:1104) —DISRUPTS→ Biotin (CHEBI:15907); Biotin (CHEBI:15907) —LEADS_TO→ Biotin metabolism (GO:0006711); Biotin metabolism (GO:0006711) —LEADS_TO→ Biotin-dependent carboxylation reactions (GO:0046470); Biotin-dependent carboxylation reactions (GO:0046470) —LEADS_TO→ Peripheral neuropathy (HP:0003466); Solute carrier family 5 member 6 (HGNC:10606) —DISRUPTS→ Biotin (CHEBI:15907); Solute carrier family 5 member 6 (HGNC:10606) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset (HP:0007357). Mutations in BTD lead to impaired recycling of biotin, causing a deficiency that affects biotin-dependent carboxylation reactions essential for neuronal function, leading to peripheral neuropathy. Similarly, mutations in SLC5A6 impair biotin uptake, resulting in insufficient biotin availability for these crucial carboxylation reactions, manifesting as childhood-onset peripheral motor neuropathy. Both pathways converge on the disruption of biotin-dependent carboxylation reactions, leading to overlapping neurological phenotypes.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in BTD who do not exhibit any signs of peripheral neuropathy, or identification of individuals with pathogenic variants in SLC5A6 who do not show any signs of peripheral motor neuropathy, would challenge this hypothesis. Alternatively, demonstration that the causal variants in each disease lead to completely independent molecular pathways with no shared downstream effectors. _(variant: gnomAD allele frequency > 0.01 for pathogenic variants in BTD or SLC5A6.)_\n\n**Why it matters:** This mechanistic link highlights the critical role of biotin in neuronal function and suggests that therapeutic strategies aimed at restoring biotin levels or enhancing biotin utilization could be beneficial for both conditions. This is supported by the existing evidence of biotin responsiveness in some cases.\n\n---\n\n#### 8. holocarboxylase synthetase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.408)\n**Link type:** shared pathway (Reactome:R-HSA-196780)\n\n**Proposed mechanism:** BTD (HGNC:1102) —DISRUPTS→ Biotin recycling (GO:0006710); Biotin recycling (GO:0006710) —DECREASES→ Biotin (CHEBI:17574); HLCS (HGNC:4858) —DISRUPTS→ Biotinylation of carboxylases (GO:0004022); Biotinylation of carboxylases (GO:0004022) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin (CHEBI:17574) —DECREASES→ Biotin-dependent carboxylation (GO:0006087); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Metabolic acidosis (HP:0001874); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Hypotonia (HP:0001252); Biotin-dependent carboxylation (GO:0006087) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in BTD impair biotin recycling, leading to decreased biotin availability. Loss-of-function mutations in HLCS impair the biotinylation of carboxylases. Both lead to decreased function of biotin-dependent carboxylases, resulting in overlapping phenotypes such as metabolic acidosis, hypotonia, and developmental delay.\n\n**How to falsify it:** Demonstration that a patient with a confirmed diagnosis of biotinidase deficiency (MONDO:0009665) has normal activity of holocarboxylase synthetase and normal biotinylation of carboxylases, or vice versa, would falsify this hypothesis of shared downstream metabolic consequence. _(variant: Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either BTD or HLCS in the general population would suggest incomplete penetrance or alternative mechanisms, weakening this hypothesis.)_\n\n**Why it matters:** The shared metabolic pathway affected by both disorders suggests that biotin supplementation could be a therapeutic strategy for both conditions, although the efficacy and specific requirements may differ based on the underlying genetic defect and the degree of pathway disruption.\n\n---"
+}
