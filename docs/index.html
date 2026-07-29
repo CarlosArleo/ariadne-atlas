@@ -256,6 +256,16 @@
         <div class="inspector-card">
             <h3>Discovery Controls</h3>
             <div class="control-row">
+                <label for="filter-tier">Confidence Tier:</label>
+                <select id="filter-tier">
+                    <option value="all" selected>All Tiers</option>
+                    <option value="Tier 1">Tier 1 – Definitive</option>
+                    <option value="Tier 2">Tier 2 – Strong</option>
+                    <option value="Tier 3">Tier 3 – Emerging</option>
+                    <option value="Tier 5">Tier 5 – Refuted</option>
+                </select>
+            </div>
+            <div class="control-row">
                 <label for="filter-cqs">CQS Quality Score:</label>
                 <select id="filter-cqs">
                     <option value="all" selected>All CQS Scores</option>
@@ -700,6 +710,8 @@ function getFilteredCandidates() {
         if (hubVal === 'h1' && c.hub > 2) return false;
 
         if (famFilter !== 'all' && c.family !== famFilter) return false;
+        const tierFilter = document.getElementById('filter-tier')?.value || 'all';
+        if (tierFilter !== 'all' && c.tier !== tierFilter) return false;
 
         if (search) {
             const haystack = `${c.seedName} ${c.partnerName} ${c.mechanism}`.toLowerCase();
@@ -1267,6 +1279,7 @@ function closeCqsModal() {
 document.getElementById('filter-cqs').addEventListener('change', renderApp);
 document.getElementById('filter-hub').addEventListener('change', renderApp);
 document.getElementById('filter-family').addEventListener('change', renderApp);
+document.getElementById('filter-tier').addEventListener('change', renderApp);
 document.getElementById('search-input').addEventListener('input', renderApp);
 window.addEventListener('resize', renderApp);
 document.addEventListener('keydown', e => { 
