@@ -10,7 +10,7 @@
        OBSIDIAN DARK CANVAS DESIGN TOKENS
        ============================================================ */
     :root {
-        --bg: #121214; /* Soft Dark Charcoal */
+        --bg: #121214; /* FA Cup Charcoal Background */
         --surface: rgba(24, 24, 27, 0.75);
         --surface-solid: #18181b;
         --text-primary: #f8fafc;
@@ -31,7 +31,6 @@
         --fam-mitochondrial: #3b82f6;/* Blue */
         --fam-other: #71717a;       /* Slate */
 
-        /* Scannable Chip Styles */
         --chip-gene-bg: rgba(56, 189, 248, 0.15); --chip-gene-text: #38bdf8;
         --chip-pathway-bg: rgba(16, 185, 129, 0.15); --chip-pathway-text: #10b981;
         --chip-metabolite-bg: rgba(245, 158, 11, 0.15); --chip-metabolite-text: #f59e0b;
@@ -164,7 +163,7 @@
     #legend-list span { display: flex; align-items: center; gap: 8px; }
     #legend-list i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
-    /* Modals (Dossier & CQS Guide) */
+    /* Modals */
     .modal-backdrop {
         display: none; position: fixed; inset: 0; background: rgba(18,18,20,0.85);
         backdrop-filter: blur(14px); z-index: 100; align-items: center; justify-content: center; padding: 24px;
@@ -771,6 +770,36 @@ function renderSidebar(candidates) {
     sidebar.innerHTML = html;
 }
 
+// ANNULAR BEZIER RIBBON GENERATOR (NO CENTRAL CROSSINGS)
+function drawAnnularRibbon(sAngle, rInner, tAngle, rOuter) {
+    const x1 = rInner * Math.sin(sAngle);
+    const y1 = -rInner * Math.cos(sAngle);
+
+    const x2 = rOuter * Math.sin(tAngle);
+    const y2 = -rOuter * Math.cos(tAngle);
+
+    // Control point radius stays in donut space between rings
+    const rMid = rInner + (rOuter - rInner) * 0.5;
+
+    let diff = tAngle - sAngle;
+    while (diff < -Math.PI) diff += 2 * Math.PI;
+    while (diff > Math.PI) diff -= 2 * Math.PI;
+
+    // Tangential offset for opposite side connections so curves sweep around center
+    const sidewayOffset = (Math.abs(diff) > Math.PI * 0.7) ? (diff > 0 ? 0.35 : -0.35) : 0;
+
+    const cp1Angle = sAngle + sidewayOffset;
+    const cp2Angle = tAngle - sidewayOffset;
+
+    const cx1 = rMid * Math.sin(cp1Angle);
+    const cy1 = -rMid * Math.cos(cp1Angle);
+
+    const cx2 = rMid * Math.sin(cp2Angle);
+    const cy2 = -rMid * Math.cos(cp2Angle);
+
+    return `M ${x1},${y1} C ${cx1},${cy1} ${cx2},${cy2} ${x2},${y2}`;
+}
+
 // D3 Concentric Radial Canvas
 let allLinksData = [];
 
@@ -849,7 +878,6 @@ function renderRadial(candidates) {
     const seedPorts = allocatePorts(seedLayout, 'seedName');
     const partnerPorts = allocatePorts(partnerLayout, 'partnerName');
 
-    const linkGen = d3.linkRadial().angle(d => d.angle).radius(d => d.radius);
     allLinksData = candidates.map(c => {
         const s = seedPorts[c.id] || { start: 0, end: 0 };
         const t = partnerPorts[c.id] || { start: 0, end: 0 };
@@ -863,12 +891,12 @@ function renderRadial(candidates) {
     const arcInner = d3.arc().innerRadius(R_inner - 10).outerRadius(R_inner);
     const arcOuter = d3.arc().innerRadius(R_outer).outerRadius(R_outer + 10);
 
-    // Ribbons
+    // Ribbons (Drawing with Central Void Engine - No Crossing Inner Circle)
     g.append('g').selectAll('path')
         .data(allLinksData)
         .join('path')
         .attr('id', l => `ribbon-${l.cand.id}`)
-        .attr('d', l => linkGen({ source: { angle: l.seedAngle, radius: R_inner }, target: { angle: l.partnerAngle, radius: R_outer } }))
+        .attr('d', l => drawAnnularRibbon(l.seedAngle, R_inner, l.partnerAngle, R_outer))
         .attr('fill', 'none')
         .attr('stroke', l => l.cand.familyColor)
         .attr('stroke-width', l => Math.max(1.2, l.cand.fitness * 3.5))
@@ -898,9 +926,9 @@ function renderRadial(candidates) {
             .attr('class', 'seed-label')
             .attr('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
             .attr('text-anchor', flip ? 'start' : 'end')
-            .attr('dy', '0.32em').attr('font-size', '10px').attr('font-weight', 700)
+            .attr('dy', '0.32em').attr('font-size', '3.0px').attr('font-weight', 600)
             .attr('fill', '#f8fafc')
-            .text(name.length > 24 ? name.slice(0, 22) + '…' : name);
+            .text(name.length > 20 ? name.slice(0, 18) + '…' : name);
     });
     seedSel.on('mouseover', (event, [name]) => highlightBySeed(name)).on('mouseout', clearHighlight);
     seedSel.on('click', (event, [name]) => {
@@ -931,14 +959,14 @@ function renderRadial(candidates) {
             .attr('class', 'partner-label')
             .attr('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
             .attr('text-anchor', flip ? 'end' : 'start')
-            .attr('dy', '0.32em').attr('font-size', '7.5px')
+            .attr('dy', '0.32em').attr('font-size', '3.0px')
             .attr('fill', '#94a3b8')
-            .text(name.length > 26 ? name.slice(0, 24) + '…' : name);
+            .text(name.length > 22 ? name.slice(0, 20) + '…' : name);
     });
     partnerSel.on('mouseover', (event, [name]) => highlightByPartner(name)).on('mouseout', clearHighlight);
 
     // Family Sector Labels
-    const famLabelR = R_outer + 44;
+    const famLabelR = R_outer + 80;
     familyOrder.forEach(f => {
         const range = partnerLayout['__famRange_' + f];
         if (!range) return;
@@ -948,7 +976,7 @@ function renderRadial(candidates) {
         g.append('text')
             .attr('x', x).attr('y', y)
             .attr('text-anchor', 'middle')
-            .attr('font-size', '7.5px').attr('font-weight', 700)
+            .attr('font-size', '11px').attr('font-weight', 700)
             .attr('fill', famObj.color)
             .text(famObj.label || f);
     });
@@ -992,7 +1020,7 @@ function highlightRel(id) {
         const node = d3.select(this);
         const isMatch = node.attr('data-name') === seedName;
         node.select('text')
-            .attr('font-size', isMatch ? '13px' : '7.5px')
+            .attr('font-size', isMatch ? '13px' : '3.0px')
             .attr('fill', isMatch ? '#38bdf8' : '#334155')
             .attr('font-weight', isMatch ? '900' : '400');
     });
@@ -1002,7 +1030,7 @@ function highlightRel(id) {
         const node = d3.select(this);
         const isMatch = node.attr('data-name') === partnerName;
         node.select('text')
-            .attr('font-size', isMatch ? '13px' : '7px')
+            .attr('font-size', isMatch ? '13px' : '3.0px')
             .attr('fill', isMatch ? '#ffffff' : '#334155')
             .attr('font-weight', isMatch ? '900' : '400');
     });
@@ -1014,23 +1042,75 @@ function highlightRel(id) {
 }
 
 function highlightBySeed(name) {
+    const connectedPartners = new Set(
+        allLinksData.filter(l => l.cand.seedName === name).map(l => l.cand.partnerName)
+    );
+
     d3.selectAll('path[id^="ribbon-"]').attr('opacity', l => (l && l.cand && l.cand.seedName === name) ? 0.9 : 0.03);
-    d3.selectAll('g.seed-node text').attr('fill', function() {
-        return d3.select(this.parentNode).attr('data-name') === name ? '#38bdf8' : '#334155';
-    });
+
+    d3.selectAll('g.seed-node text')
+        .attr('font-size', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '13px' : '3.0px';
+        })
+        .attr('font-weight', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '900' : '400';
+        })
+        .attr('fill', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '#38bdf8' : '#334155';
+        });
+
+    d3.selectAll('g.partner-node text')
+        .attr('font-size', function() {
+            const pName = d3.select(this.parentNode).attr('data-name');
+            return connectedPartners.has(pName) ? '11px' : '3.0px';
+        })
+        .attr('font-weight', function() {
+            const pName = d3.select(this.parentNode).attr('data-name');
+            return connectedPartners.has(pName) ? '800' : '400';
+        })
+        .attr('fill', function() {
+            const pName = d3.select(this.parentNode).attr('data-name');
+            return connectedPartners.has(pName) ? '#ffffff' : '#334155';
+        });
 }
 
 function highlightByPartner(name) {
+    const connectedSeeds = new Set(
+        allLinksData.filter(l => l.cand.partnerName === name).map(l => l.cand.seedName)
+    );
+
     d3.selectAll('path[id^="ribbon-"]').attr('opacity', l => (l && l.cand && l.cand.partnerName === name) ? 0.9 : 0.03);
-    d3.selectAll('g.partner-node text').attr('fill', function() {
-        return d3.select(this.parentNode).attr('data-name') === name ? '#ffffff' : '#334155';
-    });
+
+    d3.selectAll('g.partner-node text')
+        .attr('font-size', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '13px' : '3.0px';
+        })
+        .attr('font-weight', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '900' : '400';
+        })
+        .attr('fill', function() {
+            return d3.select(this.parentNode).attr('data-name') === name ? '#ffffff' : '#334155';
+        });
+
+    d3.selectAll('g.seed-node text')
+        .attr('font-size', function() {
+            const sName = d3.select(this.parentNode).attr('data-name');
+            return connectedSeeds.has(sName) ? '11px' : '3.0px';
+        })
+        .attr('font-weight', function() {
+            const sName = d3.select(this.parentNode).attr('data-name');
+            return connectedSeeds.has(sName) ? '800' : '400';
+        })
+        .attr('fill', function() {
+            const sName = d3.select(this.parentNode).attr('data-name');
+            return connectedSeeds.has(sName) ? '#38bdf8' : '#334155';
+        });
 }
 
 function clearHighlight() {
     d3.selectAll('path[id^="ribbon-"]').attr('opacity', 0.32).attr('stroke-width', l => Math.max(1.2, l.cand.fitness * 3.5));
-    d3.selectAll('g.seed-node text').attr('font-size', '7.5px').attr('fill', '#f8fafc').attr('font-weight', '600');
-    d3.selectAll('g.partner-node text').attr('font-size', '7px').attr('fill', '#94a3b8').attr('font-weight', '400');
+    d3.selectAll('g.seed-node text').attr('font-size', '3.0px').attr('fill', '#f8fafc').attr('font-weight', '600').attr('opacity', '1');
+    d3.selectAll('g.partner-node text').attr('font-size', '3.0px').attr('fill', '#94a3b8').attr('font-weight', '400').attr('opacity', '1');
     document.querySelectorAll('.cqs-card.active').forEach(c => c.classList.remove('active'));
 }
 
