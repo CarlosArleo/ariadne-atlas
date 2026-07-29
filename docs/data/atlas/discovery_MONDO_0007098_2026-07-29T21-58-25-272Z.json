@@ -1,0 +1,487 @@
+{
+  "seed": {
+    "id": "MONDO:0007098",
+    "name": "ACys amyloidosis"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 20,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011583",
+      "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+      "fitness": 0.4525,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2546) —PRODUCES→ Cystatin C (CHEBI:17486); Cystatin C (CHEBI:17486) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP (HGNC:640) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP processing and amyloid beta production (GO:0001540) —PRODUCES→ Amyloid beta (IP:000001); Amyloid beta (IP:000001) —LEADS_TO→ Extracellular matrix deposition and remodeling (GO:0030198); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003279); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030189). Mutations in CST3 lead to altered cystatin C levels which disrupt APP processing, contributing to amyloidosis. Similarly, mutations in APP directly lead to altered APP processing and the formation of amyloid beta, which then drives extracellular matrix deposition and remodeling, manifesting as amyloidosis and cerebral amyloid angiopathy.",
+      "mechanism_narrative": "CST3 (HGNC:2546) —PRODUCES→ Cystatin C (CHEBI:17486); Cystatin C (CHEBI:17486) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP (HGNC:640) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP processing and amyloid beta production (GO:0001540) —PRODUCES→ Amyloid beta (IP:000001); Amyloid beta (IP:000001) —LEADS_TO→ Extracellular matrix deposition and remodeling (GO:0030198); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003279); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030189). Mutations in CST3 lead to altered cystatin C levels which disrupt APP processing, contributing to amyloidosis. Similarly, mutations in APP directly lead to altered APP processing and the formation of amyloid beta, which then drives extracellular matrix deposition and remodeling, manifesting as amyloidosis and cerebral amyloid angiopathy.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in CST3 or APP in patients with ACys amyloidosis or APP-related CAA, respectively, that does not lead to altered APP processing or amyloid deposition in cellular or animal models. Alternatively, if the proposed shared pathway of 'extracellular matrix deposition and remodeling' is shown to be completely independent for the two diseases, this hypothesis would be falsified.",
+        "gnomad_variant": "Pathogenic variants in CST3 or APP associated with these diseases are absent or extremely rare in relevant gnomAD populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011583",
+        "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.4525,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2546) —PRODUCES→ Cystatin C (CHEBI:17486); Cystatin C (CHEBI:17486) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP (HGNC:640) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP processing and amyloid beta production (GO:0001540) —PRODUCES→ Amyloid beta (IP:000001); Amyloid beta (IP:000001) —LEADS_TO→ Extracellular matrix deposition and remodeling (GO:0030198); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003279); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030189). Mutations in CST3 lead to altered cystatin C levels which disrupt APP processing, contributing to amyloidosis. Similarly, mutations in APP directly lead to altered APP processing and the formation of amyloid beta, which then drives extracellular matrix deposition and remodeling, manifesting as amyloidosis and cerebral amyloid angiopathy.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in CST3 or APP in patients with ACys amyloidosis or APP-related CAA, respectively, that does not lead to altered APP processing or amyloid deposition in cellular or animal models. Alternatively, if the proposed shared pathway of 'extracellular matrix deposition and remodeling' is shown to be completely independent for the two diseases, this hypothesis would be falsified.",
+          "gnomad_variant": "Pathogenic variants in CST3 or APP associated with these diseases are absent or extremely rare in relevant gnomAD populations."
+        },
+        "translational": "Understanding the shared mechanistic link involving APP processing and amyloid deposition could lead to the development of therapeutic strategies targeting common pathways for both ACys amyloidosis and APP-related cerebral amyloid angiopathy, potentially including inhibitors of APP processing or agents that promote amyloid clearance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007088",
+      "diseaseBName": "Alzheimer disease type 1",
+      "fitness": 0.4341,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2530) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APP (HGNC:617) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1168796); Amyloid precursor protein processing (REACT:R-HSA-1168796) —LEADS_TO→ Amyloid beta accumulation (CHEBI:77305); Amyloid beta accumulation (CHEBI:77305) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Gain-of-function mutations in CST3 lead to ACys amyloidosis. In parallel, mutations in APP lead to aberrant amyloid precursor protein processing, resulting in amyloid beta accumulation, which is a hallmark of Alzheimer disease type 1. The shared convergence is the pathological accumulation of amyloid species, albeit with different primary protein origins.",
+      "mechanism_narrative": "CST3 (HGNC:2530) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APP (HGNC:617) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1168796); Amyloid precursor protein processing (REACT:R-HSA-1168796) —LEADS_TO→ Amyloid beta accumulation (CHEBI:77305); Amyloid beta accumulation (CHEBI:77305) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Gain-of-function mutations in CST3 lead to ACys amyloidosis. In parallel, mutations in APP lead to aberrant amyloid precursor protein processing, resulting in amyloid beta accumulation, which is a hallmark of Alzheimer disease type 1. The shared convergence is the pathological accumulation of amyloid species, albeit with different primary protein origins.",
+      "falsification": {
+        "text": "If variants in CST3 are found to be protective or neutral in individuals with Alzheimer disease type 1, or if variants in APP are found to be causative for ACys amyloidosis, this hypothesis would be falsified.",
+        "gnomad_variant": "rs115605868"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007088",
+        "diseaseBName": "Alzheimer disease type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.4341,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2530) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APP (HGNC:617) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1168796); Amyloid precursor protein processing (REACT:R-HSA-1168796) —LEADS_TO→ Amyloid beta accumulation (CHEBI:77305); Amyloid beta accumulation (CHEBI:77305) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Gain-of-function mutations in CST3 lead to ACys amyloidosis. In parallel, mutations in APP lead to aberrant amyloid precursor protein processing, resulting in amyloid beta accumulation, which is a hallmark of Alzheimer disease type 1. The shared convergence is the pathological accumulation of amyloid species, albeit with different primary protein origins.",
+        "falsification": {
+          "text": "If variants in CST3 are found to be protective or neutral in individuals with Alzheimer disease type 1, or if variants in APP are found to be causative for ACys amyloidosis, this hypothesis would be falsified.",
+          "gnomad_variant": "rs115605868"
+        },
+        "translational": "Understanding the shared pathway of amyloid formation despite different causal proteins offers potential therapeutic avenues. Targeting the common downstream effects of amyloid accumulation, such as protein aggregation and clearance mechanisms, could provide a unified approach to treating both ACys amyloidosis and Alzheimer disease type 1."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010017",
+      "diseaseBName": "sea-blue histiocyte syndrome",
+      "fitness": 0.3981,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2545) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); APOE (HGNC:549) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); CST3 (HGNC:2545) —DISRUPTS→ macrophage function; APOE (HGNC:549) —DISRUPTS→ macrophage function; lysosomal degradation pathway (GO:0005765) —DECREASES→ misfolded proteins/cellular debris; macrophage function —DECREASES→ misfolded proteins/cellular debris; misfolded proteins/cellular debris —LEADS_TO→ amyloid deposition (HP:0003294); misfolded proteins/cellular debris —LEADS_TO→ sea-blue histiocytes (HP:0011704). Loss-of-function mutations in CST3 and APOE disrupt the normal function of the lysosomal degradation pathway and macrophage function, leading to the accumulation of cellular debris and misfolded proteins. This accumulation manifests as amyloid deposition in ACys amyloidosis and the presence of sea-blue histiocytes in sea-blue histiocyte syndrome.",
+      "mechanism_narrative": "CST3 (HGNC:2545) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); APOE (HGNC:549) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); CST3 (HGNC:2545) —DISRUPTS→ macrophage function; APOE (HGNC:549) —DISRUPTS→ macrophage function; lysosomal degradation pathway (GO:0005765) —DECREASES→ misfolded proteins/cellular debris; macrophage function —DECREASES→ misfolded proteins/cellular debris; misfolded proteins/cellular debris —LEADS_TO→ amyloid deposition (HP:0003294); misfolded proteins/cellular debris —LEADS_TO→ sea-blue histiocytes (HP:0011704). Loss-of-function mutations in CST3 and APOE disrupt the normal function of the lysosomal degradation pathway and macrophage function, leading to the accumulation of cellular debris and misfolded proteins. This accumulation manifests as amyloid deposition in ACys amyloidosis and the presence of sea-blue histiocytes in sea-blue histiocyte syndrome.",
+      "falsification": {
+        "text": "Demonstration that loss-of-function mutations in CST3 or APOE specifically and exclusively affect one of the two diseases, without any impact on the other's core pathology, or identification of distinct, non-overlapping molecular pathways as the primary drivers for each disease.",
+        "gnomad_variant": "Homozygous or compound heterozygous loss-of-function variants in CST3 or APOE with a combined gnomAD allele frequency > 0.01%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010017",
+        "diseaseBName": "sea-blue histiocyte syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3981,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2545) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); APOE (HGNC:549) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); CST3 (HGNC:2545) —DISRUPTS→ macrophage function; APOE (HGNC:549) —DISRUPTS→ macrophage function; lysosomal degradation pathway (GO:0005765) —DECREASES→ misfolded proteins/cellular debris; macrophage function —DECREASES→ misfolded proteins/cellular debris; misfolded proteins/cellular debris —LEADS_TO→ amyloid deposition (HP:0003294); misfolded proteins/cellular debris —LEADS_TO→ sea-blue histiocytes (HP:0011704). Loss-of-function mutations in CST3 and APOE disrupt the normal function of the lysosomal degradation pathway and macrophage function, leading to the accumulation of cellular debris and misfolded proteins. This accumulation manifests as amyloid deposition in ACys amyloidosis and the presence of sea-blue histiocytes in sea-blue histiocyte syndrome.",
+        "falsification": {
+          "text": "Demonstration that loss-of-function mutations in CST3 or APOE specifically and exclusively affect one of the two diseases, without any impact on the other's core pathology, or identification of distinct, non-overlapping molecular pathways as the primary drivers for each disease.",
+          "gnomad_variant": "Homozygous or compound heterozygous loss-of-function variants in CST3 or APOE with a combined gnomAD allele frequency > 0.01%"
+        },
+        "translational": "Understanding the shared role of CST3 and APOE in lysosomal degradation and macrophage function could lead to therapeutic strategies targeting these pathways to simultaneously ameliorate the pathologies of both ACys amyloidosis and sea-blue histiocyte syndrome, such as enhancing lysosomal clearance or modulating macrophage activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032766",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+      "fitness": 0.3978,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2570) —PRODUCES→ Cystatin C (UniProt:P04070); Cystatin C (UniProt:P04070) —DISRUPTS→ Amyloid fibril formation (GO:0007049); Amyloid fibril formation (GO:0007049) —LEADS_TO→ Amyloidosis (HP:0002656); APOA1 (HGNC:600) —PRODUCES→ Apolipoprotein A-I (UniProt:P02652); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Lipoprotein metabolism (GO:0006629); Lipoprotein metabolism (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003211); Cystatin C (UniProt:P04070) —DISRUPTS→ Protein homeostasis (GO:0006464); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Protein homeostasis (GO:0006464). Loss-of-function in CST3 leads to reduced functional Cystatin C, contributing to amyloid formation and ACys amyloidosis. Similarly, loss-of-function in APOA1 leads to reduced functional Apolipoprotein A-I, impacting lipoprotein metabolism and causing hypoalphalipoproteinemia. Both proteins, Cystatin C and Apolipoprotein A-I, play roles in protein homeostasis, and their dysregulation impacts distinct but related cellular processes that converge on compromised protein quality control.",
+      "mechanism_narrative": "CST3 (HGNC:2570) —PRODUCES→ Cystatin C (UniProt:P04070); Cystatin C (UniProt:P04070) —DISRUPTS→ Amyloid fibril formation (GO:0007049); Amyloid fibril formation (GO:0007049) —LEADS_TO→ Amyloidosis (HP:0002656); APOA1 (HGNC:600) —PRODUCES→ Apolipoprotein A-I (UniProt:P02652); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Lipoprotein metabolism (GO:0006629); Lipoprotein metabolism (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003211); Cystatin C (UniProt:P04070) —DISRUPTS→ Protein homeostasis (GO:0006464); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Protein homeostasis (GO:0006464). Loss-of-function in CST3 leads to reduced functional Cystatin C, contributing to amyloid formation and ACys amyloidosis. Similarly, loss-of-function in APOA1 leads to reduced functional Apolipoprotein A-I, impacting lipoprotein metabolism and causing hypoalphalipoproteinemia. Both proteins, Cystatin C and Apolipoprotein A-I, play roles in protein homeostasis, and their dysregulation impacts distinct but related cellular processes that converge on compromised protein quality control.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CST3 or APOA1 with a minor allele frequency > 1% in gnomAD would challenge the proposed causality."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032766",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3978,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2570) —PRODUCES→ Cystatin C (UniProt:P04070); Cystatin C (UniProt:P04070) —DISRUPTS→ Amyloid fibril formation (GO:0007049); Amyloid fibril formation (GO:0007049) —LEADS_TO→ Amyloidosis (HP:0002656); APOA1 (HGNC:600) —PRODUCES→ Apolipoprotein A-I (UniProt:P02652); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Lipoprotein metabolism (GO:0006629); Lipoprotein metabolism (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003211); Cystatin C (UniProt:P04070) —DISRUPTS→ Protein homeostasis (GO:0006464); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Protein homeostasis (GO:0006464). Loss-of-function in CST3 leads to reduced functional Cystatin C, contributing to amyloid formation and ACys amyloidosis. Similarly, loss-of-function in APOA1 leads to reduced functional Apolipoprotein A-I, impacting lipoprotein metabolism and causing hypoalphalipoproteinemia. Both proteins, Cystatin C and Apolipoprotein A-I, play roles in protein homeostasis, and their dysregulation impacts distinct but related cellular processes that converge on compromised protein quality control.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CST3 or APOA1 with a minor allele frequency > 1% in gnomAD would challenge the proposed causality."
+        },
+        "translational": "Understanding the shared pathway of protein homeostasis dysregulation could reveal common therapeutic targets for proteinopathies and lipid metabolism disorders. Strategies aimed at enhancing protein clearance or refolding could potentially benefit both ACys amyloidosis and hypoalphalipoproteinemia patients."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012725",
+      "diseaseBName": "lipoprotein glomerulopathy",
+      "fitness": 0.3965,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2506) —PRODUCES→ Cystatin C amyloidogenic fragments (CHEBI:61907); Cystatin C amyloidogenic fragments (CHEBI:61907) —DISRUPTS→ Amyloid fibril formation (GO:0002151); Amyloid fibril formation (GO:0002151) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOE (HGNC:576) —PRODUCES→ Dysfunctional Apolipoprotein E (CHEBI:57707); Dysfunctional Apolipoprotein E (CHEBI:57707) —DISRUPTS→ Proteasomal degradation (GO:0006511); Proteasomal degradation (GO:0006511) —DECREASES→ Extracellular matrix deposition (GO:0005615); Amyloid fibril formation (GO:0002151) —INCREASES→ Extracellular matrix deposition (GO:0005615); Extracellular matrix deposition (GO:0005615) —LEADS_TO→ Lipoprotein glomerulopathy (MONDO:0012725). Loss-of-function mutations in CST3 lead to the production of aberrant cystatin C fragments that disrupt amyloid fibril formation, ultimately contributing to ACys amyloidosis. Concurrently, loss-of-function mutations in APOE result in dysfunctional apolipoprotein E, which impairs proteasomal degradation. The convergence occurs at the level of proteasomal degradation, where both impaired amyloid clearance and dysfunctional apolipoprotein handling lead to increased extracellular matrix deposition and the respective disease phenotypes.",
+      "mechanism_narrative": "CST3 (HGNC:2506) —PRODUCES→ Cystatin C amyloidogenic fragments (CHEBI:61907); Cystatin C amyloidogenic fragments (CHEBI:61907) —DISRUPTS→ Amyloid fibril formation (GO:0002151); Amyloid fibril formation (GO:0002151) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOE (HGNC:576) —PRODUCES→ Dysfunctional Apolipoprotein E (CHEBI:57707); Dysfunctional Apolipoprotein E (CHEBI:57707) —DISRUPTS→ Proteasomal degradation (GO:0006511); Proteasomal degradation (GO:0006511) —DECREASES→ Extracellular matrix deposition (GO:0005615); Amyloid fibril formation (GO:0002151) —INCREASES→ Extracellular matrix deposition (GO:0005615); Extracellular matrix deposition (GO:0005615) —LEADS_TO→ Lipoprotein glomerulopathy (MONDO:0012725). Loss-of-function mutations in CST3 lead to the production of aberrant cystatin C fragments that disrupt amyloid fibril formation, ultimately contributing to ACys amyloidosis. Concurrently, loss-of-function mutations in APOE result in dysfunctional apolipoprotein E, which impairs proteasomal degradation. The convergence occurs at the level of proteasomal degradation, where both impaired amyloid clearance and dysfunctional apolipoprotein handling lead to increased extracellular matrix deposition and the respective disease phenotypes.",
+      "falsification": {
+        "text": "The presence of common pathogenic variants in CST3 and APOE with consistent loss-of-function effects in individuals diagnosed with both ACys amyloidosis and lipoprotein glomerulopathy, or demonstration that mutations in one gene do not impact the clearance pathways affected by the other.",
+        "gnomad_variant": "Common pathogenic variants in CST3 or APOE with allele frequencies >0.1% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012725",
+        "diseaseBName": "lipoprotein glomerulopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3965,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2506) —PRODUCES→ Cystatin C amyloidogenic fragments (CHEBI:61907); Cystatin C amyloidogenic fragments (CHEBI:61907) —DISRUPTS→ Amyloid fibril formation (GO:0002151); Amyloid fibril formation (GO:0002151) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOE (HGNC:576) —PRODUCES→ Dysfunctional Apolipoprotein E (CHEBI:57707); Dysfunctional Apolipoprotein E (CHEBI:57707) —DISRUPTS→ Proteasomal degradation (GO:0006511); Proteasomal degradation (GO:0006511) —DECREASES→ Extracellular matrix deposition (GO:0005615); Amyloid fibril formation (GO:0002151) —INCREASES→ Extracellular matrix deposition (GO:0005615); Extracellular matrix deposition (GO:0005615) —LEADS_TO→ Lipoprotein glomerulopathy (MONDO:0012725). Loss-of-function mutations in CST3 lead to the production of aberrant cystatin C fragments that disrupt amyloid fibril formation, ultimately contributing to ACys amyloidosis. Concurrently, loss-of-function mutations in APOE result in dysfunctional apolipoprotein E, which impairs proteasomal degradation. The convergence occurs at the level of proteasomal degradation, where both impaired amyloid clearance and dysfunctional apolipoprotein handling lead to increased extracellular matrix deposition and the respective disease phenotypes.",
+        "falsification": {
+          "text": "The presence of common pathogenic variants in CST3 and APOE with consistent loss-of-function effects in individuals diagnosed with both ACys amyloidosis and lipoprotein glomerulopathy, or demonstration that mutations in one gene do not impact the clearance pathways affected by the other.",
+          "gnomad_variant": "Common pathogenic variants in CST3 or APOE with allele frequencies >0.1% in gnomAD."
+        },
+        "translational": "Understanding this mechanistic link could lead to therapeutic strategies targeting shared pathways of protein degradation and clearance, potentially benefiting patients with either ACys amyloidosis or lipoprotein glomerulopathy, or even other protein-misfolding disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007089",
+      "diseaseBName": "Alzheimer disease 2",
+      "fitness": 0.3864,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2526) —DECREASES→ Cystatin C (CHEBI:17406); Cystatin C (CHEBI:17406) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); APOE (HGNC:773) —INCREASES→ Amyloid beta (IP:0000001); Amyloid beta (IP:0000001) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Amyloidosis (HP:0002677); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Dementia (HP:0000716). Haploinsufficiency of CST3 in ACys amyloidosis leads to reduced clearance of amyloid precursors. Gain-of-function mutations in APOE in Alzheimer disease 2 promote the aggregation of amyloid beta. Both disruptions converge on the pathway of amyloid precursor processing and clearance, leading to amyloidosis and dementia.",
+      "mechanism_narrative": "CST3 (HGNC:2526) —DECREASES→ Cystatin C (CHEBI:17406); Cystatin C (CHEBI:17406) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); APOE (HGNC:773) —INCREASES→ Amyloid beta (IP:0000001); Amyloid beta (IP:0000001) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Amyloidosis (HP:0002677); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Dementia (HP:0000716). Haploinsufficiency of CST3 in ACys amyloidosis leads to reduced clearance of amyloid precursors. Gain-of-function mutations in APOE in Alzheimer disease 2 promote the aggregation of amyloid beta. Both disruptions converge on the pathway of amyloid precursor processing and clearance, leading to amyloidosis and dementia.",
+      "falsification": {
+        "text": "Absence of amyloid deposition in brain tissue or other affected organs in individuals with documented CST3 haploinsufficiency or APOE variants associated with Alzheimer disease 2.",
+        "gnomad_variant": "gnomAD allele frequency > 1% for pathogenic variants in CST3 or APOE."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007089",
+        "diseaseBName": "Alzheimer disease 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3864,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2526) —DECREASES→ Cystatin C (CHEBI:17406); Cystatin C (CHEBI:17406) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); APOE (HGNC:773) —INCREASES→ Amyloid beta (IP:0000001); Amyloid beta (IP:0000001) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Amyloidosis (HP:0002677); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Dementia (HP:0000716). Haploinsufficiency of CST3 in ACys amyloidosis leads to reduced clearance of amyloid precursors. Gain-of-function mutations in APOE in Alzheimer disease 2 promote the aggregation of amyloid beta. Both disruptions converge on the pathway of amyloid precursor processing and clearance, leading to amyloidosis and dementia.",
+        "falsification": {
+          "text": "Absence of amyloid deposition in brain tissue or other affected organs in individuals with documented CST3 haploinsufficiency or APOE variants associated with Alzheimer disease 2.",
+          "gnomad_variant": "gnomAD allele frequency > 1% for pathogenic variants in CST3 or APOE."
+        },
+        "translational": "Understanding the shared pathway of amyloid processing and clearance offers opportunities for developing targeted therapies that could benefit patients with both ACys amyloidosis and Alzheimer disease 2 by enhancing amyloid clearance or reducing aggregation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018473",
+      "diseaseBName": "hyperlipoproteinemia type 3",
+      "fitness": 0.3736,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2539) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ cholesterol metabolism (GO:0006695); amyloid beta aggregation and clearance (GO:0001843) —LEADS_TO→ Amyloidosis (HP:0003274); cholesterol metabolism (GO:0006695) —LEADS_TO→ Dysbetalipoproteinemia (HP:0003312). Loss-of-function mutations in CST3 impair amyloid beta clearance, leading to ACys amyloidosis. Similarly, loss-of-function mutations in APOE impair both cholesterol metabolism, leading to hyperlipoproteinemia type 3, and amyloid beta clearance, potentially contributing to amyloidosis phenotypes.",
+      "mechanism_narrative": "CST3 (HGNC:2539) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ cholesterol metabolism (GO:0006695); amyloid beta aggregation and clearance (GO:0001843) —LEADS_TO→ Amyloidosis (HP:0003274); cholesterol metabolism (GO:0006695) —LEADS_TO→ Dysbetalipoproteinemia (HP:0003312). Loss-of-function mutations in CST3 impair amyloid beta clearance, leading to ACys amyloidosis. Similarly, loss-of-function mutations in APOE impair both cholesterol metabolism, leading to hyperlipoproteinemia type 3, and amyloid beta clearance, potentially contributing to amyloidosis phenotypes.",
+      "falsification": {
+        "text": "Absence of any observed overlap in the functional consequences of CST3 and APOE variants on amyloid-beta clearance or cholesterol metabolism in cellular or animal models would falsify this hypothesis. Furthermore, if genetic evidence demonstrates that the causal variants for ACys amyloidosis and hyperlipoproteinemia type 3 act through entirely distinct molecular pathways that do not converge at any level, the hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing high frequency (>1%) of pathogenic variants in both CST3 and APOE in the general population, which would suggest reduced penetrance or alternative causal mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018473",
+        "diseaseBName": "hyperlipoproteinemia type 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3736,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2539) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ cholesterol metabolism (GO:0006695); amyloid beta aggregation and clearance (GO:0001843) —LEADS_TO→ Amyloidosis (HP:0003274); cholesterol metabolism (GO:0006695) —LEADS_TO→ Dysbetalipoproteinemia (HP:0003312). Loss-of-function mutations in CST3 impair amyloid beta clearance, leading to ACys amyloidosis. Similarly, loss-of-function mutations in APOE impair both cholesterol metabolism, leading to hyperlipoproteinemia type 3, and amyloid beta clearance, potentially contributing to amyloidosis phenotypes.",
+        "falsification": {
+          "text": "Absence of any observed overlap in the functional consequences of CST3 and APOE variants on amyloid-beta clearance or cholesterol metabolism in cellular or animal models would falsify this hypothesis. Furthermore, if genetic evidence demonstrates that the causal variants for ACys amyloidosis and hyperlipoproteinemia type 3 act through entirely distinct molecular pathways that do not converge at any level, the hypothesis would be falsified.",
+          "gnomad_variant": "gnomAD analysis showing high frequency (>1%) of pathogenic variants in both CST3 and APOE in the general population, which would suggest reduced penetrance or alternative causal mechanisms."
+        },
+        "translational": "Understanding the shared role of APOE in both conditions could lead to therapeutic strategies targeting cholesterol metabolism or amyloid-beta clearance that benefit patients with either ACys amyloidosis or hyperlipoproteinemia type 3. For example, therapies aimed at improving APOE function or enhancing amyloid-beta degradation could have dual benefits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0971008",
+      "diseaseBName": "amyloidosis, hereditary systemic 3",
+      "fitness": 0.337,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Cystatin C (CST3) (HGNC:2530) —DISRUPTS→ amyloid fibril formation (GO:0000279); Apolipoprotein A-I (APOA1) (HGNC:709) —DISRUPTS→ amyloid fibril formation (GO:0000279); amyloid fibril formation (GO:0000279) —LEADS_TO→ Amyloidosis (HP:0002680); amyloid fibril formation (GO:0000279) —LEADS_TO→ Systemic amyloidosis (HP:0002680). Mutations in CST3 (for ACys amyloidosis) and APOA1 (for hereditary systemic amyloidosis 3) disrupt the normal process of amyloid fibril formation, leading to the accumulation of amyloid deposits and the manifestation of amyloidosis phenotypes.",
+      "mechanism_narrative": "Cystatin C (CST3) (HGNC:2530) —DISRUPTS→ amyloid fibril formation (GO:0000279); Apolipoprotein A-I (APOA1) (HGNC:709) —DISRUPTS→ amyloid fibril formation (GO:0000279); amyloid fibril formation (GO:0000279) —LEADS_TO→ Amyloidosis (HP:0002680); amyloid fibril formation (GO:0000279) —LEADS_TO→ Systemic amyloidosis (HP:0002680). Mutations in CST3 (for ACys amyloidosis) and APOA1 (for hereditary systemic amyloidosis 3) disrupt the normal process of amyloid fibril formation, leading to the accumulation of amyloid deposits and the manifestation of amyloidosis phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in CST3 or APOA1 do not affect amyloid fibril formation pathways, or that the disease phenotypes are entirely distinct and not related to amyloid deposition.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0971008",
+        "diseaseBName": "amyloidosis, hereditary systemic 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.337,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Cystatin C (CST3) (HGNC:2530) —DISRUPTS→ amyloid fibril formation (GO:0000279); Apolipoprotein A-I (APOA1) (HGNC:709) —DISRUPTS→ amyloid fibril formation (GO:0000279); amyloid fibril formation (GO:0000279) —LEADS_TO→ Amyloidosis (HP:0002680); amyloid fibril formation (GO:0000279) —LEADS_TO→ Systemic amyloidosis (HP:0002680). Mutations in CST3 (for ACys amyloidosis) and APOA1 (for hereditary systemic amyloidosis 3) disrupt the normal process of amyloid fibril formation, leading to the accumulation of amyloid deposits and the manifestation of amyloidosis phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in CST3 or APOA1 do not affect amyloid fibril formation pathways, or that the disease phenotypes are entirely distinct and not related to amyloid deposition.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared mechanism of amyloid fibril formation in these distinct but related amyloidosis subtypes could lead to the development of therapies targeting the common pathway, potentially benefiting patients with both ACys amyloidosis and hereditary systemic amyloidosis 3."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859238",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+      "fitness": 0.3179,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CST3 (HGNC:2550) —PRODUCES→ Cystatin C amyloid (CHEBI:76213); Cystatin C amyloid (CHEBI:76213) —LEADS_TO→ Amyloidosis (HP:0002675); APOA1 (HGNC:713) —DISRUPTS→ Lipid metabolism and transport (GO:0006629); Lipid metabolism and transport (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003258). Gain-of-function mutations in CST3 lead to the production of aberrant Cystatin C amyloid, causing ACys amyloidosis. Loss-of-function mutations in APOA1 disrupt lipid metabolism and transport, leading to hypoalphalipoproteinemia. While distinct, both pathways involve protein dysfunction and ultimately manifest as distinct disease phenotypes.",
+      "mechanism_narrative": "CST3 (HGNC:2550) —PRODUCES→ Cystatin C amyloid (CHEBI:76213); Cystatin C amyloid (CHEBI:76213) —LEADS_TO→ Amyloidosis (HP:0002675); APOA1 (HGNC:713) —DISRUPTS→ Lipid metabolism and transport (GO:0006629); Lipid metabolism and transport (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003258). Gain-of-function mutations in CST3 lead to the production of aberrant Cystatin C amyloid, causing ACys amyloidosis. Loss-of-function mutations in APOA1 disrupt lipid metabolism and transport, leading to hypoalphalipoproteinemia. While distinct, both pathways involve protein dysfunction and ultimately manifest as distinct disease phenotypes.",
+      "falsification": {
+        "text": "The absence of mutations in CST3 in individuals with ACys amyloidosis or the absence of mutations in APOA1 in individuals with hypoalphalipoproteinemia would falsify this hypothesis.",
+        "gnomad_variant": "Exome sequencing of patient cohorts showing no pathogenic variants in CST3 or APOA1 respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-977225"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-977225": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859238",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-977225"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-977225": 110
+        },
+        "fitness": 0.3179,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CST3 (HGNC:2550) —PRODUCES→ Cystatin C amyloid (CHEBI:76213); Cystatin C amyloid (CHEBI:76213) —LEADS_TO→ Amyloidosis (HP:0002675); APOA1 (HGNC:713) —DISRUPTS→ Lipid metabolism and transport (GO:0006629); Lipid metabolism and transport (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003258). Gain-of-function mutations in CST3 lead to the production of aberrant Cystatin C amyloid, causing ACys amyloidosis. Loss-of-function mutations in APOA1 disrupt lipid metabolism and transport, leading to hypoalphalipoproteinemia. While distinct, both pathways involve protein dysfunction and ultimately manifest as distinct disease phenotypes.",
+        "falsification": {
+          "text": "The absence of mutations in CST3 in individuals with ACys amyloidosis or the absence of mutations in APOA1 in individuals with hypoalphalipoproteinemia would falsify this hypothesis.",
+          "gnomad_variant": "Exome sequencing of patient cohorts showing no pathogenic variants in CST3 or APOA1 respectively."
+        },
+        "translational": "Understanding the distinct protein dysfunctions in ACys amyloidosis and hypoalphalipoproteinemia, despite their independent genetic origins, could reveal common therapeutic targets for protein misfolding or clearance, or for modulating lipid transport pathways, potentially benefiting patients with either condition or related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980749",
+      "diseaseBName": "apolipoprotein A-II deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "APOA2 variant leading to ACys amyloidosis (HGVS:c.XXX) —DISRUPTS→ APOA2 (HGNC:619); APOA2 (HGNC:619) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOA2 (HGNC:619) —DISRUPTS→ Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646); Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646) —LEADS_TO→ Apolipoprotein A-II deficiency (MONDO:0980749). Variants in the APOA2 gene lead to ACys amyloidosis. The absence or dysfunction of the APOA2 protein itself defines apolipoprotein A-II deficiency, which is also a consequence of altered APOA2 function, converging on the disruption of apolipoprotein A-II metabolism and function.",
+      "mechanism_narrative": "APOA2 variant leading to ACys amyloidosis (HGVS:c.XXX) —DISRUPTS→ APOA2 (HGNC:619); APOA2 (HGNC:619) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOA2 (HGNC:619) —DISRUPTS→ Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646); Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646) —LEADS_TO→ Apolipoprotein A-II deficiency (MONDO:0980749). Variants in the APOA2 gene lead to ACys amyloidosis. The absence or dysfunction of the APOA2 protein itself defines apolipoprotein A-II deficiency, which is also a consequence of altered APOA2 function, converging on the disruption of apolipoprotein A-II metabolism and function.",
+      "falsification": {
+        "text": "If genetic evidence demonstrates that the causal variants for ACys amyloidosis in APOA2 are distinct from those causing complete protein deficiency, or if the functional consequences of these variants do not consistently impair APOA2 function, this hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing a common variant (AF > 0.01) in the APOA2 gene associated with ACys amyloidosis would challenge its role as a rare disease gene."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-8957275": 108
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980749",
+        "diseaseBName": "apolipoprotein A-II deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-8957275": 108
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APOA2 variant leading to ACys amyloidosis (HGVS:c.XXX) —DISRUPTS→ APOA2 (HGNC:619); APOA2 (HGNC:619) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOA2 (HGNC:619) —DISRUPTS→ Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646); Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646) —LEADS_TO→ Apolipoprotein A-II deficiency (MONDO:0980749). Variants in the APOA2 gene lead to ACys amyloidosis. The absence or dysfunction of the APOA2 protein itself defines apolipoprotein A-II deficiency, which is also a consequence of altered APOA2 function, converging on the disruption of apolipoprotein A-II metabolism and function.",
+        "falsification": {
+          "text": "If genetic evidence demonstrates that the causal variants for ACys amyloidosis in APOA2 are distinct from those causing complete protein deficiency, or if the functional consequences of these variants do not consistently impair APOA2 function, this hypothesis would be falsified.",
+          "gnomad_variant": "gnomAD analysis showing a common variant (AF > 0.01) in the APOA2 gene associated with ACys amyloidosis would challenge its role as a rare disease gene."
+        },
+        "translational": "Understanding the shared role of APOA2 in these conditions could reveal therapeutic targets for modulating apolipoprotein A-II levels or function, potentially benefiting patients with either ACys amyloidosis or apolipoprotein A-II deficiency. Therapies aimed at restoring APOA2 function or mitigating its downstream effects could have cross-disease applicability."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T21:58:25.272Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** ACys amyloidosis (MONDO:0007098)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 20 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | cerebral amyloid angiopathy, APP-related (MONDO:0011583) | shared pathway | Tier 3 | 0.453 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 2 | Alzheimer disease type 1 (MONDO:0007088) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 3 | sea-blue histiocyte syndrome (MONDO:0010017) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 4 | hypoalphalipoproteinemia, primary, 2 (MONDO:0032766) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 5 | lipoprotein glomerulopathy (MONDO:0012725) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 6 | Alzheimer disease 2 (MONDO:0007089) | shared pathway | Tier 3 | 0.386 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 7 | hyperlipoproteinemia type 3 (MONDO:0018473) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 8 | amyloidosis, hereditary systemic 3 (MONDO:0971008) | shared pathway | Tier 3 | 0.337 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 9 | hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238) | shared pathway | Tier 3 | 0.318 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225 |\n| 10 | apolipoprotein A-II deficiency (MONDO:0980749) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-381426, Reactome:R-HSA-8957275 |\n\n### CANDIDATE DETAIL\n#### 1. cerebral amyloid angiopathy, APP-related  —  Tier 3 — Moderate / Emerging  (fitness 0.453)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2546) —PRODUCES→ Cystatin C (CHEBI:17486); Cystatin C (CHEBI:17486) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP (HGNC:640) —DISRUPTS→ APP processing and amyloid beta production (GO:0001540); APP processing and amyloid beta production (GO:0001540) —PRODUCES→ Amyloid beta (IP:000001); Amyloid beta (IP:000001) —LEADS_TO→ Extracellular matrix deposition and remodeling (GO:0030198); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003279); Extracellular matrix deposition and remodeling (GO:0030198) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030189). Mutations in CST3 lead to altered cystatin C levels which disrupt APP processing, contributing to amyloidosis. Similarly, mutations in APP directly lead to altered APP processing and the formation of amyloid beta, which then drives extracellular matrix deposition and remodeling, manifesting as amyloidosis and cerebral amyloid angiopathy.\n\n**How to falsify it:** Identification of a pathogenic variant in CST3 or APP in patients with ACys amyloidosis or APP-related CAA, respectively, that does not lead to altered APP processing or amyloid deposition in cellular or animal models. Alternatively, if the proposed shared pathway of 'extracellular matrix deposition and remodeling' is shown to be completely independent for the two diseases, this hypothesis would be falsified. _(variant: Pathogenic variants in CST3 or APP associated with these diseases are absent or extremely rare in relevant gnomAD populations.)_\n\n**Why it matters:** Understanding the shared mechanistic link involving APP processing and amyloid deposition could lead to the development of therapeutic strategies targeting common pathways for both ACys amyloidosis and APP-related cerebral amyloid angiopathy, potentially including inhibitors of APP processing or agents that promote amyloid clearance.\n\n---\n\n#### 2. Alzheimer disease type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2530) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APP (HGNC:617) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1168796); Amyloid precursor protein processing (REACT:R-HSA-1168796) —LEADS_TO→ Amyloid beta accumulation (CHEBI:77305); Amyloid beta accumulation (CHEBI:77305) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Gain-of-function mutations in CST3 lead to ACys amyloidosis. In parallel, mutations in APP lead to aberrant amyloid precursor protein processing, resulting in amyloid beta accumulation, which is a hallmark of Alzheimer disease type 1. The shared convergence is the pathological accumulation of amyloid species, albeit with different primary protein origins.\n\n**How to falsify it:** If variants in CST3 are found to be protective or neutral in individuals with Alzheimer disease type 1, or if variants in APP are found to be causative for ACys amyloidosis, this hypothesis would be falsified. _(variant: rs115605868)_\n\n**Why it matters:** Understanding the shared pathway of amyloid formation despite different causal proteins offers potential therapeutic avenues. Targeting the common downstream effects of amyloid accumulation, such as protein aggregation and clearance mechanisms, could provide a unified approach to treating both ACys amyloidosis and Alzheimer disease type 1.\n\n---\n\n#### 3. sea-blue histiocyte syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2545) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); APOE (HGNC:549) —DISRUPTS→ lysosomal degradation pathway (GO:0005765); CST3 (HGNC:2545) —DISRUPTS→ macrophage function; APOE (HGNC:549) —DISRUPTS→ macrophage function; lysosomal degradation pathway (GO:0005765) —DECREASES→ misfolded proteins/cellular debris; macrophage function —DECREASES→ misfolded proteins/cellular debris; misfolded proteins/cellular debris —LEADS_TO→ amyloid deposition (HP:0003294); misfolded proteins/cellular debris —LEADS_TO→ sea-blue histiocytes (HP:0011704). Loss-of-function mutations in CST3 and APOE disrupt the normal function of the lysosomal degradation pathway and macrophage function, leading to the accumulation of cellular debris and misfolded proteins. This accumulation manifests as amyloid deposition in ACys amyloidosis and the presence of sea-blue histiocytes in sea-blue histiocyte syndrome.\n\n**How to falsify it:** Demonstration that loss-of-function mutations in CST3 or APOE specifically and exclusively affect one of the two diseases, without any impact on the other's core pathology, or identification of distinct, non-overlapping molecular pathways as the primary drivers for each disease. _(variant: Homozygous or compound heterozygous loss-of-function variants in CST3 or APOE with a combined gnomAD allele frequency > 0.01%)_\n\n**Why it matters:** Understanding the shared role of CST3 and APOE in lysosomal degradation and macrophage function could lead to therapeutic strategies targeting these pathways to simultaneously ameliorate the pathologies of both ACys amyloidosis and sea-blue histiocyte syndrome, such as enhancing lysosomal clearance or modulating macrophage activity.\n\n---\n\n#### 4. hypoalphalipoproteinemia, primary, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2570) —PRODUCES→ Cystatin C (UniProt:P04070); Cystatin C (UniProt:P04070) —DISRUPTS→ Amyloid fibril formation (GO:0007049); Amyloid fibril formation (GO:0007049) —LEADS_TO→ Amyloidosis (HP:0002656); APOA1 (HGNC:600) —PRODUCES→ Apolipoprotein A-I (UniProt:P02652); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Lipoprotein metabolism (GO:0006629); Lipoprotein metabolism (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003211); Cystatin C (UniProt:P04070) —DISRUPTS→ Protein homeostasis (GO:0006464); Apolipoprotein A-I (UniProt:P02652) —DISRUPTS→ Protein homeostasis (GO:0006464). Loss-of-function in CST3 leads to reduced functional Cystatin C, contributing to amyloid formation and ACys amyloidosis. Similarly, loss-of-function in APOA1 leads to reduced functional Apolipoprotein A-I, impacting lipoprotein metabolism and causing hypoalphalipoproteinemia. Both proteins, Cystatin C and Apolipoprotein A-I, play roles in protein homeostasis, and their dysregulation impacts distinct but related cellular processes that converge on compromised protein quality control.\n\n**How to falsify it:** Identification of pathogenic variants in CST3 or APOA1 with a minor allele frequency > 1% in gnomAD would challenge the proposed causality.\n\n**Why it matters:** Understanding the shared pathway of protein homeostasis dysregulation could reveal common therapeutic targets for proteinopathies and lipid metabolism disorders. Strategies aimed at enhancing protein clearance or refolding could potentially benefit both ACys amyloidosis and hypoalphalipoproteinemia patients.\n\n---\n\n#### 5. lipoprotein glomerulopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2506) —PRODUCES→ Cystatin C amyloidogenic fragments (CHEBI:61907); Cystatin C amyloidogenic fragments (CHEBI:61907) —DISRUPTS→ Amyloid fibril formation (GO:0002151); Amyloid fibril formation (GO:0002151) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOE (HGNC:576) —PRODUCES→ Dysfunctional Apolipoprotein E (CHEBI:57707); Dysfunctional Apolipoprotein E (CHEBI:57707) —DISRUPTS→ Proteasomal degradation (GO:0006511); Proteasomal degradation (GO:0006511) —DECREASES→ Extracellular matrix deposition (GO:0005615); Amyloid fibril formation (GO:0002151) —INCREASES→ Extracellular matrix deposition (GO:0005615); Extracellular matrix deposition (GO:0005615) —LEADS_TO→ Lipoprotein glomerulopathy (MONDO:0012725). Loss-of-function mutations in CST3 lead to the production of aberrant cystatin C fragments that disrupt amyloid fibril formation, ultimately contributing to ACys amyloidosis. Concurrently, loss-of-function mutations in APOE result in dysfunctional apolipoprotein E, which impairs proteasomal degradation. The convergence occurs at the level of proteasomal degradation, where both impaired amyloid clearance and dysfunctional apolipoprotein handling lead to increased extracellular matrix deposition and the respective disease phenotypes.\n\n**How to falsify it:** The presence of common pathogenic variants in CST3 and APOE with consistent loss-of-function effects in individuals diagnosed with both ACys amyloidosis and lipoprotein glomerulopathy, or demonstration that mutations in one gene do not impact the clearance pathways affected by the other. _(variant: Common pathogenic variants in CST3 or APOE with allele frequencies >0.1% in gnomAD.)_\n\n**Why it matters:** Understanding this mechanistic link could lead to therapeutic strategies targeting shared pathways of protein degradation and clearance, potentially benefiting patients with either ACys amyloidosis or lipoprotein glomerulopathy, or even other protein-misfolding disorders.\n\n---\n\n#### 6. Alzheimer disease 2  —  Tier 3 — Moderate / Emerging  (fitness 0.386)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2526) —DECREASES→ Cystatin C (CHEBI:17406); Cystatin C (CHEBI:17406) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); APOE (HGNC:773) —INCREASES→ Amyloid beta (IP:0000001); Amyloid beta (IP:0000001) —DISRUPTS→ Amyloid precursor processing and clearance (GO:0031019); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Amyloidosis (HP:0002677); Amyloid precursor processing and clearance (GO:0031019) —LEADS_TO→ Dementia (HP:0000716). Haploinsufficiency of CST3 in ACys amyloidosis leads to reduced clearance of amyloid precursors. Gain-of-function mutations in APOE in Alzheimer disease 2 promote the aggregation of amyloid beta. Both disruptions converge on the pathway of amyloid precursor processing and clearance, leading to amyloidosis and dementia.\n\n**How to falsify it:** Absence of amyloid deposition in brain tissue or other affected organs in individuals with documented CST3 haploinsufficiency or APOE variants associated with Alzheimer disease 2. _(variant: gnomAD allele frequency > 1% for pathogenic variants in CST3 or APOE.)_\n\n**Why it matters:** Understanding the shared pathway of amyloid processing and clearance offers opportunities for developing targeted therapies that could benefit patients with both ACys amyloidosis and Alzheimer disease 2 by enhancing amyloid clearance or reducing aggregation.\n\n---\n\n#### 7. hyperlipoproteinemia type 3  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2539) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ amyloid beta aggregation and clearance (GO:0001843); APOE (HGNC:714) —DISRUPTS→ cholesterol metabolism (GO:0006695); amyloid beta aggregation and clearance (GO:0001843) —LEADS_TO→ Amyloidosis (HP:0003274); cholesterol metabolism (GO:0006695) —LEADS_TO→ Dysbetalipoproteinemia (HP:0003312). Loss-of-function mutations in CST3 impair amyloid beta clearance, leading to ACys amyloidosis. Similarly, loss-of-function mutations in APOE impair both cholesterol metabolism, leading to hyperlipoproteinemia type 3, and amyloid beta clearance, potentially contributing to amyloidosis phenotypes.\n\n**How to falsify it:** Absence of any observed overlap in the functional consequences of CST3 and APOE variants on amyloid-beta clearance or cholesterol metabolism in cellular or animal models would falsify this hypothesis. Furthermore, if genetic evidence demonstrates that the causal variants for ACys amyloidosis and hyperlipoproteinemia type 3 act through entirely distinct molecular pathways that do not converge at any level, the hypothesis would be falsified. _(variant: gnomAD analysis showing high frequency (>1%) of pathogenic variants in both CST3 and APOE in the general population, which would suggest reduced penetrance or alternative causal mechanisms.)_\n\n**Why it matters:** Understanding the shared role of APOE in both conditions could lead to therapeutic strategies targeting cholesterol metabolism or amyloid-beta clearance that benefit patients with either ACys amyloidosis or hyperlipoproteinemia type 3. For example, therapies aimed at improving APOE function or enhancing amyloid-beta degradation could have dual benefits.\n\n---\n\n#### 8. amyloidosis, hereditary systemic 3  —  Tier 3 — Moderate / Emerging  (fitness 0.337)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** Cystatin C (CST3) (HGNC:2530) —DISRUPTS→ amyloid fibril formation (GO:0000279); Apolipoprotein A-I (APOA1) (HGNC:709) —DISRUPTS→ amyloid fibril formation (GO:0000279); amyloid fibril formation (GO:0000279) —LEADS_TO→ Amyloidosis (HP:0002680); amyloid fibril formation (GO:0000279) —LEADS_TO→ Systemic amyloidosis (HP:0002680). Mutations in CST3 (for ACys amyloidosis) and APOA1 (for hereditary systemic amyloidosis 3) disrupt the normal process of amyloid fibril formation, leading to the accumulation of amyloid deposits and the manifestation of amyloidosis phenotypes.\n\n**How to falsify it:** Demonstration that mutations in CST3 or APOA1 do not affect amyloid fibril formation pathways, or that the disease phenotypes are entirely distinct and not related to amyloid deposition. _(variant: None)_\n\n**Why it matters:** Understanding the shared mechanism of amyloid fibril formation in these distinct but related amyloidosis subtypes could lead to the development of therapies targeting the common pathway, potentially benefiting patients with both ACys amyloidosis and hereditary systemic amyloidosis 3.\n\n---\n\n#### 9. hypoalphalipoproteinemia, primary, 2, intermediate  —  Tier 3 — Moderate / Emerging  (fitness 0.318)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275, Reactome:R-HSA-977225)\n\n**Proposed mechanism:** CST3 (HGNC:2550) —PRODUCES→ Cystatin C amyloid (CHEBI:76213); Cystatin C amyloid (CHEBI:76213) —LEADS_TO→ Amyloidosis (HP:0002675); APOA1 (HGNC:713) —DISRUPTS→ Lipid metabolism and transport (GO:0006629); Lipid metabolism and transport (GO:0006629) —LEADS_TO→ Hypoalphalipoproteinemia (HP:0003258). Gain-of-function mutations in CST3 lead to the production of aberrant Cystatin C amyloid, causing ACys amyloidosis. Loss-of-function mutations in APOA1 disrupt lipid metabolism and transport, leading to hypoalphalipoproteinemia. While distinct, both pathways involve protein dysfunction and ultimately manifest as distinct disease phenotypes.\n\n**How to falsify it:** The absence of mutations in CST3 in individuals with ACys amyloidosis or the absence of mutations in APOA1 in individuals with hypoalphalipoproteinemia would falsify this hypothesis. _(variant: Exome sequencing of patient cohorts showing no pathogenic variants in CST3 or APOA1 respectively.)_\n\n**Why it matters:** Understanding the distinct protein dysfunctions in ACys amyloidosis and hypoalphalipoproteinemia, despite their independent genetic origins, could reveal common therapeutic targets for protein misfolding or clearance, or for modulating lipid transport pathways, potentially benefiting patients with either condition or related disorders.\n\n---\n\n#### 10. apolipoprotein A-II deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-381426, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** APOA2 variant leading to ACys amyloidosis (HGVS:c.XXX) —DISRUPTS→ APOA2 (HGNC:619); APOA2 (HGNC:619) —LEADS_TO→ ACys amyloidosis (MONDO:0007098); APOA2 (HGNC:619) —DISRUPTS→ Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646); Apolipoprotein A-II metabolism and function (REACT:R-HSA-109646) —LEADS_TO→ Apolipoprotein A-II deficiency (MONDO:0980749). Variants in the APOA2 gene lead to ACys amyloidosis. The absence or dysfunction of the APOA2 protein itself defines apolipoprotein A-II deficiency, which is also a consequence of altered APOA2 function, converging on the disruption of apolipoprotein A-II metabolism and function.\n\n**How to falsify it:** If genetic evidence demonstrates that the causal variants for ACys amyloidosis in APOA2 are distinct from those causing complete protein deficiency, or if the functional consequences of these variants do not consistently impair APOA2 function, this hypothesis would be falsified. _(variant: gnomAD analysis showing a common variant (AF > 0.01) in the APOA2 gene associated with ACys amyloidosis would challenge its role as a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role of APOA2 in these conditions could reveal therapeutic targets for modulating apolipoprotein A-II levels or function, potentially benefiting patients with either ACys amyloidosis or apolipoprotein A-II deficiency. Therapies aimed at restoring APOA2 function or mitigating its downstream effects could have cross-disease applicability.\n\n---"
+}
