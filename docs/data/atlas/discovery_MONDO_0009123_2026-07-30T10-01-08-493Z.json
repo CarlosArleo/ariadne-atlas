@@ -1,0 +1,93 @@
+{
+  "seed": {
+    "id": "MONDO:0009123",
+    "name": "orthostatic hypotension 1"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012084",
+      "diseaseBName": "aromatic L-amino acid decarboxylase deficiency",
+      "fitness": 0.4599,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DBH (HGNC:2590) —DECREASES→ Dopamine (CHEBI:18177); Dopamine (CHEBI:18177) —LEADS_TO→ Orthostatic Hypotension (HP:0001965); DDC (HGNC:2589) —DECREASES→ L-DOPA (CHEBI:17322); DDC (HGNC:2589) —DECREASES→ Serotonin (CHEBI:17550); L-DOPA (CHEBI:17322) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Serotonin (CHEBI:17550) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084). Loss-of-function mutations in DBH lead to decreased dopamine production, causing orthostatic hypotension. Concurrently, loss-of-function mutations in DDC impair the decarboxylation of L-DOPA to dopamine and tryptophan to serotonin, resulting in aromatic L-amino acid decarboxylase deficiency. Both diseases converge on the dysregulation of dopamine levels, albeit through distinct genetic defects within the same broader catecholamine and neurotransmitter synthesis pathway.",
+      "mechanism_narrative": "DBH (HGNC:2590) —DECREASES→ Dopamine (CHEBI:18177); Dopamine (CHEBI:18177) —LEADS_TO→ Orthostatic Hypotension (HP:0001965); DDC (HGNC:2589) —DECREASES→ L-DOPA (CHEBI:17322); DDC (HGNC:2589) —DECREASES→ Serotonin (CHEBI:17550); L-DOPA (CHEBI:17322) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Serotonin (CHEBI:17550) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084). Loss-of-function mutations in DBH lead to decreased dopamine production, causing orthostatic hypotension. Concurrently, loss-of-function mutations in DDC impair the decarboxylation of L-DOPA to dopamine and tryptophan to serotonin, resulting in aromatic L-amino acid decarboxylase deficiency. Both diseases converge on the dysregulation of dopamine levels, albeit through distinct genetic defects within the same broader catecholamine and neurotransmitter synthesis pathway.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic analysis revealed that common variants in DBH or DDC with frequencies >1% in gnomAD are causative for either disease, or if experimental evidence demonstrated that the loss of DBH function does not impact dopamine levels or autonomic function.",
+        "gnomad_variant": "rs1800567"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-209905": 4
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012084",
+        "diseaseBName": "aromatic L-amino acid decarboxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-209905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-209905": 4
+        },
+        "fitness": 0.4599,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DBH (HGNC:2590) —DECREASES→ Dopamine (CHEBI:18177); Dopamine (CHEBI:18177) —LEADS_TO→ Orthostatic Hypotension (HP:0001965); DDC (HGNC:2589) —DECREASES→ L-DOPA (CHEBI:17322); DDC (HGNC:2589) —DECREASES→ Serotonin (CHEBI:17550); L-DOPA (CHEBI:17322) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Serotonin (CHEBI:17550) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084). Loss-of-function mutations in DBH lead to decreased dopamine production, causing orthostatic hypotension. Concurrently, loss-of-function mutations in DDC impair the decarboxylation of L-DOPA to dopamine and tryptophan to serotonin, resulting in aromatic L-amino acid decarboxylase deficiency. Both diseases converge on the dysregulation of dopamine levels, albeit through distinct genetic defects within the same broader catecholamine and neurotransmitter synthesis pathway.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic analysis revealed that common variants in DBH or DDC with frequencies >1% in gnomAD are causative for either disease, or if experimental evidence demonstrated that the loss of DBH function does not impact dopamine levels or autonomic function.",
+          "gnomad_variant": "rs1800567"
+        },
+        "translational": "Understanding the shared pathway of catecholamine synthesis and dopamine regulation offers potential therapeutic avenues. For instance, strategies aimed at boosting dopamine levels or compensating for its deficiency could be explored for both conditions, though the specific genetic defects would require tailored approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011551",
+      "diseaseBName": "TH-deficient dopa-responsive dystonia",
+      "fitness": 0.4519,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Dopamine beta-hydroxylase (HGNC:2746) —PRODUCES→ Norepinephrine (CHEBI:17870); Norepinephrine (CHEBI:17870) —LEADS_TO→ Orthostatic hypotension (HP:0001714); Tyrosine hydroxylase (HGNC:11579) —PRODUCES→ Dopamine (CHEBI:17871); Dopamine (CHEBI:17871) —LEADS_TO→ Norepinephrine (CHEBI:17870); Dopamine (CHEBI:17871) —LEADS_TO→ Dystonia (HP:0001313); Tyrosine hydroxylase (HGNC:11579) —LEADS_TO→ Dopa-responsive dystonia (HP:0001276). Loss-of-function mutations in DBH (Disease A) lead to reduced norepinephrine production, causing orthostatic hypotension. Loss-of-function mutations in TH (Disease B) lead to reduced dopamine production, which in turn reduces norepinephrine synthesis, causing dopa-responsive dystonia. Both diseases converge on the dysregulation of norepinephrine levels.",
+      "mechanism_narrative": "Dopamine beta-hydroxylase (HGNC:2746) —PRODUCES→ Norepinephrine (CHEBI:17870); Norepinephrine (CHEBI:17870) —LEADS_TO→ Orthostatic hypotension (HP:0001714); Tyrosine hydroxylase (HGNC:11579) —PRODUCES→ Dopamine (CHEBI:17871); Dopamine (CHEBI:17871) —LEADS_TO→ Norepinephrine (CHEBI:17870); Dopamine (CHEBI:17871) —LEADS_TO→ Dystonia (HP:0001313); Tyrosine hydroxylase (HGNC:11579) —LEADS_TO→ Dopa-responsive dystonia (HP:0001276). Loss-of-function mutations in DBH (Disease A) lead to reduced norepinephrine production, causing orthostatic hypotension. Loss-of-function mutations in TH (Disease B) lead to reduced dopamine production, which in turn reduces norepinephrine synthesis, causing dopa-responsive dystonia. Both diseases converge on the dysregulation of norepinephrine levels.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in DBH (HGNC:2746) in patients with TH-deficient dopa-responsive dystonia, or vice versa, would falsify the hypothesis of distinct causal genes for these conditions.",
+        "gnomad_variant": "rs11571014"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-209905": 4
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011551",
+        "diseaseBName": "TH-deficient dopa-responsive dystonia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-209905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-209905": 4
+        },
+        "fitness": 0.4519,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Dopamine beta-hydroxylase (HGNC:2746) —PRODUCES→ Norepinephrine (CHEBI:17870); Norepinephrine (CHEBI:17870) —LEADS_TO→ Orthostatic hypotension (HP:0001714); Tyrosine hydroxylase (HGNC:11579) —PRODUCES→ Dopamine (CHEBI:17871); Dopamine (CHEBI:17871) —LEADS_TO→ Norepinephrine (CHEBI:17870); Dopamine (CHEBI:17871) —LEADS_TO→ Dystonia (HP:0001313); Tyrosine hydroxylase (HGNC:11579) —LEADS_TO→ Dopa-responsive dystonia (HP:0001276). Loss-of-function mutations in DBH (Disease A) lead to reduced norepinephrine production, causing orthostatic hypotension. Loss-of-function mutations in TH (Disease B) lead to reduced dopamine production, which in turn reduces norepinephrine synthesis, causing dopa-responsive dystonia. Both diseases converge on the dysregulation of norepinephrine levels.",
+        "falsification": {
+          "text": "The identification of a pathogenic variant in DBH (HGNC:2746) in patients with TH-deficient dopa-responsive dystonia, or vice versa, would falsify the hypothesis of distinct causal genes for these conditions.",
+          "gnomad_variant": "rs11571014"
+        },
+        "translational": "Understanding this mechanistic link could inform therapeutic strategies for both conditions. For instance, modulating catecholamine levels or their downstream effects might offer shared treatment avenues, potentially through precursor supplementation or enzyme activity modulation."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T10:01:08.493Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** orthostatic hypotension 1 (MONDO:0009123)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | aromatic L-amino acid decarboxylase deficiency (MONDO:0012084) | shared pathway | Tier 3 | 0.460 | Reactome:R-HSA-209905 |\n| 2 | TH-deficient dopa-responsive dystonia (MONDO:0011551) | shared pathway | Tier 3 | 0.452 | Reactome:R-HSA-209905 |\n\n### CANDIDATE DETAIL\n#### 1. aromatic L-amino acid decarboxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.460)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** DBH (HGNC:2590) —DECREASES→ Dopamine (CHEBI:18177); Dopamine (CHEBI:18177) —LEADS_TO→ Orthostatic Hypotension (HP:0001965); DDC (HGNC:2589) —DECREASES→ L-DOPA (CHEBI:17322); DDC (HGNC:2589) —DECREASES→ Serotonin (CHEBI:17550); L-DOPA (CHEBI:17322) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Serotonin (CHEBI:17550) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084). Loss-of-function mutations in DBH lead to decreased dopamine production, causing orthostatic hypotension. Concurrently, loss-of-function mutations in DDC impair the decarboxylation of L-DOPA to dopamine and tryptophan to serotonin, resulting in aromatic L-amino acid decarboxylase deficiency. Both diseases converge on the dysregulation of dopamine levels, albeit through distinct genetic defects within the same broader catecholamine and neurotransmitter synthesis pathway.\n\n**How to falsify it:** The hypothesis would be falsified if genetic analysis revealed that common variants in DBH or DDC with frequencies >1% in gnomAD are causative for either disease, or if experimental evidence demonstrated that the loss of DBH function does not impact dopamine levels or autonomic function. _(variant: rs1800567)_\n\n**Why it matters:** Understanding the shared pathway of catecholamine synthesis and dopamine regulation offers potential therapeutic avenues. For instance, strategies aimed at boosting dopamine levels or compensating for its deficiency could be explored for both conditions, though the specific genetic defects would require tailored approaches.\n\n---\n\n#### 2. TH-deficient dopa-responsive dystonia  —  Tier 3 — Moderate / Emerging  (fitness 0.452)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** Dopamine beta-hydroxylase (HGNC:2746) —PRODUCES→ Norepinephrine (CHEBI:17870); Norepinephrine (CHEBI:17870) —LEADS_TO→ Orthostatic hypotension (HP:0001714); Tyrosine hydroxylase (HGNC:11579) —PRODUCES→ Dopamine (CHEBI:17871); Dopamine (CHEBI:17871) —LEADS_TO→ Norepinephrine (CHEBI:17870); Dopamine (CHEBI:17871) —LEADS_TO→ Dystonia (HP:0001313); Tyrosine hydroxylase (HGNC:11579) —LEADS_TO→ Dopa-responsive dystonia (HP:0001276). Loss-of-function mutations in DBH (Disease A) lead to reduced norepinephrine production, causing orthostatic hypotension. Loss-of-function mutations in TH (Disease B) lead to reduced dopamine production, which in turn reduces norepinephrine synthesis, causing dopa-responsive dystonia. Both diseases converge on the dysregulation of norepinephrine levels.\n\n**How to falsify it:** The identification of a pathogenic variant in DBH (HGNC:2746) in patients with TH-deficient dopa-responsive dystonia, or vice versa, would falsify the hypothesis of distinct causal genes for these conditions. _(variant: rs11571014)_\n\n**Why it matters:** Understanding this mechanistic link could inform therapeutic strategies for both conditions. For instance, modulating catecholamine levels or their downstream effects might offer shared treatment avenues, potentially through precursor supplementation or enzyme activity modulation.\n\n---"
+}

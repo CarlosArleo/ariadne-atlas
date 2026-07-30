@@ -6,6 +6,9 @@
     <title>ARIADNE — Concentric Radial Atlas</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <style>
+        /* ============================================================
+           OBSIDIAN DARK CANVAS DESIGN TOKENS (unchanged)
+           ============================================================ */
         :root {
             --bg: #121214;
             --surface: rgba(24, 24, 27, 0.75);
@@ -99,7 +102,7 @@
         .cqs-card:hover { background: rgba(39, 39, 42, 0.85); border-color: rgba(255,255,255,0.25); transform: translateX(3px); }
         .cqs-card.active { background: rgba(39, 39, 42, 0.95); border-color: rgba(255,255,255,0.4); box-shadow: 0 0 15px rgba(56, 189, 248, 0.25); }
         .cqs-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; gap: 8px; }
-        .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; white-space: nowrap; }
+        .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; }
         .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
         .tier-badge { font-size: 0.7rem; padding: 1px 7px; border-radius: 8px; font-weight: 700; white-space: nowrap; }
         .fitness-score { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
@@ -322,7 +325,7 @@
     </div>
 </div>
 
-<!-- Dossier Modal -->
+<!-- Dossier Modal (full) -->
 <div class="modal-backdrop" id="dossier-modal" onclick="if(event.target===this) closeDossierModal();">
     <div class="modal-box">
         <button class="modal-close" onclick="closeDossierModal()">&times;</button>
@@ -446,6 +449,7 @@
 // PERFORMANCE-OPTIMIZED CONCENTRIC RADIAL ATLAS
 // Canvas ribbons + invisible SVG overlay for hover
 // Default filters: Tier 3, CQS ≥ 3
+// Fixed: no container.innerHTML replacement on empty results
 // ================================================================
 
 const FAMILIES = [
@@ -497,7 +501,7 @@ function familyOf(candidate) {
 let allCandidates = [];
 let focusDiseaseNode = null;
 let showAllRibbons = false;
-const MAX_DEFAULT_RIBBONS = 1000;
+const MAX_DEFAULT_RIBBONS = 1500;
 let currentFiltered = [];
 
 function processRawDataset(data) {
@@ -717,7 +721,7 @@ function renderEmpty() {
     document.getElementById('cqs-card-list').innerHTML = '';
 }
 
-// Debounced filter
+// Debounced filtering
 let renderTimeout;
 function debounceRender() {
     clearTimeout(renderTimeout);
@@ -803,7 +807,7 @@ function initApp() {
     populateFamilyDropdown();
     renderLegend();
     renderTierLegend();
-    // Default: Tier 3, CQS ≥ 3
+    // Default filters
     document.getElementById('filter-tier').value = 'Tier 3';
     const cqsSel = document.getElementById('filter-cqs');
     if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) {
@@ -817,7 +821,7 @@ function renderSidebar(candidates) {
     const sidebar = document.getElementById('cqs-card-list');
     sidebar.scrollTop = 0;
     if (!candidates.length) {
-        sidebar.innerHTML = '<div style="color:var(--text-muted);font-size:0.82rem;padding:12px 4px;">No candidates match.</div>';
+        sidebar.innerHTML = '<div style="color:var(--text-muted);font-size:0.82rem;padding:12px 4px;">No candidates match these criteria.</div>';
         return;
     }
     sidebar.innerHTML = candidates.slice(0, 35).map(c => {
@@ -872,7 +876,9 @@ function renderRadial(candidates) {
     g = svg.append('g').attr('transform', `translate(${width/2},${height/2})`);
 
     if (!candidates.length) {
-        container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);">No candidates match.</div>';
+        // Clear the canvas and SVG, but do NOT destroy the elements!
+        ctx.clearRect(0, 0, width, height);
+        svg.selectAll('*').remove();
         return;
     }
 
@@ -943,7 +949,7 @@ function renderRadial(candidates) {
         return { cand: c, seedAngle, partnerAngle, path };
     });
 
-    // 1. Draw visual ribbons on canvas (fast)
+    // 1. Visual ribbons on canvas (fast)
     ctx.save();
     ctx.translate(cx, cy);
     ctx.clearRect(-cx, -cy, width, height);
@@ -956,7 +962,7 @@ function renderRadial(candidates) {
     ctx.globalAlpha = 1.0;
     ctx.restore();
 
-    // 2. Invisible SVG overlay for hover (same bezier paths, wide transparent stroke)
+    // 2. Invisible SVG overlay for hover
     const tooltip = d3.select('#canvas-tooltip');
     g.append('g').attr('class', 'ribbon-overlay')
         .selectAll('path')
@@ -1063,7 +1069,7 @@ function moveTooltip(event) {
 }
 function hideTooltip() { document.getElementById('canvas-tooltip').style.opacity = 0; }
 
-// Canvas redraw helpers (with centering)
+// Canvas redraw helpers
 function redrawCanvasDefault() {
     const w = canvas.width, h = canvas.height;
     ctx.save(); ctx.translate(w/2, h/2);
@@ -1115,7 +1121,7 @@ function redrawCanvasWithPartnerHighlight(partnerName) {
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 
-// Highlight with text enlargement (exactly as original)
+// Highlight with text enlargement
 function highlightRel(id) {
     const targetId = parseInt(id);
     const link = allLinksData.find(l => l.cand.id === targetId);
@@ -1167,7 +1173,7 @@ function clearHighlight() {
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
 }
 
-// Dossier modal (unchanged)
+// Dossier modal
 function openDossierModal(candId) {
     const c = allCandidates.find(x => x.id === parseInt(candId));
     if (!c) return;
