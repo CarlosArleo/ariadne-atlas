@@ -1,0 +1,423 @@
+{
+  "seed": {
+    "id": "MONDO:0008433",
+    "name": "small cell lung carcinoma"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 17,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0001187",
+      "diseaseBName": "urinary bladder cancer",
+      "fitness": 0.7295,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RB1 mutation (HGNC:9884) —DISRUPTS→ RB1 (HGNC:9884); RB1 (HGNC:9884) —DISRUPTS→ Cell cycle regulation by RB1 (REACT:R-HSA-1640448); RB1 (HGNC:9884) —DISRUPTS→ TP53 pathway (REACT:R-HSA-69609); Cell cycle regulation by RB1 (REACT:R-HSA-1640448) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); TP53 pathway (REACT:R-HSA-69609) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Loss-of-function mutations in RB1 disrupt cell cycle regulation and the TP53 pathway, contributing to the development of both small cell lung carcinoma and urinary bladder cancer.",
+      "mechanism_narrative": "RB1 mutation (HGNC:9884) —DISRUPTS→ RB1 (HGNC:9884); RB1 (HGNC:9884) —DISRUPTS→ Cell cycle regulation by RB1 (REACT:R-HSA-1640448); RB1 (HGNC:9884) —DISRUPTS→ TP53 pathway (REACT:R-HSA-69609); Cell cycle regulation by RB1 (REACT:R-HSA-1640448) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); TP53 pathway (REACT:R-HSA-69609) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Loss-of-function mutations in RB1 disrupt cell cycle regulation and the TP53 pathway, contributing to the development of both small cell lung carcinoma and urinary bladder cancer.",
+      "falsification": {
+        "text": "The absence of RB1 alterations in a significant proportion of cases for either small cell lung carcinoma or urinary bladder cancer would falsify this hypothesis. Furthermore, if a specific RB1 variant is found to be pathogenic for one disease but demonstrably benign or absent in the other, this would also weaken the proposed overlap.",
+        "gnomad_variant": "rs121918305"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-2559585",
+        "Reactome:R-HSA-69231",
+        "Reactome:R-HSA-9661069",
+        "Reactome:R-HSA-9661070"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0001187",
+        "diseaseBName": "urinary bladder cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-2559585",
+          "Reactome:R-HSA-69231",
+          "Reactome:R-HSA-9661069",
+          "Reactome:R-HSA-9661070"
+        ],
+        "fitness": 0.7295,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 mutation (HGNC:9884) —DISRUPTS→ RB1 (HGNC:9884); RB1 (HGNC:9884) —DISRUPTS→ Cell cycle regulation by RB1 (REACT:R-HSA-1640448); RB1 (HGNC:9884) —DISRUPTS→ TP53 pathway (REACT:R-HSA-69609); Cell cycle regulation by RB1 (REACT:R-HSA-1640448) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); TP53 pathway (REACT:R-HSA-69609) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Loss-of-function mutations in RB1 disrupt cell cycle regulation and the TP53 pathway, contributing to the development of both small cell lung carcinoma and urinary bladder cancer.",
+        "falsification": {
+          "text": "The absence of RB1 alterations in a significant proportion of cases for either small cell lung carcinoma or urinary bladder cancer would falsify this hypothesis. Furthermore, if a specific RB1 variant is found to be pathogenic for one disease but demonstrably benign or absent in the other, this would also weaken the proposed overlap.",
+          "gnomad_variant": "rs121918305"
+        },
+        "translational": "Understanding the shared RB1 and TP53 pathway involvement in SCLC and UBC could inform the development of targeted therapies applicable to both malignancies, potentially leveraging existing drugs or strategies designed for one disease to treat the other."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0002629",
+      "diseaseBName": "bone osteosarcoma",
+      "fitness": 0.7199,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RB1 (HGNC:9813) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); CHEK2 (HGNC:2198) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); RB1 (HGNC:9813) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); CHEK2 (HGNC:2198) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ bone osteosarcoma (MONDO:0002629); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ bone osteosarcoma (MONDO:0002629). Loss-of-function mutations in RB1 and CHEK2 disrupt both cell cycle regulation and DNA damage response pathways. The cumulative disruption of these critical pathways leads to the development of both small cell lung carcinoma and bone osteosarcoma.",
+      "mechanism_narrative": "RB1 (HGNC:9813) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); CHEK2 (HGNC:2198) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); RB1 (HGNC:9813) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); CHEK2 (HGNC:2198) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ bone osteosarcoma (MONDO:0002629); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ bone osteosarcoma (MONDO:0002629). Loss-of-function mutations in RB1 and CHEK2 disrupt both cell cycle regulation and DNA damage response pathways. The cumulative disruption of these critical pathways leads to the development of both small cell lung carcinoma and bone osteosarcoma.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in RB1 or CHEK2 that are exclusively associated with one disease and not the other, or evidence that the functional consequence of mutations in these genes differs significantly between the two diseases (e.g., one requires LoF and the other GoF), would falsify this hypothesis.",
+        "gnomad_variant": "rs11571745 (CHEK2 c.1100del)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-2559585",
+        "Reactome:R-HSA-69231",
+        "Reactome:R-HSA-9661069",
+        "Reactome:R-HSA-9661070"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0002629",
+        "diseaseBName": "bone osteosarcoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-2559585",
+          "Reactome:R-HSA-69231",
+          "Reactome:R-HSA-9661069",
+          "Reactome:R-HSA-9661070"
+        ],
+        "fitness": 0.7199,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9813) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); CHEK2 (HGNC:2198) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); RB1 (HGNC:9813) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); CHEK2 (HGNC:2198) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ bone osteosarcoma (MONDO:0002629); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ bone osteosarcoma (MONDO:0002629). Loss-of-function mutations in RB1 and CHEK2 disrupt both cell cycle regulation and DNA damage response pathways. The cumulative disruption of these critical pathways leads to the development of both small cell lung carcinoma and bone osteosarcoma.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in RB1 or CHEK2 that are exclusively associated with one disease and not the other, or evidence that the functional consequence of mutations in these genes differs significantly between the two diseases (e.g., one requires LoF and the other GoF), would falsify this hypothesis.",
+          "gnomad_variant": "rs11571745 (CHEK2 c.1100del)"
+        },
+        "translational": "Understanding the shared reliance on RB1 and CHEK2 function for preventing these distinct malignancies could inform therapeutic strategies targeting cell cycle checkpoints or DNA repair mechanisms, potentially benefiting patients with either small cell lung carcinoma or bone osteosarcoma."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018160",
+      "diseaseBName": "hereditary retinoblastoma",
+      "fitness": 0.7157,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RB1 (HGNC:9884) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Retinoblastoma (MONDO:0018160); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Small Cell Lung Carcinoma (MONDO:0008433). Loss-of-function mutations in the RB1 gene disrupt cell cycle regulation, leading to uncontrolled proliferation and the development of both retinoblastoma and small cell lung carcinoma.",
+      "mechanism_narrative": "RB1 (HGNC:9884) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Retinoblastoma (MONDO:0018160); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Small Cell Lung Carcinoma (MONDO:0008433). Loss-of-function mutations in the RB1 gene disrupt cell cycle regulation, leading to uncontrolled proliferation and the development of both retinoblastoma and small cell lung carcinoma.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in RB1 with a loss-of-function mechanism in hereditary retinoblastoma patients, and conversely, the identification of pathogenic variants with a gain-of-function or dominant-negative mechanism in RB1 for small cell lung carcinoma patients, would falsify this hypothesis.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-2559585",
+        "Reactome:R-HSA-69231",
+        "Reactome:R-HSA-9661069",
+        "Reactome:R-HSA-9661070"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018160",
+        "diseaseBName": "hereditary retinoblastoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-2559585",
+          "Reactome:R-HSA-69231",
+          "Reactome:R-HSA-9661069",
+          "Reactome:R-HSA-9661070"
+        ],
+        "fitness": 0.7157,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9884) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Retinoblastoma (MONDO:0018160); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Small Cell Lung Carcinoma (MONDO:0008433). Loss-of-function mutations in the RB1 gene disrupt cell cycle regulation, leading to uncontrolled proliferation and the development of both retinoblastoma and small cell lung carcinoma.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in RB1 with a loss-of-function mechanism in hereditary retinoblastoma patients, and conversely, the identification of pathogenic variants with a gain-of-function or dominant-negative mechanism in RB1 for small cell lung carcinoma patients, would falsify this hypothesis.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared RB1 pathway disruption in both hereditary retinoblastoma and small cell lung carcinoma could inform therapeutic strategies targeting cell cycle control for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RB1 (HGNC:9884) —DISRUPTS→ RB1/E2F pathway (REACT:R-HSA-69277); RB1/E2F pathway (REACT:R-HSA-69277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); MAPK signaling pathway (REACT:R-HSA-5693373) —LEADS_TO→ Lung cancer (MONDO:0008903); PIK3CA (HGNC:9530) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779); PI3K-Akt signaling pathway (REACT:R-HSA-1236779) —LEADS_TO→ Lung cancer (MONDO:0008903); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779). Loss-of-function mutations in RB1 disrupt the RB1/E2F pathway, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. Concurrently, gain-of-function mutations in oncogenes like KRAS and PIK3CA activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on common downstream effectors that promote cell growth, survival, and ultimately, lung cancer development. The RB1 pathway also intersects with and can promote the MAPK and PI3K-Akt pathways, creating a shared molecular landscape driving tumorigenesis in both disease contexts.",
+      "mechanism_narrative": "RB1 (HGNC:9884) —DISRUPTS→ RB1/E2F pathway (REACT:R-HSA-69277); RB1/E2F pathway (REACT:R-HSA-69277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); MAPK signaling pathway (REACT:R-HSA-5693373) —LEADS_TO→ Lung cancer (MONDO:0008903); PIK3CA (HGNC:9530) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779); PI3K-Akt signaling pathway (REACT:R-HSA-1236779) —LEADS_TO→ Lung cancer (MONDO:0008903); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779). Loss-of-function mutations in RB1 disrupt the RB1/E2F pathway, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. Concurrently, gain-of-function mutations in oncogenes like KRAS and PIK3CA activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on common downstream effectors that promote cell growth, survival, and ultimately, lung cancer development. The RB1 pathway also intersects with and can promote the MAPK and PI3K-Akt pathways, creating a shared molecular landscape driving tumorigenesis in both disease contexts.",
+      "falsification": {
+        "text": "Demonstration that mutations in RB1 (for SCLC) or KRAS/PIK3CA (for lung cancer) do not lead to dysregulation of the respective downstream signaling pathways (RB1/E2F, MAPK, PI3K-Akt) or that these pathways are completely independent in their contribution to tumorigenesis.",
+        "gnomad_variant": "rs11547113 (KRAS G12V) or other common oncogenic variants found at high frequency (>1%) in gnomAD general population for either disease's primary driver genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-69231"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-69231"
+        ],
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9884) —DISRUPTS→ RB1/E2F pathway (REACT:R-HSA-69277); RB1/E2F pathway (REACT:R-HSA-69277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); MAPK signaling pathway (REACT:R-HSA-5693373) —LEADS_TO→ Lung cancer (MONDO:0008903); PIK3CA (HGNC:9530) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779); PI3K-Akt signaling pathway (REACT:R-HSA-1236779) —LEADS_TO→ Lung cancer (MONDO:0008903); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779). Loss-of-function mutations in RB1 disrupt the RB1/E2F pathway, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. Concurrently, gain-of-function mutations in oncogenes like KRAS and PIK3CA activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on common downstream effectors that promote cell growth, survival, and ultimately, lung cancer development. The RB1 pathway also intersects with and can promote the MAPK and PI3K-Akt pathways, creating a shared molecular landscape driving tumorigenesis in both disease contexts.",
+        "falsification": {
+          "text": "Demonstration that mutations in RB1 (for SCLC) or KRAS/PIK3CA (for lung cancer) do not lead to dysregulation of the respective downstream signaling pathways (RB1/E2F, MAPK, PI3K-Akt) or that these pathways are completely independent in their contribution to tumorigenesis.",
+          "gnomad_variant": "rs11547113 (KRAS G12V) or other common oncogenic variants found at high frequency (>1%) in gnomAD general population for either disease's primary driver genes."
+        },
+        "translational": "Understanding the shared molecular pathways, particularly the interplay between tumor suppressors like RB1 and oncogenic signaling like KRAS/PIK3CA, can inform the development of targeted therapies that exploit these common vulnerabilities for both small cell lung carcinoma and broader lung cancer contexts. For instance, therapies targeting MAPK or PI3K-Akt signaling could be beneficial across different lung cancer subtypes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010523",
+      "diseaseBName": "X-linked reticulate pigmentary disorder",
+      "fitness": 0.4386,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "POLA1 deleterious variant (none) —DISRUPTS→ POLA1 (HGNC:9031); POLA1 (HGNC:9031) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ X-linked reticulate pigmentary disorder (MONDO:0010523); RB1 deleterious variant (none) —DISRUPTS→ RB1 (HGNC:9825); RB1 (HGNC:9825) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433). Loss-of-function mutations in POLA1 disrupt DNA replication fidelity, leading to X-linked reticulate pigmentary disorder. Similarly, loss-of-function mutations in RB1, a key tumor suppressor, impair the DNA replication checkpoint, contributing to small cell lung carcinoma.",
+      "mechanism_narrative": "POLA1 deleterious variant (none) —DISRUPTS→ POLA1 (HGNC:9031); POLA1 (HGNC:9031) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ X-linked reticulate pigmentary disorder (MONDO:0010523); RB1 deleterious variant (none) —DISRUPTS→ RB1 (HGNC:9825); RB1 (HGNC:9825) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433). Loss-of-function mutations in POLA1 disrupt DNA replication fidelity, leading to X-linked reticulate pigmentary disorder. Similarly, loss-of-function mutations in RB1, a key tumor suppressor, impair the DNA replication checkpoint, contributing to small cell lung carcinoma.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in POLA1 with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would weaken the hypothesis that POLA1 loss-of-function is causal for X-linked reticulate pigmentary disorder.",
+        "gnomad_variant": "rs743154190"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-113501": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010523",
+        "diseaseBName": "X-linked reticulate pigmentary disorder",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-113501": 13
+        },
+        "fitness": 0.4386,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "POLA1 deleterious variant (none) —DISRUPTS→ POLA1 (HGNC:9031); POLA1 (HGNC:9031) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ X-linked reticulate pigmentary disorder (MONDO:0010523); RB1 deleterious variant (none) —DISRUPTS→ RB1 (HGNC:9825); RB1 (HGNC:9825) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433). Loss-of-function mutations in POLA1 disrupt DNA replication fidelity, leading to X-linked reticulate pigmentary disorder. Similarly, loss-of-function mutations in RB1, a key tumor suppressor, impair the DNA replication checkpoint, contributing to small cell lung carcinoma.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in POLA1 with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would weaken the hypothesis that POLA1 loss-of-function is causal for X-linked reticulate pigmentary disorder.",
+          "gnomad_variant": "rs743154190"
+        },
+        "translational": "Understanding the shared role of the DNA replication checkpoint in both X-linked reticulate pigmentary disorder and small cell lung carcinoma could reveal novel therapeutic targets for both conditions, potentially involving strategies to enhance DNA repair or checkpoint function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0015601",
+      "diseaseBName": "X-linked intellectual disability, van Esch type",
+      "fitness": 0.4381,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Germline RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); Somatic RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); RB1 (HGNC:9827) —DISRUPTS→ DNA replication checkpoint (GO:0006270); DNA replication checkpoint (GO:0006270) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); RB1 (HGNC:9827) —LEADS_TO→ X-linked intellectual disability, van Esch type (MONDO:0015601). Germline or somatic mutations in RB1 disrupt the DNA replication checkpoint, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. In the context of X-linked intellectual disability, disruption of RB1's role in cell cycle regulation or its interaction with other X-linked genes critical for neuronal development could lead to intellectual disability.",
+      "mechanism_narrative": "Germline RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); Somatic RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); RB1 (HGNC:9827) —DISRUPTS→ DNA replication checkpoint (GO:0006270); DNA replication checkpoint (GO:0006270) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); RB1 (HGNC:9827) —LEADS_TO→ X-linked intellectual disability, van Esch type (MONDO:0015601). Germline or somatic mutations in RB1 disrupt the DNA replication checkpoint, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. In the context of X-linked intellectual disability, disruption of RB1's role in cell cycle regulation or its interaction with other X-linked genes critical for neuronal development could lead to intellectual disability.",
+      "falsification": {
+        "text": "If mutations in RB1 are shown to have no significant impact on the DNA replication checkpoint or if a distinct pathway is unequivocally identified as the primary driver for X-linked intellectual disability, van Esch type, without any RB1 involvement, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common pathogenic variants in RB1 in the general population (gnomAD frequency > 1%) would challenge its role in causing rare Mendelian disorders like X-linked ID."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-113501": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0015601",
+        "diseaseBName": "X-linked intellectual disability, van Esch type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-113501": 13
+        },
+        "fitness": 0.4381,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Germline RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); Somatic RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); RB1 (HGNC:9827) —DISRUPTS→ DNA replication checkpoint (GO:0006270); DNA replication checkpoint (GO:0006270) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); RB1 (HGNC:9827) —LEADS_TO→ X-linked intellectual disability, van Esch type (MONDO:0015601). Germline or somatic mutations in RB1 disrupt the DNA replication checkpoint, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. In the context of X-linked intellectual disability, disruption of RB1's role in cell cycle regulation or its interaction with other X-linked genes critical for neuronal development could lead to intellectual disability.",
+        "falsification": {
+          "text": "If mutations in RB1 are shown to have no significant impact on the DNA replication checkpoint or if a distinct pathway is unequivocally identified as the primary driver for X-linked intellectual disability, van Esch type, without any RB1 involvement, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common pathogenic variants in RB1 in the general population (gnomAD frequency > 1%) would challenge its role in causing rare Mendelian disorders like X-linked ID."
+        },
+        "translational": "Understanding the shared mechanistic link via RB1 and the DNA replication checkpoint could reveal novel therapeutic targets. For small cell lung carcinoma, targeting pathways that compensate for RB1 loss could be beneficial. For X-linked intellectual disability, if RB1 or its interacting pathways are implicated, strategies to restore or modulate their function might be explored, though this is more challenging for developmental disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014605",
+      "diseaseBName": "Houge-Janssens syndrome 2",
+      "fitness": 0.4102,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RB1 (HGNC:9827) —DISRUPTS→ cell cycle regulation (GO:0007049); RB1 (HGNC:9827) —DISRUPTS→ DNA damage response (GO:0006974); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (GO:0006974) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605); DNA damage response (GO:0006974) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in RB1 disrupt both cell cycle regulation and DNA damage response pathways, leading to the development of small cell lung carcinoma and Houge-Janssens syndrome 2.",
+      "mechanism_narrative": "RB1 (HGNC:9827) —DISRUPTS→ cell cycle regulation (GO:0007049); RB1 (HGNC:9827) —DISRUPTS→ DNA damage response (GO:0006974); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (GO:0006974) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605); DNA damage response (GO:0006974) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in RB1 disrupt both cell cycle regulation and DNA damage response pathways, leading to the development of small cell lung carcinoma and Houge-Janssens syndrome 2.",
+      "falsification": {
+        "text": "Demonstration that the causal variants for small cell lung carcinoma in RB1 are functionally distinct from those causing Houge-Janssens syndrome 2, or that the RB1 pathway is not significantly perturbed in one of the diseases.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-69231"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-113501": 13,
+        "Reactome:R-HSA-69231": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014605",
+        "diseaseBName": "Houge-Janssens syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-69231"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-113501": 13,
+          "Reactome:R-HSA-69231": 47
+        },
+        "fitness": 0.4102,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9827) —DISRUPTS→ cell cycle regulation (GO:0007049); RB1 (HGNC:9827) —DISRUPTS→ DNA damage response (GO:0006974); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (GO:0006974) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605); DNA damage response (GO:0006974) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in RB1 disrupt both cell cycle regulation and DNA damage response pathways, leading to the development of small cell lung carcinoma and Houge-Janssens syndrome 2.",
+        "falsification": {
+          "text": "Demonstration that the causal variants for small cell lung carcinoma in RB1 are functionally distinct from those causing Houge-Janssens syndrome 2, or that the RB1 pathway is not significantly perturbed in one of the diseases.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting the RB1 pathway or its downstream effectors could offer therapeutic strategies for both small cell lung carcinoma and potentially for mitigating some aspects of Houge-Janssens syndrome 2, particularly concerning cancer risk."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859276",
+      "diseaseBName": "primordial dwarfism-immunodeficiency-lipodystrophy syndrome",
+      "fitness": 0.3889,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RB1 (HGNC:9827) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); PRIM1 (HGNC:9431) —DISRUPTS→ DNA replication checkpoint (GO:0000075); DNA replication checkpoint (GO:0000075) —LEADS_TO→ Primordial dwarfism-immunodeficiency-lipodystrophy syndrome (MONDO:0859276). Loss of function in RB1 disrupts cell cycle regulation, leading to small cell lung carcinoma. Concurrently, loss of function in PRIM1 disrupts the DNA replication checkpoint, leading to primordial dwarfism-immunodeficiency-lipodystrophy syndrome. Both RB1 and PRIM1 are crucial for maintaining genomic integrity and proper cell division, and their disruption highlights a shared vulnerability in cell cycle control and DNA replication pathways.",
+      "mechanism_narrative": "RB1 (HGNC:9827) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); PRIM1 (HGNC:9431) —DISRUPTS→ DNA replication checkpoint (GO:0000075); DNA replication checkpoint (GO:0000075) —LEADS_TO→ Primordial dwarfism-immunodeficiency-lipodystrophy syndrome (MONDO:0859276). Loss of function in RB1 disrupts cell cycle regulation, leading to small cell lung carcinoma. Concurrently, loss of function in PRIM1 disrupts the DNA replication checkpoint, leading to primordial dwarfism-immunodeficiency-lipodystrophy syndrome. Both RB1 and PRIM1 are crucial for maintaining genomic integrity and proper cell division, and their disruption highlights a shared vulnerability in cell cycle control and DNA replication pathways.",
+      "falsification": {
+        "text": "The identification of a specific, highly penetrant pathogenic variant in either RB1 or PRIM1 with a population frequency >1% in gnomAD would falsify the claim that these specific variants are the sole drivers of the respective rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-113501": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859276",
+        "diseaseBName": "primordial dwarfism-immunodeficiency-lipodystrophy syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-113501": 13
+        },
+        "fitness": 0.3889,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9827) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); PRIM1 (HGNC:9431) —DISRUPTS→ DNA replication checkpoint (GO:0000075); DNA replication checkpoint (GO:0000075) —LEADS_TO→ Primordial dwarfism-immunodeficiency-lipodystrophy syndrome (MONDO:0859276). Loss of function in RB1 disrupts cell cycle regulation, leading to small cell lung carcinoma. Concurrently, loss of function in PRIM1 disrupts the DNA replication checkpoint, leading to primordial dwarfism-immunodeficiency-lipodystrophy syndrome. Both RB1 and PRIM1 are crucial for maintaining genomic integrity and proper cell division, and their disruption highlights a shared vulnerability in cell cycle control and DNA replication pathways.",
+        "falsification": {
+          "text": "The identification of a specific, highly penetrant pathogenic variant in either RB1 or PRIM1 with a population frequency >1% in gnomAD would falsify the claim that these specific variants are the sole drivers of the respective rare diseases."
+        },
+        "translational": "Understanding the shared reliance on intact cell cycle regulation and DNA replication pathways, despite distinct genetic origins, could inform therapeutic strategies. For instance, targeting common downstream effectors or exploiting synthetic lethality in these pathways might offer novel treatment avenues for both cancer and developmental disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032697",
+      "diseaseBName": "Houge-Janssens syndrome 3",
+      "fitness": 0.3821,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RB1 (HGNC:9870) —DISRUPTS→ Cell cycle regulation (GO:0007049); RB1 (HGNC:9870) —DISRUPTS→ p53 signaling pathway (WP:WP452); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); p53 signaling pathway (WP:WP452) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss-of-function mutations in RB1 disrupt normal cell cycle regulation and the p53 signaling pathway, contributing to the development of both small cell lung carcinoma and Houge-Janssens syndrome 3.",
+      "mechanism_narrative": "RB1 (HGNC:9870) —DISRUPTS→ Cell cycle regulation (GO:0007049); RB1 (HGNC:9870) —DISRUPTS→ p53 signaling pathway (WP:WP452); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); p53 signaling pathway (WP:WP452) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss-of-function mutations in RB1 disrupt normal cell cycle regulation and the p53 signaling pathway, contributing to the development of both small cell lung carcinoma and Houge-Janssens syndrome 3.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in RB1 that are exclusively associated with one disease but not the other, or evidence that the p53 signaling pathway is not similarly affected in both conditions.",
+        "gnomad_variant": "ExAC:60025250"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-113501",
+        "Reactome:R-HSA-69231"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-113501": 13,
+        "Reactome:R-HSA-69231": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032697",
+        "diseaseBName": "Houge-Janssens syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-113501",
+          "Reactome:R-HSA-69231"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-113501": 13,
+          "Reactome:R-HSA-69231": 47
+        },
+        "fitness": 0.3821,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9870) —DISRUPTS→ Cell cycle regulation (GO:0007049); RB1 (HGNC:9870) —DISRUPTS→ p53 signaling pathway (WP:WP452); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); p53 signaling pathway (WP:WP452) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss-of-function mutations in RB1 disrupt normal cell cycle regulation and the p53 signaling pathway, contributing to the development of both small cell lung carcinoma and Houge-Janssens syndrome 3.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in RB1 that are exclusively associated with one disease but not the other, or evidence that the p53 signaling pathway is not similarly affected in both conditions.",
+          "gnomad_variant": "ExAC:60025250"
+        },
+        "translational": "Targeting the RB1 pathway or downstream effectors of cell cycle control and p53 signaling could offer therapeutic strategies for both small cell lung carcinoma and Houge-Janssens syndrome 3."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033669",
+      "diseaseBName": "Noonan syndrome 13",
+      "fitness": 0.332,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RB1 (HGNC:9684) —DISRUPTS→ cell cycle regulation (GO:0007049); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); MAPK1 (HGNC:6871) —DISRUPTS→ RAS-MAPK signaling pathway (GO:0000165); RAS-MAPK signaling pathway (GO:0000165) —LEADS_TO→ Noonan syndrome 13 (MONDO:0033669). Loss-of-function mutations in RB1 disrupt cell cycle regulation, leading to small cell lung carcinoma. Gain-of-function mutations in MAPK1 dysregulate the RAS-MAPK signaling pathway, causing Noonan syndrome 13. Both pathways are critical for cellular homeostasis and development, and their dysregulation can manifest in distinct but mechanistically related cellular processes.",
+      "mechanism_narrative": "RB1 (HGNC:9684) —DISRUPTS→ cell cycle regulation (GO:0007049); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); MAPK1 (HGNC:6871) —DISRUPTS→ RAS-MAPK signaling pathway (GO:0000165); RAS-MAPK signaling pathway (GO:0000165) —LEADS_TO→ Noonan syndrome 13 (MONDO:0033669). Loss-of-function mutations in RB1 disrupt cell cycle regulation, leading to small cell lung carcinoma. Gain-of-function mutations in MAPK1 dysregulate the RAS-MAPK signaling pathway, causing Noonan syndrome 13. Both pathways are critical for cellular homeostasis and development, and their dysregulation can manifest in distinct but mechanistically related cellular processes.",
+      "falsification": {
+        "text": "If mutations in RB1 are found to be pathogenic gain-of-function variants in SCLC, or if mutations in MAPK1 are found to be pathogenic loss-of-function variants in Noonan syndrome 13, this hypothesis would be falsified. Alternatively, if a lack of overlap in the downstream effectors of RB1 and MAPK1 pathways could be demonstrated, this would also weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2559585"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2559585": 33,
+        "Reactome:R-HSA-9725371": 33,
+        "Reactome:R-HSA-8940973": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033669",
+        "diseaseBName": "Noonan syndrome 13",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2559585"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2559585": 33,
+          "Reactome:R-HSA-9725371": 33,
+          "Reactome:R-HSA-8940973": 24
+        },
+        "fitness": 0.332,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:9684) —DISRUPTS→ cell cycle regulation (GO:0007049); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); MAPK1 (HGNC:6871) —DISRUPTS→ RAS-MAPK signaling pathway (GO:0000165); RAS-MAPK signaling pathway (GO:0000165) —LEADS_TO→ Noonan syndrome 13 (MONDO:0033669). Loss-of-function mutations in RB1 disrupt cell cycle regulation, leading to small cell lung carcinoma. Gain-of-function mutations in MAPK1 dysregulate the RAS-MAPK signaling pathway, causing Noonan syndrome 13. Both pathways are critical for cellular homeostasis and development, and their dysregulation can manifest in distinct but mechanistically related cellular processes.",
+        "falsification": {
+          "text": "If mutations in RB1 are found to be pathogenic gain-of-function variants in SCLC, or if mutations in MAPK1 are found to be pathogenic loss-of-function variants in Noonan syndrome 13, this hypothesis would be falsified. Alternatively, if a lack of overlap in the downstream effectors of RB1 and MAPK1 pathways could be demonstrated, this would also weaken the hypothesis."
+        },
+        "translational": "Understanding the differential impact of RB1 and MAPK1 mutations on cell cycle and RAS-MAPK signaling could reveal therapeutic vulnerabilities. For SCLC, targeting hyperactive MAPK signaling might be beneficial, while for Noonan syndrome, strategies to modulate cell cycle progression could be explored, despite the opposite directionality of the primary genetic defect."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T05:44:47.462Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** small cell lung carcinoma (MONDO:0008433)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 17 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | urinary bladder cancer (MONDO:0001187) | shared pathway | Tier 1 | 0.730 | Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070 |\n| 2 | bone osteosarcoma (MONDO:0002629) | shared pathway | Tier 1 | 0.720 | Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070 |\n| 3 | hereditary retinoblastoma (MONDO:0018160) | shared pathway | Tier 1 | 0.716 | Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070 |\n| 4 | lung cancer (MONDO:0008903) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-113501, Reactome:R-HSA-69231 |\n| 5 | X-linked reticulate pigmentary disorder (MONDO:0010523) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-113501 |\n| 6 | X-linked intellectual disability, van Esch type (MONDO:0015601) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-113501 |\n| 7 | Houge-Janssens syndrome 2 (MONDO:0014605) | shared pathway | Tier 3 | 0.410 | Reactome:R-HSA-113501, Reactome:R-HSA-69231 |\n| 8 | primordial dwarfism-immunodeficiency-lipodystrophy syndrome (MONDO:0859276) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-113501 |\n| 9 | Houge-Janssens syndrome 3 (MONDO:0032697) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-113501, Reactome:R-HSA-69231 |\n| 10 | Noonan syndrome 13 (MONDO:0033669) | shared pathway | Tier 3 | 0.332 | Reactome:R-HSA-2559585 |\n\n### CANDIDATE DETAIL\n#### 1. urinary bladder cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.730)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070)\n\n**Proposed mechanism:** RB1 mutation (HGNC:9884) —DISRUPTS→ RB1 (HGNC:9884); RB1 (HGNC:9884) —DISRUPTS→ Cell cycle regulation by RB1 (REACT:R-HSA-1640448); RB1 (HGNC:9884) —DISRUPTS→ TP53 pathway (REACT:R-HSA-69609); Cell cycle regulation by RB1 (REACT:R-HSA-1640448) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); TP53 pathway (REACT:R-HSA-69609) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Loss-of-function mutations in RB1 disrupt cell cycle regulation and the TP53 pathway, contributing to the development of both small cell lung carcinoma and urinary bladder cancer.\n\n**How to falsify it:** The absence of RB1 alterations in a significant proportion of cases for either small cell lung carcinoma or urinary bladder cancer would falsify this hypothesis. Furthermore, if a specific RB1 variant is found to be pathogenic for one disease but demonstrably benign or absent in the other, this would also weaken the proposed overlap. _(variant: rs121918305)_\n\n**Why it matters:** Understanding the shared RB1 and TP53 pathway involvement in SCLC and UBC could inform the development of targeted therapies applicable to both malignancies, potentially leveraging existing drugs or strategies designed for one disease to treat the other.\n\n---\n\n#### 2. bone osteosarcoma  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.720)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070)\n\n**Proposed mechanism:** RB1 (HGNC:9813) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); CHEK2 (HGNC:2198) —DISRUPTS→ cell cycle regulation (REACT:R-HSA-69904); RB1 (HGNC:9813) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); CHEK2 (HGNC:2198) —DISRUPTS→ DNA damage response (REACT:R-HSA-1699743); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (REACT:R-HSA-69904) —LEADS_TO→ bone osteosarcoma (MONDO:0002629); DNA damage response (REACT:R-HSA-1699743) —LEADS_TO→ bone osteosarcoma (MONDO:0002629). Loss-of-function mutations in RB1 and CHEK2 disrupt both cell cycle regulation and DNA damage response pathways. The cumulative disruption of these critical pathways leads to the development of both small cell lung carcinoma and bone osteosarcoma.\n\n**How to falsify it:** The identification of pathogenic variants in RB1 or CHEK2 that are exclusively associated with one disease and not the other, or evidence that the functional consequence of mutations in these genes differs significantly between the two diseases (e.g., one requires LoF and the other GoF), would falsify this hypothesis. _(variant: rs11571745 (CHEK2 c.1100del))_\n\n**Why it matters:** Understanding the shared reliance on RB1 and CHEK2 function for preventing these distinct malignancies could inform therapeutic strategies targeting cell cycle checkpoints or DNA repair mechanisms, potentially benefiting patients with either small cell lung carcinoma or bone osteosarcoma.\n\n---\n\n#### 3. hereditary retinoblastoma  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.716)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-2559585, Reactome:R-HSA-69231, Reactome:R-HSA-9661069, Reactome:R-HSA-9661070)\n\n**Proposed mechanism:** RB1 (HGNC:9884) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Retinoblastoma (MONDO:0018160); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Small Cell Lung Carcinoma (MONDO:0008433). Loss-of-function mutations in the RB1 gene disrupt cell cycle regulation, leading to uncontrolled proliferation and the development of both retinoblastoma and small cell lung carcinoma.\n\n**How to falsify it:** The identification of pathogenic variants in RB1 with a loss-of-function mechanism in hereditary retinoblastoma patients, and conversely, the identification of pathogenic variants with a gain-of-function or dominant-negative mechanism in RB1 for small cell lung carcinoma patients, would falsify this hypothesis. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared RB1 pathway disruption in both hereditary retinoblastoma and small cell lung carcinoma could inform therapeutic strategies targeting cell cycle control for both conditions.\n\n---\n\n#### 4. lung cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-69231)\n\n**Proposed mechanism:** RB1 (HGNC:9884) —DISRUPTS→ RB1/E2F pathway (REACT:R-HSA-69277); RB1/E2F pathway (REACT:R-HSA-69277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); MAPK signaling pathway (REACT:R-HSA-5693373) —LEADS_TO→ Lung cancer (MONDO:0008903); PIK3CA (HGNC:9530) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779); PI3K-Akt signaling pathway (REACT:R-HSA-1236779) —LEADS_TO→ Lung cancer (MONDO:0008903); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5693373); RB1/E2F pathway (REACT:R-HSA-69277) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1236779). Loss-of-function mutations in RB1 disrupt the RB1/E2F pathway, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. Concurrently, gain-of-function mutations in oncogenes like KRAS and PIK3CA activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on common downstream effectors that promote cell growth, survival, and ultimately, lung cancer development. The RB1 pathway also intersects with and can promote the MAPK and PI3K-Akt pathways, creating a shared molecular landscape driving tumorigenesis in both disease contexts.\n\n**How to falsify it:** Demonstration that mutations in RB1 (for SCLC) or KRAS/PIK3CA (for lung cancer) do not lead to dysregulation of the respective downstream signaling pathways (RB1/E2F, MAPK, PI3K-Akt) or that these pathways are completely independent in their contribution to tumorigenesis. _(variant: rs11547113 (KRAS G12V) or other common oncogenic variants found at high frequency (>1%) in gnomAD general population for either disease's primary driver genes.)_\n\n**Why it matters:** Understanding the shared molecular pathways, particularly the interplay between tumor suppressors like RB1 and oncogenic signaling like KRAS/PIK3CA, can inform the development of targeted therapies that exploit these common vulnerabilities for both small cell lung carcinoma and broader lung cancer contexts. For instance, therapies targeting MAPK or PI3K-Akt signaling could be beneficial across different lung cancer subtypes.\n\n---\n\n#### 5. X-linked reticulate pigmentary disorder  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-113501)\n\n**Proposed mechanism:** POLA1 deleterious variant (none) —DISRUPTS→ POLA1 (HGNC:9031); POLA1 (HGNC:9031) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ X-linked reticulate pigmentary disorder (MONDO:0010523); RB1 deleterious variant (none) —DISRUPTS→ RB1 (HGNC:9825); RB1 (HGNC:9825) —DECREASES→ DNA replication checkpoint (GO:0006277); DNA replication checkpoint (GO:0006277) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433). Loss-of-function mutations in POLA1 disrupt DNA replication fidelity, leading to X-linked reticulate pigmentary disorder. Similarly, loss-of-function mutations in RB1, a key tumor suppressor, impair the DNA replication checkpoint, contributing to small cell lung carcinoma.\n\n**How to falsify it:** Discovery of a pathogenic variant in POLA1 with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would weaken the hypothesis that POLA1 loss-of-function is causal for X-linked reticulate pigmentary disorder. _(variant: rs743154190)_\n\n**Why it matters:** Understanding the shared role of the DNA replication checkpoint in both X-linked reticulate pigmentary disorder and small cell lung carcinoma could reveal novel therapeutic targets for both conditions, potentially involving strategies to enhance DNA repair or checkpoint function.\n\n---\n\n#### 6. X-linked intellectual disability, van Esch type  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-113501)\n\n**Proposed mechanism:** Germline RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); Somatic RB1 mutation (null) —DISRUPTS→ RB1 (HGNC:9827); RB1 (HGNC:9827) —DISRUPTS→ DNA replication checkpoint (GO:0006270); DNA replication checkpoint (GO:0006270) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); RB1 (HGNC:9827) —LEADS_TO→ X-linked intellectual disability, van Esch type (MONDO:0015601). Germline or somatic mutations in RB1 disrupt the DNA replication checkpoint, leading to uncontrolled cell proliferation characteristic of small cell lung carcinoma. In the context of X-linked intellectual disability, disruption of RB1's role in cell cycle regulation or its interaction with other X-linked genes critical for neuronal development could lead to intellectual disability.\n\n**How to falsify it:** If mutations in RB1 are shown to have no significant impact on the DNA replication checkpoint or if a distinct pathway is unequivocally identified as the primary driver for X-linked intellectual disability, van Esch type, without any RB1 involvement, this hypothesis would be falsified. _(variant: Presence of common pathogenic variants in RB1 in the general population (gnomAD frequency > 1%) would challenge its role in causing rare Mendelian disorders like X-linked ID.)_\n\n**Why it matters:** Understanding the shared mechanistic link via RB1 and the DNA replication checkpoint could reveal novel therapeutic targets. For small cell lung carcinoma, targeting pathways that compensate for RB1 loss could be beneficial. For X-linked intellectual disability, if RB1 or its interacting pathways are implicated, strategies to restore or modulate their function might be explored, though this is more challenging for developmental disorders.\n\n---\n\n#### 7. Houge-Janssens syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.410)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-69231)\n\n**Proposed mechanism:** RB1 (HGNC:9827) —DISRUPTS→ cell cycle regulation (GO:0007049); RB1 (HGNC:9827) —DISRUPTS→ DNA damage response (GO:0006974); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); DNA damage response (GO:0006974) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605); DNA damage response (GO:0006974) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in RB1 disrupt both cell cycle regulation and DNA damage response pathways, leading to the development of small cell lung carcinoma and Houge-Janssens syndrome 2.\n\n**How to falsify it:** Demonstration that the causal variants for small cell lung carcinoma in RB1 are functionally distinct from those causing Houge-Janssens syndrome 2, or that the RB1 pathway is not significantly perturbed in one of the diseases. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the RB1 pathway or its downstream effectors could offer therapeutic strategies for both small cell lung carcinoma and potentially for mitigating some aspects of Houge-Janssens syndrome 2, particularly concerning cancer risk.\n\n---\n\n#### 8. primordial dwarfism-immunodeficiency-lipodystrophy syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-113501)\n\n**Proposed mechanism:** RB1 (HGNC:9827) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); PRIM1 (HGNC:9431) —DISRUPTS→ DNA replication checkpoint (GO:0000075); DNA replication checkpoint (GO:0000075) —LEADS_TO→ Primordial dwarfism-immunodeficiency-lipodystrophy syndrome (MONDO:0859276). Loss of function in RB1 disrupts cell cycle regulation, leading to small cell lung carcinoma. Concurrently, loss of function in PRIM1 disrupts the DNA replication checkpoint, leading to primordial dwarfism-immunodeficiency-lipodystrophy syndrome. Both RB1 and PRIM1 are crucial for maintaining genomic integrity and proper cell division, and their disruption highlights a shared vulnerability in cell cycle control and DNA replication pathways.\n\n**How to falsify it:** The identification of a specific, highly penetrant pathogenic variant in either RB1 or PRIM1 with a population frequency >1% in gnomAD would falsify the claim that these specific variants are the sole drivers of the respective rare diseases.\n\n**Why it matters:** Understanding the shared reliance on intact cell cycle regulation and DNA replication pathways, despite distinct genetic origins, could inform therapeutic strategies. For instance, targeting common downstream effectors or exploiting synthetic lethality in these pathways might offer novel treatment avenues for both cancer and developmental disorders.\n\n---\n\n#### 9. Houge-Janssens syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-113501, Reactome:R-HSA-69231)\n\n**Proposed mechanism:** RB1 (HGNC:9870) —DISRUPTS→ Cell cycle regulation (GO:0007049); RB1 (HGNC:9870) —DISRUPTS→ p53 signaling pathway (WP:WP452); Cell cycle regulation (GO:0007049) —LEADS_TO→ Small cell lung carcinoma (MONDO:0008433); p53 signaling pathway (WP:WP452) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss-of-function mutations in RB1 disrupt normal cell cycle regulation and the p53 signaling pathway, contributing to the development of both small cell lung carcinoma and Houge-Janssens syndrome 3.\n\n**How to falsify it:** Identification of pathogenic variants in RB1 that are exclusively associated with one disease but not the other, or evidence that the p53 signaling pathway is not similarly affected in both conditions. _(variant: ExAC:60025250)_\n\n**Why it matters:** Targeting the RB1 pathway or downstream effectors of cell cycle control and p53 signaling could offer therapeutic strategies for both small cell lung carcinoma and Houge-Janssens syndrome 3.\n\n---\n\n#### 10. Noonan syndrome 13  —  Tier 3 — Moderate / Emerging  (fitness 0.332)\n**Link type:** shared pathway (Reactome:R-HSA-2559585)\n\n**Proposed mechanism:** RB1 (HGNC:9684) —DISRUPTS→ cell cycle regulation (GO:0007049); cell cycle regulation (GO:0007049) —LEADS_TO→ small cell lung carcinoma (MONDO:0008433); MAPK1 (HGNC:6871) —DISRUPTS→ RAS-MAPK signaling pathway (GO:0000165); RAS-MAPK signaling pathway (GO:0000165) —LEADS_TO→ Noonan syndrome 13 (MONDO:0033669). Loss-of-function mutations in RB1 disrupt cell cycle regulation, leading to small cell lung carcinoma. Gain-of-function mutations in MAPK1 dysregulate the RAS-MAPK signaling pathway, causing Noonan syndrome 13. Both pathways are critical for cellular homeostasis and development, and their dysregulation can manifest in distinct but mechanistically related cellular processes.\n\n**How to falsify it:** If mutations in RB1 are found to be pathogenic gain-of-function variants in SCLC, or if mutations in MAPK1 are found to be pathogenic loss-of-function variants in Noonan syndrome 13, this hypothesis would be falsified. Alternatively, if a lack of overlap in the downstream effectors of RB1 and MAPK1 pathways could be demonstrated, this would also weaken the hypothesis.\n\n**Why it matters:** Understanding the differential impact of RB1 and MAPK1 mutations on cell cycle and RAS-MAPK signaling could reveal therapeutic vulnerabilities. For SCLC, targeting hyperactive MAPK signaling might be beneficial, while for Noonan syndrome, strategies to modulate cell cycle progression could be explored, despite the opposite directionality of the primary genetic defect.\n\n---"
+}

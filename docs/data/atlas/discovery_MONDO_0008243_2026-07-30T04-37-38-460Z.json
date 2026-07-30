@@ -1,0 +1,559 @@
+{
+  "seed": {
+    "id": "MONDO:0008243",
+    "name": "Pick disease"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 24,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010857",
+      "diseaseBName": "semantic dementia",
+      "fitness": 0.6776,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Neurodegeneration (HP:0002094); MAPT (HGNC:6893) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); MAPT (HGNC:6893) —LEADS_TO→ Tau pathology (HP:0002151); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Pick disease (MONDO:0008243); Tau pathology (HP:0002151) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurodegeneration (HP:0002094) —LEADS_TO→ Pick disease (MONDO:0008243); Neurodegeneration (HP:0002094) —LEADS_TO→ Semantic dementia (MONDO:0010857). Mutations in PSEN1 disrupt APP processing, leading to neurodegeneration characteristic of Pick disease. Mutations in MAPT also impact APP processing and directly lead to tau pathology, which contributes to semantic dementia.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Neurodegeneration (HP:0002094); MAPT (HGNC:6893) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); MAPT (HGNC:6893) —LEADS_TO→ Tau pathology (HP:0002151); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Pick disease (MONDO:0008243); Tau pathology (HP:0002151) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurodegeneration (HP:0002094) —LEADS_TO→ Pick disease (MONDO:0008243); Neurodegeneration (HP:0002094) —LEADS_TO→ Semantic dementia (MONDO:0010857). Mutations in PSEN1 disrupt APP processing, leading to neurodegeneration characteristic of Pick disease. Mutations in MAPT also impact APP processing and directly lead to tau pathology, which contributes to semantic dementia.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in PSEN1 or MAPT in patients diagnosed with Pick disease or semantic dementia, respectively, would falsify this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the pathways affected by mutations in PSEN1 and MAPT in these diseases, this would also serve as a falsification condition.",
+        "gnomad_variant": "The presence of a common, benign variant (e.g., allele frequency > 1% in gnomAD) in either PSEN1 or MAPT that is strongly associated with Pick disease or semantic dementia, respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010857",
+        "diseaseBName": "semantic dementia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "fitness": 0.6776,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Neurodegeneration (HP:0002094); MAPT (HGNC:6893) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); MAPT (HGNC:6893) —LEADS_TO→ Tau pathology (HP:0002151); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Pick disease (MONDO:0008243); Tau pathology (HP:0002151) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurodegeneration (HP:0002094) —LEADS_TO→ Pick disease (MONDO:0008243); Neurodegeneration (HP:0002094) —LEADS_TO→ Semantic dementia (MONDO:0010857). Mutations in PSEN1 disrupt APP processing, leading to neurodegeneration characteristic of Pick disease. Mutations in MAPT also impact APP processing and directly lead to tau pathology, which contributes to semantic dementia.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in PSEN1 or MAPT in patients diagnosed with Pick disease or semantic dementia, respectively, would falsify this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the pathways affected by mutations in PSEN1 and MAPT in these diseases, this would also serve as a falsification condition.",
+          "gnomad_variant": "The presence of a common, benign variant (e.g., allele frequency > 1% in gnomAD) in either PSEN1 or MAPT that is strongly associated with Pick disease or semantic dementia, respectively."
+        },
+        "translational": "Identifying the shared mechanistic links between Pick disease and semantic dementia, particularly involving the APP processing pathway and tau pathology, could lead to the development of targeted therapies that address common underlying mechanisms, potentially benefiting patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011913",
+      "diseaseBName": "Alzheimer disease 3",
+      "fitness": 0.6676,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-680950); Amyloid precursor protein processing (REACT:R-HSA-680950) —PRODUCES→ Amyloid beta 42 (CHEBI:58259); Amyloid beta 42 (CHEBI:58259) —LEADS_TO→ Amyloid plaque formation (REACT:R-HSA-5678528); Amyloid plaque formation (REACT:R-HSA-5678528) —LEADS_TO→ Neurodegeneration (HP:0002092); MAPT (HGNC:6856) —DISRUPTS→ Tau protein aggregation (REACT:R-HSA-109580); Tau protein aggregation (REACT:R-HSA-109580) —LEADS_TO→ Pick body formation (HP:0030467); Pick body formation (HP:0030467) —LEADS_TO→ Neurodegeneration (HP:0002092). Mutations in PSEN1 lead to increased production of amyloid-beta 42, promoting amyloid plaque formation and subsequent neurodegeneration (Alzheimer disease 3). Mutations in MAPT lead to tau protein aggregation and the formation of Pick bodies, which also results in neurodegeneration (Pick disease). Both pathways converge on neurodegeneration as a shared phenotypic outcome.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-680950); Amyloid precursor protein processing (REACT:R-HSA-680950) —PRODUCES→ Amyloid beta 42 (CHEBI:58259); Amyloid beta 42 (CHEBI:58259) —LEADS_TO→ Amyloid plaque formation (REACT:R-HSA-5678528); Amyloid plaque formation (REACT:R-HSA-5678528) —LEADS_TO→ Neurodegeneration (HP:0002092); MAPT (HGNC:6856) —DISRUPTS→ Tau protein aggregation (REACT:R-HSA-109580); Tau protein aggregation (REACT:R-HSA-109580) —LEADS_TO→ Pick body formation (HP:0030467); Pick body formation (HP:0030467) —LEADS_TO→ Neurodegeneration (HP:0002092). Mutations in PSEN1 lead to increased production of amyloid-beta 42, promoting amyloid plaque formation and subsequent neurodegeneration (Alzheimer disease 3). Mutations in MAPT lead to tau protein aggregation and the formation of Pick bodies, which also results in neurodegeneration (Pick disease). Both pathways converge on neurodegeneration as a shared phenotypic outcome.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in PSEN1 in individuals with Alzheimer disease 3, or the absence of pathogenic variants in MAPT in individuals with Pick disease, would falsify this hypothesis. Additionally, if studies show distinct molecular mechanisms for tau aggregation and amyloid-beta production that do not interact or converge, this would also falsify the proposed link.",
+        "gnomad_variant": "rs121918615 (a common variant in PSEN1, though not typically associated with early-onset AD, its presence at high frequency could challenge a specific variant-based hypothesis)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011913",
+        "diseaseBName": "Alzheimer disease 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "fitness": 0.6676,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-680950); Amyloid precursor protein processing (REACT:R-HSA-680950) —PRODUCES→ Amyloid beta 42 (CHEBI:58259); Amyloid beta 42 (CHEBI:58259) —LEADS_TO→ Amyloid plaque formation (REACT:R-HSA-5678528); Amyloid plaque formation (REACT:R-HSA-5678528) —LEADS_TO→ Neurodegeneration (HP:0002092); MAPT (HGNC:6856) —DISRUPTS→ Tau protein aggregation (REACT:R-HSA-109580); Tau protein aggregation (REACT:R-HSA-109580) —LEADS_TO→ Pick body formation (HP:0030467); Pick body formation (HP:0030467) —LEADS_TO→ Neurodegeneration (HP:0002092). Mutations in PSEN1 lead to increased production of amyloid-beta 42, promoting amyloid plaque formation and subsequent neurodegeneration (Alzheimer disease 3). Mutations in MAPT lead to tau protein aggregation and the formation of Pick bodies, which also results in neurodegeneration (Pick disease). Both pathways converge on neurodegeneration as a shared phenotypic outcome.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in PSEN1 in individuals with Alzheimer disease 3, or the absence of pathogenic variants in MAPT in individuals with Pick disease, would falsify this hypothesis. Additionally, if studies show distinct molecular mechanisms for tau aggregation and amyloid-beta production that do not interact or converge, this would also falsify the proposed link.",
+          "gnomad_variant": "rs121918615 (a common variant in PSEN1, though not typically associated with early-onset AD, its presence at high frequency could challenge a specific variant-based hypothesis)"
+        },
+        "translational": "Understanding the shared downstream effects of PSEN1 and MAPT mutations, particularly their convergence on neurodegeneration, could reveal novel therapeutic targets for both Alzheimer disease and Pick disease. Strategies aimed at reducing protein aggregation or enhancing protein clearance could potentially benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013398",
+      "diseaseBName": "acne inversa, familial, 3",
+      "fitness": 0.6059,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); PSEN1 (HGNC:9508) —DISRUPTS→ Autophagy (GO:0006914); MAPT (HGNC:6887) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); MAPT (HGNC:6887) —DISRUPTS→ Autophagy (GO:0006914); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Autophagy (GO:0006914) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398); Autophagy (GO:0006914) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398). Mutations in PSEN1 and MAPT, causing early-onset Alzheimer's disease and familial acne inversa 3 respectively, both converge on the dysregulation of ER stress and autophagy pathways. These shared cellular stress responses, when impaired, can lead to the distinct pathological phenotypes of each disease.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); PSEN1 (HGNC:9508) —DISRUPTS→ Autophagy (GO:0006914); MAPT (HGNC:6887) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); MAPT (HGNC:6887) —DISRUPTS→ Autophagy (GO:0006914); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Autophagy (GO:0006914) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398); Autophagy (GO:0006914) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398). Mutations in PSEN1 and MAPT, causing early-onset Alzheimer's disease and familial acne inversa 3 respectively, both converge on the dysregulation of ER stress and autophagy pathways. These shared cellular stress responses, when impaired, can lead to the distinct pathological phenotypes of each disease.",
+      "falsification": {
+        "text": "If studies show that mutations in PSEN1 and MAPT do not significantly impact ER stress or autophagy pathways in relevant cellular models, or if these pathways are shown to be independently regulated in the two diseases, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome sequencing data from gnomAD reveals no common variants in PSEN1 or MAPT associated with either disease, supporting their rare and potentially de novo or familial nature."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013398",
+        "diseaseBName": "acne inversa, familial, 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "fitness": 0.6059,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); PSEN1 (HGNC:9508) —DISRUPTS→ Autophagy (GO:0006914); MAPT (HGNC:6887) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); MAPT (HGNC:6887) —DISRUPTS→ Autophagy (GO:0006914); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Autophagy (GO:0006914) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398); Autophagy (GO:0006914) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398). Mutations in PSEN1 and MAPT, causing early-onset Alzheimer's disease and familial acne inversa 3 respectively, both converge on the dysregulation of ER stress and autophagy pathways. These shared cellular stress responses, when impaired, can lead to the distinct pathological phenotypes of each disease.",
+        "falsification": {
+          "text": "If studies show that mutations in PSEN1 and MAPT do not significantly impact ER stress or autophagy pathways in relevant cellular models, or if these pathways are shown to be independently regulated in the two diseases, this hypothesis would be falsified.",
+          "gnomad_variant": "Exome sequencing data from gnomAD reveals no common variants in PSEN1 or MAPT associated with either disease, supporting their rare and potentially de novo or familial nature."
+        },
+        "translational": "Understanding the shared role of ER stress and autophagy in both early-onset Alzheimer's disease and familial acne inversa 3 could lead to the development of novel therapeutic strategies targeting these pathways for both conditions, potentially offering cross-disease benefits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013371",
+      "diseaseBName": "dilated cardiomyopathy 1U",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-193175); Amyloid precursor protein processing (REACT:R-HSA-193175) —LEADS_TO→ Pick disease (MONDO:0008243); MAPT (HGNC:6861) —DISRUPTS→ Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282); Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Haploinsufficiency in PSEN1 disrupts amyloid precursor protein processing, leading to Pick disease. Haploinsufficiency in MAPT disrupts tau protein aggregation and neurofibrillary tangle formation, leading to dilated cardiomyopathy 1U. The shared mechanism lies in the convergence of these two distinct pathways, both affecting protein homeostasis within neurons and potentially cardiac cells, albeit through different protein products.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-193175); Amyloid precursor protein processing (REACT:R-HSA-193175) —LEADS_TO→ Pick disease (MONDO:0008243); MAPT (HGNC:6861) —DISRUPTS→ Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282); Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Haploinsufficiency in PSEN1 disrupts amyloid precursor protein processing, leading to Pick disease. Haploinsufficiency in MAPT disrupts tau protein aggregation and neurofibrillary tangle formation, leading to dilated cardiomyopathy 1U. The shared mechanism lies in the convergence of these two distinct pathways, both affecting protein homeostasis within neurons and potentially cardiac cells, albeit through different protein products.",
+      "falsification": {
+        "text": "Absence of mutations in PSEN1 in individuals with Pick disease or absence of mutations in MAPT in individuals with dilated cardiomyopathy 1U would falsify this hypothesis.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a common pathogenic variant (AF > 0.001) in either HGNC:9508 or HGNC:6861 in relevant populations would also challenge the proposed causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013371",
+        "diseaseBName": "dilated cardiomyopathy 1U",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-193175); Amyloid precursor protein processing (REACT:R-HSA-193175) —LEADS_TO→ Pick disease (MONDO:0008243); MAPT (HGNC:6861) —DISRUPTS→ Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282); Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Haploinsufficiency in PSEN1 disrupts amyloid precursor protein processing, leading to Pick disease. Haploinsufficiency in MAPT disrupts tau protein aggregation and neurofibrillary tangle formation, leading to dilated cardiomyopathy 1U. The shared mechanism lies in the convergence of these two distinct pathways, both affecting protein homeostasis within neurons and potentially cardiac cells, albeit through different protein products.",
+        "falsification": {
+          "text": "Absence of mutations in PSEN1 in individuals with Pick disease or absence of mutations in MAPT in individuals with dilated cardiomyopathy 1U would falsify this hypothesis.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a common pathogenic variant (AF > 0.001) in either HGNC:9508 or HGNC:6861 in relevant populations would also challenge the proposed causal link."
+        },
+        "translational": "Understanding the shared genetic basis and overlapping protein processing pathways could reveal novel therapeutic targets for both neurodegenerative and cardiovascular conditions, potentially leading to shared treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011743",
+      "diseaseBName": "Alzheimer disease 4",
+      "fitness": 0.4931,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MAPT (HGNC:6872) —DISRUPTS→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ neurofibrillary tangles (HP:0002137); neurofibrillary tangles (HP:0002137) —LEADS_TO→ Pick disease (MONDO:0008243); PSEN1 (HGNC:9197) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); PSEN2 (HGNC:9198) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); amyloid precursor protein processing (REACT:R-HSA-109578) —LEADS_TO→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ Alzheimer disease 4 (MONDO:0011743). Mutations in MAPT in Pick disease lead to aberrant tau protein aggregation and neurofibrillary tangles. In Alzheimer disease 4, mutations in PSEN1 and PSEN2 disrupt amyloid precursor protein processing, which in turn influences tau pathology, leading to neurofibrillary tangles and the disease phenotype.",
+      "mechanism_narrative": "MAPT (HGNC:6872) —DISRUPTS→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ neurofibrillary tangles (HP:0002137); neurofibrillary tangles (HP:0002137) —LEADS_TO→ Pick disease (MONDO:0008243); PSEN1 (HGNC:9197) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); PSEN2 (HGNC:9198) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); amyloid precursor protein processing (REACT:R-HSA-109578) —LEADS_TO→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ Alzheimer disease 4 (MONDO:0011743). Mutations in MAPT in Pick disease lead to aberrant tau protein aggregation and neurofibrillary tangles. In Alzheimer disease 4, mutations in PSEN1 and PSEN2 disrupt amyloid precursor protein processing, which in turn influences tau pathology, leading to neurofibrillary tangles and the disease phenotype.",
+      "falsification": {
+        "text": "Demonstration that mutations in MAPT in Pick disease do not lead to aberrant tau aggregation or neurofibrillary tangle formation, or that mutations in PSEN1/PSEN2 in Alzheimer disease 4 do not impact tau pathology or neurofibrillary tangle formation.",
+        "gnomad_variant": "Exclusion of pathogenic variants in MAPT, PSEN1, and PSEN2 from gnomAD populations that show a significant allele frequency > 1% for variants implicated in these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011743",
+        "diseaseBName": "Alzheimer disease 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.4931,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MAPT (HGNC:6872) —DISRUPTS→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ neurofibrillary tangles (HP:0002137); neurofibrillary tangles (HP:0002137) —LEADS_TO→ Pick disease (MONDO:0008243); PSEN1 (HGNC:9197) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); PSEN2 (HGNC:9198) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); amyloid precursor protein processing (REACT:R-HSA-109578) —LEADS_TO→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ Alzheimer disease 4 (MONDO:0011743). Mutations in MAPT in Pick disease lead to aberrant tau protein aggregation and neurofibrillary tangles. In Alzheimer disease 4, mutations in PSEN1 and PSEN2 disrupt amyloid precursor protein processing, which in turn influences tau pathology, leading to neurofibrillary tangles and the disease phenotype.",
+        "falsification": {
+          "text": "Demonstration that mutations in MAPT in Pick disease do not lead to aberrant tau aggregation or neurofibrillary tangle formation, or that mutations in PSEN1/PSEN2 in Alzheimer disease 4 do not impact tau pathology or neurofibrillary tangle formation.",
+          "gnomad_variant": "Exclusion of pathogenic variants in MAPT, PSEN1, and PSEN2 from gnomAD populations that show a significant allele frequency > 1% for variants implicated in these diseases."
+        },
+        "translational": "Understanding the shared pathway of tau aggregation and neurofibrillary tangle formation in Pick disease and Alzheimer disease 4 could lead to the development of common therapeutic strategies targeting tau pathology, potentially benefiting patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013373",
+      "diseaseBName": "dilated cardiomyopathy 1V",
+      "fitness": 0.4384,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9195) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); PSEN2 (HGNC:9196) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); MAPT (HGNC:6889) —DISRUPTS→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —INCREASES→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —LEADS_TO→ Pick disease (MONDO:0008243); Tau protein aggregation (GO:0003000) —LEADS_TO→ Dilated cardiomyopathy 1V (MONDO:0013373). Mutations in PSEN1, PSEN2, and MAPT can disrupt amyloid precursor processing and tau protein aggregation, respectively. Dysregulation of amyloid precursor processing can lead to Pick disease, while abnormal tau protein aggregation contributes to dilated cardiomyopathy 1V.",
+      "mechanism_narrative": "PSEN1 (HGNC:9195) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); PSEN2 (HGNC:9196) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); MAPT (HGNC:6889) —DISRUPTS→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —INCREASES→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —LEADS_TO→ Pick disease (MONDO:0008243); Tau protein aggregation (GO:0003000) —LEADS_TO→ Dilated cardiomyopathy 1V (MONDO:0013373). Mutations in PSEN1, PSEN2, and MAPT can disrupt amyloid precursor processing and tau protein aggregation, respectively. Dysregulation of amyloid precursor processing can lead to Pick disease, while abnormal tau protein aggregation contributes to dilated cardiomyopathy 1V.",
+      "falsification": {
+        "text": "If genetic analysis reveals distinct, non-overlapping molecular pathways for each disease that do not involve PSEN1, MAPT, or PSEN2, or if mutations in these genes are found to be common in the general population (e.g., gnomAD allele frequency > 1%) without a clear link to either phenotype, this hypothesis would be falsified.",
+        "gnomad_variant": "rs121918014 (PSEN1 E280A)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013373",
+        "diseaseBName": "dilated cardiomyopathy 1V",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.4384,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9195) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); PSEN2 (HGNC:9196) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); MAPT (HGNC:6889) —DISRUPTS→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —INCREASES→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —LEADS_TO→ Pick disease (MONDO:0008243); Tau protein aggregation (GO:0003000) —LEADS_TO→ Dilated cardiomyopathy 1V (MONDO:0013373). Mutations in PSEN1, PSEN2, and MAPT can disrupt amyloid precursor processing and tau protein aggregation, respectively. Dysregulation of amyloid precursor processing can lead to Pick disease, while abnormal tau protein aggregation contributes to dilated cardiomyopathy 1V.",
+        "falsification": {
+          "text": "If genetic analysis reveals distinct, non-overlapping molecular pathways for each disease that do not involve PSEN1, MAPT, or PSEN2, or if mutations in these genes are found to be common in the general population (e.g., gnomAD allele frequency > 1%) without a clear link to either phenotype, this hypothesis would be falsified.",
+          "gnomad_variant": "rs121918014 (PSEN1 E280A)"
+        },
+        "translational": "Understanding this shared mechanistic overlap could lead to novel therapeutic strategies targeting common pathways for both neurodegenerative and cardiac conditions, potentially improving patient outcomes and enabling repurposing of existing drugs."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013397",
+      "diseaseBName": "acne inversa, familial, 2",
+      "fitness": 0.4363,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9184) —DISRUPTS→ Amyloid precursor protein processing (GO:0001707); MAPT (HGNC:6887) —DISRUPTS→ Tau protein phosphorylation (GO:0006476); PSENEN (HGNC:19328) —DISRUPTS→ Autophagy (GO:0006914); Amyloid precursor protein processing (GO:0001707) —DECREASES→ Autophagy (GO:0006914); Tau protein phosphorylation (GO:0006476) —DECREASES→ Autophagy (GO:0006914); Autophagy (GO:0006914) —DECREASES→ Lysosomal degradation (GO:0000422); Lysosomal degradation (GO:0000422) —LEADS_TO→ Neurofibrillary tangles (HP:0002151); Lysosomal degradation (GO:0000422) —LEADS_TO→ Hidradenitis suppurativa (HP:0030747). Mutations in PSEN1 contribute to Alzheimer's disease by disrupting amyloid precursor protein processing, leading to downstream effects that impair autophagy and lysosomal degradation, ultimately resulting in neurofibrillary tangles. Similarly, mutations in PSENEN, implicated in familial acne inversa 2, are hypothesized to directly impair autophagy, leading to a breakdown in lysosomal degradation and contributing to the characteristic phenotype of hidradenitis suppurativa.",
+      "mechanism_narrative": "PSEN1 (HGNC:9184) —DISRUPTS→ Amyloid precursor protein processing (GO:0001707); MAPT (HGNC:6887) —DISRUPTS→ Tau protein phosphorylation (GO:0006476); PSENEN (HGNC:19328) —DISRUPTS→ Autophagy (GO:0006914); Amyloid precursor protein processing (GO:0001707) —DECREASES→ Autophagy (GO:0006914); Tau protein phosphorylation (GO:0006476) —DECREASES→ Autophagy (GO:0006914); Autophagy (GO:0006914) —DECREASES→ Lysosomal degradation (GO:0000422); Lysosomal degradation (GO:0000422) —LEADS_TO→ Neurofibrillary tangles (HP:0002151); Lysosomal degradation (GO:0000422) —LEADS_TO→ Hidradenitis suppurativa (HP:0030747). Mutations in PSEN1 contribute to Alzheimer's disease by disrupting amyloid precursor protein processing, leading to downstream effects that impair autophagy and lysosomal degradation, ultimately resulting in neurofibrillary tangles. Similarly, mutations in PSENEN, implicated in familial acne inversa 2, are hypothesized to directly impair autophagy, leading to a breakdown in lysosomal degradation and contributing to the characteristic phenotype of hidradenitis suppurativa.",
+      "falsification": {
+        "text": "Demonstration that mutations in PSEN1 or PSENEN do not impact autophagy or lysosomal degradation pathways in relevant cellular or animal models, or if genetic variants in PSEN1 or PSENEN are found at a significant frequency (>1%) in unaffected individuals within large population databases like gnomAD, suggesting they are not strictly causal for either disease.",
+        "gnomad_variant": "Exome Variant Frequency > 0.01 for pathogenic variants in PSEN1 or PSENEN."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013397",
+        "diseaseBName": "acne inversa, familial, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.4363,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9184) —DISRUPTS→ Amyloid precursor protein processing (GO:0001707); MAPT (HGNC:6887) —DISRUPTS→ Tau protein phosphorylation (GO:0006476); PSENEN (HGNC:19328) —DISRUPTS→ Autophagy (GO:0006914); Amyloid precursor protein processing (GO:0001707) —DECREASES→ Autophagy (GO:0006914); Tau protein phosphorylation (GO:0006476) —DECREASES→ Autophagy (GO:0006914); Autophagy (GO:0006914) —DECREASES→ Lysosomal degradation (GO:0000422); Lysosomal degradation (GO:0000422) —LEADS_TO→ Neurofibrillary tangles (HP:0002151); Lysosomal degradation (GO:0000422) —LEADS_TO→ Hidradenitis suppurativa (HP:0030747). Mutations in PSEN1 contribute to Alzheimer's disease by disrupting amyloid precursor protein processing, leading to downstream effects that impair autophagy and lysosomal degradation, ultimately resulting in neurofibrillary tangles. Similarly, mutations in PSENEN, implicated in familial acne inversa 2, are hypothesized to directly impair autophagy, leading to a breakdown in lysosomal degradation and contributing to the characteristic phenotype of hidradenitis suppurativa.",
+        "falsification": {
+          "text": "Demonstration that mutations in PSEN1 or PSENEN do not impact autophagy or lysosomal degradation pathways in relevant cellular or animal models, or if genetic variants in PSEN1 or PSENEN are found at a significant frequency (>1%) in unaffected individuals within large population databases like gnomAD, suggesting they are not strictly causal for either disease.",
+          "gnomad_variant": "Exome Variant Frequency > 0.01 for pathogenic variants in PSEN1 or PSENEN."
+        },
+        "translational": "Identifying a shared mechanistic link via impaired autophagy and lysosomal degradation between Alzheimer's disease and familial acne inversa 2 could reveal novel therapeutic targets. Modulators of autophagy or lysosomal function might offer a therapeutic strategy applicable to both neurodegenerative conditions and inflammatory skin disorders, representing a significant advancement in treating seemingly disparate diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007728",
+      "diseaseBName": "acne inversa, familial, 1",
+      "fitness": 0.436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Nicastrin (NCSTN) (HGNC:7933); Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Presenilin 1 (PSEN1) (HGNC:9186); Nicastrin (NCSTN) (HGNC:7933) —BINDS→ gamma-secretase complex activity (GO:0000380); Presenilin 1 (PSEN1) (HGNC:9186) —BINDS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Neurodegeneration (HP:0002182); Pathogenic variants in FAI-associated genes (MONDO:0007728) —DISRUPTS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Acne inversa (HP:0011695). Pathogenic variants in genes like NCSTN and PSEN1 (associated with Alzheimer's disease) can impair the function of the gamma-secretase complex. While FAI is genetically distinct, it is hypothesized that disruption of the same gamma-secretase complex, potentially through other genetic or regulatory mechanisms, could lead to the distinct phenotype of acne inversa by affecting cellular processes in the skin.",
+      "mechanism_narrative": "Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Nicastrin (NCSTN) (HGNC:7933); Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Presenilin 1 (PSEN1) (HGNC:9186); Nicastrin (NCSTN) (HGNC:7933) —BINDS→ gamma-secretase complex activity (GO:0000380); Presenilin 1 (PSEN1) (HGNC:9186) —BINDS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Neurodegeneration (HP:0002182); Pathogenic variants in FAI-associated genes (MONDO:0007728) —DISRUPTS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Acne inversa (HP:0011695). Pathogenic variants in genes like NCSTN and PSEN1 (associated with Alzheimer's disease) can impair the function of the gamma-secretase complex. While FAI is genetically distinct, it is hypothesized that disruption of the same gamma-secretase complex, potentially through other genetic or regulatory mechanisms, could lead to the distinct phenotype of acne inversa by affecting cellular processes in the skin.",
+      "falsification": {
+        "text": "Demonstration that mutations in NCSTN or PSEN1 do not affect gamma-secretase complex activity, or that genetic variants associated with acne inversa have no impact on the gamma-secretase complex or its downstream signaling pathways.",
+        "gnomad_variant": "Identification of common variants (AF > 0.1%) in NCSTN or PSEN1 associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-1474228": 81,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007728",
+        "diseaseBName": "acne inversa, familial, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-1474228": 81,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Nicastrin (NCSTN) (HGNC:7933); Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Presenilin 1 (PSEN1) (HGNC:9186); Nicastrin (NCSTN) (HGNC:7933) —BINDS→ gamma-secretase complex activity (GO:0000380); Presenilin 1 (PSEN1) (HGNC:9186) —BINDS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Neurodegeneration (HP:0002182); Pathogenic variants in FAI-associated genes (MONDO:0007728) —DISRUPTS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Acne inversa (HP:0011695). Pathogenic variants in genes like NCSTN and PSEN1 (associated with Alzheimer's disease) can impair the function of the gamma-secretase complex. While FAI is genetically distinct, it is hypothesized that disruption of the same gamma-secretase complex, potentially through other genetic or regulatory mechanisms, could lead to the distinct phenotype of acne inversa by affecting cellular processes in the skin.",
+        "falsification": {
+          "text": "Demonstration that mutations in NCSTN or PSEN1 do not affect gamma-secretase complex activity, or that genetic variants associated with acne inversa have no impact on the gamma-secretase complex or its downstream signaling pathways.",
+          "gnomad_variant": "Identification of common variants (AF > 0.1%) in NCSTN or PSEN1 associated with either disease."
+        },
+        "translational": "Understanding a shared mechanistic link through the gamma-secretase complex could reveal novel therapeutic targets for both neurodegenerative disorders and inflammatory skin conditions, potentially involving modulation of APP processing or keratinocyte signaling pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013693",
+      "diseaseBName": "inflammatory skin and bowel disease, neonatal, 1",
+      "fitness": 0.3489,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9197) —DISRUPTS→ Amyloid beta metabolism (GO:0002027); Amyloid beta metabolism (GO:0002027) —LEADS_TO→ Cognitive impairment (HP:0001249); ADAM17 (HGNC:239) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1279070); TNF-alpha signaling pathway (REACT:R-HSA-1279070) —INCREASES→ TNF-alpha (CHEBI:17857); TNF-alpha (CHEBI:17857) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (HP:0031859). In Alzheimer's disease, mutations in PSEN1 disrupt amyloid beta metabolism, leading to cognitive impairment. In neonatal inflammatory skin and bowel disease 1, gain-of-function mutations in ADAM17 dysregulate the TNF-alpha signaling pathway, leading to increased TNF-alpha and subsequent inflammatory phenotypes. The shared convergence is the dysregulation of the TNF-alpha signaling pathway, with ADAM17 acting as a key mediator.",
+      "mechanism_narrative": "PSEN1 (HGNC:9197) —DISRUPTS→ Amyloid beta metabolism (GO:0002027); Amyloid beta metabolism (GO:0002027) —LEADS_TO→ Cognitive impairment (HP:0001249); ADAM17 (HGNC:239) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1279070); TNF-alpha signaling pathway (REACT:R-HSA-1279070) —INCREASES→ TNF-alpha (CHEBI:17857); TNF-alpha (CHEBI:17857) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (HP:0031859). In Alzheimer's disease, mutations in PSEN1 disrupt amyloid beta metabolism, leading to cognitive impairment. In neonatal inflammatory skin and bowel disease 1, gain-of-function mutations in ADAM17 dysregulate the TNF-alpha signaling pathway, leading to increased TNF-alpha and subsequent inflammatory phenotypes. The shared convergence is the dysregulation of the TNF-alpha signaling pathway, with ADAM17 acting as a key mediator.",
+      "falsification": {
+        "text": "Discovery of mutations in PSEN1 or MAPT that cause gain-of-function leading to inflammatory phenotypes, or discovery of mutations in ADAM17 that cause loss-of-function leading to Alzheimer's-like cognitive decline.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a specific pathogenic variant implicated in MONDO:0008243 with a population frequency > 0.01% would falsify its role as a rare disease gene."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-2644606": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013693",
+        "diseaseBName": "inflammatory skin and bowel disease, neonatal, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-2894862"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-2644606": 58
+        },
+        "fitness": 0.3489,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9197) —DISRUPTS→ Amyloid beta metabolism (GO:0002027); Amyloid beta metabolism (GO:0002027) —LEADS_TO→ Cognitive impairment (HP:0001249); ADAM17 (HGNC:239) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1279070); TNF-alpha signaling pathway (REACT:R-HSA-1279070) —INCREASES→ TNF-alpha (CHEBI:17857); TNF-alpha (CHEBI:17857) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (HP:0031859). In Alzheimer's disease, mutations in PSEN1 disrupt amyloid beta metabolism, leading to cognitive impairment. In neonatal inflammatory skin and bowel disease 1, gain-of-function mutations in ADAM17 dysregulate the TNF-alpha signaling pathway, leading to increased TNF-alpha and subsequent inflammatory phenotypes. The shared convergence is the dysregulation of the TNF-alpha signaling pathway, with ADAM17 acting as a key mediator.",
+        "falsification": {
+          "text": "Discovery of mutations in PSEN1 or MAPT that cause gain-of-function leading to inflammatory phenotypes, or discovery of mutations in ADAM17 that cause loss-of-function leading to Alzheimer's-like cognitive decline.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a specific pathogenic variant implicated in MONDO:0008243 with a population frequency > 0.01% would falsify its role as a rare disease gene."
+        },
+        "translational": "Understanding the shared role of TNF-alpha signaling in both neurodegenerative and inflammatory conditions could lead to novel therapeutic strategies targeting this pathway for both Alzheimer's disease and inflammatory skin and bowel diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980972",
+      "diseaseBName": "hypotrichosis 16",
+      "fitness": 0.3475,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9144) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); MAPT (HGNC:6872) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); ADAM17 (HGNC:244) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ Pick disease (MONDO:0008243); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ hypotrichosis 16 (MONDO:0980972). Mutations in PSEN1 and MAPT (causal for Pick disease) and ADAM17 (causal for hypotrichosis 16) converge on the shared pathway of amyloid precursor protein (APP) processing. Dysregulation of this pathway, either through direct impairment of APP processing enzymes or related components, can lead to the distinct yet overlapping pathologies of these two diseases.",
+      "mechanism_narrative": "PSEN1 (HGNC:9144) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); MAPT (HGNC:6872) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); ADAM17 (HGNC:244) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ Pick disease (MONDO:0008243); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ hypotrichosis 16 (MONDO:0980972). Mutations in PSEN1 and MAPT (causal for Pick disease) and ADAM17 (causal for hypotrichosis 16) converge on the shared pathway of amyloid precursor protein (APP) processing. Dysregulation of this pathway, either through direct impairment of APP processing enzymes or related components, can lead to the distinct yet overlapping pathologies of these two diseases.",
+      "falsification": {
+        "text": "Absence of mutations in ADAM17 or related APP processing pathway genes in individuals with hypotrichosis 16, or demonstration that PSEN1/MAPT mutations do not impact ADAM17 activity or APP processing in a manner that could lead to hypotrichosis phenotypes.",
+        "gnomad_variant": "If a common variant (AF > 0.01) in ADAM17 is found to be strongly associated with hypotrichosis 16, this would weaken the hypothesis of a rare variant disease mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-2644606": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980972",
+        "diseaseBName": "hypotrichosis 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-2894862"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-2644606": 58
+        },
+        "fitness": 0.3475,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9144) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); MAPT (HGNC:6872) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); ADAM17 (HGNC:244) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ Pick disease (MONDO:0008243); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ hypotrichosis 16 (MONDO:0980972). Mutations in PSEN1 and MAPT (causal for Pick disease) and ADAM17 (causal for hypotrichosis 16) converge on the shared pathway of amyloid precursor protein (APP) processing. Dysregulation of this pathway, either through direct impairment of APP processing enzymes or related components, can lead to the distinct yet overlapping pathologies of these two diseases.",
+        "falsification": {
+          "text": "Absence of mutations in ADAM17 or related APP processing pathway genes in individuals with hypotrichosis 16, or demonstration that PSEN1/MAPT mutations do not impact ADAM17 activity or APP processing in a manner that could lead to hypotrichosis phenotypes.",
+          "gnomad_variant": "If a common variant (AF > 0.01) in ADAM17 is found to be strongly associated with hypotrichosis 16, this would weaken the hypothesis of a rare variant disease mechanism."
+        },
+        "translational": "Understanding the shared role of APP processing in Pick disease and hypotrichosis 16 could reveal novel therapeutic targets for both conditions, potentially involving modulators of ADAM17 activity or downstream signaling pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T04:37:38.460Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Pick disease (MONDO:0008243)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 24 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | semantic dementia (MONDO:0010857) | shared pathway | Tier 2 | 0.678 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 2 | Alzheimer disease 3 (MONDO:0011913) | shared pathway | Tier 2 | 0.668 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 3 | acne inversa, familial, 3 (MONDO:0013398) | shared pathway | Tier 2 | 0.606 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 4 | dilated cardiomyopathy 1U (MONDO:0013371) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 5 | Alzheimer disease 4 (MONDO:0011743) | shared pathway | Tier 3 | 0.493 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 6 | dilated cardiomyopathy 1V (MONDO:0013373) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 7 | acne inversa, familial, 2 (MONDO:0013397) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 8 | acne inversa, familial, 1 (MONDO:0007728) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 9 | inflammatory skin and bowel disease, neonatal, 1 (MONDO:0013693) | shared pathway | Tier 3 | 0.349 | Reactome:R-HSA-1251985, Reactome:R-HSA-2894862 |\n| 10 | hypotrichosis 16 (MONDO:0980972) | shared pathway | Tier 3 | 0.347 | Reactome:R-HSA-1251985, Reactome:R-HSA-2894862 |\n\n### CANDIDATE DETAIL\n#### 1. semantic dementia  —  Tier 2 — Strong / Probable  (fitness 0.678)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Neurodegeneration (HP:0002094); MAPT (HGNC:6893) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-1937974); MAPT (HGNC:6893) —LEADS_TO→ Tau pathology (HP:0002151); Amyloid precursor protein processing (REACT:R-HSA-1937974) —LEADS_TO→ Pick disease (MONDO:0008243); Tau pathology (HP:0002151) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurodegeneration (HP:0002094) —LEADS_TO→ Pick disease (MONDO:0008243); Neurodegeneration (HP:0002094) —LEADS_TO→ Semantic dementia (MONDO:0010857). Mutations in PSEN1 disrupt APP processing, leading to neurodegeneration characteristic of Pick disease. Mutations in MAPT also impact APP processing and directly lead to tau pathology, which contributes to semantic dementia.\n\n**How to falsify it:** The absence of pathogenic variants in PSEN1 or MAPT in patients diagnosed with Pick disease or semantic dementia, respectively, would falsify this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the pathways affected by mutations in PSEN1 and MAPT in these diseases, this would also serve as a falsification condition. _(variant: The presence of a common, benign variant (e.g., allele frequency > 1% in gnomAD) in either PSEN1 or MAPT that is strongly associated with Pick disease or semantic dementia, respectively.)_\n\n**Why it matters:** Identifying the shared mechanistic links between Pick disease and semantic dementia, particularly involving the APP processing pathway and tau pathology, could lead to the development of targeted therapies that address common underlying mechanisms, potentially benefiting patients with both conditions.\n\n---\n\n#### 2. Alzheimer disease 3  —  Tier 2 — Strong / Probable  (fitness 0.668)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-680950); Amyloid precursor protein processing (REACT:R-HSA-680950) —PRODUCES→ Amyloid beta 42 (CHEBI:58259); Amyloid beta 42 (CHEBI:58259) —LEADS_TO→ Amyloid plaque formation (REACT:R-HSA-5678528); Amyloid plaque formation (REACT:R-HSA-5678528) —LEADS_TO→ Neurodegeneration (HP:0002092); MAPT (HGNC:6856) —DISRUPTS→ Tau protein aggregation (REACT:R-HSA-109580); Tau protein aggregation (REACT:R-HSA-109580) —LEADS_TO→ Pick body formation (HP:0030467); Pick body formation (HP:0030467) —LEADS_TO→ Neurodegeneration (HP:0002092). Mutations in PSEN1 lead to increased production of amyloid-beta 42, promoting amyloid plaque formation and subsequent neurodegeneration (Alzheimer disease 3). Mutations in MAPT lead to tau protein aggregation and the formation of Pick bodies, which also results in neurodegeneration (Pick disease). Both pathways converge on neurodegeneration as a shared phenotypic outcome.\n\n**How to falsify it:** The absence of pathogenic variants in PSEN1 in individuals with Alzheimer disease 3, or the absence of pathogenic variants in MAPT in individuals with Pick disease, would falsify this hypothesis. Additionally, if studies show distinct molecular mechanisms for tau aggregation and amyloid-beta production that do not interact or converge, this would also falsify the proposed link. _(variant: rs121918615 (a common variant in PSEN1, though not typically associated with early-onset AD, its presence at high frequency could challenge a specific variant-based hypothesis))_\n\n**Why it matters:** Understanding the shared downstream effects of PSEN1 and MAPT mutations, particularly their convergence on neurodegeneration, could reveal novel therapeutic targets for both Alzheimer disease and Pick disease. Strategies aimed at reducing protein aggregation or enhancing protein clearance could potentially benefit patients with either condition.\n\n---\n\n#### 3. acne inversa, familial, 3  —  Tier 2 — Strong / Probable  (fitness 0.606)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); PSEN1 (HGNC:9508) —DISRUPTS→ Autophagy (GO:0006914); MAPT (HGNC:6887) —DISRUPTS→ Endoplasmic Reticulum (ER) stress (GO:0005783); MAPT (HGNC:6887) —DISRUPTS→ Autophagy (GO:0006914); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Autophagy (GO:0006914) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0008243); Endoplasmic Reticulum (ER) stress (GO:0005783) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398); Autophagy (GO:0006914) —LEADS_TO→ Acne inversa, familial, 3 (MONDO:0013398). Mutations in PSEN1 and MAPT, causing early-onset Alzheimer's disease and familial acne inversa 3 respectively, both converge on the dysregulation of ER stress and autophagy pathways. These shared cellular stress responses, when impaired, can lead to the distinct pathological phenotypes of each disease.\n\n**How to falsify it:** If studies show that mutations in PSEN1 and MAPT do not significantly impact ER stress or autophagy pathways in relevant cellular models, or if these pathways are shown to be independently regulated in the two diseases, this hypothesis would be falsified. _(variant: Exome sequencing data from gnomAD reveals no common variants in PSEN1 or MAPT associated with either disease, supporting their rare and potentially de novo or familial nature.)_\n\n**Why it matters:** Understanding the shared role of ER stress and autophagy in both early-onset Alzheimer's disease and familial acne inversa 3 could lead to the development of novel therapeutic strategies targeting these pathways for both conditions, potentially offering cross-disease benefits.\n\n---\n\n#### 4. dilated cardiomyopathy 1U  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:R-HSA-193175); Amyloid precursor protein processing (REACT:R-HSA-193175) —LEADS_TO→ Pick disease (MONDO:0008243); MAPT (HGNC:6861) —DISRUPTS→ Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282); Tau protein aggregation and neurofibrillary tangle formation (REACT:R-HSA-5690282) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Haploinsufficiency in PSEN1 disrupts amyloid precursor protein processing, leading to Pick disease. Haploinsufficiency in MAPT disrupts tau protein aggregation and neurofibrillary tangle formation, leading to dilated cardiomyopathy 1U. The shared mechanism lies in the convergence of these two distinct pathways, both affecting protein homeostasis within neurons and potentially cardiac cells, albeit through different protein products.\n\n**How to falsify it:** Absence of mutations in PSEN1 in individuals with Pick disease or absence of mutations in MAPT in individuals with dilated cardiomyopathy 1U would falsify this hypothesis. _(variant: Exome sequencing data from gnomAD showing a common pathogenic variant (AF > 0.001) in either HGNC:9508 or HGNC:6861 in relevant populations would also challenge the proposed causal link.)_\n\n**Why it matters:** Understanding the shared genetic basis and overlapping protein processing pathways could reveal novel therapeutic targets for both neurodegenerative and cardiovascular conditions, potentially leading to shared treatment strategies.\n\n---\n\n#### 5. Alzheimer disease 4  —  Tier 3 — Moderate / Emerging  (fitness 0.493)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** MAPT (HGNC:6872) —DISRUPTS→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ neurofibrillary tangles (HP:0002137); neurofibrillary tangles (HP:0002137) —LEADS_TO→ Pick disease (MONDO:0008243); PSEN1 (HGNC:9197) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); PSEN2 (HGNC:9198) —DISRUPTS→ amyloid precursor protein processing (REACT:R-HSA-109578); amyloid precursor protein processing (REACT:R-HSA-109578) —LEADS_TO→ tau protein aggregation (GO:0043502); tau protein aggregation (GO:0043502) —LEADS_TO→ Alzheimer disease 4 (MONDO:0011743). Mutations in MAPT in Pick disease lead to aberrant tau protein aggregation and neurofibrillary tangles. In Alzheimer disease 4, mutations in PSEN1 and PSEN2 disrupt amyloid precursor protein processing, which in turn influences tau pathology, leading to neurofibrillary tangles and the disease phenotype.\n\n**How to falsify it:** Demonstration that mutations in MAPT in Pick disease do not lead to aberrant tau aggregation or neurofibrillary tangle formation, or that mutations in PSEN1/PSEN2 in Alzheimer disease 4 do not impact tau pathology or neurofibrillary tangle formation. _(variant: Exclusion of pathogenic variants in MAPT, PSEN1, and PSEN2 from gnomAD populations that show a significant allele frequency > 1% for variants implicated in these diseases.)_\n\n**Why it matters:** Understanding the shared pathway of tau aggregation and neurofibrillary tangle formation in Pick disease and Alzheimer disease 4 could lead to the development of common therapeutic strategies targeting tau pathology, potentially benefiting patients with both conditions.\n\n---\n\n#### 6. dilated cardiomyopathy 1V  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9195) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); PSEN2 (HGNC:9196) —DISRUPTS→ Amyloid precursor processing (REACT:R-HSA-150074); MAPT (HGNC:6889) —DISRUPTS→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —INCREASES→ Tau protein aggregation (GO:0003000); Amyloid precursor processing (REACT:R-HSA-150074) —LEADS_TO→ Pick disease (MONDO:0008243); Tau protein aggregation (GO:0003000) —LEADS_TO→ Dilated cardiomyopathy 1V (MONDO:0013373). Mutations in PSEN1, PSEN2, and MAPT can disrupt amyloid precursor processing and tau protein aggregation, respectively. Dysregulation of amyloid precursor processing can lead to Pick disease, while abnormal tau protein aggregation contributes to dilated cardiomyopathy 1V.\n\n**How to falsify it:** If genetic analysis reveals distinct, non-overlapping molecular pathways for each disease that do not involve PSEN1, MAPT, or PSEN2, or if mutations in these genes are found to be common in the general population (e.g., gnomAD allele frequency > 1%) without a clear link to either phenotype, this hypothesis would be falsified. _(variant: rs121918014 (PSEN1 E280A))_\n\n**Why it matters:** Understanding this shared mechanistic overlap could lead to novel therapeutic strategies targeting common pathways for both neurodegenerative and cardiac conditions, potentially improving patient outcomes and enabling repurposing of existing drugs.\n\n---\n\n#### 7. acne inversa, familial, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9184) —DISRUPTS→ Amyloid precursor protein processing (GO:0001707); MAPT (HGNC:6887) —DISRUPTS→ Tau protein phosphorylation (GO:0006476); PSENEN (HGNC:19328) —DISRUPTS→ Autophagy (GO:0006914); Amyloid precursor protein processing (GO:0001707) —DECREASES→ Autophagy (GO:0006914); Tau protein phosphorylation (GO:0006476) —DECREASES→ Autophagy (GO:0006914); Autophagy (GO:0006914) —DECREASES→ Lysosomal degradation (GO:0000422); Lysosomal degradation (GO:0000422) —LEADS_TO→ Neurofibrillary tangles (HP:0002151); Lysosomal degradation (GO:0000422) —LEADS_TO→ Hidradenitis suppurativa (HP:0030747). Mutations in PSEN1 contribute to Alzheimer's disease by disrupting amyloid precursor protein processing, leading to downstream effects that impair autophagy and lysosomal degradation, ultimately resulting in neurofibrillary tangles. Similarly, mutations in PSENEN, implicated in familial acne inversa 2, are hypothesized to directly impair autophagy, leading to a breakdown in lysosomal degradation and contributing to the characteristic phenotype of hidradenitis suppurativa.\n\n**How to falsify it:** Demonstration that mutations in PSEN1 or PSENEN do not impact autophagy or lysosomal degradation pathways in relevant cellular or animal models, or if genetic variants in PSEN1 or PSENEN are found at a significant frequency (>1%) in unaffected individuals within large population databases like gnomAD, suggesting they are not strictly causal for either disease. _(variant: Exome Variant Frequency > 0.01 for pathogenic variants in PSEN1 or PSENEN.)_\n\n**Why it matters:** Identifying a shared mechanistic link via impaired autophagy and lysosomal degradation between Alzheimer's disease and familial acne inversa 2 could reveal novel therapeutic targets. Modulators of autophagy or lysosomal function might offer a therapeutic strategy applicable to both neurodegenerative conditions and inflammatory skin disorders, representing a significant advancement in treating seemingly disparate diseases.\n\n---\n\n#### 8. acne inversa, familial, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Nicastrin (NCSTN) (HGNC:7933); Pathogenic variants in NCSTN or PSEN1 (MONDO:0008243) —DISRUPTS→ Presenilin 1 (PSEN1) (HGNC:9186); Nicastrin (NCSTN) (HGNC:7933) —BINDS→ gamma-secretase complex activity (GO:0000380); Presenilin 1 (PSEN1) (HGNC:9186) —BINDS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Neurodegeneration (HP:0002182); Pathogenic variants in FAI-associated genes (MONDO:0007728) —DISRUPTS→ gamma-secretase complex activity (GO:0000380); gamma-secretase complex activity (GO:0000380) —LEADS_TO→ Acne inversa (HP:0011695). Pathogenic variants in genes like NCSTN and PSEN1 (associated with Alzheimer's disease) can impair the function of the gamma-secretase complex. While FAI is genetically distinct, it is hypothesized that disruption of the same gamma-secretase complex, potentially through other genetic or regulatory mechanisms, could lead to the distinct phenotype of acne inversa by affecting cellular processes in the skin.\n\n**How to falsify it:** Demonstration that mutations in NCSTN or PSEN1 do not affect gamma-secretase complex activity, or that genetic variants associated with acne inversa have no impact on the gamma-secretase complex or its downstream signaling pathways. _(variant: Identification of common variants (AF > 0.1%) in NCSTN or PSEN1 associated with either disease.)_\n\n**Why it matters:** Understanding a shared mechanistic link through the gamma-secretase complex could reveal novel therapeutic targets for both neurodegenerative disorders and inflammatory skin conditions, potentially involving modulation of APP processing or keratinocyte signaling pathways.\n\n---\n\n#### 9. inflammatory skin and bowel disease, neonatal, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.349)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** PSEN1 (HGNC:9197) —DISRUPTS→ Amyloid beta metabolism (GO:0002027); Amyloid beta metabolism (GO:0002027) —LEADS_TO→ Cognitive impairment (HP:0001249); ADAM17 (HGNC:239) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1279070); TNF-alpha signaling pathway (REACT:R-HSA-1279070) —INCREASES→ TNF-alpha (CHEBI:17857); TNF-alpha (CHEBI:17857) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (HP:0031859). In Alzheimer's disease, mutations in PSEN1 disrupt amyloid beta metabolism, leading to cognitive impairment. In neonatal inflammatory skin and bowel disease 1, gain-of-function mutations in ADAM17 dysregulate the TNF-alpha signaling pathway, leading to increased TNF-alpha and subsequent inflammatory phenotypes. The shared convergence is the dysregulation of the TNF-alpha signaling pathway, with ADAM17 acting as a key mediator.\n\n**How to falsify it:** Discovery of mutations in PSEN1 or MAPT that cause gain-of-function leading to inflammatory phenotypes, or discovery of mutations in ADAM17 that cause loss-of-function leading to Alzheimer's-like cognitive decline. _(variant: Exome sequencing data from gnomAD showing a specific pathogenic variant implicated in MONDO:0008243 with a population frequency > 0.01% would falsify its role as a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role of TNF-alpha signaling in both neurodegenerative and inflammatory conditions could lead to novel therapeutic strategies targeting this pathway for both Alzheimer's disease and inflammatory skin and bowel diseases.\n\n---\n\n#### 10. hypotrichosis 16  —  Tier 3 — Moderate / Emerging  (fitness 0.347)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** PSEN1 (HGNC:9144) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); MAPT (HGNC:6872) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); ADAM17 (HGNC:244) —DISRUPTS→ proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ Pick disease (MONDO:0008243); proteolytic processing of amyloid precursor protein (REACT:R-HSA-2159700) —LEADS_TO→ hypotrichosis 16 (MONDO:0980972). Mutations in PSEN1 and MAPT (causal for Pick disease) and ADAM17 (causal for hypotrichosis 16) converge on the shared pathway of amyloid precursor protein (APP) processing. Dysregulation of this pathway, either through direct impairment of APP processing enzymes or related components, can lead to the distinct yet overlapping pathologies of these two diseases.\n\n**How to falsify it:** Absence of mutations in ADAM17 or related APP processing pathway genes in individuals with hypotrichosis 16, or demonstration that PSEN1/MAPT mutations do not impact ADAM17 activity or APP processing in a manner that could lead to hypotrichosis phenotypes. _(variant: If a common variant (AF > 0.01) in ADAM17 is found to be strongly associated with hypotrichosis 16, this would weaken the hypothesis of a rare variant disease mechanism.)_\n\n**Why it matters:** Understanding the shared role of APP processing in Pick disease and hypotrichosis 16 could reveal novel therapeutic targets for both conditions, potentially involving modulators of ADAM17 activity or downstream signaling pathways.\n\n---"
+}

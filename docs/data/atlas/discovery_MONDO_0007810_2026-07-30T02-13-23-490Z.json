@@ -1,0 +1,93 @@
+{
+  "seed": {
+    "id": "MONDO:0007810",
+    "name": "autosomal dominant ichthyosis vulgaris"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012180",
+      "diseaseBName": "arrhythmogenic right ventricular dysplasia 9",
+      "fitness": 0.3874,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Filaggrin (FLG) (HGNC:3077) —DISRUPTS→ Keratinocyte differentiation (GO:0030215); Keratinocyte differentiation (GO:0030215) —LEADS_TO→ Ichthyosis vulgaris (HP:0000953); Plakophilin 2 (PKP2) (HGNC:9105) —DISRUPTS→ Desmosome assembly (GO:0034107); Desmosome assembly (GO:0034107) —LEADS_TO→ Arrhythmogenic right ventricular dysplasia 9 (HP:0030612). Loss-of-function mutations in FLG impair keratinocyte differentiation leading to ichthyosis vulgaris. Concurrently, loss-of-function mutations in PKP2 disrupt desmosome assembly, which is crucial for cardiomyocyte integrity, leading to arrhythmogenic right ventricular dysplasia 9. Both pathways converge on the fundamental cellular processes of epithelial integrity and cell-cell adhesion, albeit in different tissue contexts.",
+      "mechanism_narrative": "Filaggrin (FLG) (HGNC:3077) —DISRUPTS→ Keratinocyte differentiation (GO:0030215); Keratinocyte differentiation (GO:0030215) —LEADS_TO→ Ichthyosis vulgaris (HP:0000953); Plakophilin 2 (PKP2) (HGNC:9105) —DISRUPTS→ Desmosome assembly (GO:0034107); Desmosome assembly (GO:0034107) —LEADS_TO→ Arrhythmogenic right ventricular dysplasia 9 (HP:0030612). Loss-of-function mutations in FLG impair keratinocyte differentiation leading to ichthyosis vulgaris. Concurrently, loss-of-function mutations in PKP2 disrupt desmosome assembly, which is crucial for cardiomyocyte integrity, leading to arrhythmogenic right ventricular dysplasia 9. Both pathways converge on the fundamental cellular processes of epithelial integrity and cell-cell adhesion, albeit in different tissue contexts.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic studies reveal that mutations in FLG or PKP2 do not lead to loss-of-function phenotypes in their respective diseases, or if there is evidence of a complete lack of overlap in the downstream molecular pathways affected by these genes in keratinocytes and cardiomyocytes.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of FLG and PKP2 that are strongly associated with either ichthyosis vulgaris or arrhythmogenic right ventricular dysplasia 9, respectively, would challenge the causality of rare variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6809371"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6809371": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012180",
+        "diseaseBName": "arrhythmogenic right ventricular dysplasia 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6809371"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6809371": 129
+        },
+        "fitness": 0.3874,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Filaggrin (FLG) (HGNC:3077) —DISRUPTS→ Keratinocyte differentiation (GO:0030215); Keratinocyte differentiation (GO:0030215) —LEADS_TO→ Ichthyosis vulgaris (HP:0000953); Plakophilin 2 (PKP2) (HGNC:9105) —DISRUPTS→ Desmosome assembly (GO:0034107); Desmosome assembly (GO:0034107) —LEADS_TO→ Arrhythmogenic right ventricular dysplasia 9 (HP:0030612). Loss-of-function mutations in FLG impair keratinocyte differentiation leading to ichthyosis vulgaris. Concurrently, loss-of-function mutations in PKP2 disrupt desmosome assembly, which is crucial for cardiomyocyte integrity, leading to arrhythmogenic right ventricular dysplasia 9. Both pathways converge on the fundamental cellular processes of epithelial integrity and cell-cell adhesion, albeit in different tissue contexts.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic studies reveal that mutations in FLG or PKP2 do not lead to loss-of-function phenotypes in their respective diseases, or if there is evidence of a complete lack of overlap in the downstream molecular pathways affected by these genes in keratinocytes and cardiomyocytes.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of FLG and PKP2 that are strongly associated with either ichthyosis vulgaris or arrhythmogenic right ventricular dysplasia 9, respectively, would challenge the causality of rare variants."
+        },
+        "translational": "Understanding the shared mechanistic principles of disrupted epithelial and myocardial integrity could lead to novel therapeutic strategies targeting common pathways involved in cell adhesion and differentiation, potentially benefiting patients with either ichthyosis vulgaris or arrhythmogenic cardiomyopathy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011472",
+      "diseaseBName": "epidermolysis bullosa simplex due to plakophilin deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Loss-of-function FLG variant (null) —DISRUPTS→ Filaggrin (HGNC:3099); Filaggrin (HGNC:3099) —DECREASES→ Keratinocyte differentiation and structural integrity (GO:0008544); Keratinocyte differentiation and structural integrity (GO:0008544) —LEADS_TO→ Ichthyosis vulgaris (MONDO:0007810); Loss-of-function PKP1 variant (null) —DISRUPTS→ Plakophilin 1 (HGNC:9038); Plakophilin 1 (HGNC:9038) —DECREASES→ Epidermal barrier integrity (null); Epidermal barrier integrity (null) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472); Keratinocyte differentiation and structural integrity (GO:0008544) —BINDS→ Epidermal barrier integrity (null). Loss-of-function variants in FLG disrupt keratinocyte differentiation and structural integrity, leading to ichthyosis vulgaris. Similarly, loss-of-function variants in PKP1 disrupt epidermal barrier integrity through impaired cell adhesion, leading to epidermolysis bullosa simplex. Both pathways converge on the critical function of maintaining epidermal barrier integrity.",
+      "mechanism_narrative": "Loss-of-function FLG variant (null) —DISRUPTS→ Filaggrin (HGNC:3099); Filaggrin (HGNC:3099) —DECREASES→ Keratinocyte differentiation and structural integrity (GO:0008544); Keratinocyte differentiation and structural integrity (GO:0008544) —LEADS_TO→ Ichthyosis vulgaris (MONDO:0007810); Loss-of-function PKP1 variant (null) —DISRUPTS→ Plakophilin 1 (HGNC:9038); Plakophilin 1 (HGNC:9038) —DECREASES→ Epidermal barrier integrity (null); Epidermal barrier integrity (null) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472); Keratinocyte differentiation and structural integrity (GO:0008544) —BINDS→ Epidermal barrier integrity (null). Loss-of-function variants in FLG disrupt keratinocyte differentiation and structural integrity, leading to ichthyosis vulgaris. Similarly, loss-of-function variants in PKP1 disrupt epidermal barrier integrity through impaired cell adhesion, leading to epidermolysis bullosa simplex. Both pathways converge on the critical function of maintaining epidermal barrier integrity.",
+      "falsification": {
+        "text": "The presence of pathogenic variants in FLG in patients diagnosed with epidermolysis bullosa simplex due to plakophilin deficiency, or pathogenic variants in PKP1 in patients with ichthyosis vulgaris, would falsify the proposed distinct causal roles, suggesting a more complex or shared genetic etiology than hypothesized.",
+        "gnomad_variant": "Analysis of gnomAD data reveals pathogenic variants for FLG and PKP1 associated with these conditions, and their absence in control populations supports their causal role. If common, non-pathogenic variants in FLG or PKP1 were found to be enriched in patients with the other disease, this would suggest a shared genetic contribution or modifier effect."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6809371"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6809371": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011472",
+        "diseaseBName": "epidermolysis bullosa simplex due to plakophilin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6809371"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6809371": 129
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function FLG variant (null) —DISRUPTS→ Filaggrin (HGNC:3099); Filaggrin (HGNC:3099) —DECREASES→ Keratinocyte differentiation and structural integrity (GO:0008544); Keratinocyte differentiation and structural integrity (GO:0008544) —LEADS_TO→ Ichthyosis vulgaris (MONDO:0007810); Loss-of-function PKP1 variant (null) —DISRUPTS→ Plakophilin 1 (HGNC:9038); Plakophilin 1 (HGNC:9038) —DECREASES→ Epidermal barrier integrity (null); Epidermal barrier integrity (null) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472); Keratinocyte differentiation and structural integrity (GO:0008544) —BINDS→ Epidermal barrier integrity (null). Loss-of-function variants in FLG disrupt keratinocyte differentiation and structural integrity, leading to ichthyosis vulgaris. Similarly, loss-of-function variants in PKP1 disrupt epidermal barrier integrity through impaired cell adhesion, leading to epidermolysis bullosa simplex. Both pathways converge on the critical function of maintaining epidermal barrier integrity.",
+        "falsification": {
+          "text": "The presence of pathogenic variants in FLG in patients diagnosed with epidermolysis bullosa simplex due to plakophilin deficiency, or pathogenic variants in PKP1 in patients with ichthyosis vulgaris, would falsify the proposed distinct causal roles, suggesting a more complex or shared genetic etiology than hypothesized.",
+          "gnomad_variant": "Analysis of gnomAD data reveals pathogenic variants for FLG and PKP1 associated with these conditions, and their absence in control populations supports their causal role. If common, non-pathogenic variants in FLG or PKP1 were found to be enriched in patients with the other disease, this would suggest a shared genetic contribution or modifier effect."
+        },
+        "translational": "Understanding the shared downstream consequence of impaired epidermal barrier integrity, despite different initiating genetic defects, could reveal common therapeutic targets for improving skin barrier function in both ichthyosis and epidermolysis bullosa, such as topical treatments aimed at enhancing keratinocyte cohesion or hydration."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T02:13:23.490Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** autosomal dominant ichthyosis vulgaris (MONDO:0007810)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | arrhythmogenic right ventricular dysplasia 9 (MONDO:0012180) | shared pathway | Tier 3 | 0.387 | Reactome:R-HSA-6809371 |\n| 2 | epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-6809371 |\n\n### CANDIDATE DETAIL\n#### 1. arrhythmogenic right ventricular dysplasia 9  —  Tier 3 — Moderate / Emerging  (fitness 0.387)\n**Link type:** shared pathway (Reactome:R-HSA-6809371)\n\n**Proposed mechanism:** Filaggrin (FLG) (HGNC:3077) —DISRUPTS→ Keratinocyte differentiation (GO:0030215); Keratinocyte differentiation (GO:0030215) —LEADS_TO→ Ichthyosis vulgaris (HP:0000953); Plakophilin 2 (PKP2) (HGNC:9105) —DISRUPTS→ Desmosome assembly (GO:0034107); Desmosome assembly (GO:0034107) —LEADS_TO→ Arrhythmogenic right ventricular dysplasia 9 (HP:0030612). Loss-of-function mutations in FLG impair keratinocyte differentiation leading to ichthyosis vulgaris. Concurrently, loss-of-function mutations in PKP2 disrupt desmosome assembly, which is crucial for cardiomyocyte integrity, leading to arrhythmogenic right ventricular dysplasia 9. Both pathways converge on the fundamental cellular processes of epithelial integrity and cell-cell adhesion, albeit in different tissue contexts.\n\n**How to falsify it:** The hypothesis would be falsified if genetic studies reveal that mutations in FLG or PKP2 do not lead to loss-of-function phenotypes in their respective diseases, or if there is evidence of a complete lack of overlap in the downstream molecular pathways affected by these genes in keratinocytes and cardiomyocytes. _(variant: The presence of common variants (AF > 1%) in gnomAD within the coding regions of FLG and PKP2 that are strongly associated with either ichthyosis vulgaris or arrhythmogenic right ventricular dysplasia 9, respectively, would challenge the causality of rare variants.)_\n\n**Why it matters:** Understanding the shared mechanistic principles of disrupted epithelial and myocardial integrity could lead to novel therapeutic strategies targeting common pathways involved in cell adhesion and differentiation, potentially benefiting patients with either ichthyosis vulgaris or arrhythmogenic cardiomyopathy.\n\n---\n\n#### 2. epidermolysis bullosa simplex due to plakophilin deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-6809371)\n\n**Proposed mechanism:** Loss-of-function FLG variant (null) —DISRUPTS→ Filaggrin (HGNC:3099); Filaggrin (HGNC:3099) —DECREASES→ Keratinocyte differentiation and structural integrity (GO:0008544); Keratinocyte differentiation and structural integrity (GO:0008544) —LEADS_TO→ Ichthyosis vulgaris (MONDO:0007810); Loss-of-function PKP1 variant (null) —DISRUPTS→ Plakophilin 1 (HGNC:9038); Plakophilin 1 (HGNC:9038) —DECREASES→ Epidermal barrier integrity (null); Epidermal barrier integrity (null) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472); Keratinocyte differentiation and structural integrity (GO:0008544) —BINDS→ Epidermal barrier integrity (null). Loss-of-function variants in FLG disrupt keratinocyte differentiation and structural integrity, leading to ichthyosis vulgaris. Similarly, loss-of-function variants in PKP1 disrupt epidermal barrier integrity through impaired cell adhesion, leading to epidermolysis bullosa simplex. Both pathways converge on the critical function of maintaining epidermal barrier integrity.\n\n**How to falsify it:** The presence of pathogenic variants in FLG in patients diagnosed with epidermolysis bullosa simplex due to plakophilin deficiency, or pathogenic variants in PKP1 in patients with ichthyosis vulgaris, would falsify the proposed distinct causal roles, suggesting a more complex or shared genetic etiology than hypothesized. _(variant: Analysis of gnomAD data reveals pathogenic variants for FLG and PKP1 associated with these conditions, and their absence in control populations supports their causal role. If common, non-pathogenic variants in FLG or PKP1 were found to be enriched in patients with the other disease, this would suggest a shared genetic contribution or modifier effect.)_\n\n**Why it matters:** Understanding the shared downstream consequence of impaired epidermal barrier integrity, despite different initiating genetic defects, could reveal common therapeutic targets for improving skin barrier function in both ichthyosis and epidermolysis bullosa, such as topical treatments aimed at enhancing keratinocyte cohesion or hydration.\n\n---"
+}

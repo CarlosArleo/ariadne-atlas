@@ -1,0 +1,641 @@
+{
+  "seed": {
+    "id": "MONDO:0008737",
+    "name": "congenital afibrinogenemia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 33,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007099",
+      "diseaseBName": "familial visceral amyloidosis",
+      "fitness": 0.7819,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "FGA (HGNC:3661) —PRODUCES→ Fibrinogen (CHEBI:17515); Fibrinogen (CHEBI:17515) —DISRUPTS→ Fibrinolysis and Coagulation Cascade (GO:0007596); Fibrinogen (CHEBI:17515) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Fibrinolysis and Coagulation Cascade (GO:0007596) —LEADS_TO→ Abnormal Hemostasis (HP:0011230); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003271). Mutations in FGA lead to dysfunctional fibrinogen, disrupting both the coagulation cascade (leading to abnormal hemostasis in congenital afibrinogenemia) and extracellular matrix organization (contributing to amyloid deposition in familial visceral amyloidosis).",
+      "mechanism_narrative": "FGA (HGNC:3661) —PRODUCES→ Fibrinogen (CHEBI:17515); Fibrinogen (CHEBI:17515) —DISRUPTS→ Fibrinolysis and Coagulation Cascade (GO:0007596); Fibrinogen (CHEBI:17515) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Fibrinolysis and Coagulation Cascade (GO:0007596) —LEADS_TO→ Abnormal Hemostasis (HP:0011230); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003271). Mutations in FGA lead to dysfunctional fibrinogen, disrupting both the coagulation cascade (leading to abnormal hemostasis in congenital afibrinogenemia) and extracellular matrix organization (contributing to amyloid deposition in familial visceral amyloidosis).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in FGA, FGB, or FGG associated with familial visceral amyloidosis that do not impair fibrinogen's ability to participate in coagulation or matrix deposition.",
+        "gnomad_variant": "rs775471709"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708",
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-5602498"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007099",
+        "diseaseBName": "familial visceral amyloidosis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708",
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-5602498"
+        ],
+        "fitness": 0.7819,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGA (HGNC:3661) —PRODUCES→ Fibrinogen (CHEBI:17515); Fibrinogen (CHEBI:17515) —DISRUPTS→ Fibrinolysis and Coagulation Cascade (GO:0007596); Fibrinogen (CHEBI:17515) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Fibrinolysis and Coagulation Cascade (GO:0007596) —LEADS_TO→ Abnormal Hemostasis (HP:0011230); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003271). Mutations in FGA lead to dysfunctional fibrinogen, disrupting both the coagulation cascade (leading to abnormal hemostasis in congenital afibrinogenemia) and extracellular matrix organization (contributing to amyloid deposition in familial visceral amyloidosis).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in FGA, FGB, or FGG associated with familial visceral amyloidosis that do not impair fibrinogen's ability to participate in coagulation or matrix deposition.",
+          "gnomad_variant": "rs775471709"
+        },
+        "translational": "Understanding the shared molecular basis of congenital afibrinogenemia and familial visceral amyloidosis could lead to novel therapeutic strategies targeting fibrinogen dysfunction or its downstream effects, potentially benefiting patients with either condition. For instance, therapies aimed at stabilizing fibrinogen or clearing amyloid deposits could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100326",
+      "diseaseBName": "Glanzmann thrombasthenia",
+      "fitness": 0.5272,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Fibrinogen alpha chain (HGNC:3701) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen beta chain (HGNC:3702) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen gamma chain (HGNC:3703) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen complex (GO:0007542) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Hemorrhage (HP:00114207); Integrin subunit alpha-2b (HGNC:6103) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin subunit beta-3 (HGNC:6104) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet aggregation (GO:0003027); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet adhesion (GO:0007540); Platelet aggregation (GO:0003027) —LEADS_TO→ Hemorrhage (HP:00114207); Platelet adhesion (GO:0007540) —LEADS_TO→ Hemorrhage (HP:00114207). Mutations in FGA, FGB, and FGG lead to a defective fibrinogen complex, impairing the coagulation cascade and causing bleeding. Separately, mutations in ITGA2B and ITGB3 result in a non-functional integrin alpha-IIb/beta-3 complex, which is critical for platelet aggregation and adhesion, also leading to bleeding. The convergence is on the shared downstream consequences of impaired platelet function and coagulation, both contributing to the phenotype of hemorrhage.",
+      "mechanism_narrative": "Fibrinogen alpha chain (HGNC:3701) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen beta chain (HGNC:3702) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen gamma chain (HGNC:3703) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen complex (GO:0007542) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Hemorrhage (HP:00114207); Integrin subunit alpha-2b (HGNC:6103) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin subunit beta-3 (HGNC:6104) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet aggregation (GO:0003027); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet adhesion (GO:0007540); Platelet aggregation (GO:0003027) —LEADS_TO→ Hemorrhage (HP:00114207); Platelet adhesion (GO:0007540) —LEADS_TO→ Hemorrhage (HP:00114207). Mutations in FGA, FGB, and FGG lead to a defective fibrinogen complex, impairing the coagulation cascade and causing bleeding. Separately, mutations in ITGA2B and ITGB3 result in a non-functional integrin alpha-IIb/beta-3 complex, which is critical for platelet aggregation and adhesion, also leading to bleeding. The convergence is on the shared downstream consequences of impaired platelet function and coagulation, both contributing to the phenotype of hemorrhage.",
+      "falsification": {
+        "text": "Identification of a common pathogenic variant in ITGA2B or ITGB3 that is also causative for congenital afibrinogenemia, or vice-versa, would suggest a shared genetic origin rather than distinct pathways converging on a shared process. Alternatively, demonstrating that mutations in FGA/FGB/FGG do not affect platelet aggregation or adhesion, or that mutations in ITGA2B/ITGB3 do not affect fibrin clot formation, would falsify the proposed overlap.",
+        "gnomad_variant": "A pathogenic variant with a frequency >0.01% in gnomAD across multiple populations in any of the five causal genes (FGA, FGB, FGG, ITGA2B, ITGB3) would suggest these are not rare disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-9769733": 13,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100326",
+        "diseaseBName": "Glanzmann thrombasthenia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-9769733": 13,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.5272,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Fibrinogen alpha chain (HGNC:3701) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen beta chain (HGNC:3702) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen gamma chain (HGNC:3703) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen complex (GO:0007542) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Hemorrhage (HP:00114207); Integrin subunit alpha-2b (HGNC:6103) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin subunit beta-3 (HGNC:6104) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet aggregation (GO:0003027); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet adhesion (GO:0007540); Platelet aggregation (GO:0003027) —LEADS_TO→ Hemorrhage (HP:00114207); Platelet adhesion (GO:0007540) —LEADS_TO→ Hemorrhage (HP:00114207). Mutations in FGA, FGB, and FGG lead to a defective fibrinogen complex, impairing the coagulation cascade and causing bleeding. Separately, mutations in ITGA2B and ITGB3 result in a non-functional integrin alpha-IIb/beta-3 complex, which is critical for platelet aggregation and adhesion, also leading to bleeding. The convergence is on the shared downstream consequences of impaired platelet function and coagulation, both contributing to the phenotype of hemorrhage.",
+        "falsification": {
+          "text": "Identification of a common pathogenic variant in ITGA2B or ITGB3 that is also causative for congenital afibrinogenemia, or vice-versa, would suggest a shared genetic origin rather than distinct pathways converging on a shared process. Alternatively, demonstrating that mutations in FGA/FGB/FGG do not affect platelet aggregation or adhesion, or that mutations in ITGA2B/ITGB3 do not affect fibrin clot formation, would falsify the proposed overlap.",
+          "gnomad_variant": "A pathogenic variant with a frequency >0.01% in gnomAD across multiple populations in any of the five causal genes (FGA, FGB, FGG, ITGA2B, ITGB3) would suggest these are not rare disease-causing variants."
+        },
+        "translational": "Understanding the interplay between fibrinogen function and platelet integrin signaling is crucial for developing targeted therapies for bleeding disorders. Strategies aimed at restoring platelet aggregation or enhancing coagulation factor function could benefit patients with either condition, particularly in managing surgical bleeding or severe hemorrhages."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014452",
+      "diseaseBName": "familial dysfibrinogenemia",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FGA (HGNC:3661) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGB (HGNC:3662) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGG (HGNC:3694) —DISRUPTS→ Fibrinogen complex assembly and secretion; Fibrinogen complex assembly and secretion —DISRUPTS→ Blood coagulation cascade; Blood coagulation cascade —LEADS_TO→ Bleeding tendency (HP:00114151); Fibrinogen complex assembly and secretion —LEADS_TO→ Abnormal fibrin clot formation (HP:0030187). Mutations in FGA, FGB, or FGG disrupt the proper assembly and function of the fibrinogen complex, which is a critical component of the blood coagulation cascade. This disruption leads to both impaired clot formation and a general bleeding tendency.",
+      "mechanism_narrative": "FGA (HGNC:3661) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGB (HGNC:3662) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGG (HGNC:3694) —DISRUPTS→ Fibrinogen complex assembly and secretion; Fibrinogen complex assembly and secretion —DISRUPTS→ Blood coagulation cascade; Blood coagulation cascade —LEADS_TO→ Bleeding tendency (HP:00114151); Fibrinogen complex assembly and secretion —LEADS_TO→ Abnormal fibrin clot formation (HP:0030187). Mutations in FGA, FGB, or FGG disrupt the proper assembly and function of the fibrinogen complex, which is a critical component of the blood coagulation cascade. This disruption leads to both impaired clot formation and a general bleeding tendency.",
+      "falsification": {
+        "text": "Identification of a patient with congenital afibrinogenemia who has a normal fibrinogen level and normal coagulation assays, or a patient with familial dysfibrinogenemia who has a complete absence of fibrinogen and no detectable fibrinogen mRNA.",
+        "gnomad_variant": "Absence of pathogenic variants in FGA, FGB, or FGG in gnomAD controls that are known to cause either congenital afibrinogenemia or familial dysfibrinogenemia."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708",
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-5602498"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014452",
+        "diseaseBName": "familial dysfibrinogenemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708",
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-5602498"
+        ],
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGA (HGNC:3661) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGB (HGNC:3662) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGG (HGNC:3694) —DISRUPTS→ Fibrinogen complex assembly and secretion; Fibrinogen complex assembly and secretion —DISRUPTS→ Blood coagulation cascade; Blood coagulation cascade —LEADS_TO→ Bleeding tendency (HP:00114151); Fibrinogen complex assembly and secretion —LEADS_TO→ Abnormal fibrin clot formation (HP:0030187). Mutations in FGA, FGB, or FGG disrupt the proper assembly and function of the fibrinogen complex, which is a critical component of the blood coagulation cascade. This disruption leads to both impaired clot formation and a general bleeding tendency.",
+        "falsification": {
+          "text": "Identification of a patient with congenital afibrinogenemia who has a normal fibrinogen level and normal coagulation assays, or a patient with familial dysfibrinogenemia who has a complete absence of fibrinogen and no detectable fibrinogen mRNA.",
+          "gnomad_variant": "Absence of pathogenic variants in FGA, FGB, or FGG in gnomAD controls that are known to cause either congenital afibrinogenemia or familial dysfibrinogenemia."
+        },
+        "translational": "Understanding the mechanistic link between these two fibrinogen-related disorders can inform differential diagnosis and potentially guide therapeutic strategies, such as fibrinogen concentrate replacement or procoagulant therapies, tailored to the specific functional defect."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008552",
+      "diseaseBName": "platelet-type bleeding disorder 16",
+      "fitness": 0.4988,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variants in ITGA2B (HP:0001107) —DISRUPTS→ ITGA2B (HGNC:6094); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet aggregation and fibrin clot formation (GO:0007541); Platelet aggregation and fibrin clot formation (GO:0007541) —LEADS_TO→ Abnormal bleeding (HP:0011421); Abnormal bleeding (HP:0011421) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Abnormal bleeding (HP:0011421) —LEADS_TO→ Platelet-type bleeding disorder 16 (MONDO:0008552). Pathogenic variants in the ITGA2B gene disrupt the formation and function of the integrin alpha-IIb beta-3 receptor, which is critical for platelet aggregation and fibrin clot formation. This disruption leads to abnormal bleeding, manifesting as congenital afibrinogenemia (disease A) and platelet-type bleeding disorder 16 (disease B).",
+      "mechanism_narrative": "Pathogenic variants in ITGA2B (HP:0001107) —DISRUPTS→ ITGA2B (HGNC:6094); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet aggregation and fibrin clot formation (GO:0007541); Platelet aggregation and fibrin clot formation (GO:0007541) —LEADS_TO→ Abnormal bleeding (HP:0011421); Abnormal bleeding (HP:0011421) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Abnormal bleeding (HP:0011421) —LEADS_TO→ Platelet-type bleeding disorder 16 (MONDO:0008552). Pathogenic variants in the ITGA2B gene disrupt the formation and function of the integrin alpha-IIb beta-3 receptor, which is critical for platelet aggregation and fibrin clot formation. This disruption leads to abnormal bleeding, manifesting as congenital afibrinogenemia (disease A) and platelet-type bleeding disorder 16 (disease B).",
+      "falsification": {
+        "text": "Discovery of distinct causal genes for congenital afibrinogenemia and platelet-type bleeding disorder 16, or demonstration of a gain-of-function mechanism for one of the diseases.",
+        "gnomad_variant": "The presence of common benign variants in ITGA2B in gnomAD would not falsify this hypothesis, as the causal variants are expected to be rare and pathogenic."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-9769733": 13,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008552",
+        "diseaseBName": "platelet-type bleeding disorder 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-9769733": 13,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.4988,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variants in ITGA2B (HP:0001107) —DISRUPTS→ ITGA2B (HGNC:6094); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet aggregation and fibrin clot formation (GO:0007541); Platelet aggregation and fibrin clot formation (GO:0007541) —LEADS_TO→ Abnormal bleeding (HP:0011421); Abnormal bleeding (HP:0011421) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Abnormal bleeding (HP:0011421) —LEADS_TO→ Platelet-type bleeding disorder 16 (MONDO:0008552). Pathogenic variants in the ITGA2B gene disrupt the formation and function of the integrin alpha-IIb beta-3 receptor, which is critical for platelet aggregation and fibrin clot formation. This disruption leads to abnormal bleeding, manifesting as congenital afibrinogenemia (disease A) and platelet-type bleeding disorder 16 (disease B).",
+        "falsification": {
+          "text": "Discovery of distinct causal genes for congenital afibrinogenemia and platelet-type bleeding disorder 16, or demonstration of a gain-of-function mechanism for one of the diseases.",
+          "gnomad_variant": "The presence of common benign variants in ITGA2B in gnomAD would not falsify this hypothesis, as the causal variants are expected to be rare and pathogenic."
+        },
+        "translational": "Understanding the shared genetic basis in ITGA2B highlights a common therapeutic target for bleeding disorders. Therapies aimed at restoring integrin alpha-IIb beta-3 function or improving platelet aggregation could potentially benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0031332",
+      "diseaseBName": "Glanzmann thrombasthenia 1",
+      "fitness": 0.4919,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Fibrinogen Alpha Chain (HGNC:3763) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Beta Chain (HGNC:3764) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Gamma Chain (HGNC:3765) —DISRUPTS→ Fibrinogen complex formation and function; Integrin Subunit Alpha 2b (HGNC:6100) —DISRUPTS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Fibrinogen complex formation and function —LEADS_TO→ Severe bleeding (HP:0001892); Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Thrombasthenia (HP:0001927); Fibrinogen complex formation and function —BINDS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Severe bleeding (HP:0001892). Mutations in FGA, FGB, and FGG lead to defective fibrinogen complex formation and function, impairing clot formation and causing severe bleeding (Congenital Afibrinogenemia). Mutations in ITGA2B disrupt the integrin alpha2b-beta3 receptor on platelets, which is essential for binding fibrinogen and mediating platelet aggregation, leading to Glanzmann thrombasthenia and a bleeding phenotype. Both pathways converge on the impaired ability of platelets to form stable clots due to either lack of fibrinogen or defective fibrinogen binding.",
+      "mechanism_narrative": "Fibrinogen Alpha Chain (HGNC:3763) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Beta Chain (HGNC:3764) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Gamma Chain (HGNC:3765) —DISRUPTS→ Fibrinogen complex formation and function; Integrin Subunit Alpha 2b (HGNC:6100) —DISRUPTS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Fibrinogen complex formation and function —LEADS_TO→ Severe bleeding (HP:0001892); Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Thrombasthenia (HP:0001927); Fibrinogen complex formation and function —BINDS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Severe bleeding (HP:0001892). Mutations in FGA, FGB, and FGG lead to defective fibrinogen complex formation and function, impairing clot formation and causing severe bleeding (Congenital Afibrinogenemia). Mutations in ITGA2B disrupt the integrin alpha2b-beta3 receptor on platelets, which is essential for binding fibrinogen and mediating platelet aggregation, leading to Glanzmann thrombasthenia and a bleeding phenotype. Both pathways converge on the impaired ability of platelets to form stable clots due to either lack of fibrinogen or defective fibrinogen binding.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in FGA, FGB, FGG, or ITGA2B who do not exhibit a bleeding phenotype, or demonstration of functional fibrinogen and normal platelet aggregation in patients diagnosed with these conditions.",
+        "gnomad_variant": "The presence of pathogenic variants in FGA, FGB, FGG, or ITGA2B with a minor allele frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-9769733": 13,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0031332",
+        "diseaseBName": "Glanzmann thrombasthenia 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-9769733": 13,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.4919,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Fibrinogen Alpha Chain (HGNC:3763) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Beta Chain (HGNC:3764) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Gamma Chain (HGNC:3765) —DISRUPTS→ Fibrinogen complex formation and function; Integrin Subunit Alpha 2b (HGNC:6100) —DISRUPTS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Fibrinogen complex formation and function —LEADS_TO→ Severe bleeding (HP:0001892); Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Thrombasthenia (HP:0001927); Fibrinogen complex formation and function —BINDS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Severe bleeding (HP:0001892). Mutations in FGA, FGB, and FGG lead to defective fibrinogen complex formation and function, impairing clot formation and causing severe bleeding (Congenital Afibrinogenemia). Mutations in ITGA2B disrupt the integrin alpha2b-beta3 receptor on platelets, which is essential for binding fibrinogen and mediating platelet aggregation, leading to Glanzmann thrombasthenia and a bleeding phenotype. Both pathways converge on the impaired ability of platelets to form stable clots due to either lack of fibrinogen or defective fibrinogen binding.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in FGA, FGB, FGG, or ITGA2B who do not exhibit a bleeding phenotype, or demonstration of functional fibrinogen and normal platelet aggregation in patients diagnosed with these conditions.",
+          "gnomad_variant": "The presence of pathogenic variants in FGA, FGB, FGG, or ITGA2B with a minor allele frequency > 0.01 in gnomAD."
+        },
+        "translational": "Understanding this overlap could inform therapeutic strategies aimed at restoring platelet function or improving clot stability in both congenital afibrinogenemia and Glanzmann thrombasthenia, potentially through fibrinogen concentrate or novel platelet agonists."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010119",
+      "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+      "fitness": 0.4647,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:17640); Fibrinogen (CHEBI:17640) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); ITGA2B/ITGB3 (HGNC:5673) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Fibrinogen (CHEBI:17640) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542) —LEADS_TO→ Glanzmann's thrombasthenia (MONDO:0010119). Mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia by preventing the production of functional fibrinogen. Separately, mutations in ITGA2B or ITGB3 impair the binding of fibrinogen to activated platelets via the integrin alpha-IIb beta-3 receptor, causing Glanzmann's thrombasthenia. Both diseases converge on the functional integrity of the fibrinogen complex and its interaction with platelets.",
+      "mechanism_narrative": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:17640); Fibrinogen (CHEBI:17640) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); ITGA2B/ITGB3 (HGNC:5673) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Fibrinogen (CHEBI:17640) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542) —LEADS_TO→ Glanzmann's thrombasthenia (MONDO:0010119). Mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia by preventing the production of functional fibrinogen. Separately, mutations in ITGA2B or ITGB3 impair the binding of fibrinogen to activated platelets via the integrin alpha-IIb beta-3 receptor, causing Glanzmann's thrombasthenia. Both diseases converge on the functional integrity of the fibrinogen complex and its interaction with platelets.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in FGA, FGB, or FGG who exhibit normal platelet aggregation or individuals with mutations in ITGA2B or ITGB3 who have normal fibrinogen levels and coagulation function.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for variants in FGA, FGB, FGG, ITGA2B, or ITGB3 associated with these phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-9769733": 13,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010119",
+        "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-9769733": 13,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.4647,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:17640); Fibrinogen (CHEBI:17640) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); ITGA2B/ITGB3 (HGNC:5673) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Fibrinogen (CHEBI:17640) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542) —LEADS_TO→ Glanzmann's thrombasthenia (MONDO:0010119). Mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia by preventing the production of functional fibrinogen. Separately, mutations in ITGA2B or ITGB3 impair the binding of fibrinogen to activated platelets via the integrin alpha-IIb beta-3 receptor, causing Glanzmann's thrombasthenia. Both diseases converge on the functional integrity of the fibrinogen complex and its interaction with platelets.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in FGA, FGB, or FGG who exhibit normal platelet aggregation or individuals with mutations in ITGA2B or ITGB3 who have normal fibrinogen levels and coagulation function.",
+          "gnomad_variant": "gnomAD allele frequency > 0.01 for variants in FGA, FGB, FGG, ITGA2B, or ITGB3 associated with these phenotypes."
+        },
+        "translational": "Understanding these distinct yet related defects in the fibrinogen pathway and platelet function can inform the development of targeted therapies for bleeding disorders. For congenital afibrinogenemia, fibrinogen replacement therapy is key. For Glanzmann's thrombasthenia, management focuses on platelet function and avoiding triggers, with potential for novel therapeutic targets related to integrin signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011165",
+      "diseaseBName": "glomerulopathy with fibronectin deposits 2",
+      "fitness": 0.4602,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FGA/FGB/FGG (HGNC:3724) —PRODUCES→ Fibrinogen (CHEBI:57738); Fibrinogen (CHEBI:57738) —DISRUPTS→ Blood coagulation cascade (GO:0007596); Blood coagulation cascade (GO:0007596) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); FN1 (HGNC:3708) —PRODUCES→ Fibronectin (UniProtKB:P02751); Fibronectin (UniProtKB:P02751) —DISRUPTS→ Extracellular matrix organization (GO:0031012); Extracellular matrix organization (GO:0031012) —LEADS_TO→ Glomerulopathy with fibronectin deposits 2 (MONDO:0011165). Mutations in FGA, FGB, or FGG lead to a loss of fibrinogen production, disrupting the blood coagulation cascade and causing congenital afibrinogenemia. Similarly, mutations in FN1 result in a loss of functional fibronectin, which is critical for extracellular matrix organization, leading to glomerulopathy with fibronectin deposits 2. Both fibrinogen and fibronectin are key components of the extracellular matrix, and their defective production disrupts distinct but related biological processes contributing to distinct pathologies.",
+      "mechanism_narrative": "FGA/FGB/FGG (HGNC:3724) —PRODUCES→ Fibrinogen (CHEBI:57738); Fibrinogen (CHEBI:57738) —DISRUPTS→ Blood coagulation cascade (GO:0007596); Blood coagulation cascade (GO:0007596) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); FN1 (HGNC:3708) —PRODUCES→ Fibronectin (UniProtKB:P02751); Fibronectin (UniProtKB:P02751) —DISRUPTS→ Extracellular matrix organization (GO:0031012); Extracellular matrix organization (GO:0031012) —LEADS_TO→ Glomerulopathy with fibronectin deposits 2 (MONDO:0011165). Mutations in FGA, FGB, or FGG lead to a loss of fibrinogen production, disrupting the blood coagulation cascade and causing congenital afibrinogenemia. Similarly, mutations in FN1 result in a loss of functional fibronectin, which is critical for extracellular matrix organization, leading to glomerulopathy with fibronectin deposits 2. Both fibrinogen and fibronectin are key components of the extracellular matrix, and their defective production disrupts distinct but related biological processes contributing to distinct pathologies.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in FGA, FGB, or FGG who do not exhibit congenital afibrinogenemia, or individuals with mutations in FN1 who do not present with glomerulopathy with fibronectin deposits 2, would falsify this hypothesis. Furthermore, if genetic studies reveal that the pathways of fibrinogen and fibronectin function are completely independent and do not converge at any downstream effector or process, this would also falsify the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011165",
+        "diseaseBName": "glomerulopathy with fibronectin deposits 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.4602,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGA/FGB/FGG (HGNC:3724) —PRODUCES→ Fibrinogen (CHEBI:57738); Fibrinogen (CHEBI:57738) —DISRUPTS→ Blood coagulation cascade (GO:0007596); Blood coagulation cascade (GO:0007596) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); FN1 (HGNC:3708) —PRODUCES→ Fibronectin (UniProtKB:P02751); Fibronectin (UniProtKB:P02751) —DISRUPTS→ Extracellular matrix organization (GO:0031012); Extracellular matrix organization (GO:0031012) —LEADS_TO→ Glomerulopathy with fibronectin deposits 2 (MONDO:0011165). Mutations in FGA, FGB, or FGG lead to a loss of fibrinogen production, disrupting the blood coagulation cascade and causing congenital afibrinogenemia. Similarly, mutations in FN1 result in a loss of functional fibronectin, which is critical for extracellular matrix organization, leading to glomerulopathy with fibronectin deposits 2. Both fibrinogen and fibronectin are key components of the extracellular matrix, and their defective production disrupts distinct but related biological processes contributing to distinct pathologies.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in FGA, FGB, or FGG who do not exhibit congenital afibrinogenemia, or individuals with mutations in FN1 who do not present with glomerulopathy with fibronectin deposits 2, would falsify this hypothesis. Furthermore, if genetic studies reveal that the pathways of fibrinogen and fibronectin function are completely independent and do not converge at any downstream effector or process, this would also falsify the proposed link."
+        },
+        "translational": "Understanding the shared reliance on extracellular matrix components like fibrinogen and fibronectin may reveal common therapeutic targets or strategies for managing bleeding disorders and kidney diseases characterized by matrix deposition. For instance, therapies aimed at stabilizing or replacing components of the extracellular matrix could potentially benefit patients with both conditions, although the specific clinical applications would differ based on the primary affected component and downstream pathology."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008479",
+      "diseaseBName": "spondylometaphyseal dysplasia, 'corner fracture' type",
+      "fitness": 0.4572,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:16146); Fibrinogen (CHEBI:16146) —DISRUPTS→ Hemostasis (GO:0007596); Hemostasis (GO:0007596) —LEADS_TO→ Bleeding (HP:0001871); FN1 (HGNC:3777) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis and Cross-linking (GO:0032957); Collagen Synthesis and Cross-linking (GO:0032957) —LEADS_TO→ Spondylometaphyseal dysplasia, 'corner fracture' type (MONDO:0008479). Loss-of-function mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia and bleeding due to impaired hemostasis. Loss-of-function mutations in FN1 lead to spondylometaphyseal dysplasia, 'corner fracture' type, by disrupting extracellular matrix organization and collagen synthesis/cross-linking. The shared mechanism is the disruption of processes critical for extracellular matrix integrity, where fibrinogen, while primarily known for hemostasis, also interacts with and influences the extracellular matrix.",
+      "mechanism_narrative": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:16146); Fibrinogen (CHEBI:16146) —DISRUPTS→ Hemostasis (GO:0007596); Hemostasis (GO:0007596) —LEADS_TO→ Bleeding (HP:0001871); FN1 (HGNC:3777) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis and Cross-linking (GO:0032957); Collagen Synthesis and Cross-linking (GO:0032957) —LEADS_TO→ Spondylometaphyseal dysplasia, 'corner fracture' type (MONDO:0008479). Loss-of-function mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia and bleeding due to impaired hemostasis. Loss-of-function mutations in FN1 lead to spondylometaphyseal dysplasia, 'corner fracture' type, by disrupting extracellular matrix organization and collagen synthesis/cross-linking. The shared mechanism is the disruption of processes critical for extracellular matrix integrity, where fibrinogen, while primarily known for hemostasis, also interacts with and influences the extracellular matrix.",
+      "falsification": {
+        "text": "Demonstration that mutations in FGA, FGB, FGG, or FN1 do not affect extracellular matrix organization or collagen cross-linking in cellular or animal models.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the coding regions of FGA, FGB, FGG, or FN1 that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008479",
+        "diseaseBName": "spondylometaphyseal dysplasia, 'corner fracture' type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.4572,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:16146); Fibrinogen (CHEBI:16146) —DISRUPTS→ Hemostasis (GO:0007596); Hemostasis (GO:0007596) —LEADS_TO→ Bleeding (HP:0001871); FN1 (HGNC:3777) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis and Cross-linking (GO:0032957); Collagen Synthesis and Cross-linking (GO:0032957) —LEADS_TO→ Spondylometaphyseal dysplasia, 'corner fracture' type (MONDO:0008479). Loss-of-function mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia and bleeding due to impaired hemostasis. Loss-of-function mutations in FN1 lead to spondylometaphyseal dysplasia, 'corner fracture' type, by disrupting extracellular matrix organization and collagen synthesis/cross-linking. The shared mechanism is the disruption of processes critical for extracellular matrix integrity, where fibrinogen, while primarily known for hemostasis, also interacts with and influences the extracellular matrix.",
+        "falsification": {
+          "text": "Demonstration that mutations in FGA, FGB, FGG, or FN1 do not affect extracellular matrix organization or collagen cross-linking in cellular or animal models.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the coding regions of FGA, FGB, FGG, or FN1 that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared role in extracellular matrix regulation could reveal novel therapeutic targets for skeletal dysplasias by modulating pathways influenced by fibrinogen or fibronectin, or vice versa, potentially offering insights into managing bleeding disorders in patients with connective tissue abnormalities."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980724",
+      "diseaseBName": "fetomaternal alloimmune thrombocytopenia 2",
+      "fitness": 0.43,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FGB (HGNC:3759) —DISRUPTS→ Fibrinogen complex formation and function; FGA (HGNC:3757) —DISRUPTS→ Fibrinogen complex formation and function; FGG (HGNC:3760) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen complex formation and function —DECREASES→ Functional fibrinogen (CHEBI:17630); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in FGB (and FGA, FGG) disrupt fibrinogen complex formation, leading to a lack of functional fibrinogen. This absence contributes to the bleeding diathesis seen in congenital afibrinogenemia and the altered platelet function and immune response in fetomaternal alloimmune thrombocytopenia 2.",
+      "mechanism_narrative": "FGB (HGNC:3759) —DISRUPTS→ Fibrinogen complex formation and function; FGA (HGNC:3757) —DISRUPTS→ Fibrinogen complex formation and function; FGG (HGNC:3760) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen complex formation and function —DECREASES→ Functional fibrinogen (CHEBI:17630); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in FGB (and FGA, FGG) disrupt fibrinogen complex formation, leading to a lack of functional fibrinogen. This absence contributes to the bleeding diathesis seen in congenital afibrinogenemia and the altered platelet function and immune response in fetomaternal alloimmune thrombocytopenia 2.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in FGB exhibiting congenital afibrinogenemia but lacking the characteristic immune-mediated thrombocytopenia, or vice versa, would suggest independent pathways or additional contributing factors not captured by this model.",
+        "gnomad_variant": "The presence of common variants in FGB with a minor allele frequency > 1% in gnomAD would challenge the pathogenicity of FGB mutations in causing these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-216083": 85,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-9769733": 13,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980724",
+        "diseaseBName": "fetomaternal alloimmune thrombocytopenia 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-216083": 85,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-9769733": 13,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.43,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FGB (HGNC:3759) —DISRUPTS→ Fibrinogen complex formation and function; FGA (HGNC:3757) —DISRUPTS→ Fibrinogen complex formation and function; FGG (HGNC:3760) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen complex formation and function —DECREASES→ Functional fibrinogen (CHEBI:17630); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in FGB (and FGA, FGG) disrupt fibrinogen complex formation, leading to a lack of functional fibrinogen. This absence contributes to the bleeding diathesis seen in congenital afibrinogenemia and the altered platelet function and immune response in fetomaternal alloimmune thrombocytopenia 2.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in FGB exhibiting congenital afibrinogenemia but lacking the characteristic immune-mediated thrombocytopenia, or vice versa, would suggest independent pathways or additional contributing factors not captured by this model.",
+          "gnomad_variant": "The presence of common variants in FGB with a minor allele frequency > 1% in gnomAD would challenge the pathogenicity of FGB mutations in causing these rare diseases."
+        },
+        "translational": "Understanding the shared role of FGB in these distinct conditions could inform therapeutic strategies. For congenital afibrinogenemia, this reinforces the need for fibrinogen replacement. For fetomaternal alloimmune thrombocytopenia 2, it might highlight novel targets related to fibrinogen's role in platelet aggregation and immune interactions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "APC pathogenic variant (HGNC:585) —DISRUPTS→ APC (HGNC:585); APC (HGNC:585) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6811426); Wnt signaling pathway (REACT:R-HSA-6811426) —LEADS_TO→ Cell adhesion and proliferation regulation; Cell adhesion and proliferation regulation —LEADS_TO→ Colorectal cancer (MONDO:0005575); FGA (HGNC:3767) —DISRUPTS→ Fibrinogen homeostasis; FGB (HGNC:3768) —DISRUPTS→ Fibrinogen homeostasis; FGG (HGNC:3769) —DISRUPTS→ Fibrinogen homeostasis; Fibrinogen homeostasis —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Wnt signaling pathway (REACT:R-HSA-6811426) —DECREASES→ Fibrinogen homeostasis. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to dysregulated cell adhesion and proliferation, culminating in colorectal cancer. Concurrently, loss-of-function mutations in FGA, FGB, and FGG disrupt fibrinogen homeostasis, causing congenital afibrinogenemia. We hypothesize that the dysregulation of the Wnt pathway can indirectly decrease components or processes critical for fibrinogen homeostasis, thus creating a mechanistic link between the two diseases.",
+      "mechanism_narrative": "APC pathogenic variant (HGNC:585) —DISRUPTS→ APC (HGNC:585); APC (HGNC:585) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6811426); Wnt signaling pathway (REACT:R-HSA-6811426) —LEADS_TO→ Cell adhesion and proliferation regulation; Cell adhesion and proliferation regulation —LEADS_TO→ Colorectal cancer (MONDO:0005575); FGA (HGNC:3767) —DISRUPTS→ Fibrinogen homeostasis; FGB (HGNC:3768) —DISRUPTS→ Fibrinogen homeostasis; FGG (HGNC:3769) —DISRUPTS→ Fibrinogen homeostasis; Fibrinogen homeostasis —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Wnt signaling pathway (REACT:R-HSA-6811426) —DECREASES→ Fibrinogen homeostasis. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to dysregulated cell adhesion and proliferation, culminating in colorectal cancer. Concurrently, loss-of-function mutations in FGA, FGB, and FGG disrupt fibrinogen homeostasis, causing congenital afibrinogenemia. We hypothesize that the dysregulation of the Wnt pathway can indirectly decrease components or processes critical for fibrinogen homeostasis, thus creating a mechanistic link between the two diseases.",
+      "falsification": {
+        "text": "Absence of any detectable interaction or downstream effect of Wnt signaling dysregulation on fibrinogen production or function in relevant cellular models, or identification of a specific variant in APC with a high frequency (>1%) in gnomAD for populations with congenital afibrinogenemia.",
+        "gnomad_variant": "rs112917791"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-354192",
+        "Reactome:R-HSA-354194",
+        "Reactome:R-HSA-372708"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-354192": 23,
+        "Reactome:R-HSA-354194": 15,
+        "Reactome:R-HSA-372708": 15,
+        "Reactome:R-HSA-5674135": 40,
+        "Reactome:R-HSA-6802948": 36,
+        "Reactome:R-HSA-6802952": 67,
+        "Reactome:R-HSA-6802955": 47,
+        "Reactome:R-HSA-9649948": 47,
+        "Reactome:R-HSA-9656223": 43,
+        "Reactome:R-HSA-6802946": 47
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-354192",
+          "Reactome:R-HSA-354194",
+          "Reactome:R-HSA-372708"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-354192": 23,
+          "Reactome:R-HSA-354194": 15,
+          "Reactome:R-HSA-372708": 15,
+          "Reactome:R-HSA-5674135": 40,
+          "Reactome:R-HSA-6802948": 36,
+          "Reactome:R-HSA-6802952": 67,
+          "Reactome:R-HSA-6802955": 47,
+          "Reactome:R-HSA-9649948": 47,
+          "Reactome:R-HSA-9656223": 43,
+          "Reactome:R-HSA-6802946": 47
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC pathogenic variant (HGNC:585) —DISRUPTS→ APC (HGNC:585); APC (HGNC:585) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6811426); Wnt signaling pathway (REACT:R-HSA-6811426) —LEADS_TO→ Cell adhesion and proliferation regulation; Cell adhesion and proliferation regulation —LEADS_TO→ Colorectal cancer (MONDO:0005575); FGA (HGNC:3767) —DISRUPTS→ Fibrinogen homeostasis; FGB (HGNC:3768) —DISRUPTS→ Fibrinogen homeostasis; FGG (HGNC:3769) —DISRUPTS→ Fibrinogen homeostasis; Fibrinogen homeostasis —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Wnt signaling pathway (REACT:R-HSA-6811426) —DECREASES→ Fibrinogen homeostasis. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to dysregulated cell adhesion and proliferation, culminating in colorectal cancer. Concurrently, loss-of-function mutations in FGA, FGB, and FGG disrupt fibrinogen homeostasis, causing congenital afibrinogenemia. We hypothesize that the dysregulation of the Wnt pathway can indirectly decrease components or processes critical for fibrinogen homeostasis, thus creating a mechanistic link between the two diseases.",
+        "falsification": {
+          "text": "Absence of any detectable interaction or downstream effect of Wnt signaling dysregulation on fibrinogen production or function in relevant cellular models, or identification of a specific variant in APC with a high frequency (>1%) in gnomAD for populations with congenital afibrinogenemia.",
+          "gnomad_variant": "rs112917791"
+        },
+        "translational": "Understanding this potential link could reveal novel therapeutic targets for either disease. For instance, modulating Wnt signaling might offer a strategy to improve hemostatic function in afibrinogenemia patients, or conversely, therapies aimed at improving fibrinogen levels could potentially impact tumor progression in colorectal cancer patients with specific genetic backgrounds."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T07:32:46.939Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** congenital afibrinogenemia (MONDO:0008737)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 33 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | familial visceral amyloidosis (MONDO:0007099) | shared pathway | Tier 1 | 0.782 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426, Reactome:R-HSA-5602498 |\n| 2 | Glanzmann thrombasthenia (MONDO:0100326) | shared pathway | Tier 3 | 0.527 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n| 3 | familial dysfibrinogenemia (MONDO:0014452) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426, Reactome:R-HSA-5602498 |\n| 4 | platelet-type bleeding disorder 16 (MONDO:0008552) | shared pathway | Tier 3 | 0.499 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n| 5 | Glanzmann thrombasthenia 1 (MONDO:0031332) | shared pathway | Tier 3 | 0.492 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n| 6 | obsolete Glanzmann's thrombasthenia (MONDO:0010119) | shared pathway | Tier 3 | 0.465 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n| 7 | glomerulopathy with fibronectin deposits 2 (MONDO:0011165) | shared pathway | Tier 3 | 0.460 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426 |\n| 8 | spondylometaphyseal dysplasia, 'corner fracture' type (MONDO:0008479) | shared pathway | Tier 3 | 0.457 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426 |\n| 9 | fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724) | shared pathway | Tier 3 | 0.430 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n| 10 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708 |\n\n### CANDIDATE DETAIL\n#### 1. familial visceral amyloidosis  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426, Reactome:R-HSA-5602498)\n\n**Proposed mechanism:** FGA (HGNC:3661) —PRODUCES→ Fibrinogen (CHEBI:17515); Fibrinogen (CHEBI:17515) —DISRUPTS→ Fibrinolysis and Coagulation Cascade (GO:0007596); Fibrinogen (CHEBI:17515) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Fibrinolysis and Coagulation Cascade (GO:0007596) —LEADS_TO→ Abnormal Hemostasis (HP:0011230); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Amyloidosis (HP:0003271). Mutations in FGA lead to dysfunctional fibrinogen, disrupting both the coagulation cascade (leading to abnormal hemostasis in congenital afibrinogenemia) and extracellular matrix organization (contributing to amyloid deposition in familial visceral amyloidosis).\n\n**How to falsify it:** Identification of pathogenic variants in FGA, FGB, or FGG associated with familial visceral amyloidosis that do not impair fibrinogen's ability to participate in coagulation or matrix deposition. _(variant: rs775471709)_\n\n**Why it matters:** Understanding the shared molecular basis of congenital afibrinogenemia and familial visceral amyloidosis could lead to novel therapeutic strategies targeting fibrinogen dysfunction or its downstream effects, potentially benefiting patients with either condition. For instance, therapies aimed at stabilizing fibrinogen or clearing amyloid deposits could be explored.\n\n---\n\n#### 2. Glanzmann thrombasthenia  —  Tier 3 — Moderate / Emerging  (fitness 0.527)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** Fibrinogen alpha chain (HGNC:3701) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen beta chain (HGNC:3702) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen gamma chain (HGNC:3703) —DISRUPTS→ Fibrinogen complex (GO:0007542); Fibrinogen complex (GO:0007542) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Hemorrhage (HP:00114207); Integrin subunit alpha-2b (HGNC:6103) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin subunit beta-3 (HGNC:6104) —DISRUPTS→ Integrin alpha-IIb/beta-3 (GO:0005576); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet aggregation (GO:0003027); Integrin alpha-IIb/beta-3 (GO:0005576) —DISRUPTS→ Platelet adhesion (GO:0007540); Platelet aggregation (GO:0003027) —LEADS_TO→ Hemorrhage (HP:00114207); Platelet adhesion (GO:0007540) —LEADS_TO→ Hemorrhage (HP:00114207). Mutations in FGA, FGB, and FGG lead to a defective fibrinogen complex, impairing the coagulation cascade and causing bleeding. Separately, mutations in ITGA2B and ITGB3 result in a non-functional integrin alpha-IIb/beta-3 complex, which is critical for platelet aggregation and adhesion, also leading to bleeding. The convergence is on the shared downstream consequences of impaired platelet function and coagulation, both contributing to the phenotype of hemorrhage.\n\n**How to falsify it:** Identification of a common pathogenic variant in ITGA2B or ITGB3 that is also causative for congenital afibrinogenemia, or vice-versa, would suggest a shared genetic origin rather than distinct pathways converging on a shared process. Alternatively, demonstrating that mutations in FGA/FGB/FGG do not affect platelet aggregation or adhesion, or that mutations in ITGA2B/ITGB3 do not affect fibrin clot formation, would falsify the proposed overlap. _(variant: A pathogenic variant with a frequency >0.01% in gnomAD across multiple populations in any of the five causal genes (FGA, FGB, FGG, ITGA2B, ITGB3) would suggest these are not rare disease-causing variants.)_\n\n**Why it matters:** Understanding the interplay between fibrinogen function and platelet integrin signaling is crucial for developing targeted therapies for bleeding disorders. Strategies aimed at restoring platelet aggregation or enhancing coagulation factor function could benefit patients with either condition, particularly in managing surgical bleeding or severe hemorrhages.\n\n---\n\n#### 3. familial dysfibrinogenemia  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426, Reactome:R-HSA-5602498)\n\n**Proposed mechanism:** FGA (HGNC:3661) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGB (HGNC:3662) —DISRUPTS→ Fibrinogen complex assembly and secretion; FGG (HGNC:3694) —DISRUPTS→ Fibrinogen complex assembly and secretion; Fibrinogen complex assembly and secretion —DISRUPTS→ Blood coagulation cascade; Blood coagulation cascade —LEADS_TO→ Bleeding tendency (HP:00114151); Fibrinogen complex assembly and secretion —LEADS_TO→ Abnormal fibrin clot formation (HP:0030187). Mutations in FGA, FGB, or FGG disrupt the proper assembly and function of the fibrinogen complex, which is a critical component of the blood coagulation cascade. This disruption leads to both impaired clot formation and a general bleeding tendency.\n\n**How to falsify it:** Identification of a patient with congenital afibrinogenemia who has a normal fibrinogen level and normal coagulation assays, or a patient with familial dysfibrinogenemia who has a complete absence of fibrinogen and no detectable fibrinogen mRNA. _(variant: Absence of pathogenic variants in FGA, FGB, or FGG in gnomAD controls that are known to cause either congenital afibrinogenemia or familial dysfibrinogenemia.)_\n\n**Why it matters:** Understanding the mechanistic link between these two fibrinogen-related disorders can inform differential diagnosis and potentially guide therapeutic strategies, such as fibrinogen concentrate replacement or procoagulant therapies, tailored to the specific functional defect.\n\n---\n\n#### 4. platelet-type bleeding disorder 16  —  Tier 3 — Moderate / Emerging  (fitness 0.499)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** Pathogenic variants in ITGA2B (HP:0001107) —DISRUPTS→ ITGA2B (HGNC:6094); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet aggregation and fibrin clot formation (GO:0007541); Platelet aggregation and fibrin clot formation (GO:0007541) —LEADS_TO→ Abnormal bleeding (HP:0011421); Abnormal bleeding (HP:0011421) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Abnormal bleeding (HP:0011421) —LEADS_TO→ Platelet-type bleeding disorder 16 (MONDO:0008552). Pathogenic variants in the ITGA2B gene disrupt the formation and function of the integrin alpha-IIb beta-3 receptor, which is critical for platelet aggregation and fibrin clot formation. This disruption leads to abnormal bleeding, manifesting as congenital afibrinogenemia (disease A) and platelet-type bleeding disorder 16 (disease B).\n\n**How to falsify it:** Discovery of distinct causal genes for congenital afibrinogenemia and platelet-type bleeding disorder 16, or demonstration of a gain-of-function mechanism for one of the diseases. _(variant: The presence of common benign variants in ITGA2B in gnomAD would not falsify this hypothesis, as the causal variants are expected to be rare and pathogenic.)_\n\n**Why it matters:** Understanding the shared genetic basis in ITGA2B highlights a common therapeutic target for bleeding disorders. Therapies aimed at restoring integrin alpha-IIb beta-3 function or improving platelet aggregation could potentially benefit patients with either condition.\n\n---\n\n#### 5. Glanzmann thrombasthenia 1  —  Tier 3 — Moderate / Emerging  (fitness 0.492)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** Fibrinogen Alpha Chain (HGNC:3763) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Beta Chain (HGNC:3764) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen Gamma Chain (HGNC:3765) —DISRUPTS→ Fibrinogen complex formation and function; Integrin Subunit Alpha 2b (HGNC:6100) —DISRUPTS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Fibrinogen complex formation and function —LEADS_TO→ Severe bleeding (HP:0001892); Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Thrombasthenia (HP:0001927); Fibrinogen complex formation and function —BINDS→ Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation; Integrin alpha2b-beta3 (GPIIb/IIIa) mediated platelet aggregation —LEADS_TO→ Severe bleeding (HP:0001892). Mutations in FGA, FGB, and FGG lead to defective fibrinogen complex formation and function, impairing clot formation and causing severe bleeding (Congenital Afibrinogenemia). Mutations in ITGA2B disrupt the integrin alpha2b-beta3 receptor on platelets, which is essential for binding fibrinogen and mediating platelet aggregation, leading to Glanzmann thrombasthenia and a bleeding phenotype. Both pathways converge on the impaired ability of platelets to form stable clots due to either lack of fibrinogen or defective fibrinogen binding.\n\n**How to falsify it:** Identification of individuals with mutations in FGA, FGB, FGG, or ITGA2B who do not exhibit a bleeding phenotype, or demonstration of functional fibrinogen and normal platelet aggregation in patients diagnosed with these conditions. _(variant: The presence of pathogenic variants in FGA, FGB, FGG, or ITGA2B with a minor allele frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Understanding this overlap could inform therapeutic strategies aimed at restoring platelet function or improving clot stability in both congenital afibrinogenemia and Glanzmann thrombasthenia, potentially through fibrinogen concentrate or novel platelet agonists.\n\n---\n\n#### 6. obsolete Glanzmann's thrombasthenia  —  Tier 3 — Moderate / Emerging  (fitness 0.465)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:17640); Fibrinogen (CHEBI:17640) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); ITGA2B/ITGB3 (HGNC:5673) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Fibrinogen (CHEBI:17640) —BINDS→ Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542); Platelet aggregation via integrin alpha-IIb beta-3 (GO:0007542) —LEADS_TO→ Glanzmann's thrombasthenia (MONDO:0010119). Mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia by preventing the production of functional fibrinogen. Separately, mutations in ITGA2B or ITGB3 impair the binding of fibrinogen to activated platelets via the integrin alpha-IIb beta-3 receptor, causing Glanzmann's thrombasthenia. Both diseases converge on the functional integrity of the fibrinogen complex and its interaction with platelets.\n\n**How to falsify it:** Identification of individuals with mutations in FGA, FGB, or FGG who exhibit normal platelet aggregation or individuals with mutations in ITGA2B or ITGB3 who have normal fibrinogen levels and coagulation function. _(variant: gnomAD allele frequency > 0.01 for variants in FGA, FGB, FGG, ITGA2B, or ITGB3 associated with these phenotypes.)_\n\n**Why it matters:** Understanding these distinct yet related defects in the fibrinogen pathway and platelet function can inform the development of targeted therapies for bleeding disorders. For congenital afibrinogenemia, fibrinogen replacement therapy is key. For Glanzmann's thrombasthenia, management focuses on platelet function and avoiding triggers, with potential for novel therapeutic targets related to integrin signaling.\n\n---\n\n#### 7. glomerulopathy with fibronectin deposits 2  —  Tier 3 — Moderate / Emerging  (fitness 0.460)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** FGA/FGB/FGG (HGNC:3724) —PRODUCES→ Fibrinogen (CHEBI:57738); Fibrinogen (CHEBI:57738) —DISRUPTS→ Blood coagulation cascade (GO:0007596); Blood coagulation cascade (GO:0007596) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); FN1 (HGNC:3708) —PRODUCES→ Fibronectin (UniProtKB:P02751); Fibronectin (UniProtKB:P02751) —DISRUPTS→ Extracellular matrix organization (GO:0031012); Extracellular matrix organization (GO:0031012) —LEADS_TO→ Glomerulopathy with fibronectin deposits 2 (MONDO:0011165). Mutations in FGA, FGB, or FGG lead to a loss of fibrinogen production, disrupting the blood coagulation cascade and causing congenital afibrinogenemia. Similarly, mutations in FN1 result in a loss of functional fibronectin, which is critical for extracellular matrix organization, leading to glomerulopathy with fibronectin deposits 2. Both fibrinogen and fibronectin are key components of the extracellular matrix, and their defective production disrupts distinct but related biological processes contributing to distinct pathologies.\n\n**How to falsify it:** Identification of individuals with mutations in FGA, FGB, or FGG who do not exhibit congenital afibrinogenemia, or individuals with mutations in FN1 who do not present with glomerulopathy with fibronectin deposits 2, would falsify this hypothesis. Furthermore, if genetic studies reveal that the pathways of fibrinogen and fibronectin function are completely independent and do not converge at any downstream effector or process, this would also falsify the proposed link.\n\n**Why it matters:** Understanding the shared reliance on extracellular matrix components like fibrinogen and fibronectin may reveal common therapeutic targets or strategies for managing bleeding disorders and kidney diseases characterized by matrix deposition. For instance, therapies aimed at stabilizing or replacing components of the extracellular matrix could potentially benefit patients with both conditions, although the specific clinical applications would differ based on the primary affected component and downstream pathology.\n\n---\n\n#### 8. spondylometaphyseal dysplasia, 'corner fracture' type  —  Tier 3 — Moderate / Emerging  (fitness 0.457)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** FGA/FGB/FGG (HGNC:3776) —PRODUCES→ Fibrinogen (CHEBI:16146); Fibrinogen (CHEBI:16146) —DISRUPTS→ Hemostasis (GO:0007596); Hemostasis (GO:0007596) —LEADS_TO→ Bleeding (HP:0001871); FN1 (HGNC:3777) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis and Cross-linking (GO:0032957); Collagen Synthesis and Cross-linking (GO:0032957) —LEADS_TO→ Spondylometaphyseal dysplasia, 'corner fracture' type (MONDO:0008479). Loss-of-function mutations in FGA, FGB, or FGG lead to congenital afibrinogenemia and bleeding due to impaired hemostasis. Loss-of-function mutations in FN1 lead to spondylometaphyseal dysplasia, 'corner fracture' type, by disrupting extracellular matrix organization and collagen synthesis/cross-linking. The shared mechanism is the disruption of processes critical for extracellular matrix integrity, where fibrinogen, while primarily known for hemostasis, also interacts with and influences the extracellular matrix.\n\n**How to falsify it:** Demonstration that mutations in FGA, FGB, FGG, or FN1 do not affect extracellular matrix organization or collagen cross-linking in cellular or animal models. _(variant: Identification of common variants (AF > 0.01) in gnomAD within the coding regions of FGA, FGB, FGG, or FN1 that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role in extracellular matrix regulation could reveal novel therapeutic targets for skeletal dysplasias by modulating pathways influenced by fibrinogen or fibronectin, or vice versa, potentially offering insights into managing bleeding disorders in patients with connective tissue abnormalities.\n\n---\n\n#### 9. fetomaternal alloimmune thrombocytopenia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.430)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** FGB (HGNC:3759) —DISRUPTS→ Fibrinogen complex formation and function; FGA (HGNC:3757) —DISRUPTS→ Fibrinogen complex formation and function; FGG (HGNC:3760) —DISRUPTS→ Fibrinogen complex formation and function; Fibrinogen complex formation and function —DECREASES→ Functional fibrinogen (CHEBI:17630); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Functional fibrinogen (CHEBI:17630) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in FGB (and FGA, FGG) disrupt fibrinogen complex formation, leading to a lack of functional fibrinogen. This absence contributes to the bleeding diathesis seen in congenital afibrinogenemia and the altered platelet function and immune response in fetomaternal alloimmune thrombocytopenia 2.\n\n**How to falsify it:** Identification of individuals with mutations in FGB exhibiting congenital afibrinogenemia but lacking the characteristic immune-mediated thrombocytopenia, or vice versa, would suggest independent pathways or additional contributing factors not captured by this model. _(variant: The presence of common variants in FGB with a minor allele frequency > 1% in gnomAD would challenge the pathogenicity of FGB mutations in causing these rare diseases.)_\n\n**Why it matters:** Understanding the shared role of FGB in these distinct conditions could inform therapeutic strategies. For congenital afibrinogenemia, this reinforces the need for fibrinogen replacement. For fetomaternal alloimmune thrombocytopenia 2, it might highlight novel targets related to fibrinogen's role in platelet aggregation and immune interactions.\n\n---\n\n#### 10. colorectal cancer  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-354192, Reactome:R-HSA-354194, Reactome:R-HSA-372708)\n\n**Proposed mechanism:** APC pathogenic variant (HGNC:585) —DISRUPTS→ APC (HGNC:585); APC (HGNC:585) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6811426); Wnt signaling pathway (REACT:R-HSA-6811426) —LEADS_TO→ Cell adhesion and proliferation regulation; Cell adhesion and proliferation regulation —LEADS_TO→ Colorectal cancer (MONDO:0005575); FGA (HGNC:3767) —DISRUPTS→ Fibrinogen homeostasis; FGB (HGNC:3768) —DISRUPTS→ Fibrinogen homeostasis; FGG (HGNC:3769) —DISRUPTS→ Fibrinogen homeostasis; Fibrinogen homeostasis —LEADS_TO→ Congenital afibrinogenemia (MONDO:0008737); Wnt signaling pathway (REACT:R-HSA-6811426) —DECREASES→ Fibrinogen homeostasis. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to dysregulated cell adhesion and proliferation, culminating in colorectal cancer. Concurrently, loss-of-function mutations in FGA, FGB, and FGG disrupt fibrinogen homeostasis, causing congenital afibrinogenemia. We hypothesize that the dysregulation of the Wnt pathway can indirectly decrease components or processes critical for fibrinogen homeostasis, thus creating a mechanistic link between the two diseases.\n\n**How to falsify it:** Absence of any detectable interaction or downstream effect of Wnt signaling dysregulation on fibrinogen production or function in relevant cellular models, or identification of a specific variant in APC with a high frequency (>1%) in gnomAD for populations with congenital afibrinogenemia. _(variant: rs112917791)_\n\n**Why it matters:** Understanding this potential link could reveal novel therapeutic targets for either disease. For instance, modulating Wnt signaling might offer a strategy to improve hemostatic function in afibrinogenemia patients, or conversely, therapies aimed at improving fibrinogen levels could potentially impact tumor progression in colorectal cancer patients with specific genetic backgrounds.\n\n---"
+}
