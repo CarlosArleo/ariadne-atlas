@@ -1,0 +1,329 @@
+{
+  "seed": {
+    "id": "MONDO:0009472",
+    "name": "acetylation, slow"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 8,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0044270",
+      "diseaseBName": "obsolete bilirubin, serum level of, quantitative trait locus 1",
+      "fitness": 0.3971,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NAT2 (HGNC:7799) —DISRUPTS→ Slow acetylation (HP:0030109); UGT1A1 (HGNC:12210) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-197166); Bilirubin conjugation (REACT:R-HSA-197166) —DECREASES→ Unconjugated bilirubin (CHEBI:17334); Unconjugated bilirubin (CHEBI:17334) —INCREASES→ Elevated serum bilirubin (HP:0011054); UGT1A1 (HGNC:12210) —LEADS_TO→ Unconjugated bilirubin (CHEBI:17334). Loss-of-function mutations in NAT2 lead to slow acetylation, impacting the metabolism of various xenobiotics. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to elevated unconjugated bilirubin levels. The convergence lies in the disruption of metabolic pathways, specifically UGT1A1's role in bilirubin conjugation being a key step in processing endogenous compounds, which shares functional overlap with xenobiotic processing enzymes like NAT2.",
+      "mechanism_narrative": "NAT2 (HGNC:7799) —DISRUPTS→ Slow acetylation (HP:0030109); UGT1A1 (HGNC:12210) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-197166); Bilirubin conjugation (REACT:R-HSA-197166) —DECREASES→ Unconjugated bilirubin (CHEBI:17334); Unconjugated bilirubin (CHEBI:17334) —INCREASES→ Elevated serum bilirubin (HP:0011054); UGT1A1 (HGNC:12210) —LEADS_TO→ Unconjugated bilirubin (CHEBI:17334). Loss-of-function mutations in NAT2 lead to slow acetylation, impacting the metabolism of various xenobiotics. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to elevated unconjugated bilirubin levels. The convergence lies in the disruption of metabolic pathways, specifically UGT1A1's role in bilirubin conjugation being a key step in processing endogenous compounds, which shares functional overlap with xenobiotic processing enzymes like NAT2.",
+      "falsification": {
+        "text": "Demonstration that variants in NAT2 do not affect acetylation rates or that variants in UGT1A1 do not affect serum bilirubin levels in human populations.",
+        "gnomad_variant": "rs72558186"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044270",
+        "diseaseBName": "obsolete bilirubin, serum level of, quantitative trait locus 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.3971,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NAT2 (HGNC:7799) —DISRUPTS→ Slow acetylation (HP:0030109); UGT1A1 (HGNC:12210) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-197166); Bilirubin conjugation (REACT:R-HSA-197166) —DECREASES→ Unconjugated bilirubin (CHEBI:17334); Unconjugated bilirubin (CHEBI:17334) —INCREASES→ Elevated serum bilirubin (HP:0011054); UGT1A1 (HGNC:12210) —LEADS_TO→ Unconjugated bilirubin (CHEBI:17334). Loss-of-function mutations in NAT2 lead to slow acetylation, impacting the metabolism of various xenobiotics. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to elevated unconjugated bilirubin levels. The convergence lies in the disruption of metabolic pathways, specifically UGT1A1's role in bilirubin conjugation being a key step in processing endogenous compounds, which shares functional overlap with xenobiotic processing enzymes like NAT2.",
+        "falsification": {
+          "text": "Demonstration that variants in NAT2 do not affect acetylation rates or that variants in UGT1A1 do not affect serum bilirubin levels in human populations.",
+          "gnomad_variant": "rs72558186"
+        },
+        "translational": "Understanding the shared metabolic processing pathways could lead to novel therapeutic strategies for diseases involving drug metabolism and hyperbilirubinemia, potentially by targeting common regulatory mechanisms or enzyme families."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011725",
+      "diseaseBName": "Crigler-Najjar syndrome type 2",
+      "fitness": 0.3683,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7779); N-acetyltransferase 2 (HGNC:7779) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Slow acetylation phenotype (HP:0030171); Loss-of-function variants in UGT1A1 —DISRUPTS→ UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094); UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-70306); Bilirubin conjugation (REACT:R-HSA-70306) —DECREASES→ Accumulation of unconjugated bilirubin (CHEBI:17402); Accumulation of unconjugated bilirubin (CHEBI:17402) —LEADS_TO→ Crigler-Najjar syndrome type 2 phenotype (MONDO:0011725). Loss-of-function mutations in NAT2 lead to reduced acetylation capacity, causing the slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to the accumulation of unconjugated bilirubin characteristic of Crigler-Najjar syndrome type 2. The shared mechanism lies in the downstream metabolic consequences of enzyme deficiencies, specifically the accumulation of substrates due to impaired enzymatic activity within their respective pathways.",
+      "mechanism_narrative": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7779); N-acetyltransferase 2 (HGNC:7779) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Slow acetylation phenotype (HP:0030171); Loss-of-function variants in UGT1A1 —DISRUPTS→ UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094); UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-70306); Bilirubin conjugation (REACT:R-HSA-70306) —DECREASES→ Accumulation of unconjugated bilirubin (CHEBI:17402); Accumulation of unconjugated bilirubin (CHEBI:17402) —LEADS_TO→ Crigler-Najjar syndrome type 2 phenotype (MONDO:0011725). Loss-of-function mutations in NAT2 lead to reduced acetylation capacity, causing the slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to the accumulation of unconjugated bilirubin characteristic of Crigler-Najjar syndrome type 2. The shared mechanism lies in the downstream metabolic consequences of enzyme deficiencies, specifically the accumulation of substrates due to impaired enzymatic activity within their respective pathways.",
+      "falsification": {
+        "text": "The absence of common genetic variants in gnomAD associated with loss-of-function for both NAT2 and UGT1A1, or demonstration that the underlying pathways for acetylation and bilirubin conjugation are not functionally linked at a molecular level.",
+        "gnomad_variant": "Exome variant allele frequency > 0.01 for known loss-of-function variants in NAT2 or UGT1A1."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011725",
+        "diseaseBName": "Crigler-Najjar syndrome type 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.3683,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7779); N-acetyltransferase 2 (HGNC:7779) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Slow acetylation phenotype (HP:0030171); Loss-of-function variants in UGT1A1 —DISRUPTS→ UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094); UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-70306); Bilirubin conjugation (REACT:R-HSA-70306) —DECREASES→ Accumulation of unconjugated bilirubin (CHEBI:17402); Accumulation of unconjugated bilirubin (CHEBI:17402) —LEADS_TO→ Crigler-Najjar syndrome type 2 phenotype (MONDO:0011725). Loss-of-function mutations in NAT2 lead to reduced acetylation capacity, causing the slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to the accumulation of unconjugated bilirubin characteristic of Crigler-Najjar syndrome type 2. The shared mechanism lies in the downstream metabolic consequences of enzyme deficiencies, specifically the accumulation of substrates due to impaired enzymatic activity within their respective pathways.",
+        "falsification": {
+          "text": "The absence of common genetic variants in gnomAD associated with loss-of-function for both NAT2 and UGT1A1, or demonstration that the underlying pathways for acetylation and bilirubin conjugation are not functionally linked at a molecular level.",
+          "gnomad_variant": "Exome variant allele frequency > 0.01 for known loss-of-function variants in NAT2 or UGT1A1."
+        },
+        "translational": "Understanding the shared principle of metabolic pathway disruption due to enzyme deficiency can inform therapeutic strategies for diseases involving impaired detoxification or conjugation processes. While the specific substrates differ, the underlying mechanism of reduced enzymatic capacity highlights potential for enzyme replacement or cofactor augmentation therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030058",
+      "diseaseBName": "hearing loss, autosomal dominant 77",
+      "fitness": 0.3659,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7784); N-acetyltransferase 2 (HGNC:7784) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Impaired cellular function; Loss-of-function variants in ABCC1 —DISRUPTS→ ABCC1 (HGNC:24467); ABCC1 (HGNC:24467) —DECREASES→ Accumulation of ABCC1 substrates; Accumulation of ABCC1 substrates —LEADS_TO→ Disruption of ion homeostasis; Impaired cellular function —LEADS_TO→ Hearing loss (HP:0000365); Disruption of ion homeostasis —LEADS_TO→ Hearing loss (HP:0000365). Loss-of-function mutations in NAT2 lead to impaired acetylation, potentially affecting cellular processes. Concurrently, loss-of-function mutations in ABCC1 impair its transporter function, leading to the accumulation of its substrates and disruption of ion homeostasis, which ultimately contributes to hearing loss. The convergence is hypothesized through the cellular dysfunction caused by impaired acetylation impacting general cellular processes, including those affected by ABCC1 substrate accumulation and ion dysregulation, culminating in the shared phenotype of hearing loss, albeit through distinct initial molecular events.",
+      "mechanism_narrative": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7784); N-acetyltransferase 2 (HGNC:7784) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Impaired cellular function; Loss-of-function variants in ABCC1 —DISRUPTS→ ABCC1 (HGNC:24467); ABCC1 (HGNC:24467) —DECREASES→ Accumulation of ABCC1 substrates; Accumulation of ABCC1 substrates —LEADS_TO→ Disruption of ion homeostasis; Impaired cellular function —LEADS_TO→ Hearing loss (HP:0000365); Disruption of ion homeostasis —LEADS_TO→ Hearing loss (HP:0000365). Loss-of-function mutations in NAT2 lead to impaired acetylation, potentially affecting cellular processes. Concurrently, loss-of-function mutations in ABCC1 impair its transporter function, leading to the accumulation of its substrates and disruption of ion homeostasis, which ultimately contributes to hearing loss. The convergence is hypothesized through the cellular dysfunction caused by impaired acetylation impacting general cellular processes, including those affected by ABCC1 substrate accumulation and ion dysregulation, culminating in the shared phenotype of hearing loss, albeit through distinct initial molecular events.",
+      "falsification": {
+        "text": "If variants in ABCC1 are found to be common in the general population (e.g., gnomAD allele frequency >1%) and are not associated with hearing loss, or if the specific substrates of ABCC1 are shown to have no role in auditory neuron function, this hypothesis would be falsified.",
+        "gnomad_variant": "rs17510273"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030058",
+        "diseaseBName": "hearing loss, autosomal dominant 77",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.3659,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7784); N-acetyltransferase 2 (HGNC:7784) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Impaired cellular function; Loss-of-function variants in ABCC1 —DISRUPTS→ ABCC1 (HGNC:24467); ABCC1 (HGNC:24467) —DECREASES→ Accumulation of ABCC1 substrates; Accumulation of ABCC1 substrates —LEADS_TO→ Disruption of ion homeostasis; Impaired cellular function —LEADS_TO→ Hearing loss (HP:0000365); Disruption of ion homeostasis —LEADS_TO→ Hearing loss (HP:0000365). Loss-of-function mutations in NAT2 lead to impaired acetylation, potentially affecting cellular processes. Concurrently, loss-of-function mutations in ABCC1 impair its transporter function, leading to the accumulation of its substrates and disruption of ion homeostasis, which ultimately contributes to hearing loss. The convergence is hypothesized through the cellular dysfunction caused by impaired acetylation impacting general cellular processes, including those affected by ABCC1 substrate accumulation and ion dysregulation, culminating in the shared phenotype of hearing loss, albeit through distinct initial molecular events.",
+        "falsification": {
+          "text": "If variants in ABCC1 are found to be common in the general population (e.g., gnomAD allele frequency >1%) and are not associated with hearing loss, or if the specific substrates of ABCC1 are shown to have no role in auditory neuron function, this hypothesis would be falsified.",
+          "gnomad_variant": "rs17510273"
+        },
+        "translational": "Understanding the shared role of ABCC1 in mediating cellular dysfunction across different disease contexts could inform therapeutic strategies. If acetylation defects indirectly impact ABCC1 function or its substrates, interventions aimed at restoring ABCC1 activity or mitigating the effects of its accumulated substrates could be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009380",
+      "diseaseBName": "Dubin-Johnson syndrome",
+      "fitness": 0.3628,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NAT2 (HGNC:7740) —DISRUPTS→ Acetylation (GO:0006473); Acetylation (GO:0006473) —LEADS_TO→ Acetylation, slow (MONDO:0009472); ABCC2 (HGNC:24877) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Conjugated Bilirubin (CHEBI:17598) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Bilirubin Excretion (GO:0046187) —LEADS_TO→ Dubin-Johnson syndrome (MONDO:0009380). Loss-of-function mutations in NAT2 impair acetylation, leading to the slow acetylation phenotype. Simultaneously, loss-of-function mutations in ABCC2 impair the excretion of conjugated bilirubin, causing Dubin-Johnson syndrome. While NAT2 and ABCC2 are distinct genes, their roles in cellular detoxification pathways represent a shared functional module, where disruption of specific metabolic processes leads to distinct but related disease phenotypes.",
+      "mechanism_narrative": "NAT2 (HGNC:7740) —DISRUPTS→ Acetylation (GO:0006473); Acetylation (GO:0006473) —LEADS_TO→ Acetylation, slow (MONDO:0009472); ABCC2 (HGNC:24877) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Conjugated Bilirubin (CHEBI:17598) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Bilirubin Excretion (GO:0046187) —LEADS_TO→ Dubin-Johnson syndrome (MONDO:0009380). Loss-of-function mutations in NAT2 impair acetylation, leading to the slow acetylation phenotype. Simultaneously, loss-of-function mutations in ABCC2 impair the excretion of conjugated bilirubin, causing Dubin-Johnson syndrome. While NAT2 and ABCC2 are distinct genes, their roles in cellular detoxification pathways represent a shared functional module, where disruption of specific metabolic processes leads to distinct but related disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in NAT2 do not affect acetylation rates or that ABCC2 is not involved in bilirubin transport would falsify this hypothesis. Furthermore, identification of a common genetic variant in gnomAD with a frequency > 1% in the population that is strongly associated with either disease would also challenge the proposed rare disease mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009380",
+        "diseaseBName": "Dubin-Johnson syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.3628,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NAT2 (HGNC:7740) —DISRUPTS→ Acetylation (GO:0006473); Acetylation (GO:0006473) —LEADS_TO→ Acetylation, slow (MONDO:0009472); ABCC2 (HGNC:24877) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Conjugated Bilirubin (CHEBI:17598) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Bilirubin Excretion (GO:0046187) —LEADS_TO→ Dubin-Johnson syndrome (MONDO:0009380). Loss-of-function mutations in NAT2 impair acetylation, leading to the slow acetylation phenotype. Simultaneously, loss-of-function mutations in ABCC2 impair the excretion of conjugated bilirubin, causing Dubin-Johnson syndrome. While NAT2 and ABCC2 are distinct genes, their roles in cellular detoxification pathways represent a shared functional module, where disruption of specific metabolic processes leads to distinct but related disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in NAT2 do not affect acetylation rates or that ABCC2 is not involved in bilirubin transport would falsify this hypothesis. Furthermore, identification of a common genetic variant in gnomAD with a frequency > 1% in the population that is strongly associated with either disease would also challenge the proposed rare disease mechanism."
+        },
+        "translational": "Understanding the shared reliance on specific metabolic pathways and transport mechanisms for detoxification highlights potential overlapping therapeutic strategies. For instance, interventions aimed at enhancing alternative detoxification routes or managing substrate accumulation could be beneficial for patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009383",
+      "diseaseBName": "transient familial neonatal hyperbilirubinemia",
+      "fitness": 0.358,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NAT2 (HGNC:7775) —DISRUPTS→ Drug/xenobiotic acetylation (GO:0006412); Drug/xenobiotic acetylation (GO:0006412) —LEADS_TO→ Slow acetylation (HP:0030110); UGT1A1 (HGNC:12248) —DISRUPTS→ Bilirubin conjugation (GO:0006727); Bilirubin conjugation (GO:0006727) —DECREASES→ Bilirubin (CHEBI:17244); Bilirubin (CHEBI:17244) —INCREASES→ Neonatal jaundice (HP:0001405). Loss-of-function mutations in NAT2 impair the acetylation of various substrates, leading to the phenotype of slow acetylation. Similarly, loss-of-function mutations in UGT1A1 impair the conjugation of bilirubin, leading to its accumulation and the phenotype of neonatal jaundice. Both NAT2 and UGT1A1 are crucial phase II metabolic enzymes involved in detoxification and clearance pathways, and their impaired function due to mutations represents a convergence at the level of compromised metabolic clearance.",
+      "mechanism_narrative": "NAT2 (HGNC:7775) —DISRUPTS→ Drug/xenobiotic acetylation (GO:0006412); Drug/xenobiotic acetylation (GO:0006412) —LEADS_TO→ Slow acetylation (HP:0030110); UGT1A1 (HGNC:12248) —DISRUPTS→ Bilirubin conjugation (GO:0006727); Bilirubin conjugation (GO:0006727) —DECREASES→ Bilirubin (CHEBI:17244); Bilirubin (CHEBI:17244) —INCREASES→ Neonatal jaundice (HP:0001405). Loss-of-function mutations in NAT2 impair the acetylation of various substrates, leading to the phenotype of slow acetylation. Similarly, loss-of-function mutations in UGT1A1 impair the conjugation of bilirubin, leading to its accumulation and the phenotype of neonatal jaundice. Both NAT2 and UGT1A1 are crucial phase II metabolic enzymes involved in detoxification and clearance pathways, and their impaired function due to mutations represents a convergence at the level of compromised metabolic clearance.",
+      "falsification": {
+        "text": "The identification of pathogenic loss-of-function variants in NAT2 in individuals with transient familial neonatal hyperbilirubinemia, or pathogenic loss-of-function variants in UGT1A1 in individuals with acetylation, slow, would falsify the proposed distinct genetic origins, suggesting a shared underlying genetic etiology or pathway perturbation not captured by the current model.",
+        "gnomad_variant": "None specific, as the hypothesis relies on rare pathogenic variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009383",
+        "diseaseBName": "transient familial neonatal hyperbilirubinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.358,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NAT2 (HGNC:7775) —DISRUPTS→ Drug/xenobiotic acetylation (GO:0006412); Drug/xenobiotic acetylation (GO:0006412) —LEADS_TO→ Slow acetylation (HP:0030110); UGT1A1 (HGNC:12248) —DISRUPTS→ Bilirubin conjugation (GO:0006727); Bilirubin conjugation (GO:0006727) —DECREASES→ Bilirubin (CHEBI:17244); Bilirubin (CHEBI:17244) —INCREASES→ Neonatal jaundice (HP:0001405). Loss-of-function mutations in NAT2 impair the acetylation of various substrates, leading to the phenotype of slow acetylation. Similarly, loss-of-function mutations in UGT1A1 impair the conjugation of bilirubin, leading to its accumulation and the phenotype of neonatal jaundice. Both NAT2 and UGT1A1 are crucial phase II metabolic enzymes involved in detoxification and clearance pathways, and their impaired function due to mutations represents a convergence at the level of compromised metabolic clearance.",
+        "falsification": {
+          "text": "The identification of pathogenic loss-of-function variants in NAT2 in individuals with transient familial neonatal hyperbilirubinemia, or pathogenic loss-of-function variants in UGT1A1 in individuals with acetylation, slow, would falsify the proposed distinct genetic origins, suggesting a shared underlying genetic etiology or pathway perturbation not captured by the current model.",
+          "gnomad_variant": "None specific, as the hypothesis relies on rare pathogenic variants."
+        },
+        "translational": "Understanding the shared mechanistic principle of impaired phase II metabolism in these distinct diseases could inform therapeutic strategies. For instance, interventions aimed at enhancing the activity or compensating for the loss of function of these metabolic pathways, or managing the downstream consequences of substrate accumulation, could be explored. Furthermore, recognizing the overlap in enzymatic clearance mechanisms might aid in differential diagnosis or risk stratification for related conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009285",
+      "diseaseBName": "gamma-glutamyl transpeptidase deficiency",
+      "fitness": 0.3529,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "N-acetyltransferase 2 (HGNC:7774) —DISRUPTS→ Slow acetylation phenotype; Gamma-glutamyl transpeptidase 1 (HGNC:4244) —DISRUPTS→ Glutathione metabolism; Glutathione metabolism —LEADS_TO→ Gamma-glutamyl transpeptidase deficiency phenotype. Loss-of-function mutations in NAT2 lead to a slow acetylation phenotype. Concurrently, loss-of-function mutations in GGT1 disrupt glutathione metabolism, leading to gamma-glutamyl transpeptidase deficiency. The convergence is on the shared role of GGT1 in glutathione metabolism, which is a key cellular process potentially impacted by altered xenobiotic metabolism arising from NAT2 deficiency.",
+      "mechanism_narrative": "N-acetyltransferase 2 (HGNC:7774) —DISRUPTS→ Slow acetylation phenotype; Gamma-glutamyl transpeptidase 1 (HGNC:4244) —DISRUPTS→ Glutathione metabolism; Glutathione metabolism —LEADS_TO→ Gamma-glutamyl transpeptidase deficiency phenotype. Loss-of-function mutations in NAT2 lead to a slow acetylation phenotype. Concurrently, loss-of-function mutations in GGT1 disrupt glutathione metabolism, leading to gamma-glutamyl transpeptidase deficiency. The convergence is on the shared role of GGT1 in glutathione metabolism, which is a key cellular process potentially impacted by altered xenobiotic metabolism arising from NAT2 deficiency.",
+      "falsification": {
+        "text": "Demonstration that mutations in NAT2 do not affect xenobiotic metabolism or that mutations in GGT1 do not impact glutathione homeostasis would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways for each disease would refute the proposed overlap."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009285",
+        "diseaseBName": "gamma-glutamyl transpeptidase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.3529,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "N-acetyltransferase 2 (HGNC:7774) —DISRUPTS→ Slow acetylation phenotype; Gamma-glutamyl transpeptidase 1 (HGNC:4244) —DISRUPTS→ Glutathione metabolism; Glutathione metabolism —LEADS_TO→ Gamma-glutamyl transpeptidase deficiency phenotype. Loss-of-function mutations in NAT2 lead to a slow acetylation phenotype. Concurrently, loss-of-function mutations in GGT1 disrupt glutathione metabolism, leading to gamma-glutamyl transpeptidase deficiency. The convergence is on the shared role of GGT1 in glutathione metabolism, which is a key cellular process potentially impacted by altered xenobiotic metabolism arising from NAT2 deficiency.",
+        "falsification": {
+          "text": "Demonstration that mutations in NAT2 do not affect xenobiotic metabolism or that mutations in GGT1 do not impact glutathione homeostasis would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways for each disease would refute the proposed overlap."
+        },
+        "translational": "Understanding this overlap could inform therapeutic strategies by highlighting the interconnectedness of metabolic pathways. Targeting glutathione metabolism or pathways affected by slow acetylation might offer novel treatment avenues for related conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007745",
+      "diseaseBName": "Gilbert syndrome",
+      "fitness": 0.2,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NAT2 (HGNC:7775) —DISRUPTS→ Slow acetylation (HP:0030192); UGT1A1 (HGNC:12227) —DISRUPTS→ Bilirubin glucuronidation (GO:0006080); Bilirubin glucuronidation (GO:0006080) —DECREASES→ Bilirubin (CHEBI:17479); Bilirubin (CHEBI:17479) —LEADS_TO→ Gilbert syndrome (MONDO:0007745). Loss-of-function variants in NAT2 lead to slow acetylation, impacting xenobiotic metabolism and potentially contributing to disease A. Similarly, reduced activity of UGT1A1 due to variants causes impaired bilirubin glucuronidation, leading to unconjugated hyperbilirubinemia characteristic of Gilbert syndrome (disease B). The convergence is on the metabolic pathways involving conjugation and clearance of small molecules, where both enzymes play critical, albeit distinct, roles.",
+      "mechanism_narrative": "NAT2 (HGNC:7775) —DISRUPTS→ Slow acetylation (HP:0030192); UGT1A1 (HGNC:12227) —DISRUPTS→ Bilirubin glucuronidation (GO:0006080); Bilirubin glucuronidation (GO:0006080) —DECREASES→ Bilirubin (CHEBI:17479); Bilirubin (CHEBI:17479) —LEADS_TO→ Gilbert syndrome (MONDO:0007745). Loss-of-function variants in NAT2 lead to slow acetylation, impacting xenobiotic metabolism and potentially contributing to disease A. Similarly, reduced activity of UGT1A1 due to variants causes impaired bilirubin glucuronidation, leading to unconjugated hyperbilirubinemia characteristic of Gilbert syndrome (disease B). The convergence is on the metabolic pathways involving conjugation and clearance of small molecules, where both enzymes play critical, albeit distinct, roles.",
+      "falsification": {
+        "text": "Demonstration that variants in NAT2 do not affect xenobiotic clearance or that UGT1A1 variants do not impact bilirubin metabolism in relevant human populations would falsify this hypothesis. The absence of any overlap in affected metabolic pathways or substrates would also serve as a falsification condition.",
+        "gnomad_variant": "rs1799853"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007745",
+        "diseaseBName": "Gilbert syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.2,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NAT2 (HGNC:7775) —DISRUPTS→ Slow acetylation (HP:0030192); UGT1A1 (HGNC:12227) —DISRUPTS→ Bilirubin glucuronidation (GO:0006080); Bilirubin glucuronidation (GO:0006080) —DECREASES→ Bilirubin (CHEBI:17479); Bilirubin (CHEBI:17479) —LEADS_TO→ Gilbert syndrome (MONDO:0007745). Loss-of-function variants in NAT2 lead to slow acetylation, impacting xenobiotic metabolism and potentially contributing to disease A. Similarly, reduced activity of UGT1A1 due to variants causes impaired bilirubin glucuronidation, leading to unconjugated hyperbilirubinemia characteristic of Gilbert syndrome (disease B). The convergence is on the metabolic pathways involving conjugation and clearance of small molecules, where both enzymes play critical, albeit distinct, roles.",
+        "falsification": {
+          "text": "Demonstration that variants in NAT2 do not affect xenobiotic clearance or that UGT1A1 variants do not impact bilirubin metabolism in relevant human populations would falsify this hypothesis. The absence of any overlap in affected metabolic pathways or substrates would also serve as a falsification condition.",
+          "gnomad_variant": "rs1799853"
+        },
+        "translational": "Understanding the overlap in metabolic processing pathways, even with different enzymes and substrates, can inform therapeutic strategies for diseases affecting drug metabolism and endogenous metabolite clearance. For example, patients with slow acetylation might have altered responses to drugs metabolized by NAT2, and understanding UGT1A1 function is crucial for managing hyperbilirubinemia. Shared principles in enzyme function and metabolic regulation could lead to cross-disciplinary insights."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021020",
+      "diseaseBName": "Crigler-Najjar syndrome type 1",
+      "fitness": 0.2,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "N-acetyltransferase 2 (HGNC:7776) —DISRUPTS→ Accumulation of acetylated compounds (CHEBI:51040); Accumulation of acetylated compounds (CHEBI:51040) —LEADS_TO→ Acetylation, slow (MONDO:0009472); UDP-glucuronosyltransferase 1-1 (HGNC:12139) —DISRUPTS→ Bilirubin (CHEBI:17790); Bilirubin (CHEBI:17790) —LEADS_TO→ Bilirubin metabolism (REACT:R-HSA-193865); Bilirubin metabolism (REACT:R-HSA-193865) —LEADS_TO→ Crigler-Najjar syndrome type 1 (MONDO:0021020). Loss-of-function mutations in NAT2 impair the clearance of various xenobiotics and endogenous compounds through acetylation, leading to slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair the glucuronidation of bilirubin, a key step in its metabolism, causing Crigler-Najjar syndrome type 1. Both diseases represent failures in detoxification pathways, leading to the accumulation of specific metabolic intermediates and subsequent phenotypic manifestations.",
+      "mechanism_narrative": "N-acetyltransferase 2 (HGNC:7776) —DISRUPTS→ Accumulation of acetylated compounds (CHEBI:51040); Accumulation of acetylated compounds (CHEBI:51040) —LEADS_TO→ Acetylation, slow (MONDO:0009472); UDP-glucuronosyltransferase 1-1 (HGNC:12139) —DISRUPTS→ Bilirubin (CHEBI:17790); Bilirubin (CHEBI:17790) —LEADS_TO→ Bilirubin metabolism (REACT:R-HSA-193865); Bilirubin metabolism (REACT:R-HSA-193865) —LEADS_TO→ Crigler-Najjar syndrome type 1 (MONDO:0021020). Loss-of-function mutations in NAT2 impair the clearance of various xenobiotics and endogenous compounds through acetylation, leading to slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair the glucuronidation of bilirubin, a key step in its metabolism, causing Crigler-Najjar syndrome type 1. Both diseases represent failures in detoxification pathways, leading to the accumulation of specific metabolic intermediates and subsequent phenotypic manifestations.",
+      "falsification": {
+        "text": "If genetic variants in NAT2 are found to be common (>5% allele frequency in gnomAD) and not associated with slow acetylation, or if variants in UGT1A1 are found to be common and not associated with Crigler-Najjar syndrome, this hypothesis would be falsified.",
+        "gnomad_variant": "rs705372 (NAT2)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9753281"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9753281": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021020",
+        "diseaseBName": "Crigler-Najjar syndrome type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9753281"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9753281": 29
+        },
+        "fitness": 0.2,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "N-acetyltransferase 2 (HGNC:7776) —DISRUPTS→ Accumulation of acetylated compounds (CHEBI:51040); Accumulation of acetylated compounds (CHEBI:51040) —LEADS_TO→ Acetylation, slow (MONDO:0009472); UDP-glucuronosyltransferase 1-1 (HGNC:12139) —DISRUPTS→ Bilirubin (CHEBI:17790); Bilirubin (CHEBI:17790) —LEADS_TO→ Bilirubin metabolism (REACT:R-HSA-193865); Bilirubin metabolism (REACT:R-HSA-193865) —LEADS_TO→ Crigler-Najjar syndrome type 1 (MONDO:0021020). Loss-of-function mutations in NAT2 impair the clearance of various xenobiotics and endogenous compounds through acetylation, leading to slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair the glucuronidation of bilirubin, a key step in its metabolism, causing Crigler-Najjar syndrome type 1. Both diseases represent failures in detoxification pathways, leading to the accumulation of specific metabolic intermediates and subsequent phenotypic manifestations.",
+        "falsification": {
+          "text": "If genetic variants in NAT2 are found to be common (>5% allele frequency in gnomAD) and not associated with slow acetylation, or if variants in UGT1A1 are found to be common and not associated with Crigler-Najjar syndrome, this hypothesis would be falsified.",
+          "gnomad_variant": "rs705372 (NAT2)"
+        },
+        "translational": "Understanding these shared principles of impaired detoxification pathways can inform therapeutic strategies for other metabolic disorders. For instance, if acetylated compounds or bilirubin accumulation can be targeted pharmacologically or through dietary interventions, it might offer a common therapeutic avenue for both conditions, or related disorders affecting these pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T12:44:10.873Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** acetylation, slow (MONDO:0009472)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 8 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | obsolete bilirubin, serum level of, quantitative trait locus 1 (MONDO:0044270) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-9753281 |\n| 2 | Crigler-Najjar syndrome type 2 (MONDO:0011725) | shared pathway | Tier 3 | 0.368 | Reactome:R-HSA-9753281 |\n| 3 | hearing loss, autosomal dominant 77 (MONDO:0030058) | shared pathway | Tier 3 | 0.366 | Reactome:R-HSA-9753281 |\n| 4 | Dubin-Johnson syndrome (MONDO:0009380) | shared pathway | Tier 3 | 0.363 | Reactome:R-HSA-9753281 |\n| 5 | transient familial neonatal hyperbilirubinemia (MONDO:0009383) | shared pathway | Tier 3 | 0.358 | Reactome:R-HSA-9753281 |\n| 6 | gamma-glutamyl transpeptidase deficiency (MONDO:0009285) | shared pathway | Tier 3 | 0.353 | Reactome:R-HSA-9753281 |\n| 7 | Gilbert syndrome (MONDO:0007745) | shared pathway | Tier 3 | 0.200 | Reactome:R-HSA-9753281 |\n| 8 | Crigler-Najjar syndrome type 1 (MONDO:0021020) | shared pathway | Tier 3 | 0.200 | Reactome:R-HSA-9753281 |\n\n### CANDIDATE DETAIL\n#### 1. obsolete bilirubin, serum level of, quantitative trait locus 1  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** NAT2 (HGNC:7799) —DISRUPTS→ Slow acetylation (HP:0030109); UGT1A1 (HGNC:12210) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-197166); Bilirubin conjugation (REACT:R-HSA-197166) —DECREASES→ Unconjugated bilirubin (CHEBI:17334); Unconjugated bilirubin (CHEBI:17334) —INCREASES→ Elevated serum bilirubin (HP:0011054); UGT1A1 (HGNC:12210) —LEADS_TO→ Unconjugated bilirubin (CHEBI:17334). Loss-of-function mutations in NAT2 lead to slow acetylation, impacting the metabolism of various xenobiotics. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to elevated unconjugated bilirubin levels. The convergence lies in the disruption of metabolic pathways, specifically UGT1A1's role in bilirubin conjugation being a key step in processing endogenous compounds, which shares functional overlap with xenobiotic processing enzymes like NAT2.\n\n**How to falsify it:** Demonstration that variants in NAT2 do not affect acetylation rates or that variants in UGT1A1 do not affect serum bilirubin levels in human populations. _(variant: rs72558186)_\n\n**Why it matters:** Understanding the shared metabolic processing pathways could lead to novel therapeutic strategies for diseases involving drug metabolism and hyperbilirubinemia, potentially by targeting common regulatory mechanisms or enzyme families.\n\n---\n\n#### 2. Crigler-Najjar syndrome type 2  —  Tier 3 — Moderate / Emerging  (fitness 0.368)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7779); N-acetyltransferase 2 (HGNC:7779) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Slow acetylation phenotype (HP:0030171); Loss-of-function variants in UGT1A1 —DISRUPTS→ UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094); UDP-glucuronosyltransferase family 1 member A1 (HGNC:12094) —DISRUPTS→ Bilirubin conjugation (REACT:R-HSA-70306); Bilirubin conjugation (REACT:R-HSA-70306) —DECREASES→ Accumulation of unconjugated bilirubin (CHEBI:17402); Accumulation of unconjugated bilirubin (CHEBI:17402) —LEADS_TO→ Crigler-Najjar syndrome type 2 phenotype (MONDO:0011725). Loss-of-function mutations in NAT2 lead to reduced acetylation capacity, causing the slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to the accumulation of unconjugated bilirubin characteristic of Crigler-Najjar syndrome type 2. The shared mechanism lies in the downstream metabolic consequences of enzyme deficiencies, specifically the accumulation of substrates due to impaired enzymatic activity within their respective pathways.\n\n**How to falsify it:** The absence of common genetic variants in gnomAD associated with loss-of-function for both NAT2 and UGT1A1, or demonstration that the underlying pathways for acetylation and bilirubin conjugation are not functionally linked at a molecular level. _(variant: Exome variant allele frequency > 0.01 for known loss-of-function variants in NAT2 or UGT1A1.)_\n\n**Why it matters:** Understanding the shared principle of metabolic pathway disruption due to enzyme deficiency can inform therapeutic strategies for diseases involving impaired detoxification or conjugation processes. While the specific substrates differ, the underlying mechanism of reduced enzymatic capacity highlights potential for enzyme replacement or cofactor augmentation therapies.\n\n---\n\n#### 3. hearing loss, autosomal dominant 77  —  Tier 3 — Moderate / Emerging  (fitness 0.366)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** Loss-of-function variants in NAT2 —DISRUPTS→ N-acetyltransferase 2 (HGNC:7784); N-acetyltransferase 2 (HGNC:7784) —DECREASES→ Accumulation of acetylated compounds; Accumulation of acetylated compounds —LEADS_TO→ Impaired cellular function; Loss-of-function variants in ABCC1 —DISRUPTS→ ABCC1 (HGNC:24467); ABCC1 (HGNC:24467) —DECREASES→ Accumulation of ABCC1 substrates; Accumulation of ABCC1 substrates —LEADS_TO→ Disruption of ion homeostasis; Impaired cellular function —LEADS_TO→ Hearing loss (HP:0000365); Disruption of ion homeostasis —LEADS_TO→ Hearing loss (HP:0000365). Loss-of-function mutations in NAT2 lead to impaired acetylation, potentially affecting cellular processes. Concurrently, loss-of-function mutations in ABCC1 impair its transporter function, leading to the accumulation of its substrates and disruption of ion homeostasis, which ultimately contributes to hearing loss. The convergence is hypothesized through the cellular dysfunction caused by impaired acetylation impacting general cellular processes, including those affected by ABCC1 substrate accumulation and ion dysregulation, culminating in the shared phenotype of hearing loss, albeit through distinct initial molecular events.\n\n**How to falsify it:** If variants in ABCC1 are found to be common in the general population (e.g., gnomAD allele frequency >1%) and are not associated with hearing loss, or if the specific substrates of ABCC1 are shown to have no role in auditory neuron function, this hypothesis would be falsified. _(variant: rs17510273)_\n\n**Why it matters:** Understanding the shared role of ABCC1 in mediating cellular dysfunction across different disease contexts could inform therapeutic strategies. If acetylation defects indirectly impact ABCC1 function or its substrates, interventions aimed at restoring ABCC1 activity or mitigating the effects of its accumulated substrates could be beneficial for both conditions.\n\n---\n\n#### 4. Dubin-Johnson syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.363)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** NAT2 (HGNC:7740) —DISRUPTS→ Acetylation (GO:0006473); Acetylation (GO:0006473) —LEADS_TO→ Acetylation, slow (MONDO:0009472); ABCC2 (HGNC:24877) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Conjugated Bilirubin (CHEBI:17598) —DISRUPTS→ Bilirubin Excretion (GO:0046187); Bilirubin Excretion (GO:0046187) —LEADS_TO→ Dubin-Johnson syndrome (MONDO:0009380). Loss-of-function mutations in NAT2 impair acetylation, leading to the slow acetylation phenotype. Simultaneously, loss-of-function mutations in ABCC2 impair the excretion of conjugated bilirubin, causing Dubin-Johnson syndrome. While NAT2 and ABCC2 are distinct genes, their roles in cellular detoxification pathways represent a shared functional module, where disruption of specific metabolic processes leads to distinct but related disease phenotypes.\n\n**How to falsify it:** Demonstration that mutations in NAT2 do not affect acetylation rates or that ABCC2 is not involved in bilirubin transport would falsify this hypothesis. Furthermore, identification of a common genetic variant in gnomAD with a frequency > 1% in the population that is strongly associated with either disease would also challenge the proposed rare disease mechanism.\n\n**Why it matters:** Understanding the shared reliance on specific metabolic pathways and transport mechanisms for detoxification highlights potential overlapping therapeutic strategies. For instance, interventions aimed at enhancing alternative detoxification routes or managing substrate accumulation could be beneficial for patients with either condition.\n\n---\n\n#### 5. transient familial neonatal hyperbilirubinemia  —  Tier 3 — Moderate / Emerging  (fitness 0.358)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** NAT2 (HGNC:7775) —DISRUPTS→ Drug/xenobiotic acetylation (GO:0006412); Drug/xenobiotic acetylation (GO:0006412) —LEADS_TO→ Slow acetylation (HP:0030110); UGT1A1 (HGNC:12248) —DISRUPTS→ Bilirubin conjugation (GO:0006727); Bilirubin conjugation (GO:0006727) —DECREASES→ Bilirubin (CHEBI:17244); Bilirubin (CHEBI:17244) —INCREASES→ Neonatal jaundice (HP:0001405). Loss-of-function mutations in NAT2 impair the acetylation of various substrates, leading to the phenotype of slow acetylation. Similarly, loss-of-function mutations in UGT1A1 impair the conjugation of bilirubin, leading to its accumulation and the phenotype of neonatal jaundice. Both NAT2 and UGT1A1 are crucial phase II metabolic enzymes involved in detoxification and clearance pathways, and their impaired function due to mutations represents a convergence at the level of compromised metabolic clearance.\n\n**How to falsify it:** The identification of pathogenic loss-of-function variants in NAT2 in individuals with transient familial neonatal hyperbilirubinemia, or pathogenic loss-of-function variants in UGT1A1 in individuals with acetylation, slow, would falsify the proposed distinct genetic origins, suggesting a shared underlying genetic etiology or pathway perturbation not captured by the current model. _(variant: None specific, as the hypothesis relies on rare pathogenic variants.)_\n\n**Why it matters:** Understanding the shared mechanistic principle of impaired phase II metabolism in these distinct diseases could inform therapeutic strategies. For instance, interventions aimed at enhancing the activity or compensating for the loss of function of these metabolic pathways, or managing the downstream consequences of substrate accumulation, could be explored. Furthermore, recognizing the overlap in enzymatic clearance mechanisms might aid in differential diagnosis or risk stratification for related conditions.\n\n---\n\n#### 6. gamma-glutamyl transpeptidase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.353)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** N-acetyltransferase 2 (HGNC:7774) —DISRUPTS→ Slow acetylation phenotype; Gamma-glutamyl transpeptidase 1 (HGNC:4244) —DISRUPTS→ Glutathione metabolism; Glutathione metabolism —LEADS_TO→ Gamma-glutamyl transpeptidase deficiency phenotype. Loss-of-function mutations in NAT2 lead to a slow acetylation phenotype. Concurrently, loss-of-function mutations in GGT1 disrupt glutathione metabolism, leading to gamma-glutamyl transpeptidase deficiency. The convergence is on the shared role of GGT1 in glutathione metabolism, which is a key cellular process potentially impacted by altered xenobiotic metabolism arising from NAT2 deficiency.\n\n**How to falsify it:** Demonstration that mutations in NAT2 do not affect xenobiotic metabolism or that mutations in GGT1 do not impact glutathione homeostasis would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways for each disease would refute the proposed overlap.\n\n**Why it matters:** Understanding this overlap could inform therapeutic strategies by highlighting the interconnectedness of metabolic pathways. Targeting glutathione metabolism or pathways affected by slow acetylation might offer novel treatment avenues for related conditions.\n\n---\n\n#### 7. Gilbert syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** NAT2 (HGNC:7775) —DISRUPTS→ Slow acetylation (HP:0030192); UGT1A1 (HGNC:12227) —DISRUPTS→ Bilirubin glucuronidation (GO:0006080); Bilirubin glucuronidation (GO:0006080) —DECREASES→ Bilirubin (CHEBI:17479); Bilirubin (CHEBI:17479) —LEADS_TO→ Gilbert syndrome (MONDO:0007745). Loss-of-function variants in NAT2 lead to slow acetylation, impacting xenobiotic metabolism and potentially contributing to disease A. Similarly, reduced activity of UGT1A1 due to variants causes impaired bilirubin glucuronidation, leading to unconjugated hyperbilirubinemia characteristic of Gilbert syndrome (disease B). The convergence is on the metabolic pathways involving conjugation and clearance of small molecules, where both enzymes play critical, albeit distinct, roles.\n\n**How to falsify it:** Demonstration that variants in NAT2 do not affect xenobiotic clearance or that UGT1A1 variants do not impact bilirubin metabolism in relevant human populations would falsify this hypothesis. The absence of any overlap in affected metabolic pathways or substrates would also serve as a falsification condition. _(variant: rs1799853)_\n\n**Why it matters:** Understanding the overlap in metabolic processing pathways, even with different enzymes and substrates, can inform therapeutic strategies for diseases affecting drug metabolism and endogenous metabolite clearance. For example, patients with slow acetylation might have altered responses to drugs metabolized by NAT2, and understanding UGT1A1 function is crucial for managing hyperbilirubinemia. Shared principles in enzyme function and metabolic regulation could lead to cross-disciplinary insights.\n\n---\n\n#### 8. Crigler-Najjar syndrome type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9753281)\n\n**Proposed mechanism:** N-acetyltransferase 2 (HGNC:7776) —DISRUPTS→ Accumulation of acetylated compounds (CHEBI:51040); Accumulation of acetylated compounds (CHEBI:51040) —LEADS_TO→ Acetylation, slow (MONDO:0009472); UDP-glucuronosyltransferase 1-1 (HGNC:12139) —DISRUPTS→ Bilirubin (CHEBI:17790); Bilirubin (CHEBI:17790) —LEADS_TO→ Bilirubin metabolism (REACT:R-HSA-193865); Bilirubin metabolism (REACT:R-HSA-193865) —LEADS_TO→ Crigler-Najjar syndrome type 1 (MONDO:0021020). Loss-of-function mutations in NAT2 impair the clearance of various xenobiotics and endogenous compounds through acetylation, leading to slow acetylation phenotype. Similarly, loss-of-function mutations in UGT1A1 impair the glucuronidation of bilirubin, a key step in its metabolism, causing Crigler-Najjar syndrome type 1. Both diseases represent failures in detoxification pathways, leading to the accumulation of specific metabolic intermediates and subsequent phenotypic manifestations.\n\n**How to falsify it:** If genetic variants in NAT2 are found to be common (>5% allele frequency in gnomAD) and not associated with slow acetylation, or if variants in UGT1A1 are found to be common and not associated with Crigler-Najjar syndrome, this hypothesis would be falsified. _(variant: rs705372 (NAT2))_\n\n**Why it matters:** Understanding these shared principles of impaired detoxification pathways can inform therapeutic strategies for other metabolic disorders. For instance, if acetylated compounds or bilirubin accumulation can be targeted pharmacologically or through dietary interventions, it might offer a common therapeutic avenue for both conditions, or related disorders affecting these pathways.\n\n---"
+}

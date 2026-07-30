@@ -1,0 +1,403 @@
+{
+  "seed": {
+    "id": "MONDO:0009415",
+    "name": "hypoglycemia, leucine-induced"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 40,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0009734",
+      "diseaseBName": "hyperinsulinemic hypoglycemia, familial, 1",
+      "fitness": 0.7919,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic ABCC8 variant (null) —DISRUPTS→ ABCC8 (HGNC:59); ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005476); ATP-sensitive potassium channel activity (GO:0005476) —DECREASES→ Regulation of insulin secretion (GO:0043627); Regulation of insulin secretion (GO:0043627) —LEADS_TO→ Hypoglycemia (HP:0001250); Hypoglycemia (HP:0001250) —LEADS_TO→ Leucine-induced hypoglycemia (HP:0001990); Hypoglycemia (HP:0001250) —LEADS_TO→ Familial hyperinsulinemic hypoglycemia (HP:0000818). Pathogenic variants in ABCC8 disrupt the function of the ATP-sensitive potassium channel, leading to dysregulated insulin secretion and subsequent hypoglycemia. This shared pathway explains the overlap between leucine-induced hypoglycemia and familial hyperinsulinemic hypoglycemia.",
+      "mechanism_narrative": "Pathogenic ABCC8 variant (null) —DISRUPTS→ ABCC8 (HGNC:59); ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005476); ATP-sensitive potassium channel activity (GO:0005476) —DECREASES→ Regulation of insulin secretion (GO:0043627); Regulation of insulin secretion (GO:0043627) —LEADS_TO→ Hypoglycemia (HP:0001250); Hypoglycemia (HP:0001250) —LEADS_TO→ Leucine-induced hypoglycemia (HP:0001990); Hypoglycemia (HP:0001250) —LEADS_TO→ Familial hyperinsulinemic hypoglycemia (HP:0000818). Pathogenic variants in ABCC8 disrupt the function of the ATP-sensitive potassium channel, leading to dysregulated insulin secretion and subsequent hypoglycemia. This shared pathway explains the overlap between leucine-induced hypoglycemia and familial hyperinsulinemic hypoglycemia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ABCC8 that consistently demonstrate a gain-of-function effect on the KATP channel in both disease contexts would falsify this hypothesis. Additionally, finding that the two diseases are caused by entirely distinct genetic pathways with no shared downstream molecular effectors would also falsify this proposed overlap.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for a pathogenic variant in ABCC8 in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356",
+        "Reactome:R-HSA-1296025",
+        "Reactome:R-HSA-5683177"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009734",
+        "diseaseBName": "hyperinsulinemic hypoglycemia, familial, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356",
+          "Reactome:R-HSA-1296025",
+          "Reactome:R-HSA-5683177"
+        ],
+        "fitness": 0.7919,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic ABCC8 variant (null) —DISRUPTS→ ABCC8 (HGNC:59); ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005476); ATP-sensitive potassium channel activity (GO:0005476) —DECREASES→ Regulation of insulin secretion (GO:0043627); Regulation of insulin secretion (GO:0043627) —LEADS_TO→ Hypoglycemia (HP:0001250); Hypoglycemia (HP:0001250) —LEADS_TO→ Leucine-induced hypoglycemia (HP:0001990); Hypoglycemia (HP:0001250) —LEADS_TO→ Familial hyperinsulinemic hypoglycemia (HP:0000818). Pathogenic variants in ABCC8 disrupt the function of the ATP-sensitive potassium channel, leading to dysregulated insulin secretion and subsequent hypoglycemia. This shared pathway explains the overlap between leucine-induced hypoglycemia and familial hyperinsulinemic hypoglycemia.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ABCC8 that consistently demonstrate a gain-of-function effect on the KATP channel in both disease contexts would falsify this hypothesis. Additionally, finding that the two diseases are caused by entirely distinct genetic pathways with no shared downstream molecular effectors would also falsify this proposed overlap.",
+          "gnomad_variant": "gnomAD allele frequency > 0.01 for a pathogenic variant in ABCC8 in the general population."
+        },
+        "translational": "Understanding the shared role of ABCC8 and KATP channel function in these two forms of hypoglycemia could lead to shared therapeutic strategies. For example, interventions aimed at modulating KATP channel activity or downstream insulin secretion pathways might be applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030088",
+      "diseaseBName": "diabetes mellitus, permanent neonatal 3",
+      "fitness": 0.7178,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ Regulation of insulin secretion by ATP-sensitive potassium channels; Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Hypoglycemia (HP:0001250); Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt the regulation of insulin secretion by ATP-sensitive potassium channels, leading to both hypoglycemia and diabetes mellitus.",
+      "mechanism_narrative": "ABCC8 (HGNC:59) —DISRUPTS→ Regulation of insulin secretion by ATP-sensitive potassium channels; Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Hypoglycemia (HP:0001250); Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt the regulation of insulin secretion by ATP-sensitive potassium channels, leading to both hypoglycemia and diabetes mellitus.",
+      "falsification": {
+        "text": "Discovery of pathogenic loss-of-function variants in ABCC8 in patients with only one of the two conditions, and not the other, would falsify this hypothesis.",
+        "gnomad_variant": "rs758314804"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356",
+        "Reactome:R-HSA-1296025",
+        "Reactome:R-HSA-5683177"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030088",
+        "diseaseBName": "diabetes mellitus, permanent neonatal 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356",
+          "Reactome:R-HSA-1296025",
+          "Reactome:R-HSA-5683177"
+        ],
+        "fitness": 0.7178,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ Regulation of insulin secretion by ATP-sensitive potassium channels; Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Hypoglycemia (HP:0001250); Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt the regulation of insulin secretion by ATP-sensitive potassium channels, leading to both hypoglycemia and diabetes mellitus.",
+        "falsification": {
+          "text": "Discovery of pathogenic loss-of-function variants in ABCC8 in patients with only one of the two conditions, and not the other, would falsify this hypothesis.",
+          "gnomad_variant": "rs758314804"
+        },
+        "translational": "Understanding the shared role of ABCC8 in both hypoglycemia and diabetes mellitus can inform therapeutic strategies targeting insulin secretion pathways for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012480",
+      "diseaseBName": "diabetes mellitus, transient neonatal, 2",
+      "fitness": 0.7169,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270); ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270) —LEADS_TO→ Altered KATP channel activity (HP:0011748); Altered KATP channel activity (HP:0011748) —DECREASES→ Insulin secretion (CHEBI:17779); Insulin secretion (CHEBI:17779) —DECREASES→ Hypoglycemia (HP:0001250); Insulin secretion (CHEBI:17779) —DECREASES→ Diabetes Mellitus (HP:0000821). Loss-of-function mutations in ABCC8 disrupt the ATP-sensitive inwardly rectifying potassium channel (KATP channel) activity. This leads to altered insulin secretion, manifesting as hypoglycemia in leucine-induced hypoglycemia and diabetes mellitus in transient neonatal diabetes, 2.",
+      "mechanism_narrative": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270); ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270) —LEADS_TO→ Altered KATP channel activity (HP:0011748); Altered KATP channel activity (HP:0011748) —DECREASES→ Insulin secretion (CHEBI:17779); Insulin secretion (CHEBI:17779) —DECREASES→ Hypoglycemia (HP:0001250); Insulin secretion (CHEBI:17779) —DECREASES→ Diabetes Mellitus (HP:0000821). Loss-of-function mutations in ABCC8 disrupt the ATP-sensitive inwardly rectifying potassium channel (KATP channel) activity. This leads to altered insulin secretion, manifesting as hypoglycemia in leucine-induced hypoglycemia and diabetes mellitus in transient neonatal diabetes, 2.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ABCC8 that are consistently associated with gain-of-function mechanisms in both diseases would falsify this hypothesis. Additionally, the absence of any ABCC8 variants in individuals with either condition, especially in well-characterized cohorts, would also challenge this link.",
+        "gnomad_variant": "rs74743693"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356",
+        "Reactome:R-HSA-1296025",
+        "Reactome:R-HSA-5683177"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012480",
+        "diseaseBName": "diabetes mellitus, transient neonatal, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356",
+          "Reactome:R-HSA-1296025",
+          "Reactome:R-HSA-5683177"
+        ],
+        "fitness": 0.7169,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270); ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270) —LEADS_TO→ Altered KATP channel activity (HP:0011748); Altered KATP channel activity (HP:0011748) —DECREASES→ Insulin secretion (CHEBI:17779); Insulin secretion (CHEBI:17779) —DECREASES→ Hypoglycemia (HP:0001250); Insulin secretion (CHEBI:17779) —DECREASES→ Diabetes Mellitus (HP:0000821). Loss-of-function mutations in ABCC8 disrupt the ATP-sensitive inwardly rectifying potassium channel (KATP channel) activity. This leads to altered insulin secretion, manifesting as hypoglycemia in leucine-induced hypoglycemia and diabetes mellitus in transient neonatal diabetes, 2.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ABCC8 that are consistently associated with gain-of-function mechanisms in both diseases would falsify this hypothesis. Additionally, the absence of any ABCC8 variants in individuals with either condition, especially in well-characterized cohorts, would also challenge this link.",
+          "gnomad_variant": "rs74743693"
+        },
+        "translational": "Understanding the shared role of ABCC8 in these distinct but related glucose homeostasis disorders could lead to novel therapeutic strategies targeting KATP channel activity or insulin secretion pathways for both hypoglycemia and diabetes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005148",
+      "diseaseBName": "type 2 diabetes mellitus",
+      "fitness": 0.7156,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005081); ATP-sensitive potassium channel activity (GO:0005081) —DECREASES→ Insulin secretion (GO:0007010); Insulin secretion (GO:0007010) —DECREASES→ Glucose (CHEBI:17234); Glucose (CHEBI:17234) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Glucose (CHEBI:17234) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to impaired insulin secretion and subsequent dysregulation of glucose homeostasis, manifesting as hypoglycemia in severe cases (disease A) and contributing to insulin resistance and hyperglycemia in type 2 diabetes mellitus (disease B).",
+      "mechanism_narrative": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005081); ATP-sensitive potassium channel activity (GO:0005081) —DECREASES→ Insulin secretion (GO:0007010); Insulin secretion (GO:0007010) —DECREASES→ Glucose (CHEBI:17234); Glucose (CHEBI:17234) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Glucose (CHEBI:17234) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to impaired insulin secretion and subsequent dysregulation of glucose homeostasis, manifesting as hypoglycemia in severe cases (disease A) and contributing to insulin resistance and hyperglycemia in type 2 diabetes mellitus (disease B).",
+      "falsification": {
+        "text": "Demonstration that loss-of-function mutations in ABCC8 exclusively cause hyperinsulinemic hypoglycemia and have no discernible association with altered glucose tolerance or risk of type 2 diabetes mellitus in large population studies.",
+        "gnomad_variant": "Exclusion of pathogenic ABCC8 variants from individuals with type 2 diabetes mellitus in gnomAD or similar large-scale sequencing datasets."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356",
+        "Reactome:R-HSA-1296025",
+        "Reactome:R-HSA-5683177"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005148",
+        "diseaseBName": "type 2 diabetes mellitus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356",
+          "Reactome:R-HSA-1296025",
+          "Reactome:R-HSA-5683177"
+        ],
+        "fitness": 0.7156,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005081); ATP-sensitive potassium channel activity (GO:0005081) —DECREASES→ Insulin secretion (GO:0007010); Insulin secretion (GO:0007010) —DECREASES→ Glucose (CHEBI:17234); Glucose (CHEBI:17234) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Glucose (CHEBI:17234) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to impaired insulin secretion and subsequent dysregulation of glucose homeostasis, manifesting as hypoglycemia in severe cases (disease A) and contributing to insulin resistance and hyperglycemia in type 2 diabetes mellitus (disease B).",
+        "falsification": {
+          "text": "Demonstration that loss-of-function mutations in ABCC8 exclusively cause hyperinsulinemic hypoglycemia and have no discernible association with altered glucose tolerance or risk of type 2 diabetes mellitus in large population studies.",
+          "gnomad_variant": "Exclusion of pathogenic ABCC8 variants from individuals with type 2 diabetes mellitus in gnomAD or similar large-scale sequencing datasets."
+        },
+        "translational": "Understanding the shared role of ABCC8 and KATP channels in both rare hypoglycemia and common type 2 diabetes mellitus could inform therapeutic strategies targeting insulin secretion for a broader range of glucose-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014535",
+      "diseaseBName": "hyperproinsulinemia",
+      "fitness": 0.4271,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ABCC8 (HGNC:13406) —DISRUPTS→ pancreatic beta cell function (GO:0007586); pancreatic beta cell function (GO:0007586) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); INS (HGNC:6404) —PRODUCES→ proinsulin (UniProt:P01308); proinsulin (UniProt:P01308) —DISRUPTS→ pancreatic beta cell function (GO:0007586); proinsulin (UniProt:P01308) —LEADS_TO→ hyperproinsulinemia (MONDO:0014535). Loss-of-function variants in ABCC8 impair the KATP channel in pancreatic beta cells, disrupting glucose-stimulated insulin secretion and leading to hypoglycemia, leucine-induced. Variants in INS can lead to the production of dysfunctional proinsulin, which can also impair proper insulin secretion pathways in pancreatic beta cells and cause hyperproinsulinemia.",
+      "mechanism_narrative": "ABCC8 (HGNC:13406) —DISRUPTS→ pancreatic beta cell function (GO:0007586); pancreatic beta cell function (GO:0007586) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); INS (HGNC:6404) —PRODUCES→ proinsulin (UniProt:P01308); proinsulin (UniProt:P01308) —DISRUPTS→ pancreatic beta cell function (GO:0007586); proinsulin (UniProt:P01308) —LEADS_TO→ hyperproinsulinemia (MONDO:0014535). Loss-of-function variants in ABCC8 impair the KATP channel in pancreatic beta cells, disrupting glucose-stimulated insulin secretion and leading to hypoglycemia, leucine-induced. Variants in INS can lead to the production of dysfunctional proinsulin, which can also impair proper insulin secretion pathways in pancreatic beta cells and cause hyperproinsulinemia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ABCC8 or INS associated with loss-of-function effects in individuals presenting with hyperproinsulinemia without hypoglycemia, or vice-versa, would falsify the direct mechanistic link proposed.",
+        "gnomad_variant": "rs757110 (common variant in ABCC8 associated with T2D, not directly causal for these rare diseases)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-422356": 28
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014535",
+        "diseaseBName": "hyperproinsulinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-422356": 28
+        },
+        "fitness": 0.4271,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:13406) —DISRUPTS→ pancreatic beta cell function (GO:0007586); pancreatic beta cell function (GO:0007586) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); INS (HGNC:6404) —PRODUCES→ proinsulin (UniProt:P01308); proinsulin (UniProt:P01308) —DISRUPTS→ pancreatic beta cell function (GO:0007586); proinsulin (UniProt:P01308) —LEADS_TO→ hyperproinsulinemia (MONDO:0014535). Loss-of-function variants in ABCC8 impair the KATP channel in pancreatic beta cells, disrupting glucose-stimulated insulin secretion and leading to hypoglycemia, leucine-induced. Variants in INS can lead to the production of dysfunctional proinsulin, which can also impair proper insulin secretion pathways in pancreatic beta cells and cause hyperproinsulinemia.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ABCC8 or INS associated with loss-of-function effects in individuals presenting with hyperproinsulinemia without hypoglycemia, or vice-versa, would falsify the direct mechanistic link proposed.",
+          "gnomad_variant": "rs757110 (common variant in ABCC8 associated with T2D, not directly causal for these rare diseases)"
+        },
+        "translational": "Understanding the shared role of ABCC8 and INS in pancreatic beta cell function and insulin secretion pathways can inform therapeutic strategies for both rare diseases, potentially involving modulation of insulin secretion or proinsulin processing."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013240",
+      "diseaseBName": "maturity-onset diabetes of the young type 10",
+      "fitness": 0.426,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ABCC8 (HGNC:136) —DISRUPTS→ potassium inwardly-rectifying channel activity (GO:0005241); potassium inwardly-rectifying channel activity (GO:0005241) —DECREASES→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ hypoglycemia (HP:0001250); INS (HGNC:5559) —DISRUPTS→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to excessive insulin secretion and hypoglycemia. Loss-of-function mutations in INS also disrupt insulin secretion regulation, leading to diabetes mellitus.",
+      "mechanism_narrative": "ABCC8 (HGNC:136) —DISRUPTS→ potassium inwardly-rectifying channel activity (GO:0005241); potassium inwardly-rectifying channel activity (GO:0005241) —DECREASES→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ hypoglycemia (HP:0001250); INS (HGNC:5559) —DISRUPTS→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to excessive insulin secretion and hypoglycemia. Loss-of-function mutations in INS also disrupt insulin secretion regulation, leading to diabetes mellitus.",
+      "falsification": {
+        "text": "Demonstration that mutations in ABCC8 and INS do not converge on the regulation of insulin secretion or potassium channel activity, or that distinct molecular pathways are exclusively affected in each disease.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of ABCC8 and INS that are not associated with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-422356": 28
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013240",
+        "diseaseBName": "maturity-onset diabetes of the young type 10",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-422356": 28
+        },
+        "fitness": 0.426,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:136) —DISRUPTS→ potassium inwardly-rectifying channel activity (GO:0005241); potassium inwardly-rectifying channel activity (GO:0005241) —DECREASES→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ hypoglycemia (HP:0001250); INS (HGNC:5559) —DISRUPTS→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to excessive insulin secretion and hypoglycemia. Loss-of-function mutations in INS also disrupt insulin secretion regulation, leading to diabetes mellitus.",
+        "falsification": {
+          "text": "Demonstration that mutations in ABCC8 and INS do not converge on the regulation of insulin secretion or potassium channel activity, or that distinct molecular pathways are exclusively affected in each disease.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of ABCC8 and INS that are not associated with either phenotype."
+        },
+        "translational": "Understanding the shared pathway of insulin secretion regulation, influenced by both ABCC8 and INS, could lead to novel therapeutic strategies for both rare hypoglycemia and diabetes subtypes by targeting the common molecular machinery."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007454",
+      "diseaseBName": "type 1 diabetes mellitus 2",
+      "fitness": 0.4256,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "INS (HGNC:5578) —PRODUCES→ insulin (CHEBI:17679); insulin (CHEBI:17679) —DISRUPTS→ glucose homeostasis (GO:0001575); glucose homeostasis (GO:0001575) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); glucose homeostasis (GO:0001575) —LEADS_TO→ type 1 diabetes mellitus 2 (MONDO:0007454). Loss-of-function mutations in the INS gene lead to impaired production or secretion of insulin, disrupting glucose homeostasis and causing both hypoglycemia, leucine-induced and type 1 diabetes mellitus 2.",
+      "mechanism_narrative": "INS (HGNC:5578) —PRODUCES→ insulin (CHEBI:17679); insulin (CHEBI:17679) —DISRUPTS→ glucose homeostasis (GO:0001575); glucose homeostasis (GO:0001575) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); glucose homeostasis (GO:0001575) —LEADS_TO→ type 1 diabetes mellitus 2 (MONDO:0007454). Loss-of-function mutations in the INS gene lead to impaired production or secretion of insulin, disrupting glucose homeostasis and causing both hypoglycemia, leucine-induced and type 1 diabetes mellitus 2.",
+      "falsification": {
+        "text": "If pathogenic variants in the INS gene are shown to be absent in individuals with hypoglycemia, leucine-induced or type 1 diabetes mellitus 2, this hypothesis would be falsified.",
+        "gnomad_variant": "rs121912466"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-422356": 28
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007454",
+        "diseaseBName": "type 1 diabetes mellitus 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-422356": 28
+        },
+        "fitness": 0.4256,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "INS (HGNC:5578) —PRODUCES→ insulin (CHEBI:17679); insulin (CHEBI:17679) —DISRUPTS→ glucose homeostasis (GO:0001575); glucose homeostasis (GO:0001575) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); glucose homeostasis (GO:0001575) —LEADS_TO→ type 1 diabetes mellitus 2 (MONDO:0007454). Loss-of-function mutations in the INS gene lead to impaired production or secretion of insulin, disrupting glucose homeostasis and causing both hypoglycemia, leucine-induced and type 1 diabetes mellitus 2.",
+        "falsification": {
+          "text": "If pathogenic variants in the INS gene are shown to be absent in individuals with hypoglycemia, leucine-induced or type 1 diabetes mellitus 2, this hypothesis would be falsified.",
+          "gnomad_variant": "rs121912466"
+        },
+        "translational": "Understanding the shared genetic basis of these conditions can inform diagnostic strategies and potentially lead to novel therapeutic targets for managing glucose dysregulation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030089",
+      "diseaseBName": "diabetes mellitus, permanent neonatal 4",
+      "fitness": 0.4244,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ABCC8 (HGNC:240) —DISRUPTS→ Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —LEADS_TO→ Hypoglycemia (HP:0001250); INS (HGNC:5577) —DISRUPTS→ Insulin secretion and glucose homeostasis (GO:0001888); Insulin secretion and glucose homeostasis (GO:0001888) —LEADS_TO→ Hyperglycemia (HP:0003124); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —BINDS→ Insulin secretion and glucose homeostasis (GO:0001888). Mutations in ABCC8 impair the KATP channel, leading to uncontrolled insulin release and hypoglycemia. Mutations in INS lead to insufficient insulin production and release, causing hyperglycemia. Both pathways converge on the regulation of insulin secretion and glucose homeostasis within pancreatic beta-cells.",
+      "mechanism_narrative": "ABCC8 (HGNC:240) —DISRUPTS→ Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —LEADS_TO→ Hypoglycemia (HP:0001250); INS (HGNC:5577) —DISRUPTS→ Insulin secretion and glucose homeostasis (GO:0001888); Insulin secretion and glucose homeostasis (GO:0001888) —LEADS_TO→ Hyperglycemia (HP:0003124); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —BINDS→ Insulin secretion and glucose homeostasis (GO:0001888). Mutations in ABCC8 impair the KATP channel, leading to uncontrolled insulin release and hypoglycemia. Mutations in INS lead to insufficient insulin production and release, causing hyperglycemia. Both pathways converge on the regulation of insulin secretion and glucose homeostasis within pancreatic beta-cells.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in ABCC8 or INS with the opposite functional consequence (e.g., gain-of-function for hypoglycemia, loss-of-function for diabetes) or the demonstration that these genes do not converge on a shared downstream pathway regulating insulin secretion.",
+        "gnomad_variant": "gnomad_v3.1.2:chr11:5517034:G:A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-422356": 28
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030089",
+        "diseaseBName": "diabetes mellitus, permanent neonatal 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-422356": 28
+        },
+        "fitness": 0.4244,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:240) —DISRUPTS→ Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —LEADS_TO→ Hypoglycemia (HP:0001250); INS (HGNC:5577) —DISRUPTS→ Insulin secretion and glucose homeostasis (GO:0001888); Insulin secretion and glucose homeostasis (GO:0001888) —LEADS_TO→ Hyperglycemia (HP:0003124); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —BINDS→ Insulin secretion and glucose homeostasis (GO:0001888). Mutations in ABCC8 impair the KATP channel, leading to uncontrolled insulin release and hypoglycemia. Mutations in INS lead to insufficient insulin production and release, causing hyperglycemia. Both pathways converge on the regulation of insulin secretion and glucose homeostasis within pancreatic beta-cells.",
+        "falsification": {
+          "text": "The discovery of pathogenic variants in ABCC8 or INS with the opposite functional consequence (e.g., gain-of-function for hypoglycemia, loss-of-function for diabetes) or the demonstration that these genes do not converge on a shared downstream pathway regulating insulin secretion.",
+          "gnomad_variant": "gnomad_v3.1.2:chr11:5517034:G:A"
+        },
+        "translational": "Understanding this overlap can inform therapeutic strategies. For hypoglycemia, interventions aimed at reducing insulin secretion or increasing glucose production might be considered. For neonatal diabetes, strategies to supplement insulin or enhance beta-cell function are crucial. Identifying shared regulatory mechanisms could lead to novel therapeutic targets for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012742",
+      "diseaseBName": "Brugada syndrome 3",
+      "fitness": 0.3443,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in ABCC8 —DISRUPTS→ ABCC8 (HGNC:20038); ABCC8 (HGNC:20038) —DECREASES→ ATP-sensitive potassium channel (KATP) activity (GO:0005474); ATP-sensitive potassium channel (KATP) activity (GO:0005474) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Gain-of-function variant in CACNA1C —DISRUPTS→ CACNA1C (HGNC:1735); CACNA1C (HGNC:1735) —INCREASES→ Cardiac action potential propagation (GO:0003010); Cardiac action potential propagation (GO:0003010) —LEADS_TO→ Brugada syndrome 3 (MONDO:0012742). Loss-of-function mutations in ABCC8 lead to reduced KATP channel activity, affecting insulin secretion and causing hypoglycemia. Gain-of-function mutations in CACNA1C alter cardiac sodium channel function, disrupting cardiac action potential propagation and leading to Brugada syndrome. The convergence is on the general cellular process of ion channel regulation, where distinct channel types (KATP and voltage-gated calcium channels) are critical for distinct physiological functions (insulin secretion vs. cardiac excitability), and dysregulation of either leads to disease.",
+      "mechanism_narrative": "Loss-of-function variant in ABCC8 —DISRUPTS→ ABCC8 (HGNC:20038); ABCC8 (HGNC:20038) —DECREASES→ ATP-sensitive potassium channel (KATP) activity (GO:0005474); ATP-sensitive potassium channel (KATP) activity (GO:0005474) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Gain-of-function variant in CACNA1C —DISRUPTS→ CACNA1C (HGNC:1735); CACNA1C (HGNC:1735) —INCREASES→ Cardiac action potential propagation (GO:0003010); Cardiac action potential propagation (GO:0003010) —LEADS_TO→ Brugada syndrome 3 (MONDO:0012742). Loss-of-function mutations in ABCC8 lead to reduced KATP channel activity, affecting insulin secretion and causing hypoglycemia. Gain-of-function mutations in CACNA1C alter cardiac sodium channel function, disrupting cardiac action potential propagation and leading to Brugada syndrome. The convergence is on the general cellular process of ion channel regulation, where distinct channel types (KATP and voltage-gated calcium channels) are critical for distinct physiological functions (insulin secretion vs. cardiac excitability), and dysregulation of either leads to disease.",
+      "falsification": {
+        "text": "The discovery of a patient with a pathogenic variant in ABCC8 who does not present with leucine-induced hypoglycemia, or a patient with a pathogenic variant in CACNA1C who does not present with Brugada syndrome 3, would falsify the direct causal link proposed for each disease, although not necessarily the overlap in ion channel function broadly.",
+        "gnomad_variant": "Absence of pathogenic variants in gnomAD for ABCC8 (for hypoglycemia) and CACNA1C (for Brugada syndrome 3) would weaken the genetic evidence base for these specific disease models."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-422356": 28
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012742",
+        "diseaseBName": "Brugada syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-422356": 28
+        },
+        "fitness": 0.3443,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in ABCC8 —DISRUPTS→ ABCC8 (HGNC:20038); ABCC8 (HGNC:20038) —DECREASES→ ATP-sensitive potassium channel (KATP) activity (GO:0005474); ATP-sensitive potassium channel (KATP) activity (GO:0005474) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Gain-of-function variant in CACNA1C —DISRUPTS→ CACNA1C (HGNC:1735); CACNA1C (HGNC:1735) —INCREASES→ Cardiac action potential propagation (GO:0003010); Cardiac action potential propagation (GO:0003010) —LEADS_TO→ Brugada syndrome 3 (MONDO:0012742). Loss-of-function mutations in ABCC8 lead to reduced KATP channel activity, affecting insulin secretion and causing hypoglycemia. Gain-of-function mutations in CACNA1C alter cardiac sodium channel function, disrupting cardiac action potential propagation and leading to Brugada syndrome. The convergence is on the general cellular process of ion channel regulation, where distinct channel types (KATP and voltage-gated calcium channels) are critical for distinct physiological functions (insulin secretion vs. cardiac excitability), and dysregulation of either leads to disease.",
+        "falsification": {
+          "text": "The discovery of a patient with a pathogenic variant in ABCC8 who does not present with leucine-induced hypoglycemia, or a patient with a pathogenic variant in CACNA1C who does not present with Brugada syndrome 3, would falsify the direct causal link proposed for each disease, although not necessarily the overlap in ion channel function broadly.",
+          "gnomad_variant": "Absence of pathogenic variants in gnomAD for ABCC8 (for hypoglycemia) and CACNA1C (for Brugada syndrome 3) would weaken the genetic evidence base for these specific disease models."
+        },
+        "translational": "Understanding the shared reliance on precise ion channel function, despite different channel types and resultant pathologies, could inform therapeutic strategies. For instance, modulating downstream signaling pathways affected by ion channel dysfunction might offer a common therapeutic avenue, or conversely, highlight the extreme specificity required for targeted therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0978299",
+      "diseaseBName": "maturity-onset diabetes of the young, type 12",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "ABCC8 (HGNC:59) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); KCNJ11 (HGNC:6358) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP (CHEBI:15422) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); potassium ion (CHEBI:26975) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP-sensitive potassium channel activity (GO:0005472) —DISRUPTS→ Insulin secretion (GO:0007050); ABCC8 (HGNC:59) —LEADS_TO→ hypoglycemia (HP:0001250); Insulin secretion (GO:0007050) —LEADS_TO→ diabetes mellitus (HP:0000821). Loss-of-function mutations in ABCC8, often in conjunction with KCNJ11, lead to impaired ATP-sensitive potassium channel function. This disruption affects insulin secretion from pancreatic beta cells. In leucine-induced hypoglycemia, this leads to excessive insulin release in response to non-glucose stimuli, causing hypoglycemia. In MODY12, the impaired channel function results in reduced glucose-stimulated insulin secretion, manifesting as diabetes.",
+      "mechanism_narrative": "ABCC8 (HGNC:59) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); KCNJ11 (HGNC:6358) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP (CHEBI:15422) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); potassium ion (CHEBI:26975) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP-sensitive potassium channel activity (GO:0005472) —DISRUPTS→ Insulin secretion (GO:0007050); ABCC8 (HGNC:59) —LEADS_TO→ hypoglycemia (HP:0001250); Insulin secretion (GO:0007050) —LEADS_TO→ diabetes mellitus (HP:0000821). Loss-of-function mutations in ABCC8, often in conjunction with KCNJ11, lead to impaired ATP-sensitive potassium channel function. This disruption affects insulin secretion from pancreatic beta cells. In leucine-induced hypoglycemia, this leads to excessive insulin release in response to non-glucose stimuli, causing hypoglycemia. In MODY12, the impaired channel function results in reduced glucose-stimulated insulin secretion, manifesting as diabetes.",
+      "falsification": {
+        "text": "Demonstration that ABCC8 mutations in leucine-induced hypoglycemia are predominantly gain-of-function, or that MODY12 is caused by a distinct, unrelated pathway not involving KATP channel regulation.",
+        "gnomad_variant": "None directly applicable without specific variant identification."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-422356",
+        "Reactome:R-HSA-1296025",
+        "Reactome:R-HSA-5683177"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0978299",
+        "diseaseBName": "maturity-onset diabetes of the young, type 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-422356",
+          "Reactome:R-HSA-1296025",
+          "Reactome:R-HSA-5683177"
+        ],
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ABCC8 (HGNC:59) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); KCNJ11 (HGNC:6358) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP (CHEBI:15422) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); potassium ion (CHEBI:26975) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP-sensitive potassium channel activity (GO:0005472) —DISRUPTS→ Insulin secretion (GO:0007050); ABCC8 (HGNC:59) —LEADS_TO→ hypoglycemia (HP:0001250); Insulin secretion (GO:0007050) —LEADS_TO→ diabetes mellitus (HP:0000821). Loss-of-function mutations in ABCC8, often in conjunction with KCNJ11, lead to impaired ATP-sensitive potassium channel function. This disruption affects insulin secretion from pancreatic beta cells. In leucine-induced hypoglycemia, this leads to excessive insulin release in response to non-glucose stimuli, causing hypoglycemia. In MODY12, the impaired channel function results in reduced glucose-stimulated insulin secretion, manifesting as diabetes.",
+        "falsification": {
+          "text": "Demonstration that ABCC8 mutations in leucine-induced hypoglycemia are predominantly gain-of-function, or that MODY12 is caused by a distinct, unrelated pathway not involving KATP channel regulation.",
+          "gnomad_variant": "None directly applicable without specific variant identification."
+        },
+        "translational": "Understanding the shared mechanism of KATP channel dysfunction provides a potential therapeutic target for both rare hypoglycemia and diabetes subtypes, possibly through drugs that modulate channel activity or insulin secretion pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T12:25:10.453Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hypoglycemia, leucine-induced (MONDO:0009415)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 40 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hyperinsulinemic hypoglycemia, familial, 1 (MONDO:0009734) | shared pathway | Tier 1 | 0.792 | Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177 |\n| 2 | diabetes mellitus, permanent neonatal 3 (MONDO:0030088) | shared pathway | Tier 1 | 0.718 | Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177 |\n| 3 | diabetes mellitus, transient neonatal, 2 (MONDO:0012480) | shared pathway | Tier 1 | 0.717 | Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177 |\n| 4 | type 2 diabetes mellitus (MONDO:0005148) | shared pathway | Tier 1 | 0.716 | Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177 |\n| 5 | hyperproinsulinemia (MONDO:0014535) | shared pathway | Tier 3 | 0.427 | Reactome:R-HSA-422356 |\n| 6 | maturity-onset diabetes of the young type 10 (MONDO:0013240) | shared pathway | Tier 3 | 0.426 | Reactome:R-HSA-422356 |\n| 7 | type 1 diabetes mellitus 2 (MONDO:0007454) | shared pathway | Tier 3 | 0.426 | Reactome:R-HSA-422356 |\n| 8 | diabetes mellitus, permanent neonatal 4 (MONDO:0030089) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-422356 |\n| 9 | Brugada syndrome 3 (MONDO:0012742) | shared pathway | Tier 3 | 0.344 | Reactome:R-HSA-422356 |\n| 10 | maturity-onset diabetes of the young, type 12 (MONDO:0978299) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177 |\n\n### CANDIDATE DETAIL\n#### 1. hyperinsulinemic hypoglycemia, familial, 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.792)\n**Link type:** shared pathway (Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177)\n\n**Proposed mechanism:** Pathogenic ABCC8 variant (null) —DISRUPTS→ ABCC8 (HGNC:59); ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005476); ATP-sensitive potassium channel activity (GO:0005476) —DECREASES→ Regulation of insulin secretion (GO:0043627); Regulation of insulin secretion (GO:0043627) —LEADS_TO→ Hypoglycemia (HP:0001250); Hypoglycemia (HP:0001250) —LEADS_TO→ Leucine-induced hypoglycemia (HP:0001990); Hypoglycemia (HP:0001250) —LEADS_TO→ Familial hyperinsulinemic hypoglycemia (HP:0000818). Pathogenic variants in ABCC8 disrupt the function of the ATP-sensitive potassium channel, leading to dysregulated insulin secretion and subsequent hypoglycemia. This shared pathway explains the overlap between leucine-induced hypoglycemia and familial hyperinsulinemic hypoglycemia.\n\n**How to falsify it:** Identification of pathogenic variants in ABCC8 that consistently demonstrate a gain-of-function effect on the KATP channel in both disease contexts would falsify this hypothesis. Additionally, finding that the two diseases are caused by entirely distinct genetic pathways with no shared downstream molecular effectors would also falsify this proposed overlap. _(variant: gnomAD allele frequency > 0.01 for a pathogenic variant in ABCC8 in the general population.)_\n\n**Why it matters:** Understanding the shared role of ABCC8 and KATP channel function in these two forms of hypoglycemia could lead to shared therapeutic strategies. For example, interventions aimed at modulating KATP channel activity or downstream insulin secretion pathways might be applicable to both conditions.\n\n---\n\n#### 2. diabetes mellitus, permanent neonatal 3  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.718)\n**Link type:** shared pathway (Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177)\n\n**Proposed mechanism:** ABCC8 (HGNC:59) —DISRUPTS→ Regulation of insulin secretion by ATP-sensitive potassium channels; Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Hypoglycemia (HP:0001250); Regulation of insulin secretion by ATP-sensitive potassium channels —LEADS_TO→ Diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt the regulation of insulin secretion by ATP-sensitive potassium channels, leading to both hypoglycemia and diabetes mellitus.\n\n**How to falsify it:** Discovery of pathogenic loss-of-function variants in ABCC8 in patients with only one of the two conditions, and not the other, would falsify this hypothesis. _(variant: rs758314804)_\n\n**Why it matters:** Understanding the shared role of ABCC8 in both hypoglycemia and diabetes mellitus can inform therapeutic strategies targeting insulin secretion pathways for both conditions.\n\n---\n\n#### 3. diabetes mellitus, transient neonatal, 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared pathway (Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177)\n\n**Proposed mechanism:** ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270); ATP-sensitive inwardly rectifying potassium channel activity (GO:0005270) —LEADS_TO→ Altered KATP channel activity (HP:0011748); Altered KATP channel activity (HP:0011748) —DECREASES→ Insulin secretion (CHEBI:17779); Insulin secretion (CHEBI:17779) —DECREASES→ Hypoglycemia (HP:0001250); Insulin secretion (CHEBI:17779) —DECREASES→ Diabetes Mellitus (HP:0000821). Loss-of-function mutations in ABCC8 disrupt the ATP-sensitive inwardly rectifying potassium channel (KATP channel) activity. This leads to altered insulin secretion, manifesting as hypoglycemia in leucine-induced hypoglycemia and diabetes mellitus in transient neonatal diabetes, 2.\n\n**How to falsify it:** Identification of pathogenic variants in ABCC8 that are consistently associated with gain-of-function mechanisms in both diseases would falsify this hypothesis. Additionally, the absence of any ABCC8 variants in individuals with either condition, especially in well-characterized cohorts, would also challenge this link. _(variant: rs74743693)_\n\n**Why it matters:** Understanding the shared role of ABCC8 in these distinct but related glucose homeostasis disorders could lead to novel therapeutic strategies targeting KATP channel activity or insulin secretion pathways for both hypoglycemia and diabetes.\n\n---\n\n#### 4. type 2 diabetes mellitus  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.716)\n**Link type:** shared pathway (Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177)\n\n**Proposed mechanism:** ABCC8 (HGNC:59) —DISRUPTS→ ATP-sensitive potassium channel activity (GO:0005081); ATP-sensitive potassium channel activity (GO:0005081) —DECREASES→ Insulin secretion (GO:0007010); Insulin secretion (GO:0007010) —DECREASES→ Glucose (CHEBI:17234); Glucose (CHEBI:17234) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Glucose (CHEBI:17234) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to impaired insulin secretion and subsequent dysregulation of glucose homeostasis, manifesting as hypoglycemia in severe cases (disease A) and contributing to insulin resistance and hyperglycemia in type 2 diabetes mellitus (disease B).\n\n**How to falsify it:** Demonstration that loss-of-function mutations in ABCC8 exclusively cause hyperinsulinemic hypoglycemia and have no discernible association with altered glucose tolerance or risk of type 2 diabetes mellitus in large population studies. _(variant: Exclusion of pathogenic ABCC8 variants from individuals with type 2 diabetes mellitus in gnomAD or similar large-scale sequencing datasets.)_\n\n**Why it matters:** Understanding the shared role of ABCC8 and KATP channels in both rare hypoglycemia and common type 2 diabetes mellitus could inform therapeutic strategies targeting insulin secretion for a broader range of glucose-related disorders.\n\n---\n\n#### 5. hyperproinsulinemia  —  Tier 3 — Moderate / Emerging  (fitness 0.427)\n**Link type:** shared pathway (Reactome:R-HSA-422356)\n\n**Proposed mechanism:** ABCC8 (HGNC:13406) —DISRUPTS→ pancreatic beta cell function (GO:0007586); pancreatic beta cell function (GO:0007586) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); INS (HGNC:6404) —PRODUCES→ proinsulin (UniProt:P01308); proinsulin (UniProt:P01308) —DISRUPTS→ pancreatic beta cell function (GO:0007586); proinsulin (UniProt:P01308) —LEADS_TO→ hyperproinsulinemia (MONDO:0014535). Loss-of-function variants in ABCC8 impair the KATP channel in pancreatic beta cells, disrupting glucose-stimulated insulin secretion and leading to hypoglycemia, leucine-induced. Variants in INS can lead to the production of dysfunctional proinsulin, which can also impair proper insulin secretion pathways in pancreatic beta cells and cause hyperproinsulinemia.\n\n**How to falsify it:** Identification of pathogenic variants in ABCC8 or INS associated with loss-of-function effects in individuals presenting with hyperproinsulinemia without hypoglycemia, or vice-versa, would falsify the direct mechanistic link proposed. _(variant: rs757110 (common variant in ABCC8 associated with T2D, not directly causal for these rare diseases))_\n\n**Why it matters:** Understanding the shared role of ABCC8 and INS in pancreatic beta cell function and insulin secretion pathways can inform therapeutic strategies for both rare diseases, potentially involving modulation of insulin secretion or proinsulin processing.\n\n---\n\n#### 6. maturity-onset diabetes of the young type 10  —  Tier 3 — Moderate / Emerging  (fitness 0.426)\n**Link type:** shared pathway (Reactome:R-HSA-422356)\n\n**Proposed mechanism:** ABCC8 (HGNC:136) —DISRUPTS→ potassium inwardly-rectifying channel activity (GO:0005241); potassium inwardly-rectifying channel activity (GO:0005241) —DECREASES→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ hypoglycemia (HP:0001250); INS (HGNC:5559) —DISRUPTS→ insulin secretion regulation (GO:0030124); insulin secretion regulation (GO:0030124) —LEADS_TO→ diabetes mellitus (HP:0005978). Loss-of-function mutations in ABCC8 disrupt ATP-sensitive potassium channel activity, leading to excessive insulin secretion and hypoglycemia. Loss-of-function mutations in INS also disrupt insulin secretion regulation, leading to diabetes mellitus.\n\n**How to falsify it:** Demonstration that mutations in ABCC8 and INS do not converge on the regulation of insulin secretion or potassium channel activity, or that distinct molecular pathways are exclusively affected in each disease. _(variant: The presence of common variants (AF > 1%) in gnomAD within the coding regions of ABCC8 and INS that are not associated with either phenotype.)_\n\n**Why it matters:** Understanding the shared pathway of insulin secretion regulation, influenced by both ABCC8 and INS, could lead to novel therapeutic strategies for both rare hypoglycemia and diabetes subtypes by targeting the common molecular machinery.\n\n---\n\n#### 7. type 1 diabetes mellitus 2  —  Tier 3 — Moderate / Emerging  (fitness 0.426)\n**Link type:** shared pathway (Reactome:R-HSA-422356)\n\n**Proposed mechanism:** INS (HGNC:5578) —PRODUCES→ insulin (CHEBI:17679); insulin (CHEBI:17679) —DISRUPTS→ glucose homeostasis (GO:0001575); glucose homeostasis (GO:0001575) —LEADS_TO→ hypoglycemia, leucine-induced (MONDO:0009415); glucose homeostasis (GO:0001575) —LEADS_TO→ type 1 diabetes mellitus 2 (MONDO:0007454). Loss-of-function mutations in the INS gene lead to impaired production or secretion of insulin, disrupting glucose homeostasis and causing both hypoglycemia, leucine-induced and type 1 diabetes mellitus 2.\n\n**How to falsify it:** If pathogenic variants in the INS gene are shown to be absent in individuals with hypoglycemia, leucine-induced or type 1 diabetes mellitus 2, this hypothesis would be falsified. _(variant: rs121912466)_\n\n**Why it matters:** Understanding the shared genetic basis of these conditions can inform diagnostic strategies and potentially lead to novel therapeutic targets for managing glucose dysregulation.\n\n---\n\n#### 8. diabetes mellitus, permanent neonatal 4  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-422356)\n\n**Proposed mechanism:** ABCC8 (HGNC:240) —DISRUPTS→ Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —LEADS_TO→ Hypoglycemia (HP:0001250); INS (HGNC:5577) —DISRUPTS→ Insulin secretion and glucose homeostasis (GO:0001888); Insulin secretion and glucose homeostasis (GO:0001888) —LEADS_TO→ Hyperglycemia (HP:0003124); Pancreatic beta-cell ATP-sensitive potassium channel regulation (GO:0001888) —BINDS→ Insulin secretion and glucose homeostasis (GO:0001888). Mutations in ABCC8 impair the KATP channel, leading to uncontrolled insulin release and hypoglycemia. Mutations in INS lead to insufficient insulin production and release, causing hyperglycemia. Both pathways converge on the regulation of insulin secretion and glucose homeostasis within pancreatic beta-cells.\n\n**How to falsify it:** The discovery of pathogenic variants in ABCC8 or INS with the opposite functional consequence (e.g., gain-of-function for hypoglycemia, loss-of-function for diabetes) or the demonstration that these genes do not converge on a shared downstream pathway regulating insulin secretion. _(variant: gnomad_v3.1.2:chr11:5517034:G:A)_\n\n**Why it matters:** Understanding this overlap can inform therapeutic strategies. For hypoglycemia, interventions aimed at reducing insulin secretion or increasing glucose production might be considered. For neonatal diabetes, strategies to supplement insulin or enhance beta-cell function are crucial. Identifying shared regulatory mechanisms could lead to novel therapeutic targets for both conditions.\n\n---\n\n#### 9. Brugada syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.344)\n**Link type:** shared pathway (Reactome:R-HSA-422356)\n\n**Proposed mechanism:** Loss-of-function variant in ABCC8 —DISRUPTS→ ABCC8 (HGNC:20038); ABCC8 (HGNC:20038) —DECREASES→ ATP-sensitive potassium channel (KATP) activity (GO:0005474); ATP-sensitive potassium channel (KATP) activity (GO:0005474) —LEADS_TO→ Hypoglycemia, leucine-induced (MONDO:0009415); Gain-of-function variant in CACNA1C —DISRUPTS→ CACNA1C (HGNC:1735); CACNA1C (HGNC:1735) —INCREASES→ Cardiac action potential propagation (GO:0003010); Cardiac action potential propagation (GO:0003010) —LEADS_TO→ Brugada syndrome 3 (MONDO:0012742). Loss-of-function mutations in ABCC8 lead to reduced KATP channel activity, affecting insulin secretion and causing hypoglycemia. Gain-of-function mutations in CACNA1C alter cardiac sodium channel function, disrupting cardiac action potential propagation and leading to Brugada syndrome. The convergence is on the general cellular process of ion channel regulation, where distinct channel types (KATP and voltage-gated calcium channels) are critical for distinct physiological functions (insulin secretion vs. cardiac excitability), and dysregulation of either leads to disease.\n\n**How to falsify it:** The discovery of a patient with a pathogenic variant in ABCC8 who does not present with leucine-induced hypoglycemia, or a patient with a pathogenic variant in CACNA1C who does not present with Brugada syndrome 3, would falsify the direct causal link proposed for each disease, although not necessarily the overlap in ion channel function broadly. _(variant: Absence of pathogenic variants in gnomAD for ABCC8 (for hypoglycemia) and CACNA1C (for Brugada syndrome 3) would weaken the genetic evidence base for these specific disease models.)_\n\n**Why it matters:** Understanding the shared reliance on precise ion channel function, despite different channel types and resultant pathologies, could inform therapeutic strategies. For instance, modulating downstream signaling pathways affected by ion channel dysfunction might offer a common therapeutic avenue, or conversely, highlight the extreme specificity required for targeted therapies.\n\n---\n\n#### 10. maturity-onset diabetes of the young, type 12  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-422356, Reactome:R-HSA-1296025, Reactome:R-HSA-5683177)\n\n**Proposed mechanism:** ABCC8 (HGNC:59) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); KCNJ11 (HGNC:6358) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP (CHEBI:15422) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); potassium ion (CHEBI:26975) —BINDS→ ATP-sensitive potassium channel activity (GO:0005472); ATP-sensitive potassium channel activity (GO:0005472) —DISRUPTS→ Insulin secretion (GO:0007050); ABCC8 (HGNC:59) —LEADS_TO→ hypoglycemia (HP:0001250); Insulin secretion (GO:0007050) —LEADS_TO→ diabetes mellitus (HP:0000821). Loss-of-function mutations in ABCC8, often in conjunction with KCNJ11, lead to impaired ATP-sensitive potassium channel function. This disruption affects insulin secretion from pancreatic beta cells. In leucine-induced hypoglycemia, this leads to excessive insulin release in response to non-glucose stimuli, causing hypoglycemia. In MODY12, the impaired channel function results in reduced glucose-stimulated insulin secretion, manifesting as diabetes.\n\n**How to falsify it:** Demonstration that ABCC8 mutations in leucine-induced hypoglycemia are predominantly gain-of-function, or that MODY12 is caused by a distinct, unrelated pathway not involving KATP channel regulation. _(variant: None directly applicable without specific variant identification.)_\n\n**Why it matters:** Understanding the shared mechanism of KATP channel dysfunction provides a potential therapeutic target for both rare hypoglycemia and diabetes subtypes, possibly through drugs that modulate channel activity or insulin secretion pathways.\n\n---"
+}

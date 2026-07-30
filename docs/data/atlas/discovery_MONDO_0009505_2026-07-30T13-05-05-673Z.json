@@ -1,0 +1,453 @@
+{
+  "seed": {
+    "id": "MONDO:0009505",
+    "name": "lactic aciduria due to D-lactic acid"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 21,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0957254",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:15706); D-lactate (CHEBI:15706) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); ATP5F1A (HGNC:8575) —DISRUPTS→ Mitochondrial ATP Synthase Complex (GO:0045256); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Mitochondrial complex V deficiency, nuclear type 4A (MONDO:0957254); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Lactic acidosis (HP:0012224). Loss-of-function mutations in LDHD lead to impaired metabolism of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt the function of the Mitochondrial ATP Synthase Complex (Complex V), leading to mitochondrial complex V deficiency and associated phenotypes like lactic acidosis. The convergence is on the mitochondrial dysfunction and energy production deficit caused by impaired Complex V function, which is a fundamental process affected in both conditions.",
+      "mechanism_narrative": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:15706); D-lactate (CHEBI:15706) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); ATP5F1A (HGNC:8575) —DISRUPTS→ Mitochondrial ATP Synthase Complex (GO:0045256); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Mitochondrial complex V deficiency, nuclear type 4A (MONDO:0957254); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Lactic acidosis (HP:0012224). Loss-of-function mutations in LDHD lead to impaired metabolism of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt the function of the Mitochondrial ATP Synthase Complex (Complex V), leading to mitochondrial complex V deficiency and associated phenotypes like lactic acidosis. The convergence is on the mitochondrial dysfunction and energy production deficit caused by impaired Complex V function, which is a fundamental process affected in both conditions.",
+      "falsification": {
+        "text": "Demonstration that LDHD mutations do not lead to D-lactate accumulation or that ATP5F1A mutations do not affect mitochondrial ATP synthase function.",
+        "gnomad_variant": "Absence of pathogenic variants in LDHD or ATP5F1A in relevant populations in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957254",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:15706); D-lactate (CHEBI:15706) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); ATP5F1A (HGNC:8575) —DISRUPTS→ Mitochondrial ATP Synthase Complex (GO:0045256); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Mitochondrial complex V deficiency, nuclear type 4A (MONDO:0957254); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Lactic acidosis (HP:0012224). Loss-of-function mutations in LDHD lead to impaired metabolism of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt the function of the Mitochondrial ATP Synthase Complex (Complex V), leading to mitochondrial complex V deficiency and associated phenotypes like lactic acidosis. The convergence is on the mitochondrial dysfunction and energy production deficit caused by impaired Complex V function, which is a fundamental process affected in both conditions.",
+        "falsification": {
+          "text": "Demonstration that LDHD mutations do not lead to D-lactate accumulation or that ATP5F1A mutations do not affect mitochondrial ATP synthase function.",
+          "gnomad_variant": "Absence of pathogenic variants in LDHD or ATP5F1A in relevant populations in gnomAD."
+        },
+        "translational": "Understanding the shared downstream consequence of mitochondrial dysfunction in both diseases could lead to therapeutic strategies targeting metabolic support or the management of lactic acidosis in patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014091",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4B",
+      "fitness": 0.481,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:16719); D-lactate (CHEBI:16719) —LEADS_TO→ Lactic aciduria (HP:0001671); ATP5F1A (HGNC:7356) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) activity (GO:0006754); Mitochondrial Complex V (ATP Synthase) activity (GO:0006754) —DECREASES→ ATP production (GO:0006073); D-lactate (CHEBI:16719) —INCREASES→ ATP production (GO:0006073); ATP production (GO:0006073) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0011412). Loss-of-function mutations in LDHD impair D-lactate metabolism, leading to D-lactic acid accumulation and lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt mitochondrial complex V activity, directly impairing ATP production. Both pathways converge on the central process of ATP production, where its deficiency leads to cellular dysfunction and the observed phenotypes.",
+      "mechanism_narrative": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:16719); D-lactate (CHEBI:16719) —LEADS_TO→ Lactic aciduria (HP:0001671); ATP5F1A (HGNC:7356) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) activity (GO:0006754); Mitochondrial Complex V (ATP Synthase) activity (GO:0006754) —DECREASES→ ATP production (GO:0006073); D-lactate (CHEBI:16719) —INCREASES→ ATP production (GO:0006073); ATP production (GO:0006073) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0011412). Loss-of-function mutations in LDHD impair D-lactate metabolism, leading to D-lactic acid accumulation and lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt mitochondrial complex V activity, directly impairing ATP production. Both pathways converge on the central process of ATP production, where its deficiency leads to cellular dysfunction and the observed phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that pathogenic variants in LDHD or ATP5F1A are not the primary cause of these diseases, or if experimental models show no impact on ATP production or D-lactate levels, the hypothesis would be falsified.",
+        "gnomad_variant": "Discovery of a common, benign variant (e.g., allele frequency >1% in gnomAD) in LDHD or ATP5F1A that is consistently present in affected individuals would also weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014091",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.481,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:16719); D-lactate (CHEBI:16719) —LEADS_TO→ Lactic aciduria (HP:0001671); ATP5F1A (HGNC:7356) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) activity (GO:0006754); Mitochondrial Complex V (ATP Synthase) activity (GO:0006754) —DECREASES→ ATP production (GO:0006073); D-lactate (CHEBI:16719) —INCREASES→ ATP production (GO:0006073); ATP production (GO:0006073) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0011412). Loss-of-function mutations in LDHD impair D-lactate metabolism, leading to D-lactic acid accumulation and lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt mitochondrial complex V activity, directly impairing ATP production. Both pathways converge on the central process of ATP production, where its deficiency leads to cellular dysfunction and the observed phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that pathogenic variants in LDHD or ATP5F1A are not the primary cause of these diseases, or if experimental models show no impact on ATP production or D-lactate levels, the hypothesis would be falsified.",
+          "gnomad_variant": "Discovery of a common, benign variant (e.g., allele frequency >1% in gnomAD) in LDHD or ATP5F1A that is consistently present in affected individuals would also weaken the hypothesis."
+        },
+        "translational": "Understanding the shared impact on ATP production could lead to therapeutic strategies aimed at bolstering mitochondrial function or managing metabolic byproducts in both conditions, potentially offering a unified approach to treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859302",
+      "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+      "fitness": 0.4555,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6570) —DISRUPTS→ D-lactic acid (CHEBI:17147); D-lactic acid (CHEBI:17147) —LEADS_TO→ lactic aciduria (HP:0003131); ATP5F1B (HGNC:7379) —DISRUPTS→ Mitochondrial oxidative phosphorylation (GO:0005759); Mitochondrial oxidative phosphorylation (GO:0005759) —LEADS_TO→ hypermetabolism (HP:0002171). Loss-of-function mutations in LDHD lead to accumulation of D-lactic acid, causing lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1B disrupt mitochondrial oxidative phosphorylation, leading to hypermetabolism. The shared convergence is the disruption of mitochondrial function, impacting cellular energy homeostasis and leading to distinct but related phenotypic outcomes.",
+      "mechanism_narrative": "LDHD (HGNC:6570) —DISRUPTS→ D-lactic acid (CHEBI:17147); D-lactic acid (CHEBI:17147) —LEADS_TO→ lactic aciduria (HP:0003131); ATP5F1B (HGNC:7379) —DISRUPTS→ Mitochondrial oxidative phosphorylation (GO:0005759); Mitochondrial oxidative phosphorylation (GO:0005759) —LEADS_TO→ hypermetabolism (HP:0002171). Loss-of-function mutations in LDHD lead to accumulation of D-lactic acid, causing lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1B disrupt mitochondrial oxidative phosphorylation, leading to hypermetabolism. The shared convergence is the disruption of mitochondrial function, impacting cellular energy homeostasis and leading to distinct but related phenotypic outcomes.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in LDHD in individuals with lactic aciduria, or the absence of pathogenic variants in ATP5F1B in individuals with hypermetabolism, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the D-lactic aciduria is caused by variants in a gene entirely unrelated to mitochondrial function, or hypermetabolism is caused by a mechanism completely independent of oxidative phosphorylation, this hypothesis would be falsified.",
+        "gnomad_variant": "None specified, but common variants in LDHD or ATP5F1B with no associated disease phenotype would weaken the claim."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859302",
+        "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.4555,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6570) —DISRUPTS→ D-lactic acid (CHEBI:17147); D-lactic acid (CHEBI:17147) —LEADS_TO→ lactic aciduria (HP:0003131); ATP5F1B (HGNC:7379) —DISRUPTS→ Mitochondrial oxidative phosphorylation (GO:0005759); Mitochondrial oxidative phosphorylation (GO:0005759) —LEADS_TO→ hypermetabolism (HP:0002171). Loss-of-function mutations in LDHD lead to accumulation of D-lactic acid, causing lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1B disrupt mitochondrial oxidative phosphorylation, leading to hypermetabolism. The shared convergence is the disruption of mitochondrial function, impacting cellular energy homeostasis and leading to distinct but related phenotypic outcomes.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in LDHD in individuals with lactic aciduria, or the absence of pathogenic variants in ATP5F1B in individuals with hypermetabolism, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the D-lactic aciduria is caused by variants in a gene entirely unrelated to mitochondrial function, or hypermetabolism is caused by a mechanism completely independent of oxidative phosphorylation, this hypothesis would be falsified.",
+          "gnomad_variant": "None specified, but common variants in LDHD or ATP5F1B with no associated disease phenotype would weaken the claim."
+        },
+        "translational": "Understanding the shared mitochondrial basis of these diseases could lead to novel therapeutic strategies targeting mitochondrial dysfunction. For instance, interventions aimed at improving mitochondrial efficiency or managing metabolic imbalances might be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013802",
+      "diseaseBName": "infantile cerebellar-retinal degeneration",
+      "fitness": 0.4244,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6635) —DISRUPTS→ D-lactic acid (CHEBI:15909); D-lactic acid (CHEBI:15909) —LEADS_TO→ Lactic aciduria (HP:0001340); ACO2 (HGNC:2) —DISRUPTS→ Pyruvate metabolism (REACT:R-HSA-143317); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Infantile cerebellar degeneration (HP:0002371); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in LDHD impair the metabolism of D-lactate, leading to D-lactic aciduria. Simultaneously, loss-of-function mutations in ACO2 disrupt the TCA cycle (a key part of pyruvate metabolism), leading to downstream effects that manifest as infantile cerebellar and retinal degeneration. The convergence is on the broader metabolic dysregulation stemming from impaired pyruvate metabolism and its downstream consequences, including altered energy production and potential accumulation of related metabolites.",
+      "mechanism_narrative": "LDHD (HGNC:6635) —DISRUPTS→ D-lactic acid (CHEBI:15909); D-lactic acid (CHEBI:15909) —LEADS_TO→ Lactic aciduria (HP:0001340); ACO2 (HGNC:2) —DISRUPTS→ Pyruvate metabolism (REACT:R-HSA-143317); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Infantile cerebellar degeneration (HP:0002371); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in LDHD impair the metabolism of D-lactate, leading to D-lactic aciduria. Simultaneously, loss-of-function mutations in ACO2 disrupt the TCA cycle (a key part of pyruvate metabolism), leading to downstream effects that manifest as infantile cerebellar and retinal degeneration. The convergence is on the broader metabolic dysregulation stemming from impaired pyruvate metabolism and its downstream consequences, including altered energy production and potential accumulation of related metabolites.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in LDHD or ACO2 in individuals diagnosed with the other disease, or a complete lack of association between variants in these genes and the respective phenotypes.",
+        "gnomad_variant": "Pathogenic variants in LDHD or ACO2 with a minor allele frequency > 0.1% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013802",
+        "diseaseBName": "infantile cerebellar-retinal degeneration",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.4244,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6635) —DISRUPTS→ D-lactic acid (CHEBI:15909); D-lactic acid (CHEBI:15909) —LEADS_TO→ Lactic aciduria (HP:0001340); ACO2 (HGNC:2) —DISRUPTS→ Pyruvate metabolism (REACT:R-HSA-143317); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Infantile cerebellar degeneration (HP:0002371); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in LDHD impair the metabolism of D-lactate, leading to D-lactic aciduria. Simultaneously, loss-of-function mutations in ACO2 disrupt the TCA cycle (a key part of pyruvate metabolism), leading to downstream effects that manifest as infantile cerebellar and retinal degeneration. The convergence is on the broader metabolic dysregulation stemming from impaired pyruvate metabolism and its downstream consequences, including altered energy production and potential accumulation of related metabolites.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in LDHD or ACO2 in individuals diagnosed with the other disease, or a complete lack of association between variants in these genes and the respective phenotypes.",
+          "gnomad_variant": "Pathogenic variants in LDHD or ACO2 with a minor allele frequency > 0.1% in gnomAD."
+        },
+        "translational": "Understanding the shared metabolic underpinnings could reveal novel therapeutic targets for both conditions, potentially involving metabolic modulators or agents that support cellular energy homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008422",
+      "diseaseBName": "autosomal dominant sideroblastic anemia",
+      "fitness": 0.4066,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6543) —DISRUPTS→ D-lactic acid (CHEBI:15365); D-lactic acid (CHEBI:15365) —LEADS_TO→ lactic aciduria (HP:0001362); HSPA9 (HGNC:4939) —DISRUPTS→ mitochondrial protein homeostasis (GO:0005759); mitochondrial protein homeostasis (GO:0005759) —LEADS_TO→ sideroblastic anemia (HP:0001868). Loss-of-function mutations in LDHD lead to impaired D-lactic acid metabolism, causing lactic aciduria. Loss-of-function mutations in HSPA9 disrupt mitochondrial protein homeostasis, leading to sideroblastic anemia. Both diseases converge on the shared pathway of mitochondrial protein homeostasis, where HSPA9's role is critical for preventing sideroblastic anemia, and its dysfunction indirectly impacts overall cellular metabolic health which can exacerbate D-lactic acid accumulation.",
+      "mechanism_narrative": "LDHD (HGNC:6543) —DISRUPTS→ D-lactic acid (CHEBI:15365); D-lactic acid (CHEBI:15365) —LEADS_TO→ lactic aciduria (HP:0001362); HSPA9 (HGNC:4939) —DISRUPTS→ mitochondrial protein homeostasis (GO:0005759); mitochondrial protein homeostasis (GO:0005759) —LEADS_TO→ sideroblastic anemia (HP:0001868). Loss-of-function mutations in LDHD lead to impaired D-lactic acid metabolism, causing lactic aciduria. Loss-of-function mutations in HSPA9 disrupt mitochondrial protein homeostasis, leading to sideroblastic anemia. Both diseases converge on the shared pathway of mitochondrial protein homeostasis, where HSPA9's role is critical for preventing sideroblastic anemia, and its dysfunction indirectly impacts overall cellular metabolic health which can exacerbate D-lactic acid accumulation.",
+      "falsification": {
+        "text": "Demonstration that HSPA9 variants do not affect mitochondrial protein homeostasis or that LDHD variants do not lead to D-lactic acid accumulation.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008422",
+        "diseaseBName": "autosomal dominant sideroblastic anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.4066,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6543) —DISRUPTS→ D-lactic acid (CHEBI:15365); D-lactic acid (CHEBI:15365) —LEADS_TO→ lactic aciduria (HP:0001362); HSPA9 (HGNC:4939) —DISRUPTS→ mitochondrial protein homeostasis (GO:0005759); mitochondrial protein homeostasis (GO:0005759) —LEADS_TO→ sideroblastic anemia (HP:0001868). Loss-of-function mutations in LDHD lead to impaired D-lactic acid metabolism, causing lactic aciduria. Loss-of-function mutations in HSPA9 disrupt mitochondrial protein homeostasis, leading to sideroblastic anemia. Both diseases converge on the shared pathway of mitochondrial protein homeostasis, where HSPA9's role is critical for preventing sideroblastic anemia, and its dysfunction indirectly impacts overall cellular metabolic health which can exacerbate D-lactic acid accumulation.",
+        "falsification": {
+          "text": "Demonstration that HSPA9 variants do not affect mitochondrial protein homeostasis or that LDHD variants do not lead to D-lactic acid accumulation.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of HSPA9 in mitochondrial protein homeostasis could reveal therapeutic strategies applicable to both sideroblastic anemia and potentially ameliorating secondary metabolic consequences in D-lactic aciduria."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012824",
+      "diseaseBName": "hypomyelinating leukodystrophy 4",
+      "fitness": 0.4009,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6720) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4997) —DISRUPTS→ Mitochondrial Respiration (GO:0007049); Mitochondrial Respiration (GO:0007049) —LEADS_TO→ Hypomyelinating leukodystrophy (MONDO:0012824); D-lactic acid (CHEBI:15378) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); L-lactic acid (CHEBI:15377) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); Pyruvate Metabolism (R-HSA-3902059) —LEADS_TO→ Mitochondrial Respiration (GO:0007049). Mutations in LDHD lead to reduced D-lactate clearance, causing D-lactic aciduria. Simultaneously, mutations in HSPD1 impair mitochondrial respiration. Both D-lactic acid accumulation and impaired mitochondrial respiration can disrupt pyruvate metabolism, which is central to both lactate production/clearance and energy generation within the mitochondria, ultimately contributing to the respective disease phenotypes.",
+      "mechanism_narrative": "LDHD (HGNC:6720) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4997) —DISRUPTS→ Mitochondrial Respiration (GO:0007049); Mitochondrial Respiration (GO:0007049) —LEADS_TO→ Hypomyelinating leukodystrophy (MONDO:0012824); D-lactic acid (CHEBI:15378) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); L-lactic acid (CHEBI:15377) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); Pyruvate Metabolism (R-HSA-3902059) —LEADS_TO→ Mitochondrial Respiration (GO:0007049). Mutations in LDHD lead to reduced D-lactate clearance, causing D-lactic aciduria. Simultaneously, mutations in HSPD1 impair mitochondrial respiration. Both D-lactic acid accumulation and impaired mitochondrial respiration can disrupt pyruvate metabolism, which is central to both lactate production/clearance and energy generation within the mitochondria, ultimately contributing to the respective disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that LDHD and HSPD1 mutations do not converge on a common downstream pathway, such as pyruvate metabolism or mitochondrial function, in cellular or animal models. Specifically, if D-lactic acid accumulation does not impact mitochondrial respiration or pyruvate flux, or if impaired mitochondrial respiration does not affect lactate handling, the hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (e.g., gnomAD allele frequency > 1%) in LDHD or HSPD1 associated with either D-lactic aciduria or hypomyelinating leukodystrophy would challenge their role as rare causal genes for these specific conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012824",
+        "diseaseBName": "hypomyelinating leukodystrophy 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.4009,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6720) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4997) —DISRUPTS→ Mitochondrial Respiration (GO:0007049); Mitochondrial Respiration (GO:0007049) —LEADS_TO→ Hypomyelinating leukodystrophy (MONDO:0012824); D-lactic acid (CHEBI:15378) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); L-lactic acid (CHEBI:15377) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); Pyruvate Metabolism (R-HSA-3902059) —LEADS_TO→ Mitochondrial Respiration (GO:0007049). Mutations in LDHD lead to reduced D-lactate clearance, causing D-lactic aciduria. Simultaneously, mutations in HSPD1 impair mitochondrial respiration. Both D-lactic acid accumulation and impaired mitochondrial respiration can disrupt pyruvate metabolism, which is central to both lactate production/clearance and energy generation within the mitochondria, ultimately contributing to the respective disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that LDHD and HSPD1 mutations do not converge on a common downstream pathway, such as pyruvate metabolism or mitochondrial function, in cellular or animal models. Specifically, if D-lactic acid accumulation does not impact mitochondrial respiration or pyruvate flux, or if impaired mitochondrial respiration does not affect lactate handling, the hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common variants (e.g., gnomAD allele frequency > 1%) in LDHD or HSPD1 associated with either D-lactic aciduria or hypomyelinating leukodystrophy would challenge their role as rare causal genes for these specific conditions."
+        },
+        "translational": "Understanding the shared molecular underpinnings, particularly the convergence on pyruvate metabolism and mitochondrial respiration, could reveal novel therapeutic targets. Strategies aimed at improving lactate clearance or supporting mitochondrial function might offer benefit in both conditions, or at least inform differential treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014801",
+      "diseaseBName": "even-plus syndrome",
+      "fitness": 0.3906,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6717) —DECREASES→ D-lactic acid (CHEBI:17388); D-lactic acid (CHEBI:17388) —LEADS_TO→ lactic aciduria (HP:0001977); HSPA9 (HGNC:5326) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006534); Mitochondrial protein folding and quality control (GO:0006534) —LEADS_TO→ even-plus syndrome (MONDO:0014801); HSPA9 (HGNC:5326) —INCREASES→ D-lactic acid (CHEBI:17388). Loss of function in LDHD leads to accumulation of D-lactic acid, causing lactic aciduria. Simultaneously, loss of function in HSPA9 disrupts mitochondrial protein folding and quality control, which may indirectly lead to impaired D-lactic acid metabolism or other cellular dysfunctions contributing to even-plus syndrome phenotypes.",
+      "mechanism_narrative": "LDHD (HGNC:6717) —DECREASES→ D-lactic acid (CHEBI:17388); D-lactic acid (CHEBI:17388) —LEADS_TO→ lactic aciduria (HP:0001977); HSPA9 (HGNC:5326) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006534); Mitochondrial protein folding and quality control (GO:0006534) —LEADS_TO→ even-plus syndrome (MONDO:0014801); HSPA9 (HGNC:5326) —INCREASES→ D-lactic acid (CHEBI:17388). Loss of function in LDHD leads to accumulation of D-lactic acid, causing lactic aciduria. Simultaneously, loss of function in HSPA9 disrupts mitochondrial protein folding and quality control, which may indirectly lead to impaired D-lactic acid metabolism or other cellular dysfunctions contributing to even-plus syndrome phenotypes.",
+      "falsification": {
+        "text": "Identification of mutations in HSPA9 in patients with isolated D-lactic aciduria without other features of even-plus syndrome, or conversely, identification of LDHD mutations in patients with even-plus syndrome lacking significant D-lactic aciduria.",
+        "gnomad_variant": "The presence of common variants in HSPA9 or LDHD in gnomAD with allele frequencies significantly higher than expected for rare disease-causing mutations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014801",
+        "diseaseBName": "even-plus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.3906,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6717) —DECREASES→ D-lactic acid (CHEBI:17388); D-lactic acid (CHEBI:17388) —LEADS_TO→ lactic aciduria (HP:0001977); HSPA9 (HGNC:5326) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006534); Mitochondrial protein folding and quality control (GO:0006534) —LEADS_TO→ even-plus syndrome (MONDO:0014801); HSPA9 (HGNC:5326) —INCREASES→ D-lactic acid (CHEBI:17388). Loss of function in LDHD leads to accumulation of D-lactic acid, causing lactic aciduria. Simultaneously, loss of function in HSPA9 disrupts mitochondrial protein folding and quality control, which may indirectly lead to impaired D-lactic acid metabolism or other cellular dysfunctions contributing to even-plus syndrome phenotypes.",
+        "falsification": {
+          "text": "Identification of mutations in HSPA9 in patients with isolated D-lactic aciduria without other features of even-plus syndrome, or conversely, identification of LDHD mutations in patients with even-plus syndrome lacking significant D-lactic aciduria.",
+          "gnomad_variant": "The presence of common variants in HSPA9 or LDHD in gnomAD with allele frequencies significantly higher than expected for rare disease-causing mutations."
+        },
+        "translational": "Understanding the shared role of HSPA9 in cellular homeostasis could reveal novel therapeutic targets for both D-lactic aciduria and even-plus syndrome, potentially through chaperone-based therapies or modulation of mitochondrial function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011532",
+      "diseaseBName": "hereditary spastic paraplegia 13",
+      "fitness": 0.3887,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6646) —DISRUPTS→ D-lactic acid (CHEBI:17321); D-lactic acid (CHEBI:17321) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4908) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006520); Mitochondrial protein folding and quality control (GO:0006520) —LEADS_TO→ Neurological dysfunction (HP:0001257); D-lactic aciduria (MONDO:0009505) —LEADS_TO→ Neurological dysfunction (HP:0001257); Neurological dysfunction (HP:0001257) —LEADS_TO→ Hereditary spastic paraplegia 13 (MONDO:0011532). Loss-of-function mutations in LDHD lead to D-lactic aciduria. Concurrently, loss-of-function mutations in HSPD1 impair mitochondrial protein folding and quality control. Both disruptions contribute to broader neurological dysfunction, manifesting as hereditary spastic paraplegia 13 and D-lactic aciduria, highlighting a convergence on mitochondrial health and neuronal function.",
+      "mechanism_narrative": "LDHD (HGNC:6646) —DISRUPTS→ D-lactic acid (CHEBI:17321); D-lactic acid (CHEBI:17321) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4908) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006520); Mitochondrial protein folding and quality control (GO:0006520) —LEADS_TO→ Neurological dysfunction (HP:0001257); D-lactic aciduria (MONDO:0009505) —LEADS_TO→ Neurological dysfunction (HP:0001257); Neurological dysfunction (HP:0001257) —LEADS_TO→ Hereditary spastic paraplegia 13 (MONDO:0011532). Loss-of-function mutations in LDHD lead to D-lactic aciduria. Concurrently, loss-of-function mutations in HSPD1 impair mitochondrial protein folding and quality control. Both disruptions contribute to broader neurological dysfunction, manifesting as hereditary spastic paraplegia 13 and D-lactic aciduria, highlighting a convergence on mitochondrial health and neuronal function.",
+      "falsification": {
+        "text": "Absence of evidence linking mitochondrial dysfunction to the pathogenesis of D-lactic aciduria, or demonstration that LDHD and HSPD1 mutations do not converge on shared downstream cellular processes impacting neuronal health.",
+        "gnomad_variant": "Identification of common, benign variants in LDHD or HSPD1 in affected populations would challenge their causal roles."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011532",
+        "diseaseBName": "hereditary spastic paraplegia 13",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.3887,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6646) —DISRUPTS→ D-lactic acid (CHEBI:17321); D-lactic acid (CHEBI:17321) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4908) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006520); Mitochondrial protein folding and quality control (GO:0006520) —LEADS_TO→ Neurological dysfunction (HP:0001257); D-lactic aciduria (MONDO:0009505) —LEADS_TO→ Neurological dysfunction (HP:0001257); Neurological dysfunction (HP:0001257) —LEADS_TO→ Hereditary spastic paraplegia 13 (MONDO:0011532). Loss-of-function mutations in LDHD lead to D-lactic aciduria. Concurrently, loss-of-function mutations in HSPD1 impair mitochondrial protein folding and quality control. Both disruptions contribute to broader neurological dysfunction, manifesting as hereditary spastic paraplegia 13 and D-lactic aciduria, highlighting a convergence on mitochondrial health and neuronal function.",
+        "falsification": {
+          "text": "Absence of evidence linking mitochondrial dysfunction to the pathogenesis of D-lactic aciduria, or demonstration that LDHD and HSPD1 mutations do not converge on shared downstream cellular processes impacting neuronal health.",
+          "gnomad_variant": "Identification of common, benign variants in LDHD or HSPD1 in affected populations would challenge their causal roles."
+        },
+        "translational": "Understanding this link could reveal shared therapeutic targets for managing mitochondrial dysfunction in neurological disorders. For instance, interventions aimed at improving mitochondrial protein homeostasis might benefit patients with D-lactic aciduria, and conversely, managing D-lactate levels could potentially alleviate some symptoms in HSPD1 patients."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014571",
+      "diseaseBName": "optic atrophy 9",
+      "fitness": 0.3882,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6577) —DISRUPTS→ D-lactate metabolism (GO:0006105); D-lactate metabolism (GO:0006105) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic acidosis (HP:0001674); ACO2 (HGNC:240) —DISRUPTS→ TCA cycle (REACT:R-HSA-70190); TCA cycle (REACT:R-HSA-70190) —INCREASES→ D-lactate metabolism (GO:0006105); ACO2 (HGNC:240) —LEADS_TO→ Optic atrophy (HP:0000660). Loss-of-function mutations in LDHD impair the metabolism of D-lactic acid, leading to its accumulation and resulting in lactic acidosis. Concurrently, mutations in ACO2 disrupt the TCA cycle, which normally feeds into D-lactate metabolism, indirectly increasing D-lactic acid levels and contributing to the metabolic dysregulation seen in lactic aciduria. The disruption of the TCA cycle by ACO2 dysfunction also leads to energy deficits and cellular dysfunction in neurons, manifesting as optic atrophy.",
+      "mechanism_narrative": "LDHD (HGNC:6577) —DISRUPTS→ D-lactate metabolism (GO:0006105); D-lactate metabolism (GO:0006105) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic acidosis (HP:0001674); ACO2 (HGNC:240) —DISRUPTS→ TCA cycle (REACT:R-HSA-70190); TCA cycle (REACT:R-HSA-70190) —INCREASES→ D-lactate metabolism (GO:0006105); ACO2 (HGNC:240) —LEADS_TO→ Optic atrophy (HP:0000660). Loss-of-function mutations in LDHD impair the metabolism of D-lactic acid, leading to its accumulation and resulting in lactic acidosis. Concurrently, mutations in ACO2 disrupt the TCA cycle, which normally feeds into D-lactate metabolism, indirectly increasing D-lactic acid levels and contributing to the metabolic dysregulation seen in lactic aciduria. The disruption of the TCA cycle by ACO2 dysfunction also leads to energy deficits and cellular dysfunction in neurons, manifesting as optic atrophy.",
+      "falsification": {
+        "text": "The absence of elevated D-lactic acid levels in patients with MONDO:0014571, or the absence of optic atrophy in patients with MONDO:0009505, would falsify this hypothesis. Furthermore, identifying pathogenic variants in LDHD in patients with optic atrophy 9, or pathogenic variants in ACO2 in patients with lactic aciduria due to D-lactic acid, would support a shared genetic origin and strengthen this link.",
+        "gnomad_variant": "The presence of common, benign variants in both LDHD and ACO2 in the general population (gnomAD > 1%) would suggest that the proposed link is not driven by rare, pathogenic alleles."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014571",
+        "diseaseBName": "optic atrophy 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.3882,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6577) —DISRUPTS→ D-lactate metabolism (GO:0006105); D-lactate metabolism (GO:0006105) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic acidosis (HP:0001674); ACO2 (HGNC:240) —DISRUPTS→ TCA cycle (REACT:R-HSA-70190); TCA cycle (REACT:R-HSA-70190) —INCREASES→ D-lactate metabolism (GO:0006105); ACO2 (HGNC:240) —LEADS_TO→ Optic atrophy (HP:0000660). Loss-of-function mutations in LDHD impair the metabolism of D-lactic acid, leading to its accumulation and resulting in lactic acidosis. Concurrently, mutations in ACO2 disrupt the TCA cycle, which normally feeds into D-lactate metabolism, indirectly increasing D-lactic acid levels and contributing to the metabolic dysregulation seen in lactic aciduria. The disruption of the TCA cycle by ACO2 dysfunction also leads to energy deficits and cellular dysfunction in neurons, manifesting as optic atrophy.",
+        "falsification": {
+          "text": "The absence of elevated D-lactic acid levels in patients with MONDO:0014571, or the absence of optic atrophy in patients with MONDO:0009505, would falsify this hypothesis. Furthermore, identifying pathogenic variants in LDHD in patients with optic atrophy 9, or pathogenic variants in ACO2 in patients with lactic aciduria due to D-lactic acid, would support a shared genetic origin and strengthen this link.",
+          "gnomad_variant": "The presence of common, benign variants in both LDHD and ACO2 in the general population (gnomAD > 1%) would suggest that the proposed link is not driven by rare, pathogenic alleles."
+        },
+        "translational": "Understanding this mechanistic link could lead to novel therapeutic strategies for both conditions. For lactic aciduria due to D-lactic acid, interventions could focus on enhancing D-lactic acid clearance or mitigating its toxic effects. For optic atrophy 9, strategies aimed at supporting mitochondrial function and energy metabolism in optic neurons, potentially by modulating D-lactate levels or other metabolic pathways, could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030017",
+      "diseaseBName": "combined oxidative phosphorylation deficiency 43",
+      "fitness": 0.3784,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHD (HGNC:6743) —DECREASES→ D-lactate (CHEBI:17517); D-lactate (CHEBI:17517) —LEADS_TO→ lactic aciduria due to D-lactic acid (MONDO:0009505); TIMM22 (HGNC:28614) —DISRUPTS→ mitochondrial electron transport chain (GO:0005746); mitochondrial electron transport chain (GO:0005746) —LEADS_TO→ combined oxidative phosphorylation deficiency 43 (MONDO:0030017). Loss-of-function mutations in LDHD lead to accumulation of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in TIMM22 disrupt the mitochondrial electron transport chain, leading to combined oxidative phosphorylation deficiency. The convergence is on the mitochondrial function, with LDHD's role in lactate metabolism and TIMM22's role in maintaining the electron transport chain both impacting overall mitochondrial integrity and energy production.",
+      "mechanism_narrative": "LDHD (HGNC:6743) —DECREASES→ D-lactate (CHEBI:17517); D-lactate (CHEBI:17517) —LEADS_TO→ lactic aciduria due to D-lactic acid (MONDO:0009505); TIMM22 (HGNC:28614) —DISRUPTS→ mitochondrial electron transport chain (GO:0005746); mitochondrial electron transport chain (GO:0005746) —LEADS_TO→ combined oxidative phosphorylation deficiency 43 (MONDO:0030017). Loss-of-function mutations in LDHD lead to accumulation of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in TIMM22 disrupt the mitochondrial electron transport chain, leading to combined oxidative phosphorylation deficiency. The convergence is on the mitochondrial function, with LDHD's role in lactate metabolism and TIMM22's role in maintaining the electron transport chain both impacting overall mitochondrial integrity and energy production.",
+      "falsification": {
+        "text": "The absence of mutations in LDHD in patients diagnosed with D-lactic aciduria, or the absence of mutations in TIMM22 in patients with combined oxidative phosphorylation deficiency 43, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the proposed causal variants for each disease do not segregate with the phenotype in affected families, the hypothesis would be weakened.",
+        "gnomad_variant": "The presence of common benign variants in LDHD or TIMM22 in the general population (gnomAD frequency > 1%) that are also found in affected individuals would suggest these genes are not the primary cause."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-9837999"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-9837999": 98
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030017",
+        "diseaseBName": "combined oxidative phosphorylation deficiency 43",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-9837999"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-9837999": 98
+        },
+        "fitness": 0.3784,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHD (HGNC:6743) —DECREASES→ D-lactate (CHEBI:17517); D-lactate (CHEBI:17517) —LEADS_TO→ lactic aciduria due to D-lactic acid (MONDO:0009505); TIMM22 (HGNC:28614) —DISRUPTS→ mitochondrial electron transport chain (GO:0005746); mitochondrial electron transport chain (GO:0005746) —LEADS_TO→ combined oxidative phosphorylation deficiency 43 (MONDO:0030017). Loss-of-function mutations in LDHD lead to accumulation of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in TIMM22 disrupt the mitochondrial electron transport chain, leading to combined oxidative phosphorylation deficiency. The convergence is on the mitochondrial function, with LDHD's role in lactate metabolism and TIMM22's role in maintaining the electron transport chain both impacting overall mitochondrial integrity and energy production.",
+        "falsification": {
+          "text": "The absence of mutations in LDHD in patients diagnosed with D-lactic aciduria, or the absence of mutations in TIMM22 in patients with combined oxidative phosphorylation deficiency 43, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the proposed causal variants for each disease do not segregate with the phenotype in affected families, the hypothesis would be weakened.",
+          "gnomad_variant": "The presence of common benign variants in LDHD or TIMM22 in the general population (gnomAD frequency > 1%) that are also found in affected individuals would suggest these genes are not the primary cause."
+        },
+        "translational": "Understanding this overlap could lead to novel therapeutic strategies targeting mitochondrial function or metabolic pathways that could benefit patients with either condition. For instance, interventions aimed at improving D-lactate clearance or enhancing electron transport chain efficiency might be explored."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T13:05:05.673Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** lactic aciduria due to D-lactic acid (MONDO:0009505)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 21 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A (MONDO:0957254) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 2 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 4B (MONDO:0014091) | shared pathway | Tier 3 | 0.481 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 3 | hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 (MONDO:0859302) | shared pathway | Tier 3 | 0.456 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 4 | infantile cerebellar-retinal degeneration (MONDO:0013802) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 5 | autosomal dominant sideroblastic anemia (MONDO:0008422) | shared pathway | Tier 3 | 0.407 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 6 | hypomyelinating leukodystrophy 4 (MONDO:0012824) | shared pathway | Tier 3 | 0.401 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 7 | even-plus syndrome (MONDO:0014801) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 8 | hereditary spastic paraplegia 13 (MONDO:0011532) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 9 | optic atrophy 9 (MONDO:0014571) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n| 10 | combined oxidative phosphorylation deficiency 43 (MONDO:0030017) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-1268020, Reactome:R-HSA-9837999 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:15706); D-lactate (CHEBI:15706) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); ATP5F1A (HGNC:8575) —DISRUPTS→ Mitochondrial ATP Synthase Complex (GO:0045256); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Mitochondrial complex V deficiency, nuclear type 4A (MONDO:0957254); Mitochondrial ATP Synthase Complex (GO:0045256) —LEADS_TO→ Lactic acidosis (HP:0012224). Loss-of-function mutations in LDHD lead to impaired metabolism of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt the function of the Mitochondrial ATP Synthase Complex (Complex V), leading to mitochondrial complex V deficiency and associated phenotypes like lactic acidosis. The convergence is on the mitochondrial dysfunction and energy production deficit caused by impaired Complex V function, which is a fundamental process affected in both conditions.\n\n**How to falsify it:** Demonstration that LDHD mutations do not lead to D-lactate accumulation or that ATP5F1A mutations do not affect mitochondrial ATP synthase function. _(variant: Absence of pathogenic variants in LDHD or ATP5F1A in relevant populations in gnomAD.)_\n\n**Why it matters:** Understanding the shared downstream consequence of mitochondrial dysfunction in both diseases could lead to therapeutic strategies targeting metabolic support or the management of lactic acidosis in patients with either condition.\n\n---\n\n#### 2. mitochondrial complex V (ATP synthase) deficiency, nuclear type 4B  —  Tier 3 — Moderate / Emerging  (fitness 0.481)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6709) —DECREASES→ D-lactate (CHEBI:16719); D-lactate (CHEBI:16719) —LEADS_TO→ Lactic aciduria (HP:0001671); ATP5F1A (HGNC:7356) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) activity (GO:0006754); Mitochondrial Complex V (ATP Synthase) activity (GO:0006754) —DECREASES→ ATP production (GO:0006073); D-lactate (CHEBI:16719) —INCREASES→ ATP production (GO:0006073); ATP production (GO:0006073) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0011412). Loss-of-function mutations in LDHD impair D-lactate metabolism, leading to D-lactic acid accumulation and lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1A disrupt mitochondrial complex V activity, directly impairing ATP production. Both pathways converge on the central process of ATP production, where its deficiency leads to cellular dysfunction and the observed phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that pathogenic variants in LDHD or ATP5F1A are not the primary cause of these diseases, or if experimental models show no impact on ATP production or D-lactate levels, the hypothesis would be falsified. _(variant: Discovery of a common, benign variant (e.g., allele frequency >1% in gnomAD) in LDHD or ATP5F1A that is consistently present in affected individuals would also weaken the hypothesis.)_\n\n**Why it matters:** Understanding the shared impact on ATP production could lead to therapeutic strategies aimed at bolstering mitochondrial function or managing metabolic byproducts in both conditions, potentially offering a unified approach to treatment.\n\n---\n\n#### 3. hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2  —  Tier 3 — Moderate / Emerging  (fitness 0.456)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6570) —DISRUPTS→ D-lactic acid (CHEBI:17147); D-lactic acid (CHEBI:17147) —LEADS_TO→ lactic aciduria (HP:0003131); ATP5F1B (HGNC:7379) —DISRUPTS→ Mitochondrial oxidative phosphorylation (GO:0005759); Mitochondrial oxidative phosphorylation (GO:0005759) —LEADS_TO→ hypermetabolism (HP:0002171). Loss-of-function mutations in LDHD lead to accumulation of D-lactic acid, causing lactic aciduria. Concurrently, loss-of-function mutations in ATP5F1B disrupt mitochondrial oxidative phosphorylation, leading to hypermetabolism. The shared convergence is the disruption of mitochondrial function, impacting cellular energy homeostasis and leading to distinct but related phenotypic outcomes.\n\n**How to falsify it:** The absence of pathogenic variants in LDHD in individuals with lactic aciduria, or the absence of pathogenic variants in ATP5F1B in individuals with hypermetabolism, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the D-lactic aciduria is caused by variants in a gene entirely unrelated to mitochondrial function, or hypermetabolism is caused by a mechanism completely independent of oxidative phosphorylation, this hypothesis would be falsified. _(variant: None specified, but common variants in LDHD or ATP5F1B with no associated disease phenotype would weaken the claim.)_\n\n**Why it matters:** Understanding the shared mitochondrial basis of these diseases could lead to novel therapeutic strategies targeting mitochondrial dysfunction. For instance, interventions aimed at improving mitochondrial efficiency or managing metabolic imbalances might be beneficial for both conditions.\n\n---\n\n#### 4. infantile cerebellar-retinal degeneration  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6635) —DISRUPTS→ D-lactic acid (CHEBI:15909); D-lactic acid (CHEBI:15909) —LEADS_TO→ Lactic aciduria (HP:0001340); ACO2 (HGNC:2) —DISRUPTS→ Pyruvate metabolism (REACT:R-HSA-143317); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Infantile cerebellar degeneration (HP:0002371); Pyruvate metabolism (REACT:R-HSA-143317) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in LDHD impair the metabolism of D-lactate, leading to D-lactic aciduria. Simultaneously, loss-of-function mutations in ACO2 disrupt the TCA cycle (a key part of pyruvate metabolism), leading to downstream effects that manifest as infantile cerebellar and retinal degeneration. The convergence is on the broader metabolic dysregulation stemming from impaired pyruvate metabolism and its downstream consequences, including altered energy production and potential accumulation of related metabolites.\n\n**How to falsify it:** Identification of pathogenic variants in LDHD or ACO2 in individuals diagnosed with the other disease, or a complete lack of association between variants in these genes and the respective phenotypes. _(variant: Pathogenic variants in LDHD or ACO2 with a minor allele frequency > 0.1% in gnomAD.)_\n\n**Why it matters:** Understanding the shared metabolic underpinnings could reveal novel therapeutic targets for both conditions, potentially involving metabolic modulators or agents that support cellular energy homeostasis.\n\n---\n\n#### 5. autosomal dominant sideroblastic anemia  —  Tier 3 — Moderate / Emerging  (fitness 0.407)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6543) —DISRUPTS→ D-lactic acid (CHEBI:15365); D-lactic acid (CHEBI:15365) —LEADS_TO→ lactic aciduria (HP:0001362); HSPA9 (HGNC:4939) —DISRUPTS→ mitochondrial protein homeostasis (GO:0005759); mitochondrial protein homeostasis (GO:0005759) —LEADS_TO→ sideroblastic anemia (HP:0001868). Loss-of-function mutations in LDHD lead to impaired D-lactic acid metabolism, causing lactic aciduria. Loss-of-function mutations in HSPA9 disrupt mitochondrial protein homeostasis, leading to sideroblastic anemia. Both diseases converge on the shared pathway of mitochondrial protein homeostasis, where HSPA9's role is critical for preventing sideroblastic anemia, and its dysfunction indirectly impacts overall cellular metabolic health which can exacerbate D-lactic acid accumulation.\n\n**How to falsify it:** Demonstration that HSPA9 variants do not affect mitochondrial protein homeostasis or that LDHD variants do not lead to D-lactic acid accumulation. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of HSPA9 in mitochondrial protein homeostasis could reveal therapeutic strategies applicable to both sideroblastic anemia and potentially ameliorating secondary metabolic consequences in D-lactic aciduria.\n\n---\n\n#### 6. hypomyelinating leukodystrophy 4  —  Tier 3 — Moderate / Emerging  (fitness 0.401)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6720) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4997) —DISRUPTS→ Mitochondrial Respiration (GO:0007049); Mitochondrial Respiration (GO:0007049) —LEADS_TO→ Hypomyelinating leukodystrophy (MONDO:0012824); D-lactic acid (CHEBI:15378) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); L-lactic acid (CHEBI:15377) —DISRUPTS→ Pyruvate Metabolism (R-HSA-3902059); Pyruvate Metabolism (R-HSA-3902059) —LEADS_TO→ Mitochondrial Respiration (GO:0007049). Mutations in LDHD lead to reduced D-lactate clearance, causing D-lactic aciduria. Simultaneously, mutations in HSPD1 impair mitochondrial respiration. Both D-lactic acid accumulation and impaired mitochondrial respiration can disrupt pyruvate metabolism, which is central to both lactate production/clearance and energy generation within the mitochondria, ultimately contributing to the respective disease phenotypes.\n\n**How to falsify it:** Demonstration that LDHD and HSPD1 mutations do not converge on a common downstream pathway, such as pyruvate metabolism or mitochondrial function, in cellular or animal models. Specifically, if D-lactic acid accumulation does not impact mitochondrial respiration or pyruvate flux, or if impaired mitochondrial respiration does not affect lactate handling, the hypothesis would be falsified. _(variant: The presence of common variants (e.g., gnomAD allele frequency > 1%) in LDHD or HSPD1 associated with either D-lactic aciduria or hypomyelinating leukodystrophy would challenge their role as rare causal genes for these specific conditions.)_\n\n**Why it matters:** Understanding the shared molecular underpinnings, particularly the convergence on pyruvate metabolism and mitochondrial respiration, could reveal novel therapeutic targets. Strategies aimed at improving lactate clearance or supporting mitochondrial function might offer benefit in both conditions, or at least inform differential treatment approaches.\n\n---\n\n#### 7. even-plus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6717) —DECREASES→ D-lactic acid (CHEBI:17388); D-lactic acid (CHEBI:17388) —LEADS_TO→ lactic aciduria (HP:0001977); HSPA9 (HGNC:5326) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006534); Mitochondrial protein folding and quality control (GO:0006534) —LEADS_TO→ even-plus syndrome (MONDO:0014801); HSPA9 (HGNC:5326) —INCREASES→ D-lactic acid (CHEBI:17388). Loss of function in LDHD leads to accumulation of D-lactic acid, causing lactic aciduria. Simultaneously, loss of function in HSPA9 disrupts mitochondrial protein folding and quality control, which may indirectly lead to impaired D-lactic acid metabolism or other cellular dysfunctions contributing to even-plus syndrome phenotypes.\n\n**How to falsify it:** Identification of mutations in HSPA9 in patients with isolated D-lactic aciduria without other features of even-plus syndrome, or conversely, identification of LDHD mutations in patients with even-plus syndrome lacking significant D-lactic aciduria. _(variant: The presence of common variants in HSPA9 or LDHD in gnomAD with allele frequencies significantly higher than expected for rare disease-causing mutations.)_\n\n**Why it matters:** Understanding the shared role of HSPA9 in cellular homeostasis could reveal novel therapeutic targets for both D-lactic aciduria and even-plus syndrome, potentially through chaperone-based therapies or modulation of mitochondrial function.\n\n---\n\n#### 8. hereditary spastic paraplegia 13  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6646) —DISRUPTS→ D-lactic acid (CHEBI:17321); D-lactic acid (CHEBI:17321) —LEADS_TO→ D-lactic aciduria (MONDO:0009505); HSPD1 (HGNC:4908) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0006520); Mitochondrial protein folding and quality control (GO:0006520) —LEADS_TO→ Neurological dysfunction (HP:0001257); D-lactic aciduria (MONDO:0009505) —LEADS_TO→ Neurological dysfunction (HP:0001257); Neurological dysfunction (HP:0001257) —LEADS_TO→ Hereditary spastic paraplegia 13 (MONDO:0011532). Loss-of-function mutations in LDHD lead to D-lactic aciduria. Concurrently, loss-of-function mutations in HSPD1 impair mitochondrial protein folding and quality control. Both disruptions contribute to broader neurological dysfunction, manifesting as hereditary spastic paraplegia 13 and D-lactic aciduria, highlighting a convergence on mitochondrial health and neuronal function.\n\n**How to falsify it:** Absence of evidence linking mitochondrial dysfunction to the pathogenesis of D-lactic aciduria, or demonstration that LDHD and HSPD1 mutations do not converge on shared downstream cellular processes impacting neuronal health. _(variant: Identification of common, benign variants in LDHD or HSPD1 in affected populations would challenge their causal roles.)_\n\n**Why it matters:** Understanding this link could reveal shared therapeutic targets for managing mitochondrial dysfunction in neurological disorders. For instance, interventions aimed at improving mitochondrial protein homeostasis might benefit patients with D-lactic aciduria, and conversely, managing D-lactate levels could potentially alleviate some symptoms in HSPD1 patients.\n\n---\n\n#### 9. optic atrophy 9  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6577) —DISRUPTS→ D-lactate metabolism (GO:0006105); D-lactate metabolism (GO:0006105) —DECREASES→ D-lactic acid (CHEBI:15378); D-lactic acid (CHEBI:15378) —LEADS_TO→ Lactic acidosis (HP:0001674); ACO2 (HGNC:240) —DISRUPTS→ TCA cycle (REACT:R-HSA-70190); TCA cycle (REACT:R-HSA-70190) —INCREASES→ D-lactate metabolism (GO:0006105); ACO2 (HGNC:240) —LEADS_TO→ Optic atrophy (HP:0000660). Loss-of-function mutations in LDHD impair the metabolism of D-lactic acid, leading to its accumulation and resulting in lactic acidosis. Concurrently, mutations in ACO2 disrupt the TCA cycle, which normally feeds into D-lactate metabolism, indirectly increasing D-lactic acid levels and contributing to the metabolic dysregulation seen in lactic aciduria. The disruption of the TCA cycle by ACO2 dysfunction also leads to energy deficits and cellular dysfunction in neurons, manifesting as optic atrophy.\n\n**How to falsify it:** The absence of elevated D-lactic acid levels in patients with MONDO:0014571, or the absence of optic atrophy in patients with MONDO:0009505, would falsify this hypothesis. Furthermore, identifying pathogenic variants in LDHD in patients with optic atrophy 9, or pathogenic variants in ACO2 in patients with lactic aciduria due to D-lactic acid, would support a shared genetic origin and strengthen this link. _(variant: The presence of common, benign variants in both LDHD and ACO2 in the general population (gnomAD > 1%) would suggest that the proposed link is not driven by rare, pathogenic alleles.)_\n\n**Why it matters:** Understanding this mechanistic link could lead to novel therapeutic strategies for both conditions. For lactic aciduria due to D-lactic acid, interventions could focus on enhancing D-lactic acid clearance or mitigating its toxic effects. For optic atrophy 9, strategies aimed at supporting mitochondrial function and energy metabolism in optic neurons, potentially by modulating D-lactate levels or other metabolic pathways, could be explored.\n\n---\n\n#### 10. combined oxidative phosphorylation deficiency 43  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-1268020, Reactome:R-HSA-9837999)\n\n**Proposed mechanism:** LDHD (HGNC:6743) —DECREASES→ D-lactate (CHEBI:17517); D-lactate (CHEBI:17517) —LEADS_TO→ lactic aciduria due to D-lactic acid (MONDO:0009505); TIMM22 (HGNC:28614) —DISRUPTS→ mitochondrial electron transport chain (GO:0005746); mitochondrial electron transport chain (GO:0005746) —LEADS_TO→ combined oxidative phosphorylation deficiency 43 (MONDO:0030017). Loss-of-function mutations in LDHD lead to accumulation of D-lactate, causing D-lactic aciduria. Concurrently, loss-of-function mutations in TIMM22 disrupt the mitochondrial electron transport chain, leading to combined oxidative phosphorylation deficiency. The convergence is on the mitochondrial function, with LDHD's role in lactate metabolism and TIMM22's role in maintaining the electron transport chain both impacting overall mitochondrial integrity and energy production.\n\n**How to falsify it:** The absence of mutations in LDHD in patients diagnosed with D-lactic aciduria, or the absence of mutations in TIMM22 in patients with combined oxidative phosphorylation deficiency 43, would falsify this hypothesis. Furthermore, if genetic analysis reveals that the proposed causal variants for each disease do not segregate with the phenotype in affected families, the hypothesis would be weakened. _(variant: The presence of common benign variants in LDHD or TIMM22 in the general population (gnomAD frequency > 1%) that are also found in affected individuals would suggest these genes are not the primary cause.)_\n\n**Why it matters:** Understanding this overlap could lead to novel therapeutic strategies targeting mitochondrial function or metabolic pathways that could benefit patients with either condition. For instance, interventions aimed at improving D-lactate clearance or enhancing electron transport chain efficiency might be explored.\n\n---"
+}
