@@ -1,0 +1,409 @@
+{
+  "seed": {
+    "id": "MONDO:0009050",
+    "name": "Cushing disease due to pituitary adenoma"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 24,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.5156,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 mutation (HGNC:12163) —DISRUPTS→ USP8 (HGNC:12163); USP8 (HGNC:12163) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PIK3CA mutation (HGNC:9475) —DISRUPTS→ PIK3CA (HGNC:9475); PIK3CA (HGNC:9475) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in USP8 can lead to gain-of-function by disrupting its deubiquitinase activity, thereby increasing signaling through the AKT pathway, which is implicated in Cushing disease. Similarly, gain-of-function mutations in PIK3CA directly activate the AKT pathway, contributing to ovarian cancer development. Thus, dysregulation of the shared AKT pathway serves as a convergence point for these two diseases.",
+      "mechanism_narrative": "USP8 mutation (HGNC:12163) —DISRUPTS→ USP8 (HGNC:12163); USP8 (HGNC:12163) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PIK3CA mutation (HGNC:9475) —DISRUPTS→ PIK3CA (HGNC:9475); PIK3CA (HGNC:9475) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in USP8 can lead to gain-of-function by disrupting its deubiquitinase activity, thereby increasing signaling through the AKT pathway, which is implicated in Cushing disease. Similarly, gain-of-function mutations in PIK3CA directly activate the AKT pathway, contributing to ovarian cancer development. Thus, dysregulation of the shared AKT pathway serves as a convergence point for these two diseases.",
+      "falsification": {
+        "text": "Demonstration that USP8 or PIK3CA mutations in pituitary adenomas do not lead to increased AKT signaling, or that AKT pathway activation is not a common feature in a significant proportion of ovarian cancers.",
+        "gnomad_variant": "rs147196452 (a known pathogenic variant in PIK3CA) having a gnomAD allele frequency > 0.001 in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.5156,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 mutation (HGNC:12163) —DISRUPTS→ USP8 (HGNC:12163); USP8 (HGNC:12163) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PIK3CA mutation (HGNC:9475) —DISRUPTS→ PIK3CA (HGNC:9475); PIK3CA (HGNC:9475) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in USP8 can lead to gain-of-function by disrupting its deubiquitinase activity, thereby increasing signaling through the AKT pathway, which is implicated in Cushing disease. Similarly, gain-of-function mutations in PIK3CA directly activate the AKT pathway, contributing to ovarian cancer development. Thus, dysregulation of the shared AKT pathway serves as a convergence point for these two diseases.",
+        "falsification": {
+          "text": "Demonstration that USP8 or PIK3CA mutations in pituitary adenomas do not lead to increased AKT signaling, or that AKT pathway activation is not a common feature in a significant proportion of ovarian cancers.",
+          "gnomad_variant": "rs147196452 (a known pathogenic variant in PIK3CA) having a gnomAD allele frequency > 0.001 in relevant populations."
+        },
+        "translational": "Targeting the PI3K/AKT pathway is a promising therapeutic strategy for both Cushing disease and ovarian cancer. Inhibitors of this pathway could potentially be used to treat both conditions, especially in cases with shared genetic underpinnings."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008318",
+      "diseaseBName": "Proteus syndrome",
+      "fitness": 0.5072,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 gain-of-function variant (rs757438575) —DISRUPTS→ USP8 (HGNC:12459); USP8 (HGNC:12459) —DISRUPTS→ Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308); Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); AKT1 gain-of-function variant (rs2494759) —DISRUPTS→ AKT1 (HGNC:455); AKT1 (HGNC:455) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Overgrowth (HP:0001545); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Proteus syndrome (MONDO:0008318). Gain-of-function mutations in USP8 lead to increased activity in the PI3K-Akt signaling pathway, contributing to pituitary adenoma formation in Cushing disease. Separately, gain-of-function mutations in AKT1 directly hyperactivate the same PI3K-Akt signaling pathway, causing Proteus syndrome and associated overgrowth phenotypes.",
+      "mechanism_narrative": "USP8 gain-of-function variant (rs757438575) —DISRUPTS→ USP8 (HGNC:12459); USP8 (HGNC:12459) —DISRUPTS→ Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308); Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); AKT1 gain-of-function variant (rs2494759) —DISRUPTS→ AKT1 (HGNC:455); AKT1 (HGNC:455) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Overgrowth (HP:0001545); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Proteus syndrome (MONDO:0008318). Gain-of-function mutations in USP8 lead to increased activity in the PI3K-Akt signaling pathway, contributing to pituitary adenoma formation in Cushing disease. Separately, gain-of-function mutations in AKT1 directly hyperactivate the same PI3K-Akt signaling pathway, causing Proteus syndrome and associated overgrowth phenotypes.",
+      "falsification": {
+        "text": "If targeted sequencing reveals that the implicated USP8 and AKT1 variants are extremely rare (e.g., gnomAD frequency > 1%) in the respective patient populations, or if functional studies show no differential activation of the PI3K-Akt pathway by these variants, this hypothesis would be falsified.",
+        "gnomad_variant": "rs757438575, rs2494759"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008318",
+        "diseaseBName": "Proteus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.5072,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 gain-of-function variant (rs757438575) —DISRUPTS→ USP8 (HGNC:12459); USP8 (HGNC:12459) —DISRUPTS→ Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308); Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); AKT1 gain-of-function variant (rs2494759) —DISRUPTS→ AKT1 (HGNC:455); AKT1 (HGNC:455) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Overgrowth (HP:0001545); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Proteus syndrome (MONDO:0008318). Gain-of-function mutations in USP8 lead to increased activity in the PI3K-Akt signaling pathway, contributing to pituitary adenoma formation in Cushing disease. Separately, gain-of-function mutations in AKT1 directly hyperactivate the same PI3K-Akt signaling pathway, causing Proteus syndrome and associated overgrowth phenotypes.",
+        "falsification": {
+          "text": "If targeted sequencing reveals that the implicated USP8 and AKT1 variants are extremely rare (e.g., gnomAD frequency > 1%) in the respective patient populations, or if functional studies show no differential activation of the PI3K-Akt pathway by these variants, this hypothesis would be falsified.",
+          "gnomad_variant": "rs757438575, rs2494759"
+        },
+        "translational": "Understanding the shared reliance on the PI3K-Akt pathway suggests potential therapeutic strategies targeting this pathway could be beneficial for both Cushing disease and Proteus syndrome, although specificity for each disease would be a challenge."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.4724,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "EGFR (HGNC:3062) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); BRAF (HGNC:1087) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); ERBB2 (HGNC:3428) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); EGFR (HGNC:3062) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAP3K8 (HGNC:6823) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); PPP2R1B (HGNC:9995) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Pituitary adenoma (HP:0002372); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Pituitary adenoma (HP:0002372); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Lung cancer (HP:0002661); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lung cancer (HP:0002661). Mutations in genes such as EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, and PIK3CA can lead to aberrant activation of the MAPK and PI3K-Akt signaling pathways. Dysregulation of these pathways can promote uncontrolled cell proliferation and survival, contributing to the development of pituitary adenomas (Cushing disease) and lung cancer.",
+      "mechanism_narrative": "EGFR (HGNC:3062) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); BRAF (HGNC:1087) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); ERBB2 (HGNC:3428) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); EGFR (HGNC:3062) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAP3K8 (HGNC:6823) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); PPP2R1B (HGNC:9995) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Pituitary adenoma (HP:0002372); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Pituitary adenoma (HP:0002372); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Lung cancer (HP:0002661); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lung cancer (HP:0002661). Mutations in genes such as EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, and PIK3CA can lead to aberrant activation of the MAPK and PI3K-Akt signaling pathways. Dysregulation of these pathways can promote uncontrolled cell proliferation and survival, contributing to the development of pituitary adenomas (Cushing disease) and lung cancer.",
+      "falsification": {
+        "text": "Absence of activating mutations in EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, or PIK3CA in both pituitary adenomas and lung cancer samples, or demonstration that these pathways are not significantly dysregulated in either disease context, would falsify this hypothesis.",
+        "gnomad_variant": "rs1801274 (EGFR V689M) with a frequency > 5% in gnomAD, if implicated as a causal variant for either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.4724,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "EGFR (HGNC:3062) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); BRAF (HGNC:1087) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); ERBB2 (HGNC:3428) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); EGFR (HGNC:3062) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAP3K8 (HGNC:6823) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); PPP2R1B (HGNC:9995) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Pituitary adenoma (HP:0002372); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Pituitary adenoma (HP:0002372); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Lung cancer (HP:0002661); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lung cancer (HP:0002661). Mutations in genes such as EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, and PIK3CA can lead to aberrant activation of the MAPK and PI3K-Akt signaling pathways. Dysregulation of these pathways can promote uncontrolled cell proliferation and survival, contributing to the development of pituitary adenomas (Cushing disease) and lung cancer.",
+        "falsification": {
+          "text": "Absence of activating mutations in EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, or PIK3CA in both pituitary adenomas and lung cancer samples, or demonstration that these pathways are not significantly dysregulated in either disease context, would falsify this hypothesis.",
+          "gnomad_variant": "rs1801274 (EGFR V689M) with a frequency > 5% in gnomAD, if implicated as a causal variant for either disease."
+        },
+        "translational": "Targeting the MAPK and PI3K-Akt pathways with specific inhibitors has proven effective in treating various cancers, including lung cancer. Investigating the role of these pathways and their regulators in pituitary adenoma pathogenesis could reveal novel therapeutic strategies for Cushing disease, potentially leading to shared treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.4457,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SRC (HGNC:10596) —INCREASES→ Pituitary adenoma development (GO:0008000); USP8 (HGNC:12746) —INCREASES→ Pituitary adenoma development (GO:0008000); Pituitary adenoma development (GO:0008000) —LEADS_TO→ Cushing disease (MONDO:0009050); APC (HGNC:545) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP72); Wnt/beta-catenin signaling pathway (WP:WP72) —LEADS_TO→ Colorectal cancer (MONDO:0005575); Wnt/beta-catenin signaling pathway (WP:WP72) —INCREASES→ Cushing disease (MONDO:0009050). Gain-of-function mutations in SRC or USP8 contribute to pituitary adenoma formation in Cushing disease. In parallel, loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, a key pathway also implicated in the pathogenesis of colorectal cancer and potentially influencing pituitary tumorigenesis.",
+      "mechanism_narrative": "SRC (HGNC:10596) —INCREASES→ Pituitary adenoma development (GO:0008000); USP8 (HGNC:12746) —INCREASES→ Pituitary adenoma development (GO:0008000); Pituitary adenoma development (GO:0008000) —LEADS_TO→ Cushing disease (MONDO:0009050); APC (HGNC:545) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP72); Wnt/beta-catenin signaling pathway (WP:WP72) —LEADS_TO→ Colorectal cancer (MONDO:0005575); Wnt/beta-catenin signaling pathway (WP:WP72) —INCREASES→ Cushing disease (MONDO:0009050). Gain-of-function mutations in SRC or USP8 contribute to pituitary adenoma formation in Cushing disease. In parallel, loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, a key pathway also implicated in the pathogenesis of colorectal cancer and potentially influencing pituitary tumorigenesis.",
+      "falsification": {
+        "text": "If mutations in SRC or USP8 are found to be exclusively associated with pituitary adenomas and do not show any correlation with Wnt/beta-catenin pathway dysregulation in colorectal cancer, or if APC mutations are not linked to pituitary tumorigenesis, this hypothesis would be falsified.",
+        "gnomad_variant": "rs121918652 (common variant in USP8, >5% allele frequency)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6807004": 21
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6807004": 21
+        },
+        "fitness": 0.4457,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SRC (HGNC:10596) —INCREASES→ Pituitary adenoma development (GO:0008000); USP8 (HGNC:12746) —INCREASES→ Pituitary adenoma development (GO:0008000); Pituitary adenoma development (GO:0008000) —LEADS_TO→ Cushing disease (MONDO:0009050); APC (HGNC:545) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP72); Wnt/beta-catenin signaling pathway (WP:WP72) —LEADS_TO→ Colorectal cancer (MONDO:0005575); Wnt/beta-catenin signaling pathway (WP:WP72) —INCREASES→ Cushing disease (MONDO:0009050). Gain-of-function mutations in SRC or USP8 contribute to pituitary adenoma formation in Cushing disease. In parallel, loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, a key pathway also implicated in the pathogenesis of colorectal cancer and potentially influencing pituitary tumorigenesis.",
+        "falsification": {
+          "text": "If mutations in SRC or USP8 are found to be exclusively associated with pituitary adenomas and do not show any correlation with Wnt/beta-catenin pathway dysregulation in colorectal cancer, or if APC mutations are not linked to pituitary tumorigenesis, this hypothesis would be falsified.",
+          "gnomad_variant": "rs121918652 (common variant in USP8, >5% allele frequency)"
+        },
+        "translational": "Understanding the shared role of the Wnt/beta-catenin pathway in both Cushing disease and colorectal cancer could lead to novel therapeutic strategies targeting this pathway for both conditions. For instance, inhibitors of Wnt signaling or agents that stabilize beta-catenin could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009416",
+      "diseaseBName": "hypoinsulinemic hypoglycemia and body hemihypertrophy",
+      "fitness": 0.442,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 gain-of-function variant (rs754101216) —DISRUPTS→ USP8 (HGNC:12475); USP8 (HGNC:12475) —INCREASES→ ACTH secretion regulation (GO:0001974); ACTH secretion regulation (GO:0001974) —LEADS_TO→ Cushing disease (MONDO:0009050); AKT2 gain-of-function variant (rs767232355) —DISRUPTS→ AKT2 (HGNC:399); AKT2 (HGNC:399) —INCREASES→ Insulin signaling pathway (REACT:R-HSA-1908979); Insulin signaling pathway (REACT:R-HSA-1908979) —LEADS_TO→ Hypoinsulinemic hypoglycemia and body hemihypertrophy (MONDO:0009416). Gain-of-function mutations in USP8 lead to dysregulated ACTH secretion, causing Cushing disease. Gain-of-function mutations in AKT2 enhance the insulin signaling pathway, resulting in hypoinsulinemic hypoglycemia and body hemihypertrophy. The shared convergence point is the dysregulation of cellular signaling pathways, specifically the insulin signaling pathway which AKT2 is a key component of, and ACTH secretion regulation which is influenced by various signaling cascades.",
+      "mechanism_narrative": "USP8 gain-of-function variant (rs754101216) —DISRUPTS→ USP8 (HGNC:12475); USP8 (HGNC:12475) —INCREASES→ ACTH secretion regulation (GO:0001974); ACTH secretion regulation (GO:0001974) —LEADS_TO→ Cushing disease (MONDO:0009050); AKT2 gain-of-function variant (rs767232355) —DISRUPTS→ AKT2 (HGNC:399); AKT2 (HGNC:399) —INCREASES→ Insulin signaling pathway (REACT:R-HSA-1908979); Insulin signaling pathway (REACT:R-HSA-1908979) —LEADS_TO→ Hypoinsulinemic hypoglycemia and body hemihypertrophy (MONDO:0009416). Gain-of-function mutations in USP8 lead to dysregulated ACTH secretion, causing Cushing disease. Gain-of-function mutations in AKT2 enhance the insulin signaling pathway, resulting in hypoinsulinemic hypoglycemia and body hemihypertrophy. The shared convergence point is the dysregulation of cellular signaling pathways, specifically the insulin signaling pathway which AKT2 is a key component of, and ACTH secretion regulation which is influenced by various signaling cascades.",
+      "falsification": {
+        "text": "Absence of gain-of-function variants in USP8 in patients with Cushing disease, or absence of gain-of-function variants in AKT2 in patients with hypoinsulinemic hypoglycemia and body hemihypertrophy, would falsify this hypothesis. Furthermore, if the AKT2-mediated insulin signaling pathway is found to be functionally independent of ACTH secretion regulation, this hypothesis would be weakened.",
+        "gnomad_variant": "Common variants (>1% allele frequency) in USP8 or AKT2 that are associated with gain-of-function effects and present in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009416",
+        "diseaseBName": "hypoinsulinemic hypoglycemia and body hemihypertrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.442,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 gain-of-function variant (rs754101216) —DISRUPTS→ USP8 (HGNC:12475); USP8 (HGNC:12475) —INCREASES→ ACTH secretion regulation (GO:0001974); ACTH secretion regulation (GO:0001974) —LEADS_TO→ Cushing disease (MONDO:0009050); AKT2 gain-of-function variant (rs767232355) —DISRUPTS→ AKT2 (HGNC:399); AKT2 (HGNC:399) —INCREASES→ Insulin signaling pathway (REACT:R-HSA-1908979); Insulin signaling pathway (REACT:R-HSA-1908979) —LEADS_TO→ Hypoinsulinemic hypoglycemia and body hemihypertrophy (MONDO:0009416). Gain-of-function mutations in USP8 lead to dysregulated ACTH secretion, causing Cushing disease. Gain-of-function mutations in AKT2 enhance the insulin signaling pathway, resulting in hypoinsulinemic hypoglycemia and body hemihypertrophy. The shared convergence point is the dysregulation of cellular signaling pathways, specifically the insulin signaling pathway which AKT2 is a key component of, and ACTH secretion regulation which is influenced by various signaling cascades.",
+        "falsification": {
+          "text": "Absence of gain-of-function variants in USP8 in patients with Cushing disease, or absence of gain-of-function variants in AKT2 in patients with hypoinsulinemic hypoglycemia and body hemihypertrophy, would falsify this hypothesis. Furthermore, if the AKT2-mediated insulin signaling pathway is found to be functionally independent of ACTH secretion regulation, this hypothesis would be weakened.",
+          "gnomad_variant": "Common variants (>1% allele frequency) in USP8 or AKT2 that are associated with gain-of-function effects and present in the general population."
+        },
+        "translational": "Understanding the shared role of AKT2 in both conditions could inform therapeutic strategies. For instance, modulating AKT2 activity might offer a common therapeutic target for aspects of both diseases, particularly concerning metabolic and growth abnormalities."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014048",
+      "diseaseBName": "Cowden syndrome 6",
+      "fitness": 0.4241,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 activating mutations (null) —DISRUPTS→ USP8 (HGNC:12168); USP8 (HGNC:12168) —DISRUPTS→ Endosomal trafficking and receptor recycling (GO:0007059); Endosomal trafficking and receptor recycling (GO:0007059) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); AKT1 activating mutations (null) —DISRUPTS→ AKT1 (HGNC:417); AKT1 (HGNC:417) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Cowden syndrome 6 (MONDO:0014048). Activating mutations in USP8 (causing Cushing disease) and AKT1 (causing Cowden syndrome 6) both converge on the PI3K-Akt signaling pathway, leading to its hyperactivation and distinct disease phenotypes.",
+      "mechanism_narrative": "USP8 activating mutations (null) —DISRUPTS→ USP8 (HGNC:12168); USP8 (HGNC:12168) —DISRUPTS→ Endosomal trafficking and receptor recycling (GO:0007059); Endosomal trafficking and receptor recycling (GO:0007059) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); AKT1 activating mutations (null) —DISRUPTS→ AKT1 (HGNC:417); AKT1 (HGNC:417) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Cowden syndrome 6 (MONDO:0014048). Activating mutations in USP8 (causing Cushing disease) and AKT1 (causing Cowden syndrome 6) both converge on the PI3K-Akt signaling pathway, leading to its hyperactivation and distinct disease phenotypes.",
+      "falsification": {
+        "text": "If genetic studies reveal that USP8 mutations are not associated with gain-of-function effects in the context of pituitary adenomas, or if AKT1 mutations in Cowden syndrome 6 do not lead to increased PI3K-Akt signaling, this hypothesis would be falsified.",
+        "gnomad_variant": "Common variants (AF > 0.01) in USP8 or AKT1 genes associated with pituitary adenomas or Cowden syndrome 6 respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014048",
+        "diseaseBName": "Cowden syndrome 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.4241,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 activating mutations (null) —DISRUPTS→ USP8 (HGNC:12168); USP8 (HGNC:12168) —DISRUPTS→ Endosomal trafficking and receptor recycling (GO:0007059); Endosomal trafficking and receptor recycling (GO:0007059) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); AKT1 activating mutations (null) —DISRUPTS→ AKT1 (HGNC:417); AKT1 (HGNC:417) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Cowden syndrome 6 (MONDO:0014048). Activating mutations in USP8 (causing Cushing disease) and AKT1 (causing Cowden syndrome 6) both converge on the PI3K-Akt signaling pathway, leading to its hyperactivation and distinct disease phenotypes.",
+        "falsification": {
+          "text": "If genetic studies reveal that USP8 mutations are not associated with gain-of-function effects in the context of pituitary adenomas, or if AKT1 mutations in Cowden syndrome 6 do not lead to increased PI3K-Akt signaling, this hypothesis would be falsified.",
+          "gnomad_variant": "Common variants (AF > 0.01) in USP8 or AKT1 genes associated with pituitary adenomas or Cowden syndrome 6 respectively."
+        },
+        "translational": "Understanding the convergence on the PI3K-Akt pathway suggests potential for shared therapeutic strategies targeting this pathway for both Cushing disease and Cowden syndrome 6, although specific inhibitors may be needed to account for upstream differences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016419",
+      "diseaseBName": "hereditary breast carcinoma",
+      "fitness": 0.42,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA activating variant (HGNC:9534) —DISRUPTS→ PIK3CA (HGNC:9534); PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Pituitary cell growth and proliferation; Pituitary cell growth and proliferation —LEADS_TO→ Cushing disease (MONDO:0009050); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Breast cell growth and proliferation; Breast cell growth and proliferation —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating variants in PIK3CA lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This dysregulation drives excessive cell growth and proliferation in pituitary cells, manifesting as Cushing disease, and similarly promotes uncontrolled growth and proliferation in breast epithelial cells, contributing to hereditary breast carcinoma.",
+      "mechanism_narrative": "PIK3CA activating variant (HGNC:9534) —DISRUPTS→ PIK3CA (HGNC:9534); PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Pituitary cell growth and proliferation; Pituitary cell growth and proliferation —LEADS_TO→ Cushing disease (MONDO:0009050); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Breast cell growth and proliferation; Breast cell growth and proliferation —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating variants in PIK3CA lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This dysregulation drives excessive cell growth and proliferation in pituitary cells, manifesting as Cushing disease, and similarly promotes uncontrolled growth and proliferation in breast epithelial cells, contributing to hereditary breast carcinoma.",
+      "falsification": {
+        "text": "Absence of activating mutations or copy number variations in PIK3CA in patients diagnosed with either Cushing disease or hereditary breast carcinoma, particularly in cases with clear pituitary adenoma or breast carcinoma histology respectively.",
+        "gnomad_variant": "High frequency (>1%) of specific activating PIK3CA variants in gnomAD across relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13,
+        "Reactome:R-HSA-5689880": 206
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016419",
+        "diseaseBName": "hereditary breast carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13,
+          "Reactome:R-HSA-5689880": 206
+        },
+        "fitness": 0.42,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA activating variant (HGNC:9534) —DISRUPTS→ PIK3CA (HGNC:9534); PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Pituitary cell growth and proliferation; Pituitary cell growth and proliferation —LEADS_TO→ Cushing disease (MONDO:0009050); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Breast cell growth and proliferation; Breast cell growth and proliferation —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating variants in PIK3CA lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This dysregulation drives excessive cell growth and proliferation in pituitary cells, manifesting as Cushing disease, and similarly promotes uncontrolled growth and proliferation in breast epithelial cells, contributing to hereditary breast carcinoma.",
+        "falsification": {
+          "text": "Absence of activating mutations or copy number variations in PIK3CA in patients diagnosed with either Cushing disease or hereditary breast carcinoma, particularly in cases with clear pituitary adenoma or breast carcinoma histology respectively.",
+          "gnomad_variant": "High frequency (>1%) of specific activating PIK3CA variants in gnomAD across relevant populations."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway with inhibitors could offer a shared therapeutic strategy for both Cushing disease and hereditary breast carcinoma, particularly in cases driven by PIK3CA mutations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016054",
+      "diseaseBName": "obsolete cerebral malformation",
+      "fitness": 0.4183,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 (HGNC:12933) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3CA (HGNC:9534) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3R2 (HGNC:9540) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); AKT3 (HGNC:384) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); MTOR (HGNC:7518) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Pituitary adenoma (HP:0002158); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Cerebral malformation (HP:0001328). Mutations in USP8, PIK3CA, PIK3R2, AKT3, and MTOR can lead to aberrant activation of the PI3K-Akt signaling pathway. This pathway is crucial for cell proliferation, survival, and growth. Overactivation in pituitary corticotroph cells can result in Cushing disease, while overactivation during embryonic development can lead to obsolete cerebral malformations.",
+      "mechanism_narrative": "USP8 (HGNC:12933) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3CA (HGNC:9534) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3R2 (HGNC:9540) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); AKT3 (HGNC:384) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); MTOR (HGNC:7518) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Pituitary adenoma (HP:0002158); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Cerebral malformation (HP:0001328). Mutations in USP8, PIK3CA, PIK3R2, AKT3, and MTOR can lead to aberrant activation of the PI3K-Akt signaling pathway. This pathway is crucial for cell proliferation, survival, and growth. Overactivation in pituitary corticotroph cells can result in Cushing disease, while overactivation during embryonic development can lead to obsolete cerebral malformations.",
+      "falsification": {
+        "text": "Demonstration that the PI3K-Akt signaling pathway is not significantly dysregulated in either pituitary adenomas from Cushing disease patients or in brain tissue from individuals with obsolete cerebral malformations, despite the presence of mutations in USP8, MTOR, AKT3, PIK3CA, or PIK3R2."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016054",
+        "diseaseBName": "obsolete cerebral malformation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.4183,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 (HGNC:12933) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3CA (HGNC:9534) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3R2 (HGNC:9540) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); AKT3 (HGNC:384) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); MTOR (HGNC:7518) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Pituitary adenoma (HP:0002158); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Cerebral malformation (HP:0001328). Mutations in USP8, PIK3CA, PIK3R2, AKT3, and MTOR can lead to aberrant activation of the PI3K-Akt signaling pathway. This pathway is crucial for cell proliferation, survival, and growth. Overactivation in pituitary corticotroph cells can result in Cushing disease, while overactivation during embryonic development can lead to obsolete cerebral malformations.",
+        "falsification": {
+          "text": "Demonstration that the PI3K-Akt signaling pathway is not significantly dysregulated in either pituitary adenomas from Cushing disease patients or in brain tissue from individuals with obsolete cerebral malformations, despite the presence of mutations in USP8, MTOR, AKT3, PIK3CA, or PIK3R2."
+        },
+        "translational": "Targeting the PI3K-Akt pathway is a promising therapeutic strategy for both pituitary adenomas and certain neurological disorders. Understanding the shared upstream regulators and downstream effectors could lead to novel combination therapies or refined treatment approaches for these distinct conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014407",
+      "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2",
+      "fitness": 0.3998,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 gain-of-function variants (MONDO:0009050) —DISRUPTS→ USP8 (HGNC:12056); USP8 (HGNC:12056) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Pituitary adenoma (HP:0002451); AKT3 gain-of-function variants (MONDO:0014407) —DISRUPTS→ AKT3 (HGNC:375); AKT3 (HGNC:375) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Megalencephaly (HP:0000252); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polymicrogyria (HP:0001317); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polydactyly (HP:0001151); AKT signaling pathway (WP:WP454) —LEADS_TO→ Hydrocephalus (HP:0000238). Gain-of-function mutations in USP8 lead to overactivation of the AKT signaling pathway, resulting in pituitary adenoma and Cushing disease. Independently, gain-of-function mutations in AKT3 also lead to overactivation of the AKT signaling pathway, causing megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2.",
+      "mechanism_narrative": "USP8 gain-of-function variants (MONDO:0009050) —DISRUPTS→ USP8 (HGNC:12056); USP8 (HGNC:12056) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Pituitary adenoma (HP:0002451); AKT3 gain-of-function variants (MONDO:0014407) —DISRUPTS→ AKT3 (HGNC:375); AKT3 (HGNC:375) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Megalencephaly (HP:0000252); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polymicrogyria (HP:0001317); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polydactyly (HP:0001151); AKT signaling pathway (WP:WP454) —LEADS_TO→ Hydrocephalus (HP:0000238). Gain-of-function mutations in USP8 lead to overactivation of the AKT signaling pathway, resulting in pituitary adenoma and Cushing disease. Independently, gain-of-function mutations in AKT3 also lead to overactivation of the AKT signaling pathway, causing megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2.",
+      "falsification": {
+        "text": "Demonstration that USP8 and AKT3 mutations do not converge on or similarly affect the AKT signaling pathway, or that the observed phenotypes are not downstream consequences of AKT pathway dysregulation in either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014407",
+        "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.3998,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 gain-of-function variants (MONDO:0009050) —DISRUPTS→ USP8 (HGNC:12056); USP8 (HGNC:12056) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Pituitary adenoma (HP:0002451); AKT3 gain-of-function variants (MONDO:0014407) —DISRUPTS→ AKT3 (HGNC:375); AKT3 (HGNC:375) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Megalencephaly (HP:0000252); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polymicrogyria (HP:0001317); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polydactyly (HP:0001151); AKT signaling pathway (WP:WP454) —LEADS_TO→ Hydrocephalus (HP:0000238). Gain-of-function mutations in USP8 lead to overactivation of the AKT signaling pathway, resulting in pituitary adenoma and Cushing disease. Independently, gain-of-function mutations in AKT3 also lead to overactivation of the AKT signaling pathway, causing megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2.",
+        "falsification": {
+          "text": "Demonstration that USP8 and AKT3 mutations do not converge on or similarly affect the AKT signaling pathway, or that the observed phenotypes are not downstream consequences of AKT pathway dysregulation in either disease."
+        },
+        "translational": "Identifying the shared dysregulation of the AKT pathway provides a potential therapeutic target for both conditions. Modulating AKT signaling could offer a unified treatment strategy, although the specific downstream effectors and phenotypic manifestations would require tailored approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005148",
+      "diseaseBName": "type 2 diabetes mellitus",
+      "fitness": 0.3658,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "USP8 (HGNC:12165) —DISRUPTS→ ACTH signaling and cortisol production; USP8 mutation leading to increased activity —DISRUPTS→ USP8 (HGNC:12165); ACTH signaling and cortisol production —LEADS_TO→ Cushing disease (MONDO:0009050); PPARG loss-of-function mutation —DISRUPTS→ PPARG (HGNC:9277); PPARG (HGNC:9277) —DISRUPTS→ Adipogenesis and glucose homeostasis; Adipogenesis and glucose homeostasis —DISRUPTS→ Insulin signaling and glucose uptake; Insulin signaling and glucose uptake —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Adipogenesis and glucose homeostasis —LEADS_TO→ Cushing disease (MONDO:0009050); Adipogenesis and glucose homeostasis —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Gain-of-function mutations in USP8 lead to dysregulated cortisol production (Cushing disease). Concurrently, loss-of-function mutations in PPARG disrupt adipogenesis and glucose homeostasis, contributing to type 2 diabetes. Both pathways converge on the regulation of glucose metabolism and adipocyte function.",
+      "mechanism_narrative": "USP8 (HGNC:12165) —DISRUPTS→ ACTH signaling and cortisol production; USP8 mutation leading to increased activity —DISRUPTS→ USP8 (HGNC:12165); ACTH signaling and cortisol production —LEADS_TO→ Cushing disease (MONDO:0009050); PPARG loss-of-function mutation —DISRUPTS→ PPARG (HGNC:9277); PPARG (HGNC:9277) —DISRUPTS→ Adipogenesis and glucose homeostasis; Adipogenesis and glucose homeostasis —DISRUPTS→ Insulin signaling and glucose uptake; Insulin signaling and glucose uptake —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Adipogenesis and glucose homeostasis —LEADS_TO→ Cushing disease (MONDO:0009050); Adipogenesis and glucose homeostasis —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Gain-of-function mutations in USP8 lead to dysregulated cortisol production (Cushing disease). Concurrently, loss-of-function mutations in PPARG disrupt adipogenesis and glucose homeostasis, contributing to type 2 diabetes. Both pathways converge on the regulation of glucose metabolism and adipocyte function.",
+      "falsification": {
+        "text": "Absence of any genetic variants in USP8 or PPARG associated with their respective disease phenotypes in large exome sequencing datasets (e.g., gnomAD) would challenge the proposed causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1358803"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1358803": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005148",
+        "diseaseBName": "type 2 diabetes mellitus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1358803"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1358803": 13
+        },
+        "fitness": 0.3658,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "USP8 (HGNC:12165) —DISRUPTS→ ACTH signaling and cortisol production; USP8 mutation leading to increased activity —DISRUPTS→ USP8 (HGNC:12165); ACTH signaling and cortisol production —LEADS_TO→ Cushing disease (MONDO:0009050); PPARG loss-of-function mutation —DISRUPTS→ PPARG (HGNC:9277); PPARG (HGNC:9277) —DISRUPTS→ Adipogenesis and glucose homeostasis; Adipogenesis and glucose homeostasis —DISRUPTS→ Insulin signaling and glucose uptake; Insulin signaling and glucose uptake —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Adipogenesis and glucose homeostasis —LEADS_TO→ Cushing disease (MONDO:0009050); Adipogenesis and glucose homeostasis —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Gain-of-function mutations in USP8 lead to dysregulated cortisol production (Cushing disease). Concurrently, loss-of-function mutations in PPARG disrupt adipogenesis and glucose homeostasis, contributing to type 2 diabetes. Both pathways converge on the regulation of glucose metabolism and adipocyte function.",
+        "falsification": {
+          "text": "Absence of any genetic variants in USP8 or PPARG associated with their respective disease phenotypes in large exome sequencing datasets (e.g., gnomAD) would challenge the proposed causal link."
+        },
+        "translational": "Understanding the shared pathways in glucose metabolism and adipogenesis affected by these distinct genetic origins could reveal novel therapeutic targets for managing both Cushing disease and type 2 diabetes, particularly for patients with overlapping metabolic complications."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T09:33:52.759Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Cushing disease due to pituitary adenoma (MONDO:0009050)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 24 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.516 | Reactome:R-HSA-1358803 |\n| 2 | Proteus syndrome (MONDO:0008318) | shared pathway | Tier 3 | 0.507 | Reactome:R-HSA-1358803 |\n| 3 | lung cancer (MONDO:0008903) | shared pathway | Tier 3 | 0.472 | Reactome:R-HSA-1358803 |\n| 4 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 3 | 0.446 | Reactome:R-HSA-1358803 |\n| 5 | hypoinsulinemic hypoglycemia and body hemihypertrophy (MONDO:0009416) | shared pathway | Tier 3 | 0.442 | Reactome:R-HSA-1358803 |\n| 6 | Cowden syndrome 6 (MONDO:0014048) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-1358803 |\n| 7 | hereditary breast carcinoma (MONDO:0016419) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-1358803 |\n| 8 | obsolete cerebral malformation (MONDO:0016054) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-1358803 |\n| 9 | megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2 (MONDO:0014407) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-1358803 |\n| 10 | type 2 diabetes mellitus (MONDO:0005148) | shared pathway | Tier 3 | 0.366 | Reactome:R-HSA-1358803 |\n\n### CANDIDATE DETAIL\n#### 1. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.516)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 mutation (HGNC:12163) —DISRUPTS→ USP8 (HGNC:12163); USP8 (HGNC:12163) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PIK3CA mutation (HGNC:9475) —DISRUPTS→ PIK3CA (HGNC:9475); PIK3CA (HGNC:9475) —INCREASES→ AKT pathway (R-HSA-4253195); AKT pathway (R-HSA-4253195) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in USP8 can lead to gain-of-function by disrupting its deubiquitinase activity, thereby increasing signaling through the AKT pathway, which is implicated in Cushing disease. Similarly, gain-of-function mutations in PIK3CA directly activate the AKT pathway, contributing to ovarian cancer development. Thus, dysregulation of the shared AKT pathway serves as a convergence point for these two diseases.\n\n**How to falsify it:** Demonstration that USP8 or PIK3CA mutations in pituitary adenomas do not lead to increased AKT signaling, or that AKT pathway activation is not a common feature in a significant proportion of ovarian cancers. _(variant: rs147196452 (a known pathogenic variant in PIK3CA) having a gnomAD allele frequency > 0.001 in relevant populations.)_\n\n**Why it matters:** Targeting the PI3K/AKT pathway is a promising therapeutic strategy for both Cushing disease and ovarian cancer. Inhibitors of this pathway could potentially be used to treat both conditions, especially in cases with shared genetic underpinnings.\n\n---\n\n#### 2. Proteus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.507)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 gain-of-function variant (rs757438575) —DISRUPTS→ USP8 (HGNC:12459); USP8 (HGNC:12459) —DISRUPTS→ Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308); Deubiquitination of pituitary adenylate cyclase-activating polypeptide receptor (PAC1) (GO:0000308) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); AKT1 gain-of-function variant (rs2494759) —DISRUPTS→ AKT1 (HGNC:455); AKT1 (HGNC:455) —INCREASES→ PI3K-Akt signaling pathway (R-HSA-168750); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Overgrowth (HP:0001545); PI3K-Akt signaling pathway (R-HSA-168750) —LEADS_TO→ Proteus syndrome (MONDO:0008318). Gain-of-function mutations in USP8 lead to increased activity in the PI3K-Akt signaling pathway, contributing to pituitary adenoma formation in Cushing disease. Separately, gain-of-function mutations in AKT1 directly hyperactivate the same PI3K-Akt signaling pathway, causing Proteus syndrome and associated overgrowth phenotypes.\n\n**How to falsify it:** If targeted sequencing reveals that the implicated USP8 and AKT1 variants are extremely rare (e.g., gnomAD frequency > 1%) in the respective patient populations, or if functional studies show no differential activation of the PI3K-Akt pathway by these variants, this hypothesis would be falsified. _(variant: rs757438575, rs2494759)_\n\n**Why it matters:** Understanding the shared reliance on the PI3K-Akt pathway suggests potential therapeutic strategies targeting this pathway could be beneficial for both Cushing disease and Proteus syndrome, although specificity for each disease would be a challenge.\n\n---\n\n#### 3. lung cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.472)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** EGFR (HGNC:3062) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); BRAF (HGNC:1087) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); ERBB2 (HGNC:3428) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); EGFR (HGNC:3062) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAP3K8 (HGNC:6823) —INCREASES→ MAPK signaling pathway (KEGG:hsa04010); PPP2R1B (HGNC:9995) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Pituitary adenoma (HP:0002372); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Pituitary adenoma (HP:0002372); MAPK signaling pathway (KEGG:hsa04010) —LEADS_TO→ Lung cancer (HP:0002661); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lung cancer (HP:0002661). Mutations in genes such as EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, and PIK3CA can lead to aberrant activation of the MAPK and PI3K-Akt signaling pathways. Dysregulation of these pathways can promote uncontrolled cell proliferation and survival, contributing to the development of pituitary adenomas (Cushing disease) and lung cancer.\n\n**How to falsify it:** Absence of activating mutations in EGFR, KRAS, BRAF, ERBB2, MAP3K8, PPP2R1B, or PIK3CA in both pituitary adenomas and lung cancer samples, or demonstration that these pathways are not significantly dysregulated in either disease context, would falsify this hypothesis. _(variant: rs1801274 (EGFR V689M) with a frequency > 5% in gnomAD, if implicated as a causal variant for either disease.)_\n\n**Why it matters:** Targeting the MAPK and PI3K-Akt pathways with specific inhibitors has proven effective in treating various cancers, including lung cancer. Investigating the role of these pathways and their regulators in pituitary adenoma pathogenesis could reveal novel therapeutic strategies for Cushing disease, potentially leading to shared treatment approaches.\n\n---\n\n#### 4. colorectal cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.446)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** SRC (HGNC:10596) —INCREASES→ Pituitary adenoma development (GO:0008000); USP8 (HGNC:12746) —INCREASES→ Pituitary adenoma development (GO:0008000); Pituitary adenoma development (GO:0008000) —LEADS_TO→ Cushing disease (MONDO:0009050); APC (HGNC:545) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP72); Wnt/beta-catenin signaling pathway (WP:WP72) —LEADS_TO→ Colorectal cancer (MONDO:0005575); Wnt/beta-catenin signaling pathway (WP:WP72) —INCREASES→ Cushing disease (MONDO:0009050). Gain-of-function mutations in SRC or USP8 contribute to pituitary adenoma formation in Cushing disease. In parallel, loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, a key pathway also implicated in the pathogenesis of colorectal cancer and potentially influencing pituitary tumorigenesis.\n\n**How to falsify it:** If mutations in SRC or USP8 are found to be exclusively associated with pituitary adenomas and do not show any correlation with Wnt/beta-catenin pathway dysregulation in colorectal cancer, or if APC mutations are not linked to pituitary tumorigenesis, this hypothesis would be falsified. _(variant: rs121918652 (common variant in USP8, >5% allele frequency))_\n\n**Why it matters:** Understanding the shared role of the Wnt/beta-catenin pathway in both Cushing disease and colorectal cancer could lead to novel therapeutic strategies targeting this pathway for both conditions. For instance, inhibitors of Wnt signaling or agents that stabilize beta-catenin could be explored.\n\n---\n\n#### 5. hypoinsulinemic hypoglycemia and body hemihypertrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.442)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 gain-of-function variant (rs754101216) —DISRUPTS→ USP8 (HGNC:12475); USP8 (HGNC:12475) —INCREASES→ ACTH secretion regulation (GO:0001974); ACTH secretion regulation (GO:0001974) —LEADS_TO→ Cushing disease (MONDO:0009050); AKT2 gain-of-function variant (rs767232355) —DISRUPTS→ AKT2 (HGNC:399); AKT2 (HGNC:399) —INCREASES→ Insulin signaling pathway (REACT:R-HSA-1908979); Insulin signaling pathway (REACT:R-HSA-1908979) —LEADS_TO→ Hypoinsulinemic hypoglycemia and body hemihypertrophy (MONDO:0009416). Gain-of-function mutations in USP8 lead to dysregulated ACTH secretion, causing Cushing disease. Gain-of-function mutations in AKT2 enhance the insulin signaling pathway, resulting in hypoinsulinemic hypoglycemia and body hemihypertrophy. The shared convergence point is the dysregulation of cellular signaling pathways, specifically the insulin signaling pathway which AKT2 is a key component of, and ACTH secretion regulation which is influenced by various signaling cascades.\n\n**How to falsify it:** Absence of gain-of-function variants in USP8 in patients with Cushing disease, or absence of gain-of-function variants in AKT2 in patients with hypoinsulinemic hypoglycemia and body hemihypertrophy, would falsify this hypothesis. Furthermore, if the AKT2-mediated insulin signaling pathway is found to be functionally independent of ACTH secretion regulation, this hypothesis would be weakened. _(variant: Common variants (>1% allele frequency) in USP8 or AKT2 that are associated with gain-of-function effects and present in the general population.)_\n\n**Why it matters:** Understanding the shared role of AKT2 in both conditions could inform therapeutic strategies. For instance, modulating AKT2 activity might offer a common therapeutic target for aspects of both diseases, particularly concerning metabolic and growth abnormalities.\n\n---\n\n#### 6. Cowden syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 activating mutations (null) —DISRUPTS→ USP8 (HGNC:12168); USP8 (HGNC:12168) —DISRUPTS→ Endosomal trafficking and receptor recycling (GO:0007059); Endosomal trafficking and receptor recycling (GO:0007059) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Pituitary adenoma (MONDO:0009050); AKT1 activating mutations (null) —DISRUPTS→ AKT1 (HGNC:417); AKT1 (HGNC:417) —INCREASES→ PI3K-Akt signaling pathway (WP:WP402); PI3K-Akt signaling pathway (WP:WP402) —LEADS_TO→ Cowden syndrome 6 (MONDO:0014048). Activating mutations in USP8 (causing Cushing disease) and AKT1 (causing Cowden syndrome 6) both converge on the PI3K-Akt signaling pathway, leading to its hyperactivation and distinct disease phenotypes.\n\n**How to falsify it:** If genetic studies reveal that USP8 mutations are not associated with gain-of-function effects in the context of pituitary adenomas, or if AKT1 mutations in Cowden syndrome 6 do not lead to increased PI3K-Akt signaling, this hypothesis would be falsified. _(variant: Common variants (AF > 0.01) in USP8 or AKT1 genes associated with pituitary adenomas or Cowden syndrome 6 respectively.)_\n\n**Why it matters:** Understanding the convergence on the PI3K-Akt pathway suggests potential for shared therapeutic strategies targeting this pathway for both Cushing disease and Cowden syndrome 6, although specific inhibitors may be needed to account for upstream differences.\n\n---\n\n#### 7. hereditary breast carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** PIK3CA activating variant (HGNC:9534) —DISRUPTS→ PIK3CA (HGNC:9534); PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Pituitary cell growth and proliferation; Pituitary cell growth and proliferation —LEADS_TO→ Cushing disease (MONDO:0009050); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-425501) —INCREASES→ Breast cell growth and proliferation; Breast cell growth and proliferation —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating variants in PIK3CA lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This dysregulation drives excessive cell growth and proliferation in pituitary cells, manifesting as Cushing disease, and similarly promotes uncontrolled growth and proliferation in breast epithelial cells, contributing to hereditary breast carcinoma.\n\n**How to falsify it:** Absence of activating mutations or copy number variations in PIK3CA in patients diagnosed with either Cushing disease or hereditary breast carcinoma, particularly in cases with clear pituitary adenoma or breast carcinoma histology respectively. _(variant: High frequency (>1%) of specific activating PIK3CA variants in gnomAD across relevant populations.)_\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway with inhibitors could offer a shared therapeutic strategy for both Cushing disease and hereditary breast carcinoma, particularly in cases driven by PIK3CA mutations.\n\n---\n\n#### 8. obsolete cerebral malformation  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 (HGNC:12933) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3CA (HGNC:9534) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PIK3R2 (HGNC:9540) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); AKT3 (HGNC:384) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); MTOR (HGNC:7518) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425554); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Pituitary adenoma (HP:0002158); PI3K-Akt signaling pathway (REACT:R-HSA-425554) —LEADS_TO→ Cerebral malformation (HP:0001328). Mutations in USP8, PIK3CA, PIK3R2, AKT3, and MTOR can lead to aberrant activation of the PI3K-Akt signaling pathway. This pathway is crucial for cell proliferation, survival, and growth. Overactivation in pituitary corticotroph cells can result in Cushing disease, while overactivation during embryonic development can lead to obsolete cerebral malformations.\n\n**How to falsify it:** Demonstration that the PI3K-Akt signaling pathway is not significantly dysregulated in either pituitary adenomas from Cushing disease patients or in brain tissue from individuals with obsolete cerebral malformations, despite the presence of mutations in USP8, MTOR, AKT3, PIK3CA, or PIK3R2.\n\n**Why it matters:** Targeting the PI3K-Akt pathway is a promising therapeutic strategy for both pituitary adenomas and certain neurological disorders. Understanding the shared upstream regulators and downstream effectors could lead to novel combination therapies or refined treatment approaches for these distinct conditions.\n\n---\n\n#### 9. megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 gain-of-function variants (MONDO:0009050) —DISRUPTS→ USP8 (HGNC:12056); USP8 (HGNC:12056) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Pituitary adenoma (HP:0002451); AKT3 gain-of-function variants (MONDO:0014407) —DISRUPTS→ AKT3 (HGNC:375); AKT3 (HGNC:375) —INCREASES→ AKT signaling pathway (WP:WP454); AKT signaling pathway (WP:WP454) —LEADS_TO→ Megalencephaly (HP:0000252); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polymicrogyria (HP:0001317); AKT signaling pathway (WP:WP454) —LEADS_TO→ Polydactyly (HP:0001151); AKT signaling pathway (WP:WP454) —LEADS_TO→ Hydrocephalus (HP:0000238). Gain-of-function mutations in USP8 lead to overactivation of the AKT signaling pathway, resulting in pituitary adenoma and Cushing disease. Independently, gain-of-function mutations in AKT3 also lead to overactivation of the AKT signaling pathway, causing megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2.\n\n**How to falsify it:** Demonstration that USP8 and AKT3 mutations do not converge on or similarly affect the AKT signaling pathway, or that the observed phenotypes are not downstream consequences of AKT pathway dysregulation in either disease.\n\n**Why it matters:** Identifying the shared dysregulation of the AKT pathway provides a potential therapeutic target for both conditions. Modulating AKT signaling could offer a unified treatment strategy, although the specific downstream effectors and phenotypic manifestations would require tailored approaches.\n\n---\n\n#### 10. type 2 diabetes mellitus  —  Tier 3 — Moderate / Emerging  (fitness 0.366)\n**Link type:** shared pathway (Reactome:R-HSA-1358803)\n\n**Proposed mechanism:** USP8 (HGNC:12165) —DISRUPTS→ ACTH signaling and cortisol production; USP8 mutation leading to increased activity —DISRUPTS→ USP8 (HGNC:12165); ACTH signaling and cortisol production —LEADS_TO→ Cushing disease (MONDO:0009050); PPARG loss-of-function mutation —DISRUPTS→ PPARG (HGNC:9277); PPARG (HGNC:9277) —DISRUPTS→ Adipogenesis and glucose homeostasis; Adipogenesis and glucose homeostasis —DISRUPTS→ Insulin signaling and glucose uptake; Insulin signaling and glucose uptake —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Adipogenesis and glucose homeostasis —LEADS_TO→ Cushing disease (MONDO:0009050); Adipogenesis and glucose homeostasis —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). Gain-of-function mutations in USP8 lead to dysregulated cortisol production (Cushing disease). Concurrently, loss-of-function mutations in PPARG disrupt adipogenesis and glucose homeostasis, contributing to type 2 diabetes. Both pathways converge on the regulation of glucose metabolism and adipocyte function.\n\n**How to falsify it:** Absence of any genetic variants in USP8 or PPARG associated with their respective disease phenotypes in large exome sequencing datasets (e.g., gnomAD) would challenge the proposed causal link.\n\n**Why it matters:** Understanding the shared pathways in glucose metabolism and adipogenesis affected by these distinct genetic origins could reveal novel therapeutic targets for managing both Cushing disease and type 2 diabetes, particularly for patients with overlapping metabolic complications.\n\n---"
+}

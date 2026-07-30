@@ -1,0 +1,443 @@
+{
+  "seed": {
+    "id": "MONDO:0009009",
+    "name": "hypoplasminogenemia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 17,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0025712",
+      "diseaseBName": "angioedema, hereditary, 4",
+      "fitness": 0.7242,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "PLG Loss-of-Function Variant (MONDO:0009009) —DISRUPTS→ Plasminogen (HGNC:9071); PLG Loss-of-Function Variant (MONDO:0025712) —DISRUPTS→ Plasminogen (HGNC:9071); Plasminogen (HGNC:9071) —DECREASES→ Functional Plasminogen (CHEBI:57636); Functional Plasminogen (CHEBI:57636) —DECREASES→ Fibrinolysis (REACT:72700); Fibrinolysis (REACT:72700) —LEADS_TO→ Hypoplasminogenemia (HP:0030120); Functional Plasminogen (CHEBI:57636) —DECREASES→ Complement System Activation (REACT:71700); Complement System Activation (REACT:71700) —LEADS_TO→ Angioedema (HP:0000257). Loss-of-function mutations in the PLG gene lead to reduced levels of functional plasminogen. This deficiency impairs fibrinolysis, causing hypoplasminogenemia. Additionally, reduced plasminogen can lead to dysregulation of the complement system, potentially through reduced C1 inhibitor activity or increased kallikrein activity, resulting in angioedema.",
+      "mechanism_narrative": "PLG Loss-of-Function Variant (MONDO:0009009) —DISRUPTS→ Plasminogen (HGNC:9071); PLG Loss-of-Function Variant (MONDO:0025712) —DISRUPTS→ Plasminogen (HGNC:9071); Plasminogen (HGNC:9071) —DECREASES→ Functional Plasminogen (CHEBI:57636); Functional Plasminogen (CHEBI:57636) —DECREASES→ Fibrinolysis (REACT:72700); Fibrinolysis (REACT:72700) —LEADS_TO→ Hypoplasminogenemia (HP:0030120); Functional Plasminogen (CHEBI:57636) —DECREASES→ Complement System Activation (REACT:71700); Complement System Activation (REACT:71700) —LEADS_TO→ Angioedema (HP:0000257). Loss-of-function mutations in the PLG gene lead to reduced levels of functional plasminogen. This deficiency impairs fibrinolysis, causing hypoplasminogenemia. Additionally, reduced plasminogen can lead to dysregulation of the complement system, potentially through reduced C1 inhibitor activity or increased kallikrein activity, resulting in angioedema.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PLG that cause a gain-of-function or dominant-negative effect in one disease while requiring a loss-of-function in the other, or the absence of any observed PLG variants in affected individuals.",
+        "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of the specific pathogenic variants associated with these conditions in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-1474228",
+        "Reactome:R-HSA-381426",
+        "Reactome:R-HSA-1592389",
+        "Reactome:R-HSA-186797"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0025712",
+        "diseaseBName": "angioedema, hereditary, 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-1474228",
+          "Reactome:R-HSA-381426",
+          "Reactome:R-HSA-1592389",
+          "Reactome:R-HSA-186797"
+        ],
+        "fitness": 0.7242,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG Loss-of-Function Variant (MONDO:0009009) —DISRUPTS→ Plasminogen (HGNC:9071); PLG Loss-of-Function Variant (MONDO:0025712) —DISRUPTS→ Plasminogen (HGNC:9071); Plasminogen (HGNC:9071) —DECREASES→ Functional Plasminogen (CHEBI:57636); Functional Plasminogen (CHEBI:57636) —DECREASES→ Fibrinolysis (REACT:72700); Fibrinolysis (REACT:72700) —LEADS_TO→ Hypoplasminogenemia (HP:0030120); Functional Plasminogen (CHEBI:57636) —DECREASES→ Complement System Activation (REACT:71700); Complement System Activation (REACT:71700) —LEADS_TO→ Angioedema (HP:0000257). Loss-of-function mutations in the PLG gene lead to reduced levels of functional plasminogen. This deficiency impairs fibrinolysis, causing hypoplasminogenemia. Additionally, reduced plasminogen can lead to dysregulation of the complement system, potentially through reduced C1 inhibitor activity or increased kallikrein activity, resulting in angioedema.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PLG that cause a gain-of-function or dominant-negative effect in one disease while requiring a loss-of-function in the other, or the absence of any observed PLG variants in affected individuals.",
+          "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of the specific pathogenic variants associated with these conditions in the general population."
+        },
+        "translational": "Understanding this shared genetic basis highlights the potential for therapeutic strategies targeting plasminogen levels or its downstream effects to treat both conditions. For instance, therapies aimed at restoring functional plasminogen or modulating the complement cascade could be beneficial."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012110",
+      "diseaseBName": "growth delay due to insulin-like growth factor type 1 deficiency",
+      "fitness": 0.3993,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9190) —PRODUCES→ Plasmin (UniProtKB:P00761); Plasmin (UniProtKB:P00761) —DISRUPTS→ proteolysis (GO:0006466); proteolysis (GO:0006466) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF1 (HGNC:5423) —PRODUCES→ IGF-1 (UniProtKB:P01308); IGF-1 (UniProtKB:P01308) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Growth delay (HP:0001510); Growth delay (HP:0001510) —LEADS_TO→ Insulin-like growth factor type 1 deficiency (MONDO:0012110). Loss of function in PLG leads to reduced plasmin activity, which in turn impairs proteolysis and extracellular matrix organization, ultimately causing hypoplasminogenemia. Similarly, loss of function in IGF1 leads to reduced IGF-1, which also negatively impacts extracellular matrix organization and growth, resulting in growth delay and IGF1 deficiency.",
+      "mechanism_narrative": "PLG (HGNC:9190) —PRODUCES→ Plasmin (UniProtKB:P00761); Plasmin (UniProtKB:P00761) —DISRUPTS→ proteolysis (GO:0006466); proteolysis (GO:0006466) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF1 (HGNC:5423) —PRODUCES→ IGF-1 (UniProtKB:P01308); IGF-1 (UniProtKB:P01308) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Growth delay (HP:0001510); Growth delay (HP:0001510) —LEADS_TO→ Insulin-like growth factor type 1 deficiency (MONDO:0012110). Loss of function in PLG leads to reduced plasmin activity, which in turn impairs proteolysis and extracellular matrix organization, ultimately causing hypoplasminogenemia. Similarly, loss of function in IGF1 leads to reduced IGF-1, which also negatively impacts extracellular matrix organization and growth, resulting in growth delay and IGF1 deficiency.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in PLG but without hypoplasminogenemia, or individuals with pathogenic variants in IGF1 but without growth delay, would falsify this hypothesis. Furthermore, finding no overlap in the functional consequences of PLG and IGF1 deficiency on extracellular matrix organization would also falsify the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012110",
+        "diseaseBName": "growth delay due to insulin-like growth factor type 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3993,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9190) —PRODUCES→ Plasmin (UniProtKB:P00761); Plasmin (UniProtKB:P00761) —DISRUPTS→ proteolysis (GO:0006466); proteolysis (GO:0006466) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF1 (HGNC:5423) —PRODUCES→ IGF-1 (UniProtKB:P01308); IGF-1 (UniProtKB:P01308) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Growth delay (HP:0001510); Growth delay (HP:0001510) —LEADS_TO→ Insulin-like growth factor type 1 deficiency (MONDO:0012110). Loss of function in PLG leads to reduced plasmin activity, which in turn impairs proteolysis and extracellular matrix organization, ultimately causing hypoplasminogenemia. Similarly, loss of function in IGF1 leads to reduced IGF-1, which also negatively impacts extracellular matrix organization and growth, resulting in growth delay and IGF1 deficiency.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in PLG but without hypoplasminogenemia, or individuals with pathogenic variants in IGF1 but without growth delay, would falsify this hypothesis. Furthermore, finding no overlap in the functional consequences of PLG and IGF1 deficiency on extracellular matrix organization would also falsify the proposed link."
+        },
+        "translational": "Understanding the shared role of extracellular matrix organization in both hypoplasminogenemia and IGF1 deficiency-related growth delay could reveal novel therapeutic targets. For instance, interventions aimed at modulating extracellular matrix turnover or related proteolysis could potentially benefit patients with either condition, or those with overlapping symptoms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013282",
+      "diseaseBName": "alpha 1-antitrypsin deficiency",
+      "fitness": 0.3992,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9412) —DISRUPTS→ fibrinolysis (GO:0006574); fibrinolysis (GO:0006574) —LEADS_TO→ hypoplasminogenemia (MONDO:0009009); SERPINA1 (HGNC:10573) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ alpha 1-antitrypsin deficiency (MONDO:0013282); fibrinolysis (GO:0006574) —BINDS→ extracellular matrix organization (GO:0030198). Loss-of-function mutations in PLG impair fibrinolysis, leading to hypoplasminogenemia. Concurrently, loss-of-function mutations in SERPINA1 impair the inhibition of proteases like neutrophil elastase, which degrade extracellular matrix components. Both fibrinolysis and extracellular matrix organization are interconnected processes, and their dysregulation contributes to the distinct phenotypes of these diseases.",
+      "mechanism_narrative": "PLG (HGNC:9412) —DISRUPTS→ fibrinolysis (GO:0006574); fibrinolysis (GO:0006574) —LEADS_TO→ hypoplasminogenemia (MONDO:0009009); SERPINA1 (HGNC:10573) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ alpha 1-antitrypsin deficiency (MONDO:0013282); fibrinolysis (GO:0006574) —BINDS→ extracellular matrix organization (GO:0030198). Loss-of-function mutations in PLG impair fibrinolysis, leading to hypoplasminogenemia. Concurrently, loss-of-function mutations in SERPINA1 impair the inhibition of proteases like neutrophil elastase, which degrade extracellular matrix components. Both fibrinolysis and extracellular matrix organization are interconnected processes, and their dysregulation contributes to the distinct phenotypes of these diseases.",
+      "falsification": {
+        "text": "The absence of any interaction or functional relationship between the fibrinolysis pathway and extracellular matrix organization pathways, or the identification of completely independent genetic or molecular mechanisms for each disease that do not involve PLG or SERPINA1, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common, benign variants in both PLG and SERPINA1 in the general population (gnomAD frequency > 1%) that are not associated with either hypoplasminogenemia or A1AT deficiency respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013282",
+        "diseaseBName": "alpha 1-antitrypsin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3992,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9412) —DISRUPTS→ fibrinolysis (GO:0006574); fibrinolysis (GO:0006574) —LEADS_TO→ hypoplasminogenemia (MONDO:0009009); SERPINA1 (HGNC:10573) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ alpha 1-antitrypsin deficiency (MONDO:0013282); fibrinolysis (GO:0006574) —BINDS→ extracellular matrix organization (GO:0030198). Loss-of-function mutations in PLG impair fibrinolysis, leading to hypoplasminogenemia. Concurrently, loss-of-function mutations in SERPINA1 impair the inhibition of proteases like neutrophil elastase, which degrade extracellular matrix components. Both fibrinolysis and extracellular matrix organization are interconnected processes, and their dysregulation contributes to the distinct phenotypes of these diseases.",
+        "falsification": {
+          "text": "The absence of any interaction or functional relationship between the fibrinolysis pathway and extracellular matrix organization pathways, or the identification of completely independent genetic or molecular mechanisms for each disease that do not involve PLG or SERPINA1, would falsify this hypothesis.",
+          "gnomad_variant": "The presence of common, benign variants in both PLG and SERPINA1 in the general population (gnomAD frequency > 1%) that are not associated with either hypoplasminogenemia or A1AT deficiency respectively."
+        },
+        "translational": "Understanding the overlap in the fibrinolysis and extracellular matrix regulation pathways could reveal common therapeutic targets or strategies for managing patients with either hypoplasminogenemia or alpha-1 antitrypsin deficiency, particularly concerning tissue repair and inflammatory responses."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010119",
+      "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+      "fitness": 0.3928,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9105) —PRODUCES→ Plasminogen (UniProtKB:P00742); Plasminogen (UniProtKB:P00742) —DISRUPTS→ Fibrinolysis (GO:0006975); Fibrinolysis (GO:0006975) —LEADS_TO→ Bleeding tendency (HP:0011411); ITGA2B (HGNC:6069) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); ITGB3 (HGNC:6075) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); Platelet activation and aggregation (GO:0001775) —LEADS_TO→ Impaired platelet aggregation (HP:0010700); Impaired platelet aggregation (HP:0010700) —LEADS_TO→ Thrombocytopenia (HP:0001874); Thrombocytopenia (HP:0001874) —LEADS_TO→ Abnormal bleeding (HP:0011411); Fibrinolysis (GO:0006975) —LEADS_TO→ Abnormal bleeding (HP:0011411). Loss-of-function mutations in PLG lead to hypoplasminogenemia, impairing fibrinolysis and causing bleeding. Similarly, loss-of-function mutations in ITGA2B and ITGB3 impair platelet aggregation, leading to Glanzmann's thrombasthenia and bleeding. Both pathways converge on the phenotype of abnormal bleeding.",
+      "mechanism_narrative": "PLG (HGNC:9105) —PRODUCES→ Plasminogen (UniProtKB:P00742); Plasminogen (UniProtKB:P00742) —DISRUPTS→ Fibrinolysis (GO:0006975); Fibrinolysis (GO:0006975) —LEADS_TO→ Bleeding tendency (HP:0011411); ITGA2B (HGNC:6069) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); ITGB3 (HGNC:6075) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); Platelet activation and aggregation (GO:0001775) —LEADS_TO→ Impaired platelet aggregation (HP:0010700); Impaired platelet aggregation (HP:0010700) —LEADS_TO→ Thrombocytopenia (HP:0001874); Thrombocytopenia (HP:0001874) —LEADS_TO→ Abnormal bleeding (HP:0011411); Fibrinolysis (GO:0006975) —LEADS_TO→ Abnormal bleeding (HP:0011411). Loss-of-function mutations in PLG lead to hypoplasminogenemia, impairing fibrinolysis and causing bleeding. Similarly, loss-of-function mutations in ITGA2B and ITGB3 impair platelet aggregation, leading to Glanzmann's thrombasthenia and bleeding. Both pathways converge on the phenotype of abnormal bleeding.",
+      "falsification": {
+        "text": "Demonstration that mutations in PLG do not impair fibrinolysis, or that mutations in ITGA2B/ITGB3 do not impair platelet aggregation, would falsify this hypothesis. Furthermore, the absence of bleeding phenotype in individuals with mutations in only one of these gene sets would also be falsifying."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010119",
+        "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129
+        },
+        "fitness": 0.3928,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9105) —PRODUCES→ Plasminogen (UniProtKB:P00742); Plasminogen (UniProtKB:P00742) —DISRUPTS→ Fibrinolysis (GO:0006975); Fibrinolysis (GO:0006975) —LEADS_TO→ Bleeding tendency (HP:0011411); ITGA2B (HGNC:6069) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); ITGB3 (HGNC:6075) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); Platelet activation and aggregation (GO:0001775) —LEADS_TO→ Impaired platelet aggregation (HP:0010700); Impaired platelet aggregation (HP:0010700) —LEADS_TO→ Thrombocytopenia (HP:0001874); Thrombocytopenia (HP:0001874) —LEADS_TO→ Abnormal bleeding (HP:0011411); Fibrinolysis (GO:0006975) —LEADS_TO→ Abnormal bleeding (HP:0011411). Loss-of-function mutations in PLG lead to hypoplasminogenemia, impairing fibrinolysis and causing bleeding. Similarly, loss-of-function mutations in ITGA2B and ITGB3 impair platelet aggregation, leading to Glanzmann's thrombasthenia and bleeding. Both pathways converge on the phenotype of abnormal bleeding.",
+        "falsification": {
+          "text": "Demonstration that mutations in PLG do not impair fibrinolysis, or that mutations in ITGA2B/ITGB3 do not impair platelet aggregation, would falsify this hypothesis. Furthermore, the absence of bleeding phenotype in individuals with mutations in only one of these gene sets would also be falsifying."
+        },
+        "translational": "Understanding the shared downstream consequence of abnormal bleeding, despite different upstream molecular defects, highlights potential common therapeutic targets or management strategies for bleeding disorders arising from defects in fibrinolysis or platelet function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032766",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+      "fitness": 0.3911,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9149) —PRODUCES→ Plasminogen (PR:000000499); Plasminogen (PR:000000499) —BINDS→ Fibrinolysis (GO:0006579); Fibrinolysis (GO:0006579) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); APOA1 (HGNC:557) —PRODUCES→ Apolipoprotein A-I (PR:000000500); Apolipoprotein A-I (PR:000000500) —BINDS→ Lipid Metabolism (GO:0006629); Lipid Metabolism (GO:0006629) —LEADS_TO→ Low HDL cholesterol (HP:0011010); Fibrinolysis (GO:0006579) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid Metabolism (GO:0006629) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Low HDL cholesterol (HP:0011010). Mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and increasing thrombosis risk. Mutations in APOA1 lead to reduced functional APOA1, impacting lipid metabolism and lowering HDL. Both fibrinolysis and lipid metabolism are interconnected, with APOA1 playing roles in both, leading to overlapping phenotypic consequences such as increased thrombotic risk.",
+      "mechanism_narrative": "PLG (HGNC:9149) —PRODUCES→ Plasminogen (PR:000000499); Plasminogen (PR:000000499) —BINDS→ Fibrinolysis (GO:0006579); Fibrinolysis (GO:0006579) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); APOA1 (HGNC:557) —PRODUCES→ Apolipoprotein A-I (PR:000000500); Apolipoprotein A-I (PR:000000500) —BINDS→ Lipid Metabolism (GO:0006629); Lipid Metabolism (GO:0006629) —LEADS_TO→ Low HDL cholesterol (HP:0011010); Fibrinolysis (GO:0006579) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid Metabolism (GO:0006629) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Low HDL cholesterol (HP:0011010). Mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and increasing thrombosis risk. Mutations in APOA1 lead to reduced functional APOA1, impacting lipid metabolism and lowering HDL. Both fibrinolysis and lipid metabolism are interconnected, with APOA1 playing roles in both, leading to overlapping phenotypic consequences such as increased thrombotic risk.",
+      "falsification": {
+        "text": "Absence of a shared downstream effect on thrombotic risk or lipid profiles in individuals with pathogenic variants in both PLG and APOA1.",
+        "gnomad_variant": "gnomAD analysis showing high allele frequencies for known pathogenic variants in PLG and APOA1 in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032766",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3911,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9149) —PRODUCES→ Plasminogen (PR:000000499); Plasminogen (PR:000000499) —BINDS→ Fibrinolysis (GO:0006579); Fibrinolysis (GO:0006579) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); APOA1 (HGNC:557) —PRODUCES→ Apolipoprotein A-I (PR:000000500); Apolipoprotein A-I (PR:000000500) —BINDS→ Lipid Metabolism (GO:0006629); Lipid Metabolism (GO:0006629) —LEADS_TO→ Low HDL cholesterol (HP:0011010); Fibrinolysis (GO:0006579) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid Metabolism (GO:0006629) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Low HDL cholesterol (HP:0011010). Mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and increasing thrombosis risk. Mutations in APOA1 lead to reduced functional APOA1, impacting lipid metabolism and lowering HDL. Both fibrinolysis and lipid metabolism are interconnected, with APOA1 playing roles in both, leading to overlapping phenotypic consequences such as increased thrombotic risk.",
+        "falsification": {
+          "text": "Absence of a shared downstream effect on thrombotic risk or lipid profiles in individuals with pathogenic variants in both PLG and APOA1.",
+          "gnomad_variant": "gnomAD analysis showing high allele frequencies for known pathogenic variants in PLG and APOA1 in the general population."
+        },
+        "translational": "Understanding the interplay between fibrinolysis and lipid metabolism, particularly the roles of PLG and APOA1, could lead to novel therapeutic strategies for managing thrombotic disorders and dyslipidemias."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859238",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+      "fitness": 0.3907,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9109) —DISRUPTS→ Fibrinolysis (REACT:R-HSA-2020481); Fibrinolysis (REACT:R-HSA-2020481) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:610) —DISRUPTS→ Lipoprotein metabolism and clearance (REACT:R-HSA-389877); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —BINDS→ Fibrinolysis (REACT:R-HSA-2020481). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Loss-of-function mutations in APOA1 disrupt lipoprotein metabolism. Both lipoprotein metabolism and fibrinolysis are interconnected pathways involved in lipid transport and vascular health. APOA1, as a component of HDL, plays a role in reverse cholesterol transport, and dysregulation can impact inflammatory processes and vascular integrity, indirectly affecting fibrinolytic function. Conversely, impaired fibrinolysis can lead to compromised clearance of fibrin and extracellular matrix components, potentially influencing lipid deposition and inflammatory responses within the vasculature.",
+      "mechanism_narrative": "PLG (HGNC:9109) —DISRUPTS→ Fibrinolysis (REACT:R-HSA-2020481); Fibrinolysis (REACT:R-HSA-2020481) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:610) —DISRUPTS→ Lipoprotein metabolism and clearance (REACT:R-HSA-389877); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —BINDS→ Fibrinolysis (REACT:R-HSA-2020481). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Loss-of-function mutations in APOA1 disrupt lipoprotein metabolism. Both lipoprotein metabolism and fibrinolysis are interconnected pathways involved in lipid transport and vascular health. APOA1, as a component of HDL, plays a role in reverse cholesterol transport, and dysregulation can impact inflammatory processes and vascular integrity, indirectly affecting fibrinolytic function. Conversely, impaired fibrinolysis can lead to compromised clearance of fibrin and extracellular matrix components, potentially influencing lipid deposition and inflammatory responses within the vasculature.",
+      "falsification": {
+        "text": "If genetic studies show that mutations in PLG do not segregate with hypoplasminogenemia, or if mutations in APOA1 do not segregate with hypoalphalipoproteinemia, this hypothesis would be falsified. Additionally, if a significant population of individuals with hypoplasminogenemia shows normal fibrinolytic activity or individuals with hypoalphalipoproteinemia show normal HDL levels, it would challenge the proposed link.",
+        "gnomad_variant": "The identification of common, benign variants in PLG or APOA1 in gnomAD that are strongly associated with either disease would falsify the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859238",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3907,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9109) —DISRUPTS→ Fibrinolysis (REACT:R-HSA-2020481); Fibrinolysis (REACT:R-HSA-2020481) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:610) —DISRUPTS→ Lipoprotein metabolism and clearance (REACT:R-HSA-389877); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —BINDS→ Fibrinolysis (REACT:R-HSA-2020481). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Loss-of-function mutations in APOA1 disrupt lipoprotein metabolism. Both lipoprotein metabolism and fibrinolysis are interconnected pathways involved in lipid transport and vascular health. APOA1, as a component of HDL, plays a role in reverse cholesterol transport, and dysregulation can impact inflammatory processes and vascular integrity, indirectly affecting fibrinolytic function. Conversely, impaired fibrinolysis can lead to compromised clearance of fibrin and extracellular matrix components, potentially influencing lipid deposition and inflammatory responses within the vasculature.",
+        "falsification": {
+          "text": "If genetic studies show that mutations in PLG do not segregate with hypoplasminogenemia, or if mutations in APOA1 do not segregate with hypoalphalipoproteinemia, this hypothesis would be falsified. Additionally, if a significant population of individuals with hypoplasminogenemia shows normal fibrinolytic activity or individuals with hypoalphalipoproteinemia show normal HDL levels, it would challenge the proposed link.",
+          "gnomad_variant": "The identification of common, benign variants in PLG or APOA1 in gnomAD that are strongly associated with either disease would falsify the causal link."
+        },
+        "translational": "Understanding the interplay between fibrinolysis and lipoprotein metabolism could reveal novel therapeutic targets for cardiovascular disease prevention and treatment. Strategies aimed at modulating either pathway might have pleiotropic effects on cardiovascular health."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011583",
+      "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+      "fitness": 0.3436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9147) —PRODUCES→ Plasminogen (CHEBI:17709); Plasminogen (CHEBI:17709) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —DECREASES→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Hemorrhage (HP:0011421); APP variant (MONDO:0011583) —DISRUPTS→ Amyloid beta precursor protein (APP) (UniProt:P05060); Amyloid beta precursor protein (APP) (UniProt:P05060) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0002317). Loss-of-function mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and extracellular matrix remodeling, which can contribute to bleeding diatheses. Gain-of-function mutations or altered processing of APP lead to its aggregation and deposition in cerebral blood vessels, also disrupting extracellular matrix remodeling and leading to cerebral amyloid angiopathy and associated hemorrhages. Both pathways converge on the disruption of normal extracellular matrix remodeling, albeit through different primary mechanisms.",
+      "mechanism_narrative": "PLG (HGNC:9147) —PRODUCES→ Plasminogen (CHEBI:17709); Plasminogen (CHEBI:17709) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —DECREASES→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Hemorrhage (HP:0011421); APP variant (MONDO:0011583) —DISRUPTS→ Amyloid beta precursor protein (APP) (UniProt:P05060); Amyloid beta precursor protein (APP) (UniProt:P05060) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0002317). Loss-of-function mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and extracellular matrix remodeling, which can contribute to bleeding diatheses. Gain-of-function mutations or altered processing of APP lead to its aggregation and deposition in cerebral blood vessels, also disrupting extracellular matrix remodeling and leading to cerebral amyloid angiopathy and associated hemorrhages. Both pathways converge on the disruption of normal extracellular matrix remodeling, albeit through different primary mechanisms.",
+      "falsification": {
+        "text": "Demonstration that mutations in PLG do not affect extracellular matrix remodeling or fibrinolysis, or that APP variants do not impact these processes.",
+        "gnomad_variant": "gnomAD frequency > 0.01 for pathogenic PLG or APP variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011583",
+        "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9147) —PRODUCES→ Plasminogen (CHEBI:17709); Plasminogen (CHEBI:17709) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —DECREASES→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Hemorrhage (HP:0011421); APP variant (MONDO:0011583) —DISRUPTS→ Amyloid beta precursor protein (APP) (UniProt:P05060); Amyloid beta precursor protein (APP) (UniProt:P05060) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0002317). Loss-of-function mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and extracellular matrix remodeling, which can contribute to bleeding diatheses. Gain-of-function mutations or altered processing of APP lead to its aggregation and deposition in cerebral blood vessels, also disrupting extracellular matrix remodeling and leading to cerebral amyloid angiopathy and associated hemorrhages. Both pathways converge on the disruption of normal extracellular matrix remodeling, albeit through different primary mechanisms.",
+        "falsification": {
+          "text": "Demonstration that mutations in PLG do not affect extracellular matrix remodeling or fibrinolysis, or that APP variants do not impact these processes.",
+          "gnomad_variant": "gnomAD frequency > 0.01 for pathogenic PLG or APP variants."
+        },
+        "translational": "Understanding the shared impact on extracellular matrix remodeling could reveal therapeutic targets for both hypoplasminogenemia and APP-related cerebral amyloid angiopathy, potentially involving strategies to modulate fibrinolysis or matrix integrity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014663",
+      "diseaseBName": "Silver-Russell syndrome 3",
+      "fitness": 0.2905,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9167) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF2 (HGNC:5440) —DISRUPTS→ Hypothalamic-Pituitary-Adrenal Axis (GO:0007596); Hypothalamic-Pituitary-Adrenal Axis (GO:0007596) —LEADS_TO→ Silver-Russell syndrome 3 (MONDO:0014663). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Variants in IGF2 can dysregulate the Hypothalamic-Pituitary-Adrenal (HPA) axis, contributing to Silver-Russell syndrome 3. The convergence is proposed at the level of the HPA axis, which can be influenced by growth factors like IGF2 and may have downstream effects that could indirectly impact systemic processes related to coagulation or inflammation, although a direct link to hypoplasminogenemia is speculative.",
+      "mechanism_narrative": "PLG (HGNC:9167) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF2 (HGNC:5440) —DISRUPTS→ Hypothalamic-Pituitary-Adrenal Axis (GO:0007596); Hypothalamic-Pituitary-Adrenal Axis (GO:0007596) —LEADS_TO→ Silver-Russell syndrome 3 (MONDO:0014663). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Variants in IGF2 can dysregulate the Hypothalamic-Pituitary-Adrenal (HPA) axis, contributing to Silver-Russell syndrome 3. The convergence is proposed at the level of the HPA axis, which can be influenced by growth factors like IGF2 and may have downstream effects that could indirectly impact systemic processes related to coagulation or inflammation, although a direct link to hypoplasminogenemia is speculative.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in IGF2 do not affect HPA axis activity or that PLG function is entirely independent of HPA axis regulation.",
+        "gnomad_variant": "If a common variant (AF > 0.01) in the PLG gene is identified in gnomAD that fully rescues the hypoplasminogenemia phenotype, it would suggest alternative causal mechanisms or modifiers not captured by this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014663",
+        "diseaseBName": "Silver-Russell syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.2905,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9167) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF2 (HGNC:5440) —DISRUPTS→ Hypothalamic-Pituitary-Adrenal Axis (GO:0007596); Hypothalamic-Pituitary-Adrenal Axis (GO:0007596) —LEADS_TO→ Silver-Russell syndrome 3 (MONDO:0014663). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Variants in IGF2 can dysregulate the Hypothalamic-Pituitary-Adrenal (HPA) axis, contributing to Silver-Russell syndrome 3. The convergence is proposed at the level of the HPA axis, which can be influenced by growth factors like IGF2 and may have downstream effects that could indirectly impact systemic processes related to coagulation or inflammation, although a direct link to hypoplasminogenemia is speculative.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in IGF2 do not affect HPA axis activity or that PLG function is entirely independent of HPA axis regulation.",
+          "gnomad_variant": "If a common variant (AF > 0.01) in the PLG gene is identified in gnomAD that fully rescues the hypoplasminogenemia phenotype, it would suggest alternative causal mechanisms or modifiers not captured by this hypothesis."
+        },
+        "translational": "Understanding potential shared regulatory pathways, such as the HPA axis, could reveal novel therapeutic targets for diseases with disparate primary genetic causes but convergent downstream effects. For instance, modulating the HPA axis might offer a strategy to mitigate certain aspects of SRS3, and conversely, understanding systemic effects of hypoplasminogenemia could inform broader health management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0971008",
+      "diseaseBName": "amyloidosis, hereditary systemic 3",
+      "fitness": 0.1996,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "PLG (HGNC:9107) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:557) —LEADS_TO→ Abnormal Apolipoprotein A-I (CHEBI:17086); Abnormal Apolipoprotein A-I (CHEBI:17086) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); PLG (HGNC:9107) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Amyloidosis, hereditary systemic 3 (MONDO:0971008); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009). Loss-of-function mutations in PLG lead to hypoplasminogenemia, while loss-of-function mutations in APOA1 lead to the production of abnormal APOA1 that can misfold and aggregate. Both the deficiency of functional plasminogen and the aggregation of abnormal APOA1 contribute to a general pathway of protein misfolding and aggregation, which ultimately underlies the distinct phenotypes of these diseases.",
+      "mechanism_narrative": "PLG (HGNC:9107) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:557) —LEADS_TO→ Abnormal Apolipoprotein A-I (CHEBI:17086); Abnormal Apolipoprotein A-I (CHEBI:17086) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); PLG (HGNC:9107) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Amyloidosis, hereditary systemic 3 (MONDO:0971008); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009). Loss-of-function mutations in PLG lead to hypoplasminogenemia, while loss-of-function mutations in APOA1 lead to the production of abnormal APOA1 that can misfold and aggregate. Both the deficiency of functional plasminogen and the aggregation of abnormal APOA1 contribute to a general pathway of protein misfolding and aggregation, which ultimately underlies the distinct phenotypes of these diseases.",
+      "falsification": {
+        "text": "The absence of any observed protein misfolding or aggregation in individuals with hypoplasminogenemia or carriers of APOA1 mutations would falsify this hypothesis. Specifically, if hypoplasminogenemia is found to be solely due to impaired fibrinolysis without any downstream effects on protein homeostasis or aggregation pathways, and amyloidosis 3 is solely due to APOA1 aggregation without any contribution from plasminogen-related pathways, the proposed overlap would be invalidated.",
+        "gnomad_variant": "Identification of common benign variants (AF > 1%) in the PLG or APOA1 genes that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0971008",
+        "diseaseBName": "amyloidosis, hereditary systemic 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.1996,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9107) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:557) —LEADS_TO→ Abnormal Apolipoprotein A-I (CHEBI:17086); Abnormal Apolipoprotein A-I (CHEBI:17086) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); PLG (HGNC:9107) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Amyloidosis, hereditary systemic 3 (MONDO:0971008); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009). Loss-of-function mutations in PLG lead to hypoplasminogenemia, while loss-of-function mutations in APOA1 lead to the production of abnormal APOA1 that can misfold and aggregate. Both the deficiency of functional plasminogen and the aggregation of abnormal APOA1 contribute to a general pathway of protein misfolding and aggregation, which ultimately underlies the distinct phenotypes of these diseases.",
+        "falsification": {
+          "text": "The absence of any observed protein misfolding or aggregation in individuals with hypoplasminogenemia or carriers of APOA1 mutations would falsify this hypothesis. Specifically, if hypoplasminogenemia is found to be solely due to impaired fibrinolysis without any downstream effects on protein homeostasis or aggregation pathways, and amyloidosis 3 is solely due to APOA1 aggregation without any contribution from plasminogen-related pathways, the proposed overlap would be invalidated.",
+          "gnomad_variant": "Identification of common benign variants (AF > 1%) in the PLG or APOA1 genes that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared pathway of protein misfolding and aggregation, even when initiated by distinct genetic defects (PLG vs. APOA1), could reveal common therapeutic targets. Strategies aimed at enhancing protein clearance, preventing protein aggregation, or stabilizing functional protein conformations might be applicable to both conditions, offering a potential avenue for novel therapeutic development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007088",
+      "diseaseBName": "Alzheimer disease type 1",
+      "fitness": 0.1328,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "Loss-of-function variant in PLG (HGNC:9101) —DISRUPTS→ Plasminogen (HGNC:9101); Plasminogen (HGNC:9101) —DISRUPTS→ Plasminogen/plasmin system activity (GO:0007173); Plasminogen/plasmin system activity (GO:0007173) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); Gain-of-function variant in APP (HGNC:652) —DISRUPTS→ Amyloid Precursor Protein (HGNC:652); Amyloid Precursor Protein (HGNC:652) —DISRUPTS→ Amyloid precursor protein processing (GO:0042019); Amyloid precursor protein processing (GO:0042019) —LEADS_TO→ Amyloid beta production (GO:0031620); Amyloid beta production (GO:0031620) —INCREASES→ Neuroinflammation (GO:0009617); Neuroinflammation (GO:0009617) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088); Plasminogen/plasmin system activity (GO:0007173) —DECREASES→ Neuroinflammation (GO:0009617). Loss of plasminogen function (PLG LoF) can lead to reduced fibrinolysis and potentially altered inflammatory responses. Gain-of-function mutations in APP lead to increased amyloid-beta production, which is known to promote neuroinflammation. A potential convergence point is the modulation of neuroinflammation, where reduced PLG activity might exacerbate or alter the inflammatory cascade driven by APP pathology.",
+      "mechanism_narrative": "Loss-of-function variant in PLG (HGNC:9101) —DISRUPTS→ Plasminogen (HGNC:9101); Plasminogen (HGNC:9101) —DISRUPTS→ Plasminogen/plasmin system activity (GO:0007173); Plasminogen/plasmin system activity (GO:0007173) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); Gain-of-function variant in APP (HGNC:652) —DISRUPTS→ Amyloid Precursor Protein (HGNC:652); Amyloid Precursor Protein (HGNC:652) —DISRUPTS→ Amyloid precursor protein processing (GO:0042019); Amyloid precursor protein processing (GO:0042019) —LEADS_TO→ Amyloid beta production (GO:0031620); Amyloid beta production (GO:0031620) —INCREASES→ Neuroinflammation (GO:0009617); Neuroinflammation (GO:0009617) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088); Plasminogen/plasmin system activity (GO:0007173) —DECREASES→ Neuroinflammation (GO:0009617). Loss of plasminogen function (PLG LoF) can lead to reduced fibrinolysis and potentially altered inflammatory responses. Gain-of-function mutations in APP lead to increased amyloid-beta production, which is known to promote neuroinflammation. A potential convergence point is the modulation of neuroinflammation, where reduced PLG activity might exacerbate or alter the inflammatory cascade driven by APP pathology.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in PLG associated with hypoplasminogenemia have no significant impact on inflammatory markers or pathways relevant to Alzheimer's disease in cellular or animal models, or that mutations in APP do not affect plasminogen system activity.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007088",
+        "diseaseBName": "Alzheimer disease type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.1328,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in PLG (HGNC:9101) —DISRUPTS→ Plasminogen (HGNC:9101); Plasminogen (HGNC:9101) —DISRUPTS→ Plasminogen/plasmin system activity (GO:0007173); Plasminogen/plasmin system activity (GO:0007173) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); Gain-of-function variant in APP (HGNC:652) —DISRUPTS→ Amyloid Precursor Protein (HGNC:652); Amyloid Precursor Protein (HGNC:652) —DISRUPTS→ Amyloid precursor protein processing (GO:0042019); Amyloid precursor protein processing (GO:0042019) —LEADS_TO→ Amyloid beta production (GO:0031620); Amyloid beta production (GO:0031620) —INCREASES→ Neuroinflammation (GO:0009617); Neuroinflammation (GO:0009617) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088); Plasminogen/plasmin system activity (GO:0007173) —DECREASES→ Neuroinflammation (GO:0009617). Loss of plasminogen function (PLG LoF) can lead to reduced fibrinolysis and potentially altered inflammatory responses. Gain-of-function mutations in APP lead to increased amyloid-beta production, which is known to promote neuroinflammation. A potential convergence point is the modulation of neuroinflammation, where reduced PLG activity might exacerbate or alter the inflammatory cascade driven by APP pathology.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in PLG associated with hypoplasminogenemia have no significant impact on inflammatory markers or pathways relevant to Alzheimer's disease in cellular or animal models, or that mutations in APP do not affect plasminogen system activity.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the interplay between the plasminogen system and APP processing could reveal novel therapeutic targets for Alzheimer's disease, potentially by modulating inflammation through fibrinolytic pathways or vice versa."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T09:24:47.712Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hypoplasminogenemia (MONDO:0009009)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 17 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | angioedema, hereditary, 4 (MONDO:0025712) | shared pathway | Tier 1 | 0.724 | Reactome:R-HSA-114608, Reactome:R-HSA-1474228, Reactome:R-HSA-381426, Reactome:R-HSA-1592389, Reactome:R-HSA-186797 |\n| 2 | growth delay due to insulin-like growth factor type 1 deficiency (MONDO:0012110) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 3 | alpha 1-antitrypsin deficiency (MONDO:0013282) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 4 | obsolete Glanzmann's thrombasthenia (MONDO:0010119) | shared pathway | Tier 3 | 0.393 | Reactome:R-HSA-114608 |\n| 5 | hypoalphalipoproteinemia, primary, 2 (MONDO:0032766) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 6 | hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 7 | cerebral amyloid angiopathy, APP-related (MONDO:0011583) | shared pathway | Tier 3 | 0.344 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 8 | Silver-Russell syndrome 3 (MONDO:0014663) | shared pathway | Tier 3 | 0.290 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 9 | amyloidosis, hereditary systemic 3 (MONDO:0971008) | shared pathway | Tier 4 | 0.200 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n| 10 | Alzheimer disease type 1 (MONDO:0007088) | shared pathway | Tier 4 | 0.133 | Reactome:R-HSA-114608, Reactome:R-HSA-381426 |\n\n### CANDIDATE DETAIL\n#### 1. angioedema, hereditary, 4  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.724)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-1474228, Reactome:R-HSA-381426, Reactome:R-HSA-1592389, Reactome:R-HSA-186797)\n\n**Proposed mechanism:** PLG Loss-of-Function Variant (MONDO:0009009) —DISRUPTS→ Plasminogen (HGNC:9071); PLG Loss-of-Function Variant (MONDO:0025712) —DISRUPTS→ Plasminogen (HGNC:9071); Plasminogen (HGNC:9071) —DECREASES→ Functional Plasminogen (CHEBI:57636); Functional Plasminogen (CHEBI:57636) —DECREASES→ Fibrinolysis (REACT:72700); Fibrinolysis (REACT:72700) —LEADS_TO→ Hypoplasminogenemia (HP:0030120); Functional Plasminogen (CHEBI:57636) —DECREASES→ Complement System Activation (REACT:71700); Complement System Activation (REACT:71700) —LEADS_TO→ Angioedema (HP:0000257). Loss-of-function mutations in the PLG gene lead to reduced levels of functional plasminogen. This deficiency impairs fibrinolysis, causing hypoplasminogenemia. Additionally, reduced plasminogen can lead to dysregulation of the complement system, potentially through reduced C1 inhibitor activity or increased kallikrein activity, resulting in angioedema.\n\n**How to falsify it:** Identification of pathogenic variants in PLG that cause a gain-of-function or dominant-negative effect in one disease while requiring a loss-of-function in the other, or the absence of any observed PLG variants in affected individuals. _(variant: gnomAD analysis showing a high frequency (>1%) of the specific pathogenic variants associated with these conditions in the general population.)_\n\n**Why it matters:** Understanding this shared genetic basis highlights the potential for therapeutic strategies targeting plasminogen levels or its downstream effects to treat both conditions. For instance, therapies aimed at restoring functional plasminogen or modulating the complement cascade could be beneficial.\n\n---\n\n#### 2. growth delay due to insulin-like growth factor type 1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9190) —PRODUCES→ Plasmin (UniProtKB:P00761); Plasmin (UniProtKB:P00761) —DISRUPTS→ proteolysis (GO:0006466); proteolysis (GO:0006466) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF1 (HGNC:5423) —PRODUCES→ IGF-1 (UniProtKB:P01308); IGF-1 (UniProtKB:P01308) —DECREASES→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Growth delay (HP:0001510); Growth delay (HP:0001510) —LEADS_TO→ Insulin-like growth factor type 1 deficiency (MONDO:0012110). Loss of function in PLG leads to reduced plasmin activity, which in turn impairs proteolysis and extracellular matrix organization, ultimately causing hypoplasminogenemia. Similarly, loss of function in IGF1 leads to reduced IGF-1, which also negatively impacts extracellular matrix organization and growth, resulting in growth delay and IGF1 deficiency.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in PLG but without hypoplasminogenemia, or individuals with pathogenic variants in IGF1 but without growth delay, would falsify this hypothesis. Furthermore, finding no overlap in the functional consequences of PLG and IGF1 deficiency on extracellular matrix organization would also falsify the proposed link.\n\n**Why it matters:** Understanding the shared role of extracellular matrix organization in both hypoplasminogenemia and IGF1 deficiency-related growth delay could reveal novel therapeutic targets. For instance, interventions aimed at modulating extracellular matrix turnover or related proteolysis could potentially benefit patients with either condition, or those with overlapping symptoms.\n\n---\n\n#### 3. alpha 1-antitrypsin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9412) —DISRUPTS→ fibrinolysis (GO:0006574); fibrinolysis (GO:0006574) —LEADS_TO→ hypoplasminogenemia (MONDO:0009009); SERPINA1 (HGNC:10573) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ alpha 1-antitrypsin deficiency (MONDO:0013282); fibrinolysis (GO:0006574) —BINDS→ extracellular matrix organization (GO:0030198). Loss-of-function mutations in PLG impair fibrinolysis, leading to hypoplasminogenemia. Concurrently, loss-of-function mutations in SERPINA1 impair the inhibition of proteases like neutrophil elastase, which degrade extracellular matrix components. Both fibrinolysis and extracellular matrix organization are interconnected processes, and their dysregulation contributes to the distinct phenotypes of these diseases.\n\n**How to falsify it:** The absence of any interaction or functional relationship between the fibrinolysis pathway and extracellular matrix organization pathways, or the identification of completely independent genetic or molecular mechanisms for each disease that do not involve PLG or SERPINA1, would falsify this hypothesis. _(variant: The presence of common, benign variants in both PLG and SERPINA1 in the general population (gnomAD frequency > 1%) that are not associated with either hypoplasminogenemia or A1AT deficiency respectively.)_\n\n**Why it matters:** Understanding the overlap in the fibrinolysis and extracellular matrix regulation pathways could reveal common therapeutic targets or strategies for managing patients with either hypoplasminogenemia or alpha-1 antitrypsin deficiency, particularly concerning tissue repair and inflammatory responses.\n\n---\n\n#### 4. obsolete Glanzmann's thrombasthenia  —  Tier 3 — Moderate / Emerging  (fitness 0.393)\n**Link type:** shared pathway (Reactome:R-HSA-114608)\n\n**Proposed mechanism:** PLG (HGNC:9105) —PRODUCES→ Plasminogen (UniProtKB:P00742); Plasminogen (UniProtKB:P00742) —DISRUPTS→ Fibrinolysis (GO:0006975); Fibrinolysis (GO:0006975) —LEADS_TO→ Bleeding tendency (HP:0011411); ITGA2B (HGNC:6069) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); ITGB3 (HGNC:6075) —DISRUPTS→ Platelet activation and aggregation (GO:0001775); Platelet activation and aggregation (GO:0001775) —LEADS_TO→ Impaired platelet aggregation (HP:0010700); Impaired platelet aggregation (HP:0010700) —LEADS_TO→ Thrombocytopenia (HP:0001874); Thrombocytopenia (HP:0001874) —LEADS_TO→ Abnormal bleeding (HP:0011411); Fibrinolysis (GO:0006975) —LEADS_TO→ Abnormal bleeding (HP:0011411). Loss-of-function mutations in PLG lead to hypoplasminogenemia, impairing fibrinolysis and causing bleeding. Similarly, loss-of-function mutations in ITGA2B and ITGB3 impair platelet aggregation, leading to Glanzmann's thrombasthenia and bleeding. Both pathways converge on the phenotype of abnormal bleeding.\n\n**How to falsify it:** Demonstration that mutations in PLG do not impair fibrinolysis, or that mutations in ITGA2B/ITGB3 do not impair platelet aggregation, would falsify this hypothesis. Furthermore, the absence of bleeding phenotype in individuals with mutations in only one of these gene sets would also be falsifying.\n\n**Why it matters:** Understanding the shared downstream consequence of abnormal bleeding, despite different upstream molecular defects, highlights potential common therapeutic targets or management strategies for bleeding disorders arising from defects in fibrinolysis or platelet function.\n\n---\n\n#### 5. hypoalphalipoproteinemia, primary, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9149) —PRODUCES→ Plasminogen (PR:000000499); Plasminogen (PR:000000499) —BINDS→ Fibrinolysis (GO:0006579); Fibrinolysis (GO:0006579) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); APOA1 (HGNC:557) —PRODUCES→ Apolipoprotein A-I (PR:000000500); Apolipoprotein A-I (PR:000000500) —BINDS→ Lipid Metabolism (GO:0006629); Lipid Metabolism (GO:0006629) —LEADS_TO→ Low HDL cholesterol (HP:0011010); Fibrinolysis (GO:0006579) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid Metabolism (GO:0006629) —BINDS→ Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Increased risk of thrombosis (HP:0001991); Lipid and Fibrinolysis Interactions (REACT:R-HSA-72185) —LEADS_TO→ Low HDL cholesterol (HP:0011010). Mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and increasing thrombosis risk. Mutations in APOA1 lead to reduced functional APOA1, impacting lipid metabolism and lowering HDL. Both fibrinolysis and lipid metabolism are interconnected, with APOA1 playing roles in both, leading to overlapping phenotypic consequences such as increased thrombotic risk.\n\n**How to falsify it:** Absence of a shared downstream effect on thrombotic risk or lipid profiles in individuals with pathogenic variants in both PLG and APOA1. _(variant: gnomAD analysis showing high allele frequencies for known pathogenic variants in PLG and APOA1 in the general population.)_\n\n**Why it matters:** Understanding the interplay between fibrinolysis and lipid metabolism, particularly the roles of PLG and APOA1, could lead to novel therapeutic strategies for managing thrombotic disorders and dyslipidemias.\n\n---\n\n#### 6. hypoalphalipoproteinemia, primary, 2, intermediate  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9109) —DISRUPTS→ Fibrinolysis (REACT:R-HSA-2020481); Fibrinolysis (REACT:R-HSA-2020481) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:610) —DISRUPTS→ Lipoprotein metabolism and clearance (REACT:R-HSA-389877); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); Lipoprotein metabolism and clearance (REACT:R-HSA-389877) —BINDS→ Fibrinolysis (REACT:R-HSA-2020481). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Loss-of-function mutations in APOA1 disrupt lipoprotein metabolism. Both lipoprotein metabolism and fibrinolysis are interconnected pathways involved in lipid transport and vascular health. APOA1, as a component of HDL, plays a role in reverse cholesterol transport, and dysregulation can impact inflammatory processes and vascular integrity, indirectly affecting fibrinolytic function. Conversely, impaired fibrinolysis can lead to compromised clearance of fibrin and extracellular matrix components, potentially influencing lipid deposition and inflammatory responses within the vasculature.\n\n**How to falsify it:** If genetic studies show that mutations in PLG do not segregate with hypoplasminogenemia, or if mutations in APOA1 do not segregate with hypoalphalipoproteinemia, this hypothesis would be falsified. Additionally, if a significant population of individuals with hypoplasminogenemia shows normal fibrinolytic activity or individuals with hypoalphalipoproteinemia show normal HDL levels, it would challenge the proposed link. _(variant: The identification of common, benign variants in PLG or APOA1 in gnomAD that are strongly associated with either disease would falsify the causal link.)_\n\n**Why it matters:** Understanding the interplay between fibrinolysis and lipoprotein metabolism could reveal novel therapeutic targets for cardiovascular disease prevention and treatment. Strategies aimed at modulating either pathway might have pleiotropic effects on cardiovascular health.\n\n---\n\n#### 7. cerebral amyloid angiopathy, APP-related  —  Tier 3 — Moderate / Emerging  (fitness 0.344)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9147) —PRODUCES→ Plasminogen (CHEBI:17709); Plasminogen (CHEBI:17709) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —DECREASES→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Hemorrhage (HP:0011421); APP variant (MONDO:0011583) —DISRUPTS→ Amyloid beta precursor protein (APP) (UniProt:P05060); Amyloid beta precursor protein (APP) (UniProt:P05060) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0002317). Loss-of-function mutations in PLG lead to reduced plasminogen levels, impairing fibrinolysis and extracellular matrix remodeling, which can contribute to bleeding diatheses. Gain-of-function mutations or altered processing of APP lead to its aggregation and deposition in cerebral blood vessels, also disrupting extracellular matrix remodeling and leading to cerebral amyloid angiopathy and associated hemorrhages. Both pathways converge on the disruption of normal extracellular matrix remodeling, albeit through different primary mechanisms.\n\n**How to falsify it:** Demonstration that mutations in PLG do not affect extracellular matrix remodeling or fibrinolysis, or that APP variants do not impact these processes. _(variant: gnomAD frequency > 0.01 for pathogenic PLG or APP variants.)_\n\n**Why it matters:** Understanding the shared impact on extracellular matrix remodeling could reveal therapeutic targets for both hypoplasminogenemia and APP-related cerebral amyloid angiopathy, potentially involving strategies to modulate fibrinolysis or matrix integrity.\n\n---\n\n#### 8. Silver-Russell syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.290)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9167) —DISRUPTS→ Fibrinolysis (GO:0007596); Fibrinolysis (GO:0007596) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); IGF2 (HGNC:5440) —DISRUPTS→ Hypothalamic-Pituitary-Adrenal Axis (GO:0007596); Hypothalamic-Pituitary-Adrenal Axis (GO:0007596) —LEADS_TO→ Silver-Russell syndrome 3 (MONDO:0014663). Loss-of-function mutations in PLG disrupt fibrinolysis, leading to hypoplasminogenemia. Variants in IGF2 can dysregulate the Hypothalamic-Pituitary-Adrenal (HPA) axis, contributing to Silver-Russell syndrome 3. The convergence is proposed at the level of the HPA axis, which can be influenced by growth factors like IGF2 and may have downstream effects that could indirectly impact systemic processes related to coagulation or inflammation, although a direct link to hypoplasminogenemia is speculative.\n\n**How to falsify it:** Demonstration that genetic variants in IGF2 do not affect HPA axis activity or that PLG function is entirely independent of HPA axis regulation. _(variant: If a common variant (AF > 0.01) in the PLG gene is identified in gnomAD that fully rescues the hypoplasminogenemia phenotype, it would suggest alternative causal mechanisms or modifiers not captured by this hypothesis.)_\n\n**Why it matters:** Understanding potential shared regulatory pathways, such as the HPA axis, could reveal novel therapeutic targets for diseases with disparate primary genetic causes but convergent downstream effects. For instance, modulating the HPA axis might offer a strategy to mitigate certain aspects of SRS3, and conversely, understanding systemic effects of hypoplasminogenemia could inform broader health management.\n\n---\n\n#### 9. amyloidosis, hereditary systemic 3  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** PLG (HGNC:9107) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); APOA1 (HGNC:557) —LEADS_TO→ Abnormal Apolipoprotein A-I (CHEBI:17086); Abnormal Apolipoprotein A-I (CHEBI:17086) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); PLG (HGNC:9107) —DISRUPTS→ Protein Misfolding and Aggregation (GO:0006460); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Amyloidosis, hereditary systemic 3 (MONDO:0971008); Protein Misfolding and Aggregation (GO:0006460) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009). Loss-of-function mutations in PLG lead to hypoplasminogenemia, while loss-of-function mutations in APOA1 lead to the production of abnormal APOA1 that can misfold and aggregate. Both the deficiency of functional plasminogen and the aggregation of abnormal APOA1 contribute to a general pathway of protein misfolding and aggregation, which ultimately underlies the distinct phenotypes of these diseases.\n\n**How to falsify it:** The absence of any observed protein misfolding or aggregation in individuals with hypoplasminogenemia or carriers of APOA1 mutations would falsify this hypothesis. Specifically, if hypoplasminogenemia is found to be solely due to impaired fibrinolysis without any downstream effects on protein homeostasis or aggregation pathways, and amyloidosis 3 is solely due to APOA1 aggregation without any contribution from plasminogen-related pathways, the proposed overlap would be invalidated. _(variant: Identification of common benign variants (AF > 1%) in the PLG or APOA1 genes that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared pathway of protein misfolding and aggregation, even when initiated by distinct genetic defects (PLG vs. APOA1), could reveal common therapeutic targets. Strategies aimed at enhancing protein clearance, preventing protein aggregation, or stabilizing functional protein conformations might be applicable to both conditions, offering a potential avenue for novel therapeutic development.\n\n---\n\n#### 10. Alzheimer disease type 1  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.133)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** Loss-of-function variant in PLG (HGNC:9101) —DISRUPTS→ Plasminogen (HGNC:9101); Plasminogen (HGNC:9101) —DISRUPTS→ Plasminogen/plasmin system activity (GO:0007173); Plasminogen/plasmin system activity (GO:0007173) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); Gain-of-function variant in APP (HGNC:652) —DISRUPTS→ Amyloid Precursor Protein (HGNC:652); Amyloid Precursor Protein (HGNC:652) —DISRUPTS→ Amyloid precursor protein processing (GO:0042019); Amyloid precursor protein processing (GO:0042019) —LEADS_TO→ Amyloid beta production (GO:0031620); Amyloid beta production (GO:0031620) —INCREASES→ Neuroinflammation (GO:0009617); Neuroinflammation (GO:0009617) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088); Plasminogen/plasmin system activity (GO:0007173) —DECREASES→ Neuroinflammation (GO:0009617). Loss of plasminogen function (PLG LoF) can lead to reduced fibrinolysis and potentially altered inflammatory responses. Gain-of-function mutations in APP lead to increased amyloid-beta production, which is known to promote neuroinflammation. A potential convergence point is the modulation of neuroinflammation, where reduced PLG activity might exacerbate or alter the inflammatory cascade driven by APP pathology.\n\n**How to falsify it:** Demonstration that genetic variants in PLG associated with hypoplasminogenemia have no significant impact on inflammatory markers or pathways relevant to Alzheimer's disease in cellular or animal models, or that mutations in APP do not affect plasminogen system activity. _(variant: N/A)_\n\n**Why it matters:** Understanding the interplay between the plasminogen system and APP processing could reveal novel therapeutic targets for Alzheimer's disease, potentially by modulating inflammation through fibrinolytic pathways or vice versa.\n\n---"
+}
