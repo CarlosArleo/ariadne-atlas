@@ -1,0 +1,547 @@
+{
+  "seed": {
+    "id": "MONDO:0007256",
+    "name": "hepatocellular carcinoma"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 26,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.7822,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "APC (HGNC:583) —DISRUPTS→ Wnt signaling pathway (R-HSA-9019856); CTNNB1 (HGNC:2514) —INCREASES→ Wnt signaling pathway (R-HSA-9019856); Wnt signaling pathway (R-HSA-9019856) —LEADS_TO→ Cell cycle regulation (R-HSA-9019856); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (R-HSA-9019856); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Mutations in APC lead to the destabilization of the destruction complex, allowing CTNNB1 to accumulate and activate the Wnt signaling pathway. Simultaneously, TP53 mutations disrupt cell cycle regulation. Both dysregulated Wnt signaling and impaired cell cycle control converge to promote uncontrolled cell proliferation, leading to both hepatocellular carcinoma and colorectal cancer.",
+      "mechanism_narrative": "APC (HGNC:583) —DISRUPTS→ Wnt signaling pathway (R-HSA-9019856); CTNNB1 (HGNC:2514) —INCREASES→ Wnt signaling pathway (R-HSA-9019856); Wnt signaling pathway (R-HSA-9019856) —LEADS_TO→ Cell cycle regulation (R-HSA-9019856); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (R-HSA-9019856); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Mutations in APC lead to the destabilization of the destruction complex, allowing CTNNB1 to accumulate and activate the Wnt signaling pathway. Simultaneously, TP53 mutations disrupt cell cycle regulation. Both dysregulated Wnt signaling and impaired cell cycle control converge to promote uncontrolled cell proliferation, leading to both hepatocellular carcinoma and colorectal cancer.",
+      "falsification": {
+        "text": "The discovery of distinct, non-overlapping sets of core causal genes and pathways uniquely associated with each disease, with no significant overlap in mutation profiles of key regulators like APC, CTNNB1, and TP53, would falsify this hypothesis.",
+        "gnomad_variant": "Presence of common benign variants (e.g., gnomAD allele frequency > 1%) in the critical regulatory regions of APC, CTNNB1, or TP53 that are implicated in both diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7822,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC (HGNC:583) —DISRUPTS→ Wnt signaling pathway (R-HSA-9019856); CTNNB1 (HGNC:2514) —INCREASES→ Wnt signaling pathway (R-HSA-9019856); Wnt signaling pathway (R-HSA-9019856) —LEADS_TO→ Cell cycle regulation (R-HSA-9019856); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (R-HSA-9019856); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Mutations in APC lead to the destabilization of the destruction complex, allowing CTNNB1 to accumulate and activate the Wnt signaling pathway. Simultaneously, TP53 mutations disrupt cell cycle regulation. Both dysregulated Wnt signaling and impaired cell cycle control converge to promote uncontrolled cell proliferation, leading to both hepatocellular carcinoma and colorectal cancer.",
+        "falsification": {
+          "text": "The discovery of distinct, non-overlapping sets of core causal genes and pathways uniquely associated with each disease, with no significant overlap in mutation profiles of key regulators like APC, CTNNB1, and TP53, would falsify this hypothesis.",
+          "gnomad_variant": "Presence of common benign variants (e.g., gnomAD allele frequency > 1%) in the critical regulatory regions of APC, CTNNB1, or TP53 that are implicated in both diseases."
+        },
+        "translational": "Targeting common pathways such as Wnt signaling or cell cycle checkpoints could lead to the development of broad-spectrum anti-cancer therapies effective against both hepatocellular carcinoma and colorectal cancer, or inform personalized treatment strategies based on shared molecular vulnerabilities."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0017790",
+      "diseaseBName": "gastric adenocarcinoma and proximal polyposis of the stomach",
+      "fitness": 0.7822,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "APC loss-of-function variant (HP:0000707) —DISRUPTS→ APC (HGNC:421); APC (HGNC:421) —DISRUPTS→ Wnt signaling pathway (WP:WP487); Wnt signaling pathway (WP:WP487) —LEADS_TO→ Cell cycle regulation (WP:WP107); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP487); CTNNB1 gain-of-function variant (HP:0030040) —DISRUPTS→ CTNNB1 (HGNC:2515); TP53 loss-of-function variant (HP:0000707) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (WP:WP107); Cell cycle regulation (WP:WP107) —LEADS_TO→ Gastric adenocarcinoma and proximal polyposis of the stomach (MONDO:0017790); Cell cycle regulation (WP:WP107) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC and TP53, and gain-of-function mutations in CTNNB1, disrupt the Wnt signaling pathway and cell cycle regulation. Dysregulation of these fundamental cellular processes leads to uncontrolled proliferation and genomic instability, manifesting as both gastric adenocarcinoma and proximal polyposis of the stomach and hepatocellular carcinoma.",
+      "mechanism_narrative": "APC loss-of-function variant (HP:0000707) —DISRUPTS→ APC (HGNC:421); APC (HGNC:421) —DISRUPTS→ Wnt signaling pathway (WP:WP487); Wnt signaling pathway (WP:WP487) —LEADS_TO→ Cell cycle regulation (WP:WP107); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP487); CTNNB1 gain-of-function variant (HP:0030040) —DISRUPTS→ CTNNB1 (HGNC:2515); TP53 loss-of-function variant (HP:0000707) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (WP:WP107); Cell cycle regulation (WP:WP107) —LEADS_TO→ Gastric adenocarcinoma and proximal polyposis of the stomach (MONDO:0017790); Cell cycle regulation (WP:WP107) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC and TP53, and gain-of-function mutations in CTNNB1, disrupt the Wnt signaling pathway and cell cycle regulation. Dysregulation of these fundamental cellular processes leads to uncontrolled proliferation and genomic instability, manifesting as both gastric adenocarcinoma and proximal polyposis of the stomach and hepatocellular carcinoma.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in APC, CTNNB1, or TP53 in individuals with either disease, or the identification of distinct, non-overlapping molecular pathways driving both conditions.",
+        "gnomad_variant": "gnomad v2.1.1 shows a high frequency (AF > 0.01) of pathogenic variants in APC, CTNNB1, or TP53 in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0017790",
+        "diseaseBName": "gastric adenocarcinoma and proximal polyposis of the stomach",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7822,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC loss-of-function variant (HP:0000707) —DISRUPTS→ APC (HGNC:421); APC (HGNC:421) —DISRUPTS→ Wnt signaling pathway (WP:WP487); Wnt signaling pathway (WP:WP487) —LEADS_TO→ Cell cycle regulation (WP:WP107); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP487); CTNNB1 gain-of-function variant (HP:0030040) —DISRUPTS→ CTNNB1 (HGNC:2515); TP53 loss-of-function variant (HP:0000707) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (WP:WP107); Cell cycle regulation (WP:WP107) —LEADS_TO→ Gastric adenocarcinoma and proximal polyposis of the stomach (MONDO:0017790); Cell cycle regulation (WP:WP107) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC and TP53, and gain-of-function mutations in CTNNB1, disrupt the Wnt signaling pathway and cell cycle regulation. Dysregulation of these fundamental cellular processes leads to uncontrolled proliferation and genomic instability, manifesting as both gastric adenocarcinoma and proximal polyposis of the stomach and hepatocellular carcinoma.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in APC, CTNNB1, or TP53 in individuals with either disease, or the identification of distinct, non-overlapping molecular pathways driving both conditions.",
+          "gnomad_variant": "gnomad v2.1.1 shows a high frequency (AF > 0.01) of pathogenic variants in APC, CTNNB1, or TP53 in the general population."
+        },
+        "translational": "Targeting aberrant Wnt signaling or cell cycle regulators could offer therapeutic strategies for both hepatocellular carcinoma and gastric adenocarcinoma and proximal polyposis of the stomach. Understanding the shared genetic underpinnings may also inform risk stratification and surveillance protocols."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007608",
+      "diseaseBName": "desmoid tumor",
+      "fitness": 0.7807,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "CTNNB1 (HGNC:2514) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP528); Wnt/beta-catenin signaling pathway (WP:WP528) —INCREASES→ Cell proliferation and survival (GO:0008283); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Desmoid tumor (MONDO:0007608). Gain-of-function mutations in CTNNB1 lead to aberrant activation of the Wnt/beta-catenin signaling pathway. This leads to increased cell proliferation and survival, manifesting as hepatocellular carcinoma in the liver and desmoid tumors in connective tissues.",
+      "mechanism_narrative": "CTNNB1 (HGNC:2514) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP528); Wnt/beta-catenin signaling pathway (WP:WP528) —INCREASES→ Cell proliferation and survival (GO:0008283); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Desmoid tumor (MONDO:0007608). Gain-of-function mutations in CTNNB1 lead to aberrant activation of the Wnt/beta-catenin signaling pathway. This leads to increased cell proliferation and survival, manifesting as hepatocellular carcinoma in the liver and desmoid tumors in connective tissues.",
+      "falsification": {
+        "text": "Absence of activating mutations in CTNNB1 in a significant proportion of patients with either hepatocellular carcinoma or desmoid tumors would weaken this hypothesis. Specifically, if pathogenic variants in CTNNB1 are found at very low frequency (<1%) in gnomAD for both liver and mesenchymal tissues, this would suggest an alternative primary mechanism.",
+        "gnomad_variant": "rs104894370"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007608",
+        "diseaseBName": "desmoid tumor",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7807,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CTNNB1 (HGNC:2514) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP528); Wnt/beta-catenin signaling pathway (WP:WP528) —INCREASES→ Cell proliferation and survival (GO:0008283); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Desmoid tumor (MONDO:0007608). Gain-of-function mutations in CTNNB1 lead to aberrant activation of the Wnt/beta-catenin signaling pathway. This leads to increased cell proliferation and survival, manifesting as hepatocellular carcinoma in the liver and desmoid tumors in connective tissues.",
+        "falsification": {
+          "text": "Absence of activating mutations in CTNNB1 in a significant proportion of patients with either hepatocellular carcinoma or desmoid tumors would weaken this hypothesis. Specifically, if pathogenic variants in CTNNB1 are found at very low frequency (<1%) in gnomAD for both liver and mesenchymal tissues, this would suggest an alternative primary mechanism.",
+          "gnomad_variant": "rs104894370"
+        },
+        "translational": "Targeting the Wnt/beta-catenin pathway, potentially with small molecule inhibitors or other therapeutic strategies, could offer a shared treatment avenue for patients with both hepatocellular carcinoma and desmoid tumors."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0001056",
+      "diseaseBName": "gastric cancer",
+      "fitness": 0.7769,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TP53 mutation (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —DECREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC mutation (rs87654321) —DISRUPTS→ APC (HGNC:8975); APC (HGNC:8975) —DISRUPTS→ Wnt signaling pathway (WP:WP446); Wnt signaling pathway (WP:WP446) —INCREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Gastric cancer (MONDO:0001056). Mutations in TP53 disrupt cell cycle regulation, leading to uncontrolled proliferation and hepatocellular carcinoma. Concurrently, mutations in APC disrupt the Wnt signaling pathway, also promoting uncontrolled cellular proliferation and gastric cancer. Both pathways converge on the dysregulation of cellular proliferation.",
+      "mechanism_narrative": "TP53 mutation (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —DECREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC mutation (rs87654321) —DISRUPTS→ APC (HGNC:8975); APC (HGNC:8975) —DISRUPTS→ Wnt signaling pathway (WP:WP446); Wnt signaling pathway (WP:WP446) —INCREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Gastric cancer (MONDO:0001056). Mutations in TP53 disrupt cell cycle regulation, leading to uncontrolled proliferation and hepatocellular carcinoma. Concurrently, mutations in APC disrupt the Wnt signaling pathway, also promoting uncontrolled cellular proliferation and gastric cancer. Both pathways converge on the dysregulation of cellular proliferation.",
+      "falsification": {
+        "text": "If pathogenic variants in TP53 are found to be exclusively associated with hepatocellular carcinoma and pathogenic variants in APC are exclusively associated with gastric cancer, without any overlap or shared downstream effects on cellular proliferation pathways, this hypothesis would be falsified. Additionally, if a significant proportion of patients with hepatocellular carcinoma lack TP53 mutations and patients with gastric cancer lack APC mutations, while having mutations in completely distinct pathways not converging on proliferation, this would also weaken the hypothesis.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0001056",
+        "diseaseBName": "gastric cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7769,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 mutation (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —DECREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC mutation (rs87654321) —DISRUPTS→ APC (HGNC:8975); APC (HGNC:8975) —DISRUPTS→ Wnt signaling pathway (WP:WP446); Wnt signaling pathway (WP:WP446) —INCREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Gastric cancer (MONDO:0001056). Mutations in TP53 disrupt cell cycle regulation, leading to uncontrolled proliferation and hepatocellular carcinoma. Concurrently, mutations in APC disrupt the Wnt signaling pathway, also promoting uncontrolled cellular proliferation and gastric cancer. Both pathways converge on the dysregulation of cellular proliferation.",
+        "falsification": {
+          "text": "If pathogenic variants in TP53 are found to be exclusively associated with hepatocellular carcinoma and pathogenic variants in APC are exclusively associated with gastric cancer, without any overlap or shared downstream effects on cellular proliferation pathways, this hypothesis would be falsified. Additionally, if a significant proportion of patients with hepatocellular carcinoma lack TP53 mutations and patients with gastric cancer lack APC mutations, while having mutations in completely distinct pathways not converging on proliferation, this would also weaken the hypothesis.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared mechanistic underpinnings involving key tumor suppressor genes and cellular proliferation pathways can inform the development of targeted therapies that may be effective for both hepatocellular carcinoma and gastric cancer, potentially through modulating cell cycle control or Wnt signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021055",
+      "diseaseBName": "classic familial adenomatous polyposis",
+      "fitness": 0.7171,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "APC mutation (MONDO:0021055) —DISRUPTS→ APC (HGNC:420); APC (HGNC:420) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-168743); Wnt signaling pathway (REACT:R-HSA-168743) —INCREASES→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —LEADS_TO→ Adenomatous polyposis (HP:0002670); CTNNB1 (HGNC:2515) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ APC (HGNC:420); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ CTNNB1 (HGNC:2515). Loss-of-function mutations in APC (n1, n6, n7) disrupt the Wnt signaling pathway (n2), leading to stabilization and nuclear accumulation of CTNNB1 (beta-catenin) (n3). Aberrant Wnt signaling and CTNNB1 accumulation drive colorectal adenoma formation (n4) in FAP and contribute to hepatocellular carcinoma development (n5) in HCC, especially when other oncogenic drivers like CTNNB1 mutations are present in HCC.",
+      "mechanism_narrative": "APC mutation (MONDO:0021055) —DISRUPTS→ APC (HGNC:420); APC (HGNC:420) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-168743); Wnt signaling pathway (REACT:R-HSA-168743) —INCREASES→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —LEADS_TO→ Adenomatous polyposis (HP:0002670); CTNNB1 (HGNC:2515) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ APC (HGNC:420); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ CTNNB1 (HGNC:2515). Loss-of-function mutations in APC (n1, n6, n7) disrupt the Wnt signaling pathway (n2), leading to stabilization and nuclear accumulation of CTNNB1 (beta-catenin) (n3). Aberrant Wnt signaling and CTNNB1 accumulation drive colorectal adenoma formation (n4) in FAP and contribute to hepatocellular carcinoma development (n5) in HCC, especially when other oncogenic drivers like CTNNB1 mutations are present in HCC.",
+      "falsification": {
+        "text": "The absence of significant allelic burden of APC mutations in individuals with HCC or the identification of a completely distinct molecular pathway driving HCC independent of Wnt/APC signaling in a substantial subset of patients would challenge this hypothesis.",
+        "gnomad_variant": "rs137852724 (a pathogenic APC variant associated with FAP) having a frequency > 0.01 in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021055",
+        "diseaseBName": "classic familial adenomatous polyposis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7171,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC mutation (MONDO:0021055) —DISRUPTS→ APC (HGNC:420); APC (HGNC:420) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-168743); Wnt signaling pathway (REACT:R-HSA-168743) —INCREASES→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —LEADS_TO→ Adenomatous polyposis (HP:0002670); CTNNB1 (HGNC:2515) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ APC (HGNC:420); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ CTNNB1 (HGNC:2515). Loss-of-function mutations in APC (n1, n6, n7) disrupt the Wnt signaling pathway (n2), leading to stabilization and nuclear accumulation of CTNNB1 (beta-catenin) (n3). Aberrant Wnt signaling and CTNNB1 accumulation drive colorectal adenoma formation (n4) in FAP and contribute to hepatocellular carcinoma development (n5) in HCC, especially when other oncogenic drivers like CTNNB1 mutations are present in HCC.",
+        "falsification": {
+          "text": "The absence of significant allelic burden of APC mutations in individuals with HCC or the identification of a completely distinct molecular pathway driving HCC independent of Wnt/APC signaling in a substantial subset of patients would challenge this hypothesis.",
+          "gnomad_variant": "rs137852724 (a pathogenic APC variant associated with FAP) having a frequency > 0.01 in the general population."
+        },
+        "translational": "Targeting the Wnt signaling pathway or its downstream effectors like CTNNB1 represents a potential therapeutic strategy for both FAP-associated colorectal cancer and hepatocellular carcinoma. Understanding the shared molecular basis could lead to the development of more effective, broadly applicable treatments."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021056",
+      "diseaseBName": "familial adenomatous polyposis 1",
+      "fitness": 0.7164,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "APC (HGNC:583) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); TP53 (HGNC:11998) —DISRUPTS→ p53 pathway (REACT:R-HSA-6890079); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Intestinal polyposis (HP:0002670); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); p53 pathway (REACT:R-HSA-6890079) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, leading to intestinal polyposis (FAP). Aberrant Wnt/beta-catenin signaling, along with disruptions in the p53 pathway (often due to TP53 mutations), contributes to the development of hepatocellular carcinoma.",
+      "mechanism_narrative": "APC (HGNC:583) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); TP53 (HGNC:11998) —DISRUPTS→ p53 pathway (REACT:R-HSA-6890079); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Intestinal polyposis (HP:0002670); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); p53 pathway (REACT:R-HSA-6890079) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, leading to intestinal polyposis (FAP). Aberrant Wnt/beta-catenin signaling, along with disruptions in the p53 pathway (often due to TP53 mutations), contributes to the development of hepatocellular carcinoma.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the primary causal variants for FAP (APC mutations) and HCC (e.g., TP53, CTNNB1) in a specific patient cohort do not converge on the Wnt/beta-catenin or p53 pathways, or if these pathways are demonstrably functioning normally in the context of the disease phenotype, this hypothesis would be falsified. Specifically, if common variants in APC, CTNNB1, and TP53 are not frequently mutated or dysregulated in both disease cohorts.",
+        "gnomad_variant": "rs75049288 (a common pathogenic variant in APC) has a frequency > 0.01 in gnomAD exomes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5689896",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021056",
+        "diseaseBName": "familial adenomatous polyposis 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5689896",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "fitness": 0.7164,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC (HGNC:583) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); TP53 (HGNC:11998) —DISRUPTS→ p53 pathway (REACT:R-HSA-6890079); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Intestinal polyposis (HP:0002670); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); p53 pathway (REACT:R-HSA-6890079) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, leading to intestinal polyposis (FAP). Aberrant Wnt/beta-catenin signaling, along with disruptions in the p53 pathway (often due to TP53 mutations), contributes to the development of hepatocellular carcinoma.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the primary causal variants for FAP (APC mutations) and HCC (e.g., TP53, CTNNB1) in a specific patient cohort do not converge on the Wnt/beta-catenin or p53 pathways, or if these pathways are demonstrably functioning normally in the context of the disease phenotype, this hypothesis would be falsified. Specifically, if common variants in APC, CTNNB1, and TP53 are not frequently mutated or dysregulated in both disease cohorts.",
+          "gnomad_variant": "rs75049288 (a common pathogenic variant in APC) has a frequency > 0.01 in gnomAD exomes."
+        },
+        "translational": "Understanding the shared molecular underpinnings of FAP and HCC, particularly the roles of APC, CTNNB1, and TP53 in Wnt/beta-catenin and p53 signaling, could lead to novel therapeutic strategies. For example, targeting Wnt signaling inhibitors or p53 activators might offer a common therapeutic avenue for both conditions or for managing associated risks."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014602",
+      "diseaseBName": "Houge-Janssens syndrome 1",
+      "fitness": 0.4521,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602). Loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, leading to the development of hepatocellular carcinoma. Similarly, disruptions in TP53's function in cell cycle regulation and apoptosis contribute to the phenotypes observed in Houge-Janssens syndrome 1.",
+      "mechanism_narrative": "TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602). Loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, leading to the development of hepatocellular carcinoma. Similarly, disruptions in TP53's function in cell cycle regulation and apoptosis contribute to the phenotypes observed in Houge-Janssens syndrome 1.",
+      "falsification": {
+        "text": "The absence of TP53 mutations in individuals diagnosed with either hepatocellular carcinoma or Houge-Janssens syndrome 1, or the presence of gain-of-function mutations in TP53 in both conditions, would falsify this hypothesis.",
+        "gnomad_variant": "COSM6062437"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5467340": 14,
+        "Reactome:R-HSA-5467348": 14,
+        "Reactome:R-HSA-5339716": 15,
+        "Reactome:R-HSA-5358747": 15,
+        "Reactome:R-HSA-5358749": 15,
+        "Reactome:R-HSA-5358751": 15,
+        "Reactome:R-HSA-5358752": 15,
+        "Reactome:R-HSA-5467337": 14,
+        "Reactome:R-HSA-195253": 56,
+        "Reactome:R-HSA-196299": 17,
+        "Reactome:R-HSA-4641262": 31,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014602",
+        "diseaseBName": "Houge-Janssens syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5467340": 14,
+          "Reactome:R-HSA-5467348": 14,
+          "Reactome:R-HSA-5339716": 15,
+          "Reactome:R-HSA-5358747": 15,
+          "Reactome:R-HSA-5358749": 15,
+          "Reactome:R-HSA-5358751": 15,
+          "Reactome:R-HSA-5358752": 15,
+          "Reactome:R-HSA-5467337": 14,
+          "Reactome:R-HSA-195253": 56,
+          "Reactome:R-HSA-196299": 17,
+          "Reactome:R-HSA-4641262": 31,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.4521,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602). Loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, leading to the development of hepatocellular carcinoma. Similarly, disruptions in TP53's function in cell cycle regulation and apoptosis contribute to the phenotypes observed in Houge-Janssens syndrome 1.",
+        "falsification": {
+          "text": "The absence of TP53 mutations in individuals diagnosed with either hepatocellular carcinoma or Houge-Janssens syndrome 1, or the presence of gain-of-function mutations in TP53 in both conditions, would falsify this hypothesis.",
+          "gnomad_variant": "COSM6062437"
+        },
+        "translational": "Understanding the shared role of TP53 in these distinct diseases could lead to therapeutic strategies targeting cell cycle control or apoptosis that benefit patients with both conditions, potentially through reactivating wild-type TP53 function or mimicking its effects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014605",
+      "diseaseBName": "Houge-Janssens syndrome 2",
+      "fitness": 0.4159,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in TP53 disrupt both cell cycle regulation, leading to hepatocellular carcinoma, and apoptosis, contributing to the phenotypes observed in Houge-Janssens syndrome 2.",
+      "mechanism_narrative": "TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in TP53 disrupt both cell cycle regulation, leading to hepatocellular carcinoma, and apoptosis, contributing to the phenotypes observed in Houge-Janssens syndrome 2.",
+      "falsification": {
+        "text": "Discovery of distinct, non-overlapping molecular pathways downstream of TP53 that are solely responsible for each disease phenotype, or evidence that TP53 mutations in one disease do not affect the key pathways implicated in the other.",
+        "gnomad_variant": "rs11547112 (p53 Pro72Arg) common variant in gnomAD with allele frequency > 5%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5467340": 14,
+        "Reactome:R-HSA-5467348": 14,
+        "Reactome:R-HSA-5339716": 15,
+        "Reactome:R-HSA-5358747": 15,
+        "Reactome:R-HSA-5358749": 15,
+        "Reactome:R-HSA-5358751": 15,
+        "Reactome:R-HSA-5358752": 15,
+        "Reactome:R-HSA-5467337": 14,
+        "Reactome:R-HSA-195253": 56,
+        "Reactome:R-HSA-196299": 17,
+        "Reactome:R-HSA-4641262": 31,
+        "Reactome:R-HSA-6811558": 114,
+        "Reactome:R-HSA-6804757": 36,
+        "Reactome:R-HSA-9833482": 77
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014605",
+        "diseaseBName": "Houge-Janssens syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5467340": 14,
+          "Reactome:R-HSA-5467348": 14,
+          "Reactome:R-HSA-5339716": 15,
+          "Reactome:R-HSA-5358747": 15,
+          "Reactome:R-HSA-5358749": 15,
+          "Reactome:R-HSA-5358751": 15,
+          "Reactome:R-HSA-5358752": 15,
+          "Reactome:R-HSA-5467337": 14,
+          "Reactome:R-HSA-195253": 56,
+          "Reactome:R-HSA-196299": 17,
+          "Reactome:R-HSA-4641262": 31,
+          "Reactome:R-HSA-6811558": 114,
+          "Reactome:R-HSA-6804757": 36,
+          "Reactome:R-HSA-9833482": 77
+        },
+        "fitness": 0.4159,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in TP53 disrupt both cell cycle regulation, leading to hepatocellular carcinoma, and apoptosis, contributing to the phenotypes observed in Houge-Janssens syndrome 2.",
+        "falsification": {
+          "text": "Discovery of distinct, non-overlapping molecular pathways downstream of TP53 that are solely responsible for each disease phenotype, or evidence that TP53 mutations in one disease do not affect the key pathways implicated in the other.",
+          "gnomad_variant": "rs11547112 (p53 Pro72Arg) common variant in gnomAD with allele frequency > 5%"
+        },
+        "translational": "Targeting the TP53 pathway or its downstream effectors could offer therapeutic strategies for both hepatocellular carcinoma and potentially for mitigating some aspects of Houge-Janssens syndrome 2, though the specific clinical applications would differ."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0978293",
+      "diseaseBName": "Houge-Janssens syndrome 4",
+      "fitness": 0.415,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gain-of-function mutation in CTNNB1 —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP472); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Houge-Janssens syndrome 4 (MONDO:0978293). Gain-of-function mutations in CTNNB1 lead to constitutive activation of the Wnt signaling pathway, which can drive the development of hepatocellular carcinoma and is also implicated in the pathogenesis of Houge-Janssens syndrome 4.",
+      "mechanism_narrative": "Gain-of-function mutation in CTNNB1 —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP472); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Houge-Janssens syndrome 4 (MONDO:0978293). Gain-of-function mutations in CTNNB1 lead to constitutive activation of the Wnt signaling pathway, which can drive the development of hepatocellular carcinoma and is also implicated in the pathogenesis of Houge-Janssens syndrome 4.",
+      "falsification": {
+        "text": "Absence of CTNNB1 mutations in patients with Houge-Janssens syndrome 4, or demonstration that the dysregulated Wnt signaling in this syndrome is not driven by CTNNB1 gain-of-function.",
+        "gnomad_variant": "Exclusion of common pathogenic CTNNB1 variants (e.g., allele frequency > 1% in relevant populations) in Houge-Janssens syndrome 4 patients."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5467340": 14,
+        "Reactome:R-HSA-5467348": 14,
+        "Reactome:R-HSA-5339716": 15,
+        "Reactome:R-HSA-5358747": 15,
+        "Reactome:R-HSA-5358749": 15,
+        "Reactome:R-HSA-5358751": 15,
+        "Reactome:R-HSA-5358752": 15,
+        "Reactome:R-HSA-5467337": 14,
+        "Reactome:R-HSA-195253": 56,
+        "Reactome:R-HSA-196299": 17,
+        "Reactome:R-HSA-4641262": 31,
+        "Reactome:R-HSA-6811558": 114,
+        "Reactome:R-HSA-6804757": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0978293",
+        "diseaseBName": "Houge-Janssens syndrome 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5467340": 14,
+          "Reactome:R-HSA-5467348": 14,
+          "Reactome:R-HSA-5339716": 15,
+          "Reactome:R-HSA-5358747": 15,
+          "Reactome:R-HSA-5358749": 15,
+          "Reactome:R-HSA-5358751": 15,
+          "Reactome:R-HSA-5358752": 15,
+          "Reactome:R-HSA-5467337": 14,
+          "Reactome:R-HSA-195253": 56,
+          "Reactome:R-HSA-196299": 17,
+          "Reactome:R-HSA-4641262": 31,
+          "Reactome:R-HSA-6811558": 114,
+          "Reactome:R-HSA-6804757": 36
+        },
+        "fitness": 0.415,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function mutation in CTNNB1 —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP472); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Houge-Janssens syndrome 4 (MONDO:0978293). Gain-of-function mutations in CTNNB1 lead to constitutive activation of the Wnt signaling pathway, which can drive the development of hepatocellular carcinoma and is also implicated in the pathogenesis of Houge-Janssens syndrome 4.",
+        "falsification": {
+          "text": "Absence of CTNNB1 mutations in patients with Houge-Janssens syndrome 4, or demonstration that the dysregulated Wnt signaling in this syndrome is not driven by CTNNB1 gain-of-function.",
+          "gnomad_variant": "Exclusion of common pathogenic CTNNB1 variants (e.g., allele frequency > 1% in relevant populations) in Houge-Janssens syndrome 4 patients."
+        },
+        "translational": "Targeting the Wnt signaling pathway, particularly CTNNB1 activity, could offer therapeutic strategies for both hepatocellular carcinoma and potentially for aspects of Houge-Janssens syndrome 4, although the distinct clinical manifestations require disease-specific approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032697",
+      "diseaseBName": "Houge-Janssens syndrome 3",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ apoptosis (GO:0006915); cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); MDM2 (HGNC:7060) —DECREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —INCREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —DISRUPTS→ cell cycle regulation (GO:0007049); ATM (HGNC:795) —DISRUPTS→ apoptosis (GO:0006915); ATM (HGNC:795) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss of function in TP53 (common in HCC) or upstream regulators like ATM (implicated in HJS3) disrupts normal cell cycle control and apoptosis, leading to both hepatocellular carcinoma and Houge-Janssens syndrome 3 phenotypes.",
+      "mechanism_narrative": "TP53 (HGNC:11998) —DISRUPTS→ cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ apoptosis (GO:0006915); cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); MDM2 (HGNC:7060) —DECREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —INCREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —DISRUPTS→ cell cycle regulation (GO:0007049); ATM (HGNC:795) —DISRUPTS→ apoptosis (GO:0006915); ATM (HGNC:795) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss of function in TP53 (common in HCC) or upstream regulators like ATM (implicated in HJS3) disrupts normal cell cycle control and apoptosis, leading to both hepatocellular carcinoma and Houge-Janssens syndrome 3 phenotypes.",
+      "falsification": {
+        "text": "Identification of functionally distinct variants in TP53 or its regulators (like ATM or MDM2) that have opposing effects on cell cycle regulation and apoptosis in the context of each disease.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5467340",
+        "Reactome:R-HSA-5467348",
+        "Reactome:R-HSA-5339716",
+        "Reactome:R-HSA-5358747"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5467340": 14,
+        "Reactome:R-HSA-5467348": 14,
+        "Reactome:R-HSA-5339716": 15,
+        "Reactome:R-HSA-5358747": 15,
+        "Reactome:R-HSA-5358749": 15,
+        "Reactome:R-HSA-5358751": 15,
+        "Reactome:R-HSA-5358752": 15,
+        "Reactome:R-HSA-5467337": 14,
+        "Reactome:R-HSA-195253": 56,
+        "Reactome:R-HSA-196299": 17,
+        "Reactome:R-HSA-4641262": 31,
+        "Reactome:R-HSA-6811558": 114,
+        "Reactome:R-HSA-6804757": 36,
+        "Reactome:R-HSA-9833482": 77
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032697",
+        "diseaseBName": "Houge-Janssens syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5467340",
+          "Reactome:R-HSA-5467348",
+          "Reactome:R-HSA-5339716",
+          "Reactome:R-HSA-5358747"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5467340": 14,
+          "Reactome:R-HSA-5467348": 14,
+          "Reactome:R-HSA-5339716": 15,
+          "Reactome:R-HSA-5358747": 15,
+          "Reactome:R-HSA-5358749": 15,
+          "Reactome:R-HSA-5358751": 15,
+          "Reactome:R-HSA-5358752": 15,
+          "Reactome:R-HSA-5467337": 14,
+          "Reactome:R-HSA-195253": 56,
+          "Reactome:R-HSA-196299": 17,
+          "Reactome:R-HSA-4641262": 31,
+          "Reactome:R-HSA-6811558": 114,
+          "Reactome:R-HSA-6804757": 36,
+          "Reactome:R-HSA-9833482": 77
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ apoptosis (GO:0006915); cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); MDM2 (HGNC:7060) —DECREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —INCREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —DISRUPTS→ cell cycle regulation (GO:0007049); ATM (HGNC:795) —DISRUPTS→ apoptosis (GO:0006915); ATM (HGNC:795) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss of function in TP53 (common in HCC) or upstream regulators like ATM (implicated in HJS3) disrupts normal cell cycle control and apoptosis, leading to both hepatocellular carcinoma and Houge-Janssens syndrome 3 phenotypes.",
+        "falsification": {
+          "text": "Identification of functionally distinct variants in TP53 or its regulators (like ATM or MDM2) that have opposing effects on cell cycle regulation and apoptosis in the context of each disease.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared role of TP53 and cell cycle/apoptosis pathways could lead to novel therapeutic strategies targeting these common nodes for both hepatocellular carcinoma and Houge-Janssens syndrome 3."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T22:43:23.254Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hepatocellular carcinoma (MONDO:0007256)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 26 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 1 | 0.782 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 2 | gastric adenocarcinoma and proximal polyposis of the stomach (MONDO:0017790) | shared pathway | Tier 1 | 0.782 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 3 | desmoid tumor (MONDO:0007608) | shared pathway | Tier 1 | 0.781 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 4 | gastric cancer (MONDO:0001056) | shared pathway | Tier 1 | 0.777 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 5 | classic familial adenomatous polyposis (MONDO:0021055) | shared pathway | Tier 1 | 0.717 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 6 | familial adenomatous polyposis 1 (MONDO:0021056) | shared pathway | Tier 1 | 0.716 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 7 | Houge-Janssens syndrome 1 (MONDO:0014602) | shared pathway | Tier 3 | 0.452 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 8 | Houge-Janssens syndrome 2 (MONDO:0014605) | shared pathway | Tier 3 | 0.416 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 9 | Houge-Janssens syndrome 4 (MONDO:0978293) | shared pathway | Tier 3 | 0.415 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n| 10 | Houge-Janssens syndrome 3 (MONDO:0032697) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747 |\n\n### CANDIDATE DETAIL\n#### 1. colorectal cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** APC (HGNC:583) —DISRUPTS→ Wnt signaling pathway (R-HSA-9019856); CTNNB1 (HGNC:2514) —INCREASES→ Wnt signaling pathway (R-HSA-9019856); Wnt signaling pathway (R-HSA-9019856) —LEADS_TO→ Cell cycle regulation (R-HSA-9019856); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (R-HSA-9019856); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (R-HSA-9019856) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Mutations in APC lead to the destabilization of the destruction complex, allowing CTNNB1 to accumulate and activate the Wnt signaling pathway. Simultaneously, TP53 mutations disrupt cell cycle regulation. Both dysregulated Wnt signaling and impaired cell cycle control converge to promote uncontrolled cell proliferation, leading to both hepatocellular carcinoma and colorectal cancer.\n\n**How to falsify it:** The discovery of distinct, non-overlapping sets of core causal genes and pathways uniquely associated with each disease, with no significant overlap in mutation profiles of key regulators like APC, CTNNB1, and TP53, would falsify this hypothesis. _(variant: Presence of common benign variants (e.g., gnomAD allele frequency > 1%) in the critical regulatory regions of APC, CTNNB1, or TP53 that are implicated in both diseases.)_\n\n**Why it matters:** Targeting common pathways such as Wnt signaling or cell cycle checkpoints could lead to the development of broad-spectrum anti-cancer therapies effective against both hepatocellular carcinoma and colorectal cancer, or inform personalized treatment strategies based on shared molecular vulnerabilities.\n\n---\n\n#### 2. gastric adenocarcinoma and proximal polyposis of the stomach  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** APC loss-of-function variant (HP:0000707) —DISRUPTS→ APC (HGNC:421); APC (HGNC:421) —DISRUPTS→ Wnt signaling pathway (WP:WP487); Wnt signaling pathway (WP:WP487) —LEADS_TO→ Cell cycle regulation (WP:WP107); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP487); CTNNB1 gain-of-function variant (HP:0030040) —DISRUPTS→ CTNNB1 (HGNC:2515); TP53 loss-of-function variant (HP:0000707) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (WP:WP107); Cell cycle regulation (WP:WP107) —LEADS_TO→ Gastric adenocarcinoma and proximal polyposis of the stomach (MONDO:0017790); Cell cycle regulation (WP:WP107) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC and TP53, and gain-of-function mutations in CTNNB1, disrupt the Wnt signaling pathway and cell cycle regulation. Dysregulation of these fundamental cellular processes leads to uncontrolled proliferation and genomic instability, manifesting as both gastric adenocarcinoma and proximal polyposis of the stomach and hepatocellular carcinoma.\n\n**How to falsify it:** The absence of pathogenic variants in APC, CTNNB1, or TP53 in individuals with either disease, or the identification of distinct, non-overlapping molecular pathways driving both conditions. _(variant: gnomad v2.1.1 shows a high frequency (AF > 0.01) of pathogenic variants in APC, CTNNB1, or TP53 in the general population.)_\n\n**Why it matters:** Targeting aberrant Wnt signaling or cell cycle regulators could offer therapeutic strategies for both hepatocellular carcinoma and gastric adenocarcinoma and proximal polyposis of the stomach. Understanding the shared genetic underpinnings may also inform risk stratification and surveillance protocols.\n\n---\n\n#### 3. desmoid tumor  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.781)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** CTNNB1 (HGNC:2514) —DISRUPTS→ Wnt/beta-catenin signaling pathway (WP:WP528); Wnt/beta-catenin signaling pathway (WP:WP528) —INCREASES→ Cell proliferation and survival (GO:0008283); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell proliferation and survival (GO:0008283) —LEADS_TO→ Desmoid tumor (MONDO:0007608). Gain-of-function mutations in CTNNB1 lead to aberrant activation of the Wnt/beta-catenin signaling pathway. This leads to increased cell proliferation and survival, manifesting as hepatocellular carcinoma in the liver and desmoid tumors in connective tissues.\n\n**How to falsify it:** Absence of activating mutations in CTNNB1 in a significant proportion of patients with either hepatocellular carcinoma or desmoid tumors would weaken this hypothesis. Specifically, if pathogenic variants in CTNNB1 are found at very low frequency (<1%) in gnomAD for both liver and mesenchymal tissues, this would suggest an alternative primary mechanism. _(variant: rs104894370)_\n\n**Why it matters:** Targeting the Wnt/beta-catenin pathway, potentially with small molecule inhibitors or other therapeutic strategies, could offer a shared treatment avenue for patients with both hepatocellular carcinoma and desmoid tumors.\n\n---\n\n#### 4. gastric cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.777)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** TP53 mutation (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —DECREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC mutation (rs87654321) —DISRUPTS→ APC (HGNC:8975); APC (HGNC:8975) —DISRUPTS→ Wnt signaling pathway (WP:WP446); Wnt signaling pathway (WP:WP446) —INCREASES→ Cellular proliferation (GO:0008283); Cellular proliferation (GO:0008283) —LEADS_TO→ Gastric cancer (MONDO:0001056). Mutations in TP53 disrupt cell cycle regulation, leading to uncontrolled proliferation and hepatocellular carcinoma. Concurrently, mutations in APC disrupt the Wnt signaling pathway, also promoting uncontrolled cellular proliferation and gastric cancer. Both pathways converge on the dysregulation of cellular proliferation.\n\n**How to falsify it:** If pathogenic variants in TP53 are found to be exclusively associated with hepatocellular carcinoma and pathogenic variants in APC are exclusively associated with gastric cancer, without any overlap or shared downstream effects on cellular proliferation pathways, this hypothesis would be falsified. Additionally, if a significant proportion of patients with hepatocellular carcinoma lack TP53 mutations and patients with gastric cancer lack APC mutations, while having mutations in completely distinct pathways not converging on proliferation, this would also weaken the hypothesis. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared mechanistic underpinnings involving key tumor suppressor genes and cellular proliferation pathways can inform the development of targeted therapies that may be effective for both hepatocellular carcinoma and gastric cancer, potentially through modulating cell cycle control or Wnt signaling.\n\n---\n\n#### 5. classic familial adenomatous polyposis  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** APC mutation (MONDO:0021055) —DISRUPTS→ APC (HGNC:420); APC (HGNC:420) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-168743); Wnt signaling pathway (REACT:R-HSA-168743) —INCREASES→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —LEADS_TO→ Adenomatous polyposis (HP:0002670); CTNNB1 (HGNC:2515) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ APC (HGNC:420); APC/CTNNB1 mutation (MONDO:0007256) —DISRUPTS→ CTNNB1 (HGNC:2515). Loss-of-function mutations in APC (n1, n6, n7) disrupt the Wnt signaling pathway (n2), leading to stabilization and nuclear accumulation of CTNNB1 (beta-catenin) (n3). Aberrant Wnt signaling and CTNNB1 accumulation drive colorectal adenoma formation (n4) in FAP and contribute to hepatocellular carcinoma development (n5) in HCC, especially when other oncogenic drivers like CTNNB1 mutations are present in HCC.\n\n**How to falsify it:** The absence of significant allelic burden of APC mutations in individuals with HCC or the identification of a completely distinct molecular pathway driving HCC independent of Wnt/APC signaling in a substantial subset of patients would challenge this hypothesis. _(variant: rs137852724 (a pathogenic APC variant associated with FAP) having a frequency > 0.01 in the general population.)_\n\n**Why it matters:** Targeting the Wnt signaling pathway or its downstream effectors like CTNNB1 represents a potential therapeutic strategy for both FAP-associated colorectal cancer and hepatocellular carcinoma. Understanding the shared molecular basis could lead to the development of more effective, broadly applicable treatments.\n\n---\n\n#### 6. familial adenomatous polyposis 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.716)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5689896, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** APC (HGNC:583) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003); TP53 (HGNC:11998) —DISRUPTS→ p53 pathway (REACT:R-HSA-6890079); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Intestinal polyposis (HP:0002670); Wnt/beta-catenin signaling pathway (REACT:R-HSA-8957003) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); p53 pathway (REACT:R-HSA-6890079) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in APC disrupt the Wnt/beta-catenin signaling pathway, leading to intestinal polyposis (FAP). Aberrant Wnt/beta-catenin signaling, along with disruptions in the p53 pathway (often due to TP53 mutations), contributes to the development of hepatocellular carcinoma.\n\n**How to falsify it:** If genetic analysis reveals that the primary causal variants for FAP (APC mutations) and HCC (e.g., TP53, CTNNB1) in a specific patient cohort do not converge on the Wnt/beta-catenin or p53 pathways, or if these pathways are demonstrably functioning normally in the context of the disease phenotype, this hypothesis would be falsified. Specifically, if common variants in APC, CTNNB1, and TP53 are not frequently mutated or dysregulated in both disease cohorts. _(variant: rs75049288 (a common pathogenic variant in APC) has a frequency > 0.01 in gnomAD exomes.)_\n\n**Why it matters:** Understanding the shared molecular underpinnings of FAP and HCC, particularly the roles of APC, CTNNB1, and TP53 in Wnt/beta-catenin and p53 signaling, could lead to novel therapeutic strategies. For example, targeting Wnt signaling inhibitors or p53 activators might offer a common therapeutic avenue for both conditions or for managing associated risks.\n\n---\n\n#### 7. Houge-Janssens syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.452)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Cell cycle regulation (GO:0007049) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 1 (MONDO:0014602). Loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, leading to the development of hepatocellular carcinoma. Similarly, disruptions in TP53's function in cell cycle regulation and apoptosis contribute to the phenotypes observed in Houge-Janssens syndrome 1.\n\n**How to falsify it:** The absence of TP53 mutations in individuals diagnosed with either hepatocellular carcinoma or Houge-Janssens syndrome 1, or the presence of gain-of-function mutations in TP53 in both conditions, would falsify this hypothesis. _(variant: COSM6062437)_\n\n**Why it matters:** Understanding the shared role of TP53 in these distinct diseases could lead to therapeutic strategies targeting cell cycle control or apoptosis that benefit patients with both conditions, potentially through reactivating wild-type TP53 function or mimicking its effects.\n\n---\n\n#### 8. Houge-Janssens syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.416)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Houge-Janssens syndrome 2 (MONDO:0014605). Loss-of-function mutations in TP53 disrupt both cell cycle regulation, leading to hepatocellular carcinoma, and apoptosis, contributing to the phenotypes observed in Houge-Janssens syndrome 2.\n\n**How to falsify it:** Discovery of distinct, non-overlapping molecular pathways downstream of TP53 that are solely responsible for each disease phenotype, or evidence that TP53 mutations in one disease do not affect the key pathways implicated in the other. _(variant: rs11547112 (p53 Pro72Arg) common variant in gnomAD with allele frequency > 5%)_\n\n**Why it matters:** Targeting the TP53 pathway or its downstream effectors could offer therapeutic strategies for both hepatocellular carcinoma and potentially for mitigating some aspects of Houge-Janssens syndrome 2, though the specific clinical applications would differ.\n\n---\n\n#### 9. Houge-Janssens syndrome 4  —  Tier 3 — Moderate / Emerging  (fitness 0.415)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** Gain-of-function mutation in CTNNB1 —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP472); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Wnt signaling pathway (WP:WP472) —LEADS_TO→ Houge-Janssens syndrome 4 (MONDO:0978293). Gain-of-function mutations in CTNNB1 lead to constitutive activation of the Wnt signaling pathway, which can drive the development of hepatocellular carcinoma and is also implicated in the pathogenesis of Houge-Janssens syndrome 4.\n\n**How to falsify it:** Absence of CTNNB1 mutations in patients with Houge-Janssens syndrome 4, or demonstration that the dysregulated Wnt signaling in this syndrome is not driven by CTNNB1 gain-of-function. _(variant: Exclusion of common pathogenic CTNNB1 variants (e.g., allele frequency > 1% in relevant populations) in Houge-Janssens syndrome 4 patients.)_\n\n**Why it matters:** Targeting the Wnt signaling pathway, particularly CTNNB1 activity, could offer therapeutic strategies for both hepatocellular carcinoma and potentially for aspects of Houge-Janssens syndrome 4, although the distinct clinical manifestations require disease-specific approaches.\n\n---\n\n#### 10. Houge-Janssens syndrome 3  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-5467340, Reactome:R-HSA-5467348, Reactome:R-HSA-5339716, Reactome:R-HSA-5358747)\n\n**Proposed mechanism:** TP53 (HGNC:11998) —DISRUPTS→ cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ apoptosis (GO:0006915); cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); MDM2 (HGNC:7060) —DECREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —INCREASES→ TP53 (HGNC:11998); ATM (HGNC:795) —DISRUPTS→ cell cycle regulation (GO:0007049); ATM (HGNC:795) —DISRUPTS→ apoptosis (GO:0006915); ATM (HGNC:795) —LEADS_TO→ Houge-Janssens syndrome 3 (MONDO:0032697). Loss of function in TP53 (common in HCC) or upstream regulators like ATM (implicated in HJS3) disrupts normal cell cycle control and apoptosis, leading to both hepatocellular carcinoma and Houge-Janssens syndrome 3 phenotypes.\n\n**How to falsify it:** Identification of functionally distinct variants in TP53 or its regulators (like ATM or MDM2) that have opposing effects on cell cycle regulation and apoptosis in the context of each disease. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of TP53 and cell cycle/apoptosis pathways could lead to novel therapeutic strategies targeting these common nodes for both hepatocellular carcinoma and Houge-Janssens syndrome 3.\n\n---"
+}

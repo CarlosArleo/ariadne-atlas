@@ -1,0 +1,423 @@
+{
+  "seed": {
+    "id": "MONDO:0007267",
+    "name": "hypertrophic cardiomyopathy 3"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 50,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012744",
+      "diseaseBName": "dilated cardiomyopathy 1Y",
+      "fitness": 0.6683,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TPM1 (HGNC:12010) —LEADS_TO→ Cardiomyopathy (HP:0001638); Cardiomyopathy (HP:0001638) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001639); Cardiomyopathy (HP:0001638) —LEADS_TO→ Dilated Cardiomyopathy (HP:0001643). Mutations in TPM1 lead to a general cardiomyopathy phenotype, which can manifest as either hypertrophic or dilated cardiomyopathy depending on the specific variant and its effect on the tropomyosin protein's interaction with actin and myosin.",
+      "mechanism_narrative": "TPM1 (HGNC:12010) —LEADS_TO→ Cardiomyopathy (HP:0001638); Cardiomyopathy (HP:0001638) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001639); Cardiomyopathy (HP:0001638) —LEADS_TO→ Dilated Cardiomyopathy (HP:0001643). Mutations in TPM1 lead to a general cardiomyopathy phenotype, which can manifest as either hypertrophic or dilated cardiomyopathy depending on the specific variant and its effect on the tropomyosin protein's interaction with actin and myosin.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if pathogenic variants in TPM1 were found to be exclusively associated with only one of the two specific cardiomyopathy types (hypertrophic or dilated) and never the other, or if a distinct causal gene for one of the diseases was identified without any overlap in functional pathways with TPM1.",
+        "gnomad_variant": "Pathogenic variants in TPM1 with a minor allele frequency > 0.01% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522",
+        "Reactome:R-HSA-445355"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012744",
+        "diseaseBName": "dilated cardiomyopathy 1Y",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522",
+          "Reactome:R-HSA-445355"
+        ],
+        "fitness": 0.6683,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:12010) —LEADS_TO→ Cardiomyopathy (HP:0001638); Cardiomyopathy (HP:0001638) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001639); Cardiomyopathy (HP:0001638) —LEADS_TO→ Dilated Cardiomyopathy (HP:0001643). Mutations in TPM1 lead to a general cardiomyopathy phenotype, which can manifest as either hypertrophic or dilated cardiomyopathy depending on the specific variant and its effect on the tropomyosin protein's interaction with actin and myosin.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if pathogenic variants in TPM1 were found to be exclusively associated with only one of the two specific cardiomyopathy types (hypertrophic or dilated) and never the other, or if a distinct causal gene for one of the diseases was identified without any overlap in functional pathways with TPM1.",
+          "gnomad_variant": "Pathogenic variants in TPM1 with a minor allele frequency > 0.01% in gnomAD."
+        },
+        "translational": "Understanding the shared genetic basis in TPM1 provides a potential common therapeutic target for both hypertrophic and dilated cardiomyopathies, possibly through gene therapy or small molecule interventions aimed at restoring normal Tropomyosin 1 alpha function or dosage."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0800341",
+      "diseaseBName": "congenital myopathy 4A, autosomal dominant",
+      "fitness": 0.4323,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic TPM1 variant (null) —DISRUPTS→ TPM1 (HGNC:11977); TPM1 (HGNC:11977) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); Pathogenic TPM3 variant (null) —DISRUPTS→ TPM3 (HGNC:11978); TPM3 (HGNC:11978) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Pathogenic variants in TPM1 disrupt its function, leading to impaired actin cytoskeleton organization and ultimately hypertrophic cardiomyopathy. Similarly, pathogenic variants in TPM3 disrupt its function, also impacting actin cytoskeleton organization and resulting in congenital myopathy.",
+      "mechanism_narrative": "Pathogenic TPM1 variant (null) —DISRUPTS→ TPM1 (HGNC:11977); TPM1 (HGNC:11977) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); Pathogenic TPM3 variant (null) —DISRUPTS→ TPM3 (HGNC:11978); TPM3 (HGNC:11978) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Pathogenic variants in TPM1 disrupt its function, leading to impaired actin cytoskeleton organization and ultimately hypertrophic cardiomyopathy. Similarly, pathogenic variants in TPM3 disrupt its function, also impacting actin cytoskeleton organization and resulting in congenital myopathy.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in TPM1 or TPM3 that specifically disrupt distinct, non-overlapping downstream pathways or cellular processes, and not the general actin cytoskeleton organization, would falsify this hypothesis. Additionally, finding that the functional consequences of TPM1 and TPM3 variants are completely divergent (e.g., one leads to protein stabilization and the other to degradation) would also be falsifying.",
+        "gnomad_variant": "The presence of common pathogenic variants (allele frequency > 1% in gnomAD) in TPM1 or TPM3 associated with these specific phenotypes would challenge the rare disease assertion and mechanistic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522",
+        "Reactome:R-HSA-445355"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36,
+        "Reactome:R-HSA-445355": 45
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0800341",
+        "diseaseBName": "congenital myopathy 4A, autosomal dominant",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522",
+          "Reactome:R-HSA-445355"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36,
+          "Reactome:R-HSA-445355": 45
+        },
+        "fitness": 0.4323,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic TPM1 variant (null) —DISRUPTS→ TPM1 (HGNC:11977); TPM1 (HGNC:11977) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); Pathogenic TPM3 variant (null) —DISRUPTS→ TPM3 (HGNC:11978); TPM3 (HGNC:11978) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Pathogenic variants in TPM1 disrupt its function, leading to impaired actin cytoskeleton organization and ultimately hypertrophic cardiomyopathy. Similarly, pathogenic variants in TPM3 disrupt its function, also impacting actin cytoskeleton organization and resulting in congenital myopathy.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in TPM1 or TPM3 that specifically disrupt distinct, non-overlapping downstream pathways or cellular processes, and not the general actin cytoskeleton organization, would falsify this hypothesis. Additionally, finding that the functional consequences of TPM1 and TPM3 variants are completely divergent (e.g., one leads to protein stabilization and the other to degradation) would also be falsifying.",
+          "gnomad_variant": "The presence of common pathogenic variants (allele frequency > 1% in gnomAD) in TPM1 or TPM3 associated with these specific phenotypes would challenge the rare disease assertion and mechanistic link."
+        },
+        "translational": "Understanding the shared role of TPM1 and TPM3 in muscle function provides a potential avenue for developing therapeutics that could target common downstream pathways or protein interactions to treat both hypertrophic cardiomyopathy and congenital myopathies, or related muscle disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957580",
+      "diseaseBName": "bleeding disorder, platelet-type, 25",
+      "fitness": 0.423,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:12100) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); TPM4 (HGNC:12101) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ bleeding disorder, platelet-type (HP:0011397). Mutations in TPM1 and TPM4 disrupt the normal organization and function of the actin cytoskeleton. In cardiac muscle cells, this leads to hypertrophic cardiomyopathy. In platelets, impaired actin dynamics result in defective platelet aggregation and adhesion, causing a bleeding disorder.",
+      "mechanism_narrative": "TPM1 (HGNC:12100) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); TPM4 (HGNC:12101) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ bleeding disorder, platelet-type (HP:0011397). Mutations in TPM1 and TPM4 disrupt the normal organization and function of the actin cytoskeleton. In cardiac muscle cells, this leads to hypertrophic cardiomyopathy. In platelets, impaired actin dynamics result in defective platelet aggregation and adhesion, causing a bleeding disorder.",
+      "falsification": {
+        "text": "If genetic studies demonstrate that mutations in TPM1 and TPM4 associated with hypertrophic cardiomyopathy 3 do not impair platelet function, or vice versa, this hypothesis would be falsified. Alternatively, if variants in TPM1 or TPM4 with a minor allele frequency >0.01 in gnomAD are found to be pathogenic for both conditions, this would challenge the proposed haploinsufficiency model.",
+        "gnomad_variant": "Any pathogenic variant in TPM1 or TPM4 associated with either disease must not be present in gnomAD with a frequency exceeding 0.001."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522",
+        "Reactome:R-HSA-445355"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36,
+        "Reactome:R-HSA-445355": 45
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957580",
+        "diseaseBName": "bleeding disorder, platelet-type, 25",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522",
+          "Reactome:R-HSA-445355"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36,
+          "Reactome:R-HSA-445355": 45
+        },
+        "fitness": 0.423,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:12100) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); TPM4 (HGNC:12101) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ bleeding disorder, platelet-type (HP:0011397). Mutations in TPM1 and TPM4 disrupt the normal organization and function of the actin cytoskeleton. In cardiac muscle cells, this leads to hypertrophic cardiomyopathy. In platelets, impaired actin dynamics result in defective platelet aggregation and adhesion, causing a bleeding disorder.",
+        "falsification": {
+          "text": "If genetic studies demonstrate that mutations in TPM1 and TPM4 associated with hypertrophic cardiomyopathy 3 do not impair platelet function, or vice versa, this hypothesis would be falsified. Alternatively, if variants in TPM1 or TPM4 with a minor allele frequency >0.01 in gnomAD are found to be pathogenic for both conditions, this would challenge the proposed haploinsufficiency model.",
+          "gnomad_variant": "Any pathogenic variant in TPM1 or TPM4 associated with either disease must not be present in gnomAD with a frequency exceeding 0.001."
+        },
+        "translational": "Understanding the shared role of TPM1 and TPM4 in both cardiac and platelet function could lead to novel therapeutic strategies targeting actin cytoskeleton regulation for the treatment of both hypertrophic cardiomyopathy and bleeding disorders. Modulating actin dynamics might offer a common therapeutic avenue."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013965",
+      "diseaseBName": "lethal congenital contracture syndrome 4",
+      "fitness": 0.4174,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Congenital contractures (HP:0001273). Mutations in MYBPC1 disrupt myofibril assembly and function, leading to cardiac hypertrophy in hypertrophic cardiomyopathy 3 and congenital contractures in lethal congenital contracture syndrome 4.",
+      "mechanism_narrative": "MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Congenital contractures (HP:0001273). Mutations in MYBPC1 disrupt myofibril assembly and function, leading to cardiac hypertrophy in hypertrophic cardiomyopathy 3 and congenital contractures in lethal congenital contracture syndrome 4.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in MYBPC1 with a demonstrated gain-of-function mechanism for either disease would falsify this hypothesis of shared haploinsufficiency.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013965",
+        "diseaseBName": "lethal congenital contracture syndrome 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36
+        },
+        "fitness": 0.4174,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Congenital contractures (HP:0001273). Mutations in MYBPC1 disrupt myofibril assembly and function, leading to cardiac hypertrophy in hypertrophic cardiomyopathy 3 and congenital contractures in lethal congenital contracture syndrome 4.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in MYBPC1 with a demonstrated gain-of-function mechanism for either disease would falsify this hypothesis of shared haploinsufficiency.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of MYBPC1 in these distinct muscle disorders could lead to the development of targeted therapies that address common downstream pathways, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032797",
+      "diseaseBName": "myopathy, congenital, with tremor",
+      "fitness": 0.3818,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:11713) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); MYBPC1 (HGNC:7579) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Congenital myopathy (HP:0003198); Congenital myopathy (HP:0003198) —LEADS_TO→ Tremor (HP:0001311). Haploinsufficiency of either TPM1 or MYBPC1 leads to disruption of the troponin complex, a critical component of muscle contraction. This disruption underlies the phenotypes of hypertrophic cardiomyopathy (Disease A) and congenital myopathy with tremor (Disease B).",
+      "mechanism_narrative": "TPM1 (HGNC:11713) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); MYBPC1 (HGNC:7579) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Congenital myopathy (HP:0003198); Congenital myopathy (HP:0003198) —LEADS_TO→ Tremor (HP:0001311). Haploinsufficiency of either TPM1 or MYBPC1 leads to disruption of the troponin complex, a critical component of muscle contraction. This disruption underlies the phenotypes of hypertrophic cardiomyopathy (Disease A) and congenital myopathy with tremor (Disease B).",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in TPM1 or MYBPC1 with a minimum allele frequency >0.01 in gnomAD across multiple populations would suggest these genes are not the primary cause of these rare diseases.",
+        "gnomad_variant": "TPM1 or MYBPC1 pathogenic variants"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032797",
+        "diseaseBName": "myopathy, congenital, with tremor",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36
+        },
+        "fitness": 0.3818,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:11713) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); MYBPC1 (HGNC:7579) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Congenital myopathy (HP:0003198); Congenital myopathy (HP:0003198) —LEADS_TO→ Tremor (HP:0001311). Haploinsufficiency of either TPM1 or MYBPC1 leads to disruption of the troponin complex, a critical component of muscle contraction. This disruption underlies the phenotypes of hypertrophic cardiomyopathy (Disease A) and congenital myopathy with tremor (Disease B).",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in TPM1 or MYBPC1 with a minimum allele frequency >0.01 in gnomAD across multiple populations would suggest these genes are not the primary cause of these rare diseases.",
+          "gnomad_variant": "TPM1 or MYBPC1 pathogenic variants"
+        },
+        "translational": "Understanding the shared role of TPM1 and MYBPC1 in both hypertrophic cardiomyopathy and congenital myopathy with tremor could lead to the development of targeted therapies or diagnostic strategies applicable to both conditions, potentially leveraging insights from one disease to inform the other."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030281",
+      "diseaseBName": "arthrogryposis multiplex congenita 6",
+      "fitness": 0.3817,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:11799) —DISRUPTS→ sarcomere organization (GO:0030050); NEB (HGNC:7755) —DISRUPTS→ sarcomere organization (GO:0030050); sarcomere organization (GO:0030050) —LEADS_TO→ muscle contraction (GO:0006939); muscle contraction (GO:0006939) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); muscle contraction (GO:0006939) —LEADS_TO→ arthrogryposis multiplex congenita (HP:0002658). Disruption of sarcomere organization (GO:0030050) by mutations in either TPM1 or NEB leads to defects in muscle contraction (GO:0006939), manifesting as hypertrophic cardiomyopathy (HP:0001638) and arthrogryposis multiplex congenita (HP:0002658), respectively.",
+      "mechanism_narrative": "TPM1 (HGNC:11799) —DISRUPTS→ sarcomere organization (GO:0030050); NEB (HGNC:7755) —DISRUPTS→ sarcomere organization (GO:0030050); sarcomere organization (GO:0030050) —LEADS_TO→ muscle contraction (GO:0006939); muscle contraction (GO:0006939) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); muscle contraction (GO:0006939) —LEADS_TO→ arthrogryposis multiplex congenita (HP:0002658). Disruption of sarcomere organization (GO:0030050) by mutations in either TPM1 or NEB leads to defects in muscle contraction (GO:0006939), manifesting as hypertrophic cardiomyopathy (HP:0001638) and arthrogryposis multiplex congenita (HP:0002658), respectively.",
+      "falsification": {
+        "text": "Demonstration that TPM1 and NEB function in completely independent cellular pathways that do not converge at the level of sarcomere organization or muscle contraction, or identification of distinct downstream effectors for each gene that do not overlap.",
+        "gnomad_variant": "Exclusion of pathogenic variants in TPM1 (for HCM3) and NEB (for AMC6) from the relevant gnomAD populations would strengthen the causal link, but absence of such variants does not falsify the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030281",
+        "diseaseBName": "arthrogryposis multiplex congenita 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36
+        },
+        "fitness": 0.3817,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:11799) —DISRUPTS→ sarcomere organization (GO:0030050); NEB (HGNC:7755) —DISRUPTS→ sarcomere organization (GO:0030050); sarcomere organization (GO:0030050) —LEADS_TO→ muscle contraction (GO:0006939); muscle contraction (GO:0006939) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); muscle contraction (GO:0006939) —LEADS_TO→ arthrogryposis multiplex congenita (HP:0002658). Disruption of sarcomere organization (GO:0030050) by mutations in either TPM1 or NEB leads to defects in muscle contraction (GO:0006939), manifesting as hypertrophic cardiomyopathy (HP:0001638) and arthrogryposis multiplex congenita (HP:0002658), respectively.",
+        "falsification": {
+          "text": "Demonstration that TPM1 and NEB function in completely independent cellular pathways that do not converge at the level of sarcomere organization or muscle contraction, or identification of distinct downstream effectors for each gene that do not overlap.",
+          "gnomad_variant": "Exclusion of pathogenic variants in TPM1 (for HCM3) and NEB (for AMC6) from the relevant gnomAD populations would strengthen the causal link, but absence of such variants does not falsify the hypothesis."
+        },
+        "translational": "Understanding the shared mechanism in sarcomere organization and muscle contraction could reveal common therapeutic targets for both hypertrophic cardiomyopathy and arthrogryposis multiplex congenita, potentially leading to novel treatments for muscle disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009725",
+      "diseaseBName": "nemaline myopathy 2",
+      "fitness": 0.3817,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:11808) —DISRUPTS→ Actin-Tropomyosin complex regulation (GO:0030009); Actin-Tropomyosin complex regulation (GO:0030009) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); NEB (HGNC:7776) —DISRUPTS→ Actin filament organization and stability (GO:0030009); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Nemaline myopathy (HP:0003198); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Muscle weakness (HP:0001324); Actin-Tropomyosin complex regulation (GO:0030009) —BINDS→ Actin filament organization and stability (GO:0030009). Mutations in TPM1 disrupt the actin-tropomyosin complex's regulation, leading to cardiac hypertrophy. Mutations in NEB disrupt actin filament organization and stability, resulting in nemaline myopathy and muscle weakness. The convergence occurs at the level of actin filament organization and regulation, a shared pathway critical for both cardiac and skeletal muscle function.",
+      "mechanism_narrative": "TPM1 (HGNC:11808) —DISRUPTS→ Actin-Tropomyosin complex regulation (GO:0030009); Actin-Tropomyosin complex regulation (GO:0030009) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); NEB (HGNC:7776) —DISRUPTS→ Actin filament organization and stability (GO:0030009); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Nemaline myopathy (HP:0003198); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Muscle weakness (HP:0001324); Actin-Tropomyosin complex regulation (GO:0030009) —BINDS→ Actin filament organization and stability (GO:0030009). Mutations in TPM1 disrupt the actin-tropomyosin complex's regulation, leading to cardiac hypertrophy. Mutations in NEB disrupt actin filament organization and stability, resulting in nemaline myopathy and muscle weakness. The convergence occurs at the level of actin filament organization and regulation, a shared pathway critical for both cardiac and skeletal muscle function.",
+      "falsification": {
+        "text": "Demonstration that TPM1 and NEB function in entirely distinct and non-interacting cellular pathways within muscle, or that mutations in one gene do not affect the downstream functional consequences of the other.",
+        "gnomad_variant": "Discovery of common variants (AF > 1%) in TPM1 or NEB associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009725",
+        "diseaseBName": "nemaline myopathy 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36
+        },
+        "fitness": 0.3817,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:11808) —DISRUPTS→ Actin-Tropomyosin complex regulation (GO:0030009); Actin-Tropomyosin complex regulation (GO:0030009) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); NEB (HGNC:7776) —DISRUPTS→ Actin filament organization and stability (GO:0030009); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Nemaline myopathy (HP:0003198); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Muscle weakness (HP:0001324); Actin-Tropomyosin complex regulation (GO:0030009) —BINDS→ Actin filament organization and stability (GO:0030009). Mutations in TPM1 disrupt the actin-tropomyosin complex's regulation, leading to cardiac hypertrophy. Mutations in NEB disrupt actin filament organization and stability, resulting in nemaline myopathy and muscle weakness. The convergence occurs at the level of actin filament organization and regulation, a shared pathway critical for both cardiac and skeletal muscle function.",
+        "falsification": {
+          "text": "Demonstration that TPM1 and NEB function in entirely distinct and non-interacting cellular pathways within muscle, or that mutations in one gene do not affect the downstream functional consequences of the other.",
+          "gnomad_variant": "Discovery of common variants (AF > 1%) in TPM1 or NEB associated with either disease."
+        },
+        "translational": "Understanding the shared reliance on actin filament integrity and regulation by TPM1 and NEB could reveal common therapeutic targets for myopathic conditions, potentially allowing for the repurposing of drugs or the development of novel treatments that stabilize the muscle contractile machinery."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018958",
+      "diseaseBName": "nemaline myopathy",
+      "fitness": 0.3697,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ACTA1 variant causing HCM3 —DISRUPTS→ ACTA1 (HGNC:78); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Hypertrophic Cardiomyopathy 3 (MONDO:0007267); ACTA1/TPM variant causing NM —DISRUPTS→ TPM1 (HGNC:11872); ACTA1/TPM variant causing NM —DISRUPTS→ TPM2 (HGNC:11873); ACTA1/TPM variant causing NM —DISRUPTS→ TPM3 (HGNC:11874); ACTA1/TPM variant causing NM —DISRUPTS→ ACTA1 (HGNC:78); TPM1 (HGNC:11872) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM2 (HGNC:11873) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM3 (HGNC:11874) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Nemaline Myopathy (MONDO:0018958). Gain-of-function variants in ACTA1 directly disrupt actin-myosin crossbridge cycling, leading to hypertrophic cardiomyopathy. Loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 disrupt the formation or function of the thin filament, impairing actin-myosin crossbridge cycling and causing nemaline myopathy.",
+      "mechanism_narrative": "ACTA1 variant causing HCM3 —DISRUPTS→ ACTA1 (HGNC:78); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Hypertrophic Cardiomyopathy 3 (MONDO:0007267); ACTA1/TPM variant causing NM —DISRUPTS→ TPM1 (HGNC:11872); ACTA1/TPM variant causing NM —DISRUPTS→ TPM2 (HGNC:11873); ACTA1/TPM variant causing NM —DISRUPTS→ TPM3 (HGNC:11874); ACTA1/TPM variant causing NM —DISRUPTS→ ACTA1 (HGNC:78); TPM1 (HGNC:11872) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM2 (HGNC:11873) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM3 (HGNC:11874) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Nemaline Myopathy (MONDO:0018958). Gain-of-function variants in ACTA1 directly disrupt actin-myosin crossbridge cycling, leading to hypertrophic cardiomyopathy. Loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 disrupt the formation or function of the thin filament, impairing actin-myosin crossbridge cycling and causing nemaline myopathy.",
+      "falsification": {
+        "text": "The absence of any mutations in ACTA1, TPM1, TPM2, or TPM3 in patients with nemaline myopathy, or the identification of a distinct, non-overlapping molecular pathway for nemaline myopathy.",
+        "gnomad_variant": "Homozygous or compound heterozygous loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 with a minor allele frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36,
+        "Reactome:R-HSA-445355": 45
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018958",
+        "diseaseBName": "nemaline myopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36,
+          "Reactome:R-HSA-445355": 45
+        },
+        "fitness": 0.3697,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ACTA1 variant causing HCM3 —DISRUPTS→ ACTA1 (HGNC:78); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Hypertrophic Cardiomyopathy 3 (MONDO:0007267); ACTA1/TPM variant causing NM —DISRUPTS→ TPM1 (HGNC:11872); ACTA1/TPM variant causing NM —DISRUPTS→ TPM2 (HGNC:11873); ACTA1/TPM variant causing NM —DISRUPTS→ TPM3 (HGNC:11874); ACTA1/TPM variant causing NM —DISRUPTS→ ACTA1 (HGNC:78); TPM1 (HGNC:11872) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM2 (HGNC:11873) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM3 (HGNC:11874) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Nemaline Myopathy (MONDO:0018958). Gain-of-function variants in ACTA1 directly disrupt actin-myosin crossbridge cycling, leading to hypertrophic cardiomyopathy. Loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 disrupt the formation or function of the thin filament, impairing actin-myosin crossbridge cycling and causing nemaline myopathy.",
+        "falsification": {
+          "text": "The absence of any mutations in ACTA1, TPM1, TPM2, or TPM3 in patients with nemaline myopathy, or the identification of a distinct, non-overlapping molecular pathway for nemaline myopathy.",
+          "gnomad_variant": "Homozygous or compound heterozygous loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 with a minor allele frequency > 0.01 in gnomAD."
+        },
+        "translational": "Understanding the shared role of the actin cytoskeleton in these distinct myopathies could reveal common therapeutic targets for improving muscle contractility and function, potentially applicable to both cardiac and skeletal muscle conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012239",
+      "diseaseBName": "congenital myopathy 4B, autosomal recessive",
+      "fitness": 0.368,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:11982) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); TPM3 (HGNC:11983) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Mutations in TPM1 and TPM3 disrupt the actin cytoskeleton organization pathway, leading to distinct but related myopathic phenotypes. TPM1 variants result in hypertrophic cardiomyopathy, while TPM3 variants cause congenital myopathy.",
+      "mechanism_narrative": "TPM1 (HGNC:11982) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); TPM3 (HGNC:11983) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Mutations in TPM1 and TPM3 disrupt the actin cytoskeleton organization pathway, leading to distinct but related myopathic phenotypes. TPM1 variants result in hypertrophic cardiomyopathy, while TPM3 variants cause congenital myopathy.",
+      "falsification": {
+        "text": "Demonstration that disease-causing variants in TPM1 and TPM3 do not converge on shared downstream pathways involved in muscle structure and function, or that mutations in these genes do not lead to disruptions in actin organization.",
+        "gnomad_variant": "High allele frequency (>1%) of pathogenic variants in TPM1 or TPM3 in gnomAD, which would suggest a less severe or different functional consequence."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522",
+        "Reactome:R-HSA-445355"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36,
+        "Reactome:R-HSA-445355": 45
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012239",
+        "diseaseBName": "congenital myopathy 4B, autosomal recessive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522",
+          "Reactome:R-HSA-445355"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36,
+          "Reactome:R-HSA-445355": 45
+        },
+        "fitness": 0.368,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:11982) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); TPM3 (HGNC:11983) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Mutations in TPM1 and TPM3 disrupt the actin cytoskeleton organization pathway, leading to distinct but related myopathic phenotypes. TPM1 variants result in hypertrophic cardiomyopathy, while TPM3 variants cause congenital myopathy.",
+        "falsification": {
+          "text": "Demonstration that disease-causing variants in TPM1 and TPM3 do not converge on shared downstream pathways involved in muscle structure and function, or that mutations in these genes do not lead to disruptions in actin organization.",
+          "gnomad_variant": "High allele frequency (>1%) of pathogenic variants in TPM1 or TPM3 in gnomAD, which would suggest a less severe or different functional consequence."
+        },
+        "translational": "Identifying the shared pathway of actin cytoskeleton organization highlights potential therapeutic strategies targeting this fundamental cellular process for both hypertrophic cardiomyopathy and congenital myopathy. Modulating actin dynamics or associated proteins could offer a common therapeutic avenue."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013698",
+      "diseaseBName": "arthrogryposis, distal, type 1B",
+      "fitness": 0.3418,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TPM1 (HGNC:11722) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); MYBPC1 (HGNC:7649) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Distal Arthrogryposis (HP:0002763); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Arthrogryposis, distal, type 1B (MONDO:0013698). Both TPM1 and MYBPC1 are critical components of muscle sarcomeres. Mutations in either gene disrupt the normal organization and function of sarcomeres, leading to distinct but related muscle pathologies: hypertrophic cardiomyopathy in cardiac muscle (TPM1) and distal arthrogryposis in skeletal muscle (MYBPC1).",
+      "mechanism_narrative": "TPM1 (HGNC:11722) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); MYBPC1 (HGNC:7649) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Distal Arthrogryposis (HP:0002763); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Arthrogryposis, distal, type 1B (MONDO:0013698). Both TPM1 and MYBPC1 are critical components of muscle sarcomeres. Mutations in either gene disrupt the normal organization and function of sarcomeres, leading to distinct but related muscle pathologies: hypertrophic cardiomyopathy in cardiac muscle (TPM1) and distal arthrogryposis in skeletal muscle (MYBPC1).",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in TPM1 exclusively affect cardiac function without any impact on skeletal muscle development or contractility, and similarly, MYBPC1 mutations only impact skeletal muscle without cardiac involvement, this would falsify a shared mechanistic link at the sarcomere level.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-390522"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-390522": 36
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013698",
+        "diseaseBName": "arthrogryposis, distal, type 1B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-390522"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-390522": 36
+        },
+        "fitness": 0.3418,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TPM1 (HGNC:11722) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); MYBPC1 (HGNC:7649) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Distal Arthrogryposis (HP:0002763); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Arthrogryposis, distal, type 1B (MONDO:0013698). Both TPM1 and MYBPC1 are critical components of muscle sarcomeres. Mutations in either gene disrupt the normal organization and function of sarcomeres, leading to distinct but related muscle pathologies: hypertrophic cardiomyopathy in cardiac muscle (TPM1) and distal arthrogryposis in skeletal muscle (MYBPC1).",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in TPM1 exclusively affect cardiac function without any impact on skeletal muscle development or contractility, and similarly, MYBPC1 mutations only impact skeletal muscle without cardiac involvement, this would falsify a shared mechanistic link at the sarcomere level.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared role of sarcomeric protein dysfunction in both cardiac and skeletal myopathies could lead to novel therapeutic strategies targeting sarcomere integrity or function, potentially benefiting patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T22:47:37.560Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hypertrophic cardiomyopathy 3 (MONDO:0007267)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 50 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | dilated cardiomyopathy 1Y (MONDO:0012744) | shared pathway | Tier 1 | 0.668 | Reactome:R-HSA-390522, Reactome:R-HSA-445355 |\n| 2 | congenital myopathy 4A, autosomal dominant (MONDO:0800341) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-390522, Reactome:R-HSA-445355 |\n| 3 | bleeding disorder, platelet-type, 25 (MONDO:0957580) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-390522, Reactome:R-HSA-445355 |\n| 4 | lethal congenital contracture syndrome 4 (MONDO:0013965) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-390522 |\n| 5 | myopathy, congenital, with tremor (MONDO:0032797) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-390522 |\n| 6 | arthrogryposis multiplex congenita 6 (MONDO:0030281) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-390522 |\n| 7 | nemaline myopathy 2 (MONDO:0009725) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-390522 |\n| 8 | nemaline myopathy (MONDO:0018958) | shared pathway | Tier 3 | 0.370 | Reactome:R-HSA-390522 |\n| 9 | congenital myopathy 4B, autosomal recessive (MONDO:0012239) | shared pathway | Tier 3 | 0.368 | Reactome:R-HSA-390522, Reactome:R-HSA-445355 |\n| 10 | arthrogryposis, distal, type 1B (MONDO:0013698) | shared pathway | Tier 3 | 0.342 | Reactome:R-HSA-390522 |\n\n### CANDIDATE DETAIL\n#### 1. dilated cardiomyopathy 1Y  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.668)\n**Link type:** shared pathway (Reactome:R-HSA-390522, Reactome:R-HSA-445355)\n\n**Proposed mechanism:** TPM1 (HGNC:12010) —LEADS_TO→ Cardiomyopathy (HP:0001638); Cardiomyopathy (HP:0001638) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001639); Cardiomyopathy (HP:0001638) —LEADS_TO→ Dilated Cardiomyopathy (HP:0001643). Mutations in TPM1 lead to a general cardiomyopathy phenotype, which can manifest as either hypertrophic or dilated cardiomyopathy depending on the specific variant and its effect on the tropomyosin protein's interaction with actin and myosin.\n\n**How to falsify it:** The hypothesis would be falsified if pathogenic variants in TPM1 were found to be exclusively associated with only one of the two specific cardiomyopathy types (hypertrophic or dilated) and never the other, or if a distinct causal gene for one of the diseases was identified without any overlap in functional pathways with TPM1. _(variant: Pathogenic variants in TPM1 with a minor allele frequency > 0.01% in gnomAD.)_\n\n**Why it matters:** Understanding the shared genetic basis in TPM1 provides a potential common therapeutic target for both hypertrophic and dilated cardiomyopathies, possibly through gene therapy or small molecule interventions aimed at restoring normal Tropomyosin 1 alpha function or dosage.\n\n---\n\n#### 2. congenital myopathy 4A, autosomal dominant  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-390522, Reactome:R-HSA-445355)\n\n**Proposed mechanism:** Pathogenic TPM1 variant (null) —DISRUPTS→ TPM1 (HGNC:11977); TPM1 (HGNC:11977) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); Pathogenic TPM3 variant (null) —DISRUPTS→ TPM3 (HGNC:11978); TPM3 (HGNC:11978) —BINDS→ actin cytoskeleton organization (GO:0030030); actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Pathogenic variants in TPM1 disrupt its function, leading to impaired actin cytoskeleton organization and ultimately hypertrophic cardiomyopathy. Similarly, pathogenic variants in TPM3 disrupt its function, also impacting actin cytoskeleton organization and resulting in congenital myopathy.\n\n**How to falsify it:** Identification of pathogenic variants in TPM1 or TPM3 that specifically disrupt distinct, non-overlapping downstream pathways or cellular processes, and not the general actin cytoskeleton organization, would falsify this hypothesis. Additionally, finding that the functional consequences of TPM1 and TPM3 variants are completely divergent (e.g., one leads to protein stabilization and the other to degradation) would also be falsifying. _(variant: The presence of common pathogenic variants (allele frequency > 1% in gnomAD) in TPM1 or TPM3 associated with these specific phenotypes would challenge the rare disease assertion and mechanistic link.)_\n\n**Why it matters:** Understanding the shared role of TPM1 and TPM3 in muscle function provides a potential avenue for developing therapeutics that could target common downstream pathways or protein interactions to treat both hypertrophic cardiomyopathy and congenital myopathies, or related muscle disorders.\n\n---\n\n#### 3. bleeding disorder, platelet-type, 25  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-390522, Reactome:R-HSA-445355)\n\n**Proposed mechanism:** TPM1 (HGNC:12100) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); TPM4 (HGNC:12101) —DISRUPTS→ actin cytoskeleton organization (GO:0030036); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); actin cytoskeleton organization (GO:0030036) —LEADS_TO→ bleeding disorder, platelet-type (HP:0011397). Mutations in TPM1 and TPM4 disrupt the normal organization and function of the actin cytoskeleton. In cardiac muscle cells, this leads to hypertrophic cardiomyopathy. In platelets, impaired actin dynamics result in defective platelet aggregation and adhesion, causing a bleeding disorder.\n\n**How to falsify it:** If genetic studies demonstrate that mutations in TPM1 and TPM4 associated with hypertrophic cardiomyopathy 3 do not impair platelet function, or vice versa, this hypothesis would be falsified. Alternatively, if variants in TPM1 or TPM4 with a minor allele frequency >0.01 in gnomAD are found to be pathogenic for both conditions, this would challenge the proposed haploinsufficiency model. _(variant: Any pathogenic variant in TPM1 or TPM4 associated with either disease must not be present in gnomAD with a frequency exceeding 0.001.)_\n\n**Why it matters:** Understanding the shared role of TPM1 and TPM4 in both cardiac and platelet function could lead to novel therapeutic strategies targeting actin cytoskeleton regulation for the treatment of both hypertrophic cardiomyopathy and bleeding disorders. Modulating actin dynamics might offer a common therapeutic avenue.\n\n---\n\n#### 4. lethal congenital contracture syndrome 4  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); MYBPC1 (HGNC:7603) —DISRUPTS→ Myofibril assembly and function (GO:0031012); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); Myofibril assembly and function (GO:0031012) —LEADS_TO→ Congenital contractures (HP:0001273). Mutations in MYBPC1 disrupt myofibril assembly and function, leading to cardiac hypertrophy in hypertrophic cardiomyopathy 3 and congenital contractures in lethal congenital contracture syndrome 4.\n\n**How to falsify it:** The identification of pathogenic variants in MYBPC1 with a demonstrated gain-of-function mechanism for either disease would falsify this hypothesis of shared haploinsufficiency. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of MYBPC1 in these distinct muscle disorders could lead to the development of targeted therapies that address common downstream pathways, potentially benefiting patients with either condition.\n\n---\n\n#### 5. myopathy, congenital, with tremor  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** TPM1 (HGNC:11713) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); MYBPC1 (HGNC:7579) —DISRUPTS→ Troponin complex assembly and function (GO:0031400); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Troponin complex assembly and function (GO:0031400) —LEADS_TO→ Congenital myopathy (HP:0003198); Congenital myopathy (HP:0003198) —LEADS_TO→ Tremor (HP:0001311). Haploinsufficiency of either TPM1 or MYBPC1 leads to disruption of the troponin complex, a critical component of muscle contraction. This disruption underlies the phenotypes of hypertrophic cardiomyopathy (Disease A) and congenital myopathy with tremor (Disease B).\n\n**How to falsify it:** Discovery of pathogenic variants in TPM1 or MYBPC1 with a minimum allele frequency >0.01 in gnomAD across multiple populations would suggest these genes are not the primary cause of these rare diseases. _(variant: TPM1 or MYBPC1 pathogenic variants)_\n\n**Why it matters:** Understanding the shared role of TPM1 and MYBPC1 in both hypertrophic cardiomyopathy and congenital myopathy with tremor could lead to the development of targeted therapies or diagnostic strategies applicable to both conditions, potentially leveraging insights from one disease to inform the other.\n\n---\n\n#### 6. arthrogryposis multiplex congenita 6  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** TPM1 (HGNC:11799) —DISRUPTS→ sarcomere organization (GO:0030050); NEB (HGNC:7755) —DISRUPTS→ sarcomere organization (GO:0030050); sarcomere organization (GO:0030050) —LEADS_TO→ muscle contraction (GO:0006939); muscle contraction (GO:0006939) —LEADS_TO→ hypertrophic cardiomyopathy (HP:0001638); muscle contraction (GO:0006939) —LEADS_TO→ arthrogryposis multiplex congenita (HP:0002658). Disruption of sarcomere organization (GO:0030050) by mutations in either TPM1 or NEB leads to defects in muscle contraction (GO:0006939), manifesting as hypertrophic cardiomyopathy (HP:0001638) and arthrogryposis multiplex congenita (HP:0002658), respectively.\n\n**How to falsify it:** Demonstration that TPM1 and NEB function in completely independent cellular pathways that do not converge at the level of sarcomere organization or muscle contraction, or identification of distinct downstream effectors for each gene that do not overlap. _(variant: Exclusion of pathogenic variants in TPM1 (for HCM3) and NEB (for AMC6) from the relevant gnomAD populations would strengthen the causal link, but absence of such variants does not falsify the hypothesis.)_\n\n**Why it matters:** Understanding the shared mechanism in sarcomere organization and muscle contraction could reveal common therapeutic targets for both hypertrophic cardiomyopathy and arthrogryposis multiplex congenita, potentially leading to novel treatments for muscle disorders.\n\n---\n\n#### 7. nemaline myopathy 2  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** TPM1 (HGNC:11808) —DISRUPTS→ Actin-Tropomyosin complex regulation (GO:0030009); Actin-Tropomyosin complex regulation (GO:0030009) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); NEB (HGNC:7776) —DISRUPTS→ Actin filament organization and stability (GO:0030009); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Nemaline myopathy (HP:0003198); Actin filament organization and stability (GO:0030009) —LEADS_TO→ Muscle weakness (HP:0001324); Actin-Tropomyosin complex regulation (GO:0030009) —BINDS→ Actin filament organization and stability (GO:0030009). Mutations in TPM1 disrupt the actin-tropomyosin complex's regulation, leading to cardiac hypertrophy. Mutations in NEB disrupt actin filament organization and stability, resulting in nemaline myopathy and muscle weakness. The convergence occurs at the level of actin filament organization and regulation, a shared pathway critical for both cardiac and skeletal muscle function.\n\n**How to falsify it:** Demonstration that TPM1 and NEB function in entirely distinct and non-interacting cellular pathways within muscle, or that mutations in one gene do not affect the downstream functional consequences of the other. _(variant: Discovery of common variants (AF > 1%) in TPM1 or NEB associated with either disease.)_\n\n**Why it matters:** Understanding the shared reliance on actin filament integrity and regulation by TPM1 and NEB could reveal common therapeutic targets for myopathic conditions, potentially allowing for the repurposing of drugs or the development of novel treatments that stabilize the muscle contractile machinery.\n\n---\n\n#### 8. nemaline myopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.370)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** ACTA1 variant causing HCM3 —DISRUPTS→ ACTA1 (HGNC:78); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Hypertrophic Cardiomyopathy 3 (MONDO:0007267); ACTA1/TPM variant causing NM —DISRUPTS→ TPM1 (HGNC:11872); ACTA1/TPM variant causing NM —DISRUPTS→ TPM2 (HGNC:11873); ACTA1/TPM variant causing NM —DISRUPTS→ TPM3 (HGNC:11874); ACTA1/TPM variant causing NM —DISRUPTS→ ACTA1 (HGNC:78); TPM1 (HGNC:11872) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM2 (HGNC:11873) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); TPM3 (HGNC:11874) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); ACTA1 (HGNC:78) —BINDS→ Actin-myosin crossbridge cycling (GO:0030044); Actin-myosin crossbridge cycling (GO:0030044) —LEADS_TO→ Nemaline Myopathy (MONDO:0018958). Gain-of-function variants in ACTA1 directly disrupt actin-myosin crossbridge cycling, leading to hypertrophic cardiomyopathy. Loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 disrupt the formation or function of the thin filament, impairing actin-myosin crossbridge cycling and causing nemaline myopathy.\n\n**How to falsify it:** The absence of any mutations in ACTA1, TPM1, TPM2, or TPM3 in patients with nemaline myopathy, or the identification of a distinct, non-overlapping molecular pathway for nemaline myopathy. _(variant: Homozygous or compound heterozygous loss-of-function variants in ACTA1, TPM1, TPM2, or TPM3 with a minor allele frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared role of the actin cytoskeleton in these distinct myopathies could reveal common therapeutic targets for improving muscle contractility and function, potentially applicable to both cardiac and skeletal muscle conditions.\n\n---\n\n#### 9. congenital myopathy 4B, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.368)\n**Link type:** shared pathway (Reactome:R-HSA-390522, Reactome:R-HSA-445355)\n\n**Proposed mechanism:** TPM1 (HGNC:11982) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); TPM3 (HGNC:11983) —DISRUPTS→ Actin cytoskeleton organization (GO:0030030); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638); Actin cytoskeleton organization (GO:0030030) —LEADS_TO→ Congenital myopathy (HP:0003198). Mutations in TPM1 and TPM3 disrupt the actin cytoskeleton organization pathway, leading to distinct but related myopathic phenotypes. TPM1 variants result in hypertrophic cardiomyopathy, while TPM3 variants cause congenital myopathy.\n\n**How to falsify it:** Demonstration that disease-causing variants in TPM1 and TPM3 do not converge on shared downstream pathways involved in muscle structure and function, or that mutations in these genes do not lead to disruptions in actin organization. _(variant: High allele frequency (>1%) of pathogenic variants in TPM1 or TPM3 in gnomAD, which would suggest a less severe or different functional consequence.)_\n\n**Why it matters:** Identifying the shared pathway of actin cytoskeleton organization highlights potential therapeutic strategies targeting this fundamental cellular process for both hypertrophic cardiomyopathy and congenital myopathy. Modulating actin dynamics or associated proteins could offer a common therapeutic avenue.\n\n---\n\n#### 10. arthrogryposis, distal, type 1B  —  Tier 3 — Moderate / Emerging  (fitness 0.342)\n**Link type:** shared pathway (Reactome:R-HSA-390522)\n\n**Proposed mechanism:** TPM1 (HGNC:11722) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Hypertrophic Cardiomyopathy (HP:0001638); MYBPC1 (HGNC:7649) —DISRUPTS→ Sarcomere organization and function (GO:0030053); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Distal Arthrogryposis (HP:0002763); Sarcomere organization and function (GO:0030053) —LEADS_TO→ Arthrogryposis, distal, type 1B (MONDO:0013698). Both TPM1 and MYBPC1 are critical components of muscle sarcomeres. Mutations in either gene disrupt the normal organization and function of sarcomeres, leading to distinct but related muscle pathologies: hypertrophic cardiomyopathy in cardiac muscle (TPM1) and distal arthrogryposis in skeletal muscle (MYBPC1).\n\n**How to falsify it:** If genetic analysis reveals that mutations in TPM1 exclusively affect cardiac function without any impact on skeletal muscle development or contractility, and similarly, MYBPC1 mutations only impact skeletal muscle without cardiac involvement, this would falsify a shared mechanistic link at the sarcomere level. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of sarcomeric protein dysfunction in both cardiac and skeletal myopathies could lead to novel therapeutic strategies targeting sarcomere integrity or function, potentially benefiting patients with either condition.\n\n---"
+}

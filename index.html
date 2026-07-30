@@ -31,6 +31,13 @@
         --fam-mitochondrial: #3b82f6;/* Blue */
         --fam-other: #71717a;       /* Slate */
 
+        /* 5-Tier Confidence Rubric (whitepaper §6) */
+        --tier-1: #38bdf8; /* Definitive */
+        --tier-2: #10b981; /* Strong */
+        --tier-3: #f59e0b; /* Moderate / Emerging */
+        --tier-4: #fb923c; /* Weak */
+        --tier-5: #f43f5e; /* Refuted */
+
         --chip-gene-bg: rgba(56, 189, 248, 0.15); --chip-gene-text: #38bdf8;
         --chip-pathway-bg: rgba(16, 185, 129, 0.15); --chip-pathway-text: #10b981;
         --chip-metabolite-bg: rgba(245, 158, 11, 0.15); --chip-metabolite-text: #f59e0b;
@@ -111,6 +118,7 @@
     .cqs-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; gap: 8px; }
     .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; white-space: nowrap; }
     .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+    .tier-badge { font-size: 0.7rem; padding: 1px 7px; border-radius: 8px; font-weight: 700; white-space: nowrap; }
     .fitness-score { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
     .cqs-card-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 3px; }
     .cqs-card-mech { font-size: 0.74rem; color: var(--text-muted); line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -217,6 +225,19 @@
     .btn-log { display: inline-flex; align-items: center; gap: 8px; background: #0284c7; color: #ffffff; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 600; margin-top: 18px; transition: background 0.2s ease; }
     .btn-log:hover { background: #0369a1; }
 
+    /* About ARIADNE modal */
+    .about-section { margin-bottom: 18px; }
+    .about-section h3 { font-size: 0.9rem; font-weight: 700; color: #f8fafc; margin-bottom: 6px; }
+    .about-section p { font-size: 0.82rem; color: #cbd5e1; line-height: 1.55; }
+    .about-source-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+    .about-source-row { font-size: 0.78rem; color: #cbd5e1; line-height: 1.45; padding-left: 12px; border-left: 2px solid rgba(255,255,255,0.12); }
+    .about-source-row strong { color: #f8fafc; }
+    .about-regime-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+    .about-regime-card { background: rgba(9,13,22,0.5); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+    .about-regime-card h4 { font-size: 0.78rem; margin-bottom: 4px; }
+    .about-regime-card p { font-size: 0.76rem; color: #94a3b8; line-height: 1.45; }
+    .about-footer { font-size: 0.72rem; color: #64748b; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08); line-height: 1.5; }
+
     @media (max-width: 1100px) {
         #app-container { grid-template-columns: 320px 1fr 280px; }
     }
@@ -230,6 +251,7 @@
         <span class="source-badge" id="source-badge">Loading...</span>
     </div>
     <div style="display:flex; gap:10px; align-items:center;">
+        <button class="btn-action" onclick="openAboutModal()" title="What is ARIADNE and how does it work?">How ARIADNE Works</button>
         <button class="btn-action" onclick="openCqsModal()" title="How is CQS calculated?">CQS Score Guide</button>
         <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
         <button class="btn-action" onclick="resetFilters()">Reset All Filters</button>
@@ -262,6 +284,7 @@
                     <option value="Tier 1">Tier 1 – Definitive</option>
                     <option value="Tier 2">Tier 2 – Strong</option>
                     <option value="Tier 3">Tier 3 – Emerging</option>
+                    <option value="Tier 4">Tier 4 – Weak</option>
                     <option value="Tier 5">Tier 5 – Refuted</option>
                 </select>
             </div>
@@ -320,6 +343,12 @@
             <div id="legend-list"></div>
         </div>
 
+        <!-- Card 3b: Tier Rubric -->
+        <div class="inspector-card">
+            <h3>Tier Rubric</h3>
+            <div id="tier-legend-list" style="display:flex; flex-direction:column; gap:9px;"></div>
+        </div>
+
         <!-- Card 4: Load Dataset -->
         <div class="inspector-card">
             <h3>Dataset Source</h3>
@@ -345,7 +374,7 @@
         <button class="modal-close" onclick="closeCqsModal()">&times;</button>
         <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v2)</h2>
         <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
-            A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
+            A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
             Higher scores indicate stronger, more specific, and better‑corroborated hypotheses.
         </p>
 
@@ -393,6 +422,73 @@
     </div>
 </div>
 
+<!-- How ARIADNE Works Modal -->
+<div class="modal-backdrop" id="about-modal" onclick="if(event.target===this) closeAboutModal();">
+    <div class="modal-box" style="max-width:720px;">
+        <button class="modal-close" onclick="closeAboutModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">What Is ARIADNE?</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
+            A genetic algorithm whose organisms are scientific hypotheses. Given two rare diseases, ARIADNE breeds, scores,
+            and culls candidate explanations for how they might share a biological mechanism — surfacing a ranked shortlist
+            for expert review rather than answering from an AI model's memory.
+        </p>
+
+        <div class="about-section">
+            <h3>The core idea: breed hypotheses, don't look them up</h3>
+            <p>
+                A population of rough candidate hypotheses varies, each is scored against real biological databases and a panel
+                of checks, the strong ones survive and are bred with small mutations, and the cycle repeats for several
+                generations — good hypotheses improve, nonsense dies out.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h3>Genome vs. genotype</h3>
+            <p><strong style="color:#e2e8f0;">The genome</strong> is the 9-slot <em>content</em> of one hypothesis: which two diseases, the type of mechanistic link, which direction the gene fault runs, the step-by-step causal chain, supporting evidence, and — critically — what experiment would prove it wrong.</p>
+            <p style="margin-top:6px;"><strong style="color:#e2e8f0;">The genotype</strong> is the 8-test <em>scoring</em> panel behind a candidate's Fitness score: topological proximity, evidential pluralism, directionality match, ClinGen tier, phenotype coherence, Bradford-Hill plausibility, population falsification, and novelty/parsimony. Two of these eight can veto a hypothesis outright — e.g. a "causal" variant that turns out to be common in healthy people (gnomAD) is refuted no matter how plausible the story reads.</p>
+        </div>
+
+        <div class="about-section">
+            <h3>Why grounding matters</h3>
+            <p>
+                An LLM can write a fluent, confident explanation that is entirely fabricated. ARIADNE's defense is grounding:
+                the AI is used only to <em>propose and phrase</em> hypotheses; hardcoded checks against real databases do the
+                <em>judging</em>. Sensor and judge are always kept separate — the same architectural discipline used across
+                every Aitiopoietic Systems tool.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h3>Where the facts come from</h3>
+            <div class="about-source-list">
+                <div class="about-source-row"><strong>Monarch Knowledge Graph</strong> — ARIADNE's ground truth for which genes cause which diseases and symptoms.</div>
+                <div class="about-source-row"><strong>ClinGen</strong> — expert panels grading gene–disease confidence, Definitive → Refuted.</div>
+                <div class="about-source-row"><strong>gnomAD</strong> — variant frequency across ~800,000 people; a common "causal" variant auto-refutes a rare-disease claim.</div>
+                <div class="about-source-row"><strong>HPO</strong> — standard symptom dictionary, used to measure phenotype overlap.</div>
+                <div class="about-source-row"><strong>The interactome</strong> — the protein–protein interaction map behind the S_ab network-proximity signal.</div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h3>Two regimes</h3>
+            <div class="about-regime-grid">
+                <div class="about-regime-card">
+                    <h4 style="color:#38bdf8;">Validation</h4>
+                    <p>Diseases already share a curated gene in Monarch. ARIADNE should re-derive the true mechanism and rate it Tier 1 Definitive.</p>
+                </div>
+                <div class="about-regime-card">
+                    <h4 style="color:#f59e0b;">Discovery</h4>
+                    <p>An orphan pair — no shared gene in Monarch. ARIADNE proposes and evolves candidate mechanisms toward the most grounded one, flagged Emerging for expert review.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-footer">
+            ARIADNE v0.8.1 · Carlos Arleo, Localis AI / Aitiopoietic Systems. Architecture cloned from DNI (four-sensor + perturbed-weight ensemble + hardcoded structural checks). This Atlas visualizes the CQS-ranked output of the evolutionary discovery loop — it does not itself run the genetic algorithm.
+        </div>
+    </div>
+</div>
+
 <script>
 // ================================================================
 // COMPREHENSIVE 10-FAMILY CLINICAL CLASSIFICATION ENGINE
@@ -409,6 +505,21 @@ const FAMILIES = [
     { key: 'mitochondrial',  label: 'Mitochondrial & Metabolic',color: '#3b82f6' },
     { key: 'other',          label: 'Other / Emerging',         color: '#71717a' }
 ];
+
+// 5-Tier Confidence Rubric (whitepaper §6)
+const TIER_META = [
+    { num: 1, key: 'Tier 1', short: 'Definitive',        color: '#38bdf8', meaning: 'Grounded + curated + coherent',        fires: 'Shared gene, strong evidence' },
+    { num: 2, key: 'Tier 2', short: 'Strong',            color: '#10b981', meaning: 'Adjacent modules, strong genetics',    fires: '—' },
+    { num: 3, key: 'Tier 3', short: 'Emerging',          color: '#f59e0b', meaning: 'Multi-hop or thin evidence, coherent', fires: 'Novel orphan-pair candidates' },
+    { num: 4, key: 'Tier 4', short: 'Weak',              color: '#fb923c', meaning: 'Phenotype-only / hub-node forcing',   fires: '—' },
+    { num: 5, key: 'Tier 5', short: 'Refuted',           color: '#f43f5e', meaning: 'gnomAD common variant, or GoF/LoF contradiction', fires: 'SCN5A-style directionality guard, gnomAD BA1' }
+];
+
+function tierMeta(tierStr) {
+    const m = String(tierStr || '').match(/(\d)/);
+    const num = m ? parseInt(m[1]) : 3;
+    return TIER_META.find(t => t.num === num) || TIER_META[2];
+}
 
 const GENERIC_TERMS = [
     "oxidative stress", "reactive oxygen", "ros", "neuroinflammation", "inflammation",
@@ -629,7 +740,21 @@ function initApp() {
     populateCqsDropdown();
     populateFamilyDropdown();
     renderLegend();
+    renderTierLegend();
     renderApp();
+}
+
+function renderTierLegend() {
+    const list = document.getElementById('tier-legend-list');
+    if (!list) return;
+    list.innerHTML = TIER_META.map(t => `
+        <div style="display:flex; gap:8px; align-items:flex-start;">
+            <span class="tier-badge" style="background:${t.color}22; color:${t.color}; margin-top:1px;">${t.key}</span>
+            <div style="font-size:0.74rem; color:var(--text-muted); line-height:1.35;">
+                <strong style="color:#e2e8f0;">${t.short}</strong> — ${t.meaning}
+            </div>
+        </div>
+    `).join('');
 }
 
 // Dynamic CQS Selector
@@ -768,10 +893,12 @@ function renderSidebar(candidates) {
     }
 
     candidates.slice(0, 35).forEach(c => {
+        const tm = tierMeta(c.tier);
         html += `
         <div class="cqs-card" id="card-${c.id}" style="border-left-color:${c.familyColor}" onclick="openDossierModal(${c.id})" onmouseover="highlightRel(${c.id})" onmouseout="clearHighlight()">
             <div class="cqs-card-header">
                 <span class="cqs-badge" style="background:${c.familyColor}22; color:${c.familyColor}">CQS ${c.cqs}</span>
+                <span class="tier-badge" style="background:${tm.color}22; color:${tm.color}" title="${tm.meaning}">${tm.short}</span>
                 ${c.hub >= 3 ? `<span class="hub-tag" title="Discovered across ${c.hub} different seeds">Hub · ${c.hub}</span>` : ''}
                 <span class="fitness-score">Fit ${c.fitness.toFixed(3)}</span>
             </div>
@@ -1190,6 +1317,7 @@ function openDossierModal(candId) {
     const c = allCandidates.find(x => x.id === parseInt(candId));
     if (!c) return;
 
+    const tm = tierMeta(c.tier);
     const falsifHtml = (typeof c.falsification === 'object' && c.falsification.text) ? c.falsification.text : c.falsification;
     const parsedMech = parseMechanismDetails(c.mechanism);
 
@@ -1218,8 +1346,8 @@ function openDossierModal(candId) {
             <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">
                 CQS Score: ${c.cqs}
             </span>
-            <span style="background:rgba(255,255,255,0.08); color:#f8fafc; padding:2px 10px; border-radius:12px; font-size:0.8rem;">
-                ${c.tier}
+            <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;" title="${tm.meaning}">
+                ${c.tier} · ${tm.short}
             </span>
             ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">Global Hub (${c.hub} seeds)</span>` : ''}
             <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
@@ -1232,6 +1360,7 @@ function openDossierModal(candId) {
         <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
             <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
             <div style="margin-top:4px;">${renderSharedPathways(c.sharedPathways)}</div>
+            ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
         </div>
 
         <div>
@@ -1275,6 +1404,14 @@ function closeCqsModal() {
     document.getElementById('cqs-modal').classList.remove('open');
 }
 
+function openAboutModal() {
+    document.getElementById('about-modal').classList.add('open');
+}
+
+function closeAboutModal() {
+    document.getElementById('about-modal').classList.remove('open');
+}
+
 // Control Listeners
 document.getElementById('filter-cqs').addEventListener('change', renderApp);
 document.getElementById('filter-hub').addEventListener('change', renderApp);
@@ -1286,6 +1423,7 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         closeDossierModal();
         closeCqsModal();
+        closeAboutModal();
     }
 });
 
