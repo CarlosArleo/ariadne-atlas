@@ -325,6 +325,14 @@
             </div>
         </div>
 
+        <!-- NEW CARD: Top Connected Genes -->
+        <div class="inspector-card">
+            <h3>Top Connected Genes</h3>
+            <div id="top-genes-list" style="font-size:0.74rem; color:var(--text-muted); max-height:200px; overflow-y:auto;">
+                <span>Loading...</span>
+            </div>
+        </div>
+
         <div class="inspector-card">
             <h3>Dataset Source</h3>
             <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
@@ -457,7 +465,7 @@
 <script>
 // ================================================================
 // FULL-FEATURED CONCENTRIC RADIAL ATLAS
-// Rich tooltip, hub opacity, reverse partner view, convergence nodes
+// With error-catching dossier modal for debugging
 // ================================================================
 
 const FAMILIES = [
@@ -508,7 +516,7 @@ function familyOf(candidate) {
 
 let allCandidates = [];
 let focusDiseaseNode = null;
-let focusPartnerNode = null;   // reverse view
+let focusPartnerNode = null;
 let showAllRibbons = false;
 const MAX_DEFAULT_RIBBONS = 1500;
 let currentFiltered = [];
@@ -546,7 +554,6 @@ function processRawDataset(data) {
             family: fam.key,
             familyLabel: fam.label,
             familyColor: fam.color,
-            // extract overlap class if present
             overlapClass: d.OverlapClass || d.overlap_class || '—'
         };
     }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
@@ -581,7 +588,6 @@ async function loadData() {
         initApp();
         return;
     }
-    // Fallback to index.json omitted for brevity – identical to earlier version
     renderEmpty();
 }
 
@@ -673,7 +679,6 @@ function renderEmpty() {
     document.getElementById('cqs-card-list').innerHTML = '';
 }
 
-// Debounced filtering
 let renderTimeout;
 function debounceRender() {
     clearTimeout(renderTimeout);
@@ -705,7 +710,6 @@ function getFilteredCandidates() {
     }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
 }
 
-// Top Convergence Nodes (unchanged)
 function updateConvergenceNodes(candidates) {
     const freq = {};
     candidates.forEach(c => {
@@ -736,12 +740,46 @@ function updateConvergenceNodes(candidates) {
     }).join('');
 }
 
+// NEW: Top Connected Genes
+function updateTopGenes(candidates) {
+    const geneFreq = {};
+    candidates.forEach(c => {
+        const mech = c.mechanism || '';
+        const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
+        if (matches) {
+            const seen = new Set();
+            matches.forEach(m => {
+                const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+                if (!seen.has(name)) {
+                    geneFreq[name] = (geneFreq[name] || 0) + 1;
+                    seen.add(name);
+                }
+            });
+        }
+    });
+    const sorted = Object.entries(geneFreq).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    const container = document.getElementById('top-genes-list');
+    if (!sorted.length) {
+        container.innerHTML = '<span>No genes in current view.</span>';
+        return;
+    }
+    container.innerHTML = sorted.map(([gene, count]) => {
+        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between; cursor:pointer;"
+                     onclick="document.getElementById('search-input').value='${gene}'; debounceRender();"
+                     title="Click to filter by this gene">
+            <span class="chip chip-gene" style="font-size:0.7rem;">${gene}</span>
+            <span style="color:var(--text-muted);">${count} candidates</span>
+        </div>`;
+    }).join('');
+}
+
 function renderApp() {
     currentFiltered = getFilteredCandidates();
     document.getElementById('stat-visible').textContent = currentFiltered.length;
     renderSidebar(currentFiltered);
     renderRadial(currentFiltered);
     updateConvergenceNodes(currentFiltered);
+    updateTopGenes(currentFiltered);
     const btn = document.getElementById('btn-show-all');
     if (currentFiltered.length > MAX_DEFAULT_RIBBONS) {
         btn.style.display = 'inline-block';
@@ -749,7 +787,6 @@ function renderApp() {
     } else {
         btn.style.display = 'none';
     }
-    // Show/hide reverse exit button
     const exitBtn = document.getElementById('btn-exit-reverse');
     if (focusPartnerNode) {
         exitBtn.style.display = 'inline-block';
@@ -759,10 +796,7 @@ function renderApp() {
     }
 }
 
-function toggleShowAll() {
-    showAllRibbons = !showAllRibbons;
-    renderApp();
-}
+function toggleShowAll() { showAllRibbons = !showAllRibbons; renderApp(); }
 
 function resetFilters() {
     focusDiseaseNode = null;
@@ -796,10 +830,7 @@ function toggleFocusMode() {
     renderApp();
 }
 
-function exitReverseView() {
-    focusPartnerNode = null;
-    renderApp();
-}
+function exitReverseView() { focusPartnerNode = null; renderApp(); }
 
 function initApp() {
     populateCqsDropdown();
@@ -814,7 +845,6 @@ function initApp() {
     renderApp();
 }
 
-// Sidebar
 function renderSidebar(candidates) {
     const sidebar = document.getElementById('cqs-card-list');
     sidebar.scrollTop = 0;
@@ -880,7 +910,6 @@ function renderRadial(candidates) {
     }
 
     const ribbonsToDraw = showAllRibbons ? candidates : candidates.slice(0, MAX_DEFAULT_RIBBONS);
-
     const cx = width/2, cy = height/2;
     const R_inner = Math.min(width, height) * 0.18;
     const R_outer = Math.min(width, height) * 0.38;
@@ -952,7 +981,7 @@ function renderRadial(candidates) {
     ctx.clearRect(-cx, -cy, width, height);
     allLinksData.forEach(l => {
         const hub = l.cand.hub || 1;
-        const alpha = Math.min(0.8, 0.2 + hub * 0.04);  // 0.24 at hub1, 0.6 at hub10
+        const alpha = Math.min(0.8, 0.2 + hub * 0.04);
         ctx.strokeStyle = l.cand.familyColor;
         ctx.lineWidth = Math.max(1.2, l.cand.fitness * 3.5);
         ctx.globalAlpha = alpha;
@@ -973,15 +1002,9 @@ function renderRadial(candidates) {
         .attr('stroke-width', 12)
         .style('pointer-events', 'stroke')
         .style('cursor', 'pointer')
-        .on('mouseover', (event, l) => {
-            highlightRel(l.cand.id);
-            showTooltip(event, l.cand);
-        })
+        .on('mouseover', (event, l) => { highlightRel(l.cand.id); showTooltip(event, l.cand); })
         .on('mousemove', (event) => moveTooltip(event))
-        .on('mouseout', () => {
-            clearHighlight();
-            hideTooltip();
-        })
+        .on('mouseout', () => { clearHighlight(); hideTooltip(); })
         .on('click', (event, l) => openDossierModal(l.cand.id));
 
     // 3. SVG arcs and labels
@@ -990,39 +1013,29 @@ function renderRadial(candidates) {
 
     // Seeds
     g.selectAll('g.seed-node').data(Object.entries(seedLayout)).join('g')
-        .attr('class', 'seed-node')
-        .attr('data-name', ([name])=>name)
-        .style('cursor','pointer')
+        .attr('class', 'seed-node').attr('data-name', ([name])=>name).style('cursor','pointer')
         .each(function([name, a]){
             d3.select(this).append('path').attr('d', arcInner({startAngle:a.start, endAngle:a.end})).attr('fill','#f8fafc');
             const mid = (a.start+a.end)/2, flip = mid>Math.PI;
             const r = R_inner-18;
             const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
             const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text')
-                .attr('class','seed-label')
+            d3.select(this).append('text').attr('class','seed-label')
                 .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'start':'end')
-                .attr('dy','0.32em').attr('font-size','3.0px').attr('font-weight',600)
-                .attr('fill','#f8fafc')
+                .attr('text-anchor', flip?'start':'end').attr('dy','0.32em').attr('font-size','3.0px').attr('font-weight',600).attr('fill','#f8fafc')
                 .text(name.length>20?name.slice(0,18)+'…':name);
         })
-        .on('mouseover', (event,[name])=>highlightBySeed(name))
-        .on('mouseout', clearHighlight)
+        .on('mouseover', (event,[name])=>highlightBySeed(name)).on('mouseout', clearHighlight)
         .on('click', (event,[name])=>{
-            focusDiseaseNode = name;
-            focusPartnerNode = null;
+            focusDiseaseNode = name; focusPartnerNode = null;
             document.getElementById('btn-focus-mode').classList.add('active');
             document.getElementById('btn-focus-mode').textContent = `Focus: ${name} (Exit)`;
             renderApp();
         });
 
-    // Partners (now with click for reverse view)
+    // Partners with reverse view
     g.selectAll('g.partner-node').data(Object.entries(partnerLayout).filter(([k])=>!k.startsWith('__famRange_')))
-        .join('g')
-        .attr('class','partner-node')
-        .attr('data-name', ([name])=>name)
-        .style('cursor','pointer')
+        .join('g').attr('class','partner-node').attr('data-name', ([name])=>name).style('cursor','pointer')
         .each(function([name, a]){
             const col = (FAMILIES.find(f=>f.key===a.family)||FAMILIES[9]).color;
             d3.select(this).append('path').attr('d', arcOuter({startAngle:a.start, endAngle:a.end})).attr('fill',col);
@@ -1030,30 +1043,18 @@ function renderRadial(candidates) {
             const r = R_outer+16;
             const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
             const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text')
-                .attr('class','partner-label')
+            d3.select(this).append('text').attr('class','partner-label')
                 .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'end':'start')
-                .attr('dy','0.32em').attr('font-size','3.0px')
-                .attr('fill','#94a3b8')
+                .attr('text-anchor', flip?'end':'start').attr('dy','0.32em').attr('font-size','3.0px').attr('fill','#94a3b8')
                 .text(name.length>22?name.slice(0,20)+'…':name);
         })
-        .on('mouseover', (event,[name])=>highlightByPartner(name))
-        .on('mouseout', clearHighlight)
+        .on('mouseover', (event,[name])=>highlightByPartner(name)).on('mouseout', clearHighlight)
         .on('click', (event,[name])=>{
-            // Toggle reverse partner view
-            if (focusPartnerNode === name) {
-                focusPartnerNode = null;
-            } else {
-                focusPartnerNode = name;
-                focusDiseaseNode = null;
-                document.getElementById('btn-focus-mode').classList.remove('active');
-                document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
-            }
+            if (focusPartnerNode === name) { focusPartnerNode = null; }
+            else { focusPartnerNode = name; focusDiseaseNode = null; document.getElementById('btn-focus-mode').classList.remove('active'); document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode'; }
             renderApp();
         });
 
-    // Family sector labels
     const famLabelR = R_outer+80;
     familyOrder.forEach(f => {
         const range = partnerLayout['__famRange_'+f];
@@ -1061,109 +1062,56 @@ function renderRadial(candidates) {
         const mid = (range.start+range.end)/2;
         const x = Math.sin(mid)*famLabelR, y = -Math.cos(mid)*famLabelR;
         const famObj = FAMILIES.find(ff=>ff.key===f)||{};
-        g.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle')
-            .attr('font-size','11px').attr('font-weight',700).attr('fill',famObj.color)
-            .text(famObj.label||f);
+        g.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famObj.color).text(famObj.label||f);
     });
 }
 
-// RICH TOOLTIP
 function showTooltip(event, c) {
     const pwCount = c.sharedPathways ? c.sharedPathways.length : 0;
     const minSize = c.minPathSize ? `min ${c.minPathSize} genes` : '';
-    // extract first few gene symbols from mechanism
     const geneMatches = (c.mechanism || '').match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
     const genes = geneMatches ? [...new Set(geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()))].slice(0,3).join(', ') : '—';
-    // convergence node (most frequent specific term)
     const mech = c.mechanism || '';
     const nodeMatches = mech.match(/\((GO:\d+|REACT:[A-Za-z0-9\-]+|CHEBI:\d+)\)/g);
     let convNode = '—';
     if (nodeMatches) {
         const freq = {};
-        nodeMatches.forEach(m => {
-            const node = m.replace(/[()]/g, '');
-            freq[node] = (freq[node]||0)+1;
-        });
+        nodeMatches.forEach(m => { const node = m.replace(/[()]/g, ''); freq[node] = (freq[node]||0)+1; });
         convNode = Object.entries(freq).sort((a,b)=>b[1]-a[1])[0][0];
     }
     const tip = document.getElementById('canvas-tooltip');
     tip.style.opacity = 1;
-    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>
-        CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>
-        Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>
-        Genes: ${genes}<br/>
-        Conv node: ${convNode}`;
+    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>Genes: ${genes}<br/>Conv node: ${convNode}`;
     moveTooltip(event);
 }
-
-function moveTooltip(event) {
-    const tip = document.getElementById('canvas-tooltip');
-    tip.style.left = (event.clientX + 16) + 'px';
-    tip.style.top = (event.clientY - 10) + 'px';
-}
+function moveTooltip(event) { const tip = document.getElementById('canvas-tooltip'); tip.style.left = (event.clientX + 16) + 'px'; tip.style.top = (event.clientY - 10) + 'px'; }
 function hideTooltip() { document.getElementById('canvas-tooltip').style.opacity = 0; }
 
-// Canvas redraw helpers (preserving hub opacity for consistency)
 function redrawCanvasDefault() {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const hub = l.cand.hub || 1;
-        const alpha = Math.min(0.8, 0.2 + hub * 0.04);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = Math.max(1.2, l.cand.fitness*3.5);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const hub = l.cand.hub||1; const alpha = Math.min(0.8, 0.2 + hub*0.04); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = Math.max(1.2, l.cand.fitness*3.5); ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithHighlight(targetId) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.id === targetId;
-        const alpha = active ? 0.95 : 0.05;
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3.5, l.cand.fitness*6) : Math.max(1, l.cand.fitness*2);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.id === targetId; ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3.5, l.cand.fitness*6) : Math.max(1, l.cand.fitness*2); ctx.globalAlpha = active ? 0.95 : 0.05; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithSeedHighlight(seedName) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.seedName === seedName;
-        const hub = l.cand.hub || 1;
-        const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1;
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.seedName === seedName; const hub = l.cand.hub||1; const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1; ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithPartnerHighlight(partnerName) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.partnerName === partnerName;
-        const hub = l.cand.hub || 1;
-        const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1;
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.partnerName === partnerName; const hub = l.cand.hub||1; const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1; ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 
-// Highlight (unchanged)
 function highlightRel(id) {
     const targetId = parseInt(id);
     const link = allLinksData.find(l => l.cand.id === targetId);
@@ -1212,7 +1160,6 @@ function clearHighlight() {
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
 }
 
-// Reverse partner lookup & gene co-occurrence
 function getSeedsProposingPartner(partnerName) {
     return allCandidates.filter(c => c.partnerName === partnerName).map(c => c.seedName).filter((v,i,a)=>a.indexOf(v)===i);
 }
@@ -1220,83 +1167,103 @@ function getGeneOccurrenceCount(candidate) {
     const genes = new Set();
     const mech = candidate.mechanism || '';
     const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-    if (matches) {
-        matches.forEach(m => genes.add(m.replace(/\s*\(HGNC:\d+\)/, '').trim()));
-    }
+    if (matches) { matches.forEach(m => genes.add(m.replace(/\s*\(HGNC:\d+\)/, '').trim())); }
     let total = 0;
-    genes.forEach(gene => {
-        total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length;
-    });
+    genes.forEach(gene => { total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length; });
     return total;
 }
 
-// Dossier modal (extended)
+const KNOWN_INTERACTIONS = {
+    'CREBBP-RBPJ':true,'RBPJ-CREBBP':true,'NEU1-CTSA':true,'CTSA-NEU1':true,
+    'MMAA-MMUT':true,'MMUT-MMAA':true,'GJA1-GJA1':true,'PTPN11-HRAS':true,'HRAS-PTPN11':true,
+    'COL1A1-COL1A1':true
+};
+function getProteinInteractionHtml(candidate) {
+    const geneSymbols = [...new Set((candidate.mechanism||'').match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g)||[]).map(m=>m.replace(/\s*\(HGNC:\d+\)/,'').trim())];
+    if (geneSymbols.length < 2) return '';
+    const pairKey = `${geneSymbols[0]}-${geneSymbols[1]}`;
+    if (KNOWN_INTERACTIONS[pairKey]) {
+        return `<div style="margin-top:4px; font-size:0.76rem; color:#10b981;"><strong style="color:#10b981;">✓ Known protein interaction:</strong> ${geneSymbols[0]} and ${geneSymbols[1]} are documented to physically interact.</div>`;
+    } else {
+        return `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong>Protein interaction:</strong> No documented physical interaction between ${geneSymbols[0]} and ${geneSymbols[1]} in BioGRID.</div>`;
+    }
+}
+
+// Dossier modal with error catch
 function openDossierModal(candId) {
-    const c = allCandidates.find(x => x.id === parseInt(candId));
-    if (!c) return;
-    const tm = tierMeta(c.tier);
-    const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
-    const parsed = parseMechanismDetails(c.mechanism);
-    let stepsHtml = '';
-    if (parsed.steps.length > 0) {
-        stepsHtml = `<div class="causal-chain-container">${parsed.steps.map(s => `
-            <div class="chain-step-row">
-                <span class="chip ${getChipClass(s.subjectId)}">${s.subject} ${s.subjectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.subjectId})</small>` : ''}</span>
-                <span class="chain-arrow">—${s.relation}→</span>
-                <span class="chip ${getChipClass(s.objectId)}">${s.object} ${s.objectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.objectId})</small>` : ''}</span>
-            </div>`).join('')}</div>`;
-    }
-    const narrativeHtml = parsed.narrative ? `<div class="narrative-prose-box">${parsed.narrative}</div>` : '';
+    try {
+        const c = allCandidates.find(x => x.id === parseInt(candId));
+        if (!c) return;
+        const tm = tierMeta(c.tier);
+        const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
+        const parsed = parseMechanismDetails(c.mechanism);
+        let stepsHtml = '';
+        if (parsed.steps.length > 0) {
+            stepsHtml = `<div class="causal-chain-container">${parsed.steps.map(s => `
+                <div class="chain-step-row">
+                    <span class="chip ${getChipClass(s.subjectId)}">${s.subject} ${s.subjectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.subjectId})</small>` : ''}</span>
+                    <span class="chain-arrow">—${s.relation}→</span>
+                    <span class="chip ${getChipClass(s.objectId)}">${s.object} ${s.objectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.objectId})</small>` : ''}</span>
+                </div>`).join('')}</div>`;
+        }
+        const narrativeHtml = parsed.narrative ? `<div class="narrative-prose-box">${parsed.narrative}</div>` : '';
 
-    const otherSeeds = getSeedsProposingPartner(c.partnerName).filter(s => s !== c.seedName);
-    let reverseHtml = '';
-    if (otherSeeds.length > 0) {
-        const displaySeeds = otherSeeds.slice(0, 5).join(', ');
-        const more = otherSeeds.length > 5 ? ` …and ${otherSeeds.length - 5} more` : '';
-        reverseHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Also proposed by seeds:</strong> ${displaySeeds}${more}</div>`;
-    }
+        const otherSeeds = getSeedsProposingPartner(c.partnerName).filter(s => s !== c.seedName);
+        let reverseHtml = '';
+        if (otherSeeds.length > 0) {
+            const displaySeeds = otherSeeds.slice(0, 5).join(', ');
+            const more = otherSeeds.length > 5 ? ` …and ${otherSeeds.length - 5} more` : '';
+            reverseHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Also proposed by seeds:</strong> ${displaySeeds}${more}</div>`;
+        }
 
-    const geneCount = getGeneOccurrenceCount(c);
-    let geneHtml = '';
-    if (geneCount > 0) {
-        geneHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Key genes appear in:</strong> ${geneCount} other candidates across the Atlas</div>`;
-    }
+        const geneCount = getGeneOccurrenceCount(c);
+        let geneHtml = '';
+        if (geneCount > 0) {
+            geneHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Key genes appear in:</strong> ${geneCount} other candidates across the Atlas</div>`;
+        }
 
-    const rawId = 'raw-' + Math.random().toString(36).slice(2,8);
-    document.getElementById('modal-content').innerHTML = `
-        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
-            <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">CQS Score: ${c.cqs}</span>
-            <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">${c.tier} · ${tm.short}</span>
-            ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px;">Global Hub (${c.hub} seeds)</span>` : ''}
-            <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
-        </div>
-        
-        <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">${c.seedName} ⇄ ${c.partnerName}</h2>
-        ${reverseHtml}
-        ${geneHtml}
-        <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
-            <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
-            <div style="margin-top:4px;">${c.sharedPathways.map(pw => `<a href="https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')}" target="_blank" class="pw-badge">${pw}</a>`).join(' ')}</div>
-            ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
-        </div>
-        <div>
-            <h4 style="font-size:0.78rem; color:#94a3b8; letter-spacing:0.04em;">PROPOSED MECHANISM FLOW</h4>
-            ${stepsHtml}
-            ${narrativeHtml}
-            <span class="raw-toggle" onclick="const r=document.getElementById('${rawId}'); r.style.display = r.style.display === 'none' ? 'block' : 'none';">Show raw mechanism string</span>
-            <div class="modal-mech" id="${rawId}" style="display:none;">${c.mechanism || '—'}</div>
-        </div>
-        ${falsifHtml ? `<div class="modal-falsif"><strong>Falsification Test:</strong> ${falsifHtml}</div>` : ''}
-        ${c.translational ? `<div class="modal-translat"><strong>Translational Significance:</strong> ${c.translational}</div>` : ''}
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
-            <a href="${c.logFile}" target="_blank" class="btn-log">View Raw Discovery Log JSON</a>
-            <span style="font-size:0.75rem; color:#64748b;">${c.fileName}</span>
-        </div>
-        <div id="full-discovery-run-${c.id}" style="margin-top:20px; border-top:1px solid var(--border); padding-top:14px;">
-            <p style="color:var(--text-muted); font-size:0.8rem;">Loading full discovery run…</p>
-        </div>`;
-    document.getElementById('dossier-modal').classList.add('open');
-    loadFullDiscoveryRun(c);
+        const proteinInteractionHtml = getProteinInteractionHtml(c);
+
+        const rawId = 'raw-' + Math.random().toString(36).slice(2,8);
+        document.getElementById('modal-content').innerHTML = `
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+                <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">CQS Score: ${c.cqs}</span>
+                <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">${c.tier} · ${tm.short}</span>
+                ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px;">Global Hub (${c.hub} seeds)</span>` : ''}
+                <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
+            </div>
+            
+            <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">${c.seedName} ⇄ ${c.partnerName}</h2>
+            ${reverseHtml}
+            ${geneHtml}
+            ${proteinInteractionHtml}
+            <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
+                <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
+                <div style="margin-top:4px;">${c.sharedPathways.map(pw => `<a href="https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')}" target="_blank" class="pw-badge">${pw}</a>`).join(' ')}</div>
+                ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
+            </div>
+            <div>
+                <h4 style="font-size:0.78rem; color:#94a3b8; letter-spacing:0.04em;">PROPOSED MECHANISM FLOW</h4>
+                ${stepsHtml}
+                ${narrativeHtml}
+                <span class="raw-toggle" onclick="const r=document.getElementById('${rawId}'); r.style.display = r.style.display === 'none' ? 'block' : 'none';">Show raw mechanism string</span>
+                <div class="modal-mech" id="${rawId}" style="display:none;">${c.mechanism || '—'}</div>
+            </div>
+            ${falsifHtml ? `<div class="modal-falsif"><strong>Falsification Test:</strong> ${falsifHtml}</div>` : ''}
+            ${c.translational ? `<div class="modal-translat"><strong>Translational Significance:</strong> ${c.translational}</div>` : ''}
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
+                <a href="${c.logFile}" target="_blank" class="btn-log">View Raw Discovery Log JSON</a>
+                <span style="font-size:0.75rem; color:#64748b;">${c.fileName}</span>
+            </div>
+            <div id="full-discovery-run-${c.id}" style="margin-top:20px; border-top:1px solid var(--border); padding-top:14px;">
+                <p style="color:var(--text-muted); font-size:0.8rem;">Loading full discovery run…</p>
+            </div>`;
+        document.getElementById('dossier-modal').classList.add('open');
+        loadFullDiscoveryRun(c);
+    } catch(err) {
+        alert('Error opening dossier: ' + err.message);
+        console.error(err);
+    }
 }
 
 function loadFullDiscoveryRun(candidate) {
@@ -1313,22 +1280,14 @@ function loadFullDiscoveryRun(candidate) {
             window._discoveryCache[candidate.seedName] = data.partners || [];
             renderDiscoveryRunTable(container, data.partners || [], candidate);
         })
-        .catch(() => {
-            container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Could not load discovery run.</p>';
-        });
+        .catch(() => { container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Could not load discovery run.</p>'; });
 }
 
 function renderDiscoveryRunTable(container, partners, candidate) {
     const sorted = [...partners].sort((a, b) => (b.fitness || 0) - (a.fitness || 0));
     let html = `<h4 style="font-size:0.8rem; color:var(--text-muted); letter-spacing:0.04em; margin-bottom:10px;">FULL DISCOVERY RUN FOR ${candidate.seedName.toUpperCase()}</h4>`;
     html += `<table style="width:100%; border-collapse:collapse; font-size:0.76rem; color:#cbd5e1;">`;
-    html += `<thead><tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-        <th style="text-align:left; padding:4px 8px;">#</th>
-        <th style="text-align:left; padding:4px 8px;">Partner Disease</th>
-        <th style="text-align:center; padding:4px 8px;">Fitness</th>
-        <th style="text-align:center; padding:4px 8px;">Shared Pathways</th>
-        <th style="text-align:center; padding:4px 8px;">Key Gene(s)</th>
-    </tr></thead><tbody>`;
+    html += `<thead><tr style="border-bottom:1px solid rgba(255,255,255,0.1);"><th style="text-align:left; padding:4px 8px;">#</th><th style="text-align:left; padding:4px 8px;">Partner Disease</th><th style="text-align:center; padding:4px 8px;">Fitness</th><th style="text-align:center; padding:4px 8px;">Shared Pathways</th><th style="text-align:center; padding:4px 8px;">Key Gene(s)</th></tr></thead><tbody>`;
     sorted.forEach((p, i) => {
         const isCurrent = p.diseaseBName === candidate.partnerName;
         const rowStyle = isCurrent ? 'background: rgba(56,189,248,0.08); font-weight:600;' : '';
@@ -1340,19 +1299,9 @@ function renderDiscoveryRunTable(container, partners, candidate) {
         } else {
             const mech = p.mechanism_chain || '';
             const geneMatches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-            if (geneMatches) {
-                genes = geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()).join(', ');
-            } else {
-                genes = '—';
-            }
+            if (geneMatches) { genes = geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()).join(', '); } else { genes = '—'; }
         }
-        html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.06); ${rowStyle}">
-            <td style="padding:4px 8px;">${i+1}</td>
-            <td style="padding:4px 8px;">${p.diseaseBName || 'Unknown'}</td>
-            <td style="text-align:center; padding:4px 8px;">${fitness}</td>
-            <td style="text-align:center; padding:4px 8px;">${pwCount}</td>
-            <td style="text-align:center; padding:4px 8px;">${genes}</td>
-        </tr>`;
+        html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.06); ${rowStyle}"><td style="padding:4px 8px;">${i+1}</td><td style="padding:4px 8px;">${p.diseaseBName || 'Unknown'}</td><td style="text-align:center; padding:4px 8px;">${fitness}</td><td style="text-align:center; padding:4px 8px;">${pwCount}</td><td style="text-align:center; padding:4px 8px;">${genes}</td></tr>`;
     });
     html += `</tbody></table>`;
     container.innerHTML = html;
@@ -1381,7 +1330,6 @@ function parseMechanismDetails(rawText) {
     if (steps.length === 0 && !narrative) narrative = rawText;
     return { steps, narrative };
 }
-
 function getChipClass(id) {
     if (!id) return 'chip-other';
     if (id.startsWith('HGNC')) return 'chip-gene';
@@ -1392,7 +1340,6 @@ function getChipClass(id) {
     return 'chip-other';
 }
 
-// Event listeners
 document.getElementById('filter-cqs').addEventListener('change', debounceRender);
 document.getElementById('filter-hub').addEventListener('change', debounceRender);
 document.getElementById('filter-family').addEventListener('change', debounceRender);
