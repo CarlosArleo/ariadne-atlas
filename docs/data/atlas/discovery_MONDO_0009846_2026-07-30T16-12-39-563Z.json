@@ -1,0 +1,53 @@
+{
+  "seed": {
+    "id": "MONDO:0009846",
+    "name": "pentosuria"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0030055",
+      "diseaseBName": "neuronopathy, distal hereditary motor, autosomal recessive 8",
+      "fitness": 0.3835,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in SORD (null) —DISRUPTS→ SORD (HGNC:10959); SORD (HGNC:10959) —DISRUPTS→ Xylitol metabolism (REACT:R-HSA-74860); Xylitol metabolism (REACT:R-HSA-74860) —LEADS_TO→ Xylitol (CHEBI:30902); Xylitol (CHEBI:30902) —LEADS_TO→ Pentosuria (HP:0001941); Xylitol (CHEBI:30902) —LEADS_TO→ Distal hereditary motor neuronopathy (HP:0003701). Loss-of-function mutations in SORD disrupt xylitol metabolism. In pentosuria, this leads to the accumulation of xylitol, which is excreted in the urine. In distal hereditary motor neuronopathy type 8, the disruption of xylitol metabolism likely contributes to neurodegeneration through an as-yet-unspecified mechanism, potentially involving downstream effects on neuronal function or cellular stress.",
+      "mechanism_narrative": "Loss-of-function variant in SORD (null) —DISRUPTS→ SORD (HGNC:10959); SORD (HGNC:10959) —DISRUPTS→ Xylitol metabolism (REACT:R-HSA-74860); Xylitol metabolism (REACT:R-HSA-74860) —LEADS_TO→ Xylitol (CHEBI:30902); Xylitol (CHEBI:30902) —LEADS_TO→ Pentosuria (HP:0001941); Xylitol (CHEBI:30902) —LEADS_TO→ Distal hereditary motor neuronopathy (HP:0003701). Loss-of-function mutations in SORD disrupt xylitol metabolism. In pentosuria, this leads to the accumulation of xylitol, which is excreted in the urine. In distal hereditary motor neuronopathy type 8, the disruption of xylitol metabolism likely contributes to neurodegeneration through an as-yet-unspecified mechanism, potentially involving downstream effects on neuronal function or cellular stress.",
+      "falsification": {
+        "text": "The identification of distinct, non-overlapping molecular pathways downstream of SORD in neurons versus renal cells, or the discovery of a gain-of-function mechanism for SORD in one of the diseases.",
+        "gnomad_variant": "gnomAD analysis showing a common, benign variant in SORD with a frequency > 1% in the general population would cast doubt on its role as a causative gene for rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5661270"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5661270": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030055",
+        "diseaseBName": "neuronopathy, distal hereditary motor, autosomal recessive 8",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5661270"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5661270": 5
+        },
+        "fitness": 0.3835,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SORD (null) —DISRUPTS→ SORD (HGNC:10959); SORD (HGNC:10959) —DISRUPTS→ Xylitol metabolism (REACT:R-HSA-74860); Xylitol metabolism (REACT:R-HSA-74860) —LEADS_TO→ Xylitol (CHEBI:30902); Xylitol (CHEBI:30902) —LEADS_TO→ Pentosuria (HP:0001941); Xylitol (CHEBI:30902) —LEADS_TO→ Distal hereditary motor neuronopathy (HP:0003701). Loss-of-function mutations in SORD disrupt xylitol metabolism. In pentosuria, this leads to the accumulation of xylitol, which is excreted in the urine. In distal hereditary motor neuronopathy type 8, the disruption of xylitol metabolism likely contributes to neurodegeneration through an as-yet-unspecified mechanism, potentially involving downstream effects on neuronal function or cellular stress.",
+        "falsification": {
+          "text": "The identification of distinct, non-overlapping molecular pathways downstream of SORD in neurons versus renal cells, or the discovery of a gain-of-function mechanism for SORD in one of the diseases.",
+          "gnomad_variant": "gnomAD analysis showing a common, benign variant in SORD with a frequency > 1% in the general population would cast doubt on its role as a causative gene for rare diseases."
+        },
+        "translational": "Understanding the shared role of SORD in these two distinct diseases could reveal novel therapeutic targets for both neurological disorders and metabolic conditions related to sugar alcohol metabolism. Modulating xylitol metabolism or downstream pathways could offer a unified therapeutic strategy."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T16:12:39.563Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** pentosuria (MONDO:0009846)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | neuronopathy, distal hereditary motor, autosomal recessive 8 (MONDO:0030055) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-5661270 |\n\n### CANDIDATE DETAIL\n#### 1. neuronopathy, distal hereditary motor, autosomal recessive 8  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-5661270)\n\n**Proposed mechanism:** Loss-of-function variant in SORD (null) —DISRUPTS→ SORD (HGNC:10959); SORD (HGNC:10959) —DISRUPTS→ Xylitol metabolism (REACT:R-HSA-74860); Xylitol metabolism (REACT:R-HSA-74860) —LEADS_TO→ Xylitol (CHEBI:30902); Xylitol (CHEBI:30902) —LEADS_TO→ Pentosuria (HP:0001941); Xylitol (CHEBI:30902) —LEADS_TO→ Distal hereditary motor neuronopathy (HP:0003701). Loss-of-function mutations in SORD disrupt xylitol metabolism. In pentosuria, this leads to the accumulation of xylitol, which is excreted in the urine. In distal hereditary motor neuronopathy type 8, the disruption of xylitol metabolism likely contributes to neurodegeneration through an as-yet-unspecified mechanism, potentially involving downstream effects on neuronal function or cellular stress.\n\n**How to falsify it:** The identification of distinct, non-overlapping molecular pathways downstream of SORD in neurons versus renal cells, or the discovery of a gain-of-function mechanism for SORD in one of the diseases. _(variant: gnomAD analysis showing a common, benign variant in SORD with a frequency > 1% in the general population would cast doubt on its role as a causative gene for rare diseases.)_\n\n**Why it matters:** Understanding the shared role of SORD in these two distinct diseases could reveal novel therapeutic targets for both neurological disorders and metabolic conditions related to sugar alcohol metabolism. Modulating xylitol metabolism or downstream pathways could offer a unified therapeutic strategy.\n\n---"
+}

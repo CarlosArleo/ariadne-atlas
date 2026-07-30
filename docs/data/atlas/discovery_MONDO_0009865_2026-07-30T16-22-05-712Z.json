@@ -1,0 +1,433 @@
+{
+  "seed": {
+    "id": "MONDO:0009865",
+    "name": "glycogen storage disease due to phosphoglycerate mutase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 13,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012747",
+      "diseaseBName": "glycogen storage disease due to aldolase A deficiency",
+      "fitness": 0.4752,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9214) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —LEADS_TO→ Muscle weakness (HP:0001324); ALDOA (HGNC:345) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Exercise intolerance (HP:0009130). Mutations in either PGAM2 or ALDOA impair the glycolytic pathway, leading to reduced ATP production and subsequent muscle weakness, hypotonia, and exercise intolerance.",
+      "mechanism_narrative": "PGAM2 (HGNC:9214) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —LEADS_TO→ Muscle weakness (HP:0001324); ALDOA (HGNC:345) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Exercise intolerance (HP:0009130). Mutations in either PGAM2 or ALDOA impair the glycolytic pathway, leading to reduced ATP production and subsequent muscle weakness, hypotonia, and exercise intolerance.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in PGAM2 or ALDOA with a minor allele frequency greater than 1% in gnomAD would falsify the claim that these genes are the sole causal agents for these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012747",
+        "diseaseBName": "glycogen storage disease due to aldolase A deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.4752,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9214) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —LEADS_TO→ Muscle weakness (HP:0001324); ALDOA (HGNC:345) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Exercise intolerance (HP:0009130). Mutations in either PGAM2 or ALDOA impair the glycolytic pathway, leading to reduced ATP production and subsequent muscle weakness, hypotonia, and exercise intolerance.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in PGAM2 or ALDOA with a minor allele frequency greater than 1% in gnomAD would falsify the claim that these genes are the sole causal agents for these rare diseases."
+        },
+        "translational": "Understanding the shared reliance on glycolysis and ATP production in these distinct glycogen storage diseases could inform therapeutic strategies aimed at boosting energy metabolism in affected muscle cells, potentially through interventions targeting alternative metabolic pathways or enhancing residual enzyme activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014221",
+      "diseaseBName": "triosephosphate isomerase deficiency",
+      "fitness": 0.4509,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9145) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); PGAM2 (HGNC:9145) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16871); 2,3-bisphosphoglycerate (CHEBI:16871) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypoglycemia (HP:0001250); TPI1 (HGNC:11770) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); TPI1 (HGNC:11770) —DECREASES→ dihydroxyacetone phosphate (CHEBI:15400); dihydroxyacetone phosphate (CHEBI:15400) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in PGAM2 disrupt the glycolysis/gluconeogenesis pathway, leading to decreased levels of 2,3-bisphosphoglycerate and downstream effects causing hypoglycemia. Similarly, mutations in TPI1 disrupt the same pathway by decreasing dihydroxyacetone phosphate, resulting in downstream effects that can lead to hypotonia. The convergence is on the shared disruption of the central Glycolysis/Gluconeogenesis Pathway.",
+      "mechanism_narrative": "PGAM2 (HGNC:9145) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); PGAM2 (HGNC:9145) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16871); 2,3-bisphosphoglycerate (CHEBI:16871) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypoglycemia (HP:0001250); TPI1 (HGNC:11770) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); TPI1 (HGNC:11770) —DECREASES→ dihydroxyacetone phosphate (CHEBI:15400); dihydroxyacetone phosphate (CHEBI:15400) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in PGAM2 disrupt the glycolysis/gluconeogenesis pathway, leading to decreased levels of 2,3-bisphosphoglycerate and downstream effects causing hypoglycemia. Similarly, mutations in TPI1 disrupt the same pathway by decreasing dihydroxyacetone phosphate, resulting in downstream effects that can lead to hypotonia. The convergence is on the shared disruption of the central Glycolysis/Gluconeogenesis Pathway.",
+      "falsification": {
+        "text": "The causal chains for PGAM2 and TPI1 deficiencies do not converge on a shared intermediate metabolite or pathway node, or if mutations in TPI1 do not lead to a decrease in dihydroxyacetone phosphate or mutations in PGAM2 do not lead to a decrease in 2,3-bisphosphoglycerate.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014221",
+        "diseaseBName": "triosephosphate isomerase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.4509,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9145) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); PGAM2 (HGNC:9145) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16871); 2,3-bisphosphoglycerate (CHEBI:16871) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypoglycemia (HP:0001250); TPI1 (HGNC:11770) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); TPI1 (HGNC:11770) —DECREASES→ dihydroxyacetone phosphate (CHEBI:15400); dihydroxyacetone phosphate (CHEBI:15400) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in PGAM2 disrupt the glycolysis/gluconeogenesis pathway, leading to decreased levels of 2,3-bisphosphoglycerate and downstream effects causing hypoglycemia. Similarly, mutations in TPI1 disrupt the same pathway by decreasing dihydroxyacetone phosphate, resulting in downstream effects that can lead to hypotonia. The convergence is on the shared disruption of the central Glycolysis/Gluconeogenesis Pathway.",
+        "falsification": {
+          "text": "The causal chains for PGAM2 and TPI1 deficiencies do not converge on a shared intermediate metabolite or pathway node, or if mutations in TPI1 do not lead to a decrease in dihydroxyacetone phosphate or mutations in PGAM2 do not lead to a decrease in 2,3-bisphosphoglycerate.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared impact of these glycolytic enzyme deficiencies on central metabolism can inform therapeutic strategies aimed at managing energy deficits and related downstream phenotypes in patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013046",
+      "diseaseBName": "glycogen storage disease due to muscle beta-enolase deficiency",
+      "fitness": 0.4369,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Phosphoglycerate mutase 2 (HGNC:8734) —DISRUPTS→ Glycolysis; Beta-enolase (HGNC:3015) —DISRUPTS→ Glycolysis; Glycolysis —DECREASES→ ATP production; ATP production —LEADS_TO→ Muscle weakness (HP:0001324); ATP production —LEADS_TO→ Exercise intolerance (HP:0009071). Deficiency in either phosphoglycerate mutase (PGAM2) or beta-enolase (ENO3) disrupts the glycolytic pathway, leading to reduced ATP production in muscle cells. This energy deficit manifests as muscle weakness and exercise intolerance in both disease types.",
+      "mechanism_narrative": "Phosphoglycerate mutase 2 (HGNC:8734) —DISRUPTS→ Glycolysis; Beta-enolase (HGNC:3015) —DISRUPTS→ Glycolysis; Glycolysis —DECREASES→ ATP production; ATP production —LEADS_TO→ Muscle weakness (HP:0001324); ATP production —LEADS_TO→ Exercise intolerance (HP:0009071). Deficiency in either phosphoglycerate mutase (PGAM2) or beta-enolase (ENO3) disrupts the glycolytic pathway, leading to reduced ATP production in muscle cells. This energy deficit manifests as muscle weakness and exercise intolerance in both disease types.",
+      "falsification": {
+        "text": "Demonstration that mutations in PGAM2 and ENO3 lead to completely independent downstream molecular events, with no shared impact on the glycolytic pathway flux or overall cellular ATP levels in affected tissues.",
+        "gnomad_variant": "Identification of common variants (gnomAD allele frequency > 1%) in both PGAM2 and ENO3 associated with normal glycolytic function."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013046",
+        "diseaseBName": "glycogen storage disease due to muscle beta-enolase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.4369,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Phosphoglycerate mutase 2 (HGNC:8734) —DISRUPTS→ Glycolysis; Beta-enolase (HGNC:3015) —DISRUPTS→ Glycolysis; Glycolysis —DECREASES→ ATP production; ATP production —LEADS_TO→ Muscle weakness (HP:0001324); ATP production —LEADS_TO→ Exercise intolerance (HP:0009071). Deficiency in either phosphoglycerate mutase (PGAM2) or beta-enolase (ENO3) disrupts the glycolytic pathway, leading to reduced ATP production in muscle cells. This energy deficit manifests as muscle weakness and exercise intolerance in both disease types.",
+        "falsification": {
+          "text": "Demonstration that mutations in PGAM2 and ENO3 lead to completely independent downstream molecular events, with no shared impact on the glycolytic pathway flux or overall cellular ATP levels in affected tissues.",
+          "gnomad_variant": "Identification of common variants (gnomAD allele frequency > 1%) in both PGAM2 and ENO3 associated with normal glycolytic function."
+        },
+        "translational": "Understanding this mechanistic link could lead to therapeutic strategies aimed at boosting alternative energy pathways or improving mitochondrial function to compensate for glycolytic deficits in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009249",
+      "diseaseBName": "hereditary fructose intolerance",
+      "fitness": 0.4336,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9215) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —LEADS_TO→ Hypoglycemia (HP:0001250); ALDOB (HGNC:327) —DISRUPTS→ Fructose metabolism (REACT:R-HSA-1815806); Fructose metabolism (REACT:R-HSA-1815806) —LEADS_TO→ Fructose-1-phosphate (CHEBI:17400); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Glycolysis (REACT:R-HSA-70171); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Failure to thrive (HP:0011344). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to hypoglycemia. Loss-of-function mutations in ALDOB disrupt fructose metabolism, causing accumulation of fructose-1-phosphate, which in turn disrupts glycolysis and leads to failure to thrive and hypoglycemia.",
+      "mechanism_narrative": "PGAM2 (HGNC:9215) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —LEADS_TO→ Hypoglycemia (HP:0001250); ALDOB (HGNC:327) —DISRUPTS→ Fructose metabolism (REACT:R-HSA-1815806); Fructose metabolism (REACT:R-HSA-1815806) —LEADS_TO→ Fructose-1-phosphate (CHEBI:17400); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Glycolysis (REACT:R-HSA-70171); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Failure to thrive (HP:0011344). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to hypoglycemia. Loss-of-function mutations in ALDOB disrupt fructose metabolism, causing accumulation of fructose-1-phosphate, which in turn disrupts glycolysis and leads to failure to thrive and hypoglycemia.",
+      "falsification": {
+        "text": "If mutations in ALDOB were found to cause a significant increase in phosphoglycerate mutase activity or if mutations in PGAM2 led to a significant accumulation of fructose-1-phosphate, this hypothesis would be falsified.",
+        "gnomad_variant": "Pathogenic variants in ALDOB (HGNC:327) or PGAM2 (HGNC:9215) are rare in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009249",
+        "diseaseBName": "hereditary fructose intolerance",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.4336,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9215) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —LEADS_TO→ Hypoglycemia (HP:0001250); ALDOB (HGNC:327) —DISRUPTS→ Fructose metabolism (REACT:R-HSA-1815806); Fructose metabolism (REACT:R-HSA-1815806) —LEADS_TO→ Fructose-1-phosphate (CHEBI:17400); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Glycolysis (REACT:R-HSA-70171); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Failure to thrive (HP:0011344). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to hypoglycemia. Loss-of-function mutations in ALDOB disrupt fructose metabolism, causing accumulation of fructose-1-phosphate, which in turn disrupts glycolysis and leads to failure to thrive and hypoglycemia.",
+        "falsification": {
+          "text": "If mutations in ALDOB were found to cause a significant increase in phosphoglycerate mutase activity or if mutations in PGAM2 led to a significant accumulation of fructose-1-phosphate, this hypothesis would be falsified.",
+          "gnomad_variant": "Pathogenic variants in ALDOB (HGNC:327) or PGAM2 (HGNC:9215) are rare in the general population."
+        },
+        "translational": "Understanding the overlap in metabolic pathways affected by these distinct genetic defects can inform diagnostic strategies and therapeutic interventions targeting carbohydrate metabolism and its downstream effects on organ function and development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009251",
+      "diseaseBName": "fructose-1,6-bisphosphatase deficiency",
+      "fitness": 0.3836,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in PGAM2 —DISRUPTS→ PGAM2 (HGNC:9202); PGAM2 (HGNC:9202) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ 3-phosphoglycerate (CHEBI:17677); 3-phosphoglycerate (CHEBI:17677) —LEADS_TO→ Hypoglycemia (HP:0001250); Pathogenic variant in FBP1 —DISRUPTS→ FBP1 (HGNC:3586); FBP1 (HGNC:3586) —DISRUPTS→ Gluconeogenesis (KEGG:00010); Gluconeogenesis (KEGG:00010) —DECREASES→ Fructose-1,6-bisphosphate (CHEBI:17676); Fructose-1,6-bisphosphate (CHEBI:17676) —LEADS_TO→ Hypoglycemia (HP:0001250). Loss-of-function mutations in PGAM2 impair glycolysis, leading to reduced ATP production and downstream metabolic consequences including hypoglycemia. Similarly, loss-of-function mutations in FBP1 impair gluconeogenesis, preventing the synthesis of glucose and also leading to hypoglycemia. Both pathways are critical for maintaining blood glucose homeostasis.",
+      "mechanism_narrative": "Pathogenic variant in PGAM2 —DISRUPTS→ PGAM2 (HGNC:9202); PGAM2 (HGNC:9202) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ 3-phosphoglycerate (CHEBI:17677); 3-phosphoglycerate (CHEBI:17677) —LEADS_TO→ Hypoglycemia (HP:0001250); Pathogenic variant in FBP1 —DISRUPTS→ FBP1 (HGNC:3586); FBP1 (HGNC:3586) —DISRUPTS→ Gluconeogenesis (KEGG:00010); Gluconeogenesis (KEGG:00010) —DECREASES→ Fructose-1,6-bisphosphate (CHEBI:17676); Fructose-1,6-bisphosphate (CHEBI:17676) —LEADS_TO→ Hypoglycemia (HP:0001250). Loss-of-function mutations in PGAM2 impair glycolysis, leading to reduced ATP production and downstream metabolic consequences including hypoglycemia. Similarly, loss-of-function mutations in FBP1 impair gluconeogenesis, preventing the synthesis of glucose and also leading to hypoglycemia. Both pathways are critical for maintaining blood glucose homeostasis.",
+      "falsification": {
+        "text": "Demonstration that mutations in PGAM2 do not lead to decreased 3-phosphoglycerate levels or mutations in FBP1 do not lead to decreased glucose production from precursors would falsify this hypothesis. Alternatively, observing significantly different metabolic profiles in patient samples that cannot be reconciled by the proposed pathway disruptions would also be falsifying."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009251",
+        "diseaseBName": "fructose-1,6-bisphosphatase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26
+        },
+        "fitness": 0.3836,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in PGAM2 —DISRUPTS→ PGAM2 (HGNC:9202); PGAM2 (HGNC:9202) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ 3-phosphoglycerate (CHEBI:17677); 3-phosphoglycerate (CHEBI:17677) —LEADS_TO→ Hypoglycemia (HP:0001250); Pathogenic variant in FBP1 —DISRUPTS→ FBP1 (HGNC:3586); FBP1 (HGNC:3586) —DISRUPTS→ Gluconeogenesis (KEGG:00010); Gluconeogenesis (KEGG:00010) —DECREASES→ Fructose-1,6-bisphosphate (CHEBI:17676); Fructose-1,6-bisphosphate (CHEBI:17676) —LEADS_TO→ Hypoglycemia (HP:0001250). Loss-of-function mutations in PGAM2 impair glycolysis, leading to reduced ATP production and downstream metabolic consequences including hypoglycemia. Similarly, loss-of-function mutations in FBP1 impair gluconeogenesis, preventing the synthesis of glucose and also leading to hypoglycemia. Both pathways are critical for maintaining blood glucose homeostasis.",
+        "falsification": {
+          "text": "Demonstration that mutations in PGAM2 do not lead to decreased 3-phosphoglycerate levels or mutations in FBP1 do not lead to decreased glucose production from precursors would falsify this hypothesis. Alternatively, observing significantly different metabolic profiles in patient samples that cannot be reconciled by the proposed pathway disruptions would also be falsifying."
+        },
+        "translational": "Understanding the shared metabolic vulnerability to hypoglycemia in these distinct glycogen storage disorders can inform therapeutic strategies aimed at glycemic control and preventing severe neurological complications. Identifying common downstream effects allows for the development of unified treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013275",
+      "diseaseBName": "hemolytic anemia due to glucophosphate isomerase deficiency",
+      "fitness": 0.3835,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Phosphoglycerate mutase 2 (HGNC:9008) —DISRUPTS→ 3-phosphoglycerate (CHEBI:17670); 3-phosphoglycerate (CHEBI:17670) —LEADS_TO→ 2-phosphoglycerate (CHEBI:18250); 2-phosphoglycerate (CHEBI:18250) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —DECREASES→ ATP (CHEBI:15422); Glycolysis (REACT:72283) —LEADS_TO→ Glycogen storage disease (MONDO:0009865); Glucose-6-phosphate isomerase (HGNC:4557) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17675); Glucose-6-phosphate (CHEBI:17675) —LEADS_TO→ Fructose-6-phosphate (CHEBI:17907); Fructose-6-phosphate (CHEBI:17907) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —LEADS_TO→ Hemolytic anemia (MONDO:0013275). Loss-of-function mutations in PGAM2 (leading to GSD-IIB) and GPI (leading to hemolytic anemia) both converge on the central metabolic pathway of glycolysis. Impairment in either enzyme disrupts the flux through glycolysis, ultimately leading to reduced ATP production, which manifests as distinct disease phenotypes.",
+      "mechanism_narrative": "Phosphoglycerate mutase 2 (HGNC:9008) —DISRUPTS→ 3-phosphoglycerate (CHEBI:17670); 3-phosphoglycerate (CHEBI:17670) —LEADS_TO→ 2-phosphoglycerate (CHEBI:18250); 2-phosphoglycerate (CHEBI:18250) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —DECREASES→ ATP (CHEBI:15422); Glycolysis (REACT:72283) —LEADS_TO→ Glycogen storage disease (MONDO:0009865); Glucose-6-phosphate isomerase (HGNC:4557) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17675); Glucose-6-phosphate (CHEBI:17675) —LEADS_TO→ Fructose-6-phosphate (CHEBI:17907); Fructose-6-phosphate (CHEBI:17907) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —LEADS_TO→ Hemolytic anemia (MONDO:0013275). Loss-of-function mutations in PGAM2 (leading to GSD-IIB) and GPI (leading to hemolytic anemia) both converge on the central metabolic pathway of glycolysis. Impairment in either enzyme disrupts the flux through glycolysis, ultimately leading to reduced ATP production, which manifests as distinct disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in PGAM2 and GPI do not impair flux through glycolysis or ATP production in relevant cell types, or identification of a common upstream or downstream effector pathway not involving glycolysis.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013275",
+        "diseaseBName": "hemolytic anemia due to glucophosphate isomerase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.3835,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Phosphoglycerate mutase 2 (HGNC:9008) —DISRUPTS→ 3-phosphoglycerate (CHEBI:17670); 3-phosphoglycerate (CHEBI:17670) —LEADS_TO→ 2-phosphoglycerate (CHEBI:18250); 2-phosphoglycerate (CHEBI:18250) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —DECREASES→ ATP (CHEBI:15422); Glycolysis (REACT:72283) —LEADS_TO→ Glycogen storage disease (MONDO:0009865); Glucose-6-phosphate isomerase (HGNC:4557) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17675); Glucose-6-phosphate (CHEBI:17675) —LEADS_TO→ Fructose-6-phosphate (CHEBI:17907); Fructose-6-phosphate (CHEBI:17907) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —LEADS_TO→ Hemolytic anemia (MONDO:0013275). Loss-of-function mutations in PGAM2 (leading to GSD-IIB) and GPI (leading to hemolytic anemia) both converge on the central metabolic pathway of glycolysis. Impairment in either enzyme disrupts the flux through glycolysis, ultimately leading to reduced ATP production, which manifests as distinct disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in PGAM2 and GPI do not impair flux through glycolysis or ATP production in relevant cell types, or identification of a common upstream or downstream effector pathway not involving glycolysis.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared impact on glycolysis and ATP production could reveal common therapeutic strategies targeting energy metabolism for both glycogen storage diseases and certain hemolytic anemias."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009949",
+      "diseaseBName": "pyruvate carboxylase deficiency disease",
+      "fitness": 0.3831,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9193) —DISRUPTS→ Glycolysis (REACT:R-HSA-3902093); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Hypoglycemia (HP:0001178); PC (HGNC:8060) —DISRUPTS→ Pyruvate (CHEBI:17673); Pyruvate (CHEBI:17673) —LEADS_TO→ Gluconeogenesis (REACT:R-HSA-1435403); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Lactic acidosis (HP:0001032); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Pyruvate (CHEBI:17673); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Hypoglycemia (HP:0001178). Loss-of-function mutations in PGAM2 impair glycolysis, leading to hypoglycemia. Concurrently, loss-of-function mutations in PC impair the conversion of pyruvate to oxaloacetate, a critical step in gluconeogenesis, and can lead to pyruvate accumulation and lactic acidosis. Both pathways are essential for maintaining glucose homeostasis and cellular energy production, and their disruption leads to overlapping metabolic derangements and related phenotypes like hypoglycemia.",
+      "mechanism_narrative": "PGAM2 (HGNC:9193) —DISRUPTS→ Glycolysis (REACT:R-HSA-3902093); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Hypoglycemia (HP:0001178); PC (HGNC:8060) —DISRUPTS→ Pyruvate (CHEBI:17673); Pyruvate (CHEBI:17673) —LEADS_TO→ Gluconeogenesis (REACT:R-HSA-1435403); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Lactic acidosis (HP:0001032); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Pyruvate (CHEBI:17673); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Hypoglycemia (HP:0001178). Loss-of-function mutations in PGAM2 impair glycolysis, leading to hypoglycemia. Concurrently, loss-of-function mutations in PC impair the conversion of pyruvate to oxaloacetate, a critical step in gluconeogenesis, and can lead to pyruvate accumulation and lactic acidosis. Both pathways are essential for maintaining glucose homeostasis and cellular energy production, and their disruption leads to overlapping metabolic derangements and related phenotypes like hypoglycemia.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in PGAM2 who do not exhibit hypoglycemia, or individuals with pathogenic variants in PC who do not exhibit lactic acidosis or hypoglycemia.",
+        "gnomad_variant": "While specific causal variants are rare, the absence of any common variants (AF > 0.1%) in gnomAD in the coding regions of PGAM2 and PC would support their role in rare Mendelian diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009949",
+        "diseaseBName": "pyruvate carboxylase deficiency disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26
+        },
+        "fitness": 0.3831,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9193) —DISRUPTS→ Glycolysis (REACT:R-HSA-3902093); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Hypoglycemia (HP:0001178); PC (HGNC:8060) —DISRUPTS→ Pyruvate (CHEBI:17673); Pyruvate (CHEBI:17673) —LEADS_TO→ Gluconeogenesis (REACT:R-HSA-1435403); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Lactic acidosis (HP:0001032); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Pyruvate (CHEBI:17673); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Hypoglycemia (HP:0001178). Loss-of-function mutations in PGAM2 impair glycolysis, leading to hypoglycemia. Concurrently, loss-of-function mutations in PC impair the conversion of pyruvate to oxaloacetate, a critical step in gluconeogenesis, and can lead to pyruvate accumulation and lactic acidosis. Both pathways are essential for maintaining glucose homeostasis and cellular energy production, and their disruption leads to overlapping metabolic derangements and related phenotypes like hypoglycemia.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in PGAM2 who do not exhibit hypoglycemia, or individuals with pathogenic variants in PC who do not exhibit lactic acidosis or hypoglycemia.",
+          "gnomad_variant": "While specific causal variants are rare, the absence of any common variants (AF > 0.1%) in gnomAD in the coding regions of PGAM2 and PC would support their role in rare Mendelian diseases."
+        },
+        "translational": "Understanding the overlap in metabolic disruption between these two glycogen storage diseases highlights shared vulnerabilities in glucose homeostasis and points towards potential therapeutic strategies targeting the downstream consequences of impaired glycolysis and gluconeogenesis, such as strategies to maintain blood glucose levels or manage lactic acidosis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009866",
+      "diseaseBName": "phosphoenolpyruvate carboxykinase deficiency, cytosolic",
+      "fitness": 0.3831,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9154) —DISRUPTS→ 2,3-bisphosphoglycerate (CHEBI:17071); 2,3-bisphosphoglycerate (CHEBI:17071) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —LEADS_TO→ Hypoglycemia (HP:0001250); PCK1 (HGNC:8722) —DISRUPTS→ Phosphoenolpyruvate (CHEBI:17476); Phosphoenolpyruvate (CHEBI:17476) —DECREASES→ Gluconeogenesis (REACT:R-HSA-1435400); Gluconeogenesis (REACT:R-HSA-1435400) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss of function in PGAM2 impairs the conversion of 3-phosphoglycerate to 2-phosphoglycerate in glycolysis, leading to downstream effects like hypoglycemia. Loss of function in PCK1 impairs the conversion of oxaloacetate to phosphoenolpyruvate in gluconeogenesis, leading to downstream effects like hepatomegaly. Both diseases converge on the disruption of central carbon metabolic pathways, impacting energy homeostasis.",
+      "mechanism_narrative": "PGAM2 (HGNC:9154) —DISRUPTS→ 2,3-bisphosphoglycerate (CHEBI:17071); 2,3-bisphosphoglycerate (CHEBI:17071) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —LEADS_TO→ Hypoglycemia (HP:0001250); PCK1 (HGNC:8722) —DISRUPTS→ Phosphoenolpyruvate (CHEBI:17476); Phosphoenolpyruvate (CHEBI:17476) —DECREASES→ Gluconeogenesis (REACT:R-HSA-1435400); Gluconeogenesis (REACT:R-HSA-1435400) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss of function in PGAM2 impairs the conversion of 3-phosphoglycerate to 2-phosphoglycerate in glycolysis, leading to downstream effects like hypoglycemia. Loss of function in PCK1 impairs the conversion of oxaloacetate to phosphoenolpyruvate in gluconeogenesis, leading to downstream effects like hepatomegaly. Both diseases converge on the disruption of central carbon metabolic pathways, impacting energy homeostasis.",
+      "falsification": {
+        "text": "If genetic analysis reveals distinct, non-overlapping downstream molecular pathways directly impacted by PGAM2 and PCK1 deficiencies, beyond their shared roles in central carbon metabolism, this hypothesis would be falsified. Specifically, if the phenotypic manifestations do not show any correlation with dysregulation of glycolysis or gluconeogenesis, the link would be weakened.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009866",
+        "diseaseBName": "phosphoenolpyruvate carboxykinase deficiency, cytosolic",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26
+        },
+        "fitness": 0.3831,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9154) —DISRUPTS→ 2,3-bisphosphoglycerate (CHEBI:17071); 2,3-bisphosphoglycerate (CHEBI:17071) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —LEADS_TO→ Hypoglycemia (HP:0001250); PCK1 (HGNC:8722) —DISRUPTS→ Phosphoenolpyruvate (CHEBI:17476); Phosphoenolpyruvate (CHEBI:17476) —DECREASES→ Gluconeogenesis (REACT:R-HSA-1435400); Gluconeogenesis (REACT:R-HSA-1435400) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss of function in PGAM2 impairs the conversion of 3-phosphoglycerate to 2-phosphoglycerate in glycolysis, leading to downstream effects like hypoglycemia. Loss of function in PCK1 impairs the conversion of oxaloacetate to phosphoenolpyruvate in gluconeogenesis, leading to downstream effects like hepatomegaly. Both diseases converge on the disruption of central carbon metabolic pathways, impacting energy homeostasis.",
+        "falsification": {
+          "text": "If genetic analysis reveals distinct, non-overlapping downstream molecular pathways directly impacted by PGAM2 and PCK1 deficiencies, beyond their shared roles in central carbon metabolism, this hypothesis would be falsified. Specifically, if the phenotypic manifestations do not show any correlation with dysregulation of glycolysis or gluconeogenesis, the link would be weakened.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared metabolic pathway disruptions between these two glycogen storage diseases can inform therapeutic strategies aimed at restoring metabolic balance, potentially through interventions targeting glycolysis or gluconeogenesis, or by managing downstream metabolic consequences common to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030437",
+      "diseaseBName": "congenital disorder of glycosylation, type IIw",
+      "fitness": 0.379,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PGAM2 (HGNC:9170) —DISRUPTS→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16853); 2,3-bisphosphoglycerate (CHEBI:16853) —LEADS_TO→ Hypotonia (HP:0001252); SLC37A4 (HGNC:17736) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17517); Glucose-6-phosphate (CHEBI:17517) —DECREASES→ UDP-glucose (CHEBI:17100); UDP-glucose (CHEBI:17100) —DECREASES→ Glycolysis (REACT:R-HSA-569337); UDP-glucose (CHEBI:17100) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to reduced production of downstream metabolites and potentially contributing to hypotonia. Concurrently, loss-of-function mutations in SLC37A4 impair the transport of glucose-6-phosphate, indirectly affecting UDP-glucose synthesis and thus impacting both glycolysis and glycogen synthesis pathways, which can manifest as hepatomegaly.",
+      "mechanism_narrative": "PGAM2 (HGNC:9170) —DISRUPTS→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16853); 2,3-bisphosphoglycerate (CHEBI:16853) —LEADS_TO→ Hypotonia (HP:0001252); SLC37A4 (HGNC:17736) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17517); Glucose-6-phosphate (CHEBI:17517) —DECREASES→ UDP-glucose (CHEBI:17100); UDP-glucose (CHEBI:17100) —DECREASES→ Glycolysis (REACT:R-HSA-569337); UDP-glucose (CHEBI:17100) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to reduced production of downstream metabolites and potentially contributing to hypotonia. Concurrently, loss-of-function mutations in SLC37A4 impair the transport of glucose-6-phosphate, indirectly affecting UDP-glucose synthesis and thus impacting both glycolysis and glycogen synthesis pathways, which can manifest as hepatomegaly.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in PGAM2 and SLC37A4 do not lead to loss-of-function phenotypes or if distinct molecular pathways are definitively shown to be affected without overlap in glycolysis/glycogen metabolism, this hypothesis would be falsified.",
+        "gnomad_variant": "Absence of pathogenic variants in gnomAD for both PGAM2 and SLC37A4 in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030437",
+        "diseaseBName": "congenital disorder of glycosylation, type IIw",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26
+        },
+        "fitness": 0.379,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PGAM2 (HGNC:9170) —DISRUPTS→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16853); 2,3-bisphosphoglycerate (CHEBI:16853) —LEADS_TO→ Hypotonia (HP:0001252); SLC37A4 (HGNC:17736) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17517); Glucose-6-phosphate (CHEBI:17517) —DECREASES→ UDP-glucose (CHEBI:17100); UDP-glucose (CHEBI:17100) —DECREASES→ Glycolysis (REACT:R-HSA-569337); UDP-glucose (CHEBI:17100) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to reduced production of downstream metabolites and potentially contributing to hypotonia. Concurrently, loss-of-function mutations in SLC37A4 impair the transport of glucose-6-phosphate, indirectly affecting UDP-glucose synthesis and thus impacting both glycolysis and glycogen synthesis pathways, which can manifest as hepatomegaly.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in PGAM2 and SLC37A4 do not lead to loss-of-function phenotypes or if distinct molecular pathways are definitively shown to be affected without overlap in glycolysis/glycogen metabolism, this hypothesis would be falsified.",
+          "gnomad_variant": "Absence of pathogenic variants in gnomAD for both PGAM2 and SLC37A4 in relevant populations."
+        },
+        "translational": "Understanding this overlap could lead to shared therapeutic strategies targeting the central carbohydrate metabolic pathways for both glycogen storage diseases and certain congenital disorders of glycosylation, potentially improving treatment efficacy and patient outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010392",
+      "diseaseBName": "glycogen storage disease due to phosphoglycerate kinase 1 deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Phosphoglycerate Mutase 2 (HGNC:8978) —DISRUPTS→ Glycolysis (PGAM step); Glycolysis (PGAM step) —DECREASES→ 2-phosphoglycerate (CHEBI:15995); 2-phosphoglycerate (CHEBI:15995) —DECREASES→ ATP production via glycolysis; ATP production via glycolysis —LEADS_TO→ Muscle weakness (HP:0001324); ATP production via glycolysis —LEADS_TO→ Hypoglycemia (HP:0001944); Phosphoglycerate Kinase 1 (HGNC:9020) —DISRUPTS→ Glycolysis (PGK step); Phosphoenolpyruvate (CHEBI:17470) —BINDS→ Glycolysis (PGK step); ATP (CHEBI:15496) —BINDS→ Glycolysis (PGK step); ADP (CHEBI:17592) —PRODUCES→ Glycolysis (PGK step); Glycolysis (PGK step) —DECREASES→ ATP production via glycolysis. Deficiency in PGAM2 (Disease A) or PGK1 (Disease B) disrupts key steps in glycolysis, leading to reduced ATP production, which manifests as muscle weakness and hypoglycemia.",
+      "mechanism_narrative": "Phosphoglycerate Mutase 2 (HGNC:8978) —DISRUPTS→ Glycolysis (PGAM step); Glycolysis (PGAM step) —DECREASES→ 2-phosphoglycerate (CHEBI:15995); 2-phosphoglycerate (CHEBI:15995) —DECREASES→ ATP production via glycolysis; ATP production via glycolysis —LEADS_TO→ Muscle weakness (HP:0001324); ATP production via glycolysis —LEADS_TO→ Hypoglycemia (HP:0001944); Phosphoglycerate Kinase 1 (HGNC:9020) —DISRUPTS→ Glycolysis (PGK step); Phosphoenolpyruvate (CHEBI:17470) —BINDS→ Glycolysis (PGK step); ATP (CHEBI:15496) —BINDS→ Glycolysis (PGK step); ADP (CHEBI:17592) —PRODUCES→ Glycolysis (PGK step); Glycolysis (PGK step) —DECREASES→ ATP production via glycolysis. Deficiency in PGAM2 (Disease A) or PGK1 (Disease B) disrupts key steps in glycolysis, leading to reduced ATP production, which manifests as muscle weakness and hypoglycemia.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in PGAM2 or PGK1 in individuals with Disease B or Disease A, respectively, with a frequency greater than 1% in gnomAD would falsify the causal link.",
+        "gnomad_variant": "Exome Variant Allele Frequency > 0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70263",
+        "Reactome:R-HSA-70171"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70263": 26,
+        "Reactome:R-HSA-70171": 30
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010392",
+        "diseaseBName": "glycogen storage disease due to phosphoglycerate kinase 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70263",
+          "Reactome:R-HSA-70171"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70263": 26,
+          "Reactome:R-HSA-70171": 30
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Phosphoglycerate Mutase 2 (HGNC:8978) —DISRUPTS→ Glycolysis (PGAM step); Glycolysis (PGAM step) —DECREASES→ 2-phosphoglycerate (CHEBI:15995); 2-phosphoglycerate (CHEBI:15995) —DECREASES→ ATP production via glycolysis; ATP production via glycolysis —LEADS_TO→ Muscle weakness (HP:0001324); ATP production via glycolysis —LEADS_TO→ Hypoglycemia (HP:0001944); Phosphoglycerate Kinase 1 (HGNC:9020) —DISRUPTS→ Glycolysis (PGK step); Phosphoenolpyruvate (CHEBI:17470) —BINDS→ Glycolysis (PGK step); ATP (CHEBI:15496) —BINDS→ Glycolysis (PGK step); ADP (CHEBI:17592) —PRODUCES→ Glycolysis (PGK step); Glycolysis (PGK step) —DECREASES→ ATP production via glycolysis. Deficiency in PGAM2 (Disease A) or PGK1 (Disease B) disrupts key steps in glycolysis, leading to reduced ATP production, which manifests as muscle weakness and hypoglycemia.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in PGAM2 or PGK1 in individuals with Disease B or Disease A, respectively, with a frequency greater than 1% in gnomAD would falsify the causal link.",
+          "gnomad_variant": "Exome Variant Allele Frequency > 0.01"
+        },
+        "translational": "Understanding the shared impact on glycolysis and ATP production highlights potential therapeutic strategies targeting energy metabolism in both glycogen storage diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T16:22:05.712Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** glycogen storage disease due to phosphoglycerate mutase deficiency (MONDO:0009865)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 13 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | glycogen storage disease due to aldolase A deficiency (MONDO:0012747) | shared pathway | Tier 3 | 0.475 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n| 2 | triosephosphate isomerase deficiency (MONDO:0014221) | shared pathway | Tier 3 | 0.451 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n| 3 | glycogen storage disease due to muscle beta-enolase deficiency (MONDO:0013046) | shared pathway | Tier 3 | 0.437 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n| 4 | hereditary fructose intolerance (MONDO:0009249) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n| 5 | fructose-1,6-bisphosphatase deficiency (MONDO:0009251) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-70263 |\n| 6 | hemolytic anemia due to glucophosphate isomerase deficiency (MONDO:0013275) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n| 7 | pyruvate carboxylase deficiency disease (MONDO:0009949) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-70263 |\n| 8 | phosphoenolpyruvate carboxykinase deficiency, cytosolic (MONDO:0009866) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-70263 |\n| 9 | congenital disorder of glycosylation, type IIw (MONDO:0030437) | shared pathway | Tier 3 | 0.379 | Reactome:R-HSA-70263 |\n| 10 | glycogen storage disease due to phosphoglycerate kinase 1 deficiency (MONDO:0010392) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-70263, Reactome:R-HSA-70171 |\n\n### CANDIDATE DETAIL\n#### 1. glycogen storage disease due to aldolase A deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.475)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** PGAM2 (HGNC:9214) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —LEADS_TO→ Muscle weakness (HP:0001324); ALDOA (HGNC:345) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693373); Glycolysis (REACT:R-HSA-5693373) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Exercise intolerance (HP:0009130). Mutations in either PGAM2 or ALDOA impair the glycolytic pathway, leading to reduced ATP production and subsequent muscle weakness, hypotonia, and exercise intolerance.\n\n**How to falsify it:** The identification of pathogenic variants in PGAM2 or ALDOA with a minor allele frequency greater than 1% in gnomAD would falsify the claim that these genes are the sole causal agents for these rare diseases.\n\n**Why it matters:** Understanding the shared reliance on glycolysis and ATP production in these distinct glycogen storage diseases could inform therapeutic strategies aimed at boosting energy metabolism in affected muscle cells, potentially through interventions targeting alternative metabolic pathways or enhancing residual enzyme activity.\n\n---\n\n#### 2. triosephosphate isomerase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.451)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** PGAM2 (HGNC:9145) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); PGAM2 (HGNC:9145) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16871); 2,3-bisphosphoglycerate (CHEBI:16871) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypoglycemia (HP:0001250); TPI1 (HGNC:11770) —DISRUPTS→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); TPI1 (HGNC:11770) —DECREASES→ dihydroxyacetone phosphate (CHEBI:15400); dihydroxyacetone phosphate (CHEBI:15400) —LEADS_TO→ Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372); Glycolysis/Gluconeogenesis Pathway (REACT:R-HSA-70372) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in PGAM2 disrupt the glycolysis/gluconeogenesis pathway, leading to decreased levels of 2,3-bisphosphoglycerate and downstream effects causing hypoglycemia. Similarly, mutations in TPI1 disrupt the same pathway by decreasing dihydroxyacetone phosphate, resulting in downstream effects that can lead to hypotonia. The convergence is on the shared disruption of the central Glycolysis/Gluconeogenesis Pathway.\n\n**How to falsify it:** The causal chains for PGAM2 and TPI1 deficiencies do not converge on a shared intermediate metabolite or pathway node, or if mutations in TPI1 do not lead to a decrease in dihydroxyacetone phosphate or mutations in PGAM2 do not lead to a decrease in 2,3-bisphosphoglycerate. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared impact of these glycolytic enzyme deficiencies on central metabolism can inform therapeutic strategies aimed at managing energy deficits and related downstream phenotypes in patients with either disease.\n\n---\n\n#### 3. glycogen storage disease due to muscle beta-enolase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.437)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** Phosphoglycerate mutase 2 (HGNC:8734) —DISRUPTS→ Glycolysis; Beta-enolase (HGNC:3015) —DISRUPTS→ Glycolysis; Glycolysis —DECREASES→ ATP production; ATP production —LEADS_TO→ Muscle weakness (HP:0001324); ATP production —LEADS_TO→ Exercise intolerance (HP:0009071). Deficiency in either phosphoglycerate mutase (PGAM2) or beta-enolase (ENO3) disrupts the glycolytic pathway, leading to reduced ATP production in muscle cells. This energy deficit manifests as muscle weakness and exercise intolerance in both disease types.\n\n**How to falsify it:** Demonstration that mutations in PGAM2 and ENO3 lead to completely independent downstream molecular events, with no shared impact on the glycolytic pathway flux or overall cellular ATP levels in affected tissues. _(variant: Identification of common variants (gnomAD allele frequency > 1%) in both PGAM2 and ENO3 associated with normal glycolytic function.)_\n\n**Why it matters:** Understanding this mechanistic link could lead to therapeutic strategies aimed at boosting alternative energy pathways or improving mitochondrial function to compensate for glycolytic deficits in both conditions.\n\n---\n\n#### 4. hereditary fructose intolerance  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** PGAM2 (HGNC:9215) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —LEADS_TO→ Hypoglycemia (HP:0001250); ALDOB (HGNC:327) —DISRUPTS→ Fructose metabolism (REACT:R-HSA-1815806); Fructose metabolism (REACT:R-HSA-1815806) —LEADS_TO→ Fructose-1-phosphate (CHEBI:17400); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Glycolysis (REACT:R-HSA-70171); Fructose-1-phosphate (CHEBI:17400) —LEADS_TO→ Failure to thrive (HP:0011344). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to hypoglycemia. Loss-of-function mutations in ALDOB disrupt fructose metabolism, causing accumulation of fructose-1-phosphate, which in turn disrupts glycolysis and leads to failure to thrive and hypoglycemia.\n\n**How to falsify it:** If mutations in ALDOB were found to cause a significant increase in phosphoglycerate mutase activity or if mutations in PGAM2 led to a significant accumulation of fructose-1-phosphate, this hypothesis would be falsified. _(variant: Pathogenic variants in ALDOB (HGNC:327) or PGAM2 (HGNC:9215) are rare in the general population.)_\n\n**Why it matters:** Understanding the overlap in metabolic pathways affected by these distinct genetic defects can inform diagnostic strategies and therapeutic interventions targeting carbohydrate metabolism and its downstream effects on organ function and development.\n\n---\n\n#### 5. fructose-1,6-bisphosphatase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-70263)\n\n**Proposed mechanism:** Pathogenic variant in PGAM2 —DISRUPTS→ PGAM2 (HGNC:9202); PGAM2 (HGNC:9202) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ 3-phosphoglycerate (CHEBI:17677); 3-phosphoglycerate (CHEBI:17677) —LEADS_TO→ Hypoglycemia (HP:0001250); Pathogenic variant in FBP1 —DISRUPTS→ FBP1 (HGNC:3586); FBP1 (HGNC:3586) —DISRUPTS→ Gluconeogenesis (KEGG:00010); Gluconeogenesis (KEGG:00010) —DECREASES→ Fructose-1,6-bisphosphate (CHEBI:17676); Fructose-1,6-bisphosphate (CHEBI:17676) —LEADS_TO→ Hypoglycemia (HP:0001250). Loss-of-function mutations in PGAM2 impair glycolysis, leading to reduced ATP production and downstream metabolic consequences including hypoglycemia. Similarly, loss-of-function mutations in FBP1 impair gluconeogenesis, preventing the synthesis of glucose and also leading to hypoglycemia. Both pathways are critical for maintaining blood glucose homeostasis.\n\n**How to falsify it:** Demonstration that mutations in PGAM2 do not lead to decreased 3-phosphoglycerate levels or mutations in FBP1 do not lead to decreased glucose production from precursors would falsify this hypothesis. Alternatively, observing significantly different metabolic profiles in patient samples that cannot be reconciled by the proposed pathway disruptions would also be falsifying.\n\n**Why it matters:** Understanding the shared metabolic vulnerability to hypoglycemia in these distinct glycogen storage disorders can inform therapeutic strategies aimed at glycemic control and preventing severe neurological complications. Identifying common downstream effects allows for the development of unified treatment approaches.\n\n---\n\n#### 6. hemolytic anemia due to glucophosphate isomerase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** Phosphoglycerate mutase 2 (HGNC:9008) —DISRUPTS→ 3-phosphoglycerate (CHEBI:17670); 3-phosphoglycerate (CHEBI:17670) —LEADS_TO→ 2-phosphoglycerate (CHEBI:18250); 2-phosphoglycerate (CHEBI:18250) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —DECREASES→ ATP (CHEBI:15422); Glycolysis (REACT:72283) —LEADS_TO→ Glycogen storage disease (MONDO:0009865); Glucose-6-phosphate isomerase (HGNC:4557) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17675); Glucose-6-phosphate (CHEBI:17675) —LEADS_TO→ Fructose-6-phosphate (CHEBI:17907); Fructose-6-phosphate (CHEBI:17907) —LEADS_TO→ Glycolysis (REACT:72283); Glycolysis (REACT:72283) —LEADS_TO→ Hemolytic anemia (MONDO:0013275). Loss-of-function mutations in PGAM2 (leading to GSD-IIB) and GPI (leading to hemolytic anemia) both converge on the central metabolic pathway of glycolysis. Impairment in either enzyme disrupts the flux through glycolysis, ultimately leading to reduced ATP production, which manifests as distinct disease phenotypes.\n\n**How to falsify it:** Demonstration that mutations in PGAM2 and GPI do not impair flux through glycolysis or ATP production in relevant cell types, or identification of a common upstream or downstream effector pathway not involving glycolysis. _(variant: None)_\n\n**Why it matters:** Understanding the shared impact on glycolysis and ATP production could reveal common therapeutic strategies targeting energy metabolism for both glycogen storage diseases and certain hemolytic anemias.\n\n---\n\n#### 7. pyruvate carboxylase deficiency disease  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-70263)\n\n**Proposed mechanism:** PGAM2 (HGNC:9193) —DISRUPTS→ Glycolysis (REACT:R-HSA-3902093); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Hypoglycemia (HP:0001178); PC (HGNC:8060) —DISRUPTS→ Pyruvate (CHEBI:17673); Pyruvate (CHEBI:17673) —LEADS_TO→ Gluconeogenesis (REACT:R-HSA-1435403); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Lactic acidosis (HP:0001032); Glycolysis (REACT:R-HSA-3902093) —LEADS_TO→ Pyruvate (CHEBI:17673); Gluconeogenesis (REACT:R-HSA-1435403) —LEADS_TO→ Hypoglycemia (HP:0001178). Loss-of-function mutations in PGAM2 impair glycolysis, leading to hypoglycemia. Concurrently, loss-of-function mutations in PC impair the conversion of pyruvate to oxaloacetate, a critical step in gluconeogenesis, and can lead to pyruvate accumulation and lactic acidosis. Both pathways are essential for maintaining glucose homeostasis and cellular energy production, and their disruption leads to overlapping metabolic derangements and related phenotypes like hypoglycemia.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in PGAM2 who do not exhibit hypoglycemia, or individuals with pathogenic variants in PC who do not exhibit lactic acidosis or hypoglycemia. _(variant: While specific causal variants are rare, the absence of any common variants (AF > 0.1%) in gnomAD in the coding regions of PGAM2 and PC would support their role in rare Mendelian diseases.)_\n\n**Why it matters:** Understanding the overlap in metabolic disruption between these two glycogen storage diseases highlights shared vulnerabilities in glucose homeostasis and points towards potential therapeutic strategies targeting the downstream consequences of impaired glycolysis and gluconeogenesis, such as strategies to maintain blood glucose levels or manage lactic acidosis.\n\n---\n\n#### 8. phosphoenolpyruvate carboxykinase deficiency, cytosolic  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-70263)\n\n**Proposed mechanism:** PGAM2 (HGNC:9154) —DISRUPTS→ 2,3-bisphosphoglycerate (CHEBI:17071); 2,3-bisphosphoglycerate (CHEBI:17071) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —LEADS_TO→ Hypoglycemia (HP:0001250); PCK1 (HGNC:8722) —DISRUPTS→ Phosphoenolpyruvate (CHEBI:17476); Phosphoenolpyruvate (CHEBI:17476) —DECREASES→ Gluconeogenesis (REACT:R-HSA-1435400); Gluconeogenesis (REACT:R-HSA-1435400) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss of function in PGAM2 impairs the conversion of 3-phosphoglycerate to 2-phosphoglycerate in glycolysis, leading to downstream effects like hypoglycemia. Loss of function in PCK1 impairs the conversion of oxaloacetate to phosphoenolpyruvate in gluconeogenesis, leading to downstream effects like hepatomegaly. Both diseases converge on the disruption of central carbon metabolic pathways, impacting energy homeostasis.\n\n**How to falsify it:** If genetic analysis reveals distinct, non-overlapping downstream molecular pathways directly impacted by PGAM2 and PCK1 deficiencies, beyond their shared roles in central carbon metabolism, this hypothesis would be falsified. Specifically, if the phenotypic manifestations do not show any correlation with dysregulation of glycolysis or gluconeogenesis, the link would be weakened. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruptions between these two glycogen storage diseases can inform therapeutic strategies aimed at restoring metabolic balance, potentially through interventions targeting glycolysis or gluconeogenesis, or by managing downstream metabolic consequences common to both conditions.\n\n---\n\n#### 9. congenital disorder of glycosylation, type IIw  —  Tier 3 — Moderate / Emerging  (fitness 0.379)\n**Link type:** shared pathway (Reactome:R-HSA-70263)\n\n**Proposed mechanism:** PGAM2 (HGNC:9170) —DISRUPTS→ Glycolysis (REACT:R-HSA-569337); Glycolysis (REACT:R-HSA-569337) —DECREASES→ 2,3-bisphosphoglycerate (CHEBI:16853); 2,3-bisphosphoglycerate (CHEBI:16853) —LEADS_TO→ Hypotonia (HP:0001252); SLC37A4 (HGNC:17736) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17517); Glucose-6-phosphate (CHEBI:17517) —DECREASES→ UDP-glucose (CHEBI:17100); UDP-glucose (CHEBI:17100) —DECREASES→ Glycolysis (REACT:R-HSA-569337); UDP-glucose (CHEBI:17100) —LEADS_TO→ Hepatomegaly (HP:0002240). Loss-of-function mutations in PGAM2 disrupt glycolysis, leading to reduced production of downstream metabolites and potentially contributing to hypotonia. Concurrently, loss-of-function mutations in SLC37A4 impair the transport of glucose-6-phosphate, indirectly affecting UDP-glucose synthesis and thus impacting both glycolysis and glycogen synthesis pathways, which can manifest as hepatomegaly.\n\n**How to falsify it:** If genetic analysis reveals that mutations in PGAM2 and SLC37A4 do not lead to loss-of-function phenotypes or if distinct molecular pathways are definitively shown to be affected without overlap in glycolysis/glycogen metabolism, this hypothesis would be falsified. _(variant: Absence of pathogenic variants in gnomAD for both PGAM2 and SLC37A4 in relevant populations.)_\n\n**Why it matters:** Understanding this overlap could lead to shared therapeutic strategies targeting the central carbohydrate metabolic pathways for both glycogen storage diseases and certain congenital disorders of glycosylation, potentially improving treatment efficacy and patient outcomes.\n\n---\n\n#### 10. glycogen storage disease due to phosphoglycerate kinase 1 deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-70263, Reactome:R-HSA-70171)\n\n**Proposed mechanism:** Phosphoglycerate Mutase 2 (HGNC:8978) —DISRUPTS→ Glycolysis (PGAM step); Glycolysis (PGAM step) —DECREASES→ 2-phosphoglycerate (CHEBI:15995); 2-phosphoglycerate (CHEBI:15995) —DECREASES→ ATP production via glycolysis; ATP production via glycolysis —LEADS_TO→ Muscle weakness (HP:0001324); ATP production via glycolysis —LEADS_TO→ Hypoglycemia (HP:0001944); Phosphoglycerate Kinase 1 (HGNC:9020) —DISRUPTS→ Glycolysis (PGK step); Phosphoenolpyruvate (CHEBI:17470) —BINDS→ Glycolysis (PGK step); ATP (CHEBI:15496) —BINDS→ Glycolysis (PGK step); ADP (CHEBI:17592) —PRODUCES→ Glycolysis (PGK step); Glycolysis (PGK step) —DECREASES→ ATP production via glycolysis. Deficiency in PGAM2 (Disease A) or PGK1 (Disease B) disrupts key steps in glycolysis, leading to reduced ATP production, which manifests as muscle weakness and hypoglycemia.\n\n**How to falsify it:** Identification of a pathogenic variant in PGAM2 or PGK1 in individuals with Disease B or Disease A, respectively, with a frequency greater than 1% in gnomAD would falsify the causal link. _(variant: Exome Variant Allele Frequency > 0.01)_\n\n**Why it matters:** Understanding the shared impact on glycolysis and ATP production highlights potential therapeutic strategies targeting energy metabolism in both glycogen storage diseases.\n\n---"
+}
