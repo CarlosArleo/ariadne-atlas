@@ -1,0 +1,443 @@
+{
+  "seed": {
+    "id": "MONDO:0009206",
+    "name": "factor V and factor VIII, combined deficiency of, type 1"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 13,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0957540",
+      "diseaseBName": "congenital disorder of glycosylation, type IIaa",
+      "fitness": 0.4393,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6715) —DISRUPTS→ ER-Golgi trafficking; STX5 (HGNC:11084) —DISRUPTS→ ER-Golgi trafficking; ER-Golgi trafficking —DECREASES→ Glycoproteins; Glycoproteins —LEADS_TO→ Factor V and Factor VIII deficiency (MONDO:0009206); Glycoproteins —LEADS_TO→ Congenital disorder of glycosylation, type IIaa (MONDO:0957540). Loss-of-function mutations in LMAN1 and STX5 disrupt ER-Golgi trafficking, impairing the proper maturation and secretion of glycoproteins, which underlies both Factor V/VIII deficiency and CDG-IIaa.",
+      "mechanism_narrative": "LMAN1 (HGNC:6715) —DISRUPTS→ ER-Golgi trafficking; STX5 (HGNC:11084) —DISRUPTS→ ER-Golgi trafficking; ER-Golgi trafficking —DECREASES→ Glycoproteins; Glycoproteins —LEADS_TO→ Factor V and Factor VIII deficiency (MONDO:0009206); Glycoproteins —LEADS_TO→ Congenital disorder of glycosylation, type IIaa (MONDO:0957540). Loss-of-function mutations in LMAN1 and STX5 disrupt ER-Golgi trafficking, impairing the proper maturation and secretion of glycoproteins, which underlies both Factor V/VIII deficiency and CDG-IIaa.",
+      "falsification": {
+        "text": "Demonstration that LMAN1 and STX5 play entirely distinct roles in separate, non-overlapping cellular compartments or pathways essential for the respective disease phenotypes, or identification of entirely distinct causal genes for one of the diseases that do not interact with the ER-Golgi trafficking pathway.",
+        "gnomad_variant": "Presence of common variants in LMAN1 or STX5 with a frequency > 1% in gnomAD that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-5694530",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-5694530": 33,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957540",
+        "diseaseBName": "congenital disorder of glycosylation, type IIaa",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-5694530",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-5694530": 33,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74
+        },
+        "fitness": 0.4393,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6715) —DISRUPTS→ ER-Golgi trafficking; STX5 (HGNC:11084) —DISRUPTS→ ER-Golgi trafficking; ER-Golgi trafficking —DECREASES→ Glycoproteins; Glycoproteins —LEADS_TO→ Factor V and Factor VIII deficiency (MONDO:0009206); Glycoproteins —LEADS_TO→ Congenital disorder of glycosylation, type IIaa (MONDO:0957540). Loss-of-function mutations in LMAN1 and STX5 disrupt ER-Golgi trafficking, impairing the proper maturation and secretion of glycoproteins, which underlies both Factor V/VIII deficiency and CDG-IIaa.",
+        "falsification": {
+          "text": "Demonstration that LMAN1 and STX5 play entirely distinct roles in separate, non-overlapping cellular compartments or pathways essential for the respective disease phenotypes, or identification of entirely distinct causal genes for one of the diseases that do not interact with the ER-Golgi trafficking pathway.",
+          "gnomad_variant": "Presence of common variants in LMAN1 or STX5 with a frequency > 1% in gnomAD that do not segregate with either disease."
+        },
+        "translational": "Understanding the shared ER-Golgi trafficking defect offers potential therapeutic avenues for both disorders. Strategies aimed at improving protein folding, secretion, or compensating for impaired glycoprotein function could be explored for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013282",
+      "diseaseBName": "alpha 1-antitrypsin deficiency",
+      "fitness": 0.436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6705) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Combined deficiency of Factor V and Factor VIII (MONDO:0009206); SERPINA1 (HGNC:10578) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —DISRUPTS→ ER-associated degradation (GO:0031123); ER-associated degradation (GO:0031123) —LEADS_TO→ Alpha-1-antitrypsin deficiency (MONDO:0013282); ER-Golgi transport (GO:0006888) —BINDS→ ER-associated degradation (GO:0031123). Mutations in LMAN1 disrupt ER-Golgi transport, leading to combined Factor V and Factor VIII deficiency. Mutations in SERPINA1 lead to misfolded Alpha-1-antitrypsin, which is targeted for ER-associated degradation, causing Alpha-1-antitrypsin deficiency. Both processes involve the ER quality control machinery, specifically ER-associated degradation and general protein folding pathways.",
+      "mechanism_narrative": "LMAN1 (HGNC:6705) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Combined deficiency of Factor V and Factor VIII (MONDO:0009206); SERPINA1 (HGNC:10578) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —DISRUPTS→ ER-associated degradation (GO:0031123); ER-associated degradation (GO:0031123) —LEADS_TO→ Alpha-1-antitrypsin deficiency (MONDO:0013282); ER-Golgi transport (GO:0006888) —BINDS→ ER-associated degradation (GO:0031123). Mutations in LMAN1 disrupt ER-Golgi transport, leading to combined Factor V and Factor VIII deficiency. Mutations in SERPINA1 lead to misfolded Alpha-1-antitrypsin, which is targeted for ER-associated degradation, causing Alpha-1-antitrypsin deficiency. Both processes involve the ER quality control machinery, specifically ER-associated degradation and general protein folding pathways.",
+      "falsification": {
+        "text": "Demonstration that mutations in LMAN1 or SERPINA1 do not impact ER-associated degradation or ER-Golgi transport, or that the cellular pathways involved are entirely distinct and non-interacting.",
+        "gnomad_variant": "Absence of pathogenic variants in LMAN1 and SERPINA1 in relevant human populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005",
+        "Reactome:R-HSA-5694530"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-5694530": 33
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013282",
+        "diseaseBName": "alpha 1-antitrypsin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005",
+          "Reactome:R-HSA-5694530"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-5694530": 33
+        },
+        "fitness": 0.436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6705) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Combined deficiency of Factor V and Factor VIII (MONDO:0009206); SERPINA1 (HGNC:10578) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —DISRUPTS→ ER-associated degradation (GO:0031123); ER-associated degradation (GO:0031123) —LEADS_TO→ Alpha-1-antitrypsin deficiency (MONDO:0013282); ER-Golgi transport (GO:0006888) —BINDS→ ER-associated degradation (GO:0031123). Mutations in LMAN1 disrupt ER-Golgi transport, leading to combined Factor V and Factor VIII deficiency. Mutations in SERPINA1 lead to misfolded Alpha-1-antitrypsin, which is targeted for ER-associated degradation, causing Alpha-1-antitrypsin deficiency. Both processes involve the ER quality control machinery, specifically ER-associated degradation and general protein folding pathways.",
+        "falsification": {
+          "text": "Demonstration that mutations in LMAN1 or SERPINA1 do not impact ER-associated degradation or ER-Golgi transport, or that the cellular pathways involved are entirely distinct and non-interacting.",
+          "gnomad_variant": "Absence of pathogenic variants in LMAN1 and SERPINA1 in relevant human populations."
+        },
+        "translational": "Understanding the shared vulnerability of protein processing pathways in these two diseases could reveal common therapeutic targets for protein misfolding or secretion defects, potentially applicable to a broader range of genetic disorders affecting protein homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032681",
+      "diseaseBName": "encephalopathy, progressive, early-onset, with episodic rhabdomyolysis",
+      "fitness": 0.3958,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6589) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); TRAPPC2L (HGNC:28334) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V deficiency (HP:0001916); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor VIII deficiency (HP:0001919); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Encephalopathy (HP:0001295); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Rhabdomyolysis (HP:0003130). Loss-of-function mutations in LMAN1 and TRAPPC2L disrupt the ER-Golgi trafficking pathway. This disruption impairs the proper secretion and function of Factor V and Factor VIII, leading to combined deficiency of type 1. Concurrently, the compromised ER-Golgi transport also affects the processing and delivery of proteins essential for neuronal and muscle function, resulting in encephalopathy and episodic rhabdomyolysis.",
+      "mechanism_narrative": "LMAN1 (HGNC:6589) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); TRAPPC2L (HGNC:28334) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V deficiency (HP:0001916); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor VIII deficiency (HP:0001919); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Encephalopathy (HP:0001295); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Rhabdomyolysis (HP:0003130). Loss-of-function mutations in LMAN1 and TRAPPC2L disrupt the ER-Golgi trafficking pathway. This disruption impairs the proper secretion and function of Factor V and Factor VIII, leading to combined deficiency of type 1. Concurrently, the compromised ER-Golgi transport also affects the processing and delivery of proteins essential for neuronal and muscle function, resulting in encephalopathy and episodic rhabdomyolysis.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the mutations in LMAN1 and TRAPPC2L in patients with Encephalopathy, progressive, early-onset, with episodic rhabdomyolysis do not consistently impair ER-Golgi trafficking, or if distinct pathways are identified as the primary drivers for each disease, this proposed mechanistic link would be falsified.",
+        "gnomad_variant": "Identification of common variants (AF > 1%) in LMAN1 or TRAPPC2L in the general population (gnomAD) that do not segregate with either disease would weaken the claim of these genes being causal."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032681",
+        "diseaseBName": "encephalopathy, progressive, early-onset, with episodic rhabdomyolysis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69
+        },
+        "fitness": 0.3958,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6589) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); TRAPPC2L (HGNC:28334) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V deficiency (HP:0001916); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor VIII deficiency (HP:0001919); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Encephalopathy (HP:0001295); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Rhabdomyolysis (HP:0003130). Loss-of-function mutations in LMAN1 and TRAPPC2L disrupt the ER-Golgi trafficking pathway. This disruption impairs the proper secretion and function of Factor V and Factor VIII, leading to combined deficiency of type 1. Concurrently, the compromised ER-Golgi transport also affects the processing and delivery of proteins essential for neuronal and muscle function, resulting in encephalopathy and episodic rhabdomyolysis.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the mutations in LMAN1 and TRAPPC2L in patients with Encephalopathy, progressive, early-onset, with episodic rhabdomyolysis do not consistently impair ER-Golgi trafficking, or if distinct pathways are identified as the primary drivers for each disease, this proposed mechanistic link would be falsified.",
+          "gnomad_variant": "Identification of common variants (AF > 1%) in LMAN1 or TRAPPC2L in the general population (gnomAD) that do not segregate with either disease would weaken the claim of these genes being causal."
+        },
+        "translational": "Understanding the shared role of ER-Golgi trafficking in these distinct disease phenotypes could reveal common therapeutic targets. Interventions aimed at restoring proper protein folding, modification, or transport could potentially benefit patients suffering from both coagulation disorders and neuro-muscular conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014815",
+      "diseaseBName": "intellectual disability, autosomal recessive 52",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6874) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN2L (HGNC:33058) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DECREASES→ Factor V (HGNC:3774); ER-Golgi transport (GO:0006888) —DECREASES→ Factor VIII (HGNC:3777); Factor V (HGNC:3774) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); Factor VIII (HGNC:3777) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); ER-Golgi transport (GO:0006888) —DISRUPTS→ Neuronal development and function (GO:0048667); Neuronal development and function (GO:0048667) —LEADS_TO→ Intellectual disability, autosomal recessive 52 (MONDO:0014815). Loss-of-function mutations in LMAN1 and LMAN2L disrupt ER-Golgi transport, which is critical for the proper trafficking of Factor V and Factor VIII, leading to combined deficiency of these factors (Disease A). The same disruption in ER-Golgi transport also impacts neuronal development and function, causing Intellectual Disability, autosomal recessive 52 (Disease B).",
+      "mechanism_narrative": "LMAN1 (HGNC:6874) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN2L (HGNC:33058) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DECREASES→ Factor V (HGNC:3774); ER-Golgi transport (GO:0006888) —DECREASES→ Factor VIII (HGNC:3777); Factor V (HGNC:3774) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); Factor VIII (HGNC:3777) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); ER-Golgi transport (GO:0006888) —DISRUPTS→ Neuronal development and function (GO:0048667); Neuronal development and function (GO:0048667) —LEADS_TO→ Intellectual disability, autosomal recessive 52 (MONDO:0014815). Loss-of-function mutations in LMAN1 and LMAN2L disrupt ER-Golgi transport, which is critical for the proper trafficking of Factor V and Factor VIII, leading to combined deficiency of these factors (Disease A). The same disruption in ER-Golgi transport also impacts neuronal development and function, causing Intellectual Disability, autosomal recessive 52 (Disease B).",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in LMAN1 or LMAN2L who do not exhibit either Factor V/VIII deficiency or intellectual disability would falsify this hypothesis. Furthermore, demonstrating that the ER-Golgi transport pathway is functioning normally in patients with these diseases would also serve as a falsification condition.",
+        "gnomad_variant": "Presence of common, benign variants in LMAN1 or LMAN2L in the general population (gnomAD > 1%) that are associated with normal Factor V and VIII levels and normal cognitive function."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005",
+        "Reactome:R-HSA-5694530"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-5694530": 33
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014815",
+        "diseaseBName": "intellectual disability, autosomal recessive 52",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005",
+          "Reactome:R-HSA-5694530"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-5694530": 33
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6874) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN2L (HGNC:33058) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DECREASES→ Factor V (HGNC:3774); ER-Golgi transport (GO:0006888) —DECREASES→ Factor VIII (HGNC:3777); Factor V (HGNC:3774) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); Factor VIII (HGNC:3777) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); ER-Golgi transport (GO:0006888) —DISRUPTS→ Neuronal development and function (GO:0048667); Neuronal development and function (GO:0048667) —LEADS_TO→ Intellectual disability, autosomal recessive 52 (MONDO:0014815). Loss-of-function mutations in LMAN1 and LMAN2L disrupt ER-Golgi transport, which is critical for the proper trafficking of Factor V and Factor VIII, leading to combined deficiency of these factors (Disease A). The same disruption in ER-Golgi transport also impacts neuronal development and function, causing Intellectual Disability, autosomal recessive 52 (Disease B).",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in LMAN1 or LMAN2L who do not exhibit either Factor V/VIII deficiency or intellectual disability would falsify this hypothesis. Furthermore, demonstrating that the ER-Golgi transport pathway is functioning normally in patients with these diseases would also serve as a falsification condition.",
+          "gnomad_variant": "Presence of common, benign variants in LMAN1 or LMAN2L in the general population (gnomAD > 1%) that are associated with normal Factor V and VIII levels and normal cognitive function."
+        },
+        "translational": "Understanding the shared mechanism involving ER-Golgi transport could potentially lead to therapeutic strategies that aim to improve protein trafficking or compensate for the deficiencies in both coagulation and neuronal function. This could involve small molecules to enhance protein folding or transport, or gene therapy approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0023659",
+      "diseaseBName": "developmental and epileptic encephalopathy 96",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN1 (HGNC:6876) —DISRUPTS→ Protein folding (GO:0006457); NSF (HGNC:7797) —DISRUPTS→ ER-Golgi transport (GO:0006888); NSF (HGNC:7797) —DISRUPTS→ Protein folding (GO:0006457); ER-Golgi transport (GO:0006888) —DECREASES→ Calcium ions (CHEBI:29108); Protein folding (GO:0006457) —DECREASES→ Calcium ions (CHEBI:29108); ER-Golgi transport (GO:0006888) —LEADS_TO→ Coagulation defect (HP:0001895); Calcium ions (CHEBI:29108) —LEADS_TO→ Seizure (HP:0001250); Calcium ions (CHEBI:29108) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in LMAN1 and NSF disrupt ER-Golgi transport and protein folding, leading to impaired secretion of coagulation factors (Factor V and VIII) and potentially affecting calcium homeostasis, which is crucial for neuronal function. Dysregulation of calcium homeostasis can manifest as seizures and developmental delay. Thus, defects in shared cellular machinery (ER-Golgi transport, protein folding) and downstream effects on calcium homeostasis link these two diseases.",
+      "mechanism_narrative": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN1 (HGNC:6876) —DISRUPTS→ Protein folding (GO:0006457); NSF (HGNC:7797) —DISRUPTS→ ER-Golgi transport (GO:0006888); NSF (HGNC:7797) —DISRUPTS→ Protein folding (GO:0006457); ER-Golgi transport (GO:0006888) —DECREASES→ Calcium ions (CHEBI:29108); Protein folding (GO:0006457) —DECREASES→ Calcium ions (CHEBI:29108); ER-Golgi transport (GO:0006888) —LEADS_TO→ Coagulation defect (HP:0001895); Calcium ions (CHEBI:29108) —LEADS_TO→ Seizure (HP:0001250); Calcium ions (CHEBI:29108) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in LMAN1 and NSF disrupt ER-Golgi transport and protein folding, leading to impaired secretion of coagulation factors (Factor V and VIII) and potentially affecting calcium homeostasis, which is crucial for neuronal function. Dysregulation of calcium homeostasis can manifest as seizures and developmental delay. Thus, defects in shared cellular machinery (ER-Golgi transport, protein folding) and downstream effects on calcium homeostasis link these two diseases.",
+      "falsification": {
+        "text": "Demonstration that LMAN1 and NSF function independently of ER-Golgi transport or protein folding in the context of Factor V/VIII synthesis or neuronal calcium regulation, or that the observed phenotypes in Disease B are not linked to calcium dysregulation.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in LMAN1 or NSF associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0023659",
+        "diseaseBName": "developmental and epileptic encephalopathy 96",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN1 (HGNC:6876) —DISRUPTS→ Protein folding (GO:0006457); NSF (HGNC:7797) —DISRUPTS→ ER-Golgi transport (GO:0006888); NSF (HGNC:7797) —DISRUPTS→ Protein folding (GO:0006457); ER-Golgi transport (GO:0006888) —DECREASES→ Calcium ions (CHEBI:29108); Protein folding (GO:0006457) —DECREASES→ Calcium ions (CHEBI:29108); ER-Golgi transport (GO:0006888) —LEADS_TO→ Coagulation defect (HP:0001895); Calcium ions (CHEBI:29108) —LEADS_TO→ Seizure (HP:0001250); Calcium ions (CHEBI:29108) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in LMAN1 and NSF disrupt ER-Golgi transport and protein folding, leading to impaired secretion of coagulation factors (Factor V and VIII) and potentially affecting calcium homeostasis, which is crucial for neuronal function. Dysregulation of calcium homeostasis can manifest as seizures and developmental delay. Thus, defects in shared cellular machinery (ER-Golgi transport, protein folding) and downstream effects on calcium homeostasis link these two diseases.",
+        "falsification": {
+          "text": "Demonstration that LMAN1 and NSF function independently of ER-Golgi transport or protein folding in the context of Factor V/VIII synthesis or neuronal calcium regulation, or that the observed phenotypes in Disease B are not linked to calcium dysregulation.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in LMAN1 or NSF associated with either disease."
+        },
+        "translational": "Understanding the shared mechanistic underpinnings related to ER-Golgi transport and protein folding could identify common therapeutic targets for both bleeding disorders and neurodevelopmental conditions, potentially involving modulators of protein secretion or calcium signaling pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013173",
+      "diseaseBName": "intellectual disability, autosomal recessive 13",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6877) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001904); TRAPPC9 (HGNC:20257) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to combined deficiency of Factor V and Factor VIII. Similarly, loss-of-function mutations in TRAPPC9 also disrupt ER-Golgi trafficking, which is implicated in the pathogenesis of intellectual disability, autosomal recessive 13. The shared convergence on ER-Golgi trafficking represents the mechanistic link.",
+      "mechanism_narrative": "LMAN1 (HGNC:6877) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001904); TRAPPC9 (HGNC:20257) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to combined deficiency of Factor V and Factor VIII. Similarly, loss-of-function mutations in TRAPPC9 also disrupt ER-Golgi trafficking, which is implicated in the pathogenesis of intellectual disability, autosomal recessive 13. The shared convergence on ER-Golgi trafficking represents the mechanistic link.",
+      "falsification": {
+        "text": "If mutations in LMAN1 or TRAPPC9 were found to affect entirely separate cellular pathways unrelated to protein trafficking, or if these pathways were shown to be topologically distant and non-interacting, this hypothesis would be falsified. Additionally, demonstration of completely divergent functional consequences of these mutations that do not converge at any level of cellular function would refute the proposed link.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD in the coding regions of LMAN1 and TRAPPC9 associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013173",
+        "diseaseBName": "intellectual disability, autosomal recessive 13",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6877) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001904); TRAPPC9 (HGNC:20257) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to combined deficiency of Factor V and Factor VIII. Similarly, loss-of-function mutations in TRAPPC9 also disrupt ER-Golgi trafficking, which is implicated in the pathogenesis of intellectual disability, autosomal recessive 13. The shared convergence on ER-Golgi trafficking represents the mechanistic link.",
+        "falsification": {
+          "text": "If mutations in LMAN1 or TRAPPC9 were found to affect entirely separate cellular pathways unrelated to protein trafficking, or if these pathways were shown to be topologically distant and non-interacting, this hypothesis would be falsified. Additionally, demonstration of completely divergent functional consequences of these mutations that do not converge at any level of cellular function would refute the proposed link.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD in the coding regions of LMAN1 and TRAPPC9 associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared role of ER-Golgi trafficking in these distinct diseases could reveal novel therapeutic targets. Interventions aimed at restoring proper protein transport in the ER-Golgi could potentially ameliorate aspects of both Factor V/VIII deficiency and intellectual disability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009528",
+      "diseaseBName": "chylomicron retention disease",
+      "fitness": 0.39,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6702) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Factor V and Factor VIII, combined deficiency type 1 (MONDO:0009206); SAR1B (HGNC:10104) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DISRUPTS→ Chylomicrons (CHEBI:23300); Chylomicrons (CHEBI:23300) —LEADS_TO→ Chylomicron retention disease (MONDO:0009528). Loss-of-function mutations in LMAN1 disrupt ER-Golgi transport, leading to Factor V and Factor VIII, combined deficiency type 1. Similarly, loss-of-function mutations in SAR1B disrupt ER-Golgi transport, specifically affecting chylomicron trafficking and causing Chylomicron retention disease. The shared pathway of ER-Golgi transport is the convergence point.",
+      "mechanism_narrative": "LMAN1 (HGNC:6702) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Factor V and Factor VIII, combined deficiency type 1 (MONDO:0009206); SAR1B (HGNC:10104) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DISRUPTS→ Chylomicrons (CHEBI:23300); Chylomicrons (CHEBI:23300) —LEADS_TO→ Chylomicron retention disease (MONDO:0009528). Loss-of-function mutations in LMAN1 disrupt ER-Golgi transport, leading to Factor V and Factor VIII, combined deficiency type 1. Similarly, loss-of-function mutations in SAR1B disrupt ER-Golgi transport, specifically affecting chylomicron trafficking and causing Chylomicron retention disease. The shared pathway of ER-Golgi transport is the convergence point.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in LMAN1 or SAR1B do not segregate with the respective disease phenotypes, or if functional studies show these genes are not involved in ER-Golgi transport, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in LMAN1 or SAR1B associated with either disease would challenge a purely rare variant causal model."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005",
+        "Reactome:R-HSA-5694530"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-5694530": 33
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009528",
+        "diseaseBName": "chylomicron retention disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005",
+          "Reactome:R-HSA-5694530"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-5694530": 33
+        },
+        "fitness": 0.39,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6702) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Factor V and Factor VIII, combined deficiency type 1 (MONDO:0009206); SAR1B (HGNC:10104) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DISRUPTS→ Chylomicrons (CHEBI:23300); Chylomicrons (CHEBI:23300) —LEADS_TO→ Chylomicron retention disease (MONDO:0009528). Loss-of-function mutations in LMAN1 disrupt ER-Golgi transport, leading to Factor V and Factor VIII, combined deficiency type 1. Similarly, loss-of-function mutations in SAR1B disrupt ER-Golgi transport, specifically affecting chylomicron trafficking and causing Chylomicron retention disease. The shared pathway of ER-Golgi transport is the convergence point.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in LMAN1 or SAR1B do not segregate with the respective disease phenotypes, or if functional studies show these genes are not involved in ER-Golgi transport, this hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in LMAN1 or SAR1B associated with either disease would challenge a purely rare variant causal model."
+        },
+        "translational": "Understanding the shared ER-Golgi transport defect can inform therapeutic strategies. Modulating pathways involved in protein folding, quality control, or vesicular transport might offer a common therapeutic avenue for both Factor V and Factor VIII deficiency and Chylomicron retention disease, potentially improving hemostasis and nutrient absorption."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0029465",
+      "diseaseBName": "intellectual developmental disorder, autosomal dominant 69",
+      "fitness": 0.3851,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6875) —DISRUPTS→ Golgi apparatus protein folding and transport; LMAN2L (HGNC:34894) —DISRUPTS→ Golgi apparatus protein folding and transport; Golgi apparatus protein folding and transport —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001911); Golgi apparatus protein folding and transport —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in LMAN1 cause combined factor V and VIII deficiency by disrupting proper folding and transport of these proteins in the Golgi. Similarly, loss-of-function mutations in LMAN2L impair Golgi function, leading to intellectual disability. The shared disruption of Golgi apparatus protein folding and transport serves as the mechanistic link.",
+      "mechanism_narrative": "LMAN1 (HGNC:6875) —DISRUPTS→ Golgi apparatus protein folding and transport; LMAN2L (HGNC:34894) —DISRUPTS→ Golgi apparatus protein folding and transport; Golgi apparatus protein folding and transport —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001911); Golgi apparatus protein folding and transport —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in LMAN1 cause combined factor V and VIII deficiency by disrupting proper folding and transport of these proteins in the Golgi. Similarly, loss-of-function mutations in LMAN2L impair Golgi function, leading to intellectual disability. The shared disruption of Golgi apparatus protein folding and transport serves as the mechanistic link.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if mutations in LMAN1 and LMAN2L were shown to have completely independent cellular functions unrelated to protein folding or transport within the Golgi apparatus, or if genetic studies revealed no association between mutations in these genes and the respective disease phenotypes.",
+        "gnomad_variant": "Identification of common, benign variants in LMAN1 and LMAN2L in the general population (e.g., gnomAD allele frequency > 1%) that do not segregate with the disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005",
+        "Reactome:R-HSA-5694530"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-5694530": 33
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0029465",
+        "diseaseBName": "intellectual developmental disorder, autosomal dominant 69",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005",
+          "Reactome:R-HSA-5694530"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-5694530": 33
+        },
+        "fitness": 0.3851,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6875) —DISRUPTS→ Golgi apparatus protein folding and transport; LMAN2L (HGNC:34894) —DISRUPTS→ Golgi apparatus protein folding and transport; Golgi apparatus protein folding and transport —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001911); Golgi apparatus protein folding and transport —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in LMAN1 cause combined factor V and VIII deficiency by disrupting proper folding and transport of these proteins in the Golgi. Similarly, loss-of-function mutations in LMAN2L impair Golgi function, leading to intellectual disability. The shared disruption of Golgi apparatus protein folding and transport serves as the mechanistic link.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if mutations in LMAN1 and LMAN2L were shown to have completely independent cellular functions unrelated to protein folding or transport within the Golgi apparatus, or if genetic studies revealed no association between mutations in these genes and the respective disease phenotypes.",
+          "gnomad_variant": "Identification of common, benign variants in LMAN1 and LMAN2L in the general population (e.g., gnomAD allele frequency > 1%) that do not segregate with the disease phenotypes."
+        },
+        "translational": "Understanding the shared role of LMAN1 and LMAN2L in Golgi function could lead to novel therapeutic strategies for both bleeding disorders and neurodevelopmental conditions. Targeting protein folding or transport pathways in the Golgi might offer a unified approach to ameliorate symptoms in both disease categories, potentially through chaperone therapy or by modulating specific transport mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032894",
+      "diseaseBName": "neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy",
+      "fitness": 0.3851,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Coagulopathy (HP:0001890); TRAPPC4 (HGNC:23405) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —LEADS_TO→ Epilepsy (HP:0001250); Protein folding (GO:0006457) —LEADS_TO→ Spasticity (HP:0002059); Protein folding (GO:0006457) —LEADS_TO→ Brain atrophy (HP:0002059). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to coagulopathy. Similarly, loss-of-function mutations in TRAPPC4 disrupt protein folding, which has downstream effects on neuronal function, leading to epilepsy, spasticity, and brain atrophy. The convergence is on the cellular machinery of protein processing and trafficking within the ER and Golgi, essential for both secreted proteins like clotting factors and intracellular proteins in neurons.",
+      "mechanism_narrative": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Coagulopathy (HP:0001890); TRAPPC4 (HGNC:23405) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —LEADS_TO→ Epilepsy (HP:0001250); Protein folding (GO:0006457) —LEADS_TO→ Spasticity (HP:0002059); Protein folding (GO:0006457) —LEADS_TO→ Brain atrophy (HP:0002059). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to coagulopathy. Similarly, loss-of-function mutations in TRAPPC4 disrupt protein folding, which has downstream effects on neuronal function, leading to epilepsy, spasticity, and brain atrophy. The convergence is on the cellular machinery of protein processing and trafficking within the ER and Golgi, essential for both secreted proteins like clotting factors and intracellular proteins in neurons.",
+      "falsification": {
+        "text": "Demonstration that LMAN1 and TRAPPC4 function in entirely independent cellular pathways with no overlap in protein processing, trafficking, or cellular homeostasis.",
+        "gnomad_variant": "Identification of common variants (>1% allele frequency) in gnomAD within the coding regions of LMAN1 and TRAPPC4 that do not segregate with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032894",
+        "diseaseBName": "neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69
+        },
+        "fitness": 0.3851,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Coagulopathy (HP:0001890); TRAPPC4 (HGNC:23405) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —LEADS_TO→ Epilepsy (HP:0001250); Protein folding (GO:0006457) —LEADS_TO→ Spasticity (HP:0002059); Protein folding (GO:0006457) —LEADS_TO→ Brain atrophy (HP:0002059). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to coagulopathy. Similarly, loss-of-function mutations in TRAPPC4 disrupt protein folding, which has downstream effects on neuronal function, leading to epilepsy, spasticity, and brain atrophy. The convergence is on the cellular machinery of protein processing and trafficking within the ER and Golgi, essential for both secreted proteins like clotting factors and intracellular proteins in neurons.",
+        "falsification": {
+          "text": "Demonstration that LMAN1 and TRAPPC4 function in entirely independent cellular pathways with no overlap in protein processing, trafficking, or cellular homeostasis.",
+          "gnomad_variant": "Identification of common variants (>1% allele frequency) in gnomAD within the coding regions of LMAN1 and TRAPPC4 that do not segregate with either disease phenotype."
+        },
+        "translational": "Understanding the shared role of LMAN1 and TRAPPC4 in protein processing and trafficking could reveal common therapeutic targets for improving protein homeostasis in both hematological and neurological disorders, potentially through chaperones or trafficking modulators."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010737",
+      "diseaseBName": "spondyloepiphyseal dysplasia tarda, X-linked",
+      "fitness": 0.3839,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LMAN1 (HGNC:6927) —LEADS_TO→ LMAN1 protein; LMAN1 protein —DISRUPTS→ ER-associated degradation (ERAD) pathway; ER-associated degradation (ERAD) pathway —LEADS_TO→ Coagulation factor deficiency (HP:0001892); TRAPPC2 (HGNC:24411) —LEADS_TO→ TRAPPC2 protein; TRAPPC2 protein —DISRUPTS→ Protein trafficking and folding in the ER and Golgi; Protein trafficking and folding in the ER and Golgi —LEADS_TO→ Skeletal dysplasia (HP:0002650). Loss-of-function mutations in LMAN1 disrupt the ER-associated degradation (ERAD) pathway, impacting the proper folding and secretion of coagulation factors, leading to Factor V and Factor VIII deficiency. Similarly, loss-of-function mutations in TRAPPC2 impair general protein trafficking and folding, particularly affecting proteins crucial for skeletal development, resulting in spondyloepiphyseal dysplasia tarda. Both genes are involved in distinct but essential cellular protein homeostasis processes that, when disrupted, lead to distinct disease phenotypes.",
+      "mechanism_narrative": "LMAN1 (HGNC:6927) —LEADS_TO→ LMAN1 protein; LMAN1 protein —DISRUPTS→ ER-associated degradation (ERAD) pathway; ER-associated degradation (ERAD) pathway —LEADS_TO→ Coagulation factor deficiency (HP:0001892); TRAPPC2 (HGNC:24411) —LEADS_TO→ TRAPPC2 protein; TRAPPC2 protein —DISRUPTS→ Protein trafficking and folding in the ER and Golgi; Protein trafficking and folding in the ER and Golgi —LEADS_TO→ Skeletal dysplasia (HP:0002650). Loss-of-function mutations in LMAN1 disrupt the ER-associated degradation (ERAD) pathway, impacting the proper folding and secretion of coagulation factors, leading to Factor V and Factor VIII deficiency. Similarly, loss-of-function mutations in TRAPPC2 impair general protein trafficking and folding, particularly affecting proteins crucial for skeletal development, resulting in spondyloepiphyseal dysplasia tarda. Both genes are involved in distinct but essential cellular protein homeostasis processes that, when disrupted, lead to distinct disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in LMAN1 or TRAPPC2 do not affect protein trafficking or degradation pathways, or that the identified variants are common polymorphisms with no discernible effect on protein function.",
+        "gnomad_variant": "Exclusion of pathogenic variants in gnomAD across diverse populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-204005": 69
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010737",
+        "diseaseBName": "spondyloepiphyseal dysplasia tarda, X-linked",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-204005": 69
+        },
+        "fitness": 0.3839,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LMAN1 (HGNC:6927) —LEADS_TO→ LMAN1 protein; LMAN1 protein —DISRUPTS→ ER-associated degradation (ERAD) pathway; ER-associated degradation (ERAD) pathway —LEADS_TO→ Coagulation factor deficiency (HP:0001892); TRAPPC2 (HGNC:24411) —LEADS_TO→ TRAPPC2 protein; TRAPPC2 protein —DISRUPTS→ Protein trafficking and folding in the ER and Golgi; Protein trafficking and folding in the ER and Golgi —LEADS_TO→ Skeletal dysplasia (HP:0002650). Loss-of-function mutations in LMAN1 disrupt the ER-associated degradation (ERAD) pathway, impacting the proper folding and secretion of coagulation factors, leading to Factor V and Factor VIII deficiency. Similarly, loss-of-function mutations in TRAPPC2 impair general protein trafficking and folding, particularly affecting proteins crucial for skeletal development, resulting in spondyloepiphyseal dysplasia tarda. Both genes are involved in distinct but essential cellular protein homeostasis processes that, when disrupted, lead to distinct disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in LMAN1 or TRAPPC2 do not affect protein trafficking or degradation pathways, or that the identified variants are common polymorphisms with no discernible effect on protein function.",
+          "gnomad_variant": "Exclusion of pathogenic variants in gnomAD across diverse populations."
+        },
+        "translational": "Understanding the shared reliance on cellular protein homeostasis pathways for distinct disease manifestations could reveal novel therapeutic targets that modulate protein folding or trafficking for broad applicability, potentially benefiting patients with either coagulopathy or skeletal dysplasias, or even other diseases linked to protein misfolding."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T10:38:24.273Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** factor V and factor VIII, combined deficiency of, type 1 (MONDO:0009206)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 13 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | congenital disorder of glycosylation, type IIaa (MONDO:0957540) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-204005, Reactome:R-HSA-9013408, Reactome:R-HSA-5694530, Reactome:R-HSA-8980692 |\n| 2 | alpha 1-antitrypsin deficiency (MONDO:0013282) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-204005, Reactome:R-HSA-5694530 |\n| 3 | encephalopathy, progressive, early-onset, with episodic rhabdomyolysis (MONDO:0032681) | shared pathway | Tier 3 | 0.396 | Reactome:R-HSA-204005 |\n| 4 | intellectual disability, autosomal recessive 52 (MONDO:0014815) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-204005, Reactome:R-HSA-5694530 |\n| 5 | developmental and epileptic encephalopathy 96 (MONDO:0023659) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-204005 |\n| 6 | intellectual disability, autosomal recessive 13 (MONDO:0013173) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-204005 |\n| 7 | chylomicron retention disease (MONDO:0009528) | shared pathway | Tier 3 | 0.390 | Reactome:R-HSA-204005, Reactome:R-HSA-5694530 |\n| 8 | intellectual developmental disorder, autosomal dominant 69 (MONDO:0029465) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-204005, Reactome:R-HSA-5694530 |\n| 9 | neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy (MONDO:0032894) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-204005 |\n| 10 | spondyloepiphyseal dysplasia tarda, X-linked (MONDO:0010737) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-204005 |\n\n### CANDIDATE DETAIL\n#### 1. congenital disorder of glycosylation, type IIaa  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-204005, Reactome:R-HSA-9013408, Reactome:R-HSA-5694530, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** LMAN1 (HGNC:6715) —DISRUPTS→ ER-Golgi trafficking; STX5 (HGNC:11084) —DISRUPTS→ ER-Golgi trafficking; ER-Golgi trafficking —DECREASES→ Glycoproteins; Glycoproteins —LEADS_TO→ Factor V and Factor VIII deficiency (MONDO:0009206); Glycoproteins —LEADS_TO→ Congenital disorder of glycosylation, type IIaa (MONDO:0957540). Loss-of-function mutations in LMAN1 and STX5 disrupt ER-Golgi trafficking, impairing the proper maturation and secretion of glycoproteins, which underlies both Factor V/VIII deficiency and CDG-IIaa.\n\n**How to falsify it:** Demonstration that LMAN1 and STX5 play entirely distinct roles in separate, non-overlapping cellular compartments or pathways essential for the respective disease phenotypes, or identification of entirely distinct causal genes for one of the diseases that do not interact with the ER-Golgi trafficking pathway. _(variant: Presence of common variants in LMAN1 or STX5 with a frequency > 1% in gnomAD that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared ER-Golgi trafficking defect offers potential therapeutic avenues for both disorders. Strategies aimed at improving protein folding, secretion, or compensating for impaired glycoprotein function could be explored for both conditions.\n\n---\n\n#### 2. alpha 1-antitrypsin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-204005, Reactome:R-HSA-5694530)\n\n**Proposed mechanism:** LMAN1 (HGNC:6705) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Combined deficiency of Factor V and Factor VIII (MONDO:0009206); SERPINA1 (HGNC:10578) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —DISRUPTS→ ER-associated degradation (GO:0031123); ER-associated degradation (GO:0031123) —LEADS_TO→ Alpha-1-antitrypsin deficiency (MONDO:0013282); ER-Golgi transport (GO:0006888) —BINDS→ ER-associated degradation (GO:0031123). Mutations in LMAN1 disrupt ER-Golgi transport, leading to combined Factor V and Factor VIII deficiency. Mutations in SERPINA1 lead to misfolded Alpha-1-antitrypsin, which is targeted for ER-associated degradation, causing Alpha-1-antitrypsin deficiency. Both processes involve the ER quality control machinery, specifically ER-associated degradation and general protein folding pathways.\n\n**How to falsify it:** Demonstration that mutations in LMAN1 or SERPINA1 do not impact ER-associated degradation or ER-Golgi transport, or that the cellular pathways involved are entirely distinct and non-interacting. _(variant: Absence of pathogenic variants in LMAN1 and SERPINA1 in relevant human populations.)_\n\n**Why it matters:** Understanding the shared vulnerability of protein processing pathways in these two diseases could reveal common therapeutic targets for protein misfolding or secretion defects, potentially applicable to a broader range of genetic disorders affecting protein homeostasis.\n\n---\n\n#### 3. encephalopathy, progressive, early-onset, with episodic rhabdomyolysis  —  Tier 3 — Moderate / Emerging  (fitness 0.396)\n**Link type:** shared pathway (Reactome:R-HSA-204005)\n\n**Proposed mechanism:** LMAN1 (HGNC:6589) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); TRAPPC2L (HGNC:28334) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V deficiency (HP:0001916); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor VIII deficiency (HP:0001919); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Encephalopathy (HP:0001295); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Rhabdomyolysis (HP:0003130). Loss-of-function mutations in LMAN1 and TRAPPC2L disrupt the ER-Golgi trafficking pathway. This disruption impairs the proper secretion and function of Factor V and Factor VIII, leading to combined deficiency of type 1. Concurrently, the compromised ER-Golgi transport also affects the processing and delivery of proteins essential for neuronal and muscle function, resulting in encephalopathy and episodic rhabdomyolysis.\n\n**How to falsify it:** If genetic analysis reveals that the mutations in LMAN1 and TRAPPC2L in patients with Encephalopathy, progressive, early-onset, with episodic rhabdomyolysis do not consistently impair ER-Golgi trafficking, or if distinct pathways are identified as the primary drivers for each disease, this proposed mechanistic link would be falsified. _(variant: Identification of common variants (AF > 1%) in LMAN1 or TRAPPC2L in the general population (gnomAD) that do not segregate with either disease would weaken the claim of these genes being causal.)_\n\n**Why it matters:** Understanding the shared role of ER-Golgi trafficking in these distinct disease phenotypes could reveal common therapeutic targets. Interventions aimed at restoring proper protein folding, modification, or transport could potentially benefit patients suffering from both coagulation disorders and neuro-muscular conditions.\n\n---\n\n#### 4. intellectual disability, autosomal recessive 52  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-204005, Reactome:R-HSA-5694530)\n\n**Proposed mechanism:** LMAN1 (HGNC:6874) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN2L (HGNC:33058) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DECREASES→ Factor V (HGNC:3774); ER-Golgi transport (GO:0006888) —DECREASES→ Factor VIII (HGNC:3777); Factor V (HGNC:3774) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); Factor VIII (HGNC:3777) —LEADS_TO→ Combined deficiency of factor V and factor VIII, type 1 (MONDO:0009206); ER-Golgi transport (GO:0006888) —DISRUPTS→ Neuronal development and function (GO:0048667); Neuronal development and function (GO:0048667) —LEADS_TO→ Intellectual disability, autosomal recessive 52 (MONDO:0014815). Loss-of-function mutations in LMAN1 and LMAN2L disrupt ER-Golgi transport, which is critical for the proper trafficking of Factor V and Factor VIII, leading to combined deficiency of these factors (Disease A). The same disruption in ER-Golgi transport also impacts neuronal development and function, causing Intellectual Disability, autosomal recessive 52 (Disease B).\n\n**How to falsify it:** Identification of individuals with pathogenic variants in LMAN1 or LMAN2L who do not exhibit either Factor V/VIII deficiency or intellectual disability would falsify this hypothesis. Furthermore, demonstrating that the ER-Golgi transport pathway is functioning normally in patients with these diseases would also serve as a falsification condition. _(variant: Presence of common, benign variants in LMAN1 or LMAN2L in the general population (gnomAD > 1%) that are associated with normal Factor V and VIII levels and normal cognitive function.)_\n\n**Why it matters:** Understanding the shared mechanism involving ER-Golgi transport could potentially lead to therapeutic strategies that aim to improve protein trafficking or compensate for the deficiencies in both coagulation and neuronal function. This could involve small molecules to enhance protein folding or transport, or gene therapy approaches.\n\n---\n\n#### 5. developmental and epileptic encephalopathy 96  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-204005)\n\n**Proposed mechanism:** LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi transport (GO:0006888); LMAN1 (HGNC:6876) —DISRUPTS→ Protein folding (GO:0006457); NSF (HGNC:7797) —DISRUPTS→ ER-Golgi transport (GO:0006888); NSF (HGNC:7797) —DISRUPTS→ Protein folding (GO:0006457); ER-Golgi transport (GO:0006888) —DECREASES→ Calcium ions (CHEBI:29108); Protein folding (GO:0006457) —DECREASES→ Calcium ions (CHEBI:29108); ER-Golgi transport (GO:0006888) —LEADS_TO→ Coagulation defect (HP:0001895); Calcium ions (CHEBI:29108) —LEADS_TO→ Seizure (HP:0001250); Calcium ions (CHEBI:29108) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in LMAN1 and NSF disrupt ER-Golgi transport and protein folding, leading to impaired secretion of coagulation factors (Factor V and VIII) and potentially affecting calcium homeostasis, which is crucial for neuronal function. Dysregulation of calcium homeostasis can manifest as seizures and developmental delay. Thus, defects in shared cellular machinery (ER-Golgi transport, protein folding) and downstream effects on calcium homeostasis link these two diseases.\n\n**How to falsify it:** Demonstration that LMAN1 and NSF function independently of ER-Golgi transport or protein folding in the context of Factor V/VIII synthesis or neuronal calcium regulation, or that the observed phenotypes in Disease B are not linked to calcium dysregulation. _(variant: Identification of common variants (AF > 0.01) in LMAN1 or NSF associated with either disease.)_\n\n**Why it matters:** Understanding the shared mechanistic underpinnings related to ER-Golgi transport and protein folding could identify common therapeutic targets for both bleeding disorders and neurodevelopmental conditions, potentially involving modulators of protein secretion or calcium signaling pathways.\n\n---\n\n#### 6. intellectual disability, autosomal recessive 13  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-204005)\n\n**Proposed mechanism:** LMAN1 (HGNC:6877) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001904); TRAPPC9 (HGNC:20257) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to combined deficiency of Factor V and Factor VIII. Similarly, loss-of-function mutations in TRAPPC9 also disrupt ER-Golgi trafficking, which is implicated in the pathogenesis of intellectual disability, autosomal recessive 13. The shared convergence on ER-Golgi trafficking represents the mechanistic link.\n\n**How to falsify it:** If mutations in LMAN1 or TRAPPC9 were found to affect entirely separate cellular pathways unrelated to protein trafficking, or if these pathways were shown to be topologically distant and non-interacting, this hypothesis would be falsified. Additionally, demonstration of completely divergent functional consequences of these mutations that do not converge at any level of cellular function would refute the proposed link. _(variant: Presence of common variants (AF > 0.01) in gnomAD in the coding regions of LMAN1 and TRAPPC9 associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of ER-Golgi trafficking in these distinct diseases could reveal novel therapeutic targets. Interventions aimed at restoring proper protein transport in the ER-Golgi could potentially ameliorate aspects of both Factor V/VIII deficiency and intellectual disability.\n\n---\n\n#### 7. chylomicron retention disease  —  Tier 3 — Moderate / Emerging  (fitness 0.390)\n**Link type:** shared pathway (Reactome:R-HSA-204005, Reactome:R-HSA-5694530)\n\n**Proposed mechanism:** LMAN1 (HGNC:6702) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —LEADS_TO→ Factor V and Factor VIII, combined deficiency type 1 (MONDO:0009206); SAR1B (HGNC:10104) —DISRUPTS→ ER-Golgi transport (GO:0006888); ER-Golgi transport (GO:0006888) —DISRUPTS→ Chylomicrons (CHEBI:23300); Chylomicrons (CHEBI:23300) —LEADS_TO→ Chylomicron retention disease (MONDO:0009528). Loss-of-function mutations in LMAN1 disrupt ER-Golgi transport, leading to Factor V and Factor VIII, combined deficiency type 1. Similarly, loss-of-function mutations in SAR1B disrupt ER-Golgi transport, specifically affecting chylomicron trafficking and causing Chylomicron retention disease. The shared pathway of ER-Golgi transport is the convergence point.\n\n**How to falsify it:** If genetic studies reveal that mutations in LMAN1 or SAR1B do not segregate with the respective disease phenotypes, or if functional studies show these genes are not involved in ER-Golgi transport, this hypothesis would be falsified. _(variant: The presence of common variants (AF > 1%) in LMAN1 or SAR1B associated with either disease would challenge a purely rare variant causal model.)_\n\n**Why it matters:** Understanding the shared ER-Golgi transport defect can inform therapeutic strategies. Modulating pathways involved in protein folding, quality control, or vesicular transport might offer a common therapeutic avenue for both Factor V and Factor VIII deficiency and Chylomicron retention disease, potentially improving hemostasis and nutrient absorption.\n\n---\n\n#### 8. intellectual developmental disorder, autosomal dominant 69  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-204005, Reactome:R-HSA-5694530)\n\n**Proposed mechanism:** LMAN1 (HGNC:6875) —DISRUPTS→ Golgi apparatus protein folding and transport; LMAN2L (HGNC:34894) —DISRUPTS→ Golgi apparatus protein folding and transport; Golgi apparatus protein folding and transport —LEADS_TO→ Factor V and Factor VIII deficiency (HP:0001911); Golgi apparatus protein folding and transport —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in LMAN1 cause combined factor V and VIII deficiency by disrupting proper folding and transport of these proteins in the Golgi. Similarly, loss-of-function mutations in LMAN2L impair Golgi function, leading to intellectual disability. The shared disruption of Golgi apparatus protein folding and transport serves as the mechanistic link.\n\n**How to falsify it:** The hypothesis would be falsified if mutations in LMAN1 and LMAN2L were shown to have completely independent cellular functions unrelated to protein folding or transport within the Golgi apparatus, or if genetic studies revealed no association between mutations in these genes and the respective disease phenotypes. _(variant: Identification of common, benign variants in LMAN1 and LMAN2L in the general population (e.g., gnomAD allele frequency > 1%) that do not segregate with the disease phenotypes.)_\n\n**Why it matters:** Understanding the shared role of LMAN1 and LMAN2L in Golgi function could lead to novel therapeutic strategies for both bleeding disorders and neurodevelopmental conditions. Targeting protein folding or transport pathways in the Golgi might offer a unified approach to ameliorate symptoms in both disease categories, potentially through chaperone therapy or by modulating specific transport mechanisms.\n\n---\n\n#### 9. neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-204005)\n\n**Proposed mechanism:** LMAN1 (HGNC:6876) —DISRUPTS→ ER-Golgi trafficking (GO:0006888); ER-Golgi trafficking (GO:0006888) —LEADS_TO→ Coagulopathy (HP:0001890); TRAPPC4 (HGNC:23405) —DISRUPTS→ Protein folding (GO:0006457); Protein folding (GO:0006457) —LEADS_TO→ Epilepsy (HP:0001250); Protein folding (GO:0006457) —LEADS_TO→ Spasticity (HP:0002059); Protein folding (GO:0006457) —LEADS_TO→ Brain atrophy (HP:0002059). Loss-of-function mutations in LMAN1 disrupt ER-Golgi trafficking, leading to coagulopathy. Similarly, loss-of-function mutations in TRAPPC4 disrupt protein folding, which has downstream effects on neuronal function, leading to epilepsy, spasticity, and brain atrophy. The convergence is on the cellular machinery of protein processing and trafficking within the ER and Golgi, essential for both secreted proteins like clotting factors and intracellular proteins in neurons.\n\n**How to falsify it:** Demonstration that LMAN1 and TRAPPC4 function in entirely independent cellular pathways with no overlap in protein processing, trafficking, or cellular homeostasis. _(variant: Identification of common variants (>1% allele frequency) in gnomAD within the coding regions of LMAN1 and TRAPPC4 that do not segregate with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of LMAN1 and TRAPPC4 in protein processing and trafficking could reveal common therapeutic targets for improving protein homeostasis in both hematological and neurological disorders, potentially through chaperones or trafficking modulators.\n\n---\n\n#### 10. spondyloepiphyseal dysplasia tarda, X-linked  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-204005)\n\n**Proposed mechanism:** LMAN1 (HGNC:6927) —LEADS_TO→ LMAN1 protein; LMAN1 protein —DISRUPTS→ ER-associated degradation (ERAD) pathway; ER-associated degradation (ERAD) pathway —LEADS_TO→ Coagulation factor deficiency (HP:0001892); TRAPPC2 (HGNC:24411) —LEADS_TO→ TRAPPC2 protein; TRAPPC2 protein —DISRUPTS→ Protein trafficking and folding in the ER and Golgi; Protein trafficking and folding in the ER and Golgi —LEADS_TO→ Skeletal dysplasia (HP:0002650). Loss-of-function mutations in LMAN1 disrupt the ER-associated degradation (ERAD) pathway, impacting the proper folding and secretion of coagulation factors, leading to Factor V and Factor VIII deficiency. Similarly, loss-of-function mutations in TRAPPC2 impair general protein trafficking and folding, particularly affecting proteins crucial for skeletal development, resulting in spondyloepiphyseal dysplasia tarda. Both genes are involved in distinct but essential cellular protein homeostasis processes that, when disrupted, lead to distinct disease phenotypes.\n\n**How to falsify it:** Demonstration that mutations in LMAN1 or TRAPPC2 do not affect protein trafficking or degradation pathways, or that the identified variants are common polymorphisms with no discernible effect on protein function. _(variant: Exclusion of pathogenic variants in gnomAD across diverse populations.)_\n\n**Why it matters:** Understanding the shared reliance on cellular protein homeostasis pathways for distinct disease manifestations could reveal novel therapeutic targets that modulate protein folding or trafficking for broad applicability, potentially benefiting patients with either coagulopathy or skeletal dysplasias, or even other diseases linked to protein misfolding.\n\n---"
+}

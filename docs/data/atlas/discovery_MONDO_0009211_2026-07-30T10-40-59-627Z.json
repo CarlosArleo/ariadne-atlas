@@ -1,0 +1,329 @@
+{
+  "seed": {
+    "id": "MONDO:0009211",
+    "name": "congenital factor VII deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 8,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013227",
+      "diseaseBName": "congenital plasminogen activator inhibitor type 1 deficiency",
+      "fitness": 0.4322,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3757) —DISRUPTS→ coagulation cascade (REACT:R-HSA-449049); coagulation cascade (REACT:R-HSA-449049) —LEADS_TO→ Bleeding tendency (HP:0001892); SERPINE1 (HGNC:10564) —DISRUPTS→ fibrinolysis (REACT:R-HSA-169877); fibrinolysis (REACT:R-HSA-169877) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F7 impair the initiation of the coagulation cascade, leading to bleeding. Similarly, loss-of-function mutations in SERPINE1 impair fibrinolysis, causing a reduced ability to break down clots and potentially leading to bleeding due to dysregulated hemostasis. Both pathways are critical for maintaining hemostatic balance.",
+      "mechanism_narrative": "F7 (HGNC:3757) —DISRUPTS→ coagulation cascade (REACT:R-HSA-449049); coagulation cascade (REACT:R-HSA-449049) —LEADS_TO→ Bleeding tendency (HP:0001892); SERPINE1 (HGNC:10564) —DISRUPTS→ fibrinolysis (REACT:R-HSA-169877); fibrinolysis (REACT:R-HSA-169877) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F7 impair the initiation of the coagulation cascade, leading to bleeding. Similarly, loss-of-function mutations in SERPINE1 impair fibrinolysis, causing a reduced ability to break down clots and potentially leading to bleeding due to dysregulated hemostasis. Both pathways are critical for maintaining hemostatic balance.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in F7 or SERPINE1 do not consistently segregate with the bleeding phenotype in affected families, or if genetic variants in these genes with high allele frequencies (e.g., >1% in gnomAD) are found to be causal for these conditions.",
+        "gnomad_variant": "rs1799963"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26,
+        "Reactome:R-HSA-9769739": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013227",
+        "diseaseBName": "congenital plasminogen activator inhibitor type 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26,
+          "Reactome:R-HSA-9769739": 48
+        },
+        "fitness": 0.4322,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3757) —DISRUPTS→ coagulation cascade (REACT:R-HSA-449049); coagulation cascade (REACT:R-HSA-449049) —LEADS_TO→ Bleeding tendency (HP:0001892); SERPINE1 (HGNC:10564) —DISRUPTS→ fibrinolysis (REACT:R-HSA-169877); fibrinolysis (REACT:R-HSA-169877) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F7 impair the initiation of the coagulation cascade, leading to bleeding. Similarly, loss-of-function mutations in SERPINE1 impair fibrinolysis, causing a reduced ability to break down clots and potentially leading to bleeding due to dysregulated hemostasis. Both pathways are critical for maintaining hemostatic balance.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in F7 or SERPINE1 do not consistently segregate with the bleeding phenotype in affected families, or if genetic variants in these genes with high allele frequencies (e.g., >1% in gnomAD) are found to be causal for these conditions.",
+          "gnomad_variant": "rs1799963"
+        },
+        "translational": "Understanding the shared downstream impact on hemostasis despite distinct causal genes (F7 and SERPINE1) could inform diagnostic strategies and potentially therapeutic interventions aimed at restoring hemostatic balance in patients with bleeding disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0026731",
+      "diseaseBName": "hypothyroidism, congenital, nongoitrous, 8",
+      "fitness": 0.427,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TBL1X (HGNC:11640) —DISRUPTS→ Coenzyme Q10 biosynthesis (REACT:R-HSA-70307); Coenzyme Q10 biosynthesis (REACT:R-HSA-70307) —DECREASES→ Ubiquinone (Coenzyme Q10) (CHEBI:15361); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —DECREASES→ Factor VII activity (HP:0001905); Factor VII activity (HP:0001905) —LEADS_TO→ Congenital factor VII deficiency (HP:0001905); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —LEADS_TO→ Congenital hypothyroidism, nongoitrous, 8 (HP:0011394); F7 (HGNC:3647) —DISRUPTS→ Factor VII activity (HP:0001905). Loss-of-function mutations in TBL1X disrupt the Coenzyme Q10 biosynthesis pathway, leading to decreased levels of Ubiquinone (Coenzyme Q10). This decrease affects multiple downstream processes, including thyroid hormone synthesis (leading to congenital hypothyroidism, nongoitrous, 8) and potentially impacting the activity or synthesis of coagulation factors, including Factor VII, thus contributing to congenital factor VII deficiency. While F7 is the direct gene for Factor VII deficiency, TBL1X's role in CoQ10 biosynthesis creates a potential indirect link to coagulation factor function and thyroid hormone production.",
+      "mechanism_narrative": "TBL1X (HGNC:11640) —DISRUPTS→ Coenzyme Q10 biosynthesis (REACT:R-HSA-70307); Coenzyme Q10 biosynthesis (REACT:R-HSA-70307) —DECREASES→ Ubiquinone (Coenzyme Q10) (CHEBI:15361); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —DECREASES→ Factor VII activity (HP:0001905); Factor VII activity (HP:0001905) —LEADS_TO→ Congenital factor VII deficiency (HP:0001905); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —LEADS_TO→ Congenital hypothyroidism, nongoitrous, 8 (HP:0011394); F7 (HGNC:3647) —DISRUPTS→ Factor VII activity (HP:0001905). Loss-of-function mutations in TBL1X disrupt the Coenzyme Q10 biosynthesis pathway, leading to decreased levels of Ubiquinone (Coenzyme Q10). This decrease affects multiple downstream processes, including thyroid hormone synthesis (leading to congenital hypothyroidism, nongoitrous, 8) and potentially impacting the activity or synthesis of coagulation factors, including Factor VII, thus contributing to congenital factor VII deficiency. While F7 is the direct gene for Factor VII deficiency, TBL1X's role in CoQ10 biosynthesis creates a potential indirect link to coagulation factor function and thyroid hormone production.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in TBL1X that specifically impacts one disease pathway without affecting the other, or demonstration that Coenzyme Q10 levels are not significantly altered in patients with congenital factor VII deficiency due to F7 mutations.",
+        "gnomad_variant": "rs75020776"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0026731",
+        "diseaseBName": "hypothyroidism, congenital, nongoitrous, 8",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.427,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TBL1X (HGNC:11640) —DISRUPTS→ Coenzyme Q10 biosynthesis (REACT:R-HSA-70307); Coenzyme Q10 biosynthesis (REACT:R-HSA-70307) —DECREASES→ Ubiquinone (Coenzyme Q10) (CHEBI:15361); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —DECREASES→ Factor VII activity (HP:0001905); Factor VII activity (HP:0001905) —LEADS_TO→ Congenital factor VII deficiency (HP:0001905); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —LEADS_TO→ Congenital hypothyroidism, nongoitrous, 8 (HP:0011394); F7 (HGNC:3647) —DISRUPTS→ Factor VII activity (HP:0001905). Loss-of-function mutations in TBL1X disrupt the Coenzyme Q10 biosynthesis pathway, leading to decreased levels of Ubiquinone (Coenzyme Q10). This decrease affects multiple downstream processes, including thyroid hormone synthesis (leading to congenital hypothyroidism, nongoitrous, 8) and potentially impacting the activity or synthesis of coagulation factors, including Factor VII, thus contributing to congenital factor VII deficiency. While F7 is the direct gene for Factor VII deficiency, TBL1X's role in CoQ10 biosynthesis creates a potential indirect link to coagulation factor function and thyroid hormone production.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in TBL1X that specifically impacts one disease pathway without affecting the other, or demonstration that Coenzyme Q10 levels are not significantly altered in patients with congenital factor VII deficiency due to F7 mutations.",
+          "gnomad_variant": "rs75020776"
+        },
+        "translational": "Targeting the Coenzyme Q10 biosynthesis pathway or TBL1X itself could offer a novel therapeutic strategy for patients affected by both congenital factor VII deficiency and congenital hypothyroidism, nongoitrous, 8, if a common downstream mechanism is confirmed."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008393",
+      "diseaseBName": "Rubinstein-Taybi syndrome due to CREBBP mutations",
+      "fitness": 0.3886,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3711) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); CREBBP (HGNC:2420) —DISRUPTS→ Histone acetylation and gene expression regulation (GO:0016569); Histone acetylation and gene expression regulation (GO:0016569) —LEADS_TO→ Rubinstein-Taybi syndrome (MONDO:0008393); CREBBP (HGNC:2420) —BINDS→ Coagulation cascade (GO:0007596). Loss-of-function mutations in F7 directly impair the coagulation cascade, leading to congenital factor VII deficiency. CREBBP, a transcriptional co-activator, is crucial for histone acetylation and downstream gene expression. While directly involved in Rubinstein-Taybi syndrome, CREBBP's broad role in transcriptional regulation suggests it may indirectly influence the expression of genes within the coagulation cascade, including F7, thus providing a mechanistic link.",
+      "mechanism_narrative": "F7 (HGNC:3711) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); CREBBP (HGNC:2420) —DISRUPTS→ Histone acetylation and gene expression regulation (GO:0016569); Histone acetylation and gene expression regulation (GO:0016569) —LEADS_TO→ Rubinstein-Taybi syndrome (MONDO:0008393); CREBBP (HGNC:2420) —BINDS→ Coagulation cascade (GO:0007596). Loss-of-function mutations in F7 directly impair the coagulation cascade, leading to congenital factor VII deficiency. CREBBP, a transcriptional co-activator, is crucial for histone acetylation and downstream gene expression. While directly involved in Rubinstein-Taybi syndrome, CREBBP's broad role in transcriptional regulation suggests it may indirectly influence the expression of genes within the coagulation cascade, including F7, thus providing a mechanistic link.",
+      "falsification": {
+        "text": "Demonstration that CREBBP has no significant regulatory effect on F7 gene expression in relevant cell types, or that mutations in CREBBP do not alter F7 expression levels in a manner consistent with its role in congenital factor VII deficiency.",
+        "gnomad_variant": "A common variant (AF > 0.01) in F7 associated with significantly reduced F7 expression and impaired coagulation in the general population, which would suggest a less specific role for rare variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008393",
+        "diseaseBName": "Rubinstein-Taybi syndrome due to CREBBP mutations",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3886,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3711) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); CREBBP (HGNC:2420) —DISRUPTS→ Histone acetylation and gene expression regulation (GO:0016569); Histone acetylation and gene expression regulation (GO:0016569) —LEADS_TO→ Rubinstein-Taybi syndrome (MONDO:0008393); CREBBP (HGNC:2420) —BINDS→ Coagulation cascade (GO:0007596). Loss-of-function mutations in F7 directly impair the coagulation cascade, leading to congenital factor VII deficiency. CREBBP, a transcriptional co-activator, is crucial for histone acetylation and downstream gene expression. While directly involved in Rubinstein-Taybi syndrome, CREBBP's broad role in transcriptional regulation suggests it may indirectly influence the expression of genes within the coagulation cascade, including F7, thus providing a mechanistic link.",
+        "falsification": {
+          "text": "Demonstration that CREBBP has no significant regulatory effect on F7 gene expression in relevant cell types, or that mutations in CREBBP do not alter F7 expression levels in a manner consistent with its role in congenital factor VII deficiency.",
+          "gnomad_variant": "A common variant (AF > 0.01) in F7 associated with significantly reduced F7 expression and impaired coagulation in the general population, which would suggest a less specific role for rare variants."
+        },
+        "translational": "Understanding how global transcriptional regulators like CREBBP might influence the expression of specific coagulation factors could reveal novel therapeutic targets for bleeding disorders. Conversely, insights into the broader impact of coagulation factor deficiencies on developmental pathways could inform strategies for managing complex genetic syndromes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020763",
+      "diseaseBName": "Menke-Hennekam syndrome 1",
+      "fitness": 0.3886,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3777) —PRODUCES→ Factor VII (UniProtKB:P00742); Factor VII (UniProtKB:P00742) —DISRUPTS→ coagulation cascade (GO:0007596); coagulation cascade (GO:0007596) —LEADS_TO→ bleeding (HP:0001892); CREBBP (HGNC:2604) —DISRUPTS→ transcriptional coactivation (GO:0001170); transcriptional coactivation (GO:0001170) —LEADS_TO→ coactivator activity (GO:0003713); coactivator activity (GO:0003713) —LEADS_TO→ intellectual disability (HP:0001249); CREBBP (HGNC:2604) —DISRUPTS→ coagulation cascade (GO:0007596). Loss-of-function mutations in F7 lead to reduced production of functional Factor VII, impairing the coagulation cascade and resulting in bleeding. CREBBP is a transcriptional coactivator involved in numerous cellular processes, including potentially influencing genes within the coagulation pathway. Loss-of-function mutations in CREBBP disrupt its coactivator activity, leading to a broader spectrum of phenotypes including intellectual disability, and may also indirectly affect the coagulation cascade, thus converging on downstream consequences related to bleeding and developmental defects.",
+      "mechanism_narrative": "F7 (HGNC:3777) —PRODUCES→ Factor VII (UniProtKB:P00742); Factor VII (UniProtKB:P00742) —DISRUPTS→ coagulation cascade (GO:0007596); coagulation cascade (GO:0007596) —LEADS_TO→ bleeding (HP:0001892); CREBBP (HGNC:2604) —DISRUPTS→ transcriptional coactivation (GO:0001170); transcriptional coactivation (GO:0001170) —LEADS_TO→ coactivator activity (GO:0003713); coactivator activity (GO:0003713) —LEADS_TO→ intellectual disability (HP:0001249); CREBBP (HGNC:2604) —DISRUPTS→ coagulation cascade (GO:0007596). Loss-of-function mutations in F7 lead to reduced production of functional Factor VII, impairing the coagulation cascade and resulting in bleeding. CREBBP is a transcriptional coactivator involved in numerous cellular processes, including potentially influencing genes within the coagulation pathway. Loss-of-function mutations in CREBBP disrupt its coactivator activity, leading to a broader spectrum of phenotypes including intellectual disability, and may also indirectly affect the coagulation cascade, thus converging on downstream consequences related to bleeding and developmental defects.",
+      "falsification": {
+        "text": "If genetic studies demonstrate that CREBBP mutations do not significantly impact the expression or function of key genes within the coagulation cascade in relevant cell types, or if no patients with CREBBP mutations exhibit significant bleeding phenotypes beyond what would be expected from general frailty, this hypothesis would be weakened.",
+        "gnomad_variant": "The identification of common variants (AF > 0.01) in CREBBP associated with bleeding phenotypes would falsify the hypothesis that only rare loss-of-function variants are causative for this link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020763",
+        "diseaseBName": "Menke-Hennekam syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3886,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3777) —PRODUCES→ Factor VII (UniProtKB:P00742); Factor VII (UniProtKB:P00742) —DISRUPTS→ coagulation cascade (GO:0007596); coagulation cascade (GO:0007596) —LEADS_TO→ bleeding (HP:0001892); CREBBP (HGNC:2604) —DISRUPTS→ transcriptional coactivation (GO:0001170); transcriptional coactivation (GO:0001170) —LEADS_TO→ coactivator activity (GO:0003713); coactivator activity (GO:0003713) —LEADS_TO→ intellectual disability (HP:0001249); CREBBP (HGNC:2604) —DISRUPTS→ coagulation cascade (GO:0007596). Loss-of-function mutations in F7 lead to reduced production of functional Factor VII, impairing the coagulation cascade and resulting in bleeding. CREBBP is a transcriptional coactivator involved in numerous cellular processes, including potentially influencing genes within the coagulation pathway. Loss-of-function mutations in CREBBP disrupt its coactivator activity, leading to a broader spectrum of phenotypes including intellectual disability, and may also indirectly affect the coagulation cascade, thus converging on downstream consequences related to bleeding and developmental defects.",
+        "falsification": {
+          "text": "If genetic studies demonstrate that CREBBP mutations do not significantly impact the expression or function of key genes within the coagulation cascade in relevant cell types, or if no patients with CREBBP mutations exhibit significant bleeding phenotypes beyond what would be expected from general frailty, this hypothesis would be weakened.",
+          "gnomad_variant": "The identification of common variants (AF > 0.01) in CREBBP associated with bleeding phenotypes would falsify the hypothesis that only rare loss-of-function variants are causative for this link."
+        },
+        "translational": "Understanding the potential overlap in the molecular pathways regulated by CREBBP and their influence on coagulation could reveal novel therapeutic targets for bleeding disorders or inform the management of patients with Menke-Hennekam syndrome 1 who may have undiagnosed hemostatic defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011213",
+      "diseaseBName": "Pierpont syndrome",
+      "fitness": 0.3736,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3614) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27078) —DISRUPTS→ Ubiquitin-proteasome system activity (GO:0006511); Ubiquitin-proteasome system activity (GO:0006511) —LEADS_TO→ Pierpont syndrome (MONDO:0011213); TBL1XR1 (HGNC:27078) —DISRUPTS→ Coiled-coil domain containing protein complex assembly (GO:0031270); Coiled-coil domain containing protein complex assembly (GO:0031270) —LEADS_TO→ Ubiquitin-proteasome system activity (GO:0006511). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. Loss-of-function mutations in TBL1XR1 disrupt the ubiquitin-proteasome system, potentially by affecting the assembly or function of coiled-coil domain containing protein complexes, which are involved in protein degradation, ultimately leading to Pierpont syndrome.",
+      "mechanism_narrative": "F7 (HGNC:3614) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27078) —DISRUPTS→ Ubiquitin-proteasome system activity (GO:0006511); Ubiquitin-proteasome system activity (GO:0006511) —LEADS_TO→ Pierpont syndrome (MONDO:0011213); TBL1XR1 (HGNC:27078) —DISRUPTS→ Coiled-coil domain containing protein complex assembly (GO:0031270); Coiled-coil domain containing protein complex assembly (GO:0031270) —LEADS_TO→ Ubiquitin-proteasome system activity (GO:0006511). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. Loss-of-function mutations in TBL1XR1 disrupt the ubiquitin-proteasome system, potentially by affecting the assembly or function of coiled-coil domain containing protein complexes, which are involved in protein degradation, ultimately leading to Pierpont syndrome.",
+      "falsification": {
+        "text": "If genetic studies show that TBL1XR1 mutations do not impact the ubiquitin-proteasome system or coiled-coil domain protein complex assembly, or if common variants in TBL1XR1 are found at a high frequency (e.g., >1% in gnomAD) in populations without Pierpont syndrome, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011213",
+        "diseaseBName": "Pierpont syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3736,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3614) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27078) —DISRUPTS→ Ubiquitin-proteasome system activity (GO:0006511); Ubiquitin-proteasome system activity (GO:0006511) —LEADS_TO→ Pierpont syndrome (MONDO:0011213); TBL1XR1 (HGNC:27078) —DISRUPTS→ Coiled-coil domain containing protein complex assembly (GO:0031270); Coiled-coil domain containing protein complex assembly (GO:0031270) —LEADS_TO→ Ubiquitin-proteasome system activity (GO:0006511). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. Loss-of-function mutations in TBL1XR1 disrupt the ubiquitin-proteasome system, potentially by affecting the assembly or function of coiled-coil domain containing protein complexes, which are involved in protein degradation, ultimately leading to Pierpont syndrome.",
+        "falsification": {
+          "text": "If genetic studies show that TBL1XR1 mutations do not impact the ubiquitin-proteasome system or coiled-coil domain protein complex assembly, or if common variants in TBL1XR1 are found at a high frequency (e.g., >1% in gnomAD) in populations without Pierpont syndrome, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the shared mechanistic underpinnings, even if indirect, could reveal novel therapeutic targets. If TBL1XR1's role in protein degradation is broadly applicable, interventions aimed at modulating the ubiquitin-proteasome system might offer therapeutic avenues for Pierpont syndrome. Similarly, if F7 deficiency has downstream effects on protein turnover, this could inform treatment strategies beyond coagulation factor replacement."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007450",
+      "diseaseBName": "neurohypophyseal diabetes insipidus",
+      "fitness": 0.3687,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3610) —DISRUPTS→ Coagulation Cascade (GO:0007596); F7 (HGNC:3610) —DECREASES→ Thrombin (CHEBI:28994); Thrombin (CHEBI:28994) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); AVP (HGNC:704) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); AVP (HGNC:704) —DECREASES→ Vasopressin (CHEBI:17881); Vasopressin (CHEBI:17881) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Impaired water reabsorption (HP:0000005). Loss of function in F7 impairs the extrinsic pathway of the coagulation cascade, leading to congenital factor VII deficiency and a bleeding tendency. Loss of function in AVP impairs the production or signaling of vasopressin, disrupting water reabsorption in the kidneys and causing neurohypophyseal diabetes insipidus. While distinct in primary function, both cascades involve complex protein-protein interactions and signaling pathways that can be indirectly affected by cellular dysregulation or stress, potentially leading to phenotypic convergence at a higher level of biological organization.",
+      "mechanism_narrative": "F7 (HGNC:3610) —DISRUPTS→ Coagulation Cascade (GO:0007596); F7 (HGNC:3610) —DECREASES→ Thrombin (CHEBI:28994); Thrombin (CHEBI:28994) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); AVP (HGNC:704) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); AVP (HGNC:704) —DECREASES→ Vasopressin (CHEBI:17881); Vasopressin (CHEBI:17881) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Impaired water reabsorption (HP:0000005). Loss of function in F7 impairs the extrinsic pathway of the coagulation cascade, leading to congenital factor VII deficiency and a bleeding tendency. Loss of function in AVP impairs the production or signaling of vasopressin, disrupting water reabsorption in the kidneys and causing neurohypophyseal diabetes insipidus. While distinct in primary function, both cascades involve complex protein-protein interactions and signaling pathways that can be indirectly affected by cellular dysregulation or stress, potentially leading to phenotypic convergence at a higher level of biological organization.",
+      "falsification": {
+        "text": "If genetic studies reveal that patients with congenital factor VII deficiency do not exhibit any subtle or indirect alterations in water balance regulation, or patients with neurohypophyseal diabetes insipidus do not show any predisposition to bleeding under specific stress conditions, the proposed mechanistic link would be weakened.",
+        "gnomad_variant": "The presence of common variants (e.g., gnomAD allele frequency > 1%) in F7 associated with normal coagulation or in AVP associated with normal water balance would not falsify the hypothesis as it concerns rare disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007450",
+        "diseaseBName": "neurohypophyseal diabetes insipidus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3687,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3610) —DISRUPTS→ Coagulation Cascade (GO:0007596); F7 (HGNC:3610) —DECREASES→ Thrombin (CHEBI:28994); Thrombin (CHEBI:28994) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); AVP (HGNC:704) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); AVP (HGNC:704) —DECREASES→ Vasopressin (CHEBI:17881); Vasopressin (CHEBI:17881) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Impaired water reabsorption (HP:0000005). Loss of function in F7 impairs the extrinsic pathway of the coagulation cascade, leading to congenital factor VII deficiency and a bleeding tendency. Loss of function in AVP impairs the production or signaling of vasopressin, disrupting water reabsorption in the kidneys and causing neurohypophyseal diabetes insipidus. While distinct in primary function, both cascades involve complex protein-protein interactions and signaling pathways that can be indirectly affected by cellular dysregulation or stress, potentially leading to phenotypic convergence at a higher level of biological organization.",
+        "falsification": {
+          "text": "If genetic studies reveal that patients with congenital factor VII deficiency do not exhibit any subtle or indirect alterations in water balance regulation, or patients with neurohypophyseal diabetes insipidus do not show any predisposition to bleeding under specific stress conditions, the proposed mechanistic link would be weakened.",
+          "gnomad_variant": "The presence of common variants (e.g., gnomAD allele frequency > 1%) in F7 associated with normal coagulation or in AVP associated with normal water balance would not falsify the hypothesis as it concerns rare disease-causing variants."
+        },
+        "translational": "Understanding potential downstream effects or common regulatory pathways between seemingly disparate diseases like factor VII deficiency and diabetes insipidus could reveal novel therapeutic targets. For instance, if a shared downstream cellular process is identified as being vulnerable in both conditions, interventions targeting that process might offer a broader therapeutic benefit or reveal unexpected comorbidities."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020784",
+      "diseaseBName": "obsolete short sleep, familial natural, 1",
+      "fitness": 0.3531,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3612) —DISRUPTS→ Abnormal blood coagulation (HP:0001870); Abnormal blood coagulation (HP:0001870) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); BHLHE41 (HGNC:21153) —DISRUPTS→ Circadian rhythm regulation (GO:0007271); Circadian rhythm regulation (GO:0007271) —LEADS_TO→ Obsolete short sleep, familial natural, 1 (MONDO:0020784); BHLHE41 (HGNC:21153) —BINDS→ Abnormal blood coagulation (HP:0001870). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. BHLHE41 is a core component of the circadian clock; disruption of circadian rhythm regulation by BHLHE41 mutations causes familial natural short sleep. We hypothesize that BHLHE41 may also interact with or regulate components of the coagulation cascade, thus linking circadian dysregulation to bleeding disorders.",
+      "mechanism_narrative": "F7 (HGNC:3612) —DISRUPTS→ Abnormal blood coagulation (HP:0001870); Abnormal blood coagulation (HP:0001870) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); BHLHE41 (HGNC:21153) —DISRUPTS→ Circadian rhythm regulation (GO:0007271); Circadian rhythm regulation (GO:0007271) —LEADS_TO→ Obsolete short sleep, familial natural, 1 (MONDO:0020784); BHLHE41 (HGNC:21153) —BINDS→ Abnormal blood coagulation (HP:0001870). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. BHLHE41 is a core component of the circadian clock; disruption of circadian rhythm regulation by BHLHE41 mutations causes familial natural short sleep. We hypothesize that BHLHE41 may also interact with or regulate components of the coagulation cascade, thus linking circadian dysregulation to bleeding disorders.",
+      "falsification": {
+        "text": "The absence of any interaction or regulatory relationship between BHLHE41 (or its downstream effectors in circadian rhythm) and components of the coagulation cascade, as demonstrated by in vitro or in vivo studies, would falsify this hypothesis. Furthermore, the identification of a common variant in BHLHE41 with a high allele frequency (>1%) in gnomAD that is strongly associated with congenital factor VII deficiency would also challenge the exclusivity of F7 as the primary cause for disease A."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020784",
+        "diseaseBName": "obsolete short sleep, familial natural, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3531,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3612) —DISRUPTS→ Abnormal blood coagulation (HP:0001870); Abnormal blood coagulation (HP:0001870) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); BHLHE41 (HGNC:21153) —DISRUPTS→ Circadian rhythm regulation (GO:0007271); Circadian rhythm regulation (GO:0007271) —LEADS_TO→ Obsolete short sleep, familial natural, 1 (MONDO:0020784); BHLHE41 (HGNC:21153) —BINDS→ Abnormal blood coagulation (HP:0001870). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. BHLHE41 is a core component of the circadian clock; disruption of circadian rhythm regulation by BHLHE41 mutations causes familial natural short sleep. We hypothesize that BHLHE41 may also interact with or regulate components of the coagulation cascade, thus linking circadian dysregulation to bleeding disorders.",
+        "falsification": {
+          "text": "The absence of any interaction or regulatory relationship between BHLHE41 (or its downstream effectors in circadian rhythm) and components of the coagulation cascade, as demonstrated by in vitro or in vivo studies, would falsify this hypothesis. Furthermore, the identification of a common variant in BHLHE41 with a high allele frequency (>1%) in gnomAD that is strongly associated with congenital factor VII deficiency would also challenge the exclusivity of F7 as the primary cause for disease A."
+        },
+        "translational": "If BHLHE41 plays a role in regulating hemostasis, it could represent a novel therapeutic target for bleeding disorders, potentially offering a way to modulate coagulation through circadian rhythm interventions. Conversely, understanding the impact of circadian disruption on hemostasis could inform management strategies for patients with factor VII deficiency, particularly regarding timing of interventions or monitoring of coagulation status."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014842",
+      "diseaseBName": "intellectual disability, autosomal dominant 41",
+      "fitness": 0.3182,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F7 (HGNC:3611) —DISRUPTS→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27440) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-160430); Wnt signaling pathway (REACT:R-HSA-160430) —LEADS_TO→ Intellectual disability, autosomal dominant 41 (MONDO:0014842). Mutations in F7 lead to congenital factor VII deficiency. Mutations in TBL1XR1 disrupt the Wnt signaling pathway, which in turn leads to intellectual disability, autosomal dominant 41.",
+      "mechanism_narrative": "F7 (HGNC:3611) —DISRUPTS→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27440) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-160430); Wnt signaling pathway (REACT:R-HSA-160430) —LEADS_TO→ Intellectual disability, autosomal dominant 41 (MONDO:0014842). Mutations in F7 lead to congenital factor VII deficiency. Mutations in TBL1XR1 disrupt the Wnt signaling pathway, which in turn leads to intellectual disability, autosomal dominant 41.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in TBL1XR1 do not significantly impact the Wnt signaling pathway in neuronal development, or if factor VII deficiency is found to be completely independent of Wnt signaling, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1368108"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1368108": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014842",
+        "diseaseBName": "intellectual disability, autosomal dominant 41",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1368108"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1368108": 26
+        },
+        "fitness": 0.3182,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F7 (HGNC:3611) —DISRUPTS→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27440) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-160430); Wnt signaling pathway (REACT:R-HSA-160430) —LEADS_TO→ Intellectual disability, autosomal dominant 41 (MONDO:0014842). Mutations in F7 lead to congenital factor VII deficiency. Mutations in TBL1XR1 disrupt the Wnt signaling pathway, which in turn leads to intellectual disability, autosomal dominant 41.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in TBL1XR1 do not significantly impact the Wnt signaling pathway in neuronal development, or if factor VII deficiency is found to be completely independent of Wnt signaling, this hypothesis would be falsified."
+        },
+        "translational": "Understanding how TBL1XR1 dysfunction impacts Wnt signaling could reveal therapeutic targets for intellectual disability. Investigating potential downstream effects of Wnt signaling dysregulation on hematopoiesis might offer insights into factor VII deficiency, although this link is more speculative."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T10:40:59.627Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** congenital factor VII deficiency (MONDO:0009211)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 8 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | congenital plasminogen activator inhibitor type 1 deficiency (MONDO:0013227) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-1368108 |\n| 2 | hypothyroidism, congenital, nongoitrous, 8 (MONDO:0026731) | shared pathway | Tier 3 | 0.427 | Reactome:R-HSA-1368108 |\n| 3 | Rubinstein-Taybi syndrome due to CREBBP mutations (MONDO:0008393) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-1368108 |\n| 4 | Menke-Hennekam syndrome 1 (MONDO:0020763) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-1368108 |\n| 5 | Pierpont syndrome (MONDO:0011213) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-1368108 |\n| 6 | neurohypophyseal diabetes insipidus (MONDO:0007450) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-1368108 |\n| 7 | obsolete short sleep, familial natural, 1 (MONDO:0020784) | shared pathway | Tier 3 | 0.353 | Reactome:R-HSA-1368108 |\n| 8 | intellectual disability, autosomal dominant 41 (MONDO:0014842) | shared pathway | Tier 3 | 0.318 | Reactome:R-HSA-1368108 |\n\n### CANDIDATE DETAIL\n#### 1. congenital plasminogen activator inhibitor type 1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3757) —DISRUPTS→ coagulation cascade (REACT:R-HSA-449049); coagulation cascade (REACT:R-HSA-449049) —LEADS_TO→ Bleeding tendency (HP:0001892); SERPINE1 (HGNC:10564) —DISRUPTS→ fibrinolysis (REACT:R-HSA-169877); fibrinolysis (REACT:R-HSA-169877) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F7 impair the initiation of the coagulation cascade, leading to bleeding. Similarly, loss-of-function mutations in SERPINE1 impair fibrinolysis, causing a reduced ability to break down clots and potentially leading to bleeding due to dysregulated hemostasis. Both pathways are critical for maintaining hemostatic balance.\n\n**How to falsify it:** If genetic studies reveal that mutations in F7 or SERPINE1 do not consistently segregate with the bleeding phenotype in affected families, or if genetic variants in these genes with high allele frequencies (e.g., >1% in gnomAD) are found to be causal for these conditions. _(variant: rs1799963)_\n\n**Why it matters:** Understanding the shared downstream impact on hemostasis despite distinct causal genes (F7 and SERPINE1) could inform diagnostic strategies and potentially therapeutic interventions aimed at restoring hemostatic balance in patients with bleeding disorders.\n\n---\n\n#### 2. hypothyroidism, congenital, nongoitrous, 8  —  Tier 3 — Moderate / Emerging  (fitness 0.427)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** TBL1X (HGNC:11640) —DISRUPTS→ Coenzyme Q10 biosynthesis (REACT:R-HSA-70307); Coenzyme Q10 biosynthesis (REACT:R-HSA-70307) —DECREASES→ Ubiquinone (Coenzyme Q10) (CHEBI:15361); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —DECREASES→ Factor VII activity (HP:0001905); Factor VII activity (HP:0001905) —LEADS_TO→ Congenital factor VII deficiency (HP:0001905); Ubiquinone (Coenzyme Q10) (CHEBI:15361) —LEADS_TO→ Congenital hypothyroidism, nongoitrous, 8 (HP:0011394); F7 (HGNC:3647) —DISRUPTS→ Factor VII activity (HP:0001905). Loss-of-function mutations in TBL1X disrupt the Coenzyme Q10 biosynthesis pathway, leading to decreased levels of Ubiquinone (Coenzyme Q10). This decrease affects multiple downstream processes, including thyroid hormone synthesis (leading to congenital hypothyroidism, nongoitrous, 8) and potentially impacting the activity or synthesis of coagulation factors, including Factor VII, thus contributing to congenital factor VII deficiency. While F7 is the direct gene for Factor VII deficiency, TBL1X's role in CoQ10 biosynthesis creates a potential indirect link to coagulation factor function and thyroid hormone production.\n\n**How to falsify it:** Identification of a pathogenic variant in TBL1X that specifically impacts one disease pathway without affecting the other, or demonstration that Coenzyme Q10 levels are not significantly altered in patients with congenital factor VII deficiency due to F7 mutations. _(variant: rs75020776)_\n\n**Why it matters:** Targeting the Coenzyme Q10 biosynthesis pathway or TBL1X itself could offer a novel therapeutic strategy for patients affected by both congenital factor VII deficiency and congenital hypothyroidism, nongoitrous, 8, if a common downstream mechanism is confirmed.\n\n---\n\n#### 3. Rubinstein-Taybi syndrome due to CREBBP mutations  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3711) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); CREBBP (HGNC:2420) —DISRUPTS→ Histone acetylation and gene expression regulation (GO:0016569); Histone acetylation and gene expression regulation (GO:0016569) —LEADS_TO→ Rubinstein-Taybi syndrome (MONDO:0008393); CREBBP (HGNC:2420) —BINDS→ Coagulation cascade (GO:0007596). Loss-of-function mutations in F7 directly impair the coagulation cascade, leading to congenital factor VII deficiency. CREBBP, a transcriptional co-activator, is crucial for histone acetylation and downstream gene expression. While directly involved in Rubinstein-Taybi syndrome, CREBBP's broad role in transcriptional regulation suggests it may indirectly influence the expression of genes within the coagulation cascade, including F7, thus providing a mechanistic link.\n\n**How to falsify it:** Demonstration that CREBBP has no significant regulatory effect on F7 gene expression in relevant cell types, or that mutations in CREBBP do not alter F7 expression levels in a manner consistent with its role in congenital factor VII deficiency. _(variant: A common variant (AF > 0.01) in F7 associated with significantly reduced F7 expression and impaired coagulation in the general population, which would suggest a less specific role for rare variants.)_\n\n**Why it matters:** Understanding how global transcriptional regulators like CREBBP might influence the expression of specific coagulation factors could reveal novel therapeutic targets for bleeding disorders. Conversely, insights into the broader impact of coagulation factor deficiencies on developmental pathways could inform strategies for managing complex genetic syndromes.\n\n---\n\n#### 4. Menke-Hennekam syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3777) —PRODUCES→ Factor VII (UniProtKB:P00742); Factor VII (UniProtKB:P00742) —DISRUPTS→ coagulation cascade (GO:0007596); coagulation cascade (GO:0007596) —LEADS_TO→ bleeding (HP:0001892); CREBBP (HGNC:2604) —DISRUPTS→ transcriptional coactivation (GO:0001170); transcriptional coactivation (GO:0001170) —LEADS_TO→ coactivator activity (GO:0003713); coactivator activity (GO:0003713) —LEADS_TO→ intellectual disability (HP:0001249); CREBBP (HGNC:2604) —DISRUPTS→ coagulation cascade (GO:0007596). Loss-of-function mutations in F7 lead to reduced production of functional Factor VII, impairing the coagulation cascade and resulting in bleeding. CREBBP is a transcriptional coactivator involved in numerous cellular processes, including potentially influencing genes within the coagulation pathway. Loss-of-function mutations in CREBBP disrupt its coactivator activity, leading to a broader spectrum of phenotypes including intellectual disability, and may also indirectly affect the coagulation cascade, thus converging on downstream consequences related to bleeding and developmental defects.\n\n**How to falsify it:** If genetic studies demonstrate that CREBBP mutations do not significantly impact the expression or function of key genes within the coagulation cascade in relevant cell types, or if no patients with CREBBP mutations exhibit significant bleeding phenotypes beyond what would be expected from general frailty, this hypothesis would be weakened. _(variant: The identification of common variants (AF > 0.01) in CREBBP associated with bleeding phenotypes would falsify the hypothesis that only rare loss-of-function variants are causative for this link.)_\n\n**Why it matters:** Understanding the potential overlap in the molecular pathways regulated by CREBBP and their influence on coagulation could reveal novel therapeutic targets for bleeding disorders or inform the management of patients with Menke-Hennekam syndrome 1 who may have undiagnosed hemostatic defects.\n\n---\n\n#### 5. Pierpont syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3614) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27078) —DISRUPTS→ Ubiquitin-proteasome system activity (GO:0006511); Ubiquitin-proteasome system activity (GO:0006511) —LEADS_TO→ Pierpont syndrome (MONDO:0011213); TBL1XR1 (HGNC:27078) —DISRUPTS→ Coiled-coil domain containing protein complex assembly (GO:0031270); Coiled-coil domain containing protein complex assembly (GO:0031270) —LEADS_TO→ Ubiquitin-proteasome system activity (GO:0006511). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. Loss-of-function mutations in TBL1XR1 disrupt the ubiquitin-proteasome system, potentially by affecting the assembly or function of coiled-coil domain containing protein complexes, which are involved in protein degradation, ultimately leading to Pierpont syndrome.\n\n**How to falsify it:** If genetic studies show that TBL1XR1 mutations do not impact the ubiquitin-proteasome system or coiled-coil domain protein complex assembly, or if common variants in TBL1XR1 are found at a high frequency (e.g., >1% in gnomAD) in populations without Pierpont syndrome, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the shared mechanistic underpinnings, even if indirect, could reveal novel therapeutic targets. If TBL1XR1's role in protein degradation is broadly applicable, interventions aimed at modulating the ubiquitin-proteasome system might offer therapeutic avenues for Pierpont syndrome. Similarly, if F7 deficiency has downstream effects on protein turnover, this could inform treatment strategies beyond coagulation factor replacement.\n\n---\n\n#### 6. neurohypophyseal diabetes insipidus  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3610) —DISRUPTS→ Coagulation Cascade (GO:0007596); F7 (HGNC:3610) —DECREASES→ Thrombin (CHEBI:28994); Thrombin (CHEBI:28994) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); AVP (HGNC:704) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); AVP (HGNC:704) —DECREASES→ Vasopressin (CHEBI:17881); Vasopressin (CHEBI:17881) —DISRUPTS→ Vasopressin signaling pathway (GO:0007187); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450); Vasopressin signaling pathway (GO:0007187) —LEADS_TO→ Impaired water reabsorption (HP:0000005). Loss of function in F7 impairs the extrinsic pathway of the coagulation cascade, leading to congenital factor VII deficiency and a bleeding tendency. Loss of function in AVP impairs the production or signaling of vasopressin, disrupting water reabsorption in the kidneys and causing neurohypophyseal diabetes insipidus. While distinct in primary function, both cascades involve complex protein-protein interactions and signaling pathways that can be indirectly affected by cellular dysregulation or stress, potentially leading to phenotypic convergence at a higher level of biological organization.\n\n**How to falsify it:** If genetic studies reveal that patients with congenital factor VII deficiency do not exhibit any subtle or indirect alterations in water balance regulation, or patients with neurohypophyseal diabetes insipidus do not show any predisposition to bleeding under specific stress conditions, the proposed mechanistic link would be weakened. _(variant: The presence of common variants (e.g., gnomAD allele frequency > 1%) in F7 associated with normal coagulation or in AVP associated with normal water balance would not falsify the hypothesis as it concerns rare disease-causing variants.)_\n\n**Why it matters:** Understanding potential downstream effects or common regulatory pathways between seemingly disparate diseases like factor VII deficiency and diabetes insipidus could reveal novel therapeutic targets. For instance, if a shared downstream cellular process is identified as being vulnerable in both conditions, interventions targeting that process might offer a broader therapeutic benefit or reveal unexpected comorbidities.\n\n---\n\n#### 7. obsolete short sleep, familial natural, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.353)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3612) —DISRUPTS→ Abnormal blood coagulation (HP:0001870); Abnormal blood coagulation (HP:0001870) —LEADS_TO→ Congenital factor VII deficiency (MONDO:0009211); BHLHE41 (HGNC:21153) —DISRUPTS→ Circadian rhythm regulation (GO:0007271); Circadian rhythm regulation (GO:0007271) —LEADS_TO→ Obsolete short sleep, familial natural, 1 (MONDO:0020784); BHLHE41 (HGNC:21153) —BINDS→ Abnormal blood coagulation (HP:0001870). Loss-of-function mutations in F7 lead to congenital factor VII deficiency. BHLHE41 is a core component of the circadian clock; disruption of circadian rhythm regulation by BHLHE41 mutations causes familial natural short sleep. We hypothesize that BHLHE41 may also interact with or regulate components of the coagulation cascade, thus linking circadian dysregulation to bleeding disorders.\n\n**How to falsify it:** The absence of any interaction or regulatory relationship between BHLHE41 (or its downstream effectors in circadian rhythm) and components of the coagulation cascade, as demonstrated by in vitro or in vivo studies, would falsify this hypothesis. Furthermore, the identification of a common variant in BHLHE41 with a high allele frequency (>1%) in gnomAD that is strongly associated with congenital factor VII deficiency would also challenge the exclusivity of F7 as the primary cause for disease A.\n\n**Why it matters:** If BHLHE41 plays a role in regulating hemostasis, it could represent a novel therapeutic target for bleeding disorders, potentially offering a way to modulate coagulation through circadian rhythm interventions. Conversely, understanding the impact of circadian disruption on hemostasis could inform management strategies for patients with factor VII deficiency, particularly regarding timing of interventions or monitoring of coagulation status.\n\n---\n\n#### 8. intellectual disability, autosomal dominant 41  —  Tier 3 — Moderate / Emerging  (fitness 0.318)\n**Link type:** shared pathway (Reactome:R-HSA-1368108)\n\n**Proposed mechanism:** F7 (HGNC:3611) —DISRUPTS→ Congenital factor VII deficiency (MONDO:0009211); TBL1XR1 (HGNC:27440) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-160430); Wnt signaling pathway (REACT:R-HSA-160430) —LEADS_TO→ Intellectual disability, autosomal dominant 41 (MONDO:0014842). Mutations in F7 lead to congenital factor VII deficiency. Mutations in TBL1XR1 disrupt the Wnt signaling pathway, which in turn leads to intellectual disability, autosomal dominant 41.\n\n**How to falsify it:** If genetic studies reveal that mutations in TBL1XR1 do not significantly impact the Wnt signaling pathway in neuronal development, or if factor VII deficiency is found to be completely independent of Wnt signaling, this hypothesis would be falsified.\n\n**Why it matters:** Understanding how TBL1XR1 dysfunction impacts Wnt signaling could reveal therapeutic targets for intellectual disability. Investigating potential downstream effects of Wnt signaling dysregulation on hematopoiesis might offer insights into factor VII deficiency, although this link is more speculative.\n\n---"
+}

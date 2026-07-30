@@ -1,0 +1,457 @@
+{
+  "seed": {
+    "id": "MONDO:0009210",
+    "name": "congenital factor V deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 18,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0100326",
+      "diseaseBName": "Glanzmann thrombasthenia",
+      "fitness": 0.4439,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3775) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939077); Coagulation cascade (REACT:R-HSA-8939077) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); ITGB3 (HGNC:6085) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); Platelet activation (REACT:R-HSA-199932) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0100326); Coagulation cascade (REACT:R-HSA-8939077) —BINDS→ Platelet activation (REACT:R-HSA-199932). Mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Mutations in ITGA2B and ITGB3 disrupt platelet activation, leading to Glanzmann thrombasthenia. Both the coagulation cascade and platelet activation are critical, interconnected components of hemostasis, thus representing a disease module overlap.",
+      "mechanism_narrative": "F5 (HGNC:3775) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939077); Coagulation cascade (REACT:R-HSA-8939077) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); ITGB3 (HGNC:6085) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); Platelet activation (REACT:R-HSA-199932) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0100326); Coagulation cascade (REACT:R-HSA-8939077) —BINDS→ Platelet activation (REACT:R-HSA-199932). Mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Mutations in ITGA2B and ITGB3 disrupt platelet activation, leading to Glanzmann thrombasthenia. Both the coagulation cascade and platelet activation are critical, interconnected components of hemostasis, thus representing a disease module overlap.",
+      "falsification": {
+        "text": "The absence of mutations in F5, ITGA2B, or ITGB3 in individuals presenting with severe bleeding phenotypes that would otherwise be classified as congenital factor V deficiency or Glanzmann thrombasthenia, or the identification of distinct, non-overlapping molecular pathways in such cases.",
+        "gnomad_variant": "A common pathogenic variant (allele frequency > 1% in gnomAD) in F5, ITGA2B, or ITGB3 associated with severe disease would weaken the hypothesis of these specific genes being the sole drivers of the observed phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100326",
+        "diseaseBName": "Glanzmann thrombasthenia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129
+        },
+        "fitness": 0.4439,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3775) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939077); Coagulation cascade (REACT:R-HSA-8939077) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); ITGB3 (HGNC:6085) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); Platelet activation (REACT:R-HSA-199932) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0100326); Coagulation cascade (REACT:R-HSA-8939077) —BINDS→ Platelet activation (REACT:R-HSA-199932). Mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Mutations in ITGA2B and ITGB3 disrupt platelet activation, leading to Glanzmann thrombasthenia. Both the coagulation cascade and platelet activation are critical, interconnected components of hemostasis, thus representing a disease module overlap.",
+        "falsification": {
+          "text": "The absence of mutations in F5, ITGA2B, or ITGB3 in individuals presenting with severe bleeding phenotypes that would otherwise be classified as congenital factor V deficiency or Glanzmann thrombasthenia, or the identification of distinct, non-overlapping molecular pathways in such cases.",
+          "gnomad_variant": "A common pathogenic variant (allele frequency > 1% in gnomAD) in F5, ITGA2B, or ITGB3 associated with severe disease would weaken the hypothesis of these specific genes being the sole drivers of the observed phenotypes."
+        },
+        "translational": "Understanding the overlap in molecular pathways and shared phenotypic consequences between factor V deficiency and Glanzmann thrombasthenia can inform the development of targeted therapies for bleeding disorders, potentially leveraging insights from one condition to treat the other. For instance, strategies aimed at enhancing platelet aggregation or stabilizing the coagulation cascade could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013282",
+      "diseaseBName": "alpha 1-antitrypsin deficiency",
+      "fitness": 0.4236,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3589) —DISRUPTS→ coagulation cascade (REACT:R-HSA-8948271); coagulation cascade (REACT:R-HSA-8948271) —LEADS_TO→ Bleeding (HP:0001892); SERPINA1 (HGNC:10596) —DISRUPTS→ protease activity regulation (GO:0006793); protease activity regulation (GO:0006793) —LEADS_TO→ Emphysema (HP:0002089); protease activity regulation (GO:0006793) —LEADS_TO→ Liver cirrhosis (HP:0001399). Loss-of-function mutations in F5 impair the coagulation cascade, leading to bleeding. Loss-of-function mutations in SERPINA1 lead to dysregulation of protease activity, specifically reduced inhibition of proteases like neutrophil elastase, contributing to emphysema and liver disease. The convergence is at the level of protease activity dysregulation, where F5 mutations affect procoagulant proteases and SERPINA1 mutations affect antiproteases.",
+      "mechanism_narrative": "F5 (HGNC:3589) —DISRUPTS→ coagulation cascade (REACT:R-HSA-8948271); coagulation cascade (REACT:R-HSA-8948271) —LEADS_TO→ Bleeding (HP:0001892); SERPINA1 (HGNC:10596) —DISRUPTS→ protease activity regulation (GO:0006793); protease activity regulation (GO:0006793) —LEADS_TO→ Emphysema (HP:0002089); protease activity regulation (GO:0006793) —LEADS_TO→ Liver cirrhosis (HP:0001399). Loss-of-function mutations in F5 impair the coagulation cascade, leading to bleeding. Loss-of-function mutations in SERPINA1 lead to dysregulation of protease activity, specifically reduced inhibition of proteases like neutrophil elastase, contributing to emphysema and liver disease. The convergence is at the level of protease activity dysregulation, where F5 mutations affect procoagulant proteases and SERPINA1 mutations affect antiproteases.",
+      "falsification": {
+        "text": "The absence of mutations in F5 in individuals with severe bleeding phenotypes, or the absence of mutations in SERPINA1 in individuals with lung or liver disease, would challenge this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the genetic architecture or molecular pathways affected by these two conditions beyond the broad categories of protease function, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-5694530",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-204005"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-5694530": 33,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-204005": 69,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013282",
+        "diseaseBName": "alpha 1-antitrypsin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-5694530",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-204005"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-5694530": 33,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-204005": 69,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.4236,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3589) —DISRUPTS→ coagulation cascade (REACT:R-HSA-8948271); coagulation cascade (REACT:R-HSA-8948271) —LEADS_TO→ Bleeding (HP:0001892); SERPINA1 (HGNC:10596) —DISRUPTS→ protease activity regulation (GO:0006793); protease activity regulation (GO:0006793) —LEADS_TO→ Emphysema (HP:0002089); protease activity regulation (GO:0006793) —LEADS_TO→ Liver cirrhosis (HP:0001399). Loss-of-function mutations in F5 impair the coagulation cascade, leading to bleeding. Loss-of-function mutations in SERPINA1 lead to dysregulation of protease activity, specifically reduced inhibition of proteases like neutrophil elastase, contributing to emphysema and liver disease. The convergence is at the level of protease activity dysregulation, where F5 mutations affect procoagulant proteases and SERPINA1 mutations affect antiproteases.",
+        "falsification": {
+          "text": "The absence of mutations in F5 in individuals with severe bleeding phenotypes, or the absence of mutations in SERPINA1 in individuals with lung or liver disease, would challenge this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the genetic architecture or molecular pathways affected by these two conditions beyond the broad categories of protease function, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the distinct roles of F5 and SERPINA1 in protease regulation highlights the complexity of hemostasis and protease balance. While Factor V deficiency is managed with clotting factor replacement, Alpha-1-antitrypsin deficiency management focuses on enzyme replacement therapy and lung protection. Identifying shared mechanistic principles, even if mediated by different genes, could potentially inform novel therapeutic strategies for protease-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0971008",
+      "diseaseBName": "amyloidosis, hereditary systemic 3",
+      "fitness": 0.4138,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3608) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); APOA1 (HGNC:610) —PRODUCES→ Apolipoprotein A-I (apoA-I) (UniProtKB:P02647); Apolipoprotein A-I (apoA-I) (UniProtKB:P02647) —DISRUPTS→ Reverse Cholesterol Transport (GO:0046960); Reverse Cholesterol Transport (GO:0046960) —DECREASES→ Amyloid fibril precursor proteins (NA); Amyloid fibril precursor proteins (NA) —LEADS_TO→ Systemic amyloidosis (HP:0002279). Mutations in F5 lead to a dysfunctional coagulation cascade and bleeding tendency. Mutations in APOA1 lead to dysfunctional apoA-I, impairing reverse cholesterol transport and potentially leading to the accumulation of amyloidogenic proteins and systemic amyloidosis. The convergence is proposed through the role of apoA-I in lipid metabolism and its potential influence on the clearance or processing of proteins that can form amyloid.",
+      "mechanism_narrative": "F5 (HGNC:3608) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); APOA1 (HGNC:610) —PRODUCES→ Apolipoprotein A-I (apoA-I) (UniProtKB:P02647); Apolipoprotein A-I (apoA-I) (UniProtKB:P02647) —DISRUPTS→ Reverse Cholesterol Transport (GO:0046960); Reverse Cholesterol Transport (GO:0046960) —DECREASES→ Amyloid fibril precursor proteins (NA); Amyloid fibril precursor proteins (NA) —LEADS_TO→ Systemic amyloidosis (HP:0002279). Mutations in F5 lead to a dysfunctional coagulation cascade and bleeding tendency. Mutations in APOA1 lead to dysfunctional apoA-I, impairing reverse cholesterol transport and potentially leading to the accumulation of amyloidogenic proteins and systemic amyloidosis. The convergence is proposed through the role of apoA-I in lipid metabolism and its potential influence on the clearance or processing of proteins that can form amyloid.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in APOA1 do not influence the accumulation of amyloidogenic proteins or that F5 mutations have no impact on systemic processes beyond coagulation, this hypothesis would be falsified. Additionally, if individuals with compound heterozygosity for F5 and APOA1 mutations do not display a combined or exacerbated phenotype, it would weaken the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0971008",
+        "diseaseBName": "amyloidosis, hereditary systemic 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.4138,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3608) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); APOA1 (HGNC:610) —PRODUCES→ Apolipoprotein A-I (apoA-I) (UniProtKB:P02647); Apolipoprotein A-I (apoA-I) (UniProtKB:P02647) —DISRUPTS→ Reverse Cholesterol Transport (GO:0046960); Reverse Cholesterol Transport (GO:0046960) —DECREASES→ Amyloid fibril precursor proteins (NA); Amyloid fibril precursor proteins (NA) —LEADS_TO→ Systemic amyloidosis (HP:0002279). Mutations in F5 lead to a dysfunctional coagulation cascade and bleeding tendency. Mutations in APOA1 lead to dysfunctional apoA-I, impairing reverse cholesterol transport and potentially leading to the accumulation of amyloidogenic proteins and systemic amyloidosis. The convergence is proposed through the role of apoA-I in lipid metabolism and its potential influence on the clearance or processing of proteins that can form amyloid.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in APOA1 do not influence the accumulation of amyloidogenic proteins or that F5 mutations have no impact on systemic processes beyond coagulation, this hypothesis would be falsified. Additionally, if individuals with compound heterozygosity for F5 and APOA1 mutations do not display a combined or exacerbated phenotype, it would weaken the proposed link."
+        },
+        "translational": "Understanding a potential link between coagulation factors and amyloidogenesis, mediated by APOA1, could open new avenues for therapeutic intervention. For instance, modulating APOA1 activity or related pathways might offer a dual benefit in managing both bleeding disorders and specific types of amyloidosis. This could lead to novel treatment strategies for patients suffering from these rare conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980724",
+      "diseaseBName": "fetomaternal alloimmune thrombocytopenia 2",
+      "fitness": 0.3889,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3606) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-5693417); Coagulation cascade (REACT:R-HSA-5693417) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6060) —DISRUPTS→ Platelet activation (REACT:R-HSA-6784226); Platelet activation (REACT:R-HSA-6784226) —LEADS_TO→ Thrombocytopenia (HP:0001873); Thrombocytopenia (HP:0001873) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in F5 lead to a dysfunctional coagulation cascade, resulting in congenital factor V deficiency. In fetomaternal alloimmune thrombocytopenia 2, maternal antibodies target the ITGA2B protein (part of the integrin alpha-IIb beta-3 complex), disrupting normal platelet activation and leading to fetal thrombocytopenia.",
+      "mechanism_narrative": "F5 (HGNC:3606) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-5693417); Coagulation cascade (REACT:R-HSA-5693417) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6060) —DISRUPTS→ Platelet activation (REACT:R-HSA-6784226); Platelet activation (REACT:R-HSA-6784226) —LEADS_TO→ Thrombocytopenia (HP:0001873); Thrombocytopenia (HP:0001873) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in F5 lead to a dysfunctional coagulation cascade, resulting in congenital factor V deficiency. In fetomaternal alloimmune thrombocytopenia 2, maternal antibodies target the ITGA2B protein (part of the integrin alpha-IIb beta-3 complex), disrupting normal platelet activation and leading to fetal thrombocytopenia.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if a significant proportion of individuals with congenital factor V deficiency (MONDO:0009210) do not exhibit defects in the coagulation cascade, or if fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724) is found to be caused by antibodies targeting entirely different platelet glycoproteins not involved in the ITGA2B pathway.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980724",
+        "diseaseBName": "fetomaternal alloimmune thrombocytopenia 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129
+        },
+        "fitness": 0.3889,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3606) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-5693417); Coagulation cascade (REACT:R-HSA-5693417) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6060) —DISRUPTS→ Platelet activation (REACT:R-HSA-6784226); Platelet activation (REACT:R-HSA-6784226) —LEADS_TO→ Thrombocytopenia (HP:0001873); Thrombocytopenia (HP:0001873) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in F5 lead to a dysfunctional coagulation cascade, resulting in congenital factor V deficiency. In fetomaternal alloimmune thrombocytopenia 2, maternal antibodies target the ITGA2B protein (part of the integrin alpha-IIb beta-3 complex), disrupting normal platelet activation and leading to fetal thrombocytopenia.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if a significant proportion of individuals with congenital factor V deficiency (MONDO:0009210) do not exhibit defects in the coagulation cascade, or if fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724) is found to be caused by antibodies targeting entirely different platelet glycoproteins not involved in the ITGA2B pathway.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared involvement of coagulation and platelet activation pathways, despite different genetic origins, could inform therapeutic strategies for bleeding disorders. For instance, shared pathway modulation might offer novel treatment avenues for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010119",
+      "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+      "fitness": 0.3809,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3797) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6044) —DISRUPTS→ Platelet aggregation (GO:0007541); ITGB3 (HGNC:6047) —DISRUPTS→ Platelet aggregation (GO:0007541); Platelet aggregation (GO:0007541) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0010119); Coagulation cascade (GO:0007596) —BINDS→ Platelet aggregation (GO:0007541). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in ITGA2B and ITGB3 disrupt platelet aggregation. The coagulation cascade and platelet aggregation are tightly integrated processes, with activated platelets playing a crucial role in amplifying coagulation, and thrombin generated via the cascade promoting platelet activation. Thus, defects in either pathway impact the overall hemostatic process, converging on impaired clot formation and bleeding phenotypes.",
+      "mechanism_narrative": "F5 (HGNC:3797) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6044) —DISRUPTS→ Platelet aggregation (GO:0007541); ITGB3 (HGNC:6047) —DISRUPTS→ Platelet aggregation (GO:0007541); Platelet aggregation (GO:0007541) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0010119); Coagulation cascade (GO:0007596) —BINDS→ Platelet aggregation (GO:0007541). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in ITGA2B and ITGB3 disrupt platelet aggregation. The coagulation cascade and platelet aggregation are tightly integrated processes, with activated platelets playing a crucial role in amplifying coagulation, and thrombin generated via the cascade promoting platelet activation. Thus, defects in either pathway impact the overall hemostatic process, converging on impaired clot formation and bleeding phenotypes.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in F5, ITGA2B, or ITGB3 with a minor allele frequency greater than 1% in gnomAD would cast doubt on their roles as rare causal genes for these severe bleeding disorders.",
+        "gnomad_variant": "rs1800595"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010119",
+        "diseaseBName": "obsolete Glanzmann's thrombasthenia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129
+        },
+        "fitness": 0.3809,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3797) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6044) —DISRUPTS→ Platelet aggregation (GO:0007541); ITGB3 (HGNC:6047) —DISRUPTS→ Platelet aggregation (GO:0007541); Platelet aggregation (GO:0007541) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0010119); Coagulation cascade (GO:0007596) —BINDS→ Platelet aggregation (GO:0007541). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in ITGA2B and ITGB3 disrupt platelet aggregation. The coagulation cascade and platelet aggregation are tightly integrated processes, with activated platelets playing a crucial role in amplifying coagulation, and thrombin generated via the cascade promoting platelet activation. Thus, defects in either pathway impact the overall hemostatic process, converging on impaired clot formation and bleeding phenotypes.",
+        "falsification": {
+          "text": "The identification of a pathogenic variant in F5, ITGA2B, or ITGB3 with a minor allele frequency greater than 1% in gnomAD would cast doubt on their roles as rare causal genes for these severe bleeding disorders.",
+          "gnomad_variant": "rs1800595"
+        },
+        "translational": "Understanding the shared mechanistic overlap between congenital factor V deficiency and Glanzmann thrombasthenia can inform therapeutic strategies. For instance, interventions aimed at improving platelet function or enhancing coagulation factor activity might offer synergistic benefits for patients with combined or complex bleeding disorders. Furthermore, the shared pathways highlight potential targets for novel anticoagulant or anti-hemorrhagic therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859238",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+      "fitness": 0.3681,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3806) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); coagulation cascade (REACT:R-HSA-5692124) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:610) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111); lipoprotein metabolism (REACT:R-HSA-1435111) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); F5 (HGNC:3806) —DISRUPTS→ Thrombin (CHEBI:28244); Thrombin (CHEBI:28244) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); lipoprotein metabolism (REACT:R-HSA-1435111) —DECREASES→ HDL cholesterol (CHEBI:17478); HDL cholesterol (CHEBI:17478) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); coagulation cascade (REACT:R-HSA-5692124) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 impair lipoprotein metabolism and reduce HDL cholesterol levels, causing hypoalphalipoproteinemia. It is hypothesized that dysregulation in the coagulation cascade can indirectly impact lipoprotein metabolism, possibly through altered thrombin activity or inflammatory responses, thus creating a mechanistic link between these two conditions.",
+      "mechanism_narrative": "F5 (HGNC:3806) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); coagulation cascade (REACT:R-HSA-5692124) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:610) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111); lipoprotein metabolism (REACT:R-HSA-1435111) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); F5 (HGNC:3806) —DISRUPTS→ Thrombin (CHEBI:28244); Thrombin (CHEBI:28244) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); lipoprotein metabolism (REACT:R-HSA-1435111) —DECREASES→ HDL cholesterol (CHEBI:17478); HDL cholesterol (CHEBI:17478) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); coagulation cascade (REACT:R-HSA-5692124) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 impair lipoprotein metabolism and reduce HDL cholesterol levels, causing hypoalphalipoproteinemia. It is hypothesized that dysregulation in the coagulation cascade can indirectly impact lipoprotein metabolism, possibly through altered thrombin activity or inflammatory responses, thus creating a mechanistic link between these two conditions.",
+      "falsification": {
+        "text": "Demonstration that F5 deficiency has no discernible impact on lipoprotein metabolism or coagulation parameters in patients with diagnosed hypoalphalipoproteinemia, or vice-versa, through large-scale cohort studies or mechanistic experiments.",
+        "gnomad_variant": "A common, highly penetrant loss-of-function variant in F5 or APOA1 with a minor allele frequency >1% in gnomAD would challenge the rarity assumption for these disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859238",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2, intermediate",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3681,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3806) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); coagulation cascade (REACT:R-HSA-5692124) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:610) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111); lipoprotein metabolism (REACT:R-HSA-1435111) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); F5 (HGNC:3806) —DISRUPTS→ Thrombin (CHEBI:28244); Thrombin (CHEBI:28244) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); lipoprotein metabolism (REACT:R-HSA-1435111) —DECREASES→ HDL cholesterol (CHEBI:17478); HDL cholesterol (CHEBI:17478) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); coagulation cascade (REACT:R-HSA-5692124) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 impair lipoprotein metabolism and reduce HDL cholesterol levels, causing hypoalphalipoproteinemia. It is hypothesized that dysregulation in the coagulation cascade can indirectly impact lipoprotein metabolism, possibly through altered thrombin activity or inflammatory responses, thus creating a mechanistic link between these two conditions.",
+        "falsification": {
+          "text": "Demonstration that F5 deficiency has no discernible impact on lipoprotein metabolism or coagulation parameters in patients with diagnosed hypoalphalipoproteinemia, or vice-versa, through large-scale cohort studies or mechanistic experiments.",
+          "gnomad_variant": "A common, highly penetrant loss-of-function variant in F5 or APOA1 with a minor allele frequency >1% in gnomAD would challenge the rarity assumption for these disease-causing variants."
+        },
+        "translational": "Understanding this mechanistic link could reveal novel therapeutic targets. For instance, if coagulation defects exacerbate lipid dysregulation, anticoagulation or pro-coagulant therapies might be considered in managing hypoalphalipoproteinemia, or vice-versa, lipid-modulating agents could potentially influence coagulation in factor V deficient individuals. This could lead to combination therapies for improved patient outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007088",
+      "diseaseBName": "Alzheimer disease type 1",
+      "fitness": 0.358,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3776) —PRODUCES→ Factor V (UniProt:P00942); Factor V (UniProt:P00942) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939120); Coagulation cascade (REACT:R-HSA-8939120) —LEADS_TO→ Bleeding tendency (HP:0001892); APP (HGNC:617) —DISRUPTS→ Amyloidogenic processing of APP (REACT:R-HSA-1907780); Amyloidogenic processing of APP (REACT:R-HSA-1907780) —PRODUCES→ Amyloid beta peptide (CHEBI:57308); Amyloid beta peptide (CHEBI:57308) —DISRUPTS→ Extracellular matrix organization (REACT:R-HSA-162440); Extracellular matrix organization (REACT:R-HSA-162440) —LEADS_TO→ Alzheimer disease (HP:0002187). Loss-of-function in F5 leads to a dysfunctional coagulation cascade and bleeding tendency. Gain-of-function or increased expression of APP leads to amyloidogenic processing, producing amyloid beta peptides that disrupt extracellular matrix organization, ultimately contributing to Alzheimer disease.",
+      "mechanism_narrative": "F5 (HGNC:3776) —PRODUCES→ Factor V (UniProt:P00942); Factor V (UniProt:P00942) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939120); Coagulation cascade (REACT:R-HSA-8939120) —LEADS_TO→ Bleeding tendency (HP:0001892); APP (HGNC:617) —DISRUPTS→ Amyloidogenic processing of APP (REACT:R-HSA-1907780); Amyloidogenic processing of APP (REACT:R-HSA-1907780) —PRODUCES→ Amyloid beta peptide (CHEBI:57308); Amyloid beta peptide (CHEBI:57308) —DISRUPTS→ Extracellular matrix organization (REACT:R-HSA-162440); Extracellular matrix organization (REACT:R-HSA-162440) —LEADS_TO→ Alzheimer disease (HP:0002187). Loss-of-function in F5 leads to a dysfunctional coagulation cascade and bleeding tendency. Gain-of-function or increased expression of APP leads to amyloidogenic processing, producing amyloid beta peptides that disrupt extracellular matrix organization, ultimately contributing to Alzheimer disease.",
+      "falsification": {
+        "text": "Demonstration that the downstream pathways disrupted by Factor V deficiency and APP dysfunction (amyloid beta production) are topologically and functionally entirely separate, with no shared downstream effectors or pathways, such as shared mechanisms of cellular clearance or inflammatory response activation.",
+        "gnomad_variant": "rs1799963"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-9769739": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007088",
+        "diseaseBName": "Alzheimer disease type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-9769739": 48
+        },
+        "fitness": 0.358,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3776) —PRODUCES→ Factor V (UniProt:P00942); Factor V (UniProt:P00942) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939120); Coagulation cascade (REACT:R-HSA-8939120) —LEADS_TO→ Bleeding tendency (HP:0001892); APP (HGNC:617) —DISRUPTS→ Amyloidogenic processing of APP (REACT:R-HSA-1907780); Amyloidogenic processing of APP (REACT:R-HSA-1907780) —PRODUCES→ Amyloid beta peptide (CHEBI:57308); Amyloid beta peptide (CHEBI:57308) —DISRUPTS→ Extracellular matrix organization (REACT:R-HSA-162440); Extracellular matrix organization (REACT:R-HSA-162440) —LEADS_TO→ Alzheimer disease (HP:0002187). Loss-of-function in F5 leads to a dysfunctional coagulation cascade and bleeding tendency. Gain-of-function or increased expression of APP leads to amyloidogenic processing, producing amyloid beta peptides that disrupt extracellular matrix organization, ultimately contributing to Alzheimer disease.",
+        "falsification": {
+          "text": "Demonstration that the downstream pathways disrupted by Factor V deficiency and APP dysfunction (amyloid beta production) are topologically and functionally entirely separate, with no shared downstream effectors or pathways, such as shared mechanisms of cellular clearance or inflammatory response activation.",
+          "gnomad_variant": "rs1799963"
+        },
+        "translational": "Understanding the distinct roles and potential downstream overlaps of Factor V and APP dysfunction could inform therapeutic strategies for both rare bleeding disorders and neurodegenerative diseases by identifying common cellular pathways that can be targeted."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032766",
+      "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+      "fitness": 0.3538,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "F5 (HGNC:3777) —DISRUPTS→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:716) —DISRUPTS→ cholesterol metabolism (GO:0006695); cholesterol metabolism (GO:0006695) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2 (MONDO:0032766). Loss-of-function mutations in F5 lead to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 disrupt cholesterol metabolism, leading to hypoalphalipoproteinemia. The convergence occurs at the level of overall cellular homeostasis, where dysregulation in both coagulation and lipid metabolism can contribute to a shared phenotype of increased risk for cardiovascular events, though not explicitly represented in the direct causal chains to the primary disease phenotypes.",
+      "mechanism_narrative": "F5 (HGNC:3777) —DISRUPTS→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:716) —DISRUPTS→ cholesterol metabolism (GO:0006695); cholesterol metabolism (GO:0006695) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2 (MONDO:0032766). Loss-of-function mutations in F5 lead to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 disrupt cholesterol metabolism, leading to hypoalphalipoproteinemia. The convergence occurs at the level of overall cellular homeostasis, where dysregulation in both coagulation and lipid metabolism can contribute to a shared phenotype of increased risk for cardiovascular events, though not explicitly represented in the direct causal chains to the primary disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in F5 do not affect coagulation factor V levels or activity, or that variants in APOA1 do not alter HDL cholesterol levels.",
+        "gnomad_variant": "No common variants in F5 or APOA1 are expected to cause these severe rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032766",
+        "diseaseBName": "hypoalphalipoproteinemia, primary, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3538,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "F5 (HGNC:3777) —DISRUPTS→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:716) —DISRUPTS→ cholesterol metabolism (GO:0006695); cholesterol metabolism (GO:0006695) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2 (MONDO:0032766). Loss-of-function mutations in F5 lead to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 disrupt cholesterol metabolism, leading to hypoalphalipoproteinemia. The convergence occurs at the level of overall cellular homeostasis, where dysregulation in both coagulation and lipid metabolism can contribute to a shared phenotype of increased risk for cardiovascular events, though not explicitly represented in the direct causal chains to the primary disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in F5 do not affect coagulation factor V levels or activity, or that variants in APOA1 do not alter HDL cholesterol levels.",
+          "gnomad_variant": "No common variants in F5 or APOA1 are expected to cause these severe rare diseases."
+        },
+        "translational": "Understanding the interplay between coagulation and lipid metabolism could reveal novel therapeutic targets for managing complex cardiovascular risks in patients with these rare genetic disorders. For instance, modulating lipid metabolism might indirectly impact coagulation pathways or vice versa."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011583",
+      "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+      "fitness": 0.336,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in F5 (unknown) —DISRUPTS→ F5 (HGNC:3797); F5 (HGNC:3797) —DISRUPTS→ coagulation cascade (REACT:R-HSA-69621); coagulation cascade (REACT:R-HSA-69621) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); Gain-of-function variant in APP (unknown) —DISRUPTS→ APP (HGNC:652); APP (HGNC:652) —DISRUPTS→ amyloid precursor protein processing (GO:0001540); amyloid precursor protein processing (GO:0001540) —PRODUCES→ Amyloid beta peptide (CHEBI:58211); Amyloid beta peptide (CHEBI:58211) —DISRUPTS→ Cerebrovascular integrity (unknown); Cerebrovascular integrity (unknown) —LEADS_TO→ Cerebral amyloid angiopathy, APP-related (MONDO:0011583). Loss-of-function mutations in F5 impair the coagulation cascade, leading to congenital factor V deficiency. Gain-of-function mutations in APP lead to aberrant amyloid precursor protein processing, generating amyloid beta peptides that disrupt cerebrovascular integrity, causing cerebral amyloid angiopathy. The convergence occurs at the level of disruption to vascular integrity, a shared downstream consequence of dysregulated protein homeostasis and hemostasis.",
+      "mechanism_narrative": "Loss-of-function variant in F5 (unknown) —DISRUPTS→ F5 (HGNC:3797); F5 (HGNC:3797) —DISRUPTS→ coagulation cascade (REACT:R-HSA-69621); coagulation cascade (REACT:R-HSA-69621) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); Gain-of-function variant in APP (unknown) —DISRUPTS→ APP (HGNC:652); APP (HGNC:652) —DISRUPTS→ amyloid precursor protein processing (GO:0001540); amyloid precursor protein processing (GO:0001540) —PRODUCES→ Amyloid beta peptide (CHEBI:58211); Amyloid beta peptide (CHEBI:58211) —DISRUPTS→ Cerebrovascular integrity (unknown); Cerebrovascular integrity (unknown) —LEADS_TO→ Cerebral amyloid angiopathy, APP-related (MONDO:0011583). Loss-of-function mutations in F5 impair the coagulation cascade, leading to congenital factor V deficiency. Gain-of-function mutations in APP lead to aberrant amyloid precursor protein processing, generating amyloid beta peptides that disrupt cerebrovascular integrity, causing cerebral amyloid angiopathy. The convergence occurs at the level of disruption to vascular integrity, a shared downstream consequence of dysregulated protein homeostasis and hemostasis.",
+      "falsification": {
+        "text": "Absence of any evidence linking alterations in APP processing or amyloid-beta deposition to increased risk or severity of bleeding diatheses, or conversely, demonstration that F5 deficiency has no impact on amyloid precursor protein metabolism or amyloid deposition in the vasculature.",
+        "gnomad_variant": "The absence of pathogenic variants in F5 and APP in populations with a high prevalence of either disease would weaken the genetic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-8957275"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125,
+        "Reactome:R-HSA-9769739": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011583",
+        "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608",
+          "Reactome:R-HSA-8957275"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125,
+          "Reactome:R-HSA-9769739": 48
+        },
+        "fitness": 0.336,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in F5 (unknown) —DISRUPTS→ F5 (HGNC:3797); F5 (HGNC:3797) —DISRUPTS→ coagulation cascade (REACT:R-HSA-69621); coagulation cascade (REACT:R-HSA-69621) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); Gain-of-function variant in APP (unknown) —DISRUPTS→ APP (HGNC:652); APP (HGNC:652) —DISRUPTS→ amyloid precursor protein processing (GO:0001540); amyloid precursor protein processing (GO:0001540) —PRODUCES→ Amyloid beta peptide (CHEBI:58211); Amyloid beta peptide (CHEBI:58211) —DISRUPTS→ Cerebrovascular integrity (unknown); Cerebrovascular integrity (unknown) —LEADS_TO→ Cerebral amyloid angiopathy, APP-related (MONDO:0011583). Loss-of-function mutations in F5 impair the coagulation cascade, leading to congenital factor V deficiency. Gain-of-function mutations in APP lead to aberrant amyloid precursor protein processing, generating amyloid beta peptides that disrupt cerebrovascular integrity, causing cerebral amyloid angiopathy. The convergence occurs at the level of disruption to vascular integrity, a shared downstream consequence of dysregulated protein homeostasis and hemostasis.",
+        "falsification": {
+          "text": "Absence of any evidence linking alterations in APP processing or amyloid-beta deposition to increased risk or severity of bleeding diatheses, or conversely, demonstration that F5 deficiency has no impact on amyloid precursor protein metabolism or amyloid deposition in the vasculature.",
+          "gnomad_variant": "The absence of pathogenic variants in F5 and APP in populations with a high prevalence of either disease would weaken the genetic link."
+        },
+        "translational": "Understanding this mechanistic link could reveal novel therapeutic targets. For instance, strategies aimed at improving cerebrovascular integrity or modulating APP processing might offer benefits for patients with factor V deficiency experiencing bleeding complications, and vice versa, strategies to enhance coagulation could potentially mitigate some risks associated with CAA."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008552",
+      "diseaseBName": "platelet-type bleeding disorder 16",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Loss-of-function variants in F5 (null) —DISRUPTS→ Factor V (HGNC:3797); Factor V (HGNC:3797) —LEADS_TO→ Coagulation cascade (REACT:R-HSA-8939412); Coagulation cascade (REACT:R-HSA-8939412) —LEADS_TO→ Bleeding tendency (HP:0001892); Loss-of-function variants in ITGA2B (null) —DISRUPTS→ Integrin alpha-IIb (HGNC:6006); Integrin alpha-IIb (HGNC:6006) —LEADS_TO→ Platelet aggregation (REACT:R-HSA-5690074); Platelet aggregation (REACT:R-HSA-5690074) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F5 lead to a dysfunctional coagulation cascade, resulting in a bleeding tendency. Similarly, loss-of-function mutations in ITGA2B impair platelet aggregation, also leading to a bleeding tendency. Both diseases converge on the phenotype of bleeding tendency due to disruptions in distinct but functionally related hemostatic processes.",
+      "mechanism_narrative": "Loss-of-function variants in F5 (null) —DISRUPTS→ Factor V (HGNC:3797); Factor V (HGNC:3797) —LEADS_TO→ Coagulation cascade (REACT:R-HSA-8939412); Coagulation cascade (REACT:R-HSA-8939412) —LEADS_TO→ Bleeding tendency (HP:0001892); Loss-of-function variants in ITGA2B (null) —DISRUPTS→ Integrin alpha-IIb (HGNC:6006); Integrin alpha-IIb (HGNC:6006) —LEADS_TO→ Platelet aggregation (REACT:R-HSA-5690074); Platelet aggregation (REACT:R-HSA-5690074) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F5 lead to a dysfunctional coagulation cascade, resulting in a bleeding tendency. Similarly, loss-of-function mutations in ITGA2B impair platelet aggregation, also leading to a bleeding tendency. Both diseases converge on the phenotype of bleeding tendency due to disruptions in distinct but functionally related hemostatic processes.",
+      "falsification": {
+        "text": "If mutations in F5 or ITGA2B are found to be benign or associated with completely unrelated phenotypes in large population databases like gnomAD, this hypothesis would be falsified.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-114608": 129
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008552",
+        "diseaseBName": "platelet-type bleeding disorder 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-114608": 129
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variants in F5 (null) —DISRUPTS→ Factor V (HGNC:3797); Factor V (HGNC:3797) —LEADS_TO→ Coagulation cascade (REACT:R-HSA-8939412); Coagulation cascade (REACT:R-HSA-8939412) —LEADS_TO→ Bleeding tendency (HP:0001892); Loss-of-function variants in ITGA2B (null) —DISRUPTS→ Integrin alpha-IIb (HGNC:6006); Integrin alpha-IIb (HGNC:6006) —LEADS_TO→ Platelet aggregation (REACT:R-HSA-5690074); Platelet aggregation (REACT:R-HSA-5690074) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F5 lead to a dysfunctional coagulation cascade, resulting in a bleeding tendency. Similarly, loss-of-function mutations in ITGA2B impair platelet aggregation, also leading to a bleeding tendency. Both diseases converge on the phenotype of bleeding tendency due to disruptions in distinct but functionally related hemostatic processes.",
+        "falsification": {
+          "text": "If mutations in F5 or ITGA2B are found to be benign or associated with completely unrelated phenotypes in large population databases like gnomAD, this hypothesis would be falsified.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the distinct yet related roles of F5 and ITGA2B in hemostasis can inform differential diagnosis and potentially lead to targeted therapies for bleeding disorders. For example, therapies aimed at enhancing platelet function might be relevant for ITGA2B-related disorders, while procoagulant therapies could be considered for F5 deficiencies."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T10:39:49.284Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** congenital factor V deficiency (MONDO:0009210)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 18 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Glanzmann thrombasthenia (MONDO:0100326) | shared pathway | Tier 3 | 0.444 | Reactome:R-HSA-114608 |\n| 2 | alpha 1-antitrypsin deficiency (MONDO:0013282) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-114608, Reactome:R-HSA-5694530, Reactome:R-HSA-8957275, Reactome:R-HSA-204005 |\n| 3 | amyloidosis, hereditary systemic 3 (MONDO:0971008) | shared pathway | Tier 3 | 0.414 | Reactome:R-HSA-114608, Reactome:R-HSA-8957275 |\n| 4 | fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-114608 |\n| 5 | obsolete Glanzmann's thrombasthenia (MONDO:0010119) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-114608 |\n| 6 | hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238) | shared pathway | Tier 3 | 0.368 | Reactome:R-HSA-114608, Reactome:R-HSA-8957275 |\n| 7 | Alzheimer disease type 1 (MONDO:0007088) | shared pathway | Tier 3 | 0.358 | Reactome:R-HSA-114608, Reactome:R-HSA-8957275 |\n| 8 | hypoalphalipoproteinemia, primary, 2 (MONDO:0032766) | shared pathway | Tier 3 | 0.354 | Reactome:R-HSA-114608, Reactome:R-HSA-8957275 |\n| 9 | cerebral amyloid angiopathy, APP-related (MONDO:0011583) | shared pathway | Tier 3 | 0.336 | Reactome:R-HSA-114608, Reactome:R-HSA-8957275 |\n| 10 | platelet-type bleeding disorder 16 (MONDO:0008552) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-114608 |\n\n### CANDIDATE DETAIL\n#### 1. Glanzmann thrombasthenia  —  Tier 3 — Moderate / Emerging  (fitness 0.444)\n**Link type:** shared pathway (Reactome:R-HSA-114608)\n\n**Proposed mechanism:** F5 (HGNC:3775) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939077); Coagulation cascade (REACT:R-HSA-8939077) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6094) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); ITGB3 (HGNC:6085) —DISRUPTS→ Platelet activation (REACT:R-HSA-199932); Platelet activation (REACT:R-HSA-199932) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0100326); Coagulation cascade (REACT:R-HSA-8939077) —BINDS→ Platelet activation (REACT:R-HSA-199932). Mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Mutations in ITGA2B and ITGB3 disrupt platelet activation, leading to Glanzmann thrombasthenia. Both the coagulation cascade and platelet activation are critical, interconnected components of hemostasis, thus representing a disease module overlap.\n\n**How to falsify it:** The absence of mutations in F5, ITGA2B, or ITGB3 in individuals presenting with severe bleeding phenotypes that would otherwise be classified as congenital factor V deficiency or Glanzmann thrombasthenia, or the identification of distinct, non-overlapping molecular pathways in such cases. _(variant: A common pathogenic variant (allele frequency > 1% in gnomAD) in F5, ITGA2B, or ITGB3 associated with severe disease would weaken the hypothesis of these specific genes being the sole drivers of the observed phenotypes.)_\n\n**Why it matters:** Understanding the overlap in molecular pathways and shared phenotypic consequences between factor V deficiency and Glanzmann thrombasthenia can inform the development of targeted therapies for bleeding disorders, potentially leveraging insights from one condition to treat the other. For instance, strategies aimed at enhancing platelet aggregation or stabilizing the coagulation cascade could be explored.\n\n---\n\n#### 2. alpha 1-antitrypsin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-5694530, Reactome:R-HSA-8957275, Reactome:R-HSA-204005)\n\n**Proposed mechanism:** F5 (HGNC:3589) —DISRUPTS→ coagulation cascade (REACT:R-HSA-8948271); coagulation cascade (REACT:R-HSA-8948271) —LEADS_TO→ Bleeding (HP:0001892); SERPINA1 (HGNC:10596) —DISRUPTS→ protease activity regulation (GO:0006793); protease activity regulation (GO:0006793) —LEADS_TO→ Emphysema (HP:0002089); protease activity regulation (GO:0006793) —LEADS_TO→ Liver cirrhosis (HP:0001399). Loss-of-function mutations in F5 impair the coagulation cascade, leading to bleeding. Loss-of-function mutations in SERPINA1 lead to dysregulation of protease activity, specifically reduced inhibition of proteases like neutrophil elastase, contributing to emphysema and liver disease. The convergence is at the level of protease activity dysregulation, where F5 mutations affect procoagulant proteases and SERPINA1 mutations affect antiproteases.\n\n**How to falsify it:** The absence of mutations in F5 in individuals with severe bleeding phenotypes, or the absence of mutations in SERPINA1 in individuals with lung or liver disease, would challenge this hypothesis. Furthermore, if genetic studies reveal no significant overlap in the genetic architecture or molecular pathways affected by these two conditions beyond the broad categories of protease function, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the distinct roles of F5 and SERPINA1 in protease regulation highlights the complexity of hemostasis and protease balance. While Factor V deficiency is managed with clotting factor replacement, Alpha-1-antitrypsin deficiency management focuses on enzyme replacement therapy and lung protection. Identifying shared mechanistic principles, even if mediated by different genes, could potentially inform novel therapeutic strategies for protease-related disorders.\n\n---\n\n#### 3. amyloidosis, hereditary systemic 3  —  Tier 3 — Moderate / Emerging  (fitness 0.414)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** F5 (HGNC:3608) —DISRUPTS→ Coagulation Cascade (GO:0007596); Coagulation Cascade (GO:0007596) —LEADS_TO→ Bleeding tendency (HP:0001892); APOA1 (HGNC:610) —PRODUCES→ Apolipoprotein A-I (apoA-I) (UniProtKB:P02647); Apolipoprotein A-I (apoA-I) (UniProtKB:P02647) —DISRUPTS→ Reverse Cholesterol Transport (GO:0046960); Reverse Cholesterol Transport (GO:0046960) —DECREASES→ Amyloid fibril precursor proteins (NA); Amyloid fibril precursor proteins (NA) —LEADS_TO→ Systemic amyloidosis (HP:0002279). Mutations in F5 lead to a dysfunctional coagulation cascade and bleeding tendency. Mutations in APOA1 lead to dysfunctional apoA-I, impairing reverse cholesterol transport and potentially leading to the accumulation of amyloidogenic proteins and systemic amyloidosis. The convergence is proposed through the role of apoA-I in lipid metabolism and its potential influence on the clearance or processing of proteins that can form amyloid.\n\n**How to falsify it:** If genetic studies reveal that mutations in APOA1 do not influence the accumulation of amyloidogenic proteins or that F5 mutations have no impact on systemic processes beyond coagulation, this hypothesis would be falsified. Additionally, if individuals with compound heterozygosity for F5 and APOA1 mutations do not display a combined or exacerbated phenotype, it would weaken the proposed link.\n\n**Why it matters:** Understanding a potential link between coagulation factors and amyloidogenesis, mediated by APOA1, could open new avenues for therapeutic intervention. For instance, modulating APOA1 activity or related pathways might offer a dual benefit in managing both bleeding disorders and specific types of amyloidosis. This could lead to novel treatment strategies for patients suffering from these rare conditions.\n\n---\n\n#### 4. fetomaternal alloimmune thrombocytopenia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-114608)\n\n**Proposed mechanism:** F5 (HGNC:3606) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-5693417); Coagulation cascade (REACT:R-HSA-5693417) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6060) —DISRUPTS→ Platelet activation (REACT:R-HSA-6784226); Platelet activation (REACT:R-HSA-6784226) —LEADS_TO→ Thrombocytopenia (HP:0001873); Thrombocytopenia (HP:0001873) —LEADS_TO→ Fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724). Mutations in F5 lead to a dysfunctional coagulation cascade, resulting in congenital factor V deficiency. In fetomaternal alloimmune thrombocytopenia 2, maternal antibodies target the ITGA2B protein (part of the integrin alpha-IIb beta-3 complex), disrupting normal platelet activation and leading to fetal thrombocytopenia.\n\n**How to falsify it:** The hypothesis would be falsified if a significant proportion of individuals with congenital factor V deficiency (MONDO:0009210) do not exhibit defects in the coagulation cascade, or if fetomaternal alloimmune thrombocytopenia 2 (MONDO:0980724) is found to be caused by antibodies targeting entirely different platelet glycoproteins not involved in the ITGA2B pathway. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared involvement of coagulation and platelet activation pathways, despite different genetic origins, could inform therapeutic strategies for bleeding disorders. For instance, shared pathway modulation might offer novel treatment avenues for both conditions.\n\n---\n\n#### 5. obsolete Glanzmann's thrombasthenia  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-114608)\n\n**Proposed mechanism:** F5 (HGNC:3797) —DISRUPTS→ Coagulation cascade (GO:0007596); Coagulation cascade (GO:0007596) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); ITGA2B (HGNC:6044) —DISRUPTS→ Platelet aggregation (GO:0007541); ITGB3 (HGNC:6047) —DISRUPTS→ Platelet aggregation (GO:0007541); Platelet aggregation (GO:0007541) —LEADS_TO→ Glanzmann thrombasthenia (MONDO:0010119); Coagulation cascade (GO:0007596) —BINDS→ Platelet aggregation (GO:0007541). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in ITGA2B and ITGB3 disrupt platelet aggregation. The coagulation cascade and platelet aggregation are tightly integrated processes, with activated platelets playing a crucial role in amplifying coagulation, and thrombin generated via the cascade promoting platelet activation. Thus, defects in either pathway impact the overall hemostatic process, converging on impaired clot formation and bleeding phenotypes.\n\n**How to falsify it:** The identification of a pathogenic variant in F5, ITGA2B, or ITGB3 with a minor allele frequency greater than 1% in gnomAD would cast doubt on their roles as rare causal genes for these severe bleeding disorders. _(variant: rs1800595)_\n\n**Why it matters:** Understanding the shared mechanistic overlap between congenital factor V deficiency and Glanzmann thrombasthenia can inform therapeutic strategies. For instance, interventions aimed at improving platelet function or enhancing coagulation factor activity might offer synergistic benefits for patients with combined or complex bleeding disorders. Furthermore, the shared pathways highlight potential targets for novel anticoagulant or anti-hemorrhagic therapies.\n\n---\n\n#### 6. hypoalphalipoproteinemia, primary, 2, intermediate  —  Tier 3 — Moderate / Emerging  (fitness 0.368)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** F5 (HGNC:3806) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); coagulation cascade (REACT:R-HSA-5692124) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:610) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111); lipoprotein metabolism (REACT:R-HSA-1435111) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); F5 (HGNC:3806) —DISRUPTS→ Thrombin (CHEBI:28244); Thrombin (CHEBI:28244) —DISRUPTS→ coagulation cascade (REACT:R-HSA-5692124); lipoprotein metabolism (REACT:R-HSA-1435111) —DECREASES→ HDL cholesterol (CHEBI:17478); HDL cholesterol (CHEBI:17478) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2, intermediate (MONDO:0859238); coagulation cascade (REACT:R-HSA-5692124) —DISRUPTS→ lipoprotein metabolism (REACT:R-HSA-1435111). Loss-of-function mutations in F5 disrupt the coagulation cascade, leading to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 impair lipoprotein metabolism and reduce HDL cholesterol levels, causing hypoalphalipoproteinemia. It is hypothesized that dysregulation in the coagulation cascade can indirectly impact lipoprotein metabolism, possibly through altered thrombin activity or inflammatory responses, thus creating a mechanistic link between these two conditions.\n\n**How to falsify it:** Demonstration that F5 deficiency has no discernible impact on lipoprotein metabolism or coagulation parameters in patients with diagnosed hypoalphalipoproteinemia, or vice-versa, through large-scale cohort studies or mechanistic experiments. _(variant: A common, highly penetrant loss-of-function variant in F5 or APOA1 with a minor allele frequency >1% in gnomAD would challenge the rarity assumption for these disease-causing variants.)_\n\n**Why it matters:** Understanding this mechanistic link could reveal novel therapeutic targets. For instance, if coagulation defects exacerbate lipid dysregulation, anticoagulation or pro-coagulant therapies might be considered in managing hypoalphalipoproteinemia, or vice-versa, lipid-modulating agents could potentially influence coagulation in factor V deficient individuals. This could lead to combination therapies for improved patient outcomes.\n\n---\n\n#### 7. Alzheimer disease type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.358)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** F5 (HGNC:3776) —PRODUCES→ Factor V (UniProt:P00942); Factor V (UniProt:P00942) —DISRUPTS→ Coagulation cascade (REACT:R-HSA-8939120); Coagulation cascade (REACT:R-HSA-8939120) —LEADS_TO→ Bleeding tendency (HP:0001892); APP (HGNC:617) —DISRUPTS→ Amyloidogenic processing of APP (REACT:R-HSA-1907780); Amyloidogenic processing of APP (REACT:R-HSA-1907780) —PRODUCES→ Amyloid beta peptide (CHEBI:57308); Amyloid beta peptide (CHEBI:57308) —DISRUPTS→ Extracellular matrix organization (REACT:R-HSA-162440); Extracellular matrix organization (REACT:R-HSA-162440) —LEADS_TO→ Alzheimer disease (HP:0002187). Loss-of-function in F5 leads to a dysfunctional coagulation cascade and bleeding tendency. Gain-of-function or increased expression of APP leads to amyloidogenic processing, producing amyloid beta peptides that disrupt extracellular matrix organization, ultimately contributing to Alzheimer disease.\n\n**How to falsify it:** Demonstration that the downstream pathways disrupted by Factor V deficiency and APP dysfunction (amyloid beta production) are topologically and functionally entirely separate, with no shared downstream effectors or pathways, such as shared mechanisms of cellular clearance or inflammatory response activation. _(variant: rs1799963)_\n\n**Why it matters:** Understanding the distinct roles and potential downstream overlaps of Factor V and APP dysfunction could inform therapeutic strategies for both rare bleeding disorders and neurodegenerative diseases by identifying common cellular pathways that can be targeted.\n\n---\n\n#### 8. hypoalphalipoproteinemia, primary, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.354)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** F5 (HGNC:3777) —DISRUPTS→ Congenital factor V deficiency (MONDO:0009210); APOA1 (HGNC:716) —DISRUPTS→ cholesterol metabolism (GO:0006695); cholesterol metabolism (GO:0006695) —LEADS_TO→ Hypoalphalipoproteinemia, primary, 2 (MONDO:0032766). Loss-of-function mutations in F5 lead to congenital factor V deficiency. Concurrently, loss-of-function mutations in APOA1 disrupt cholesterol metabolism, leading to hypoalphalipoproteinemia. The convergence occurs at the level of overall cellular homeostasis, where dysregulation in both coagulation and lipid metabolism can contribute to a shared phenotype of increased risk for cardiovascular events, though not explicitly represented in the direct causal chains to the primary disease phenotypes.\n\n**How to falsify it:** Demonstration that genetic variants in F5 do not affect coagulation factor V levels or activity, or that variants in APOA1 do not alter HDL cholesterol levels. _(variant: No common variants in F5 or APOA1 are expected to cause these severe rare diseases.)_\n\n**Why it matters:** Understanding the interplay between coagulation and lipid metabolism could reveal novel therapeutic targets for managing complex cardiovascular risks in patients with these rare genetic disorders. For instance, modulating lipid metabolism might indirectly impact coagulation pathways or vice versa.\n\n---\n\n#### 9. cerebral amyloid angiopathy, APP-related  —  Tier 3 — Moderate / Emerging  (fitness 0.336)\n**Link type:** shared pathway (Reactome:R-HSA-114608, Reactome:R-HSA-8957275)\n\n**Proposed mechanism:** Loss-of-function variant in F5 (unknown) —DISRUPTS→ F5 (HGNC:3797); F5 (HGNC:3797) —DISRUPTS→ coagulation cascade (REACT:R-HSA-69621); coagulation cascade (REACT:R-HSA-69621) —LEADS_TO→ Congenital factor V deficiency (MONDO:0009210); Gain-of-function variant in APP (unknown) —DISRUPTS→ APP (HGNC:652); APP (HGNC:652) —DISRUPTS→ amyloid precursor protein processing (GO:0001540); amyloid precursor protein processing (GO:0001540) —PRODUCES→ Amyloid beta peptide (CHEBI:58211); Amyloid beta peptide (CHEBI:58211) —DISRUPTS→ Cerebrovascular integrity (unknown); Cerebrovascular integrity (unknown) —LEADS_TO→ Cerebral amyloid angiopathy, APP-related (MONDO:0011583). Loss-of-function mutations in F5 impair the coagulation cascade, leading to congenital factor V deficiency. Gain-of-function mutations in APP lead to aberrant amyloid precursor protein processing, generating amyloid beta peptides that disrupt cerebrovascular integrity, causing cerebral amyloid angiopathy. The convergence occurs at the level of disruption to vascular integrity, a shared downstream consequence of dysregulated protein homeostasis and hemostasis.\n\n**How to falsify it:** Absence of any evidence linking alterations in APP processing or amyloid-beta deposition to increased risk or severity of bleeding diatheses, or conversely, demonstration that F5 deficiency has no impact on amyloid precursor protein metabolism or amyloid deposition in the vasculature. _(variant: The absence of pathogenic variants in F5 and APP in populations with a high prevalence of either disease would weaken the genetic link.)_\n\n**Why it matters:** Understanding this mechanistic link could reveal novel therapeutic targets. For instance, strategies aimed at improving cerebrovascular integrity or modulating APP processing might offer benefits for patients with factor V deficiency experiencing bleeding complications, and vice versa, strategies to enhance coagulation could potentially mitigate some risks associated with CAA.\n\n---\n\n#### 10. platelet-type bleeding disorder 16  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-114608)\n\n**Proposed mechanism:** Loss-of-function variants in F5 (null) —DISRUPTS→ Factor V (HGNC:3797); Factor V (HGNC:3797) —LEADS_TO→ Coagulation cascade (REACT:R-HSA-8939412); Coagulation cascade (REACT:R-HSA-8939412) —LEADS_TO→ Bleeding tendency (HP:0001892); Loss-of-function variants in ITGA2B (null) —DISRUPTS→ Integrin alpha-IIb (HGNC:6006); Integrin alpha-IIb (HGNC:6006) —LEADS_TO→ Platelet aggregation (REACT:R-HSA-5690074); Platelet aggregation (REACT:R-HSA-5690074) —LEADS_TO→ Bleeding tendency (HP:0001892). Loss-of-function mutations in F5 lead to a dysfunctional coagulation cascade, resulting in a bleeding tendency. Similarly, loss-of-function mutations in ITGA2B impair platelet aggregation, also leading to a bleeding tendency. Both diseases converge on the phenotype of bleeding tendency due to disruptions in distinct but functionally related hemostatic processes.\n\n**How to falsify it:** If mutations in F5 or ITGA2B are found to be benign or associated with completely unrelated phenotypes in large population databases like gnomAD, this hypothesis would be falsified. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the distinct yet related roles of F5 and ITGA2B in hemostasis can inform differential diagnosis and potentially lead to targeted therapies for bleeding disorders. For example, therapies aimed at enhancing platelet function might be relevant for ITGA2B-related disorders, while procoagulant therapies could be considered for F5 deficiencies.\n\n---"
+}
