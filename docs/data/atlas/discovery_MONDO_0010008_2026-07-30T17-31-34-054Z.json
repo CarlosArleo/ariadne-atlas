@@ -1,0 +1,133 @@
+{
+  "seed": {
+    "id": "MONDO:0010008",
+    "name": "sarcosinemia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011610",
+      "diseaseBName": "dimethylglycine dehydrogenase deficiency",
+      "fitness": 0.4514,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SARDH (HGNC:10476) —DISRUPTS→ sarcosine (CHEBI:17793); sarcosine (CHEBI:17793) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); DMGDH (HGNC:2784) —DISRUPTS→ dimethylglycine (CHEBI:15907); dimethylglycine (CHEBI:15907) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ developmental delay (HP:0001263); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ leukodystrophy (HP:0001766). Deficiency in SARDH leads to sarcosine accumulation, which disrupts B-vitamin dependent one-carbon metabolism. Similarly, deficiency in DMGDH leads to dimethylglycine accumulation, also disrupting the same metabolic pathway. Dysregulation of this pathway results in developmental delay and leukodystrophy.",
+      "mechanism_narrative": "SARDH (HGNC:10476) —DISRUPTS→ sarcosine (CHEBI:17793); sarcosine (CHEBI:17793) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); DMGDH (HGNC:2784) —DISRUPTS→ dimethylglycine (CHEBI:15907); dimethylglycine (CHEBI:15907) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ developmental delay (HP:0001263); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ leukodystrophy (HP:0001766). Deficiency in SARDH leads to sarcosine accumulation, which disrupts B-vitamin dependent one-carbon metabolism. Similarly, deficiency in DMGDH leads to dimethylglycine accumulation, also disrupting the same metabolic pathway. Dysregulation of this pathway results in developmental delay and leukodystrophy.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in SARDH and DMGDH do not lead to a significant accumulation of sarcosine and dimethylglycine, respectively, or if these accumulated metabolites do not demonstrably impact the B-vitamin dependent one-carbon metabolism pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common loss-of-function variants in SARDH or DMGDH in the gnomAD database with frequencies exceeding expected recessive allele frequencies for these rare diseases would also challenge the proposed mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798163"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798163": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011610",
+        "diseaseBName": "dimethylglycine dehydrogenase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798163"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798163": 8
+        },
+        "fitness": 0.4514,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SARDH (HGNC:10476) —DISRUPTS→ sarcosine (CHEBI:17793); sarcosine (CHEBI:17793) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); DMGDH (HGNC:2784) —DISRUPTS→ dimethylglycine (CHEBI:15907); dimethylglycine (CHEBI:15907) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ developmental delay (HP:0001263); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ leukodystrophy (HP:0001766). Deficiency in SARDH leads to sarcosine accumulation, which disrupts B-vitamin dependent one-carbon metabolism. Similarly, deficiency in DMGDH leads to dimethylglycine accumulation, also disrupting the same metabolic pathway. Dysregulation of this pathway results in developmental delay and leukodystrophy.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in SARDH and DMGDH do not lead to a significant accumulation of sarcosine and dimethylglycine, respectively, or if these accumulated metabolites do not demonstrably impact the B-vitamin dependent one-carbon metabolism pathway, this hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common loss-of-function variants in SARDH or DMGDH in the gnomAD database with frequencies exceeding expected recessive allele frequencies for these rare diseases would also challenge the proposed mechanism."
+        },
+        "translational": "Understanding the shared metabolic pathway disruption in sarcosinemia and dimethylglycine dehydrogenase deficiency could pave the way for unified therapeutic strategies targeting the B-vitamin dependent one-carbon metabolism, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020741",
+      "diseaseBName": "pyridoxine-dependent epilepsy caused by ALDH7A1 mutant",
+      "fitness": 0.45,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SARDH (HGNC:10470) —DECREASES→ sarcosine (CHEBI:17890); sarcosine (CHEBI:17890) —LEADS_TO→ sarcosine metabolism (REACT:R-HSA-1948464); sarcosine metabolism (REACT:R-HSA-1948464) —LEADS_TO→ elevated sarcosine (HP:0030034); ALDH7A1 (HGNC:415) —DECREASES→ alpha-aminoadipic semialdehyde (CHEBI:16670); alpha-aminoadipic semialdehyde (CHEBI:16670) —LEADS_TO→ pyridoxal phosphate metabolism (GO:0006089); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ seizure (HP:0001250); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function in SARDH leads to the accumulation of sarcosine, disrupting sarcosine metabolism and ultimately contributing to the phenotype of elevated sarcosine. Concurrently, loss-of-function in ALDH7A1 impairs the metabolism of alpha-aminoadipic semialdehyde, a key intermediate in pyridoxal phosphate metabolism, leading to neurodevelopmental issues such as seizures and intellectual disability. The convergence occurs through the interconnectedness of amino acid metabolism and the broader impact on neuronal function, where disruptions in either pathway can affect cellular homeostasis and neurotransmission.",
+      "mechanism_narrative": "SARDH (HGNC:10470) —DECREASES→ sarcosine (CHEBI:17890); sarcosine (CHEBI:17890) —LEADS_TO→ sarcosine metabolism (REACT:R-HSA-1948464); sarcosine metabolism (REACT:R-HSA-1948464) —LEADS_TO→ elevated sarcosine (HP:0030034); ALDH7A1 (HGNC:415) —DECREASES→ alpha-aminoadipic semialdehyde (CHEBI:16670); alpha-aminoadipic semialdehyde (CHEBI:16670) —LEADS_TO→ pyridoxal phosphate metabolism (GO:0006089); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ seizure (HP:0001250); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function in SARDH leads to the accumulation of sarcosine, disrupting sarcosine metabolism and ultimately contributing to the phenotype of elevated sarcosine. Concurrently, loss-of-function in ALDH7A1 impairs the metabolism of alpha-aminoadipic semialdehyde, a key intermediate in pyridoxal phosphate metabolism, leading to neurodevelopmental issues such as seizures and intellectual disability. The convergence occurs through the interconnectedness of amino acid metabolism and the broader impact on neuronal function, where disruptions in either pathway can affect cellular homeostasis and neurotransmission.",
+      "falsification": {
+        "text": "If genetic variants in SARDH are found at a high frequency (e.g., >1% allele frequency) in control populations (e.g., gnomAD) and do not segregate with the phenotype in affected families, or if the metabolic pathways of sarcosine and pyridoxal phosphate are shown to be completely independent with no cross-talk affecting neuronal function.",
+        "gnomad_variant": "rs74305608"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798163"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798163": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020741",
+        "diseaseBName": "pyridoxine-dependent epilepsy caused by ALDH7A1 mutant",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798163"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798163": 8
+        },
+        "fitness": 0.45,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SARDH (HGNC:10470) —DECREASES→ sarcosine (CHEBI:17890); sarcosine (CHEBI:17890) —LEADS_TO→ sarcosine metabolism (REACT:R-HSA-1948464); sarcosine metabolism (REACT:R-HSA-1948464) —LEADS_TO→ elevated sarcosine (HP:0030034); ALDH7A1 (HGNC:415) —DECREASES→ alpha-aminoadipic semialdehyde (CHEBI:16670); alpha-aminoadipic semialdehyde (CHEBI:16670) —LEADS_TO→ pyridoxal phosphate metabolism (GO:0006089); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ seizure (HP:0001250); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function in SARDH leads to the accumulation of sarcosine, disrupting sarcosine metabolism and ultimately contributing to the phenotype of elevated sarcosine. Concurrently, loss-of-function in ALDH7A1 impairs the metabolism of alpha-aminoadipic semialdehyde, a key intermediate in pyridoxal phosphate metabolism, leading to neurodevelopmental issues such as seizures and intellectual disability. The convergence occurs through the interconnectedness of amino acid metabolism and the broader impact on neuronal function, where disruptions in either pathway can affect cellular homeostasis and neurotransmission.",
+        "falsification": {
+          "text": "If genetic variants in SARDH are found at a high frequency (e.g., >1% allele frequency) in control populations (e.g., gnomAD) and do not segregate with the phenotype in affected families, or if the metabolic pathways of sarcosine and pyridoxal phosphate are shown to be completely independent with no cross-talk affecting neuronal function.",
+          "gnomad_variant": "rs74305608"
+        },
+        "translational": "Understanding the shared metabolic pathways and their disruption in both sarcosinemia and pyridoxine-dependent epilepsy could reveal common therapeutic targets or strategies. For instance, interventions aimed at managing metabolic imbalances or supporting neuronal function might be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030028",
+      "diseaseBName": "neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline",
+      "fitness": 0.431,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SARDH (HGNC:10394) —DISRUPTS→ Sarcosine metabolism (GO:0006633); SARDH (HGNC:10394) —DECREASES→ Sarcosine (CHEBI:17988); Sarcosine (CHEBI:17988) —DISRUPTS→ Sarcosine metabolism (GO:0006633); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Ataxia (HP:0001251); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Cognitive decline (HP:0001272); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Optic atrophy (HP:0000647); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Tremor (HP:0001314); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline (MONDO:0030028). Loss-of-function mutations in SARDH lead to sarcosinemia, characterized by the accumulation of sarcosine. This dysregulation of sarcosine metabolism may contribute to neuronal dysfunction, manifesting as ataxia, tremor, optic atrophy, and cognitive decline seen in the childhood-onset neurodegeneration disorder.",
+      "mechanism_narrative": "SARDH (HGNC:10394) —DISRUPTS→ Sarcosine metabolism (GO:0006633); SARDH (HGNC:10394) —DECREASES→ Sarcosine (CHEBI:17988); Sarcosine (CHEBI:17988) —DISRUPTS→ Sarcosine metabolism (GO:0006633); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Ataxia (HP:0001251); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Cognitive decline (HP:0001272); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Optic atrophy (HP:0000647); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Tremor (HP:0001314); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline (MONDO:0030028). Loss-of-function mutations in SARDH lead to sarcosinemia, characterized by the accumulation of sarcosine. This dysregulation of sarcosine metabolism may contribute to neuronal dysfunction, manifesting as ataxia, tremor, optic atrophy, and cognitive decline seen in the childhood-onset neurodegeneration disorder.",
+      "falsification": {
+        "text": "Absence of elevated sarcosine levels in patients diagnosed with neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline, or identification of a distinct, non-metabolic causal pathway for the neurodegenerative disorder.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in SARDH in the general population would challenge its role as a specific cause for sarcosinemia."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798163"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798163": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030028",
+        "diseaseBName": "neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798163"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798163": 8
+        },
+        "fitness": 0.431,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SARDH (HGNC:10394) —DISRUPTS→ Sarcosine metabolism (GO:0006633); SARDH (HGNC:10394) —DECREASES→ Sarcosine (CHEBI:17988); Sarcosine (CHEBI:17988) —DISRUPTS→ Sarcosine metabolism (GO:0006633); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Ataxia (HP:0001251); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Cognitive decline (HP:0001272); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Optic atrophy (HP:0000647); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Tremor (HP:0001314); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline (MONDO:0030028). Loss-of-function mutations in SARDH lead to sarcosinemia, characterized by the accumulation of sarcosine. This dysregulation of sarcosine metabolism may contribute to neuronal dysfunction, manifesting as ataxia, tremor, optic atrophy, and cognitive decline seen in the childhood-onset neurodegeneration disorder.",
+        "falsification": {
+          "text": "Absence of elevated sarcosine levels in patients diagnosed with neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline, or identification of a distinct, non-metabolic causal pathway for the neurodegenerative disorder.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in SARDH in the general population would challenge its role as a specific cause for sarcosinemia."
+        },
+        "translational": "Understanding the link between sarcosine metabolism and neurodegeneration could open avenues for therapeutic interventions targeting sarcosine levels or downstream metabolic pathways to mitigate neurological symptoms."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T17:31:34.054Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** sarcosinemia (MONDO:0010008)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | dimethylglycine dehydrogenase deficiency (MONDO:0011610) | shared pathway | Tier 3 | 0.451 | Reactome:R-HSA-6798163 |\n| 2 | pyridoxine-dependent epilepsy caused by ALDH7A1 mutant (MONDO:0020741) | shared pathway | Tier 3 | 0.450 | Reactome:R-HSA-6798163 |\n| 3 | neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline (MONDO:0030028) | shared pathway | Tier 3 | 0.431 | Reactome:R-HSA-6798163 |\n\n### CANDIDATE DETAIL\n#### 1. dimethylglycine dehydrogenase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.451)\n**Link type:** shared pathway (Reactome:R-HSA-6798163)\n\n**Proposed mechanism:** SARDH (HGNC:10476) —DISRUPTS→ sarcosine (CHEBI:17793); sarcosine (CHEBI:17793) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); DMGDH (HGNC:2784) —DISRUPTS→ dimethylglycine (CHEBI:15907); dimethylglycine (CHEBI:15907) —DISRUPTS→ B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ developmental delay (HP:0001263); B-vitamin dependent one-carbon metabolism (REACT:R-HSA-1937032) —LEADS_TO→ leukodystrophy (HP:0001766). Deficiency in SARDH leads to sarcosine accumulation, which disrupts B-vitamin dependent one-carbon metabolism. Similarly, deficiency in DMGDH leads to dimethylglycine accumulation, also disrupting the same metabolic pathway. Dysregulation of this pathway results in developmental delay and leukodystrophy.\n\n**How to falsify it:** If genetic studies reveal that mutations in SARDH and DMGDH do not lead to a significant accumulation of sarcosine and dimethylglycine, respectively, or if these accumulated metabolites do not demonstrably impact the B-vitamin dependent one-carbon metabolism pathway, this hypothesis would be falsified. _(variant: The presence of common loss-of-function variants in SARDH or DMGDH in the gnomAD database with frequencies exceeding expected recessive allele frequencies for these rare diseases would also challenge the proposed mechanism.)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruption in sarcosinemia and dimethylglycine dehydrogenase deficiency could pave the way for unified therapeutic strategies targeting the B-vitamin dependent one-carbon metabolism, potentially benefiting patients with either condition.\n\n---\n\n#### 2. pyridoxine-dependent epilepsy caused by ALDH7A1 mutant  —  Tier 3 — Moderate / Emerging  (fitness 0.450)\n**Link type:** shared pathway (Reactome:R-HSA-6798163)\n\n**Proposed mechanism:** SARDH (HGNC:10470) —DECREASES→ sarcosine (CHEBI:17890); sarcosine (CHEBI:17890) —LEADS_TO→ sarcosine metabolism (REACT:R-HSA-1948464); sarcosine metabolism (REACT:R-HSA-1948464) —LEADS_TO→ elevated sarcosine (HP:0030034); ALDH7A1 (HGNC:415) —DECREASES→ alpha-aminoadipic semialdehyde (CHEBI:16670); alpha-aminoadipic semialdehyde (CHEBI:16670) —LEADS_TO→ pyridoxal phosphate metabolism (GO:0006089); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ seizure (HP:0001250); pyridoxal phosphate metabolism (GO:0006089) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function in SARDH leads to the accumulation of sarcosine, disrupting sarcosine metabolism and ultimately contributing to the phenotype of elevated sarcosine. Concurrently, loss-of-function in ALDH7A1 impairs the metabolism of alpha-aminoadipic semialdehyde, a key intermediate in pyridoxal phosphate metabolism, leading to neurodevelopmental issues such as seizures and intellectual disability. The convergence occurs through the interconnectedness of amino acid metabolism and the broader impact on neuronal function, where disruptions in either pathway can affect cellular homeostasis and neurotransmission.\n\n**How to falsify it:** If genetic variants in SARDH are found at a high frequency (e.g., >1% allele frequency) in control populations (e.g., gnomAD) and do not segregate with the phenotype in affected families, or if the metabolic pathways of sarcosine and pyridoxal phosphate are shown to be completely independent with no cross-talk affecting neuronal function. _(variant: rs74305608)_\n\n**Why it matters:** Understanding the shared metabolic pathways and their disruption in both sarcosinemia and pyridoxine-dependent epilepsy could reveal common therapeutic targets or strategies. For instance, interventions aimed at managing metabolic imbalances or supporting neuronal function might be beneficial for both conditions.\n\n---\n\n#### 3. neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline  —  Tier 3 — Moderate / Emerging  (fitness 0.431)\n**Link type:** shared pathway (Reactome:R-HSA-6798163)\n\n**Proposed mechanism:** SARDH (HGNC:10394) —DISRUPTS→ Sarcosine metabolism (GO:0006633); SARDH (HGNC:10394) —DECREASES→ Sarcosine (CHEBI:17988); Sarcosine (CHEBI:17988) —DISRUPTS→ Sarcosine metabolism (GO:0006633); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Ataxia (HP:0001251); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Cognitive decline (HP:0001272); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Optic atrophy (HP:0000647); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Tremor (HP:0001314); Sarcosine metabolism (GO:0006633) —LEADS_TO→ Neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline (MONDO:0030028). Loss-of-function mutations in SARDH lead to sarcosinemia, characterized by the accumulation of sarcosine. This dysregulation of sarcosine metabolism may contribute to neuronal dysfunction, manifesting as ataxia, tremor, optic atrophy, and cognitive decline seen in the childhood-onset neurodegeneration disorder.\n\n**How to falsify it:** Absence of elevated sarcosine levels in patients diagnosed with neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline, or identification of a distinct, non-metabolic causal pathway for the neurodegenerative disorder. _(variant: Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in SARDH in the general population would challenge its role as a specific cause for sarcosinemia.)_\n\n**Why it matters:** Understanding the link between sarcosine metabolism and neurodegeneration could open avenues for therapeutic interventions targeting sarcosine levels or downstream metabolic pathways to mitigate neurological symptoms.\n\n---"
+}
