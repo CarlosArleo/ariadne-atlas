@@ -692,6 +692,17 @@ function toggleEliteMode() {
     if (showEliteOnly) {
         btn.classList.add('active');
         btn.textContent = 'Elite Champions (On)';
+        // Elite is a self-contained view: the gate below (fitness>=0.65, CQS>=7,
+        // Hub>=3, minPathSize<=50) already defines the elite set, so neutralise the
+        // narrowing dropdowns. Otherwise the DEFAULT "Tier 3" tier filter would AND
+        // with the gate and hide Tier-1 elite champions (e.g. Muir-Torre <-> Lynch,
+        // Tier 1 / CQS 10) — defeating the button's purpose. Likewise a leftover
+        // "Niche Pairs (Hub<=2)" selection would empty the elite set entirely.
+        document.getElementById('filter-tier').value = 'all';
+        document.getElementById('filter-cqs').value = 'all';
+        document.getElementById('filter-hub').value = 'all';
+        document.getElementById('filter-family').value = 'all';
+        document.getElementById('search-input').value = '';
     } else {
         btn.classList.remove('active');
         btn.textContent = 'Elite Champions';
