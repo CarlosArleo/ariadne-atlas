@@ -1,0 +1,387 @@
+{
+  "seed": {
+    "id": "MONDO:0010966",
+    "name": "achondrogenesis type IB"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 10,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0020722",
+      "diseaseBName": "nephrolithiasis susceptibility caused by SLC26A1",
+      "fitness": 0.8875,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "COL1A1 (HGNC:2234) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); COL1A2 (HGNC:2235) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); Type I collagen synthesis (REACT:R-HSA-163740) —DISRUPTS→ Extracellular matrix composition (NULL); SLC26A1 (HGNC:10586) —DISRUPTS→ Sulfate transport (GO:0005352); Sulfate transport (GO:0005352) —DECREASES→ Extracellular matrix composition (NULL); Type I collagen synthesis (REACT:R-HSA-163740) —LEADS_TO→ Severe skeletal defects (HP:0005628); Extracellular matrix composition (NULL) —LEADS_TO→ Nephrolithiasis (HP:0000062). Loss-of-function mutations in COL1A1/COL1A2 disrupt Type I collagen synthesis, leading to achondrogenesis type IB (severe skeletal defects). Concurrently, dysfunction of SLC26A1 impairs sulfate transport, which is crucial for post-translational modification and proper assembly of collagen and other extracellular matrix components. This disruption in matrix composition contributes to nephrolithiasis susceptibility.",
+      "mechanism_narrative": "COL1A1 (HGNC:2234) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); COL1A2 (HGNC:2235) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); Type I collagen synthesis (REACT:R-HSA-163740) —DISRUPTS→ Extracellular matrix composition (NULL); SLC26A1 (HGNC:10586) —DISRUPTS→ Sulfate transport (GO:0005352); Sulfate transport (GO:0005352) —DECREASES→ Extracellular matrix composition (NULL); Type I collagen synthesis (REACT:R-HSA-163740) —LEADS_TO→ Severe skeletal defects (HP:0005628); Extracellular matrix composition (NULL) —LEADS_TO→ Nephrolithiasis (HP:0000062). Loss-of-function mutations in COL1A1/COL1A2 disrupt Type I collagen synthesis, leading to achondrogenesis type IB (severe skeletal defects). Concurrently, dysfunction of SLC26A1 impairs sulfate transport, which is crucial for post-translational modification and proper assembly of collagen and other extracellular matrix components. This disruption in matrix composition contributes to nephrolithiasis susceptibility.",
+      "falsification": {
+        "text": "The discovery of a pathogenic variant in SLC26A1 that demonstrably enhances sulfate transport and does not affect collagen processing or mineralization would falsify this hypothesis. Alternatively, demonstrating a complete lack of overlap in affected cellular pathways through transcriptomic or proteomic analysis would also serve as a falsification condition.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362",
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020722",
+        "diseaseBName": "nephrolithiasis susceptibility caused by SLC26A1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362",
+          "Reactome:R-HSA-427601"
+        ],
+        "fitness": 0.8875,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "COL1A1 (HGNC:2234) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); COL1A2 (HGNC:2235) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); Type I collagen synthesis (REACT:R-HSA-163740) —DISRUPTS→ Extracellular matrix composition (NULL); SLC26A1 (HGNC:10586) —DISRUPTS→ Sulfate transport (GO:0005352); Sulfate transport (GO:0005352) —DECREASES→ Extracellular matrix composition (NULL); Type I collagen synthesis (REACT:R-HSA-163740) —LEADS_TO→ Severe skeletal defects (HP:0005628); Extracellular matrix composition (NULL) —LEADS_TO→ Nephrolithiasis (HP:0000062). Loss-of-function mutations in COL1A1/COL1A2 disrupt Type I collagen synthesis, leading to achondrogenesis type IB (severe skeletal defects). Concurrently, dysfunction of SLC26A1 impairs sulfate transport, which is crucial for post-translational modification and proper assembly of collagen and other extracellular matrix components. This disruption in matrix composition contributes to nephrolithiasis susceptibility.",
+        "falsification": {
+          "text": "The discovery of a pathogenic variant in SLC26A1 that demonstrably enhances sulfate transport and does not affect collagen processing or mineralization would falsify this hypothesis. Alternatively, demonstrating a complete lack of overlap in affected cellular pathways through transcriptomic or proteomic analysis would also serve as a falsification condition.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding this link could inform therapeutic strategies for both conditions. For achondrogenesis type IB, interventions aimed at improving collagen processing or stability might be explored. For SLC26A1-related nephrolithiasis susceptibility, therapies targeting matrix homeostasis or crystal nucleation could be beneficial, potentially drawing insights from collagen-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957268",
+      "diseaseBName": "hypersulfaturia",
+      "fitness": 0.8875,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "COMP (HGNC:2278) —DISRUPTS→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); Chondrocyte differentiation and extracellular matrix production (GO:0008037) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); PAPS Synthetase 2 (HGNC:8702) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159); Sulfation of aggrecan and collagen (GO:0000159) —LEADS_TO→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Sulfation of aggrecan and collagen (GO:0000159); Hypersulfaturia (MONDO:0957268) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159). Loss-of-function mutations in COMP (n1) disrupt chondrocyte differentiation and ECM production (n7), leading to achondrogenesis type IB (n2). Similarly, loss-of-function mutations in PAPSS2 (n3), which provides the substrate for sulfation, disrupt the sulfation of aggrecan and collagen (n6). Both n6 and n7 are downstream targets regulated by SOX9 (n5), a master regulator of chondrogenesis. Impaired sulfation (n6) leads to defective ECM, contributing to hypersulfaturia (n4) and also impacting chondrocyte differentiation (n7) and ultimately bone development.",
+      "mechanism_narrative": "COMP (HGNC:2278) —DISRUPTS→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); Chondrocyte differentiation and extracellular matrix production (GO:0008037) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); PAPS Synthetase 2 (HGNC:8702) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159); Sulfation of aggrecan and collagen (GO:0000159) —LEADS_TO→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Sulfation of aggrecan and collagen (GO:0000159); Hypersulfaturia (MONDO:0957268) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159). Loss-of-function mutations in COMP (n1) disrupt chondrocyte differentiation and ECM production (n7), leading to achondrogenesis type IB (n2). Similarly, loss-of-function mutations in PAPSS2 (n3), which provides the substrate for sulfation, disrupt the sulfation of aggrecan and collagen (n6). Both n6 and n7 are downstream targets regulated by SOX9 (n5), a master regulator of chondrogenesis. Impaired sulfation (n6) leads to defective ECM, contributing to hypersulfaturia (n4) and also impacting chondrocyte differentiation (n7) and ultimately bone development.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in COMP in patients diagnosed with hypersulfaturia, or identification of a pathogenic variant in PAPSS2 in patients diagnosed with achondrogenesis type IB, would falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362",
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957268",
+        "diseaseBName": "hypersulfaturia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362",
+          "Reactome:R-HSA-427601"
+        ],
+        "fitness": 0.8875,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "COMP (HGNC:2278) —DISRUPTS→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); Chondrocyte differentiation and extracellular matrix production (GO:0008037) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); PAPS Synthetase 2 (HGNC:8702) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159); Sulfation of aggrecan and collagen (GO:0000159) —LEADS_TO→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Sulfation of aggrecan and collagen (GO:0000159); Hypersulfaturia (MONDO:0957268) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159). Loss-of-function mutations in COMP (n1) disrupt chondrocyte differentiation and ECM production (n7), leading to achondrogenesis type IB (n2). Similarly, loss-of-function mutations in PAPSS2 (n3), which provides the substrate for sulfation, disrupt the sulfation of aggrecan and collagen (n6). Both n6 and n7 are downstream targets regulated by SOX9 (n5), a master regulator of chondrogenesis. Impaired sulfation (n6) leads to defective ECM, contributing to hypersulfaturia (n4) and also impacting chondrocyte differentiation (n7) and ultimately bone development.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in COMP in patients diagnosed with hypersulfaturia, or identification of a pathogenic variant in PAPSS2 in patients diagnosed with achondrogenesis type IB, would falsify this hypothesis."
+        },
+        "translational": "Understanding the shared regulatory network involving SOX9 and downstream pathways like sulfation and chondrocyte differentiation could reveal therapeutic targets for skeletal dysplasias, potentially offering avenues for intervention in both severe chondrodysplasias and disorders of matrix sulfation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859518",
+      "diseaseBName": "leukodystrophy, hypomyelinating, 26, with chondrodysplasia",
+      "fitness": 0.8687,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "COL6A1 (HGNC:2206) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A2 (HGNC:2207) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A3 (HGNC:2208) —DISRUPTS→ collagen VI assembly (GO:0032940); collagen VI assembly (GO:0032940) —LEADS_TO→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ achondrogenesis type IB (MONDO:0010966); extracellular matrix organization (GO:0030198) —LEADS_TO→ hypomyelinating leukodystrophy with chondrodysplasia (MONDO:0859518). Mutations in COL6A1, COL6A2, or COL6A3 disrupt the proper assembly of collagen VI. This impaired collagen VI assembly consequently affects extracellular matrix organization, leading to the skeletal defects characteristic of achondrogenesis type IB and the hypomyelination and chondrodysplasia seen in leukodystrophy, hypomyelinating, 26.",
+      "mechanism_narrative": "COL6A1 (HGNC:2206) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A2 (HGNC:2207) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A3 (HGNC:2208) —DISRUPTS→ collagen VI assembly (GO:0032940); collagen VI assembly (GO:0032940) —LEADS_TO→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ achondrogenesis type IB (MONDO:0010966); extracellular matrix organization (GO:0030198) —LEADS_TO→ hypomyelinating leukodystrophy with chondrodysplasia (MONDO:0859518). Mutations in COL6A1, COL6A2, or COL6A3 disrupt the proper assembly of collagen VI. This impaired collagen VI assembly consequently affects extracellular matrix organization, leading to the skeletal defects characteristic of achondrogenesis type IB and the hypomyelination and chondrodysplasia seen in leukodystrophy, hypomyelinating, 26.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in COL6A1, COL6A2, or COL6A3 who exhibit one of the disease phenotypes but not the other, or conversely, individuals with either disease phenotype but without mutations in these collagen VI genes, would falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859518",
+        "diseaseBName": "leukodystrophy, hypomyelinating, 26, with chondrodysplasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362"
+        ],
+        "fitness": 0.8687,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "COL6A1 (HGNC:2206) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A2 (HGNC:2207) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A3 (HGNC:2208) —DISRUPTS→ collagen VI assembly (GO:0032940); collagen VI assembly (GO:0032940) —LEADS_TO→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ achondrogenesis type IB (MONDO:0010966); extracellular matrix organization (GO:0030198) —LEADS_TO→ hypomyelinating leukodystrophy with chondrodysplasia (MONDO:0859518). Mutations in COL6A1, COL6A2, or COL6A3 disrupt the proper assembly of collagen VI. This impaired collagen VI assembly consequently affects extracellular matrix organization, leading to the skeletal defects characteristic of achondrogenesis type IB and the hypomyelination and chondrodysplasia seen in leukodystrophy, hypomyelinating, 26.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in COL6A1, COL6A2, or COL6A3 who exhibit one of the disease phenotypes but not the other, or conversely, individuals with either disease phenotype but without mutations in these collagen VI genes, would falsify this hypothesis."
+        },
+        "translational": "Understanding the shared role of collagen VI in these distinct but phenotypically overlapping rare diseases could pave the way for therapeutic strategies targeting extracellular matrix integrity or collagen VI function, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009189",
+      "diseaseBName": "multiple epiphyseal dysplasia type 4",
+      "fitness": 0.85,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "COL1A1 (HGNC:2206) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); COL1A2 (HGNC:2207) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); Type I collagen synthesis and processing (GO:0005576) —LEADS_TO→ Type I collagen fibril organization (GO:0035947); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Severe skeletal dysplasia (HP:0004325). Disruptions in Type I collagen synthesis and processing lead to impaired fibril organization, manifesting as skeletal dysplasia in both achondrogenesis type IB and multiple epiphyseal dysplasia type 4.",
+      "mechanism_narrative": "COL1A1 (HGNC:2206) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); COL1A2 (HGNC:2207) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); Type I collagen synthesis and processing (GO:0005576) —LEADS_TO→ Type I collagen fibril organization (GO:0035947); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Severe skeletal dysplasia (HP:0004325). Disruptions in Type I collagen synthesis and processing lead to impaired fibril organization, manifesting as skeletal dysplasia in both achondrogenesis type IB and multiple epiphyseal dysplasia type 4.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in COL1A1 or COL1A2 with loss-of-function effects in patients diagnosed with achondrogenesis type IB, and distinct pathogenic variants in genes unrelated to collagen processing leading to multiple epiphyseal dysplasia type 4.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362",
+        "Reactome:R-HSA-3560792",
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009189",
+        "diseaseBName": "multiple epiphyseal dysplasia type 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362",
+          "Reactome:R-HSA-3560792",
+          "Reactome:R-HSA-427601"
+        ],
+        "fitness": 0.85,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "COL1A1 (HGNC:2206) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); COL1A2 (HGNC:2207) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); Type I collagen synthesis and processing (GO:0005576) —LEADS_TO→ Type I collagen fibril organization (GO:0035947); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Severe skeletal dysplasia (HP:0004325). Disruptions in Type I collagen synthesis and processing lead to impaired fibril organization, manifesting as skeletal dysplasia in both achondrogenesis type IB and multiple epiphyseal dysplasia type 4.",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in COL1A1 or COL1A2 with loss-of-function effects in patients diagnosed with achondrogenesis type IB, and distinct pathogenic variants in genes unrelated to collagen processing leading to multiple epiphyseal dysplasia type 4.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of Type I collagen in these distinct skeletal dysplasias could reveal common therapeutic targets for improving collagen quality or extracellular matrix integrity, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009107",
+      "diseaseBName": "diastrophic dysplasia",
+      "fitness": 0.792,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137); Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137) —LEADS_TO→ Sulfation of proteoglycans (GO:0009137); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Skeletal dysplasia (HP:0000842); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Severe short-limbed dwarfism (HP:0005745). Loss-of-function mutations in SLC26A2 disrupt sulfate transport and subsequently impair chondroitin sulfate biosynthesis and proteoglycan sulfation, leading to skeletal dysplasias and severe short-limbed dwarfism in both achondrogenesis type IB and diastrophic dysplasia.",
+      "mechanism_narrative": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137); Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137) —LEADS_TO→ Sulfation of proteoglycans (GO:0009137); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Skeletal dysplasia (HP:0000842); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Severe short-limbed dwarfism (HP:0005745). Loss-of-function mutations in SLC26A2 disrupt sulfate transport and subsequently impair chondroitin sulfate biosynthesis and proteoglycan sulfation, leading to skeletal dysplasias and severe short-limbed dwarfism in both achondrogenesis type IB and diastrophic dysplasia.",
+      "falsification": {
+        "text": "The identification of pathogenic loss-of-function variants in SLC26A2 in individuals with phenotypes clearly distinct from both achondrogenesis type IB and diastrophic dysplasia, or conversely, the identification of individuals with these skeletal dysplasias who harbor pathogenic variants in genes other than SLC26A2, would falsify this hypothesis.",
+        "gnomad_variant": "rs121918632 (c.300+1G>A) has a gnomAD allele frequency > 0.001, but is associated with achondrogenesis type IB and diastrophic dysplasia, thus supporting the mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362",
+        "Reactome:R-HSA-3560792",
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009107",
+        "diseaseBName": "diastrophic dysplasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362",
+          "Reactome:R-HSA-3560792",
+          "Reactome:R-HSA-427601"
+        ],
+        "fitness": 0.792,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137); Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137) —LEADS_TO→ Sulfation of proteoglycans (GO:0009137); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Skeletal dysplasia (HP:0000842); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Severe short-limbed dwarfism (HP:0005745). Loss-of-function mutations in SLC26A2 disrupt sulfate transport and subsequently impair chondroitin sulfate biosynthesis and proteoglycan sulfation, leading to skeletal dysplasias and severe short-limbed dwarfism in both achondrogenesis type IB and diastrophic dysplasia.",
+        "falsification": {
+          "text": "The identification of pathogenic loss-of-function variants in SLC26A2 in individuals with phenotypes clearly distinct from both achondrogenesis type IB and diastrophic dysplasia, or conversely, the identification of individuals with these skeletal dysplasias who harbor pathogenic variants in genes other than SLC26A2, would falsify this hypothesis.",
+          "gnomad_variant": "rs121918632 (c.300+1G>A) has a gnomAD allele frequency > 0.001, but is associated with achondrogenesis type IB and diastrophic dysplasia, thus supporting the mechanism."
+        },
+        "translational": "Understanding the shared molecular basis in SLC26A2 offers potential for developing targeted therapies aimed at restoring sulfate transport or sulfation pathways, which could benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009727",
+      "diseaseBName": "atelosteogenesis type II",
+      "fitness": 0.7852,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and proteoglycan synthesis (GO:0001573); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Skeletal dysplasia (HP:0002651); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Short long bones (HP:0005973); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Severe micromelia (HP:0003694). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, which is essential for proteoglycan synthesis and proper skeletal development, leading to overlapping phenotypes of skeletal dysplasia, short long bones, and severe micromelia in both achondrogenesis type IB and atelosteogenesis type II.",
+      "mechanism_narrative": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and proteoglycan synthesis (GO:0001573); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Skeletal dysplasia (HP:0002651); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Short long bones (HP:0005973); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Severe micromelia (HP:0003694). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, which is essential for proteoglycan synthesis and proper skeletal development, leading to overlapping phenotypes of skeletal dysplasia, short long bones, and severe micromelia in both achondrogenesis type IB and atelosteogenesis type II.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SLC26A2 that lead to gain-of-function or dominant-negative effects in patients with either achondrogenesis type IB or atelosteogenesis type II would falsify the proposed loss-of-function mechanism.",
+        "gnomad_variant": "Exclusion of pathogenic variants in the coding regions of SLC26A2 from gnomAD databases at a frequency > 0.01% would support a role for rare variants in these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362",
+        "Reactome:R-HSA-3560792",
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009727",
+        "diseaseBName": "atelosteogenesis type II",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362",
+          "Reactome:R-HSA-3560792",
+          "Reactome:R-HSA-427601"
+        ],
+        "fitness": 0.7852,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and proteoglycan synthesis (GO:0001573); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Skeletal dysplasia (HP:0002651); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Short long bones (HP:0005973); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Severe micromelia (HP:0003694). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, which is essential for proteoglycan synthesis and proper skeletal development, leading to overlapping phenotypes of skeletal dysplasia, short long bones, and severe micromelia in both achondrogenesis type IB and atelosteogenesis type II.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SLC26A2 that lead to gain-of-function or dominant-negative effects in patients with either achondrogenesis type IB or atelosteogenesis type II would falsify the proposed loss-of-function mechanism.",
+          "gnomad_variant": "Exclusion of pathogenic variants in the coding regions of SLC26A2 from gnomAD databases at a frequency > 0.01% would support a role for rare variants in these diseases."
+        },
+        "translational": "Understanding the shared SLC26A2 defect provides a common target for therapeutic strategies aimed at restoring sulfate transport or proteoglycan synthesis, potentially benefiting patients with both achondrogenesis type IB and atelosteogenesis type II."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008964",
+      "diseaseBName": "congenital secretory chloride diarrhea 1",
+      "fitness": 0.4335,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC26A2 (HGNC:11264) —DISRUPTS→ Sulfate transport (GO:0005370); Sulfate transport (GO:0005370) —LEADS_TO→ Skeletal dysplasia (HP:0002650); SLC26A3 (HGNC:11265) —DISRUPTS→ Chloride transport (GO:0005375); Chloride transport (GO:0005375) —LEADS_TO→ Chloride secretion defect (HP:0030171); Chloride secretion defect (HP:0030171) —LEADS_TO→ Diarrhea (HP:0002087). Mutations in SLC26A2 disrupt sulfate transport, leading to skeletal dysplasia characteristic of achondrogenesis type IB. Separately, mutations in SLC26A3 disrupt chloride transport, resulting in impaired chloride secretion and chronic diarrhea in congenital secretory chloride diarrhea 1. The convergence lies in the shared involvement of the SLC26 family in critical ion transport processes essential for distinct physiological functions.",
+      "mechanism_narrative": "SLC26A2 (HGNC:11264) —DISRUPTS→ Sulfate transport (GO:0005370); Sulfate transport (GO:0005370) —LEADS_TO→ Skeletal dysplasia (HP:0002650); SLC26A3 (HGNC:11265) —DISRUPTS→ Chloride transport (GO:0005375); Chloride transport (GO:0005375) —LEADS_TO→ Chloride secretion defect (HP:0030171); Chloride secretion defect (HP:0030171) —LEADS_TO→ Diarrhea (HP:0002087). Mutations in SLC26A2 disrupt sulfate transport, leading to skeletal dysplasia characteristic of achondrogenesis type IB. Separately, mutations in SLC26A3 disrupt chloride transport, resulting in impaired chloride secretion and chronic diarrhea in congenital secretory chloride diarrhea 1. The convergence lies in the shared involvement of the SLC26 family in critical ion transport processes essential for distinct physiological functions.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in SLC26A2 that does not lead to skeletal dysplasia, or a pathogenic variant in SLC26A3 that does not lead to diarrhea or electrolyte imbalance.",
+        "gnomad_variant": "gnomAD analysis showing a common pathogenic variant (allele frequency > 0.01) in either SLC26A2 or SLC26A3 that is not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-427601": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008964",
+        "diseaseBName": "congenital secretory chloride diarrhea 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-427601"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-427601": 8
+        },
+        "fitness": 0.4335,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC26A2 (HGNC:11264) —DISRUPTS→ Sulfate transport (GO:0005370); Sulfate transport (GO:0005370) —LEADS_TO→ Skeletal dysplasia (HP:0002650); SLC26A3 (HGNC:11265) —DISRUPTS→ Chloride transport (GO:0005375); Chloride transport (GO:0005375) —LEADS_TO→ Chloride secretion defect (HP:0030171); Chloride secretion defect (HP:0030171) —LEADS_TO→ Diarrhea (HP:0002087). Mutations in SLC26A2 disrupt sulfate transport, leading to skeletal dysplasia characteristic of achondrogenesis type IB. Separately, mutations in SLC26A3 disrupt chloride transport, resulting in impaired chloride secretion and chronic diarrhea in congenital secretory chloride diarrhea 1. The convergence lies in the shared involvement of the SLC26 family in critical ion transport processes essential for distinct physiological functions.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in SLC26A2 that does not lead to skeletal dysplasia, or a pathogenic variant in SLC26A3 that does not lead to diarrhea or electrolyte imbalance.",
+          "gnomad_variant": "gnomAD analysis showing a common pathogenic variant (allele frequency > 0.01) in either SLC26A2 or SLC26A3 that is not associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared reliance on SLC26 transporters for distinct physiological functions could inform therapeutic strategies. For instance, insights into the regulation of chloride transport in the intestine might offer parallels for modulating sulfate transport in cartilage, or vice versa, although the distinct nature of the affected tissues and transport functions presents a significant challenge."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010134",
+      "diseaseBName": "Pendred syndrome",
+      "fitness": 0.4317,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variants in SLC26A2 (None) —DISRUPTS→ SLC26A2 (HGNC:11230); SLC26A2 (HGNC:11230) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0042027); Sulfate transport and chondrogenesis (GO:0042027) —DECREASES→ Sulfate (CHEBI:17794); Sulfate (CHEBI:17794) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); Loss-of-function variants in SLC26A4 (None) —DISRUPTS→ SLC26A4 (HGNC:11231); SLC26A4 (HGNC:11231) —DISRUPTS→ Iodide transport and thyroid hormone synthesis (GO:0007307); Iodide transport and thyroid hormone synthesis (GO:0007307) —DECREASES→ Iodide (CHEBI:17504); Iodide (CHEBI:17504) —LEADS_TO→ Pendred syndrome (MONDO:0010134). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, impacting chondrogenesis and leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt iodide transport, affecting thyroid hormone synthesis and causing Pendred syndrome. Both transporters are critical for specific ion transport pathways essential for distinct developmental processes.",
+      "mechanism_narrative": "Loss-of-function variants in SLC26A2 (None) —DISRUPTS→ SLC26A2 (HGNC:11230); SLC26A2 (HGNC:11230) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0042027); Sulfate transport and chondrogenesis (GO:0042027) —DECREASES→ Sulfate (CHEBI:17794); Sulfate (CHEBI:17794) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); Loss-of-function variants in SLC26A4 (None) —DISRUPTS→ SLC26A4 (HGNC:11231); SLC26A4 (HGNC:11231) —DISRUPTS→ Iodide transport and thyroid hormone synthesis (GO:0007307); Iodide transport and thyroid hormone synthesis (GO:0007307) —DECREASES→ Iodide (CHEBI:17504); Iodide (CHEBI:17504) —LEADS_TO→ Pendred syndrome (MONDO:0010134). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, impacting chondrogenesis and leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt iodide transport, affecting thyroid hormone synthesis and causing Pendred syndrome. Both transporters are critical for specific ion transport pathways essential for distinct developmental processes.",
+      "falsification": {
+        "text": "If pathogenic variants in SLC26A2 are identified in individuals diagnosed with Pendred syndrome, or pathogenic variants in SLC26A4 are identified in individuals with achondrogenesis type IB, this hypothesis would be falsified. Additionally, if functional studies show that SLC26A2 variants do not impact sulfate transport or SLC26A4 variants do not impact iodide transport, the link would be weakened."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-427601": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010134",
+        "diseaseBName": "Pendred syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-427601"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-427601": 8
+        },
+        "fitness": 0.4317,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variants in SLC26A2 (None) —DISRUPTS→ SLC26A2 (HGNC:11230); SLC26A2 (HGNC:11230) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0042027); Sulfate transport and chondrogenesis (GO:0042027) —DECREASES→ Sulfate (CHEBI:17794); Sulfate (CHEBI:17794) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); Loss-of-function variants in SLC26A4 (None) —DISRUPTS→ SLC26A4 (HGNC:11231); SLC26A4 (HGNC:11231) —DISRUPTS→ Iodide transport and thyroid hormone synthesis (GO:0007307); Iodide transport and thyroid hormone synthesis (GO:0007307) —DECREASES→ Iodide (CHEBI:17504); Iodide (CHEBI:17504) —LEADS_TO→ Pendred syndrome (MONDO:0010134). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, impacting chondrogenesis and leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt iodide transport, affecting thyroid hormone synthesis and causing Pendred syndrome. Both transporters are critical for specific ion transport pathways essential for distinct developmental processes.",
+        "falsification": {
+          "text": "If pathogenic variants in SLC26A2 are identified in individuals diagnosed with Pendred syndrome, or pathogenic variants in SLC26A4 are identified in individuals with achondrogenesis type IB, this hypothesis would be falsified. Additionally, if functional studies show that SLC26A2 variants do not impact sulfate transport or SLC26A4 variants do not impact iodide transport, the link would be weakened."
+        },
+        "translational": "Understanding the shared reliance on SLC26 transporters for distinct developmental processes highlights potential therapeutic strategies targeting ion transport or downstream pathways. For example, understanding the role of sulfate in skeletal development might inform treatments for achondrogenesis, while insights into iodide transport could benefit Pendred syndrome management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010933",
+      "diseaseBName": "autosomal recessive nonsyndromic hearing loss 4",
+      "fitness": 0.4139,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC26A2 (HGNC:10574) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0009979); Sulfate transport and chondrogenesis (GO:0009979) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); SLC26A4 (HGNC:10575) —DISRUPTS→ Inner ear development and ion homeostasis (GO:0007420); Inner ear development and ion homeostasis (GO:0007420) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 4 (MONDO:0010933); Sulfate transport and chondrogenesis (GO:0009979) —DECREASES→ Sulfate availability (CHEBI:17477); Inner ear development and ion homeostasis (GO:0007420) —DECREASES→ Sulfate availability (CHEBI:17477). Loss-of-function mutations in SLC26A2 impair sulfate transport crucial for chondrogenesis, leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt inner ear development and ion homeostasis, causing nonsyndromic hearing loss. Both pathways converge on the availability of sulfate, which is essential for both skeletal development and the proper functioning of the inner ear.",
+      "mechanism_narrative": "SLC26A2 (HGNC:10574) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0009979); Sulfate transport and chondrogenesis (GO:0009979) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); SLC26A4 (HGNC:10575) —DISRUPTS→ Inner ear development and ion homeostasis (GO:0007420); Inner ear development and ion homeostasis (GO:0007420) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 4 (MONDO:0010933); Sulfate transport and chondrogenesis (GO:0009979) —DECREASES→ Sulfate availability (CHEBI:17477); Inner ear development and ion homeostasis (GO:0007420) —DECREASES→ Sulfate availability (CHEBI:17477). Loss-of-function mutations in SLC26A2 impair sulfate transport crucial for chondrogenesis, leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt inner ear development and ion homeostasis, causing nonsyndromic hearing loss. Both pathways converge on the availability of sulfate, which is essential for both skeletal development and the proper functioning of the inner ear.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in SLC26A2 and SLC26A4 in individuals diagnosed with achondrogenesis type IB and autosomal recessive nonsyndromic hearing loss 4, respectively, would falsify this hypothesis. Furthermore, if genetic studies revealed distinct, non-overlapping cellular pathways affected by these gene mutations, it would also weaken this proposed link.",
+        "gnomad_variant": "gnomad v2.1.1 shows population frequency of common variants in SLC26A2 and SLC26A4 that are not associated with severe developmental phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-427601"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-427601": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010933",
+        "diseaseBName": "autosomal recessive nonsyndromic hearing loss 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-427601"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-427601": 8
+        },
+        "fitness": 0.4139,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC26A2 (HGNC:10574) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0009979); Sulfate transport and chondrogenesis (GO:0009979) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); SLC26A4 (HGNC:10575) —DISRUPTS→ Inner ear development and ion homeostasis (GO:0007420); Inner ear development and ion homeostasis (GO:0007420) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 4 (MONDO:0010933); Sulfate transport and chondrogenesis (GO:0009979) —DECREASES→ Sulfate availability (CHEBI:17477); Inner ear development and ion homeostasis (GO:0007420) —DECREASES→ Sulfate availability (CHEBI:17477). Loss-of-function mutations in SLC26A2 impair sulfate transport crucial for chondrogenesis, leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt inner ear development and ion homeostasis, causing nonsyndromic hearing loss. Both pathways converge on the availability of sulfate, which is essential for both skeletal development and the proper functioning of the inner ear.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in SLC26A2 and SLC26A4 in individuals diagnosed with achondrogenesis type IB and autosomal recessive nonsyndromic hearing loss 4, respectively, would falsify this hypothesis. Furthermore, if genetic studies revealed distinct, non-overlapping cellular pathways affected by these gene mutations, it would also weaken this proposed link.",
+          "gnomad_variant": "gnomad v2.1.1 shows population frequency of common variants in SLC26A2 and SLC26A4 that are not associated with severe developmental phenotypes."
+        },
+        "translational": "Understanding the shared role of SLC26 family genes in different developmental processes may offer insights into novel therapeutic strategies. For instance, targeting sulfate availability or transport mechanisms could potentially be explored for conditions affecting skeletal or auditory development. However, the distinct phenotypes suggest that tissue-specific downstream effects are critical and would require targeted approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0019666",
+      "diseaseBName": "spondyloepimetaphyseal dysplasia, PAPSS2 type",
+      "fitness": 0.3923,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC26A2 (HGNC:10549) —DISRUPTS→ sulfate transport into chondrocytes (GO:0015830); sulfate transport into chondrocytes (GO:0015830) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); PAPSS2 (HGNC:8720) —DISRUPTS→ PAPS synthesis (GO:0006270); PAPS synthesis (GO:0006270) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ skeletal dysplasia (HP:0004325); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ severe skeletal dysplasia (HP:0008949). Mutations in SLC26A2 disrupt sulfate transport into chondrocytes, leading to decreased chondroitin sulfate proteoglycan synthesis and skeletal dysplasia. Similarly, mutations in PAPSS2 disrupt PAPS synthesis, which is essential for proteoglycan sulfation, also leading to decreased chondroitin sulfate proteoglycan synthesis and severe skeletal dysplasia. Both disease pathways converge on the impaired synthesis of sulfated proteoglycans.",
+      "mechanism_narrative": "SLC26A2 (HGNC:10549) —DISRUPTS→ sulfate transport into chondrocytes (GO:0015830); sulfate transport into chondrocytes (GO:0015830) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); PAPSS2 (HGNC:8720) —DISRUPTS→ PAPS synthesis (GO:0006270); PAPS synthesis (GO:0006270) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ skeletal dysplasia (HP:0004325); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ severe skeletal dysplasia (HP:0008949). Mutations in SLC26A2 disrupt sulfate transport into chondrocytes, leading to decreased chondroitin sulfate proteoglycan synthesis and skeletal dysplasia. Similarly, mutations in PAPSS2 disrupt PAPS synthesis, which is essential for proteoglycan sulfation, also leading to decreased chondroitin sulfate proteoglycan synthesis and severe skeletal dysplasia. Both disease pathways converge on the impaired synthesis of sulfated proteoglycans.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in SLC26A2 who do not present with achondrogenesis type IB, or individuals with pathogenic variants in PAPSS2 who do not present with spondyloepimetaphyseal dysplasia, PAPSS2 type, would falsify this hypothesis. Furthermore, if studies show independent and non-overlapping molecular pathways downstream of sulfate transport and PAPS synthesis that do not converge on proteoglycan synthesis, this would also serve as falsification.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in the coding regions of SLC26A2 or PAPSS2 in gnomAD would suggest that these genes are not solely responsible for severe Mendelian phenotypes, potentially indicating other contributing factors or incomplete penetrance."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-174362"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-174362": 7
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0019666",
+        "diseaseBName": "spondyloepimetaphyseal dysplasia, PAPSS2 type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-174362"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-174362": 7
+        },
+        "fitness": 0.3923,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC26A2 (HGNC:10549) —DISRUPTS→ sulfate transport into chondrocytes (GO:0015830); sulfate transport into chondrocytes (GO:0015830) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); PAPSS2 (HGNC:8720) —DISRUPTS→ PAPS synthesis (GO:0006270); PAPS synthesis (GO:0006270) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ skeletal dysplasia (HP:0004325); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ severe skeletal dysplasia (HP:0008949). Mutations in SLC26A2 disrupt sulfate transport into chondrocytes, leading to decreased chondroitin sulfate proteoglycan synthesis and skeletal dysplasia. Similarly, mutations in PAPSS2 disrupt PAPS synthesis, which is essential for proteoglycan sulfation, also leading to decreased chondroitin sulfate proteoglycan synthesis and severe skeletal dysplasia. Both disease pathways converge on the impaired synthesis of sulfated proteoglycans.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in SLC26A2 who do not present with achondrogenesis type IB, or individuals with pathogenic variants in PAPSS2 who do not present with spondyloepimetaphyseal dysplasia, PAPSS2 type, would falsify this hypothesis. Furthermore, if studies show independent and non-overlapping molecular pathways downstream of sulfate transport and PAPS synthesis that do not converge on proteoglycan synthesis, this would also serve as falsification.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in the coding regions of SLC26A2 or PAPSS2 in gnomAD would suggest that these genes are not solely responsible for severe Mendelian phenotypes, potentially indicating other contributing factors or incomplete penetrance."
+        },
+        "translational": "Understanding this mechanistic link could lead to novel therapeutic strategies for both achondrogenesis type IB and spondyloepimetaphyseal dysplasia, PAPSS2 type. For instance, therapies aimed at enhancing sulfate uptake or improving PAPS availability, or even downstream interventions that promote proteoglycan synthesis or stability, could be explored."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T23:59:43.070Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** achondrogenesis type IB (MONDO:0010966)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 10 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | nephrolithiasis susceptibility caused by SLC26A1 (MONDO:0020722) | shared pathway | Tier 3 | 0.887 | Reactome:R-HSA-174362, Reactome:R-HSA-427601 |\n| 2 | hypersulfaturia (MONDO:0957268) | shared pathway | Tier 3 | 0.887 | Reactome:R-HSA-174362, Reactome:R-HSA-427601 |\n| 3 | leukodystrophy, hypomyelinating, 26, with chondrodysplasia (MONDO:0859518) | shared pathway | Tier 3 | 0.869 | Reactome:R-HSA-174362 |\n| 4 | multiple epiphyseal dysplasia type 4 (MONDO:0009189) | shared pathway | Tier 3 | 0.850 | Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601 |\n| 5 | diastrophic dysplasia (MONDO:0009107) | shared pathway | Tier 1 | 0.792 | Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601 |\n| 6 | atelosteogenesis type II (MONDO:0009727) | shared pathway | Tier 1 | 0.785 | Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601 |\n| 7 | congenital secretory chloride diarrhea 1 (MONDO:0008964) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-427601 |\n| 8 | Pendred syndrome (MONDO:0010134) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-427601 |\n| 9 | autosomal recessive nonsyndromic hearing loss 4 (MONDO:0010933) | shared pathway | Tier 3 | 0.414 | Reactome:R-HSA-427601 |\n| 10 | spondyloepimetaphyseal dysplasia, PAPSS2 type (MONDO:0019666) | shared pathway | Tier 3 | 0.392 | Reactome:R-HSA-174362 |\n\n### CANDIDATE DETAIL\n#### 1. nephrolithiasis susceptibility caused by SLC26A1  —  Tier 3 — Moderate / Emerging  (fitness 0.887)\n**Link type:** shared pathway (Reactome:R-HSA-174362, Reactome:R-HSA-427601)\n\n**Proposed mechanism:** COL1A1 (HGNC:2234) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); COL1A2 (HGNC:2235) —DISRUPTS→ Type I collagen synthesis (REACT:R-HSA-163740); Type I collagen synthesis (REACT:R-HSA-163740) —DISRUPTS→ Extracellular matrix composition (NULL); SLC26A1 (HGNC:10586) —DISRUPTS→ Sulfate transport (GO:0005352); Sulfate transport (GO:0005352) —DECREASES→ Extracellular matrix composition (NULL); Type I collagen synthesis (REACT:R-HSA-163740) —LEADS_TO→ Severe skeletal defects (HP:0005628); Extracellular matrix composition (NULL) —LEADS_TO→ Nephrolithiasis (HP:0000062). Loss-of-function mutations in COL1A1/COL1A2 disrupt Type I collagen synthesis, leading to achondrogenesis type IB (severe skeletal defects). Concurrently, dysfunction of SLC26A1 impairs sulfate transport, which is crucial for post-translational modification and proper assembly of collagen and other extracellular matrix components. This disruption in matrix composition contributes to nephrolithiasis susceptibility.\n\n**How to falsify it:** The discovery of a pathogenic variant in SLC26A1 that demonstrably enhances sulfate transport and does not affect collagen processing or mineralization would falsify this hypothesis. Alternatively, demonstrating a complete lack of overlap in affected cellular pathways through transcriptomic or proteomic analysis would also serve as a falsification condition. _(variant: None)_\n\n**Why it matters:** Understanding this link could inform therapeutic strategies for both conditions. For achondrogenesis type IB, interventions aimed at improving collagen processing or stability might be explored. For SLC26A1-related nephrolithiasis susceptibility, therapies targeting matrix homeostasis or crystal nucleation could be beneficial, potentially drawing insights from collagen-related disorders.\n\n---\n\n#### 2. hypersulfaturia  —  Tier 3 — Moderate / Emerging  (fitness 0.887)\n**Link type:** shared pathway (Reactome:R-HSA-174362, Reactome:R-HSA-427601)\n\n**Proposed mechanism:** COMP (HGNC:2278) —DISRUPTS→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); Chondrocyte differentiation and extracellular matrix production (GO:0008037) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); PAPS Synthetase 2 (HGNC:8702) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159); Sulfation of aggrecan and collagen (GO:0000159) —LEADS_TO→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Chondrocyte differentiation and extracellular matrix production (GO:0008037); SOX9 (HGNC:11175) —INCREASES→ Sulfation of aggrecan and collagen (GO:0000159); Hypersulfaturia (MONDO:0957268) —DISRUPTS→ Sulfation of aggrecan and collagen (GO:0000159). Loss-of-function mutations in COMP (n1) disrupt chondrocyte differentiation and ECM production (n7), leading to achondrogenesis type IB (n2). Similarly, loss-of-function mutations in PAPSS2 (n3), which provides the substrate for sulfation, disrupt the sulfation of aggrecan and collagen (n6). Both n6 and n7 are downstream targets regulated by SOX9 (n5), a master regulator of chondrogenesis. Impaired sulfation (n6) leads to defective ECM, contributing to hypersulfaturia (n4) and also impacting chondrocyte differentiation (n7) and ultimately bone development.\n\n**How to falsify it:** Identification of a pathogenic variant in COMP in patients diagnosed with hypersulfaturia, or identification of a pathogenic variant in PAPSS2 in patients diagnosed with achondrogenesis type IB, would falsify this hypothesis.\n\n**Why it matters:** Understanding the shared regulatory network involving SOX9 and downstream pathways like sulfation and chondrocyte differentiation could reveal therapeutic targets for skeletal dysplasias, potentially offering avenues for intervention in both severe chondrodysplasias and disorders of matrix sulfation.\n\n---\n\n#### 3. leukodystrophy, hypomyelinating, 26, with chondrodysplasia  —  Tier 3 — Moderate / Emerging  (fitness 0.869)\n**Link type:** shared pathway (Reactome:R-HSA-174362)\n\n**Proposed mechanism:** COL6A1 (HGNC:2206) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A2 (HGNC:2207) —DISRUPTS→ collagen VI assembly (GO:0032940); COL6A3 (HGNC:2208) —DISRUPTS→ collagen VI assembly (GO:0032940); collagen VI assembly (GO:0032940) —LEADS_TO→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ achondrogenesis type IB (MONDO:0010966); extracellular matrix organization (GO:0030198) —LEADS_TO→ hypomyelinating leukodystrophy with chondrodysplasia (MONDO:0859518). Mutations in COL6A1, COL6A2, or COL6A3 disrupt the proper assembly of collagen VI. This impaired collagen VI assembly consequently affects extracellular matrix organization, leading to the skeletal defects characteristic of achondrogenesis type IB and the hypomyelination and chondrodysplasia seen in leukodystrophy, hypomyelinating, 26.\n\n**How to falsify it:** Identification of individuals with mutations in COL6A1, COL6A2, or COL6A3 who exhibit one of the disease phenotypes but not the other, or conversely, individuals with either disease phenotype but without mutations in these collagen VI genes, would falsify this hypothesis.\n\n**Why it matters:** Understanding the shared role of collagen VI in these distinct but phenotypically overlapping rare diseases could pave the way for therapeutic strategies targeting extracellular matrix integrity or collagen VI function, potentially benefiting patients with either condition.\n\n---\n\n#### 4. multiple epiphyseal dysplasia type 4  —  Tier 3 — Moderate / Emerging  (fitness 0.850)\n**Link type:** shared pathway (Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601)\n\n**Proposed mechanism:** COL1A1 (HGNC:2206) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); COL1A2 (HGNC:2207) —DISRUPTS→ Type I collagen synthesis and processing (GO:0005576); Type I collagen synthesis and processing (GO:0005576) —LEADS_TO→ Type I collagen fibril organization (GO:0035947); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Type I collagen fibril organization (GO:0035947) —LEADS_TO→ Severe skeletal dysplasia (HP:0004325). Disruptions in Type I collagen synthesis and processing lead to impaired fibril organization, manifesting as skeletal dysplasia in both achondrogenesis type IB and multiple epiphyseal dysplasia type 4.\n\n**How to falsify it:** Discovery of pathogenic variants in COL1A1 or COL1A2 with loss-of-function effects in patients diagnosed with achondrogenesis type IB, and distinct pathogenic variants in genes unrelated to collagen processing leading to multiple epiphyseal dysplasia type 4. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of Type I collagen in these distinct skeletal dysplasias could reveal common therapeutic targets for improving collagen quality or extracellular matrix integrity, potentially benefiting patients with either condition.\n\n---\n\n#### 5. diastrophic dysplasia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.792)\n**Link type:** shared pathway (Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601)\n\n**Proposed mechanism:** SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137); Sulfate transport and chondroitin sulfate biosynthesis (GO:0009137) —LEADS_TO→ Sulfation of proteoglycans (GO:0009137); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Skeletal dysplasia (HP:0000842); Sulfation of proteoglycans (GO:0009137) —LEADS_TO→ Severe short-limbed dwarfism (HP:0005745). Loss-of-function mutations in SLC26A2 disrupt sulfate transport and subsequently impair chondroitin sulfate biosynthesis and proteoglycan sulfation, leading to skeletal dysplasias and severe short-limbed dwarfism in both achondrogenesis type IB and diastrophic dysplasia.\n\n**How to falsify it:** The identification of pathogenic loss-of-function variants in SLC26A2 in individuals with phenotypes clearly distinct from both achondrogenesis type IB and diastrophic dysplasia, or conversely, the identification of individuals with these skeletal dysplasias who harbor pathogenic variants in genes other than SLC26A2, would falsify this hypothesis. _(variant: rs121918632 (c.300+1G>A) has a gnomAD allele frequency > 0.001, but is associated with achondrogenesis type IB and diastrophic dysplasia, thus supporting the mechanism.)_\n\n**Why it matters:** Understanding the shared molecular basis in SLC26A2 offers potential for developing targeted therapies aimed at restoring sulfate transport or sulfation pathways, which could benefit patients with either condition.\n\n---\n\n#### 6. atelosteogenesis type II  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.785)\n**Link type:** shared pathway (Reactome:R-HSA-174362, Reactome:R-HSA-3560792, Reactome:R-HSA-427601)\n\n**Proposed mechanism:** SLC26A2 (HGNC:10994) —DISRUPTS→ Sulfate transport and proteoglycan synthesis (GO:0001573); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Skeletal dysplasia (HP:0002651); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Short long bones (HP:0005973); Sulfate transport and proteoglycan synthesis (GO:0001573) —LEADS_TO→ Severe micromelia (HP:0003694). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, which is essential for proteoglycan synthesis and proper skeletal development, leading to overlapping phenotypes of skeletal dysplasia, short long bones, and severe micromelia in both achondrogenesis type IB and atelosteogenesis type II.\n\n**How to falsify it:** Identification of pathogenic variants in SLC26A2 that lead to gain-of-function or dominant-negative effects in patients with either achondrogenesis type IB or atelosteogenesis type II would falsify the proposed loss-of-function mechanism. _(variant: Exclusion of pathogenic variants in the coding regions of SLC26A2 from gnomAD databases at a frequency > 0.01% would support a role for rare variants in these diseases.)_\n\n**Why it matters:** Understanding the shared SLC26A2 defect provides a common target for therapeutic strategies aimed at restoring sulfate transport or proteoglycan synthesis, potentially benefiting patients with both achondrogenesis type IB and atelosteogenesis type II.\n\n---\n\n#### 7. congenital secretory chloride diarrhea 1  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-427601)\n\n**Proposed mechanism:** SLC26A2 (HGNC:11264) —DISRUPTS→ Sulfate transport (GO:0005370); Sulfate transport (GO:0005370) —LEADS_TO→ Skeletal dysplasia (HP:0002650); SLC26A3 (HGNC:11265) —DISRUPTS→ Chloride transport (GO:0005375); Chloride transport (GO:0005375) —LEADS_TO→ Chloride secretion defect (HP:0030171); Chloride secretion defect (HP:0030171) —LEADS_TO→ Diarrhea (HP:0002087). Mutations in SLC26A2 disrupt sulfate transport, leading to skeletal dysplasia characteristic of achondrogenesis type IB. Separately, mutations in SLC26A3 disrupt chloride transport, resulting in impaired chloride secretion and chronic diarrhea in congenital secretory chloride diarrhea 1. The convergence lies in the shared involvement of the SLC26 family in critical ion transport processes essential for distinct physiological functions.\n\n**How to falsify it:** Identification of a pathogenic variant in SLC26A2 that does not lead to skeletal dysplasia, or a pathogenic variant in SLC26A3 that does not lead to diarrhea or electrolyte imbalance. _(variant: gnomAD analysis showing a common pathogenic variant (allele frequency > 0.01) in either SLC26A2 or SLC26A3 that is not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared reliance on SLC26 transporters for distinct physiological functions could inform therapeutic strategies. For instance, insights into the regulation of chloride transport in the intestine might offer parallels for modulating sulfate transport in cartilage, or vice versa, although the distinct nature of the affected tissues and transport functions presents a significant challenge.\n\n---\n\n#### 8. Pendred syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-427601)\n\n**Proposed mechanism:** Loss-of-function variants in SLC26A2 (None) —DISRUPTS→ SLC26A2 (HGNC:11230); SLC26A2 (HGNC:11230) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0042027); Sulfate transport and chondrogenesis (GO:0042027) —DECREASES→ Sulfate (CHEBI:17794); Sulfate (CHEBI:17794) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); Loss-of-function variants in SLC26A4 (None) —DISRUPTS→ SLC26A4 (HGNC:11231); SLC26A4 (HGNC:11231) —DISRUPTS→ Iodide transport and thyroid hormone synthesis (GO:0007307); Iodide transport and thyroid hormone synthesis (GO:0007307) —DECREASES→ Iodide (CHEBI:17504); Iodide (CHEBI:17504) —LEADS_TO→ Pendred syndrome (MONDO:0010134). Loss-of-function mutations in SLC26A2 disrupt sulfate transport, impacting chondrogenesis and leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt iodide transport, affecting thyroid hormone synthesis and causing Pendred syndrome. Both transporters are critical for specific ion transport pathways essential for distinct developmental processes.\n\n**How to falsify it:** If pathogenic variants in SLC26A2 are identified in individuals diagnosed with Pendred syndrome, or pathogenic variants in SLC26A4 are identified in individuals with achondrogenesis type IB, this hypothesis would be falsified. Additionally, if functional studies show that SLC26A2 variants do not impact sulfate transport or SLC26A4 variants do not impact iodide transport, the link would be weakened.\n\n**Why it matters:** Understanding the shared reliance on SLC26 transporters for distinct developmental processes highlights potential therapeutic strategies targeting ion transport or downstream pathways. For example, understanding the role of sulfate in skeletal development might inform treatments for achondrogenesis, while insights into iodide transport could benefit Pendred syndrome management.\n\n---\n\n#### 9. autosomal recessive nonsyndromic hearing loss 4  —  Tier 3 — Moderate / Emerging  (fitness 0.414)\n**Link type:** shared pathway (Reactome:R-HSA-427601)\n\n**Proposed mechanism:** SLC26A2 (HGNC:10574) —DISRUPTS→ Sulfate transport and chondrogenesis (GO:0009979); Sulfate transport and chondrogenesis (GO:0009979) —LEADS_TO→ Achondrogenesis type IB (MONDO:0010966); SLC26A4 (HGNC:10575) —DISRUPTS→ Inner ear development and ion homeostasis (GO:0007420); Inner ear development and ion homeostasis (GO:0007420) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 4 (MONDO:0010933); Sulfate transport and chondrogenesis (GO:0009979) —DECREASES→ Sulfate availability (CHEBI:17477); Inner ear development and ion homeostasis (GO:0007420) —DECREASES→ Sulfate availability (CHEBI:17477). Loss-of-function mutations in SLC26A2 impair sulfate transport crucial for chondrogenesis, leading to achondrogenesis type IB. Similarly, loss-of-function mutations in SLC26A4 disrupt inner ear development and ion homeostasis, causing nonsyndromic hearing loss. Both pathways converge on the availability of sulfate, which is essential for both skeletal development and the proper functioning of the inner ear.\n\n**How to falsify it:** The absence of pathogenic variants in SLC26A2 and SLC26A4 in individuals diagnosed with achondrogenesis type IB and autosomal recessive nonsyndromic hearing loss 4, respectively, would falsify this hypothesis. Furthermore, if genetic studies revealed distinct, non-overlapping cellular pathways affected by these gene mutations, it would also weaken this proposed link. _(variant: gnomad v2.1.1 shows population frequency of common variants in SLC26A2 and SLC26A4 that are not associated with severe developmental phenotypes.)_\n\n**Why it matters:** Understanding the shared role of SLC26 family genes in different developmental processes may offer insights into novel therapeutic strategies. For instance, targeting sulfate availability or transport mechanisms could potentially be explored for conditions affecting skeletal or auditory development. However, the distinct phenotypes suggest that tissue-specific downstream effects are critical and would require targeted approaches.\n\n---\n\n#### 10. spondyloepimetaphyseal dysplasia, PAPSS2 type  —  Tier 3 — Moderate / Emerging  (fitness 0.392)\n**Link type:** shared pathway (Reactome:R-HSA-174362)\n\n**Proposed mechanism:** SLC26A2 (HGNC:10549) —DISRUPTS→ sulfate transport into chondrocytes (GO:0015830); sulfate transport into chondrocytes (GO:0015830) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); PAPSS2 (HGNC:8720) —DISRUPTS→ PAPS synthesis (GO:0006270); PAPS synthesis (GO:0006270) —DECREASES→ chondroitin sulfate proteoglycan synthesis (GO:0007465); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ skeletal dysplasia (HP:0004325); chondroitin sulfate proteoglycan synthesis (GO:0007465) —LEADS_TO→ severe skeletal dysplasia (HP:0008949). Mutations in SLC26A2 disrupt sulfate transport into chondrocytes, leading to decreased chondroitin sulfate proteoglycan synthesis and skeletal dysplasia. Similarly, mutations in PAPSS2 disrupt PAPS synthesis, which is essential for proteoglycan sulfation, also leading to decreased chondroitin sulfate proteoglycan synthesis and severe skeletal dysplasia. Both disease pathways converge on the impaired synthesis of sulfated proteoglycans.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in SLC26A2 who do not present with achondrogenesis type IB, or individuals with pathogenic variants in PAPSS2 who do not present with spondyloepimetaphyseal dysplasia, PAPSS2 type, would falsify this hypothesis. Furthermore, if studies show independent and non-overlapping molecular pathways downstream of sulfate transport and PAPS synthesis that do not converge on proteoglycan synthesis, this would also serve as falsification. _(variant: The presence of common variants (AF > 0.01) in the coding regions of SLC26A2 or PAPSS2 in gnomAD would suggest that these genes are not solely responsible for severe Mendelian phenotypes, potentially indicating other contributing factors or incomplete penetrance.)_\n\n**Why it matters:** Understanding this mechanistic link could lead to novel therapeutic strategies for both achondrogenesis type IB and spondyloepimetaphyseal dysplasia, PAPSS2 type. For instance, therapies aimed at enhancing sulfate uptake or improving PAPS availability, or even downstream interventions that promote proteoglycan synthesis or stability, could be explored.\n\n---"
+}

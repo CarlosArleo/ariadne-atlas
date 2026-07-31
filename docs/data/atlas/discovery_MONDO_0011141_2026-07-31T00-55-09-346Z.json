@@ -1,0 +1,325 @@
+{
+  "seed": {
+    "id": "MONDO:0011141",
+    "name": "megaloblastic anemia, folate-responsive"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 8,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0957955",
+      "diseaseBName": "immunodeficiency 114, folate-responsive",
+      "fitness": 0.7022,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "Pathogenic variant in SLC19A1 (HGNC:10937) —DISRUPTS→ Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937); Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937) —DISRUPTS→ Folate transport (GO:0015171); Folate transport (GO:0015171) —DECREASES→ Intracellular folate pool (CHEBI:15417); Intracellular folate pool (CHEBI:15417) —DECREASES→ DNA synthesis (GO:0006260); DNA synthesis (GO:0006260) —LEADS_TO→ Megaloblastic anemia (HP:0001881); DNA synthesis (GO:0006260) —LEADS_TO→ Immunodeficiency (HP:0002714). Pathogenic variants in SLC19A1 disrupt the cellular uptake of folate, leading to a reduced intracellular folate pool. This deficiency impairs DNA synthesis, which is critical for the proliferation of both red blood cell precursors (causing megaloblastic anemia) and immune cells (causing immunodeficiency).",
+      "mechanism_narrative": "Pathogenic variant in SLC19A1 (HGNC:10937) —DISRUPTS→ Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937); Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937) —DISRUPTS→ Folate transport (GO:0015171); Folate transport (GO:0015171) —DECREASES→ Intracellular folate pool (CHEBI:15417); Intracellular folate pool (CHEBI:15417) —DECREASES→ DNA synthesis (GO:0006260); DNA synthesis (GO:0006260) —LEADS_TO→ Megaloblastic anemia (HP:0001881); DNA synthesis (GO:0006260) —LEADS_TO→ Immunodeficiency (HP:0002714). Pathogenic variants in SLC19A1 disrupt the cellular uptake of folate, leading to a reduced intracellular folate pool. This deficiency impairs DNA synthesis, which is critical for the proliferation of both red blood cell precursors (causing megaloblastic anemia) and immune cells (causing immunodeficiency).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SLC19A1 that exhibit gain-of-function properties or that do not impact folate transport would falsify this hypothesis. Additionally, finding that the megaloblastic anemia phenotype is solely attributable to a different genetic cause unrelated to folate transport, while the immunodeficiency is also linked to an independent pathway, would falsify the shared mechanism.",
+        "gnomad_variant": "The presence of common benign variants in SLC19A1 with a frequency > 1% in the gnomAD database that are associated with folate transport function would weaken the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957955",
+        "diseaseBName": "immunodeficiency 114, folate-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "fitness": 0.7022,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in SLC19A1 (HGNC:10937) —DISRUPTS→ Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937); Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937) —DISRUPTS→ Folate transport (GO:0015171); Folate transport (GO:0015171) —DECREASES→ Intracellular folate pool (CHEBI:15417); Intracellular folate pool (CHEBI:15417) —DECREASES→ DNA synthesis (GO:0006260); DNA synthesis (GO:0006260) —LEADS_TO→ Megaloblastic anemia (HP:0001881); DNA synthesis (GO:0006260) —LEADS_TO→ Immunodeficiency (HP:0002714). Pathogenic variants in SLC19A1 disrupt the cellular uptake of folate, leading to a reduced intracellular folate pool. This deficiency impairs DNA synthesis, which is critical for the proliferation of both red blood cell precursors (causing megaloblastic anemia) and immune cells (causing immunodeficiency).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SLC19A1 that exhibit gain-of-function properties or that do not impact folate transport would falsify this hypothesis. Additionally, finding that the megaloblastic anemia phenotype is solely attributable to a different genetic cause unrelated to folate transport, while the immunodeficiency is also linked to an independent pathway, would falsify the shared mechanism.",
+          "gnomad_variant": "The presence of common benign variants in SLC19A1 with a frequency > 1% in the gnomAD database that are associated with folate transport function would weaken the causal link."
+        },
+        "translational": "Understanding the shared reliance on SLC19A1 and folate transport for both hematological and immunological function highlights the potential for therapeutic interventions targeting folate metabolism or transport to benefit patients with either condition. For example, optimizing folate supplementation or exploring alternative transport mechanisms could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013456",
+      "diseaseBName": "constitutional megaloblastic anemia with severe neurologic disease",
+      "fitness": 0.4696,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:10957) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); DHFR (HGNC:2784) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); folate metabolism (REACT:R-HSA-156227) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17970); folate metabolism (REACT:R-HSA-156227) —DECREASES→ tetrahydrofolate (CHEBI:17969); 5-methyltetrahydrofolate (CHEBI:17970) —LEADS_TO→ Megaloblastic anemia (HP:0001888); tetrahydrofolate (CHEBI:17969) —LEADS_TO→ Severe neurologic disease (HP:0002186). Mutations in SLC19A1 (folate transporter) or DHFR (dihydrofolate reductase) disrupt folate metabolism, leading to decreased levels of critical folate derivatives like 5-methyltetrahydrofolate and tetrahydrofolate. This deficiency impairs DNA synthesis and repair, manifesting as megaloblastic anemia. The severe neurologic disease in one form is likely due to a more profound or specific disruption within the folate pathway impacting neuronal function.",
+      "mechanism_narrative": "SLC19A1 (HGNC:10957) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); DHFR (HGNC:2784) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); folate metabolism (REACT:R-HSA-156227) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17970); folate metabolism (REACT:R-HSA-156227) —DECREASES→ tetrahydrofolate (CHEBI:17969); 5-methyltetrahydrofolate (CHEBI:17970) —LEADS_TO→ Megaloblastic anemia (HP:0001888); tetrahydrofolate (CHEBI:17969) —LEADS_TO→ Severe neurologic disease (HP:0002186). Mutations in SLC19A1 (folate transporter) or DHFR (dihydrofolate reductase) disrupt folate metabolism, leading to decreased levels of critical folate derivatives like 5-methyltetrahydrofolate and tetrahydrofolate. This deficiency impairs DNA synthesis and repair, manifesting as megaloblastic anemia. The severe neurologic disease in one form is likely due to a more profound or specific disruption within the folate pathway impacting neuronal function.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SLC19A1 or DHFR with a minor allele frequency greater than 1% in gnomAD.",
+        "gnomad_variant": "rs1045754"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013456",
+        "diseaseBName": "constitutional megaloblastic anemia with severe neurologic disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.4696,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10957) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); DHFR (HGNC:2784) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); folate metabolism (REACT:R-HSA-156227) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17970); folate metabolism (REACT:R-HSA-156227) —DECREASES→ tetrahydrofolate (CHEBI:17969); 5-methyltetrahydrofolate (CHEBI:17970) —LEADS_TO→ Megaloblastic anemia (HP:0001888); tetrahydrofolate (CHEBI:17969) —LEADS_TO→ Severe neurologic disease (HP:0002186). Mutations in SLC19A1 (folate transporter) or DHFR (dihydrofolate reductase) disrupt folate metabolism, leading to decreased levels of critical folate derivatives like 5-methyltetrahydrofolate and tetrahydrofolate. This deficiency impairs DNA synthesis and repair, manifesting as megaloblastic anemia. The severe neurologic disease in one form is likely due to a more profound or specific disruption within the folate pathway impacting neuronal function.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SLC19A1 or DHFR with a minor allele frequency greater than 1% in gnomAD.",
+          "gnomad_variant": "rs1045754"
+        },
+        "translational": "Understanding the shared role of folate metabolism in these distinct but related megaloblastic anemia phenotypes could inform therapeutic strategies, potentially including folate supplementation or alternative treatment approaches targeting specific steps in the folate pathway for the more severe neurological presentation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0060611",
+      "diseaseBName": "combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia",
+      "fitness": 0.4368,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:10835) —DISRUPTS→ folate metabolism (GO:0006728); MTHFD1 (HGNC:7504) —DISRUPTS→ folate metabolism (GO:0006728); folate metabolism (GO:0006728) —LEADS_TO→ 5,10-methylenetetrahydrofolate (CHEBI:15747); 5,10-methylenetetrahydrofolate (CHEBI:15747) —LEADS_TO→ homocysteine (CHEBI:17647); homocysteine (CHEBI:17647) —INCREASES→ megaloblastic anemia (HP:0001881); folate metabolism (GO:0006728) —DECREASES→ combined immunodeficiency (HP:0002714). Loss-of-function mutations in SLC19A1 (folate transporter) and MTHFD1 (involved in one-carbon metabolism) disrupt folate metabolism. This leads to decreased production of essential folate cofactors like 5,10-methylenetetrahydrofolate, impairing DNA synthesis and causing megaloblastic anemia (HP:0001881). Concurrently, disruptions in folate metabolism, particularly the conversion of homocysteine to methionine, lead to elevated homocysteine levels and can impair the proliferation and function of immune cells, resulting in combined immunodeficiency (HP:0002714).",
+      "mechanism_narrative": "SLC19A1 (HGNC:10835) —DISRUPTS→ folate metabolism (GO:0006728); MTHFD1 (HGNC:7504) —DISRUPTS→ folate metabolism (GO:0006728); folate metabolism (GO:0006728) —LEADS_TO→ 5,10-methylenetetrahydrofolate (CHEBI:15747); 5,10-methylenetetrahydrofolate (CHEBI:15747) —LEADS_TO→ homocysteine (CHEBI:17647); homocysteine (CHEBI:17647) —INCREASES→ megaloblastic anemia (HP:0001881); folate metabolism (GO:0006728) —DECREASES→ combined immunodeficiency (HP:0002714). Loss-of-function mutations in SLC19A1 (folate transporter) and MTHFD1 (involved in one-carbon metabolism) disrupt folate metabolism. This leads to decreased production of essential folate cofactors like 5,10-methylenetetrahydrofolate, impairing DNA synthesis and causing megaloblastic anemia (HP:0001881). Concurrently, disruptions in folate metabolism, particularly the conversion of homocysteine to methionine, lead to elevated homocysteine levels and can impair the proliferation and function of immune cells, resulting in combined immunodeficiency (HP:0002714).",
+      "falsification": {
+        "text": "Discovery of a specific pathogenic variant in SLC19A1 or MTHFD1 that, when knocked out or severely impaired, only leads to megaloblastic anemia without any discernible impact on immune cell populations or function would falsify the direct link between folate metabolism disruption and combined immunodeficiency in this context.",
+        "gnomad_variant": "A common pathogenic variant (AF > 0.01) in SLC19A1 or MTHFD1 in the general population, if present, would suggest incomplete penetrance or alternative pathways."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0060611",
+        "diseaseBName": "combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.4368,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10835) —DISRUPTS→ folate metabolism (GO:0006728); MTHFD1 (HGNC:7504) —DISRUPTS→ folate metabolism (GO:0006728); folate metabolism (GO:0006728) —LEADS_TO→ 5,10-methylenetetrahydrofolate (CHEBI:15747); 5,10-methylenetetrahydrofolate (CHEBI:15747) —LEADS_TO→ homocysteine (CHEBI:17647); homocysteine (CHEBI:17647) —INCREASES→ megaloblastic anemia (HP:0001881); folate metabolism (GO:0006728) —DECREASES→ combined immunodeficiency (HP:0002714). Loss-of-function mutations in SLC19A1 (folate transporter) and MTHFD1 (involved in one-carbon metabolism) disrupt folate metabolism. This leads to decreased production of essential folate cofactors like 5,10-methylenetetrahydrofolate, impairing DNA synthesis and causing megaloblastic anemia (HP:0001881). Concurrently, disruptions in folate metabolism, particularly the conversion of homocysteine to methionine, lead to elevated homocysteine levels and can impair the proliferation and function of immune cells, resulting in combined immunodeficiency (HP:0002714).",
+        "falsification": {
+          "text": "Discovery of a specific pathogenic variant in SLC19A1 or MTHFD1 that, when knocked out or severely impaired, only leads to megaloblastic anemia without any discernible impact on immune cell populations or function would falsify the direct link between folate metabolism disruption and combined immunodeficiency in this context.",
+          "gnomad_variant": "A common pathogenic variant (AF > 0.01) in SLC19A1 or MTHFD1 in the general population, if present, would suggest incomplete penetrance or alternative pathways."
+        },
+        "translational": "This mechanistic link highlights the potential for folate supplementation or related metabolic interventions to be beneficial for both megaloblastic anemia and potentially aspects of combined immunodeficiency in patients with mutations in folate pathway genes. It underscores the pleiotropic effects of disruptions in fundamental metabolic pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009353",
+      "diseaseBName": "homocystinuria due to methylene tetrahydrofolate reductase deficiency",
+      "fitness": 0.433,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:11041) —DISRUPTS→ folate metabolism (GO:0006787); folate metabolism (GO:0006787) —LEADS_TO→ megaloblastic anemia (HP:0001888); MTHFR (HGNC:7724) —DISRUPTS→ 5,10-methylenetetrahydrofolate (CHEBI:15724); 5,10-methylenetetrahydrofolate (CHEBI:15724) —DECREASES→ homocysteine (CHEBI:17790); homocysteine (CHEBI:17790) —INCREASES→ homocystinuria (HP:0002137); folate metabolism (GO:0006787) —LEADS_TO→ homocysteine (CHEBI:17790). Loss-of-function variants in SLC19A1 disrupt folate transport, impairing folate metabolism and leading to megaloblastic anemia. Concurrently, loss-of-function variants in MTHFR disrupt the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, which is essential for remethylating homocysteine to methionine. This disruption in folate metabolism leads to the accumulation of homocysteine and subsequent homocystinuria.",
+      "mechanism_narrative": "SLC19A1 (HGNC:11041) —DISRUPTS→ folate metabolism (GO:0006787); folate metabolism (GO:0006787) —LEADS_TO→ megaloblastic anemia (HP:0001888); MTHFR (HGNC:7724) —DISRUPTS→ 5,10-methylenetetrahydrofolate (CHEBI:15724); 5,10-methylenetetrahydrofolate (CHEBI:15724) —DECREASES→ homocysteine (CHEBI:17790); homocysteine (CHEBI:17790) —INCREASES→ homocystinuria (HP:0002137); folate metabolism (GO:0006787) —LEADS_TO→ homocysteine (CHEBI:17790). Loss-of-function variants in SLC19A1 disrupt folate transport, impairing folate metabolism and leading to megaloblastic anemia. Concurrently, loss-of-function variants in MTHFR disrupt the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, which is essential for remethylating homocysteine to methionine. This disruption in folate metabolism leads to the accumulation of homocysteine and subsequent homocystinuria.",
+      "falsification": {
+        "text": "Demonstration that mutations in MTHFR do not lead to decreased MTHFR activity or that mutations in SLC19A1 do not impair folate uptake.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009353",
+        "diseaseBName": "homocystinuria due to methylene tetrahydrofolate reductase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.433,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:11041) —DISRUPTS→ folate metabolism (GO:0006787); folate metabolism (GO:0006787) —LEADS_TO→ megaloblastic anemia (HP:0001888); MTHFR (HGNC:7724) —DISRUPTS→ 5,10-methylenetetrahydrofolate (CHEBI:15724); 5,10-methylenetetrahydrofolate (CHEBI:15724) —DECREASES→ homocysteine (CHEBI:17790); homocysteine (CHEBI:17790) —INCREASES→ homocystinuria (HP:0002137); folate metabolism (GO:0006787) —LEADS_TO→ homocysteine (CHEBI:17790). Loss-of-function variants in SLC19A1 disrupt folate transport, impairing folate metabolism and leading to megaloblastic anemia. Concurrently, loss-of-function variants in MTHFR disrupt the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, which is essential for remethylating homocysteine to methionine. This disruption in folate metabolism leads to the accumulation of homocysteine and subsequent homocystinuria.",
+        "falsification": {
+          "text": "Demonstration that mutations in MTHFR do not lead to decreased MTHFR activity or that mutations in SLC19A1 do not impair folate uptake.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared role of folate metabolism in these distinct conditions highlights the potential for therapeutic interventions targeting folate pathways to manage both megaloblastic anemia and hyperhomocysteinemia, although the specific genetic basis dictates the primary clinical presentation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009238",
+      "diseaseBName": "hereditary folate malabsorption",
+      "fitness": 0.414,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:10838) —DISRUPTS→ Folate (CHEBI:15405); SLC46A1 (HGNC:24942) —DISRUPTS→ Folate (CHEBI:15405); Folate (CHEBI:15405) —LEADS_TO→ One-carbon metabolism (REACT:R-HSA-190747); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Megaloblastic anemia (HP:0001898); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Intestinal malabsorption (HP:0002704). Loss-of-function mutations in either SLC19A1 (folate transporter) or SLC46A1 (folate transporter) impair cellular uptake and utilization of folate, disrupting one-carbon metabolism. This disruption leads to megaloblastic anemia (Disease A) due to impaired DNA synthesis in red blood cell precursors and intestinal malabsorption (Disease B) due to impaired folate absorption in the gut.",
+      "mechanism_narrative": "SLC19A1 (HGNC:10838) —DISRUPTS→ Folate (CHEBI:15405); SLC46A1 (HGNC:24942) —DISRUPTS→ Folate (CHEBI:15405); Folate (CHEBI:15405) —LEADS_TO→ One-carbon metabolism (REACT:R-HSA-190747); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Megaloblastic anemia (HP:0001898); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Intestinal malabsorption (HP:0002704). Loss-of-function mutations in either SLC19A1 (folate transporter) or SLC46A1 (folate transporter) impair cellular uptake and utilization of folate, disrupting one-carbon metabolism. This disruption leads to megaloblastic anemia (Disease A) due to impaired DNA synthesis in red blood cell precursors and intestinal malabsorption (Disease B) due to impaired folate absorption in the gut.",
+      "falsification": {
+        "text": "If mutations in SLC19A1 and SLC46A1 were found to be exclusively associated with distinct, non-overlapping sets of cellular processes or if individuals with mutations in one gene showed no signs of folate deficiency, this hypothesis would be falsified.",
+        "gnomad_variant": "Identification of common variants (allele frequency > 1% in gnomAD) in SLC19A1 or SLC46A1 associated with normal folate levels and absence of anemia or malabsorption."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009238",
+        "diseaseBName": "hereditary folate malabsorption",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.414,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10838) —DISRUPTS→ Folate (CHEBI:15405); SLC46A1 (HGNC:24942) —DISRUPTS→ Folate (CHEBI:15405); Folate (CHEBI:15405) —LEADS_TO→ One-carbon metabolism (REACT:R-HSA-190747); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Megaloblastic anemia (HP:0001898); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Intestinal malabsorption (HP:0002704). Loss-of-function mutations in either SLC19A1 (folate transporter) or SLC46A1 (folate transporter) impair cellular uptake and utilization of folate, disrupting one-carbon metabolism. This disruption leads to megaloblastic anemia (Disease A) due to impaired DNA synthesis in red blood cell precursors and intestinal malabsorption (Disease B) due to impaired folate absorption in the gut.",
+        "falsification": {
+          "text": "If mutations in SLC19A1 and SLC46A1 were found to be exclusively associated with distinct, non-overlapping sets of cellular processes or if individuals with mutations in one gene showed no signs of folate deficiency, this hypothesis would be falsified.",
+          "gnomad_variant": "Identification of common variants (allele frequency > 1% in gnomAD) in SLC19A1 or SLC46A1 associated with normal folate levels and absence of anemia or malabsorption."
+        },
+        "translational": "Understanding this overlap highlights the critical role of folate transport and metabolism in preventing both hematological and gastrointestinal disorders. Therapeutic strategies targeting folate supplementation or alternative transport mechanisms could be relevant for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030866",
+      "diseaseBName": "neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities",
+      "fitness": 0.3884,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:10850) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ megaloblastic anemia (HP:0001898); SHMT2 (HGNC:10867) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ cardiomyopathy (HP:0001638); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ spasticity (HP:0002504); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ brain abnormalities (HP:0000253). Loss-of-function mutations in SLC19A1, which encodes the folate transporter, disrupt folate metabolism, leading to megaloblastic anemia. Simultaneously, loss-of-function mutations in SHMT2, involved in serine and folate metabolism, also disrupt folate metabolism, contributing to the complex phenotype of neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities. The convergence occurs at the level of the shared folate metabolic pathway.",
+      "mechanism_narrative": "SLC19A1 (HGNC:10850) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ megaloblastic anemia (HP:0001898); SHMT2 (HGNC:10867) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ cardiomyopathy (HP:0001638); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ spasticity (HP:0002504); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ brain abnormalities (HP:0000253). Loss-of-function mutations in SLC19A1, which encodes the folate transporter, disrupt folate metabolism, leading to megaloblastic anemia. Simultaneously, loss-of-function mutations in SHMT2, involved in serine and folate metabolism, also disrupt folate metabolism, contributing to the complex phenotype of neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities. The convergence occurs at the level of the shared folate metabolic pathway.",
+      "falsification": {
+        "text": "A pathogenic variant in SLC19A1 or SHMT2 that exhibits a clear gain-of-function mechanism or does not demonstrably impact folate metabolism would falsify this hypothesis. Furthermore, identification of distinct, non-overlapping molecular pathways causally linked to each disease would also falsify this proposed overlap."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030866",
+        "diseaseBName": "neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.3884,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10850) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ megaloblastic anemia (HP:0001898); SHMT2 (HGNC:10867) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ cardiomyopathy (HP:0001638); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ spasticity (HP:0002504); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ brain abnormalities (HP:0000253). Loss-of-function mutations in SLC19A1, which encodes the folate transporter, disrupt folate metabolism, leading to megaloblastic anemia. Simultaneously, loss-of-function mutations in SHMT2, involved in serine and folate metabolism, also disrupt folate metabolism, contributing to the complex phenotype of neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities. The convergence occurs at the level of the shared folate metabolic pathway.",
+        "falsification": {
+          "text": "A pathogenic variant in SLC19A1 or SHMT2 that exhibits a clear gain-of-function mechanism or does not demonstrably impact folate metabolism would falsify this hypothesis. Furthermore, identification of distinct, non-overlapping molecular pathways causally linked to each disease would also falsify this proposed overlap."
+        },
+        "translational": "Understanding the shared reliance on folate metabolism for both hematological and neurological health could lead to novel therapeutic strategies. For instance, targeted supplementation or cofactor enhancement strategies aimed at the shared metabolic pathway might offer benefits for both conditions, or at least clarify the specific metabolic deficits contributing to each disease's distinct manifestations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032705",
+      "diseaseBName": "neurodevelopmental disorder with microcephaly, epilepsy, and hypomyelination",
+      "fitness": 0.3697,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC19A1 (HGNC:10992) —DISRUPTS→ folate transport (GO:0015877); folate transport (GO:0015877) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17487); 5-methyltetrahydrofolate (CHEBI:17487) —DECREASES→ one-carbon metabolism (GO:0006733); one-carbon metabolism (GO:0006733) —LEADS_TO→ megaloblastic anemia (HP:0001879); one-carbon metabolism (GO:0006733) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ microcephaly (HP:0000252); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ epilepsy (HP:0001250); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ hypomyelination (HP:0010876). Loss-of-function mutations in SLC19A1 impair folate transport, leading to reduced levels of 5-methyltetrahydrofolate. This deficiency disrupts one-carbon metabolism, which is essential for DNA synthesis (causing megaloblastic anemia) and for critical processes in neurodevelopment, including myelination and neuronal function, resulting in microcephaly, epilepsy, and hypomyelination.",
+      "mechanism_narrative": "SLC19A1 (HGNC:10992) —DISRUPTS→ folate transport (GO:0015877); folate transport (GO:0015877) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17487); 5-methyltetrahydrofolate (CHEBI:17487) —DECREASES→ one-carbon metabolism (GO:0006733); one-carbon metabolism (GO:0006733) —LEADS_TO→ megaloblastic anemia (HP:0001879); one-carbon metabolism (GO:0006733) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ microcephaly (HP:0000252); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ epilepsy (HP:0001250); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ hypomyelination (HP:0010876). Loss-of-function mutations in SLC19A1 impair folate transport, leading to reduced levels of 5-methyltetrahydrofolate. This deficiency disrupts one-carbon metabolism, which is essential for DNA synthesis (causing megaloblastic anemia) and for critical processes in neurodevelopment, including myelination and neuronal function, resulting in microcephaly, epilepsy, and hypomyelination.",
+      "falsification": {
+        "text": "Demonstration that mutations in SLC19A1 do not impair folate transport or that impaired folate transport does not affect DNA synthesis or neuronal development.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the SLC19A1 gene that are not associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032705",
+        "diseaseBName": "neurodevelopmental disorder with microcephaly, epilepsy, and hypomyelination",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.3697,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10992) —DISRUPTS→ folate transport (GO:0015877); folate transport (GO:0015877) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17487); 5-methyltetrahydrofolate (CHEBI:17487) —DECREASES→ one-carbon metabolism (GO:0006733); one-carbon metabolism (GO:0006733) —LEADS_TO→ megaloblastic anemia (HP:0001879); one-carbon metabolism (GO:0006733) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ microcephaly (HP:0000252); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ epilepsy (HP:0001250); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ hypomyelination (HP:0010876). Loss-of-function mutations in SLC19A1 impair folate transport, leading to reduced levels of 5-methyltetrahydrofolate. This deficiency disrupts one-carbon metabolism, which is essential for DNA synthesis (causing megaloblastic anemia) and for critical processes in neurodevelopment, including myelination and neuronal function, resulting in microcephaly, epilepsy, and hypomyelination.",
+        "falsification": {
+          "text": "Demonstration that mutations in SLC19A1 do not impair folate transport or that impaired folate transport does not affect DNA synthesis or neuronal development.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the SLC19A1 gene that are not associated with either disease."
+        },
+        "translational": "Understanding the shared role of folate metabolism and SLC19A1 in these distinct diseases suggests potential therapeutic avenues. Folate supplementation or related metabolic interventions could be explored for both conditions, though careful consideration of dosage and timing would be crucial, especially for neurodevelopmental disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014795",
+      "diseaseBName": "exercise intolerance, riboflavin-responsive",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "SLC19A1 (HGNC:10601) —DECREASES→ Tetrahydrofolate (THF) (CHEBI:17997); Tetrahydrofolate (THF) (CHEBI:17997) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —DISRUPTS→ One-carbon metabolism (GO:0006733); One-carbon metabolism (GO:0006733) —LEADS_TO→ Megaloblastic anemia (HP:0001877); SLC25A32 (HGNC:28714) —DECREASES→ Flavin adenine dinucleotide (FAD) (CHEBI:15991); Flavin adenine dinucleotide (FAD) (CHEBI:15991) —DISRUPTS→ Riboflavin metabolism (GO:0006739); Riboflavin metabolism (GO:0006739) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —LEADS_TO→ Exercise intolerance (HP:0003690). Loss-of-function mutations in SLC19A1 impair the transport of folate into mitochondria, disrupting the mitochondrial folate pathway. Similarly, mutations in SLC25A32 impair the transport of riboflavin into mitochondria, which is essential for the production of FAD, a cofactor required for many mitochondrial enzymes, including those in the mitochondrial folate pathway. Both disruptions converge on the mitochondrial folate pathway, leading to reduced one-carbon metabolism necessary for DNA synthesis (causing megaloblastic anemia) and impaired cellular respiration (causing exercise intolerance).",
+      "mechanism_narrative": "SLC19A1 (HGNC:10601) —DECREASES→ Tetrahydrofolate (THF) (CHEBI:17997); Tetrahydrofolate (THF) (CHEBI:17997) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —DISRUPTS→ One-carbon metabolism (GO:0006733); One-carbon metabolism (GO:0006733) —LEADS_TO→ Megaloblastic anemia (HP:0001877); SLC25A32 (HGNC:28714) —DECREASES→ Flavin adenine dinucleotide (FAD) (CHEBI:15991); Flavin adenine dinucleotide (FAD) (CHEBI:15991) —DISRUPTS→ Riboflavin metabolism (GO:0006739); Riboflavin metabolism (GO:0006739) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —LEADS_TO→ Exercise intolerance (HP:0003690). Loss-of-function mutations in SLC19A1 impair the transport of folate into mitochondria, disrupting the mitochondrial folate pathway. Similarly, mutations in SLC25A32 impair the transport of riboflavin into mitochondria, which is essential for the production of FAD, a cofactor required for many mitochondrial enzymes, including those in the mitochondrial folate pathway. Both disruptions converge on the mitochondrial folate pathway, leading to reduced one-carbon metabolism necessary for DNA synthesis (causing megaloblastic anemia) and impaired cellular respiration (causing exercise intolerance).",
+      "falsification": {
+        "text": "Demonstration that mutations in SLC19A1 do not affect mitochondrial folate levels or that mutations in SLC25A32 do not impact FAD levels within mitochondria.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC19A1 or SLC25A32 that do not segregate with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196757"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196757": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014795",
+        "diseaseBName": "exercise intolerance, riboflavin-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196757"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196757": 17
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC19A1 (HGNC:10601) —DECREASES→ Tetrahydrofolate (THF) (CHEBI:17997); Tetrahydrofolate (THF) (CHEBI:17997) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —DISRUPTS→ One-carbon metabolism (GO:0006733); One-carbon metabolism (GO:0006733) —LEADS_TO→ Megaloblastic anemia (HP:0001877); SLC25A32 (HGNC:28714) —DECREASES→ Flavin adenine dinucleotide (FAD) (CHEBI:15991); Flavin adenine dinucleotide (FAD) (CHEBI:15991) —DISRUPTS→ Riboflavin metabolism (GO:0006739); Riboflavin metabolism (GO:0006739) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —LEADS_TO→ Exercise intolerance (HP:0003690). Loss-of-function mutations in SLC19A1 impair the transport of folate into mitochondria, disrupting the mitochondrial folate pathway. Similarly, mutations in SLC25A32 impair the transport of riboflavin into mitochondria, which is essential for the production of FAD, a cofactor required for many mitochondrial enzymes, including those in the mitochondrial folate pathway. Both disruptions converge on the mitochondrial folate pathway, leading to reduced one-carbon metabolism necessary for DNA synthesis (causing megaloblastic anemia) and impaired cellular respiration (causing exercise intolerance).",
+        "falsification": {
+          "text": "Demonstration that mutations in SLC19A1 do not affect mitochondrial folate levels or that mutations in SLC25A32 do not impact FAD levels within mitochondria.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC19A1 or SLC25A32 that do not segregate with either disease phenotype."
+        },
+        "translational": "Targeting the mitochondrial folate pathway or its upstream regulators (like SLC19A1 and SLC25A32) could offer therapeutic strategies for both megaloblastic anemia and exercise intolerance, potentially through vitamin supplementation or gene therapy approaches."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T00:55:09.346Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** megaloblastic anemia, folate-responsive (MONDO:0011141)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 8 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | immunodeficiency 114, folate-responsive (MONDO:0957955) | shared pathway | Tier 2 | 0.702 | Reactome:R-HSA-196757 |\n| 2 | constitutional megaloblastic anemia with severe neurologic disease (MONDO:0013456) | shared pathway | Tier 3 | 0.470 | Reactome:R-HSA-196757 |\n| 3 | combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia (MONDO:0060611) | shared pathway | Tier 3 | 0.437 | Reactome:R-HSA-196757 |\n| 4 | homocystinuria due to methylene tetrahydrofolate reductase deficiency (MONDO:0009353) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-196757 |\n| 5 | hereditary folate malabsorption (MONDO:0009238) | shared pathway | Tier 3 | 0.414 | Reactome:R-HSA-196757 |\n| 6 | neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities (MONDO:0030866) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-196757 |\n| 7 | neurodevelopmental disorder with microcephaly, epilepsy, and hypomyelination (MONDO:0032705) | shared pathway | Tier 3 | 0.370 | Reactome:R-HSA-196757 |\n| 8 | exercise intolerance, riboflavin-responsive (MONDO:0014795) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-196757 |\n\n### CANDIDATE DETAIL\n#### 1. immunodeficiency 114, folate-responsive  —  Tier 2 — Strong / Probable  (fitness 0.702)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** Pathogenic variant in SLC19A1 (HGNC:10937) —DISRUPTS→ Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937); Solute Carrier Family 19 Member 1 (SLC19A1) (HGNC:10937) —DISRUPTS→ Folate transport (GO:0015171); Folate transport (GO:0015171) —DECREASES→ Intracellular folate pool (CHEBI:15417); Intracellular folate pool (CHEBI:15417) —DECREASES→ DNA synthesis (GO:0006260); DNA synthesis (GO:0006260) —LEADS_TO→ Megaloblastic anemia (HP:0001881); DNA synthesis (GO:0006260) —LEADS_TO→ Immunodeficiency (HP:0002714). Pathogenic variants in SLC19A1 disrupt the cellular uptake of folate, leading to a reduced intracellular folate pool. This deficiency impairs DNA synthesis, which is critical for the proliferation of both red blood cell precursors (causing megaloblastic anemia) and immune cells (causing immunodeficiency).\n\n**How to falsify it:** Identification of pathogenic variants in SLC19A1 that exhibit gain-of-function properties or that do not impact folate transport would falsify this hypothesis. Additionally, finding that the megaloblastic anemia phenotype is solely attributable to a different genetic cause unrelated to folate transport, while the immunodeficiency is also linked to an independent pathway, would falsify the shared mechanism. _(variant: The presence of common benign variants in SLC19A1 with a frequency > 1% in the gnomAD database that are associated with folate transport function would weaken the causal link.)_\n\n**Why it matters:** Understanding the shared reliance on SLC19A1 and folate transport for both hematological and immunological function highlights the potential for therapeutic interventions targeting folate metabolism or transport to benefit patients with either condition. For example, optimizing folate supplementation or exploring alternative transport mechanisms could be explored.\n\n---\n\n#### 2. constitutional megaloblastic anemia with severe neurologic disease  —  Tier 3 — Moderate / Emerging  (fitness 0.470)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10957) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); DHFR (HGNC:2784) —DISRUPTS→ folate metabolism (REACT:R-HSA-156227); folate metabolism (REACT:R-HSA-156227) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17970); folate metabolism (REACT:R-HSA-156227) —DECREASES→ tetrahydrofolate (CHEBI:17969); 5-methyltetrahydrofolate (CHEBI:17970) —LEADS_TO→ Megaloblastic anemia (HP:0001888); tetrahydrofolate (CHEBI:17969) —LEADS_TO→ Severe neurologic disease (HP:0002186). Mutations in SLC19A1 (folate transporter) or DHFR (dihydrofolate reductase) disrupt folate metabolism, leading to decreased levels of critical folate derivatives like 5-methyltetrahydrofolate and tetrahydrofolate. This deficiency impairs DNA synthesis and repair, manifesting as megaloblastic anemia. The severe neurologic disease in one form is likely due to a more profound or specific disruption within the folate pathway impacting neuronal function.\n\n**How to falsify it:** Identification of pathogenic variants in SLC19A1 or DHFR with a minor allele frequency greater than 1% in gnomAD. _(variant: rs1045754)_\n\n**Why it matters:** Understanding the shared role of folate metabolism in these distinct but related megaloblastic anemia phenotypes could inform therapeutic strategies, potentially including folate supplementation or alternative treatment approaches targeting specific steps in the folate pathway for the more severe neurological presentation.\n\n---\n\n#### 3. combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia  —  Tier 3 — Moderate / Emerging  (fitness 0.437)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10835) —DISRUPTS→ folate metabolism (GO:0006728); MTHFD1 (HGNC:7504) —DISRUPTS→ folate metabolism (GO:0006728); folate metabolism (GO:0006728) —LEADS_TO→ 5,10-methylenetetrahydrofolate (CHEBI:15747); 5,10-methylenetetrahydrofolate (CHEBI:15747) —LEADS_TO→ homocysteine (CHEBI:17647); homocysteine (CHEBI:17647) —INCREASES→ megaloblastic anemia (HP:0001881); folate metabolism (GO:0006728) —DECREASES→ combined immunodeficiency (HP:0002714). Loss-of-function mutations in SLC19A1 (folate transporter) and MTHFD1 (involved in one-carbon metabolism) disrupt folate metabolism. This leads to decreased production of essential folate cofactors like 5,10-methylenetetrahydrofolate, impairing DNA synthesis and causing megaloblastic anemia (HP:0001881). Concurrently, disruptions in folate metabolism, particularly the conversion of homocysteine to methionine, lead to elevated homocysteine levels and can impair the proliferation and function of immune cells, resulting in combined immunodeficiency (HP:0002714).\n\n**How to falsify it:** Discovery of a specific pathogenic variant in SLC19A1 or MTHFD1 that, when knocked out or severely impaired, only leads to megaloblastic anemia without any discernible impact on immune cell populations or function would falsify the direct link between folate metabolism disruption and combined immunodeficiency in this context. _(variant: A common pathogenic variant (AF > 0.01) in SLC19A1 or MTHFD1 in the general population, if present, would suggest incomplete penetrance or alternative pathways.)_\n\n**Why it matters:** This mechanistic link highlights the potential for folate supplementation or related metabolic interventions to be beneficial for both megaloblastic anemia and potentially aspects of combined immunodeficiency in patients with mutations in folate pathway genes. It underscores the pleiotropic effects of disruptions in fundamental metabolic pathways.\n\n---\n\n#### 4. homocystinuria due to methylene tetrahydrofolate reductase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:11041) —DISRUPTS→ folate metabolism (GO:0006787); folate metabolism (GO:0006787) —LEADS_TO→ megaloblastic anemia (HP:0001888); MTHFR (HGNC:7724) —DISRUPTS→ 5,10-methylenetetrahydrofolate (CHEBI:15724); 5,10-methylenetetrahydrofolate (CHEBI:15724) —DECREASES→ homocysteine (CHEBI:17790); homocysteine (CHEBI:17790) —INCREASES→ homocystinuria (HP:0002137); folate metabolism (GO:0006787) —LEADS_TO→ homocysteine (CHEBI:17790). Loss-of-function variants in SLC19A1 disrupt folate transport, impairing folate metabolism and leading to megaloblastic anemia. Concurrently, loss-of-function variants in MTHFR disrupt the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, which is essential for remethylating homocysteine to methionine. This disruption in folate metabolism leads to the accumulation of homocysteine and subsequent homocystinuria.\n\n**How to falsify it:** Demonstration that mutations in MTHFR do not lead to decreased MTHFR activity or that mutations in SLC19A1 do not impair folate uptake. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of folate metabolism in these distinct conditions highlights the potential for therapeutic interventions targeting folate pathways to manage both megaloblastic anemia and hyperhomocysteinemia, although the specific genetic basis dictates the primary clinical presentation.\n\n---\n\n#### 5. hereditary folate malabsorption  —  Tier 3 — Moderate / Emerging  (fitness 0.414)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10838) —DISRUPTS→ Folate (CHEBI:15405); SLC46A1 (HGNC:24942) —DISRUPTS→ Folate (CHEBI:15405); Folate (CHEBI:15405) —LEADS_TO→ One-carbon metabolism (REACT:R-HSA-190747); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Megaloblastic anemia (HP:0001898); One-carbon metabolism (REACT:R-HSA-190747) —LEADS_TO→ Intestinal malabsorption (HP:0002704). Loss-of-function mutations in either SLC19A1 (folate transporter) or SLC46A1 (folate transporter) impair cellular uptake and utilization of folate, disrupting one-carbon metabolism. This disruption leads to megaloblastic anemia (Disease A) due to impaired DNA synthesis in red blood cell precursors and intestinal malabsorption (Disease B) due to impaired folate absorption in the gut.\n\n**How to falsify it:** If mutations in SLC19A1 and SLC46A1 were found to be exclusively associated with distinct, non-overlapping sets of cellular processes or if individuals with mutations in one gene showed no signs of folate deficiency, this hypothesis would be falsified. _(variant: Identification of common variants (allele frequency > 1% in gnomAD) in SLC19A1 or SLC46A1 associated with normal folate levels and absence of anemia or malabsorption.)_\n\n**Why it matters:** Understanding this overlap highlights the critical role of folate transport and metabolism in preventing both hematological and gastrointestinal disorders. Therapeutic strategies targeting folate supplementation or alternative transport mechanisms could be relevant for both conditions.\n\n---\n\n#### 6. neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10850) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ megaloblastic anemia (HP:0001898); SHMT2 (HGNC:10867) —DISRUPTS→ folate metabolism (REACT:R-HSA-1907260); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ cardiomyopathy (HP:0001638); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ spasticity (HP:0002504); folate metabolism (REACT:R-HSA-1907260) —LEADS_TO→ brain abnormalities (HP:0000253). Loss-of-function mutations in SLC19A1, which encodes the folate transporter, disrupt folate metabolism, leading to megaloblastic anemia. Simultaneously, loss-of-function mutations in SHMT2, involved in serine and folate metabolism, also disrupt folate metabolism, contributing to the complex phenotype of neurodevelopmental disorder with cardiomyopathy, spasticity, and brain abnormalities. The convergence occurs at the level of the shared folate metabolic pathway.\n\n**How to falsify it:** A pathogenic variant in SLC19A1 or SHMT2 that exhibits a clear gain-of-function mechanism or does not demonstrably impact folate metabolism would falsify this hypothesis. Furthermore, identification of distinct, non-overlapping molecular pathways causally linked to each disease would also falsify this proposed overlap.\n\n**Why it matters:** Understanding the shared reliance on folate metabolism for both hematological and neurological health could lead to novel therapeutic strategies. For instance, targeted supplementation or cofactor enhancement strategies aimed at the shared metabolic pathway might offer benefits for both conditions, or at least clarify the specific metabolic deficits contributing to each disease's distinct manifestations.\n\n---\n\n#### 7. neurodevelopmental disorder with microcephaly, epilepsy, and hypomyelination  —  Tier 3 — Moderate / Emerging  (fitness 0.370)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10992) —DISRUPTS→ folate transport (GO:0015877); folate transport (GO:0015877) —DECREASES→ 5-methyltetrahydrofolate (CHEBI:17487); 5-methyltetrahydrofolate (CHEBI:17487) —DECREASES→ one-carbon metabolism (GO:0006733); one-carbon metabolism (GO:0006733) —LEADS_TO→ megaloblastic anemia (HP:0001879); one-carbon metabolism (GO:0006733) —LEADS_TO→ neurodevelopmental disorder (HP:0001263); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ microcephaly (HP:0000252); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ epilepsy (HP:0001250); neurodevelopmental disorder (HP:0001263) —LEADS_TO→ hypomyelination (HP:0010876). Loss-of-function mutations in SLC19A1 impair folate transport, leading to reduced levels of 5-methyltetrahydrofolate. This deficiency disrupts one-carbon metabolism, which is essential for DNA synthesis (causing megaloblastic anemia) and for critical processes in neurodevelopment, including myelination and neuronal function, resulting in microcephaly, epilepsy, and hypomyelination.\n\n**How to falsify it:** Demonstration that mutations in SLC19A1 do not impair folate transport or that impaired folate transport does not affect DNA synthesis or neuronal development. _(variant: Identification of common variants (AF > 0.01) in gnomAD within the SLC19A1 gene that are not associated with either disease.)_\n\n**Why it matters:** Understanding the shared role of folate metabolism and SLC19A1 in these distinct diseases suggests potential therapeutic avenues. Folate supplementation or related metabolic interventions could be explored for both conditions, though careful consideration of dosage and timing would be crucial, especially for neurodevelopmental disorders.\n\n---\n\n#### 8. exercise intolerance, riboflavin-responsive  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-196757)\n\n**Proposed mechanism:** SLC19A1 (HGNC:10601) —DECREASES→ Tetrahydrofolate (THF) (CHEBI:17997); Tetrahydrofolate (THF) (CHEBI:17997) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —DISRUPTS→ One-carbon metabolism (GO:0006733); One-carbon metabolism (GO:0006733) —LEADS_TO→ Megaloblastic anemia (HP:0001877); SLC25A32 (HGNC:28714) —DECREASES→ Flavin adenine dinucleotide (FAD) (CHEBI:15991); Flavin adenine dinucleotide (FAD) (CHEBI:15991) —DISRUPTS→ Riboflavin metabolism (GO:0006739); Riboflavin metabolism (GO:0006739) —DISRUPTS→ Mitochondrial Folate Pathway (GO:0006738); Mitochondrial Folate Pathway (GO:0006738) —LEADS_TO→ Exercise intolerance (HP:0003690). Loss-of-function mutations in SLC19A1 impair the transport of folate into mitochondria, disrupting the mitochondrial folate pathway. Similarly, mutations in SLC25A32 impair the transport of riboflavin into mitochondria, which is essential for the production of FAD, a cofactor required for many mitochondrial enzymes, including those in the mitochondrial folate pathway. Both disruptions converge on the mitochondrial folate pathway, leading to reduced one-carbon metabolism necessary for DNA synthesis (causing megaloblastic anemia) and impaired cellular respiration (causing exercise intolerance).\n\n**How to falsify it:** Demonstration that mutations in SLC19A1 do not affect mitochondrial folate levels or that mutations in SLC25A32 do not impact FAD levels within mitochondria. _(variant: The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC19A1 or SLC25A32 that do not segregate with either disease phenotype.)_\n\n**Why it matters:** Targeting the mitochondrial folate pathway or its upstream regulators (like SLC19A1 and SLC25A32) could offer therapeutic strategies for both megaloblastic anemia and exercise intolerance, potentially through vitamin supplementation or gene therapy approaches.\n\n---"
+}

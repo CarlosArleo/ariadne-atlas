@@ -1173,19 +1173,27 @@ function getGeneOccurrenceCount(candidate) {
     return total;
 }
 
+// Known protein interactions (simplified lookup)
 const KNOWN_INTERACTIONS = {
     'CREBBP-RBPJ':true,'RBPJ-CREBBP':true,'NEU1-CTSA':true,'CTSA-NEU1':true,
     'MMAA-MMUT':true,'MMUT-MMAA':true,'GJA1-GJA1':true,'PTPN11-HRAS':true,'HRAS-PTPN11':true,
     'COL1A1-COL1A1':true
 };
+
 function getProteinInteractionHtml(candidate) {
-    const geneSymbols = [...new Set((candidate.mechanism||'').match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g)||[]).map(m=>m.replace(/\s*\(HGNC:\d+\)/,'').trim())];
-    if (geneSymbols.length < 2) return '';
-    const pairKey = `${geneSymbols[0]}-${geneSymbols[1]}`;
+    const mech = candidate.mechanism || '';
+    const matchResult = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g) || [];
+    const uniqueGenes = [];
+    matchResult.forEach(m => {
+        const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+        if (!uniqueGenes.includes(name)) uniqueGenes.push(name);
+    });
+    if (uniqueGenes.length < 2) return '';
+    const pairKey = `${uniqueGenes[0]}-${uniqueGenes[1]}`;
     if (KNOWN_INTERACTIONS[pairKey]) {
-        return `<div style="margin-top:4px; font-size:0.76rem; color:#10b981;"><strong style="color:#10b981;">✓ Known protein interaction:</strong> ${geneSymbols[0]} and ${geneSymbols[1]} are documented to physically interact.</div>`;
+        return `<div style="margin-top:4px; font-size:0.76rem; color:#10b981;"><strong style="color:#10b981;">✓ Known protein interaction:</strong> ${uniqueGenes[0]} and ${uniqueGenes[1]} are documented to physically interact.</div>`;
     } else {
-        return `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong>Protein interaction:</strong> No documented physical interaction between ${geneSymbols[0]} and ${geneSymbols[1]} in BioGRID.</div>`;
+        return `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong>Protein interaction:</strong> No documented physical interaction between ${uniqueGenes[0]} and ${uniqueGenes[1]} in BioGRID.</div>`;
     }
 }
 
