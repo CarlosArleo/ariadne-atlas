@@ -1,0 +1,247 @@
+{
+  "seed": {
+    "id": "MONDO:0011762",
+    "name": "autosomal recessive nonsyndromic hearing loss 22"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 6,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0019497",
+      "diseaseBName": "nonsyndromic genetic hearing loss",
+      "fitness": 0.7825,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Causal variant in OTOA gene —DISRUPTS→ OTOA (HGNC:16378); OTOA (HGNC:16378) —DISRUPTS→ OTOA protein; OTOA protein —DISRUPTS→ Hair bundle integrity; Hair bundle integrity —LEADS_TO→ Hearing impairment (HP:0000365); Causal variant in CDH23 gene —DISRUPTS→ CDH23 (HGNC:24669); CDH23 (HGNC:24669) —DISRUPTS→ CDH23 protein; CDH23 protein —DISRUPTS→ Mechanotransduction in hair cells; Mechanotransduction in hair cells —LEADS_TO→ Hearing impairment (HP:0000365); Hair bundle integrity —LEADS_TO→ Mechanotransduction in hair cells. Mutations in OTOA (for disease A) and CDH23 (for disease B) disrupt essential components of the hair cell's stereocilia, leading to impaired hair bundle integrity and mechanotransduction, ultimately causing hearing loss. The convergence occurs at the level of the mechanotransduction process, which relies on the proper functioning of multiple proteins, including those encoded by OTOA and CDH23.",
+      "mechanism_narrative": "Causal variant in OTOA gene —DISRUPTS→ OTOA (HGNC:16378); OTOA (HGNC:16378) —DISRUPTS→ OTOA protein; OTOA protein —DISRUPTS→ Hair bundle integrity; Hair bundle integrity —LEADS_TO→ Hearing impairment (HP:0000365); Causal variant in CDH23 gene —DISRUPTS→ CDH23 (HGNC:24669); CDH23 (HGNC:24669) —DISRUPTS→ CDH23 protein; CDH23 protein —DISRUPTS→ Mechanotransduction in hair cells; Mechanotransduction in hair cells —LEADS_TO→ Hearing impairment (HP:0000365); Hair bundle integrity —LEADS_TO→ Mechanotransduction in hair cells. Mutations in OTOA (for disease A) and CDH23 (for disease B) disrupt essential components of the hair cell's stereocilia, leading to impaired hair bundle integrity and mechanotransduction, ultimately causing hearing loss. The convergence occurs at the level of the mechanotransduction process, which relies on the proper functioning of multiple proteins, including those encoded by OTOA and CDH23.",
+      "falsification": {
+        "text": "The identification of individuals with pathogenic variants in OTOA who do not exhibit hearing loss, or conversely, individuals with hearing loss but lacking pathogenic variants in any known genes associated with nonsyndromic hearing loss, would challenge this hypothesis. Furthermore, finding that OTOA and CDH23 function in completely independent cellular pathways with no downstream convergence on auditory function would also falsify this proposed link.",
+        "gnomad_variant": "High allele frequency (>1%) in gnomAD for pathogenic variants in OTOA or CDH23, suggesting they are not strictly disease-causing."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0019497",
+        "diseaseBName": "nonsyndromic genetic hearing loss",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "fitness": 0.7825,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Causal variant in OTOA gene —DISRUPTS→ OTOA (HGNC:16378); OTOA (HGNC:16378) —DISRUPTS→ OTOA protein; OTOA protein —DISRUPTS→ Hair bundle integrity; Hair bundle integrity —LEADS_TO→ Hearing impairment (HP:0000365); Causal variant in CDH23 gene —DISRUPTS→ CDH23 (HGNC:24669); CDH23 (HGNC:24669) —DISRUPTS→ CDH23 protein; CDH23 protein —DISRUPTS→ Mechanotransduction in hair cells; Mechanotransduction in hair cells —LEADS_TO→ Hearing impairment (HP:0000365); Hair bundle integrity —LEADS_TO→ Mechanotransduction in hair cells. Mutations in OTOA (for disease A) and CDH23 (for disease B) disrupt essential components of the hair cell's stereocilia, leading to impaired hair bundle integrity and mechanotransduction, ultimately causing hearing loss. The convergence occurs at the level of the mechanotransduction process, which relies on the proper functioning of multiple proteins, including those encoded by OTOA and CDH23.",
+        "falsification": {
+          "text": "The identification of individuals with pathogenic variants in OTOA who do not exhibit hearing loss, or conversely, individuals with hearing loss but lacking pathogenic variants in any known genes associated with nonsyndromic hearing loss, would challenge this hypothesis. Furthermore, finding that OTOA and CDH23 function in completely independent cellular pathways with no downstream convergence on auditory function would also falsify this proposed link.",
+          "gnomad_variant": "High allele frequency (>1%) in gnomAD for pathogenic variants in OTOA or CDH23, suggesting they are not strictly disease-causing."
+        },
+        "translational": "Understanding the shared molecular pathways underlying different forms of genetic hearing loss can facilitate the development of targeted therapies. By identifying common downstream effectors or essential cellular processes, therapeutic strategies aimed at restoring hair cell function or protecting against hair cell degeneration could be applied across a broader spectrum of hearing loss etiologies. This could involve gene therapy approaches targeting multiple genes or small molecule drugs that enhance the function of critical proteins involved in mechanotransduction or hair bundle maintenance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011102",
+      "diseaseBName": "autosomal dominant nonsyndromic hearing loss 12",
+      "fitness": 0.4196,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in OTOA —DISRUPTS→ OTOA (HGNC:17845); OTOA (HGNC:17845) —LEADS_TO→ Inner ear development and structure maintenance (GO:0007276); Inner ear development and structure maintenance (GO:0007276) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Pathogenic variant in TECTA —DISRUPTS→ TECTA (HGNC:11488); TECTA (HGNC:11488) —LEADS_TO→ Cochlear hair cell mechanotransduction (GO:0007597); Cochlear hair cell mechanotransduction (GO:0007597) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Inner ear development and structure maintenance (GO:0007276) —BINDS→ Cochlear hair cell mechanotransduction (GO:0007597). Mutations in OTOA disrupt inner ear development and structure maintenance, leading to hearing loss. Similarly, mutations in TECTA disrupt cochlear hair cell mechanotransduction, also resulting in hearing loss. The convergence occurs at the level of the functional pathways and cellular components essential for hearing, where defects in either gene's product can impair the overall auditory system.",
+      "mechanism_narrative": "Pathogenic variant in OTOA —DISRUPTS→ OTOA (HGNC:17845); OTOA (HGNC:17845) —LEADS_TO→ Inner ear development and structure maintenance (GO:0007276); Inner ear development and structure maintenance (GO:0007276) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Pathogenic variant in TECTA —DISRUPTS→ TECTA (HGNC:11488); TECTA (HGNC:11488) —LEADS_TO→ Cochlear hair cell mechanotransduction (GO:0007597); Cochlear hair cell mechanotransduction (GO:0007597) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Inner ear development and structure maintenance (GO:0007276) —BINDS→ Cochlear hair cell mechanotransduction (GO:0007597). Mutations in OTOA disrupt inner ear development and structure maintenance, leading to hearing loss. Similarly, mutations in TECTA disrupt cochlear hair cell mechanotransduction, also resulting in hearing loss. The convergence occurs at the level of the functional pathways and cellular components essential for hearing, where defects in either gene's product can impair the overall auditory system.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the pathogenic variants in OTOA and TECTA affect entirely distinct and non-interacting cellular pathways within the inner ear, or if variants in TECTA are found to cause a gain-of-function phenotype that is mechanistically incompatible with the loss-of-function typically associated with OTOA mutations in ARNSHL22, this hypothesis would be falsified.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-163125": 66
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011102",
+        "diseaseBName": "autosomal dominant nonsyndromic hearing loss 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-163125": 66
+        },
+        "fitness": 0.4196,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in OTOA —DISRUPTS→ OTOA (HGNC:17845); OTOA (HGNC:17845) —LEADS_TO→ Inner ear development and structure maintenance (GO:0007276); Inner ear development and structure maintenance (GO:0007276) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Pathogenic variant in TECTA —DISRUPTS→ TECTA (HGNC:11488); TECTA (HGNC:11488) —LEADS_TO→ Cochlear hair cell mechanotransduction (GO:0007597); Cochlear hair cell mechanotransduction (GO:0007597) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Inner ear development and structure maintenance (GO:0007276) —BINDS→ Cochlear hair cell mechanotransduction (GO:0007597). Mutations in OTOA disrupt inner ear development and structure maintenance, leading to hearing loss. Similarly, mutations in TECTA disrupt cochlear hair cell mechanotransduction, also resulting in hearing loss. The convergence occurs at the level of the functional pathways and cellular components essential for hearing, where defects in either gene's product can impair the overall auditory system.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the pathogenic variants in OTOA and TECTA affect entirely distinct and non-interacting cellular pathways within the inner ear, or if variants in TECTA are found to cause a gain-of-function phenotype that is mechanistically incompatible with the loss-of-function typically associated with OTOA mutations in ARNSHL22, this hypothesis would be falsified.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared downstream pathways of OTOA and TECTA in inner ear development and function could reveal common therapeutic targets for different forms of genetic hearing loss. Strategies aimed at supporting cochlear hair cell integrity or mechanotransduction machinery might benefit patients with mutations in either gene."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011351",
+      "diseaseBName": "autosomal recessive nonsyndromic hearing loss 21",
+      "fitness": 0.4122,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OTOA (HGNC:24934) —DISRUPTS→ inner ear hair cell development (GO:0035107); TECTA (HGNC:11476) —DISRUPTS→ inner ear hair cell development (GO:0035107); inner ear hair cell development (GO:0035107) —LEADS_TO→ mechanotransduction (GO:0000309); mechanotransduction (GO:0000309) —LEADS_TO→ Hearing impairment (HP:0000365). Mutations in OTOA and TECTA both disrupt the development of inner ear hair cells, which in turn impairs mechanotransduction, ultimately leading to hearing impairment.",
+      "mechanism_narrative": "OTOA (HGNC:24934) —DISRUPTS→ inner ear hair cell development (GO:0035107); TECTA (HGNC:11476) —DISRUPTS→ inner ear hair cell development (GO:0035107); inner ear hair cell development (GO:0035107) —LEADS_TO→ mechanotransduction (GO:0000309); mechanotransduction (GO:0000309) —LEADS_TO→ Hearing impairment (HP:0000365). Mutations in OTOA and TECTA both disrupt the development of inner ear hair cells, which in turn impairs mechanotransduction, ultimately leading to hearing impairment.",
+      "falsification": {
+        "text": "If variants in OTOA or TECTA associated with nonsyndromic hearing loss were found to be common in the general population (e.g., allele frequency >1% in gnomAD) without a penetrant phenotype, it would challenge the causal link.",
+        "gnomad_variant": "Exome Aggregation Consortium (gnomAD) v2.1.1"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-163125": 66
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011351",
+        "diseaseBName": "autosomal recessive nonsyndromic hearing loss 21",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-163125": 66
+        },
+        "fitness": 0.4122,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "OTOA (HGNC:24934) —DISRUPTS→ inner ear hair cell development (GO:0035107); TECTA (HGNC:11476) —DISRUPTS→ inner ear hair cell development (GO:0035107); inner ear hair cell development (GO:0035107) —LEADS_TO→ mechanotransduction (GO:0000309); mechanotransduction (GO:0000309) —LEADS_TO→ Hearing impairment (HP:0000365). Mutations in OTOA and TECTA both disrupt the development of inner ear hair cells, which in turn impairs mechanotransduction, ultimately leading to hearing impairment.",
+        "falsification": {
+          "text": "If variants in OTOA or TECTA associated with nonsyndromic hearing loss were found to be common in the general population (e.g., allele frequency >1% in gnomAD) without a penetrant phenotype, it would challenge the causal link.",
+          "gnomad_variant": "Exome Aggregation Consortium (gnomAD) v2.1.1"
+        },
+        "translational": "Understanding the shared pathway of inner ear hair cell development and mechanotransduction affected by both OTOA and TECTA mutations could lead to the identification of common therapeutic targets for different forms of genetic hearing loss."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032878",
+      "diseaseBName": "neurodevelopmental disorder with behavioral abnormalities, absent speech, and hypotonia",
+      "fitness": 0.3796,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OTOA (HGNC:19010) —DISRUPTS→ neuronal development and maintenance (GO:0048666); OTOA (HGNC:19010) —DISRUPTS→ auditory system development (GO:0007419); auditory system development (GO:0007419) —LEADS_TO→ nonsyndromic hearing loss (HP:0000365); NTNG2 (HGNC:18351) —DISRUPTS→ neuronal development and maintenance (GO:0048666); neuronal development and maintenance (GO:0048666) —LEADS_TO→ neurodevelopmental disorder (HP:0002180); neuronal development and maintenance (GO:0048666) —LEADS_TO→ absent speech (HP:0001344); neuronal development and maintenance (GO:0048666) —LEADS_TO→ hypotonia (HP:0001252). Loss-of-function mutations in OTOA disrupt both general neuronal development and specific auditory system development, leading to hearing loss. Similarly, loss-of-function mutations in NTNG2 disrupt general neuronal development, contributing to a spectrum of neurodevelopmental abnormalities including absent speech and hypotonia. The convergence is at the level of shared pathways in neuronal development and maintenance.",
+      "mechanism_narrative": "OTOA (HGNC:19010) —DISRUPTS→ neuronal development and maintenance (GO:0048666); OTOA (HGNC:19010) —DISRUPTS→ auditory system development (GO:0007419); auditory system development (GO:0007419) —LEADS_TO→ nonsyndromic hearing loss (HP:0000365); NTNG2 (HGNC:18351) —DISRUPTS→ neuronal development and maintenance (GO:0048666); neuronal development and maintenance (GO:0048666) —LEADS_TO→ neurodevelopmental disorder (HP:0002180); neuronal development and maintenance (GO:0048666) —LEADS_TO→ absent speech (HP:0001344); neuronal development and maintenance (GO:0048666) —LEADS_TO→ hypotonia (HP:0001252). Loss-of-function mutations in OTOA disrupt both general neuronal development and specific auditory system development, leading to hearing loss. Similarly, loss-of-function mutations in NTNG2 disrupt general neuronal development, contributing to a spectrum of neurodevelopmental abnormalities including absent speech and hypotonia. The convergence is at the level of shared pathways in neuronal development and maintenance.",
+      "falsification": {
+        "text": "If variants in OTOA were found to cause dominant gain-of-function phenotypes or if NTNG2 variants were found to cause gain-of-function phenotypes, this proposed loss-of-function mechanism would be falsified. Alternatively, if a significant proportion of individuals with mutations in OTOA do not present with hearing loss, or individuals with mutations in NTNG2 do not present with neurodevelopmental issues, the proposed link would be weakened.",
+        "gnomad_variant": "gnomad v2.1.1 shows OTOA and NTNG2 are intolerant to loss-of-function, with extremely low pLI scores, supporting a loss-of-function mechanism. However, if a common benign variant (AF > 0.01) in either gene was identified that did not segregate with either disease, it would cast doubt on the causality of that gene."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-163125": 66
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032878",
+        "diseaseBName": "neurodevelopmental disorder with behavioral abnormalities, absent speech, and hypotonia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-163125": 66
+        },
+        "fitness": 0.3796,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "OTOA (HGNC:19010) —DISRUPTS→ neuronal development and maintenance (GO:0048666); OTOA (HGNC:19010) —DISRUPTS→ auditory system development (GO:0007419); auditory system development (GO:0007419) —LEADS_TO→ nonsyndromic hearing loss (HP:0000365); NTNG2 (HGNC:18351) —DISRUPTS→ neuronal development and maintenance (GO:0048666); neuronal development and maintenance (GO:0048666) —LEADS_TO→ neurodevelopmental disorder (HP:0002180); neuronal development and maintenance (GO:0048666) —LEADS_TO→ absent speech (HP:0001344); neuronal development and maintenance (GO:0048666) —LEADS_TO→ hypotonia (HP:0001252). Loss-of-function mutations in OTOA disrupt both general neuronal development and specific auditory system development, leading to hearing loss. Similarly, loss-of-function mutations in NTNG2 disrupt general neuronal development, contributing to a spectrum of neurodevelopmental abnormalities including absent speech and hypotonia. The convergence is at the level of shared pathways in neuronal development and maintenance.",
+        "falsification": {
+          "text": "If variants in OTOA were found to cause dominant gain-of-function phenotypes or if NTNG2 variants were found to cause gain-of-function phenotypes, this proposed loss-of-function mechanism would be falsified. Alternatively, if a significant proportion of individuals with mutations in OTOA do not present with hearing loss, or individuals with mutations in NTNG2 do not present with neurodevelopmental issues, the proposed link would be weakened.",
+          "gnomad_variant": "gnomad v2.1.1 shows OTOA and NTNG2 are intolerant to loss-of-function, with extremely low pLI scores, supporting a loss-of-function mechanism. However, if a common benign variant (AF > 0.01) in either gene was identified that did not segregate with either disease, it would cast doubt on the causality of that gene."
+        },
+        "translational": "Understanding the shared role of OTOA and NTNG2 in neuronal development could reveal common therapeutic targets for neurodevelopmental disorders and hearing loss. Strategies aimed at enhancing neuronal development or mitigating specific pathway dysfunctions could potentially benefit patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014412",
+      "diseaseBName": "hyperlipoproteinemia, type 1D",
+      "fitness": 0.3681,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OTOA (HGNC:19768) —LEADS_TO→ Nonsyndromic hearing loss 22 (MONDO:0011762); GPIHBP1 (HGNC:4541) —DISRUPTS→ Lipoprotein lipase activity (REACT:R-HSA-5688058); Lipoprotein lipase activity (REACT:R-HSA-5688058) —DECREASES→ Triglycerides (CHEBI:28395); Triglycerides (CHEBI:28395) —LEADS_TO→ Hyperlipoproteinemia type 1D (MONDO:0014412). Loss-of-function mutations in OTOA lead to hearing loss 22. Loss-of-function mutations in GPIHBP1 disrupt lipoprotein lipase activity, impairing triglyceride hydrolysis and leading to hyperlipoproteinemia type 1D. The convergence is hypothesized to be at the level of cellular lipid metabolism, where impaired lipid processing in disease B may indirectly affect cellular functions critical for hearing, potentially involving lipid rafts or membrane integrity relevant to hair cell function.",
+      "mechanism_narrative": "OTOA (HGNC:19768) —LEADS_TO→ Nonsyndromic hearing loss 22 (MONDO:0011762); GPIHBP1 (HGNC:4541) —DISRUPTS→ Lipoprotein lipase activity (REACT:R-HSA-5688058); Lipoprotein lipase activity (REACT:R-HSA-5688058) —DECREASES→ Triglycerides (CHEBI:28395); Triglycerides (CHEBI:28395) —LEADS_TO→ Hyperlipoproteinemia type 1D (MONDO:0014412). Loss-of-function mutations in OTOA lead to hearing loss 22. Loss-of-function mutations in GPIHBP1 disrupt lipoprotein lipase activity, impairing triglyceride hydrolysis and leading to hyperlipoproteinemia type 1D. The convergence is hypothesized to be at the level of cellular lipid metabolism, where impaired lipid processing in disease B may indirectly affect cellular functions critical for hearing, potentially involving lipid rafts or membrane integrity relevant to hair cell function.",
+      "falsification": {
+        "text": "Demonstration that mutations in OTOA do not lead to any detectable changes in lipid metabolism or cellular lipid handling, or that genetic variants in GPIHBP1 are not enriched in populations with hearing loss.",
+        "gnomad_variant": "Exclusion of pathogenic variants in GPIHBP1 with allele frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-163125": 66
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014412",
+        "diseaseBName": "hyperlipoproteinemia, type 1D",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-163125": 66
+        },
+        "fitness": 0.3681,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "OTOA (HGNC:19768) —LEADS_TO→ Nonsyndromic hearing loss 22 (MONDO:0011762); GPIHBP1 (HGNC:4541) —DISRUPTS→ Lipoprotein lipase activity (REACT:R-HSA-5688058); Lipoprotein lipase activity (REACT:R-HSA-5688058) —DECREASES→ Triglycerides (CHEBI:28395); Triglycerides (CHEBI:28395) —LEADS_TO→ Hyperlipoproteinemia type 1D (MONDO:0014412). Loss-of-function mutations in OTOA lead to hearing loss 22. Loss-of-function mutations in GPIHBP1 disrupt lipoprotein lipase activity, impairing triglyceride hydrolysis and leading to hyperlipoproteinemia type 1D. The convergence is hypothesized to be at the level of cellular lipid metabolism, where impaired lipid processing in disease B may indirectly affect cellular functions critical for hearing, potentially involving lipid rafts or membrane integrity relevant to hair cell function.",
+        "falsification": {
+          "text": "Demonstration that mutations in OTOA do not lead to any detectable changes in lipid metabolism or cellular lipid handling, or that genetic variants in GPIHBP1 are not enriched in populations with hearing loss.",
+          "gnomad_variant": "Exclusion of pathogenic variants in GPIHBP1 with allele frequency > 0.01 in gnomAD."
+        },
+        "translational": "Identifying a shared mechanistic link, even if indirect, could reveal novel therapeutic targets for either hearing loss or hyperlipidemia by modulating lipid metabolism pathways. For instance, therapies aimed at improving lipid processing might offer a secondary benefit for hearing in patients with both conditions or related pathologies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.3226,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OTOA (HGNC:8845) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 22 (MONDO:0011762); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); AKT1 (HGNC:397) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); PI3K-Akt signaling pathway (WP:WP2922) —LEADS_TO→ Ovarian cancer (MONDO:0008170). While ARNSHL22 is primarily linked to OTOA loss-of-function, mutations in other genes within the PI3K-Akt pathway, such as PIK3CA and AKT1, can also contribute to hearing loss. Gain-of-function mutations in PIK3CA are a known driver in ovarian cancer, which also involves dysregulation of the PI3K-Akt pathway.",
+      "mechanism_narrative": "OTOA (HGNC:8845) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 22 (MONDO:0011762); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); AKT1 (HGNC:397) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); PI3K-Akt signaling pathway (WP:WP2922) —LEADS_TO→ Ovarian cancer (MONDO:0008170). While ARNSHL22 is primarily linked to OTOA loss-of-function, mutations in other genes within the PI3K-Akt pathway, such as PIK3CA and AKT1, can also contribute to hearing loss. Gain-of-function mutations in PIK3CA are a known driver in ovarian cancer, which also involves dysregulation of the PI3K-Akt pathway.",
+      "falsification": {
+        "text": "The absence of any PIK3CA or AKT1 mutations in cohorts of ARNSHL22 patients, or the absence of PIK3CA mutations in ovarian cancer patient cohorts, would falsify this hypothesis.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-163125"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-163125": 66
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-163125"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-163125": 66
+        },
+        "fitness": 0.3226,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "OTOA (HGNC:8845) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 22 (MONDO:0011762); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); AKT1 (HGNC:397) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); PI3K-Akt signaling pathway (WP:WP2922) —LEADS_TO→ Ovarian cancer (MONDO:0008170). While ARNSHL22 is primarily linked to OTOA loss-of-function, mutations in other genes within the PI3K-Akt pathway, such as PIK3CA and AKT1, can also contribute to hearing loss. Gain-of-function mutations in PIK3CA are a known driver in ovarian cancer, which also involves dysregulation of the PI3K-Akt pathway.",
+        "falsification": {
+          "text": "The absence of any PIK3CA or AKT1 mutations in cohorts of ARNSHL22 patients, or the absence of PIK3CA mutations in ovarian cancer patient cohorts, would falsify this hypothesis.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Targeting the PI3K-Akt pathway is a known strategy for ovarian cancer treatment. Understanding its role in hearing loss could potentially lead to novel therapeutic approaches for certain types of nonsyndromic hearing loss."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T09:13:24.787Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** autosomal recessive nonsyndromic hearing loss 22 (MONDO:0011762)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 6 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | nonsyndromic genetic hearing loss (MONDO:0019497) | shared pathway | Tier 1 | 0.782 | Reactome:R-HSA-163125 |\n| 2 | autosomal dominant nonsyndromic hearing loss 12 (MONDO:0011102) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-163125 |\n| 3 | autosomal recessive nonsyndromic hearing loss 21 (MONDO:0011351) | shared pathway | Tier 3 | 0.412 | Reactome:R-HSA-163125 |\n| 4 | neurodevelopmental disorder with behavioral abnormalities, absent speech, and hypotonia (MONDO:0032878) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-163125 |\n| 5 | hyperlipoproteinemia, type 1D (MONDO:0014412) | shared pathway | Tier 3 | 0.368 | Reactome:R-HSA-163125 |\n| 6 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.323 | Reactome:R-HSA-163125 |\n\n### CANDIDATE DETAIL\n#### 1. nonsyndromic genetic hearing loss  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** Causal variant in OTOA gene —DISRUPTS→ OTOA (HGNC:16378); OTOA (HGNC:16378) —DISRUPTS→ OTOA protein; OTOA protein —DISRUPTS→ Hair bundle integrity; Hair bundle integrity —LEADS_TO→ Hearing impairment (HP:0000365); Causal variant in CDH23 gene —DISRUPTS→ CDH23 (HGNC:24669); CDH23 (HGNC:24669) —DISRUPTS→ CDH23 protein; CDH23 protein —DISRUPTS→ Mechanotransduction in hair cells; Mechanotransduction in hair cells —LEADS_TO→ Hearing impairment (HP:0000365); Hair bundle integrity —LEADS_TO→ Mechanotransduction in hair cells. Mutations in OTOA (for disease A) and CDH23 (for disease B) disrupt essential components of the hair cell's stereocilia, leading to impaired hair bundle integrity and mechanotransduction, ultimately causing hearing loss. The convergence occurs at the level of the mechanotransduction process, which relies on the proper functioning of multiple proteins, including those encoded by OTOA and CDH23.\n\n**How to falsify it:** The identification of individuals with pathogenic variants in OTOA who do not exhibit hearing loss, or conversely, individuals with hearing loss but lacking pathogenic variants in any known genes associated with nonsyndromic hearing loss, would challenge this hypothesis. Furthermore, finding that OTOA and CDH23 function in completely independent cellular pathways with no downstream convergence on auditory function would also falsify this proposed link. _(variant: High allele frequency (>1%) in gnomAD for pathogenic variants in OTOA or CDH23, suggesting they are not strictly disease-causing.)_\n\n**Why it matters:** Understanding the shared molecular pathways underlying different forms of genetic hearing loss can facilitate the development of targeted therapies. By identifying common downstream effectors or essential cellular processes, therapeutic strategies aimed at restoring hair cell function or protecting against hair cell degeneration could be applied across a broader spectrum of hearing loss etiologies. This could involve gene therapy approaches targeting multiple genes or small molecule drugs that enhance the function of critical proteins involved in mechanotransduction or hair bundle maintenance.\n\n---\n\n#### 2. autosomal dominant nonsyndromic hearing loss 12  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** Pathogenic variant in OTOA —DISRUPTS→ OTOA (HGNC:17845); OTOA (HGNC:17845) —LEADS_TO→ Inner ear development and structure maintenance (GO:0007276); Inner ear development and structure maintenance (GO:0007276) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Pathogenic variant in TECTA —DISRUPTS→ TECTA (HGNC:11488); TECTA (HGNC:11488) —LEADS_TO→ Cochlear hair cell mechanotransduction (GO:0007597); Cochlear hair cell mechanotransduction (GO:0007597) —LEADS_TO→ Nonsyndromic hearing loss (HP:0000365); Inner ear development and structure maintenance (GO:0007276) —BINDS→ Cochlear hair cell mechanotransduction (GO:0007597). Mutations in OTOA disrupt inner ear development and structure maintenance, leading to hearing loss. Similarly, mutations in TECTA disrupt cochlear hair cell mechanotransduction, also resulting in hearing loss. The convergence occurs at the level of the functional pathways and cellular components essential for hearing, where defects in either gene's product can impair the overall auditory system.\n\n**How to falsify it:** If genetic analysis reveals that the pathogenic variants in OTOA and TECTA affect entirely distinct and non-interacting cellular pathways within the inner ear, or if variants in TECTA are found to cause a gain-of-function phenotype that is mechanistically incompatible with the loss-of-function typically associated with OTOA mutations in ARNSHL22, this hypothesis would be falsified. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared downstream pathways of OTOA and TECTA in inner ear development and function could reveal common therapeutic targets for different forms of genetic hearing loss. Strategies aimed at supporting cochlear hair cell integrity or mechanotransduction machinery might benefit patients with mutations in either gene.\n\n---\n\n#### 3. autosomal recessive nonsyndromic hearing loss 21  —  Tier 3 — Moderate / Emerging  (fitness 0.412)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** OTOA (HGNC:24934) —DISRUPTS→ inner ear hair cell development (GO:0035107); TECTA (HGNC:11476) —DISRUPTS→ inner ear hair cell development (GO:0035107); inner ear hair cell development (GO:0035107) —LEADS_TO→ mechanotransduction (GO:0000309); mechanotransduction (GO:0000309) —LEADS_TO→ Hearing impairment (HP:0000365). Mutations in OTOA and TECTA both disrupt the development of inner ear hair cells, which in turn impairs mechanotransduction, ultimately leading to hearing impairment.\n\n**How to falsify it:** If variants in OTOA or TECTA associated with nonsyndromic hearing loss were found to be common in the general population (e.g., allele frequency >1% in gnomAD) without a penetrant phenotype, it would challenge the causal link. _(variant: Exome Aggregation Consortium (gnomAD) v2.1.1)_\n\n**Why it matters:** Understanding the shared pathway of inner ear hair cell development and mechanotransduction affected by both OTOA and TECTA mutations could lead to the identification of common therapeutic targets for different forms of genetic hearing loss.\n\n---\n\n#### 4. neurodevelopmental disorder with behavioral abnormalities, absent speech, and hypotonia  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** OTOA (HGNC:19010) —DISRUPTS→ neuronal development and maintenance (GO:0048666); OTOA (HGNC:19010) —DISRUPTS→ auditory system development (GO:0007419); auditory system development (GO:0007419) —LEADS_TO→ nonsyndromic hearing loss (HP:0000365); NTNG2 (HGNC:18351) —DISRUPTS→ neuronal development and maintenance (GO:0048666); neuronal development and maintenance (GO:0048666) —LEADS_TO→ neurodevelopmental disorder (HP:0002180); neuronal development and maintenance (GO:0048666) —LEADS_TO→ absent speech (HP:0001344); neuronal development and maintenance (GO:0048666) —LEADS_TO→ hypotonia (HP:0001252). Loss-of-function mutations in OTOA disrupt both general neuronal development and specific auditory system development, leading to hearing loss. Similarly, loss-of-function mutations in NTNG2 disrupt general neuronal development, contributing to a spectrum of neurodevelopmental abnormalities including absent speech and hypotonia. The convergence is at the level of shared pathways in neuronal development and maintenance.\n\n**How to falsify it:** If variants in OTOA were found to cause dominant gain-of-function phenotypes or if NTNG2 variants were found to cause gain-of-function phenotypes, this proposed loss-of-function mechanism would be falsified. Alternatively, if a significant proportion of individuals with mutations in OTOA do not present with hearing loss, or individuals with mutations in NTNG2 do not present with neurodevelopmental issues, the proposed link would be weakened. _(variant: gnomad v2.1.1 shows OTOA and NTNG2 are intolerant to loss-of-function, with extremely low pLI scores, supporting a loss-of-function mechanism. However, if a common benign variant (AF > 0.01) in either gene was identified that did not segregate with either disease, it would cast doubt on the causality of that gene.)_\n\n**Why it matters:** Understanding the shared role of OTOA and NTNG2 in neuronal development could reveal common therapeutic targets for neurodevelopmental disorders and hearing loss. Strategies aimed at enhancing neuronal development or mitigating specific pathway dysfunctions could potentially benefit patients with either disease.\n\n---\n\n#### 5. hyperlipoproteinemia, type 1D  —  Tier 3 — Moderate / Emerging  (fitness 0.368)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** OTOA (HGNC:19768) —LEADS_TO→ Nonsyndromic hearing loss 22 (MONDO:0011762); GPIHBP1 (HGNC:4541) —DISRUPTS→ Lipoprotein lipase activity (REACT:R-HSA-5688058); Lipoprotein lipase activity (REACT:R-HSA-5688058) —DECREASES→ Triglycerides (CHEBI:28395); Triglycerides (CHEBI:28395) —LEADS_TO→ Hyperlipoproteinemia type 1D (MONDO:0014412). Loss-of-function mutations in OTOA lead to hearing loss 22. Loss-of-function mutations in GPIHBP1 disrupt lipoprotein lipase activity, impairing triglyceride hydrolysis and leading to hyperlipoproteinemia type 1D. The convergence is hypothesized to be at the level of cellular lipid metabolism, where impaired lipid processing in disease B may indirectly affect cellular functions critical for hearing, potentially involving lipid rafts or membrane integrity relevant to hair cell function.\n\n**How to falsify it:** Demonstration that mutations in OTOA do not lead to any detectable changes in lipid metabolism or cellular lipid handling, or that genetic variants in GPIHBP1 are not enriched in populations with hearing loss. _(variant: Exclusion of pathogenic variants in GPIHBP1 with allele frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Identifying a shared mechanistic link, even if indirect, could reveal novel therapeutic targets for either hearing loss or hyperlipidemia by modulating lipid metabolism pathways. For instance, therapies aimed at improving lipid processing might offer a secondary benefit for hearing in patients with both conditions or related pathologies.\n\n---\n\n#### 6. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.323)\n**Link type:** shared pathway (Reactome:R-HSA-163125)\n\n**Proposed mechanism:** OTOA (HGNC:8845) —LEADS_TO→ Autosomal recessive nonsyndromic hearing loss 22 (MONDO:0011762); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); AKT1 (HGNC:397) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2922); PI3K-Akt signaling pathway (WP:WP2922) —LEADS_TO→ Ovarian cancer (MONDO:0008170). While ARNSHL22 is primarily linked to OTOA loss-of-function, mutations in other genes within the PI3K-Akt pathway, such as PIK3CA and AKT1, can also contribute to hearing loss. Gain-of-function mutations in PIK3CA are a known driver in ovarian cancer, which also involves dysregulation of the PI3K-Akt pathway.\n\n**How to falsify it:** The absence of any PIK3CA or AKT1 mutations in cohorts of ARNSHL22 patients, or the absence of PIK3CA mutations in ovarian cancer patient cohorts, would falsify this hypothesis. _(variant: rs123456789)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway is a known strategy for ovarian cancer treatment. Understanding its role in hearing loss could potentially lead to novel therapeutic approaches for certain types of nonsyndromic hearing loss.\n\n---"
+}
