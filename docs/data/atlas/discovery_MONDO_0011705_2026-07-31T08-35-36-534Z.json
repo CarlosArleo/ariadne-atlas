@@ -1,0 +1,473 @@
+{
+  "seed": {
+    "id": "MONDO:0011705",
+    "name": "lymphangioleiomyomatosis"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 18,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013199",
+      "diseaseBName": "tuberous sclerosis 2",
+      "fitness": 0.7353,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TSC2 (HGNC:11735) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1 (HGNC:11734) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1/TSC2 complex formation (GO:0031931) —DECREASES→ mTOR signaling pathway (WP:WP482); mTOR signaling pathway (WP:WP482) —INCREASES→ Leiomyomatosis (HP:0002671); mTOR signaling pathway (WP:WP482) —INCREASES→ Seizures (HP:0001250); mTOR signaling pathway (WP:WP482) —INCREASES→ Intellectual disability (HP:0001249). Loss-of-function mutations in TSC2 (for TSC2) and TSC1 (for LAM, though TSC2 mutations are also implicated) disrupt the formation and function of the TSC1/TSC2 complex, which normally inhibits the mTOR signaling pathway. Consequently, mTOR signaling is aberrantly activated, leading to increased cell proliferation and abnormal tissue growth, manifesting as leiomyomatosis in LAM and contributing to phenotypes like seizures and intellectual disability in TSC2.",
+      "mechanism_narrative": "TSC2 (HGNC:11735) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1 (HGNC:11734) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1/TSC2 complex formation (GO:0031931) —DECREASES→ mTOR signaling pathway (WP:WP482); mTOR signaling pathway (WP:WP482) —INCREASES→ Leiomyomatosis (HP:0002671); mTOR signaling pathway (WP:WP482) —INCREASES→ Seizures (HP:0001250); mTOR signaling pathway (WP:WP482) —INCREASES→ Intellectual disability (HP:0001249). Loss-of-function mutations in TSC2 (for TSC2) and TSC1 (for LAM, though TSC2 mutations are also implicated) disrupt the formation and function of the TSC1/TSC2 complex, which normally inhibits the mTOR signaling pathway. Consequently, mTOR signaling is aberrantly activated, leading to increased cell proliferation and abnormal tissue growth, manifesting as leiomyomatosis in LAM and contributing to phenotypes like seizures and intellectual disability in TSC2.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in TSC1 or TSC2 that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in either disease would falsify this hypothesis. Additionally, if the mTOR pathway is found to be inhibited in one of the diseases despite loss-of-function mutations in TSC1/TSC2, this would also challenge the proposed mechanism.",
+        "gnomad_variant": "Pathogenic variants in TSC1 or TSC2 with an allele frequency > 0.01% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400",
+        "Reactome:R-HSA-8854214",
+        "Reactome:R-HSA-1632852"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013199",
+        "diseaseBName": "tuberous sclerosis 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400",
+          "Reactome:R-HSA-8854214",
+          "Reactome:R-HSA-1632852"
+        ],
+        "fitness": 0.7353,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC2 (HGNC:11735) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1 (HGNC:11734) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1/TSC2 complex formation (GO:0031931) —DECREASES→ mTOR signaling pathway (WP:WP482); mTOR signaling pathway (WP:WP482) —INCREASES→ Leiomyomatosis (HP:0002671); mTOR signaling pathway (WP:WP482) —INCREASES→ Seizures (HP:0001250); mTOR signaling pathway (WP:WP482) —INCREASES→ Intellectual disability (HP:0001249). Loss-of-function mutations in TSC2 (for TSC2) and TSC1 (for LAM, though TSC2 mutations are also implicated) disrupt the formation and function of the TSC1/TSC2 complex, which normally inhibits the mTOR signaling pathway. Consequently, mTOR signaling is aberrantly activated, leading to increased cell proliferation and abnormal tissue growth, manifesting as leiomyomatosis in LAM and contributing to phenotypes like seizures and intellectual disability in TSC2.",
+        "falsification": {
+          "text": "The discovery of pathogenic variants in TSC1 or TSC2 that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in either disease would falsify this hypothesis. Additionally, if the mTOR pathway is found to be inhibited in one of the diseases despite loss-of-function mutations in TSC1/TSC2, this would also challenge the proposed mechanism.",
+          "gnomad_variant": "Pathogenic variants in TSC1 or TSC2 with an allele frequency > 0.01% in gnomAD."
+        },
+        "translational": "Targeting the overactive mTOR pathway with rapamycin analogs has shown efficacy in treating manifestations of both LAM and TSC, highlighting the clinical relevance of this shared mechanistic link."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008612",
+      "diseaseBName": "tuberous sclerosis 1",
+      "fitness": 0.7332,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TSC1 (HGNC:11404) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); TSC2 (HGNC:11405) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); mTOR signaling pathway (REACT:R-HSA-6890706) —LEADS_TO→ Abnormal cell proliferation (HP:0005439); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Pulmonary lymphangioleiomyomatosis (MONDO:0011705); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Tuberous sclerosis (MONDO:0008612). Mutations in TSC1 and TSC2 lead to dysregulation of the mTOR signaling pathway, resulting in abnormal cell proliferation that underlies the distinct phenotypes of lymphangioleiomyomatosis and tuberous sclerosis.",
+      "mechanism_narrative": "TSC1 (HGNC:11404) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); TSC2 (HGNC:11405) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); mTOR signaling pathway (REACT:R-HSA-6890706) —LEADS_TO→ Abnormal cell proliferation (HP:0005439); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Pulmonary lymphangioleiomyomatosis (MONDO:0011705); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Tuberous sclerosis (MONDO:0008612). Mutations in TSC1 and TSC2 lead to dysregulation of the mTOR signaling pathway, resulting in abnormal cell proliferation that underlies the distinct phenotypes of lymphangioleiomyomatosis and tuberous sclerosis.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in TSC1 or TSC2 exhibiting opposite functional consequences (e.g., one disease requiring gain-of-function while the other requires loss-of-function) would falsify the shared loss-of-function mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-8854214",
+        "Reactome:R-HSA-1632852"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008612",
+        "diseaseBName": "tuberous sclerosis 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-8854214",
+          "Reactome:R-HSA-1632852"
+        ],
+        "fitness": 0.7332,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC1 (HGNC:11404) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); TSC2 (HGNC:11405) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); mTOR signaling pathway (REACT:R-HSA-6890706) —LEADS_TO→ Abnormal cell proliferation (HP:0005439); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Pulmonary lymphangioleiomyomatosis (MONDO:0011705); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Tuberous sclerosis (MONDO:0008612). Mutations in TSC1 and TSC2 lead to dysregulation of the mTOR signaling pathway, resulting in abnormal cell proliferation that underlies the distinct phenotypes of lymphangioleiomyomatosis and tuberous sclerosis.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in TSC1 or TSC2 exhibiting opposite functional consequences (e.g., one disease requiring gain-of-function while the other requires loss-of-function) would falsify the shared loss-of-function mechanism."
+        },
+        "translational": "Targeting the dysregulated mTOR pathway with rapamycin or related inhibitors has shown therapeutic benefit in both lymphangioleiomyomatosis and tuberous sclerosis, highlighting the clinical relevance of this shared mechanistic link."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011818",
+      "diseaseBName": "isolated focal cortical dysplasia type II",
+      "fitness": 0.7279,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TSC1 (HGNC:11540) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC1 (HGNC:11540) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Abnormal cell growth and proliferation (HP:0001575); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Seizures (HP:0001250); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Pulmonary cysts (HP:0030041). Mutations in TSC1 or TSC2 lead to the disruption of the TSC complex, which normally inhibits MTOR signaling. This leads to hyperactivation of MTOR, promoting abnormal cell growth and proliferation, manifesting as pulmonary cysts in lymphangioleiomyomatosis and contributing to the neuronal abnormalities seen in focal cortical dysplasia type II, including seizures.",
+      "mechanism_narrative": "TSC1 (HGNC:11540) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC1 (HGNC:11540) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Abnormal cell growth and proliferation (HP:0001575); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Seizures (HP:0001250); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Pulmonary cysts (HP:0030041). Mutations in TSC1 or TSC2 lead to the disruption of the TSC complex, which normally inhibits MTOR signaling. This leads to hyperactivation of MTOR, promoting abnormal cell growth and proliferation, manifesting as pulmonary cysts in lymphangioleiomyomatosis and contributing to the neuronal abnormalities seen in focal cortical dysplasia type II, including seizures.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in TSC1 or TSC2 in patients with either lymphangioleiomyomatosis or focal cortical dysplasia type II that do not result in MTOR pathway hyperactivation would falsify this hypothesis.",
+        "gnomad_variant": "rs743509633"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-8854214",
+        "Reactome:R-HSA-1632852",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011818",
+        "diseaseBName": "isolated focal cortical dysplasia type II",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-8854214",
+          "Reactome:R-HSA-1632852",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "fitness": 0.7279,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC1 (HGNC:11540) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC1 (HGNC:11540) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Abnormal cell growth and proliferation (HP:0001575); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Seizures (HP:0001250); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Pulmonary cysts (HP:0030041). Mutations in TSC1 or TSC2 lead to the disruption of the TSC complex, which normally inhibits MTOR signaling. This leads to hyperactivation of MTOR, promoting abnormal cell growth and proliferation, manifesting as pulmonary cysts in lymphangioleiomyomatosis and contributing to the neuronal abnormalities seen in focal cortical dysplasia type II, including seizures.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in TSC1 or TSC2 in patients with either lymphangioleiomyomatosis or focal cortical dysplasia type II that do not result in MTOR pathway hyperactivation would falsify this hypothesis.",
+          "gnomad_variant": "rs743509633"
+        },
+        "translational": "Targeting MTOR signaling with rapamycin analogs has shown efficacy in treating some manifestations of tuberous sclerosis complex and related disorders, suggesting a therapeutic avenue for both lymphangioleiomyomatosis and focal cortical dysplasia type II."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.5031,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9529) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); AKT1 (HGNC:385) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0002412); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Abnormal smooth muscle cell proliferation (HP:0002412) —LEADS_TO→ Lymphangioleiomyomatosis (MONDO:0011705). Gain-of-function mutations in PIK3CA and/or AKT1 lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation, a hallmark of lymphangioleiomyomatosis (LAM), and also contributes to the development and progression of ovarian cancer.",
+      "mechanism_narrative": "PIK3CA (HGNC:9529) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); AKT1 (HGNC:385) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0002412); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Abnormal smooth muscle cell proliferation (HP:0002412) —LEADS_TO→ Lymphangioleiomyomatosis (MONDO:0011705). Gain-of-function mutations in PIK3CA and/or AKT1 lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation, a hallmark of lymphangioleiomyomatosis (LAM), and also contributes to the development and progression of ovarian cancer.",
+      "falsification": {
+        "text": "The absence of any activating mutations in PIK3CA or AKT1 in patients with either lymphangioleiomyomatosis or ovarian cancer, or the demonstration that these mutations do not lead to PI3K/AKT/mTOR pathway activation in either disease context.",
+        "gnomad_variant": "The presence of common, benign variants in PIK3CA or AKT1 with high allele frequency in gnomAD that are proposed as causal for these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.5031,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9529) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); AKT1 (HGNC:385) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0002412); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Abnormal smooth muscle cell proliferation (HP:0002412) —LEADS_TO→ Lymphangioleiomyomatosis (MONDO:0011705). Gain-of-function mutations in PIK3CA and/or AKT1 lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation, a hallmark of lymphangioleiomyomatosis (LAM), and also contributes to the development and progression of ovarian cancer.",
+        "falsification": {
+          "text": "The absence of any activating mutations in PIK3CA or AKT1 in patients with either lymphangioleiomyomatosis or ovarian cancer, or the demonstration that these mutations do not lead to PI3K/AKT/mTOR pathway activation in either disease context.",
+          "gnomad_variant": "The presence of common, benign variants in PIK3CA or AKT1 with high allele frequency in gnomAD that are proposed as causal for these rare diseases."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway with inhibitors could offer a therapeutic strategy for both lymphangioleiomyomatosis and ovarian cancer, given the shared mechanistic basis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.4995,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-8963684); PIK3CA (HGNC:9340) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Leiomyoma formation (HP:0000973); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Colorectal cancer (MONDO:0005575); TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); mTOR signaling pathway (REACT:R-HSA-71386) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684). Inactivating mutations in APC and PIK3CA, and stabilizing mutations in CTNNB1, lead to aberrant activation of the Wnt signaling pathway, contributing to colorectal cancer. Concurrently, loss-of-function in TSC1 and TSC2 disrupts the mTOR signaling pathway, which can indirectly activate Wnt signaling or promote cell proliferation and migration, contributing to leiomyoma formation in lymphangioleiomyomatosis. The convergence on Wnt signaling and downstream cellular proliferation/migration phenotypes forms the mechanistic link.",
+      "mechanism_narrative": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-8963684); PIK3CA (HGNC:9340) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Leiomyoma formation (HP:0000973); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Colorectal cancer (MONDO:0005575); TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); mTOR signaling pathway (REACT:R-HSA-71386) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684). Inactivating mutations in APC and PIK3CA, and stabilizing mutations in CTNNB1, lead to aberrant activation of the Wnt signaling pathway, contributing to colorectal cancer. Concurrently, loss-of-function in TSC1 and TSC2 disrupts the mTOR signaling pathway, which can indirectly activate Wnt signaling or promote cell proliferation and migration, contributing to leiomyoma formation in lymphangioleiomyomatosis. The convergence on Wnt signaling and downstream cellular proliferation/migration phenotypes forms the mechanistic link.",
+      "falsification": {
+        "text": "The absence of mutations in APC, PIK3CA, or CTNNB1 in patient cohorts for either lymphangioleiomyomatosis or colorectal cancer, or if genetic studies show distinct pathway dysregulation without overlap in Wnt signaling activation.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "fitness": 0.4995,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-8963684); PIK3CA (HGNC:9340) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Leiomyoma formation (HP:0000973); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Colorectal cancer (MONDO:0005575); TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); mTOR signaling pathway (REACT:R-HSA-71386) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684). Inactivating mutations in APC and PIK3CA, and stabilizing mutations in CTNNB1, lead to aberrant activation of the Wnt signaling pathway, contributing to colorectal cancer. Concurrently, loss-of-function in TSC1 and TSC2 disrupts the mTOR signaling pathway, which can indirectly activate Wnt signaling or promote cell proliferation and migration, contributing to leiomyoma formation in lymphangioleiomyomatosis. The convergence on Wnt signaling and downstream cellular proliferation/migration phenotypes forms the mechanistic link.",
+        "falsification": {
+          "text": "The absence of mutations in APC, PIK3CA, or CTNNB1 in patient cohorts for either lymphangioleiomyomatosis or colorectal cancer, or if genetic studies show distinct pathway dysregulation without overlap in Wnt signaling activation.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Targeting dysregulated Wnt signaling or related downstream pathways could offer therapeutic strategies for both lymphangioleiomyomatosis and colorectal cancer, potentially leading to combination therapies or repurposed drugs."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008318",
+      "diseaseBName": "Proteus syndrome",
+      "fitness": 0.4557,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TSC2 (HGNC:11727) —DISRUPTS→ mTOR signaling pathway (WP:WP450); TSC1 (HGNC:11725) —DISRUPTS→ mTOR signaling pathway (WP:WP450); AKT1 (HGNC:417) —DISRUPTS→ mTOR signaling pathway (WP:WP450); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Lung cyst formation (HP:0002100); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Hemihypertrophy (HP:0008998); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Cutaneous vascular malformations (HP:0030212); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in TSC1, TSC2, or AKT1 lead to dysregulation of the mTOR signaling pathway. Loss-of-function in TSC1/TSC2 or gain-of-function in AKT1 results in hyperactivation of mTORC1. This hyperactivation contributes to the distinct pathologies of LAM (e.g., lung cyst formation) and Proteus syndrome (e.g., hemihypertrophy, vascular malformations, skeletal abnormalities).",
+      "mechanism_narrative": "TSC2 (HGNC:11727) —DISRUPTS→ mTOR signaling pathway (WP:WP450); TSC1 (HGNC:11725) —DISRUPTS→ mTOR signaling pathway (WP:WP450); AKT1 (HGNC:417) —DISRUPTS→ mTOR signaling pathway (WP:WP450); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Lung cyst formation (HP:0002100); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Hemihypertrophy (HP:0008998); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Cutaneous vascular malformations (HP:0030212); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in TSC1, TSC2, or AKT1 lead to dysregulation of the mTOR signaling pathway. Loss-of-function in TSC1/TSC2 or gain-of-function in AKT1 results in hyperactivation of mTORC1. This hyperactivation contributes to the distinct pathologies of LAM (e.g., lung cyst formation) and Proteus syndrome (e.g., hemihypertrophy, vascular malformations, skeletal abnormalities).",
+      "falsification": {
+        "text": "Demonstration that mutations in TSC1, TSC2, or AKT1 do not converge on the mTOR signaling pathway in either disease, or that the functional consequences of these mutations are entirely distinct and do not lead to overlapping downstream effects.",
+        "gnomad_variant": "A common pathogenic variant (AF > 0.001) in gnomAD for any of the core causal genes (TSC1, TSC2, AKT1) associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008318",
+        "diseaseBName": "Proteus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4557,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC2 (HGNC:11727) —DISRUPTS→ mTOR signaling pathway (WP:WP450); TSC1 (HGNC:11725) —DISRUPTS→ mTOR signaling pathway (WP:WP450); AKT1 (HGNC:417) —DISRUPTS→ mTOR signaling pathway (WP:WP450); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Lung cyst formation (HP:0002100); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Hemihypertrophy (HP:0008998); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Cutaneous vascular malformations (HP:0030212); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in TSC1, TSC2, or AKT1 lead to dysregulation of the mTOR signaling pathway. Loss-of-function in TSC1/TSC2 or gain-of-function in AKT1 results in hyperactivation of mTORC1. This hyperactivation contributes to the distinct pathologies of LAM (e.g., lung cyst formation) and Proteus syndrome (e.g., hemihypertrophy, vascular malformations, skeletal abnormalities).",
+        "falsification": {
+          "text": "Demonstration that mutations in TSC1, TSC2, or AKT1 do not converge on the mTOR signaling pathway in either disease, or that the functional consequences of these mutations are entirely distinct and do not lead to overlapping downstream effects.",
+          "gnomad_variant": "A common pathogenic variant (AF > 0.001) in gnomAD for any of the core causal genes (TSC1, TSC2, AKT1) associated with either disease."
+        },
+        "translational": "Targeting the mTOR pathway is a potential therapeutic strategy for both lymphangioleiomyomatosis and Proteus syndrome. Understanding the shared mechanistic link through mTOR signaling could lead to the development of drugs that benefit patients with both conditions, or inform differential therapeutic approaches based on the specific genetic drivers."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016419",
+      "diseaseBName": "hereditary breast carcinoma",
+      "fitness": 0.4524,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP2761); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0003690); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Breast carcinoma (HP:0002664). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation in LAM and contributes to the development of breast carcinoma in HBC.",
+      "mechanism_narrative": "PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP2761); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0003690); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Breast carcinoma (HP:0002664). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation in LAM and contributes to the development of breast carcinoma in HBC.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in PIK3CA in patients with LAM that demonstrates a loss-of-function effect, or a variant in PIK3CA in breast carcinoma patients with a gain-of-function effect, would falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-1632852": 69,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016419",
+        "diseaseBName": "hereditary breast carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-1632852": 69,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4524,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP2761); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0003690); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Breast carcinoma (HP:0002664). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation in LAM and contributes to the development of breast carcinoma in HBC.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in PIK3CA in patients with LAM that demonstrates a loss-of-function effect, or a variant in PIK3CA in breast carcinoma patients with a gain-of-function effect, would falsify this hypothesis."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway is a potential therapeutic strategy for both lymphangioleiomyomatosis and breast carcinoma, as inhibitors of this pathway are already in development or clinical use."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016054",
+      "diseaseBName": "obsolete cerebral malformation",
+      "fitness": 0.4446,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TSC1 (HGNC:11542) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC2 (HGNC:11543) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC1/TSC2 complex formation and activity (GO:0098981) —DECREASES→ MTOR signaling pathway (GO:0035556); MTOR signaling pathway (GO:0035556) —INCREASES→ Abnormal cell proliferation and migration (HP:0011224); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Cerebral malformation (HP:0001347); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Pulmonary cysts and leiomyomas (HP:0030050). Mutations in TSC1 or TSC2 disrupt the formation and inhibitory function of the TSC1/TSC2 complex, leading to hyperactivation of the mTOR signaling pathway. This dysregulation results in abnormal cell proliferation and migration, manifesting as cerebral malformations in OCM and pulmonary cysts and leiomyomas in LAM.",
+      "mechanism_narrative": "TSC1 (HGNC:11542) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC2 (HGNC:11543) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC1/TSC2 complex formation and activity (GO:0098981) —DECREASES→ MTOR signaling pathway (GO:0035556); MTOR signaling pathway (GO:0035556) —INCREASES→ Abnormal cell proliferation and migration (HP:0011224); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Cerebral malformation (HP:0001347); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Pulmonary cysts and leiomyomas (HP:0030050). Mutations in TSC1 or TSC2 disrupt the formation and inhibitory function of the TSC1/TSC2 complex, leading to hyperactivation of the mTOR signaling pathway. This dysregulation results in abnormal cell proliferation and migration, manifesting as cerebral malformations in OCM and pulmonary cysts and leiomyomas in LAM.",
+      "falsification": {
+        "text": "Identification of distinct causal genes for LAM and OCM that do not converge on the TSC1/TSC2 complex or mTOR signaling pathway, or demonstration that mutations in TSC1/TSC2 lead to opposite functional consequences in the two diseases (e.g., loss-of-function in one and gain-of-function in the other)."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-1632852": 69,
+        "Reactome:R-HSA-380972": 29,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016054",
+        "diseaseBName": "obsolete cerebral malformation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-1632852": 69,
+          "Reactome:R-HSA-380972": 29,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4446,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC1 (HGNC:11542) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC2 (HGNC:11543) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC1/TSC2 complex formation and activity (GO:0098981) —DECREASES→ MTOR signaling pathway (GO:0035556); MTOR signaling pathway (GO:0035556) —INCREASES→ Abnormal cell proliferation and migration (HP:0011224); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Cerebral malformation (HP:0001347); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Pulmonary cysts and leiomyomas (HP:0030050). Mutations in TSC1 or TSC2 disrupt the formation and inhibitory function of the TSC1/TSC2 complex, leading to hyperactivation of the mTOR signaling pathway. This dysregulation results in abnormal cell proliferation and migration, manifesting as cerebral malformations in OCM and pulmonary cysts and leiomyomas in LAM.",
+        "falsification": {
+          "text": "Identification of distinct causal genes for LAM and OCM that do not converge on the TSC1/TSC2 complex or mTOR signaling pathway, or demonstration that mutations in TSC1/TSC2 lead to opposite functional consequences in the two diseases (e.g., loss-of-function in one and gain-of-function in the other)."
+        },
+        "translational": "Targeting the mTOR pathway with rapamycin analogs has shown efficacy in treating manifestations of TSC, suggesting potential therapeutic strategies for both LAM and OCM if they share this core mechanism."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014048",
+      "diseaseBName": "Cowden syndrome 6",
+      "fitness": 0.4129,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (P04630); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (P04630); AKT1 (HGNC:381) —DISRUPTS→ mTOR signaling pathway (P04630); mTOR signaling pathway (P04630) —LEADS_TO→ Pulmonary cysts and smooth muscle proliferation (HP:0030050); mTOR signaling pathway (P04630) —LEADS_TO→ Increased risk of hamartomas (HP:0002667); mTOR signaling pathway (P04630) —LEADS_TO→ Gastrointestinal polyps (HP:0002274). Mutations in TSC1 or TSC2 (common to both diseases' origins) lead to dysregulation of the mTOR signaling pathway. In CS6, AKT1 mutations also converge on this pathway. Dysregulation of the mTOR pathway then leads to distinct but related phenotypic outcomes seen in LAM (pulmonary manifestations) and CS6 (hamartomas, polyps).",
+      "mechanism_narrative": "TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (P04630); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (P04630); AKT1 (HGNC:381) —DISRUPTS→ mTOR signaling pathway (P04630); mTOR signaling pathway (P04630) —LEADS_TO→ Pulmonary cysts and smooth muscle proliferation (HP:0030050); mTOR signaling pathway (P04630) —LEADS_TO→ Increased risk of hamartomas (HP:0002667); mTOR signaling pathway (P04630) —LEADS_TO→ Gastrointestinal polyps (HP:0002274). Mutations in TSC1 or TSC2 (common to both diseases' origins) lead to dysregulation of the mTOR signaling pathway. In CS6, AKT1 mutations also converge on this pathway. Dysregulation of the mTOR pathway then leads to distinct but related phenotypic outcomes seen in LAM (pulmonary manifestations) and CS6 (hamartomas, polyps).",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for LAM and CS6 in TSC1, TSC2, or AKT1 operate through entirely independent cellular pathways that do not converge on mTOR signaling or related downstream effectors, this hypothesis would be falsified.",
+        "gnomad_variant": "Identification of common pathogenic variants (e.g., >1% allele frequency in relevant populations) in TSC1, TSC2, or AKT1 associated with either disease would challenge the rare disease assumption and potentially falsify the proposed specific mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014048",
+        "diseaseBName": "Cowden syndrome 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4129,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (P04630); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (P04630); AKT1 (HGNC:381) —DISRUPTS→ mTOR signaling pathway (P04630); mTOR signaling pathway (P04630) —LEADS_TO→ Pulmonary cysts and smooth muscle proliferation (HP:0030050); mTOR signaling pathway (P04630) —LEADS_TO→ Increased risk of hamartomas (HP:0002667); mTOR signaling pathway (P04630) —LEADS_TO→ Gastrointestinal polyps (HP:0002274). Mutations in TSC1 or TSC2 (common to both diseases' origins) lead to dysregulation of the mTOR signaling pathway. In CS6, AKT1 mutations also converge on this pathway. Dysregulation of the mTOR pathway then leads to distinct but related phenotypic outcomes seen in LAM (pulmonary manifestations) and CS6 (hamartomas, polyps).",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for LAM and CS6 in TSC1, TSC2, or AKT1 operate through entirely independent cellular pathways that do not converge on mTOR signaling or related downstream effectors, this hypothesis would be falsified.",
+          "gnomad_variant": "Identification of common pathogenic variants (e.g., >1% allele frequency in relevant populations) in TSC1, TSC2, or AKT1 associated with either disease would challenge the rare disease assumption and potentially falsify the proposed specific mechanism."
+        },
+        "translational": "Targeting the mTOR pathway with rapamycin analogs has shown some efficacy in treating LAM. Understanding the shared mechanistic link via mTOR could inform therapeutic strategies for CS6 or identify novel therapeutic targets applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014407",
+      "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2",
+      "fitness": 0.4099,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TSC2 (HGNC:11799) —DISRUPTS→ mTOR signaling pathway (WP:283); TSC1 (HGNC:11798) —DISRUPTS→ mTOR signaling pathway (WP:283); AKT3 (HGNC:377) —INCREASES→ mTOR signaling pathway (WP:283); mTOR signaling pathway (WP:283) —LEADS_TO→ Leiomyomatosis (HP:0000971); mTOR signaling pathway (WP:283) —LEADS_TO→ Megalencephaly (HP:0000255); mTOR signaling pathway (WP:283) —LEADS_TO→ Polymicrogyria (HP:0002120); mTOR signaling pathway (WP:283) —LEADS_TO→ Hydrocephalus (HP:0000238); mTOR signaling pathway (WP:283) —LEADS_TO→ Polydactyly (HP:0001195). Loss-of-function mutations in TSC1 or TSC2 disrupt the tuberous sclerosis complex, leading to hyperactivation of the mTOR signaling pathway. Gain-of-function mutations in AKT3 also lead to increased mTOR signaling. Dysregulation of the mTOR pathway in different cellular contexts results in the distinct phenotypes of LAM (e.g., leiomyomatosis) and MPPHS2 (e.g., megalencephaly, polymicrogyria, polydactyly, hydrocephalus).",
+      "mechanism_narrative": "TSC2 (HGNC:11799) —DISRUPTS→ mTOR signaling pathway (WP:283); TSC1 (HGNC:11798) —DISRUPTS→ mTOR signaling pathway (WP:283); AKT3 (HGNC:377) —INCREASES→ mTOR signaling pathway (WP:283); mTOR signaling pathway (WP:283) —LEADS_TO→ Leiomyomatosis (HP:0000971); mTOR signaling pathway (WP:283) —LEADS_TO→ Megalencephaly (HP:0000255); mTOR signaling pathway (WP:283) —LEADS_TO→ Polymicrogyria (HP:0002120); mTOR signaling pathway (WP:283) —LEADS_TO→ Hydrocephalus (HP:0000238); mTOR signaling pathway (WP:283) —LEADS_TO→ Polydactyly (HP:0001195). Loss-of-function mutations in TSC1 or TSC2 disrupt the tuberous sclerosis complex, leading to hyperactivation of the mTOR signaling pathway. Gain-of-function mutations in AKT3 also lead to increased mTOR signaling. Dysregulation of the mTOR pathway in different cellular contexts results in the distinct phenotypes of LAM (e.g., leiomyomatosis) and MPPHS2 (e.g., megalencephaly, polymicrogyria, polydactyly, hydrocephalus).",
+      "falsification": {
+        "text": "Demonstration that mutations in TSC1, TSC2, or AKT3 do not impact the mTOR signaling pathway in relevant cell types or that the disease phenotypes can be fully explained by independent pathways unrelated to mTOR.",
+        "gnomad_variant": "gnomAD allele frequency > 0.1% for pathogenic variants in TSC1, TSC2, or AKT3."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-165181",
+        "Reactome:R-HSA-198323",
+        "Reactome:R-HSA-5674400"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-165181": 5,
+        "Reactome:R-HSA-198323": 14,
+        "Reactome:R-HSA-5674400": 25,
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014407",
+        "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-165181",
+          "Reactome:R-HSA-198323",
+          "Reactome:R-HSA-5674400"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-165181": 5,
+          "Reactome:R-HSA-198323": 14,
+          "Reactome:R-HSA-5674400": 25,
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4099,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TSC2 (HGNC:11799) —DISRUPTS→ mTOR signaling pathway (WP:283); TSC1 (HGNC:11798) —DISRUPTS→ mTOR signaling pathway (WP:283); AKT3 (HGNC:377) —INCREASES→ mTOR signaling pathway (WP:283); mTOR signaling pathway (WP:283) —LEADS_TO→ Leiomyomatosis (HP:0000971); mTOR signaling pathway (WP:283) —LEADS_TO→ Megalencephaly (HP:0000255); mTOR signaling pathway (WP:283) —LEADS_TO→ Polymicrogyria (HP:0002120); mTOR signaling pathway (WP:283) —LEADS_TO→ Hydrocephalus (HP:0000238); mTOR signaling pathway (WP:283) —LEADS_TO→ Polydactyly (HP:0001195). Loss-of-function mutations in TSC1 or TSC2 disrupt the tuberous sclerosis complex, leading to hyperactivation of the mTOR signaling pathway. Gain-of-function mutations in AKT3 also lead to increased mTOR signaling. Dysregulation of the mTOR pathway in different cellular contexts results in the distinct phenotypes of LAM (e.g., leiomyomatosis) and MPPHS2 (e.g., megalencephaly, polymicrogyria, polydactyly, hydrocephalus).",
+        "falsification": {
+          "text": "Demonstration that mutations in TSC1, TSC2, or AKT3 do not impact the mTOR signaling pathway in relevant cell types or that the disease phenotypes can be fully explained by independent pathways unrelated to mTOR.",
+          "gnomad_variant": "gnomAD allele frequency > 0.1% for pathogenic variants in TSC1, TSC2, or AKT3."
+        },
+        "translational": "Targeting the mTOR pathway is a potential therapeutic strategy for both LAM and MPPHS2, although the different functional consequences (loss vs. gain of function) may require distinct therapeutic approaches (e.g., mTORC1 inhibitors for LAM, potentially different modulators for AKT3-driven MPPHS2)."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T08:35:36.534Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** lymphangioleiomyomatosis (MONDO:0011705)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 18 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | tuberous sclerosis 2 (MONDO:0013199) | shared pathway | Tier 1 | 0.735 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852 |\n| 2 | tuberous sclerosis 1 (MONDO:0008612) | shared pathway | Tier 1 | 0.733 | Reactome:R-HSA-165181, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852 |\n| 3 | isolated focal cortical dysplasia type II (MONDO:0011818) | shared pathway | Tier 1 | 0.728 | Reactome:R-HSA-165181, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 4 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.503 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 5 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 3 | 0.499 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 6 | Proteus syndrome (MONDO:0008318) | shared pathway | Tier 3 | 0.456 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 7 | hereditary breast carcinoma (MONDO:0016419) | shared pathway | Tier 3 | 0.452 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 8 | obsolete cerebral malformation (MONDO:0016054) | shared pathway | Tier 3 | 0.445 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 9 | Cowden syndrome 6 (MONDO:0014048) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n| 10 | megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2 (MONDO:0014407) | shared pathway | Tier 3 | 0.410 | Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400 |\n\n### CANDIDATE DETAIL\n#### 1. tuberous sclerosis 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.735)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852)\n\n**Proposed mechanism:** TSC2 (HGNC:11735) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1 (HGNC:11734) —DISRUPTS→ TSC1/TSC2 complex formation (GO:0031931); TSC1/TSC2 complex formation (GO:0031931) —DECREASES→ mTOR signaling pathway (WP:WP482); mTOR signaling pathway (WP:WP482) —INCREASES→ Leiomyomatosis (HP:0002671); mTOR signaling pathway (WP:WP482) —INCREASES→ Seizures (HP:0001250); mTOR signaling pathway (WP:WP482) —INCREASES→ Intellectual disability (HP:0001249). Loss-of-function mutations in TSC2 (for TSC2) and TSC1 (for LAM, though TSC2 mutations are also implicated) disrupt the formation and function of the TSC1/TSC2 complex, which normally inhibits the mTOR signaling pathway. Consequently, mTOR signaling is aberrantly activated, leading to increased cell proliferation and abnormal tissue growth, manifesting as leiomyomatosis in LAM and contributing to phenotypes like seizures and intellectual disability in TSC2.\n\n**How to falsify it:** The discovery of pathogenic variants in TSC1 or TSC2 that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in either disease would falsify this hypothesis. Additionally, if the mTOR pathway is found to be inhibited in one of the diseases despite loss-of-function mutations in TSC1/TSC2, this would also challenge the proposed mechanism. _(variant: Pathogenic variants in TSC1 or TSC2 with an allele frequency > 0.01% in gnomAD.)_\n\n**Why it matters:** Targeting the overactive mTOR pathway with rapamycin analogs has shown efficacy in treating manifestations of both LAM and TSC, highlighting the clinical relevance of this shared mechanistic link.\n\n---\n\n#### 2. tuberous sclerosis 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.733)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852)\n\n**Proposed mechanism:** TSC1 (HGNC:11404) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); TSC2 (HGNC:11405) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-6890706); mTOR signaling pathway (REACT:R-HSA-6890706) —LEADS_TO→ Abnormal cell proliferation (HP:0005439); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Pulmonary lymphangioleiomyomatosis (MONDO:0011705); Abnormal cell proliferation (HP:0005439) —LEADS_TO→ Tuberous sclerosis (MONDO:0008612). Mutations in TSC1 and TSC2 lead to dysregulation of the mTOR signaling pathway, resulting in abnormal cell proliferation that underlies the distinct phenotypes of lymphangioleiomyomatosis and tuberous sclerosis.\n\n**How to falsify it:** Identification of pathogenic variants in TSC1 or TSC2 exhibiting opposite functional consequences (e.g., one disease requiring gain-of-function while the other requires loss-of-function) would falsify the shared loss-of-function mechanism.\n\n**Why it matters:** Targeting the dysregulated mTOR pathway with rapamycin or related inhibitors has shown therapeutic benefit in both lymphangioleiomyomatosis and tuberous sclerosis, highlighting the clinical relevance of this shared mechanistic link.\n\n---\n\n#### 3. isolated focal cortical dysplasia type II  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.728)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-8854214, Reactome:R-HSA-1632852, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** TSC1 (HGNC:11540) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —BINDS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC1 (HGNC:11540) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC2 (HGNC:11541) —DISRUPTS→ TSC complex formation and MTOR signaling (R-HSA-6996605); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Abnormal cell growth and proliferation (HP:0001575); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Seizures (HP:0001250); TSC complex formation and MTOR signaling (R-HSA-6996605) —LEADS_TO→ Pulmonary cysts (HP:0030041). Mutations in TSC1 or TSC2 lead to the disruption of the TSC complex, which normally inhibits MTOR signaling. This leads to hyperactivation of MTOR, promoting abnormal cell growth and proliferation, manifesting as pulmonary cysts in lymphangioleiomyomatosis and contributing to the neuronal abnormalities seen in focal cortical dysplasia type II, including seizures.\n\n**How to falsify it:** Identification of pathogenic variants in TSC1 or TSC2 in patients with either lymphangioleiomyomatosis or focal cortical dysplasia type II that do not result in MTOR pathway hyperactivation would falsify this hypothesis. _(variant: rs743509633)_\n\n**Why it matters:** Targeting MTOR signaling with rapamycin analogs has shown efficacy in treating some manifestations of tuberous sclerosis complex and related disorders, suggesting a therapeutic avenue for both lymphangioleiomyomatosis and focal cortical dysplasia type II.\n\n---\n\n#### 4. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.503)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** PIK3CA (HGNC:9529) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); AKT1 (HGNC:385) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0002412); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Abnormal smooth muscle cell proliferation (HP:0002412) —LEADS_TO→ Lymphangioleiomyomatosis (MONDO:0011705). Gain-of-function mutations in PIK3CA and/or AKT1 lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation, a hallmark of lymphangioleiomyomatosis (LAM), and also contributes to the development and progression of ovarian cancer.\n\n**How to falsify it:** The absence of any activating mutations in PIK3CA or AKT1 in patients with either lymphangioleiomyomatosis or ovarian cancer, or the demonstration that these mutations do not lead to PI3K/AKT/mTOR pathway activation in either disease context. _(variant: The presence of common, benign variants in PIK3CA or AKT1 with high allele frequency in gnomAD that are proposed as causal for these rare diseases.)_\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway with inhibitors could offer a therapeutic strategy for both lymphangioleiomyomatosis and ovarian cancer, given the shared mechanistic basis.\n\n---\n\n#### 5. colorectal cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.499)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-8963684); PIK3CA (HGNC:9340) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Leiomyoma formation (HP:0000973); Wnt signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Colorectal cancer (MONDO:0005575); TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (REACT:R-HSA-71386); mTOR signaling pathway (REACT:R-HSA-71386) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-8963684). Inactivating mutations in APC and PIK3CA, and stabilizing mutations in CTNNB1, lead to aberrant activation of the Wnt signaling pathway, contributing to colorectal cancer. Concurrently, loss-of-function in TSC1 and TSC2 disrupts the mTOR signaling pathway, which can indirectly activate Wnt signaling or promote cell proliferation and migration, contributing to leiomyoma formation in lymphangioleiomyomatosis. The convergence on Wnt signaling and downstream cellular proliferation/migration phenotypes forms the mechanistic link.\n\n**How to falsify it:** The absence of mutations in APC, PIK3CA, or CTNNB1 in patient cohorts for either lymphangioleiomyomatosis or colorectal cancer, or if genetic studies show distinct pathway dysregulation without overlap in Wnt signaling activation. _(variant: None)_\n\n**Why it matters:** Targeting dysregulated Wnt signaling or related downstream pathways could offer therapeutic strategies for both lymphangioleiomyomatosis and colorectal cancer, potentially leading to combination therapies or repurposed drugs.\n\n---\n\n#### 6. Proteus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.456)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** TSC2 (HGNC:11727) —DISRUPTS→ mTOR signaling pathway (WP:WP450); TSC1 (HGNC:11725) —DISRUPTS→ mTOR signaling pathway (WP:WP450); AKT1 (HGNC:417) —DISRUPTS→ mTOR signaling pathway (WP:WP450); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Lung cyst formation (HP:0002100); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Hemihypertrophy (HP:0008998); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Cutaneous vascular malformations (HP:0030212); mTOR signaling pathway (WP:WP450) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in TSC1, TSC2, or AKT1 lead to dysregulation of the mTOR signaling pathway. Loss-of-function in TSC1/TSC2 or gain-of-function in AKT1 results in hyperactivation of mTORC1. This hyperactivation contributes to the distinct pathologies of LAM (e.g., lung cyst formation) and Proteus syndrome (e.g., hemihypertrophy, vascular malformations, skeletal abnormalities).\n\n**How to falsify it:** Demonstration that mutations in TSC1, TSC2, or AKT1 do not converge on the mTOR signaling pathway in either disease, or that the functional consequences of these mutations are entirely distinct and do not lead to overlapping downstream effects. _(variant: A common pathogenic variant (AF > 0.001) in gnomAD for any of the core causal genes (TSC1, TSC2, AKT1) associated with either disease.)_\n\n**Why it matters:** Targeting the mTOR pathway is a potential therapeutic strategy for both lymphangioleiomyomatosis and Proteus syndrome. Understanding the shared mechanistic link through mTOR signaling could lead to the development of drugs that benefit patients with both conditions, or inform differential therapeutic approaches based on the specific genetic drivers.\n\n---\n\n#### 7. hereditary breast carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.452)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP2761); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Abnormal smooth muscle cell proliferation (HP:0003690); PI3K/AKT/mTOR signaling pathway (WP:WP2761) —LEADS_TO→ Breast carcinoma (HP:0002664). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This aberrant signaling drives abnormal smooth muscle cell proliferation in LAM and contributes to the development of breast carcinoma in HBC.\n\n**How to falsify it:** Identification of a pathogenic variant in PIK3CA in patients with LAM that demonstrates a loss-of-function effect, or a variant in PIK3CA in breast carcinoma patients with a gain-of-function effect, would falsify this hypothesis.\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway is a potential therapeutic strategy for both lymphangioleiomyomatosis and breast carcinoma, as inhibitors of this pathway are already in development or clinical use.\n\n---\n\n#### 8. obsolete cerebral malformation  —  Tier 3 — Moderate / Emerging  (fitness 0.445)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** TSC1 (HGNC:11542) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC2 (HGNC:11543) —BINDS→ TSC1/TSC2 complex formation and activity (GO:0098981); TSC1/TSC2 complex formation and activity (GO:0098981) —DECREASES→ MTOR signaling pathway (GO:0035556); MTOR signaling pathway (GO:0035556) —INCREASES→ Abnormal cell proliferation and migration (HP:0011224); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Cerebral malformation (HP:0001347); Abnormal cell proliferation and migration (HP:0011224) —LEADS_TO→ Pulmonary cysts and leiomyomas (HP:0030050). Mutations in TSC1 or TSC2 disrupt the formation and inhibitory function of the TSC1/TSC2 complex, leading to hyperactivation of the mTOR signaling pathway. This dysregulation results in abnormal cell proliferation and migration, manifesting as cerebral malformations in OCM and pulmonary cysts and leiomyomas in LAM.\n\n**How to falsify it:** Identification of distinct causal genes for LAM and OCM that do not converge on the TSC1/TSC2 complex or mTOR signaling pathway, or demonstration that mutations in TSC1/TSC2 lead to opposite functional consequences in the two diseases (e.g., loss-of-function in one and gain-of-function in the other).\n\n**Why it matters:** Targeting the mTOR pathway with rapamycin analogs has shown efficacy in treating manifestations of TSC, suggesting potential therapeutic strategies for both LAM and OCM if they share this core mechanism.\n\n---\n\n#### 9. Cowden syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** TSC1 (HGNC:11541) —DISRUPTS→ mTOR signaling pathway (P04630); TSC2 (HGNC:11542) —DISRUPTS→ mTOR signaling pathway (P04630); AKT1 (HGNC:381) —DISRUPTS→ mTOR signaling pathway (P04630); mTOR signaling pathway (P04630) —LEADS_TO→ Pulmonary cysts and smooth muscle proliferation (HP:0030050); mTOR signaling pathway (P04630) —LEADS_TO→ Increased risk of hamartomas (HP:0002667); mTOR signaling pathway (P04630) —LEADS_TO→ Gastrointestinal polyps (HP:0002274). Mutations in TSC1 or TSC2 (common to both diseases' origins) lead to dysregulation of the mTOR signaling pathway. In CS6, AKT1 mutations also converge on this pathway. Dysregulation of the mTOR pathway then leads to distinct but related phenotypic outcomes seen in LAM (pulmonary manifestations) and CS6 (hamartomas, polyps).\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for LAM and CS6 in TSC1, TSC2, or AKT1 operate through entirely independent cellular pathways that do not converge on mTOR signaling or related downstream effectors, this hypothesis would be falsified. _(variant: Identification of common pathogenic variants (e.g., >1% allele frequency in relevant populations) in TSC1, TSC2, or AKT1 associated with either disease would challenge the rare disease assumption and potentially falsify the proposed specific mechanism.)_\n\n**Why it matters:** Targeting the mTOR pathway with rapamycin analogs has shown some efficacy in treating LAM. Understanding the shared mechanistic link via mTOR could inform therapeutic strategies for CS6 or identify novel therapeutic targets applicable to both conditions.\n\n---\n\n#### 10. megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.410)\n**Link type:** shared pathway (Reactome:R-HSA-165181, Reactome:R-HSA-198323, Reactome:R-HSA-5674400)\n\n**Proposed mechanism:** TSC2 (HGNC:11799) —DISRUPTS→ mTOR signaling pathway (WP:283); TSC1 (HGNC:11798) —DISRUPTS→ mTOR signaling pathway (WP:283); AKT3 (HGNC:377) —INCREASES→ mTOR signaling pathway (WP:283); mTOR signaling pathway (WP:283) —LEADS_TO→ Leiomyomatosis (HP:0000971); mTOR signaling pathway (WP:283) —LEADS_TO→ Megalencephaly (HP:0000255); mTOR signaling pathway (WP:283) —LEADS_TO→ Polymicrogyria (HP:0002120); mTOR signaling pathway (WP:283) —LEADS_TO→ Hydrocephalus (HP:0000238); mTOR signaling pathway (WP:283) —LEADS_TO→ Polydactyly (HP:0001195). Loss-of-function mutations in TSC1 or TSC2 disrupt the tuberous sclerosis complex, leading to hyperactivation of the mTOR signaling pathway. Gain-of-function mutations in AKT3 also lead to increased mTOR signaling. Dysregulation of the mTOR pathway in different cellular contexts results in the distinct phenotypes of LAM (e.g., leiomyomatosis) and MPPHS2 (e.g., megalencephaly, polymicrogyria, polydactyly, hydrocephalus).\n\n**How to falsify it:** Demonstration that mutations in TSC1, TSC2, or AKT3 do not impact the mTOR signaling pathway in relevant cell types or that the disease phenotypes can be fully explained by independent pathways unrelated to mTOR. _(variant: gnomAD allele frequency > 0.1% for pathogenic variants in TSC1, TSC2, or AKT3.)_\n\n**Why it matters:** Targeting the mTOR pathway is a potential therapeutic strategy for both LAM and MPPHS2, although the different functional consequences (loss vs. gain of function) may require distinct therapeutic approaches (e.g., mTORC1 inhibitors for LAM, potentially different modulators for AKT3-driven MPPHS2).\n\n---"
+}
