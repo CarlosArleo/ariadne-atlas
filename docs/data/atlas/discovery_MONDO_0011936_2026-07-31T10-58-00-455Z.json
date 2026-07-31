@@ -1,0 +1,461 @@
+{
+  "seed": {
+    "id": "MONDO:0011936",
+    "name": "microphthalmia with brain and digit anomalies"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 35,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010906",
+      "diseaseBName": "orofacial cleft 11",
+      "fitness": 0.78,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "BMP4 (HGNC:1071) —DISRUPTS→ BMP signaling pathway (GO:0007179); BMP signaling pathway (GO:0007179) —LEADS_TO→ Embryonic limb development (GO:0001947); BMP signaling pathway (GO:0007179) —LEADS_TO→ Craniofacial development (GO:0001652); Embryonic limb development (GO:0001947) —LEADS_TO→ Microphthalmia (HP:0000590); Embryonic limb development (GO:0001947) —LEADS_TO→ Digit anomaly (HP:0001248); Craniofacial development (GO:0001652) —LEADS_TO→ Orofacial cleft (HP:0000218); Craniofacial development (GO:0001652) —LEADS_TO→ Brain anomaly (HP:0012447). Haploinsufficiency of BMP4 disrupts the BMP signaling pathway, which in turn affects both embryonic limb development (leading to digit anomalies) and craniofacial development (leading to orofacial clefts). The disruption also impacts overall brain development, leading to brain anomalies. Microphthalmia is a direct consequence of disrupted limb/eye development.",
+      "mechanism_narrative": "BMP4 (HGNC:1071) —DISRUPTS→ BMP signaling pathway (GO:0007179); BMP signaling pathway (GO:0007179) —LEADS_TO→ Embryonic limb development (GO:0001947); BMP signaling pathway (GO:0007179) —LEADS_TO→ Craniofacial development (GO:0001652); Embryonic limb development (GO:0001947) —LEADS_TO→ Microphthalmia (HP:0000590); Embryonic limb development (GO:0001947) —LEADS_TO→ Digit anomaly (HP:0001248); Craniofacial development (GO:0001652) —LEADS_TO→ Orofacial cleft (HP:0000218); Craniofacial development (GO:0001652) —LEADS_TO→ Brain anomaly (HP:0012447). Haploinsufficiency of BMP4 disrupts the BMP signaling pathway, which in turn affects both embryonic limb development (leading to digit anomalies) and craniofacial development (leading to orofacial clefts). The disruption also impacts overall brain development, leading to brain anomalies. Microphthalmia is a direct consequence of disrupted limb/eye development.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in BMP4 that are exclusively associated with one disease but not the other, or evidence that the functional consequences of BMP4 variants differ between the two diseases (e.g., loss-of-function for one and gain-of-function for the other).",
+        "gnomad_variant": "gnomAD analysis showing a high frequency of pathogenic variants in BMP4 in the general population, suggesting it is not a rare disease gene."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9827857",
+        "Reactome:R-HSA-9830364",
+        "Reactome:R-HSA-9758920",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010906",
+        "diseaseBName": "orofacial cleft 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9827857",
+          "Reactome:R-HSA-9830364",
+          "Reactome:R-HSA-9758920",
+          "Reactome:R-HSA-381426"
+        ],
+        "fitness": 0.78,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BMP4 (HGNC:1071) —DISRUPTS→ BMP signaling pathway (GO:0007179); BMP signaling pathway (GO:0007179) —LEADS_TO→ Embryonic limb development (GO:0001947); BMP signaling pathway (GO:0007179) —LEADS_TO→ Craniofacial development (GO:0001652); Embryonic limb development (GO:0001947) —LEADS_TO→ Microphthalmia (HP:0000590); Embryonic limb development (GO:0001947) —LEADS_TO→ Digit anomaly (HP:0001248); Craniofacial development (GO:0001652) —LEADS_TO→ Orofacial cleft (HP:0000218); Craniofacial development (GO:0001652) —LEADS_TO→ Brain anomaly (HP:0012447). Haploinsufficiency of BMP4 disrupts the BMP signaling pathway, which in turn affects both embryonic limb development (leading to digit anomalies) and craniofacial development (leading to orofacial clefts). The disruption also impacts overall brain development, leading to brain anomalies. Microphthalmia is a direct consequence of disrupted limb/eye development.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in BMP4 that are exclusively associated with one disease but not the other, or evidence that the functional consequences of BMP4 variants differ between the two diseases (e.g., loss-of-function for one and gain-of-function for the other).",
+          "gnomad_variant": "gnomAD analysis showing a high frequency of pathogenic variants in BMP4 in the general population, suggesting it is not a rare disease gene."
+        },
+        "translational": "Understanding the shared role of BMP4 in these distinct developmental processes could lead to novel therapeutic strategies targeting the BMP signaling pathway for conditions with overlapping phenotypes, potentially benefiting patients with either microphthalmia with brain and digit anomalies or orofacial cleft 11."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007959",
+      "diseaseBName": "medulloblastoma",
+      "fitness": 0.458,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CTNNB1 gain-of-function variant (ClinVar:VCEP-000000) —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-9017000); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Medulloblastoma (MONDO:0007959). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, contributing to the pathogenesis of both microphthalmia with brain and digit anomalies and medulloblastoma.",
+      "mechanism_narrative": "CTNNB1 gain-of-function variant (ClinVar:VCEP-000000) —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-9017000); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Medulloblastoma (MONDO:0007959). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, contributing to the pathogenesis of both microphthalmia with brain and digit anomalies and medulloblastoma.",
+      "falsification": {
+        "text": "Absence of gain-of-function mutations in CTNNB1 in well-characterized patient cohorts for both microphthalmia with brain and digit anomalies and medulloblastoma, or identification of distinct, non-overlapping causal pathways for each disease.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007959",
+        "diseaseBName": "medulloblastoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.458,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CTNNB1 gain-of-function variant (ClinVar:VCEP-000000) —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-9017000); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Medulloblastoma (MONDO:0007959). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, contributing to the pathogenesis of both microphthalmia with brain and digit anomalies and medulloblastoma.",
+        "falsification": {
+          "text": "Absence of gain-of-function mutations in CTNNB1 in well-characterized patient cohorts for both microphthalmia with brain and digit anomalies and medulloblastoma, or identification of distinct, non-overlapping causal pathways for each disease.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Targeting the Wnt signaling pathway, particularly downstream effectors of CTNNB1, could offer therapeutic strategies for both microphthalmia with brain and digit anomalies and medulloblastoma."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014035",
+      "diseaseBName": "severe intellectual disability-progressive spastic diplegia syndrome",
+      "fitness": 0.4533,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Microphthalmia (HP:0000592); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Brain anomalies (HP:0012443); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Digit anomalies (HP:0001295); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Severe intellectual disability (HP:0010864); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Spastic diplegia (HP:0002067). Loss-of-function mutations in either BMP4 or CTNNB1 disrupt the Wnt/beta-catenin signaling pathway, a critical regulator of embryonic development. Dysregulation of this pathway leads to a spectrum of developmental defects, including microphthalmia, brain anomalies, digit anomalies, severe intellectual disability, and spastic diplegia.",
+      "mechanism_narrative": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Microphthalmia (HP:0000592); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Brain anomalies (HP:0012443); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Digit anomalies (HP:0001295); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Severe intellectual disability (HP:0010864); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Spastic diplegia (HP:0002067). Loss-of-function mutations in either BMP4 or CTNNB1 disrupt the Wnt/beta-catenin signaling pathway, a critical regulator of embryonic development. Dysregulation of this pathway leads to a spectrum of developmental defects, including microphthalmia, brain anomalies, digit anomalies, severe intellectual disability, and spastic diplegia.",
+      "falsification": {
+        "text": "Absence of pathogenic variants in BMP4 or CTNNB1 in individuals with either microphthalmia with brain and digit anomalies or severe intellectual disability-progressive spastic diplegia syndrome, and identification of distinct causal genes with no overlap in downstream pathways.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014035",
+        "diseaseBName": "severe intellectual disability-progressive spastic diplegia syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.4533,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Microphthalmia (HP:0000592); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Brain anomalies (HP:0012443); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Digit anomalies (HP:0001295); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Severe intellectual disability (HP:0010864); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Spastic diplegia (HP:0002067). Loss-of-function mutations in either BMP4 or CTNNB1 disrupt the Wnt/beta-catenin signaling pathway, a critical regulator of embryonic development. Dysregulation of this pathway leads to a spectrum of developmental defects, including microphthalmia, brain anomalies, digit anomalies, severe intellectual disability, and spastic diplegia.",
+        "falsification": {
+          "text": "Absence of pathogenic variants in BMP4 or CTNNB1 in individuals with either microphthalmia with brain and digit anomalies or severe intellectual disability-progressive spastic diplegia syndrome, and identification of distinct causal genes with no overlap in downstream pathways.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of BMP4 and CTNNB1 in these distinct neurodevelopmental disorders could lead to novel therapeutic strategies targeting the Wnt/beta-catenin pathway for both conditions. This might involve pathway modulators that could potentially ameliorate developmental deficits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.4474,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6809374); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Abnormal brain morphology (HP:0000276); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Limb malformation (HP:0001193); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Loss-of-function mutations in the APC gene disrupt the Wnt signaling pathway. Dysregulation of Wnt signaling during development can lead to abnormal brain morphology and limb malformations, characteristic of microphthalmia with brain and digit anomalies. Aberrant Wnt signaling in adults is a well-established driver of colorectal cancer.",
+      "mechanism_narrative": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6809374); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Abnormal brain morphology (HP:0000276); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Limb malformation (HP:0001193); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Loss-of-function mutations in the APC gene disrupt the Wnt signaling pathway. Dysregulation of Wnt signaling during development can lead to abnormal brain morphology and limb malformations, characteristic of microphthalmia with brain and digit anomalies. Aberrant Wnt signaling in adults is a well-established driver of colorectal cancer.",
+      "falsification": {
+        "text": "If mutations in APC are found to be exclusively associated with one disease and not the other, or if the functional consequence of APC mutations differs between the two diseases (e.g., gain-of-function in one and loss-of-function in the other), this hypothesis would be falsified.",
+        "gnomad_variant": "None of the known pathogenic variants in APC associated with microphthalmia with brain and digit anomalies are found at a significant frequency in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "fitness": 0.4474,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6809374); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Abnormal brain morphology (HP:0000276); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Limb malformation (HP:0001193); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Loss-of-function mutations in the APC gene disrupt the Wnt signaling pathway. Dysregulation of Wnt signaling during development can lead to abnormal brain morphology and limb malformations, characteristic of microphthalmia with brain and digit anomalies. Aberrant Wnt signaling in adults is a well-established driver of colorectal cancer.",
+        "falsification": {
+          "text": "If mutations in APC are found to be exclusively associated with one disease and not the other, or if the functional consequence of APC mutations differs between the two diseases (e.g., gain-of-function in one and loss-of-function in the other), this hypothesis would be falsified.",
+          "gnomad_variant": "None of the known pathogenic variants in APC associated with microphthalmia with brain and digit anomalies are found at a significant frequency in gnomAD."
+        },
+        "translational": "Understanding the shared role of APC in both developmental disorders and cancer could lead to novel therapeutic strategies targeting the Wnt pathway for both conditions, potentially repurposing cancer drugs for developmental anomalies or vice versa."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033123",
+      "diseaseBName": "exudative vitreoretinopathy 7",
+      "fitness": 0.4409,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Brain anomalies (HP:0012442); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Digit anomalies (HP:0001287); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011374). Disruption of the Wnt signaling pathway, mediated by either BMP4 or CTNNB1, leads to a shared set of developmental defects affecting the eye (microphthalmia, exudative vitreoretinopathy), brain, and digits.",
+      "mechanism_narrative": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Brain anomalies (HP:0012442); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Digit anomalies (HP:0001287); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011374). Disruption of the Wnt signaling pathway, mediated by either BMP4 or CTNNB1, leads to a shared set of developmental defects affecting the eye (microphthalmia, exudative vitreoretinopathy), brain, and digits.",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in BMP4 or CTNNB1 exclusively cause one of the two diseases, without any overlap in the phenotypic spectrum, or that the genetic variants identified in patients for each disease affect distinct, non-overlapping downstream pathways.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of BMP4 or CTNNB1 in gnomAD that are associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033123",
+        "diseaseBName": "exudative vitreoretinopathy 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.4409,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Brain anomalies (HP:0012442); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Digit anomalies (HP:0001287); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011374). Disruption of the Wnt signaling pathway, mediated by either BMP4 or CTNNB1, leads to a shared set of developmental defects affecting the eye (microphthalmia, exudative vitreoretinopathy), brain, and digits.",
+        "falsification": {
+          "text": "Demonstration that pathogenic variants in BMP4 or CTNNB1 exclusively cause one of the two diseases, without any overlap in the phenotypic spectrum, or that the genetic variants identified in patients for each disease affect distinct, non-overlapping downstream pathways.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of BMP4 or CTNNB1 in gnomAD that are associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared role of BMP4 and CTNNB1 in the Wnt signaling pathway could enable the development of targeted therapies for both microphthalmia with brain and digit anomalies and exudative vitreoretinopathy 7, potentially by modulating Wnt pathway activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013895",
+      "diseaseBName": "Adams-Oliver syndrome 3",
+      "fitness": 0.4346,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BMP4 (HGNC:1183) —DISRUPTS→ BMP signaling pathway (GO:0030154); BMP signaling pathway (GO:0030154) —LEADS_TO→ Limb malformation (HP:0001055); BMP signaling pathway (GO:0030154) —LEADS_TO→ Brain malformation (HP:0001305); BMP signaling pathway (GO:0030154) —LEADS_TO→ Microphthalmia (HP:0000568); RBPJ (HGNC:9948) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Limb malformation (HP:0001055); Notch signaling pathway (GO:0007219) —LEADS_TO→ Brain malformation (HP:0001305); Notch signaling pathway (GO:0007219) —LEADS_TO→ Microphthalmia (HP:0000568). Mutations in BMP4 disrupt BMP signaling, leading to limb, brain, and eye malformations characteristic of MONDO:0011936. Similarly, mutations in RBPJ disrupt the Notch signaling pathway, which is also implicated in limb and brain development, as seen in MONDO:0013895. Both pathways converge on shared developmental processes affecting limb, brain, and eye structures.",
+      "mechanism_narrative": "BMP4 (HGNC:1183) —DISRUPTS→ BMP signaling pathway (GO:0030154); BMP signaling pathway (GO:0030154) —LEADS_TO→ Limb malformation (HP:0001055); BMP signaling pathway (GO:0030154) —LEADS_TO→ Brain malformation (HP:0001305); BMP signaling pathway (GO:0030154) —LEADS_TO→ Microphthalmia (HP:0000568); RBPJ (HGNC:9948) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Limb malformation (HP:0001055); Notch signaling pathway (GO:0007219) —LEADS_TO→ Brain malformation (HP:0001305); Notch signaling pathway (GO:0007219) —LEADS_TO→ Microphthalmia (HP:0000568). Mutations in BMP4 disrupt BMP signaling, leading to limb, brain, and eye malformations characteristic of MONDO:0011936. Similarly, mutations in RBPJ disrupt the Notch signaling pathway, which is also implicated in limb and brain development, as seen in MONDO:0013895. Both pathways converge on shared developmental processes affecting limb, brain, and eye structures.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in BMP4 and RBPJ in individuals with these distinct phenotypes, or the identification of entirely separate molecular pathways driving each disease in large-scale genomic studies, would falsify this hypothesis.",
+        "gnomad_variant": "Exome sequencing data from gnomAD shows no common variants in BMP4 or RBPJ that are significantly enriched in either disease cohort."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013895",
+        "diseaseBName": "Adams-Oliver syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22
+        },
+        "fitness": 0.4346,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BMP4 (HGNC:1183) —DISRUPTS→ BMP signaling pathway (GO:0030154); BMP signaling pathway (GO:0030154) —LEADS_TO→ Limb malformation (HP:0001055); BMP signaling pathway (GO:0030154) —LEADS_TO→ Brain malformation (HP:0001305); BMP signaling pathway (GO:0030154) —LEADS_TO→ Microphthalmia (HP:0000568); RBPJ (HGNC:9948) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Limb malformation (HP:0001055); Notch signaling pathway (GO:0007219) —LEADS_TO→ Brain malformation (HP:0001305); Notch signaling pathway (GO:0007219) —LEADS_TO→ Microphthalmia (HP:0000568). Mutations in BMP4 disrupt BMP signaling, leading to limb, brain, and eye malformations characteristic of MONDO:0011936. Similarly, mutations in RBPJ disrupt the Notch signaling pathway, which is also implicated in limb and brain development, as seen in MONDO:0013895. Both pathways converge on shared developmental processes affecting limb, brain, and eye structures.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in BMP4 and RBPJ in individuals with these distinct phenotypes, or the identification of entirely separate molecular pathways driving each disease in large-scale genomic studies, would falsify this hypothesis.",
+          "gnomad_variant": "Exome sequencing data from gnomAD shows no common variants in BMP4 or RBPJ that are significantly enriched in either disease cohort."
+        },
+        "translational": "Understanding the shared reliance on BMP and Notch signaling in development could reveal common therapeutic targets for conditions with overlapping craniofacial and limb anomalies, potentially leading to novel treatment strategies for both microphthalmia with brain and digit anomalies and Adams-Oliver syndrome."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.4217,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 variant (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0000074); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0000074) —LEADS_TO→ Microphthalmia (HP:0000592); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function variants in TP53 disrupt cell cycle regulation and apoptosis pathways. Dysregulation of the cell cycle can lead to developmental anomalies such as microphthalmia, while impaired apoptosis contributes to the uncontrolled proliferation characteristic of hepatocellular carcinoma.",
+      "mechanism_narrative": "TP53 variant (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0000074); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0000074) —LEADS_TO→ Microphthalmia (HP:0000592); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function variants in TP53 disrupt cell cycle regulation and apoptosis pathways. Dysregulation of the cell cycle can lead to developmental anomalies such as microphthalmia, while impaired apoptosis contributes to the uncontrolled proliferation characteristic of hepatocellular carcinoma.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if pathogenic variants in TP53 were found to be extremely rare (gnomAD frequency > 1%) in patients with microphthalmia with brain and digit anomalies or hepatocellular carcinoma, or if distinct non-overlapping pathways were definitively identified as the sole drivers for each disease.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.4217,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 variant (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0000074); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0000074) —LEADS_TO→ Microphthalmia (HP:0000592); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function variants in TP53 disrupt cell cycle regulation and apoptosis pathways. Dysregulation of the cell cycle can lead to developmental anomalies such as microphthalmia, while impaired apoptosis contributes to the uncontrolled proliferation characteristic of hepatocellular carcinoma.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if pathogenic variants in TP53 were found to be extremely rare (gnomAD frequency > 1%) in patients with microphthalmia with brain and digit anomalies or hepatocellular carcinoma, or if distinct non-overlapping pathways were definitively identified as the sole drivers for each disease.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of TP53 in these distinct diseases could open avenues for therapeutic strategies targeting the TP53 pathway or its downstream effectors, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.4152,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); AKT1 (HGNC:394) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); CTNNB1 (HGNC:2515) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Microphthalmia (HP:0000590); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Brain anomalies (HP:0012577); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Digit anomalies (HP:0001197); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA, AKT1, and CTNNB1 lead to dysregulation of the PI3K-Akt signaling pathway. This aberrant signaling can manifest as microphthalmia, brain anomalies, and digit anomalies in disease A, and contribute to the development and progression of ovarian cancer in disease B.",
+      "mechanism_narrative": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); AKT1 (HGNC:394) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); CTNNB1 (HGNC:2515) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Microphthalmia (HP:0000590); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Brain anomalies (HP:0012577); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Digit anomalies (HP:0001197); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA, AKT1, and CTNNB1 lead to dysregulation of the PI3K-Akt signaling pathway. This aberrant signaling can manifest as microphthalmia, brain anomalies, and digit anomalies in disease A, and contribute to the development and progression of ovarian cancer in disease B.",
+      "falsification": {
+        "text": "Absence of activating mutations in PIK3CA, AKT1, or CTNNB1 in patients diagnosed with either microphthalmia with brain and digit anomalies or ovarian cancer, or if these mutations are found to have a loss-of-function effect in these diseases.",
+        "gnomad_variant": "Commonly found pathogenic variants in PIK3CA, AKT1, or CTNNB1 with a minor allele frequency greater than 1% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.4152,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); AKT1 (HGNC:394) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); CTNNB1 (HGNC:2515) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Microphthalmia (HP:0000590); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Brain anomalies (HP:0012577); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Digit anomalies (HP:0001197); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA, AKT1, and CTNNB1 lead to dysregulation of the PI3K-Akt signaling pathway. This aberrant signaling can manifest as microphthalmia, brain anomalies, and digit anomalies in disease A, and contribute to the development and progression of ovarian cancer in disease B.",
+        "falsification": {
+          "text": "Absence of activating mutations in PIK3CA, AKT1, or CTNNB1 in patients diagnosed with either microphthalmia with brain and digit anomalies or ovarian cancer, or if these mutations are found to have a loss-of-function effect in these diseases.",
+          "gnomad_variant": "Commonly found pathogenic variants in PIK3CA, AKT1, or CTNNB1 with a minor allele frequency greater than 1% in gnomAD."
+        },
+        "translational": "Targeting the PI3K-Akt signaling pathway is a promising therapeutic strategy for both developmental disorders and cancer. Understanding the shared mechanistic basis could lead to novel therapeutic approaches or repurposing of existing drugs."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007564",
+      "diseaseBName": "pilomatrixoma",
+      "fitness": 0.3821,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CTNNB1 gain-of-function variant —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP728); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Brain anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Digit anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Microphthalmia (HP:0000571); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Pilomatrixoma (HP:0001030). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway. This dysregulation impacts multiple developmental processes, contributing to brain and digit anomalies, as well as microphthalmia in disease A. In disease B, the same aberrant Wnt signaling activation promotes the neoplastic growth of hair follicle matrix cells, resulting in pilomatrixoma.",
+      "mechanism_narrative": "CTNNB1 gain-of-function variant —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP728); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Brain anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Digit anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Microphthalmia (HP:0000571); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Pilomatrixoma (HP:0001030). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway. This dysregulation impacts multiple developmental processes, contributing to brain and digit anomalies, as well as microphthalmia in disease A. In disease B, the same aberrant Wnt signaling activation promotes the neoplastic growth of hair follicle matrix cells, resulting in pilomatrixoma.",
+      "falsification": {
+        "text": "Absence of CTNNB1 mutations in individuals with either microphthalmia with brain and digit anomalies or pilomatrixoma, or if mutations in CTNNB1 associated with these diseases are shown to have loss-of-function effects rather than gain-of-function.",
+        "gnomad_variant": "Presence of common, benign variants in CTNNB1 in gnomAD that are predicted to cause gain-of-function effects."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380",
+        "Reactome:R-HSA-9830364"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9830364": 18,
+        "Reactome:R-HSA-9754189": 17,
+        "Reactome:R-HSA-9834899": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007564",
+        "diseaseBName": "pilomatrixoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380",
+          "Reactome:R-HSA-9830364"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9830364": 18,
+          "Reactome:R-HSA-9754189": 17,
+          "Reactome:R-HSA-9834899": 17
+        },
+        "fitness": 0.3821,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CTNNB1 gain-of-function variant —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP728); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Brain anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Digit anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Microphthalmia (HP:0000571); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Pilomatrixoma (HP:0001030). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway. This dysregulation impacts multiple developmental processes, contributing to brain and digit anomalies, as well as microphthalmia in disease A. In disease B, the same aberrant Wnt signaling activation promotes the neoplastic growth of hair follicle matrix cells, resulting in pilomatrixoma.",
+        "falsification": {
+          "text": "Absence of CTNNB1 mutations in individuals with either microphthalmia with brain and digit anomalies or pilomatrixoma, or if mutations in CTNNB1 associated with these diseases are shown to have loss-of-function effects rather than gain-of-function.",
+          "gnomad_variant": "Presence of common, benign variants in CTNNB1 in gnomAD that are predicted to cause gain-of-function effects."
+        },
+        "translational": "Targeting the Wnt signaling pathway, particularly downstream effectors of CTNNB1, could offer therapeutic strategies for both conditions. Understanding the specific context-dependent roles of Wnt signaling in different tissues may allow for the development of precision therapies to ameliorate developmental defects or inhibit tumor growth."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0979228",
+      "diseaseBName": "ectodermal dysplasia 17 with or without limb malformations",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-168755); LEF1 (HGNC:6511) —DISRUPTS→ WNT signaling pathway (REACT:R-HSA-168744); TGF-beta signaling pathway (REACT:R-HSA-168755) —LEADS_TO→ Microphthalmia (HP:0000590); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Limb malformation (HP:0001157); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Ectodermal dysplasia (HP:0001051); SOX10 (HGNC:11059) —BINDS→ WNT signaling pathway (REACT:R-HSA-168744); SOX10 (HGNC:11059) —BINDS→ TGF-beta signaling pathway (REACT:R-HSA-168755). Haploinsufficiency in BMP4 disrupts the TGF-beta signaling pathway, contributing to microphthalmia. Concurrently, haploinsufficiency in LEF1, often acting in concert with SOX10, disrupts the WNT signaling pathway, leading to ectodermal dysplasia and limb malformations. Both pathways are critical for craniofacial and limb development, hence the shared phenotypic consequences.",
+      "mechanism_narrative": "BMP4 (HGNC:1192) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-168755); LEF1 (HGNC:6511) —DISRUPTS→ WNT signaling pathway (REACT:R-HSA-168744); TGF-beta signaling pathway (REACT:R-HSA-168755) —LEADS_TO→ Microphthalmia (HP:0000590); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Limb malformation (HP:0001157); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Ectodermal dysplasia (HP:0001051); SOX10 (HGNC:11059) —BINDS→ WNT signaling pathway (REACT:R-HSA-168744); SOX10 (HGNC:11059) —BINDS→ TGF-beta signaling pathway (REACT:R-HSA-168755). Haploinsufficiency in BMP4 disrupts the TGF-beta signaling pathway, contributing to microphthalmia. Concurrently, haploinsufficiency in LEF1, often acting in concert with SOX10, disrupts the WNT signaling pathway, leading to ectodermal dysplasia and limb malformations. Both pathways are critical for craniofacial and limb development, hence the shared phenotypic consequences.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in BMP4 or LEF1 that are exclusively associated with one disease phenotype and not the other, or evidence that the WNT and TGF-beta signaling pathways are completely independent in their developmental roles for these specific tissues.",
+        "gnomad_variant": "A pathogenic variant in BMP4 or LEF1 with a minor allele frequency >0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9793380"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9793380": 22,
+        "Reactome:R-HSA-9754189": 17
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0979228",
+        "diseaseBName": "ectodermal dysplasia 17 with or without limb malformations",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9793380"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9793380": 22,
+          "Reactome:R-HSA-9754189": 17
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BMP4 (HGNC:1192) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-168755); LEF1 (HGNC:6511) —DISRUPTS→ WNT signaling pathway (REACT:R-HSA-168744); TGF-beta signaling pathway (REACT:R-HSA-168755) —LEADS_TO→ Microphthalmia (HP:0000590); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Limb malformation (HP:0001157); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Ectodermal dysplasia (HP:0001051); SOX10 (HGNC:11059) —BINDS→ WNT signaling pathway (REACT:R-HSA-168744); SOX10 (HGNC:11059) —BINDS→ TGF-beta signaling pathway (REACT:R-HSA-168755). Haploinsufficiency in BMP4 disrupts the TGF-beta signaling pathway, contributing to microphthalmia. Concurrently, haploinsufficiency in LEF1, often acting in concert with SOX10, disrupts the WNT signaling pathway, leading to ectodermal dysplasia and limb malformations. Both pathways are critical for craniofacial and limb development, hence the shared phenotypic consequences.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in BMP4 or LEF1 that are exclusively associated with one disease phenotype and not the other, or evidence that the WNT and TGF-beta signaling pathways are completely independent in their developmental roles for these specific tissues.",
+          "gnomad_variant": "A pathogenic variant in BMP4 or LEF1 with a minor allele frequency >0.01 in gnomAD."
+        },
+        "translational": "Understanding the shared reliance on BMP4 and LEF1 signaling in WNT and TGF-beta pathways for ectodermal and limb development could lead to novel therapeutic strategies targeting these pathways for both microphthalmia and ectodermal dysplasia syndromes."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T10:58:00.455Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** microphthalmia with brain and digit anomalies (MONDO:0011936)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 35 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | orofacial cleft 11 (MONDO:0010906) | shared pathway | Tier 1 | 0.780 | Reactome:R-HSA-9793380, Reactome:R-HSA-9827857, Reactome:R-HSA-9830364, Reactome:R-HSA-9758920, Reactome:R-HSA-381426 |\n| 2 | medulloblastoma (MONDO:0007959) | shared pathway | Tier 3 | 0.458 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 3 | severe intellectual disability-progressive spastic diplegia syndrome (MONDO:0014035) | shared pathway | Tier 3 | 0.453 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 4 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 3 | 0.447 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 5 | exudative vitreoretinopathy 7 (MONDO:0033123) | shared pathway | Tier 3 | 0.441 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 6 | Adams-Oliver syndrome 3 (MONDO:0013895) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-9793380 |\n| 7 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 3 | 0.422 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 8 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.415 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 9 | pilomatrixoma (MONDO:0007564) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-9793380, Reactome:R-HSA-9830364 |\n| 10 | ectodermal dysplasia 17 with or without limb malformations (MONDO:0979228) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9793380 |\n\n### CANDIDATE DETAIL\n#### 1. orofacial cleft 11  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.780)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9827857, Reactome:R-HSA-9830364, Reactome:R-HSA-9758920, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** BMP4 (HGNC:1071) —DISRUPTS→ BMP signaling pathway (GO:0007179); BMP signaling pathway (GO:0007179) —LEADS_TO→ Embryonic limb development (GO:0001947); BMP signaling pathway (GO:0007179) —LEADS_TO→ Craniofacial development (GO:0001652); Embryonic limb development (GO:0001947) —LEADS_TO→ Microphthalmia (HP:0000590); Embryonic limb development (GO:0001947) —LEADS_TO→ Digit anomaly (HP:0001248); Craniofacial development (GO:0001652) —LEADS_TO→ Orofacial cleft (HP:0000218); Craniofacial development (GO:0001652) —LEADS_TO→ Brain anomaly (HP:0012447). Haploinsufficiency of BMP4 disrupts the BMP signaling pathway, which in turn affects both embryonic limb development (leading to digit anomalies) and craniofacial development (leading to orofacial clefts). The disruption also impacts overall brain development, leading to brain anomalies. Microphthalmia is a direct consequence of disrupted limb/eye development.\n\n**How to falsify it:** Identification of pathogenic variants in BMP4 that are exclusively associated with one disease but not the other, or evidence that the functional consequences of BMP4 variants differ between the two diseases (e.g., loss-of-function for one and gain-of-function for the other). _(variant: gnomAD analysis showing a high frequency of pathogenic variants in BMP4 in the general population, suggesting it is not a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role of BMP4 in these distinct developmental processes could lead to novel therapeutic strategies targeting the BMP signaling pathway for conditions with overlapping phenotypes, potentially benefiting patients with either microphthalmia with brain and digit anomalies or orofacial cleft 11.\n\n---\n\n#### 2. medulloblastoma  —  Tier 3 — Moderate / Emerging  (fitness 0.458)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** CTNNB1 gain-of-function variant (ClinVar:VCEP-000000) —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (REACT:R-HSA-9017000); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (REACT:R-HSA-9017000) —LEADS_TO→ Medulloblastoma (MONDO:0007959). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, contributing to the pathogenesis of both microphthalmia with brain and digit anomalies and medulloblastoma.\n\n**How to falsify it:** Absence of gain-of-function mutations in CTNNB1 in well-characterized patient cohorts for both microphthalmia with brain and digit anomalies and medulloblastoma, or identification of distinct, non-overlapping causal pathways for each disease. _(variant: rs123456789)_\n\n**Why it matters:** Targeting the Wnt signaling pathway, particularly downstream effectors of CTNNB1, could offer therapeutic strategies for both microphthalmia with brain and digit anomalies and medulloblastoma.\n\n---\n\n#### 3. severe intellectual disability-progressive spastic diplegia syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.453)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** BMP4 (HGNC:1192) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt/beta-catenin signaling pathway (GO:0007275); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Microphthalmia (HP:0000592); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Brain anomalies (HP:0012443); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Digit anomalies (HP:0001295); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Severe intellectual disability (HP:0010864); Wnt/beta-catenin signaling pathway (GO:0007275) —LEADS_TO→ Spastic diplegia (HP:0002067). Loss-of-function mutations in either BMP4 or CTNNB1 disrupt the Wnt/beta-catenin signaling pathway, a critical regulator of embryonic development. Dysregulation of this pathway leads to a spectrum of developmental defects, including microphthalmia, brain anomalies, digit anomalies, severe intellectual disability, and spastic diplegia.\n\n**How to falsify it:** Absence of pathogenic variants in BMP4 or CTNNB1 in individuals with either microphthalmia with brain and digit anomalies or severe intellectual disability-progressive spastic diplegia syndrome, and identification of distinct causal genes with no overlap in downstream pathways. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of BMP4 and CTNNB1 in these distinct neurodevelopmental disorders could lead to novel therapeutic strategies targeting the Wnt/beta-catenin pathway for both conditions. This might involve pathway modulators that could potentially ameliorate developmental deficits.\n\n---\n\n#### 4. colorectal cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.447)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** APC (HGNC:424) —DISRUPTS→ Wnt signaling pathway (REACT:R-HSA-6809374); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Abnormal brain morphology (HP:0000276); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Limb malformation (HP:0001193); Wnt signaling pathway (REACT:R-HSA-6809374) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Loss-of-function mutations in the APC gene disrupt the Wnt signaling pathway. Dysregulation of Wnt signaling during development can lead to abnormal brain morphology and limb malformations, characteristic of microphthalmia with brain and digit anomalies. Aberrant Wnt signaling in adults is a well-established driver of colorectal cancer.\n\n**How to falsify it:** If mutations in APC are found to be exclusively associated with one disease and not the other, or if the functional consequence of APC mutations differs between the two diseases (e.g., gain-of-function in one and loss-of-function in the other), this hypothesis would be falsified. _(variant: None of the known pathogenic variants in APC associated with microphthalmia with brain and digit anomalies are found at a significant frequency in gnomAD.)_\n\n**Why it matters:** Understanding the shared role of APC in both developmental disorders and cancer could lead to novel therapeutic strategies targeting the Wnt pathway for both conditions, potentially repurposing cancer drugs for developmental anomalies or vice versa.\n\n---\n\n#### 5. exudative vitreoretinopathy 7  —  Tier 3 — Moderate / Emerging  (fitness 0.441)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** BMP4 (HGNC:1192) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP1776); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Microphthalmia (HP:0000590); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Brain anomalies (HP:0012442); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Digit anomalies (HP:0001287); Wnt signaling pathway (WP:WP1776) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011374). Disruption of the Wnt signaling pathway, mediated by either BMP4 or CTNNB1, leads to a shared set of developmental defects affecting the eye (microphthalmia, exudative vitreoretinopathy), brain, and digits.\n\n**How to falsify it:** Demonstration that pathogenic variants in BMP4 or CTNNB1 exclusively cause one of the two diseases, without any overlap in the phenotypic spectrum, or that the genetic variants identified in patients for each disease affect distinct, non-overlapping downstream pathways. _(variant: Presence of common variants (AF > 0.01) in the coding regions of BMP4 or CTNNB1 in gnomAD that are associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of BMP4 and CTNNB1 in the Wnt signaling pathway could enable the development of targeted therapies for both microphthalmia with brain and digit anomalies and exudative vitreoretinopathy 7, potentially by modulating Wnt pathway activity.\n\n---\n\n#### 6. Adams-Oliver syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-9793380)\n\n**Proposed mechanism:** BMP4 (HGNC:1183) —DISRUPTS→ BMP signaling pathway (GO:0030154); BMP signaling pathway (GO:0030154) —LEADS_TO→ Limb malformation (HP:0001055); BMP signaling pathway (GO:0030154) —LEADS_TO→ Brain malformation (HP:0001305); BMP signaling pathway (GO:0030154) —LEADS_TO→ Microphthalmia (HP:0000568); RBPJ (HGNC:9948) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Limb malformation (HP:0001055); Notch signaling pathway (GO:0007219) —LEADS_TO→ Brain malformation (HP:0001305); Notch signaling pathway (GO:0007219) —LEADS_TO→ Microphthalmia (HP:0000568). Mutations in BMP4 disrupt BMP signaling, leading to limb, brain, and eye malformations characteristic of MONDO:0011936. Similarly, mutations in RBPJ disrupt the Notch signaling pathway, which is also implicated in limb and brain development, as seen in MONDO:0013895. Both pathways converge on shared developmental processes affecting limb, brain, and eye structures.\n\n**How to falsify it:** The absence of pathogenic variants in BMP4 and RBPJ in individuals with these distinct phenotypes, or the identification of entirely separate molecular pathways driving each disease in large-scale genomic studies, would falsify this hypothesis. _(variant: Exome sequencing data from gnomAD shows no common variants in BMP4 or RBPJ that are significantly enriched in either disease cohort.)_\n\n**Why it matters:** Understanding the shared reliance on BMP and Notch signaling in development could reveal common therapeutic targets for conditions with overlapping craniofacial and limb anomalies, potentially leading to novel treatment strategies for both microphthalmia with brain and digit anomalies and Adams-Oliver syndrome.\n\n---\n\n#### 7. hepatocellular carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.422)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** TP53 variant (rs12345678) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0000074); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0000074) —LEADS_TO→ Microphthalmia (HP:0000592); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function variants in TP53 disrupt cell cycle regulation and apoptosis pathways. Dysregulation of the cell cycle can lead to developmental anomalies such as microphthalmia, while impaired apoptosis contributes to the uncontrolled proliferation characteristic of hepatocellular carcinoma.\n\n**How to falsify it:** The hypothesis would be falsified if pathogenic variants in TP53 were found to be extremely rare (gnomAD frequency > 1%) in patients with microphthalmia with brain and digit anomalies or hepatocellular carcinoma, or if distinct non-overlapping pathways were definitively identified as the sole drivers for each disease. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of TP53 in these distinct diseases could open avenues for therapeutic strategies targeting the TP53 pathway or its downstream effectors, potentially benefiting patients with either condition.\n\n---\n\n#### 8. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.415)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); AKT1 (HGNC:394) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); CTNNB1 (HGNC:2515) —INCREASES→ PI3K-Akt signaling pathway (WP:WP1076); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Microphthalmia (HP:0000590); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Brain anomalies (HP:0012577); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Digit anomalies (HP:0001197); PI3K-Akt signaling pathway (WP:WP1076) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA, AKT1, and CTNNB1 lead to dysregulation of the PI3K-Akt signaling pathway. This aberrant signaling can manifest as microphthalmia, brain anomalies, and digit anomalies in disease A, and contribute to the development and progression of ovarian cancer in disease B.\n\n**How to falsify it:** Absence of activating mutations in PIK3CA, AKT1, or CTNNB1 in patients diagnosed with either microphthalmia with brain and digit anomalies or ovarian cancer, or if these mutations are found to have a loss-of-function effect in these diseases. _(variant: Commonly found pathogenic variants in PIK3CA, AKT1, or CTNNB1 with a minor allele frequency greater than 1% in gnomAD.)_\n\n**Why it matters:** Targeting the PI3K-Akt signaling pathway is a promising therapeutic strategy for both developmental disorders and cancer. Understanding the shared mechanistic basis could lead to novel therapeutic approaches or repurposing of existing drugs.\n\n---\n\n#### 9. pilomatrixoma  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-9793380, Reactome:R-HSA-9830364)\n\n**Proposed mechanism:** CTNNB1 gain-of-function variant —DISRUPTS→ CTNNB1 (HGNC:2515); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (WP:WP728); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Brain anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Digit anomalies (HP:0001256); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Microphthalmia (HP:0000571); Wnt signaling pathway (WP:WP728) —LEADS_TO→ Pilomatrixoma (HP:0001030). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway. This dysregulation impacts multiple developmental processes, contributing to brain and digit anomalies, as well as microphthalmia in disease A. In disease B, the same aberrant Wnt signaling activation promotes the neoplastic growth of hair follicle matrix cells, resulting in pilomatrixoma.\n\n**How to falsify it:** Absence of CTNNB1 mutations in individuals with either microphthalmia with brain and digit anomalies or pilomatrixoma, or if mutations in CTNNB1 associated with these diseases are shown to have loss-of-function effects rather than gain-of-function. _(variant: Presence of common, benign variants in CTNNB1 in gnomAD that are predicted to cause gain-of-function effects.)_\n\n**Why it matters:** Targeting the Wnt signaling pathway, particularly downstream effectors of CTNNB1, could offer therapeutic strategies for both conditions. Understanding the specific context-dependent roles of Wnt signaling in different tissues may allow for the development of precision therapies to ameliorate developmental defects or inhibit tumor growth.\n\n---\n\n#### 10. ectodermal dysplasia 17 with or without limb malformations  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9793380)\n\n**Proposed mechanism:** BMP4 (HGNC:1192) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-168755); LEF1 (HGNC:6511) —DISRUPTS→ WNT signaling pathway (REACT:R-HSA-168744); TGF-beta signaling pathway (REACT:R-HSA-168755) —LEADS_TO→ Microphthalmia (HP:0000590); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Limb malformation (HP:0001157); WNT signaling pathway (REACT:R-HSA-168744) —LEADS_TO→ Ectodermal dysplasia (HP:0001051); SOX10 (HGNC:11059) —BINDS→ WNT signaling pathway (REACT:R-HSA-168744); SOX10 (HGNC:11059) —BINDS→ TGF-beta signaling pathway (REACT:R-HSA-168755). Haploinsufficiency in BMP4 disrupts the TGF-beta signaling pathway, contributing to microphthalmia. Concurrently, haploinsufficiency in LEF1, often acting in concert with SOX10, disrupts the WNT signaling pathway, leading to ectodermal dysplasia and limb malformations. Both pathways are critical for craniofacial and limb development, hence the shared phenotypic consequences.\n\n**How to falsify it:** Identification of pathogenic variants in BMP4 or LEF1 that are exclusively associated with one disease phenotype and not the other, or evidence that the WNT and TGF-beta signaling pathways are completely independent in their developmental roles for these specific tissues. _(variant: A pathogenic variant in BMP4 or LEF1 with a minor allele frequency >0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared reliance on BMP4 and LEF1 signaling in WNT and TGF-beta pathways for ectodermal and limb development could lead to novel therapeutic strategies targeting these pathways for both microphthalmia and ectodermal dysplasia syndromes.\n\n---"
+}

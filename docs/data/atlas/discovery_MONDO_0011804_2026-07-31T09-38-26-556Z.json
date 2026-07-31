@@ -1,0 +1,539 @@
+{
+  "seed": {
+    "id": "MONDO:0011804",
+    "name": "autoimmune lymphoproliferative syndrome type 2B"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 19,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.7166,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "CASP8 (HGNC:1509) —DISRUPTS→ Apoptosis signaling (GO:0006915); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis signaling (GO:0006915) —INCREASES→ Cell cycle regulation (GO:0007049). Loss-of-function mutations in CASP8 impair apoptosis, leading to ALPS2B. Concurrently, loss-of-function mutations in TP53 disrupt cell cycle regulation. Both apoptosis and cell cycle regulation are interconnected processes; impaired apoptosis can indirectly affect cell cycle checkpoints, and disrupted cell cycle control can lead to increased cellular stress and altered apoptotic signaling, thereby converging on a shared molecular and cellular pathology that contributes to both disease phenotypes.",
+      "mechanism_narrative": "CASP8 (HGNC:1509) —DISRUPTS→ Apoptosis signaling (GO:0006915); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis signaling (GO:0006915) —INCREASES→ Cell cycle regulation (GO:0007049). Loss-of-function mutations in CASP8 impair apoptosis, leading to ALPS2B. Concurrently, loss-of-function mutations in TP53 disrupt cell cycle regulation. Both apoptosis and cell cycle regulation are interconnected processes; impaired apoptosis can indirectly affect cell cycle checkpoints, and disrupted cell cycle control can lead to increased cellular stress and altered apoptotic signaling, thereby converging on a shared molecular and cellular pathology that contributes to both disease phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in CASP8 and TP53 do not functionally interact or converge on shared downstream signaling pathways critical for lymphocyte homeostasis and hepatocyte proliferation, or identifying distinct, non-overlapping molecular mechanisms for each disease that do not involve these key regulators of cell death and cycle.",
+        "gnomad_variant": "Exome or genome sequencing data showing that variants in CASP8 associated with ALPS2B are common in the general population (e.g., allele frequency > 1% in gnomAD)."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157",
+        "Reactome:R-HSA-75158",
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-264870",
+        "Reactome:R-HSA-5357905"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157",
+          "Reactome:R-HSA-75158",
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-264870",
+          "Reactome:R-HSA-5357905"
+        ],
+        "fitness": 0.7166,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:1509) —DISRUPTS→ Apoptosis signaling (GO:0006915); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis signaling (GO:0006915) —INCREASES→ Cell cycle regulation (GO:0007049). Loss-of-function mutations in CASP8 impair apoptosis, leading to ALPS2B. Concurrently, loss-of-function mutations in TP53 disrupt cell cycle regulation. Both apoptosis and cell cycle regulation are interconnected processes; impaired apoptosis can indirectly affect cell cycle checkpoints, and disrupted cell cycle control can lead to increased cellular stress and altered apoptotic signaling, thereby converging on a shared molecular and cellular pathology that contributes to both disease phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in CASP8 and TP53 do not functionally interact or converge on shared downstream signaling pathways critical for lymphocyte homeostasis and hepatocyte proliferation, or identifying distinct, non-overlapping molecular mechanisms for each disease that do not involve these key regulators of cell death and cycle.",
+          "gnomad_variant": "Exome or genome sequencing data showing that variants in CASP8 associated with ALPS2B are common in the general population (e.g., allele frequency > 1% in gnomAD)."
+        },
+        "translational": "Understanding the shared mechanistic links between ALPS2B and hepatocellular carcinoma, particularly involving the apoptosis and cell cycle pathways regulated by CASP8 and TP53, could reveal novel therapeutic targets. Modulating these pathways might offer a strategy for treating both the immune dysregulation in ALPS2B and the uncontrolled proliferation in liver cancer, potentially through immune-modulating agents or targeted therapies that restore apoptotic sensitivity or cell cycle control."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030018",
+      "diseaseBName": "autoinflammation with episodic fever and lymphadenopathy",
+      "fitness": 0.4823,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CASP8 (HGNC:10393) —DISRUPTS→ Apoptosis signaling (GO:0006915); RIPK1 (HGNC:10118) —DISRUPTS→ Apoptosis signaling (GO:0006915); CASP8 (HGNC:10393) —DISRUPTS→ NF-kappaB signaling (GO:0007245); RIPK1 (HGNC:10118) —DISRUPTS→ NF-kappaB signaling (GO:0007245); Apoptosis signaling (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002780); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (HP:0002717); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Lymphadenopathy (HP:0002780); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Episodic fever (HP:0011072). Loss-of-function mutations in CASP8 and RIPK1 disrupt both apoptosis signaling (leading to ALPS-like features and lymphadenopathy) and NF-kappaB signaling (leading to autoinflammation, fever, and lymphadenopathy). The convergence point is the dysregulation of these fundamental cellular processes.",
+      "mechanism_narrative": "CASP8 (HGNC:10393) —DISRUPTS→ Apoptosis signaling (GO:0006915); RIPK1 (HGNC:10118) —DISRUPTS→ Apoptosis signaling (GO:0006915); CASP8 (HGNC:10393) —DISRUPTS→ NF-kappaB signaling (GO:0007245); RIPK1 (HGNC:10118) —DISRUPTS→ NF-kappaB signaling (GO:0007245); Apoptosis signaling (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002780); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (HP:0002717); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Lymphadenopathy (HP:0002780); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Episodic fever (HP:0011072). Loss-of-function mutations in CASP8 and RIPK1 disrupt both apoptosis signaling (leading to ALPS-like features and lymphadenopathy) and NF-kappaB signaling (leading to autoinflammation, fever, and lymphadenopathy). The convergence point is the dysregulation of these fundamental cellular processes.",
+      "falsification": {
+        "text": "If pathogenic variants in CASP8 or RIPK1 are identified in patients with autoinflammation with episodic fever and lymphadenopathy that are exclusively gain-of-function or dominant-negative, rather than loss-of-function, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome Aggregation Consortium (gnomAD) v2.1.1 shows low allele frequencies for known pathogenic variants in CASP8 and RIPK1, consistent with rare disease causality."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-5357905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2562578": 10,
+        "Reactome:R-HSA-5357905": 48,
+        "Reactome:R-HSA-9013957": 6,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-69416": 11,
+        "Reactome:R-HSA-9686347": 4,
+        "Reactome:R-HSA-9693928": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030018",
+        "diseaseBName": "autoinflammation with episodic fever and lymphadenopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-5357905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2562578": 10,
+          "Reactome:R-HSA-5357905": 48,
+          "Reactome:R-HSA-9013957": 6,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-69416": 11,
+          "Reactome:R-HSA-9686347": 4,
+          "Reactome:R-HSA-9693928": 5
+        },
+        "fitness": 0.4823,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:10393) —DISRUPTS→ Apoptosis signaling (GO:0006915); RIPK1 (HGNC:10118) —DISRUPTS→ Apoptosis signaling (GO:0006915); CASP8 (HGNC:10393) —DISRUPTS→ NF-kappaB signaling (GO:0007245); RIPK1 (HGNC:10118) —DISRUPTS→ NF-kappaB signaling (GO:0007245); Apoptosis signaling (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002780); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (HP:0002717); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Lymphadenopathy (HP:0002780); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Episodic fever (HP:0011072). Loss-of-function mutations in CASP8 and RIPK1 disrupt both apoptosis signaling (leading to ALPS-like features and lymphadenopathy) and NF-kappaB signaling (leading to autoinflammation, fever, and lymphadenopathy). The convergence point is the dysregulation of these fundamental cellular processes.",
+        "falsification": {
+          "text": "If pathogenic variants in CASP8 or RIPK1 are identified in patients with autoinflammation with episodic fever and lymphadenopathy that are exclusively gain-of-function or dominant-negative, rather than loss-of-function, this hypothesis would be falsified.",
+          "gnomad_variant": "Exome Aggregation Consortium (gnomAD) v2.1.1 shows low allele frequencies for known pathogenic variants in CASP8 and RIPK1, consistent with rare disease causality."
+        },
+        "translational": "Understanding the shared mechanistic basis in CASP8 and RIPK1 function could lead to novel therapeutic strategies targeting apoptosis and inflammatory pathways for both autoimmune lymphoproliferative syndrome and autoinflammation with episodic fever and lymphadenopathy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011508",
+      "diseaseBName": "lymphoma, non-Hodgkin, familial",
+      "fitness": 0.4567,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CASP8 (HGNC:1038) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoproliferation (HP:0002711); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoma (HP:0002664). Loss-of-function mutations in CASP8 disrupt the apoptotic pathway, leading to lymphoproliferation in ALPS-2B and contributing to lymphoma development in familial non-Hodgkin lymphoma.",
+      "mechanism_narrative": "CASP8 (HGNC:1038) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoproliferation (HP:0002711); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoma (HP:0002664). Loss-of-function mutations in CASP8 disrupt the apoptotic pathway, leading to lymphoproliferation in ALPS-2B and contributing to lymphoma development in familial non-Hodgkin lymphoma.",
+      "falsification": {
+        "text": "Demonstration that mutations in CASP8 associated with ALPS-2B do not affect apoptotic signaling, or that distinct apoptotic pathways are independently affected in familial non-Hodgkin lymphoma.",
+        "gnomad_variant": "rs1131721"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157",
+        "Reactome:R-HSA-75158"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-933543": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011508",
+        "diseaseBName": "lymphoma, non-Hodgkin, familial",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157",
+          "Reactome:R-HSA-75158"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-933543": 13
+        },
+        "fitness": 0.4567,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:1038) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoproliferation (HP:0002711); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoma (HP:0002664). Loss-of-function mutations in CASP8 disrupt the apoptotic pathway, leading to lymphoproliferation in ALPS-2B and contributing to lymphoma development in familial non-Hodgkin lymphoma.",
+        "falsification": {
+          "text": "Demonstration that mutations in CASP8 associated with ALPS-2B do not affect apoptotic signaling, or that distinct apoptotic pathways are independently affected in familial non-Hodgkin lymphoma.",
+          "gnomad_variant": "rs1131721"
+        },
+        "translational": "Targeting apoptotic pathways, particularly those involving CASP8, could offer therapeutic strategies for both autoimmune lymphoproliferative disorders and certain types of lymphoma."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013408",
+      "diseaseBName": "FADD-related immunodeficiency",
+      "fitness": 0.4394,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CASP8 (HGNC:1074) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); FADD (HGNC:3780) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Lymphadenopathy (HP:0002774); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Recurrent infections (HP:00114210); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Autoimmune cytopenias (HP:0001881). Mutations in CASP8 (ALPS2B) and FADD (FADD-ID) both impair the formation or function of the apoptosome, a critical complex in the apoptotic pathway. Dysfunctional apoptosome leads to impaired clearance of lymphocytes and immune cells, manifesting as lymphadenopathy, recurrent infections, and autoimmune cytopenias.",
+      "mechanism_narrative": "CASP8 (HGNC:1074) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); FADD (HGNC:3780) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Lymphadenopathy (HP:0002774); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Recurrent infections (HP:00114210); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Autoimmune cytopenias (HP:0001881). Mutations in CASP8 (ALPS2B) and FADD (FADD-ID) both impair the formation or function of the apoptosome, a critical complex in the apoptotic pathway. Dysfunctional apoptosome leads to impaired clearance of lymphocytes and immune cells, manifesting as lymphadenopathy, recurrent infections, and autoimmune cytopenias.",
+      "falsification": {
+        "text": "Demonstration that mutations in CASP8 and FADD do not converge on the apoptosome pathway, or that the observed phenotypes in ALPS-2B and FADD-related immunodeficiency arise from completely independent molecular mechanisms.",
+        "gnomad_variant": "A common variant (AF > 0.01) in the coding region of CASP8 or FADD that is associated with either ALPS-2B or FADD-related immunodeficiency."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157",
+        "Reactome:R-HSA-75158",
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-5357905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-2562578": 10,
+        "Reactome:R-HSA-5357905": 48,
+        "Reactome:R-HSA-9013957": 6,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-69416": 11,
+        "Reactome:R-HSA-9693928": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013408",
+        "diseaseBName": "FADD-related immunodeficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157",
+          "Reactome:R-HSA-75158",
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-5357905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-2562578": 10,
+          "Reactome:R-HSA-5357905": 48,
+          "Reactome:R-HSA-9013957": 6,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-69416": 11,
+          "Reactome:R-HSA-9693928": 5
+        },
+        "fitness": 0.4394,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:1074) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); FADD (HGNC:3780) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Lymphadenopathy (HP:0002774); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Recurrent infections (HP:00114210); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Autoimmune cytopenias (HP:0001881). Mutations in CASP8 (ALPS2B) and FADD (FADD-ID) both impair the formation or function of the apoptosome, a critical complex in the apoptotic pathway. Dysfunctional apoptosome leads to impaired clearance of lymphocytes and immune cells, manifesting as lymphadenopathy, recurrent infections, and autoimmune cytopenias.",
+        "falsification": {
+          "text": "Demonstration that mutations in CASP8 and FADD do not converge on the apoptosome pathway, or that the observed phenotypes in ALPS-2B and FADD-related immunodeficiency arise from completely independent molecular mechanisms.",
+          "gnomad_variant": "A common variant (AF > 0.01) in the coding region of CASP8 or FADD that is associated with either ALPS-2B or FADD-related immunodeficiency."
+        },
+        "translational": "Understanding the shared role of CASP8 and FADD in apoptosis and immune regulation could lead to targeted therapies for both ALPS type 2B and FADD-related immunodeficiency, potentially by modulating the apoptotic pathway or downstream immune signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014661",
+      "diseaseBName": "epidermolysis bullosa simplex with nail dystrophy",
+      "fitness": 0.3881,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CASP8 (HGNC:10235) —DISRUPTS→ Fas pathway (GO:0008284); Fas pathway (GO:0008284) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (MONDO:0011804); PLEC (HGNC:9033) —DISRUPTS→ Keratin intermediate filament organization (GO:0030669); Keratin intermediate filament organization (GO:0030669) —LEADS_TO→ Epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661); Fas pathway (GO:0008284) —BINDS→ Keratin intermediate filament organization (GO:0030669). Loss-of-function mutations in CASP8 disrupt the Fas pathway, leading to autoimmune lymphoproliferative syndrome. Separately, loss-of-function mutations in PLEC disrupt keratin intermediate filament organization, causing epidermolysis bullosa simplex with nail dystrophy. The Fas pathway is known to influence keratinocyte function and stability, thereby converging on the keratin intermediate filament organization pathway.",
+      "mechanism_narrative": "CASP8 (HGNC:10235) —DISRUPTS→ Fas pathway (GO:0008284); Fas pathway (GO:0008284) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (MONDO:0011804); PLEC (HGNC:9033) —DISRUPTS→ Keratin intermediate filament organization (GO:0030669); Keratin intermediate filament organization (GO:0030669) —LEADS_TO→ Epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661); Fas pathway (GO:0008284) —BINDS→ Keratin intermediate filament organization (GO:0030669). Loss-of-function mutations in CASP8 disrupt the Fas pathway, leading to autoimmune lymphoproliferative syndrome. Separately, loss-of-function mutations in PLEC disrupt keratin intermediate filament organization, causing epidermolysis bullosa simplex with nail dystrophy. The Fas pathway is known to influence keratinocyte function and stability, thereby converging on the keratin intermediate filament organization pathway.",
+      "falsification": {
+        "text": "Demonstration that mutations in CASP8 do not affect Fas pathway signaling or that mutations in PLEC do not impact keratin filament organization would falsify this hypothesis. Furthermore, if the Fas pathway is shown to have no functional interaction with keratin intermediate filament organization, this link would be refuted.",
+        "gnomad_variant": "The presence of common variants (>1% allele frequency in gnomAD) in the coding regions of CASP8 or PLEC associated with severe forms of either disease would challenge the causality of these specific genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014661",
+        "diseaseBName": "epidermolysis bullosa simplex with nail dystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.3881,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:10235) —DISRUPTS→ Fas pathway (GO:0008284); Fas pathway (GO:0008284) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (MONDO:0011804); PLEC (HGNC:9033) —DISRUPTS→ Keratin intermediate filament organization (GO:0030669); Keratin intermediate filament organization (GO:0030669) —LEADS_TO→ Epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661); Fas pathway (GO:0008284) —BINDS→ Keratin intermediate filament organization (GO:0030669). Loss-of-function mutations in CASP8 disrupt the Fas pathway, leading to autoimmune lymphoproliferative syndrome. Separately, loss-of-function mutations in PLEC disrupt keratin intermediate filament organization, causing epidermolysis bullosa simplex with nail dystrophy. The Fas pathway is known to influence keratinocyte function and stability, thereby converging on the keratin intermediate filament organization pathway.",
+        "falsification": {
+          "text": "Demonstration that mutations in CASP8 do not affect Fas pathway signaling or that mutations in PLEC do not impact keratin filament organization would falsify this hypothesis. Furthermore, if the Fas pathway is shown to have no functional interaction with keratin intermediate filament organization, this link would be refuted.",
+          "gnomad_variant": "The presence of common variants (>1% allele frequency in gnomAD) in the coding regions of CASP8 or PLEC associated with severe forms of either disease would challenge the causality of these specific genes."
+        },
+        "translational": "Understanding the shared involvement of the Fas pathway and keratin intermediate filament organization could reveal novel therapeutic targets for both autoimmune lymphoproliferative syndrome and epidermolysis bullosa simplex, potentially through modulation of apoptosis or keratinocyte stabilization."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0001056",
+      "diseaseBName": "gastric cancer",
+      "fitness": 0.3713,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "IRF1 (HGNC:6054) —DISRUPTS→ Immune regulation and apoptosis signaling (GO:0006915); Immune regulation and apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569032); MAPK signaling pathway (REACT:R-HSA-569032) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1237050); PI3K-Akt signaling pathway (REACT:R-HSA-1237050) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); Cell proliferation and survival pathways (GO:0008284) —LEADS_TO→ Gastric cancer (MONDO:0001056). Loss-of-function mutations in IRF1 can impair immune regulation and potentially apoptosis, contributing to ALPS2B. Concurrently, gain-of-function mutations in KRAS and PIK3CA, and loss-of-function in APC (tumor suppressor), activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on the broader process of enhanced cell proliferation and survival, which is a hallmark of gastric cancer. Thus, dysregulation of common downstream cellular processes links these distinct diseases.",
+      "mechanism_narrative": "IRF1 (HGNC:6054) —DISRUPTS→ Immune regulation and apoptosis signaling (GO:0006915); Immune regulation and apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569032); MAPK signaling pathway (REACT:R-HSA-569032) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1237050); PI3K-Akt signaling pathway (REACT:R-HSA-1237050) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); Cell proliferation and survival pathways (GO:0008284) —LEADS_TO→ Gastric cancer (MONDO:0001056). Loss-of-function mutations in IRF1 can impair immune regulation and potentially apoptosis, contributing to ALPS2B. Concurrently, gain-of-function mutations in KRAS and PIK3CA, and loss-of-function in APC (tumor suppressor), activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on the broader process of enhanced cell proliferation and survival, which is a hallmark of gastric cancer. Thus, dysregulation of common downstream cellular processes links these distinct diseases.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for ALPS2B predominantly affect pathways entirely distinct from those dysregulated in gastric cancer (e.g., strictly apoptosis defects without impacting proliferation pathways, or vice versa) and there is no shared downstream molecular effector, this hypothesis would be falsified. Specifically, if mutations in KRAS, PIK3CA, or APC are found to be extremely rare or absent in ALPS2B patients, and IRF1 or related immune regulatory genes are not significantly implicated in gastric cancer pathogenesis, the proposed link would be weakened.",
+        "gnomad_variant": "The presence of common variants (allele frequency > 1% in gnomAD) in KRAS, PIK3CA, or APC that are causally linked to ALPS2B would challenge the proposed mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157",
+        "Reactome:R-HSA-75158"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-111465": 18
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0001056",
+        "diseaseBName": "gastric cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157",
+          "Reactome:R-HSA-75158"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-111465": 18
+        },
+        "fitness": 0.3713,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "IRF1 (HGNC:6054) —DISRUPTS→ Immune regulation and apoptosis signaling (GO:0006915); Immune regulation and apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569032); MAPK signaling pathway (REACT:R-HSA-569032) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1237050); PI3K-Akt signaling pathway (REACT:R-HSA-1237050) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); Cell proliferation and survival pathways (GO:0008284) —LEADS_TO→ Gastric cancer (MONDO:0001056). Loss-of-function mutations in IRF1 can impair immune regulation and potentially apoptosis, contributing to ALPS2B. Concurrently, gain-of-function mutations in KRAS and PIK3CA, and loss-of-function in APC (tumor suppressor), activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on the broader process of enhanced cell proliferation and survival, which is a hallmark of gastric cancer. Thus, dysregulation of common downstream cellular processes links these distinct diseases.",
+        "falsification": {
+          "text": "If genetic studies reveal that the causal variants for ALPS2B predominantly affect pathways entirely distinct from those dysregulated in gastric cancer (e.g., strictly apoptosis defects without impacting proliferation pathways, or vice versa) and there is no shared downstream molecular effector, this hypothesis would be falsified. Specifically, if mutations in KRAS, PIK3CA, or APC are found to be extremely rare or absent in ALPS2B patients, and IRF1 or related immune regulatory genes are not significantly implicated in gastric cancer pathogenesis, the proposed link would be weakened.",
+          "gnomad_variant": "The presence of common variants (allele frequency > 1% in gnomAD) in KRAS, PIK3CA, or APC that are causally linked to ALPS2B would challenge the proposed mechanism."
+        },
+        "translational": "Understanding the shared signaling pathways (MAPK, PI3K-Akt) and their upstream regulators (KRAS, PIK3CA, APC, IRF1) could reveal novel therapeutic targets applicable to both ALPS2B and gastric cancer. For instance, inhibitors targeting these pathways might have dual efficacy or inform personalized treatment strategies based on the specific genetic alterations present in a patient's disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011158",
+      "diseaseBName": "autoimmune lymphoproliferative syndrome type 1",
+      "fitness": 0.3333,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FASLG (HGNC:3482) —BINDS→ Apoptosis signaling pathway (GO:0006915); FAS (HGNC:3572) —BINDS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ CASP8 (HGNC:1634); CASP8 (HGNC:1634) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000218); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Splenomegaly (HP:0001727); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Autoimmunity (HP:0001911). Mutations in FASLG (ALPS type 2B) or FAS (ALPS type 1) lead to impaired Fas-mediated apoptosis. This impairment disrupts the normal apoptotic cascade involving CASP8, resulting in the accumulation of lymphocytes and subsequent lymphadenopathy, splenomegaly, and autoimmunity.",
+      "mechanism_narrative": "FASLG (HGNC:3482) —BINDS→ Apoptosis signaling pathway (GO:0006915); FAS (HGNC:3572) —BINDS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ CASP8 (HGNC:1634); CASP8 (HGNC:1634) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000218); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Splenomegaly (HP:0001727); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Autoimmunity (HP:0001911). Mutations in FASLG (ALPS type 2B) or FAS (ALPS type 1) lead to impaired Fas-mediated apoptosis. This impairment disrupts the normal apoptotic cascade involving CASP8, resulting in the accumulation of lymphocytes and subsequent lymphadenopathy, splenomegaly, and autoimmunity.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in FASLG or FAS in patients diagnosed with ALPS type 1, or pathogenic variants in FAS in patients diagnosed with ALPS type 2B, would falsify this hypothesis.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-69416": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011158",
+        "diseaseBName": "autoimmune lymphoproliferative syndrome type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-69416": 11
+        },
+        "fitness": 0.3333,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FASLG (HGNC:3482) —BINDS→ Apoptosis signaling pathway (GO:0006915); FAS (HGNC:3572) —BINDS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ CASP8 (HGNC:1634); CASP8 (HGNC:1634) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000218); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Splenomegaly (HP:0001727); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Autoimmunity (HP:0001911). Mutations in FASLG (ALPS type 2B) or FAS (ALPS type 1) lead to impaired Fas-mediated apoptosis. This impairment disrupts the normal apoptotic cascade involving CASP8, resulting in the accumulation of lymphocytes and subsequent lymphadenopathy, splenomegaly, and autoimmunity.",
+        "falsification": {
+          "text": "The discovery of pathogenic variants in FASLG or FAS in patients diagnosed with ALPS type 1, or pathogenic variants in FAS in patients diagnosed with ALPS type 2B, would falsify this hypothesis.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared apoptotic pathway defect in ALPS types 1 and 2B could lead to the development of targeted therapies aimed at restoring lymphocyte apoptosis or managing downstream inflammatory consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011383",
+      "diseaseBName": "autoimmune lymphoproliferative syndrome type 2A",
+      "fitness": 0.3213,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in CASP8 (null) —DISRUPTS→ CASP8 (HGNC:1072); Pathogenic variant in CASP10 (null) —DISRUPTS→ CASP10 (HGNC:1073); CASP8 (HGNC:1072) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); CASP10 (HGNC:1073) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Lymphadenopathy (HP:0000740); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Splenomegaly (HP:0001727). Pathogenic variants in CASP8 (ALPS type 2B) and CASP10 (ALPS type 2A) disrupt their function as caspases within the FAS-mediated apoptosis pathway. This disruption impairs the efficient execution of apoptosis, leading to the accumulation of lymphocytes and subsequent lymphadenopathy and splenomegaly, which are shared phenotypes.",
+      "mechanism_narrative": "Pathogenic variant in CASP8 (null) —DISRUPTS→ CASP8 (HGNC:1072); Pathogenic variant in CASP10 (null) —DISRUPTS→ CASP10 (HGNC:1073); CASP8 (HGNC:1072) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); CASP10 (HGNC:1073) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Lymphadenopathy (HP:0000740); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Splenomegaly (HP:0001727). Pathogenic variants in CASP8 (ALPS type 2B) and CASP10 (ALPS type 2A) disrupt their function as caspases within the FAS-mediated apoptosis pathway. This disruption impairs the efficient execution of apoptosis, leading to the accumulation of lymphocytes and subsequent lymphadenopathy and splenomegaly, which are shared phenotypes.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in either CASP8 or CASP10 that demonstrably leads to a gain-of-function or has no impact on apoptotic signaling would falsify this hypothesis. Additionally, if these shared phenotypes could be definitively attributed to independent pathways without convergence on the FAS-mediated apoptosis cascade, this would also serve as falsification.",
+        "gnomad_variant": "While specific pathogenic variants are rare, the absence of any known pathogenic variants in public databases like gnomAD for the proposed causal regions would weaken the genetic basis of this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75157",
+        "Reactome:R-HSA-75158"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-933543": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011383",
+        "diseaseBName": "autoimmune lymphoproliferative syndrome type 2A",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75157",
+          "Reactome:R-HSA-75158"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-933543": 13
+        },
+        "fitness": 0.3213,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in CASP8 (null) —DISRUPTS→ CASP8 (HGNC:1072); Pathogenic variant in CASP10 (null) —DISRUPTS→ CASP10 (HGNC:1073); CASP8 (HGNC:1072) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); CASP10 (HGNC:1073) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Lymphadenopathy (HP:0000740); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Splenomegaly (HP:0001727). Pathogenic variants in CASP8 (ALPS type 2B) and CASP10 (ALPS type 2A) disrupt their function as caspases within the FAS-mediated apoptosis pathway. This disruption impairs the efficient execution of apoptosis, leading to the accumulation of lymphocytes and subsequent lymphadenopathy and splenomegaly, which are shared phenotypes.",
+        "falsification": {
+          "text": "The identification of a pathogenic variant in either CASP8 or CASP10 that demonstrably leads to a gain-of-function or has no impact on apoptotic signaling would falsify this hypothesis. Additionally, if these shared phenotypes could be definitively attributed to independent pathways without convergence on the FAS-mediated apoptosis cascade, this would also serve as falsification.",
+          "gnomad_variant": "While specific pathogenic variants are rare, the absence of any known pathogenic variants in public databases like gnomAD for the proposed causal regions would weaken the genetic basis of this hypothesis."
+        },
+        "translational": "Understanding the shared apoptotic defect in ALPS types 2A and 2B, mediated by CASP8 and CASP10, could pave the way for developing targeted therapies aimed at restoring proper apoptotic signaling or managing the downstream consequences of lymphocyte accumulation, potentially benefiting patients with either subtype."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010150",
+      "diseaseBName": "head and neck squamous cell carcinoma",
+      "fitness": 0.3105,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "CASP8 (HGNC:1115) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); TNFRSF10B (HGNC:1114) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); ING1 (HGNC:27144) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000278); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Squamous cell carcinoma (HP:0002671). Loss-of-function mutations in CASP8, TNFRSF10B, and ING1 impair the apoptosis signaling pathway. This impairment leads to the accumulation of lymphocytes and lymphadenopathy characteristic of ALPS2B, and also promotes the survival and proliferation of cells, contributing to the development of head and neck squamous cell carcinoma.",
+      "mechanism_narrative": "CASP8 (HGNC:1115) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); TNFRSF10B (HGNC:1114) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); ING1 (HGNC:27144) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000278); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Squamous cell carcinoma (HP:0002671). Loss-of-function mutations in CASP8, TNFRSF10B, and ING1 impair the apoptosis signaling pathway. This impairment leads to the accumulation of lymphocytes and lymphadenopathy characteristic of ALPS2B, and also promotes the survival and proliferation of cells, contributing to the development of head and neck squamous cell carcinoma.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CASP8, TNFRSF10B, or ING1 with a minor allele frequency > 1% in gnomAD, or demonstration that mutations in these genes exclusively affect one disease pathway without impacting the other.",
+        "gnomad_variant": "ExAC:rs11134577"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-75158"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-69416": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010150",
+        "diseaseBName": "head and neck squamous cell carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-75158"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-69416": 11
+        },
+        "fitness": 0.3105,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CASP8 (HGNC:1115) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); TNFRSF10B (HGNC:1114) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); ING1 (HGNC:27144) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000278); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Squamous cell carcinoma (HP:0002671). Loss-of-function mutations in CASP8, TNFRSF10B, and ING1 impair the apoptosis signaling pathway. This impairment leads to the accumulation of lymphocytes and lymphadenopathy characteristic of ALPS2B, and also promotes the survival and proliferation of cells, contributing to the development of head and neck squamous cell carcinoma.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CASP8, TNFRSF10B, or ING1 with a minor allele frequency > 1% in gnomAD, or demonstration that mutations in these genes exclusively affect one disease pathway without impacting the other.",
+          "gnomad_variant": "ExAC:rs11134577"
+        },
+        "translational": "Targeting the apoptosis pathway, specifically the roles of CASP8, TNFRSF10B, and ING1, could offer novel therapeutic strategies for both ALPS2B and head and neck squamous cell carcinoma, potentially through enhancing apoptosis in malignant cells or regulating immune cell survival."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020849",
+      "diseaseBName": "immunodeficiency 57",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Caspase-8 (HGNC:10709) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); RIPK1 (HGNC:10108) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); TNF signaling pathway (REACT:R-HSA-6272714) —LEADS_TO→ Regulation of apoptotic signaling pathway (GO:0043065); Caspase-8 (HGNC:10709) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); RIPK1 (HGNC:10108) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Lymphoproliferation (HP:0002711); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Immunodeficiency (HP:0002705). Loss-of-function mutations in CASP8 and RIPK1 disrupt the TNF signaling pathway, leading to dysregulation of apoptotic signaling. This dysregulation contributes to both lymphoproliferation (as seen in ALPS type 2B) and immunodeficiency (as seen in IDDM57).",
+      "mechanism_narrative": "Caspase-8 (HGNC:10709) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); RIPK1 (HGNC:10108) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); TNF signaling pathway (REACT:R-HSA-6272714) —LEADS_TO→ Regulation of apoptotic signaling pathway (GO:0043065); Caspase-8 (HGNC:10709) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); RIPK1 (HGNC:10108) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Lymphoproliferation (HP:0002711); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Immunodeficiency (HP:0002705). Loss-of-function mutations in CASP8 and RIPK1 disrupt the TNF signaling pathway, leading to dysregulation of apoptotic signaling. This dysregulation contributes to both lymphoproliferation (as seen in ALPS type 2B) and immunodeficiency (as seen in IDDM57).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CASP8 or RIPK1 that exhibit gain-of-function effects or are exclusively associated with one of the diseases but not the other, or demonstration that these genes do not play a significant role in the TNF signaling or apoptotic pathways in immune cells.",
+        "gnomad_variant": "Exclusion of common variants in CASP8 and RIPK1 in gnomAD that segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-5357905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2562578": 10,
+        "Reactome:R-HSA-5357905": 48,
+        "Reactome:R-HSA-9013957": 6,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-69416": 11,
+        "Reactome:R-HSA-9686347": 4,
+        "Reactome:R-HSA-9693928": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020849",
+        "diseaseBName": "immunodeficiency 57",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-5357905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2562578": 10,
+          "Reactome:R-HSA-5357905": 48,
+          "Reactome:R-HSA-9013957": 6,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-69416": 11,
+          "Reactome:R-HSA-9686347": 4,
+          "Reactome:R-HSA-9693928": 5
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Caspase-8 (HGNC:10709) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); RIPK1 (HGNC:10108) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); TNF signaling pathway (REACT:R-HSA-6272714) —LEADS_TO→ Regulation of apoptotic signaling pathway (GO:0043065); Caspase-8 (HGNC:10709) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); RIPK1 (HGNC:10108) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Lymphoproliferation (HP:0002711); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Immunodeficiency (HP:0002705). Loss-of-function mutations in CASP8 and RIPK1 disrupt the TNF signaling pathway, leading to dysregulation of apoptotic signaling. This dysregulation contributes to both lymphoproliferation (as seen in ALPS type 2B) and immunodeficiency (as seen in IDDM57).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CASP8 or RIPK1 that exhibit gain-of-function effects or are exclusively associated with one of the diseases but not the other, or demonstration that these genes do not play a significant role in the TNF signaling or apoptotic pathways in immune cells.",
+          "gnomad_variant": "Exclusion of common variants in CASP8 and RIPK1 in gnomAD that segregate with either disease."
+        },
+        "translational": "Understanding the shared mechanistic link via CASP8 and RIPK1 in TNF signaling and apoptosis provides a potential therapeutic target for both autoimmune lymphoproliferative syndrome type 2B and immunodeficiency 57, possibly through modulation of these pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T09:38:26.556Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 19 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 1 | 0.717 | Reactome:R-HSA-75157, Reactome:R-HSA-75158, Reactome:R-HSA-2562578, Reactome:R-HSA-264870, Reactome:R-HSA-5357905 |\n| 2 | autoinflammation with episodic fever and lymphadenopathy (MONDO:0030018) | shared pathway | Tier 3 | 0.482 | Reactome:R-HSA-2562578, Reactome:R-HSA-5357905 |\n| 3 | lymphoma, non-Hodgkin, familial (MONDO:0011508) | shared pathway | Tier 3 | 0.457 | Reactome:R-HSA-75157, Reactome:R-HSA-75158 |\n| 4 | FADD-related immunodeficiency (MONDO:0013408) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-75157, Reactome:R-HSA-75158, Reactome:R-HSA-2562578, Reactome:R-HSA-5357905 |\n| 5 | epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-264870 |\n| 6 | gastric cancer (MONDO:0001056) | shared pathway | Tier 3 | 0.371 | Reactome:R-HSA-75157, Reactome:R-HSA-75158 |\n| 7 | autoimmune lymphoproliferative syndrome type 1 (MONDO:0011158) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-75157 |\n| 8 | autoimmune lymphoproliferative syndrome type 2A (MONDO:0011383) | shared pathway | Tier 3 | 0.321 | Reactome:R-HSA-75157, Reactome:R-HSA-75158 |\n| 9 | head and neck squamous cell carcinoma (MONDO:0010150) | shared pathway | Tier 4 | 0.310 | Reactome:R-HSA-75158 |\n| 10 | immunodeficiency 57 (MONDO:0020849) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-2562578, Reactome:R-HSA-5357905 |\n\n### CANDIDATE DETAIL\n#### 1. hepatocellular carcinoma  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared pathway (Reactome:R-HSA-75157, Reactome:R-HSA-75158, Reactome:R-HSA-2562578, Reactome:R-HSA-264870, Reactome:R-HSA-5357905)\n\n**Proposed mechanism:** CASP8 (HGNC:1509) —DISRUPTS→ Apoptosis signaling (GO:0006915); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis signaling (GO:0006915) —INCREASES→ Cell cycle regulation (GO:0007049). Loss-of-function mutations in CASP8 impair apoptosis, leading to ALPS2B. Concurrently, loss-of-function mutations in TP53 disrupt cell cycle regulation. Both apoptosis and cell cycle regulation are interconnected processes; impaired apoptosis can indirectly affect cell cycle checkpoints, and disrupted cell cycle control can lead to increased cellular stress and altered apoptotic signaling, thereby converging on a shared molecular and cellular pathology that contributes to both disease phenotypes.\n\n**How to falsify it:** Demonstration that mutations in CASP8 and TP53 do not functionally interact or converge on shared downstream signaling pathways critical for lymphocyte homeostasis and hepatocyte proliferation, or identifying distinct, non-overlapping molecular mechanisms for each disease that do not involve these key regulators of cell death and cycle. _(variant: Exome or genome sequencing data showing that variants in CASP8 associated with ALPS2B are common in the general population (e.g., allele frequency > 1% in gnomAD).)_\n\n**Why it matters:** Understanding the shared mechanistic links between ALPS2B and hepatocellular carcinoma, particularly involving the apoptosis and cell cycle pathways regulated by CASP8 and TP53, could reveal novel therapeutic targets. Modulating these pathways might offer a strategy for treating both the immune dysregulation in ALPS2B and the uncontrolled proliferation in liver cancer, potentially through immune-modulating agents or targeted therapies that restore apoptotic sensitivity or cell cycle control.\n\n---\n\n#### 2. autoinflammation with episodic fever and lymphadenopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.482)\n**Link type:** shared pathway (Reactome:R-HSA-2562578, Reactome:R-HSA-5357905)\n\n**Proposed mechanism:** CASP8 (HGNC:10393) —DISRUPTS→ Apoptosis signaling (GO:0006915); RIPK1 (HGNC:10118) —DISRUPTS→ Apoptosis signaling (GO:0006915); CASP8 (HGNC:10393) —DISRUPTS→ NF-kappaB signaling (GO:0007245); RIPK1 (HGNC:10118) —DISRUPTS→ NF-kappaB signaling (GO:0007245); Apoptosis signaling (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002780); Apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (HP:0002717); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Lymphadenopathy (HP:0002780); NF-kappaB signaling (GO:0007245) —LEADS_TO→ Episodic fever (HP:0011072). Loss-of-function mutations in CASP8 and RIPK1 disrupt both apoptosis signaling (leading to ALPS-like features and lymphadenopathy) and NF-kappaB signaling (leading to autoinflammation, fever, and lymphadenopathy). The convergence point is the dysregulation of these fundamental cellular processes.\n\n**How to falsify it:** If pathogenic variants in CASP8 or RIPK1 are identified in patients with autoinflammation with episodic fever and lymphadenopathy that are exclusively gain-of-function or dominant-negative, rather than loss-of-function, this hypothesis would be falsified. _(variant: Exome Aggregation Consortium (gnomAD) v2.1.1 shows low allele frequencies for known pathogenic variants in CASP8 and RIPK1, consistent with rare disease causality.)_\n\n**Why it matters:** Understanding the shared mechanistic basis in CASP8 and RIPK1 function could lead to novel therapeutic strategies targeting apoptosis and inflammatory pathways for both autoimmune lymphoproliferative syndrome and autoinflammation with episodic fever and lymphadenopathy.\n\n---\n\n#### 3. lymphoma, non-Hodgkin, familial  —  Tier 3 — Moderate / Emerging  (fitness 0.457)\n**Link type:** shared pathway (Reactome:R-HSA-75157, Reactome:R-HSA-75158)\n\n**Proposed mechanism:** CASP8 (HGNC:1038) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoproliferation (HP:0002711); Apoptosis (GO:0006915) —LEADS_TO→ Lymphoma (HP:0002664). Loss-of-function mutations in CASP8 disrupt the apoptotic pathway, leading to lymphoproliferation in ALPS-2B and contributing to lymphoma development in familial non-Hodgkin lymphoma.\n\n**How to falsify it:** Demonstration that mutations in CASP8 associated with ALPS-2B do not affect apoptotic signaling, or that distinct apoptotic pathways are independently affected in familial non-Hodgkin lymphoma. _(variant: rs1131721)_\n\n**Why it matters:** Targeting apoptotic pathways, particularly those involving CASP8, could offer therapeutic strategies for both autoimmune lymphoproliferative disorders and certain types of lymphoma.\n\n---\n\n#### 4. FADD-related immunodeficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-75157, Reactome:R-HSA-75158, Reactome:R-HSA-2562578, Reactome:R-HSA-5357905)\n\n**Proposed mechanism:** CASP8 (HGNC:1074) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); FADD (HGNC:3780) —DISRUPTS→ Apoptosome formation and activation (GO:0006917); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Lymphadenopathy (HP:0002774); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Recurrent infections (HP:00114210); Apoptosome formation and activation (GO:0006917) —LEADS_TO→ Autoimmune cytopenias (HP:0001881). Mutations in CASP8 (ALPS2B) and FADD (FADD-ID) both impair the formation or function of the apoptosome, a critical complex in the apoptotic pathway. Dysfunctional apoptosome leads to impaired clearance of lymphocytes and immune cells, manifesting as lymphadenopathy, recurrent infections, and autoimmune cytopenias.\n\n**How to falsify it:** Demonstration that mutations in CASP8 and FADD do not converge on the apoptosome pathway, or that the observed phenotypes in ALPS-2B and FADD-related immunodeficiency arise from completely independent molecular mechanisms. _(variant: A common variant (AF > 0.01) in the coding region of CASP8 or FADD that is associated with either ALPS-2B or FADD-related immunodeficiency.)_\n\n**Why it matters:** Understanding the shared role of CASP8 and FADD in apoptosis and immune regulation could lead to targeted therapies for both ALPS type 2B and FADD-related immunodeficiency, potentially by modulating the apoptotic pathway or downstream immune signaling.\n\n---\n\n#### 5. epidermolysis bullosa simplex with nail dystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** CASP8 (HGNC:10235) —DISRUPTS→ Fas pathway (GO:0008284); Fas pathway (GO:0008284) —LEADS_TO→ Autoimmune lymphoproliferative syndrome (MONDO:0011804); PLEC (HGNC:9033) —DISRUPTS→ Keratin intermediate filament organization (GO:0030669); Keratin intermediate filament organization (GO:0030669) —LEADS_TO→ Epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661); Fas pathway (GO:0008284) —BINDS→ Keratin intermediate filament organization (GO:0030669). Loss-of-function mutations in CASP8 disrupt the Fas pathway, leading to autoimmune lymphoproliferative syndrome. Separately, loss-of-function mutations in PLEC disrupt keratin intermediate filament organization, causing epidermolysis bullosa simplex with nail dystrophy. The Fas pathway is known to influence keratinocyte function and stability, thereby converging on the keratin intermediate filament organization pathway.\n\n**How to falsify it:** Demonstration that mutations in CASP8 do not affect Fas pathway signaling or that mutations in PLEC do not impact keratin filament organization would falsify this hypothesis. Furthermore, if the Fas pathway is shown to have no functional interaction with keratin intermediate filament organization, this link would be refuted. _(variant: The presence of common variants (>1% allele frequency in gnomAD) in the coding regions of CASP8 or PLEC associated with severe forms of either disease would challenge the causality of these specific genes.)_\n\n**Why it matters:** Understanding the shared involvement of the Fas pathway and keratin intermediate filament organization could reveal novel therapeutic targets for both autoimmune lymphoproliferative syndrome and epidermolysis bullosa simplex, potentially through modulation of apoptosis or keratinocyte stabilization.\n\n---\n\n#### 6. gastric cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.371)\n**Link type:** shared pathway (Reactome:R-HSA-75157, Reactome:R-HSA-75158)\n\n**Proposed mechanism:** IRF1 (HGNC:6054) —DISRUPTS→ Immune regulation and apoptosis signaling (GO:0006915); Immune regulation and apoptosis signaling (GO:0006915) —LEADS_TO→ Autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569032); MAPK signaling pathway (REACT:R-HSA-569032) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (REACT:R-HSA-1237050); PI3K-Akt signaling pathway (REACT:R-HSA-1237050) —LEADS_TO→ Cell proliferation and survival pathways (GO:0008284); Cell proliferation and survival pathways (GO:0008284) —LEADS_TO→ Gastric cancer (MONDO:0001056). Loss-of-function mutations in IRF1 can impair immune regulation and potentially apoptosis, contributing to ALPS2B. Concurrently, gain-of-function mutations in KRAS and PIK3CA, and loss-of-function in APC (tumor suppressor), activate the MAPK and PI3K-Akt signaling pathways, respectively. These pathways converge on the broader process of enhanced cell proliferation and survival, which is a hallmark of gastric cancer. Thus, dysregulation of common downstream cellular processes links these distinct diseases.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for ALPS2B predominantly affect pathways entirely distinct from those dysregulated in gastric cancer (e.g., strictly apoptosis defects without impacting proliferation pathways, or vice versa) and there is no shared downstream molecular effector, this hypothesis would be falsified. Specifically, if mutations in KRAS, PIK3CA, or APC are found to be extremely rare or absent in ALPS2B patients, and IRF1 or related immune regulatory genes are not significantly implicated in gastric cancer pathogenesis, the proposed link would be weakened. _(variant: The presence of common variants (allele frequency > 1% in gnomAD) in KRAS, PIK3CA, or APC that are causally linked to ALPS2B would challenge the proposed mechanism.)_\n\n**Why it matters:** Understanding the shared signaling pathways (MAPK, PI3K-Akt) and their upstream regulators (KRAS, PIK3CA, APC, IRF1) could reveal novel therapeutic targets applicable to both ALPS2B and gastric cancer. For instance, inhibitors targeting these pathways might have dual efficacy or inform personalized treatment strategies based on the specific genetic alterations present in a patient's disease.\n\n---\n\n#### 7. autoimmune lymphoproliferative syndrome type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-75157)\n\n**Proposed mechanism:** FASLG (HGNC:3482) —BINDS→ Apoptosis signaling pathway (GO:0006915); FAS (HGNC:3572) —BINDS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ CASP8 (HGNC:1634); CASP8 (HGNC:1634) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000218); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Splenomegaly (HP:0001727); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Autoimmunity (HP:0001911). Mutations in FASLG (ALPS type 2B) or FAS (ALPS type 1) lead to impaired Fas-mediated apoptosis. This impairment disrupts the normal apoptotic cascade involving CASP8, resulting in the accumulation of lymphocytes and subsequent lymphadenopathy, splenomegaly, and autoimmunity.\n\n**How to falsify it:** The discovery of pathogenic variants in FASLG or FAS in patients diagnosed with ALPS type 1, or pathogenic variants in FAS in patients diagnosed with ALPS type 2B, would falsify this hypothesis. _(variant: None)_\n\n**Why it matters:** Understanding the shared apoptotic pathway defect in ALPS types 1 and 2B could lead to the development of targeted therapies aimed at restoring lymphocyte apoptosis or managing downstream inflammatory consequences.\n\n---\n\n#### 8. autoimmune lymphoproliferative syndrome type 2A  —  Tier 3 — Moderate / Emerging  (fitness 0.321)\n**Link type:** shared pathway (Reactome:R-HSA-75157, Reactome:R-HSA-75158)\n\n**Proposed mechanism:** Pathogenic variant in CASP8 (null) —DISRUPTS→ CASP8 (HGNC:1072); Pathogenic variant in CASP10 (null) —DISRUPTS→ CASP10 (HGNC:1073); CASP8 (HGNC:1072) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); CASP10 (HGNC:1073) —BINDS→ FAS-mediated apoptosis pathway (GO:0006919); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Lymphadenopathy (HP:0000740); FAS-mediated apoptosis pathway (GO:0006919) —LEADS_TO→ Splenomegaly (HP:0001727). Pathogenic variants in CASP8 (ALPS type 2B) and CASP10 (ALPS type 2A) disrupt their function as caspases within the FAS-mediated apoptosis pathway. This disruption impairs the efficient execution of apoptosis, leading to the accumulation of lymphocytes and subsequent lymphadenopathy and splenomegaly, which are shared phenotypes.\n\n**How to falsify it:** The identification of a pathogenic variant in either CASP8 or CASP10 that demonstrably leads to a gain-of-function or has no impact on apoptotic signaling would falsify this hypothesis. Additionally, if these shared phenotypes could be definitively attributed to independent pathways without convergence on the FAS-mediated apoptosis cascade, this would also serve as falsification. _(variant: While specific pathogenic variants are rare, the absence of any known pathogenic variants in public databases like gnomAD for the proposed causal regions would weaken the genetic basis of this hypothesis.)_\n\n**Why it matters:** Understanding the shared apoptotic defect in ALPS types 2A and 2B, mediated by CASP8 and CASP10, could pave the way for developing targeted therapies aimed at restoring proper apoptotic signaling or managing the downstream consequences of lymphocyte accumulation, potentially benefiting patients with either subtype.\n\n---\n\n#### 9. head and neck squamous cell carcinoma  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.310)\n**Link type:** shared pathway (Reactome:R-HSA-75158)\n\n**Proposed mechanism:** CASP8 (HGNC:1115) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); TNFRSF10B (HGNC:1114) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); ING1 (HGNC:27144) —DISRUPTS→ Apoptosis signaling pathway (GO:0006915); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0000278); Apoptosis signaling pathway (GO:0006915) —LEADS_TO→ Squamous cell carcinoma (HP:0002671). Loss-of-function mutations in CASP8, TNFRSF10B, and ING1 impair the apoptosis signaling pathway. This impairment leads to the accumulation of lymphocytes and lymphadenopathy characteristic of ALPS2B, and also promotes the survival and proliferation of cells, contributing to the development of head and neck squamous cell carcinoma.\n\n**How to falsify it:** Identification of pathogenic variants in CASP8, TNFRSF10B, or ING1 with a minor allele frequency > 1% in gnomAD, or demonstration that mutations in these genes exclusively affect one disease pathway without impacting the other. _(variant: ExAC:rs11134577)_\n\n**Why it matters:** Targeting the apoptosis pathway, specifically the roles of CASP8, TNFRSF10B, and ING1, could offer novel therapeutic strategies for both ALPS2B and head and neck squamous cell carcinoma, potentially through enhancing apoptosis in malignant cells or regulating immune cell survival.\n\n---\n\n#### 10. immunodeficiency 57  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-2562578, Reactome:R-HSA-5357905)\n\n**Proposed mechanism:** Caspase-8 (HGNC:10709) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); RIPK1 (HGNC:10108) —DISRUPTS→ TNF signaling pathway (REACT:R-HSA-6272714); TNF signaling pathway (REACT:R-HSA-6272714) —LEADS_TO→ Regulation of apoptotic signaling pathway (GO:0043065); Caspase-8 (HGNC:10709) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); RIPK1 (HGNC:10108) —DISRUPTS→ Regulation of apoptotic signaling pathway (GO:0043065); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Lymphoproliferation (HP:0002711); Regulation of apoptotic signaling pathway (GO:0043065) —LEADS_TO→ Immunodeficiency (HP:0002705). Loss-of-function mutations in CASP8 and RIPK1 disrupt the TNF signaling pathway, leading to dysregulation of apoptotic signaling. This dysregulation contributes to both lymphoproliferation (as seen in ALPS type 2B) and immunodeficiency (as seen in IDDM57).\n\n**How to falsify it:** Identification of pathogenic variants in CASP8 or RIPK1 that exhibit gain-of-function effects or are exclusively associated with one of the diseases but not the other, or demonstration that these genes do not play a significant role in the TNF signaling or apoptotic pathways in immune cells. _(variant: Exclusion of common variants in CASP8 and RIPK1 in gnomAD that segregate with either disease.)_\n\n**Why it matters:** Understanding the shared mechanistic link via CASP8 and RIPK1 in TNF signaling and apoptosis provides a potential therapeutic target for both autoimmune lymphoproliferative syndrome type 2B and immunodeficiency 57, possibly through modulation of these pathways.\n\n---"
+}

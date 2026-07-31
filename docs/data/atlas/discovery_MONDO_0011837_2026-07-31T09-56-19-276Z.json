@@ -1,0 +1,87 @@
+{
+  "seed": {
+    "id": "MONDO:0011837",
+    "name": "vitamin K-dependent clotting factors, combined deficiency of, type 2"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007374",
+      "diseaseBName": "Schnyder corneal dystrophy",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VKORC1 (HGNC:12890) —DISRUPTS→ Vitamin K metabolism (REACT:R-HSA-109602); Vitamin K metabolism (REACT:R-HSA-109602) —DECREASES→ Vitamin K epoxide (CHEBI:17037); Vitamin K epoxide (CHEBI:17037) —DECREASES→ Vitamin K (CHEBI:17036); Vitamin K (CHEBI:17036) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors, type 2 (MONDO:0011837); UBIAD1 (HGNC:24211) —DISRUPTS→ Cholesterol metabolism (REACT:R-HSA-143417); Cholesterol metabolism (REACT:R-HSA-143417) —DECREASES→ Cholesterol (CHEBI:16113); Cholesterol (CHEBI:16113) —DISRUPTS→ Lipid transport and metabolism (REACT:R-HSA-143417); Lipid transport and metabolism (REACT:R-HSA-143417) —LEADS_TO→ Schnyder corneal dystrophy (MONDO:0007374). Loss-of-function mutations in VKORC1 impair vitamin K recycling, leading to deficiency of vitamin K-dependent clotting factors. Concurrently, loss-of-function mutations in UBIAD1 disrupt vitamin K2 synthesis and cholesterol homeostasis, impacting lipid metabolism and contributing to Schnyder corneal dystrophy. Both pathways converge on broader lipid and vitamin metabolism, suggesting an integrated mechanistic link.",
+      "mechanism_narrative": "VKORC1 (HGNC:12890) —DISRUPTS→ Vitamin K metabolism (REACT:R-HSA-109602); Vitamin K metabolism (REACT:R-HSA-109602) —DECREASES→ Vitamin K epoxide (CHEBI:17037); Vitamin K epoxide (CHEBI:17037) —DECREASES→ Vitamin K (CHEBI:17036); Vitamin K (CHEBI:17036) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors, type 2 (MONDO:0011837); UBIAD1 (HGNC:24211) —DISRUPTS→ Cholesterol metabolism (REACT:R-HSA-143417); Cholesterol metabolism (REACT:R-HSA-143417) —DECREASES→ Cholesterol (CHEBI:16113); Cholesterol (CHEBI:16113) —DISRUPTS→ Lipid transport and metabolism (REACT:R-HSA-143417); Lipid transport and metabolism (REACT:R-HSA-143417) —LEADS_TO→ Schnyder corneal dystrophy (MONDO:0007374). Loss-of-function mutations in VKORC1 impair vitamin K recycling, leading to deficiency of vitamin K-dependent clotting factors. Concurrently, loss-of-function mutations in UBIAD1 disrupt vitamin K2 synthesis and cholesterol homeostasis, impacting lipid metabolism and contributing to Schnyder corneal dystrophy. Both pathways converge on broader lipid and vitamin metabolism, suggesting an integrated mechanistic link.",
+      "falsification": {
+        "text": "Absence of a significant overlap in the molecular pathways regulated by VKORC1 and UBIAD1, or demonstration that mutations in these genes do not converge on common downstream cellular processes.",
+        "gnomad_variant": "Exclusion of pathogenic variants in VKORC1 and UBIAD1 from common population databases like gnomAD if they were indeed causal for these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6806664"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6806664": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007374",
+        "diseaseBName": "Schnyder corneal dystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6806664"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6806664": 3
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VKORC1 (HGNC:12890) —DISRUPTS→ Vitamin K metabolism (REACT:R-HSA-109602); Vitamin K metabolism (REACT:R-HSA-109602) —DECREASES→ Vitamin K epoxide (CHEBI:17037); Vitamin K epoxide (CHEBI:17037) —DECREASES→ Vitamin K (CHEBI:17036); Vitamin K (CHEBI:17036) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors, type 2 (MONDO:0011837); UBIAD1 (HGNC:24211) —DISRUPTS→ Cholesterol metabolism (REACT:R-HSA-143417); Cholesterol metabolism (REACT:R-HSA-143417) —DECREASES→ Cholesterol (CHEBI:16113); Cholesterol (CHEBI:16113) —DISRUPTS→ Lipid transport and metabolism (REACT:R-HSA-143417); Lipid transport and metabolism (REACT:R-HSA-143417) —LEADS_TO→ Schnyder corneal dystrophy (MONDO:0007374). Loss-of-function mutations in VKORC1 impair vitamin K recycling, leading to deficiency of vitamin K-dependent clotting factors. Concurrently, loss-of-function mutations in UBIAD1 disrupt vitamin K2 synthesis and cholesterol homeostasis, impacting lipid metabolism and contributing to Schnyder corneal dystrophy. Both pathways converge on broader lipid and vitamin metabolism, suggesting an integrated mechanistic link.",
+        "falsification": {
+          "text": "Absence of a significant overlap in the molecular pathways regulated by VKORC1 and UBIAD1, or demonstration that mutations in these genes do not converge on common downstream cellular processes.",
+          "gnomad_variant": "Exclusion of pathogenic variants in VKORC1 and UBIAD1 from common population databases like gnomAD if they were indeed causal for these rare diseases."
+        },
+        "translational": "Understanding the interplay between vitamin K and cholesterol metabolism, as modulated by VKORC1 and UBIAD1, could reveal novel therapeutic targets for both hemostatic disorders and corneal dystrophies, potentially involving interventions in lipid or vitamin metabolism."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007390",
+      "diseaseBName": "coumarin resistance",
+      "fitness": 0.2,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VKORC1 (HGNC:12734) —DISRUPTS→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); CYP2A6 (HGNC:2737) —DISRUPTS→ Vitamin K cycle (REACT:438745); CYP2C9 (HGNC:2625) —DISRUPTS→ Vitamin K cycle (REACT:438745); Vitamin K Epoxide Reductase Complex Activity (REACT:438745) —DECREASES→ Vitamin K (quinone) (CHEBI:17140); Vitamin K (quinone) (CHEBI:17140) —DECREASES→ Vitamin K hydroquinone (CHEBI:17141); Vitamin K epoxide (CHEBI:17142) —DECREASES→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); Vitamin K cycle (REACT:438745) —DECREASES→ Gamma-carboxylation of clotting factors (GO:0006082); Gamma-carboxylation of clotting factors (GO:0006082) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors (MONDO:0011837); VKORC1 (HGNC:12734) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2A6 (HGNC:2737) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2C9 (HGNC:2625) —DISRUPTS→ Coumarin resistance (MONDO:0007390). Mutations in VKORC1, CYP2A6, or CYP2C9 can disrupt the vitamin K cycle. Loss-of-function mutations impair the gamma-carboxylation of clotting factors, leading to Disease A. Gain-of-function mutations in VKORC1, or altered function of CYP2A6/CYP2C9 in metabolizing vitamin K antagonists, can lead to resistance to coumarin anticoagulants (Disease B).",
+      "mechanism_narrative": "VKORC1 (HGNC:12734) —DISRUPTS→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); CYP2A6 (HGNC:2737) —DISRUPTS→ Vitamin K cycle (REACT:438745); CYP2C9 (HGNC:2625) —DISRUPTS→ Vitamin K cycle (REACT:438745); Vitamin K Epoxide Reductase Complex Activity (REACT:438745) —DECREASES→ Vitamin K (quinone) (CHEBI:17140); Vitamin K (quinone) (CHEBI:17140) —DECREASES→ Vitamin K hydroquinone (CHEBI:17141); Vitamin K epoxide (CHEBI:17142) —DECREASES→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); Vitamin K cycle (REACT:438745) —DECREASES→ Gamma-carboxylation of clotting factors (GO:0006082); Gamma-carboxylation of clotting factors (GO:0006082) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors (MONDO:0011837); VKORC1 (HGNC:12734) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2A6 (HGNC:2737) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2C9 (HGNC:2625) —DISRUPTS→ Coumarin resistance (MONDO:0007390). Mutations in VKORC1, CYP2A6, or CYP2C9 can disrupt the vitamin K cycle. Loss-of-function mutations impair the gamma-carboxylation of clotting factors, leading to Disease A. Gain-of-function mutations in VKORC1, or altered function of CYP2A6/CYP2C9 in metabolizing vitamin K antagonists, can lead to resistance to coumarin anticoagulants (Disease B).",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in VKORC1, CYP2A6, or CYP2C9 that is exclusively associated with either disease A or disease B, with no evidence of involvement in the other, would falsify this shared mechanism hypothesis. For instance, a common pathogenic variant for Disease A with a high frequency in gnomAD would suggest a different primary cause for Disease B.",
+        "gnomad_variant": "rs2359612"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6806664"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007390",
+        "diseaseBName": "coumarin resistance",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6806664"
+        ],
+        "fitness": 0.2,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VKORC1 (HGNC:12734) —DISRUPTS→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); CYP2A6 (HGNC:2737) —DISRUPTS→ Vitamin K cycle (REACT:438745); CYP2C9 (HGNC:2625) —DISRUPTS→ Vitamin K cycle (REACT:438745); Vitamin K Epoxide Reductase Complex Activity (REACT:438745) —DECREASES→ Vitamin K (quinone) (CHEBI:17140); Vitamin K (quinone) (CHEBI:17140) —DECREASES→ Vitamin K hydroquinone (CHEBI:17141); Vitamin K epoxide (CHEBI:17142) —DECREASES→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); Vitamin K cycle (REACT:438745) —DECREASES→ Gamma-carboxylation of clotting factors (GO:0006082); Gamma-carboxylation of clotting factors (GO:0006082) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors (MONDO:0011837); VKORC1 (HGNC:12734) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2A6 (HGNC:2737) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2C9 (HGNC:2625) —DISRUPTS→ Coumarin resistance (MONDO:0007390). Mutations in VKORC1, CYP2A6, or CYP2C9 can disrupt the vitamin K cycle. Loss-of-function mutations impair the gamma-carboxylation of clotting factors, leading to Disease A. Gain-of-function mutations in VKORC1, or altered function of CYP2A6/CYP2C9 in metabolizing vitamin K antagonists, can lead to resistance to coumarin anticoagulants (Disease B).",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in VKORC1, CYP2A6, or CYP2C9 that is exclusively associated with either disease A or disease B, with no evidence of involvement in the other, would falsify this shared mechanism hypothesis. For instance, a common pathogenic variant for Disease A with a high frequency in gnomAD would suggest a different primary cause for Disease B.",
+          "gnomad_variant": "rs2359612"
+        },
+        "translational": "Understanding the shared genetic basis and opposing functional consequences in the vitamin K pathway can inform personalized anticoagulant therapy, predict bleeding risk, and guide the development of targeted treatments for clotting factor deficiencies."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T09:56:19.276Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** vitamin K-dependent clotting factors, combined deficiency of, type 2 (MONDO:0011837)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Schnyder corneal dystrophy (MONDO:0007374) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-6806664 |\n| 2 | coumarin resistance (MONDO:0007390) | shared pathway | Tier 3 | 0.200 | Reactome:R-HSA-6806664 |\n\n### CANDIDATE DETAIL\n#### 1. Schnyder corneal dystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-6806664)\n\n**Proposed mechanism:** VKORC1 (HGNC:12890) —DISRUPTS→ Vitamin K metabolism (REACT:R-HSA-109602); Vitamin K metabolism (REACT:R-HSA-109602) —DECREASES→ Vitamin K epoxide (CHEBI:17037); Vitamin K epoxide (CHEBI:17037) —DECREASES→ Vitamin K (CHEBI:17036); Vitamin K (CHEBI:17036) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors, type 2 (MONDO:0011837); UBIAD1 (HGNC:24211) —DISRUPTS→ Cholesterol metabolism (REACT:R-HSA-143417); Cholesterol metabolism (REACT:R-HSA-143417) —DECREASES→ Cholesterol (CHEBI:16113); Cholesterol (CHEBI:16113) —DISRUPTS→ Lipid transport and metabolism (REACT:R-HSA-143417); Lipid transport and metabolism (REACT:R-HSA-143417) —LEADS_TO→ Schnyder corneal dystrophy (MONDO:0007374). Loss-of-function mutations in VKORC1 impair vitamin K recycling, leading to deficiency of vitamin K-dependent clotting factors. Concurrently, loss-of-function mutations in UBIAD1 disrupt vitamin K2 synthesis and cholesterol homeostasis, impacting lipid metabolism and contributing to Schnyder corneal dystrophy. Both pathways converge on broader lipid and vitamin metabolism, suggesting an integrated mechanistic link.\n\n**How to falsify it:** Absence of a significant overlap in the molecular pathways regulated by VKORC1 and UBIAD1, or demonstration that mutations in these genes do not converge on common downstream cellular processes. _(variant: Exclusion of pathogenic variants in VKORC1 and UBIAD1 from common population databases like gnomAD if they were indeed causal for these rare diseases.)_\n\n**Why it matters:** Understanding the interplay between vitamin K and cholesterol metabolism, as modulated by VKORC1 and UBIAD1, could reveal novel therapeutic targets for both hemostatic disorders and corneal dystrophies, potentially involving interventions in lipid or vitamin metabolism.\n\n---\n\n#### 2. coumarin resistance  —  Tier 3 — Moderate / Emerging  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-6806664)\n\n**Proposed mechanism:** VKORC1 (HGNC:12734) —DISRUPTS→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); CYP2A6 (HGNC:2737) —DISRUPTS→ Vitamin K cycle (REACT:438745); CYP2C9 (HGNC:2625) —DISRUPTS→ Vitamin K cycle (REACT:438745); Vitamin K Epoxide Reductase Complex Activity (REACT:438745) —DECREASES→ Vitamin K (quinone) (CHEBI:17140); Vitamin K (quinone) (CHEBI:17140) —DECREASES→ Vitamin K hydroquinone (CHEBI:17141); Vitamin K epoxide (CHEBI:17142) —DECREASES→ Vitamin K Epoxide Reductase Complex Activity (REACT:438745); Vitamin K cycle (REACT:438745) —DECREASES→ Gamma-carboxylation of clotting factors (GO:0006082); Gamma-carboxylation of clotting factors (GO:0006082) —LEADS_TO→ Combined deficiency of vitamin K-dependent clotting factors (MONDO:0011837); VKORC1 (HGNC:12734) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2A6 (HGNC:2737) —DISRUPTS→ Coumarin resistance (MONDO:0007390); CYP2C9 (HGNC:2625) —DISRUPTS→ Coumarin resistance (MONDO:0007390). Mutations in VKORC1, CYP2A6, or CYP2C9 can disrupt the vitamin K cycle. Loss-of-function mutations impair the gamma-carboxylation of clotting factors, leading to Disease A. Gain-of-function mutations in VKORC1, or altered function of CYP2A6/CYP2C9 in metabolizing vitamin K antagonists, can lead to resistance to coumarin anticoagulants (Disease B).\n\n**How to falsify it:** Identification of a pathogenic variant in VKORC1, CYP2A6, or CYP2C9 that is exclusively associated with either disease A or disease B, with no evidence of involvement in the other, would falsify this shared mechanism hypothesis. For instance, a common pathogenic variant for Disease A with a high frequency in gnomAD would suggest a different primary cause for Disease B. _(variant: rs2359612)_\n\n**Why it matters:** Understanding the shared genetic basis and opposing functional consequences in the vitamin K pathway can inform personalized anticoagulant therapy, predict bleeding risk, and guide the development of targeted treatments for clotting factor deficiencies.\n\n---"
+}
