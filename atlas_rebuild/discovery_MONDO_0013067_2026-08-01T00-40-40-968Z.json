@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013067",
+    "name": "MONDO:0013067"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012456",
+      "diseaseBName": "congenital primary aphakia",
+      "fitness": 0.7929,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "FOXE3 (HGNC:3808) —DISRUPTS→ Regulation of eye development (GO:0009913); Regulation of eye development (GO:0009913) —LEADS_TO→ Posterior microphthalmia with coloboma (HP:0000518); Regulation of eye development (GO:0009913) —LEADS_TO→ Congenital primary aphakia (HP:0011029). Loss-of-function mutations in FOXE3 disrupt the regulation of eye development, leading to both posterior microphthalmia with coloboma and congenital primary aphakia.",
+      "mechanism_narrative": "FOXE3 (HGNC:3808) —DISRUPTS→ Regulation of eye development (GO:0009913); Regulation of eye development (GO:0009913) —LEADS_TO→ Posterior microphthalmia with coloboma (HP:0000518); Regulation of eye development (GO:0009913) —LEADS_TO→ Congenital primary aphakia (HP:0011029). Loss-of-function mutations in FOXE3 disrupt the regulation of eye development, leading to both posterior microphthalmia with coloboma and congenital primary aphakia.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in FOXE3 with a gain-of-function or dominant-negative effect in either disease would falsify this hypothesis.",
+        "gnomad_variant": "rs121918707 (common pathogenic variant in FOXE3, though specific functional impact needs to be confirmed in context of these diseases)"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:3808"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012456",
+        "diseaseBName": "congenital primary aphakia",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:3808"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7929,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "FOXE3 (HGNC:3808) —DISRUPTS→ Regulation of eye development (GO:0009913); Regulation of eye development (GO:0009913) —LEADS_TO→ Posterior microphthalmia with coloboma (HP:0000518); Regulation of eye development (GO:0009913) —LEADS_TO→ Congenital primary aphakia (HP:0011029). Loss-of-function mutations in FOXE3 disrupt the regulation of eye development, leading to both posterior microphthalmia with coloboma and congenital primary aphakia.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in FOXE3 with a gain-of-function or dominant-negative effect in either disease would falsify this hypothesis.",
+          "gnomad_variant": "rs121918707 (common pathogenic variant in FOXE3, though specific functional impact needs to be confirmed in context of these diseases)"
+        },
+        "translational": "Understanding the shared role of FOXE3 in ocular development could lead to insights into common therapeutic targets or diagnostic strategies for these related conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T00:40:40.968Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013067 (MONDO:0013067)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | congenital primary aphakia (MONDO:0012456) | shared gene | Tier 1 | 0.793 | HGNC:3808 |\n\n### CANDIDATE DETAIL\n#### 1. congenital primary aphakia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.793)\n**Link type:** shared causal gene (HGNC:3808)\n\n**Proposed mechanism:** FOXE3 (HGNC:3808) —DISRUPTS→ Regulation of eye development (GO:0009913); Regulation of eye development (GO:0009913) —LEADS_TO→ Posterior microphthalmia with coloboma (HP:0000518); Regulation of eye development (GO:0009913) —LEADS_TO→ Congenital primary aphakia (HP:0011029). Loss-of-function mutations in FOXE3 disrupt the regulation of eye development, leading to both posterior microphthalmia with coloboma and congenital primary aphakia.\n\n**How to falsify it:** The identification of pathogenic variants in FOXE3 with a gain-of-function or dominant-negative effect in either disease would falsify this hypothesis. _(variant: rs121918707 (common pathogenic variant in FOXE3, though specific functional impact needs to be confirmed in context of these diseases))_\n\n**Why it matters:** Understanding the shared role of FOXE3 in ocular development could lead to insights into common therapeutic targets or diagnostic strategies for these related conditions.\n\n---"
+}

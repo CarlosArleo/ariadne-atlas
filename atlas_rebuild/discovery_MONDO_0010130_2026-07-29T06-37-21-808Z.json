@@ -1,0 +1,251 @@
+{
+  "seed": {
+    "id": "MONDO:0010130",
+    "name": "dihydropyrimidine dehydrogenase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 6,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011283",
+      "diseaseBName": "mitochondrial DNA depletion syndrome 1",
+      "fitness": 0.4245,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2770) —DISRUPTS→ Pyrimidine catabolism (GO:0006217); Pyrimidine catabolism (GO:0006217) —DECREASES→ Uracil (CHEBI:27730); Uracil (CHEBI:27730) —DECREASES→ Dihydrouracil (CHEBI:17530); Dihydrouracil (CHEBI:17530) —LEADS_TO→ Neurological abnormalities (HP:0001257); TYMP (HGNC:11902) —DISRUPTS→ Mitochondrial DNA maintenance (GO:0000274); Mitochondrial DNA maintenance (GO:0000274) —DECREASES→ Deoxyuridine (CHEBI:17326); Deoxyuridine (CHEBI:17326) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in DPYD impair pyrimidine catabolism, leading to accumulation of uracil and dihydrouracil, which is toxic and causes neurological abnormalities. Similarly, loss-of-function mutations in TYMP impair mitochondrial DNA maintenance, leading to depletion of mtDNA and downstream consequences including muscle weakness. The convergence occurs at the cellular level where both genetic defects disrupt essential metabolic pathways, leading to distinct but overlapping phenotypic manifestations.",
+      "mechanism_narrative": "DPYD (HGNC:2770) —DISRUPTS→ Pyrimidine catabolism (GO:0006217); Pyrimidine catabolism (GO:0006217) —DECREASES→ Uracil (CHEBI:27730); Uracil (CHEBI:27730) —DECREASES→ Dihydrouracil (CHEBI:17530); Dihydrouracil (CHEBI:17530) —LEADS_TO→ Neurological abnormalities (HP:0001257); TYMP (HGNC:11902) —DISRUPTS→ Mitochondrial DNA maintenance (GO:0000274); Mitochondrial DNA maintenance (GO:0000274) —DECREASES→ Deoxyuridine (CHEBI:17326); Deoxyuridine (CHEBI:17326) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in DPYD impair pyrimidine catabolism, leading to accumulation of uracil and dihydrouracil, which is toxic and causes neurological abnormalities. Similarly, loss-of-function mutations in TYMP impair mitochondrial DNA maintenance, leading to depletion of mtDNA and downstream consequences including muscle weakness. The convergence occurs at the cellular level where both genetic defects disrupt essential metabolic pathways, leading to distinct but overlapping phenotypic manifestations.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if mutations in DPYD were found to be causally linked to mitochondrial DNA depletion or if TYMP mutations were found to directly impair pyrimidine catabolism, rather than impacting downstream metabolic homeostasis.",
+        "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of pathogenic variants in DPYD or TYMP associated with MTDPS1 or DPD deficiency respectively, would challenge the rare disease assumption."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011283",
+        "diseaseBName": "mitochondrial DNA depletion syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.4245,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2770) —DISRUPTS→ Pyrimidine catabolism (GO:0006217); Pyrimidine catabolism (GO:0006217) —DECREASES→ Uracil (CHEBI:27730); Uracil (CHEBI:27730) —DECREASES→ Dihydrouracil (CHEBI:17530); Dihydrouracil (CHEBI:17530) —LEADS_TO→ Neurological abnormalities (HP:0001257); TYMP (HGNC:11902) —DISRUPTS→ Mitochondrial DNA maintenance (GO:0000274); Mitochondrial DNA maintenance (GO:0000274) —DECREASES→ Deoxyuridine (CHEBI:17326); Deoxyuridine (CHEBI:17326) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in DPYD impair pyrimidine catabolism, leading to accumulation of uracil and dihydrouracil, which is toxic and causes neurological abnormalities. Similarly, loss-of-function mutations in TYMP impair mitochondrial DNA maintenance, leading to depletion of mtDNA and downstream consequences including muscle weakness. The convergence occurs at the cellular level where both genetic defects disrupt essential metabolic pathways, leading to distinct but overlapping phenotypic manifestations.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if mutations in DPYD were found to be causally linked to mitochondrial DNA depletion or if TYMP mutations were found to directly impair pyrimidine catabolism, rather than impacting downstream metabolic homeostasis.",
+          "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of pathogenic variants in DPYD or TYMP associated with MTDPS1 or DPD deficiency respectively, would challenge the rare disease assumption."
+        },
+        "translational": "Understanding the overlap in metabolic disruption between DPD deficiency and MTDPS1 could reveal shared therapeutic targets or strategies. For instance, interventions aimed at supporting mitochondrial function or managing toxic metabolite accumulation might offer benefits across both conditions, despite their primary genetic distinctions. This highlights the potential for repurposing therapies or developing novel treatments that address common downstream cellular consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009111",
+      "diseaseBName": "dihydropyrimidinuria",
+      "fitness": 0.4165,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2770) —DISRUPTS→ pyrimidine metabolism; DPYS (HGNC:2771) —DISRUPTS→ pyrimidine metabolism; pyrimidine metabolism —DECREASES→ Dihydropyrimidine (CHEBI:16805); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Neurological abnormalities (HP:0000707); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Gastrointestinal issues (HP:0002074). Mutations in DPYD or DPYS impair the catabolism of pyrimidines within the pyrimidine metabolism pathway, leading to the accumulation of dihydropyrimidines and subsequent neurological and gastrointestinal abnormalities.",
+      "mechanism_narrative": "DPYD (HGNC:2770) —DISRUPTS→ pyrimidine metabolism; DPYS (HGNC:2771) —DISRUPTS→ pyrimidine metabolism; pyrimidine metabolism —DECREASES→ Dihydropyrimidine (CHEBI:16805); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Neurological abnormalities (HP:0000707); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Gastrointestinal issues (HP:0002074). Mutations in DPYD or DPYS impair the catabolism of pyrimidines within the pyrimidine metabolism pathway, leading to the accumulation of dihydropyrimidines and subsequent neurological and gastrointestinal abnormalities.",
+      "falsification": {
+        "text": "The absence of neurological or gastrointestinal symptoms in individuals with documented loss-of-function mutations in DPYD or DPYS would refute this hypothesis.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009111",
+        "diseaseBName": "dihydropyrimidinuria",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.4165,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2770) —DISRUPTS→ pyrimidine metabolism; DPYS (HGNC:2771) —DISRUPTS→ pyrimidine metabolism; pyrimidine metabolism —DECREASES→ Dihydropyrimidine (CHEBI:16805); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Neurological abnormalities (HP:0000707); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Gastrointestinal issues (HP:0002074). Mutations in DPYD or DPYS impair the catabolism of pyrimidines within the pyrimidine metabolism pathway, leading to the accumulation of dihydropyrimidines and subsequent neurological and gastrointestinal abnormalities.",
+        "falsification": {
+          "text": "The absence of neurological or gastrointestinal symptoms in individuals with documented loss-of-function mutations in DPYD or DPYS would refute this hypothesis.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared pathway disruption in dihydropyrimidine dehydrogenase deficiency and dihydropyrimidinuria can inform therapeutic strategies targeting pyrimidine metabolism or its downstream effects, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013164",
+      "diseaseBName": "beta-ureidopropionase deficiency",
+      "fitness": 0.4163,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2870) —DISRUPTS→ Dihydrouracil (CHEBI:17411); Dihydrouracil (CHEBI:17411) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); UPB1 (HGNC:12451) —DISRUPTS→ beta-ureidopropionate (CHEBI:17843); beta-ureidopropionate (CHEBI:17843) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Abnormal brain morphology (HP:0012440); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in DPYD lead to impaired conversion of dihydrouracil, disrupting dihydropyrimidine metabolism. Similarly, loss-of-function mutations in UPB1 impair the breakdown of beta-ureidopropionate, also disrupting dihydropyrimidine metabolism. The shared disruption of this metabolic pathway leads to overlapping phenotypes such as neurodevelopmental delay, abnormal brain morphology, and seizures.",
+      "mechanism_narrative": "DPYD (HGNC:2870) —DISRUPTS→ Dihydrouracil (CHEBI:17411); Dihydrouracil (CHEBI:17411) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); UPB1 (HGNC:12451) —DISRUPTS→ beta-ureidopropionate (CHEBI:17843); beta-ureidopropionate (CHEBI:17843) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Abnormal brain morphology (HP:0012440); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in DPYD lead to impaired conversion of dihydrouracil, disrupting dihydropyrimidine metabolism. Similarly, loss-of-function mutations in UPB1 impair the breakdown of beta-ureidopropionate, also disrupting dihydropyrimidine metabolism. The shared disruption of this metabolic pathway leads to overlapping phenotypes such as neurodevelopmental delay, abnormal brain morphology, and seizures.",
+      "falsification": {
+        "text": "The presence of pathogenic variants in DPYD with significantly reduced penetrance or the absence of pathogenic variants in UPB1 in individuals presenting with the core phenotypes of both diseases would challenge this hypothesis. Specifically, identifying individuals with the described neurological phenotypes but lacking any loss-of-function variants in either DPYD or UPB1 would falsify the proposed mechanistic link.",
+        "gnomad_variant": "Exceedingly rare loss-of-function variants (e.g., allele frequency > 0.001) in both DPYD and UPB1 in the general population, as observed in gnomAD, would support the role of these genes in rare diseases but would not falsify the specific mechanistic overlap hypothesis if the identified disease-causing variants are distinct and rare."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013164",
+        "diseaseBName": "beta-ureidopropionase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.4163,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2870) —DISRUPTS→ Dihydrouracil (CHEBI:17411); Dihydrouracil (CHEBI:17411) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); UPB1 (HGNC:12451) —DISRUPTS→ beta-ureidopropionate (CHEBI:17843); beta-ureidopropionate (CHEBI:17843) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Abnormal brain morphology (HP:0012440); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in DPYD lead to impaired conversion of dihydrouracil, disrupting dihydropyrimidine metabolism. Similarly, loss-of-function mutations in UPB1 impair the breakdown of beta-ureidopropionate, also disrupting dihydropyrimidine metabolism. The shared disruption of this metabolic pathway leads to overlapping phenotypes such as neurodevelopmental delay, abnormal brain morphology, and seizures.",
+        "falsification": {
+          "text": "The presence of pathogenic variants in DPYD with significantly reduced penetrance or the absence of pathogenic variants in UPB1 in individuals presenting with the core phenotypes of both diseases would challenge this hypothesis. Specifically, identifying individuals with the described neurological phenotypes but lacking any loss-of-function variants in either DPYD or UPB1 would falsify the proposed mechanistic link.",
+          "gnomad_variant": "Exceedingly rare loss-of-function variants (e.g., allele frequency > 0.001) in both DPYD and UPB1 in the general population, as observed in gnomAD, would support the role of these genes in rare diseases but would not falsify the specific mechanistic overlap hypothesis if the identified disease-causing variants are distinct and rare."
+        },
+        "translational": "Understanding the shared pathway disruption in DPD deficiency and BUP deficiency could lead to the development of targeted therapies aimed at mitigating the toxic accumulation of upstream metabolites in pyrimidine catabolism. This might involve dietary interventions or pharmacological approaches to bypass or supplement the deficient enzymatic activities, potentially improving neurological outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008895",
+      "diseaseBName": "hereditary arterial and articular multiple calcification syndrome",
+      "fitness": 0.3872,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2892) —DISRUPTS→ pyrimidine metabolism (KEGG:hsa00240); pyrimidine metabolism (KEGG:hsa00240) —LEADS_TO→ neurological impairment (HP:0001263); NT5E (HGNC:8044) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ arterial calcification (HP:0030034); extracellular matrix organization (GO:0030198) —LEADS_TO→ joint calcification (HP:0002759). DPYD deficiency impairs pyrimidine metabolism, leading to neurological symptoms. NT5E deficiency impairs extracellular matrix organization, causing arterial and articular calcification. The convergence is on the broader concept of cellular and matrix integrity, where impaired purine metabolism (related to DPYD function) can indirectly affect processes involved in extracellular matrix maintenance, and NT5E directly regulates ECM components.",
+      "mechanism_narrative": "DPYD (HGNC:2892) —DISRUPTS→ pyrimidine metabolism (KEGG:hsa00240); pyrimidine metabolism (KEGG:hsa00240) —LEADS_TO→ neurological impairment (HP:0001263); NT5E (HGNC:8044) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ arterial calcification (HP:0030034); extracellular matrix organization (GO:0030198) —LEADS_TO→ joint calcification (HP:0002759). DPYD deficiency impairs pyrimidine metabolism, leading to neurological symptoms. NT5E deficiency impairs extracellular matrix organization, causing arterial and articular calcification. The convergence is on the broader concept of cellular and matrix integrity, where impaired purine metabolism (related to DPYD function) can indirectly affect processes involved in extracellular matrix maintenance, and NT5E directly regulates ECM components.",
+      "falsification": {
+        "text": "Absence of mutations in DPYD in patients with HAAS, or absence of NT5E mutations in patients with DPD deficiency, would falsify a direct genetic link. Furthermore, if DPD deficiency shows no impact on purine metabolism or downstream extracellular matrix processes, and NT5E deficiency shows no impact on pyrimidine metabolism, the proposed mechanistic link would be weakened."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008895",
+        "diseaseBName": "hereditary arterial and articular multiple calcification syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.3872,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2892) —DISRUPTS→ pyrimidine metabolism (KEGG:hsa00240); pyrimidine metabolism (KEGG:hsa00240) —LEADS_TO→ neurological impairment (HP:0001263); NT5E (HGNC:8044) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ arterial calcification (HP:0030034); extracellular matrix organization (GO:0030198) —LEADS_TO→ joint calcification (HP:0002759). DPYD deficiency impairs pyrimidine metabolism, leading to neurological symptoms. NT5E deficiency impairs extracellular matrix organization, causing arterial and articular calcification. The convergence is on the broader concept of cellular and matrix integrity, where impaired purine metabolism (related to DPYD function) can indirectly affect processes involved in extracellular matrix maintenance, and NT5E directly regulates ECM components.",
+        "falsification": {
+          "text": "Absence of mutations in DPYD in patients with HAAS, or absence of NT5E mutations in patients with DPD deficiency, would falsify a direct genetic link. Furthermore, if DPD deficiency shows no impact on purine metabolism or downstream extracellular matrix processes, and NT5E deficiency shows no impact on pyrimidine metabolism, the proposed mechanistic link would be weakened."
+        },
+        "translational": "Understanding the interplay between purine and pyrimidine metabolism and extracellular matrix regulation could reveal novel therapeutic targets for both DPD deficiency and HAAS, potentially involving metabolic modulators or agents that support matrix integrity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009946",
+      "diseaseBName": "hemolytic anemia due to pyrimidine 5' nucleotidase deficiency",
+      "fitness": 0.3824,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2890) —DISRUPTS→ Dihydropyrimidine (CHEBI:28352); Dihydropyrimidine (CHEBI:28352) —LEADS_TO→ Neurological dysfunction (HP:0001263); DPYD (HGNC:2890) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); NT5C3A (HGNC:24606) —DISRUPTS→ 5'-UMP (CHEBI:17751); 5'-UMP (CHEBI:17751) —LEADS_TO→ Hemolytic anemia (HP:0001874); NT5C3A (HGNC:24606) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); Pyrimidine metabolism (KEGG:00240) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240). Loss-of-function mutations in DPYD impair the catabolism of pyrimidines, leading to accumulation of dihydropyrimidines and downstream neurological dysfunction. Similarly, loss-of-function mutations in NT5C3A impair the dephosphorylation of UMP, crucial for pyrimidine salvage and red blood cell function, leading to hemolytic anemia. Both genes are critical components of the shared pyrimidine metabolism pathway, indicating a mechanistic overlap at the pathway level.",
+      "mechanism_narrative": "DPYD (HGNC:2890) —DISRUPTS→ Dihydropyrimidine (CHEBI:28352); Dihydropyrimidine (CHEBI:28352) —LEADS_TO→ Neurological dysfunction (HP:0001263); DPYD (HGNC:2890) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); NT5C3A (HGNC:24606) —DISRUPTS→ 5'-UMP (CHEBI:17751); 5'-UMP (CHEBI:17751) —LEADS_TO→ Hemolytic anemia (HP:0001874); NT5C3A (HGNC:24606) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); Pyrimidine metabolism (KEGG:00240) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240). Loss-of-function mutations in DPYD impair the catabolism of pyrimidines, leading to accumulation of dihydropyrimidines and downstream neurological dysfunction. Similarly, loss-of-function mutations in NT5C3A impair the dephosphorylation of UMP, crucial for pyrimidine salvage and red blood cell function, leading to hemolytic anemia. Both genes are critical components of the shared pyrimidine metabolism pathway, indicating a mechanistic overlap at the pathway level.",
+      "falsification": {
+        "text": "Demonstration that variants in DPYD do not lead to accumulation of dihydropyrimidines or that variants in NT5C3A do not affect UMP levels or red blood cell integrity.",
+        "gnomad_variant": "rs1801261"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009946",
+        "diseaseBName": "hemolytic anemia due to pyrimidine 5' nucleotidase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.3824,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2890) —DISRUPTS→ Dihydropyrimidine (CHEBI:28352); Dihydropyrimidine (CHEBI:28352) —LEADS_TO→ Neurological dysfunction (HP:0001263); DPYD (HGNC:2890) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); NT5C3A (HGNC:24606) —DISRUPTS→ 5'-UMP (CHEBI:17751); 5'-UMP (CHEBI:17751) —LEADS_TO→ Hemolytic anemia (HP:0001874); NT5C3A (HGNC:24606) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); Pyrimidine metabolism (KEGG:00240) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240). Loss-of-function mutations in DPYD impair the catabolism of pyrimidines, leading to accumulation of dihydropyrimidines and downstream neurological dysfunction. Similarly, loss-of-function mutations in NT5C3A impair the dephosphorylation of UMP, crucial for pyrimidine salvage and red blood cell function, leading to hemolytic anemia. Both genes are critical components of the shared pyrimidine metabolism pathway, indicating a mechanistic overlap at the pathway level.",
+        "falsification": {
+          "text": "Demonstration that variants in DPYD do not lead to accumulation of dihydropyrimidines or that variants in NT5C3A do not affect UMP levels or red blood cell integrity.",
+          "gnomad_variant": "rs1801261"
+        },
+        "translational": "Understanding the shared role of pyrimidine metabolism in these distinct diseases could reveal common therapeutic targets or strategies for managing toxic metabolite accumulation or restoring essential nucleotide pools. For example, modulating DPYD activity or NT5C3A function could have implications for both neurological and hematological conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008860",
+      "diseaseBName": "beta-aminoisobutyric acid, urinary excretion of",
+      "fitness": 0.3788,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DPYD (HGNC:2764) —DECREASES→ Uracil (CHEBI:27093); Uracil (CHEBI:27093) —DISRUPTS→ Dihydrouracil (CHEBI:17076); Dihydrouracil (CHEBI:17076) —DISRUPTS→ Pyrimidine catabolism (GO:0006218); Pyrimidine catabolism (GO:0006218) —LEADS_TO→ Neurological impairment (HP:0001263); AGXT2 (HGNC:276) —DECREASES→ beta-aminoisobutyric acid (CHEBI:17673); beta-aminoisobutyric acid (CHEBI:17673) —LEADS_TO→ Urinary excretion of beta-aminoisobutyric acid (HP:0031765); Pyrimidine catabolism (GO:0006218) —INCREASES→ beta-aminoisobutyric acid (CHEBI:17673). Loss-of-function mutations in DPYD impair the catabolism of uracil, leading to its accumulation and downstream effects contributing to neurological impairment. Concurrently, AGXT2 deficiency impairs the catabolism of beta-aminoisobutyric acid, a metabolite that can be influenced by pyrimidine flux, leading to its increased urinary excretion. The convergence occurs at the level of pyrimidine catabolism, where altered flux due to DPYD deficiency can indirectly affect the levels and subsequent processing of intermediates that may lead to beta-aminoisobutyric acid accumulation.",
+      "mechanism_narrative": "DPYD (HGNC:2764) —DECREASES→ Uracil (CHEBI:27093); Uracil (CHEBI:27093) —DISRUPTS→ Dihydrouracil (CHEBI:17076); Dihydrouracil (CHEBI:17076) —DISRUPTS→ Pyrimidine catabolism (GO:0006218); Pyrimidine catabolism (GO:0006218) —LEADS_TO→ Neurological impairment (HP:0001263); AGXT2 (HGNC:276) —DECREASES→ beta-aminoisobutyric acid (CHEBI:17673); beta-aminoisobutyric acid (CHEBI:17673) —LEADS_TO→ Urinary excretion of beta-aminoisobutyric acid (HP:0031765); Pyrimidine catabolism (GO:0006218) —INCREASES→ beta-aminoisobutyric acid (CHEBI:17673). Loss-of-function mutations in DPYD impair the catabolism of uracil, leading to its accumulation and downstream effects contributing to neurological impairment. Concurrently, AGXT2 deficiency impairs the catabolism of beta-aminoisobutyric acid, a metabolite that can be influenced by pyrimidine flux, leading to its increased urinary excretion. The convergence occurs at the level of pyrimidine catabolism, where altered flux due to DPYD deficiency can indirectly affect the levels and subsequent processing of intermediates that may lead to beta-aminoisobutyric acid accumulation.",
+      "falsification": {
+        "text": "Absence of elevated beta-aminoisobutyric acid in individuals with confirmed DPYD deficiency, or absence of neurological symptoms in individuals with isolated AGXT2 deficiency, would challenge this hypothesis. Furthermore, identification of a common upstream genetic variant with a consistent effect on both pathways would support the link, while widespread protective variants in the other gene would weaken it.",
+        "gnomad_variant": "rs1801261 (a common pathogenic variant in DPYD) having a frequency > 5% in populations with confirmed AGXT2 deficiency and no DPYD deficiency symptoms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-73621"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-73621": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008860",
+        "diseaseBName": "beta-aminoisobutyric acid, urinary excretion of",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-73621"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-73621": 12
+        },
+        "fitness": 0.3788,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DPYD (HGNC:2764) —DECREASES→ Uracil (CHEBI:27093); Uracil (CHEBI:27093) —DISRUPTS→ Dihydrouracil (CHEBI:17076); Dihydrouracil (CHEBI:17076) —DISRUPTS→ Pyrimidine catabolism (GO:0006218); Pyrimidine catabolism (GO:0006218) —LEADS_TO→ Neurological impairment (HP:0001263); AGXT2 (HGNC:276) —DECREASES→ beta-aminoisobutyric acid (CHEBI:17673); beta-aminoisobutyric acid (CHEBI:17673) —LEADS_TO→ Urinary excretion of beta-aminoisobutyric acid (HP:0031765); Pyrimidine catabolism (GO:0006218) —INCREASES→ beta-aminoisobutyric acid (CHEBI:17673). Loss-of-function mutations in DPYD impair the catabolism of uracil, leading to its accumulation and downstream effects contributing to neurological impairment. Concurrently, AGXT2 deficiency impairs the catabolism of beta-aminoisobutyric acid, a metabolite that can be influenced by pyrimidine flux, leading to its increased urinary excretion. The convergence occurs at the level of pyrimidine catabolism, where altered flux due to DPYD deficiency can indirectly affect the levels and subsequent processing of intermediates that may lead to beta-aminoisobutyric acid accumulation.",
+        "falsification": {
+          "text": "Absence of elevated beta-aminoisobutyric acid in individuals with confirmed DPYD deficiency, or absence of neurological symptoms in individuals with isolated AGXT2 deficiency, would challenge this hypothesis. Furthermore, identification of a common upstream genetic variant with a consistent effect on both pathways would support the link, while widespread protective variants in the other gene would weaken it.",
+          "gnomad_variant": "rs1801261 (a common pathogenic variant in DPYD) having a frequency > 5% in populations with confirmed AGXT2 deficiency and no DPYD deficiency symptoms."
+        },
+        "translational": "Understanding the interplay between DPYD and AGXT2 in pyrimidine metabolism could lead to novel therapeutic strategies. For DPYD deficiency, this might involve modulating downstream metabolic pathways. For AGXT2 deficiency, insights from DPYD could inform treatment by understanding how pyrimidine flux impacts beta-aminoisobutyric acid levels. This could also aid in differential diagnosis and risk stratification for neurological complications."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T06:37:21.808Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** dihydropyrimidine dehydrogenase deficiency (MONDO:0010130)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 6 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial DNA depletion syndrome 1 (MONDO:0011283) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-73621 |\n| 2 | dihydropyrimidinuria (MONDO:0009111) | shared pathway | Tier 3 | 0.416 | Reactome:R-HSA-73621 |\n| 3 | beta-ureidopropionase deficiency (MONDO:0013164) | shared pathway | Tier 3 | 0.416 | Reactome:R-HSA-73621 |\n| 4 | hereditary arterial and articular multiple calcification syndrome (MONDO:0008895) | shared pathway | Tier 3 | 0.387 | Reactome:R-HSA-73621 |\n| 5 | hemolytic anemia due to pyrimidine 5' nucleotidase deficiency (MONDO:0009946) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-73621 |\n| 6 | beta-aminoisobutyric acid, urinary excretion of (MONDO:0008860) | shared pathway | Tier 3 | 0.379 | Reactome:R-HSA-73621 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial DNA depletion syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2770) —DISRUPTS→ Pyrimidine catabolism (GO:0006217); Pyrimidine catabolism (GO:0006217) —DECREASES→ Uracil (CHEBI:27730); Uracil (CHEBI:27730) —DECREASES→ Dihydrouracil (CHEBI:17530); Dihydrouracil (CHEBI:17530) —LEADS_TO→ Neurological abnormalities (HP:0001257); TYMP (HGNC:11902) —DISRUPTS→ Mitochondrial DNA maintenance (GO:0000274); Mitochondrial DNA maintenance (GO:0000274) —DECREASES→ Deoxyuridine (CHEBI:17326); Deoxyuridine (CHEBI:17326) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in DPYD impair pyrimidine catabolism, leading to accumulation of uracil and dihydrouracil, which is toxic and causes neurological abnormalities. Similarly, loss-of-function mutations in TYMP impair mitochondrial DNA maintenance, leading to depletion of mtDNA and downstream consequences including muscle weakness. The convergence occurs at the cellular level where both genetic defects disrupt essential metabolic pathways, leading to distinct but overlapping phenotypic manifestations.\n\n**How to falsify it:** The hypothesis would be falsified if mutations in DPYD were found to be causally linked to mitochondrial DNA depletion or if TYMP mutations were found to directly impair pyrimidine catabolism, rather than impacting downstream metabolic homeostasis. _(variant: gnomAD analysis showing a high frequency (>1%) of pathogenic variants in DPYD or TYMP associated with MTDPS1 or DPD deficiency respectively, would challenge the rare disease assumption.)_\n\n**Why it matters:** Understanding the overlap in metabolic disruption between DPD deficiency and MTDPS1 could reveal shared therapeutic targets or strategies. For instance, interventions aimed at supporting mitochondrial function or managing toxic metabolite accumulation might offer benefits across both conditions, despite their primary genetic distinctions. This highlights the potential for repurposing therapies or developing novel treatments that address common downstream cellular consequences.\n\n---\n\n#### 2. dihydropyrimidinuria  —  Tier 3 — Moderate / Emerging  (fitness 0.416)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2770) —DISRUPTS→ pyrimidine metabolism; DPYS (HGNC:2771) —DISRUPTS→ pyrimidine metabolism; pyrimidine metabolism —DECREASES→ Dihydropyrimidine (CHEBI:16805); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Neurological abnormalities (HP:0000707); Dihydropyrimidine (CHEBI:16805) —LEADS_TO→ Gastrointestinal issues (HP:0002074). Mutations in DPYD or DPYS impair the catabolism of pyrimidines within the pyrimidine metabolism pathway, leading to the accumulation of dihydropyrimidines and subsequent neurological and gastrointestinal abnormalities.\n\n**How to falsify it:** The absence of neurological or gastrointestinal symptoms in individuals with documented loss-of-function mutations in DPYD or DPYS would refute this hypothesis. _(variant: None)_\n\n**Why it matters:** Understanding the shared pathway disruption in dihydropyrimidine dehydrogenase deficiency and dihydropyrimidinuria can inform therapeutic strategies targeting pyrimidine metabolism or its downstream effects, potentially benefiting patients with either condition.\n\n---\n\n#### 3. beta-ureidopropionase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.416)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2870) —DISRUPTS→ Dihydrouracil (CHEBI:17411); Dihydrouracil (CHEBI:17411) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); UPB1 (HGNC:12451) —DISRUPTS→ beta-ureidopropionate (CHEBI:17843); beta-ureidopropionate (CHEBI:17843) —LEADS_TO→ Dihydropyrimidine metabolism (REACT:R-HSA-173642); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Abnormal brain morphology (HP:0012440); Dihydropyrimidine metabolism (REACT:R-HSA-173642) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in DPYD lead to impaired conversion of dihydrouracil, disrupting dihydropyrimidine metabolism. Similarly, loss-of-function mutations in UPB1 impair the breakdown of beta-ureidopropionate, also disrupting dihydropyrimidine metabolism. The shared disruption of this metabolic pathway leads to overlapping phenotypes such as neurodevelopmental delay, abnormal brain morphology, and seizures.\n\n**How to falsify it:** The presence of pathogenic variants in DPYD with significantly reduced penetrance or the absence of pathogenic variants in UPB1 in individuals presenting with the core phenotypes of both diseases would challenge this hypothesis. Specifically, identifying individuals with the described neurological phenotypes but lacking any loss-of-function variants in either DPYD or UPB1 would falsify the proposed mechanistic link. _(variant: Exceedingly rare loss-of-function variants (e.g., allele frequency > 0.001) in both DPYD and UPB1 in the general population, as observed in gnomAD, would support the role of these genes in rare diseases but would not falsify the specific mechanistic overlap hypothesis if the identified disease-causing variants are distinct and rare.)_\n\n**Why it matters:** Understanding the shared pathway disruption in DPD deficiency and BUP deficiency could lead to the development of targeted therapies aimed at mitigating the toxic accumulation of upstream metabolites in pyrimidine catabolism. This might involve dietary interventions or pharmacological approaches to bypass or supplement the deficient enzymatic activities, potentially improving neurological outcomes.\n\n---\n\n#### 4. hereditary arterial and articular multiple calcification syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.387)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2892) —DISRUPTS→ pyrimidine metabolism (KEGG:hsa00240); pyrimidine metabolism (KEGG:hsa00240) —LEADS_TO→ neurological impairment (HP:0001263); NT5E (HGNC:8044) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ arterial calcification (HP:0030034); extracellular matrix organization (GO:0030198) —LEADS_TO→ joint calcification (HP:0002759). DPYD deficiency impairs pyrimidine metabolism, leading to neurological symptoms. NT5E deficiency impairs extracellular matrix organization, causing arterial and articular calcification. The convergence is on the broader concept of cellular and matrix integrity, where impaired purine metabolism (related to DPYD function) can indirectly affect processes involved in extracellular matrix maintenance, and NT5E directly regulates ECM components.\n\n**How to falsify it:** Absence of mutations in DPYD in patients with HAAS, or absence of NT5E mutations in patients with DPD deficiency, would falsify a direct genetic link. Furthermore, if DPD deficiency shows no impact on purine metabolism or downstream extracellular matrix processes, and NT5E deficiency shows no impact on pyrimidine metabolism, the proposed mechanistic link would be weakened.\n\n**Why it matters:** Understanding the interplay between purine and pyrimidine metabolism and extracellular matrix regulation could reveal novel therapeutic targets for both DPD deficiency and HAAS, potentially involving metabolic modulators or agents that support matrix integrity.\n\n---\n\n#### 5. hemolytic anemia due to pyrimidine 5' nucleotidase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2890) —DISRUPTS→ Dihydropyrimidine (CHEBI:28352); Dihydropyrimidine (CHEBI:28352) —LEADS_TO→ Neurological dysfunction (HP:0001263); DPYD (HGNC:2890) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); NT5C3A (HGNC:24606) —DISRUPTS→ 5'-UMP (CHEBI:17751); 5'-UMP (CHEBI:17751) —LEADS_TO→ Hemolytic anemia (HP:0001874); NT5C3A (HGNC:24606) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240); Pyrimidine metabolism (KEGG:00240) —DISRUPTS→ Pyrimidine metabolism (KEGG:00240). Loss-of-function mutations in DPYD impair the catabolism of pyrimidines, leading to accumulation of dihydropyrimidines and downstream neurological dysfunction. Similarly, loss-of-function mutations in NT5C3A impair the dephosphorylation of UMP, crucial for pyrimidine salvage and red blood cell function, leading to hemolytic anemia. Both genes are critical components of the shared pyrimidine metabolism pathway, indicating a mechanistic overlap at the pathway level.\n\n**How to falsify it:** Demonstration that variants in DPYD do not lead to accumulation of dihydropyrimidines or that variants in NT5C3A do not affect UMP levels or red blood cell integrity. _(variant: rs1801261)_\n\n**Why it matters:** Understanding the shared role of pyrimidine metabolism in these distinct diseases could reveal common therapeutic targets or strategies for managing toxic metabolite accumulation or restoring essential nucleotide pools. For example, modulating DPYD activity or NT5C3A function could have implications for both neurological and hematological conditions.\n\n---\n\n#### 6. beta-aminoisobutyric acid, urinary excretion of  —  Tier 3 — Moderate / Emerging  (fitness 0.379)\n**Link type:** shared pathway (Reactome:R-HSA-73621)\n\n**Proposed mechanism:** DPYD (HGNC:2764) —DECREASES→ Uracil (CHEBI:27093); Uracil (CHEBI:27093) —DISRUPTS→ Dihydrouracil (CHEBI:17076); Dihydrouracil (CHEBI:17076) —DISRUPTS→ Pyrimidine catabolism (GO:0006218); Pyrimidine catabolism (GO:0006218) —LEADS_TO→ Neurological impairment (HP:0001263); AGXT2 (HGNC:276) —DECREASES→ beta-aminoisobutyric acid (CHEBI:17673); beta-aminoisobutyric acid (CHEBI:17673) —LEADS_TO→ Urinary excretion of beta-aminoisobutyric acid (HP:0031765); Pyrimidine catabolism (GO:0006218) —INCREASES→ beta-aminoisobutyric acid (CHEBI:17673). Loss-of-function mutations in DPYD impair the catabolism of uracil, leading to its accumulation and downstream effects contributing to neurological impairment. Concurrently, AGXT2 deficiency impairs the catabolism of beta-aminoisobutyric acid, a metabolite that can be influenced by pyrimidine flux, leading to its increased urinary excretion. The convergence occurs at the level of pyrimidine catabolism, where altered flux due to DPYD deficiency can indirectly affect the levels and subsequent processing of intermediates that may lead to beta-aminoisobutyric acid accumulation.\n\n**How to falsify it:** Absence of elevated beta-aminoisobutyric acid in individuals with confirmed DPYD deficiency, or absence of neurological symptoms in individuals with isolated AGXT2 deficiency, would challenge this hypothesis. Furthermore, identification of a common upstream genetic variant with a consistent effect on both pathways would support the link, while widespread protective variants in the other gene would weaken it. _(variant: rs1801261 (a common pathogenic variant in DPYD) having a frequency > 5% in populations with confirmed AGXT2 deficiency and no DPYD deficiency symptoms.)_\n\n**Why it matters:** Understanding the interplay between DPYD and AGXT2 in pyrimidine metabolism could lead to novel therapeutic strategies. For DPYD deficiency, this might involve modulating downstream metabolic pathways. For AGXT2 deficiency, insights from DPYD could inform treatment by understanding how pyrimidine flux impacts beta-aminoisobutyric acid levels. This could also aid in differential diagnosis and risk stratification for neurological complications.\n\n---"
+}

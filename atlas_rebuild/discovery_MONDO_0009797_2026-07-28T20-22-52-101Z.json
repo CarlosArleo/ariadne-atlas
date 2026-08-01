@@ -1,0 +1,43 @@
+{
+  "seed": {
+    "id": "MONDO:0009797",
+    "name": "orotic aciduria"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014647",
+      "diseaseBName": "developmental and epileptic encephalopathy, 50",
+      "fitness": 0.4701,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "UMPS (HGNC:12026) —DISRUPTS→ pyrimidine biosynthesis (REACT:R-HSA-69870); CAD (HGNC:1387) —DISRUPTS→ pyrimidine biosynthesis (REACT:R-HSA-69870); CAD (HGNC:1387) —DISRUPTS→ purine biosynthesis (REACT:R-HSA-69924); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ orotic acid (CHEBI:25404); orotic acid (CHEBI:25404) —LEADS_TO→ Orotic aciduria (MONDO:0009797); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ Developmental delay (HP:0001263); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ Seizures (HP:0001250); purine biosynthesis (REACT:R-HSA-69924) —LEADS_TO→ Encephalopathy (HP:0001295). Loss-of-function mutations in UMPS and CAD disrupt both pyrimidine and purine biosynthesis. Defective pyrimidine biosynthesis leads to orotic aciduria and related phenotypes. Dysregulation of purine and pyrimidine metabolism impacts nucleotide availability crucial for neuronal function, contributing to developmental and epileptic encephalopathy.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in UMPS or CAD that lead to a gain-of-function mechanism in either disease, or demonstration that the neurological phenotypes in developmental and epileptic encephalopathy, 50 arise from a pathway entirely independent of nucleotide biosynthesis.",
+        "gnomad_variant": "rs750053735"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-500753"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0009903",
+      "diseaseBName": "postaxial acrofacial dysostosis",
+      "fitness": 0.4341,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "UMPS (HGNC:12563) —DISRUPTS→ Pyrimidine biosynthesis (REACT:R-HSA-69904); DHODH (HGNC:2751) —DISRUPTS→ Pyrimidine biosynthesis (REACT:R-HSA-69904); Pyrimidine biosynthesis (REACT:R-HSA-69904) —PRODUCES→ Orotic acid (CHEBI:7762); Orotic acid (CHEBI:7762) —LEADS_TO→ Orotic aciduria (MONDO:0009797); Pyrimidine biosynthesis (REACT:R-HSA-69904) —LEADS_TO→ Developmental abnormalities (HP:0001263); Pyrimidine biosynthesis (REACT:R-HSA-69904) —LEADS_TO→ Postaxial acrofacial dysostosis (MONDO:0009903). Loss-of-function mutations in UMPS and DHODH disrupt the pyrimidine biosynthesis pathway. Impaired pyrimidine synthesis in orotic aciduria leads to the accumulation of orotic acid and subsequent orotic aciduria phenotype. In postaxial acrofacial dysostosis, disruption of pyrimidine biosynthesis affects cellular processes critical for development, leading to the observed dysostosis phenotype, potentially via downstream effects on nucleotide availability for DNA/RNA synthesis during embryonic development.",
+      "falsification": {
+        "text": "If genetic sequencing reveals that the causal variants for orotic aciduria in a given patient are not in UMPS, or for postaxial acrofacial dysostosis are not in DHODH, this proposed link would be falsified. Additionally, if patients with mutations in UMPS or DHODH do not exhibit any overlapping developmental phenotypes, the link would be weakened.",
+        "gnomad_variant": "Presence of common variants (e.g., gnomAD allele frequency > 1%) in UMPS or DHODH associated with either orotic aciduria or postaxial acrofacial dysostosis respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-500753"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T20:22:52.101Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** orotic aciduria (MONDO:0009797)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | developmental and epileptic encephalopathy, 50 (MONDO:0014647) | shared pathway | Tier 3 | 0.470 | Reactome:R-HSA-500753 |\n| 2 | postaxial acrofacial dysostosis (MONDO:0009903) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-500753 |\n\n### CANDIDATE DETAIL\n#### 1. developmental and epileptic encephalopathy, 50  —  Tier 3 — Moderate / Emerging  (fitness 0.470)\n**Link type:** shared pathway (Reactome:R-HSA-500753)\n\n**Proposed mechanism:** UMPS (HGNC:12026) —DISRUPTS→ pyrimidine biosynthesis (REACT:R-HSA-69870); CAD (HGNC:1387) —DISRUPTS→ pyrimidine biosynthesis (REACT:R-HSA-69870); CAD (HGNC:1387) —DISRUPTS→ purine biosynthesis (REACT:R-HSA-69924); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ orotic acid (CHEBI:25404); orotic acid (CHEBI:25404) —LEADS_TO→ Orotic aciduria (MONDO:0009797); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ Developmental delay (HP:0001263); pyrimidine biosynthesis (REACT:R-HSA-69870) —LEADS_TO→ Seizures (HP:0001250); purine biosynthesis (REACT:R-HSA-69924) —LEADS_TO→ Encephalopathy (HP:0001295). Loss-of-function mutations in UMPS and CAD disrupt both pyrimidine and purine biosynthesis. Defective pyrimidine biosynthesis leads to orotic aciduria and related phenotypes. Dysregulation of purine and pyrimidine metabolism impacts nucleotide availability crucial for neuronal function, contributing to developmental and epileptic encephalopathy.\n\n**How to falsify it:** Identification of pathogenic variants in UMPS or CAD that lead to a gain-of-function mechanism in either disease, or demonstration that the neurological phenotypes in developmental and epileptic encephalopathy, 50 arise from a pathway entirely independent of nucleotide biosynthesis. _(variant: rs750053735)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruption in orotic aciduria and certain forms of developmental and epileptic encephalopathy could inform therapeutic strategies targeting nucleotide metabolism or downstream consequences in neurological development.\n\n---\n\n#### 2. postaxial acrofacial dysostosis  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-500753)\n\n**Proposed mechanism:** UMPS (HGNC:12563) —DISRUPTS→ Pyrimidine biosynthesis (REACT:R-HSA-69904); DHODH (HGNC:2751) —DISRUPTS→ Pyrimidine biosynthesis (REACT:R-HSA-69904); Pyrimidine biosynthesis (REACT:R-HSA-69904) —PRODUCES→ Orotic acid (CHEBI:7762); Orotic acid (CHEBI:7762) —LEADS_TO→ Orotic aciduria (MONDO:0009797); Pyrimidine biosynthesis (REACT:R-HSA-69904) —LEADS_TO→ Developmental abnormalities (HP:0001263); Pyrimidine biosynthesis (REACT:R-HSA-69904) —LEADS_TO→ Postaxial acrofacial dysostosis (MONDO:0009903). Loss-of-function mutations in UMPS and DHODH disrupt the pyrimidine biosynthesis pathway. Impaired pyrimidine synthesis in orotic aciduria leads to the accumulation of orotic acid and subsequent orotic aciduria phenotype. In postaxial acrofacial dysostosis, disruption of pyrimidine biosynthesis affects cellular processes critical for development, leading to the observed dysostosis phenotype, potentially via downstream effects on nucleotide availability for DNA/RNA synthesis during embryonic development.\n\n**How to falsify it:** If genetic sequencing reveals that the causal variants for orotic aciduria in a given patient are not in UMPS, or for postaxial acrofacial dysostosis are not in DHODH, this proposed link would be falsified. Additionally, if patients with mutations in UMPS or DHODH do not exhibit any overlapping developmental phenotypes, the link would be weakened. _(variant: Presence of common variants (e.g., gnomAD allele frequency > 1%) in UMPS or DHODH associated with either orotic aciduria or postaxial acrofacial dysostosis respectively.)_\n\n**Why it matters:** Understanding the shared role of pyrimidine biosynthesis in these distinct diseases could reveal novel therapeutic targets. Interventions aimed at modulating pyrimidine levels or downstream pathways might offer a therapeutic avenue for both conditions, particularly if developmental aspects can be targeted.\n\n---"
+}

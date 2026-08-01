@@ -1,0 +1,53 @@
+{
+  "seed": {
+    "id": "MONDO:0012407",
+    "name": "pyridoxal phosphate-responsive seizures"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0032792",
+      "diseaseBName": "neuropathy, hereditary motor and sensory, type VIc, with optic atrophy",
+      "fitness": 0.3838,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PNPO (HGNC:25173) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); PDXK (HGNC:9408) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); pyridoxal 5'-phosphate metabolism (GO:0006075) —DECREASES→ pyridoxal 5'-phosphate (CHEBI:17790); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ seizure (HP:0001250); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ optic atrophy (HP:0000649); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ neuropathy (HP:0003691). Loss-of-function mutations in PNPO (involved in PLP synthesis) and PDXK (involved in PLP phosphorylation) both disrupt pyridoxal 5'-phosphate metabolism, leading to decreased levels of the active cofactor PLP. This deficiency underlies the neurological phenotypes of both PPS (seizures) and HMSN-VIc (optic atrophy and neuropathy).",
+      "mechanism_narrative": "PNPO (HGNC:25173) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); PDXK (HGNC:9408) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); pyridoxal 5'-phosphate metabolism (GO:0006075) —DECREASES→ pyridoxal 5'-phosphate (CHEBI:17790); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ seizure (HP:0001250); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ optic atrophy (HP:0000649); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ neuropathy (HP:0003691). Loss-of-function mutations in PNPO (involved in PLP synthesis) and PDXK (involved in PLP phosphorylation) both disrupt pyridoxal 5'-phosphate metabolism, leading to decreased levels of the active cofactor PLP. This deficiency underlies the neurological phenotypes of both PPS (seizures) and HMSN-VIc (optic atrophy and neuropathy).",
+      "falsification": {
+        "text": "The hypothesis would be falsified if mutations in PNPO or PDXK were found to be gain-of-function or dominant-negative, or if pathogenic variants in these genes were found at a high frequency (>1%) in gnomAD, suggesting they are not rare causes of these severe phenotypes.",
+        "gnomad_variant": "Any pathogenic variant in PNPO or PDXK with a gnomAD allele frequency > 0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-964975"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-964975": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032792",
+        "diseaseBName": "neuropathy, hereditary motor and sensory, type VIc, with optic atrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-964975"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-964975": 3
+        },
+        "fitness": 0.3838,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PNPO (HGNC:25173) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); PDXK (HGNC:9408) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); pyridoxal 5'-phosphate metabolism (GO:0006075) —DECREASES→ pyridoxal 5'-phosphate (CHEBI:17790); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ seizure (HP:0001250); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ optic atrophy (HP:0000649); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ neuropathy (HP:0003691). Loss-of-function mutations in PNPO (involved in PLP synthesis) and PDXK (involved in PLP phosphorylation) both disrupt pyridoxal 5'-phosphate metabolism, leading to decreased levels of the active cofactor PLP. This deficiency underlies the neurological phenotypes of both PPS (seizures) and HMSN-VIc (optic atrophy and neuropathy).",
+        "falsification": {
+          "text": "The hypothesis would be falsified if mutations in PNPO or PDXK were found to be gain-of-function or dominant-negative, or if pathogenic variants in these genes were found at a high frequency (>1%) in gnomAD, suggesting they are not rare causes of these severe phenotypes.",
+          "gnomad_variant": "Any pathogenic variant in PNPO or PDXK with a gnomAD allele frequency > 0.01"
+        },
+        "translational": "This mechanistic link suggests that patients with either PPS or HMSN-VIc could potentially benefit from vitamin B6 supplementation, particularly pyridoxal 5'-phosphate, as a therapeutic strategy. This highlights the importance of understanding vitamin cofactor metabolism in neurological disease."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T14:42:53.110Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** pyridoxal phosphate-responsive seizures (MONDO:0012407)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | neuropathy, hereditary motor and sensory, type VIc, with optic atrophy (MONDO:0032792) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-964975 |\n\n### CANDIDATE DETAIL\n#### 1. neuropathy, hereditary motor and sensory, type VIc, with optic atrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-964975)\n\n**Proposed mechanism:** PNPO (HGNC:25173) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); PDXK (HGNC:9408) —DISRUPTS→ pyridoxal 5'-phosphate metabolism (GO:0006075); pyridoxal 5'-phosphate metabolism (GO:0006075) —DECREASES→ pyridoxal 5'-phosphate (CHEBI:17790); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ seizure (HP:0001250); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ optic atrophy (HP:0000649); pyridoxal 5'-phosphate (CHEBI:17790) —LEADS_TO→ neuropathy (HP:0003691). Loss-of-function mutations in PNPO (involved in PLP synthesis) and PDXK (involved in PLP phosphorylation) both disrupt pyridoxal 5'-phosphate metabolism, leading to decreased levels of the active cofactor PLP. This deficiency underlies the neurological phenotypes of both PPS (seizures) and HMSN-VIc (optic atrophy and neuropathy).\n\n**How to falsify it:** The hypothesis would be falsified if mutations in PNPO or PDXK were found to be gain-of-function or dominant-negative, or if pathogenic variants in these genes were found at a high frequency (>1%) in gnomAD, suggesting they are not rare causes of these severe phenotypes. _(variant: Any pathogenic variant in PNPO or PDXK with a gnomAD allele frequency > 0.01)_\n\n**Why it matters:** This mechanistic link suggests that patients with either PPS or HMSN-VIc could potentially benefit from vitamin B6 supplementation, particularly pyridoxal 5'-phosphate, as a therapeutic strategy. This highlights the importance of understanding vitamin cofactor metabolism in neurological disease.\n\n---"
+}

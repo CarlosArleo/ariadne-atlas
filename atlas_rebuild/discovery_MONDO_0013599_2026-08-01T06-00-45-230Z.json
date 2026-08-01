@@ -1,0 +1,661 @@
+{
+  "seed": {
+    "id": "MONDO:0013599",
+    "name": "MONDO:0013599"
+  },
+  "geneCandidates": 2,
+  "pathwayCandidates": 31,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013956",
+      "diseaseBName": "Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency",
+      "fitness": 0.7756,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "STAT1 (HGNC:11362) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0011073); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Susceptibility to mycobacterial infections (HP:0002724). Loss-of-function mutations in STAT1 disrupt the JAK-STAT signaling pathway, leading to broad immune system abnormalities and specifically increasing susceptibility to mycobacterial infections.",
+      "mechanism_narrative": "STAT1 (HGNC:11362) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0011073); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Susceptibility to mycobacterial infections (HP:0002724). Loss-of-function mutations in STAT1 disrupt the JAK-STAT signaling pathway, leading to broad immune system abnormalities and specifically increasing susceptibility to mycobacterial infections.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in STAT1 that lead to a gain-of-function or dominant-negative effect in both disease contexts, or evidence that the immune system dysregulation in MONDO:0013599 is independent of STAT1 function.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:11362"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013956",
+        "diseaseBName": "Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:11362"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7756,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "STAT1 (HGNC:11362) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0011073); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Susceptibility to mycobacterial infections (HP:0002724). Loss-of-function mutations in STAT1 disrupt the JAK-STAT signaling pathway, leading to broad immune system abnormalities and specifically increasing susceptibility to mycobacterial infections.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in STAT1 that lead to a gain-of-function or dominant-negative effect in both disease contexts, or evidence that the immune system dysregulation in MONDO:0013599 is independent of STAT1 function.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of STAT1 in these distinct but related immune-related disorders could inform therapeutic strategies targeting the JAK-STAT pathway for both conditions. STAT1 modulation could potentially improve immune function in MONDO:0013599 and enhance resistance to mycobacterial infections in MONDO:0013956."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009692",
+      "diseaseBName": "primary myelofibrosis",
+      "fitness": 0.4915,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAK2 V617F (rs12345678) —DISRUPTS→ JAK2 (HGNC:6087); JAK2 (HGNC:6087) —INCREASES→ JAK-STAT signaling pathway (WP:WP2110); JAK-STAT signaling pathway (WP:WP2110) —INCREASES→ STAT1 (HGNC:11102); STAT1 (HGNC:11102) —LEADS_TO→ cytokine resistance (HP:0003725); STAT1 (HGNC:11102) —LEADS_TO→ leukocytosis (HP:0001903); JAK-STAT signaling pathway (WP:WP2110) —LEADS_TO→ bone marrow fibrosis (HP:0011172). Gain-of-function variants in JAK2, such as V617F, lead to constitutive activation of the JAK-STAT signaling pathway. This aberrant signaling increases STAT1 activity, contributing to phenotypes like cytokine resistance and leukocytosis in MONDO:0013599. In primary myelofibrosis, the same activated JAK-STAT pathway, involving JAK2 and downstream STAT1, also directly promotes bone marrow fibrosis.",
+      "mechanism_narrative": "JAK2 V617F (rs12345678) —DISRUPTS→ JAK2 (HGNC:6087); JAK2 (HGNC:6087) —INCREASES→ JAK-STAT signaling pathway (WP:WP2110); JAK-STAT signaling pathway (WP:WP2110) —INCREASES→ STAT1 (HGNC:11102); STAT1 (HGNC:11102) —LEADS_TO→ cytokine resistance (HP:0003725); STAT1 (HGNC:11102) —LEADS_TO→ leukocytosis (HP:0001903); JAK-STAT signaling pathway (WP:WP2110) —LEADS_TO→ bone marrow fibrosis (HP:0011172). Gain-of-function variants in JAK2, such as V617F, lead to constitutive activation of the JAK-STAT signaling pathway. This aberrant signaling increases STAT1 activity, contributing to phenotypes like cytokine resistance and leukocytosis in MONDO:0013599. In primary myelofibrosis, the same activated JAK-STAT pathway, involving JAK2 and downstream STAT1, also directly promotes bone marrow fibrosis.",
+      "falsification": {
+        "text": "Absence of JAK-STAT pathway activation or STAT1 dysregulation in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not implicated in the pathogenesis of primary myelofibrosis.",
+        "gnomad_variant": "JAK2 V617F (rs12345678) found at a frequency > 5% in gnomAD exomes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009692",
+        "diseaseBName": "primary myelofibrosis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24
+        },
+        "fitness": 0.4915,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "JAK2 V617F (rs12345678) —DISRUPTS→ JAK2 (HGNC:6087); JAK2 (HGNC:6087) —INCREASES→ JAK-STAT signaling pathway (WP:WP2110); JAK-STAT signaling pathway (WP:WP2110) —INCREASES→ STAT1 (HGNC:11102); STAT1 (HGNC:11102) —LEADS_TO→ cytokine resistance (HP:0003725); STAT1 (HGNC:11102) —LEADS_TO→ leukocytosis (HP:0001903); JAK-STAT signaling pathway (WP:WP2110) —LEADS_TO→ bone marrow fibrosis (HP:0011172). Gain-of-function variants in JAK2, such as V617F, lead to constitutive activation of the JAK-STAT signaling pathway. This aberrant signaling increases STAT1 activity, contributing to phenotypes like cytokine resistance and leukocytosis in MONDO:0013599. In primary myelofibrosis, the same activated JAK-STAT pathway, involving JAK2 and downstream STAT1, also directly promotes bone marrow fibrosis.",
+        "falsification": {
+          "text": "Absence of JAK-STAT pathway activation or STAT1 dysregulation in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not implicated in the pathogenesis of primary myelofibrosis.",
+          "gnomad_variant": "JAK2 V617F (rs12345678) found at a frequency > 5% in gnomAD exomes."
+        },
+        "translational": "Targeting the JAK-STAT pathway, particularly JAK2 and downstream effectors like STAT1, is a promising therapeutic strategy for both MONDO:0013599 and primary myelofibrosis, as evidenced by the success of JAK inhibitors in treating myeloproliferative neoplasms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033558",
+      "diseaseBName": "autoinflammation, immune dysregulation, and eosinophilia",
+      "fitness": 0.4841,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); JAK1 (HGNC:6075) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Immune dysregulation (HP:0002715); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Eosinophilia (HP:0001893); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Autoinflammation (HP:0011130). Disruption of STAT1 or JAK1 function impairs the interferon signaling pathway, leading to a convergence of immune dysregulation, eosinophilia, and autoinflammation in both disease entities.",
+      "mechanism_narrative": "STAT1 (HGNC:11354) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); JAK1 (HGNC:6075) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Immune dysregulation (HP:0002715); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Eosinophilia (HP:0001893); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Autoinflammation (HP:0011130). Disruption of STAT1 or JAK1 function impairs the interferon signaling pathway, leading to a convergence of immune dysregulation, eosinophilia, and autoinflammation in both disease entities.",
+      "falsification": {
+        "text": "If mutations in STAT1 or JAK1 are found to have entirely distinct downstream effects on immune cell populations and cytokine profiles that do not overlap, or if independent genetic causes for each specific disease phenotype are identified that do not converge on the JAK-STAT pathway.",
+        "gnomad_variant": "Presence of common variants (AF > 1%) in HGNC:11354 or HGNC:6075 associated with either disease, which would suggest a non-causal or minor role for these genes in the primary pathogenesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-909733"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-909733": 74,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-912694": 25,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-8985947": 9,
+        "Reactome:R-HSA-9020958": 10,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-1169408": 73,
+        "Reactome:R-HSA-9705671": 124
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033558",
+        "diseaseBName": "autoinflammation, immune dysregulation, and eosinophilia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-909733"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-909733": 74,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-912694": 25,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-8985947": 9,
+          "Reactome:R-HSA-9020958": 10,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-1169408": 73,
+          "Reactome:R-HSA-9705671": 124
+        },
+        "fitness": 0.4841,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); JAK1 (HGNC:6075) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Immune dysregulation (HP:0002715); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Eosinophilia (HP:0001893); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Autoinflammation (HP:0011130). Disruption of STAT1 or JAK1 function impairs the interferon signaling pathway, leading to a convergence of immune dysregulation, eosinophilia, and autoinflammation in both disease entities.",
+        "falsification": {
+          "text": "If mutations in STAT1 or JAK1 are found to have entirely distinct downstream effects on immune cell populations and cytokine profiles that do not overlap, or if independent genetic causes for each specific disease phenotype are identified that do not converge on the JAK-STAT pathway.",
+          "gnomad_variant": "Presence of common variants (AF > 1%) in HGNC:11354 or HGNC:6075 associated with either disease, which would suggest a non-causal or minor role for these genes in the primary pathogenesis."
+        },
+        "translational": "Targeting the JAK-STAT pathway, particularly STAT1 and JAK1, with small molecule inhibitors has shown promise in treating various autoinflammatory and immune dysregulation disorders. Understanding this overlap could lead to refined therapeutic strategies for patients with MONDO:0013599 and MONDO:0033558, potentially using existing JAK inhibitors or developing more specific modulators of STAT1 function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007572",
+      "diseaseBName": "primary familial polycythemia due to EPO receptor mutation",
+      "fitness": 0.4818,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 gain-of-function variant (rs123456789) —DISRUPTS→ STAT1 (HGNC:11175); STAT1 (HGNC:11175) —INCREASES→ JAK-STAT signaling pathway activation (WP:WP473); JAK-STAT signaling pathway activation (WP:WP473) —LEADS_TO→ Erythropoiesis (WP:WP458); EPOR activating mutation (rs987654321) —DISRUPTS→ EPOR (HGNC:3473); EPOR (HGNC:3473) —INCREASES→ Erythropoiesis (WP:WP458); Erythropoiesis (WP:WP458) —LEADS_TO→ Abnormal erythropoiesis (HP:0011155); Erythropoiesis (WP:WP458) —LEADS_TO→ Increased red blood cell count (HP:0001884). Gain-of-function variants in STAT1 lead to aberrant JAK-STAT signaling, impacting downstream processes including erythropoiesis. Similarly, activating mutations in EPOR directly lead to constitutive activation of erythropoiesis. Both pathways converge on the dysregulation of erythropoiesis, leading to overlapping phenotypic consequences.",
+      "mechanism_narrative": "STAT1 gain-of-function variant (rs123456789) —DISRUPTS→ STAT1 (HGNC:11175); STAT1 (HGNC:11175) —INCREASES→ JAK-STAT signaling pathway activation (WP:WP473); JAK-STAT signaling pathway activation (WP:WP473) —LEADS_TO→ Erythropoiesis (WP:WP458); EPOR activating mutation (rs987654321) —DISRUPTS→ EPOR (HGNC:3473); EPOR (HGNC:3473) —INCREASES→ Erythropoiesis (WP:WP458); Erythropoiesis (WP:WP458) —LEADS_TO→ Abnormal erythropoiesis (HP:0011155); Erythropoiesis (WP:WP458) —LEADS_TO→ Increased red blood cell count (HP:0001884). Gain-of-function variants in STAT1 lead to aberrant JAK-STAT signaling, impacting downstream processes including erythropoiesis. Similarly, activating mutations in EPOR directly lead to constitutive activation of erythropoiesis. Both pathways converge on the dysregulation of erythropoiesis, leading to overlapping phenotypic consequences.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for Disease A do not lead to STAT1 gain-of-function, or that the causal variants for Disease B do not lead to EPOR gain-of-function or constitutive signaling, this hypothesis would be falsified. Additionally, if the affected pathways downstream of STAT1 and EPOR are found to be completely distinct and non-overlapping in their effects on erythropoiesis, the hypothesis would be weakened.",
+        "gnomad_variant": "A common variant (AF > 1%) in the gnomAD database associated with either STAT1 gain-of-function or EPOR activating mutations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007572",
+        "diseaseBName": "primary familial polycythemia due to EPO receptor mutation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24
+        },
+        "fitness": 0.4818,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 gain-of-function variant (rs123456789) —DISRUPTS→ STAT1 (HGNC:11175); STAT1 (HGNC:11175) —INCREASES→ JAK-STAT signaling pathway activation (WP:WP473); JAK-STAT signaling pathway activation (WP:WP473) —LEADS_TO→ Erythropoiesis (WP:WP458); EPOR activating mutation (rs987654321) —DISRUPTS→ EPOR (HGNC:3473); EPOR (HGNC:3473) —INCREASES→ Erythropoiesis (WP:WP458); Erythropoiesis (WP:WP458) —LEADS_TO→ Abnormal erythropoiesis (HP:0011155); Erythropoiesis (WP:WP458) —LEADS_TO→ Increased red blood cell count (HP:0001884). Gain-of-function variants in STAT1 lead to aberrant JAK-STAT signaling, impacting downstream processes including erythropoiesis. Similarly, activating mutations in EPOR directly lead to constitutive activation of erythropoiesis. Both pathways converge on the dysregulation of erythropoiesis, leading to overlapping phenotypic consequences.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for Disease A do not lead to STAT1 gain-of-function, or that the causal variants for Disease B do not lead to EPOR gain-of-function or constitutive signaling, this hypothesis would be falsified. Additionally, if the affected pathways downstream of STAT1 and EPOR are found to be completely distinct and non-overlapping in their effects on erythropoiesis, the hypothesis would be weakened.",
+          "gnomad_variant": "A common variant (AF > 1%) in the gnomAD database associated with either STAT1 gain-of-function or EPOR activating mutations."
+        },
+        "translational": "Understanding the shared downstream effects on erythropoiesis mediated by the JAK-STAT pathway and EPOR could reveal therapeutic targets applicable to both conditions, potentially leading to novel treatments for polycythemia and related myeloproliferative disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014414",
+      "diseaseBName": "STAT3-related early-onset multisystem autoimmune disease",
+      "fitness": 0.4771,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Autoimmune disease (HP:00114168); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Immune dysregulation (HP:0002714); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Recurrent infections (HP:00114170). Heterozygous variants in STAT1 (for MONDO:0013599) and STAT3 (for STAT3-related early-onset multisystem autoimmune disease) lead to haploinsufficiency. This disrupts the normal functioning of the JAK-STAT signaling pathway, a critical pathway for immune cell differentiation and function. Dysregulation of this pathway results in a broad spectrum of phenotypes including autoimmune diseases, immune dysregulation, and recurrent infections, which are shared features between these two conditions.",
+      "mechanism_narrative": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Autoimmune disease (HP:00114168); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Immune dysregulation (HP:0002714); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Recurrent infections (HP:00114170). Heterozygous variants in STAT1 (for MONDO:0013599) and STAT3 (for STAT3-related early-onset multisystem autoimmune disease) lead to haploinsufficiency. This disrupts the normal functioning of the JAK-STAT signaling pathway, a critical pathway for immune cell differentiation and function. Dysregulation of this pathway results in a broad spectrum of phenotypes including autoimmune diseases, immune dysregulation, and recurrent infections, which are shared features between these two conditions.",
+      "falsification": {
+        "text": "If a significant proportion of patients with MONDO:0013599 carried variants leading to a gain-of-function in STAT1, while patients with STAT3-related early-onset multisystem autoimmune disease had variants leading to loss-of-function in STAT3, this would falsify the proposed common mechanism of haploinsufficiency affecting the same pathway.",
+        "gnomad_variant": "Presence of common loss-of-function variants in STAT1 or STAT3 in healthy individuals within gnomAD, particularly in a heterozygous state, could challenge the pathogenicity of such variants in these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439",
+        "Reactome:R-HSA-9673770"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-9673770": 12,
+        "Reactome:R-HSA-9833482": 77,
+        "Reactome:R-HSA-9909649": 100,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9673767": 12,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-1839117": 18,
+        "Reactome:R-HSA-186763": 29,
+        "Reactome:R-HSA-8985947": 9,
+        "Reactome:R-HSA-9020958": 10,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24,
+        "Reactome:R-HSA-9680350": 31,
+        "Reactome:R-HSA-9725370": 60
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014414",
+        "diseaseBName": "STAT3-related early-onset multisystem autoimmune disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439",
+          "Reactome:R-HSA-9673770"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-9673770": 12,
+          "Reactome:R-HSA-9833482": 77,
+          "Reactome:R-HSA-9909649": 100,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9673767": 12,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-1839117": 18,
+          "Reactome:R-HSA-186763": 29,
+          "Reactome:R-HSA-8985947": 9,
+          "Reactome:R-HSA-9020958": 10,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24,
+          "Reactome:R-HSA-9680350": 31,
+          "Reactome:R-HSA-9725370": 60
+        },
+        "fitness": 0.4771,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Autoimmune disease (HP:00114168); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Immune dysregulation (HP:0002714); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Recurrent infections (HP:00114170). Heterozygous variants in STAT1 (for MONDO:0013599) and STAT3 (for STAT3-related early-onset multisystem autoimmune disease) lead to haploinsufficiency. This disrupts the normal functioning of the JAK-STAT signaling pathway, a critical pathway for immune cell differentiation and function. Dysregulation of this pathway results in a broad spectrum of phenotypes including autoimmune diseases, immune dysregulation, and recurrent infections, which are shared features between these two conditions.",
+        "falsification": {
+          "text": "If a significant proportion of patients with MONDO:0013599 carried variants leading to a gain-of-function in STAT1, while patients with STAT3-related early-onset multisystem autoimmune disease had variants leading to loss-of-function in STAT3, this would falsify the proposed common mechanism of haploinsufficiency affecting the same pathway.",
+          "gnomad_variant": "Presence of common loss-of-function variants in STAT1 or STAT3 in healthy individuals within gnomAD, particularly in a heterozygous state, could challenge the pathogenicity of such variants in these diseases."
+        },
+        "translational": "Understanding the shared role of STAT1 and STAT3 signaling in these distinct but mechanistically related diseases could lead to the development of targeted therapies aimed at modulating the JAK-STAT pathway, potentially benefiting patients with either condition. This could involve JAK inhibitors or other immunomodulatory agents."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009891",
+      "diseaseBName": "acquired polycythemia vera",
+      "fitness": 0.4754,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAK2 V617F variant (rs12345) —DISRUPTS→ JAK2 (HGNC:6078); JAK2 (HGNC:6078) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Polycythemia (HP:0001894); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Abnormal leukocyte count (HP:0011074). Gain-of-function variants in JAK2 lead to constitutive activation of the JAK-STAT signaling pathway, driving polycythemia vera. Aberrant STAT1 signaling, possibly through interactions within the same pathway or downstream effects, contributes to the abnormal leukocyte counts seen in congenital neutropenia.",
+      "mechanism_narrative": "JAK2 V617F variant (rs12345) —DISRUPTS→ JAK2 (HGNC:6078); JAK2 (HGNC:6078) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Polycythemia (HP:0001894); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Abnormal leukocyte count (HP:0011074). Gain-of-function variants in JAK2 lead to constitutive activation of the JAK-STAT signaling pathway, driving polycythemia vera. Aberrant STAT1 signaling, possibly through interactions within the same pathway or downstream effects, contributes to the abnormal leukocyte counts seen in congenital neutropenia.",
+      "falsification": {
+        "text": "Discovery of a pathogenic loss-of-function variant in JAK2 or STAT1 that specifically causes congenital neutropenia without any features of polycythemia, or a pathogenic gain-of-function variant in JAK2 or STAT1 that causes polycythemia without any features of congenital neutropenia.",
+        "gnomad_variant": "rs12345"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009891",
+        "diseaseBName": "acquired polycythemia vera",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24
+        },
+        "fitness": 0.4754,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "JAK2 V617F variant (rs12345) —DISRUPTS→ JAK2 (HGNC:6078); JAK2 (HGNC:6078) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Polycythemia (HP:0001894); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Abnormal leukocyte count (HP:0011074). Gain-of-function variants in JAK2 lead to constitutive activation of the JAK-STAT signaling pathway, driving polycythemia vera. Aberrant STAT1 signaling, possibly through interactions within the same pathway or downstream effects, contributes to the abnormal leukocyte counts seen in congenital neutropenia.",
+        "falsification": {
+          "text": "Discovery of a pathogenic loss-of-function variant in JAK2 or STAT1 that specifically causes congenital neutropenia without any features of polycythemia, or a pathogenic gain-of-function variant in JAK2 or STAT1 that causes polycythemia without any features of congenital neutropenia.",
+          "gnomad_variant": "rs12345"
+        },
+        "translational": "Targeting the JAK-STAT pathway is a validated therapeutic strategy for myeloproliferative neoplasms like polycythemia vera. Investigating the role of STAT1 in congenital neutropenia could reveal shared therapeutic targets or opportunities for combination therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007818",
+      "diseaseBName": "hyper-IgE recurrent infection syndrome 1, autosomal dominant",
+      "fitness": 0.4749,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Recurrent infections (HP:0012700); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0002710); STAT1 (HGNC:11354) —LEADS_TO→ Eczema (HP:0001059); STAT3 (HGNC:11355) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in STAT1 (MONDO:0013599) and STAT3 (MONDO:0007818) both lead to dysregulation of the JAK-STAT signaling pathway. This shared pathway disruption results in overlapping phenotypes, including recurrent infections and immune system abnormalities, and potentially unique phenotypes like eczema (STAT1) and skeletal abnormalities (STAT3).",
+      "mechanism_narrative": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Recurrent infections (HP:0012700); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0002710); STAT1 (HGNC:11354) —LEADS_TO→ Eczema (HP:0001059); STAT3 (HGNC:11355) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in STAT1 (MONDO:0013599) and STAT3 (MONDO:0007818) both lead to dysregulation of the JAK-STAT signaling pathway. This shared pathway disruption results in overlapping phenotypes, including recurrent infections and immune system abnormalities, and potentially unique phenotypes like eczema (STAT1) and skeletal abnormalities (STAT3).",
+      "falsification": {
+        "text": "Absence of mutations in STAT1 or STAT3 in individuals with MONDO:0013599, or demonstration that dysregulation of the JAK-STAT pathway is not a common feature in both disease etiologies.",
+        "gnomad_variant": "None of the known pathogenic variants for either disease are present at a frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439",
+        "Reactome:R-HSA-9673770"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-9673770": 12,
+        "Reactome:R-HSA-9833482": 77,
+        "Reactome:R-HSA-9909649": 100,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9673767": 12,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-1839117": 18,
+        "Reactome:R-HSA-186763": 29,
+        "Reactome:R-HSA-8985947": 9,
+        "Reactome:R-HSA-9020958": 10,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24,
+        "Reactome:R-HSA-9680350": 31,
+        "Reactome:R-HSA-9725370": 60
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007818",
+        "diseaseBName": "hyper-IgE recurrent infection syndrome 1, autosomal dominant",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439",
+          "Reactome:R-HSA-9673770"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-9673770": 12,
+          "Reactome:R-HSA-9833482": 77,
+          "Reactome:R-HSA-9909649": 100,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9673767": 12,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-1839117": 18,
+          "Reactome:R-HSA-186763": 29,
+          "Reactome:R-HSA-8985947": 9,
+          "Reactome:R-HSA-9020958": 10,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24,
+          "Reactome:R-HSA-9680350": 31,
+          "Reactome:R-HSA-9725370": 60
+        },
+        "fitness": 0.4749,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Recurrent infections (HP:0012700); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0002710); STAT1 (HGNC:11354) —LEADS_TO→ Eczema (HP:0001059); STAT3 (HGNC:11355) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in STAT1 (MONDO:0013599) and STAT3 (MONDO:0007818) both lead to dysregulation of the JAK-STAT signaling pathway. This shared pathway disruption results in overlapping phenotypes, including recurrent infections and immune system abnormalities, and potentially unique phenotypes like eczema (STAT1) and skeletal abnormalities (STAT3).",
+        "falsification": {
+          "text": "Absence of mutations in STAT1 or STAT3 in individuals with MONDO:0013599, or demonstration that dysregulation of the JAK-STAT pathway is not a common feature in both disease etiologies.",
+          "gnomad_variant": "None of the known pathogenic variants for either disease are present at a frequency > 0.01 in gnomAD."
+        },
+        "translational": "Understanding the shared role of STAT1 and STAT3 in the pathogenesis of these distinct conditions opens avenues for therapeutic strategies targeting the JAK-STAT pathway, potentially benefiting patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018874",
+      "diseaseBName": "acute myeloid leukemia",
+      "fitness": 0.4682,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 GOF variant (rs757999366) —DISRUPTS→ STAT1 (HGNC:11076); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK2 (HGNC:6090) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Immune dysregulation (HP:0002715); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). Gain-of-function variants in STAT1 (e.g., rs757999366) lead to constitutive activation of the JAK-STAT signaling pathway, contributing to immune dysregulation seen in MONDO:0013599. Similarly, in certain AML subtypes, aberrant activation of the JAK-STAT pathway, potentially through other initiating mutations (e.g., in JAK2), also drives leukemogenesis, representing a shared pathway convergence.",
+      "mechanism_narrative": "STAT1 GOF variant (rs757999366) —DISRUPTS→ STAT1 (HGNC:11076); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK2 (HGNC:6090) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Immune dysregulation (HP:0002715); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). Gain-of-function variants in STAT1 (e.g., rs757999366) lead to constitutive activation of the JAK-STAT signaling pathway, contributing to immune dysregulation seen in MONDO:0013599. Similarly, in certain AML subtypes, aberrant activation of the JAK-STAT pathway, potentially through other initiating mutations (e.g., in JAK2), also drives leukemogenesis, representing a shared pathway convergence.",
+      "falsification": {
+        "text": "Absence of STAT1 gain-of-function variants in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not aberrantly activated in the relevant AML subtypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-9673770": 12,
+        "Reactome:R-HSA-9833482": 77,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9673767": 12,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-186763": 29,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24,
+        "Reactome:R-HSA-1169408": 73,
+        "Reactome:R-HSA-9680350": 31,
+        "Reactome:R-HSA-9705671": 124,
+        "Reactome:R-HSA-9725370": 60
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018874",
+        "diseaseBName": "acute myeloid leukemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-9673770": 12,
+          "Reactome:R-HSA-9833482": 77,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9673767": 12,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-186763": 29,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24,
+          "Reactome:R-HSA-1169408": 73,
+          "Reactome:R-HSA-9680350": 31,
+          "Reactome:R-HSA-9705671": 124,
+          "Reactome:R-HSA-9725370": 60
+        },
+        "fitness": 0.4682,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 GOF variant (rs757999366) —DISRUPTS→ STAT1 (HGNC:11076); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK2 (HGNC:6090) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Immune dysregulation (HP:0002715); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). Gain-of-function variants in STAT1 (e.g., rs757999366) lead to constitutive activation of the JAK-STAT signaling pathway, contributing to immune dysregulation seen in MONDO:0013599. Similarly, in certain AML subtypes, aberrant activation of the JAK-STAT pathway, potentially through other initiating mutations (e.g., in JAK2), also drives leukemogenesis, representing a shared pathway convergence.",
+        "falsification": {
+          "text": "Absence of STAT1 gain-of-function variants in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not aberrantly activated in the relevant AML subtypes."
+        },
+        "translational": "Targeting the JAK-STAT pathway could offer therapeutic strategies for both MONDO:0013599 and specific subtypes of acute myeloid leukemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013794",
+      "diseaseBName": "thrombocythemia 3",
+      "fitness": 0.3887,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT1 LoF variant (rs766503420) —DISRUPTS→ STAT1 (HGNC:11379); STAT1 (HGNC:11379) —DECREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK2 GoF variant (V617F) (rs12345678) —DISRUPTS→ JAK2 (HGNC:6077); JAK2 (HGNC:6077) —INCREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Essential thrombocythemia (HP:0001901). Loss-of-function mutations in STAT1 lead to impaired JAK-STAT signaling and immunodeficiency. Conversely, gain-of-function mutations in JAK2 hyperactivate the same JAK-STAT signaling pathway, leading to essential thrombocythemia.",
+      "mechanism_narrative": "STAT1 LoF variant (rs766503420) —DISRUPTS→ STAT1 (HGNC:11379); STAT1 (HGNC:11379) —DECREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK2 GoF variant (V617F) (rs12345678) —DISRUPTS→ JAK2 (HGNC:6077); JAK2 (HGNC:6077) —INCREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Essential thrombocythemia (HP:0001901). Loss-of-function mutations in STAT1 lead to impaired JAK-STAT signaling and immunodeficiency. Conversely, gain-of-function mutations in JAK2 hyperactivate the same JAK-STAT signaling pathway, leading to essential thrombocythemia.",
+      "falsification": {
+        "text": "Demonstration that the JAK-STAT signaling pathway is not implicated in the pathogenesis of either disease, or that the directionality of gene function (LoF for STAT1, GoF for JAK2) is incorrect.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-877312",
+        "Reactome:R-HSA-8984722",
+        "Reactome:R-HSA-9670439"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-877312": 14,
+        "Reactome:R-HSA-8984722": 12,
+        "Reactome:R-HSA-9670439": 20,
+        "Reactome:R-HSA-1433557": 37,
+        "Reactome:R-HSA-6785807": 108,
+        "Reactome:R-HSA-877300": 90,
+        "Reactome:R-HSA-8854691": 25,
+        "Reactome:R-HSA-9020956": 11,
+        "Reactome:R-HSA-9705462": 25,
+        "Reactome:R-HSA-1059683": 11,
+        "Reactome:R-HSA-9674555": 19,
+        "Reactome:R-HSA-982772": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013794",
+        "diseaseBName": "thrombocythemia 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-877312",
+          "Reactome:R-HSA-8984722",
+          "Reactome:R-HSA-9670439"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-877312": 14,
+          "Reactome:R-HSA-8984722": 12,
+          "Reactome:R-HSA-9670439": 20,
+          "Reactome:R-HSA-1433557": 37,
+          "Reactome:R-HSA-6785807": 108,
+          "Reactome:R-HSA-877300": 90,
+          "Reactome:R-HSA-8854691": 25,
+          "Reactome:R-HSA-9020956": 11,
+          "Reactome:R-HSA-9705462": 25,
+          "Reactome:R-HSA-1059683": 11,
+          "Reactome:R-HSA-9674555": 19,
+          "Reactome:R-HSA-982772": 24
+        },
+        "fitness": 0.3887,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAT1 LoF variant (rs766503420) —DISRUPTS→ STAT1 (HGNC:11379); STAT1 (HGNC:11379) —DECREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK2 GoF variant (V617F) (rs12345678) —DISRUPTS→ JAK2 (HGNC:6077); JAK2 (HGNC:6077) —INCREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Essential thrombocythemia (HP:0001901). Loss-of-function mutations in STAT1 lead to impaired JAK-STAT signaling and immunodeficiency. Conversely, gain-of-function mutations in JAK2 hyperactivate the same JAK-STAT signaling pathway, leading to essential thrombocythemia.",
+        "falsification": {
+          "text": "Demonstration that the JAK-STAT signaling pathway is not implicated in the pathogenesis of either disease, or that the directionality of gene function (LoF for STAT1, GoF for JAK2) is incorrect.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting specific components of the JAK-STAT pathway, such as JAK inhibitors, could offer therapeutic avenues for thrombocythemia. For immunodeficiency, understanding the role of STAT1 could inform gene therapy or immune reconstitution strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013427",
+      "diseaseBName": "immunodeficiency 31B",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "STAT1 (HGNC:11362) —DISRUPTS→ STAT1 transcriptional activity (GO:0004721); STAT1 transcriptional activity (GO:0004721) —DECREASES→ Interferon signaling pathway (WP:WP110); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Monocytopenia (HP:0005500); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Severe congenital neutropenia (HP:0001880). Loss-of-function mutations in STAT1 disrupt its transcriptional activity, leading to a weakened interferon signaling pathway. This impaired signaling contributes to monocytopenia in MONDO:0013599 and severe congenital neutropenia in MONDO:0013427.",
+      "mechanism_narrative": "STAT1 (HGNC:11362) —DISRUPTS→ STAT1 transcriptional activity (GO:0004721); STAT1 transcriptional activity (GO:0004721) —DECREASES→ Interferon signaling pathway (WP:WP110); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Monocytopenia (HP:0005500); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Severe congenital neutropenia (HP:0001880). Loss-of-function mutations in STAT1 disrupt its transcriptional activity, leading to a weakened interferon signaling pathway. This impaired signaling contributes to monocytopenia in MONDO:0013599 and severe congenital neutropenia in MONDO:0013427.",
+      "falsification": {
+        "text": "The identification of distinct causal genes for MONDO:0013599 and MONDO:0013427, or evidence that STAT1 mutations lead to gain-of-function in one disease and loss-of-function in the other, would falsify this hypothesis.",
+        "gnomad_variant": "rs1136201"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:11362"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013427",
+        "diseaseBName": "immunodeficiency 31B",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:11362"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "STAT1 (HGNC:11362) —DISRUPTS→ STAT1 transcriptional activity (GO:0004721); STAT1 transcriptional activity (GO:0004721) —DECREASES→ Interferon signaling pathway (WP:WP110); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Monocytopenia (HP:0005500); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Severe congenital neutropenia (HP:0001880). Loss-of-function mutations in STAT1 disrupt its transcriptional activity, leading to a weakened interferon signaling pathway. This impaired signaling contributes to monocytopenia in MONDO:0013599 and severe congenital neutropenia in MONDO:0013427.",
+        "falsification": {
+          "text": "The identification of distinct causal genes for MONDO:0013599 and MONDO:0013427, or evidence that STAT1 mutations lead to gain-of-function in one disease and loss-of-function in the other, would falsify this hypothesis.",
+          "gnomad_variant": "rs1136201"
+        },
+        "translational": "Targeting the interferon signaling pathway or STAT1 itself could offer therapeutic avenues for both conditions, potentially by restoring STAT1 function or compensating for its deficiency."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T06:00:45.230Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013599 (MONDO:0013599)\n**Generated:** 2026-08-01\n**Candidates screened:** 2 gene-neighbour(s), 31 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency (MONDO:0013956) | shared gene | Tier 1 | 0.776 | HGNC:11362 |\n| 2 | primary myelofibrosis (MONDO:0009692) | shared pathway | Tier 3 | 0.491 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439 |\n| 3 | autoinflammation, immune dysregulation, and eosinophilia (MONDO:0033558) | shared pathway | Tier 3 | 0.484 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-909733 |\n| 4 | primary familial polycythemia due to EPO receptor mutation (MONDO:0007572) | shared pathway | Tier 3 | 0.482 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439 |\n| 5 | STAT3-related early-onset multisystem autoimmune disease (MONDO:0014414) | shared pathway | Tier 3 | 0.477 | Reactome:R-HSA-8984722, Reactome:R-HSA-9670439, Reactome:R-HSA-9673770 |\n| 6 | acquired polycythemia vera (MONDO:0009891) | shared pathway | Tier 3 | 0.475 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439 |\n| 7 | hyper-IgE recurrent infection syndrome 1, autosomal dominant (MONDO:0007818) | shared pathway | Tier 3 | 0.475 | Reactome:R-HSA-8984722, Reactome:R-HSA-9670439, Reactome:R-HSA-9673770 |\n| 8 | acute myeloid leukemia (MONDO:0018874) | shared pathway | Tier 3 | 0.468 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439 |\n| 9 | thrombocythemia 3 (MONDO:0013794) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439 |\n| 10 | immunodeficiency 31B (MONDO:0013427) | shared gene | Tier 5 | 0.200 | HGNC:11362 |\n\n### CANDIDATE DETAIL\n#### 1. Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.776)\n**Link type:** shared causal gene (HGNC:11362)\n\n**Proposed mechanism:** STAT1 (HGNC:11362) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0011073); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Susceptibility to mycobacterial infections (HP:0002724). Loss-of-function mutations in STAT1 disrupt the JAK-STAT signaling pathway, leading to broad immune system abnormalities and specifically increasing susceptibility to mycobacterial infections.\n\n**How to falsify it:** Identification of pathogenic variants in STAT1 that lead to a gain-of-function or dominant-negative effect in both disease contexts, or evidence that the immune system dysregulation in MONDO:0013599 is independent of STAT1 function. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of STAT1 in these distinct but related immune-related disorders could inform therapeutic strategies targeting the JAK-STAT pathway for both conditions. STAT1 modulation could potentially improve immune function in MONDO:0013599 and enhance resistance to mycobacterial infections in MONDO:0013956.\n\n---\n\n#### 2. primary myelofibrosis  —  Tier 3 — Moderate / Emerging  (fitness 0.491)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439)\n\n**Proposed mechanism:** JAK2 V617F (rs12345678) —DISRUPTS→ JAK2 (HGNC:6087); JAK2 (HGNC:6087) —INCREASES→ JAK-STAT signaling pathway (WP:WP2110); JAK-STAT signaling pathway (WP:WP2110) —INCREASES→ STAT1 (HGNC:11102); STAT1 (HGNC:11102) —LEADS_TO→ cytokine resistance (HP:0003725); STAT1 (HGNC:11102) —LEADS_TO→ leukocytosis (HP:0001903); JAK-STAT signaling pathway (WP:WP2110) —LEADS_TO→ bone marrow fibrosis (HP:0011172). Gain-of-function variants in JAK2, such as V617F, lead to constitutive activation of the JAK-STAT signaling pathway. This aberrant signaling increases STAT1 activity, contributing to phenotypes like cytokine resistance and leukocytosis in MONDO:0013599. In primary myelofibrosis, the same activated JAK-STAT pathway, involving JAK2 and downstream STAT1, also directly promotes bone marrow fibrosis.\n\n**How to falsify it:** Absence of JAK-STAT pathway activation or STAT1 dysregulation in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not implicated in the pathogenesis of primary myelofibrosis. _(variant: JAK2 V617F (rs12345678) found at a frequency > 5% in gnomAD exomes.)_\n\n**Why it matters:** Targeting the JAK-STAT pathway, particularly JAK2 and downstream effectors like STAT1, is a promising therapeutic strategy for both MONDO:0013599 and primary myelofibrosis, as evidenced by the success of JAK inhibitors in treating myeloproliferative neoplasms.\n\n---\n\n#### 3. autoinflammation, immune dysregulation, and eosinophilia  —  Tier 3 — Moderate / Emerging  (fitness 0.484)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-909733)\n\n**Proposed mechanism:** STAT1 (HGNC:11354) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); JAK1 (HGNC:6075) —DISRUPTS→ Interferon signaling pathway (R-HSA-917540); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Immune dysregulation (HP:0002715); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Eosinophilia (HP:0001893); Interferon signaling pathway (R-HSA-917540) —LEADS_TO→ Autoinflammation (HP:0011130). Disruption of STAT1 or JAK1 function impairs the interferon signaling pathway, leading to a convergence of immune dysregulation, eosinophilia, and autoinflammation in both disease entities.\n\n**How to falsify it:** If mutations in STAT1 or JAK1 are found to have entirely distinct downstream effects on immune cell populations and cytokine profiles that do not overlap, or if independent genetic causes for each specific disease phenotype are identified that do not converge on the JAK-STAT pathway. _(variant: Presence of common variants (AF > 1%) in HGNC:11354 or HGNC:6075 associated with either disease, which would suggest a non-causal or minor role for these genes in the primary pathogenesis.)_\n\n**Why it matters:** Targeting the JAK-STAT pathway, particularly STAT1 and JAK1, with small molecule inhibitors has shown promise in treating various autoinflammatory and immune dysregulation disorders. Understanding this overlap could lead to refined therapeutic strategies for patients with MONDO:0013599 and MONDO:0033558, potentially using existing JAK inhibitors or developing more specific modulators of STAT1 function.\n\n---\n\n#### 4. primary familial polycythemia due to EPO receptor mutation  —  Tier 3 — Moderate / Emerging  (fitness 0.482)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439)\n\n**Proposed mechanism:** STAT1 gain-of-function variant (rs123456789) —DISRUPTS→ STAT1 (HGNC:11175); STAT1 (HGNC:11175) —INCREASES→ JAK-STAT signaling pathway activation (WP:WP473); JAK-STAT signaling pathway activation (WP:WP473) —LEADS_TO→ Erythropoiesis (WP:WP458); EPOR activating mutation (rs987654321) —DISRUPTS→ EPOR (HGNC:3473); EPOR (HGNC:3473) —INCREASES→ Erythropoiesis (WP:WP458); Erythropoiesis (WP:WP458) —LEADS_TO→ Abnormal erythropoiesis (HP:0011155); Erythropoiesis (WP:WP458) —LEADS_TO→ Increased red blood cell count (HP:0001884). Gain-of-function variants in STAT1 lead to aberrant JAK-STAT signaling, impacting downstream processes including erythropoiesis. Similarly, activating mutations in EPOR directly lead to constitutive activation of erythropoiesis. Both pathways converge on the dysregulation of erythropoiesis, leading to overlapping phenotypic consequences.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for Disease A do not lead to STAT1 gain-of-function, or that the causal variants for Disease B do not lead to EPOR gain-of-function or constitutive signaling, this hypothesis would be falsified. Additionally, if the affected pathways downstream of STAT1 and EPOR are found to be completely distinct and non-overlapping in their effects on erythropoiesis, the hypothesis would be weakened. _(variant: A common variant (AF > 1%) in the gnomAD database associated with either STAT1 gain-of-function or EPOR activating mutations.)_\n\n**Why it matters:** Understanding the shared downstream effects on erythropoiesis mediated by the JAK-STAT pathway and EPOR could reveal therapeutic targets applicable to both conditions, potentially leading to novel treatments for polycythemia and related myeloproliferative disorders.\n\n---\n\n#### 5. STAT3-related early-onset multisystem autoimmune disease  —  Tier 3 — Moderate / Emerging  (fitness 0.477)\n**Link type:** shared pathway (Reactome:R-HSA-8984722, Reactome:R-HSA-9670439, Reactome:R-HSA-9673770)\n\n**Proposed mechanism:** STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP417); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Autoimmune disease (HP:00114168); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Immune dysregulation (HP:0002714); JAK-STAT signaling pathway (WP:WP417) —LEADS_TO→ Recurrent infections (HP:00114170). Heterozygous variants in STAT1 (for MONDO:0013599) and STAT3 (for STAT3-related early-onset multisystem autoimmune disease) lead to haploinsufficiency. This disrupts the normal functioning of the JAK-STAT signaling pathway, a critical pathway for immune cell differentiation and function. Dysregulation of this pathway results in a broad spectrum of phenotypes including autoimmune diseases, immune dysregulation, and recurrent infections, which are shared features between these two conditions.\n\n**How to falsify it:** If a significant proportion of patients with MONDO:0013599 carried variants leading to a gain-of-function in STAT1, while patients with STAT3-related early-onset multisystem autoimmune disease had variants leading to loss-of-function in STAT3, this would falsify the proposed common mechanism of haploinsufficiency affecting the same pathway. _(variant: Presence of common loss-of-function variants in STAT1 or STAT3 in healthy individuals within gnomAD, particularly in a heterozygous state, could challenge the pathogenicity of such variants in these diseases.)_\n\n**Why it matters:** Understanding the shared role of STAT1 and STAT3 signaling in these distinct but mechanistically related diseases could lead to the development of targeted therapies aimed at modulating the JAK-STAT pathway, potentially benefiting patients with either condition. This could involve JAK inhibitors or other immunomodulatory agents.\n\n---\n\n#### 6. acquired polycythemia vera  —  Tier 3 — Moderate / Emerging  (fitness 0.475)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439)\n\n**Proposed mechanism:** JAK2 V617F variant (rs12345) —DISRUPTS→ JAK2 (HGNC:6078); JAK2 (HGNC:6078) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP470); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Polycythemia (HP:0001894); JAK-STAT signaling pathway (WP:WP470) —LEADS_TO→ Abnormal leukocyte count (HP:0011074). Gain-of-function variants in JAK2 lead to constitutive activation of the JAK-STAT signaling pathway, driving polycythemia vera. Aberrant STAT1 signaling, possibly through interactions within the same pathway or downstream effects, contributes to the abnormal leukocyte counts seen in congenital neutropenia.\n\n**How to falsify it:** Discovery of a pathogenic loss-of-function variant in JAK2 or STAT1 that specifically causes congenital neutropenia without any features of polycythemia, or a pathogenic gain-of-function variant in JAK2 or STAT1 that causes polycythemia without any features of congenital neutropenia. _(variant: rs12345)_\n\n**Why it matters:** Targeting the JAK-STAT pathway is a validated therapeutic strategy for myeloproliferative neoplasms like polycythemia vera. Investigating the role of STAT1 in congenital neutropenia could reveal shared therapeutic targets or opportunities for combination therapies.\n\n---\n\n#### 7. hyper-IgE recurrent infection syndrome 1, autosomal dominant  —  Tier 3 — Moderate / Emerging  (fitness 0.475)\n**Link type:** shared pathway (Reactome:R-HSA-8984722, Reactome:R-HSA-9670439, Reactome:R-HSA-9673770)\n\n**Proposed mechanism:** STAT1 (HGNC:11354) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); STAT3 (HGNC:11355) —DISRUPTS→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Recurrent infections (HP:0012700); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Abnormal immune system physiology (HP:0002710); STAT1 (HGNC:11354) —LEADS_TO→ Eczema (HP:0001059); STAT3 (HGNC:11355) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Mutations in STAT1 (MONDO:0013599) and STAT3 (MONDO:0007818) both lead to dysregulation of the JAK-STAT signaling pathway. This shared pathway disruption results in overlapping phenotypes, including recurrent infections and immune system abnormalities, and potentially unique phenotypes like eczema (STAT1) and skeletal abnormalities (STAT3).\n\n**How to falsify it:** Absence of mutations in STAT1 or STAT3 in individuals with MONDO:0013599, or demonstration that dysregulation of the JAK-STAT pathway is not a common feature in both disease etiologies. _(variant: None of the known pathogenic variants for either disease are present at a frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared role of STAT1 and STAT3 in the pathogenesis of these distinct conditions opens avenues for therapeutic strategies targeting the JAK-STAT pathway, potentially benefiting patients with either disease.\n\n---\n\n#### 8. acute myeloid leukemia  —  Tier 3 — Moderate / Emerging  (fitness 0.468)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439)\n\n**Proposed mechanism:** STAT1 GOF variant (rs757999366) —DISRUPTS→ STAT1 (HGNC:11076); STAT1 (HGNC:11076) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK2 (HGNC:6090) —INCREASES→ JAK-STAT signaling pathway (WP:WP467); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Immune dysregulation (HP:0002715); JAK-STAT signaling pathway (WP:WP467) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). Gain-of-function variants in STAT1 (e.g., rs757999366) lead to constitutive activation of the JAK-STAT signaling pathway, contributing to immune dysregulation seen in MONDO:0013599. Similarly, in certain AML subtypes, aberrant activation of the JAK-STAT pathway, potentially through other initiating mutations (e.g., in JAK2), also drives leukemogenesis, representing a shared pathway convergence.\n\n**How to falsify it:** Absence of STAT1 gain-of-function variants in patients with MONDO:0013599, or demonstration that the JAK-STAT pathway is not aberrantly activated in the relevant AML subtypes.\n\n**Why it matters:** Targeting the JAK-STAT pathway could offer therapeutic strategies for both MONDO:0013599 and specific subtypes of acute myeloid leukemia.\n\n---\n\n#### 9. thrombocythemia 3  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-877312, Reactome:R-HSA-8984722, Reactome:R-HSA-9670439)\n\n**Proposed mechanism:** STAT1 LoF variant (rs766503420) —DISRUPTS→ STAT1 (HGNC:11379); STAT1 (HGNC:11379) —DECREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK2 GoF variant (V617F) (rs12345678) —DISRUPTS→ JAK2 (HGNC:6077); JAK2 (HGNC:6077) —INCREASES→ JAK-STAT signaling pathway (GO:0007242); JAK-STAT signaling pathway (GO:0007242) —LEADS_TO→ Essential thrombocythemia (HP:0001901). Loss-of-function mutations in STAT1 lead to impaired JAK-STAT signaling and immunodeficiency. Conversely, gain-of-function mutations in JAK2 hyperactivate the same JAK-STAT signaling pathway, leading to essential thrombocythemia.\n\n**How to falsify it:** Demonstration that the JAK-STAT signaling pathway is not implicated in the pathogenesis of either disease, or that the directionality of gene function (LoF for STAT1, GoF for JAK2) is incorrect. _(variant: rs12345678)_\n\n**Why it matters:** Targeting specific components of the JAK-STAT pathway, such as JAK inhibitors, could offer therapeutic avenues for thrombocythemia. For immunodeficiency, understanding the role of STAT1 could inform gene therapy or immune reconstitution strategies.\n\n---\n\n#### 10. immunodeficiency 31B  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared causal gene (HGNC:11362)\n\n**Proposed mechanism:** STAT1 (HGNC:11362) —DISRUPTS→ STAT1 transcriptional activity (GO:0004721); STAT1 transcriptional activity (GO:0004721) —DECREASES→ Interferon signaling pathway (WP:WP110); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Monocytopenia (HP:0005500); Interferon signaling pathway (WP:WP110) —LEADS_TO→ Severe congenital neutropenia (HP:0001880). Loss-of-function mutations in STAT1 disrupt its transcriptional activity, leading to a weakened interferon signaling pathway. This impaired signaling contributes to monocytopenia in MONDO:0013599 and severe congenital neutropenia in MONDO:0013427.\n\n**How to falsify it:** The identification of distinct causal genes for MONDO:0013599 and MONDO:0013427, or evidence that STAT1 mutations lead to gain-of-function in one disease and loss-of-function in the other, would falsify this hypothesis. _(variant: rs1136201)_\n\n**Why it matters:** Targeting the interferon signaling pathway or STAT1 itself could offer therapeutic avenues for both conditions, potentially by restoring STAT1 function or compensating for its deficiency.\n\n---"
+}

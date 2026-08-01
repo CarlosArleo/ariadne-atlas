@@ -1,0 +1,53 @@
+{
+  "seed": {
+    "id": "MONDO:0009830",
+    "name": "parkinsonian-pyramidal syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012411",
+      "diseaseBName": "giant axonal neuropathy 2",
+      "fitness": 0.4006,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in FBXO7 (null) —DISRUPTS→ FBXO7 (HGNC:27768); Pathogenic variant in DCAF8 (null) —DISRUPTS→ DCAF8 (HGNC:28123); FBXO7 (HGNC:27768) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); DCAF8 (HGNC:28123) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Parkinsonian-pyramidal syndrome (MONDO:0009830); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Giant axonal neuropathy 2 (MONDO:0012411). Pathogenic variants in FBXO7 and DCAF8 lead to the disruption of the ubiquitin-proteasome system. This disruption impairs the degradation of cellular proteins, leading to the accumulation of toxic aggregates and subsequent neuronal dysfunction, manifesting as Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2, respectively. The convergence occurs at the level of the ubiquitin-proteasome system, a critical pathway for cellular protein homeostasis.",
+      "mechanism_narrative": "Pathogenic variant in FBXO7 (null) —DISRUPTS→ FBXO7 (HGNC:27768); Pathogenic variant in DCAF8 (null) —DISRUPTS→ DCAF8 (HGNC:28123); FBXO7 (HGNC:27768) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); DCAF8 (HGNC:28123) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Parkinsonian-pyramidal syndrome (MONDO:0009830); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Giant axonal neuropathy 2 (MONDO:0012411). Pathogenic variants in FBXO7 and DCAF8 lead to the disruption of the ubiquitin-proteasome system. This disruption impairs the degradation of cellular proteins, leading to the accumulation of toxic aggregates and subsequent neuronal dysfunction, manifesting as Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2, respectively. The convergence occurs at the level of the ubiquitin-proteasome system, a critical pathway for cellular protein homeostasis.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if functional studies demonstrate that FBXO7 and DCAF8 do not converge on the ubiquitin-proteasome system, or if distinct and unrelated cellular pathways are proven to be the primary drivers of pathology in each disease.",
+        "gnomad_variant": "The presence of common benign variants in the coding regions of FBXO7 and DCAF8 in large population datasets like gnomAD would not falsify the hypothesis, as the proposed causal variants are expected to be rare."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8951664"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8951664": 233
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012411",
+        "diseaseBName": "giant axonal neuropathy 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8951664"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8951664": 233
+        },
+        "fitness": 0.4006,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in FBXO7 (null) —DISRUPTS→ FBXO7 (HGNC:27768); Pathogenic variant in DCAF8 (null) —DISRUPTS→ DCAF8 (HGNC:28123); FBXO7 (HGNC:27768) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); DCAF8 (HGNC:28123) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Parkinsonian-pyramidal syndrome (MONDO:0009830); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Giant axonal neuropathy 2 (MONDO:0012411). Pathogenic variants in FBXO7 and DCAF8 lead to the disruption of the ubiquitin-proteasome system. This disruption impairs the degradation of cellular proteins, leading to the accumulation of toxic aggregates and subsequent neuronal dysfunction, manifesting as Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2, respectively. The convergence occurs at the level of the ubiquitin-proteasome system, a critical pathway for cellular protein homeostasis.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if functional studies demonstrate that FBXO7 and DCAF8 do not converge on the ubiquitin-proteasome system, or if distinct and unrelated cellular pathways are proven to be the primary drivers of pathology in each disease.",
+          "gnomad_variant": "The presence of common benign variants in the coding regions of FBXO7 and DCAF8 in large population datasets like gnomAD would not falsify the hypothesis, as the proposed causal variants are expected to be rare."
+        },
+        "translational": "Understanding the shared role of FBXO7 and DCAF8 in the ubiquitin-proteasome system offers potential therapeutic avenues for both Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2. Strategies aimed at enhancing protein degradation or mitigating the accumulation of toxic protein aggregates could be explored as common therapeutic interventions."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T16:08:16.071Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** parkinsonian-pyramidal syndrome (MONDO:0009830)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | giant axonal neuropathy 2 (MONDO:0012411) | shared pathway | Tier 3 | 0.401 | Reactome:R-HSA-8951664 |\n\n### CANDIDATE DETAIL\n#### 1. giant axonal neuropathy 2  —  Tier 3 — Moderate / Emerging  (fitness 0.401)\n**Link type:** shared pathway (Reactome:R-HSA-8951664)\n\n**Proposed mechanism:** Pathogenic variant in FBXO7 (null) —DISRUPTS→ FBXO7 (HGNC:27768); Pathogenic variant in DCAF8 (null) —DISRUPTS→ DCAF8 (HGNC:28123); FBXO7 (HGNC:27768) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); DCAF8 (HGNC:28123) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Parkinsonian-pyramidal syndrome (MONDO:0009830); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Giant axonal neuropathy 2 (MONDO:0012411). Pathogenic variants in FBXO7 and DCAF8 lead to the disruption of the ubiquitin-proteasome system. This disruption impairs the degradation of cellular proteins, leading to the accumulation of toxic aggregates and subsequent neuronal dysfunction, manifesting as Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2, respectively. The convergence occurs at the level of the ubiquitin-proteasome system, a critical pathway for cellular protein homeostasis.\n\n**How to falsify it:** The hypothesis would be falsified if functional studies demonstrate that FBXO7 and DCAF8 do not converge on the ubiquitin-proteasome system, or if distinct and unrelated cellular pathways are proven to be the primary drivers of pathology in each disease. _(variant: The presence of common benign variants in the coding regions of FBXO7 and DCAF8 in large population datasets like gnomAD would not falsify the hypothesis, as the proposed causal variants are expected to be rare.)_\n\n**Why it matters:** Understanding the shared role of FBXO7 and DCAF8 in the ubiquitin-proteasome system offers potential therapeutic avenues for both Parkinsonian-pyramidal syndrome and Giant axonal neuropathy 2. Strategies aimed at enhancing protein degradation or mitigating the accumulation of toxic protein aggregates could be explored as common therapeutic interventions.\n\n---"
+}

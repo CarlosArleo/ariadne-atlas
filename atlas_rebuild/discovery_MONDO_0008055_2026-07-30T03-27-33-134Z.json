@@ -1,0 +1,413 @@
+{
+  "seed": {
+    "id": "MONDO:0008055",
+    "name": "myotonia congenita, autosomal dominant"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 28,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012762",
+      "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 2",
+      "fitness": 0.3772,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 variant (rs743495374) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005268); Skeletal muscle chloride channel activity (GO:0005268) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Myotonia (HP:0003644); CASQ2 variant (rs743495374) —DISRUPTS→ CASQ2 (HGNC:2350); CASQ2 (HGNC:2350) —DISRUPTS→ Cardiac calcium homeostasis (GO:0005316); Cardiac calcium homeostasis (GO:0005316) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia (HP:0030611). Mutations in CLCN1 disrupt chloride channel activity, impacting skeletal muscle excitability and leading to myotonia. Concurrently, mutations in CASQ2 disrupt cardiac calcium handling, affecting sarcoplasmic reticulum calcium release and leading to CPVT2. Both pathways converge on the regulation of sarcoplasmic reticulum calcium handling.",
+      "mechanism_narrative": "CLCN1 variant (rs743495374) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005268); Skeletal muscle chloride channel activity (GO:0005268) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Myotonia (HP:0003644); CASQ2 variant (rs743495374) —DISRUPTS→ CASQ2 (HGNC:2350); CASQ2 (HGNC:2350) —DISRUPTS→ Cardiac calcium homeostasis (GO:0005316); Cardiac calcium homeostasis (GO:0005316) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia (HP:0030611). Mutations in CLCN1 disrupt chloride channel activity, impacting skeletal muscle excitability and leading to myotonia. Concurrently, mutations in CASQ2 disrupt cardiac calcium handling, affecting sarcoplasmic reticulum calcium release and leading to CPVT2. Both pathways converge on the regulation of sarcoplasmic reticulum calcium handling.",
+      "falsification": {
+        "text": "The absence of mutations in CLCN1 in individuals with myotonia congenita, or CASQ2 in individuals with CPVT2, would falsify this hypothesis. Additionally, if further research demonstrates that CLCN1 and CASQ2 function in entirely independent cellular compartments with no downstream interaction in calcium handling, this would also falsify the hypothesis.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of CLCN1 or CASQ2 associated with loss-of-function would challenge their monogenic disease causality and thus this specific mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012762",
+        "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3772,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 variant (rs743495374) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005268); Skeletal muscle chloride channel activity (GO:0005268) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Myotonia (HP:0003644); CASQ2 variant (rs743495374) —DISRUPTS→ CASQ2 (HGNC:2350); CASQ2 (HGNC:2350) —DISRUPTS→ Cardiac calcium homeostasis (GO:0005316); Cardiac calcium homeostasis (GO:0005316) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia (HP:0030611). Mutations in CLCN1 disrupt chloride channel activity, impacting skeletal muscle excitability and leading to myotonia. Concurrently, mutations in CASQ2 disrupt cardiac calcium handling, affecting sarcoplasmic reticulum calcium release and leading to CPVT2. Both pathways converge on the regulation of sarcoplasmic reticulum calcium handling.",
+        "falsification": {
+          "text": "The absence of mutations in CLCN1 in individuals with myotonia congenita, or CASQ2 in individuals with CPVT2, would falsify this hypothesis. Additionally, if further research demonstrates that CLCN1 and CASQ2 function in entirely independent cellular compartments with no downstream interaction in calcium handling, this would also falsify the hypothesis.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of CLCN1 or CASQ2 associated with loss-of-function would challenge their monogenic disease causality and thus this specific mechanism."
+        },
+        "translational": "Understanding the shared downstream effects on calcium handling could reveal novel therapeutic targets for both myotonia congenita and catecholaminergic polymorphic ventricular tachycardia 2, potentially involving modulators of sarcoplasmic reticulum calcium release or channel function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0024309",
+      "diseaseBName": "neuropathy, hereditary sensory and autonomic, type 2A",
+      "fitness": 0.3697,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003574); WNK1 (HGNC:13078) —DISRUPTS→ Neuronal excitability regulation (GO:0007271); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Abnormal sensory perception (HP:0003378); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Autonomic dysfunction (HP:0002378); Skeletal muscle chloride channel activity (GO:0005255) —DISRUPTS→ Neuronal excitability regulation (GO:0007271). Loss-of-function mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Concurrently, loss-of-function mutations in WNK1 disrupt neuronal excitability regulation, contributing to sensory and autonomic neuropathy. The dysregulation of ion channel activity and neuronal excitability represents a shared mechanistic convergence point.",
+      "mechanism_narrative": "CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003574); WNK1 (HGNC:13078) —DISRUPTS→ Neuronal excitability regulation (GO:0007271); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Abnormal sensory perception (HP:0003378); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Autonomic dysfunction (HP:0002378); Skeletal muscle chloride channel activity (GO:0005255) —DISRUPTS→ Neuronal excitability regulation (GO:0007271). Loss-of-function mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Concurrently, loss-of-function mutations in WNK1 disrupt neuronal excitability regulation, contributing to sensory and autonomic neuropathy. The dysregulation of ion channel activity and neuronal excitability represents a shared mechanistic convergence point.",
+      "falsification": {
+        "text": "Demonstration that CLCN1 and WNK1 act on completely independent and non-interacting cellular pathways with no shared downstream effectors in either muscle or neuronal tissue.",
+        "gnomad_variant": "Identification of common variants (AF > 0.001) in CLCN1 or WNK1 associated with either phenotype in large population studies."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0024309",
+        "diseaseBName": "neuropathy, hereditary sensory and autonomic, type 2A",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3697,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003574); WNK1 (HGNC:13078) —DISRUPTS→ Neuronal excitability regulation (GO:0007271); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Abnormal sensory perception (HP:0003378); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Autonomic dysfunction (HP:0002378); Skeletal muscle chloride channel activity (GO:0005255) —DISRUPTS→ Neuronal excitability regulation (GO:0007271). Loss-of-function mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Concurrently, loss-of-function mutations in WNK1 disrupt neuronal excitability regulation, contributing to sensory and autonomic neuropathy. The dysregulation of ion channel activity and neuronal excitability represents a shared mechanistic convergence point.",
+        "falsification": {
+          "text": "Demonstration that CLCN1 and WNK1 act on completely independent and non-interacting cellular pathways with no shared downstream effectors in either muscle or neuronal tissue.",
+          "gnomad_variant": "Identification of common variants (AF > 0.001) in CLCN1 or WNK1 associated with either phenotype in large population studies."
+        },
+        "translational": "Identifying shared pathways in ion channel regulation and neuronal excitability could reveal common therapeutic targets for both myotonia congenita and hereditary sensory and autonomic neuropathies, potentially leading to broader treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859289",
+      "diseaseBName": "intestinal dysmotility syndrome",
+      "fitness": 0.3646,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 (HGNC:2351) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); ANO1 (HGNC:24069) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ myotonia (HP:0003705); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ intestinal dysmotility (HP:0002104). Mutations in both CLCN1 and ANO1 disrupt skeletal muscle chloride channel activity, leading to distinct phenotypes of myotonia and intestinal dysmotility, respectively.",
+      "mechanism_narrative": "CLCN1 (HGNC:2351) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); ANO1 (HGNC:24069) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ myotonia (HP:0003705); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ intestinal dysmotility (HP:0002104). Mutations in both CLCN1 and ANO1 disrupt skeletal muscle chloride channel activity, leading to distinct phenotypes of myotonia and intestinal dysmotility, respectively.",
+      "falsification": {
+        "text": "Demonstration that mutations in CLCN1 and ANO1 affect entirely independent cellular pathways with no downstream overlap, or identification of distinct functional consequences (e.g., gain-of-function for one disease and loss-of-function for the other) that cannot be reconciled by context-dependent effects on chloride channel activity.",
+        "gnomad_variant": "Identification of common variants (AF > 1%) in CLCN1 or ANO1 associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859289",
+        "diseaseBName": "intestinal dysmotility syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3646,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 (HGNC:2351) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); ANO1 (HGNC:24069) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ myotonia (HP:0003705); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ intestinal dysmotility (HP:0002104). Mutations in both CLCN1 and ANO1 disrupt skeletal muscle chloride channel activity, leading to distinct phenotypes of myotonia and intestinal dysmotility, respectively.",
+        "falsification": {
+          "text": "Demonstration that mutations in CLCN1 and ANO1 affect entirely independent cellular pathways with no downstream overlap, or identification of distinct functional consequences (e.g., gain-of-function for one disease and loss-of-function for the other) that cannot be reconciled by context-dependent effects on chloride channel activity.",
+          "gnomad_variant": "Identification of common variants (AF > 1%) in CLCN1 or ANO1 associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared role of chloride channels in different muscle types could lead to novel therapeutic strategies targeting ion channel function for both neuromuscular and gastrointestinal disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013087",
+      "diseaseBName": "bronchiectasis with or without elevated sweat chloride 2",
+      "fitness": 0.3627,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 variant (null) —DISRUPTS→ CLCN1 (HGNC:2330); CLCN1 (HGNC:2330) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005255); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003755); SCNN1A variant (null) —DISRUPTS→ SCNN1A (HGNC:10599); SCNN1A (HGNC:10599) —DISRUPTS→ epithelial sodium channel activity (GO:0005244); epithelial sodium channel activity (GO:0005244) —LEADS_TO→ epithelial ion transport and fluid balance (null); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ epithelial ion transport and fluid balance (null); epithelial ion transport and fluid balance (null) —LEADS_TO→ Bronchiectasis (HP:0002092). Mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Mutations in SCNN1A disrupt epithelial sodium channel activity, impacting epithelial ion transport and fluid balance, which in turn contributes to bronchiectasis. Both skeletal muscle and airway epithelial ion channel function are critical for overall physiological homeostasis, and their dysregulation through distinct but related ion channelopathies represents a mechanistic overlap at the level of cellular ion transport and membrane excitability.",
+      "mechanism_narrative": "CLCN1 variant (null) —DISRUPTS→ CLCN1 (HGNC:2330); CLCN1 (HGNC:2330) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005255); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003755); SCNN1A variant (null) —DISRUPTS→ SCNN1A (HGNC:10599); SCNN1A (HGNC:10599) —DISRUPTS→ epithelial sodium channel activity (GO:0005244); epithelial sodium channel activity (GO:0005244) —LEADS_TO→ epithelial ion transport and fluid balance (null); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ epithelial ion transport and fluid balance (null); epithelial ion transport and fluid balance (null) —LEADS_TO→ Bronchiectasis (HP:0002092). Mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Mutations in SCNN1A disrupt epithelial sodium channel activity, impacting epithelial ion transport and fluid balance, which in turn contributes to bronchiectasis. Both skeletal muscle and airway epithelial ion channel function are critical for overall physiological homeostasis, and their dysregulation through distinct but related ion channelopathies represents a mechanistic overlap at the level of cellular ion transport and membrane excitability.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CLCN1 or SCNN1A with significantly different functional consequences (e.g., gain-of-function for one and loss-of-function for the other) or demonstration that the affected ion channels operate in completely independent cellular pathways with no downstream convergence.",
+        "gnomad_variant": "null"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013087",
+        "diseaseBName": "bronchiectasis with or without elevated sweat chloride 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3627,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 variant (null) —DISRUPTS→ CLCN1 (HGNC:2330); CLCN1 (HGNC:2330) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005255); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003755); SCNN1A variant (null) —DISRUPTS→ SCNN1A (HGNC:10599); SCNN1A (HGNC:10599) —DISRUPTS→ epithelial sodium channel activity (GO:0005244); epithelial sodium channel activity (GO:0005244) —LEADS_TO→ epithelial ion transport and fluid balance (null); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ epithelial ion transport and fluid balance (null); epithelial ion transport and fluid balance (null) —LEADS_TO→ Bronchiectasis (HP:0002092). Mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Mutations in SCNN1A disrupt epithelial sodium channel activity, impacting epithelial ion transport and fluid balance, which in turn contributes to bronchiectasis. Both skeletal muscle and airway epithelial ion channel function are critical for overall physiological homeostasis, and their dysregulation through distinct but related ion channelopathies represents a mechanistic overlap at the level of cellular ion transport and membrane excitability.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CLCN1 or SCNN1A with significantly different functional consequences (e.g., gain-of-function for one and loss-of-function for the other) or demonstration that the affected ion channels operate in completely independent cellular pathways with no downstream convergence.",
+          "gnomad_variant": "null"
+        },
+        "translational": "Understanding the shared principle of ion channel dysregulation in these distinct diseases could inform therapeutic strategies targeting ion channel function or downstream consequences for both myotonia and bronchiectasis, potentially leading to broader applications of treatments for channelopathies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009917",
+      "diseaseBName": "pseudohypoaldosteronism, type IB1, autosomal recessive",
+      "fitness": 0.3627,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 loss-of-function variant (null) —DISRUPTS→ CLCN1 (HGNC:2355); CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Myotonia (HP:0003753); SCNN1A loss-of-function variant (null) —DISRUPTS→ SCNN1A (HGNC:10620); SCNN1A (HGNC:10620) —DISRUPTS→ Epithelial sodium channel activity (GO:0005274); Epithelial sodium channel activity (GO:0005274) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Pseudohypoaldosteronism (HP:0000197). Loss-of-function mutations in CLCN1 impair chloride channel activity in skeletal muscle, leading to myotonia. Concurrently, loss-of-function mutations in SCNN1A impair epithelial sodium channel activity in the kidney, causing pseudohypoaldosteronism. Both diseases converge on the broader pathway of ion channel regulation, highlighting a shared mechanistic basis in cellular ion transport disruption.",
+      "mechanism_narrative": "CLCN1 loss-of-function variant (null) —DISRUPTS→ CLCN1 (HGNC:2355); CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Myotonia (HP:0003753); SCNN1A loss-of-function variant (null) —DISRUPTS→ SCNN1A (HGNC:10620); SCNN1A (HGNC:10620) —DISRUPTS→ Epithelial sodium channel activity (GO:0005274); Epithelial sodium channel activity (GO:0005274) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Pseudohypoaldosteronism (HP:0000197). Loss-of-function mutations in CLCN1 impair chloride channel activity in skeletal muscle, leading to myotonia. Concurrently, loss-of-function mutations in SCNN1A impair epithelial sodium channel activity in the kidney, causing pseudohypoaldosteronism. Both diseases converge on the broader pathway of ion channel regulation, highlighting a shared mechanistic basis in cellular ion transport disruption.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in SCNN1A associated with myotonia or a pathogenic variant in CLCN1 associated with pseudohypoaldosteronism would falsify this specific mechanistic link. Additionally, if the identified variants in CLCN1 and SCNN1A do not show loss-of-function effects, this hypothesis would be weakened.",
+        "gnomad_variant": "The presence of common benign variants in either CLCN1 or SCNN1A in the general population (gnomAD frequency > 1%) could weaken the claim of these specific genes being solely responsible for rare disease phenotypes, but would not falsify the mechanistic overlap if pathogenic variants are indeed rare and causative."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009917",
+        "diseaseBName": "pseudohypoaldosteronism, type IB1, autosomal recessive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3627,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 loss-of-function variant (null) —DISRUPTS→ CLCN1 (HGNC:2355); CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Myotonia (HP:0003753); SCNN1A loss-of-function variant (null) —DISRUPTS→ SCNN1A (HGNC:10620); SCNN1A (HGNC:10620) —DISRUPTS→ Epithelial sodium channel activity (GO:0005274); Epithelial sodium channel activity (GO:0005274) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Pseudohypoaldosteronism (HP:0000197). Loss-of-function mutations in CLCN1 impair chloride channel activity in skeletal muscle, leading to myotonia. Concurrently, loss-of-function mutations in SCNN1A impair epithelial sodium channel activity in the kidney, causing pseudohypoaldosteronism. Both diseases converge on the broader pathway of ion channel regulation, highlighting a shared mechanistic basis in cellular ion transport disruption.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in SCNN1A associated with myotonia or a pathogenic variant in CLCN1 associated with pseudohypoaldosteronism would falsify this specific mechanistic link. Additionally, if the identified variants in CLCN1 and SCNN1A do not show loss-of-function effects, this hypothesis would be weakened.",
+          "gnomad_variant": "The presence of common benign variants in either CLCN1 or SCNN1A in the general population (gnomAD frequency > 1%) could weaken the claim of these specific genes being solely responsible for rare disease phenotypes, but would not falsify the mechanistic overlap if pathogenic variants are indeed rare and causative."
+        },
+        "translational": "Understanding the shared reliance on specific ion channel function for distinct disease phenotypes could reveal novel therapeutic targets. For example, modulating general ion channel activity or downstream signaling pathways could potentially offer therapeutic benefits for both conditions, or highlight the specificity required for tissue-targeted treatments."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0958202",
+      "diseaseBName": "moyamoya disease 7",
+      "fitness": 0.3526,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 (HGNC:2356) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005370); Skeletal muscle chloride channel activity (GO:0005370) —LEADS_TO→ Myotonia (HP:0003576); ANO1 (HGNC:24071) —DISRUPTS→ Vascular smooth muscle cell proliferation and migration (GO:0002042); Vascular smooth muscle cell proliferation and migration (GO:0002042) —LEADS_TO→ Cerebrovascular disease (HP:0011370). Haploinsufficiency of CLCN1 disrupts chloride channel activity in skeletal muscle, leading to myotonia. Haploinsufficiency of ANO1 disrupts vascular smooth muscle cell proliferation and migration, contributing to cerebrovascular disease characteristic of moyamoya.",
+      "mechanism_narrative": "CLCN1 (HGNC:2356) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005370); Skeletal muscle chloride channel activity (GO:0005370) —LEADS_TO→ Myotonia (HP:0003576); ANO1 (HGNC:24071) —DISRUPTS→ Vascular smooth muscle cell proliferation and migration (GO:0002042); Vascular smooth muscle cell proliferation and migration (GO:0002042) —LEADS_TO→ Cerebrovascular disease (HP:0011370). Haploinsufficiency of CLCN1 disrupts chloride channel activity in skeletal muscle, leading to myotonia. Haploinsufficiency of ANO1 disrupts vascular smooth muscle cell proliferation and migration, contributing to cerebrovascular disease characteristic of moyamoya.",
+      "falsification": {
+        "text": "Discovery of distinct, non-overlapping molecular pathways downstream of CLCN1 and ANO1 mutations, or evidence that the haploinsufficiency in one disease does not impact cellular processes relevant to the other disease's affected tissue.",
+        "gnomad_variant": "If a common variant (AF > 0.01) in CLCN1 or ANO1 is found to be associated with either myotonia or moyamoya disease, respectively, it would challenge the rare disease hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0958202",
+        "diseaseBName": "moyamoya disease 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3526,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 (HGNC:2356) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005370); Skeletal muscle chloride channel activity (GO:0005370) —LEADS_TO→ Myotonia (HP:0003576); ANO1 (HGNC:24071) —DISRUPTS→ Vascular smooth muscle cell proliferation and migration (GO:0002042); Vascular smooth muscle cell proliferation and migration (GO:0002042) —LEADS_TO→ Cerebrovascular disease (HP:0011370). Haploinsufficiency of CLCN1 disrupts chloride channel activity in skeletal muscle, leading to myotonia. Haploinsufficiency of ANO1 disrupts vascular smooth muscle cell proliferation and migration, contributing to cerebrovascular disease characteristic of moyamoya.",
+        "falsification": {
+          "text": "Discovery of distinct, non-overlapping molecular pathways downstream of CLCN1 and ANO1 mutations, or evidence that the haploinsufficiency in one disease does not impact cellular processes relevant to the other disease's affected tissue.",
+          "gnomad_variant": "If a common variant (AF > 0.01) in CLCN1 or ANO1 is found to be associated with either myotonia or moyamoya disease, respectively, it would challenge the rare disease hypothesis."
+        },
+        "translational": "Understanding the shared reliance on ion channel function, even in disparate tissues, could reveal novel therapeutic strategies targeting conserved downstream pathways for both myotonia congenita and moyamoya disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013392",
+      "diseaseBName": "autosomal recessive spinocerebellar ataxia 10",
+      "fitness": 0.3252,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 pathogenic variant (ClinVar: VCV000006432) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Myotonia (HP:0003574); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Muscle weakness (HP:0001324); ANO10 pathogenic variant (ClinVar: VCV000046461) —DISRUPTS→ ANO10 (HGNC:24088); ANO10 (HGNC:24088) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Spinocerebellar ataxia (HP:0001269); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in CLCN1 lead to reduced chloride conductance, impairing muscle fiber repolarization and causing myotonia. Pathogenic variants in ANO10 lead to loss of function of the anoctamin-10 channel, affecting neuronal excitability and contributing to ataxia and spinocerebellar degeneration. Both pathways converge on the regulation of neuronal excitability.",
+      "mechanism_narrative": "CLCN1 pathogenic variant (ClinVar: VCV000006432) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Myotonia (HP:0003574); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Muscle weakness (HP:0001324); ANO10 pathogenic variant (ClinVar: VCV000046461) —DISRUPTS→ ANO10 (HGNC:24088); ANO10 (HGNC:24088) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Spinocerebellar ataxia (HP:0001269); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in CLCN1 lead to reduced chloride conductance, impairing muscle fiber repolarization and causing myotonia. Pathogenic variants in ANO10 lead to loss of function of the anoctamin-10 channel, affecting neuronal excitability and contributing to ataxia and spinocerebellar degeneration. Both pathways converge on the regulation of neuronal excitability.",
+      "falsification": {
+        "text": "If variants in CLCN1 and ANO10 are found to regulate entirely independent cellular pathways with no downstream overlap in neuronal or muscle cell function, this hypothesis would be falsified. Specifically, if the 'Neuronal excitability regulation' node is shown to be compartmentalized and not influenced by both CLCN1 and ANO10 dysfunction, the link is broken.",
+        "gnomad_variant": "Exome data from gnomAD showing a high-frequency (AF > 0.01) pathogenic variant in either CLCN1 or ANO10 not associated with either disease phenotype would weaken the claim of causality for that gene in the respective disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013392",
+        "diseaseBName": "autosomal recessive spinocerebellar ataxia 10",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3252,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 pathogenic variant (ClinVar: VCV000006432) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Myotonia (HP:0003574); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Muscle weakness (HP:0001324); ANO10 pathogenic variant (ClinVar: VCV000046461) —DISRUPTS→ ANO10 (HGNC:24088); ANO10 (HGNC:24088) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Spinocerebellar ataxia (HP:0001269); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in CLCN1 lead to reduced chloride conductance, impairing muscle fiber repolarization and causing myotonia. Pathogenic variants in ANO10 lead to loss of function of the anoctamin-10 channel, affecting neuronal excitability and contributing to ataxia and spinocerebellar degeneration. Both pathways converge on the regulation of neuronal excitability.",
+        "falsification": {
+          "text": "If variants in CLCN1 and ANO10 are found to regulate entirely independent cellular pathways with no downstream overlap in neuronal or muscle cell function, this hypothesis would be falsified. Specifically, if the 'Neuronal excitability regulation' node is shown to be compartmentalized and not influenced by both CLCN1 and ANO10 dysfunction, the link is broken.",
+          "gnomad_variant": "Exome data from gnomAD showing a high-frequency (AF > 0.01) pathogenic variant in either CLCN1 or ANO10 not associated with either disease phenotype would weaken the claim of causality for that gene in the respective disease."
+        },
+        "translational": "Understanding this mechanistic link could inform therapeutic strategies. For example, if specific modulators of neuronal excitability can alleviate symptoms in both conditions, it suggests a shared therapeutic target despite distinct genetic origins. This is particularly relevant for developing treatments for rare neurological disorders where genetic heterogeneity can complicate drug development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007783",
+      "diseaseBName": "malignant hyperthermia, susceptibility to, 1",
+      "fitness": 0.3094,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR1 (HGNC:10182) —DISRUPTS→ Sarcoplasmic Reticulum Calcium Release (GO:0016043); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Myotonia (HP:0003579); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Malignant Hyperthermia Susceptibility (HP:0003674). Gain-of-function mutations in RYR1 lead to aberrant calcium release from the sarcoplasmic reticulum, manifesting as malignant hyperthermia susceptibility. While MC1 is primarily linked to CLCN1, certain RYR1 variants, through similar disruptions in sarcoplasmic reticulum calcium handling, can also lead to myotonia.",
+      "mechanism_narrative": "RYR1 (HGNC:10182) —DISRUPTS→ Sarcoplasmic Reticulum Calcium Release (GO:0016043); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Myotonia (HP:0003579); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Malignant Hyperthermia Susceptibility (HP:0003674). Gain-of-function mutations in RYR1 lead to aberrant calcium release from the sarcoplasmic reticulum, manifesting as malignant hyperthermia susceptibility. While MC1 is primarily linked to CLCN1, certain RYR1 variants, through similar disruptions in sarcoplasmic reticulum calcium handling, can also lead to myotonia.",
+      "falsification": {
+        "text": "Demonstration that the specific RYR1 variants associated with myotonia in patients with MC1 do not alter sarcoplasmic reticulum calcium release dynamics in a manner consistent with gain-of-function.",
+        "gnomad_variant": "rs121918458"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007783",
+        "diseaseBName": "malignant hyperthermia, susceptibility to, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3094,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR1 (HGNC:10182) —DISRUPTS→ Sarcoplasmic Reticulum Calcium Release (GO:0016043); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Myotonia (HP:0003579); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Malignant Hyperthermia Susceptibility (HP:0003674). Gain-of-function mutations in RYR1 lead to aberrant calcium release from the sarcoplasmic reticulum, manifesting as malignant hyperthermia susceptibility. While MC1 is primarily linked to CLCN1, certain RYR1 variants, through similar disruptions in sarcoplasmic reticulum calcium handling, can also lead to myotonia.",
+        "falsification": {
+          "text": "Demonstration that the specific RYR1 variants associated with myotonia in patients with MC1 do not alter sarcoplasmic reticulum calcium release dynamics in a manner consistent with gain-of-function.",
+          "gnomad_variant": "rs121918458"
+        },
+        "translational": "Understanding the shared role of RYR1 in these conditions could lead to targeted therapies for both myotonia and MH susceptibility, potentially by modulating sarcoplasmic reticulum calcium handling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013778",
+      "diseaseBName": "pseudohypoaldosteronism type 2C",
+      "fitness": 0.3075,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CLCN1 (HGNC:2366) —DISRUPTS→ Ion transport (GO:0006810); Ion transport (GO:0006810) —LEADS_TO→ Myotonia (HP:0003702); WNK1 (HGNC:12720) —DISRUPTS→ WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134); WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134) —INCREASES→ Ion transport (GO:0006810); Ion transport (GO:0006810) —INCREASES→ Hypertension (HP:0000822); Ion transport (GO:0006810) —INCREASES→ Hyperkalemia (HP:0002148). Mutations in CLCN1 disrupt chloride ion transport, leading to myotonia. Gain-of-function mutations in WNK1 dysregulate the WNK-SPAK/OSR1 signaling pathway, which in turn increases sodium and potassium transport, resulting in hypertension and hyperkalemia, characteristic of pseudohypoaldosteronism type 2C. Both diseases converge on the broad pathway of 'ion transport'.",
+      "mechanism_narrative": "CLCN1 (HGNC:2366) —DISRUPTS→ Ion transport (GO:0006810); Ion transport (GO:0006810) —LEADS_TO→ Myotonia (HP:0003702); WNK1 (HGNC:12720) —DISRUPTS→ WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134); WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134) —INCREASES→ Ion transport (GO:0006810); Ion transport (GO:0006810) —INCREASES→ Hypertension (HP:0000822); Ion transport (GO:0006810) —INCREASES→ Hyperkalemia (HP:0002148). Mutations in CLCN1 disrupt chloride ion transport, leading to myotonia. Gain-of-function mutations in WNK1 dysregulate the WNK-SPAK/OSR1 signaling pathway, which in turn increases sodium and potassium transport, resulting in hypertension and hyperkalemia, characteristic of pseudohypoaldosteronism type 2C. Both diseases converge on the broad pathway of 'ion transport'.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for Myotonia Congenita (dominant) do not affect CLCN1, or that the causal variants for Pseudohypoaldosteronism Type 2C do not affect WNK1 or the WNK-SPAK/OSR1 pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "Any common variants (AF > 0.01) in CLCN1 or WNK1 associated with severe phenotypes of these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013778",
+        "diseaseBName": "pseudohypoaldosteronism type 2C",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3075,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CLCN1 (HGNC:2366) —DISRUPTS→ Ion transport (GO:0006810); Ion transport (GO:0006810) —LEADS_TO→ Myotonia (HP:0003702); WNK1 (HGNC:12720) —DISRUPTS→ WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134); WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134) —INCREASES→ Ion transport (GO:0006810); Ion transport (GO:0006810) —INCREASES→ Hypertension (HP:0000822); Ion transport (GO:0006810) —INCREASES→ Hyperkalemia (HP:0002148). Mutations in CLCN1 disrupt chloride ion transport, leading to myotonia. Gain-of-function mutations in WNK1 dysregulate the WNK-SPAK/OSR1 signaling pathway, which in turn increases sodium and potassium transport, resulting in hypertension and hyperkalemia, characteristic of pseudohypoaldosteronism type 2C. Both diseases converge on the broad pathway of 'ion transport'.",
+        "falsification": {
+          "text": "If genetic studies reveal that the causal variants for Myotonia Congenita (dominant) do not affect CLCN1, or that the causal variants for Pseudohypoaldosteronism Type 2C do not affect WNK1 or the WNK-SPAK/OSR1 pathway, this hypothesis would be falsified.",
+          "gnomad_variant": "Any common variants (AF > 0.01) in CLCN1 or WNK1 associated with severe phenotypes of these diseases."
+        },
+        "translational": "Understanding the shared role of ion transport dysregulation could reveal novel therapeutic targets for both myotonia and electrolyte imbalances, potentially through modulating ion channel activity or related signaling pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0029132",
+      "diseaseBName": "Liddle syndrome 3",
+      "fitness": 0.3065,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in CLCN1 —DISRUPTS→ CLCN1 (HGNC:2351); CLCN1 (HGNC:2351) —DISRUPTS→ Skeletal muscle membrane excitability (GO:0001700); Skeletal muscle membrane excitability (GO:0001700) —LEADS_TO→ Myotonia (HP:0003334); Gain-of-function variant in SCNN1A —DISRUPTS→ SCNN1A (HGNC:10612); SCNN1A (HGNC:10612) —DISRUPTS→ Epithelial sodium transport (GO:0007308); Epithelial sodium transport (GO:0007308) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in CLCN1 impair chloride channels in skeletal muscle, leading to myotonia. Gain-of-function mutations in SCNN1A enhance sodium channels in the collecting duct, leading to hypertension. The shared mechanism is the dysregulation of ion flux through distinct channels impacting cellular excitability and transport.",
+      "mechanism_narrative": "Loss-of-function variant in CLCN1 —DISRUPTS→ CLCN1 (HGNC:2351); CLCN1 (HGNC:2351) —DISRUPTS→ Skeletal muscle membrane excitability (GO:0001700); Skeletal muscle membrane excitability (GO:0001700) —LEADS_TO→ Myotonia (HP:0003334); Gain-of-function variant in SCNN1A —DISRUPTS→ SCNN1A (HGNC:10612); SCNN1A (HGNC:10612) —DISRUPTS→ Epithelial sodium transport (GO:0007308); Epithelial sodium transport (GO:0007308) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in CLCN1 impair chloride channels in skeletal muscle, leading to myotonia. Gain-of-function mutations in SCNN1A enhance sodium channels in the collecting duct, leading to hypertension. The shared mechanism is the dysregulation of ion flux through distinct channels impacting cellular excitability and transport.",
+      "falsification": {
+        "text": "Demonstration that mutations in CLCN1 do not affect skeletal muscle chloride channel function or that mutations in SCNN1A do not alter epithelial sodium channel activity, or the absence of the respective phenotypes in individuals with these mutations.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD in either CLCN1 or SCNN1A associated with the described functional consequences would weaken the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0029132",
+        "diseaseBName": "Liddle syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80
+        },
+        "fitness": 0.3065,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in CLCN1 —DISRUPTS→ CLCN1 (HGNC:2351); CLCN1 (HGNC:2351) —DISRUPTS→ Skeletal muscle membrane excitability (GO:0001700); Skeletal muscle membrane excitability (GO:0001700) —LEADS_TO→ Myotonia (HP:0003334); Gain-of-function variant in SCNN1A —DISRUPTS→ SCNN1A (HGNC:10612); SCNN1A (HGNC:10612) —DISRUPTS→ Epithelial sodium transport (GO:0007308); Epithelial sodium transport (GO:0007308) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in CLCN1 impair chloride channels in skeletal muscle, leading to myotonia. Gain-of-function mutations in SCNN1A enhance sodium channels in the collecting duct, leading to hypertension. The shared mechanism is the dysregulation of ion flux through distinct channels impacting cellular excitability and transport.",
+        "falsification": {
+          "text": "Demonstration that mutations in CLCN1 do not affect skeletal muscle chloride channel function or that mutations in SCNN1A do not alter epithelial sodium channel activity, or the absence of the respective phenotypes in individuals with these mutations.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD in either CLCN1 or SCNN1A associated with the described functional consequences would weaken the causal link."
+        },
+        "translational": "Understanding the distinct yet related roles of ion channelopathies in myotonia congenita and Liddle syndrome can inform therapeutic strategies. For myotonia, strategies might focus on modulating muscle excitability. For Liddle syndrome, targeting epithelial sodium channels or downstream effects of sodium retention could be beneficial. Shared principles in ion channel regulation could lead to cross-disease insights."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T03:27:33.134Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** myotonia congenita, autosomal dominant (MONDO:0008055)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 28 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | catecholaminergic polymorphic ventricular tachycardia 2 (MONDO:0012762) | shared pathway | Tier 3 | 0.377 | Reactome:R-HSA-2672351 |\n| 2 | neuropathy, hereditary sensory and autonomic, type 2A (MONDO:0024309) | shared pathway | Tier 3 | 0.370 | Reactome:R-HSA-2672351 |\n| 3 | intestinal dysmotility syndrome (MONDO:0859289) | shared pathway | Tier 3 | 0.365 | Reactome:R-HSA-2672351 |\n| 4 | bronchiectasis with or without elevated sweat chloride 2 (MONDO:0013087) | shared pathway | Tier 3 | 0.363 | Reactome:R-HSA-2672351 |\n| 5 | pseudohypoaldosteronism, type IB1, autosomal recessive (MONDO:0009917) | shared pathway | Tier 3 | 0.363 | Reactome:R-HSA-2672351 |\n| 6 | moyamoya disease 7 (MONDO:0958202) | shared pathway | Tier 3 | 0.353 | Reactome:R-HSA-2672351 |\n| 7 | autosomal recessive spinocerebellar ataxia 10 (MONDO:0013392) | shared pathway | Tier 3 | 0.325 | Reactome:R-HSA-2672351 |\n| 8 | malignant hyperthermia, susceptibility to, 1 (MONDO:0007783) | shared pathway | Tier 3 | 0.309 | Reactome:R-HSA-2672351 |\n| 9 | pseudohypoaldosteronism type 2C (MONDO:0013778) | shared pathway | Tier 3 | 0.307 | Reactome:R-HSA-2672351 |\n| 10 | Liddle syndrome 3 (MONDO:0029132) | shared pathway | Tier 3 | 0.306 | Reactome:R-HSA-2672351 |\n\n### CANDIDATE DETAIL\n#### 1. catecholaminergic polymorphic ventricular tachycardia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.377)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 variant (rs743495374) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005268); Skeletal muscle chloride channel activity (GO:0005268) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Myotonia (HP:0003644); CASQ2 variant (rs743495374) —DISRUPTS→ CASQ2 (HGNC:2350); CASQ2 (HGNC:2350) —DISRUPTS→ Cardiac calcium homeostasis (GO:0005316); Cardiac calcium homeostasis (GO:0005316) —LEADS_TO→ Sarcoplasmic reticulum calcium handling (GO:0048712); Sarcoplasmic reticulum calcium handling (GO:0048712) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia (HP:0030611). Mutations in CLCN1 disrupt chloride channel activity, impacting skeletal muscle excitability and leading to myotonia. Concurrently, mutations in CASQ2 disrupt cardiac calcium handling, affecting sarcoplasmic reticulum calcium release and leading to CPVT2. Both pathways converge on the regulation of sarcoplasmic reticulum calcium handling.\n\n**How to falsify it:** The absence of mutations in CLCN1 in individuals with myotonia congenita, or CASQ2 in individuals with CPVT2, would falsify this hypothesis. Additionally, if further research demonstrates that CLCN1 and CASQ2 function in entirely independent cellular compartments with no downstream interaction in calcium handling, this would also falsify the hypothesis. _(variant: The presence of common variants (AF > 0.01) in gnomAD within the coding regions of CLCN1 or CASQ2 associated with loss-of-function would challenge their monogenic disease causality and thus this specific mechanism.)_\n\n**Why it matters:** Understanding the shared downstream effects on calcium handling could reveal novel therapeutic targets for both myotonia congenita and catecholaminergic polymorphic ventricular tachycardia 2, potentially involving modulators of sarcoplasmic reticulum calcium release or channel function.\n\n---\n\n#### 2. neuropathy, hereditary sensory and autonomic, type 2A  —  Tier 3 — Moderate / Emerging  (fitness 0.370)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003574); WNK1 (HGNC:13078) —DISRUPTS→ Neuronal excitability regulation (GO:0007271); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Abnormal sensory perception (HP:0003378); Neuronal excitability regulation (GO:0007271) —LEADS_TO→ Autonomic dysfunction (HP:0002378); Skeletal muscle chloride channel activity (GO:0005255) —DISRUPTS→ Neuronal excitability regulation (GO:0007271). Loss-of-function mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Concurrently, loss-of-function mutations in WNK1 disrupt neuronal excitability regulation, contributing to sensory and autonomic neuropathy. The dysregulation of ion channel activity and neuronal excitability represents a shared mechanistic convergence point.\n\n**How to falsify it:** Demonstration that CLCN1 and WNK1 act on completely independent and non-interacting cellular pathways with no shared downstream effectors in either muscle or neuronal tissue. _(variant: Identification of common variants (AF > 0.001) in CLCN1 or WNK1 associated with either phenotype in large population studies.)_\n\n**Why it matters:** Identifying shared pathways in ion channel regulation and neuronal excitability could reveal common therapeutic targets for both myotonia congenita and hereditary sensory and autonomic neuropathies, potentially leading to broader treatment strategies.\n\n---\n\n#### 3. intestinal dysmotility syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.365)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 (HGNC:2351) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); ANO1 (HGNC:24069) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005326); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ myotonia (HP:0003705); skeletal muscle chloride channel activity (GO:0005326) —LEADS_TO→ intestinal dysmotility (HP:0002104). Mutations in both CLCN1 and ANO1 disrupt skeletal muscle chloride channel activity, leading to distinct phenotypes of myotonia and intestinal dysmotility, respectively.\n\n**How to falsify it:** Demonstration that mutations in CLCN1 and ANO1 affect entirely independent cellular pathways with no downstream overlap, or identification of distinct functional consequences (e.g., gain-of-function for one disease and loss-of-function for the other) that cannot be reconciled by context-dependent effects on chloride channel activity. _(variant: Identification of common variants (AF > 1%) in CLCN1 or ANO1 associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of chloride channels in different muscle types could lead to novel therapeutic strategies targeting ion channel function for both neuromuscular and gastrointestinal disorders.\n\n---\n\n#### 4. bronchiectasis with or without elevated sweat chloride 2  —  Tier 3 — Moderate / Emerging  (fitness 0.363)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 variant (null) —DISRUPTS→ CLCN1 (HGNC:2330); CLCN1 (HGNC:2330) —DISRUPTS→ skeletal muscle chloride channel activity (GO:0005255); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Myotonia (HP:0003755); SCNN1A variant (null) —DISRUPTS→ SCNN1A (HGNC:10599); SCNN1A (HGNC:10599) —DISRUPTS→ epithelial sodium channel activity (GO:0005244); epithelial sodium channel activity (GO:0005244) —LEADS_TO→ epithelial ion transport and fluid balance (null); skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ epithelial ion transport and fluid balance (null); epithelial ion transport and fluid balance (null) —LEADS_TO→ Bronchiectasis (HP:0002092). Mutations in CLCN1 disrupt skeletal muscle chloride channel activity, leading to myotonia. Mutations in SCNN1A disrupt epithelial sodium channel activity, impacting epithelial ion transport and fluid balance, which in turn contributes to bronchiectasis. Both skeletal muscle and airway epithelial ion channel function are critical for overall physiological homeostasis, and their dysregulation through distinct but related ion channelopathies represents a mechanistic overlap at the level of cellular ion transport and membrane excitability.\n\n**How to falsify it:** Identification of pathogenic variants in CLCN1 or SCNN1A with significantly different functional consequences (e.g., gain-of-function for one and loss-of-function for the other) or demonstration that the affected ion channels operate in completely independent cellular pathways with no downstream convergence. _(variant: null)_\n\n**Why it matters:** Understanding the shared principle of ion channel dysregulation in these distinct diseases could inform therapeutic strategies targeting ion channel function or downstream consequences for both myotonia and bronchiectasis, potentially leading to broader applications of treatments for channelopathies.\n\n---\n\n#### 5. pseudohypoaldosteronism, type IB1, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.363)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 loss-of-function variant (null) —DISRUPTS→ CLCN1 (HGNC:2355); CLCN1 (HGNC:2355) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005255); Skeletal muscle chloride channel activity (GO:0005255) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Myotonia (HP:0003753); SCNN1A loss-of-function variant (null) —DISRUPTS→ SCNN1A (HGNC:10620); SCNN1A (HGNC:10620) —DISRUPTS→ Epithelial sodium channel activity (GO:0005274); Epithelial sodium channel activity (GO:0005274) —LEADS_TO→ Ion channel regulation (null); Ion channel regulation (null) —LEADS_TO→ Pseudohypoaldosteronism (HP:0000197). Loss-of-function mutations in CLCN1 impair chloride channel activity in skeletal muscle, leading to myotonia. Concurrently, loss-of-function mutations in SCNN1A impair epithelial sodium channel activity in the kidney, causing pseudohypoaldosteronism. Both diseases converge on the broader pathway of ion channel regulation, highlighting a shared mechanistic basis in cellular ion transport disruption.\n\n**How to falsify it:** Discovery of a pathogenic variant in SCNN1A associated with myotonia or a pathogenic variant in CLCN1 associated with pseudohypoaldosteronism would falsify this specific mechanistic link. Additionally, if the identified variants in CLCN1 and SCNN1A do not show loss-of-function effects, this hypothesis would be weakened. _(variant: The presence of common benign variants in either CLCN1 or SCNN1A in the general population (gnomAD frequency > 1%) could weaken the claim of these specific genes being solely responsible for rare disease phenotypes, but would not falsify the mechanistic overlap if pathogenic variants are indeed rare and causative.)_\n\n**Why it matters:** Understanding the shared reliance on specific ion channel function for distinct disease phenotypes could reveal novel therapeutic targets. For example, modulating general ion channel activity or downstream signaling pathways could potentially offer therapeutic benefits for both conditions, or highlight the specificity required for tissue-targeted treatments.\n\n---\n\n#### 6. moyamoya disease 7  —  Tier 3 — Moderate / Emerging  (fitness 0.353)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 (HGNC:2356) —DISRUPTS→ Skeletal muscle chloride channel activity (GO:0005370); Skeletal muscle chloride channel activity (GO:0005370) —LEADS_TO→ Myotonia (HP:0003576); ANO1 (HGNC:24071) —DISRUPTS→ Vascular smooth muscle cell proliferation and migration (GO:0002042); Vascular smooth muscle cell proliferation and migration (GO:0002042) —LEADS_TO→ Cerebrovascular disease (HP:0011370). Haploinsufficiency of CLCN1 disrupts chloride channel activity in skeletal muscle, leading to myotonia. Haploinsufficiency of ANO1 disrupts vascular smooth muscle cell proliferation and migration, contributing to cerebrovascular disease characteristic of moyamoya.\n\n**How to falsify it:** Discovery of distinct, non-overlapping molecular pathways downstream of CLCN1 and ANO1 mutations, or evidence that the haploinsufficiency in one disease does not impact cellular processes relevant to the other disease's affected tissue. _(variant: If a common variant (AF > 0.01) in CLCN1 or ANO1 is found to be associated with either myotonia or moyamoya disease, respectively, it would challenge the rare disease hypothesis.)_\n\n**Why it matters:** Understanding the shared reliance on ion channel function, even in disparate tissues, could reveal novel therapeutic strategies targeting conserved downstream pathways for both myotonia congenita and moyamoya disease.\n\n---\n\n#### 7. autosomal recessive spinocerebellar ataxia 10  —  Tier 3 — Moderate / Emerging  (fitness 0.325)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 pathogenic variant (ClinVar: VCV000006432) —DISRUPTS→ CLCN1 (HGNC:2350); CLCN1 (HGNC:2350) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Myotonia (HP:0003574); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Muscle weakness (HP:0001324); ANO10 pathogenic variant (ClinVar: VCV000046461) —DISRUPTS→ ANO10 (HGNC:24088); ANO10 (HGNC:24088) —DECREASES→ Neuronal excitability regulation (GO:0007270); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Spinocerebellar ataxia (HP:0001269); Neuronal excitability regulation (GO:0007270) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in CLCN1 lead to reduced chloride conductance, impairing muscle fiber repolarization and causing myotonia. Pathogenic variants in ANO10 lead to loss of function of the anoctamin-10 channel, affecting neuronal excitability and contributing to ataxia and spinocerebellar degeneration. Both pathways converge on the regulation of neuronal excitability.\n\n**How to falsify it:** If variants in CLCN1 and ANO10 are found to regulate entirely independent cellular pathways with no downstream overlap in neuronal or muscle cell function, this hypothesis would be falsified. Specifically, if the 'Neuronal excitability regulation' node is shown to be compartmentalized and not influenced by both CLCN1 and ANO10 dysfunction, the link is broken. _(variant: Exome data from gnomAD showing a high-frequency (AF > 0.01) pathogenic variant in either CLCN1 or ANO10 not associated with either disease phenotype would weaken the claim of causality for that gene in the respective disease.)_\n\n**Why it matters:** Understanding this mechanistic link could inform therapeutic strategies. For example, if specific modulators of neuronal excitability can alleviate symptoms in both conditions, it suggests a shared therapeutic target despite distinct genetic origins. This is particularly relevant for developing treatments for rare neurological disorders where genetic heterogeneity can complicate drug development.\n\n---\n\n#### 8. malignant hyperthermia, susceptibility to, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.309)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** RYR1 (HGNC:10182) —DISRUPTS→ Sarcoplasmic Reticulum Calcium Release (GO:0016043); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Myotonia (HP:0003579); Sarcoplasmic Reticulum Calcium Release (GO:0016043) —LEADS_TO→ Malignant Hyperthermia Susceptibility (HP:0003674). Gain-of-function mutations in RYR1 lead to aberrant calcium release from the sarcoplasmic reticulum, manifesting as malignant hyperthermia susceptibility. While MC1 is primarily linked to CLCN1, certain RYR1 variants, through similar disruptions in sarcoplasmic reticulum calcium handling, can also lead to myotonia.\n\n**How to falsify it:** Demonstration that the specific RYR1 variants associated with myotonia in patients with MC1 do not alter sarcoplasmic reticulum calcium release dynamics in a manner consistent with gain-of-function. _(variant: rs121918458)_\n\n**Why it matters:** Understanding the shared role of RYR1 in these conditions could lead to targeted therapies for both myotonia and MH susceptibility, potentially by modulating sarcoplasmic reticulum calcium handling.\n\n---\n\n#### 9. pseudohypoaldosteronism type 2C  —  Tier 3 — Moderate / Emerging  (fitness 0.307)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** CLCN1 (HGNC:2366) —DISRUPTS→ Ion transport (GO:0006810); Ion transport (GO:0006810) —LEADS_TO→ Myotonia (HP:0003702); WNK1 (HGNC:12720) —DISRUPTS→ WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134); WNK-SPAK/OSR1 signaling pathway (REACT:R-HSA-1280134) —INCREASES→ Ion transport (GO:0006810); Ion transport (GO:0006810) —INCREASES→ Hypertension (HP:0000822); Ion transport (GO:0006810) —INCREASES→ Hyperkalemia (HP:0002148). Mutations in CLCN1 disrupt chloride ion transport, leading to myotonia. Gain-of-function mutations in WNK1 dysregulate the WNK-SPAK/OSR1 signaling pathway, which in turn increases sodium and potassium transport, resulting in hypertension and hyperkalemia, characteristic of pseudohypoaldosteronism type 2C. Both diseases converge on the broad pathway of 'ion transport'.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for Myotonia Congenita (dominant) do not affect CLCN1, or that the causal variants for Pseudohypoaldosteronism Type 2C do not affect WNK1 or the WNK-SPAK/OSR1 pathway, this hypothesis would be falsified. _(variant: Any common variants (AF > 0.01) in CLCN1 or WNK1 associated with severe phenotypes of these diseases.)_\n\n**Why it matters:** Understanding the shared role of ion transport dysregulation could reveal novel therapeutic targets for both myotonia and electrolyte imbalances, potentially through modulating ion channel activity or related signaling pathways.\n\n---\n\n#### 10. Liddle syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.306)\n**Link type:** shared pathway (Reactome:R-HSA-2672351)\n\n**Proposed mechanism:** Loss-of-function variant in CLCN1 —DISRUPTS→ CLCN1 (HGNC:2351); CLCN1 (HGNC:2351) —DISRUPTS→ Skeletal muscle membrane excitability (GO:0001700); Skeletal muscle membrane excitability (GO:0001700) —LEADS_TO→ Myotonia (HP:0003334); Gain-of-function variant in SCNN1A —DISRUPTS→ SCNN1A (HGNC:10612); SCNN1A (HGNC:10612) —DISRUPTS→ Epithelial sodium transport (GO:0007308); Epithelial sodium transport (GO:0007308) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in CLCN1 impair chloride channels in skeletal muscle, leading to myotonia. Gain-of-function mutations in SCNN1A enhance sodium channels in the collecting duct, leading to hypertension. The shared mechanism is the dysregulation of ion flux through distinct channels impacting cellular excitability and transport.\n\n**How to falsify it:** Demonstration that mutations in CLCN1 do not affect skeletal muscle chloride channel function or that mutations in SCNN1A do not alter epithelial sodium channel activity, or the absence of the respective phenotypes in individuals with these mutations. _(variant: The presence of common variants (AF > 0.01) in gnomAD in either CLCN1 or SCNN1A associated with the described functional consequences would weaken the causal link.)_\n\n**Why it matters:** Understanding the distinct yet related roles of ion channelopathies in myotonia congenita and Liddle syndrome can inform therapeutic strategies. For myotonia, strategies might focus on modulating muscle excitability. For Liddle syndrome, targeting epithelial sodium channels or downstream effects of sodium retention could be beneficial. Shared principles in ion channel regulation could lead to cross-disease insights.\n\n---"
+}

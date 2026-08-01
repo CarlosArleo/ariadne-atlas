@@ -1,0 +1,379 @@
+{
+  "seed": {
+    "id": "MONDO:0010480",
+    "name": "anemia, nonspherocytic hemolytic, due to G6PD deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 20,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0020763",
+      "diseaseBName": "Menke-Hennekam syndrome 1",
+      "fitness": 0.3976,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "G6PD deficiency variant —DISRUPTS→ G6PD (HGNC:4423); G6PD (HGNC:4423) —DECREASES→ NADPH; NADPH —DECREASES→ Redox homeostasis; Redox homeostasis —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Hemolytic anemia (MONDO:0010480); CREBBP mutation —DISRUPTS→ CREBBP (HGNC:2605); CREBBP (HGNC:2605) —DISRUPTS→ Transcriptional regulation of stress response genes; Transcriptional regulation of stress response genes —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Developmental abnormalities (MONDO:0020763). Loss-of-function mutations in G6PD (Disease A) impair NADPH production, leading to oxidative stress and subsequent hemolytic anemia. Similarly, mutations in CREBBP (Disease B) disrupt transcriptional regulation, including genes involved in NAD+ biosynthesis and oxidative stress response, contributing to developmental abnormalities. Both pathways converge on the dysregulation of NAD+ biosynthesis, impacting cellular redox balance.",
+      "mechanism_narrative": "G6PD deficiency variant —DISRUPTS→ G6PD (HGNC:4423); G6PD (HGNC:4423) —DECREASES→ NADPH; NADPH —DECREASES→ Redox homeostasis; Redox homeostasis —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Hemolytic anemia (MONDO:0010480); CREBBP mutation —DISRUPTS→ CREBBP (HGNC:2605); CREBBP (HGNC:2605) —DISRUPTS→ Transcriptional regulation of stress response genes; Transcriptional regulation of stress response genes —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Developmental abnormalities (MONDO:0020763). Loss-of-function mutations in G6PD (Disease A) impair NADPH production, leading to oxidative stress and subsequent hemolytic anemia. Similarly, mutations in CREBBP (Disease B) disrupt transcriptional regulation, including genes involved in NAD+ biosynthesis and oxidative stress response, contributing to developmental abnormalities. Both pathways converge on the dysregulation of NAD+ biosynthesis, impacting cellular redox balance.",
+      "falsification": {
+        "text": "Demonstration that G6PD deficiency does not impact NAD+ biosynthesis or oxidative stress response in relevant cell types, or that CREBBP mutations do not affect these pathways, would falsify this hypothesis. Additionally, identification of a specific, highly prevalent (e.g., >1% allele frequency in gnomAD) variant in G6PD or CREBBP that is clearly pathogenic for one disease but absent or benign in the other, without any shared downstream effects on NAD+ metabolism, would also weaken the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020763",
+        "diseaseBName": "Menke-Hennekam syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.3976,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "G6PD deficiency variant —DISRUPTS→ G6PD (HGNC:4423); G6PD (HGNC:4423) —DECREASES→ NADPH; NADPH —DECREASES→ Redox homeostasis; Redox homeostasis —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Hemolytic anemia (MONDO:0010480); CREBBP mutation —DISRUPTS→ CREBBP (HGNC:2605); CREBBP (HGNC:2605) —DISRUPTS→ Transcriptional regulation of stress response genes; Transcriptional regulation of stress response genes —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Developmental abnormalities (MONDO:0020763). Loss-of-function mutations in G6PD (Disease A) impair NADPH production, leading to oxidative stress and subsequent hemolytic anemia. Similarly, mutations in CREBBP (Disease B) disrupt transcriptional regulation, including genes involved in NAD+ biosynthesis and oxidative stress response, contributing to developmental abnormalities. Both pathways converge on the dysregulation of NAD+ biosynthesis, impacting cellular redox balance.",
+        "falsification": {
+          "text": "Demonstration that G6PD deficiency does not impact NAD+ biosynthesis or oxidative stress response in relevant cell types, or that CREBBP mutations do not affect these pathways, would falsify this hypothesis. Additionally, identification of a specific, highly prevalent (e.g., >1% allele frequency in gnomAD) variant in G6PD or CREBBP that is clearly pathogenic for one disease but absent or benign in the other, without any shared downstream effects on NAD+ metabolism, would also weaken the proposed link."
+        },
+        "translational": "Understanding this mechanistic overlap could reveal novel therapeutic targets for modulating NAD+ metabolism or oxidative stress responses in both G6PD deficiency and CREBBP-related disorders. For instance, interventions aimed at boosting NAD+ levels or enhancing antioxidant defenses might offer benefits in managing the cellular dysfunction associated with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014969",
+      "diseaseBName": "isolated sedoheptulokinase deficiency",
+      "fitness": 0.3926,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in G6PD —DISRUPTS→ Glucose-6-phosphate 1-dehydrogenase (HGNC:4415); Glucose-6-phosphate 1-dehydrogenase (HGNC:4415) —DECREASES→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Increased oxidative stress burden (HP:0012534); Increased oxidative stress burden (HP:0012534) —LEADS_TO→ Hemolysis (HP:0001880); Loss-of-function variant in SHPK —DISRUPTS→ Sedoheptulokinase (HGNC:10709); Sedoheptulokinase (HGNC:10709) —PRODUCES→ Sedoheptulose-7-phosphate accumulation (CHEBI:17583); Sedoheptulose-7-phosphate accumulation (CHEBI:17583) —DISRUPTS→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Disrupted pentose phosphate pathway flux (HP:0005964). Loss-of-function mutations in G6PD lead to reduced NADPH regeneration in the pentose phosphate pathway (PPP), increasing oxidative stress and causing hemolysis. Similarly, loss-of-function mutations in SHPK lead to accumulation of sedoheptulose-7-phosphate, which disrupts the flux through the PPP, indirectly impairing NADPH regeneration and overall cellular homeostasis.",
+      "mechanism_narrative": "Loss-of-function variant in G6PD —DISRUPTS→ Glucose-6-phosphate 1-dehydrogenase (HGNC:4415); Glucose-6-phosphate 1-dehydrogenase (HGNC:4415) —DECREASES→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Increased oxidative stress burden (HP:0012534); Increased oxidative stress burden (HP:0012534) —LEADS_TO→ Hemolysis (HP:0001880); Loss-of-function variant in SHPK —DISRUPTS→ Sedoheptulokinase (HGNC:10709); Sedoheptulokinase (HGNC:10709) —PRODUCES→ Sedoheptulose-7-phosphate accumulation (CHEBI:17583); Sedoheptulose-7-phosphate accumulation (CHEBI:17583) —DISRUPTS→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Disrupted pentose phosphate pathway flux (HP:0005964). Loss-of-function mutations in G6PD lead to reduced NADPH regeneration in the pentose phosphate pathway (PPP), increasing oxidative stress and causing hemolysis. Similarly, loss-of-function mutations in SHPK lead to accumulation of sedoheptulose-7-phosphate, which disrupts the flux through the PPP, indirectly impairing NADPH regeneration and overall cellular homeostasis.",
+      "falsification": {
+        "text": "Demonstration that mutations in G6PD or SHPK do not affect NADPH regeneration or pentose phosphate pathway flux, respectively, or that genetic variants in G6PD or SHPK are common (e.g., >1% allele frequency in gnomAD) in populations where the respective disease is prevalent.",
+        "gnomad_variant": "G6PD variants with >1% allele frequency in relevant populations"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71336"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71336": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014969",
+        "diseaseBName": "isolated sedoheptulokinase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71336"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71336": 12
+        },
+        "fitness": 0.3926,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in G6PD —DISRUPTS→ Glucose-6-phosphate 1-dehydrogenase (HGNC:4415); Glucose-6-phosphate 1-dehydrogenase (HGNC:4415) —DECREASES→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Increased oxidative stress burden (HP:0012534); Increased oxidative stress burden (HP:0012534) —LEADS_TO→ Hemolysis (HP:0001880); Loss-of-function variant in SHPK —DISRUPTS→ Sedoheptulokinase (HGNC:10709); Sedoheptulokinase (HGNC:10709) —PRODUCES→ Sedoheptulose-7-phosphate accumulation (CHEBI:17583); Sedoheptulose-7-phosphate accumulation (CHEBI:17583) —DISRUPTS→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Disrupted pentose phosphate pathway flux (HP:0005964). Loss-of-function mutations in G6PD lead to reduced NADPH regeneration in the pentose phosphate pathway (PPP), increasing oxidative stress and causing hemolysis. Similarly, loss-of-function mutations in SHPK lead to accumulation of sedoheptulose-7-phosphate, which disrupts the flux through the PPP, indirectly impairing NADPH regeneration and overall cellular homeostasis.",
+        "falsification": {
+          "text": "Demonstration that mutations in G6PD or SHPK do not affect NADPH regeneration or pentose phosphate pathway flux, respectively, or that genetic variants in G6PD or SHPK are common (e.g., >1% allele frequency in gnomAD) in populations where the respective disease is prevalent.",
+          "gnomad_variant": "G6PD variants with >1% allele frequency in relevant populations"
+        },
+        "translational": "Understanding the shared impact on NADPH regeneration and the pentose phosphate pathway could reveal novel therapeutic strategies. For instance, interventions aimed at supporting NADPH levels or mitigating the consequences of disrupted PPP flux might offer benefit in both conditions, despite their distinct primary genetic causes. This highlights potential for shared treatment modalities targeting downstream metabolic consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014881",
+      "diseaseBName": "transketolase deficiency",
+      "fitness": 0.3914,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Glucose-6-phosphate dehydrogenase (HGNC:4074) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ NADPH; NADPH —INCREASES→ Oxidative stress in red blood cells (HP:0001910); Oxidative stress in red blood cells (HP:0001910) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001874); Transketolase (HGNC:11665) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ Ribose-5-phosphate; Ribose-5-phosphate —DECREASES→ Impaired nucleotide synthesis (HP:0011363); Impaired nucleotide synthesis (HP:0011363) —LEADS_TO→ Neurological deficits (HP:0001250); Pentose Phosphate Pathway (R-HSA-6797004) —BINDS→ Pentose Phosphate Pathway (R-HSA-6797004). Loss-of-function mutations in G6PD impair the Pentose Phosphate Pathway's ability to produce NADPH, leading to oxidative stress and hemolytic anemia. Similarly, loss-of-function mutations in TKT impair the Pentose Phosphate Pathway's ability to produce ribose-5-phosphate, essential for nucleotide synthesis, resulting in neurological deficits. The Pentose Phosphate Pathway is the shared convergence point.",
+      "mechanism_narrative": "Glucose-6-phosphate dehydrogenase (HGNC:4074) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ NADPH; NADPH —INCREASES→ Oxidative stress in red blood cells (HP:0001910); Oxidative stress in red blood cells (HP:0001910) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001874); Transketolase (HGNC:11665) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ Ribose-5-phosphate; Ribose-5-phosphate —DECREASES→ Impaired nucleotide synthesis (HP:0011363); Impaired nucleotide synthesis (HP:0011363) —LEADS_TO→ Neurological deficits (HP:0001250); Pentose Phosphate Pathway (R-HSA-6797004) —BINDS→ Pentose Phosphate Pathway (R-HSA-6797004). Loss-of-function mutations in G6PD impair the Pentose Phosphate Pathway's ability to produce NADPH, leading to oxidative stress and hemolytic anemia. Similarly, loss-of-function mutations in TKT impair the Pentose Phosphate Pathway's ability to produce ribose-5-phosphate, essential for nucleotide synthesis, resulting in neurological deficits. The Pentose Phosphate Pathway is the shared convergence point.",
+      "falsification": {
+        "text": "Demonstration that G6PD deficiency does not lead to increased oxidative stress in erythrocytes, or that TKT deficiency does not impair nucleotide synthesis. Alternatively, identification of a G6PD variant with a frequency >1% in gnomAD that is causative for G6PD deficiency.",
+        "gnomad_variant": "rs767200225"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71336",
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71336": 12,
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014881",
+        "diseaseBName": "transketolase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71336",
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71336": 12,
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.3914,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Glucose-6-phosphate dehydrogenase (HGNC:4074) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ NADPH; NADPH —INCREASES→ Oxidative stress in red blood cells (HP:0001910); Oxidative stress in red blood cells (HP:0001910) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001874); Transketolase (HGNC:11665) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ Ribose-5-phosphate; Ribose-5-phosphate —DECREASES→ Impaired nucleotide synthesis (HP:0011363); Impaired nucleotide synthesis (HP:0011363) —LEADS_TO→ Neurological deficits (HP:0001250); Pentose Phosphate Pathway (R-HSA-6797004) —BINDS→ Pentose Phosphate Pathway (R-HSA-6797004). Loss-of-function mutations in G6PD impair the Pentose Phosphate Pathway's ability to produce NADPH, leading to oxidative stress and hemolytic anemia. Similarly, loss-of-function mutations in TKT impair the Pentose Phosphate Pathway's ability to produce ribose-5-phosphate, essential for nucleotide synthesis, resulting in neurological deficits. The Pentose Phosphate Pathway is the shared convergence point.",
+        "falsification": {
+          "text": "Demonstration that G6PD deficiency does not lead to increased oxidative stress in erythrocytes, or that TKT deficiency does not impair nucleotide synthesis. Alternatively, identification of a G6PD variant with a frequency >1% in gnomAD that is causative for G6PD deficiency.",
+          "gnomad_variant": "rs767200225"
+        },
+        "translational": "Understanding the shared reliance on the Pentose Phosphate Pathway highlights potential therapeutic strategies that could target this pathway to mitigate disease severity in either G6PD deficiency or transketolase deficiency, potentially by supplementing intermediates or enhancing pathway flux."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012073",
+      "diseaseBName": "ribose-5-P isomerase deficiency",
+      "fitness": 0.3836,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Variant causing G6PD deficiency —DISRUPTS→ Glucose-6-phosphate dehydrogenase (HGNC:4076); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Pentose Phosphate Pathway (KEGG:00040); Pentose Phosphate Pathway (KEGG:00040) —DECREASES→ Nicotinamide adenine dinucleotide phosphate (CHEBI:15988); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Redox Balance Disruption (HP:0011438); Variant causing RPIA deficiency —DISRUPTS→ Ribose-5-phosphate isomerase (HGNC:9970); Ribose-5-phosphate isomerase (HGNC:9970) —DECREASES→ Ribose-5-phosphate (CHEBI:17473); Ribose-5-phosphate (CHEBI:17473) —DECREASES→ Nucleotide Synthesis (KEGG:00230); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Hemolysis (HP:0001894); Nucleotide Synthesis (KEGG:00230) —LEADS_TO→ Hemolysis (HP:0001894). Loss-of-function mutations in G6PD impair the production of NADPH via the Pentose Phosphate Pathway, compromising cellular redox balance and leading to oxidative stress and hemolysis. Similarly, loss-of-function mutations in RPIA disrupt the Pentose Phosphate Pathway, reducing the availability of ribose-5-phosphate required for nucleotide synthesis. Both deficiencies ultimately converge on cellular dysfunction leading to hemolysis, albeit through distinct but related downstream effects within the same pathway.",
+      "mechanism_narrative": "Variant causing G6PD deficiency —DISRUPTS→ Glucose-6-phosphate dehydrogenase (HGNC:4076); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Pentose Phosphate Pathway (KEGG:00040); Pentose Phosphate Pathway (KEGG:00040) —DECREASES→ Nicotinamide adenine dinucleotide phosphate (CHEBI:15988); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Redox Balance Disruption (HP:0011438); Variant causing RPIA deficiency —DISRUPTS→ Ribose-5-phosphate isomerase (HGNC:9970); Ribose-5-phosphate isomerase (HGNC:9970) —DECREASES→ Ribose-5-phosphate (CHEBI:17473); Ribose-5-phosphate (CHEBI:17473) —DECREASES→ Nucleotide Synthesis (KEGG:00230); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Hemolysis (HP:0001894); Nucleotide Synthesis (KEGG:00230) —LEADS_TO→ Hemolysis (HP:0001894). Loss-of-function mutations in G6PD impair the production of NADPH via the Pentose Phosphate Pathway, compromising cellular redox balance and leading to oxidative stress and hemolysis. Similarly, loss-of-function mutations in RPIA disrupt the Pentose Phosphate Pathway, reducing the availability of ribose-5-phosphate required for nucleotide synthesis. Both deficiencies ultimately converge on cellular dysfunction leading to hemolysis, albeit through distinct but related downstream effects within the same pathway.",
+      "falsification": {
+        "text": "Demonstration that the primary defect in G6PD deficiency is not related to NADPH production or that RPIA deficiency does not impact nucleotide synthesis would falsify this hypothesis. Furthermore, identification of a common pathogenic variant in both G6PD and RPIA genes with distinct functional consequences would also challenge this proposed overlap.",
+        "gnomad_variant": "rs775451645"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71336"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71336": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012073",
+        "diseaseBName": "ribose-5-P isomerase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71336"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71336": 12
+        },
+        "fitness": 0.3836,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Variant causing G6PD deficiency —DISRUPTS→ Glucose-6-phosphate dehydrogenase (HGNC:4076); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Pentose Phosphate Pathway (KEGG:00040); Pentose Phosphate Pathway (KEGG:00040) —DECREASES→ Nicotinamide adenine dinucleotide phosphate (CHEBI:15988); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Redox Balance Disruption (HP:0011438); Variant causing RPIA deficiency —DISRUPTS→ Ribose-5-phosphate isomerase (HGNC:9970); Ribose-5-phosphate isomerase (HGNC:9970) —DECREASES→ Ribose-5-phosphate (CHEBI:17473); Ribose-5-phosphate (CHEBI:17473) —DECREASES→ Nucleotide Synthesis (KEGG:00230); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Hemolysis (HP:0001894); Nucleotide Synthesis (KEGG:00230) —LEADS_TO→ Hemolysis (HP:0001894). Loss-of-function mutations in G6PD impair the production of NADPH via the Pentose Phosphate Pathway, compromising cellular redox balance and leading to oxidative stress and hemolysis. Similarly, loss-of-function mutations in RPIA disrupt the Pentose Phosphate Pathway, reducing the availability of ribose-5-phosphate required for nucleotide synthesis. Both deficiencies ultimately converge on cellular dysfunction leading to hemolysis, albeit through distinct but related downstream effects within the same pathway.",
+        "falsification": {
+          "text": "Demonstration that the primary defect in G6PD deficiency is not related to NADPH production or that RPIA deficiency does not impact nucleotide synthesis would falsify this hypothesis. Furthermore, identification of a common pathogenic variant in both G6PD and RPIA genes with distinct functional consequences would also challenge this proposed overlap.",
+          "gnomad_variant": "rs775451645"
+        },
+        "translational": "Understanding this mechanistic link can inform therapeutic strategies targeting red blood cell support or downstream metabolic consequences in patients with either G6PD deficiency or RPIA deficiency. It highlights the critical role of the Pentose Phosphate Pathway in maintaining red blood cell integrity and function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011624",
+      "diseaseBName": "transaldolase deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "G6PD (HGNC:4100) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); Pentose Phosphate Pathway (R-HSA-70240) —DECREASES→ NADPH (CHEBI:17990); NADPH (CHEBI:17990) —LEADS_TO→ Hemolytic anemia (HP:0001877); TALDO1 (HGNC:11471) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); TALDO1 (HGNC:11471) —LEADS_TO→ Anemia (HP:0001909). Loss of function in G6PD disrupts the Pentose Phosphate Pathway, leading to decreased NADPH production and subsequent oxidative stress in erythrocytes, causing hemolytic anemia. Similarly, loss of function in TALDO1, an enzyme within the Pentose Phosphate Pathway, also leads to downstream metabolic alterations that can contribute to anemia, potentially through impaired NADPH regeneration or altered cellular redox balance.",
+      "mechanism_narrative": "G6PD (HGNC:4100) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); Pentose Phosphate Pathway (R-HSA-70240) —DECREASES→ NADPH (CHEBI:17990); NADPH (CHEBI:17990) —LEADS_TO→ Hemolytic anemia (HP:0001877); TALDO1 (HGNC:11471) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); TALDO1 (HGNC:11471) —LEADS_TO→ Anemia (HP:0001909). Loss of function in G6PD disrupts the Pentose Phosphate Pathway, leading to decreased NADPH production and subsequent oxidative stress in erythrocytes, causing hemolytic anemia. Similarly, loss of function in TALDO1, an enzyme within the Pentose Phosphate Pathway, also leads to downstream metabolic alterations that can contribute to anemia, potentially through impaired NADPH regeneration or altered cellular redox balance.",
+      "falsification": {
+        "text": "Demonstration that mutations in G6PD do not affect NADPH levels in red blood cells, or that TALDO1 deficiency does not impact erythrocyte metabolism or survival.",
+        "gnomad_variant": "rs1050851"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71336",
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71336": 12,
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011624",
+        "diseaseBName": "transaldolase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71336",
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71336": 12,
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "G6PD (HGNC:4100) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); Pentose Phosphate Pathway (R-HSA-70240) —DECREASES→ NADPH (CHEBI:17990); NADPH (CHEBI:17990) —LEADS_TO→ Hemolytic anemia (HP:0001877); TALDO1 (HGNC:11471) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); TALDO1 (HGNC:11471) —LEADS_TO→ Anemia (HP:0001909). Loss of function in G6PD disrupts the Pentose Phosphate Pathway, leading to decreased NADPH production and subsequent oxidative stress in erythrocytes, causing hemolytic anemia. Similarly, loss of function in TALDO1, an enzyme within the Pentose Phosphate Pathway, also leads to downstream metabolic alterations that can contribute to anemia, potentially through impaired NADPH regeneration or altered cellular redox balance.",
+        "falsification": {
+          "text": "Demonstration that mutations in G6PD do not affect NADPH levels in red blood cells, or that TALDO1 deficiency does not impact erythrocyte metabolism or survival.",
+          "gnomad_variant": "rs1050851"
+        },
+        "translational": "Understanding the shared impact on the Pentose Phosphate Pathway and NADPH homeostasis could reveal common therapeutic targets or strategies for managing anemia in both conditions, particularly concerning oxidative stress mitigation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0060591",
+      "diseaseBName": "immunodeficiency, developmental delay, and hypohomocysteinemia",
+      "fitness": 0.1985,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "Glucose-6-phosphate dehydrogenase (HGNC:4076) —PRODUCES→ NADPH (CHEBI:17487); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolysis (HP:0001891); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —INCREASES→ Antioxidant response (GO:0000302); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Developmental delay (HP:0001263); Oxidative stress response (GO:0006974) —LEADS_TO→ Hypohomocysteinemia (HP:0030182); Oxidative stress response (GO:0006974) —LEADS_TO→ Immunodeficiency (HP:0002711). Loss of G6PD function leads to insufficient NADPH, impairing the cell's ability to neutralize reactive oxygen species and causing oxidative stress, manifesting as hemolytic anemia. Concurrently, impaired NFE2L2 function or downstream pathways lead to a reduced antioxidant response, exacerbating oxidative stress, which in turn contributes to developmental delay, hypohomocysteinemia, and immunodeficiency.",
+      "mechanism_narrative": "Glucose-6-phosphate dehydrogenase (HGNC:4076) —PRODUCES→ NADPH (CHEBI:17487); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolysis (HP:0001891); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —INCREASES→ Antioxidant response (GO:0000302); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Developmental delay (HP:0001263); Oxidative stress response (GO:0006974) —LEADS_TO→ Hypohomocysteinemia (HP:0030182); Oxidative stress response (GO:0006974) —LEADS_TO→ Immunodeficiency (HP:0002711). Loss of G6PD function leads to insufficient NADPH, impairing the cell's ability to neutralize reactive oxygen species and causing oxidative stress, manifesting as hemolytic anemia. Concurrently, impaired NFE2L2 function or downstream pathways lead to a reduced antioxidant response, exacerbating oxidative stress, which in turn contributes to developmental delay, hypohomocysteinemia, and immunodeficiency.",
+      "falsification": {
+        "text": "Demonstration that mutations in G6PD do not lead to reduced NADPH levels or increased oxidative stress in affected cells, or that NFE2L2-mediated antioxidant response is not significantly impaired in individuals with MONDO:0060591.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in G6PD or NFE2L2 associated with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0060591",
+        "diseaseBName": "immunodeficiency, developmental delay, and hypohomocysteinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.1985,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Glucose-6-phosphate dehydrogenase (HGNC:4076) —PRODUCES→ NADPH (CHEBI:17487); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolysis (HP:0001891); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —INCREASES→ Antioxidant response (GO:0000302); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Developmental delay (HP:0001263); Oxidative stress response (GO:0006974) —LEADS_TO→ Hypohomocysteinemia (HP:0030182); Oxidative stress response (GO:0006974) —LEADS_TO→ Immunodeficiency (HP:0002711). Loss of G6PD function leads to insufficient NADPH, impairing the cell's ability to neutralize reactive oxygen species and causing oxidative stress, manifesting as hemolytic anemia. Concurrently, impaired NFE2L2 function or downstream pathways lead to a reduced antioxidant response, exacerbating oxidative stress, which in turn contributes to developmental delay, hypohomocysteinemia, and immunodeficiency.",
+        "falsification": {
+          "text": "Demonstration that mutations in G6PD do not lead to reduced NADPH levels or increased oxidative stress in affected cells, or that NFE2L2-mediated antioxidant response is not significantly impaired in individuals with MONDO:0060591.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in G6PD or NFE2L2 associated with either phenotype."
+        },
+        "translational": "Targeting pathways that modulate oxidative stress and enhance antioxidant capacity could offer therapeutic strategies for both G6PD deficiency and the complex phenotypes associated with NFE2L2 dysfunction, potentially improving outcomes for patients with developmental delay, immunodeficiency, and hypohomocysteinemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008393",
+      "diseaseBName": "Rubinstein-Taybi syndrome due to CREBBP mutations",
+      "fitness": 0.1975,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "G6PD (HGNC:4107) —PRODUCES→ NADPH (CHEBI:16042); NADPH (CHEBI:16042) —DECREASES→ Redox homeostasis (GO:0006974); Redox homeostasis (GO:0006974) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001887); CREBBP (HGNC:2514) —DISRUPTS→ Epigenetic regulation and transcription (GO:0006355); Epigenetic regulation and transcription (GO:0006355) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Intellectual disability (HP:0001249); Oxidative stress response (GO:0006974) —LEADS_TO→ Facial dysmorphism (HP:0001999). Loss-of-function mutations in G6PD lead to reduced NADPH production, impairing the cell's ability to manage oxidative stress, resulting in hemolytic anemia. Similarly, loss-of-function mutations in CREBBP disrupt epigenetic regulation and transcription, which in turn compromises the oxidative stress response, contributing to the complex phenotype of Rubinstein-Taybi syndrome, including intellectual disability and facial dysmorphism.",
+      "mechanism_narrative": "G6PD (HGNC:4107) —PRODUCES→ NADPH (CHEBI:16042); NADPH (CHEBI:16042) —DECREASES→ Redox homeostasis (GO:0006974); Redox homeostasis (GO:0006974) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001887); CREBBP (HGNC:2514) —DISRUPTS→ Epigenetic regulation and transcription (GO:0006355); Epigenetic regulation and transcription (GO:0006355) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Intellectual disability (HP:0001249); Oxidative stress response (GO:0006974) —LEADS_TO→ Facial dysmorphism (HP:0001999). Loss-of-function mutations in G6PD lead to reduced NADPH production, impairing the cell's ability to manage oxidative stress, resulting in hemolytic anemia. Similarly, loss-of-function mutations in CREBBP disrupt epigenetic regulation and transcription, which in turn compromises the oxidative stress response, contributing to the complex phenotype of Rubinstein-Taybi syndrome, including intellectual disability and facial dysmorphism.",
+      "falsification": {
+        "text": "If genetic studies show that the causal variants for G6PD deficiency do not affect redox homeostasis or that CREBBP mutations do not impact the oxidative stress response pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "No specific gnomAD variant can be used to falsify this broad pathway hypothesis without further refinement."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008393",
+        "diseaseBName": "Rubinstein-Taybi syndrome due to CREBBP mutations",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.1975,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "G6PD (HGNC:4107) —PRODUCES→ NADPH (CHEBI:16042); NADPH (CHEBI:16042) —DECREASES→ Redox homeostasis (GO:0006974); Redox homeostasis (GO:0006974) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001887); CREBBP (HGNC:2514) —DISRUPTS→ Epigenetic regulation and transcription (GO:0006355); Epigenetic regulation and transcription (GO:0006355) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Intellectual disability (HP:0001249); Oxidative stress response (GO:0006974) —LEADS_TO→ Facial dysmorphism (HP:0001999). Loss-of-function mutations in G6PD lead to reduced NADPH production, impairing the cell's ability to manage oxidative stress, resulting in hemolytic anemia. Similarly, loss-of-function mutations in CREBBP disrupt epigenetic regulation and transcription, which in turn compromises the oxidative stress response, contributing to the complex phenotype of Rubinstein-Taybi syndrome, including intellectual disability and facial dysmorphism.",
+        "falsification": {
+          "text": "If genetic studies show that the causal variants for G6PD deficiency do not affect redox homeostasis or that CREBBP mutations do not impact the oxidative stress response pathway, this hypothesis would be falsified.",
+          "gnomad_variant": "No specific gnomAD variant can be used to falsify this broad pathway hypothesis without further refinement."
+        },
+        "translational": "Understanding the shared vulnerability to oxidative stress may reveal therapeutic targets common to both conditions, potentially leveraging antioxidants or pathways that bolster cellular defense mechanisms against reactive oxygen species."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020769",
+      "diseaseBName": "Menke-Hennekam syndrome 2",
+      "fitness": 0.1973,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "G6PD (HGNC:4077) —PRODUCES→ NADPH (CHEBI:17704); NADPH (CHEBI:17704) —DISRUPTS→ NADPH homeostasis (GO:0006705); NADPH homeostasis (GO:0006705) —LEADS_TO→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ anemia, nonspherocytic hemolytic (MONDO:0010480); EP300 (HGNC:3034) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Menke-Hennekam syndrome 2 (MONDO:0020769). Loss-of-function mutations in G6PD lead to reduced NADPH production, disrupting NADPH homeostasis and consequently impairing the oxidative stress response, manifesting as hemolytic anemia. Similarly, loss-of-function mutations in EP300, a transcriptional coactivator, can also dysregulate cellular processes that contribute to oxidative stress response, leading to Menke-Hennekam syndrome 2. The convergence point is the shared impact on the oxidative stress response pathway.",
+      "mechanism_narrative": "G6PD (HGNC:4077) —PRODUCES→ NADPH (CHEBI:17704); NADPH (CHEBI:17704) —DISRUPTS→ NADPH homeostasis (GO:0006705); NADPH homeostasis (GO:0006705) —LEADS_TO→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ anemia, nonspherocytic hemolytic (MONDO:0010480); EP300 (HGNC:3034) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Menke-Hennekam syndrome 2 (MONDO:0020769). Loss-of-function mutations in G6PD lead to reduced NADPH production, disrupting NADPH homeostasis and consequently impairing the oxidative stress response, manifesting as hemolytic anemia. Similarly, loss-of-function mutations in EP300, a transcriptional coactivator, can also dysregulate cellular processes that contribute to oxidative stress response, leading to Menke-Hennekam syndrome 2. The convergence point is the shared impact on the oxidative stress response pathway.",
+      "falsification": {
+        "text": "Demonstration that EP300 mutations do not impact oxidative stress response pathways or that G6PD deficiency has no downstream effects on processes regulated by EP300 would falsify this hypothesis.",
+        "gnomad_variant": "No common variants (AF > 1%) in G6PD or EP300 associated with these specific disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020769",
+        "diseaseBName": "Menke-Hennekam syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.1973,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "G6PD (HGNC:4077) —PRODUCES→ NADPH (CHEBI:17704); NADPH (CHEBI:17704) —DISRUPTS→ NADPH homeostasis (GO:0006705); NADPH homeostasis (GO:0006705) —LEADS_TO→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ anemia, nonspherocytic hemolytic (MONDO:0010480); EP300 (HGNC:3034) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Menke-Hennekam syndrome 2 (MONDO:0020769). Loss-of-function mutations in G6PD lead to reduced NADPH production, disrupting NADPH homeostasis and consequently impairing the oxidative stress response, manifesting as hemolytic anemia. Similarly, loss-of-function mutations in EP300, a transcriptional coactivator, can also dysregulate cellular processes that contribute to oxidative stress response, leading to Menke-Hennekam syndrome 2. The convergence point is the shared impact on the oxidative stress response pathway.",
+        "falsification": {
+          "text": "Demonstration that EP300 mutations do not impact oxidative stress response pathways or that G6PD deficiency has no downstream effects on processes regulated by EP300 would falsify this hypothesis.",
+          "gnomad_variant": "No common variants (AF > 1%) in G6PD or EP300 associated with these specific disease phenotypes."
+        },
+        "translational": "Understanding the shared role in oxidative stress response could open avenues for therapeutic strategies targeting redox balance in both G6PD deficiency and Menke-Hennekam syndrome 2, potentially through antioxidant therapies or modulators of EP300 activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013364",
+      "diseaseBName": "Rubinstein-Taybi syndrome due to EP300 haploinsufficiency",
+      "fitness": 0.1327,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "G6PD (HGNC:4008) —PRODUCES→ NADPH production (GO:0006704); NADPH production (GO:0006704) —PRODUCES→ NADPH (CHEBI:17877); NADPH (CHEBI:17877) —INCREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolytic anemia (HP:0001892); EP300 (HGNC:3548) —DISRUPTS→ Gene expression regulation (GO:0006355); Gene expression regulation (GO:0006355) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Craniofacial abnormalities (HP:0000256). Loss of function in G6PD leads to reduced NADPH production, impairing the oxidative stress response and causing hemolytic anemia. Haploinsufficiency of EP300 disrupts gene expression regulation, including pathways involved in oxidative stress response, potentially leading to or exacerbating phenotypes associated with cellular stress, such as those seen in Rubinstein-Taybi syndrome. The convergence point is the oxidative stress response pathway, which is compromised by insufficient NADPH (due to G6PD deficiency) and potentially dysregulated gene expression (due to EP300 haploinsufficiency).",
+      "mechanism_narrative": "G6PD (HGNC:4008) —PRODUCES→ NADPH production (GO:0006704); NADPH production (GO:0006704) —PRODUCES→ NADPH (CHEBI:17877); NADPH (CHEBI:17877) —INCREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolytic anemia (HP:0001892); EP300 (HGNC:3548) —DISRUPTS→ Gene expression regulation (GO:0006355); Gene expression regulation (GO:0006355) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Craniofacial abnormalities (HP:0000256). Loss of function in G6PD leads to reduced NADPH production, impairing the oxidative stress response and causing hemolytic anemia. Haploinsufficiency of EP300 disrupts gene expression regulation, including pathways involved in oxidative stress response, potentially leading to or exacerbating phenotypes associated with cellular stress, such as those seen in Rubinstein-Taybi syndrome. The convergence point is the oxidative stress response pathway, which is compromised by insufficient NADPH (due to G6PD deficiency) and potentially dysregulated gene expression (due to EP300 haploinsufficiency).",
+      "falsification": {
+        "text": "If genetic analysis reveals that the EP300 gene's function is not significantly perturbed in cells from G6PD deficient patients, or if interventions targeting oxidative stress response pathways show no differential effect in EP300-mutant cells compared to controls, this mechanistic link would be weakened.",
+        "gnomad_variant": "A common, benign variant in EP300 (e.g., allele frequency > 1% in gnomAD) that does not impair its acetyltransferase activity or its interaction with downstream targets involved in oxidative stress response."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9818028"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9818028": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013364",
+        "diseaseBName": "Rubinstein-Taybi syndrome due to EP300 haploinsufficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9818028"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9818028": 8
+        },
+        "fitness": 0.1327,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "G6PD (HGNC:4008) —PRODUCES→ NADPH production (GO:0006704); NADPH production (GO:0006704) —PRODUCES→ NADPH (CHEBI:17877); NADPH (CHEBI:17877) —INCREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolytic anemia (HP:0001892); EP300 (HGNC:3548) —DISRUPTS→ Gene expression regulation (GO:0006355); Gene expression regulation (GO:0006355) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Craniofacial abnormalities (HP:0000256). Loss of function in G6PD leads to reduced NADPH production, impairing the oxidative stress response and causing hemolytic anemia. Haploinsufficiency of EP300 disrupts gene expression regulation, including pathways involved in oxidative stress response, potentially leading to or exacerbating phenotypes associated with cellular stress, such as those seen in Rubinstein-Taybi syndrome. The convergence point is the oxidative stress response pathway, which is compromised by insufficient NADPH (due to G6PD deficiency) and potentially dysregulated gene expression (due to EP300 haploinsufficiency).",
+        "falsification": {
+          "text": "If genetic analysis reveals that the EP300 gene's function is not significantly perturbed in cells from G6PD deficient patients, or if interventions targeting oxidative stress response pathways show no differential effect in EP300-mutant cells compared to controls, this mechanistic link would be weakened.",
+          "gnomad_variant": "A common, benign variant in EP300 (e.g., allele frequency > 1% in gnomAD) that does not impair its acetyltransferase activity or its interaction with downstream targets involved in oxidative stress response."
+        },
+        "translational": "Understanding the convergence on oxidative stress response pathways could inform therapeutic strategies. For G6PD deficiency, avoiding oxidative triggers is key. For Rubinstein-Taybi syndrome, exploring interventions that bolster cellular defense mechanisms against oxidative stress or modulate gene expression related to metabolic pathways might offer novel therapeutic avenues."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T21:03:04.081Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** anemia, nonspherocytic hemolytic, due to G6PD deficiency (MONDO:0010480)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 20 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Menke-Hennekam syndrome 1 (MONDO:0020763) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-9818028 |\n| 2 | isolated sedoheptulokinase deficiency (MONDO:0014969) | shared pathway | Tier 3 | 0.393 | Reactome:R-HSA-71336 |\n| 3 | transketolase deficiency (MONDO:0014881) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-71336, Reactome:R-HSA-9818028 |\n| 4 | ribose-5-P isomerase deficiency (MONDO:0012073) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-71336 |\n| 5 | transaldolase deficiency (MONDO:0011624) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-71336, Reactome:R-HSA-9818028 |\n| 6 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9818028 |\n| 7 | immunodeficiency, developmental delay, and hypohomocysteinemia (MONDO:0060591) | shared pathway | Tier 4 | 0.199 | Reactome:R-HSA-9818028 |\n| 8 | Rubinstein-Taybi syndrome due to CREBBP mutations (MONDO:0008393) | shared pathway | Tier 4 | 0.198 | Reactome:R-HSA-9818028 |\n| 9 | Menke-Hennekam syndrome 2 (MONDO:0020769) | shared pathway | Tier 4 | 0.197 | Reactome:R-HSA-9818028 |\n| 10 | Rubinstein-Taybi syndrome due to EP300 haploinsufficiency (MONDO:0013364) | shared pathway | Tier 4 | 0.133 | Reactome:R-HSA-9818028 |\n\n### CANDIDATE DETAIL\n#### 1. Menke-Hennekam syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD deficiency variant —DISRUPTS→ G6PD (HGNC:4423); G6PD (HGNC:4423) —DECREASES→ NADPH; NADPH —DECREASES→ Redox homeostasis; Redox homeostasis —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Hemolytic anemia (MONDO:0010480); CREBBP mutation —DISRUPTS→ CREBBP (HGNC:2605); CREBBP (HGNC:2605) —DISRUPTS→ Transcriptional regulation of stress response genes; Transcriptional regulation of stress response genes —DECREASES→ NAD+ biosynthesis; NAD+ biosynthesis —LEADS_TO→ Developmental abnormalities (MONDO:0020763). Loss-of-function mutations in G6PD (Disease A) impair NADPH production, leading to oxidative stress and subsequent hemolytic anemia. Similarly, mutations in CREBBP (Disease B) disrupt transcriptional regulation, including genes involved in NAD+ biosynthesis and oxidative stress response, contributing to developmental abnormalities. Both pathways converge on the dysregulation of NAD+ biosynthesis, impacting cellular redox balance.\n\n**How to falsify it:** Demonstration that G6PD deficiency does not impact NAD+ biosynthesis or oxidative stress response in relevant cell types, or that CREBBP mutations do not affect these pathways, would falsify this hypothesis. Additionally, identification of a specific, highly prevalent (e.g., >1% allele frequency in gnomAD) variant in G6PD or CREBBP that is clearly pathogenic for one disease but absent or benign in the other, without any shared downstream effects on NAD+ metabolism, would also weaken the proposed link.\n\n**Why it matters:** Understanding this mechanistic overlap could reveal novel therapeutic targets for modulating NAD+ metabolism or oxidative stress responses in both G6PD deficiency and CREBBP-related disorders. For instance, interventions aimed at boosting NAD+ levels or enhancing antioxidant defenses might offer benefits in managing the cellular dysfunction associated with both conditions.\n\n---\n\n#### 2. isolated sedoheptulokinase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.393)\n**Link type:** shared pathway (Reactome:R-HSA-71336)\n\n**Proposed mechanism:** Loss-of-function variant in G6PD —DISRUPTS→ Glucose-6-phosphate 1-dehydrogenase (HGNC:4415); Glucose-6-phosphate 1-dehydrogenase (HGNC:4415) —DECREASES→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Increased oxidative stress burden (HP:0012534); Increased oxidative stress burden (HP:0012534) —LEADS_TO→ Hemolysis (HP:0001880); Loss-of-function variant in SHPK —DISRUPTS→ Sedoheptulokinase (HGNC:10709); Sedoheptulokinase (HGNC:10709) —PRODUCES→ Sedoheptulose-7-phosphate accumulation (CHEBI:17583); Sedoheptulose-7-phosphate accumulation (CHEBI:17583) —DISRUPTS→ NADPH regeneration via pentose phosphate pathway (GO:0006102); NADPH regeneration via pentose phosphate pathway (GO:0006102) —LEADS_TO→ Disrupted pentose phosphate pathway flux (HP:0005964). Loss-of-function mutations in G6PD lead to reduced NADPH regeneration in the pentose phosphate pathway (PPP), increasing oxidative stress and causing hemolysis. Similarly, loss-of-function mutations in SHPK lead to accumulation of sedoheptulose-7-phosphate, which disrupts the flux through the PPP, indirectly impairing NADPH regeneration and overall cellular homeostasis.\n\n**How to falsify it:** Demonstration that mutations in G6PD or SHPK do not affect NADPH regeneration or pentose phosphate pathway flux, respectively, or that genetic variants in G6PD or SHPK are common (e.g., >1% allele frequency in gnomAD) in populations where the respective disease is prevalent. _(variant: G6PD variants with >1% allele frequency in relevant populations)_\n\n**Why it matters:** Understanding the shared impact on NADPH regeneration and the pentose phosphate pathway could reveal novel therapeutic strategies. For instance, interventions aimed at supporting NADPH levels or mitigating the consequences of disrupted PPP flux might offer benefit in both conditions, despite their distinct primary genetic causes. This highlights potential for shared treatment modalities targeting downstream metabolic consequences.\n\n---\n\n#### 3. transketolase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-71336, Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** Glucose-6-phosphate dehydrogenase (HGNC:4074) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ NADPH; NADPH —INCREASES→ Oxidative stress in red blood cells (HP:0001910); Oxidative stress in red blood cells (HP:0001910) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001874); Transketolase (HGNC:11665) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-6797004); Pentose Phosphate Pathway (R-HSA-6797004) —DECREASES→ Ribose-5-phosphate; Ribose-5-phosphate —DECREASES→ Impaired nucleotide synthesis (HP:0011363); Impaired nucleotide synthesis (HP:0011363) —LEADS_TO→ Neurological deficits (HP:0001250); Pentose Phosphate Pathway (R-HSA-6797004) —BINDS→ Pentose Phosphate Pathway (R-HSA-6797004). Loss-of-function mutations in G6PD impair the Pentose Phosphate Pathway's ability to produce NADPH, leading to oxidative stress and hemolytic anemia. Similarly, loss-of-function mutations in TKT impair the Pentose Phosphate Pathway's ability to produce ribose-5-phosphate, essential for nucleotide synthesis, resulting in neurological deficits. The Pentose Phosphate Pathway is the shared convergence point.\n\n**How to falsify it:** Demonstration that G6PD deficiency does not lead to increased oxidative stress in erythrocytes, or that TKT deficiency does not impair nucleotide synthesis. Alternatively, identification of a G6PD variant with a frequency >1% in gnomAD that is causative for G6PD deficiency. _(variant: rs767200225)_\n\n**Why it matters:** Understanding the shared reliance on the Pentose Phosphate Pathway highlights potential therapeutic strategies that could target this pathway to mitigate disease severity in either G6PD deficiency or transketolase deficiency, potentially by supplementing intermediates or enhancing pathway flux.\n\n---\n\n#### 4. ribose-5-P isomerase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-71336)\n\n**Proposed mechanism:** Variant causing G6PD deficiency —DISRUPTS→ Glucose-6-phosphate dehydrogenase (HGNC:4076); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Pentose Phosphate Pathway (KEGG:00040); Pentose Phosphate Pathway (KEGG:00040) —DECREASES→ Nicotinamide adenine dinucleotide phosphate (CHEBI:15988); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Redox Balance Disruption (HP:0011438); Variant causing RPIA deficiency —DISRUPTS→ Ribose-5-phosphate isomerase (HGNC:9970); Ribose-5-phosphate isomerase (HGNC:9970) —DECREASES→ Ribose-5-phosphate (CHEBI:17473); Ribose-5-phosphate (CHEBI:17473) —DECREASES→ Nucleotide Synthesis (KEGG:00230); Nicotinamide adenine dinucleotide phosphate (CHEBI:15988) —LEADS_TO→ Hemolysis (HP:0001894); Nucleotide Synthesis (KEGG:00230) —LEADS_TO→ Hemolysis (HP:0001894). Loss-of-function mutations in G6PD impair the production of NADPH via the Pentose Phosphate Pathway, compromising cellular redox balance and leading to oxidative stress and hemolysis. Similarly, loss-of-function mutations in RPIA disrupt the Pentose Phosphate Pathway, reducing the availability of ribose-5-phosphate required for nucleotide synthesis. Both deficiencies ultimately converge on cellular dysfunction leading to hemolysis, albeit through distinct but related downstream effects within the same pathway.\n\n**How to falsify it:** Demonstration that the primary defect in G6PD deficiency is not related to NADPH production or that RPIA deficiency does not impact nucleotide synthesis would falsify this hypothesis. Furthermore, identification of a common pathogenic variant in both G6PD and RPIA genes with distinct functional consequences would also challenge this proposed overlap. _(variant: rs775451645)_\n\n**Why it matters:** Understanding this mechanistic link can inform therapeutic strategies targeting red blood cell support or downstream metabolic consequences in patients with either G6PD deficiency or RPIA deficiency. It highlights the critical role of the Pentose Phosphate Pathway in maintaining red blood cell integrity and function.\n\n---\n\n#### 5. transaldolase deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-71336, Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD (HGNC:4100) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); Pentose Phosphate Pathway (R-HSA-70240) —DECREASES→ NADPH (CHEBI:17990); NADPH (CHEBI:17990) —LEADS_TO→ Hemolytic anemia (HP:0001877); TALDO1 (HGNC:11471) —DISRUPTS→ Pentose Phosphate Pathway (R-HSA-70240); TALDO1 (HGNC:11471) —LEADS_TO→ Anemia (HP:0001909). Loss of function in G6PD disrupts the Pentose Phosphate Pathway, leading to decreased NADPH production and subsequent oxidative stress in erythrocytes, causing hemolytic anemia. Similarly, loss of function in TALDO1, an enzyme within the Pentose Phosphate Pathway, also leads to downstream metabolic alterations that can contribute to anemia, potentially through impaired NADPH regeneration or altered cellular redox balance.\n\n**How to falsify it:** Demonstration that mutations in G6PD do not affect NADPH levels in red blood cells, or that TALDO1 deficiency does not impact erythrocyte metabolism or survival. _(variant: rs1050851)_\n\n**Why it matters:** Understanding the shared impact on the Pentose Phosphate Pathway and NADPH homeostasis could reveal common therapeutic targets or strategies for managing anemia in both conditions, particularly concerning oxidative stress mitigation.\n\n---\n\n#### 6. colorectal cancer  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD (HGNC:4510) —DISRUPTS→ Pentose Phosphate Pathway (GO:0006091); Pentose Phosphate Pathway (GO:0006091) —DECREASES→ NADPH (CHEBI:17671); NADPH (CHEBI:17671) —DECREASES→ Oxidative Stress (HP:00114261); Oxidative Stress (HP:00114261) —LEADS_TO→ Hemolytic Anemia (HP:0001874); Oxidative Stress (HP:00114261) —INCREASES→ Colorectal Cancer (MONDO:0005575); APC (HGNC:547) —DISRUPTS→ Wnt signaling pathway (GO:0007229); Wnt signaling pathway (GO:0007229) —INCREASES→ Colorectal Cancer (MONDO:0005575); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (GO:0000165); MAPK signaling pathway (GO:0000165) —INCREASES→ Colorectal Cancer (MONDO:0005575); BRAF (HGNC:1087) —INCREASES→ MAPK signaling pathway (GO:0000165). Loss of G6PD function (n1) impairs the pentose phosphate pathway (n2), leading to reduced NADPH (n3) and consequently increased oxidative stress (n4) in red blood cells, causing hemolytic anemia (n5). Concurrently, increased oxidative stress (n4) can promote the development and progression of colorectal cancer (n11) by damaging DNA and promoting proliferation, even when initiated by mutations in other genes like APC (n6) affecting Wnt signaling (n7), or KRAS (n8)/BRAF (n10) affecting MAPK signaling (n9).\n\n**How to falsify it:** If studies show that elevated oxidative stress in red blood cells does not correlate with increased risk or severity of colorectal cancer, or if colorectal cancer patients with normal G6PD function do not exhibit increased susceptibility to oxidative stress-related complications, this hypothesis would be falsified. _(variant: The absence of common pathogenic variants in G6PD (e.g., rsXXXXXXX with AF > 0.01) in colorectal cancer patient cohorts would weaken the direct causal link, though not the shared downstream effect of oxidative stress.)_\n\n**Why it matters:** Targeting oxidative stress pathways, either to supplement NADPH in G6PD deficient individuals or to mitigate its pro-tumorigenic effects in colorectal cancer, could offer novel therapeutic strategies. Understanding this link might also inform screening protocols.\n\n---\n\n#### 7. immunodeficiency, developmental delay, and hypohomocysteinemia  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.199)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** Glucose-6-phosphate dehydrogenase (HGNC:4076) —PRODUCES→ NADPH (CHEBI:17487); Glucose-6-phosphate dehydrogenase (HGNC:4076) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolysis (HP:0001891); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —INCREASES→ Antioxidant response (GO:0000302); Nuclear factor erythroid 2-related factor 2 (HGNC:7773) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Developmental delay (HP:0001263); Oxidative stress response (GO:0006974) —LEADS_TO→ Hypohomocysteinemia (HP:0030182); Oxidative stress response (GO:0006974) —LEADS_TO→ Immunodeficiency (HP:0002711). Loss of G6PD function leads to insufficient NADPH, impairing the cell's ability to neutralize reactive oxygen species and causing oxidative stress, manifesting as hemolytic anemia. Concurrently, impaired NFE2L2 function or downstream pathways lead to a reduced antioxidant response, exacerbating oxidative stress, which in turn contributes to developmental delay, hypohomocysteinemia, and immunodeficiency.\n\n**How to falsify it:** Demonstration that mutations in G6PD do not lead to reduced NADPH levels or increased oxidative stress in affected cells, or that NFE2L2-mediated antioxidant response is not significantly impaired in individuals with MONDO:0060591. _(variant: Any common variant (AF > 0.01) in G6PD or NFE2L2 associated with either phenotype.)_\n\n**Why it matters:** Targeting pathways that modulate oxidative stress and enhance antioxidant capacity could offer therapeutic strategies for both G6PD deficiency and the complex phenotypes associated with NFE2L2 dysfunction, potentially improving outcomes for patients with developmental delay, immunodeficiency, and hypohomocysteinemia.\n\n---\n\n#### 8. Rubinstein-Taybi syndrome due to CREBBP mutations  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.198)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD (HGNC:4107) —PRODUCES→ NADPH (CHEBI:16042); NADPH (CHEBI:16042) —DECREASES→ Redox homeostasis (GO:0006974); Redox homeostasis (GO:0006974) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Nonspherocytic hemolytic anemia (HP:0001887); CREBBP (HGNC:2514) —DISRUPTS→ Epigenetic regulation and transcription (GO:0006355); Epigenetic regulation and transcription (GO:0006355) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Intellectual disability (HP:0001249); Oxidative stress response (GO:0006974) —LEADS_TO→ Facial dysmorphism (HP:0001999). Loss-of-function mutations in G6PD lead to reduced NADPH production, impairing the cell's ability to manage oxidative stress, resulting in hemolytic anemia. Similarly, loss-of-function mutations in CREBBP disrupt epigenetic regulation and transcription, which in turn compromises the oxidative stress response, contributing to the complex phenotype of Rubinstein-Taybi syndrome, including intellectual disability and facial dysmorphism.\n\n**How to falsify it:** If genetic studies show that the causal variants for G6PD deficiency do not affect redox homeostasis or that CREBBP mutations do not impact the oxidative stress response pathway, this hypothesis would be falsified. _(variant: No specific gnomAD variant can be used to falsify this broad pathway hypothesis without further refinement.)_\n\n**Why it matters:** Understanding the shared vulnerability to oxidative stress may reveal therapeutic targets common to both conditions, potentially leveraging antioxidants or pathways that bolster cellular defense mechanisms against reactive oxygen species.\n\n---\n\n#### 9. Menke-Hennekam syndrome 2  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.197)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD (HGNC:4077) —PRODUCES→ NADPH (CHEBI:17704); NADPH (CHEBI:17704) —DISRUPTS→ NADPH homeostasis (GO:0006705); NADPH homeostasis (GO:0006705) —LEADS_TO→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ anemia, nonspherocytic hemolytic (MONDO:0010480); EP300 (HGNC:3034) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Menke-Hennekam syndrome 2 (MONDO:0020769). Loss-of-function mutations in G6PD lead to reduced NADPH production, disrupting NADPH homeostasis and consequently impairing the oxidative stress response, manifesting as hemolytic anemia. Similarly, loss-of-function mutations in EP300, a transcriptional coactivator, can also dysregulate cellular processes that contribute to oxidative stress response, leading to Menke-Hennekam syndrome 2. The convergence point is the shared impact on the oxidative stress response pathway.\n\n**How to falsify it:** Demonstration that EP300 mutations do not impact oxidative stress response pathways or that G6PD deficiency has no downstream effects on processes regulated by EP300 would falsify this hypothesis. _(variant: No common variants (AF > 1%) in G6PD or EP300 associated with these specific disease phenotypes.)_\n\n**Why it matters:** Understanding the shared role in oxidative stress response could open avenues for therapeutic strategies targeting redox balance in both G6PD deficiency and Menke-Hennekam syndrome 2, potentially through antioxidant therapies or modulators of EP300 activity.\n\n---\n\n#### 10. Rubinstein-Taybi syndrome due to EP300 haploinsufficiency  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.133)\n**Link type:** shared pathway (Reactome:R-HSA-9818028)\n\n**Proposed mechanism:** G6PD (HGNC:4008) —PRODUCES→ NADPH production (GO:0006704); NADPH production (GO:0006704) —PRODUCES→ NADPH (CHEBI:17877); NADPH (CHEBI:17877) —INCREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Hemolytic anemia (HP:0001892); EP300 (HGNC:3548) —DISRUPTS→ Gene expression regulation (GO:0006355); Gene expression regulation (GO:0006355) —DECREASES→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Craniofacial abnormalities (HP:0000256). Loss of function in G6PD leads to reduced NADPH production, impairing the oxidative stress response and causing hemolytic anemia. Haploinsufficiency of EP300 disrupts gene expression regulation, including pathways involved in oxidative stress response, potentially leading to or exacerbating phenotypes associated with cellular stress, such as those seen in Rubinstein-Taybi syndrome. The convergence point is the oxidative stress response pathway, which is compromised by insufficient NADPH (due to G6PD deficiency) and potentially dysregulated gene expression (due to EP300 haploinsufficiency).\n\n**How to falsify it:** If genetic analysis reveals that the EP300 gene's function is not significantly perturbed in cells from G6PD deficient patients, or if interventions targeting oxidative stress response pathways show no differential effect in EP300-mutant cells compared to controls, this mechanistic link would be weakened. _(variant: A common, benign variant in EP300 (e.g., allele frequency > 1% in gnomAD) that does not impair its acetyltransferase activity or its interaction with downstream targets involved in oxidative stress response.)_\n\n**Why it matters:** Understanding the convergence on oxidative stress response pathways could inform therapeutic strategies. For G6PD deficiency, avoiding oxidative triggers is key. For Rubinstein-Taybi syndrome, exploring interventions that bolster cellular defense mechanisms against oxidative stress or modulate gene expression related to metabolic pathways might offer novel therapeutic avenues.\n\n---"
+}

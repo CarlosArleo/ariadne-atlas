@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013310",
+    "name": "MONDO:0013310"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008726",
+      "diseaseBName": "Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis",
+      "fitness": 0.7802,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "POR (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70377); POR (HGNC:9208) —DISRUPTS→ Cholesterol biosynthesis (REACT:R-HSA-173503); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Disordered steroidogenesis (HP:0003117); Cholesterol biosynthesis (REACT:R-HSA-173503) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000834); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Ambiguous genitalia (HP:0000057). Loss-of-function mutations in the POR gene disrupt both steroidogenesis and cholesterol biosynthesis, leading to disordered steroidogenesis, congenital adrenal hyperplasia, and ambiguous genitalia.",
+      "mechanism_narrative": "POR (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70377); POR (HGNC:9208) —DISRUPTS→ Cholesterol biosynthesis (REACT:R-HSA-173503); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Disordered steroidogenesis (HP:0003117); Cholesterol biosynthesis (REACT:R-HSA-173503) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000834); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Ambiguous genitalia (HP:0000057). Loss-of-function mutations in the POR gene disrupt both steroidogenesis and cholesterol biosynthesis, leading to disordered steroidogenesis, congenital adrenal hyperplasia, and ambiguous genitalia.",
+      "falsification": {
+        "text": "Absence of mutations in POR in individuals diagnosed with MONDO:0013310 or MONDO:0008726, or identification of pathogenic variants in distinct genes for each disease, would falsify this hypothesis.",
+        "gnomad_variant": "rs758859479"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9208"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008726",
+        "diseaseBName": "Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9208"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7802,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "POR (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70377); POR (HGNC:9208) —DISRUPTS→ Cholesterol biosynthesis (REACT:R-HSA-173503); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Disordered steroidogenesis (HP:0003117); Cholesterol biosynthesis (REACT:R-HSA-173503) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000834); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Ambiguous genitalia (HP:0000057). Loss-of-function mutations in the POR gene disrupt both steroidogenesis and cholesterol biosynthesis, leading to disordered steroidogenesis, congenital adrenal hyperplasia, and ambiguous genitalia.",
+        "falsification": {
+          "text": "Absence of mutations in POR in individuals diagnosed with MONDO:0013310 or MONDO:0008726, or identification of pathogenic variants in distinct genes for each disease, would falsify this hypothesis.",
+          "gnomad_variant": "rs758859479"
+        },
+        "translational": "Understanding the shared role of POR in both diseases can inform diagnostic strategies and potentially lead to therapeutic interventions targeting steroidogenesis pathways for both conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T02:51:47.917Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013310 (MONDO:0013310)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis (MONDO:0008726) | shared gene | Tier 1 | 0.780 | HGNC:9208 |\n\n### CANDIDATE DETAIL\n#### 1. Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.780)\n**Link type:** shared causal gene (HGNC:9208)\n\n**Proposed mechanism:** POR (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70377); POR (HGNC:9208) —DISRUPTS→ Cholesterol biosynthesis (REACT:R-HSA-173503); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Disordered steroidogenesis (HP:0003117); Cholesterol biosynthesis (REACT:R-HSA-173503) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000834); Steroidogenesis (REACT:R-HSA-70377) —LEADS_TO→ Ambiguous genitalia (HP:0000057). Loss-of-function mutations in the POR gene disrupt both steroidogenesis and cholesterol biosynthesis, leading to disordered steroidogenesis, congenital adrenal hyperplasia, and ambiguous genitalia.\n\n**How to falsify it:** Absence of mutations in POR in individuals diagnosed with MONDO:0013310 or MONDO:0008726, or identification of pathogenic variants in distinct genes for each disease, would falsify this hypothesis. _(variant: rs758859479)_\n\n**Why it matters:** Understanding the shared role of POR in both diseases can inform diagnostic strategies and potentially lead to therapeutic interventions targeting steroidogenesis pathways for both conditions.\n\n---"
+}

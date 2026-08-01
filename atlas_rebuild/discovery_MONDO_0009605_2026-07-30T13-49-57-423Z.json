@@ -1,0 +1,409 @@
+{
+  "seed": {
+    "id": "MONDO:0009605",
+    "name": "methemoglobinemia type 4"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 21,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011724",
+      "diseaseBName": "encephalopathy due to GLUT1 deficiency",
+      "fitness": 0.4467,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2456) —DISRUPTS→ methemoglobin (CHEBI:27375); methemoglobin (CHEBI:27375) —LEADS_TO→ Methemoglobinemia (HP:0001893); SLC2A1 (HGNC:10628) —DISRUPTS→ Neuronal Glucose Uptake (GO:0015124); Neuronal Glucose Uptake (GO:0015124) —LEADS_TO→ Encephalopathy (HP:0001295); methemoglobin (CHEBI:27375) —DISRUPTS→ Redox balance (GO:0006915); glucose (CHEBI:17234) —DISRUPTS→ Redox balance (GO:0006915). Loss of function in CYB5A impairs the reduction of methemoglobin, leading to methemoglobinemia. Concurrently, loss of function in SLC2A1 impairs glucose uptake into neurons, causing encephalopathy. Both conditions indirectly affect cellular redox balance, with methemoglobinemia directly impacting oxygen carrying capacity and neuronal glucose deficiency starving neurons of energy.",
+      "mechanism_narrative": "CYB5A (HGNC:2456) —DISRUPTS→ methemoglobin (CHEBI:27375); methemoglobin (CHEBI:27375) —LEADS_TO→ Methemoglobinemia (HP:0001893); SLC2A1 (HGNC:10628) —DISRUPTS→ Neuronal Glucose Uptake (GO:0015124); Neuronal Glucose Uptake (GO:0015124) —LEADS_TO→ Encephalopathy (HP:0001295); methemoglobin (CHEBI:27375) —DISRUPTS→ Redox balance (GO:0006915); glucose (CHEBI:17234) —DISRUPTS→ Redox balance (GO:0006915). Loss of function in CYB5A impairs the reduction of methemoglobin, leading to methemoglobinemia. Concurrently, loss of function in SLC2A1 impairs glucose uptake into neurons, causing encephalopathy. Both conditions indirectly affect cellular redox balance, with methemoglobinemia directly impacting oxygen carrying capacity and neuronal glucose deficiency starving neurons of energy.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in CYB5A that is demonstrably associated with encephalopathy, or a pathogenic variant in SLC2A1 that is demonstrably associated with methemoglobinemia, would falsify this hypothesis of distinct causal genes leading to related but separate disease modules.",
+        "gnomad_variant": "rs75734436"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196836"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196836": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011724",
+        "diseaseBName": "encephalopathy due to GLUT1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196836"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196836": 8
+        },
+        "fitness": 0.4467,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2456) —DISRUPTS→ methemoglobin (CHEBI:27375); methemoglobin (CHEBI:27375) —LEADS_TO→ Methemoglobinemia (HP:0001893); SLC2A1 (HGNC:10628) —DISRUPTS→ Neuronal Glucose Uptake (GO:0015124); Neuronal Glucose Uptake (GO:0015124) —LEADS_TO→ Encephalopathy (HP:0001295); methemoglobin (CHEBI:27375) —DISRUPTS→ Redox balance (GO:0006915); glucose (CHEBI:17234) —DISRUPTS→ Redox balance (GO:0006915). Loss of function in CYB5A impairs the reduction of methemoglobin, leading to methemoglobinemia. Concurrently, loss of function in SLC2A1 impairs glucose uptake into neurons, causing encephalopathy. Both conditions indirectly affect cellular redox balance, with methemoglobinemia directly impacting oxygen carrying capacity and neuronal glucose deficiency starving neurons of energy.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in CYB5A that is demonstrably associated with encephalopathy, or a pathogenic variant in SLC2A1 that is demonstrably associated with methemoglobinemia, would falsify this hypothesis of distinct causal genes leading to related but separate disease modules.",
+          "gnomad_variant": "rs75734436"
+        },
+        "translational": "Understanding the shared downstream impact on cellular redox state and energy metabolism could reveal novel therapeutic targets for both methemoglobinemia and GLUT1 deficiency syndrome, potentially involving interventions that support neuronal energy supply or mitigate oxidative stress."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009606",
+      "diseaseBName": "methemoglobinemia due to deficiency of methemoglobin reductase",
+      "fitness": 0.4183,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5R3 (HGNC:2554) —DISRUPTS→ Methemoglobin reduction (GO:0042351); CYB5A (HGNC:2551) —DISRUPTS→ Methemoglobin reduction (GO:0042351); Methemoglobin reduction (GO:0042351) —DECREASES→ Methemoglobin (CHEBI:27380); Methemoglobin (CHEBI:27380) —LEADS_TO→ Methemoglobinemia (HP:0003076). Loss-of-function mutations in CYB5R3 (causing methemoglobinemia due to deficiency of methemoglobin reductase) and potentially CYB5A (contributing to methemoglobinemia type 4) impair the methemoglobin reduction pathway. This leads to an accumulation of methemoglobin, resulting in the phenotype of methemoglobinemia.",
+      "mechanism_narrative": "CYB5R3 (HGNC:2554) —DISRUPTS→ Methemoglobin reduction (GO:0042351); CYB5A (HGNC:2551) —DISRUPTS→ Methemoglobin reduction (GO:0042351); Methemoglobin reduction (GO:0042351) —DECREASES→ Methemoglobin (CHEBI:27380); Methemoglobin (CHEBI:27380) —LEADS_TO→ Methemoglobinemia (HP:0003076). Loss-of-function mutations in CYB5R3 (causing methemoglobinemia due to deficiency of methemoglobin reductase) and potentially CYB5A (contributing to methemoglobinemia type 4) impair the methemoglobin reduction pathway. This leads to an accumulation of methemoglobin, resulting in the phenotype of methemoglobinemia.",
+      "falsification": {
+        "text": "Identification of distinct, non-overlapping molecular pathways or genes that are exclusively responsible for each disease, with no shared intermediates or downstream effectors, would falsify this hypothesis. Specifically, if methemoglobinemia type 4 is solely attributable to a mechanism completely independent of the CYB5R3-mediated reduction pathway and does not involve the accumulation of methemoglobin as a direct consequence.",
+        "gnomad_variant": "The absence of any common pathogenic variants in CYB5R3 and CYB5A within the gnomAD database for individuals presenting with these specific methemoglobinemia subtypes would also challenge this link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196836"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196836": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009606",
+        "diseaseBName": "methemoglobinemia due to deficiency of methemoglobin reductase",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196836"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196836": 8
+        },
+        "fitness": 0.4183,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5R3 (HGNC:2554) —DISRUPTS→ Methemoglobin reduction (GO:0042351); CYB5A (HGNC:2551) —DISRUPTS→ Methemoglobin reduction (GO:0042351); Methemoglobin reduction (GO:0042351) —DECREASES→ Methemoglobin (CHEBI:27380); Methemoglobin (CHEBI:27380) —LEADS_TO→ Methemoglobinemia (HP:0003076). Loss-of-function mutations in CYB5R3 (causing methemoglobinemia due to deficiency of methemoglobin reductase) and potentially CYB5A (contributing to methemoglobinemia type 4) impair the methemoglobin reduction pathway. This leads to an accumulation of methemoglobin, resulting in the phenotype of methemoglobinemia.",
+        "falsification": {
+          "text": "Identification of distinct, non-overlapping molecular pathways or genes that are exclusively responsible for each disease, with no shared intermediates or downstream effectors, would falsify this hypothesis. Specifically, if methemoglobinemia type 4 is solely attributable to a mechanism completely independent of the CYB5R3-mediated reduction pathway and does not involve the accumulation of methemoglobin as a direct consequence.",
+          "gnomad_variant": "The absence of any common pathogenic variants in CYB5R3 and CYB5A within the gnomAD database for individuals presenting with these specific methemoglobinemia subtypes would also challenge this link."
+        },
+        "translational": "Understanding the shared mechanism of methemoglobin reduction impairment can inform therapeutic strategies. For instance, treatments aimed at enhancing the activity of residual functional enzyme or exploring alternative reduction pathways could be beneficial for both types of methemoglobinemia if they share a common genetic or enzymatic basis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012805",
+      "diseaseBName": "childhood onset GLUT1 deficiency syndrome 2",
+      "fitness": 0.4046,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2446) —DISRUPTS→ Methemoglobin (CHEBI:35250); CYB5A (HGNC:2446) —DISRUPTS→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Methemoglobinemia (HP:0003136); SLC2A1 (HGNC:10645) —DISRUPTS→ Glucose (CHEBI:17234); SLC2A1 (HGNC:10645) —DISRUPTS→ Red blood cell metabolism (META:0000028); Glucose (CHEBI:17234) —LEADS_TO→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Glucose transporter type 1 deficiency syndrome 2 (MONDO:0012805). Loss-of-function variants in CYB5A impair the reduction of methemoglobin in red blood cells, leading to methemoglobinemia type 4. Simultaneously, loss-of-function variants in SLC2A1 impair glucose transport into red blood cells, disrupting red blood cell metabolism and causing GLUT1 deficiency syndrome 2. Both diseases converge on the disruption of normal red blood cell metabolism, albeit through different specific molecular defects.",
+      "mechanism_narrative": "CYB5A (HGNC:2446) —DISRUPTS→ Methemoglobin (CHEBI:35250); CYB5A (HGNC:2446) —DISRUPTS→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Methemoglobinemia (HP:0003136); SLC2A1 (HGNC:10645) —DISRUPTS→ Glucose (CHEBI:17234); SLC2A1 (HGNC:10645) —DISRUPTS→ Red blood cell metabolism (META:0000028); Glucose (CHEBI:17234) —LEADS_TO→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Glucose transporter type 1 deficiency syndrome 2 (MONDO:0012805). Loss-of-function variants in CYB5A impair the reduction of methemoglobin in red blood cells, leading to methemoglobinemia type 4. Simultaneously, loss-of-function variants in SLC2A1 impair glucose transport into red blood cells, disrupting red blood cell metabolism and causing GLUT1 deficiency syndrome 2. Both diseases converge on the disruption of normal red blood cell metabolism, albeit through different specific molecular defects.",
+      "falsification": {
+        "text": "The identification of a common genetic variant in a gene other than CYB5A or SLC2A1 that is strongly associated with both methemoglobinemia type 4 and childhood onset GLUT1 deficiency syndrome 2, or evidence that the metabolic pathways for methemoglobin reduction and glucose transport in red blood cells are entirely independent and non-interacting.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196836"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196836": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012805",
+        "diseaseBName": "childhood onset GLUT1 deficiency syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196836"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196836": 8
+        },
+        "fitness": 0.4046,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2446) —DISRUPTS→ Methemoglobin (CHEBI:35250); CYB5A (HGNC:2446) —DISRUPTS→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Methemoglobinemia (HP:0003136); SLC2A1 (HGNC:10645) —DISRUPTS→ Glucose (CHEBI:17234); SLC2A1 (HGNC:10645) —DISRUPTS→ Red blood cell metabolism (META:0000028); Glucose (CHEBI:17234) —LEADS_TO→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Glucose transporter type 1 deficiency syndrome 2 (MONDO:0012805). Loss-of-function variants in CYB5A impair the reduction of methemoglobin in red blood cells, leading to methemoglobinemia type 4. Simultaneously, loss-of-function variants in SLC2A1 impair glucose transport into red blood cells, disrupting red blood cell metabolism and causing GLUT1 deficiency syndrome 2. Both diseases converge on the disruption of normal red blood cell metabolism, albeit through different specific molecular defects.",
+        "falsification": {
+          "text": "The identification of a common genetic variant in a gene other than CYB5A or SLC2A1 that is strongly associated with both methemoglobinemia type 4 and childhood onset GLUT1 deficiency syndrome 2, or evidence that the metabolic pathways for methemoglobin reduction and glucose transport in red blood cells are entirely independent and non-interacting.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared reliance on red blood cell metabolism for these distinct conditions could reveal novel therapeutic targets. For instance, interventions aimed at supporting red blood cell energy homeostasis or redox balance might offer a common therapeutic strategy, or highlight how different insults to this shared cellular environment lead to divergent pathologies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012143",
+      "diseaseBName": "hereditary cryohydrocytosis with reduced stomatin",
+      "fitness": 0.3982,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2458) —DISRUPTS→ Methemoglobin reduction (GO:0006077); Methemoglobin reduction (GO:0006077) —LEADS_TO→ Methemoglobinemia (HP:0001881); SLC2A1 (HGNC:10554) —DISRUPTS→ Erythrocyte ion transport and homeostasis (GO:0005547); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Hereditary cryohydrocytosis (HP:0004887); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Reduced stomatin (HP:0011704). Loss-of-function mutations in CYB5A impair methemoglobin reduction leading to methemoglobinemia. Concurrently, loss-of-function mutations in SLC2A1 disrupt erythrocyte ion transport and homeostasis, resulting in hereditary cryohydrocytosis and reduced stomatin. The shared mechanism lies in the disruption of critical cellular pathways within erythrocytes, affecting redox balance and membrane integrity, respectively.",
+      "mechanism_narrative": "CYB5A (HGNC:2458) —DISRUPTS→ Methemoglobin reduction (GO:0006077); Methemoglobin reduction (GO:0006077) —LEADS_TO→ Methemoglobinemia (HP:0001881); SLC2A1 (HGNC:10554) —DISRUPTS→ Erythrocyte ion transport and homeostasis (GO:0005547); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Hereditary cryohydrocytosis (HP:0004887); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Reduced stomatin (HP:0011704). Loss-of-function mutations in CYB5A impair methemoglobin reduction leading to methemoglobinemia. Concurrently, loss-of-function mutations in SLC2A1 disrupt erythrocyte ion transport and homeostasis, resulting in hereditary cryohydrocytosis and reduced stomatin. The shared mechanism lies in the disruption of critical cellular pathways within erythrocytes, affecting redox balance and membrane integrity, respectively.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in CYB5A who do not exhibit methemoglobinemia, or individuals with pathogenic variants in SLC2A1 who do not present with hereditary cryohydrocytosis or reduced stomatin, would falsify this hypothesis. Furthermore, demonstrating that the identified variants for each disease are not loss-of-function would also falsify the proposed mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196836"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196836": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012143",
+        "diseaseBName": "hereditary cryohydrocytosis with reduced stomatin",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196836"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196836": 8
+        },
+        "fitness": 0.3982,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2458) —DISRUPTS→ Methemoglobin reduction (GO:0006077); Methemoglobin reduction (GO:0006077) —LEADS_TO→ Methemoglobinemia (HP:0001881); SLC2A1 (HGNC:10554) —DISRUPTS→ Erythrocyte ion transport and homeostasis (GO:0005547); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Hereditary cryohydrocytosis (HP:0004887); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Reduced stomatin (HP:0011704). Loss-of-function mutations in CYB5A impair methemoglobin reduction leading to methemoglobinemia. Concurrently, loss-of-function mutations in SLC2A1 disrupt erythrocyte ion transport and homeostasis, resulting in hereditary cryohydrocytosis and reduced stomatin. The shared mechanism lies in the disruption of critical cellular pathways within erythrocytes, affecting redox balance and membrane integrity, respectively.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in CYB5A who do not exhibit methemoglobinemia, or individuals with pathogenic variants in SLC2A1 who do not present with hereditary cryohydrocytosis or reduced stomatin, would falsify this hypothesis. Furthermore, demonstrating that the identified variants for each disease are not loss-of-function would also falsify the proposed mechanism."
+        },
+        "translational": "Understanding the distinct yet overlapping cellular dysfunctions in erythrocytes caused by mutations in CYB5A and SLC2A1 could inform targeted therapeutic strategies for red blood cell disorders. For instance, interventions aimed at supporting erythrocyte redox balance or stabilizing membrane function might be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859356",
+      "diseaseBName": "congenital disorder of glycosylation, type IIy",
+      "fitness": 0.397,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2445) —DISRUPTS→ Redox homeostasis in erythrocytes (GO:0006918); Redox homeostasis in erythrocytes (GO:0006918) —LEADS_TO→ Methemoglobinemia (HP:0003243); CYB5A (HGNC:2445) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356); GET4 (HGNC:23100) —DISRUPTS→ N-linked glycosylation (GO:0006486); GET4 (HGNC:23100) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356). Mutations in CYB5A lead to impaired redox homeostasis in erythrocytes, causing methemoglobinemia. Concurrently, CYB5A is involved in N-linked glycosylation, and its dysfunction contributes to the phenotypes observed in CDG type IIy. GET4 is also implicated in CDG type IIy by disrupting N-linked glycosylation.",
+      "mechanism_narrative": "CYB5A (HGNC:2445) —DISRUPTS→ Redox homeostasis in erythrocytes (GO:0006918); Redox homeostasis in erythrocytes (GO:0006918) —LEADS_TO→ Methemoglobinemia (HP:0003243); CYB5A (HGNC:2445) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356); GET4 (HGNC:23100) —DISRUPTS→ N-linked glycosylation (GO:0006486); GET4 (HGNC:23100) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356). Mutations in CYB5A lead to impaired redox homeostasis in erythrocytes, causing methemoglobinemia. Concurrently, CYB5A is involved in N-linked glycosylation, and its dysfunction contributes to the phenotypes observed in CDG type IIy. GET4 is also implicated in CDG type IIy by disrupting N-linked glycosylation.",
+      "falsification": {
+        "text": "If mutations in CYB5A are found to be exclusively associated with methemoglobinemia type 4 and not implicated in any form of glycosylation disorder, or if GET4 mutations are found to be the sole cause of CDG IIy without any link to CYB5A function, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common pathogenic variants in CYB5A (e.g., allele frequency > 1% in gnomAD exomes) that are not associated with either methemoglobinemia or CDG IIy."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9609523"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9609523": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859356",
+        "diseaseBName": "congenital disorder of glycosylation, type IIy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9609523"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9609523": 22
+        },
+        "fitness": 0.397,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2445) —DISRUPTS→ Redox homeostasis in erythrocytes (GO:0006918); Redox homeostasis in erythrocytes (GO:0006918) —LEADS_TO→ Methemoglobinemia (HP:0003243); CYB5A (HGNC:2445) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356); GET4 (HGNC:23100) —DISRUPTS→ N-linked glycosylation (GO:0006486); GET4 (HGNC:23100) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356). Mutations in CYB5A lead to impaired redox homeostasis in erythrocytes, causing methemoglobinemia. Concurrently, CYB5A is involved in N-linked glycosylation, and its dysfunction contributes to the phenotypes observed in CDG type IIy. GET4 is also implicated in CDG type IIy by disrupting N-linked glycosylation.",
+        "falsification": {
+          "text": "If mutations in CYB5A are found to be exclusively associated with methemoglobinemia type 4 and not implicated in any form of glycosylation disorder, or if GET4 mutations are found to be the sole cause of CDG IIy without any link to CYB5A function, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common pathogenic variants in CYB5A (e.g., allele frequency > 1% in gnomAD exomes) that are not associated with either methemoglobinemia or CDG IIy."
+        },
+        "translational": "Understanding the shared role of CYB5A in red blood cell function and protein glycosylation could reveal novel therapeutic targets for both methemoglobinemia and CDG type IIy, potentially leading to treatments that address both conditions or a subset of their molecular defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013536",
+      "diseaseBName": "heme oxygenase 1 deficiency",
+      "fitness": 0.3834,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2479) —DISRUPTS→ Methemoglobin (CHEBI:28223); Methemoglobin (CHEBI:28223) —LEADS_TO→ Methemoglobinemia (HP:0001830); HMOX1 (HGNC:4823) —DISRUPTS→ Heme degradation (REACT:REACT-73159); Heme degradation (REACT:REACT-73159) —DECREASES→ Heme (CHEBI:17540); Heme (CHEBI:17540) —LEADS_TO→ Heme oxygenase 1 deficiency (HP:0030193); Heme (CHEBI:17540) —INCREASES→ Methemoglobin (CHEBI:28223). Loss-of-function mutations in CYB5A impair the reduction of methemoglobin, leading to methemoglobinemia type 4. Loss-of-function mutations in HMOX1 impair heme degradation, leading to heme accumulation and associated phenotypes. Both pathways converge on the central metabolite heme, and its altered levels or redox state contribute to the pathologies.",
+      "mechanism_narrative": "CYB5A (HGNC:2479) —DISRUPTS→ Methemoglobin (CHEBI:28223); Methemoglobin (CHEBI:28223) —LEADS_TO→ Methemoglobinemia (HP:0001830); HMOX1 (HGNC:4823) —DISRUPTS→ Heme degradation (REACT:REACT-73159); Heme degradation (REACT:REACT-73159) —DECREASES→ Heme (CHEBI:17540); Heme (CHEBI:17540) —LEADS_TO→ Heme oxygenase 1 deficiency (HP:0030193); Heme (CHEBI:17540) —INCREASES→ Methemoglobin (CHEBI:28223). Loss-of-function mutations in CYB5A impair the reduction of methemoglobin, leading to methemoglobinemia type 4. Loss-of-function mutations in HMOX1 impair heme degradation, leading to heme accumulation and associated phenotypes. Both pathways converge on the central metabolite heme, and its altered levels or redox state contribute to the pathologies.",
+      "falsification": {
+        "text": "Identification of a common pathogenic variant in CYB5A or HMOX1 with a population frequency >0.01 in gnomAD that is causative for both methemoglobinemia type 4 and heme oxygenase 1 deficiency.",
+        "gnomad_variant": "rs75561763"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9609523"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9609523": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013536",
+        "diseaseBName": "heme oxygenase 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9609523"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9609523": 22
+        },
+        "fitness": 0.3834,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2479) —DISRUPTS→ Methemoglobin (CHEBI:28223); Methemoglobin (CHEBI:28223) —LEADS_TO→ Methemoglobinemia (HP:0001830); HMOX1 (HGNC:4823) —DISRUPTS→ Heme degradation (REACT:REACT-73159); Heme degradation (REACT:REACT-73159) —DECREASES→ Heme (CHEBI:17540); Heme (CHEBI:17540) —LEADS_TO→ Heme oxygenase 1 deficiency (HP:0030193); Heme (CHEBI:17540) —INCREASES→ Methemoglobin (CHEBI:28223). Loss-of-function mutations in CYB5A impair the reduction of methemoglobin, leading to methemoglobinemia type 4. Loss-of-function mutations in HMOX1 impair heme degradation, leading to heme accumulation and associated phenotypes. Both pathways converge on the central metabolite heme, and its altered levels or redox state contribute to the pathologies.",
+        "falsification": {
+          "text": "Identification of a common pathogenic variant in CYB5A or HMOX1 with a population frequency >0.01 in gnomAD that is causative for both methemoglobinemia type 4 and heme oxygenase 1 deficiency.",
+          "gnomad_variant": "rs75561763"
+        },
+        "translational": "Understanding the shared role of heme homeostasis in these distinct conditions could reveal novel therapeutic targets for methemoglobinemia by modulating heme degradation or for heme oxygenase 1 deficiency by targeting pathways that influence methemoglobin reduction."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010983",
+      "diseaseBName": "dystonia 9",
+      "fitness": 0.382,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic CYB5A variant (null) —DISRUPTS→ CYB5A (HGNC:246); CYB5A (HGNC:246) —DECREASES→ Methemoglobin (CHEBI:27327); Methemoglobin (CHEBI:27327) —LEADS_TO→ Methemoglobinemia (HP:0003142); CYB5A (HGNC:246) —DISRUPTS→ Cytochrome b5 mediated electron transfer (REACT:null); Cytochrome b5 mediated electron transfer (REACT:null) —LEADS_TO→ Dystonia (HP:0001358). Pathogenic variants in CYB5A lead to loss-of-function, reducing the activity of cytochrome b5. This impairs the reduction of methemoglobin, leading to methemoglobinemia (Disease A). Concurrently, the disruption of cytochrome b5 mediated electron transfer pathways, which are crucial for various cellular redox processes including potentially those affecting neuronal function and neurotransmitter metabolism, contributes to the development of dystonia (Disease B).",
+      "mechanism_narrative": "Pathogenic CYB5A variant (null) —DISRUPTS→ CYB5A (HGNC:246); CYB5A (HGNC:246) —DECREASES→ Methemoglobin (CHEBI:27327); Methemoglobin (CHEBI:27327) —LEADS_TO→ Methemoglobinemia (HP:0003142); CYB5A (HGNC:246) —DISRUPTS→ Cytochrome b5 mediated electron transfer (REACT:null); Cytochrome b5 mediated electron transfer (REACT:null) —LEADS_TO→ Dystonia (HP:0001358). Pathogenic variants in CYB5A lead to loss-of-function, reducing the activity of cytochrome b5. This impairs the reduction of methemoglobin, leading to methemoglobinemia (Disease A). Concurrently, the disruption of cytochrome b5 mediated electron transfer pathways, which are crucial for various cellular redox processes including potentially those affecting neuronal function and neurotransmitter metabolism, contributes to the development of dystonia (Disease B).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in CYB5A with a significantly different functional consequence (e.g., a strong dominant-negative effect for one disease and a loss-of-function for the other) or the discovery of distinct, non-overlapping molecular pathways downstream of CYB5A that exclusively explain each disease would falsify this hypothesis. Furthermore, demonstrating that CYB5A variants associated with dystonia 9 do not impair cytochrome b5's function in methemoglobin reduction or other shared redox pathways would weaken the proposed link.",
+        "gnomad_variant": "The presence of common, benign variants in CYB5A in the general population (gnomAD MAF > 1%) would not falsify the hypothesis, as these diseases are typically caused by rare, pathogenic variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-196836"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-196836": 8
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010983",
+        "diseaseBName": "dystonia 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-196836"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-196836": 8
+        },
+        "fitness": 0.382,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic CYB5A variant (null) —DISRUPTS→ CYB5A (HGNC:246); CYB5A (HGNC:246) —DECREASES→ Methemoglobin (CHEBI:27327); Methemoglobin (CHEBI:27327) —LEADS_TO→ Methemoglobinemia (HP:0003142); CYB5A (HGNC:246) —DISRUPTS→ Cytochrome b5 mediated electron transfer (REACT:null); Cytochrome b5 mediated electron transfer (REACT:null) —LEADS_TO→ Dystonia (HP:0001358). Pathogenic variants in CYB5A lead to loss-of-function, reducing the activity of cytochrome b5. This impairs the reduction of methemoglobin, leading to methemoglobinemia (Disease A). Concurrently, the disruption of cytochrome b5 mediated electron transfer pathways, which are crucial for various cellular redox processes including potentially those affecting neuronal function and neurotransmitter metabolism, contributes to the development of dystonia (Disease B).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in CYB5A with a significantly different functional consequence (e.g., a strong dominant-negative effect for one disease and a loss-of-function for the other) or the discovery of distinct, non-overlapping molecular pathways downstream of CYB5A that exclusively explain each disease would falsify this hypothesis. Furthermore, demonstrating that CYB5A variants associated with dystonia 9 do not impair cytochrome b5's function in methemoglobin reduction or other shared redox pathways would weaken the proposed link.",
+          "gnomad_variant": "The presence of common, benign variants in CYB5A in the general population (gnomAD MAF > 1%) would not falsify the hypothesis, as these diseases are typically caused by rare, pathogenic variants."
+        },
+        "translational": "Understanding the shared mechanistic link through CYB5A could reveal novel therapeutic targets for both methemoglobinemia type 4 and dystonia 9. Strategies aimed at restoring cytochrome b5 activity or mitigating downstream cellular consequences of its dysfunction, such as enhancing redox homeostasis or supporting specific metabolic pathways in neurons, could offer a unified therapeutic approach or highlight distinct therapeutic avenues based on the specific impact of CYB5A variants in each disease context."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007088",
+      "diseaseBName": "Alzheimer disease type 1",
+      "fitness": 0.3325,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2444) —DECREASES→ Methemoglobin (CHEBI:27478); Methemoglobin (CHEBI:27478) —LEADS_TO→ Methemoglobinemia (HP:0001701); APP (HGNC:615) —INCREASES→ Amyloidogenic processing of APP (GO:0002526); Amyloidogenic processing of APP (GO:0002526) —PRODUCES→ Amyloid-beta peptide (CHEBI:51009); Amyloid-beta peptide (CHEBI:51009) —LEADS_TO→ Alzheimer disease (HP:0000716). Loss-of-function mutations in CYB5A lead to decreased activity of cytochrome b5 reductase, impairing the reduction of methemoglobin, resulting in methemoglobinemia. In parallel, gain-of-function or altered processing of APP leads to increased amyloid-beta peptide production, a hallmark of Alzheimer disease. The convergence is not at a specific shared molecular entity but rather a divergence in pathways originating from distinct genes that are both implicated in cellular homeostasis, suggesting an indirect overlap in disease modules.",
+      "mechanism_narrative": "CYB5A (HGNC:2444) —DECREASES→ Methemoglobin (CHEBI:27478); Methemoglobin (CHEBI:27478) —LEADS_TO→ Methemoglobinemia (HP:0001701); APP (HGNC:615) —INCREASES→ Amyloidogenic processing of APP (GO:0002526); Amyloidogenic processing of APP (GO:0002526) —PRODUCES→ Amyloid-beta peptide (CHEBI:51009); Amyloid-beta peptide (CHEBI:51009) —LEADS_TO→ Alzheimer disease (HP:0000716). Loss-of-function mutations in CYB5A lead to decreased activity of cytochrome b5 reductase, impairing the reduction of methemoglobin, resulting in methemoglobinemia. In parallel, gain-of-function or altered processing of APP leads to increased amyloid-beta peptide production, a hallmark of Alzheimer disease. The convergence is not at a specific shared molecular entity but rather a divergence in pathways originating from distinct genes that are both implicated in cellular homeostasis, suggesting an indirect overlap in disease modules.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in CYB5A do not segregate with methemoglobinemia type 4, or if mutations in APP do not segregate with Alzheimer disease type 1, this hypothesis would be falsified. Furthermore, if studies show no evidence of altered redox balance in Alzheimer's disease or no link between APP processing and methemoglobin levels, the proposed mechanistic link would be weakened.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of CYB5A or APP that are not associated with either disease would not falsify this hypothesis, as these diseases are rare and typically caused by rare variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9609523"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9609523": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007088",
+        "diseaseBName": "Alzheimer disease type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9609523"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9609523": 22
+        },
+        "fitness": 0.3325,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2444) —DECREASES→ Methemoglobin (CHEBI:27478); Methemoglobin (CHEBI:27478) —LEADS_TO→ Methemoglobinemia (HP:0001701); APP (HGNC:615) —INCREASES→ Amyloidogenic processing of APP (GO:0002526); Amyloidogenic processing of APP (GO:0002526) —PRODUCES→ Amyloid-beta peptide (CHEBI:51009); Amyloid-beta peptide (CHEBI:51009) —LEADS_TO→ Alzheimer disease (HP:0000716). Loss-of-function mutations in CYB5A lead to decreased activity of cytochrome b5 reductase, impairing the reduction of methemoglobin, resulting in methemoglobinemia. In parallel, gain-of-function or altered processing of APP leads to increased amyloid-beta peptide production, a hallmark of Alzheimer disease. The convergence is not at a specific shared molecular entity but rather a divergence in pathways originating from distinct genes that are both implicated in cellular homeostasis, suggesting an indirect overlap in disease modules.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in CYB5A do not segregate with methemoglobinemia type 4, or if mutations in APP do not segregate with Alzheimer disease type 1, this hypothesis would be falsified. Furthermore, if studies show no evidence of altered redox balance in Alzheimer's disease or no link between APP processing and methemoglobin levels, the proposed mechanistic link would be weakened.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of CYB5A or APP that are not associated with either disease would not falsify this hypothesis, as these diseases are rare and typically caused by rare variants."
+        },
+        "translational": "Understanding the distinct and potentially interacting roles of CYB5A and APP in cellular function may reveal novel therapeutic targets. For instance, exploring whether modulating redox balance impacts APP processing or vice versa could offer new avenues for treating either methemoglobinemia or Alzheimer disease, or potentially conditions with shared downstream effects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011299",
+      "diseaseBName": "Huntington disease-like 1",
+      "fitness": 0.3321,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYB5A (HGNC:2404) —DECREASES→ Methemoglobin reduction (GO:0006022); Methemoglobin reduction (GO:0006022) —DISRUPTS→ Methemoglobin (CHEBI:27291); Methemoglobin (CHEBI:27291) —LEADS_TO→ Cyanosis (HP:0001020); PRNP (HGNC:9576) —INCREASES→ Neuronal protein aggregation (GO:0051729); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Neurodegeneration (HP:0002094); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Movement disorder (HP:0001251). Loss-of-function mutations in CYB5A impair methemoglobin reduction, leading to methemoglobinemia and cyanosis. Gain-of-function mutations in PRNP promote the aggregation of misfolded prion proteins, causing neurodegeneration and movement disorders. The hypothesized overlap is that both processes, through distinct pathways, contribute to a general state of neuronal protein misfolding and aggregation, potentially exacerbating neurotoxicity.",
+      "mechanism_narrative": "CYB5A (HGNC:2404) —DECREASES→ Methemoglobin reduction (GO:0006022); Methemoglobin reduction (GO:0006022) —DISRUPTS→ Methemoglobin (CHEBI:27291); Methemoglobin (CHEBI:27291) —LEADS_TO→ Cyanosis (HP:0001020); PRNP (HGNC:9576) —INCREASES→ Neuronal protein aggregation (GO:0051729); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Neurodegeneration (HP:0002094); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Movement disorder (HP:0001251). Loss-of-function mutations in CYB5A impair methemoglobin reduction, leading to methemoglobinemia and cyanosis. Gain-of-function mutations in PRNP promote the aggregation of misfolded prion proteins, causing neurodegeneration and movement disorders. The hypothesized overlap is that both processes, through distinct pathways, contribute to a general state of neuronal protein misfolding and aggregation, potentially exacerbating neurotoxicity.",
+      "falsification": {
+        "text": "If studies demonstrate that PRNP aggregation does not significantly impact redox balance or other cellular processes affected by methemoglobinemia, or if interventions targeting methemoglobin reduction show no effect on the progression of neurodegenerative symptoms in HDLS patients, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9609523"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9609523": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011299",
+        "diseaseBName": "Huntington disease-like 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9609523"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9609523": 22
+        },
+        "fitness": 0.3321,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2404) —DECREASES→ Methemoglobin reduction (GO:0006022); Methemoglobin reduction (GO:0006022) —DISRUPTS→ Methemoglobin (CHEBI:27291); Methemoglobin (CHEBI:27291) —LEADS_TO→ Cyanosis (HP:0001020); PRNP (HGNC:9576) —INCREASES→ Neuronal protein aggregation (GO:0051729); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Neurodegeneration (HP:0002094); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Movement disorder (HP:0001251). Loss-of-function mutations in CYB5A impair methemoglobin reduction, leading to methemoglobinemia and cyanosis. Gain-of-function mutations in PRNP promote the aggregation of misfolded prion proteins, causing neurodegeneration and movement disorders. The hypothesized overlap is that both processes, through distinct pathways, contribute to a general state of neuronal protein misfolding and aggregation, potentially exacerbating neurotoxicity.",
+        "falsification": {
+          "text": "If studies demonstrate that PRNP aggregation does not significantly impact redox balance or other cellular processes affected by methemoglobinemia, or if interventions targeting methemoglobin reduction show no effect on the progression of neurodegenerative symptoms in HDLS patients, this hypothesis would be falsified."
+        },
+        "translational": "Understanding this potential overlap could inform therapeutic strategies. For instance, interventions aimed at mitigating protein aggregation or improving cellular redox homeostasis might offer benefit in both conditions, or at least in patients presenting with overlapping clinical features."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011583",
+      "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+      "fitness": 0.1327,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "CYB5A (HGNC:2477) —DISRUPTS→ Methemoglobin (CHEBI:27217); Methemoglobin (CHEBI:27217) —LEADS_TO→ Methemoglobinemia (HP:0003117); APP (HGNC:601) —LEADS_TO→ Amyloid beta formation and aggregation (REACT:R-HSA-70027); Amyloid beta formation and aggregation (REACT:R-HSA-70027) —PRODUCES→ Amyloid beta peptide (CHEBI:58315); Amyloid beta peptide (CHEBI:58315) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Methemoglobin (CHEBI:27217) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Methemoglobinemia (HP:0003117); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030047). Loss-of-function mutations in CYB5A impair its ability to reduce methemoglobin, leading to methemoglobinemia. Gain-of-function mechanisms involving APP lead to increased production of amyloid beta peptides, which in turn contribute to oxidative stress. Both methemoglobin accumulation and amyloid beta deposition can disrupt cellular redox balance, creating a shared pathway of oxidative stress that contributes to the phenotypes of both diseases.",
+      "mechanism_narrative": "CYB5A (HGNC:2477) —DISRUPTS→ Methemoglobin (CHEBI:27217); Methemoglobin (CHEBI:27217) —LEADS_TO→ Methemoglobinemia (HP:0003117); APP (HGNC:601) —LEADS_TO→ Amyloid beta formation and aggregation (REACT:R-HSA-70027); Amyloid beta formation and aggregation (REACT:R-HSA-70027) —PRODUCES→ Amyloid beta peptide (CHEBI:58315); Amyloid beta peptide (CHEBI:58315) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Methemoglobin (CHEBI:27217) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Methemoglobinemia (HP:0003117); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030047). Loss-of-function mutations in CYB5A impair its ability to reduce methemoglobin, leading to methemoglobinemia. Gain-of-function mechanisms involving APP lead to increased production of amyloid beta peptides, which in turn contribute to oxidative stress. Both methemoglobin accumulation and amyloid beta deposition can disrupt cellular redox balance, creating a shared pathway of oxidative stress that contributes to the phenotypes of both diseases.",
+      "falsification": {
+        "text": "A lack of evidence for increased oxidative stress markers in either disease or a demonstration that mutations in APP do not affect redox balance in the brain would falsify this hypothesis. Furthermore, if genetic studies show no correlation between variants in APP or CYB5A and the respective disease phenotypes, this hypothesis would be weakened.",
+        "gnomad_variant": "A common pathogenic variant (e.g., gnomAD allele frequency > 0.001) in CYB5A associated with methemoglobinemia type 4 or in APP associated with CAA would suggest a less critical role for these specific causal genes in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9609523"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9609523": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011583",
+        "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9609523"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9609523": 22
+        },
+        "fitness": 0.1327,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYB5A (HGNC:2477) —DISRUPTS→ Methemoglobin (CHEBI:27217); Methemoglobin (CHEBI:27217) —LEADS_TO→ Methemoglobinemia (HP:0003117); APP (HGNC:601) —LEADS_TO→ Amyloid beta formation and aggregation (REACT:R-HSA-70027); Amyloid beta formation and aggregation (REACT:R-HSA-70027) —PRODUCES→ Amyloid beta peptide (CHEBI:58315); Amyloid beta peptide (CHEBI:58315) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Methemoglobin (CHEBI:27217) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Methemoglobinemia (HP:0003117); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030047). Loss-of-function mutations in CYB5A impair its ability to reduce methemoglobin, leading to methemoglobinemia. Gain-of-function mechanisms involving APP lead to increased production of amyloid beta peptides, which in turn contribute to oxidative stress. Both methemoglobin accumulation and amyloid beta deposition can disrupt cellular redox balance, creating a shared pathway of oxidative stress that contributes to the phenotypes of both diseases.",
+        "falsification": {
+          "text": "A lack of evidence for increased oxidative stress markers in either disease or a demonstration that mutations in APP do not affect redox balance in the brain would falsify this hypothesis. Furthermore, if genetic studies show no correlation between variants in APP or CYB5A and the respective disease phenotypes, this hypothesis would be weakened.",
+          "gnomad_variant": "A common pathogenic variant (e.g., gnomAD allele frequency > 0.001) in CYB5A associated with methemoglobinemia type 4 or in APP associated with CAA would suggest a less critical role for these specific causal genes in the general population."
+        },
+        "translational": "Understanding the shared mechanism of disrupted redox balance could reveal novel therapeutic targets. For methemoglobinemia, therapies aimed at restoring redox balance might be beneficial. For CAA, interventions targeting oxidative stress alongside amyloid clearance could offer a more comprehensive treatment strategy."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T13:49:57.423Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** methemoglobinemia type 4 (MONDO:0009605)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 21 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | encephalopathy due to GLUT1 deficiency (MONDO:0011724) | shared pathway | Tier 3 | 0.447 | Reactome:R-HSA-196836 |\n| 2 | methemoglobinemia due to deficiency of methemoglobin reductase (MONDO:0009606) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-196836 |\n| 3 | childhood onset GLUT1 deficiency syndrome 2 (MONDO:0012805) | shared pathway | Tier 3 | 0.405 | Reactome:R-HSA-196836 |\n| 4 | hereditary cryohydrocytosis with reduced stomatin (MONDO:0012143) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-196836 |\n| 5 | congenital disorder of glycosylation, type IIy (MONDO:0859356) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-9609523 |\n| 6 | heme oxygenase 1 deficiency (MONDO:0013536) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-9609523 |\n| 7 | dystonia 9 (MONDO:0010983) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-196836 |\n| 8 | Alzheimer disease type 1 (MONDO:0007088) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-9609523 |\n| 9 | Huntington disease-like 1 (MONDO:0011299) | shared pathway | Tier 3 | 0.332 | Reactome:R-HSA-9609523 |\n| 10 | cerebral amyloid angiopathy, APP-related (MONDO:0011583) | shared pathway | Tier 4 | 0.133 | Reactome:R-HSA-9609523 |\n\n### CANDIDATE DETAIL\n#### 1. encephalopathy due to GLUT1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.447)\n**Link type:** shared pathway (Reactome:R-HSA-196836)\n\n**Proposed mechanism:** CYB5A (HGNC:2456) —DISRUPTS→ methemoglobin (CHEBI:27375); methemoglobin (CHEBI:27375) —LEADS_TO→ Methemoglobinemia (HP:0001893); SLC2A1 (HGNC:10628) —DISRUPTS→ Neuronal Glucose Uptake (GO:0015124); Neuronal Glucose Uptake (GO:0015124) —LEADS_TO→ Encephalopathy (HP:0001295); methemoglobin (CHEBI:27375) —DISRUPTS→ Redox balance (GO:0006915); glucose (CHEBI:17234) —DISRUPTS→ Redox balance (GO:0006915). Loss of function in CYB5A impairs the reduction of methemoglobin, leading to methemoglobinemia. Concurrently, loss of function in SLC2A1 impairs glucose uptake into neurons, causing encephalopathy. Both conditions indirectly affect cellular redox balance, with methemoglobinemia directly impacting oxygen carrying capacity and neuronal glucose deficiency starving neurons of energy.\n\n**How to falsify it:** Identification of a pathogenic variant in CYB5A that is demonstrably associated with encephalopathy, or a pathogenic variant in SLC2A1 that is demonstrably associated with methemoglobinemia, would falsify this hypothesis of distinct causal genes leading to related but separate disease modules. _(variant: rs75734436)_\n\n**Why it matters:** Understanding the shared downstream impact on cellular redox state and energy metabolism could reveal novel therapeutic targets for both methemoglobinemia and GLUT1 deficiency syndrome, potentially involving interventions that support neuronal energy supply or mitigate oxidative stress.\n\n---\n\n#### 2. methemoglobinemia due to deficiency of methemoglobin reductase  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-196836)\n\n**Proposed mechanism:** CYB5R3 (HGNC:2554) —DISRUPTS→ Methemoglobin reduction (GO:0042351); CYB5A (HGNC:2551) —DISRUPTS→ Methemoglobin reduction (GO:0042351); Methemoglobin reduction (GO:0042351) —DECREASES→ Methemoglobin (CHEBI:27380); Methemoglobin (CHEBI:27380) —LEADS_TO→ Methemoglobinemia (HP:0003076). Loss-of-function mutations in CYB5R3 (causing methemoglobinemia due to deficiency of methemoglobin reductase) and potentially CYB5A (contributing to methemoglobinemia type 4) impair the methemoglobin reduction pathway. This leads to an accumulation of methemoglobin, resulting in the phenotype of methemoglobinemia.\n\n**How to falsify it:** Identification of distinct, non-overlapping molecular pathways or genes that are exclusively responsible for each disease, with no shared intermediates or downstream effectors, would falsify this hypothesis. Specifically, if methemoglobinemia type 4 is solely attributable to a mechanism completely independent of the CYB5R3-mediated reduction pathway and does not involve the accumulation of methemoglobin as a direct consequence. _(variant: The absence of any common pathogenic variants in CYB5R3 and CYB5A within the gnomAD database for individuals presenting with these specific methemoglobinemia subtypes would also challenge this link.)_\n\n**Why it matters:** Understanding the shared mechanism of methemoglobin reduction impairment can inform therapeutic strategies. For instance, treatments aimed at enhancing the activity of residual functional enzyme or exploring alternative reduction pathways could be beneficial for both types of methemoglobinemia if they share a common genetic or enzymatic basis.\n\n---\n\n#### 3. childhood onset GLUT1 deficiency syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.405)\n**Link type:** shared pathway (Reactome:R-HSA-196836)\n\n**Proposed mechanism:** CYB5A (HGNC:2446) —DISRUPTS→ Methemoglobin (CHEBI:35250); CYB5A (HGNC:2446) —DISRUPTS→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Methemoglobinemia (HP:0003136); SLC2A1 (HGNC:10645) —DISRUPTS→ Glucose (CHEBI:17234); SLC2A1 (HGNC:10645) —DISRUPTS→ Red blood cell metabolism (META:0000028); Glucose (CHEBI:17234) —LEADS_TO→ Red blood cell metabolism (META:0000028); Red blood cell metabolism (META:0000028) —LEADS_TO→ Glucose transporter type 1 deficiency syndrome 2 (MONDO:0012805). Loss-of-function variants in CYB5A impair the reduction of methemoglobin in red blood cells, leading to methemoglobinemia type 4. Simultaneously, loss-of-function variants in SLC2A1 impair glucose transport into red blood cells, disrupting red blood cell metabolism and causing GLUT1 deficiency syndrome 2. Both diseases converge on the disruption of normal red blood cell metabolism, albeit through different specific molecular defects.\n\n**How to falsify it:** The identification of a common genetic variant in a gene other than CYB5A or SLC2A1 that is strongly associated with both methemoglobinemia type 4 and childhood onset GLUT1 deficiency syndrome 2, or evidence that the metabolic pathways for methemoglobin reduction and glucose transport in red blood cells are entirely independent and non-interacting. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared reliance on red blood cell metabolism for these distinct conditions could reveal novel therapeutic targets. For instance, interventions aimed at supporting red blood cell energy homeostasis or redox balance might offer a common therapeutic strategy, or highlight how different insults to this shared cellular environment lead to divergent pathologies.\n\n---\n\n#### 4. hereditary cryohydrocytosis with reduced stomatin  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-196836)\n\n**Proposed mechanism:** CYB5A (HGNC:2458) —DISRUPTS→ Methemoglobin reduction (GO:0006077); Methemoglobin reduction (GO:0006077) —LEADS_TO→ Methemoglobinemia (HP:0001881); SLC2A1 (HGNC:10554) —DISRUPTS→ Erythrocyte ion transport and homeostasis (GO:0005547); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Hereditary cryohydrocytosis (HP:0004887); Erythrocyte ion transport and homeostasis (GO:0005547) —LEADS_TO→ Reduced stomatin (HP:0011704). Loss-of-function mutations in CYB5A impair methemoglobin reduction leading to methemoglobinemia. Concurrently, loss-of-function mutations in SLC2A1 disrupt erythrocyte ion transport and homeostasis, resulting in hereditary cryohydrocytosis and reduced stomatin. The shared mechanism lies in the disruption of critical cellular pathways within erythrocytes, affecting redox balance and membrane integrity, respectively.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in CYB5A who do not exhibit methemoglobinemia, or individuals with pathogenic variants in SLC2A1 who do not present with hereditary cryohydrocytosis or reduced stomatin, would falsify this hypothesis. Furthermore, demonstrating that the identified variants for each disease are not loss-of-function would also falsify the proposed mechanism.\n\n**Why it matters:** Understanding the distinct yet overlapping cellular dysfunctions in erythrocytes caused by mutations in CYB5A and SLC2A1 could inform targeted therapeutic strategies for red blood cell disorders. For instance, interventions aimed at supporting erythrocyte redox balance or stabilizing membrane function might be explored.\n\n---\n\n#### 5. congenital disorder of glycosylation, type IIy  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-9609523)\n\n**Proposed mechanism:** CYB5A (HGNC:2445) —DISRUPTS→ Redox homeostasis in erythrocytes (GO:0006918); Redox homeostasis in erythrocytes (GO:0006918) —LEADS_TO→ Methemoglobinemia (HP:0003243); CYB5A (HGNC:2445) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356); GET4 (HGNC:23100) —DISRUPTS→ N-linked glycosylation (GO:0006486); GET4 (HGNC:23100) —LEADS_TO→ Congenital disorder of glycosylation, type IIy (MONDO:0859356). Mutations in CYB5A lead to impaired redox homeostasis in erythrocytes, causing methemoglobinemia. Concurrently, CYB5A is involved in N-linked glycosylation, and its dysfunction contributes to the phenotypes observed in CDG type IIy. GET4 is also implicated in CDG type IIy by disrupting N-linked glycosylation.\n\n**How to falsify it:** If mutations in CYB5A are found to be exclusively associated with methemoglobinemia type 4 and not implicated in any form of glycosylation disorder, or if GET4 mutations are found to be the sole cause of CDG IIy without any link to CYB5A function, this hypothesis would be falsified. _(variant: Presence of common pathogenic variants in CYB5A (e.g., allele frequency > 1% in gnomAD exomes) that are not associated with either methemoglobinemia or CDG IIy.)_\n\n**Why it matters:** Understanding the shared role of CYB5A in red blood cell function and protein glycosylation could reveal novel therapeutic targets for both methemoglobinemia and CDG type IIy, potentially leading to treatments that address both conditions or a subset of their molecular defects.\n\n---\n\n#### 6. heme oxygenase 1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-9609523)\n\n**Proposed mechanism:** CYB5A (HGNC:2479) —DISRUPTS→ Methemoglobin (CHEBI:28223); Methemoglobin (CHEBI:28223) —LEADS_TO→ Methemoglobinemia (HP:0001830); HMOX1 (HGNC:4823) —DISRUPTS→ Heme degradation (REACT:REACT-73159); Heme degradation (REACT:REACT-73159) —DECREASES→ Heme (CHEBI:17540); Heme (CHEBI:17540) —LEADS_TO→ Heme oxygenase 1 deficiency (HP:0030193); Heme (CHEBI:17540) —INCREASES→ Methemoglobin (CHEBI:28223). Loss-of-function mutations in CYB5A impair the reduction of methemoglobin, leading to methemoglobinemia type 4. Loss-of-function mutations in HMOX1 impair heme degradation, leading to heme accumulation and associated phenotypes. Both pathways converge on the central metabolite heme, and its altered levels or redox state contribute to the pathologies.\n\n**How to falsify it:** Identification of a common pathogenic variant in CYB5A or HMOX1 with a population frequency >0.01 in gnomAD that is causative for both methemoglobinemia type 4 and heme oxygenase 1 deficiency. _(variant: rs75561763)_\n\n**Why it matters:** Understanding the shared role of heme homeostasis in these distinct conditions could reveal novel therapeutic targets for methemoglobinemia by modulating heme degradation or for heme oxygenase 1 deficiency by targeting pathways that influence methemoglobin reduction.\n\n---\n\n#### 7. dystonia 9  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-196836)\n\n**Proposed mechanism:** Pathogenic CYB5A variant (null) —DISRUPTS→ CYB5A (HGNC:246); CYB5A (HGNC:246) —DECREASES→ Methemoglobin (CHEBI:27327); Methemoglobin (CHEBI:27327) —LEADS_TO→ Methemoglobinemia (HP:0003142); CYB5A (HGNC:246) —DISRUPTS→ Cytochrome b5 mediated electron transfer (REACT:null); Cytochrome b5 mediated electron transfer (REACT:null) —LEADS_TO→ Dystonia (HP:0001358). Pathogenic variants in CYB5A lead to loss-of-function, reducing the activity of cytochrome b5. This impairs the reduction of methemoglobin, leading to methemoglobinemia (Disease A). Concurrently, the disruption of cytochrome b5 mediated electron transfer pathways, which are crucial for various cellular redox processes including potentially those affecting neuronal function and neurotransmitter metabolism, contributes to the development of dystonia (Disease B).\n\n**How to falsify it:** The identification of pathogenic variants in CYB5A with a significantly different functional consequence (e.g., a strong dominant-negative effect for one disease and a loss-of-function for the other) or the discovery of distinct, non-overlapping molecular pathways downstream of CYB5A that exclusively explain each disease would falsify this hypothesis. Furthermore, demonstrating that CYB5A variants associated with dystonia 9 do not impair cytochrome b5's function in methemoglobin reduction or other shared redox pathways would weaken the proposed link. _(variant: The presence of common, benign variants in CYB5A in the general population (gnomAD MAF > 1%) would not falsify the hypothesis, as these diseases are typically caused by rare, pathogenic variants.)_\n\n**Why it matters:** Understanding the shared mechanistic link through CYB5A could reveal novel therapeutic targets for both methemoglobinemia type 4 and dystonia 9. Strategies aimed at restoring cytochrome b5 activity or mitigating downstream cellular consequences of its dysfunction, such as enhancing redox homeostasis or supporting specific metabolic pathways in neurons, could offer a unified therapeutic approach or highlight distinct therapeutic avenues based on the specific impact of CYB5A variants in each disease context.\n\n---\n\n#### 8. Alzheimer disease type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-9609523)\n\n**Proposed mechanism:** CYB5A (HGNC:2444) —DECREASES→ Methemoglobin (CHEBI:27478); Methemoglobin (CHEBI:27478) —LEADS_TO→ Methemoglobinemia (HP:0001701); APP (HGNC:615) —INCREASES→ Amyloidogenic processing of APP (GO:0002526); Amyloidogenic processing of APP (GO:0002526) —PRODUCES→ Amyloid-beta peptide (CHEBI:51009); Amyloid-beta peptide (CHEBI:51009) —LEADS_TO→ Alzheimer disease (HP:0000716). Loss-of-function mutations in CYB5A lead to decreased activity of cytochrome b5 reductase, impairing the reduction of methemoglobin, resulting in methemoglobinemia. In parallel, gain-of-function or altered processing of APP leads to increased amyloid-beta peptide production, a hallmark of Alzheimer disease. The convergence is not at a specific shared molecular entity but rather a divergence in pathways originating from distinct genes that are both implicated in cellular homeostasis, suggesting an indirect overlap in disease modules.\n\n**How to falsify it:** If genetic studies reveal that mutations in CYB5A do not segregate with methemoglobinemia type 4, or if mutations in APP do not segregate with Alzheimer disease type 1, this hypothesis would be falsified. Furthermore, if studies show no evidence of altered redox balance in Alzheimer's disease or no link between APP processing and methemoglobin levels, the proposed mechanistic link would be weakened. _(variant: The presence of common variants (AF > 1%) in gnomAD within the coding regions of CYB5A or APP that are not associated with either disease would not falsify this hypothesis, as these diseases are rare and typically caused by rare variants.)_\n\n**Why it matters:** Understanding the distinct and potentially interacting roles of CYB5A and APP in cellular function may reveal novel therapeutic targets. For instance, exploring whether modulating redox balance impacts APP processing or vice versa could offer new avenues for treating either methemoglobinemia or Alzheimer disease, or potentially conditions with shared downstream effects.\n\n---\n\n#### 9. Huntington disease-like 1  —  Tier 3 — Moderate / Emerging  (fitness 0.332)\n**Link type:** shared pathway (Reactome:R-HSA-9609523)\n\n**Proposed mechanism:** CYB5A (HGNC:2404) —DECREASES→ Methemoglobin reduction (GO:0006022); Methemoglobin reduction (GO:0006022) —DISRUPTS→ Methemoglobin (CHEBI:27291); Methemoglobin (CHEBI:27291) —LEADS_TO→ Cyanosis (HP:0001020); PRNP (HGNC:9576) —INCREASES→ Neuronal protein aggregation (GO:0051729); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Neurodegeneration (HP:0002094); Neuronal protein aggregation (GO:0051729) —LEADS_TO→ Movement disorder (HP:0001251). Loss-of-function mutations in CYB5A impair methemoglobin reduction, leading to methemoglobinemia and cyanosis. Gain-of-function mutations in PRNP promote the aggregation of misfolded prion proteins, causing neurodegeneration and movement disorders. The hypothesized overlap is that both processes, through distinct pathways, contribute to a general state of neuronal protein misfolding and aggregation, potentially exacerbating neurotoxicity.\n\n**How to falsify it:** If studies demonstrate that PRNP aggregation does not significantly impact redox balance or other cellular processes affected by methemoglobinemia, or if interventions targeting methemoglobin reduction show no effect on the progression of neurodegenerative symptoms in HDLS patients, this hypothesis would be falsified.\n\n**Why it matters:** Understanding this potential overlap could inform therapeutic strategies. For instance, interventions aimed at mitigating protein aggregation or improving cellular redox homeostasis might offer benefit in both conditions, or at least in patients presenting with overlapping clinical features.\n\n---\n\n#### 10. cerebral amyloid angiopathy, APP-related  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.133)\n**Link type:** shared pathway (Reactome:R-HSA-9609523)\n\n**Proposed mechanism:** CYB5A (HGNC:2477) —DISRUPTS→ Methemoglobin (CHEBI:27217); Methemoglobin (CHEBI:27217) —LEADS_TO→ Methemoglobinemia (HP:0003117); APP (HGNC:601) —LEADS_TO→ Amyloid beta formation and aggregation (REACT:R-HSA-70027); Amyloid beta formation and aggregation (REACT:R-HSA-70027) —PRODUCES→ Amyloid beta peptide (CHEBI:58315); Amyloid beta peptide (CHEBI:58315) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Methemoglobin (CHEBI:27217) —INCREASES→ Oxidative stress and redox balance disruption (GO:0006974); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Methemoglobinemia (HP:0003117); Oxidative stress and redox balance disruption (GO:0006974) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030047). Loss-of-function mutations in CYB5A impair its ability to reduce methemoglobin, leading to methemoglobinemia. Gain-of-function mechanisms involving APP lead to increased production of amyloid beta peptides, which in turn contribute to oxidative stress. Both methemoglobin accumulation and amyloid beta deposition can disrupt cellular redox balance, creating a shared pathway of oxidative stress that contributes to the phenotypes of both diseases.\n\n**How to falsify it:** A lack of evidence for increased oxidative stress markers in either disease or a demonstration that mutations in APP do not affect redox balance in the brain would falsify this hypothesis. Furthermore, if genetic studies show no correlation between variants in APP or CYB5A and the respective disease phenotypes, this hypothesis would be weakened. _(variant: A common pathogenic variant (e.g., gnomAD allele frequency > 0.001) in CYB5A associated with methemoglobinemia type 4 or in APP associated with CAA would suggest a less critical role for these specific causal genes in the general population.)_\n\n**Why it matters:** Understanding the shared mechanism of disrupted redox balance could reveal novel therapeutic targets. For methemoglobinemia, therapies aimed at restoring redox balance might be beneficial. For CAA, interventions targeting oxidative stress alongside amyloid clearance could offer a more comprehensive treatment strategy.\n\n---"
+}

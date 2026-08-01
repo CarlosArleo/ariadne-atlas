@@ -1,0 +1,385 @@
+{
+  "seed": {
+    "id": "MONDO:0009501",
+    "name": "metabolic myopathy due to lactate transporter defect"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 9,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012396",
+      "diseaseBName": "exercise-induced hyperinsulinism",
+      "fitness": 0.6643,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic variant in SLC16A1 (rs123456789) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate transport (REACT:R-HSA-166302); Monocarboxylate transport (REACT:R-HSA-166302) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Muscle weakness (HP:0001324); Monocarboxylate transport (REACT:R-HSA-166302) —DISRUPTS→ Insulin secretion (REACT:R-HSA-160112); Insulin secretion (REACT:R-HSA-160112) —LEADS_TO→ Hypoglycemia (HP:0001951). Pathogenic variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1), impairing the transport of lactate and other monocarboxylates. This disruption affects cellular energy metabolism in muscle (leading to myopathy) and pancreatic beta cells (leading to dysregulated insulin secretion).",
+      "mechanism_narrative": "Pathogenic variant in SLC16A1 (rs123456789) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate transport (REACT:R-HSA-166302); Monocarboxylate transport (REACT:R-HSA-166302) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Muscle weakness (HP:0001324); Monocarboxylate transport (REACT:R-HSA-166302) —DISRUPTS→ Insulin secretion (REACT:R-HSA-160112); Insulin secretion (REACT:R-HSA-160112) —LEADS_TO→ Hypoglycemia (HP:0001951). Pathogenic variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1), impairing the transport of lactate and other monocarboxylates. This disruption affects cellular energy metabolism in muscle (leading to myopathy) and pancreatic beta cells (leading to dysregulated insulin secretion).",
+      "falsification": {
+        "text": "The presence of common, highly prevalent (e.g., >1%) loss-of-function variants in SLC16A1 in general population databases like gnomAD would challenge the direct causal link for both rare diseases.",
+        "gnomad_variant": "HGNC:10922"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641",
+        "Reactome:R-HSA-433692",
+        "Reactome:R-HSA-5619070",
+        "Reactome:R-HSA-210991"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012396",
+        "diseaseBName": "exercise-induced hyperinsulinism",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641",
+          "Reactome:R-HSA-433692",
+          "Reactome:R-HSA-5619070",
+          "Reactome:R-HSA-210991"
+        ],
+        "fitness": 0.6643,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in SLC16A1 (rs123456789) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate transport (REACT:R-HSA-166302); Monocarboxylate transport (REACT:R-HSA-166302) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Muscle weakness (HP:0001324); Monocarboxylate transport (REACT:R-HSA-166302) —DISRUPTS→ Insulin secretion (REACT:R-HSA-160112); Insulin secretion (REACT:R-HSA-160112) —LEADS_TO→ Hypoglycemia (HP:0001951). Pathogenic variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1), impairing the transport of lactate and other monocarboxylates. This disruption affects cellular energy metabolism in muscle (leading to myopathy) and pancreatic beta cells (leading to dysregulated insulin secretion).",
+        "falsification": {
+          "text": "The presence of common, highly prevalent (e.g., >1%) loss-of-function variants in SLC16A1 in general population databases like gnomAD would challenge the direct causal link for both rare diseases.",
+          "gnomad_variant": "HGNC:10922"
+        },
+        "translational": "Understanding the shared role of SLC16A1 in both muscle and pancreatic beta-cell function could lead to novel therapeutic strategies targeting monocarboxylate transport to manage symptoms in both metabolic myopathy and exercise-induced hyperinsulinism."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014490",
+      "diseaseBName": "ketoacidosis due to monocarboxylate transporter-1 deficiency",
+      "fitness": 0.6629,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Loss-of-function variant in SLC16A1 (rs) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate Transport (GO:0015073); Monocarboxylate Transport (GO:0015073) —DECREASES→ Lactate (CHEBI:15077); Monocarboxylate Transport (GO:0015073) —DECREASES→ Ketone bodies (CHEBI:17472); Lactate (CHEBI:15077) —LEADS_TO→ Metabolic Myopathy (HP:0003670); Ketone bodies (CHEBI:17472) —LEADS_TO→ Ketoacidosis (HP:0001977). Loss-of-function variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1). This leads to impaired transport of lactate out of muscle cells, causing metabolic myopathy (Disease A). It also impairs the transport of ketone bodies, contributing to ketoacidosis (Disease B). The shared convergence node is the disrupted monocarboxylate transport pathway, affecting both lactate and ketone body homeostasis.",
+      "mechanism_narrative": "Loss-of-function variant in SLC16A1 (rs) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate Transport (GO:0015073); Monocarboxylate Transport (GO:0015073) —DECREASES→ Lactate (CHEBI:15077); Monocarboxylate Transport (GO:0015073) —DECREASES→ Ketone bodies (CHEBI:17472); Lactate (CHEBI:15077) —LEADS_TO→ Metabolic Myopathy (HP:0003670); Ketone bodies (CHEBI:17472) —LEADS_TO→ Ketoacidosis (HP:0001977). Loss-of-function variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1). This leads to impaired transport of lactate out of muscle cells, causing metabolic myopathy (Disease A). It also impairs the transport of ketone bodies, contributing to ketoacidosis (Disease B). The shared convergence node is the disrupted monocarboxylate transport pathway, affecting both lactate and ketone body homeostasis.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in SLC16A1 that demonstrably cause gain-of-function or dominant-negative effects in cellular models would falsify the proposed loss-of-function mechanism.",
+        "gnomad_variant": "rs"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641",
+        "Reactome:R-HSA-433692",
+        "Reactome:R-HSA-5619070",
+        "Reactome:R-HSA-210991"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014490",
+        "diseaseBName": "ketoacidosis due to monocarboxylate transporter-1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641",
+          "Reactome:R-HSA-433692",
+          "Reactome:R-HSA-5619070",
+          "Reactome:R-HSA-210991"
+        ],
+        "fitness": 0.6629,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SLC16A1 (rs) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate Transport (GO:0015073); Monocarboxylate Transport (GO:0015073) —DECREASES→ Lactate (CHEBI:15077); Monocarboxylate Transport (GO:0015073) —DECREASES→ Ketone bodies (CHEBI:17472); Lactate (CHEBI:15077) —LEADS_TO→ Metabolic Myopathy (HP:0003670); Ketone bodies (CHEBI:17472) —LEADS_TO→ Ketoacidosis (HP:0001977). Loss-of-function variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1). This leads to impaired transport of lactate out of muscle cells, causing metabolic myopathy (Disease A). It also impairs the transport of ketone bodies, contributing to ketoacidosis (Disease B). The shared convergence node is the disrupted monocarboxylate transport pathway, affecting both lactate and ketone body homeostasis.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in SLC16A1 that demonstrably cause gain-of-function or dominant-negative effects in cellular models would falsify the proposed loss-of-function mechanism.",
+          "gnomad_variant": "rs"
+        },
+        "translational": "Understanding the shared role of SLC16A1 in these distinct metabolic disorders could lead to novel therapeutic strategies targeting monocarboxylate transport to manage both myopathy and ketoacidosis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020617",
+      "diseaseBName": "obsolete blood group--ok",
+      "fitness": 0.4491,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC16A1 (HGNC:11086) —DISRUPTS→ Lactate (CHEBI:15361); SLC16A1 (HGNC:11086) —DISRUPTS→ Monocarboxylate transport (GO:0015295); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic myopathy (HP:0003701); BSG (HGNC:1110) —BINDS→ Monocarboxylate transport (GO:0015295); BSG (HGNC:1110) —LEADS_TO→ Blood group phenotype (HP:0030175). Mutations in SLC16A1 lead to impaired lactate transport, causing metabolic myopathy. BSG (CD147) interacts with and regulates monocarboxylate transporters, including MCT1 (encoded by SLC16A1). Loss-of-function mutations in BSG can disrupt this regulation, impacting monocarboxylate transport and leading to altered blood group phenotypes, suggesting a shared pathway convergence on monocarboxylate transport.",
+      "mechanism_narrative": "SLC16A1 (HGNC:11086) —DISRUPTS→ Lactate (CHEBI:15361); SLC16A1 (HGNC:11086) —DISRUPTS→ Monocarboxylate transport (GO:0015295); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic myopathy (HP:0003701); BSG (HGNC:1110) —BINDS→ Monocarboxylate transport (GO:0015295); BSG (HGNC:1110) —LEADS_TO→ Blood group phenotype (HP:0030175). Mutations in SLC16A1 lead to impaired lactate transport, causing metabolic myopathy. BSG (CD147) interacts with and regulates monocarboxylate transporters, including MCT1 (encoded by SLC16A1). Loss-of-function mutations in BSG can disrupt this regulation, impacting monocarboxylate transport and leading to altered blood group phenotypes, suggesting a shared pathway convergence on monocarboxylate transport.",
+      "falsification": {
+        "text": "Absence of physical or functional interaction between BSG and SLC16A1/MCT1 in cellular models, or demonstration that BSG mutations do not affect monocarboxylate transport. Alternatively, identification of a common, highly prevalent variant in BSG (e.g., gnomAD AF > 0.01) that does not segregate with the obsolete blood group phenotype.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641",
+        "Reactome:R-HSA-433692",
+        "Reactome:R-HSA-5619070",
+        "Reactome:R-HSA-210991"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44,
+        "Reactome:R-HSA-433692": 6,
+        "Reactome:R-HSA-5619070": 2,
+        "Reactome:R-HSA-210991": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020617",
+        "diseaseBName": "obsolete blood group--ok",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641",
+          "Reactome:R-HSA-433692",
+          "Reactome:R-HSA-5619070",
+          "Reactome:R-HSA-210991"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44,
+          "Reactome:R-HSA-433692": 6,
+          "Reactome:R-HSA-5619070": 2,
+          "Reactome:R-HSA-210991": 25
+        },
+        "fitness": 0.4491,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:11086) —DISRUPTS→ Lactate (CHEBI:15361); SLC16A1 (HGNC:11086) —DISRUPTS→ Monocarboxylate transport (GO:0015295); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic myopathy (HP:0003701); BSG (HGNC:1110) —BINDS→ Monocarboxylate transport (GO:0015295); BSG (HGNC:1110) —LEADS_TO→ Blood group phenotype (HP:0030175). Mutations in SLC16A1 lead to impaired lactate transport, causing metabolic myopathy. BSG (CD147) interacts with and regulates monocarboxylate transporters, including MCT1 (encoded by SLC16A1). Loss-of-function mutations in BSG can disrupt this regulation, impacting monocarboxylate transport and leading to altered blood group phenotypes, suggesting a shared pathway convergence on monocarboxylate transport.",
+        "falsification": {
+          "text": "Absence of physical or functional interaction between BSG and SLC16A1/MCT1 in cellular models, or demonstration that BSG mutations do not affect monocarboxylate transport. Alternatively, identification of a common, highly prevalent variant in BSG (e.g., gnomAD AF > 0.01) that does not segregate with the obsolete blood group phenotype.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the interplay between SLC16A1 and BSG in monocarboxylate transport could reveal novel therapeutic targets for metabolic myopathies and potentially inform strategies for managing blood group incompatibilities or related cellular processes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0015270",
+      "diseaseBName": "butyrylcholinesterase deficiency",
+      "fitness": 0.4076,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC16A1 (HGNC:10671) —DISRUPTS→ Lactate (CHEBI:15367); Lactate (CHEBI:15367) —LEADS_TO→ Cellular pH regulation (GO:0006575); Cellular pH regulation (GO:0006575) —LEADS_TO→ Myopathy (HP:0003692); BCHE (HGNC:1100) —DISRUPTS→ Acetylcholine (CHEBI:15351); Acetylcholine (CHEBI:15351) —LEADS_TO→ Cholinergic system (GO:0007210); Cholinergic system (GO:0007210) —LEADS_TO→ Neuromuscular dysfunction (HP:0002190); Cellular pH regulation (GO:0006575) —DISRUPTS→ Cholinergic system (GO:0007210). Loss of function in SLC16A1 leads to impaired lactate transport, causing intracellular acidosis and potentially affecting cellular energy metabolism, which can indirectly impact neuromuscular function. Concurrently, loss of function in BCHE impairs the breakdown of acetylcholine, leading to its accumulation and disruption of cholinergic signaling, manifesting as neuromuscular dysfunction. Both disruptions can converge on a dysregulated cellular environment impacting neuromuscular function.",
+      "mechanism_narrative": "SLC16A1 (HGNC:10671) —DISRUPTS→ Lactate (CHEBI:15367); Lactate (CHEBI:15367) —LEADS_TO→ Cellular pH regulation (GO:0006575); Cellular pH regulation (GO:0006575) —LEADS_TO→ Myopathy (HP:0003692); BCHE (HGNC:1100) —DISRUPTS→ Acetylcholine (CHEBI:15351); Acetylcholine (CHEBI:15351) —LEADS_TO→ Cholinergic system (GO:0007210); Cholinergic system (GO:0007210) —LEADS_TO→ Neuromuscular dysfunction (HP:0002190); Cellular pH regulation (GO:0006575) —DISRUPTS→ Cholinergic system (GO:0007210). Loss of function in SLC16A1 leads to impaired lactate transport, causing intracellular acidosis and potentially affecting cellular energy metabolism, which can indirectly impact neuromuscular function. Concurrently, loss of function in BCHE impairs the breakdown of acetylcholine, leading to its accumulation and disruption of cholinergic signaling, manifesting as neuromuscular dysfunction. Both disruptions can converge on a dysregulated cellular environment impacting neuromuscular function.",
+      "falsification": {
+        "text": "Discovery of a common, highly prevalent (e.g., >1% in gnomAD) loss-of-function variant in either SLC16A1 or BCHE that is not associated with the respective disease phenotype would challenge the causal link. Similarly, if experimental evidence demonstrates complete independence of cellular pH regulation (via SLC16A1) and acetylcholine metabolism (via BCHE) at a molecular level, this hypothesis would be falsified.",
+        "gnomad_variant": "ExAC:rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0015270",
+        "diseaseBName": "butyrylcholinesterase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.4076,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:10671) —DISRUPTS→ Lactate (CHEBI:15367); Lactate (CHEBI:15367) —LEADS_TO→ Cellular pH regulation (GO:0006575); Cellular pH regulation (GO:0006575) —LEADS_TO→ Myopathy (HP:0003692); BCHE (HGNC:1100) —DISRUPTS→ Acetylcholine (CHEBI:15351); Acetylcholine (CHEBI:15351) —LEADS_TO→ Cholinergic system (GO:0007210); Cholinergic system (GO:0007210) —LEADS_TO→ Neuromuscular dysfunction (HP:0002190); Cellular pH regulation (GO:0006575) —DISRUPTS→ Cholinergic system (GO:0007210). Loss of function in SLC16A1 leads to impaired lactate transport, causing intracellular acidosis and potentially affecting cellular energy metabolism, which can indirectly impact neuromuscular function. Concurrently, loss of function in BCHE impairs the breakdown of acetylcholine, leading to its accumulation and disruption of cholinergic signaling, manifesting as neuromuscular dysfunction. Both disruptions can converge on a dysregulated cellular environment impacting neuromuscular function.",
+        "falsification": {
+          "text": "Discovery of a common, highly prevalent (e.g., >1% in gnomAD) loss-of-function variant in either SLC16A1 or BCHE that is not associated with the respective disease phenotype would challenge the causal link. Similarly, if experimental evidence demonstrates complete independence of cellular pH regulation (via SLC16A1) and acetylcholine metabolism (via BCHE) at a molecular level, this hypothesis would be falsified.",
+          "gnomad_variant": "ExAC:rs12345678"
+        },
+        "translational": "Understanding this potential mechanistic link could inform therapeutic strategies for both conditions. For instance, interventions aimed at stabilizing cellular pH or modulating cholinergic signaling might offer benefits to patients with either disease, especially if a shared downstream pathway is identified."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021020",
+      "diseaseBName": "Crigler-Najjar syndrome type 1",
+      "fitness": 0.3702,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC16A1 (HGNC:11059) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Myopathy (HP:0003198); UGT1A1 (HGNC:12225) —DISRUPTS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin (CHEBI:17677) —BINDS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin conjugation pathway (REACT:764744) —DECREASES→ Unconjugated Bilirubin (CHEBI:17677); Unconjugated Bilirubin (CHEBI:17677) —LEADS_TO→ Severe neonatal jaundice (HP:0011316). Loss-of-function mutations in SLC16A1 impair lactate transport, leading to intracellular lactate accumulation and myopathy. Concurrently, loss-of-function mutations in UGT1A1 disrupt the bilirubin conjugation pathway, causing the accumulation of unconjugated bilirubin and severe neonatal jaundice. Both diseases, despite affecting different primary genes, converge on the disruption of critical metabolic pathways essential for cellular homeostasis and waste product clearance, ultimately leading to distinct but severe clinical phenotypes.",
+      "mechanism_narrative": "SLC16A1 (HGNC:11059) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Myopathy (HP:0003198); UGT1A1 (HGNC:12225) —DISRUPTS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin (CHEBI:17677) —BINDS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin conjugation pathway (REACT:764744) —DECREASES→ Unconjugated Bilirubin (CHEBI:17677); Unconjugated Bilirubin (CHEBI:17677) —LEADS_TO→ Severe neonatal jaundice (HP:0011316). Loss-of-function mutations in SLC16A1 impair lactate transport, leading to intracellular lactate accumulation and myopathy. Concurrently, loss-of-function mutations in UGT1A1 disrupt the bilirubin conjugation pathway, causing the accumulation of unconjugated bilirubin and severe neonatal jaundice. Both diseases, despite affecting different primary genes, converge on the disruption of critical metabolic pathways essential for cellular homeostasis and waste product clearance, ultimately leading to distinct but severe clinical phenotypes.",
+      "falsification": {
+        "text": "The identification of individuals with pathogenic variants in SLC16A1 who do not exhibit myopathy, or individuals with pathogenic variants in UGT1A1 who do not present with severe neonatal jaundice, would challenge this hypothesis. Furthermore, the absence of elevated lactate levels in patients with Crigler-Najjar syndrome type 1, or the absence of elevated unconjugated bilirubin in patients with metabolic myopathy due to lactate transporter defects, would also serve as falsification conditions.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC16A1 or UGT1A1 that are associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021020",
+        "diseaseBName": "Crigler-Najjar syndrome type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.3702,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:11059) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Myopathy (HP:0003198); UGT1A1 (HGNC:12225) —DISRUPTS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin (CHEBI:17677) —BINDS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin conjugation pathway (REACT:764744) —DECREASES→ Unconjugated Bilirubin (CHEBI:17677); Unconjugated Bilirubin (CHEBI:17677) —LEADS_TO→ Severe neonatal jaundice (HP:0011316). Loss-of-function mutations in SLC16A1 impair lactate transport, leading to intracellular lactate accumulation and myopathy. Concurrently, loss-of-function mutations in UGT1A1 disrupt the bilirubin conjugation pathway, causing the accumulation of unconjugated bilirubin and severe neonatal jaundice. Both diseases, despite affecting different primary genes, converge on the disruption of critical metabolic pathways essential for cellular homeostasis and waste product clearance, ultimately leading to distinct but severe clinical phenotypes.",
+        "falsification": {
+          "text": "The identification of individuals with pathogenic variants in SLC16A1 who do not exhibit myopathy, or individuals with pathogenic variants in UGT1A1 who do not present with severe neonatal jaundice, would challenge this hypothesis. Furthermore, the absence of elevated lactate levels in patients with Crigler-Najjar syndrome type 1, or the absence of elevated unconjugated bilirubin in patients with metabolic myopathy due to lactate transporter defects, would also serve as falsification conditions.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC16A1 or UGT1A1 that are associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared principle of metabolic pathway disruption in these distinct genetic disorders could inform therapeutic strategies. For instance, interventions aimed at improving cellular waste clearance or metabolic flux might offer broader benefits than targeting individual gene defects. Identifying common downstream effectors could lead to the development of pan-disease therapies for metabolic disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007745",
+      "diseaseBName": "Gilbert syndrome",
+      "fitness": 0.3692,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC16A1 (HGNC:10649) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Muscle weakness (HP:0001324); UGT1A1 (HGNC:12226) —PRODUCES→ Bilirubin glucuronide (CHEBI:16713); Bilirubin (CHEBI:15416) —BINDS→ Bilirubin glucuronide (CHEBI:16713); Bilirubin glucuronide (CHEBI:16713) —DECREASES→ Jaundice (HP:0000952); Cellular Energy Metabolism (GO:0006094) —DECREASES→ UGT1A1 (HGNC:12226). Disruption of SLC16A1 leads to lactate accumulation, impacting cellular energy metabolism and causing muscle weakness. Concurrently, reduced activity of UGT1A1 impairs bilirubin glucuronidation, leading to jaundice. A potential overlap exists where severe cellular energy deficits in myopathies could indirectly affect the expression or function of UGT1A1, a key enzyme in bilirubin metabolism.",
+      "mechanism_narrative": "SLC16A1 (HGNC:10649) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Muscle weakness (HP:0001324); UGT1A1 (HGNC:12226) —PRODUCES→ Bilirubin glucuronide (CHEBI:16713); Bilirubin (CHEBI:15416) —BINDS→ Bilirubin glucuronide (CHEBI:16713); Bilirubin glucuronide (CHEBI:16713) —DECREASES→ Jaundice (HP:0000952); Cellular Energy Metabolism (GO:0006094) —DECREASES→ UGT1A1 (HGNC:12226). Disruption of SLC16A1 leads to lactate accumulation, impacting cellular energy metabolism and causing muscle weakness. Concurrently, reduced activity of UGT1A1 impairs bilirubin glucuronidation, leading to jaundice. A potential overlap exists where severe cellular energy deficits in myopathies could indirectly affect the expression or function of UGT1A1, a key enzyme in bilirubin metabolism.",
+      "falsification": {
+        "text": "Demonstration that UGT1A1 expression or activity is completely unaffected by conditions of cellular energy deficit or lactate accumulation, or that common variants in UGT1A1 are absent in individuals with severe metabolic myopathy.",
+        "gnomad_variant": "rs2279343"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007745",
+        "diseaseBName": "Gilbert syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.3692,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:10649) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Muscle weakness (HP:0001324); UGT1A1 (HGNC:12226) —PRODUCES→ Bilirubin glucuronide (CHEBI:16713); Bilirubin (CHEBI:15416) —BINDS→ Bilirubin glucuronide (CHEBI:16713); Bilirubin glucuronide (CHEBI:16713) —DECREASES→ Jaundice (HP:0000952); Cellular Energy Metabolism (GO:0006094) —DECREASES→ UGT1A1 (HGNC:12226). Disruption of SLC16A1 leads to lactate accumulation, impacting cellular energy metabolism and causing muscle weakness. Concurrently, reduced activity of UGT1A1 impairs bilirubin glucuronidation, leading to jaundice. A potential overlap exists where severe cellular energy deficits in myopathies could indirectly affect the expression or function of UGT1A1, a key enzyme in bilirubin metabolism.",
+        "falsification": {
+          "text": "Demonstration that UGT1A1 expression or activity is completely unaffected by conditions of cellular energy deficit or lactate accumulation, or that common variants in UGT1A1 are absent in individuals with severe metabolic myopathy.",
+          "gnomad_variant": "rs2279343"
+        },
+        "translational": "Understanding the interplay between cellular energy metabolism and bilirubin conjugation could reveal novel therapeutic targets for managing both muscle and liver-related metabolic disorders. For instance, improving cellular energy status might indirectly benefit patients with Gilbert syndrome."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009383",
+      "diseaseBName": "transient familial neonatal hyperbilirubinemia",
+      "fitness": 0.3542,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC16A1 (HGNC:10605) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic Myopathy (HP:0003198); UGT1A1 (HGNC:12222) —BINDS→ Bilirubin (CHEBI:16969); UGT1A1 (HGNC:12222) —PRODUCES→ Bilirubin Diglucuronide (CHEBI:23744); Bilirubin (CHEBI:16969) —LEADS_TO→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —LEADS_TO→ Neonatal Hyperbilirubinemia (HP:0011283); UGT1A1 (HGNC:12222) —DISRUPTS→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —DECREASES→ Metabolic Myopathy (HP:0003198). Mutations in SLC16A1 impair lactate transport, leading to lactate accumulation and metabolic myopathy. Concurrently, mutations in UGT1A1 impair bilirubin conjugation, causing neonatal hyperbilirubinemia. The impaired conjugation pathway may indirectly affect cellular energy metabolism, contributing to myopathic symptoms.",
+      "mechanism_narrative": "SLC16A1 (HGNC:10605) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic Myopathy (HP:0003198); UGT1A1 (HGNC:12222) —BINDS→ Bilirubin (CHEBI:16969); UGT1A1 (HGNC:12222) —PRODUCES→ Bilirubin Diglucuronide (CHEBI:23744); Bilirubin (CHEBI:16969) —LEADS_TO→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —LEADS_TO→ Neonatal Hyperbilirubinemia (HP:0011283); UGT1A1 (HGNC:12222) —DISRUPTS→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —DECREASES→ Metabolic Myopathy (HP:0003198). Mutations in SLC16A1 impair lactate transport, leading to lactate accumulation and metabolic myopathy. Concurrently, mutations in UGT1A1 impair bilirubin conjugation, causing neonatal hyperbilirubinemia. The impaired conjugation pathway may indirectly affect cellular energy metabolism, contributing to myopathic symptoms.",
+      "falsification": {
+        "text": "If genetic sequencing reveals that pathogenic variants in SLC16A1 are not present in patients with metabolic myopathy, or pathogenic variants in UGT1A1 are not present in patients with transient familial neonatal hyperbilirubinemia, this hypothesis would be falsified. Additionally, if studies show no functional interaction or downstream consequence of impaired lactate metabolism on bilirubin conjugation pathways, the link would be weakened.",
+        "gnomad_variant": "The presence of common, benign variants in SLC16A1 or UGT1A1 in the general population (e.g., gnomAD allele frequency > 1%) would not falsify the hypothesis, as these diseases are caused by rare pathogenic variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009383",
+        "diseaseBName": "transient familial neonatal hyperbilirubinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.3542,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:10605) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic Myopathy (HP:0003198); UGT1A1 (HGNC:12222) —BINDS→ Bilirubin (CHEBI:16969); UGT1A1 (HGNC:12222) —PRODUCES→ Bilirubin Diglucuronide (CHEBI:23744); Bilirubin (CHEBI:16969) —LEADS_TO→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —LEADS_TO→ Neonatal Hyperbilirubinemia (HP:0011283); UGT1A1 (HGNC:12222) —DISRUPTS→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —DECREASES→ Metabolic Myopathy (HP:0003198). Mutations in SLC16A1 impair lactate transport, leading to lactate accumulation and metabolic myopathy. Concurrently, mutations in UGT1A1 impair bilirubin conjugation, causing neonatal hyperbilirubinemia. The impaired conjugation pathway may indirectly affect cellular energy metabolism, contributing to myopathic symptoms.",
+        "falsification": {
+          "text": "If genetic sequencing reveals that pathogenic variants in SLC16A1 are not present in patients with metabolic myopathy, or pathogenic variants in UGT1A1 are not present in patients with transient familial neonatal hyperbilirubinemia, this hypothesis would be falsified. Additionally, if studies show no functional interaction or downstream consequence of impaired lactate metabolism on bilirubin conjugation pathways, the link would be weakened.",
+          "gnomad_variant": "The presence of common, benign variants in SLC16A1 or UGT1A1 in the general population (e.g., gnomAD allele frequency > 1%) would not falsify the hypothesis, as these diseases are caused by rare pathogenic variants."
+        },
+        "translational": "Understanding the potential shared downstream effects on cellular energy metabolism could inform therapeutic strategies for both conditions. For example, interventions aimed at improving mitochondrial function or energy production might offer benefit in both metabolic myopathies and severe cases of neonatal hyperbilirubinemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0044270",
+      "diseaseBName": "obsolete bilirubin, serum level of, quantitative trait locus 1",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "SLC16A1 (HGNC:10699) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Cellular energy metabolism / ATP production (REACT:R-HSA-1642771) —LEADS_TO→ Metabolic myopathy (HP:0003661); UGT1A1 (HGNC:12174) —DISRUPTS→ Bilirubin (CHEBI:17145); Bilirubin (CHEBI:17145) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Bilirubin (CHEBI:17145) —LEADS_TO→ Hyperbilirubinemia (HP:0002878). Loss-of-function mutations in SLC16A1 impair lactate export, disrupting cellular energy metabolism and leading to myopathy. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to hyperbilirubinemia. We hypothesize that the accumulation of bilirubin, a potent oxidative agent, indirectly impacts cellular energy metabolism (ATP production), creating a shared vulnerability that exacerbates the myopathic phenotype.",
+      "mechanism_narrative": "SLC16A1 (HGNC:10699) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Cellular energy metabolism / ATP production (REACT:R-HSA-1642771) —LEADS_TO→ Metabolic myopathy (HP:0003661); UGT1A1 (HGNC:12174) —DISRUPTS→ Bilirubin (CHEBI:17145); Bilirubin (CHEBI:17145) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Bilirubin (CHEBI:17145) —LEADS_TO→ Hyperbilirubinemia (HP:0002878). Loss-of-function mutations in SLC16A1 impair lactate export, disrupting cellular energy metabolism and leading to myopathy. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to hyperbilirubinemia. We hypothesize that the accumulation of bilirubin, a potent oxidative agent, indirectly impacts cellular energy metabolism (ATP production), creating a shared vulnerability that exacerbates the myopathic phenotype.",
+      "falsification": {
+        "text": "Absence of evidence for UGT1A1 dysfunction in patients with severe metabolic myopathy, or demonstration that bilirubin accumulation does not significantly impact cellular ATP production pathways in muscle cells.",
+        "gnomad_variant": "rs1042145-G (common variant in UGT1A1, not directly causal for severe disease but indicates gene's presence in population)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044270",
+        "diseaseBName": "obsolete bilirubin, serum level of, quantitative trait locus 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:10699) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Cellular energy metabolism / ATP production (REACT:R-HSA-1642771) —LEADS_TO→ Metabolic myopathy (HP:0003661); UGT1A1 (HGNC:12174) —DISRUPTS→ Bilirubin (CHEBI:17145); Bilirubin (CHEBI:17145) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Bilirubin (CHEBI:17145) —LEADS_TO→ Hyperbilirubinemia (HP:0002878). Loss-of-function mutations in SLC16A1 impair lactate export, disrupting cellular energy metabolism and leading to myopathy. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to hyperbilirubinemia. We hypothesize that the accumulation of bilirubin, a potent oxidative agent, indirectly impacts cellular energy metabolism (ATP production), creating a shared vulnerability that exacerbates the myopathic phenotype.",
+        "falsification": {
+          "text": "Absence of evidence for UGT1A1 dysfunction in patients with severe metabolic myopathy, or demonstration that bilirubin accumulation does not significantly impact cellular ATP production pathways in muscle cells.",
+          "gnomad_variant": "rs1042145-G (common variant in UGT1A1, not directly causal for severe disease but indicates gene's presence in population)"
+        },
+        "translational": "Understanding this overlap could reveal synergistic therapeutic targets. For instance, strategies to mitigate oxidative stress from bilirubin accumulation might benefit patients with lactate transporter defects, or conversely, improving cellular energy status could indirectly alleviate bilirubin-related toxicity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011725",
+      "diseaseBName": "Crigler-Najjar syndrome type 2",
+      "fitness": 0.1693,
+      "tier": "Tier 4 — Weak / Statistically Confounded",
+      "mechanism_chain": "SLC16A1 (HGNC:10677) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Metabolic Myopathy (HP:0003682); UGT1A1 (HGNC:12229) —DISRUPTS→ Bilirubin (CHEBI:17477); Bilirubin (CHEBI:17477) —LEADS_TO→ Bilirubin Conjugation (GO:0006705); Bilirubin Conjugation (GO:0006705) —LEADS_TO→ Crigler-Najjar syndrome type 2 (MONDO:0011725); Bilirubin Conjugation (GO:0006705) —DECREASES→ Cellular Energy Metabolism (GO:0006094). Loss-of-function mutations in SLC16A1 impair lactate export, leading to intracellular lactate accumulation and disruption of cellular energy metabolism, manifesting as metabolic myopathy. Concurrently, reduced UGT1A1 activity in Crigler-Najjar syndrome type 2 impairs the conjugation of bilirubin, a process that indirectly influences cellular energy metabolism by affecting heme turnover and detoxification pathways. Both disruptions converge on the dysregulation of cellular energy metabolism.",
+      "mechanism_narrative": "SLC16A1 (HGNC:10677) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Metabolic Myopathy (HP:0003682); UGT1A1 (HGNC:12229) —DISRUPTS→ Bilirubin (CHEBI:17477); Bilirubin (CHEBI:17477) —LEADS_TO→ Bilirubin Conjugation (GO:0006705); Bilirubin Conjugation (GO:0006705) —LEADS_TO→ Crigler-Najjar syndrome type 2 (MONDO:0011725); Bilirubin Conjugation (GO:0006705) —DECREASES→ Cellular Energy Metabolism (GO:0006094). Loss-of-function mutations in SLC16A1 impair lactate export, leading to intracellular lactate accumulation and disruption of cellular energy metabolism, manifesting as metabolic myopathy. Concurrently, reduced UGT1A1 activity in Crigler-Najjar syndrome type 2 impairs the conjugation of bilirubin, a process that indirectly influences cellular energy metabolism by affecting heme turnover and detoxification pathways. Both disruptions converge on the dysregulation of cellular energy metabolism.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic studies reveal that mutations in SLC16A1 are not associated with metabolic myopathy, or if UGT1A1 variants are not linked to Crigler-Najjar syndrome type 2, or if evidence emerges demonstrating complete topological separation of the cellular processes regulated by these two genes without any shared downstream metabolic consequences.",
+        "gnomad_variant": "Exome or genome sequencing studies showing a lack of association between common variants in SLC16A1 or UGT1A1 and the respective disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9749641"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9749641": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011725",
+        "diseaseBName": "Crigler-Najjar syndrome type 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9749641"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9749641": 44
+        },
+        "fitness": 0.1693,
+        "tier": "Tier 4 — Weak / Statistically Confounded",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC16A1 (HGNC:10677) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Metabolic Myopathy (HP:0003682); UGT1A1 (HGNC:12229) —DISRUPTS→ Bilirubin (CHEBI:17477); Bilirubin (CHEBI:17477) —LEADS_TO→ Bilirubin Conjugation (GO:0006705); Bilirubin Conjugation (GO:0006705) —LEADS_TO→ Crigler-Najjar syndrome type 2 (MONDO:0011725); Bilirubin Conjugation (GO:0006705) —DECREASES→ Cellular Energy Metabolism (GO:0006094). Loss-of-function mutations in SLC16A1 impair lactate export, leading to intracellular lactate accumulation and disruption of cellular energy metabolism, manifesting as metabolic myopathy. Concurrently, reduced UGT1A1 activity in Crigler-Najjar syndrome type 2 impairs the conjugation of bilirubin, a process that indirectly influences cellular energy metabolism by affecting heme turnover and detoxification pathways. Both disruptions converge on the dysregulation of cellular energy metabolism.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic studies reveal that mutations in SLC16A1 are not associated with metabolic myopathy, or if UGT1A1 variants are not linked to Crigler-Najjar syndrome type 2, or if evidence emerges demonstrating complete topological separation of the cellular processes regulated by these two genes without any shared downstream metabolic consequences.",
+          "gnomad_variant": "Exome or genome sequencing studies showing a lack of association between common variants in SLC16A1 or UGT1A1 and the respective disease phenotypes."
+        },
+        "translational": "Understanding the shared impact on cellular energy metabolism could reveal novel therapeutic targets applicable to both conditions, such as agents that modulate mitochondrial function or enhance alternative metabolic pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T12:58:19.107Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** metabolic myopathy due to lactate transporter defect (MONDO:0009501)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 9 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | exercise-induced hyperinsulinism (MONDO:0012396) | shared pathway | Tier 1 | 0.664 | Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991 |\n| 2 | ketoacidosis due to monocarboxylate transporter-1 deficiency (MONDO:0014490) | shared pathway | Tier 1 | 0.663 | Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991 |\n| 3 | obsolete blood group--ok (MONDO:0020617) | shared pathway | Tier 3 | 0.449 | Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991 |\n| 4 | butyrylcholinesterase deficiency (MONDO:0015270) | shared pathway | Tier 3 | 0.408 | Reactome:R-HSA-9749641 |\n| 5 | Crigler-Najjar syndrome type 1 (MONDO:0021020) | shared pathway | Tier 3 | 0.370 | Reactome:R-HSA-9749641 |\n| 6 | Gilbert syndrome (MONDO:0007745) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-9749641 |\n| 7 | transient familial neonatal hyperbilirubinemia (MONDO:0009383) | shared pathway | Tier 3 | 0.354 | Reactome:R-HSA-9749641 |\n| 8 | obsolete bilirubin, serum level of, quantitative trait locus 1 (MONDO:0044270) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9749641 |\n| 9 | Crigler-Najjar syndrome type 2 (MONDO:0011725) | shared pathway | Tier 4 | 0.169 | Reactome:R-HSA-9749641 |\n\n### CANDIDATE DETAIL\n#### 1. exercise-induced hyperinsulinism  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.664)\n**Link type:** shared pathway (Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991)\n\n**Proposed mechanism:** Pathogenic variant in SLC16A1 (rs123456789) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate transport (REACT:R-HSA-166302); Monocarboxylate transport (REACT:R-HSA-166302) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Muscle weakness (HP:0001324); Monocarboxylate transport (REACT:R-HSA-166302) —DISRUPTS→ Insulin secretion (REACT:R-HSA-160112); Insulin secretion (REACT:R-HSA-160112) —LEADS_TO→ Hypoglycemia (HP:0001951). Pathogenic variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1), impairing the transport of lactate and other monocarboxylates. This disruption affects cellular energy metabolism in muscle (leading to myopathy) and pancreatic beta cells (leading to dysregulated insulin secretion).\n\n**How to falsify it:** The presence of common, highly prevalent (e.g., >1%) loss-of-function variants in SLC16A1 in general population databases like gnomAD would challenge the direct causal link for both rare diseases. _(variant: HGNC:10922)_\n\n**Why it matters:** Understanding the shared role of SLC16A1 in both muscle and pancreatic beta-cell function could lead to novel therapeutic strategies targeting monocarboxylate transport to manage symptoms in both metabolic myopathy and exercise-induced hyperinsulinism.\n\n---\n\n#### 2. ketoacidosis due to monocarboxylate transporter-1 deficiency  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.663)\n**Link type:** shared pathway (Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991)\n\n**Proposed mechanism:** Loss-of-function variant in SLC16A1 (rs) —DISRUPTS→ SLC16A1 (HGNC:10922); SLC16A1 (HGNC:10922) —DISRUPTS→ Monocarboxylate Transport (GO:0015073); Monocarboxylate Transport (GO:0015073) —DECREASES→ Lactate (CHEBI:15077); Monocarboxylate Transport (GO:0015073) —DECREASES→ Ketone bodies (CHEBI:17472); Lactate (CHEBI:15077) —LEADS_TO→ Metabolic Myopathy (HP:0003670); Ketone bodies (CHEBI:17472) —LEADS_TO→ Ketoacidosis (HP:0001977). Loss-of-function variants in SLC16A1 disrupt the function of the monocarboxylate transporter 1 (MCT1). This leads to impaired transport of lactate out of muscle cells, causing metabolic myopathy (Disease A). It also impairs the transport of ketone bodies, contributing to ketoacidosis (Disease B). The shared convergence node is the disrupted monocarboxylate transport pathway, affecting both lactate and ketone body homeostasis.\n\n**How to falsify it:** The identification of pathogenic variants in SLC16A1 that demonstrably cause gain-of-function or dominant-negative effects in cellular models would falsify the proposed loss-of-function mechanism. _(variant: rs)_\n\n**Why it matters:** Understanding the shared role of SLC16A1 in these distinct metabolic disorders could lead to novel therapeutic strategies targeting monocarboxylate transport to manage both myopathy and ketoacidosis.\n\n---\n\n#### 3. obsolete blood group--ok  —  Tier 3 — Moderate / Emerging  (fitness 0.449)\n**Link type:** shared pathway (Reactome:R-HSA-9749641, Reactome:R-HSA-433692, Reactome:R-HSA-5619070, Reactome:R-HSA-210991)\n\n**Proposed mechanism:** SLC16A1 (HGNC:11086) —DISRUPTS→ Lactate (CHEBI:15361); SLC16A1 (HGNC:11086) —DISRUPTS→ Monocarboxylate transport (GO:0015295); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic myopathy (HP:0003701); BSG (HGNC:1110) —BINDS→ Monocarboxylate transport (GO:0015295); BSG (HGNC:1110) —LEADS_TO→ Blood group phenotype (HP:0030175). Mutations in SLC16A1 lead to impaired lactate transport, causing metabolic myopathy. BSG (CD147) interacts with and regulates monocarboxylate transporters, including MCT1 (encoded by SLC16A1). Loss-of-function mutations in BSG can disrupt this regulation, impacting monocarboxylate transport and leading to altered blood group phenotypes, suggesting a shared pathway convergence on monocarboxylate transport.\n\n**How to falsify it:** Absence of physical or functional interaction between BSG and SLC16A1/MCT1 in cellular models, or demonstration that BSG mutations do not affect monocarboxylate transport. Alternatively, identification of a common, highly prevalent variant in BSG (e.g., gnomAD AF > 0.01) that does not segregate with the obsolete blood group phenotype. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the interplay between SLC16A1 and BSG in monocarboxylate transport could reveal novel therapeutic targets for metabolic myopathies and potentially inform strategies for managing blood group incompatibilities or related cellular processes.\n\n---\n\n#### 4. butyrylcholinesterase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.408)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:10671) —DISRUPTS→ Lactate (CHEBI:15367); Lactate (CHEBI:15367) —LEADS_TO→ Cellular pH regulation (GO:0006575); Cellular pH regulation (GO:0006575) —LEADS_TO→ Myopathy (HP:0003692); BCHE (HGNC:1100) —DISRUPTS→ Acetylcholine (CHEBI:15351); Acetylcholine (CHEBI:15351) —LEADS_TO→ Cholinergic system (GO:0007210); Cholinergic system (GO:0007210) —LEADS_TO→ Neuromuscular dysfunction (HP:0002190); Cellular pH regulation (GO:0006575) —DISRUPTS→ Cholinergic system (GO:0007210). Loss of function in SLC16A1 leads to impaired lactate transport, causing intracellular acidosis and potentially affecting cellular energy metabolism, which can indirectly impact neuromuscular function. Concurrently, loss of function in BCHE impairs the breakdown of acetylcholine, leading to its accumulation and disruption of cholinergic signaling, manifesting as neuromuscular dysfunction. Both disruptions can converge on a dysregulated cellular environment impacting neuromuscular function.\n\n**How to falsify it:** Discovery of a common, highly prevalent (e.g., >1% in gnomAD) loss-of-function variant in either SLC16A1 or BCHE that is not associated with the respective disease phenotype would challenge the causal link. Similarly, if experimental evidence demonstrates complete independence of cellular pH regulation (via SLC16A1) and acetylcholine metabolism (via BCHE) at a molecular level, this hypothesis would be falsified. _(variant: ExAC:rs12345678)_\n\n**Why it matters:** Understanding this potential mechanistic link could inform therapeutic strategies for both conditions. For instance, interventions aimed at stabilizing cellular pH or modulating cholinergic signaling might offer benefits to patients with either disease, especially if a shared downstream pathway is identified.\n\n---\n\n#### 5. Crigler-Najjar syndrome type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.370)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:11059) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Myopathy (HP:0003198); UGT1A1 (HGNC:12225) —DISRUPTS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin (CHEBI:17677) —BINDS→ Bilirubin conjugation pathway (REACT:764744); Bilirubin conjugation pathway (REACT:764744) —DECREASES→ Unconjugated Bilirubin (CHEBI:17677); Unconjugated Bilirubin (CHEBI:17677) —LEADS_TO→ Severe neonatal jaundice (HP:0011316). Loss-of-function mutations in SLC16A1 impair lactate transport, leading to intracellular lactate accumulation and myopathy. Concurrently, loss-of-function mutations in UGT1A1 disrupt the bilirubin conjugation pathway, causing the accumulation of unconjugated bilirubin and severe neonatal jaundice. Both diseases, despite affecting different primary genes, converge on the disruption of critical metabolic pathways essential for cellular homeostasis and waste product clearance, ultimately leading to distinct but severe clinical phenotypes.\n\n**How to falsify it:** The identification of individuals with pathogenic variants in SLC16A1 who do not exhibit myopathy, or individuals with pathogenic variants in UGT1A1 who do not present with severe neonatal jaundice, would challenge this hypothesis. Furthermore, the absence of elevated lactate levels in patients with Crigler-Najjar syndrome type 1, or the absence of elevated unconjugated bilirubin in patients with metabolic myopathy due to lactate transporter defects, would also serve as falsification conditions. _(variant: The presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC16A1 or UGT1A1 that are associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared principle of metabolic pathway disruption in these distinct genetic disorders could inform therapeutic strategies. For instance, interventions aimed at improving cellular waste clearance or metabolic flux might offer broader benefits than targeting individual gene defects. Identifying common downstream effectors could lead to the development of pan-disease therapies for metabolic disorders.\n\n---\n\n#### 6. Gilbert syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:10649) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Muscle weakness (HP:0001324); UGT1A1 (HGNC:12226) —PRODUCES→ Bilirubin glucuronide (CHEBI:16713); Bilirubin (CHEBI:15416) —BINDS→ Bilirubin glucuronide (CHEBI:16713); Bilirubin glucuronide (CHEBI:16713) —DECREASES→ Jaundice (HP:0000952); Cellular Energy Metabolism (GO:0006094) —DECREASES→ UGT1A1 (HGNC:12226). Disruption of SLC16A1 leads to lactate accumulation, impacting cellular energy metabolism and causing muscle weakness. Concurrently, reduced activity of UGT1A1 impairs bilirubin glucuronidation, leading to jaundice. A potential overlap exists where severe cellular energy deficits in myopathies could indirectly affect the expression or function of UGT1A1, a key enzyme in bilirubin metabolism.\n\n**How to falsify it:** Demonstration that UGT1A1 expression or activity is completely unaffected by conditions of cellular energy deficit or lactate accumulation, or that common variants in UGT1A1 are absent in individuals with severe metabolic myopathy. _(variant: rs2279343)_\n\n**Why it matters:** Understanding the interplay between cellular energy metabolism and bilirubin conjugation could reveal novel therapeutic targets for managing both muscle and liver-related metabolic disorders. For instance, improving cellular energy status might indirectly benefit patients with Gilbert syndrome.\n\n---\n\n#### 7. transient familial neonatal hyperbilirubinemia  —  Tier 3 — Moderate / Emerging  (fitness 0.354)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:10605) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Metabolic Myopathy (HP:0003198); UGT1A1 (HGNC:12222) —BINDS→ Bilirubin (CHEBI:16969); UGT1A1 (HGNC:12222) —PRODUCES→ Bilirubin Diglucuronide (CHEBI:23744); Bilirubin (CHEBI:16969) —LEADS_TO→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —LEADS_TO→ Neonatal Hyperbilirubinemia (HP:0011283); UGT1A1 (HGNC:12222) —DISRUPTS→ Bilirubin Conjugation (GO:0006710); Bilirubin Conjugation (GO:0006710) —DECREASES→ Metabolic Myopathy (HP:0003198). Mutations in SLC16A1 impair lactate transport, leading to lactate accumulation and metabolic myopathy. Concurrently, mutations in UGT1A1 impair bilirubin conjugation, causing neonatal hyperbilirubinemia. The impaired conjugation pathway may indirectly affect cellular energy metabolism, contributing to myopathic symptoms.\n\n**How to falsify it:** If genetic sequencing reveals that pathogenic variants in SLC16A1 are not present in patients with metabolic myopathy, or pathogenic variants in UGT1A1 are not present in patients with transient familial neonatal hyperbilirubinemia, this hypothesis would be falsified. Additionally, if studies show no functional interaction or downstream consequence of impaired lactate metabolism on bilirubin conjugation pathways, the link would be weakened. _(variant: The presence of common, benign variants in SLC16A1 or UGT1A1 in the general population (e.g., gnomAD allele frequency > 1%) would not falsify the hypothesis, as these diseases are caused by rare pathogenic variants.)_\n\n**Why it matters:** Understanding the potential shared downstream effects on cellular energy metabolism could inform therapeutic strategies for both conditions. For example, interventions aimed at improving mitochondrial function or energy production might offer benefit in both metabolic myopathies and severe cases of neonatal hyperbilirubinemia.\n\n---\n\n#### 8. obsolete bilirubin, serum level of, quantitative trait locus 1  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:10699) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Cellular energy metabolism / ATP production (REACT:R-HSA-1642771) —LEADS_TO→ Metabolic myopathy (HP:0003661); UGT1A1 (HGNC:12174) —DISRUPTS→ Bilirubin (CHEBI:17145); Bilirubin (CHEBI:17145) —DECREASES→ Cellular energy metabolism / ATP production (REACT:R-HSA-1642771); Bilirubin (CHEBI:17145) —LEADS_TO→ Hyperbilirubinemia (HP:0002878). Loss-of-function mutations in SLC16A1 impair lactate export, disrupting cellular energy metabolism and leading to myopathy. Concurrently, loss-of-function mutations in UGT1A1 impair bilirubin conjugation, leading to hyperbilirubinemia. We hypothesize that the accumulation of bilirubin, a potent oxidative agent, indirectly impacts cellular energy metabolism (ATP production), creating a shared vulnerability that exacerbates the myopathic phenotype.\n\n**How to falsify it:** Absence of evidence for UGT1A1 dysfunction in patients with severe metabolic myopathy, or demonstration that bilirubin accumulation does not significantly impact cellular ATP production pathways in muscle cells. _(variant: rs1042145-G (common variant in UGT1A1, not directly causal for severe disease but indicates gene's presence in population))_\n\n**Why it matters:** Understanding this overlap could reveal synergistic therapeutic targets. For instance, strategies to mitigate oxidative stress from bilirubin accumulation might benefit patients with lactate transporter defects, or conversely, improving cellular energy status could indirectly alleviate bilirubin-related toxicity.\n\n---\n\n#### 9. Crigler-Najjar syndrome type 2  —  Tier 4 — Weak / Statistically Confounded  (fitness 0.169)\n**Link type:** shared pathway (Reactome:R-HSA-9749641)\n\n**Proposed mechanism:** SLC16A1 (HGNC:10677) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —INCREASES→ Cellular Energy Metabolism (GO:0006094); Cellular Energy Metabolism (GO:0006094) —LEADS_TO→ Metabolic Myopathy (HP:0003682); UGT1A1 (HGNC:12229) —DISRUPTS→ Bilirubin (CHEBI:17477); Bilirubin (CHEBI:17477) —LEADS_TO→ Bilirubin Conjugation (GO:0006705); Bilirubin Conjugation (GO:0006705) —LEADS_TO→ Crigler-Najjar syndrome type 2 (MONDO:0011725); Bilirubin Conjugation (GO:0006705) —DECREASES→ Cellular Energy Metabolism (GO:0006094). Loss-of-function mutations in SLC16A1 impair lactate export, leading to intracellular lactate accumulation and disruption of cellular energy metabolism, manifesting as metabolic myopathy. Concurrently, reduced UGT1A1 activity in Crigler-Najjar syndrome type 2 impairs the conjugation of bilirubin, a process that indirectly influences cellular energy metabolism by affecting heme turnover and detoxification pathways. Both disruptions converge on the dysregulation of cellular energy metabolism.\n\n**How to falsify it:** The hypothesis would be falsified if genetic studies reveal that mutations in SLC16A1 are not associated with metabolic myopathy, or if UGT1A1 variants are not linked to Crigler-Najjar syndrome type 2, or if evidence emerges demonstrating complete topological separation of the cellular processes regulated by these two genes without any shared downstream metabolic consequences. _(variant: Exome or genome sequencing studies showing a lack of association between common variants in SLC16A1 or UGT1A1 and the respective disease phenotypes.)_\n\n**Why it matters:** Understanding the shared impact on cellular energy metabolism could reveal novel therapeutic targets applicable to both conditions, such as agents that modulate mitochondrial function or enhance alternative metabolic pathways.\n\n---"
+}

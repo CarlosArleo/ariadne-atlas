@@ -1,0 +1,421 @@
+{
+  "seed": {
+    "id": "MONDO:0010023",
+    "name": "combined immunodeficiency due to ZAP70 deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 14,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014861",
+      "diseaseBName": "autoimmune disease, multisystem, infantile-onset, 2",
+      "fitness": 0.7906,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic ZAP70 variant (HGNC:12858) —DISRUPTS→ ZAP70 (HGNC:12858); ZAP70 (HGNC:12858) —DISRUPTS→ T-cell receptor signaling pathway (GO:0007229); T-cell receptor signaling pathway (GO:0007229) —DECREASES→ T-cell activation (GO:0042110); T-cell activation (GO:0042110) —LEADS_TO→ Immune dysregulation (HP:0002715); Immune dysregulation (HP:0002715) —LEADS_TO→ Immunodeficiency (HP:0002705); Immune dysregulation (HP:0002715) —LEADS_TO→ Autoimmunity (HP:0000705). Loss-of-function variants in ZAP70 impair T-cell receptor signaling, leading to reduced T-cell activation. This immune dysregulation manifests as combined immunodeficiency (Disease A) and can also predispose to multisystem autoimmune disease (Disease B).",
+      "mechanism_narrative": "Pathogenic ZAP70 variant (HGNC:12858) —DISRUPTS→ ZAP70 (HGNC:12858); ZAP70 (HGNC:12858) —DISRUPTS→ T-cell receptor signaling pathway (GO:0007229); T-cell receptor signaling pathway (GO:0007229) —DECREASES→ T-cell activation (GO:0042110); T-cell activation (GO:0042110) —LEADS_TO→ Immune dysregulation (HP:0002715); Immune dysregulation (HP:0002715) —LEADS_TO→ Immunodeficiency (HP:0002705); Immune dysregulation (HP:0002715) —LEADS_TO→ Autoimmunity (HP:0000705). Loss-of-function variants in ZAP70 impair T-cell receptor signaling, leading to reduced T-cell activation. This immune dysregulation manifests as combined immunodeficiency (Disease A) and can also predispose to multisystem autoimmune disease (Disease B).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ZAP70 that lead to a gain-of-function or a dominant-negative effect, rather than loss-of-function, would falsify this hypothesis. Additionally, if patients with ZAP70 deficiency (MONDO:0010023) consistently lack autoimmune manifestations (HP:0000705) would also challenge this proposed link.",
+        "gnomad_variant": "A ZAP70 variant with a minor allele frequency > 0.01 in gnomAD would strongly argue against it being the sole causal variant for these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407",
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-202430",
+        "Reactome:R-HSA-9725371"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014861",
+        "diseaseBName": "autoimmune disease, multisystem, infantile-onset, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407",
+          "Reactome:R-HSA-202433",
+          "Reactome:R-HSA-202430",
+          "Reactome:R-HSA-9725371"
+        ],
+        "fitness": 0.7906,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic ZAP70 variant (HGNC:12858) —DISRUPTS→ ZAP70 (HGNC:12858); ZAP70 (HGNC:12858) —DISRUPTS→ T-cell receptor signaling pathway (GO:0007229); T-cell receptor signaling pathway (GO:0007229) —DECREASES→ T-cell activation (GO:0042110); T-cell activation (GO:0042110) —LEADS_TO→ Immune dysregulation (HP:0002715); Immune dysregulation (HP:0002715) —LEADS_TO→ Immunodeficiency (HP:0002705); Immune dysregulation (HP:0002715) —LEADS_TO→ Autoimmunity (HP:0000705). Loss-of-function variants in ZAP70 impair T-cell receptor signaling, leading to reduced T-cell activation. This immune dysregulation manifests as combined immunodeficiency (Disease A) and can also predispose to multisystem autoimmune disease (Disease B).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ZAP70 that lead to a gain-of-function or a dominant-negative effect, rather than loss-of-function, would falsify this hypothesis. Additionally, if patients with ZAP70 deficiency (MONDO:0010023) consistently lack autoimmune manifestations (HP:0000705) would also challenge this proposed link.",
+          "gnomad_variant": "A ZAP70 variant with a minor allele frequency > 0.01 in gnomAD would strongly argue against it being the sole causal variant for these rare diseases."
+        },
+        "translational": "Understanding the shared ZAP70 deficiency as a root cause for both severe immunodeficiency and autoimmune manifestations could lead to more targeted therapeutic strategies, potentially involving immune reconstitution or modulation therapies, for patients presenting with either or both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009609",
+      "diseaseBName": "methylcobalamin deficiency type cblG",
+      "fitness": 0.4827,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (WP:WP467); T cell receptor signaling (WP:WP467) —LEADS_TO→ Combined immunodeficiency (HP:0002705); MTR (HGNC:7509) —DISRUPTS→ Methylcobalamin (CHEBI:17402); Methylcobalamin (CHEBI:17402) —DECREASES→ One-carbon metabolism and DNA synthesis (WP:WP400); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Megaloblastic anemia (HP:0001874); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in MTR impair cobalamin metabolism, specifically the conversion of homocysteine to methionine, which is crucial for DNA synthesis. The convergence lies in the essentiality of both ZAP70-mediated signaling for T cell function and MTR-dependent one-carbon metabolism for DNA synthesis, both of which are vital for a healthy immune system and overall development. Impaired DNA synthesis can indirectly affect rapidly dividing immune cells, and compromised T cell function can exacerbate the systemic effects of metabolic dysregulation.",
+      "mechanism_narrative": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (WP:WP467); T cell receptor signaling (WP:WP467) —LEADS_TO→ Combined immunodeficiency (HP:0002705); MTR (HGNC:7509) —DISRUPTS→ Methylcobalamin (CHEBI:17402); Methylcobalamin (CHEBI:17402) —DECREASES→ One-carbon metabolism and DNA synthesis (WP:WP400); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Megaloblastic anemia (HP:0001874); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in MTR impair cobalamin metabolism, specifically the conversion of homocysteine to methionine, which is crucial for DNA synthesis. The convergence lies in the essentiality of both ZAP70-mediated signaling for T cell function and MTR-dependent one-carbon metabolism for DNA synthesis, both of which are vital for a healthy immune system and overall development. Impaired DNA synthesis can indirectly affect rapidly dividing immune cells, and compromised T cell function can exacerbate the systemic effects of metabolic dysregulation.",
+      "falsification": {
+        "text": "The absence of shared downstream molecular pathways or cellular processes affected by both ZAP70 deficiency and MTR deficiency, beyond the general requirement for cell viability and proliferation. Specifically, if studies show no interaction or dependency between ZAP70 signaling and cobalamin-dependent metabolic pathways in relevant cell types.",
+        "gnomad_variant": "rs148752014 (hypothetical ZAP70 variant)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009609",
+        "diseaseBName": "methylcobalamin deficiency type cblG",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.4827,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (WP:WP467); T cell receptor signaling (WP:WP467) —LEADS_TO→ Combined immunodeficiency (HP:0002705); MTR (HGNC:7509) —DISRUPTS→ Methylcobalamin (CHEBI:17402); Methylcobalamin (CHEBI:17402) —DECREASES→ One-carbon metabolism and DNA synthesis (WP:WP400); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Megaloblastic anemia (HP:0001874); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in MTR impair cobalamin metabolism, specifically the conversion of homocysteine to methionine, which is crucial for DNA synthesis. The convergence lies in the essentiality of both ZAP70-mediated signaling for T cell function and MTR-dependent one-carbon metabolism for DNA synthesis, both of which are vital for a healthy immune system and overall development. Impaired DNA synthesis can indirectly affect rapidly dividing immune cells, and compromised T cell function can exacerbate the systemic effects of metabolic dysregulation.",
+        "falsification": {
+          "text": "The absence of shared downstream molecular pathways or cellular processes affected by both ZAP70 deficiency and MTR deficiency, beyond the general requirement for cell viability and proliferation. Specifically, if studies show no interaction or dependency between ZAP70 signaling and cobalamin-dependent metabolic pathways in relevant cell types.",
+          "gnomad_variant": "rs148752014 (hypothetical ZAP70 variant)"
+        },
+        "translational": "Understanding this link could reveal therapeutic strategies that support immune cell function or DNA synthesis in patients with either condition, potentially through metabolic support or immune modulatory agents, especially in cases with overlapping clinical features like developmental delay."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100119",
+      "diseaseBName": "Knobloch syndrome 2",
+      "fitness": 0.4387,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12770) —DISRUPTS→ T-cell receptor signaling (WP:WP490); T-cell receptor signaling (WP:WP490) —DECREASES→ Immune cell migration (GO:0002415); Immune cell migration (GO:0002415) —LEADS_TO→ Severe combined immunodeficiency (HP:0001775); PAK2 (HGNC:8570) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —DECREASES→ Immune cell migration (GO:0002415); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Congenital high myopia (HP:0011090); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Encephalocele (HP:0002078); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Subcutaneous fat atrophy (HP:0009870). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to impaired T-cell function and severe combined immunodeficiency. Concurrently, loss-of-function mutations in PAK2 disrupt cytoskeletal regulation, which impacts immune cell migration and also contributes to connective tissue abnormalities seen in Knobloch syndrome 2, including high myopia, encephalocele, and subcutaneous fat atrophy.",
+      "mechanism_narrative": "ZAP70 (HGNC:12770) —DISRUPTS→ T-cell receptor signaling (WP:WP490); T-cell receptor signaling (WP:WP490) —DECREASES→ Immune cell migration (GO:0002415); Immune cell migration (GO:0002415) —LEADS_TO→ Severe combined immunodeficiency (HP:0001775); PAK2 (HGNC:8570) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —DECREASES→ Immune cell migration (GO:0002415); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Congenital high myopia (HP:0011090); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Encephalocele (HP:0002078); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Subcutaneous fat atrophy (HP:0009870). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to impaired T-cell function and severe combined immunodeficiency. Concurrently, loss-of-function mutations in PAK2 disrupt cytoskeletal regulation, which impacts immune cell migration and also contributes to connective tissue abnormalities seen in Knobloch syndrome 2, including high myopia, encephalocele, and subcutaneous fat atrophy.",
+      "falsification": {
+        "text": "Demonstration that mutations in ZAP70 do not impair T-cell receptor signaling or immune cell function, or that mutations in PAK2 do not affect cytoskeletal dynamics or connective tissue integrity.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic variants in ZAP70 or PAK2."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407",
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38,
+        "Reactome:R-HSA-202433": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100119",
+        "diseaseBName": "Knobloch syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407",
+          "Reactome:R-HSA-202433"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38,
+          "Reactome:R-HSA-202433": 34
+        },
+        "fitness": 0.4387,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12770) —DISRUPTS→ T-cell receptor signaling (WP:WP490); T-cell receptor signaling (WP:WP490) —DECREASES→ Immune cell migration (GO:0002415); Immune cell migration (GO:0002415) —LEADS_TO→ Severe combined immunodeficiency (HP:0001775); PAK2 (HGNC:8570) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —DECREASES→ Immune cell migration (GO:0002415); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Congenital high myopia (HP:0011090); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Encephalocele (HP:0002078); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Subcutaneous fat atrophy (HP:0009870). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to impaired T-cell function and severe combined immunodeficiency. Concurrently, loss-of-function mutations in PAK2 disrupt cytoskeletal regulation, which impacts immune cell migration and also contributes to connective tissue abnormalities seen in Knobloch syndrome 2, including high myopia, encephalocele, and subcutaneous fat atrophy.",
+        "falsification": {
+          "text": "Demonstration that mutations in ZAP70 do not impair T-cell receptor signaling or immune cell function, or that mutations in PAK2 do not affect cytoskeletal dynamics or connective tissue integrity.",
+          "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic variants in ZAP70 or PAK2."
+        },
+        "translational": "Understanding the shared downstream effects on cytoskeletal regulation and cell migration, despite originating from distinct genes, could reveal novel therapeutic targets for modulating immune responses or treating connective tissue disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859373",
+      "diseaseBName": "intellectual developmental disorder, autosomal recessive 78",
+      "fitness": 0.3886,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 pathogenic variant (null) —DISRUPTS→ ZAP70 (HGNC:12057); ZAP70 (HGNC:12057) —DISRUPTS→ T cell receptor signaling (P01731); T cell receptor signaling (P01731) —LEADS_TO→ Combined immunodeficiency (HP:0002700); WDR11 pathogenic variant (null) —DISRUPTS→ WDR11 (HGNC:25520); WDR11 (HGNC:25520) —DISRUPTS→ Cytokine signaling (GO:0007169); Cytokine signaling (GO:0007169) —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in WDR11 disrupt downstream signaling pathways, including cytokine signaling, which is crucial for neuronal development and function, thereby contributing to intellectual disability. The convergence is hypothesized at the level of shared downstream signaling cascades essential for both immune cell function and neurodevelopment.",
+      "mechanism_narrative": "ZAP70 pathogenic variant (null) —DISRUPTS→ ZAP70 (HGNC:12057); ZAP70 (HGNC:12057) —DISRUPTS→ T cell receptor signaling (P01731); T cell receptor signaling (P01731) —LEADS_TO→ Combined immunodeficiency (HP:0002700); WDR11 pathogenic variant (null) —DISRUPTS→ WDR11 (HGNC:25520); WDR11 (HGNC:25520) —DISRUPTS→ Cytokine signaling (GO:0007169); Cytokine signaling (GO:0007169) —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in WDR11 disrupt downstream signaling pathways, including cytokine signaling, which is crucial for neuronal development and function, thereby contributing to intellectual disability. The convergence is hypothesized at the level of shared downstream signaling cascades essential for both immune cell function and neurodevelopment.",
+      "falsification": {
+        "text": "If genetic studies reveal that the signaling pathways downstream of ZAP70 and WDR11 are entirely distinct and do not share any common effector molecules or regulatory networks involved in cellular differentiation or function, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common, benign variants in WDR11 in individuals with normal immune function and in ZAP70 in individuals without cognitive impairment would support the notion of distinct roles, but not necessarily falsify a shared upstream or downstream pathway component."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859373",
+        "diseaseBName": "intellectual developmental disorder, autosomal recessive 78",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.3886,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 pathogenic variant (null) —DISRUPTS→ ZAP70 (HGNC:12057); ZAP70 (HGNC:12057) —DISRUPTS→ T cell receptor signaling (P01731); T cell receptor signaling (P01731) —LEADS_TO→ Combined immunodeficiency (HP:0002700); WDR11 pathogenic variant (null) —DISRUPTS→ WDR11 (HGNC:25520); WDR11 (HGNC:25520) —DISRUPTS→ Cytokine signaling (GO:0007169); Cytokine signaling (GO:0007169) —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in WDR11 disrupt downstream signaling pathways, including cytokine signaling, which is crucial for neuronal development and function, thereby contributing to intellectual disability. The convergence is hypothesized at the level of shared downstream signaling cascades essential for both immune cell function and neurodevelopment.",
+        "falsification": {
+          "text": "If genetic studies reveal that the signaling pathways downstream of ZAP70 and WDR11 are entirely distinct and do not share any common effector molecules or regulatory networks involved in cellular differentiation or function, this hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common, benign variants in WDR11 in individuals with normal immune function and in ZAP70 in individuals without cognitive impairment would support the notion of distinct roles, but not necessarily falsify a shared upstream or downstream pathway component."
+        },
+        "translational": "Understanding the shared signaling pathways could reveal novel therapeutic targets for both immune disorders and neurodevelopmental conditions. For instance, modulating specific cytokine signaling pathways might offer a dual benefit."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013501",
+      "diseaseBName": "frontotemporal dementia and/or amyotrophic lateral sclerosis 6",
+      "fitness": 0.3883,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (REACT:R-HSA-5694080); T cell receptor signaling (REACT:R-HSA-5694080) —LEADS_TO→ Combined immunodeficiency (HP:0002774); VCP (HGNC:12147) —DISRUPTS→ Protein homeostasis and degradation (GO:0006457); Protein homeostasis and degradation (GO:0006457) —LEADS_TO→ Neuronal function and survival (GO:0007264); Neuronal function and survival (GO:0007264) —LEADS_TO→ Frontotemporal dementia (HP:0000878); Neuronal function and survival (GO:0007264) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in VCP disrupt protein homeostasis and degradation pathways, impacting neuronal function and survival and resulting in frontotemporal dementia and/or amyotrophic lateral sclerosis. The shared mechanism lies in the disruption of fundamental cellular processes (immune signaling and protein degradation) that are critical for distinct cellular functions and organismal health.",
+      "mechanism_narrative": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (REACT:R-HSA-5694080); T cell receptor signaling (REACT:R-HSA-5694080) —LEADS_TO→ Combined immunodeficiency (HP:0002774); VCP (HGNC:12147) —DISRUPTS→ Protein homeostasis and degradation (GO:0006457); Protein homeostasis and degradation (GO:0006457) —LEADS_TO→ Neuronal function and survival (GO:0007264); Neuronal function and survival (GO:0007264) —LEADS_TO→ Frontotemporal dementia (HP:0000878); Neuronal function and survival (GO:0007264) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in VCP disrupt protein homeostasis and degradation pathways, impacting neuronal function and survival and resulting in frontotemporal dementia and/or amyotrophic lateral sclerosis. The shared mechanism lies in the disruption of fundamental cellular processes (immune signaling and protein degradation) that are critical for distinct cellular functions and organismal health.",
+      "falsification": {
+        "text": "Identification of a substantial population carrying heterozygous loss-of-function variants in ZAP70 or VCP with no associated disease phenotypes, as observed in large population databases like gnomAD.",
+        "gnomad_variant": "Any common (AF > 1%) loss-of-function variant in ZAP70 or VCP."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013501",
+        "diseaseBName": "frontotemporal dementia and/or amyotrophic lateral sclerosis 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.3883,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (REACT:R-HSA-5694080); T cell receptor signaling (REACT:R-HSA-5694080) —LEADS_TO→ Combined immunodeficiency (HP:0002774); VCP (HGNC:12147) —DISRUPTS→ Protein homeostasis and degradation (GO:0006457); Protein homeostasis and degradation (GO:0006457) —LEADS_TO→ Neuronal function and survival (GO:0007264); Neuronal function and survival (GO:0007264) —LEADS_TO→ Frontotemporal dementia (HP:0000878); Neuronal function and survival (GO:0007264) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in VCP disrupt protein homeostasis and degradation pathways, impacting neuronal function and survival and resulting in frontotemporal dementia and/or amyotrophic lateral sclerosis. The shared mechanism lies in the disruption of fundamental cellular processes (immune signaling and protein degradation) that are critical for distinct cellular functions and organismal health.",
+        "falsification": {
+          "text": "Identification of a substantial population carrying heterozygous loss-of-function variants in ZAP70 or VCP with no associated disease phenotypes, as observed in large population databases like gnomAD.",
+          "gnomad_variant": "Any common (AF > 1%) loss-of-function variant in ZAP70 or VCP."
+        },
+        "translational": "Understanding the distinct cellular roles and potential overlaps in the molecular machinery affected by ZAP70 and VCP dysfunction could inform therapeutic strategies for neurodegenerative and immune disorders, potentially through pathways that regulate protein turnover or immune cell signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010949",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+      "fitness": 0.3883,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12400) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050852); T-cell receptor signaling pathway (GO:0050852) —LEADS_TO→ Combined immunodeficiency (HP:0002704); RAB7A (HGNC:9757) —DISRUPTS→ Lysosomal trafficking (GO:0005741); Lysosomal trafficking (GO:0005741) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003196). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in RAB7A impair lysosomal trafficking, which is crucial for neuronal development, resulting in Charcot-Marie-Tooth disease. The convergence occurs at the level of cellular signaling pathways that are essential for both immune cell function and neuronal integrity, where disruption of these fundamental cellular processes leads to distinct but mechanistically related pathologies.",
+      "mechanism_narrative": "ZAP70 (HGNC:12400) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050852); T-cell receptor signaling pathway (GO:0050852) —LEADS_TO→ Combined immunodeficiency (HP:0002704); RAB7A (HGNC:9757) —DISRUPTS→ Lysosomal trafficking (GO:0005741); Lysosomal trafficking (GO:0005741) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003196). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in RAB7A impair lysosomal trafficking, which is crucial for neuronal development, resulting in Charcot-Marie-Tooth disease. The convergence occurs at the level of cellular signaling pathways that are essential for both immune cell function and neuronal integrity, where disruption of these fundamental cellular processes leads to distinct but mechanistically related pathologies.",
+      "falsification": {
+        "text": "Demonstration that ZAP70 and RAB7A function entirely independently in non-overlapping cellular compartments and signaling cascades, with no shared downstream effectors or pathways critical for both T-cell activation and neuronal development.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in ZAP70 or RAB7A that are associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010949",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.3883,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12400) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050852); T-cell receptor signaling pathway (GO:0050852) —LEADS_TO→ Combined immunodeficiency (HP:0002704); RAB7A (HGNC:9757) —DISRUPTS→ Lysosomal trafficking (GO:0005741); Lysosomal trafficking (GO:0005741) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003196). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in RAB7A impair lysosomal trafficking, which is crucial for neuronal development, resulting in Charcot-Marie-Tooth disease. The convergence occurs at the level of cellular signaling pathways that are essential for both immune cell function and neuronal integrity, where disruption of these fundamental cellular processes leads to distinct but mechanistically related pathologies.",
+        "falsification": {
+          "text": "Demonstration that ZAP70 and RAB7A function entirely independently in non-overlapping cellular compartments and signaling cascades, with no shared downstream effectors or pathways critical for both T-cell activation and neuronal development.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in ZAP70 or RAB7A that are associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared mechanistic basis in lysosomal trafficking and signaling could reveal novel therapeutic targets for both immunodeficiencies and neurodegenerative disorders. Modulating these core cellular processes might offer a unified approach to treating a spectrum of related conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013926",
+      "diseaseBName": "hypogonadotropic hypogonadism 14 with or without anosmia",
+      "fitness": 0.388,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 loss-of-function variant (MONDO:0010023) —DISRUPTS→ ZAP70 (HGNC:12540); ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling pathway (WP:WP403); T cell receptor signaling pathway (WP:WP403) —LEADS_TO→ Combined immunodeficiency (HP:0002714); WDR11 loss-of-function variant (MONDO:0013926) —DISRUPTS→ WDR11 (HGNC:24277); WDR11 (HGNC:24277) —DISRUPTS→ GnRH signaling pathway (WP:WP407); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Hypogonadotropic hypogonadism (HP:0011372); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Anosmia (HP:0000374). Loss-of-function variants in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function variants in WDR11 disrupt the GnRH signaling pathway, resulting in hypogonadotropic hypogonadism and anosmia. Both pathways are essential for distinct but fundamental aspects of human health: immune function and reproductive development, respectively. The convergence is at the level of cellular signaling pathway integrity, where disruption of either leads to distinct but severe clinical outcomes.",
+      "mechanism_narrative": "ZAP70 loss-of-function variant (MONDO:0010023) —DISRUPTS→ ZAP70 (HGNC:12540); ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling pathway (WP:WP403); T cell receptor signaling pathway (WP:WP403) —LEADS_TO→ Combined immunodeficiency (HP:0002714); WDR11 loss-of-function variant (MONDO:0013926) —DISRUPTS→ WDR11 (HGNC:24277); WDR11 (HGNC:24277) —DISRUPTS→ GnRH signaling pathway (WP:WP407); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Hypogonadotropic hypogonadism (HP:0011372); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Anosmia (HP:0000374). Loss-of-function variants in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function variants in WDR11 disrupt the GnRH signaling pathway, resulting in hypogonadotropic hypogonadism and anosmia. Both pathways are essential for distinct but fundamental aspects of human health: immune function and reproductive development, respectively. The convergence is at the level of cellular signaling pathway integrity, where disruption of either leads to distinct but severe clinical outcomes.",
+      "falsification": {
+        "text": "Identification of individuals with heterozygous loss-of-function variants in ZAP70 who do not exhibit combined immunodeficiency, or individuals with heterozygous loss-of-function variants in WDR11 who do not exhibit hypogonadotropic hypogonadism or anosmia, would falsify the proposed loss-of-function mechanism for these diseases.",
+        "gnomad_variant": "rs750281417"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013926",
+        "diseaseBName": "hypogonadotropic hypogonadism 14 with or without anosmia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.388,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 loss-of-function variant (MONDO:0010023) —DISRUPTS→ ZAP70 (HGNC:12540); ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling pathway (WP:WP403); T cell receptor signaling pathway (WP:WP403) —LEADS_TO→ Combined immunodeficiency (HP:0002714); WDR11 loss-of-function variant (MONDO:0013926) —DISRUPTS→ WDR11 (HGNC:24277); WDR11 (HGNC:24277) —DISRUPTS→ GnRH signaling pathway (WP:WP407); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Hypogonadotropic hypogonadism (HP:0011372); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Anosmia (HP:0000374). Loss-of-function variants in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function variants in WDR11 disrupt the GnRH signaling pathway, resulting in hypogonadotropic hypogonadism and anosmia. Both pathways are essential for distinct but fundamental aspects of human health: immune function and reproductive development, respectively. The convergence is at the level of cellular signaling pathway integrity, where disruption of either leads to distinct but severe clinical outcomes.",
+        "falsification": {
+          "text": "Identification of individuals with heterozygous loss-of-function variants in ZAP70 who do not exhibit combined immunodeficiency, or individuals with heterozygous loss-of-function variants in WDR11 who do not exhibit hypogonadotropic hypogonadism or anosmia, would falsify the proposed loss-of-function mechanism for these diseases.",
+          "gnomad_variant": "rs750281417"
+        },
+        "translational": "Understanding the distinct roles of ZAP70 and WDR11 in their respective pathways highlights the importance of precise signaling for immune competence and reproductive health. Therapeutic strategies targeting upstream regulators or downstream effectors of T-cell activation or GnRH signaling could potentially be explored, although the genetic basis of these primary deficiencies makes direct gene therapy or enzyme replacement challenging. However, understanding these pathways can inform management and supportive care for affected individuals."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008178",
+      "diseaseBName": "inclusion body myopathy with Paget disease of bone and frontotemporal dementia type 1",
+      "fitness": 0.3422,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12790) —DISRUPTS→ T cell receptor signaling pathway (WP:WP402); T cell receptor signaling pathway (WP:WP402) —LEADS_TO→ Combined immunodeficiency (HP:0002710); VCP (HGNC:12154) —DISRUPTS→ Proteostasis (GO:0006464); Proteostasis (GO:0006464) —LEADS_TO→ Inclusion body myopathy (HP:0003697); Proteostasis (GO:0006464) —LEADS_TO→ Paget disease of bone (HP:0002729); Proteostasis (GO:0006464) —LEADS_TO→ Frontotemporal dementia (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, leading to the accumulation of misfolded proteins and cellular dysfunction, manifesting as inclusion body myopathy, Paget disease of bone, and frontotemporal dementia. The convergence lies in the shared pathway of proteostasis, where VCP's role in protein quality control is critical for cellular health, and its disruption in disease B affects multiple tissues, while ZAP70's disruption in disease A affects immune cell signaling, a process also reliant on proper protein turnover and cellular homeostasis.",
+      "mechanism_narrative": "ZAP70 (HGNC:12790) —DISRUPTS→ T cell receptor signaling pathway (WP:WP402); T cell receptor signaling pathway (WP:WP402) —LEADS_TO→ Combined immunodeficiency (HP:0002710); VCP (HGNC:12154) —DISRUPTS→ Proteostasis (GO:0006464); Proteostasis (GO:0006464) —LEADS_TO→ Inclusion body myopathy (HP:0003697); Proteostasis (GO:0006464) —LEADS_TO→ Paget disease of bone (HP:0002729); Proteostasis (GO:0006464) —LEADS_TO→ Frontotemporal dementia (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, leading to the accumulation of misfolded proteins and cellular dysfunction, manifesting as inclusion body myopathy, Paget disease of bone, and frontotemporal dementia. The convergence lies in the shared pathway of proteostasis, where VCP's role in protein quality control is critical for cellular health, and its disruption in disease B affects multiple tissues, while ZAP70's disruption in disease A affects immune cell signaling, a process also reliant on proper protein turnover and cellular homeostasis.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in ZAP70 in patients with inclusion body myopathy, Paget disease of bone, and frontotemporal dementia, or the identification of pathogenic variants in VCP in patients with combined immunodeficiency, would falsify this hypothesis of distinct causal genes leading to distinct disease modules.",
+        "gnomad_variant": "None claimed"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008178",
+        "diseaseBName": "inclusion body myopathy with Paget disease of bone and frontotemporal dementia type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.3422,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12790) —DISRUPTS→ T cell receptor signaling pathway (WP:WP402); T cell receptor signaling pathway (WP:WP402) —LEADS_TO→ Combined immunodeficiency (HP:0002710); VCP (HGNC:12154) —DISRUPTS→ Proteostasis (GO:0006464); Proteostasis (GO:0006464) —LEADS_TO→ Inclusion body myopathy (HP:0003697); Proteostasis (GO:0006464) —LEADS_TO→ Paget disease of bone (HP:0002729); Proteostasis (GO:0006464) —LEADS_TO→ Frontotemporal dementia (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, leading to the accumulation of misfolded proteins and cellular dysfunction, manifesting as inclusion body myopathy, Paget disease of bone, and frontotemporal dementia. The convergence lies in the shared pathway of proteostasis, where VCP's role in protein quality control is critical for cellular health, and its disruption in disease B affects multiple tissues, while ZAP70's disruption in disease A affects immune cell signaling, a process also reliant on proper protein turnover and cellular homeostasis.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in ZAP70 in patients with inclusion body myopathy, Paget disease of bone, and frontotemporal dementia, or the identification of pathogenic variants in VCP in patients with combined immunodeficiency, would falsify this hypothesis of distinct causal genes leading to distinct disease modules.",
+          "gnomad_variant": "None claimed"
+        },
+        "translational": "Understanding the shared pathway of proteostasis, even with different initiating genetic defects, could reveal therapeutic targets for proteinopathies. Interventions aimed at enhancing protein clearance or mitigating the effects of proteostasis disruption might offer benefits across a spectrum of neurodegenerative and myodegenerative disorders, potentially including aspects of ZAP70 deficiency by supporting general cellular resilience."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032568",
+      "diseaseBName": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+      "fitness": 0.3334,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12543) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050851); T-cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Combined immunodeficiency (HP:0002717); PAK1 (HGNC:8602) —INCREASES→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual developmental disorder (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Seizures (HP:0001250); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Macrocephaly (HP:0000256); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in PAK1 enhance cytoskeletal organization processes, which are critical for neuronal development and function, leading to intellectual disability, seizures, macrocephaly, and speech delay. The convergence is on the shared pathway of cytoskeletal organization, which is essential for both immune cell function and neuronal development.",
+      "mechanism_narrative": "ZAP70 (HGNC:12543) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050851); T-cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Combined immunodeficiency (HP:0002717); PAK1 (HGNC:8602) —INCREASES→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual developmental disorder (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Seizures (HP:0001250); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Macrocephaly (HP:0000256); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in PAK1 enhance cytoskeletal organization processes, which are critical for neuronal development and function, leading to intellectual disability, seizures, macrocephaly, and speech delay. The convergence is on the shared pathway of cytoskeletal organization, which is essential for both immune cell function and neuronal development.",
+      "falsification": {
+        "text": "Demonstration that mutations in ZAP70 do not impair T-cell signaling or that mutations in PAK1 do not affect cytoskeletal organization in neuronal cells.",
+        "gnomad_variant": "A pathogenic ZAP70 variant with a gnomAD allele frequency > 0.01% or a pathogenic PAK1 variant with a gnomAD allele frequency > 0.01%."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407",
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38,
+        "Reactome:R-HSA-202433": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032568",
+        "diseaseBName": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407",
+          "Reactome:R-HSA-202433"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38,
+          "Reactome:R-HSA-202433": 34
+        },
+        "fitness": 0.3334,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12543) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050851); T-cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Combined immunodeficiency (HP:0002717); PAK1 (HGNC:8602) —INCREASES→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual developmental disorder (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Seizures (HP:0001250); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Macrocephaly (HP:0000256); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in PAK1 enhance cytoskeletal organization processes, which are critical for neuronal development and function, leading to intellectual disability, seizures, macrocephaly, and speech delay. The convergence is on the shared pathway of cytoskeletal organization, which is essential for both immune cell function and neuronal development.",
+        "falsification": {
+          "text": "Demonstration that mutations in ZAP70 do not impair T-cell signaling or that mutations in PAK1 do not affect cytoskeletal organization in neuronal cells.",
+          "gnomad_variant": "A pathogenic ZAP70 variant with a gnomAD allele frequency > 0.01% or a pathogenic PAK1 variant with a gnomAD allele frequency > 0.01%."
+        },
+        "translational": "Understanding the shared reliance on cytoskeletal dynamics could reveal novel therapeutic targets for both primary immunodeficiencies and neurodevelopmental disorders, potentially through modulating cytoskeletal regulators."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014735",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 2Y",
+      "fitness": 0.3324,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ZAP70 (HGNC:12700) —DISRUPTS→ T cell receptor signaling pathway (WP:WP46); T cell receptor signaling pathway (WP:WP46) —LEADS_TO→ Combined immunodeficiency (HP:0002717); VCP (HGNC:12450) —DISRUPTS→ Proteostasis (GO:0042724); Proteostasis (GO:0042724) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003198). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, contributing to Charcot-Marie-Tooth disease type 2Y. The convergence is the shared pathway of proteostasis, which is critical for neuronal health and immune cell function.",
+      "mechanism_narrative": "ZAP70 (HGNC:12700) —DISRUPTS→ T cell receptor signaling pathway (WP:WP46); T cell receptor signaling pathway (WP:WP46) —LEADS_TO→ Combined immunodeficiency (HP:0002717); VCP (HGNC:12450) —DISRUPTS→ Proteostasis (GO:0042724); Proteostasis (GO:0042724) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003198). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, contributing to Charcot-Marie-Tooth disease type 2Y. The convergence is the shared pathway of proteostasis, which is critical for neuronal health and immune cell function.",
+      "falsification": {
+        "text": "Discovery of mutations in ZAP70 that cause a neuropathy phenotype or mutations in VCP that cause an immunodeficiency phenotype would falsify this hypothesis.",
+        "gnomad_variant": "The absence of pathogenic variants in ZAP70 (for disease A) or VCP (for disease B) in large population databases like gnomAD would strengthen the claim of rarity, but not directly falsify the mechanistic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013407"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013407": 38
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014735",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 2Y",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013407"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013407": 38
+        },
+        "fitness": 0.3324,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ZAP70 (HGNC:12700) —DISRUPTS→ T cell receptor signaling pathway (WP:WP46); T cell receptor signaling pathway (WP:WP46) —LEADS_TO→ Combined immunodeficiency (HP:0002717); VCP (HGNC:12450) —DISRUPTS→ Proteostasis (GO:0042724); Proteostasis (GO:0042724) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003198). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, contributing to Charcot-Marie-Tooth disease type 2Y. The convergence is the shared pathway of proteostasis, which is critical for neuronal health and immune cell function.",
+        "falsification": {
+          "text": "Discovery of mutations in ZAP70 that cause a neuropathy phenotype or mutations in VCP that cause an immunodeficiency phenotype would falsify this hypothesis.",
+          "gnomad_variant": "The absence of pathogenic variants in ZAP70 (for disease A) or VCP (for disease B) in large population databases like gnomAD would strengthen the claim of rarity, but not directly falsify the mechanistic link."
+        },
+        "translational": "Understanding the shared role of VCP in proteostasis, even when mutated in different contexts, could reveal therapeutic strategies that target the broader cellular maintenance machinery. For instance, therapies aimed at improving proteostasis might offer benefits in both neurological and immunological disorders, depending on the specific VCP mutation and its downstream effects."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T17:39:52.018Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** combined immunodeficiency due to ZAP70 deficiency (MONDO:0010023)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 14 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autoimmune disease, multisystem, infantile-onset, 2 (MONDO:0014861) | shared pathway | Tier 1 | 0.791 | Reactome:R-HSA-9013407, Reactome:R-HSA-202433, Reactome:R-HSA-202430, Reactome:R-HSA-9725371 |\n| 2 | methylcobalamin deficiency type cblG (MONDO:0009609) | shared pathway | Tier 3 | 0.483 | Reactome:R-HSA-9013407 |\n| 3 | Knobloch syndrome 2 (MONDO:0100119) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-9013407, Reactome:R-HSA-202433 |\n| 4 | intellectual developmental disorder, autosomal recessive 78 (MONDO:0859373) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-9013407 |\n| 5 | frontotemporal dementia and/or amyotrophic lateral sclerosis 6 (MONDO:0013501) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-9013407 |\n| 6 | Charcot-Marie-Tooth disease type 2B (MONDO:0010949) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-9013407 |\n| 7 | hypogonadotropic hypogonadism 14 with or without anosmia (MONDO:0013926) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-9013407 |\n| 8 | inclusion body myopathy with Paget disease of bone and frontotemporal dementia type 1 (MONDO:0008178) | shared pathway | Tier 3 | 0.342 | Reactome:R-HSA-9013407 |\n| 9 | intellectual developmental disorder with macrocephaly, seizures, and speech delay (MONDO:0032568) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-9013407, Reactome:R-HSA-202433 |\n| 10 | Charcot-Marie-Tooth disease type 2Y (MONDO:0014735) | shared pathway | Tier 3 | 0.332 | Reactome:R-HSA-9013407 |\n\n### CANDIDATE DETAIL\n#### 1. autoimmune disease, multisystem, infantile-onset, 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.791)\n**Link type:** shared pathway (Reactome:R-HSA-9013407, Reactome:R-HSA-202433, Reactome:R-HSA-202430, Reactome:R-HSA-9725371)\n\n**Proposed mechanism:** Pathogenic ZAP70 variant (HGNC:12858) —DISRUPTS→ ZAP70 (HGNC:12858); ZAP70 (HGNC:12858) —DISRUPTS→ T-cell receptor signaling pathway (GO:0007229); T-cell receptor signaling pathway (GO:0007229) —DECREASES→ T-cell activation (GO:0042110); T-cell activation (GO:0042110) —LEADS_TO→ Immune dysregulation (HP:0002715); Immune dysregulation (HP:0002715) —LEADS_TO→ Immunodeficiency (HP:0002705); Immune dysregulation (HP:0002715) —LEADS_TO→ Autoimmunity (HP:0000705). Loss-of-function variants in ZAP70 impair T-cell receptor signaling, leading to reduced T-cell activation. This immune dysregulation manifests as combined immunodeficiency (Disease A) and can also predispose to multisystem autoimmune disease (Disease B).\n\n**How to falsify it:** Identification of pathogenic variants in ZAP70 that lead to a gain-of-function or a dominant-negative effect, rather than loss-of-function, would falsify this hypothesis. Additionally, if patients with ZAP70 deficiency (MONDO:0010023) consistently lack autoimmune manifestations (HP:0000705) would also challenge this proposed link. _(variant: A ZAP70 variant with a minor allele frequency > 0.01 in gnomAD would strongly argue against it being the sole causal variant for these rare diseases.)_\n\n**Why it matters:** Understanding the shared ZAP70 deficiency as a root cause for both severe immunodeficiency and autoimmune manifestations could lead to more targeted therapeutic strategies, potentially involving immune reconstitution or modulation therapies, for patients presenting with either or both conditions.\n\n---\n\n#### 2. methylcobalamin deficiency type cblG  —  Tier 3 — Moderate / Emerging  (fitness 0.483)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (WP:WP467); T cell receptor signaling (WP:WP467) —LEADS_TO→ Combined immunodeficiency (HP:0002705); MTR (HGNC:7509) —DISRUPTS→ Methylcobalamin (CHEBI:17402); Methylcobalamin (CHEBI:17402) —DECREASES→ One-carbon metabolism and DNA synthesis (WP:WP400); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Megaloblastic anemia (HP:0001874); One-carbon metabolism and DNA synthesis (WP:WP400) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in MTR impair cobalamin metabolism, specifically the conversion of homocysteine to methionine, which is crucial for DNA synthesis. The convergence lies in the essentiality of both ZAP70-mediated signaling for T cell function and MTR-dependent one-carbon metabolism for DNA synthesis, both of which are vital for a healthy immune system and overall development. Impaired DNA synthesis can indirectly affect rapidly dividing immune cells, and compromised T cell function can exacerbate the systemic effects of metabolic dysregulation.\n\n**How to falsify it:** The absence of shared downstream molecular pathways or cellular processes affected by both ZAP70 deficiency and MTR deficiency, beyond the general requirement for cell viability and proliferation. Specifically, if studies show no interaction or dependency between ZAP70 signaling and cobalamin-dependent metabolic pathways in relevant cell types. _(variant: rs148752014 (hypothetical ZAP70 variant))_\n\n**Why it matters:** Understanding this link could reveal therapeutic strategies that support immune cell function or DNA synthesis in patients with either condition, potentially through metabolic support or immune modulatory agents, especially in cases with overlapping clinical features like developmental delay.\n\n---\n\n#### 3. Knobloch syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-9013407, Reactome:R-HSA-202433)\n\n**Proposed mechanism:** ZAP70 (HGNC:12770) —DISRUPTS→ T-cell receptor signaling (WP:WP490); T-cell receptor signaling (WP:WP490) —DECREASES→ Immune cell migration (GO:0002415); Immune cell migration (GO:0002415) —LEADS_TO→ Severe combined immunodeficiency (HP:0001775); PAK2 (HGNC:8570) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —DECREASES→ Immune cell migration (GO:0002415); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Congenital high myopia (HP:0011090); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Encephalocele (HP:0002078); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Subcutaneous fat atrophy (HP:0009870). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to impaired T-cell function and severe combined immunodeficiency. Concurrently, loss-of-function mutations in PAK2 disrupt cytoskeletal regulation, which impacts immune cell migration and also contributes to connective tissue abnormalities seen in Knobloch syndrome 2, including high myopia, encephalocele, and subcutaneous fat atrophy.\n\n**How to falsify it:** Demonstration that mutations in ZAP70 do not impair T-cell receptor signaling or immune cell function, or that mutations in PAK2 do not affect cytoskeletal dynamics or connective tissue integrity. _(variant: gnomAD allele frequency > 0.01 for pathogenic variants in ZAP70 or PAK2.)_\n\n**Why it matters:** Understanding the shared downstream effects on cytoskeletal regulation and cell migration, despite originating from distinct genes, could reveal novel therapeutic targets for modulating immune responses or treating connective tissue disorders.\n\n---\n\n#### 4. intellectual developmental disorder, autosomal recessive 78  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 pathogenic variant (null) —DISRUPTS→ ZAP70 (HGNC:12057); ZAP70 (HGNC:12057) —DISRUPTS→ T cell receptor signaling (P01731); T cell receptor signaling (P01731) —LEADS_TO→ Combined immunodeficiency (HP:0002700); WDR11 pathogenic variant (null) —DISRUPTS→ WDR11 (HGNC:25520); WDR11 (HGNC:25520) —DISRUPTS→ Cytokine signaling (GO:0007169); Cytokine signaling (GO:0007169) —LEADS_TO→ Intellectual developmental disorder (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in WDR11 disrupt downstream signaling pathways, including cytokine signaling, which is crucial for neuronal development and function, thereby contributing to intellectual disability. The convergence is hypothesized at the level of shared downstream signaling cascades essential for both immune cell function and neurodevelopment.\n\n**How to falsify it:** If genetic studies reveal that the signaling pathways downstream of ZAP70 and WDR11 are entirely distinct and do not share any common effector molecules or regulatory networks involved in cellular differentiation or function, this hypothesis would be falsified. _(variant: The presence of common, benign variants in WDR11 in individuals with normal immune function and in ZAP70 in individuals without cognitive impairment would support the notion of distinct roles, but not necessarily falsify a shared upstream or downstream pathway component.)_\n\n**Why it matters:** Understanding the shared signaling pathways could reveal novel therapeutic targets for both immune disorders and neurodevelopmental conditions. For instance, modulating specific cytokine signaling pathways might offer a dual benefit.\n\n---\n\n#### 5. frontotemporal dementia and/or amyotrophic lateral sclerosis 6  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling (REACT:R-HSA-5694080); T cell receptor signaling (REACT:R-HSA-5694080) —LEADS_TO→ Combined immunodeficiency (HP:0002774); VCP (HGNC:12147) —DISRUPTS→ Protein homeostasis and degradation (GO:0006457); Protein homeostasis and degradation (GO:0006457) —LEADS_TO→ Neuronal function and survival (GO:0007264); Neuronal function and survival (GO:0007264) —LEADS_TO→ Frontotemporal dementia (HP:0000878); Neuronal function and survival (GO:0007264) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in VCP disrupt protein homeostasis and degradation pathways, impacting neuronal function and survival and resulting in frontotemporal dementia and/or amyotrophic lateral sclerosis. The shared mechanism lies in the disruption of fundamental cellular processes (immune signaling and protein degradation) that are critical for distinct cellular functions and organismal health.\n\n**How to falsify it:** Identification of a substantial population carrying heterozygous loss-of-function variants in ZAP70 or VCP with no associated disease phenotypes, as observed in large population databases like gnomAD. _(variant: Any common (AF > 1%) loss-of-function variant in ZAP70 or VCP.)_\n\n**Why it matters:** Understanding the distinct cellular roles and potential overlaps in the molecular machinery affected by ZAP70 and VCP dysfunction could inform therapeutic strategies for neurodegenerative and immune disorders, potentially through pathways that regulate protein turnover or immune cell signaling.\n\n---\n\n#### 6. Charcot-Marie-Tooth disease type 2B  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 (HGNC:12400) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050852); T-cell receptor signaling pathway (GO:0050852) —LEADS_TO→ Combined immunodeficiency (HP:0002704); RAB7A (HGNC:9757) —DISRUPTS→ Lysosomal trafficking (GO:0005741); Lysosomal trafficking (GO:0005741) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003196). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function mutations in RAB7A impair lysosomal trafficking, which is crucial for neuronal development, resulting in Charcot-Marie-Tooth disease. The convergence occurs at the level of cellular signaling pathways that are essential for both immune cell function and neuronal integrity, where disruption of these fundamental cellular processes leads to distinct but mechanistically related pathologies.\n\n**How to falsify it:** Demonstration that ZAP70 and RAB7A function entirely independently in non-overlapping cellular compartments and signaling cascades, with no shared downstream effectors or pathways critical for both T-cell activation and neuronal development. _(variant: Identification of common variants (AF > 0.01) in ZAP70 or RAB7A that are associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared mechanistic basis in lysosomal trafficking and signaling could reveal novel therapeutic targets for both immunodeficiencies and neurodegenerative disorders. Modulating these core cellular processes might offer a unified approach to treating a spectrum of related conditions.\n\n---\n\n#### 7. hypogonadotropic hypogonadism 14 with or without anosmia  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 loss-of-function variant (MONDO:0010023) —DISRUPTS→ ZAP70 (HGNC:12540); ZAP70 (HGNC:12540) —DISRUPTS→ T cell receptor signaling pathway (WP:WP403); T cell receptor signaling pathway (WP:WP403) —LEADS_TO→ Combined immunodeficiency (HP:0002714); WDR11 loss-of-function variant (MONDO:0013926) —DISRUPTS→ WDR11 (HGNC:24277); WDR11 (HGNC:24277) —DISRUPTS→ GnRH signaling pathway (WP:WP407); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Hypogonadotropic hypogonadism (HP:0011372); GnRH signaling pathway (WP:WP407) —LEADS_TO→ Anosmia (HP:0000374). Loss-of-function variants in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Concurrently, loss-of-function variants in WDR11 disrupt the GnRH signaling pathway, resulting in hypogonadotropic hypogonadism and anosmia. Both pathways are essential for distinct but fundamental aspects of human health: immune function and reproductive development, respectively. The convergence is at the level of cellular signaling pathway integrity, where disruption of either leads to distinct but severe clinical outcomes.\n\n**How to falsify it:** Identification of individuals with heterozygous loss-of-function variants in ZAP70 who do not exhibit combined immunodeficiency, or individuals with heterozygous loss-of-function variants in WDR11 who do not exhibit hypogonadotropic hypogonadism or anosmia, would falsify the proposed loss-of-function mechanism for these diseases. _(variant: rs750281417)_\n\n**Why it matters:** Understanding the distinct roles of ZAP70 and WDR11 in their respective pathways highlights the importance of precise signaling for immune competence and reproductive health. Therapeutic strategies targeting upstream regulators or downstream effectors of T-cell activation or GnRH signaling could potentially be explored, although the genetic basis of these primary deficiencies makes direct gene therapy or enzyme replacement challenging. However, understanding these pathways can inform management and supportive care for affected individuals.\n\n---\n\n#### 8. inclusion body myopathy with Paget disease of bone and frontotemporal dementia type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.342)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 (HGNC:12790) —DISRUPTS→ T cell receptor signaling pathway (WP:WP402); T cell receptor signaling pathway (WP:WP402) —LEADS_TO→ Combined immunodeficiency (HP:0002710); VCP (HGNC:12154) —DISRUPTS→ Proteostasis (GO:0006464); Proteostasis (GO:0006464) —LEADS_TO→ Inclusion body myopathy (HP:0003697); Proteostasis (GO:0006464) —LEADS_TO→ Paget disease of bone (HP:0002729); Proteostasis (GO:0006464) —LEADS_TO→ Frontotemporal dementia (HP:0001249). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, leading to the accumulation of misfolded proteins and cellular dysfunction, manifesting as inclusion body myopathy, Paget disease of bone, and frontotemporal dementia. The convergence lies in the shared pathway of proteostasis, where VCP's role in protein quality control is critical for cellular health, and its disruption in disease B affects multiple tissues, while ZAP70's disruption in disease A affects immune cell signaling, a process also reliant on proper protein turnover and cellular homeostasis.\n\n**How to falsify it:** The identification of pathogenic variants in ZAP70 in patients with inclusion body myopathy, Paget disease of bone, and frontotemporal dementia, or the identification of pathogenic variants in VCP in patients with combined immunodeficiency, would falsify this hypothesis of distinct causal genes leading to distinct disease modules. _(variant: None claimed)_\n\n**Why it matters:** Understanding the shared pathway of proteostasis, even with different initiating genetic defects, could reveal therapeutic targets for proteinopathies. Interventions aimed at enhancing protein clearance or mitigating the effects of proteostasis disruption might offer benefits across a spectrum of neurodegenerative and myodegenerative disorders, potentially including aspects of ZAP70 deficiency by supporting general cellular resilience.\n\n---\n\n#### 9. intellectual developmental disorder with macrocephaly, seizures, and speech delay  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-9013407, Reactome:R-HSA-202433)\n\n**Proposed mechanism:** ZAP70 (HGNC:12543) —DISRUPTS→ T-cell receptor signaling pathway (GO:0050851); T-cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Combined immunodeficiency (HP:0002717); PAK1 (HGNC:8602) —INCREASES→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual developmental disorder (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Seizures (HP:0001250); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Macrocephaly (HP:0000256); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in ZAP70 disrupt T-cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in PAK1 enhance cytoskeletal organization processes, which are critical for neuronal development and function, leading to intellectual disability, seizures, macrocephaly, and speech delay. The convergence is on the shared pathway of cytoskeletal organization, which is essential for both immune cell function and neuronal development.\n\n**How to falsify it:** Demonstration that mutations in ZAP70 do not impair T-cell signaling or that mutations in PAK1 do not affect cytoskeletal organization in neuronal cells. _(variant: A pathogenic ZAP70 variant with a gnomAD allele frequency > 0.01% or a pathogenic PAK1 variant with a gnomAD allele frequency > 0.01%.)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal dynamics could reveal novel therapeutic targets for both primary immunodeficiencies and neurodevelopmental disorders, potentially through modulating cytoskeletal regulators.\n\n---\n\n#### 10. Charcot-Marie-Tooth disease type 2Y  —  Tier 3 — Moderate / Emerging  (fitness 0.332)\n**Link type:** shared pathway (Reactome:R-HSA-9013407)\n\n**Proposed mechanism:** ZAP70 (HGNC:12700) —DISRUPTS→ T cell receptor signaling pathway (WP:WP46); T cell receptor signaling pathway (WP:WP46) —LEADS_TO→ Combined immunodeficiency (HP:0002717); VCP (HGNC:12450) —DISRUPTS→ Proteostasis (GO:0042724); Proteostasis (GO:0042724) —LEADS_TO→ Charcot-Marie-Tooth disease (HP:0003198). Loss-of-function mutations in ZAP70 disrupt T cell receptor signaling, leading to combined immunodeficiency. Gain-of-function mutations in VCP disrupt proteostasis, contributing to Charcot-Marie-Tooth disease type 2Y. The convergence is the shared pathway of proteostasis, which is critical for neuronal health and immune cell function.\n\n**How to falsify it:** Discovery of mutations in ZAP70 that cause a neuropathy phenotype or mutations in VCP that cause an immunodeficiency phenotype would falsify this hypothesis. _(variant: The absence of pathogenic variants in ZAP70 (for disease A) or VCP (for disease B) in large population databases like gnomAD would strengthen the claim of rarity, but not directly falsify the mechanistic link.)_\n\n**Why it matters:** Understanding the shared role of VCP in proteostasis, even when mutated in different contexts, could reveal therapeutic strategies that target the broader cellular maintenance machinery. For instance, therapies aimed at improving proteostasis might offer benefits in both neurological and immunological disorders, depending on the specific VCP mutation and its downstream effects.\n\n---"
+}

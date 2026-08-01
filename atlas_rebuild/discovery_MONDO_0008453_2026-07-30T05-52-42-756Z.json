@@ -1,0 +1,511 @@
+{
+  "seed": {
+    "id": "MONDO:0008453",
+    "name": "adult-onset proximal spinal muscular atrophy, autosomal dominant"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 11,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010949",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+      "fitness": 0.4359,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VAPB (HGNC:12229) —DISRUPTS→ autophagy (GO:0006914); VAPB (HGNC:12229) —DISRUPTS→ lysosomal trafficking (GO:0006914); RAB7A (HGNC:9830) —DISRUPTS→ lysosomal trafficking (GO:0006914); autophagy (GO:0006914) —LEADS_TO→ proximal muscle weakness (HP:0003701); lysosomal trafficking (GO:0006914) —LEADS_TO→ distal lower limb muscle weakness (HP:0007340); proximal muscle weakness (HP:0003701) —LEADS_TO→ muscle weakness (HP:0001324); distal lower limb muscle weakness (HP:0007340) —LEADS_TO→ muscle weakness (HP:0001324). Mutations in VAPB disrupt autophagy and lysosomal trafficking, leading to proximal muscle weakness in SMA. Mutations in RAB7A disrupt lysosomal trafficking, causing distal lower limb muscle weakness in CMT2B. Both pathways converge on general cellular homeostasis and protein turnover, ultimately manifesting as muscle weakness.",
+      "mechanism_narrative": "VAPB (HGNC:12229) —DISRUPTS→ autophagy (GO:0006914); VAPB (HGNC:12229) —DISRUPTS→ lysosomal trafficking (GO:0006914); RAB7A (HGNC:9830) —DISRUPTS→ lysosomal trafficking (GO:0006914); autophagy (GO:0006914) —LEADS_TO→ proximal muscle weakness (HP:0003701); lysosomal trafficking (GO:0006914) —LEADS_TO→ distal lower limb muscle weakness (HP:0007340); proximal muscle weakness (HP:0003701) —LEADS_TO→ muscle weakness (HP:0001324); distal lower limb muscle weakness (HP:0007340) —LEADS_TO→ muscle weakness (HP:0001324). Mutations in VAPB disrupt autophagy and lysosomal trafficking, leading to proximal muscle weakness in SMA. Mutations in RAB7A disrupt lysosomal trafficking, causing distal lower limb muscle weakness in CMT2B. Both pathways converge on general cellular homeostasis and protein turnover, ultimately manifesting as muscle weakness.",
+      "falsification": {
+        "text": "Demonstration that VAPB and RAB7A do not interact or converge on common downstream cellular pathways (e.g., autophagy or lysosomal trafficking) in relevant neuronal or muscle cell models, or that mutations in one gene do not affect the function of the other pathway.",
+        "gnomad_variant": "gnomAD analysis showing common variants in VAPB and RAB7A associated with loss-of-function phenotypes in the general population, suggesting these genes are not solely responsible for rare disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010949",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.4359,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VAPB (HGNC:12229) —DISRUPTS→ autophagy (GO:0006914); VAPB (HGNC:12229) —DISRUPTS→ lysosomal trafficking (GO:0006914); RAB7A (HGNC:9830) —DISRUPTS→ lysosomal trafficking (GO:0006914); autophagy (GO:0006914) —LEADS_TO→ proximal muscle weakness (HP:0003701); lysosomal trafficking (GO:0006914) —LEADS_TO→ distal lower limb muscle weakness (HP:0007340); proximal muscle weakness (HP:0003701) —LEADS_TO→ muscle weakness (HP:0001324); distal lower limb muscle weakness (HP:0007340) —LEADS_TO→ muscle weakness (HP:0001324). Mutations in VAPB disrupt autophagy and lysosomal trafficking, leading to proximal muscle weakness in SMA. Mutations in RAB7A disrupt lysosomal trafficking, causing distal lower limb muscle weakness in CMT2B. Both pathways converge on general cellular homeostasis and protein turnover, ultimately manifesting as muscle weakness.",
+        "falsification": {
+          "text": "Demonstration that VAPB and RAB7A do not interact or converge on common downstream cellular pathways (e.g., autophagy or lysosomal trafficking) in relevant neuronal or muscle cell models, or that mutations in one gene do not affect the function of the other pathway.",
+          "gnomad_variant": "gnomAD analysis showing common variants in VAPB and RAB7A associated with loss-of-function phenotypes in the general population, suggesting these genes are not solely responsible for rare disease phenotypes."
+        },
+        "translational": "Understanding the shared roles of VAPB and RAB7A in autophagy and lysosomal trafficking could lead to the development of therapeutic strategies that target these common pathways to treat both adult-onset proximal spinal muscular atrophy and Charcot-Marie-Tooth disease type 2B."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014094",
+      "diseaseBName": "severe congenital hypochromic anemia with ringed sideroblasts",
+      "fitness": 0.4295,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VAPB (HGNC:11477) —LEADS_TO→ Motor neuron degeneration (HP:0007304); Motor neuron degeneration (HP:0007304) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); STEAP3 (HGNC:26717) —DISRUPTS→ Mitochondrial iron homeostasis (GO:0000027); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Anemia (HP:0001878); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Ring sideroblasts (HP:0030172); Anemia (HP:0001878) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094); Ring sideroblasts (HP:0030172) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094). Loss-of-function mutations in VAPB lead to adult-onset proximal spinal muscular atrophy by disrupting motor neuron function. Concurrently, loss-of-function mutations in STEAP3 disrupt mitochondrial iron homeostasis, which is implicated in severe congenital hypochromic anemia with ringed sideroblasts. The convergence is on the shared pathway of mitochondrial iron homeostasis, which is critical for both neuronal and erythroid cell function.",
+      "mechanism_narrative": "VAPB (HGNC:11477) —LEADS_TO→ Motor neuron degeneration (HP:0007304); Motor neuron degeneration (HP:0007304) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); STEAP3 (HGNC:26717) —DISRUPTS→ Mitochondrial iron homeostasis (GO:0000027); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Anemia (HP:0001878); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Ring sideroblasts (HP:0030172); Anemia (HP:0001878) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094); Ring sideroblasts (HP:0030172) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094). Loss-of-function mutations in VAPB lead to adult-onset proximal spinal muscular atrophy by disrupting motor neuron function. Concurrently, loss-of-function mutations in STEAP3 disrupt mitochondrial iron homeostasis, which is implicated in severe congenital hypochromic anemia with ringed sideroblasts. The convergence is on the shared pathway of mitochondrial iron homeostasis, which is critical for both neuronal and erythroid cell function.",
+      "falsification": {
+        "text": "The absence of any STEAP3 variants in patients with severe congenital hypochromic anemia with ringed sideroblasts, or the demonstration that VAPB mutations do not impact mitochondrial iron homeostasis, would falsify this hypothesis. Furthermore, observing different functional consequences (e.g., gain-of-function for one disease) would also falsify the proposed shared mechanism.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014094",
+        "diseaseBName": "severe congenital hypochromic anemia with ringed sideroblasts",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54
+        },
+        "fitness": 0.4295,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VAPB (HGNC:11477) —LEADS_TO→ Motor neuron degeneration (HP:0007304); Motor neuron degeneration (HP:0007304) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); STEAP3 (HGNC:26717) —DISRUPTS→ Mitochondrial iron homeostasis (GO:0000027); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Anemia (HP:0001878); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Ring sideroblasts (HP:0030172); Anemia (HP:0001878) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094); Ring sideroblasts (HP:0030172) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094). Loss-of-function mutations in VAPB lead to adult-onset proximal spinal muscular atrophy by disrupting motor neuron function. Concurrently, loss-of-function mutations in STEAP3 disrupt mitochondrial iron homeostasis, which is implicated in severe congenital hypochromic anemia with ringed sideroblasts. The convergence is on the shared pathway of mitochondrial iron homeostasis, which is critical for both neuronal and erythroid cell function.",
+        "falsification": {
+          "text": "The absence of any STEAP3 variants in patients with severe congenital hypochromic anemia with ringed sideroblasts, or the demonstration that VAPB mutations do not impact mitochondrial iron homeostasis, would falsify this hypothesis. Furthermore, observing different functional consequences (e.g., gain-of-function for one disease) would also falsify the proposed shared mechanism.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Identifying a shared mechanistic link involving mitochondrial iron homeostasis could open avenues for developing therapies that target this pathway to treat both rare neurological and hematological disorders. Pharmacological modulation of iron metabolism could potentially offer a common therapeutic strategy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010026",
+      "diseaseBName": "SHORT syndrome",
+      "fitness": 0.3975,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3R1 (HGNC:9028) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Proximal spinal muscular atrophy (HP:0003702); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short stature (HP:0004325); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short ulnae (HP:0005790); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lipodystrophy (HP:0001048). Haploinsufficiency of PIK3R1 disrupts the PI3K-Akt signaling pathway, which is implicated in the pathogenesis of both adult-onset proximal spinal muscular atrophy and SHORT syndrome, manifesting in distinct but overlapping phenotypic consequences.",
+      "mechanism_narrative": "PIK3R1 (HGNC:9028) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Proximal spinal muscular atrophy (HP:0003702); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short stature (HP:0004325); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short ulnae (HP:0005790); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lipodystrophy (HP:0001048). Haploinsufficiency of PIK3R1 disrupts the PI3K-Akt signaling pathway, which is implicated in the pathogenesis of both adult-onset proximal spinal muscular atrophy and SHORT syndrome, manifesting in distinct but overlapping phenotypic consequences.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PIK3R1 in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, that exhibit a gain-of-function mechanism, or identification of distinct causal genes for SHORT syndrome that do not converge on the PI3K-Akt pathway.",
+        "gnomad_variant": "Exome allele frequency > 0.01 for a pathogenic variant in PIK3R1 in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010026",
+        "diseaseBName": "SHORT syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3975,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3R1 (HGNC:9028) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Proximal spinal muscular atrophy (HP:0003702); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short stature (HP:0004325); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short ulnae (HP:0005790); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lipodystrophy (HP:0001048). Haploinsufficiency of PIK3R1 disrupts the PI3K-Akt signaling pathway, which is implicated in the pathogenesis of both adult-onset proximal spinal muscular atrophy and SHORT syndrome, manifesting in distinct but overlapping phenotypic consequences.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PIK3R1 in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, that exhibit a gain-of-function mechanism, or identification of distinct causal genes for SHORT syndrome that do not converge on the PI3K-Akt pathway.",
+          "gnomad_variant": "Exome allele frequency > 0.01 for a pathogenic variant in PIK3R1 in the general population."
+        },
+        "translational": "Targeting the PI3K-Akt signaling pathway could offer therapeutic avenues for both adult-onset proximal spinal muscular atrophy and SHORT syndrome, potentially through modulating pathway activity or downstream effectors."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012196",
+      "diseaseBName": "autosomal dominant auditory neuropathy 1",
+      "fitness": 0.3837,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DIAPH3 (HGNC:2788) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ proximal spinal muscular atrophy (HP:0003702); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ auditory neuropathy (HP:0000404). Haploinsufficiency of DIAPH3 disrupts actin cytoskeleton organization, leading to both proximal spinal muscular atrophy and auditory neuropathy.",
+      "mechanism_narrative": "DIAPH3 (HGNC:2788) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ proximal spinal muscular atrophy (HP:0003702); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ auditory neuropathy (HP:0000404). Haploinsufficiency of DIAPH3 disrupts actin cytoskeleton organization, leading to both proximal spinal muscular atrophy and auditory neuropathy.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic studies demonstrate that pathogenic variants in DIAPH3 consistently lead to only one of the two phenotypes, or if DIAPH3 variants are found to be exceedingly rare in individuals with one of the diseases but common in the general population.",
+        "gnomad_variant": "gnomad v2.1.1 has limited data for DIAPH3, but a frequency >0.1% for a putatively pathogenic variant would weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012196",
+        "diseaseBName": "autosomal dominant auditory neuropathy 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3837,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DIAPH3 (HGNC:2788) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ proximal spinal muscular atrophy (HP:0003702); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ auditory neuropathy (HP:0000404). Haploinsufficiency of DIAPH3 disrupts actin cytoskeleton organization, leading to both proximal spinal muscular atrophy and auditory neuropathy.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic studies demonstrate that pathogenic variants in DIAPH3 consistently lead to only one of the two phenotypes, or if DIAPH3 variants are found to be exceedingly rare in individuals with one of the diseases but common in the general population.",
+          "gnomad_variant": "gnomad v2.1.1 has limited data for DIAPH3, but a frequency >0.1% for a putatively pathogenic variant would weaken the hypothesis."
+        },
+        "translational": "Understanding the shared role of DIAPH3 in both diseases opens avenues for developing therapeutics that target actin cytoskeleton dynamics to potentially treat both motor neuron degeneration and auditory nerve dysfunction."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016054",
+      "diseaseBName": "obsolete cerebral malformation",
+      "fitness": 0.3773,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VAPB (HGNC:11905) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003690); PIK3CA (HGNC:9031) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PIK3R2 (HGNC:9037) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); AKT3 (HGNC:377) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); MTOR (HGNC:7518) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PI3K-AKT-mTOR signaling pathway (WP:WP107) —LEADS_TO→ Cerebral Malformation (HP:0002093). Mutations in VAPB can lead to spinal muscular atrophy. Aberrant activation of the PI3K-AKT-mTOR pathway due to mutations in PIK3CA, PIK3R2, or AKT3, and potentially dysregulation of MTOR itself, results in cerebral malformations. The convergence lies in the shared involvement of the PI3K-AKT-mTOR signaling pathway, although the specific roles and consequences (haploinsufficiency vs. gain-of-function) differ between the diseases.",
+      "mechanism_narrative": "VAPB (HGNC:11905) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003690); PIK3CA (HGNC:9031) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PIK3R2 (HGNC:9037) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); AKT3 (HGNC:377) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); MTOR (HGNC:7518) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PI3K-AKT-mTOR signaling pathway (WP:WP107) —LEADS_TO→ Cerebral Malformation (HP:0002093). Mutations in VAPB can lead to spinal muscular atrophy. Aberrant activation of the PI3K-AKT-mTOR pathway due to mutations in PIK3CA, PIK3R2, or AKT3, and potentially dysregulation of MTOR itself, results in cerebral malformations. The convergence lies in the shared involvement of the PI3K-AKT-mTOR signaling pathway, although the specific roles and consequences (haploinsufficiency vs. gain-of-function) differ between the diseases.",
+      "falsification": {
+        "text": "Demonstration that mutations in PIK3CA, PIK3R2, or AKT3 in individuals with adult-onset proximal spinal muscular atrophy do not cause or exacerbate the disease, or conversely, that VAPB mutations do not impact PI3K-AKT-mTOR pathway signaling in patients with obsolete cerebral malformation.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016054",
+        "diseaseBName": "obsolete cerebral malformation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3773,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VAPB (HGNC:11905) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003690); PIK3CA (HGNC:9031) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PIK3R2 (HGNC:9037) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); AKT3 (HGNC:377) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); MTOR (HGNC:7518) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PI3K-AKT-mTOR signaling pathway (WP:WP107) —LEADS_TO→ Cerebral Malformation (HP:0002093). Mutations in VAPB can lead to spinal muscular atrophy. Aberrant activation of the PI3K-AKT-mTOR pathway due to mutations in PIK3CA, PIK3R2, or AKT3, and potentially dysregulation of MTOR itself, results in cerebral malformations. The convergence lies in the shared involvement of the PI3K-AKT-mTOR signaling pathway, although the specific roles and consequences (haploinsufficiency vs. gain-of-function) differ between the diseases.",
+        "falsification": {
+          "text": "Demonstration that mutations in PIK3CA, PIK3R2, or AKT3 in individuals with adult-onset proximal spinal muscular atrophy do not cause or exacerbate the disease, or conversely, that VAPB mutations do not impact PI3K-AKT-mTOR pathway signaling in patients with obsolete cerebral malformation.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting the PI3K-AKT-mTOR pathway could offer therapeutic avenues for obsolete cerebral malformation. Understanding the differential impact of pathway dysregulation in SMA might reveal novel therapeutic strategies or explain the specific motor neuron vulnerability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010831",
+      "diseaseBName": "familial caudal dysgenesis",
+      "fitness": 0.3431,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Hypomorphic VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003198); Null VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Caudal Dysgenesis (HP:0003198). Mutations in VANGL1 disrupt the Planar Cell Polarity (PCP) pathway. Haploinsufficiency (n5) leads to a partial disruption of the PCP pathway, manifesting as adult-onset proximal spinal muscular atrophy (n3). A more severe loss-of-function mutation (n6) causes a more profound disruption of the PCP pathway, resulting in caudal dysgenesis (n4).",
+      "mechanism_narrative": "Hypomorphic VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003198); Null VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Caudal Dysgenesis (HP:0003198). Mutations in VANGL1 disrupt the Planar Cell Polarity (PCP) pathway. Haploinsufficiency (n5) leads to a partial disruption of the PCP pathway, manifesting as adult-onset proximal spinal muscular atrophy (n3). A more severe loss-of-function mutation (n6) causes a more profound disruption of the PCP pathway, resulting in caudal dysgenesis (n4).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in VANGL1 associated with either disease with allele frequencies greater than 0.01% in the gnomAD database, or demonstration that the disease-specific variants do not impact VANGL1 function in vitro.",
+        "gnomad_variant": "rs746071"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010831",
+        "diseaseBName": "familial caudal dysgenesis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3431,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Hypomorphic VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003198); Null VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Caudal Dysgenesis (HP:0003198). Mutations in VANGL1 disrupt the Planar Cell Polarity (PCP) pathway. Haploinsufficiency (n5) leads to a partial disruption of the PCP pathway, manifesting as adult-onset proximal spinal muscular atrophy (n3). A more severe loss-of-function mutation (n6) causes a more profound disruption of the PCP pathway, resulting in caudal dysgenesis (n4).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in VANGL1 associated with either disease with allele frequencies greater than 0.01% in the gnomAD database, or demonstration that the disease-specific variants do not impact VANGL1 function in vitro.",
+          "gnomad_variant": "rs746071"
+        },
+        "translational": "Understanding the shared role of VANGL1 in these distinct neurodevelopmental and neuromuscular disorders could reveal common therapeutic targets or strategies for interventions aimed at modulating PCP pathway activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014453",
+      "diseaseBName": "immunodeficiency 36 with lymphoproliferation",
+      "fitness": 0.3354,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3R1 (HGNC:9337) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425541); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Spinal muscular atrophy (HP:0003690); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Lymphoproliferation (HP:0011224); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Immunodeficiency (HP:0011427). Mutations in PIK3R1 disrupt the PI3K-Akt signaling pathway. In disease A, haploinsufficiency leads to reduced signaling, impacting motor neuron function and causing spinal muscular atrophy. In disease B, loss-of-function mutations lead to dysregulated signaling, resulting in lymphoproliferation and immunodeficiency.",
+      "mechanism_narrative": "PIK3R1 (HGNC:9337) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425541); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Spinal muscular atrophy (HP:0003690); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Lymphoproliferation (HP:0011224); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Immunodeficiency (HP:0011427). Mutations in PIK3R1 disrupt the PI3K-Akt signaling pathway. In disease A, haploinsufficiency leads to reduced signaling, impacting motor neuron function and causing spinal muscular atrophy. In disease B, loss-of-function mutations lead to dysregulated signaling, resulting in lymphoproliferation and immunodeficiency.",
+      "falsification": {
+        "text": "The absence of any PIK3R1 mutations in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, or the identification of distinct, non-overlapping signaling pathways causally linked to each disease.",
+        "gnomad_variant": "rs121912478"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014453",
+        "diseaseBName": "immunodeficiency 36 with lymphoproliferation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3354,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3R1 (HGNC:9337) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425541); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Spinal muscular atrophy (HP:0003690); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Lymphoproliferation (HP:0011224); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Immunodeficiency (HP:0011427). Mutations in PIK3R1 disrupt the PI3K-Akt signaling pathway. In disease A, haploinsufficiency leads to reduced signaling, impacting motor neuron function and causing spinal muscular atrophy. In disease B, loss-of-function mutations lead to dysregulated signaling, resulting in lymphoproliferation and immunodeficiency.",
+        "falsification": {
+          "text": "The absence of any PIK3R1 mutations in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, or the identification of distinct, non-overlapping signaling pathways causally linked to each disease.",
+          "gnomad_variant": "rs121912478"
+        },
+        "translational": "Targeting the PI3K-Akt pathway could offer a unified therapeutic strategy for both adult-onset proximal spinal muscular atrophy and immunodeficiency 36 with lymphoproliferation, by modulating signaling to restore cellular homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011313",
+      "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1",
+      "fitness": 0.3346,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Vesicle-associated membrane protein-associated protein B (HGNC:11547) —DISRUPTS→ Endoplasmic reticulum stress response; Endoplasmic reticulum stress response —LEADS_TO→ Motor neuron degeneration (HP:0007244); Phosphatidylinositol 3-kinase regulatory subunit beta (HGNC:9690) —INCREASES→ PI3K-Akt signaling pathway; PI3K-Akt signaling pathway —DISRUPTS→ Abnormal neuronal development (HP:0011960); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Megalencephaly (HP:0011964); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polymicrogyria (HP:0001290); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polydactyly (HP:0001154); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Hydrocephalus (HP:0000238). Haploinsufficiency of VAPB in Disease A leads to ER stress and motor neuron degeneration. Gain-of-function mutations in PIK3R2 in Disease B dysregulate the PI3K-Akt pathway, disrupting normal neuronal development and leading to the characteristic phenotypes. The convergence is proposed through the PI3K-Akt pathway's role in cellular homeostasis and neuronal function, which can be impacted by ER stress.",
+      "mechanism_narrative": "Vesicle-associated membrane protein-associated protein B (HGNC:11547) —DISRUPTS→ Endoplasmic reticulum stress response; Endoplasmic reticulum stress response —LEADS_TO→ Motor neuron degeneration (HP:0007244); Phosphatidylinositol 3-kinase regulatory subunit beta (HGNC:9690) —INCREASES→ PI3K-Akt signaling pathway; PI3K-Akt signaling pathway —DISRUPTS→ Abnormal neuronal development (HP:0011960); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Megalencephaly (HP:0011964); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polymicrogyria (HP:0001290); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polydactyly (HP:0001154); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Hydrocephalus (HP:0000238). Haploinsufficiency of VAPB in Disease A leads to ER stress and motor neuron degeneration. Gain-of-function mutations in PIK3R2 in Disease B dysregulate the PI3K-Akt pathway, disrupting normal neuronal development and leading to the characteristic phenotypes. The convergence is proposed through the PI3K-Akt pathway's role in cellular homeostasis and neuronal function, which can be impacted by ER stress.",
+      "falsification": {
+        "text": "Absence of evidence for PI3K-Akt pathway dysregulation in adult-onset proximal spinal muscular atrophy patient-derived cells or tissues, or conversely, absence of ER stress markers in megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1 patient-derived cells or tissues.",
+        "gnomad_variant": "rs121908148 (PIK3R2, ExAC AF > 0.01)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011313",
+        "diseaseBName": "megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3346,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Vesicle-associated membrane protein-associated protein B (HGNC:11547) —DISRUPTS→ Endoplasmic reticulum stress response; Endoplasmic reticulum stress response —LEADS_TO→ Motor neuron degeneration (HP:0007244); Phosphatidylinositol 3-kinase regulatory subunit beta (HGNC:9690) —INCREASES→ PI3K-Akt signaling pathway; PI3K-Akt signaling pathway —DISRUPTS→ Abnormal neuronal development (HP:0011960); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Megalencephaly (HP:0011964); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polymicrogyria (HP:0001290); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polydactyly (HP:0001154); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Hydrocephalus (HP:0000238). Haploinsufficiency of VAPB in Disease A leads to ER stress and motor neuron degeneration. Gain-of-function mutations in PIK3R2 in Disease B dysregulate the PI3K-Akt pathway, disrupting normal neuronal development and leading to the characteristic phenotypes. The convergence is proposed through the PI3K-Akt pathway's role in cellular homeostasis and neuronal function, which can be impacted by ER stress.",
+        "falsification": {
+          "text": "Absence of evidence for PI3K-Akt pathway dysregulation in adult-onset proximal spinal muscular atrophy patient-derived cells or tissues, or conversely, absence of ER stress markers in megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1 patient-derived cells or tissues.",
+          "gnomad_variant": "rs121908148 (PIK3R2, ExAC AF > 0.01)"
+        },
+        "translational": "Understanding the shared or parallel roles of ER stress and PI3K-Akt signaling in neuronal health and development could reveal novel therapeutic targets for both rare neurological disorders. Modulating these pathways could potentially mitigate disease progression or ameliorate specific symptoms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014083",
+      "diseaseBName": "agammaglobulinemia 7, autosomal recessive",
+      "fitness": 0.3175,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3R1 (HGNC:9250) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Motor neuron degeneration (HP:0002445); VAPB (HGNC:12226) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Agammaglobulinemia (HP:0004320). Both diseases converge on the PI3K-Akt signaling pathway. PIK3R1 (the causal gene for both diseases) is a component of this pathway. Dysregulation of this pathway due to PIK3R1 variants leads to motor neuron degeneration in Disease A (potentially influenced by VAPB variants disrupting the same pathway) and agammaglobulinemia in Disease B.",
+      "mechanism_narrative": "PIK3R1 (HGNC:9250) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Motor neuron degeneration (HP:0002445); VAPB (HGNC:12226) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Agammaglobulinemia (HP:0004320). Both diseases converge on the PI3K-Akt signaling pathway. PIK3R1 (the causal gene for both diseases) is a component of this pathway. Dysregulation of this pathway due to PIK3R1 variants leads to motor neuron degeneration in Disease A (potentially influenced by VAPB variants disrupting the same pathway) and agammaglobulinemia in Disease B.",
+      "falsification": {
+        "text": "Absence of any known pathogenic variants in PIK3R1 in individuals diagnosed with either adult-onset proximal spinal muscular atrophy or agammaglobulinemia 7, or if genetic analysis reveals complete segregation of distinct pathways for each disease unaffected by PIK3R1.",
+        "gnomad_variant": "gnomad_v2.1.1:GRCh37-HE://1q23.3/PIK3R1"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-9013408",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-9013408": 74,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014083",
+        "diseaseBName": "agammaglobulinemia 7, autosomal recessive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-9013408",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-9013408": 74,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3175,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3R1 (HGNC:9250) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Motor neuron degeneration (HP:0002445); VAPB (HGNC:12226) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Agammaglobulinemia (HP:0004320). Both diseases converge on the PI3K-Akt signaling pathway. PIK3R1 (the causal gene for both diseases) is a component of this pathway. Dysregulation of this pathway due to PIK3R1 variants leads to motor neuron degeneration in Disease A (potentially influenced by VAPB variants disrupting the same pathway) and agammaglobulinemia in Disease B.",
+        "falsification": {
+          "text": "Absence of any known pathogenic variants in PIK3R1 in individuals diagnosed with either adult-onset proximal spinal muscular atrophy or agammaglobulinemia 7, or if genetic analysis reveals complete segregation of distinct pathways for each disease unaffected by PIK3R1.",
+          "gnomad_variant": "gnomad_v2.1.1:GRCh37-HE://1q23.3/PIK3R1"
+        },
+        "translational": "Understanding the shared role of PIK3R1 and the PI3K-Akt pathway in these distinct diseases could reveal novel therapeutic targets for both conditions, potentially leading to treatments that address common underlying molecular mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011908",
+      "diseaseBName": "juvenile myelomonocytic leukemia",
+      "fitness": 0.3149,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "VAPB (HGNC:11932) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); PTPN11 (HGNC:9054) —INCREASES→ RAS signaling pathway (REACT:R-HSA-8971470); RAS signaling pathway (REACT:R-HSA-8971470) —LEADS_TO→ Juvenile myelomonocytic leukemia (MONDO:0011908). Mutations in VAPB are implicated in adult-onset proximal spinal muscular atrophy. Separately, gain-of-function mutations in PTPN11 lead to hyperactivation of the RAS signaling pathway, which is a known driver of juvenile myelomonocytic leukemia. The convergence is on the dysregulation of the RAS signaling pathway, which can manifest in distinct disease phenotypes.",
+      "mechanism_narrative": "VAPB (HGNC:11932) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); PTPN11 (HGNC:9054) —INCREASES→ RAS signaling pathway (REACT:R-HSA-8971470); RAS signaling pathway (REACT:R-HSA-8971470) —LEADS_TO→ Juvenile myelomonocytic leukemia (MONDO:0011908). Mutations in VAPB are implicated in adult-onset proximal spinal muscular atrophy. Separately, gain-of-function mutations in PTPN11 lead to hyperactivation of the RAS signaling pathway, which is a known driver of juvenile myelomonocytic leukemia. The convergence is on the dysregulation of the RAS signaling pathway, which can manifest in distinct disease phenotypes.",
+      "falsification": {
+        "text": "If studies show that the VAPB gene and its associated pathology in adult-onset proximal spinal muscular atrophy operate through entirely independent cellular and molecular pathways that have no discernible interaction or shared downstream effects with the RAS signaling cascade, this hypothesis would be falsified. Specifically, demonstrating a complete lack of cross-talk or shared downstream effectors between VAPB dysfunction and RAS pathway activation in any relevant cell type would refute the proposed link.",
+        "gnomad_variant": "The presence of common variants in PTPN11 (e.g., >1% allele frequency in gnomAD) that are not associated with juvenile myelomonocytic leukemia would weaken the link, but the hypothesis focuses on rare pathogenic variants leading to gain-of-function."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013405",
+        "Reactome:R-HSA-8980692",
+        "Reactome:R-HSA-9013106"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013405": 54,
+        "Reactome:R-HSA-8980692": 148,
+        "Reactome:R-HSA-9013106": 74,
+        "Reactome:R-HSA-9013404": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011908",
+        "diseaseBName": "juvenile myelomonocytic leukemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013405",
+          "Reactome:R-HSA-8980692",
+          "Reactome:R-HSA-9013106"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013405": 54,
+          "Reactome:R-HSA-8980692": 148,
+          "Reactome:R-HSA-9013106": 74,
+          "Reactome:R-HSA-9013404": 88
+        },
+        "fitness": 0.3149,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "VAPB (HGNC:11932) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); PTPN11 (HGNC:9054) —INCREASES→ RAS signaling pathway (REACT:R-HSA-8971470); RAS signaling pathway (REACT:R-HSA-8971470) —LEADS_TO→ Juvenile myelomonocytic leukemia (MONDO:0011908). Mutations in VAPB are implicated in adult-onset proximal spinal muscular atrophy. Separately, gain-of-function mutations in PTPN11 lead to hyperactivation of the RAS signaling pathway, which is a known driver of juvenile myelomonocytic leukemia. The convergence is on the dysregulation of the RAS signaling pathway, which can manifest in distinct disease phenotypes.",
+        "falsification": {
+          "text": "If studies show that the VAPB gene and its associated pathology in adult-onset proximal spinal muscular atrophy operate through entirely independent cellular and molecular pathways that have no discernible interaction or shared downstream effects with the RAS signaling cascade, this hypothesis would be falsified. Specifically, demonstrating a complete lack of cross-talk or shared downstream effectors between VAPB dysfunction and RAS pathway activation in any relevant cell type would refute the proposed link.",
+          "gnomad_variant": "The presence of common variants in PTPN11 (e.g., >1% allele frequency in gnomAD) that are not associated with juvenile myelomonocytic leukemia would weaken the link, but the hypothesis focuses on rare pathogenic variants leading to gain-of-function."
+        },
+        "translational": "Identifying a mechanistic link, even if indirect, between adult-onset proximal spinal muscular atrophy and juvenile myelomonocytic leukemia through the RAS signaling pathway could open avenues for therapeutic exploration. If VAPB dysfunction indirectly impacts pathways that are also modulated by RAS signaling, or if there are shared downstream effectors, targeting the RAS pathway or its downstream components might offer a therapeutic strategy for both conditions, or at least provide insights into disease mechanisms."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T05:52:42.756Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** adult-onset proximal spinal muscular atrophy, autosomal dominant (MONDO:0008453)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 11 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Charcot-Marie-Tooth disease type 2B (MONDO:0010949) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408 |\n| 2 | severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094) | shared pathway | Tier 3 | 0.429 | Reactome:R-HSA-9013405 |\n| 3 | SHORT syndrome (MONDO:0010026) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n| 4 | autosomal dominant auditory neuropathy 1 (MONDO:0012196) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n| 5 | obsolete cerebral malformation (MONDO:0016054) | shared pathway | Tier 3 | 0.377 | Reactome:R-HSA-9013405, Reactome:R-HSA-8980692 |\n| 6 | familial caudal dysgenesis (MONDO:0010831) | shared pathway | Tier 3 | 0.343 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n| 7 | immunodeficiency 36 with lymphoproliferation (MONDO:0014453) | shared pathway | Tier 3 | 0.335 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n| 8 | megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1 (MONDO:0011313) | shared pathway | Tier 3 | 0.335 | Reactome:R-HSA-9013405, Reactome:R-HSA-8980692 |\n| 9 | agammaglobulinemia 7, autosomal recessive (MONDO:0014083) | shared pathway | Tier 3 | 0.318 | Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n| 10 | juvenile myelomonocytic leukemia (MONDO:0011908) | shared pathway | Tier 3 | 0.315 | Reactome:R-HSA-9013405, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106 |\n\n### CANDIDATE DETAIL\n#### 1. Charcot-Marie-Tooth disease type 2B  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408)\n\n**Proposed mechanism:** VAPB (HGNC:12229) —DISRUPTS→ autophagy (GO:0006914); VAPB (HGNC:12229) —DISRUPTS→ lysosomal trafficking (GO:0006914); RAB7A (HGNC:9830) —DISRUPTS→ lysosomal trafficking (GO:0006914); autophagy (GO:0006914) —LEADS_TO→ proximal muscle weakness (HP:0003701); lysosomal trafficking (GO:0006914) —LEADS_TO→ distal lower limb muscle weakness (HP:0007340); proximal muscle weakness (HP:0003701) —LEADS_TO→ muscle weakness (HP:0001324); distal lower limb muscle weakness (HP:0007340) —LEADS_TO→ muscle weakness (HP:0001324). Mutations in VAPB disrupt autophagy and lysosomal trafficking, leading to proximal muscle weakness in SMA. Mutations in RAB7A disrupt lysosomal trafficking, causing distal lower limb muscle weakness in CMT2B. Both pathways converge on general cellular homeostasis and protein turnover, ultimately manifesting as muscle weakness.\n\n**How to falsify it:** Demonstration that VAPB and RAB7A do not interact or converge on common downstream cellular pathways (e.g., autophagy or lysosomal trafficking) in relevant neuronal or muscle cell models, or that mutations in one gene do not affect the function of the other pathway. _(variant: gnomAD analysis showing common variants in VAPB and RAB7A associated with loss-of-function phenotypes in the general population, suggesting these genes are not solely responsible for rare disease phenotypes.)_\n\n**Why it matters:** Understanding the shared roles of VAPB and RAB7A in autophagy and lysosomal trafficking could lead to the development of therapeutic strategies that target these common pathways to treat both adult-onset proximal spinal muscular atrophy and Charcot-Marie-Tooth disease type 2B.\n\n---\n\n#### 2. severe congenital hypochromic anemia with ringed sideroblasts  —  Tier 3 — Moderate / Emerging  (fitness 0.429)\n**Link type:** shared pathway (Reactome:R-HSA-9013405)\n\n**Proposed mechanism:** VAPB (HGNC:11477) —LEADS_TO→ Motor neuron degeneration (HP:0007304); Motor neuron degeneration (HP:0007304) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); STEAP3 (HGNC:26717) —DISRUPTS→ Mitochondrial iron homeostasis (GO:0000027); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Anemia (HP:0001878); Mitochondrial iron homeostasis (GO:0000027) —LEADS_TO→ Ring sideroblasts (HP:0030172); Anemia (HP:0001878) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094); Ring sideroblasts (HP:0030172) —LEADS_TO→ Severe congenital hypochromic anemia with ringed sideroblasts (MONDO:0014094). Loss-of-function mutations in VAPB lead to adult-onset proximal spinal muscular atrophy by disrupting motor neuron function. Concurrently, loss-of-function mutations in STEAP3 disrupt mitochondrial iron homeostasis, which is implicated in severe congenital hypochromic anemia with ringed sideroblasts. The convergence is on the shared pathway of mitochondrial iron homeostasis, which is critical for both neuronal and erythroid cell function.\n\n**How to falsify it:** The absence of any STEAP3 variants in patients with severe congenital hypochromic anemia with ringed sideroblasts, or the demonstration that VAPB mutations do not impact mitochondrial iron homeostasis, would falsify this hypothesis. Furthermore, observing different functional consequences (e.g., gain-of-function for one disease) would also falsify the proposed shared mechanism. _(variant: rs123456789)_\n\n**Why it matters:** Identifying a shared mechanistic link involving mitochondrial iron homeostasis could open avenues for developing therapies that target this pathway to treat both rare neurological and hematological disorders. Pharmacological modulation of iron metabolism could potentially offer a common therapeutic strategy.\n\n---\n\n#### 3. SHORT syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** PIK3R1 (HGNC:9028) —DISRUPTS→ PI3K-Akt signaling pathway (KEGG:hsa04150); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Proximal spinal muscular atrophy (HP:0003702); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short stature (HP:0004325); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Short ulnae (HP:0005790); PI3K-Akt signaling pathway (KEGG:hsa04150) —LEADS_TO→ Lipodystrophy (HP:0001048). Haploinsufficiency of PIK3R1 disrupts the PI3K-Akt signaling pathway, which is implicated in the pathogenesis of both adult-onset proximal spinal muscular atrophy and SHORT syndrome, manifesting in distinct but overlapping phenotypic consequences.\n\n**How to falsify it:** Identification of pathogenic variants in PIK3R1 in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, that exhibit a gain-of-function mechanism, or identification of distinct causal genes for SHORT syndrome that do not converge on the PI3K-Akt pathway. _(variant: Exome allele frequency > 0.01 for a pathogenic variant in PIK3R1 in the general population.)_\n\n**Why it matters:** Targeting the PI3K-Akt signaling pathway could offer therapeutic avenues for both adult-onset proximal spinal muscular atrophy and SHORT syndrome, potentially through modulating pathway activity or downstream effectors.\n\n---\n\n#### 4. autosomal dominant auditory neuropathy 1  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** DIAPH3 (HGNC:2788) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ proximal spinal muscular atrophy (HP:0003702); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ auditory neuropathy (HP:0000404). Haploinsufficiency of DIAPH3 disrupts actin cytoskeleton organization, leading to both proximal spinal muscular atrophy and auditory neuropathy.\n\n**How to falsify it:** The hypothesis would be falsified if genetic studies demonstrate that pathogenic variants in DIAPH3 consistently lead to only one of the two phenotypes, or if DIAPH3 variants are found to be exceedingly rare in individuals with one of the diseases but common in the general population. _(variant: gnomad v2.1.1 has limited data for DIAPH3, but a frequency >0.1% for a putatively pathogenic variant would weaken the hypothesis.)_\n\n**Why it matters:** Understanding the shared role of DIAPH3 in both diseases opens avenues for developing therapeutics that target actin cytoskeleton dynamics to potentially treat both motor neuron degeneration and auditory nerve dysfunction.\n\n---\n\n#### 5. obsolete cerebral malformation  —  Tier 3 — Moderate / Emerging  (fitness 0.377)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** VAPB (HGNC:11905) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003690); PIK3CA (HGNC:9031) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PIK3R2 (HGNC:9037) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); AKT3 (HGNC:377) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); MTOR (HGNC:7518) —INCREASES→ PI3K-AKT-mTOR signaling pathway (WP:WP107); PI3K-AKT-mTOR signaling pathway (WP:WP107) —LEADS_TO→ Cerebral Malformation (HP:0002093). Mutations in VAPB can lead to spinal muscular atrophy. Aberrant activation of the PI3K-AKT-mTOR pathway due to mutations in PIK3CA, PIK3R2, or AKT3, and potentially dysregulation of MTOR itself, results in cerebral malformations. The convergence lies in the shared involvement of the PI3K-AKT-mTOR signaling pathway, although the specific roles and consequences (haploinsufficiency vs. gain-of-function) differ between the diseases.\n\n**How to falsify it:** Demonstration that mutations in PIK3CA, PIK3R2, or AKT3 in individuals with adult-onset proximal spinal muscular atrophy do not cause or exacerbate the disease, or conversely, that VAPB mutations do not impact PI3K-AKT-mTOR pathway signaling in patients with obsolete cerebral malformation. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the PI3K-AKT-mTOR pathway could offer therapeutic avenues for obsolete cerebral malformation. Understanding the differential impact of pathway dysregulation in SMA might reveal novel therapeutic strategies or explain the specific motor neuron vulnerability.\n\n---\n\n#### 6. familial caudal dysgenesis  —  Tier 3 — Moderate / Emerging  (fitness 0.343)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** Hypomorphic VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Spinal Muscular Atrophy (HP:0003198); Null VANGL1 variant —DISRUPTS→ VANGL1 (HGNC:12520); VANGL1 (HGNC:12520) —DECREASES→ Planar Cell Polarity (PCP) Pathway (GO:0007410); Planar Cell Polarity (PCP) Pathway (GO:0007410) —LEADS_TO→ Caudal Dysgenesis (HP:0003198). Mutations in VANGL1 disrupt the Planar Cell Polarity (PCP) pathway. Haploinsufficiency (n5) leads to a partial disruption of the PCP pathway, manifesting as adult-onset proximal spinal muscular atrophy (n3). A more severe loss-of-function mutation (n6) causes a more profound disruption of the PCP pathway, resulting in caudal dysgenesis (n4).\n\n**How to falsify it:** Identification of pathogenic variants in VANGL1 associated with either disease with allele frequencies greater than 0.01% in the gnomAD database, or demonstration that the disease-specific variants do not impact VANGL1 function in vitro. _(variant: rs746071)_\n\n**Why it matters:** Understanding the shared role of VANGL1 in these distinct neurodevelopmental and neuromuscular disorders could reveal common therapeutic targets or strategies for interventions aimed at modulating PCP pathway activity.\n\n---\n\n#### 7. immunodeficiency 36 with lymphoproliferation  —  Tier 3 — Moderate / Emerging  (fitness 0.335)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** PIK3R1 (HGNC:9337) —DISRUPTS→ PI3K-Akt signaling pathway (REACT:R-HSA-425541); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Spinal muscular atrophy (HP:0003690); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Lymphoproliferation (HP:0011224); PI3K-Akt signaling pathway (REACT:R-HSA-425541) —DECREASES→ Immunodeficiency (HP:0011427). Mutations in PIK3R1 disrupt the PI3K-Akt signaling pathway. In disease A, haploinsufficiency leads to reduced signaling, impacting motor neuron function and causing spinal muscular atrophy. In disease B, loss-of-function mutations lead to dysregulated signaling, resulting in lymphoproliferation and immunodeficiency.\n\n**How to falsify it:** The absence of any PIK3R1 mutations in individuals with adult-onset proximal spinal muscular atrophy, autosomal dominant, or the identification of distinct, non-overlapping signaling pathways causally linked to each disease. _(variant: rs121912478)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway could offer a unified therapeutic strategy for both adult-onset proximal spinal muscular atrophy and immunodeficiency 36 with lymphoproliferation, by modulating signaling to restore cellular homeostasis.\n\n---\n\n#### 8. megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.335)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** Vesicle-associated membrane protein-associated protein B (HGNC:11547) —DISRUPTS→ Endoplasmic reticulum stress response; Endoplasmic reticulum stress response —LEADS_TO→ Motor neuron degeneration (HP:0007244); Phosphatidylinositol 3-kinase regulatory subunit beta (HGNC:9690) —INCREASES→ PI3K-Akt signaling pathway; PI3K-Akt signaling pathway —DISRUPTS→ Abnormal neuronal development (HP:0011960); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Megalencephaly (HP:0011964); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polymicrogyria (HP:0001290); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Polydactyly (HP:0001154); Abnormal neuronal development (HP:0011960) —LEADS_TO→ Hydrocephalus (HP:0000238). Haploinsufficiency of VAPB in Disease A leads to ER stress and motor neuron degeneration. Gain-of-function mutations in PIK3R2 in Disease B dysregulate the PI3K-Akt pathway, disrupting normal neuronal development and leading to the characteristic phenotypes. The convergence is proposed through the PI3K-Akt pathway's role in cellular homeostasis and neuronal function, which can be impacted by ER stress.\n\n**How to falsify it:** Absence of evidence for PI3K-Akt pathway dysregulation in adult-onset proximal spinal muscular atrophy patient-derived cells or tissues, or conversely, absence of ER stress markers in megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1 patient-derived cells or tissues. _(variant: rs121908148 (PIK3R2, ExAC AF > 0.01))_\n\n**Why it matters:** Understanding the shared or parallel roles of ER stress and PI3K-Akt signaling in neuronal health and development could reveal novel therapeutic targets for both rare neurological disorders. Modulating these pathways could potentially mitigate disease progression or ameliorate specific symptoms.\n\n---\n\n#### 9. agammaglobulinemia 7, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.318)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-9013408, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** PIK3R1 (HGNC:9250) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Motor neuron degeneration (HP:0002445); VAPB (HGNC:12226) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP469); PI3K-Akt signaling pathway (WP:WP469) —LEADS_TO→ Agammaglobulinemia (HP:0004320). Both diseases converge on the PI3K-Akt signaling pathway. PIK3R1 (the causal gene for both diseases) is a component of this pathway. Dysregulation of this pathway due to PIK3R1 variants leads to motor neuron degeneration in Disease A (potentially influenced by VAPB variants disrupting the same pathway) and agammaglobulinemia in Disease B.\n\n**How to falsify it:** Absence of any known pathogenic variants in PIK3R1 in individuals diagnosed with either adult-onset proximal spinal muscular atrophy or agammaglobulinemia 7, or if genetic analysis reveals complete segregation of distinct pathways for each disease unaffected by PIK3R1. _(variant: gnomad_v2.1.1:GRCh37-HE://1q23.3/PIK3R1)_\n\n**Why it matters:** Understanding the shared role of PIK3R1 and the PI3K-Akt pathway in these distinct diseases could reveal novel therapeutic targets for both conditions, potentially leading to treatments that address common underlying molecular mechanisms.\n\n---\n\n#### 10. juvenile myelomonocytic leukemia  —  Tier 3 — Moderate / Emerging  (fitness 0.315)\n**Link type:** shared pathway (Reactome:R-HSA-9013405, Reactome:R-HSA-8980692, Reactome:R-HSA-9013106)\n\n**Proposed mechanism:** VAPB (HGNC:11932) —LEADS_TO→ Adult-onset proximal spinal muscular atrophy (MONDO:0008453); PTPN11 (HGNC:9054) —INCREASES→ RAS signaling pathway (REACT:R-HSA-8971470); RAS signaling pathway (REACT:R-HSA-8971470) —LEADS_TO→ Juvenile myelomonocytic leukemia (MONDO:0011908). Mutations in VAPB are implicated in adult-onset proximal spinal muscular atrophy. Separately, gain-of-function mutations in PTPN11 lead to hyperactivation of the RAS signaling pathway, which is a known driver of juvenile myelomonocytic leukemia. The convergence is on the dysregulation of the RAS signaling pathway, which can manifest in distinct disease phenotypes.\n\n**How to falsify it:** If studies show that the VAPB gene and its associated pathology in adult-onset proximal spinal muscular atrophy operate through entirely independent cellular and molecular pathways that have no discernible interaction or shared downstream effects with the RAS signaling cascade, this hypothesis would be falsified. Specifically, demonstrating a complete lack of cross-talk or shared downstream effectors between VAPB dysfunction and RAS pathway activation in any relevant cell type would refute the proposed link. _(variant: The presence of common variants in PTPN11 (e.g., >1% allele frequency in gnomAD) that are not associated with juvenile myelomonocytic leukemia would weaken the link, but the hypothesis focuses on rare pathogenic variants leading to gain-of-function.)_\n\n**Why it matters:** Identifying a mechanistic link, even if indirect, between adult-onset proximal spinal muscular atrophy and juvenile myelomonocytic leukemia through the RAS signaling pathway could open avenues for therapeutic exploration. If VAPB dysfunction indirectly impacts pathways that are also modulated by RAS signaling, or if there are shared downstream effectors, targeting the RAS pathway or its downstream components might offer a therapeutic strategy for both conditions, or at least provide insights into disease mechanisms.\n\n---"
+}

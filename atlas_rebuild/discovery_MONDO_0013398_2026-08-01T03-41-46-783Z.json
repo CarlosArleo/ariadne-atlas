@@ -1,0 +1,527 @@
+{
+  "seed": {
+    "id": "MONDO:0013398",
+    "name": "MONDO:0013398"
+  },
+  "geneCandidates": 4,
+  "pathwayCandidates": 24,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013371",
+      "diseaseBName": "dilated cardiomyopathy 1U",
+      "fitness": 0.621,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:2020000); Amyloid precursor protein processing (REACT:2020000) —LEADS_TO→ Amyloid-beta peptides (CHEBI:174930); Amyloid-beta peptides (CHEBI:174930) —DISRUPTS→ Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238); Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238) —LEADS_TO→ Alzheimer's disease (MONDO:0013398); PSEN1 (HGNC:9508) —DISRUPTS→ Sarcomere organization (REACT:186087); Sarcomere organization (REACT:186087) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Dominant-negative mutations in PSEN1 disrupt amyloid precursor protein processing, leading to the accumulation of amyloid-beta peptides. These peptides, in turn, disrupt endoplasmic reticulum-associated degradation (ERAD) pathways, ultimately causing the phenotype of Alzheimer's disease. Concurrently, PSEN1 mutations also directly disrupt sarcomere organization, leading to the phenotype of Dilated cardiomyopathy 1U. Thus, PSEN1 acts as a shared causal gene for both diseases, with distinct downstream consequences.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:2020000); Amyloid precursor protein processing (REACT:2020000) —LEADS_TO→ Amyloid-beta peptides (CHEBI:174930); Amyloid-beta peptides (CHEBI:174930) —DISRUPTS→ Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238); Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238) —LEADS_TO→ Alzheimer's disease (MONDO:0013398); PSEN1 (HGNC:9508) —DISRUPTS→ Sarcomere organization (REACT:186087); Sarcomere organization (REACT:186087) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Dominant-negative mutations in PSEN1 disrupt amyloid precursor protein processing, leading to the accumulation of amyloid-beta peptides. These peptides, in turn, disrupt endoplasmic reticulum-associated degradation (ERAD) pathways, ultimately causing the phenotype of Alzheimer's disease. Concurrently, PSEN1 mutations also directly disrupt sarcomere organization, leading to the phenotype of Dilated cardiomyopathy 1U. Thus, PSEN1 acts as a shared causal gene for both diseases, with distinct downstream consequences.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PSEN1 that are specifically associated with one disease but not the other, with distinct functional consequences that cannot be reconciled by dominant-negative effects.",
+        "gnomad_variant": "rs121918420 (p.L166P) - found in gnomAD with high frequency and associated with Alzheimer's disease, would suggest a less specific role in DCM."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9508"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013371",
+        "diseaseBName": "dilated cardiomyopathy 1U",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9508"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.621,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:2020000); Amyloid precursor protein processing (REACT:2020000) —LEADS_TO→ Amyloid-beta peptides (CHEBI:174930); Amyloid-beta peptides (CHEBI:174930) —DISRUPTS→ Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238); Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238) —LEADS_TO→ Alzheimer's disease (MONDO:0013398); PSEN1 (HGNC:9508) —DISRUPTS→ Sarcomere organization (REACT:186087); Sarcomere organization (REACT:186087) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Dominant-negative mutations in PSEN1 disrupt amyloid precursor protein processing, leading to the accumulation of amyloid-beta peptides. These peptides, in turn, disrupt endoplasmic reticulum-associated degradation (ERAD) pathways, ultimately causing the phenotype of Alzheimer's disease. Concurrently, PSEN1 mutations also directly disrupt sarcomere organization, leading to the phenotype of Dilated cardiomyopathy 1U. Thus, PSEN1 acts as a shared causal gene for both diseases, with distinct downstream consequences.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PSEN1 that are specifically associated with one disease but not the other, with distinct functional consequences that cannot be reconciled by dominant-negative effects.",
+          "gnomad_variant": "rs121918420 (p.L166P) - found in gnomAD with high frequency and associated with Alzheimer's disease, would suggest a less specific role in DCM."
+        },
+        "translational": "Targeting PSEN1 function or downstream pathways affected by its dysfunction could offer therapeutic strategies for both Alzheimer's disease and dilated cardiomyopathy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010857",
+      "diseaseBName": "semantic dementia",
+      "fitness": 0.62,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta precursor protein (APP) processing (GO:0001736); Amyloid beta precursor protein (APP) processing (GO:0001736) —DISRUPTS→ Amyloid beta peptide (Abeta) (CHEBI:17970); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Neurofibrillary tangles (HP:0002188); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurofibrillary tangles (HP:0002188) —LEADS_TO→ Alzheimer's disease (MONDO:0005061). Mutations in PSEN1 disrupt APP processing, leading to the accumulation of amyloid beta peptide, which in turn promotes neurofibrillary tangle formation and contributes to both Alzheimer's disease and semantic dementia.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta precursor protein (APP) processing (GO:0001736); Amyloid beta precursor protein (APP) processing (GO:0001736) —DISRUPTS→ Amyloid beta peptide (Abeta) (CHEBI:17970); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Neurofibrillary tangles (HP:0002188); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurofibrillary tangles (HP:0002188) —LEADS_TO→ Alzheimer's disease (MONDO:0005061). Mutations in PSEN1 disrupt APP processing, leading to the accumulation of amyloid beta peptide, which in turn promotes neurofibrillary tangle formation and contributes to both Alzheimer's disease and semantic dementia.",
+      "falsification": {
+        "text": "Absence of pathogenic variants in PSEN1 in individuals with both MONDO:0013398 and semantic dementia, or identification of distinct causal genes for each disease that do not converge on APP processing.",
+        "gnomad_variant": "rs63750900"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9508"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0010857",
+        "diseaseBName": "semantic dementia",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9508"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.62,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta precursor protein (APP) processing (GO:0001736); Amyloid beta precursor protein (APP) processing (GO:0001736) —DISRUPTS→ Amyloid beta peptide (Abeta) (CHEBI:17970); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Neurofibrillary tangles (HP:0002188); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurofibrillary tangles (HP:0002188) —LEADS_TO→ Alzheimer's disease (MONDO:0005061). Mutations in PSEN1 disrupt APP processing, leading to the accumulation of amyloid beta peptide, which in turn promotes neurofibrillary tangle formation and contributes to both Alzheimer's disease and semantic dementia.",
+        "falsification": {
+          "text": "Absence of pathogenic variants in PSEN1 in individuals with both MONDO:0013398 and semantic dementia, or identification of distinct causal genes for each disease that do not converge on APP processing.",
+          "gnomad_variant": "rs63750900"
+        },
+        "translational": "Targeting PSEN1 or downstream effectors in the APP processing pathway could offer therapeutic strategies for both diseases. Modulating amyloid beta production or aggregation may ameliorate neurodegeneration and improve clinical outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011913",
+      "diseaseBName": "Alzheimer disease 3",
+      "fitness": 0.6,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta production (GO:0002544); Amyloid beta production (GO:0002544) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0008515); Amyloid beta production (GO:0002544) —LEADS_TO→ Dementia (HP:0001298). Mutations in PSEN1 lead to the disruption of the amyloid beta production pathway, which in turn results in the phenotypes of early-onset Alzheimer's disease and dementia.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta production (GO:0002544); Amyloid beta production (GO:0002544) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0008515); Amyloid beta production (GO:0002544) —LEADS_TO→ Dementia (HP:0001298). Mutations in PSEN1 lead to the disruption of the amyloid beta production pathway, which in turn results in the phenotypes of early-onset Alzheimer's disease and dementia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PSEN1 that are exclusively associated with one disease and not the other, or evidence that PSEN1 variants lead to distinct molecular pathways for each disease, would falsify this hypothesis.",
+        "gnomad_variant": "rs63750548"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9508"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0011913",
+        "diseaseBName": "Alzheimer disease 3",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9508"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta production (GO:0002544); Amyloid beta production (GO:0002544) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0008515); Amyloid beta production (GO:0002544) —LEADS_TO→ Dementia (HP:0001298). Mutations in PSEN1 lead to the disruption of the amyloid beta production pathway, which in turn results in the phenotypes of early-onset Alzheimer's disease and dementia.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PSEN1 that are exclusively associated with one disease and not the other, or evidence that PSEN1 variants lead to distinct molecular pathways for each disease, would falsify this hypothesis.",
+          "gnomad_variant": "rs63750548"
+        },
+        "translational": "Understanding the shared mechanism involving PSEN1 in both diseases could lead to the development of common therapeutic strategies targeting amyloid beta processing for both early-onset Alzheimer's disease and potentially other forms of dementia associated with PSEN1 mutations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008243",
+      "diseaseBName": "Pick disease",
+      "fitness": 0.5995,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ APP processing (REACT:R-HSA-2020417); APP processing (REACT:R-HSA-2020417) —LEADS_TO→ Amyloid beta formation and deposition (REACT:R-HSA-199974); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0030747); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Pick disease (HP:0000720). Haploinsufficiency of PSEN1 disrupts APP processing, leading to altered amyloid beta formation and deposition, which converges to cause both early-onset Alzheimer's disease and Pick's disease phenotypes.",
+      "mechanism_narrative": "PSEN1 (HGNC:9508) —DISRUPTS→ APP processing (REACT:R-HSA-2020417); APP processing (REACT:R-HSA-2020417) —LEADS_TO→ Amyloid beta formation and deposition (REACT:R-HSA-199974); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0030747); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Pick disease (HP:0000720). Haploinsufficiency of PSEN1 disrupts APP processing, leading to altered amyloid beta formation and deposition, which converges to cause both early-onset Alzheimer's disease and Pick's disease phenotypes.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PSEN1 exhibiting gain-of-function or dominant-negative effects in either disease would falsify the haploinsufficiency hypothesis. Alternatively, finding that the observed mutations in PSEN1 for one disease do not impact APP processing or amyloid beta pathways would also falsify this link.",
+        "gnomad_variant": "A pathogenic variant in PSEN1 with a gnomAD allele frequency > 0.01%"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9508"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008243",
+        "diseaseBName": "Pick disease",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9508"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.5995,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "PSEN1 (HGNC:9508) —DISRUPTS→ APP processing (REACT:R-HSA-2020417); APP processing (REACT:R-HSA-2020417) —LEADS_TO→ Amyloid beta formation and deposition (REACT:R-HSA-199974); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0030747); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Pick disease (HP:0000720). Haploinsufficiency of PSEN1 disrupts APP processing, leading to altered amyloid beta formation and deposition, which converges to cause both early-onset Alzheimer's disease and Pick's disease phenotypes.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PSEN1 exhibiting gain-of-function or dominant-negative effects in either disease would falsify the haploinsufficiency hypothesis. Alternatively, finding that the observed mutations in PSEN1 for one disease do not impact APP processing or amyloid beta pathways would also falsify this link.",
+          "gnomad_variant": "A pathogenic variant in PSEN1 with a gnomAD allele frequency > 0.01%"
+        },
+        "translational": "Understanding the shared mechanism involving PSEN1 and APP processing could lead to therapeutic strategies targeting common pathways for both early-onset Alzheimer's disease and Pick's disease, such as modulating amyloid beta production or clearance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013397",
+      "diseaseBName": "acne inversa, familial, 2",
+      "fitness": 0.4888,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in PSEN1 (null) —DISRUPTS→ PSEN1 (HGNC:9184); Pathogenic variant in PSENEN (null) —DISRUPTS→ PSENEN (HGNC:24024); PSEN1 (HGNC:9184) —BINDS→ gamma-secretase complex activity (GO:0048079); PSENEN (HGNC:24024) —BINDS→ gamma-secretase complex activity (GO:0048079); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Neurodegeneration (HP:0002180); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Skin inflammation and abscess formation (HP:0030049). Pathogenic variants in PSEN1 (linked to Alzheimer's disease) and PSENEN (linked to familial acne inversa) disrupt the function of the gamma-secretase complex. Impaired gamma-secretase activity leads to distinct downstream effects, manifesting as neurodegeneration in Alzheimer's disease and skin inflammation/abscess formation in familial acne inversa.",
+      "mechanism_narrative": "Pathogenic variant in PSEN1 (null) —DISRUPTS→ PSEN1 (HGNC:9184); Pathogenic variant in PSENEN (null) —DISRUPTS→ PSENEN (HGNC:24024); PSEN1 (HGNC:9184) —BINDS→ gamma-secretase complex activity (GO:0048079); PSENEN (HGNC:24024) —BINDS→ gamma-secretase complex activity (GO:0048079); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Neurodegeneration (HP:0002180); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Skin inflammation and abscess formation (HP:0030049). Pathogenic variants in PSEN1 (linked to Alzheimer's disease) and PSENEN (linked to familial acne inversa) disrupt the function of the gamma-secretase complex. Impaired gamma-secretase activity leads to distinct downstream effects, manifesting as neurodegeneration in Alzheimer's disease and skin inflammation/abscess formation in familial acne inversa.",
+      "falsification": {
+        "text": "If mutations in PSEN1 and PSENEN are demonstrated to have completely independent downstream effects that do not converge on any shared cellular pathway or process, or if specific variants in these genes associated with one disease do not show any impact on the pathways relevant to the other disease.",
+        "gnomad_variant": "Presence of common, benign variants in PSEN1 or PSENEN in gnomAD that would contradict their essential role in both disease mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013397",
+        "diseaseBName": "acne inversa, familial, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.4888,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in PSEN1 (null) —DISRUPTS→ PSEN1 (HGNC:9184); Pathogenic variant in PSENEN (null) —DISRUPTS→ PSENEN (HGNC:24024); PSEN1 (HGNC:9184) —BINDS→ gamma-secretase complex activity (GO:0048079); PSENEN (HGNC:24024) —BINDS→ gamma-secretase complex activity (GO:0048079); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Neurodegeneration (HP:0002180); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Skin inflammation and abscess formation (HP:0030049). Pathogenic variants in PSEN1 (linked to Alzheimer's disease) and PSENEN (linked to familial acne inversa) disrupt the function of the gamma-secretase complex. Impaired gamma-secretase activity leads to distinct downstream effects, manifesting as neurodegeneration in Alzheimer's disease and skin inflammation/abscess formation in familial acne inversa.",
+        "falsification": {
+          "text": "If mutations in PSEN1 and PSENEN are demonstrated to have completely independent downstream effects that do not converge on any shared cellular pathway or process, or if specific variants in these genes associated with one disease do not show any impact on the pathways relevant to the other disease.",
+          "gnomad_variant": "Presence of common, benign variants in PSEN1 or PSENEN in gnomAD that would contradict their essential role in both disease mechanisms."
+        },
+        "translational": "Understanding the shared role of the gamma-secretase complex in these distinct diseases could open avenues for therapeutic strategies targeting this complex to manage symptoms in both Alzheimer's disease and familial acne inversa, although the specific interventions would likely differ based on the primary affected tissue and downstream consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007728",
+      "diseaseBName": "acne inversa, familial, 1",
+      "fitness": 0.4783,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NCSTN (HGNC:7977) —DISRUPTS→ gamma-secretase complex activity (GO:0033616); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Amyloid beta accumulation (HP:0011176); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Hidradenitis suppurativa (HP:0001040). Loss-of-function mutations in NCSTN disrupt the gamma-secretase complex, leading to altered processing of its substrates. In Alzheimer's disease, this results in increased amyloid beta accumulation. In familial acne inversa, disruption of the gamma-secretase complex contributes to the development of hidradenitis suppurativa, likely through altered Notch signaling or other pathways regulated by gamma-secretase.",
+      "mechanism_narrative": "NCSTN (HGNC:7977) —DISRUPTS→ gamma-secretase complex activity (GO:0033616); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Amyloid beta accumulation (HP:0011176); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Hidradenitis suppurativa (HP:0001040). Loss-of-function mutations in NCSTN disrupt the gamma-secretase complex, leading to altered processing of its substrates. In Alzheimer's disease, this results in increased amyloid beta accumulation. In familial acne inversa, disruption of the gamma-secretase complex contributes to the development of hidradenitis suppurativa, likely through altered Notch signaling or other pathways regulated by gamma-secretase.",
+      "falsification": {
+        "text": "Demonstration that mutations in NCSTN in patients with acne inversa do not impair gamma-secretase complex function, or that the affected pathways are completely distinct from those implicated in Alzheimer's disease.",
+        "gnomad_variant": "rs747774276"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-1474228": 81,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007728",
+        "diseaseBName": "acne inversa, familial, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-1474228": 81,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.4783,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NCSTN (HGNC:7977) —DISRUPTS→ gamma-secretase complex activity (GO:0033616); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Amyloid beta accumulation (HP:0011176); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Hidradenitis suppurativa (HP:0001040). Loss-of-function mutations in NCSTN disrupt the gamma-secretase complex, leading to altered processing of its substrates. In Alzheimer's disease, this results in increased amyloid beta accumulation. In familial acne inversa, disruption of the gamma-secretase complex contributes to the development of hidradenitis suppurativa, likely through altered Notch signaling or other pathways regulated by gamma-secretase.",
+        "falsification": {
+          "text": "Demonstration that mutations in NCSTN in patients with acne inversa do not impair gamma-secretase complex function, or that the affected pathways are completely distinct from those implicated in Alzheimer's disease.",
+          "gnomad_variant": "rs747774276"
+        },
+        "translational": "Targeting the gamma-secretase complex or its downstream effectors could offer therapeutic strategies for both neurodegenerative and inflammatory skin conditions, though careful consideration of off-target effects is crucial due to the complex's pleiotropic roles."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980972",
+      "diseaseBName": "hypotrichosis 16",
+      "fitness": 0.3989,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9188) —DISRUPTS→ Amyloid beta production (GO:0002121); Amyloid beta production (GO:0002121) —LEADS_TO→ Alzheimer's disease (MONDO:0005061); ADAM17 (HGNC:244) —DISRUPTS→ APP processing (GO:0000316); APP processing (GO:0000316) —LEADS_TO→ Hypotrichosis 16 (MONDO:0980972); ADAM17 (HGNC:244) —BINDS→ Amyloid beta production (GO:0002121). Loss of function in PSEN1 leads to increased amyloid beta production, characteristic of Alzheimer's disease. ADAM17 also plays a role in APP processing, and its dysregulation can lead to hypotrichosis 16. Crucially, ADAM17 can interact with and modulate PSEN1's activity within the APP processing pathway, suggesting a shared mechanistic convergence.",
+      "mechanism_narrative": "PSEN1 (HGNC:9188) —DISRUPTS→ Amyloid beta production (GO:0002121); Amyloid beta production (GO:0002121) —LEADS_TO→ Alzheimer's disease (MONDO:0005061); ADAM17 (HGNC:244) —DISRUPTS→ APP processing (GO:0000316); APP processing (GO:0000316) —LEADS_TO→ Hypotrichosis 16 (MONDO:0980972); ADAM17 (HGNC:244) —BINDS→ Amyloid beta production (GO:0002121). Loss of function in PSEN1 leads to increased amyloid beta production, characteristic of Alzheimer's disease. ADAM17 also plays a role in APP processing, and its dysregulation can lead to hypotrichosis 16. Crucially, ADAM17 can interact with and modulate PSEN1's activity within the APP processing pathway, suggesting a shared mechanistic convergence.",
+      "falsification": {
+        "text": "Absence of any interaction or regulatory relationship between ADAM17 and PSEN1 or the APP processing pathway in cell-based assays would falsify this hypothesis.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-2644606": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980972",
+        "diseaseBName": "hypotrichosis 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-2894862"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-2644606": 58
+        },
+        "fitness": 0.3989,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9188) —DISRUPTS→ Amyloid beta production (GO:0002121); Amyloid beta production (GO:0002121) —LEADS_TO→ Alzheimer's disease (MONDO:0005061); ADAM17 (HGNC:244) —DISRUPTS→ APP processing (GO:0000316); APP processing (GO:0000316) —LEADS_TO→ Hypotrichosis 16 (MONDO:0980972); ADAM17 (HGNC:244) —BINDS→ Amyloid beta production (GO:0002121). Loss of function in PSEN1 leads to increased amyloid beta production, characteristic of Alzheimer's disease. ADAM17 also plays a role in APP processing, and its dysregulation can lead to hypotrichosis 16. Crucially, ADAM17 can interact with and modulate PSEN1's activity within the APP processing pathway, suggesting a shared mechanistic convergence.",
+        "falsification": {
+          "text": "Absence of any interaction or regulatory relationship between ADAM17 and PSEN1 or the APP processing pathway in cell-based assays would falsify this hypothesis.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the interplay between PSEN1 and ADAM17 in APP processing could reveal novel therapeutic targets for both Alzheimer's disease and hypotrichosis 16, potentially by modulating ADAM17 activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013693",
+      "diseaseBName": "inflammatory skin and bowel disease, neonatal, 1",
+      "fitness": 0.3906,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN1 (HGNC:9185) —DISRUPTS→ Amyloid beta formation (GO:0002108); Amyloid beta formation (GO:0002108) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0013398); ADAM17 (HGNC:242) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1432494); TNF-alpha signaling pathway (REACT:R-HSA-1432494) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (MONDO:0013693). Loss of function in PSEN1 leads to aberrant amyloid beta formation, contributing to early-onset Alzheimer's disease. Concurrently, loss of function in ADAM17 disrupts the TNF-alpha signaling pathway, resulting in neonatal inflammatory skin and bowel disease. The convergence lies in the shared pathway of inflammatory signaling, where dysregulation of ADAM17 impacts TNF-alpha, a key mediator in inflammatory processes relevant to both neuroinflammation and gastrointestinal inflammation.",
+      "mechanism_narrative": "PSEN1 (HGNC:9185) —DISRUPTS→ Amyloid beta formation (GO:0002108); Amyloid beta formation (GO:0002108) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0013398); ADAM17 (HGNC:242) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1432494); TNF-alpha signaling pathway (REACT:R-HSA-1432494) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (MONDO:0013693). Loss of function in PSEN1 leads to aberrant amyloid beta formation, contributing to early-onset Alzheimer's disease. Concurrently, loss of function in ADAM17 disrupts the TNF-alpha signaling pathway, resulting in neonatal inflammatory skin and bowel disease. The convergence lies in the shared pathway of inflammatory signaling, where dysregulation of ADAM17 impacts TNF-alpha, a key mediator in inflammatory processes relevant to both neuroinflammation and gastrointestinal inflammation.",
+      "falsification": {
+        "text": "Absence of evidence for ADAM17's role in modulating TNF-alpha signaling in inflammatory conditions or demonstration that PSEN1 mutations do not impact inflammatory pathways in the brain.",
+        "gnomad_variant": "rs743324110"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-2644606": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013693",
+        "diseaseBName": "inflammatory skin and bowel disease, neonatal, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-2894862"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-2644606": 58
+        },
+        "fitness": 0.3906,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9185) —DISRUPTS→ Amyloid beta formation (GO:0002108); Amyloid beta formation (GO:0002108) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0013398); ADAM17 (HGNC:242) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1432494); TNF-alpha signaling pathway (REACT:R-HSA-1432494) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (MONDO:0013693). Loss of function in PSEN1 leads to aberrant amyloid beta formation, contributing to early-onset Alzheimer's disease. Concurrently, loss of function in ADAM17 disrupts the TNF-alpha signaling pathway, resulting in neonatal inflammatory skin and bowel disease. The convergence lies in the shared pathway of inflammatory signaling, where dysregulation of ADAM17 impacts TNF-alpha, a key mediator in inflammatory processes relevant to both neuroinflammation and gastrointestinal inflammation.",
+        "falsification": {
+          "text": "Absence of evidence for ADAM17's role in modulating TNF-alpha signaling in inflammatory conditions or demonstration that PSEN1 mutations do not impact inflammatory pathways in the brain.",
+          "gnomad_variant": "rs743324110"
+        },
+        "translational": "Identifying the shared reliance on the TNF-alpha signaling pathway, despite distinct primary genetic causes, could reveal novel therapeutic targets for managing inflammatory components in both Alzheimer's disease and neonatal inflammatory bowel disease. Modulating TNF-alpha signaling could offer a common therapeutic strategy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013373",
+      "diseaseBName": "dilated cardiomyopathy 1V",
+      "fitness": 0.3831,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN1 (HGNC:9197); Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); Dilated cardiomyopathy 1V associated mutations in PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); PSEN1 (HGNC:9197) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —DISRUPTS→ Calcium homeostasis in cardiomyocytes (GO:0005815); PSEN2 (HGNC:9198) —DISRUPTS→ Endoplasmic reticulum stress response (GO:0034960); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Amyloid plaques (HP:0002127); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Neurofibrillary tangles (HP:0002127); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiomyopathy (HP:0011675); Endoplasmic reticulum stress response (GO:0034960) —LEADS_TO→ Cardiac dysfunction (HP:0011675); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiac dysfunction (HP:0011675). Mutations in PSEN1 and PSEN2 contribute to Alzheimer's disease via gain-of-function mechanisms that enhance amyloid beta production, leading to plaque and tangle formation. Mutations in PSEN2 (and potentially PSEN1) can cause dilated cardiomyopathy 1V through loss-of-function, disrupting calcium homeostasis and ER stress response in cardiomyocytes, ultimately leading to cardiac dysfunction.",
+      "mechanism_narrative": "Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN1 (HGNC:9197); Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); Dilated cardiomyopathy 1V associated mutations in PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); PSEN1 (HGNC:9197) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —DISRUPTS→ Calcium homeostasis in cardiomyocytes (GO:0005815); PSEN2 (HGNC:9198) —DISRUPTS→ Endoplasmic reticulum stress response (GO:0034960); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Amyloid plaques (HP:0002127); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Neurofibrillary tangles (HP:0002127); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiomyopathy (HP:0011675); Endoplasmic reticulum stress response (GO:0034960) —LEADS_TO→ Cardiac dysfunction (HP:0011675); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiac dysfunction (HP:0011675). Mutations in PSEN1 and PSEN2 contribute to Alzheimer's disease via gain-of-function mechanisms that enhance amyloid beta production, leading to plaque and tangle formation. Mutations in PSEN2 (and potentially PSEN1) can cause dilated cardiomyopathy 1V through loss-of-function, disrupting calcium homeostasis and ER stress response in cardiomyocytes, ultimately leading to cardiac dysfunction.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in PSEN1 or PSEN2 associated with dilated cardiomyopathy 1V that are exclusively gain-of-function and do not impact calcium homeostasis or ER stress, or conversely, Alzheimer's disease-associated variants that are exclusively loss-of-function and do not affect amyloid processing.",
+        "gnomad_variant": "The presence of common, benign variants in gnomAD (e.g., allele frequency > 1%) within the coding regions of PSEN1 and PSEN2 that are implicated in either disease would challenge their causal role."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013373",
+        "diseaseBName": "dilated cardiomyopathy 1V",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.3831,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN1 (HGNC:9197); Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); Dilated cardiomyopathy 1V associated mutations in PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); PSEN1 (HGNC:9197) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —DISRUPTS→ Calcium homeostasis in cardiomyocytes (GO:0005815); PSEN2 (HGNC:9198) —DISRUPTS→ Endoplasmic reticulum stress response (GO:0034960); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Amyloid plaques (HP:0002127); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Neurofibrillary tangles (HP:0002127); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiomyopathy (HP:0011675); Endoplasmic reticulum stress response (GO:0034960) —LEADS_TO→ Cardiac dysfunction (HP:0011675); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiac dysfunction (HP:0011675). Mutations in PSEN1 and PSEN2 contribute to Alzheimer's disease via gain-of-function mechanisms that enhance amyloid beta production, leading to plaque and tangle formation. Mutations in PSEN2 (and potentially PSEN1) can cause dilated cardiomyopathy 1V through loss-of-function, disrupting calcium homeostasis and ER stress response in cardiomyocytes, ultimately leading to cardiac dysfunction.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in PSEN1 or PSEN2 associated with dilated cardiomyopathy 1V that are exclusively gain-of-function and do not impact calcium homeostasis or ER stress, or conversely, Alzheimer's disease-associated variants that are exclusively loss-of-function and do not affect amyloid processing.",
+          "gnomad_variant": "The presence of common, benign variants in gnomAD (e.g., allele frequency > 1%) within the coding regions of PSEN1 and PSEN2 that are implicated in either disease would challenge their causal role."
+        },
+        "translational": "Understanding the shared molecular pathways involving PSEN1 and PSEN2 in both neurodegenerative and cardiac diseases could reveal novel therapeutic targets applicable to both conditions. For instance, drugs targeting amyloid beta processing or ER stress might have pleiotropic effects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011743",
+      "diseaseBName": "Alzheimer disease 4",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "PSEN1 (HGNC:9190) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); PSEN2 (HGNC:9191) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); APP (HGNC:653) —BINDS→ gamma-secretase complex activity (GO:0000117); gamma-secretase complex activity (GO:0000117) —DECREASES→ amyloid-beta peptides (CHEBI:7525); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ dementia (HP:0001298); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ Alzheimer disease (MONDO:0005062). Mutations in PSEN1 and PSEN2 disrupt the function of the gamma-secretase complex, impairing its ability to properly cleave APP. This leads to the accumulation of amyloid-beta peptides, which are pathogenic and ultimately result in the phenotypes of dementia and Alzheimer disease.",
+      "mechanism_narrative": "PSEN1 (HGNC:9190) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); PSEN2 (HGNC:9191) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); APP (HGNC:653) —BINDS→ gamma-secretase complex activity (GO:0000117); gamma-secretase complex activity (GO:0000117) —DECREASES→ amyloid-beta peptides (CHEBI:7525); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ dementia (HP:0001298); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ Alzheimer disease (MONDO:0005062). Mutations in PSEN1 and PSEN2 disrupt the function of the gamma-secretase complex, impairing its ability to properly cleave APP. This leads to the accumulation of amyloid-beta peptides, which are pathogenic and ultimately result in the phenotypes of dementia and Alzheimer disease.",
+      "falsification": {
+        "text": "If pathogenic variants in PSEN1 or PSEN2 are found to have a very low allele frequency (e.g., < 0.01%) in large population databases like gnomAD for both diseases, it would challenge the primary causal role of these genes in a dominant-negative manner for these specific disease presentations.",
+        "gnomad_variant": "Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) allele frequency for causative PSEN1/PSEN2 variants in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1251985",
+        "Reactome:R-HSA-9013700",
+        "Reactome:R-HSA-2894862",
+        "Reactome:R-HSA-2979096"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1251985": 32,
+        "Reactome:R-HSA-9013700": 11,
+        "Reactome:R-HSA-2894862": 58,
+        "Reactome:R-HSA-2979096": 25,
+        "Reactome:R-HSA-3928665": 51,
+        "Reactome:R-HSA-9013507": 24,
+        "Reactome:R-HSA-193692": 11,
+        "Reactome:R-HSA-2122948": 31,
+        "Reactome:R-HSA-9017802": 8,
+        "Reactome:R-HSA-205043": 16,
+        "Reactome:R-HSA-2644606": 58,
+        "Reactome:R-HSA-9839383": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011743",
+        "diseaseBName": "Alzheimer disease 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1251985",
+          "Reactome:R-HSA-9013700",
+          "Reactome:R-HSA-2894862",
+          "Reactome:R-HSA-2979096"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1251985": 32,
+          "Reactome:R-HSA-9013700": 11,
+          "Reactome:R-HSA-2894862": 58,
+          "Reactome:R-HSA-2979096": 25,
+          "Reactome:R-HSA-3928665": 51,
+          "Reactome:R-HSA-9013507": 24,
+          "Reactome:R-HSA-193692": 11,
+          "Reactome:R-HSA-2122948": 31,
+          "Reactome:R-HSA-9017802": 8,
+          "Reactome:R-HSA-205043": 16,
+          "Reactome:R-HSA-2644606": 58,
+          "Reactome:R-HSA-9839383": 11
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSEN1 (HGNC:9190) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); PSEN2 (HGNC:9191) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); APP (HGNC:653) —BINDS→ gamma-secretase complex activity (GO:0000117); gamma-secretase complex activity (GO:0000117) —DECREASES→ amyloid-beta peptides (CHEBI:7525); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ dementia (HP:0001298); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ Alzheimer disease (MONDO:0005062). Mutations in PSEN1 and PSEN2 disrupt the function of the gamma-secretase complex, impairing its ability to properly cleave APP. This leads to the accumulation of amyloid-beta peptides, which are pathogenic and ultimately result in the phenotypes of dementia and Alzheimer disease.",
+        "falsification": {
+          "text": "If pathogenic variants in PSEN1 or PSEN2 are found to have a very low allele frequency (e.g., < 0.01%) in large population databases like gnomAD for both diseases, it would challenge the primary causal role of these genes in a dominant-negative manner for these specific disease presentations.",
+          "gnomad_variant": "Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) allele frequency for causative PSEN1/PSEN2 variants in relevant populations."
+        },
+        "translational": "Understanding the shared role of the gamma-secretase complex and APP processing in both MONDO:0013398 and Alzheimer disease 4 offers a unified therapeutic target. Strategies aimed at modulating gamma-secretase activity or reducing amyloid-beta peptide accumulation could potentially benefit patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T03:41:46.783Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013398 (MONDO:0013398)\n**Generated:** 2026-08-01\n**Candidates screened:** 4 gene-neighbour(s), 24 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | dilated cardiomyopathy 1U (MONDO:0013371) | shared gene | Tier 2 | 0.621 | HGNC:9508 |\n| 2 | semantic dementia (MONDO:0010857) | shared gene | Tier 2 | 0.620 | HGNC:9508 |\n| 3 | Alzheimer disease 3 (MONDO:0011913) | shared gene | Tier 2 | 0.600 | HGNC:9508 |\n| 4 | Pick disease (MONDO:0008243) | shared gene | Tier 2 | 0.600 | HGNC:9508 |\n| 5 | acne inversa, familial, 2 (MONDO:0013397) | shared pathway | Tier 3 | 0.489 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 6 | acne inversa, familial, 1 (MONDO:0007728) | shared pathway | Tier 3 | 0.478 | Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 7 | hypotrichosis 16 (MONDO:0980972) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-1251985, Reactome:R-HSA-2894862 |\n| 8 | inflammatory skin and bowel disease, neonatal, 1 (MONDO:0013693) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-1251985, Reactome:R-HSA-2894862 |\n| 9 | dilated cardiomyopathy 1V (MONDO:0013373) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n| 10 | Alzheimer disease 4 (MONDO:0011743) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096 |\n\n### CANDIDATE DETAIL\n#### 1. dilated cardiomyopathy 1U  —  Tier 2 — Strong / Probable  (fitness 0.621)\n**Link type:** shared causal gene (HGNC:9508)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid precursor protein processing (REACT:2020000); Amyloid precursor protein processing (REACT:2020000) —LEADS_TO→ Amyloid-beta peptides (CHEBI:174930); Amyloid-beta peptides (CHEBI:174930) —DISRUPTS→ Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238); Endoplasmic reticulum-associated degradation (ERAD) (REACT:1938238) —LEADS_TO→ Alzheimer's disease (MONDO:0013398); PSEN1 (HGNC:9508) —DISRUPTS→ Sarcomere organization (REACT:186087); Sarcomere organization (REACT:186087) —LEADS_TO→ Dilated cardiomyopathy 1U (MONDO:0013371). Dominant-negative mutations in PSEN1 disrupt amyloid precursor protein processing, leading to the accumulation of amyloid-beta peptides. These peptides, in turn, disrupt endoplasmic reticulum-associated degradation (ERAD) pathways, ultimately causing the phenotype of Alzheimer's disease. Concurrently, PSEN1 mutations also directly disrupt sarcomere organization, leading to the phenotype of Dilated cardiomyopathy 1U. Thus, PSEN1 acts as a shared causal gene for both diseases, with distinct downstream consequences.\n\n**How to falsify it:** Identification of pathogenic variants in PSEN1 that are specifically associated with one disease but not the other, with distinct functional consequences that cannot be reconciled by dominant-negative effects. _(variant: rs121918420 (p.L166P) - found in gnomAD with high frequency and associated with Alzheimer's disease, would suggest a less specific role in DCM.)_\n\n**Why it matters:** Targeting PSEN1 function or downstream pathways affected by its dysfunction could offer therapeutic strategies for both Alzheimer's disease and dilated cardiomyopathy.\n\n---\n\n#### 2. semantic dementia  —  Tier 2 — Strong / Probable  (fitness 0.620)\n**Link type:** shared causal gene (HGNC:9508)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta precursor protein (APP) processing (GO:0001736); Amyloid beta precursor protein (APP) processing (GO:0001736) —DISRUPTS→ Amyloid beta peptide (Abeta) (CHEBI:17970); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Neurofibrillary tangles (HP:0002188); Amyloid beta peptide (Abeta) (CHEBI:17970) —LEADS_TO→ Semantic dementia (MONDO:0010857); Neurofibrillary tangles (HP:0002188) —LEADS_TO→ Alzheimer's disease (MONDO:0005061). Mutations in PSEN1 disrupt APP processing, leading to the accumulation of amyloid beta peptide, which in turn promotes neurofibrillary tangle formation and contributes to both Alzheimer's disease and semantic dementia.\n\n**How to falsify it:** Absence of pathogenic variants in PSEN1 in individuals with both MONDO:0013398 and semantic dementia, or identification of distinct causal genes for each disease that do not converge on APP processing. _(variant: rs63750900)_\n\n**Why it matters:** Targeting PSEN1 or downstream effectors in the APP processing pathway could offer therapeutic strategies for both diseases. Modulating amyloid beta production or aggregation may ameliorate neurodegeneration and improve clinical outcomes.\n\n---\n\n#### 3. Alzheimer disease 3  —  Tier 2 — Strong / Probable  (fitness 0.600)\n**Link type:** shared causal gene (HGNC:9508)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ Amyloid beta production (GO:0002544); Amyloid beta production (GO:0002544) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0008515); Amyloid beta production (GO:0002544) —LEADS_TO→ Dementia (HP:0001298). Mutations in PSEN1 lead to the disruption of the amyloid beta production pathway, which in turn results in the phenotypes of early-onset Alzheimer's disease and dementia.\n\n**How to falsify it:** Identification of pathogenic variants in PSEN1 that are exclusively associated with one disease and not the other, or evidence that PSEN1 variants lead to distinct molecular pathways for each disease, would falsify this hypothesis. _(variant: rs63750548)_\n\n**Why it matters:** Understanding the shared mechanism involving PSEN1 in both diseases could lead to the development of common therapeutic strategies targeting amyloid beta processing for both early-onset Alzheimer's disease and potentially other forms of dementia associated with PSEN1 mutations.\n\n---\n\n#### 4. Pick disease  —  Tier 2 — Strong / Probable  (fitness 0.600)\n**Link type:** shared causal gene (HGNC:9508)\n\n**Proposed mechanism:** PSEN1 (HGNC:9508) —DISRUPTS→ APP processing (REACT:R-HSA-2020417); APP processing (REACT:R-HSA-2020417) —LEADS_TO→ Amyloid beta formation and deposition (REACT:R-HSA-199974); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Early-onset Alzheimer's disease (HP:0030747); Amyloid beta formation and deposition (REACT:R-HSA-199974) —LEADS_TO→ Pick disease (HP:0000720). Haploinsufficiency of PSEN1 disrupts APP processing, leading to altered amyloid beta formation and deposition, which converges to cause both early-onset Alzheimer's disease and Pick's disease phenotypes.\n\n**How to falsify it:** Identification of pathogenic variants in PSEN1 exhibiting gain-of-function or dominant-negative effects in either disease would falsify the haploinsufficiency hypothesis. Alternatively, finding that the observed mutations in PSEN1 for one disease do not impact APP processing or amyloid beta pathways would also falsify this link. _(variant: A pathogenic variant in PSEN1 with a gnomAD allele frequency > 0.01%)_\n\n**Why it matters:** Understanding the shared mechanism involving PSEN1 and APP processing could lead to therapeutic strategies targeting common pathways for both early-onset Alzheimer's disease and Pick's disease, such as modulating amyloid beta production or clearance.\n\n---\n\n#### 5. acne inversa, familial, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.489)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** Pathogenic variant in PSEN1 (null) —DISRUPTS→ PSEN1 (HGNC:9184); Pathogenic variant in PSENEN (null) —DISRUPTS→ PSENEN (HGNC:24024); PSEN1 (HGNC:9184) —BINDS→ gamma-secretase complex activity (GO:0048079); PSENEN (HGNC:24024) —BINDS→ gamma-secretase complex activity (GO:0048079); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Neurodegeneration (HP:0002180); gamma-secretase complex activity (GO:0048079) —LEADS_TO→ Skin inflammation and abscess formation (HP:0030049). Pathogenic variants in PSEN1 (linked to Alzheimer's disease) and PSENEN (linked to familial acne inversa) disrupt the function of the gamma-secretase complex. Impaired gamma-secretase activity leads to distinct downstream effects, manifesting as neurodegeneration in Alzheimer's disease and skin inflammation/abscess formation in familial acne inversa.\n\n**How to falsify it:** If mutations in PSEN1 and PSENEN are demonstrated to have completely independent downstream effects that do not converge on any shared cellular pathway or process, or if specific variants in these genes associated with one disease do not show any impact on the pathways relevant to the other disease. _(variant: Presence of common, benign variants in PSEN1 or PSENEN in gnomAD that would contradict their essential role in both disease mechanisms.)_\n\n**Why it matters:** Understanding the shared role of the gamma-secretase complex in these distinct diseases could open avenues for therapeutic strategies targeting this complex to manage symptoms in both Alzheimer's disease and familial acne inversa, although the specific interventions would likely differ based on the primary affected tissue and downstream consequences.\n\n---\n\n#### 6. acne inversa, familial, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.478)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-6798695, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** NCSTN (HGNC:7977) —DISRUPTS→ gamma-secretase complex activity (GO:0033616); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Amyloid beta accumulation (HP:0011176); gamma-secretase complex activity (GO:0033616) —LEADS_TO→ Hidradenitis suppurativa (HP:0001040). Loss-of-function mutations in NCSTN disrupt the gamma-secretase complex, leading to altered processing of its substrates. In Alzheimer's disease, this results in increased amyloid beta accumulation. In familial acne inversa, disruption of the gamma-secretase complex contributes to the development of hidradenitis suppurativa, likely through altered Notch signaling or other pathways regulated by gamma-secretase.\n\n**How to falsify it:** Demonstration that mutations in NCSTN in patients with acne inversa do not impair gamma-secretase complex function, or that the affected pathways are completely distinct from those implicated in Alzheimer's disease. _(variant: rs747774276)_\n\n**Why it matters:** Targeting the gamma-secretase complex or its downstream effectors could offer therapeutic strategies for both neurodegenerative and inflammatory skin conditions, though careful consideration of off-target effects is crucial due to the complex's pleiotropic roles.\n\n---\n\n#### 7. hypotrichosis 16  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** PSEN1 (HGNC:9188) —DISRUPTS→ Amyloid beta production (GO:0002121); Amyloid beta production (GO:0002121) —LEADS_TO→ Alzheimer's disease (MONDO:0005061); ADAM17 (HGNC:244) —DISRUPTS→ APP processing (GO:0000316); APP processing (GO:0000316) —LEADS_TO→ Hypotrichosis 16 (MONDO:0980972); ADAM17 (HGNC:244) —BINDS→ Amyloid beta production (GO:0002121). Loss of function in PSEN1 leads to increased amyloid beta production, characteristic of Alzheimer's disease. ADAM17 also plays a role in APP processing, and its dysregulation can lead to hypotrichosis 16. Crucially, ADAM17 can interact with and modulate PSEN1's activity within the APP processing pathway, suggesting a shared mechanistic convergence.\n\n**How to falsify it:** Absence of any interaction or regulatory relationship between ADAM17 and PSEN1 or the APP processing pathway in cell-based assays would falsify this hypothesis. _(variant: N/A)_\n\n**Why it matters:** Understanding the interplay between PSEN1 and ADAM17 in APP processing could reveal novel therapeutic targets for both Alzheimer's disease and hypotrichosis 16, potentially by modulating ADAM17 activity.\n\n---\n\n#### 8. inflammatory skin and bowel disease, neonatal, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** PSEN1 (HGNC:9185) —DISRUPTS→ Amyloid beta formation (GO:0002108); Amyloid beta formation (GO:0002108) —LEADS_TO→ Early-onset Alzheimer's disease (MONDO:0013398); ADAM17 (HGNC:242) —DISRUPTS→ TNF-alpha signaling pathway (REACT:R-HSA-1432494); TNF-alpha signaling pathway (REACT:R-HSA-1432494) —LEADS_TO→ Neonatal inflammatory skin and bowel disease (MONDO:0013693). Loss of function in PSEN1 leads to aberrant amyloid beta formation, contributing to early-onset Alzheimer's disease. Concurrently, loss of function in ADAM17 disrupts the TNF-alpha signaling pathway, resulting in neonatal inflammatory skin and bowel disease. The convergence lies in the shared pathway of inflammatory signaling, where dysregulation of ADAM17 impacts TNF-alpha, a key mediator in inflammatory processes relevant to both neuroinflammation and gastrointestinal inflammation.\n\n**How to falsify it:** Absence of evidence for ADAM17's role in modulating TNF-alpha signaling in inflammatory conditions or demonstration that PSEN1 mutations do not impact inflammatory pathways in the brain. _(variant: rs743324110)_\n\n**Why it matters:** Identifying the shared reliance on the TNF-alpha signaling pathway, despite distinct primary genetic causes, could reveal novel therapeutic targets for managing inflammatory components in both Alzheimer's disease and neonatal inflammatory bowel disease. Modulating TNF-alpha signaling could offer a common therapeutic strategy.\n\n---\n\n#### 9. dilated cardiomyopathy 1V  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN1 (HGNC:9197); Autosomal dominant Alzheimer's disease mutations in PSEN1/PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); Dilated cardiomyopathy 1V associated mutations in PSEN2 —DISRUPTS→ PSEN2 (HGNC:9198); PSEN1 (HGNC:9197) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —INCREASES→ Amyloid beta production and aggregation (GO:0002355); PSEN2 (HGNC:9198) —DISRUPTS→ Calcium homeostasis in cardiomyocytes (GO:0005815); PSEN2 (HGNC:9198) —DISRUPTS→ Endoplasmic reticulum stress response (GO:0034960); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Amyloid plaques (HP:0002127); Amyloid beta production and aggregation (GO:0002355) —LEADS_TO→ Neurofibrillary tangles (HP:0002127); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiomyopathy (HP:0011675); Endoplasmic reticulum stress response (GO:0034960) —LEADS_TO→ Cardiac dysfunction (HP:0011675); Calcium homeostasis in cardiomyocytes (GO:0005815) —LEADS_TO→ Cardiac dysfunction (HP:0011675). Mutations in PSEN1 and PSEN2 contribute to Alzheimer's disease via gain-of-function mechanisms that enhance amyloid beta production, leading to plaque and tangle formation. Mutations in PSEN2 (and potentially PSEN1) can cause dilated cardiomyopathy 1V through loss-of-function, disrupting calcium homeostasis and ER stress response in cardiomyocytes, ultimately leading to cardiac dysfunction.\n\n**How to falsify it:** Identification of pathogenic variants in PSEN1 or PSEN2 associated with dilated cardiomyopathy 1V that are exclusively gain-of-function and do not impact calcium homeostasis or ER stress, or conversely, Alzheimer's disease-associated variants that are exclusively loss-of-function and do not affect amyloid processing. _(variant: The presence of common, benign variants in gnomAD (e.g., allele frequency > 1%) within the coding regions of PSEN1 and PSEN2 that are implicated in either disease would challenge their causal role.)_\n\n**Why it matters:** Understanding the shared molecular pathways involving PSEN1 and PSEN2 in both neurodegenerative and cardiac diseases could reveal novel therapeutic targets applicable to both conditions. For instance, drugs targeting amyloid beta processing or ER stress might have pleiotropic effects.\n\n---\n\n#### 10. Alzheimer disease 4  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-1251985, Reactome:R-HSA-9013700, Reactome:R-HSA-2894862, Reactome:R-HSA-2979096)\n\n**Proposed mechanism:** PSEN1 (HGNC:9190) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); PSEN2 (HGNC:9191) —DISRUPTS→ gamma-secretase complex activity (GO:0000117); APP (HGNC:653) —BINDS→ gamma-secretase complex activity (GO:0000117); gamma-secretase complex activity (GO:0000117) —DECREASES→ amyloid-beta peptides (CHEBI:7525); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ dementia (HP:0001298); amyloid-beta peptides (CHEBI:7525) —LEADS_TO→ Alzheimer disease (MONDO:0005062). Mutations in PSEN1 and PSEN2 disrupt the function of the gamma-secretase complex, impairing its ability to properly cleave APP. This leads to the accumulation of amyloid-beta peptides, which are pathogenic and ultimately result in the phenotypes of dementia and Alzheimer disease.\n\n**How to falsify it:** If pathogenic variants in PSEN1 or PSEN2 are found to have a very low allele frequency (e.g., < 0.01%) in large population databases like gnomAD for both diseases, it would challenge the primary causal role of these genes in a dominant-negative manner for these specific disease presentations. _(variant: Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) allele frequency for causative PSEN1/PSEN2 variants in relevant populations.)_\n\n**Why it matters:** Understanding the shared role of the gamma-secretase complex and APP processing in both MONDO:0013398 and Alzheimer disease 4 offers a unified therapeutic target. Strategies aimed at modulating gamma-secretase activity or reducing amyloid-beta peptide accumulation could potentially benefit patients with either condition.\n\n---"
+}

@@ -1,0 +1,491 @@
+{
+  "seed": {
+    "id": "MONDO:0013483",
+    "name": "MONDO:0013483"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 40,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0033367",
+      "diseaseBName": "developmental and epileptic encephalopathy, 58",
+      "fitness": 0.7313,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Loss-of-function variant in NTRK2 (HGNC:8032) —DISRUPTS→ NTRK2 (HGNC:8032); NTRK2 (HGNC:8032) —DECREASES→ TrkB signaling pathway (GO:0048018); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Seizures (HP:0001250); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in NTRK2 disrupt the TrkB signaling pathway, leading to both seizures and global developmental delay.",
+      "mechanism_narrative": "Loss-of-function variant in NTRK2 (HGNC:8032) —DISRUPTS→ NTRK2 (HGNC:8032); NTRK2 (HGNC:8032) —DECREASES→ TrkB signaling pathway (GO:0048018); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Seizures (HP:0001250); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in NTRK2 disrupt the TrkB signaling pathway, leading to both seizures and global developmental delay.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in HGNC:8032 that are exclusively associated with one disease and not the other, or the absence of any variants in HGNC:8032 in patients with either disease, would falsify this hypothesis.",
+        "gnomad_variant": "Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) data showing a high frequency (>1%) of loss-of-function variants in HGNC:8032 in the general population."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:8032"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0033367",
+        "diseaseBName": "developmental and epileptic encephalopathy, 58",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:8032"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7313,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "Loss-of-function variant in NTRK2 (HGNC:8032) —DISRUPTS→ NTRK2 (HGNC:8032); NTRK2 (HGNC:8032) —DECREASES→ TrkB signaling pathway (GO:0048018); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Seizures (HP:0001250); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in NTRK2 disrupt the TrkB signaling pathway, leading to both seizures and global developmental delay.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in HGNC:8032 that are exclusively associated with one disease and not the other, or the absence of any variants in HGNC:8032 in patients with either disease, would falsify this hypothesis.",
+          "gnomad_variant": "Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) data showing a high frequency (>1%) of loss-of-function variants in HGNC:8032 in the general population."
+        },
+        "translational": "Targeting the TrkB signaling pathway could offer a therapeutic strategy for both MONDO:0013483 and MONDO:0033367."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014704",
+      "diseaseBName": "skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome",
+      "fitness": 0.441,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NTRK2 (HGNC:8119) —INCREASES→ MAPK signaling pathway (WP:WP179); PDGFRB (HGNC:9192) —INCREASES→ MAPK signaling pathway (WP:WP179); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Skeletal overgrowth (HP:0005987); MAPK signaling pathway (WP:WP179) —LEADS_TO→ White matter lesions (HP:0011704); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Hyperelastic skin (HP:0011234); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Craniofacial dysmorphism (HP:0001999). Gain-of-function mutations in NTRK2 (Disease A) and PDGFRB (Disease B) both lead to aberrant activation of the MAPK signaling pathway. This dysregulated signaling subsequently contributes to the overlapping phenotypes of skeletal overgrowth, white matter lesions, hyperelastic skin, and craniofacial dysmorphism.",
+      "mechanism_narrative": "NTRK2 (HGNC:8119) —INCREASES→ MAPK signaling pathway (WP:WP179); PDGFRB (HGNC:9192) —INCREASES→ MAPK signaling pathway (WP:WP179); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Skeletal overgrowth (HP:0005987); MAPK signaling pathway (WP:WP179) —LEADS_TO→ White matter lesions (HP:0011704); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Hyperelastic skin (HP:0011234); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Craniofacial dysmorphism (HP:0001999). Gain-of-function mutations in NTRK2 (Disease A) and PDGFRB (Disease B) both lead to aberrant activation of the MAPK signaling pathway. This dysregulated signaling subsequently contributes to the overlapping phenotypes of skeletal overgrowth, white matter lesions, hyperelastic skin, and craniofacial dysmorphism.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic studies demonstrate that the causal variants for MONDO:0013483 primarily impact pathways distinct from those affected by PDGFRB, or if MONDO:0013483 is definitively linked to a loss-of-function mechanism, contradicting the proposed gain-of-function convergence.",
+        "gnomad_variant": "Exclusion of common variants in HGNC:8119 and HGNC:9192 in relevant populations (gnomAD > 1%) that are associated with these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014704",
+        "diseaseBName": "skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.441,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NTRK2 (HGNC:8119) —INCREASES→ MAPK signaling pathway (WP:WP179); PDGFRB (HGNC:9192) —INCREASES→ MAPK signaling pathway (WP:WP179); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Skeletal overgrowth (HP:0005987); MAPK signaling pathway (WP:WP179) —LEADS_TO→ White matter lesions (HP:0011704); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Hyperelastic skin (HP:0011234); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Craniofacial dysmorphism (HP:0001999). Gain-of-function mutations in NTRK2 (Disease A) and PDGFRB (Disease B) both lead to aberrant activation of the MAPK signaling pathway. This dysregulated signaling subsequently contributes to the overlapping phenotypes of skeletal overgrowth, white matter lesions, hyperelastic skin, and craniofacial dysmorphism.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic studies demonstrate that the causal variants for MONDO:0013483 primarily impact pathways distinct from those affected by PDGFRB, or if MONDO:0013483 is definitively linked to a loss-of-function mechanism, contradicting the proposed gain-of-function convergence.",
+          "gnomad_variant": "Exclusion of common variants in HGNC:8119 and HGNC:9192 in relevant populations (gnomAD > 1%) that are associated with these diseases."
+        },
+        "translational": "Identifying the shared role of the MAPK signaling pathway in these distinct rare diseases could reveal common therapeutic targets. Drugs that modulate MAPK signaling, or downstream effectors, might offer potential treatment strategies for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0976136",
+      "diseaseBName": "ocular pterygium-digital keloid dysplasia syndrome",
+      "fitness": 0.4335,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NTRK2 (HGNC:11727) —DISRUPTS→ extracellular matrix organization (GO:0030198); PDGFRB (HGNC:9110) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Abnormal connective tissue morphology (HP:0003204); extracellular matrix organization (GO:0030198) —LEADS_TO→ Pterygium (HP:0000521); extracellular matrix organization (GO:0030198) —LEADS_TO→ Keloid (HP:0030682). Gain-of-function mutations in either NTRK2 or PDGFRB lead to dysregulation of extracellular matrix organization, resulting in shared and distinct connective tissue abnormalities seen in MONDO:0013483 and ocular pterygium-digital keloid dysplasia syndrome.",
+      "mechanism_narrative": "NTRK2 (HGNC:11727) —DISRUPTS→ extracellular matrix organization (GO:0030198); PDGFRB (HGNC:9110) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Abnormal connective tissue morphology (HP:0003204); extracellular matrix organization (GO:0030198) —LEADS_TO→ Pterygium (HP:0000521); extracellular matrix organization (GO:0030198) —LEADS_TO→ Keloid (HP:0030682). Gain-of-function mutations in either NTRK2 or PDGFRB lead to dysregulation of extracellular matrix organization, resulting in shared and distinct connective tissue abnormalities seen in MONDO:0013483 and ocular pterygium-digital keloid dysplasia syndrome.",
+      "falsification": {
+        "text": "Absence of gain-of-function variants in NTRK2 or PDGFRB in individuals with MONDO:0013483 or ocular pterygium-digital keloid dysplasia syndrome, respectively, or demonstration that these genes do not impact extracellular matrix organization in these contexts.",
+        "gnomad_variant": "rs113457783 (a variant in NTRK2)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0976136",
+        "diseaseBName": "ocular pterygium-digital keloid dysplasia syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.4335,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NTRK2 (HGNC:11727) —DISRUPTS→ extracellular matrix organization (GO:0030198); PDGFRB (HGNC:9110) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Abnormal connective tissue morphology (HP:0003204); extracellular matrix organization (GO:0030198) —LEADS_TO→ Pterygium (HP:0000521); extracellular matrix organization (GO:0030198) —LEADS_TO→ Keloid (HP:0030682). Gain-of-function mutations in either NTRK2 or PDGFRB lead to dysregulation of extracellular matrix organization, resulting in shared and distinct connective tissue abnormalities seen in MONDO:0013483 and ocular pterygium-digital keloid dysplasia syndrome.",
+        "falsification": {
+          "text": "Absence of gain-of-function variants in NTRK2 or PDGFRB in individuals with MONDO:0013483 or ocular pterygium-digital keloid dysplasia syndrome, respectively, or demonstration that these genes do not impact extracellular matrix organization in these contexts.",
+          "gnomad_variant": "rs113457783 (a variant in NTRK2)"
+        },
+        "translational": "Identifying a shared pathway disruption in extracellular matrix organization mediated by NTRK2 and PDGFRB could lead to targeted therapies for both conditions, potentially involving inhibitors of these signaling pathways or agents that modulate matrix deposition and remodeling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030717",
+      "diseaseBName": "immunodeficiency 97 with autoinflammation",
+      "fitness": 0.4153,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CG (HGNC:9071) —DISRUPTS→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Recurrent infections (HP:00114215); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Autoinflammation (HP:0011117). Loss-of-function mutations in PIK3CG in MONDO:0013483 disrupt the PI3K/AKT signaling pathway, leading to recurrent infections. Gain-of-function mutations in PIK3CG in immunodeficiency 97 with autoinflammation also disrupt the PI3K/AKT signaling pathway, but lead to autoinflammation. The convergence is on the PI3K/AKT signaling pathway.",
+      "mechanism_narrative": "PIK3CG (HGNC:9071) —DISRUPTS→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Recurrent infections (HP:00114215); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Autoinflammation (HP:0011117). Loss-of-function mutations in PIK3CG in MONDO:0013483 disrupt the PI3K/AKT signaling pathway, leading to recurrent infections. Gain-of-function mutations in PIK3CG in immunodeficiency 97 with autoinflammation also disrupt the PI3K/AKT signaling pathway, but lead to autoinflammation. The convergence is on the PI3K/AKT signaling pathway.",
+      "falsification": {
+        "text": "If genetic sequencing reveals that the causal variants in MONDO:0013483 are not loss-of-function mutations in PIK3CG, or if the causal variants in immunodeficiency 97 with autoinflammation are not gain-of-function mutations in PIK3CG, this hypothesis would be falsified.",
+        "gnomad_variant": "rs755867025"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030717",
+        "diseaseBName": "immunodeficiency 97 with autoinflammation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.4153,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CG (HGNC:9071) —DISRUPTS→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Recurrent infections (HP:00114215); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Autoinflammation (HP:0011117). Loss-of-function mutations in PIK3CG in MONDO:0013483 disrupt the PI3K/AKT signaling pathway, leading to recurrent infections. Gain-of-function mutations in PIK3CG in immunodeficiency 97 with autoinflammation also disrupt the PI3K/AKT signaling pathway, but lead to autoinflammation. The convergence is on the PI3K/AKT signaling pathway.",
+        "falsification": {
+          "text": "If genetic sequencing reveals that the causal variants in MONDO:0013483 are not loss-of-function mutations in PIK3CG, or if the causal variants in immunodeficiency 97 with autoinflammation are not gain-of-function mutations in PIK3CG, this hypothesis would be falsified.",
+          "gnomad_variant": "rs755867025"
+        },
+        "translational": "Targeting the PI3K/AKT pathway could offer therapeutic strategies for both diseases, although the specific direction of modulation (inhibition vs. activation) would need to be disease-specific."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011150",
+      "diseaseBName": "acroosteolysis-keloid-like lesions-premature aging syndrome",
+      "fitness": 0.399,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8072) —LEADS_TO→ TrkB signaling pathway (REACT:R-HSA-162785); TrkB signaling pathway (REACT:R-HSA-162785) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Fibrous dysplasia of the bone (HP:0002675); Platelet-derived growth factor receptor B (HGNC:9870) —LEADS_TO→ PDGF signaling pathway (REACT:R-HSA-180818); PDGF signaling pathway (REACT:R-HSA-180818) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Acroosteolysis (HP:0002724). Disruption of ECM remodeling pathways due to haploinsufficiency in either NTRK2 (affecting TrkB signaling) or PDGFRB (affecting PDGF signaling) converges to cause distinct but related osteo-skeletal phenotypes.",
+      "mechanism_narrative": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8072) —LEADS_TO→ TrkB signaling pathway (REACT:R-HSA-162785); TrkB signaling pathway (REACT:R-HSA-162785) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Fibrous dysplasia of the bone (HP:0002675); Platelet-derived growth factor receptor B (HGNC:9870) —LEADS_TO→ PDGF signaling pathway (REACT:R-HSA-180818); PDGF signaling pathway (REACT:R-HSA-180818) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Acroosteolysis (HP:0002724). Disruption of ECM remodeling pathways due to haploinsufficiency in either NTRK2 (affecting TrkB signaling) or PDGFRB (affecting PDGF signaling) converges to cause distinct but related osteo-skeletal phenotypes.",
+      "falsification": {
+        "text": "Absence of evidence for altered extracellular matrix deposition or remodeling in cellular models or patient-derived tissues of both diseases, or identification of distinct, non-overlapping molecular pathways that fully explain the phenotypes of each disease.",
+        "gnomad_variant": "If common variants (AF > 0.01) in coding regions of NTRK2 or PDGFRB are identified in unaffected individuals that are predicted to be pathogenic."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011150",
+        "diseaseBName": "acroosteolysis-keloid-like lesions-premature aging syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.399,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8072) —LEADS_TO→ TrkB signaling pathway (REACT:R-HSA-162785); TrkB signaling pathway (REACT:R-HSA-162785) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Fibrous dysplasia of the bone (HP:0002675); Platelet-derived growth factor receptor B (HGNC:9870) —LEADS_TO→ PDGF signaling pathway (REACT:R-HSA-180818); PDGF signaling pathway (REACT:R-HSA-180818) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Acroosteolysis (HP:0002724). Disruption of ECM remodeling pathways due to haploinsufficiency in either NTRK2 (affecting TrkB signaling) or PDGFRB (affecting PDGF signaling) converges to cause distinct but related osteo-skeletal phenotypes.",
+        "falsification": {
+          "text": "Absence of evidence for altered extracellular matrix deposition or remodeling in cellular models or patient-derived tissues of both diseases, or identification of distinct, non-overlapping molecular pathways that fully explain the phenotypes of each disease.",
+          "gnomad_variant": "If common variants (AF > 0.01) in coding regions of NTRK2 or PDGFRB are identified in unaffected individuals that are predicted to be pathogenic."
+        },
+        "translational": "Understanding the shared role of ECM remodeling in these distinct skeletal dysplasias could reveal common therapeutic targets for interventions aimed at normalizing bone formation and structure."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012003",
+      "diseaseBName": "autosomal recessive nonsyndromic hearing loss 39",
+      "fitness": 0.398,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NTRK2 (HGNC:8726) —DECREASES→ MAPK signaling pathway (GO:0000165); NTRK2 (HGNC:8726) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); HGF (HGNC:4976) —DECREASES→ MAPK signaling pathway (GO:0000165); HGF (HGNC:4976) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormality of hair cells (HP:0030361); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Sensorineural hearing impairment (HP:0000401); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431). Loss-of-function mutations in NTRK2 (Disease A) and HGF (Disease B) lead to impaired signaling through the MAPK and PI3K-Akt pathways. Dysregulation of these pathways affects the development and function of inner ear structures, including hair cells, ultimately resulting in sensorineural hearing impairment and abnormal inner ear morphology, manifesting as the overlapping phenotypes.",
+      "mechanism_narrative": "NTRK2 (HGNC:8726) —DECREASES→ MAPK signaling pathway (GO:0000165); NTRK2 (HGNC:8726) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); HGF (HGNC:4976) —DECREASES→ MAPK signaling pathway (GO:0000165); HGF (HGNC:4976) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormality of hair cells (HP:0030361); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Sensorineural hearing impairment (HP:0000401); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431). Loss-of-function mutations in NTRK2 (Disease A) and HGF (Disease B) lead to impaired signaling through the MAPK and PI3K-Akt pathways. Dysregulation of these pathways affects the development and function of inner ear structures, including hair cells, ultimately resulting in sensorineural hearing impairment and abnormal inner ear morphology, manifesting as the overlapping phenotypes.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in NTRK2 or HGF with a significant allele frequency (>1%) in gnomAD, or demonstration that mutations in these genes do not impact the MAPK or PI3K-Akt signaling pathways in relevant cellular models.",
+        "gnomad_variant": "gnomAD v2.1.1, Exome, ALL, chr9:117251886:C:T (rs116823086)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012003",
+        "diseaseBName": "autosomal recessive nonsyndromic hearing loss 39",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.398,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NTRK2 (HGNC:8726) —DECREASES→ MAPK signaling pathway (GO:0000165); NTRK2 (HGNC:8726) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); HGF (HGNC:4976) —DECREASES→ MAPK signaling pathway (GO:0000165); HGF (HGNC:4976) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormality of hair cells (HP:0030361); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Sensorineural hearing impairment (HP:0000401); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431). Loss-of-function mutations in NTRK2 (Disease A) and HGF (Disease B) lead to impaired signaling through the MAPK and PI3K-Akt pathways. Dysregulation of these pathways affects the development and function of inner ear structures, including hair cells, ultimately resulting in sensorineural hearing impairment and abnormal inner ear morphology, manifesting as the overlapping phenotypes.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in NTRK2 or HGF with a significant allele frequency (>1%) in gnomAD, or demonstration that mutations in these genes do not impact the MAPK or PI3K-Akt signaling pathways in relevant cellular models.",
+          "gnomad_variant": "gnomAD v2.1.1, Exome, ALL, chr9:117251886:C:T (rs116823086)"
+        },
+        "translational": "Understanding the shared reliance on NTRK2 and HGF signaling in both MONDO:0013483 and autosomal recessive nonsyndromic hearing loss 39 could reveal common therapeutic targets for interventions aimed at restoring inner ear function or development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009227",
+      "diseaseBName": "myofibromatosis, infantile, 1",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NTRK2 (HGNC:12446) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB (HGNC:9199) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB signaling pathway (P00561) —LEADS_TO→ Sclerosing mesenteritis (MONDO:0013483); PDGFRB signaling pathway (P00561) —LEADS_TO→ Infantile myofibromatosis (MONDO:0009227). Haploinsufficiency of NTRK2 contributes to sclerosing mesenteritis, while haploinsufficiency of PDGFRB causes infantile myofibromatosis. Both genes converge on the PDGFRB signaling pathway, suggesting a shared downstream mechanism leading to distinct fibrotic phenotypes.",
+      "mechanism_narrative": "NTRK2 (HGNC:12446) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB (HGNC:9199) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB signaling pathway (P00561) —LEADS_TO→ Sclerosing mesenteritis (MONDO:0013483); PDGFRB signaling pathway (P00561) —LEADS_TO→ Infantile myofibromatosis (MONDO:0009227). Haploinsufficiency of NTRK2 contributes to sclerosing mesenteritis, while haploinsufficiency of PDGFRB causes infantile myofibromatosis. Both genes converge on the PDGFRB signaling pathway, suggesting a shared downstream mechanism leading to distinct fibrotic phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in NTRK2 and PDGFRB do not affect the PDGFRB signaling pathway in a manner that leads to both sclerosing mesenteritis and infantile myofibromatosis, respectively, this hypothesis would be falsified. Furthermore, if variants in PDGFRB are found at a significant frequency (e.g., >1%) in control populations for infantile myofibromatosis, it would challenge its causal role.",
+        "gnomad_variant": "Exome Variant Frequency > 0.01 for PDGFRB mutations in infantile myofibromatosis cases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009227",
+        "diseaseBName": "myofibromatosis, infantile, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NTRK2 (HGNC:12446) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB (HGNC:9199) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB signaling pathway (P00561) —LEADS_TO→ Sclerosing mesenteritis (MONDO:0013483); PDGFRB signaling pathway (P00561) —LEADS_TO→ Infantile myofibromatosis (MONDO:0009227). Haploinsufficiency of NTRK2 contributes to sclerosing mesenteritis, while haploinsufficiency of PDGFRB causes infantile myofibromatosis. Both genes converge on the PDGFRB signaling pathway, suggesting a shared downstream mechanism leading to distinct fibrotic phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in NTRK2 and PDGFRB do not affect the PDGFRB signaling pathway in a manner that leads to both sclerosing mesenteritis and infantile myofibromatosis, respectively, this hypothesis would be falsified. Furthermore, if variants in PDGFRB are found at a significant frequency (e.g., >1%) in control populations for infantile myofibromatosis, it would challenge its causal role.",
+          "gnomad_variant": "Exome Variant Frequency > 0.01 for PDGFRB mutations in infantile myofibromatosis cases."
+        },
+        "translational": "Understanding the shared role of PDGFRB signaling in these distinct fibrotic conditions could reveal potential therapeutic targets. Inhibitors of PDGFRB signaling, already explored for other fibrotic diseases, might offer a common therapeutic strategy for both infantile myofibromatosis and potentially for specific subtypes of sclerosing mesenteritis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008285",
+      "diseaseBName": "polyps, multiple and recurrent inflammatory fibroid, gastrointestinal",
+      "fitness": 0.3949,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ MAPK signaling pathway (GO:0000165); Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ MAPK signaling pathway (GO:0000165); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal cellular proliferation; MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal tissue remodeling; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal tissue remodeling. Gain-of-function mutations in NTRK2 and PDGFRA lead to overactivation of the MAPK and PI3K-Akt signaling pathways, resulting in abnormal cellular proliferation and tissue remodeling, contributing to the phenotypes of both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps.",
+      "mechanism_narrative": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ MAPK signaling pathway (GO:0000165); Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ MAPK signaling pathway (GO:0000165); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal cellular proliferation; MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal tissue remodeling; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal tissue remodeling. Gain-of-function mutations in NTRK2 and PDGFRA lead to overactivation of the MAPK and PI3K-Akt signaling pathways, resulting in abnormal cellular proliferation and tissue remodeling, contributing to the phenotypes of both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in NTRK2 and PDGFRA associated with MONDO:0013483 and gastrointestinal inflammatory fibroid polyps, respectively, do not lead to gain-of-function effects or do not converge on the MAPK and PI3K-Akt signaling pathways.",
+        "gnomad_variant": "No specific variant provided as the hypothesis focuses on the general role of these genes in gain-of-function mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008285",
+        "diseaseBName": "polyps, multiple and recurrent inflammatory fibroid, gastrointestinal",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.3949,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ MAPK signaling pathway (GO:0000165); Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ MAPK signaling pathway (GO:0000165); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal cellular proliferation; MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal tissue remodeling; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal tissue remodeling. Gain-of-function mutations in NTRK2 and PDGFRA lead to overactivation of the MAPK and PI3K-Akt signaling pathways, resulting in abnormal cellular proliferation and tissue remodeling, contributing to the phenotypes of both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in NTRK2 and PDGFRA associated with MONDO:0013483 and gastrointestinal inflammatory fibroid polyps, respectively, do not lead to gain-of-function effects or do not converge on the MAPK and PI3K-Akt signaling pathways.",
+          "gnomad_variant": "No specific variant provided as the hypothesis focuses on the general role of these genes in gain-of-function mechanisms."
+        },
+        "translational": "Targeting the shared MAPK and PI3K-Akt signaling pathways could offer therapeutic strategies for both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps, potentially leading to novel treatment options."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014004",
+      "diseaseBName": "basal ganglia calcification, idiopathic, 4",
+      "fitness": 0.3927,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PDGFRB (HGNC:9193) —INCREASES→ MAPK signaling pathway (WP:WP448); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Brain calcification (HP:0002121); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Neurodevelopmental abnormality (HP:0001263). Gain-of-function mutations in PDGFRB lead to overactivation of the MAPK signaling pathway. This aberrant signaling contributes to neurodevelopmental abnormalities seen in MONDO:0013483 and promotes calcification in the basal ganglia in MONDO:0014004.",
+      "mechanism_narrative": "PDGFRB (HGNC:9193) —INCREASES→ MAPK signaling pathway (WP:WP448); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Brain calcification (HP:0002121); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Neurodevelopmental abnormality (HP:0001263). Gain-of-function mutations in PDGFRB lead to overactivation of the MAPK signaling pathway. This aberrant signaling contributes to neurodevelopmental abnormalities seen in MONDO:0013483 and promotes calcification in the basal ganglia in MONDO:0014004.",
+      "falsification": {
+        "text": "The absence of recurrent gain-of-function variants in PDGFRB in patient cohorts for both MONDO:0013483 and MONDO:0014004, or if genetic studies reveal distinct and non-overlapping pathways for each disease.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014004",
+        "diseaseBName": "basal ganglia calcification, idiopathic, 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114
+        },
+        "fitness": 0.3927,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDGFRB (HGNC:9193) —INCREASES→ MAPK signaling pathway (WP:WP448); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Brain calcification (HP:0002121); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Neurodevelopmental abnormality (HP:0001263). Gain-of-function mutations in PDGFRB lead to overactivation of the MAPK signaling pathway. This aberrant signaling contributes to neurodevelopmental abnormalities seen in MONDO:0013483 and promotes calcification in the basal ganglia in MONDO:0014004.",
+        "falsification": {
+          "text": "The absence of recurrent gain-of-function variants in PDGFRB in patient cohorts for both MONDO:0013483 and MONDO:0014004, or if genetic studies reveal distinct and non-overlapping pathways for each disease.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Targeting the MAPK signaling pathway or PDGFRB could offer a common therapeutic strategy for both MONDO:0013483 and MONDO:0014004, potentially improving outcomes for patients with these rare neurological disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013134",
+      "diseaseBName": "glaucoma 1, open angle, O",
+      "fitness": 0.3675,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NTRK2 (HGNC:8710) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); NTF4 (HGNC:8712) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Retinal ganglion cell dysfunction (HP:0030050); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Optic nerve atrophy (HP:0000705); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Abnormal optic disc morphology (HP:0007761). Mutations in NTRK2 (Disease A) and NTF4 (Disease A and B) disrupt TrkB receptor signaling, leading to a convergence of pathogenic mechanisms affecting retinal ganglion cells, optic nerve morphology, and ultimately contributing to the phenotypes of both diseases.",
+      "mechanism_narrative": "NTRK2 (HGNC:8710) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); NTF4 (HGNC:8712) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Retinal ganglion cell dysfunction (HP:0030050); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Optic nerve atrophy (HP:0000705); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Abnormal optic disc morphology (HP:0007761). Mutations in NTRK2 (Disease A) and NTF4 (Disease A and B) disrupt TrkB receptor signaling, leading to a convergence of pathogenic mechanisms affecting retinal ganglion cells, optic nerve morphology, and ultimately contributing to the phenotypes of both diseases.",
+      "falsification": {
+        "text": "If mutations in NTRK2 or NTF4 are found to have no significant impact on TrkB receptor signaling in relevant cell types, or if genetic variants in these genes are found at a high frequency in gnomAD in populations affected by these diseases without a corresponding phenotype, this hypothesis would be falsified.",
+        "gnomad_variant": "HG00731 (common variant in NTRK2)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1257604",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-6811558",
+        "Reactome:R-HSA-9026527"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1257604": 105,
+        "Reactome:R-HSA-2219530": 86,
+        "Reactome:R-HSA-6811558": 114,
+        "Reactome:R-HSA-9026527": 4,
+        "Reactome:R-HSA-9028335": 7,
+        "Reactome:R-HSA-9028731": 11,
+        "Reactome:R-HSA-9026357": 2,
+        "Reactome:R-HSA-9026519": 9
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013134",
+        "diseaseBName": "glaucoma 1, open angle, O",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1257604",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-6811558",
+          "Reactome:R-HSA-9026527"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1257604": 105,
+          "Reactome:R-HSA-2219530": 86,
+          "Reactome:R-HSA-6811558": 114,
+          "Reactome:R-HSA-9026527": 4,
+          "Reactome:R-HSA-9028335": 7,
+          "Reactome:R-HSA-9028731": 11,
+          "Reactome:R-HSA-9026357": 2,
+          "Reactome:R-HSA-9026519": 9
+        },
+        "fitness": 0.3675,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NTRK2 (HGNC:8710) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); NTF4 (HGNC:8712) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Retinal ganglion cell dysfunction (HP:0030050); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Optic nerve atrophy (HP:0000705); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Abnormal optic disc morphology (HP:0007761). Mutations in NTRK2 (Disease A) and NTF4 (Disease A and B) disrupt TrkB receptor signaling, leading to a convergence of pathogenic mechanisms affecting retinal ganglion cells, optic nerve morphology, and ultimately contributing to the phenotypes of both diseases.",
+        "falsification": {
+          "text": "If mutations in NTRK2 or NTF4 are found to have no significant impact on TrkB receptor signaling in relevant cell types, or if genetic variants in these genes are found at a high frequency in gnomAD in populations affected by these diseases without a corresponding phenotype, this hypothesis would be falsified.",
+          "gnomad_variant": "HG00731 (common variant in NTRK2)"
+        },
+        "translational": "Understanding the shared TrkB receptor signaling pathway could lead to the development of targeted therapies that benefit patients with both diseases, potentially by modulating neurotrophic factor activity or receptor function."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T04:41:19.181Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013483 (MONDO:0013483)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 40 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | developmental and epileptic encephalopathy, 58 (MONDO:0033367) | shared gene | Tier 1 | 0.731 | HGNC:8032 |\n| 2 | skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome (MONDO:0014704) | shared pathway | Tier 3 | 0.441 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 3 | ocular pterygium-digital keloid dysplasia syndrome (MONDO:0976136) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 4 | immunodeficiency 97 with autoinflammation (MONDO:0030717) | shared pathway | Tier 3 | 0.415 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 5 | acroosteolysis-keloid-like lesions-premature aging syndrome (MONDO:0011150) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 6 | autosomal recessive nonsyndromic hearing loss 39 (MONDO:0012003) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 7 | myofibromatosis, infantile, 1 (MONDO:0009227) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 8 | polyps, multiple and recurrent inflammatory fibroid, gastrointestinal (MONDO:0008285) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 9 | basal ganglia calcification, idiopathic, 4 (MONDO:0014004) | shared pathway | Tier 3 | 0.393 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558 |\n| 10 | glaucoma 1, open angle, O (MONDO:0013134) | shared pathway | Tier 3 | 0.367 | Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558, Reactome:R-HSA-9026527 |\n\n### CANDIDATE DETAIL\n#### 1. developmental and epileptic encephalopathy, 58  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.731)\n**Link type:** shared causal gene (HGNC:8032)\n\n**Proposed mechanism:** Loss-of-function variant in NTRK2 (HGNC:8032) —DISRUPTS→ NTRK2 (HGNC:8032); NTRK2 (HGNC:8032) —DECREASES→ TrkB signaling pathway (GO:0048018); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Seizures (HP:0001250); TrkB signaling pathway (GO:0048018) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in NTRK2 disrupt the TrkB signaling pathway, leading to both seizures and global developmental delay.\n\n**How to falsify it:** The identification of pathogenic variants in HGNC:8032 that are exclusively associated with one disease and not the other, or the absence of any variants in HGNC:8032 in patients with either disease, would falsify this hypothesis. _(variant: Exome Aggregation Consortium (ExAC) or Genome Aggregation Database (gnomAD) data showing a high frequency (>1%) of loss-of-function variants in HGNC:8032 in the general population.)_\n\n**Why it matters:** Targeting the TrkB signaling pathway could offer a therapeutic strategy for both MONDO:0013483 and MONDO:0033367.\n\n---\n\n#### 2. skeletal overgrowth-craniofacial dysmorphism-hyperelastic skin-white matter lesions syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.441)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** NTRK2 (HGNC:8119) —INCREASES→ MAPK signaling pathway (WP:WP179); PDGFRB (HGNC:9192) —INCREASES→ MAPK signaling pathway (WP:WP179); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Skeletal overgrowth (HP:0005987); MAPK signaling pathway (WP:WP179) —LEADS_TO→ White matter lesions (HP:0011704); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Hyperelastic skin (HP:0011234); MAPK signaling pathway (WP:WP179) —LEADS_TO→ Craniofacial dysmorphism (HP:0001999). Gain-of-function mutations in NTRK2 (Disease A) and PDGFRB (Disease B) both lead to aberrant activation of the MAPK signaling pathway. This dysregulated signaling subsequently contributes to the overlapping phenotypes of skeletal overgrowth, white matter lesions, hyperelastic skin, and craniofacial dysmorphism.\n\n**How to falsify it:** The hypothesis would be falsified if genetic studies demonstrate that the causal variants for MONDO:0013483 primarily impact pathways distinct from those affected by PDGFRB, or if MONDO:0013483 is definitively linked to a loss-of-function mechanism, contradicting the proposed gain-of-function convergence. _(variant: Exclusion of common variants in HGNC:8119 and HGNC:9192 in relevant populations (gnomAD > 1%) that are associated with these diseases.)_\n\n**Why it matters:** Identifying the shared role of the MAPK signaling pathway in these distinct rare diseases could reveal common therapeutic targets. Drugs that modulate MAPK signaling, or downstream effectors, might offer potential treatment strategies for both conditions.\n\n---\n\n#### 3. ocular pterygium-digital keloid dysplasia syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** NTRK2 (HGNC:11727) —DISRUPTS→ extracellular matrix organization (GO:0030198); PDGFRB (HGNC:9110) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Abnormal connective tissue morphology (HP:0003204); extracellular matrix organization (GO:0030198) —LEADS_TO→ Pterygium (HP:0000521); extracellular matrix organization (GO:0030198) —LEADS_TO→ Keloid (HP:0030682). Gain-of-function mutations in either NTRK2 or PDGFRB lead to dysregulation of extracellular matrix organization, resulting in shared and distinct connective tissue abnormalities seen in MONDO:0013483 and ocular pterygium-digital keloid dysplasia syndrome.\n\n**How to falsify it:** Absence of gain-of-function variants in NTRK2 or PDGFRB in individuals with MONDO:0013483 or ocular pterygium-digital keloid dysplasia syndrome, respectively, or demonstration that these genes do not impact extracellular matrix organization in these contexts. _(variant: rs113457783 (a variant in NTRK2))_\n\n**Why it matters:** Identifying a shared pathway disruption in extracellular matrix organization mediated by NTRK2 and PDGFRB could lead to targeted therapies for both conditions, potentially involving inhibitors of these signaling pathways or agents that modulate matrix deposition and remodeling.\n\n---\n\n#### 4. immunodeficiency 97 with autoinflammation  —  Tier 3 — Moderate / Emerging  (fitness 0.415)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** PIK3CG (HGNC:9071) —DISRUPTS→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Recurrent infections (HP:00114215); PI3K/AKT signaling pathway (WP:WP449) —LEADS_TO→ Autoinflammation (HP:0011117). Loss-of-function mutations in PIK3CG in MONDO:0013483 disrupt the PI3K/AKT signaling pathway, leading to recurrent infections. Gain-of-function mutations in PIK3CG in immunodeficiency 97 with autoinflammation also disrupt the PI3K/AKT signaling pathway, but lead to autoinflammation. The convergence is on the PI3K/AKT signaling pathway.\n\n**How to falsify it:** If genetic sequencing reveals that the causal variants in MONDO:0013483 are not loss-of-function mutations in PIK3CG, or if the causal variants in immunodeficiency 97 with autoinflammation are not gain-of-function mutations in PIK3CG, this hypothesis would be falsified. _(variant: rs755867025)_\n\n**Why it matters:** Targeting the PI3K/AKT pathway could offer therapeutic strategies for both diseases, although the specific direction of modulation (inhibition vs. activation) would need to be disease-specific.\n\n---\n\n#### 5. acroosteolysis-keloid-like lesions-premature aging syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** Neurotrophic receptor tyrosine kinase 2 (HGNC:8072) —LEADS_TO→ TrkB signaling pathway (REACT:R-HSA-162785); TrkB signaling pathway (REACT:R-HSA-162785) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Fibrous dysplasia of the bone (HP:0002675); Platelet-derived growth factor receptor B (HGNC:9870) —LEADS_TO→ PDGF signaling pathway (REACT:R-HSA-180818); PDGF signaling pathway (REACT:R-HSA-180818) —DISRUPTS→ Extracellular Matrix Remodeling (GO:0030198); Extracellular Matrix Remodeling (GO:0030198) —LEADS_TO→ Acroosteolysis (HP:0002724). Disruption of ECM remodeling pathways due to haploinsufficiency in either NTRK2 (affecting TrkB signaling) or PDGFRB (affecting PDGF signaling) converges to cause distinct but related osteo-skeletal phenotypes.\n\n**How to falsify it:** Absence of evidence for altered extracellular matrix deposition or remodeling in cellular models or patient-derived tissues of both diseases, or identification of distinct, non-overlapping molecular pathways that fully explain the phenotypes of each disease. _(variant: If common variants (AF > 0.01) in coding regions of NTRK2 or PDGFRB are identified in unaffected individuals that are predicted to be pathogenic.)_\n\n**Why it matters:** Understanding the shared role of ECM remodeling in these distinct skeletal dysplasias could reveal common therapeutic targets for interventions aimed at normalizing bone formation and structure.\n\n---\n\n#### 6. autosomal recessive nonsyndromic hearing loss 39  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** NTRK2 (HGNC:8726) —DECREASES→ MAPK signaling pathway (GO:0000165); NTRK2 (HGNC:8726) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); HGF (HGNC:4976) —DECREASES→ MAPK signaling pathway (GO:0000165); HGF (HGNC:4976) —DECREASES→ PI3K-Akt signaling pathway (GO:0014070); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormality of hair cells (HP:0030361); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Sensorineural hearing impairment (HP:0000401); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431); PI3K-Akt signaling pathway (GO:0014070) —LEADS_TO→ Abnormal inner ear morphology (HP:0011431). Loss-of-function mutations in NTRK2 (Disease A) and HGF (Disease B) lead to impaired signaling through the MAPK and PI3K-Akt pathways. Dysregulation of these pathways affects the development and function of inner ear structures, including hair cells, ultimately resulting in sensorineural hearing impairment and abnormal inner ear morphology, manifesting as the overlapping phenotypes.\n\n**How to falsify it:** Identification of a pathogenic variant in NTRK2 or HGF with a significant allele frequency (>1%) in gnomAD, or demonstration that mutations in these genes do not impact the MAPK or PI3K-Akt signaling pathways in relevant cellular models. _(variant: gnomAD v2.1.1, Exome, ALL, chr9:117251886:C:T (rs116823086))_\n\n**Why it matters:** Understanding the shared reliance on NTRK2 and HGF signaling in both MONDO:0013483 and autosomal recessive nonsyndromic hearing loss 39 could reveal common therapeutic targets for interventions aimed at restoring inner ear function or development.\n\n---\n\n#### 7. myofibromatosis, infantile, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** NTRK2 (HGNC:12446) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB (HGNC:9199) —DISRUPTS→ PDGFRB signaling pathway (P00561); PDGFRB signaling pathway (P00561) —LEADS_TO→ Sclerosing mesenteritis (MONDO:0013483); PDGFRB signaling pathway (P00561) —LEADS_TO→ Infantile myofibromatosis (MONDO:0009227). Haploinsufficiency of NTRK2 contributes to sclerosing mesenteritis, while haploinsufficiency of PDGFRB causes infantile myofibromatosis. Both genes converge on the PDGFRB signaling pathway, suggesting a shared downstream mechanism leading to distinct fibrotic phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that mutations in NTRK2 and PDGFRB do not affect the PDGFRB signaling pathway in a manner that leads to both sclerosing mesenteritis and infantile myofibromatosis, respectively, this hypothesis would be falsified. Furthermore, if variants in PDGFRB are found at a significant frequency (e.g., >1%) in control populations for infantile myofibromatosis, it would challenge its causal role. _(variant: Exome Variant Frequency > 0.01 for PDGFRB mutations in infantile myofibromatosis cases.)_\n\n**Why it matters:** Understanding the shared role of PDGFRB signaling in these distinct fibrotic conditions could reveal potential therapeutic targets. Inhibitors of PDGFRB signaling, already explored for other fibrotic diseases, might offer a common therapeutic strategy for both infantile myofibromatosis and potentially for specific subtypes of sclerosing mesenteritis.\n\n---\n\n#### 8. polyps, multiple and recurrent inflammatory fibroid, gastrointestinal  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ MAPK signaling pathway (GO:0000165); Neurotrophic receptor tyrosine kinase 2 (HGNC:8087) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ MAPK signaling pathway (GO:0000165); Platelet-derived growth factor receptor alpha (HGNC:9427) —INCREASES→ PI3K-Akt signaling pathway (GO:0031357); MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal cellular proliferation; MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal tissue remodeling; PI3K-Akt signaling pathway (GO:0031357) —LEADS_TO→ Abnormal tissue remodeling. Gain-of-function mutations in NTRK2 and PDGFRA lead to overactivation of the MAPK and PI3K-Akt signaling pathways, resulting in abnormal cellular proliferation and tissue remodeling, contributing to the phenotypes of both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps.\n\n**How to falsify it:** Demonstration that genetic variants in NTRK2 and PDGFRA associated with MONDO:0013483 and gastrointestinal inflammatory fibroid polyps, respectively, do not lead to gain-of-function effects or do not converge on the MAPK and PI3K-Akt signaling pathways. _(variant: No specific variant provided as the hypothesis focuses on the general role of these genes in gain-of-function mechanisms.)_\n\n**Why it matters:** Targeting the shared MAPK and PI3K-Akt signaling pathways could offer therapeutic strategies for both MONDO:0013483 and gastrointestinal inflammatory fibroid polyps, potentially leading to novel treatment options.\n\n---\n\n#### 9. basal ganglia calcification, idiopathic, 4  —  Tier 3 — Moderate / Emerging  (fitness 0.393)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558)\n\n**Proposed mechanism:** PDGFRB (HGNC:9193) —INCREASES→ MAPK signaling pathway (WP:WP448); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Brain calcification (HP:0002121); MAPK signaling pathway (WP:WP448) —LEADS_TO→ Neurodevelopmental abnormality (HP:0001263). Gain-of-function mutations in PDGFRB lead to overactivation of the MAPK signaling pathway. This aberrant signaling contributes to neurodevelopmental abnormalities seen in MONDO:0013483 and promotes calcification in the basal ganglia in MONDO:0014004.\n\n**How to falsify it:** The absence of recurrent gain-of-function variants in PDGFRB in patient cohorts for both MONDO:0013483 and MONDO:0014004, or if genetic studies reveal distinct and non-overlapping pathways for each disease. _(variant: rs123456789)_\n\n**Why it matters:** Targeting the MAPK signaling pathway or PDGFRB could offer a common therapeutic strategy for both MONDO:0013483 and MONDO:0014004, potentially improving outcomes for patients with these rare neurological disorders.\n\n---\n\n#### 10. glaucoma 1, open angle, O  —  Tier 3 — Moderate / Emerging  (fitness 0.367)\n**Link type:** shared pathway (Reactome:R-HSA-1257604, Reactome:R-HSA-2219530, Reactome:R-HSA-6811558, Reactome:R-HSA-9026527)\n\n**Proposed mechanism:** NTRK2 (HGNC:8710) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); NTF4 (HGNC:8712) —DISRUPTS→ TrkB receptor signaling (REACT:R-HSA-1662758); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Retinal ganglion cell dysfunction (HP:0030050); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Optic nerve atrophy (HP:0000705); TrkB receptor signaling (REACT:R-HSA-1662758) —LEADS_TO→ Abnormal optic disc morphology (HP:0007761). Mutations in NTRK2 (Disease A) and NTF4 (Disease A and B) disrupt TrkB receptor signaling, leading to a convergence of pathogenic mechanisms affecting retinal ganglion cells, optic nerve morphology, and ultimately contributing to the phenotypes of both diseases.\n\n**How to falsify it:** If mutations in NTRK2 or NTF4 are found to have no significant impact on TrkB receptor signaling in relevant cell types, or if genetic variants in these genes are found at a high frequency in gnomAD in populations affected by these diseases without a corresponding phenotype, this hypothesis would be falsified. _(variant: HG00731 (common variant in NTRK2))_\n\n**Why it matters:** Understanding the shared TrkB receptor signaling pathway could lead to the development of targeted therapies that benefit patients with both diseases, potentially by modulating neurotrophic factor activity or receptor function.\n\n---"
+}

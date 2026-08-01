@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0011287",
+    "name": "MONDO:0011287"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0859360",
+      "diseaseBName": "spinocerebellar ataxia, autosomal recessive 33",
+      "fitness": 0.6672,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RNU12 (HGNC:19380) —DISRUPTS→ Spliceosome function (GO:0005681); Spliceosome function (GO:0005681) —LEADS_TO→ Abnormal neuronal development (HP:0011344); Spliceosome function (GO:0005681) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function mutations in RNU12 disrupt the function of the spliceosome, leading to downstream effects that manifest as abnormal neuronal development in MONDO:0011287 and cerebellar ataxia in spinocerebellar ataxia, autosomal recessive 33.",
+      "mechanism_narrative": "RNU12 (HGNC:19380) —DISRUPTS→ Spliceosome function (GO:0005681); Spliceosome function (GO:0005681) —LEADS_TO→ Abnormal neuronal development (HP:0011344); Spliceosome function (GO:0005681) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function mutations in RNU12 disrupt the function of the spliceosome, leading to downstream effects that manifest as abnormal neuronal development in MONDO:0011287 and cerebellar ataxia in spinocerebellar ataxia, autosomal recessive 33.",
+      "falsification": {
+        "text": "Identification of functionally distinct mutations in RNU12 that lead to opposing functional consequences (e.g., one disease requiring LoF and the other GoF) would falsify the shared loss-of-function mechanism.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:19380"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0859360",
+        "diseaseBName": "spinocerebellar ataxia, autosomal recessive 33",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:19380"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6672,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "RNU12 (HGNC:19380) —DISRUPTS→ Spliceosome function (GO:0005681); Spliceosome function (GO:0005681) —LEADS_TO→ Abnormal neuronal development (HP:0011344); Spliceosome function (GO:0005681) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function mutations in RNU12 disrupt the function of the spliceosome, leading to downstream effects that manifest as abnormal neuronal development in MONDO:0011287 and cerebellar ataxia in spinocerebellar ataxia, autosomal recessive 33.",
+        "falsification": {
+          "text": "Identification of functionally distinct mutations in RNU12 that lead to opposing functional consequences (e.g., one disease requiring LoF and the other GoF) would falsify the shared loss-of-function mechanism.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared mechanism involving RNU12 and spliceosome function could lead to therapeutic strategies that target spliceosome activity or downstream consequences, potentially benefiting patients with both conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T18:38:51.825Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0011287 (MONDO:0011287)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | spinocerebellar ataxia, autosomal recessive 33 (MONDO:0859360) | shared gene | Tier 1 | 0.667 | HGNC:19380 |\n\n### CANDIDATE DETAIL\n#### 1. spinocerebellar ataxia, autosomal recessive 33  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.667)\n**Link type:** shared causal gene (HGNC:19380)\n\n**Proposed mechanism:** RNU12 (HGNC:19380) —DISRUPTS→ Spliceosome function (GO:0005681); Spliceosome function (GO:0005681) —LEADS_TO→ Abnormal neuronal development (HP:0011344); Spliceosome function (GO:0005681) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function mutations in RNU12 disrupt the function of the spliceosome, leading to downstream effects that manifest as abnormal neuronal development in MONDO:0011287 and cerebellar ataxia in spinocerebellar ataxia, autosomal recessive 33.\n\n**How to falsify it:** Identification of functionally distinct mutations in RNU12 that lead to opposing functional consequences (e.g., one disease requiring LoF and the other GoF) would falsify the shared loss-of-function mechanism. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared mechanism involving RNU12 and spliceosome function could lead to therapeutic strategies that target spliceosome activity or downstream consequences, potentially benefiting patients with both conditions.\n\n---"
+}

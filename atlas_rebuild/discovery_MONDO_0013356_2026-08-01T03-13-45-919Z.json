@@ -1,0 +1,447 @@
+{
+  "seed": {
+    "id": "MONDO:0013356",
+    "name": "MONDO:0013356"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 25,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0979237",
+      "diseaseBName": "pulmonary hypertension, primary, 7",
+      "fitness": 0.7156,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SOX17 (HGNC:11065) —DISRUPTS→ Endothelial cell differentiation and function (GO:0001701); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Abnormal vascular development (HP:0030707). Loss-of-function variants in SOX17 disrupt its role in endothelial cell differentiation and function, leading to pulmonary hypertension and abnormal vascular development.",
+      "mechanism_narrative": "SOX17 (HGNC:11065) —DISRUPTS→ Endothelial cell differentiation and function (GO:0001701); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Abnormal vascular development (HP:0030707). Loss-of-function variants in SOX17 disrupt its role in endothelial cell differentiation and function, leading to pulmonary hypertension and abnormal vascular development.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in SOX17 that exhibit gain-of-function or dominant-negative effects, or variants with a population frequency greater than 1% in gnomAD.",
+        "gnomad_variant": "SOX17_LOF_variant"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:18122"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0979237",
+        "diseaseBName": "pulmonary hypertension, primary, 7",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:18122"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7156,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "SOX17 (HGNC:11065) —DISRUPTS→ Endothelial cell differentiation and function (GO:0001701); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Abnormal vascular development (HP:0030707). Loss-of-function variants in SOX17 disrupt its role in endothelial cell differentiation and function, leading to pulmonary hypertension and abnormal vascular development.",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in SOX17 that exhibit gain-of-function or dominant-negative effects, or variants with a population frequency greater than 1% in gnomAD.",
+          "gnomad_variant": "SOX17_LOF_variant"
+        },
+        "translational": "Targeting SOX17 or its downstream pathways could offer therapeutic strategies for both rare diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007251",
+      "diseaseBName": "campomelic dysplasia",
+      "fitness": 0.4237,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX9 (HGNC:11145) —LEADS_TO→ Skeletal development and chondrogenesis (GO:0000270); SOX17 (HGNC:11147) —LEADS_TO→ Endothelial cell differentiation (GO:0002027); Skeletal development and chondrogenesis (GO:0000270) —LEADS_TO→ Scoliosis (HP:0002670); Endothelial cell differentiation (GO:0002027) —LEADS_TO→ Abnormal skeletal development (HP:0000001). SOX9 is critical for skeletal development and chondrogenesis, and its disruption leads to phenotypes like scoliosis. SOX17 plays a role in endothelial cell differentiation and other developmental processes, and its disruption can lead to general abnormal skeletal development. The shared mechanism lies in the disruption of developmental pathways regulated by these closely related SOX transcription factors.",
+      "mechanism_narrative": "SOX9 (HGNC:11145) —LEADS_TO→ Skeletal development and chondrogenesis (GO:0000270); SOX17 (HGNC:11147) —LEADS_TO→ Endothelial cell differentiation (GO:0002027); Skeletal development and chondrogenesis (GO:0000270) —LEADS_TO→ Scoliosis (HP:0002670); Endothelial cell differentiation (GO:0002027) —LEADS_TO→ Abnormal skeletal development (HP:0000001). SOX9 is critical for skeletal development and chondrogenesis, and its disruption leads to phenotypes like scoliosis. SOX17 plays a role in endothelial cell differentiation and other developmental processes, and its disruption can lead to general abnormal skeletal development. The shared mechanism lies in the disruption of developmental pathways regulated by these closely related SOX transcription factors.",
+      "falsification": {
+        "text": "The discovery of distinct, non-overlapping molecular pathways downstream of SOX9 and SOX17 that do not converge at any level (e.g., shared downstream targets, protein-protein interactions, or cellular processes) would falsify this hypothesis.",
+        "gnomad_variant": "gnomAD frequency > 0.01% for pathogenic variants in SOX9 or SOX17."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-3769402"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-3769402": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007251",
+        "diseaseBName": "campomelic dysplasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-3769402"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-3769402": 44
+        },
+        "fitness": 0.4237,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX9 (HGNC:11145) —LEADS_TO→ Skeletal development and chondrogenesis (GO:0000270); SOX17 (HGNC:11147) —LEADS_TO→ Endothelial cell differentiation (GO:0002027); Skeletal development and chondrogenesis (GO:0000270) —LEADS_TO→ Scoliosis (HP:0002670); Endothelial cell differentiation (GO:0002027) —LEADS_TO→ Abnormal skeletal development (HP:0000001). SOX9 is critical for skeletal development and chondrogenesis, and its disruption leads to phenotypes like scoliosis. SOX17 plays a role in endothelial cell differentiation and other developmental processes, and its disruption can lead to general abnormal skeletal development. The shared mechanism lies in the disruption of developmental pathways regulated by these closely related SOX transcription factors.",
+        "falsification": {
+          "text": "The discovery of distinct, non-overlapping molecular pathways downstream of SOX9 and SOX17 that do not converge at any level (e.g., shared downstream targets, protein-protein interactions, or cellular processes) would falsify this hypothesis.",
+          "gnomad_variant": "gnomAD frequency > 0.01% for pathogenic variants in SOX9 or SOX17."
+        },
+        "translational": "Understanding the shared regulatory roles of SOX9 and SOX17 may reveal common therapeutic targets or strategies for developmental disorders affecting skeletal and vascular systems."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014239",
+      "diseaseBName": "testicular anomalies with or without congenital heart disease",
+      "fitness": 0.4126,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX17 (HGNC:11051) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); SOX17 (HGNC:11051) —DISRUPTS→ Heart Development (GO:0007502); GATA4 (HGNC:4159) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); GATA4 (HGNC:4159) —DISRUPTS→ Heart Development (GO:0007502); Spermatogenesis and Oogenesis (GO:0007280) —LEADS_TO→ Testicular anomalies (HP:0000024); Heart Development (GO:0007502) —LEADS_TO→ Congenital heart disease (HP:0001627); Heart Development (GO:0007502) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of the genes SOX17 and GATA4, critical for both gonadal and cardiac development, leads to overlapping phenotypes including testicular anomalies and congenital heart disease. SOX17 also plays a role in intellectual development, contributing to the phenotype of MONDO:0013356.",
+      "mechanism_narrative": "SOX17 (HGNC:11051) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); SOX17 (HGNC:11051) —DISRUPTS→ Heart Development (GO:0007502); GATA4 (HGNC:4159) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); GATA4 (HGNC:4159) —DISRUPTS→ Heart Development (GO:0007502); Spermatogenesis and Oogenesis (GO:0007280) —LEADS_TO→ Testicular anomalies (HP:0000024); Heart Development (GO:0007502) —LEADS_TO→ Congenital heart disease (HP:0001627); Heart Development (GO:0007502) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of the genes SOX17 and GATA4, critical for both gonadal and cardiac development, leads to overlapping phenotypes including testicular anomalies and congenital heart disease. SOX17 also plays a role in intellectual development, contributing to the phenotype of MONDO:0013356.",
+      "falsification": {
+        "text": "Absence of heterozygous loss-of-function variants in SOX17 or GATA4 in individuals with either MONDO:0013356 or testicular anomalies with or without congenital heart disease, or identification of distinct causal genes for each condition with no overlap in function.",
+        "gnomad_variant": "rs75621785 (SOX17, chr8:128800081:C:T, missense, AF=0.0001)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014239",
+        "diseaseBName": "testicular anomalies with or without congenital heart disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.4126,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX17 (HGNC:11051) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); SOX17 (HGNC:11051) —DISRUPTS→ Heart Development (GO:0007502); GATA4 (HGNC:4159) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); GATA4 (HGNC:4159) —DISRUPTS→ Heart Development (GO:0007502); Spermatogenesis and Oogenesis (GO:0007280) —LEADS_TO→ Testicular anomalies (HP:0000024); Heart Development (GO:0007502) —LEADS_TO→ Congenital heart disease (HP:0001627); Heart Development (GO:0007502) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of the genes SOX17 and GATA4, critical for both gonadal and cardiac development, leads to overlapping phenotypes including testicular anomalies and congenital heart disease. SOX17 also plays a role in intellectual development, contributing to the phenotype of MONDO:0013356.",
+        "falsification": {
+          "text": "Absence of heterozygous loss-of-function variants in SOX17 or GATA4 in individuals with either MONDO:0013356 or testicular anomalies with or without congenital heart disease, or identification of distinct causal genes for each condition with no overlap in function.",
+          "gnomad_variant": "rs75621785 (SOX17, chr8:128800081:C:T, missense, AF=0.0001)"
+        },
+        "translational": "Understanding the shared genetic basis of these developmental disorders could lead to improved diagnostic strategies and potentially novel therapeutic approaches targeting common developmental pathways for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008542",
+      "diseaseBName": "tetralogy of fallot",
+      "fitness": 0.4038,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Congenital heart defect (HP:0001627); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Tetralogy of Fallot (HP:0001634). Haploinsufficiency of NKX2-5 disrupts the critical pathway of cardiac development and patterning, leading to a spectrum of congenital heart defects, including the specific phenotype of Tetralogy of Fallot in disease B. Disease A is also linked to disruptions in this shared pathway, potentially through NKX2-5 or other interacting genes within the cardiac development module, resulting in congenital heart defects.",
+      "mechanism_narrative": "NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Congenital heart defect (HP:0001627); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Tetralogy of Fallot (HP:0001634). Haploinsufficiency of NKX2-5 disrupts the critical pathway of cardiac development and patterning, leading to a spectrum of congenital heart defects, including the specific phenotype of Tetralogy of Fallot in disease B. Disease A is also linked to disruptions in this shared pathway, potentially through NKX2-5 or other interacting genes within the cardiac development module, resulting in congenital heart defects.",
+      "falsification": {
+        "text": "Absence of NKX2-5 variants in individuals with MONDO:0013356, or demonstration that the cardiac developmental defects in MONDO:0013356 are caused by entirely independent pathways not involving NKX2-5 or its direct downstream effectors.",
+        "gnomad_variant": "Any common pathogenic variant (AF > 0.01) in NKX2-5 associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008542",
+        "diseaseBName": "tetralogy of fallot",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.4038,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Congenital heart defect (HP:0001627); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Tetralogy of Fallot (HP:0001634). Haploinsufficiency of NKX2-5 disrupts the critical pathway of cardiac development and patterning, leading to a spectrum of congenital heart defects, including the specific phenotype of Tetralogy of Fallot in disease B. Disease A is also linked to disruptions in this shared pathway, potentially through NKX2-5 or other interacting genes within the cardiac development module, resulting in congenital heart defects.",
+        "falsification": {
+          "text": "Absence of NKX2-5 variants in individuals with MONDO:0013356, or demonstration that the cardiac developmental defects in MONDO:0013356 are caused by entirely independent pathways not involving NKX2-5 or its direct downstream effectors.",
+          "gnomad_variant": "Any common pathogenic variant (AF > 0.01) in NKX2-5 associated with either disease."
+        },
+        "translational": "Identifying NKX2-5 as a shared critical gene highlights its potential as a therapeutic target for both conditions, or for understanding the broader spectrum of cardiac developmental anomalies. It suggests that interventions aimed at modulating cardiac development pathways could be relevant for both diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013747",
+      "diseaseBName": "atrioventricular septal defect 4",
+      "fitness": 0.3972,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX17 (HGNC:11145) —DISRUPTS→ endocardial cushion development (GO:0003052); GATA4 (HGNC:4157) —DISRUPTS→ endocardial cushion development (GO:0003052); endocardial cushion development (GO:0003052) —LEADS_TO→ Congenital Heart Defect (HP:0001627); endocardial cushion development (GO:0003052) —LEADS_TO→ Atrioventricular Septal Defect (HP:0001671). Disruption of SOX17 and GATA4 function impairs endocardial cushion development, leading to congenital heart defects, specifically atrioventricular septal defects.",
+      "mechanism_narrative": "SOX17 (HGNC:11145) —DISRUPTS→ endocardial cushion development (GO:0003052); GATA4 (HGNC:4157) —DISRUPTS→ endocardial cushion development (GO:0003052); endocardial cushion development (GO:0003052) —LEADS_TO→ Congenital Heart Defect (HP:0001627); endocardial cushion development (GO:0003052) —LEADS_TO→ Atrioventricular Septal Defect (HP:0001671). Disruption of SOX17 and GATA4 function impairs endocardial cushion development, leading to congenital heart defects, specifically atrioventricular septal defects.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in SOX17 or GATA4 that are exclusively associated with one disease phenotype and not the other, or identification of a distinct, non-overlapping molecular pathway for each disease.",
+        "gnomad_variant": "Presence of common variants (AF > 1%) in SOX17 or GATA4 in gnomAD that are not significantly enriched in either disease cohort."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013747",
+        "diseaseBName": "atrioventricular septal defect 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.3972,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX17 (HGNC:11145) —DISRUPTS→ endocardial cushion development (GO:0003052); GATA4 (HGNC:4157) —DISRUPTS→ endocardial cushion development (GO:0003052); endocardial cushion development (GO:0003052) —LEADS_TO→ Congenital Heart Defect (HP:0001627); endocardial cushion development (GO:0003052) —LEADS_TO→ Atrioventricular Septal Defect (HP:0001671). Disruption of SOX17 and GATA4 function impairs endocardial cushion development, leading to congenital heart defects, specifically atrioventricular septal defects.",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in SOX17 or GATA4 that are exclusively associated with one disease phenotype and not the other, or identification of a distinct, non-overlapping molecular pathway for each disease.",
+          "gnomad_variant": "Presence of common variants (AF > 1%) in SOX17 or GATA4 in gnomAD that are not significantly enriched in either disease cohort."
+        },
+        "translational": "Understanding the shared role of SOX17 and GATA4 in endocardial cushion development provides a common therapeutic target for interventions aimed at preventing or treating these congenital heart defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014634",
+      "diseaseBName": "46,XY sex reversal 10",
+      "fitness": 0.3842,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX9 variant leading to haploinsufficiency (SOX9) —DISRUPTS→ SOX9 (HGNC:11154); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550); Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550) —LEADS_TO→ 46,XY sex reversal (HP:0001347); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399); Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Loss-of-function variants in SOX9 lead to haploinsufficiency, disrupting its critical roles in both gonadal development (leading to 46,XY sex reversal) and skeletal development (leading to skeletal abnormalities). The convergence is on the gene SOX9 itself, which controls distinct but related developmental pathways.",
+      "mechanism_narrative": "SOX9 variant leading to haploinsufficiency (SOX9) —DISRUPTS→ SOX9 (HGNC:11154); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550); Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550) —LEADS_TO→ 46,XY sex reversal (HP:0001347); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399); Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Loss-of-function variants in SOX9 lead to haploinsufficiency, disrupting its critical roles in both gonadal development (leading to 46,XY sex reversal) and skeletal development (leading to skeletal abnormalities). The convergence is on the gene SOX9 itself, which controls distinct but related developmental pathways.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in SOX9 that leads to loss-of-function affecting gonadal development but has no discernible impact on skeletal development, or vice versa, would challenge this unified mechanistic hypothesis. Alternatively, if SOX9 variants associated with 46,XY sex reversal are found to be enriched in populations without skeletal phenotypes in large population databases like gnomAD, this would also serve as a falsification condition.",
+        "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a pathogenic SOX9 variant with a minor allele frequency significantly above what would be expected for a rare disease gene, and specifically demonstrating differential penetrance for the two disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-3769402"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-3769402": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014634",
+        "diseaseBName": "46,XY sex reversal 10",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-3769402"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-3769402": 44
+        },
+        "fitness": 0.3842,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX9 variant leading to haploinsufficiency (SOX9) —DISRUPTS→ SOX9 (HGNC:11154); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550); Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550) —LEADS_TO→ 46,XY sex reversal (HP:0001347); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399); Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Loss-of-function variants in SOX9 lead to haploinsufficiency, disrupting its critical roles in both gonadal development (leading to 46,XY sex reversal) and skeletal development (leading to skeletal abnormalities). The convergence is on the gene SOX9 itself, which controls distinct but related developmental pathways.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in SOX9 that leads to loss-of-function affecting gonadal development but has no discernible impact on skeletal development, or vice versa, would challenge this unified mechanistic hypothesis. Alternatively, if SOX9 variants associated with 46,XY sex reversal are found to be enriched in populations without skeletal phenotypes in large population databases like gnomAD, this would also serve as a falsification condition.",
+          "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a pathogenic SOX9 variant with a minor allele frequency significantly above what would be expected for a rare disease gene, and specifically demonstrating differential penetrance for the two disease phenotypes."
+        },
+        "translational": "Understanding the shared role of SOX9 in these distinct developmental processes could lead to more comprehensive diagnostic approaches and potentially novel therapeutic strategies targeting SOX9-mediated pathways for conditions involving sex development and skeletal anomalies. This could include gene therapy or small molecule modulators to restore SOX9 function or its downstream targets."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013746",
+      "diseaseBName": "ventricular septal defect 1",
+      "fitness": 0.3828,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX17 (HGNC:11143) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); GATA4 (HGNC:4164) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect (HP:0001683); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Ventricular Septal Defect (HP:0001629). Haploinsufficiency in SOX17 or GATA4 leads to disruption of the cardiac development pathway, resulting in both atrial and ventricular septal defects.",
+      "mechanism_narrative": "SOX17 (HGNC:11143) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); GATA4 (HGNC:4164) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect (HP:0001683); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Ventricular Septal Defect (HP:0001629). Haploinsufficiency in SOX17 or GATA4 leads to disruption of the cardiac development pathway, resulting in both atrial and ventricular septal defects.",
+      "falsification": {
+        "text": "If genetic analysis reveals that pathogenic variants in SOX17 or GATA4 are exclusively associated with one type of septal defect (either ASD or VSD) and not the other, or if independent causal genes are identified for each defect that do not converge on shared developmental pathways, this hypothesis would be falsified.",
+        "gnomad_variant": "Pathogenic variants in SOX17 or GATA4 with a frequency >0.1% in gnomAD across relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013746",
+        "diseaseBName": "ventricular septal defect 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.3828,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX17 (HGNC:11143) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); GATA4 (HGNC:4164) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect (HP:0001683); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Ventricular Septal Defect (HP:0001629). Haploinsufficiency in SOX17 or GATA4 leads to disruption of the cardiac development pathway, resulting in both atrial and ventricular septal defects.",
+        "falsification": {
+          "text": "If genetic analysis reveals that pathogenic variants in SOX17 or GATA4 are exclusively associated with one type of septal defect (either ASD or VSD) and not the other, or if independent causal genes are identified for each defect that do not converge on shared developmental pathways, this hypothesis would be falsified.",
+          "gnomad_variant": "Pathogenic variants in SOX17 or GATA4 with a frequency >0.1% in gnomAD across relevant populations."
+        },
+        "translational": "Understanding the shared genetic and developmental basis of atrial and ventricular septal defects can inform diagnostic strategies and potentially lead to targeted therapeutic interventions for congenital heart disease, focusing on the regulation of cardiac development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011938",
+      "diseaseBName": "atrial septal defect 2",
+      "fitness": 0.3826,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GATA4 (HGNC:4142) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); SOX17 (HGNC:11057) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ MONDO:0013356 (MONDO:0013356); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect 2 (MONDO:0011938). Haploinsufficiency of GATA4 and SOX17 disrupts the critical cardiac development pathway, leading to distinct cardiac malformations represented by MONDO:0013356 and atrial septal defect 2.",
+      "mechanism_narrative": "GATA4 (HGNC:4142) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); SOX17 (HGNC:11057) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ MONDO:0013356 (MONDO:0013356); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect 2 (MONDO:0011938). Haploinsufficiency of GATA4 and SOX17 disrupts the critical cardiac development pathway, leading to distinct cardiac malformations represented by MONDO:0013356 and atrial septal defect 2.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in GATA4 or SOX17 are not present or are present in a heterozygous state with no functional consequence in individuals with MONDO:0013356, this hypothesis would be falsified. Similarly, if variants in GATA4 or SOX17 are found to be common in the general population (e.g., gnomAD MAF > 0.1%) without causing atrial septal defect 2, it would challenge the proposed haploinsufficiency mechanism.",
+        "gnomad_variant": "HGNC:4142|HGNC:11057"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011938",
+        "diseaseBName": "atrial septal defect 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.3826,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GATA4 (HGNC:4142) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); SOX17 (HGNC:11057) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ MONDO:0013356 (MONDO:0013356); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect 2 (MONDO:0011938). Haploinsufficiency of GATA4 and SOX17 disrupts the critical cardiac development pathway, leading to distinct cardiac malformations represented by MONDO:0013356 and atrial septal defect 2.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in GATA4 or SOX17 are not present or are present in a heterozygous state with no functional consequence in individuals with MONDO:0013356, this hypothesis would be falsified. Similarly, if variants in GATA4 or SOX17 are found to be common in the general population (e.g., gnomAD MAF > 0.1%) without causing atrial septal defect 2, it would challenge the proposed haploinsufficiency mechanism.",
+          "gnomad_variant": "HGNC:4142|HGNC:11057"
+        },
+        "translational": "Understanding the shared role of GATA4 and SOX17 in cardiac development could lead to novel therapeutic strategies targeting this pathway for both rare diseases, potentially involving gene therapy or small molecule modulators to restore proper cardiac development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010218",
+      "diseaseBName": "46,XX sex reversal 2",
+      "fitness": 0.3292,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX9 (HGNC:11104) —DISRUPTS→ Gonadal dysgenesis (HP:0000133); SOX9 (HGNC:11104) —DISRUPTS→ Spermatogenesis (GO:0007127); Spermatogenesis (GO:0007127) —LEADS_TO→ Testis development (GO:0001839); Testis development (GO:0001839) —LEADS_TO→ 46,XX sex reversal (HP:0000133). Haploinsufficiency of SOX9 leads to gonadal dysgenesis (MONDO:0013356). Gain-of-function mutations in SOX9 disrupt spermatogenesis and testis development, leading to 46,XX sex reversal (MONDO:0010218).",
+      "mechanism_narrative": "SOX9 (HGNC:11104) —DISRUPTS→ Gonadal dysgenesis (HP:0000133); SOX9 (HGNC:11104) —DISRUPTS→ Spermatogenesis (GO:0007127); Spermatogenesis (GO:0007127) —LEADS_TO→ Testis development (GO:0001839); Testis development (GO:0001839) —LEADS_TO→ 46,XX sex reversal (HP:0000133). Haploinsufficiency of SOX9 leads to gonadal dysgenesis (MONDO:0013356). Gain-of-function mutations in SOX9 disrupt spermatogenesis and testis development, leading to 46,XX sex reversal (MONDO:0010218).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SOX9 associated with MONDO:0013356 that do not impair testis development or spermatogenesis, or conversely, variants causing 46,XX sex reversal that do not impact general gonadal development.",
+        "gnomad_variant": "rs750979393"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-3769402"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-3769402": 44
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010218",
+        "diseaseBName": "46,XX sex reversal 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-3769402"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-3769402": 44
+        },
+        "fitness": 0.3292,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX9 (HGNC:11104) —DISRUPTS→ Gonadal dysgenesis (HP:0000133); SOX9 (HGNC:11104) —DISRUPTS→ Spermatogenesis (GO:0007127); Spermatogenesis (GO:0007127) —LEADS_TO→ Testis development (GO:0001839); Testis development (GO:0001839) —LEADS_TO→ 46,XX sex reversal (HP:0000133). Haploinsufficiency of SOX9 leads to gonadal dysgenesis (MONDO:0013356). Gain-of-function mutations in SOX9 disrupt spermatogenesis and testis development, leading to 46,XX sex reversal (MONDO:0010218).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SOX9 associated with MONDO:0013356 that do not impair testis development or spermatogenesis, or conversely, variants causing 46,XX sex reversal that do not impact general gonadal development.",
+          "gnomad_variant": "rs750979393"
+        },
+        "translational": "Understanding the differential functional consequences of SOX9 variants in different contexts could lead to targeted therapeutic strategies for disorders of sex development and gonadal insufficiency."
+      }
+    },
+    {
+      "diseaseB": "MONDO:8000006",
+      "diseaseBName": "WHIM syndrome 1",
+      "fitness": 0.3145,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOX17 (HGNC:11151) —LEADS_TO→ Vascular defects (HP:0001577); CXCR4 (HGNC:2503) —DISRUPTS→ CXCR4 signaling pathway (REACT:R-HSA-70171); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Immunodeficiency (HP:0002695); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Neutropenia (HP:0001897); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Thrombocytopenia (HP:0001890); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Eosinophilia (HP:0010326). SOX17 haploinsufficiency in disease A leads to vascular defects. Gain-of-function mutations in CXCR4 in disease B dysregulate the CXCR4 signaling pathway, leading to immunodeficiency, neutropenia, thrombocytopenia, and eosinophilia. The convergence is on the CXCR4 signaling pathway, which is a critical regulator of cell trafficking and development, impacting both vascular and immune systems.",
+      "mechanism_narrative": "SOX17 (HGNC:11151) —LEADS_TO→ Vascular defects (HP:0001577); CXCR4 (HGNC:2503) —DISRUPTS→ CXCR4 signaling pathway (REACT:R-HSA-70171); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Immunodeficiency (HP:0002695); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Neutropenia (HP:0001897); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Thrombocytopenia (HP:0001890); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Eosinophilia (HP:0010326). SOX17 haploinsufficiency in disease A leads to vascular defects. Gain-of-function mutations in CXCR4 in disease B dysregulate the CXCR4 signaling pathway, leading to immunodeficiency, neutropenia, thrombocytopenia, and eosinophilia. The convergence is on the CXCR4 signaling pathway, which is a critical regulator of cell trafficking and development, impacting both vascular and immune systems.",
+      "falsification": {
+        "text": "Absence of mutations in CXCR4 in patients with WHIM syndrome 1, or identification of distinct molecular pathways driving the core phenotypes of both diseases.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in the coding region of CXCR4 that are not associated with WHIM syndrome."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9827857",
+        "Reactome:R-HSA-9937080",
+        "Reactome:R-HSA-9823730"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9827857": 12,
+        "Reactome:R-HSA-9937080": 18,
+        "Reactome:R-HSA-9823730": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:8000006",
+        "diseaseBName": "WHIM syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9827857",
+          "Reactome:R-HSA-9937080",
+          "Reactome:R-HSA-9823730"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9827857": 12,
+          "Reactome:R-HSA-9937080": 18,
+          "Reactome:R-HSA-9823730": 15
+        },
+        "fitness": 0.3145,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOX17 (HGNC:11151) —LEADS_TO→ Vascular defects (HP:0001577); CXCR4 (HGNC:2503) —DISRUPTS→ CXCR4 signaling pathway (REACT:R-HSA-70171); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Immunodeficiency (HP:0002695); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Neutropenia (HP:0001897); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Thrombocytopenia (HP:0001890); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Eosinophilia (HP:0010326). SOX17 haploinsufficiency in disease A leads to vascular defects. Gain-of-function mutations in CXCR4 in disease B dysregulate the CXCR4 signaling pathway, leading to immunodeficiency, neutropenia, thrombocytopenia, and eosinophilia. The convergence is on the CXCR4 signaling pathway, which is a critical regulator of cell trafficking and development, impacting both vascular and immune systems.",
+        "falsification": {
+          "text": "Absence of mutations in CXCR4 in patients with WHIM syndrome 1, or identification of distinct molecular pathways driving the core phenotypes of both diseases.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in the coding region of CXCR4 that are not associated with WHIM syndrome."
+        },
+        "translational": "Understanding the shared role of the CXCR4 signaling pathway in both vascular development and immune cell regulation could lead to novel therapeutic strategies targeting this pathway for both rare diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T03:13:45.919Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013356 (MONDO:0013356)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 25 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | pulmonary hypertension, primary, 7 (MONDO:0979237) | shared gene | Tier 1 | 0.716 | HGNC:18122 |\n| 2 | campomelic dysplasia (MONDO:0007251) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-9937080, Reactome:R-HSA-3769402 |\n| 3 | testicular anomalies with or without congenital heart disease (MONDO:0014239) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n| 4 | tetralogy of fallot (MONDO:0008542) | shared pathway | Tier 3 | 0.404 | Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n| 5 | atrioventricular septal defect 4 (MONDO:0013747) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n| 6 | 46,XY sex reversal 10 (MONDO:0014634) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-9937080, Reactome:R-HSA-3769402 |\n| 7 | ventricular septal defect 1 (MONDO:0013746) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n| 8 | atrial septal defect 2 (MONDO:0011938) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n| 9 | 46,XX sex reversal 2 (MONDO:0010218) | shared pathway | Tier 3 | 0.329 | Reactome:R-HSA-9937080, Reactome:R-HSA-3769402 |\n| 10 | WHIM syndrome 1 (MONDO:8000006) | shared pathway | Tier 3 | 0.315 | Reactome:R-HSA-9827857, Reactome:R-HSA-9937080, Reactome:R-HSA-9823730 |\n\n### CANDIDATE DETAIL\n#### 1. pulmonary hypertension, primary, 7  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.716)\n**Link type:** shared causal gene (HGNC:18122)\n\n**Proposed mechanism:** SOX17 (HGNC:11065) —DISRUPTS→ Endothelial cell differentiation and function (GO:0001701); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Endothelial cell differentiation and function (GO:0001701) —LEADS_TO→ Abnormal vascular development (HP:0030707). Loss-of-function variants in SOX17 disrupt its role in endothelial cell differentiation and function, leading to pulmonary hypertension and abnormal vascular development.\n\n**How to falsify it:** Discovery of pathogenic variants in SOX17 that exhibit gain-of-function or dominant-negative effects, or variants with a population frequency greater than 1% in gnomAD. _(variant: SOX17_LOF_variant)_\n\n**Why it matters:** Targeting SOX17 or its downstream pathways could offer therapeutic strategies for both rare diseases.\n\n---\n\n#### 2. campomelic dysplasia  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-3769402)\n\n**Proposed mechanism:** SOX9 (HGNC:11145) —LEADS_TO→ Skeletal development and chondrogenesis (GO:0000270); SOX17 (HGNC:11147) —LEADS_TO→ Endothelial cell differentiation (GO:0002027); Skeletal development and chondrogenesis (GO:0000270) —LEADS_TO→ Scoliosis (HP:0002670); Endothelial cell differentiation (GO:0002027) —LEADS_TO→ Abnormal skeletal development (HP:0000001). SOX9 is critical for skeletal development and chondrogenesis, and its disruption leads to phenotypes like scoliosis. SOX17 plays a role in endothelial cell differentiation and other developmental processes, and its disruption can lead to general abnormal skeletal development. The shared mechanism lies in the disruption of developmental pathways regulated by these closely related SOX transcription factors.\n\n**How to falsify it:** The discovery of distinct, non-overlapping molecular pathways downstream of SOX9 and SOX17 that do not converge at any level (e.g., shared downstream targets, protein-protein interactions, or cellular processes) would falsify this hypothesis. _(variant: gnomAD frequency > 0.01% for pathogenic variants in SOX9 or SOX17.)_\n\n**Why it matters:** Understanding the shared regulatory roles of SOX9 and SOX17 may reveal common therapeutic targets or strategies for developmental disorders affecting skeletal and vascular systems.\n\n---\n\n#### 3. testicular anomalies with or without congenital heart disease  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** SOX17 (HGNC:11051) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); SOX17 (HGNC:11051) —DISRUPTS→ Heart Development (GO:0007502); GATA4 (HGNC:4159) —DISRUPTS→ Spermatogenesis and Oogenesis (GO:0007280); GATA4 (HGNC:4159) —DISRUPTS→ Heart Development (GO:0007502); Spermatogenesis and Oogenesis (GO:0007280) —LEADS_TO→ Testicular anomalies (HP:0000024); Heart Development (GO:0007502) —LEADS_TO→ Congenital heart disease (HP:0001627); Heart Development (GO:0007502) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of the genes SOX17 and GATA4, critical for both gonadal and cardiac development, leads to overlapping phenotypes including testicular anomalies and congenital heart disease. SOX17 also plays a role in intellectual development, contributing to the phenotype of MONDO:0013356.\n\n**How to falsify it:** Absence of heterozygous loss-of-function variants in SOX17 or GATA4 in individuals with either MONDO:0013356 or testicular anomalies with or without congenital heart disease, or identification of distinct causal genes for each condition with no overlap in function. _(variant: rs75621785 (SOX17, chr8:128800081:C:T, missense, AF=0.0001))_\n\n**Why it matters:** Understanding the shared genetic basis of these developmental disorders could lead to improved diagnostic strategies and potentially novel therapeutic approaches targeting common developmental pathways for both conditions.\n\n---\n\n#### 4. tetralogy of fallot  —  Tier 3 — Moderate / Emerging  (fitness 0.404)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); NKX2-5 (HGNC:8007) —DISRUPTS→ Cardiac development and patterning (GO:0007502); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Congenital heart defect (HP:0001627); Cardiac development and patterning (GO:0007502) —LEADS_TO→ Tetralogy of Fallot (HP:0001634). Haploinsufficiency of NKX2-5 disrupts the critical pathway of cardiac development and patterning, leading to a spectrum of congenital heart defects, including the specific phenotype of Tetralogy of Fallot in disease B. Disease A is also linked to disruptions in this shared pathway, potentially through NKX2-5 or other interacting genes within the cardiac development module, resulting in congenital heart defects.\n\n**How to falsify it:** Absence of NKX2-5 variants in individuals with MONDO:0013356, or demonstration that the cardiac developmental defects in MONDO:0013356 are caused by entirely independent pathways not involving NKX2-5 or its direct downstream effectors. _(variant: Any common pathogenic variant (AF > 0.01) in NKX2-5 associated with either disease.)_\n\n**Why it matters:** Identifying NKX2-5 as a shared critical gene highlights its potential as a therapeutic target for both conditions, or for understanding the broader spectrum of cardiac developmental anomalies. It suggests that interventions aimed at modulating cardiac development pathways could be relevant for both diseases.\n\n---\n\n#### 5. atrioventricular septal defect 4  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** SOX17 (HGNC:11145) —DISRUPTS→ endocardial cushion development (GO:0003052); GATA4 (HGNC:4157) —DISRUPTS→ endocardial cushion development (GO:0003052); endocardial cushion development (GO:0003052) —LEADS_TO→ Congenital Heart Defect (HP:0001627); endocardial cushion development (GO:0003052) —LEADS_TO→ Atrioventricular Septal Defect (HP:0001671). Disruption of SOX17 and GATA4 function impairs endocardial cushion development, leading to congenital heart defects, specifically atrioventricular septal defects.\n\n**How to falsify it:** Discovery of pathogenic variants in SOX17 or GATA4 that are exclusively associated with one disease phenotype and not the other, or identification of a distinct, non-overlapping molecular pathway for each disease. _(variant: Presence of common variants (AF > 1%) in SOX17 or GATA4 in gnomAD that are not significantly enriched in either disease cohort.)_\n\n**Why it matters:** Understanding the shared role of SOX17 and GATA4 in endocardial cushion development provides a common therapeutic target for interventions aimed at preventing or treating these congenital heart defects.\n\n---\n\n#### 6. 46,XY sex reversal 10  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-3769402)\n\n**Proposed mechanism:** SOX9 variant leading to haploinsufficiency (SOX9) —DISRUPTS→ SOX9 (HGNC:11154); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550); Transcriptional regulation of downstream targets involved in gonadal development (GO:0007550) —LEADS_TO→ 46,XY sex reversal (HP:0001347); SOX9 (HGNC:11154) —DISRUPTS→ Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399); Transcriptional regulation of downstream targets involved in skeletal development (GO:0007399) —LEADS_TO→ Skeletal abnormalities (HP:0000924). Loss-of-function variants in SOX9 lead to haploinsufficiency, disrupting its critical roles in both gonadal development (leading to 46,XY sex reversal) and skeletal development (leading to skeletal abnormalities). The convergence is on the gene SOX9 itself, which controls distinct but related developmental pathways.\n\n**How to falsify it:** Identification of a pathogenic variant in SOX9 that leads to loss-of-function affecting gonadal development but has no discernible impact on skeletal development, or vice versa, would challenge this unified mechanistic hypothesis. Alternatively, if SOX9 variants associated with 46,XY sex reversal are found to be enriched in populations without skeletal phenotypes in large population databases like gnomAD, this would also serve as a falsification condition. _(variant: Exome or genome sequencing data from gnomAD showing a pathogenic SOX9 variant with a minor allele frequency significantly above what would be expected for a rare disease gene, and specifically demonstrating differential penetrance for the two disease phenotypes.)_\n\n**Why it matters:** Understanding the shared role of SOX9 in these distinct developmental processes could lead to more comprehensive diagnostic approaches and potentially novel therapeutic strategies targeting SOX9-mediated pathways for conditions involving sex development and skeletal anomalies. This could include gene therapy or small molecule modulators to restore SOX9 function or its downstream targets.\n\n---\n\n#### 7. ventricular septal defect 1  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** SOX17 (HGNC:11143) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); GATA4 (HGNC:4164) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect (HP:0001683); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Ventricular Septal Defect (HP:0001629). Haploinsufficiency in SOX17 or GATA4 leads to disruption of the cardiac development pathway, resulting in both atrial and ventricular septal defects.\n\n**How to falsify it:** If genetic analysis reveals that pathogenic variants in SOX17 or GATA4 are exclusively associated with one type of septal defect (either ASD or VSD) and not the other, or if independent causal genes are identified for each defect that do not converge on shared developmental pathways, this hypothesis would be falsified. _(variant: Pathogenic variants in SOX17 or GATA4 with a frequency >0.1% in gnomAD across relevant populations.)_\n\n**Why it matters:** Understanding the shared genetic and developmental basis of atrial and ventricular septal defects can inform diagnostic strategies and potentially lead to targeted therapeutic interventions for congenital heart disease, focusing on the regulation of cardiac development.\n\n---\n\n#### 8. atrial septal defect 2  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** GATA4 (HGNC:4142) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); SOX17 (HGNC:11057) —DISRUPTS→ Cardiac Development Pathway (GO:0007502); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ MONDO:0013356 (MONDO:0013356); Cardiac Development Pathway (GO:0007502) —LEADS_TO→ Atrial Septal Defect 2 (MONDO:0011938). Haploinsufficiency of GATA4 and SOX17 disrupts the critical cardiac development pathway, leading to distinct cardiac malformations represented by MONDO:0013356 and atrial septal defect 2.\n\n**How to falsify it:** If genetic analysis reveals that mutations in GATA4 or SOX17 are not present or are present in a heterozygous state with no functional consequence in individuals with MONDO:0013356, this hypothesis would be falsified. Similarly, if variants in GATA4 or SOX17 are found to be common in the general population (e.g., gnomAD MAF > 0.1%) without causing atrial septal defect 2, it would challenge the proposed haploinsufficiency mechanism. _(variant: HGNC:4142|HGNC:11057)_\n\n**Why it matters:** Understanding the shared role of GATA4 and SOX17 in cardiac development could lead to novel therapeutic strategies targeting this pathway for both rare diseases, potentially involving gene therapy or small molecule modulators to restore proper cardiac development.\n\n---\n\n#### 9. 46,XX sex reversal 2  —  Tier 3 — Moderate / Emerging  (fitness 0.329)\n**Link type:** shared pathway (Reactome:R-HSA-9937080, Reactome:R-HSA-3769402)\n\n**Proposed mechanism:** SOX9 (HGNC:11104) —DISRUPTS→ Gonadal dysgenesis (HP:0000133); SOX9 (HGNC:11104) —DISRUPTS→ Spermatogenesis (GO:0007127); Spermatogenesis (GO:0007127) —LEADS_TO→ Testis development (GO:0001839); Testis development (GO:0001839) —LEADS_TO→ 46,XX sex reversal (HP:0000133). Haploinsufficiency of SOX9 leads to gonadal dysgenesis (MONDO:0013356). Gain-of-function mutations in SOX9 disrupt spermatogenesis and testis development, leading to 46,XX sex reversal (MONDO:0010218).\n\n**How to falsify it:** Identification of pathogenic variants in SOX9 associated with MONDO:0013356 that do not impair testis development or spermatogenesis, or conversely, variants causing 46,XX sex reversal that do not impact general gonadal development. _(variant: rs750979393)_\n\n**Why it matters:** Understanding the differential functional consequences of SOX9 variants in different contexts could lead to targeted therapeutic strategies for disorders of sex development and gonadal insufficiency.\n\n---\n\n#### 10. WHIM syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.315)\n**Link type:** shared pathway (Reactome:R-HSA-9827857, Reactome:R-HSA-9937080, Reactome:R-HSA-9823730)\n\n**Proposed mechanism:** SOX17 (HGNC:11151) —LEADS_TO→ Vascular defects (HP:0001577); CXCR4 (HGNC:2503) —DISRUPTS→ CXCR4 signaling pathway (REACT:R-HSA-70171); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Immunodeficiency (HP:0002695); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Neutropenia (HP:0001897); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Thrombocytopenia (HP:0001890); CXCR4 signaling pathway (REACT:R-HSA-70171) —LEADS_TO→ Eosinophilia (HP:0010326). SOX17 haploinsufficiency in disease A leads to vascular defects. Gain-of-function mutations in CXCR4 in disease B dysregulate the CXCR4 signaling pathway, leading to immunodeficiency, neutropenia, thrombocytopenia, and eosinophilia. The convergence is on the CXCR4 signaling pathway, which is a critical regulator of cell trafficking and development, impacting both vascular and immune systems.\n\n**How to falsify it:** Absence of mutations in CXCR4 in patients with WHIM syndrome 1, or identification of distinct molecular pathways driving the core phenotypes of both diseases. _(variant: Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in the coding region of CXCR4 that are not associated with WHIM syndrome.)_\n\n**Why it matters:** Understanding the shared role of the CXCR4 signaling pathway in both vascular development and immune cell regulation could lead to novel therapeutic strategies targeting this pathway for both rare diseases.\n\n---"
+}

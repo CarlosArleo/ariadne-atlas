@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0008726",
+    "name": "Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013310",
+      "diseaseBName": "congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency",
+      "fitness": 0.7909,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Cytochrome P450 Oxidoreductase (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70391); Steroidogenesis (REACT:R-HSA-70391) —DECREASES→ Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867); Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867) —LEADS_TO→ Disordered steroidogenesis (HP:0003055); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Antley-Bixler syndrome (MONDO:0008726); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Congenital adrenal hyperplasia (MONDO:0013310). Loss-of-function mutations in POR impair its electron transfer activity, which is crucial for multiple P450 enzymes involved in steroidogenesis. This disruption leads to a cascade of effects, including the accumulation of steroid precursors and a deficiency in downstream steroid hormones, manifesting as disordered steroidogenesis, Antley-Bixler syndrome, and congenital adrenal hyperplasia.",
+      "mechanism_narrative": "Cytochrome P450 Oxidoreductase (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70391); Steroidogenesis (REACT:R-HSA-70391) —DECREASES→ Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867); Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867) —LEADS_TO→ Disordered steroidogenesis (HP:0003055); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Antley-Bixler syndrome (MONDO:0008726); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Congenital adrenal hyperplasia (MONDO:0013310). Loss-of-function mutations in POR impair its electron transfer activity, which is crucial for multiple P450 enzymes involved in steroidogenesis. This disruption leads to a cascade of effects, including the accumulation of steroid precursors and a deficiency in downstream steroid hormones, manifesting as disordered steroidogenesis, Antley-Bixler syndrome, and congenital adrenal hyperplasia.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic loss-of-function variants in POR who do not exhibit disordered steroidogenesis or features of Antley-Bixler syndrome or congenital adrenal hyperplasia.",
+        "gnomad_variant": "Exclusion of pathogenic variants in gnomAD with allele frequency > 0.1%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211897"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013310",
+        "diseaseBName": "congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211897"
+        ],
+        "fitness": 0.7909,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Cytochrome P450 Oxidoreductase (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70391); Steroidogenesis (REACT:R-HSA-70391) —DECREASES→ Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867); Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867) —LEADS_TO→ Disordered steroidogenesis (HP:0003055); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Antley-Bixler syndrome (MONDO:0008726); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Congenital adrenal hyperplasia (MONDO:0013310). Loss-of-function mutations in POR impair its electron transfer activity, which is crucial for multiple P450 enzymes involved in steroidogenesis. This disruption leads to a cascade of effects, including the accumulation of steroid precursors and a deficiency in downstream steroid hormones, manifesting as disordered steroidogenesis, Antley-Bixler syndrome, and congenital adrenal hyperplasia.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic loss-of-function variants in POR who do not exhibit disordered steroidogenesis or features of Antley-Bixler syndrome or congenital adrenal hyperplasia.",
+          "gnomad_variant": "Exclusion of pathogenic variants in gnomAD with allele frequency > 0.1%"
+        },
+        "translational": "Understanding the shared role of POR in both syndromes highlights potential therapeutic targets for managing steroidogenesis defects. For example, strategies aimed at improving POR activity or bypassing its function could offer benefits for patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T07:22:59.138Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis (MONDO:0008726)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency (MONDO:0013310) | shared pathway | Tier 1 | 0.791 | Reactome:R-HSA-211897 |\n\n### CANDIDATE DETAIL\n#### 1. congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.791)\n**Link type:** shared pathway (Reactome:R-HSA-211897)\n\n**Proposed mechanism:** Cytochrome P450 Oxidoreductase (HGNC:9208) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-70391); Steroidogenesis (REACT:R-HSA-70391) —DECREASES→ Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867); Steroid hormone precursors (e.g., cholesterol, pregnenolone, progesterone) (CHEBI:33867) —LEADS_TO→ Disordered steroidogenesis (HP:0003055); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Antley-Bixler syndrome (MONDO:0008726); Disordered steroidogenesis (HP:0003055) —LEADS_TO→ Congenital adrenal hyperplasia (MONDO:0013310). Loss-of-function mutations in POR impair its electron transfer activity, which is crucial for multiple P450 enzymes involved in steroidogenesis. This disruption leads to a cascade of effects, including the accumulation of steroid precursors and a deficiency in downstream steroid hormones, manifesting as disordered steroidogenesis, Antley-Bixler syndrome, and congenital adrenal hyperplasia.\n\n**How to falsify it:** Identification of individuals with pathogenic loss-of-function variants in POR who do not exhibit disordered steroidogenesis or features of Antley-Bixler syndrome or congenital adrenal hyperplasia. _(variant: Exclusion of pathogenic variants in gnomAD with allele frequency > 0.1%)_\n\n**Why it matters:** Understanding the shared role of POR in both syndromes highlights potential therapeutic targets for managing steroidogenesis defects. For example, strategies aimed at improving POR activity or bypassing its function could offer benefits for patients with either condition.\n\n---"
+}

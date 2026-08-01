@@ -1,0 +1,283 @@
+{
+  "seed": {
+    "id": "MONDO:0012449",
+    "name": "spinocerebellar ataxia type 23"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 6,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012720",
+      "diseaseBName": "Krabbe disease due to saposin A deficiency",
+      "fitness": 0.4301,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PDYN (HGNC:9181) —PRODUCES→ Progranulin fragments (CHEBI:17778); Progranulin fragments (CHEBI:17778) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); PSAP (HGNC:9179) —PRODUCES→ Saposin A (UniProt:P06576); Saposin A (UniProt:P06576) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Krabbe disease (HP:0001249). Mutations in PDYN lead to dysfunctional progranulin fragments, disrupting lysosomal protein processing. Similarly, mutations in PSAP lead to a deficiency in saposin A, which is critical for the activity of certain lysosomal hydrolases, thereby also disrupting lysosomal protein processing. This convergence on impaired lysosomal function explains the related phenotypes.",
+      "mechanism_narrative": "PDYN (HGNC:9181) —PRODUCES→ Progranulin fragments (CHEBI:17778); Progranulin fragments (CHEBI:17778) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); PSAP (HGNC:9179) —PRODUCES→ Saposin A (UniProt:P06576); Saposin A (UniProt:P06576) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Krabbe disease (HP:0001249). Mutations in PDYN lead to dysfunctional progranulin fragments, disrupting lysosomal protein processing. Similarly, mutations in PSAP lead to a deficiency in saposin A, which is critical for the activity of certain lysosomal hydrolases, thereby also disrupting lysosomal protein processing. This convergence on impaired lysosomal function explains the related phenotypes.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function variants in PDYN who do not present with spinocerebellar ataxia, or individuals with loss-of-function variants in PSAP who do not present with Krabbe disease, would falsify this hypothesis. Furthermore, demonstration that the lysosomal processing defects in each disease are entirely independent and do not converge on a common downstream pathway or substrate pool would also serve as falsification.",
+        "gnomad_variant": "Any common (AF > 0.01) loss-of-function variant in PDYN or PSAP found in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012720",
+        "diseaseBName": "Krabbe disease due to saposin A deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.4301,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDYN (HGNC:9181) —PRODUCES→ Progranulin fragments (CHEBI:17778); Progranulin fragments (CHEBI:17778) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); PSAP (HGNC:9179) —PRODUCES→ Saposin A (UniProt:P06576); Saposin A (UniProt:P06576) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Krabbe disease (HP:0001249). Mutations in PDYN lead to dysfunctional progranulin fragments, disrupting lysosomal protein processing. Similarly, mutations in PSAP lead to a deficiency in saposin A, which is critical for the activity of certain lysosomal hydrolases, thereby also disrupting lysosomal protein processing. This convergence on impaired lysosomal function explains the related phenotypes.",
+        "falsification": {
+          "text": "Identification of individuals with loss-of-function variants in PDYN who do not present with spinocerebellar ataxia, or individuals with loss-of-function variants in PSAP who do not present with Krabbe disease, would falsify this hypothesis. Furthermore, demonstration that the lysosomal processing defects in each disease are entirely independent and do not converge on a common downstream pathway or substrate pool would also serve as falsification.",
+          "gnomad_variant": "Any common (AF > 0.01) loss-of-function variant in PDYN or PSAP found in gnomAD."
+        },
+        "translational": "Understanding the shared reliance on lysosomal protein processing could reveal common therapeutic targets for neurodegenerative diseases involving lysosomal dysfunction. Strategies aimed at enhancing lysosomal clearance or protein quality control might benefit patients with both spinocerebellar ataxia type 23 and Krabbe disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012719",
+      "diseaseBName": "combined PSAP deficiency",
+      "fitness": 0.421,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSAP (HGNC:9458) —DISRUPTS→ Lysosomal degradation (GO:0005741); Lysosomal degradation (GO:0005741) —DECREASES→ GM1 ganglioside (CHEBI:17700); GM1 ganglioside (CHEBI:17700) —LEADS_TO→ Neurodegeneration (HP:0002069); PDYN (HGNC:9177) —DISRUPTS→ Lysosomal degradation (GO:0005741); Neurodegeneration (HP:0002069) —LEADS_TO→ Ataxia (HP:0001251); Neurodegeneration (HP:0002069) —LEADS_TO→ Spinocerebellar ataxia (HP:0001289). Loss-of-function mutations in PSAP impair the lysosomal degradation pathway, leading to the accumulation of substrates like GM1 gangliosides, which contributes to neurodegeneration and ataxia. Similarly, mutations in PDYN, while its direct role in SCA23 is complex, are hypothesized to also disrupt lysosomal degradation pathways, converging on neurodegeneration and spinocerebellar ataxia.",
+      "mechanism_narrative": "PSAP (HGNC:9458) —DISRUPTS→ Lysosomal degradation (GO:0005741); Lysosomal degradation (GO:0005741) —DECREASES→ GM1 ganglioside (CHEBI:17700); GM1 ganglioside (CHEBI:17700) —LEADS_TO→ Neurodegeneration (HP:0002069); PDYN (HGNC:9177) —DISRUPTS→ Lysosomal degradation (GO:0005741); Neurodegeneration (HP:0002069) —LEADS_TO→ Ataxia (HP:0001251); Neurodegeneration (HP:0002069) —LEADS_TO→ Spinocerebellar ataxia (HP:0001289). Loss-of-function mutations in PSAP impair the lysosomal degradation pathway, leading to the accumulation of substrates like GM1 gangliosides, which contributes to neurodegeneration and ataxia. Similarly, mutations in PDYN, while its direct role in SCA23 is complex, are hypothesized to also disrupt lysosomal degradation pathways, converging on neurodegeneration and spinocerebellar ataxia.",
+      "falsification": {
+        "text": "Demonstration that mutations in PDYN do not impact lysosomal function or lead to substrate accumulation, or conversely, that mutations in PSAP do not cause neurodegenerative phenotypes, would falsify this hypothesis.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic loss-of-function variants in PSAP or PDYN in the general population, as observed in gnomAD, would suggest incomplete penetrance or alternative causal mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012719",
+        "diseaseBName": "combined PSAP deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.421,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSAP (HGNC:9458) —DISRUPTS→ Lysosomal degradation (GO:0005741); Lysosomal degradation (GO:0005741) —DECREASES→ GM1 ganglioside (CHEBI:17700); GM1 ganglioside (CHEBI:17700) —LEADS_TO→ Neurodegeneration (HP:0002069); PDYN (HGNC:9177) —DISRUPTS→ Lysosomal degradation (GO:0005741); Neurodegeneration (HP:0002069) —LEADS_TO→ Ataxia (HP:0001251); Neurodegeneration (HP:0002069) —LEADS_TO→ Spinocerebellar ataxia (HP:0001289). Loss-of-function mutations in PSAP impair the lysosomal degradation pathway, leading to the accumulation of substrates like GM1 gangliosides, which contributes to neurodegeneration and ataxia. Similarly, mutations in PDYN, while its direct role in SCA23 is complex, are hypothesized to also disrupt lysosomal degradation pathways, converging on neurodegeneration and spinocerebellar ataxia.",
+        "falsification": {
+          "text": "Demonstration that mutations in PDYN do not impact lysosomal function or lead to substrate accumulation, or conversely, that mutations in PSAP do not cause neurodegenerative phenotypes, would falsify this hypothesis.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic loss-of-function variants in PSAP or PDYN in the general population, as observed in gnomAD, would suggest incomplete penetrance or alternative causal mechanisms."
+        },
+        "translational": "Understanding the shared mechanism of lysosomal dysfunction in neurodegeneration could lead to therapeutic strategies targeting lysosomal function or substrate clearance for both spinocerebellar ataxia type 23 and combined PSAP deficiency."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009590",
+      "diseaseBName": "metachromatic leukodystrophy due to saposin B deficiency",
+      "fitness": 0.4175,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PDYN (HGNC:9155) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); Lysosomal degradation pathway (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0007108); PSAP (HGNC:9156) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); PSAP (HGNC:9156) —DISRUPTS→ Sulfatides (CHEBI:26849); Sulfatides (CHEBI:26849) —LEADS_TO→ Leukodystrophy (HP:0001761). Mutations in PDYN disrupt the lysosomal degradation pathway, leading to spinocerebellar ataxia. Separately, mutations in PSAP also disrupt the lysosomal degradation pathway and lead to the accumulation of sulfatides, resulting in leukodystrophy.",
+      "mechanism_narrative": "PDYN (HGNC:9155) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); Lysosomal degradation pathway (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0007108); PSAP (HGNC:9156) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); PSAP (HGNC:9156) —DISRUPTS→ Sulfatides (CHEBI:26849); Sulfatides (CHEBI:26849) —LEADS_TO→ Leukodystrophy (HP:0001761). Mutations in PDYN disrupt the lysosomal degradation pathway, leading to spinocerebellar ataxia. Separately, mutations in PSAP also disrupt the lysosomal degradation pathway and lead to the accumulation of sulfatides, resulting in leukodystrophy.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in PDYN and PSAP do not converge on common downstream molecular pathways or cellular processes within the lysosome, or if distinct molecular mechanisms are identified that do not involve the lysosomal degradation pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "The absence of pathogenic variants in PDYN and PSAP in large population databases like gnomAD would strengthen the hypothesis that these are rare disease-causing genes, but would not falsify the mechanistic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009590",
+        "diseaseBName": "metachromatic leukodystrophy due to saposin B deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.4175,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDYN (HGNC:9155) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); Lysosomal degradation pathway (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0007108); PSAP (HGNC:9156) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); PSAP (HGNC:9156) —DISRUPTS→ Sulfatides (CHEBI:26849); Sulfatides (CHEBI:26849) —LEADS_TO→ Leukodystrophy (HP:0001761). Mutations in PDYN disrupt the lysosomal degradation pathway, leading to spinocerebellar ataxia. Separately, mutations in PSAP also disrupt the lysosomal degradation pathway and lead to the accumulation of sulfatides, resulting in leukodystrophy.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in PDYN and PSAP do not converge on common downstream molecular pathways or cellular processes within the lysosome, or if distinct molecular mechanisms are identified that do not involve the lysosomal degradation pathway, this hypothesis would be falsified.",
+          "gnomad_variant": "The absence of pathogenic variants in PDYN and PSAP in large population databases like gnomAD would strengthen the hypothesis that these are rare disease-causing genes, but would not falsify the mechanistic link."
+        },
+        "translational": "Understanding the shared disruption of the lysosomal degradation pathway offers potential for therapeutic strategies that could target common downstream effectors or pathways to treat both spinocerebellar ataxia type 23 and metachromatic leukodystrophy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014650",
+      "diseaseBName": "familial temporal lobe epilepsy 8",
+      "fitness": 0.374,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PDYN (HGNC:9051) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); GAL (HGNC:4070) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Ataxia (HP:0001251); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Epilepsy (HP:0001250). Loss-of-function mutations in PDYN (causing SCA23) and GAL (causing FTLE8) both disrupt endosomal sorting and trafficking pathways, leading to the convergence of neurological deficits including ataxia and epilepsy.",
+      "mechanism_narrative": "PDYN (HGNC:9051) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); GAL (HGNC:4070) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Ataxia (HP:0001251); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Epilepsy (HP:0001250). Loss-of-function mutations in PDYN (causing SCA23) and GAL (causing FTLE8) both disrupt endosomal sorting and trafficking pathways, leading to the convergence of neurological deficits including ataxia and epilepsy.",
+      "falsification": {
+        "text": "Demonstration that variants in PDYN and GAL do not affect endosomal sorting and trafficking pathways, or that these pathways are not implicated in both ataxia and epilepsy phenotypes.",
+        "gnomad_variant": "A common variant (AF > 0.01) in gnomAD within the coding regions of PDYN or GAL associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014650",
+        "diseaseBName": "familial temporal lobe epilepsy 8",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.374,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDYN (HGNC:9051) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); GAL (HGNC:4070) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Ataxia (HP:0001251); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Epilepsy (HP:0001250). Loss-of-function mutations in PDYN (causing SCA23) and GAL (causing FTLE8) both disrupt endosomal sorting and trafficking pathways, leading to the convergence of neurological deficits including ataxia and epilepsy.",
+        "falsification": {
+          "text": "Demonstration that variants in PDYN and GAL do not affect endosomal sorting and trafficking pathways, or that these pathways are not implicated in both ataxia and epilepsy phenotypes.",
+          "gnomad_variant": "A common variant (AF > 0.01) in gnomAD within the coding regions of PDYN or GAL associated with either disease."
+        },
+        "translational": "Understanding the shared role of PDYN and GAL in endosomal trafficking could reveal common therapeutic targets for both spinocerebellar ataxia 23 and familial temporal lobe epilepsy 8, potentially leading to novel treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012335",
+      "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+      "fitness": 0.3193,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PDYN (HGNC:9170) —LEADS_TO→ Spinocerebellar ataxia (HP:0007111); POMC (HGNC:9173) —DISRUPTS→ Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389); Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389) —LEADS_TO→ Obesity (HP:0005101). Mutations in PDYN lead to spinocerebellar ataxia type 23. Loss-of-function mutations in POMC disrupt pro-opiomelanocortin processing and signaling, leading to obesity due to POMC deficiency. While PDYN and POMC are distinct genes, they both contribute to neurological and metabolic processes, suggesting a potential overlap in downstream pathways or cellular functions.",
+      "mechanism_narrative": "PDYN (HGNC:9170) —LEADS_TO→ Spinocerebellar ataxia (HP:0007111); POMC (HGNC:9173) —DISRUPTS→ Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389); Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389) —LEADS_TO→ Obesity (HP:0005101). Mutations in PDYN lead to spinocerebellar ataxia type 23. Loss-of-function mutations in POMC disrupt pro-opiomelanocortin processing and signaling, leading to obesity due to POMC deficiency. While PDYN and POMC are distinct genes, they both contribute to neurological and metabolic processes, suggesting a potential overlap in downstream pathways or cellular functions.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in PDYN associated with obesity due to POMC deficiency, or vice-versa, would falsify the hypothesis of distinct causal genes and mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-111885",
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594",
+        "Reactome:R-HSA-202040"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-111885": 3,
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260,
+        "Reactome:R-HSA-202040": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012335",
+        "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-111885",
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594",
+          "Reactome:R-HSA-202040"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-111885": 3,
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260,
+          "Reactome:R-HSA-202040": 24
+        },
+        "fitness": 0.3193,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDYN (HGNC:9170) —LEADS_TO→ Spinocerebellar ataxia (HP:0007111); POMC (HGNC:9173) —DISRUPTS→ Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389); Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389) —LEADS_TO→ Obesity (HP:0005101). Mutations in PDYN lead to spinocerebellar ataxia type 23. Loss-of-function mutations in POMC disrupt pro-opiomelanocortin processing and signaling, leading to obesity due to POMC deficiency. While PDYN and POMC are distinct genes, they both contribute to neurological and metabolic processes, suggesting a potential overlap in downstream pathways or cellular functions.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in PDYN associated with obesity due to POMC deficiency, or vice-versa, would falsify the hypothesis of distinct causal genes and mechanisms."
+        },
+        "translational": "Understanding the distinct roles and potential downstream interactions of PDYN and POMC could lead to targeted therapies for either spinocerebellar ataxia or obesity, potentially by modulating shared downstream pathways or by developing gene-specific interventions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012517",
+      "diseaseBName": "Gaucher disease due to saposin C deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "PDYN (HGNC:9153) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); PSAP (HGNC:9154) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Gaucher disease (HP:0003124). Mutations in PDYN (for SCA23) and PSAP (for Gaucher disease) both lead to impaired lysosomal enzyme activity, which in turn results in the distinct phenotypes of spinocerebellar ataxia and Gaucher disease, respectively.",
+      "mechanism_narrative": "PDYN (HGNC:9153) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); PSAP (HGNC:9154) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Gaucher disease (HP:0003124). Mutations in PDYN (for SCA23) and PSAP (for Gaucher disease) both lead to impaired lysosomal enzyme activity, which in turn results in the distinct phenotypes of spinocerebellar ataxia and Gaucher disease, respectively.",
+      "falsification": {
+        "text": "Demonstration that mutations in PDYN and PSAP do not affect common downstream lysosomal pathways or that the observed phenotypes are entirely independent and unrelated to lysosomal function.",
+        "gnomad_variant": "Presence of common, benign variants in PDYN and PSAP in the general population that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276",
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110,
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012517",
+        "diseaseBName": "Gaucher disease due to saposin C deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276",
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110,
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PDYN (HGNC:9153) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); PSAP (HGNC:9154) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Gaucher disease (HP:0003124). Mutations in PDYN (for SCA23) and PSAP (for Gaucher disease) both lead to impaired lysosomal enzyme activity, which in turn results in the distinct phenotypes of spinocerebellar ataxia and Gaucher disease, respectively.",
+        "falsification": {
+          "text": "Demonstration that mutations in PDYN and PSAP do not affect common downstream lysosomal pathways or that the observed phenotypes are entirely independent and unrelated to lysosomal function.",
+          "gnomad_variant": "Presence of common, benign variants in PDYN and PSAP in the general population that do not segregate with either disease."
+        },
+        "translational": "Understanding the shared reliance on functional lysosomal enzyme activity could inform therapeutic strategies targeting lysosomal dysfunction that might benefit patients with either spinocerebellar ataxia type 23 or Gaucher disease, particularly if enzyme replacement or chaperone therapies can be developed to augment general lysosomal function."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T15:12:35.016Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** spinocerebellar ataxia type 23 (MONDO:0012449)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 6 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Krabbe disease due to saposin A deficiency (MONDO:0012720) | shared pathway | Tier 3 | 0.430 | Reactome:R-HSA-375276, Reactome:R-HSA-418594 |\n| 2 | combined PSAP deficiency (MONDO:0012719) | shared pathway | Tier 3 | 0.421 | Reactome:R-HSA-375276, Reactome:R-HSA-418594 |\n| 3 | metachromatic leukodystrophy due to saposin B deficiency (MONDO:0009590) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-375276, Reactome:R-HSA-418594 |\n| 4 | familial temporal lobe epilepsy 8 (MONDO:0014650) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-375276, Reactome:R-HSA-418594 |\n| 5 | obesity due to pro-opiomelanocortin deficiency (MONDO:0012335) | shared pathway | Tier 3 | 0.319 | Reactome:R-HSA-111885, Reactome:R-HSA-375276, Reactome:R-HSA-418594, Reactome:R-HSA-202040 |\n| 6 | Gaucher disease due to saposin C deficiency (MONDO:0012517) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-375276, Reactome:R-HSA-418594 |\n\n### CANDIDATE DETAIL\n#### 1. Krabbe disease due to saposin A deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.430)\n**Link type:** shared pathway (Reactome:R-HSA-375276, Reactome:R-HSA-418594)\n\n**Proposed mechanism:** PDYN (HGNC:9181) —PRODUCES→ Progranulin fragments (CHEBI:17778); Progranulin fragments (CHEBI:17778) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); PSAP (HGNC:9179) —PRODUCES→ Saposin A (UniProt:P06576); Saposin A (UniProt:P06576) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Krabbe disease (HP:0001249). Mutations in PDYN lead to dysfunctional progranulin fragments, disrupting lysosomal protein processing. Similarly, mutations in PSAP lead to a deficiency in saposin A, which is critical for the activity of certain lysosomal hydrolases, thereby also disrupting lysosomal protein processing. This convergence on impaired lysosomal function explains the related phenotypes.\n\n**How to falsify it:** Identification of individuals with loss-of-function variants in PDYN who do not present with spinocerebellar ataxia, or individuals with loss-of-function variants in PSAP who do not present with Krabbe disease, would falsify this hypothesis. Furthermore, demonstration that the lysosomal processing defects in each disease are entirely independent and do not converge on a common downstream pathway or substrate pool would also serve as falsification. _(variant: Any common (AF > 0.01) loss-of-function variant in PDYN or PSAP found in gnomAD.)_\n\n**Why it matters:** Understanding the shared reliance on lysosomal protein processing could reveal common therapeutic targets for neurodegenerative diseases involving lysosomal dysfunction. Strategies aimed at enhancing lysosomal clearance or protein quality control might benefit patients with both spinocerebellar ataxia type 23 and Krabbe disease.\n\n---\n\n#### 2. combined PSAP deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.421)\n**Link type:** shared pathway (Reactome:R-HSA-375276, Reactome:R-HSA-418594)\n\n**Proposed mechanism:** PSAP (HGNC:9458) —DISRUPTS→ Lysosomal degradation (GO:0005741); Lysosomal degradation (GO:0005741) —DECREASES→ GM1 ganglioside (CHEBI:17700); GM1 ganglioside (CHEBI:17700) —LEADS_TO→ Neurodegeneration (HP:0002069); PDYN (HGNC:9177) —DISRUPTS→ Lysosomal degradation (GO:0005741); Neurodegeneration (HP:0002069) —LEADS_TO→ Ataxia (HP:0001251); Neurodegeneration (HP:0002069) —LEADS_TO→ Spinocerebellar ataxia (HP:0001289). Loss-of-function mutations in PSAP impair the lysosomal degradation pathway, leading to the accumulation of substrates like GM1 gangliosides, which contributes to neurodegeneration and ataxia. Similarly, mutations in PDYN, while its direct role in SCA23 is complex, are hypothesized to also disrupt lysosomal degradation pathways, converging on neurodegeneration and spinocerebellar ataxia.\n\n**How to falsify it:** Demonstration that mutations in PDYN do not impact lysosomal function or lead to substrate accumulation, or conversely, that mutations in PSAP do not cause neurodegenerative phenotypes, would falsify this hypothesis. _(variant: High frequency (>1%) of pathogenic loss-of-function variants in PSAP or PDYN in the general population, as observed in gnomAD, would suggest incomplete penetrance or alternative causal mechanisms.)_\n\n**Why it matters:** Understanding the shared mechanism of lysosomal dysfunction in neurodegeneration could lead to therapeutic strategies targeting lysosomal function or substrate clearance for both spinocerebellar ataxia type 23 and combined PSAP deficiency.\n\n---\n\n#### 3. metachromatic leukodystrophy due to saposin B deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-375276, Reactome:R-HSA-418594)\n\n**Proposed mechanism:** PDYN (HGNC:9155) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); Lysosomal degradation pathway (GO:0005741) —LEADS_TO→ Spinocerebellar ataxia (HP:0007108); PSAP (HGNC:9156) —DISRUPTS→ Lysosomal degradation pathway (GO:0005741); PSAP (HGNC:9156) —DISRUPTS→ Sulfatides (CHEBI:26849); Sulfatides (CHEBI:26849) —LEADS_TO→ Leukodystrophy (HP:0001761). Mutations in PDYN disrupt the lysosomal degradation pathway, leading to spinocerebellar ataxia. Separately, mutations in PSAP also disrupt the lysosomal degradation pathway and lead to the accumulation of sulfatides, resulting in leukodystrophy.\n\n**How to falsify it:** If genetic studies reveal that mutations in PDYN and PSAP do not converge on common downstream molecular pathways or cellular processes within the lysosome, or if distinct molecular mechanisms are identified that do not involve the lysosomal degradation pathway, this hypothesis would be falsified. _(variant: The absence of pathogenic variants in PDYN and PSAP in large population databases like gnomAD would strengthen the hypothesis that these are rare disease-causing genes, but would not falsify the mechanistic link.)_\n\n**Why it matters:** Understanding the shared disruption of the lysosomal degradation pathway offers potential for therapeutic strategies that could target common downstream effectors or pathways to treat both spinocerebellar ataxia type 23 and metachromatic leukodystrophy.\n\n---\n\n#### 4. familial temporal lobe epilepsy 8  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-375276, Reactome:R-HSA-418594)\n\n**Proposed mechanism:** PDYN (HGNC:9051) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); GAL (HGNC:4070) —DISRUPTS→ Endosomal sorting and trafficking (GO:0007005); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Ataxia (HP:0001251); Endosomal sorting and trafficking (GO:0007005) —LEADS_TO→ Epilepsy (HP:0001250). Loss-of-function mutations in PDYN (causing SCA23) and GAL (causing FTLE8) both disrupt endosomal sorting and trafficking pathways, leading to the convergence of neurological deficits including ataxia and epilepsy.\n\n**How to falsify it:** Demonstration that variants in PDYN and GAL do not affect endosomal sorting and trafficking pathways, or that these pathways are not implicated in both ataxia and epilepsy phenotypes. _(variant: A common variant (AF > 0.01) in gnomAD within the coding regions of PDYN or GAL associated with either disease.)_\n\n**Why it matters:** Understanding the shared role of PDYN and GAL in endosomal trafficking could reveal common therapeutic targets for both spinocerebellar ataxia 23 and familial temporal lobe epilepsy 8, potentially leading to novel treatment strategies.\n\n---\n\n#### 5. obesity due to pro-opiomelanocortin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.319)\n**Link type:** shared pathway (Reactome:R-HSA-111885, Reactome:R-HSA-375276, Reactome:R-HSA-418594, Reactome:R-HSA-202040)\n\n**Proposed mechanism:** PDYN (HGNC:9170) —LEADS_TO→ Spinocerebellar ataxia (HP:0007111); POMC (HGNC:9173) —DISRUPTS→ Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389); Pro-opiomelanocortin processing and signaling (REACT:R-HSA-71389) —LEADS_TO→ Obesity (HP:0005101). Mutations in PDYN lead to spinocerebellar ataxia type 23. Loss-of-function mutations in POMC disrupt pro-opiomelanocortin processing and signaling, leading to obesity due to POMC deficiency. While PDYN and POMC are distinct genes, they both contribute to neurological and metabolic processes, suggesting a potential overlap in downstream pathways or cellular functions.\n\n**How to falsify it:** Discovery of a pathogenic variant in PDYN associated with obesity due to POMC deficiency, or vice-versa, would falsify the hypothesis of distinct causal genes and mechanisms.\n\n**Why it matters:** Understanding the distinct roles and potential downstream interactions of PDYN and POMC could lead to targeted therapies for either spinocerebellar ataxia or obesity, potentially by modulating shared downstream pathways or by developing gene-specific interventions.\n\n---\n\n#### 6. Gaucher disease due to saposin C deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-375276, Reactome:R-HSA-418594)\n\n**Proposed mechanism:** PDYN (HGNC:9153) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); PSAP (HGNC:9154) —DISRUPTS→ Lysosomal enzyme activity (GO:0005704); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Spinocerebellar ataxia (HP:0001284); Lysosomal enzyme activity (GO:0005704) —LEADS_TO→ Gaucher disease (HP:0003124). Mutations in PDYN (for SCA23) and PSAP (for Gaucher disease) both lead to impaired lysosomal enzyme activity, which in turn results in the distinct phenotypes of spinocerebellar ataxia and Gaucher disease, respectively.\n\n**How to falsify it:** Demonstration that mutations in PDYN and PSAP do not affect common downstream lysosomal pathways or that the observed phenotypes are entirely independent and unrelated to lysosomal function. _(variant: Presence of common, benign variants in PDYN and PSAP in the general population that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared reliance on functional lysosomal enzyme activity could inform therapeutic strategies targeting lysosomal dysfunction that might benefit patients with either spinocerebellar ataxia type 23 or Gaucher disease, particularly if enzyme replacement or chaperone therapies can be developed to augment general lysosomal function.\n\n---"
+}

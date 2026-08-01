@@ -1,0 +1,697 @@
+{
+  "seed": {
+    "id": "MONDO:0008840",
+    "name": "ataxia telangiectasia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 30,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0054748",
+      "diseaseBName": "Fanconi anemia, complementation group S",
+      "fitness": 0.4751,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Homologous recombination (GO:0000746); ATM (HGNC:795) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —LEADS_TO→ Telangiectasia (HP:0001306); BRCA1 (HGNC:1100) —LEADS_TO→ Anemia (HP:0001878); BRCA1 (HGNC:1100) —LEADS_TO→ Bone marrow failure (HP:0001880). Mutations in ATM (causing ataxia telangiectasia) and BRCA1 (a key gene in the Fanconi anemia pathway, thus relevant to FA complementation group S) both impair DNA double-strand break repair. This leads to a convergence on the homologous recombination pathway, which, when disrupted, results in genomic instability and the characteristic phenotypes of each disease.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Homologous recombination (GO:0000746); ATM (HGNC:795) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —LEADS_TO→ Telangiectasia (HP:0001306); BRCA1 (HGNC:1100) —LEADS_TO→ Anemia (HP:0001878); BRCA1 (HGNC:1100) —LEADS_TO→ Bone marrow failure (HP:0001880). Mutations in ATM (causing ataxia telangiectasia) and BRCA1 (a key gene in the Fanconi anemia pathway, thus relevant to FA complementation group S) both impair DNA double-strand break repair. This leads to a convergence on the homologous recombination pathway, which, when disrupted, results in genomic instability and the characteristic phenotypes of each disease.",
+      "falsification": {
+        "text": "If experimental evidence demonstrates that ATM and BRCA1 function in entirely independent and non-interacting DNA repair sub-pathways that do not converge at any common molecular or cellular level, this hypothesis would be falsified. Specifically, if mutations in ATM do not impact homologous recombination or related DNA repair processes, or if BRCA1 mutations do not similarly affect double-strand break repair, the proposed link would be invalidated.",
+        "gnomad_variant": "Presence of common pathogenic variants (AF > 0.01) in both ATM and BRCA1 in the general population, which would suggest a less specific role in rare disease etiology."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693565": 78,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693571": 68,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6796648": 62,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054748",
+        "diseaseBName": "Fanconi anemia, complementation group S",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693565": 78,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693571": 68,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6796648": 62,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.4751,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Homologous recombination (GO:0000746); ATM (HGNC:795) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —LEADS_TO→ Telangiectasia (HP:0001306); BRCA1 (HGNC:1100) —LEADS_TO→ Anemia (HP:0001878); BRCA1 (HGNC:1100) —LEADS_TO→ Bone marrow failure (HP:0001880). Mutations in ATM (causing ataxia telangiectasia) and BRCA1 (a key gene in the Fanconi anemia pathway, thus relevant to FA complementation group S) both impair DNA double-strand break repair. This leads to a convergence on the homologous recombination pathway, which, when disrupted, results in genomic instability and the characteristic phenotypes of each disease.",
+        "falsification": {
+          "text": "If experimental evidence demonstrates that ATM and BRCA1 function in entirely independent and non-interacting DNA repair sub-pathways that do not converge at any common molecular or cellular level, this hypothesis would be falsified. Specifically, if mutations in ATM do not impact homologous recombination or related DNA repair processes, or if BRCA1 mutations do not similarly affect double-strand break repair, the proposed link would be invalidated.",
+          "gnomad_variant": "Presence of common pathogenic variants (AF > 0.01) in both ATM and BRCA1 in the general population, which would suggest a less specific role in rare disease etiology."
+        },
+        "translational": "Understanding the shared reliance of these two diseases on robust DNA repair mechanisms, particularly homologous recombination, could reveal therapeutic targets. For instance, drugs that enhance DNA repair or exploit the vulnerabilities created by repair defects might be applicable to both conditions, or specific contexts within them. Furthermore, shared pathway defects suggest potential for biomarker development or genotype-phenotype correlations that could guide personalized treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020628",
+      "diseaseBName": "microcephaly, growth restriction, and increased sister chromatid exchange 2",
+      "fitness": 0.4429,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11890) —DISRUPTS→ Sister chromatid exchange regulation (GO:0000717); Sister chromatid exchange regulation (GO:0000717) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Microcephaly (HP:0000252); Genome stability maintenance (GO:0000747) —LEADS_TO→ Growth restriction (HP:0001510); Genome stability maintenance (GO:0000747) —LEADS_TO→ Increased sister chromatid exchange (HP:0030700). Loss-of-function mutations in ATM disrupt DNA double-strand break repair, leading to compromised genome stability. Similarly, loss-of-function mutations in TOP3A disrupt sister chromatid exchange regulation, also contributing to compromised genome stability. This shared pathway of genome stability maintenance leads to the distinct but overlapping phenotypes of ataxia, microcephaly, growth restriction, and increased sister chromatid exchange.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11890) —DISRUPTS→ Sister chromatid exchange regulation (GO:0000717); Sister chromatid exchange regulation (GO:0000717) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Microcephaly (HP:0000252); Genome stability maintenance (GO:0000747) —LEADS_TO→ Growth restriction (HP:0001510); Genome stability maintenance (GO:0000747) —LEADS_TO→ Increased sister chromatid exchange (HP:0030700). Loss-of-function mutations in ATM disrupt DNA double-strand break repair, leading to compromised genome stability. Similarly, loss-of-function mutations in TOP3A disrupt sister chromatid exchange regulation, also contributing to compromised genome stability. This shared pathway of genome stability maintenance leads to the distinct but overlapping phenotypes of ataxia, microcephaly, growth restriction, and increased sister chromatid exchange.",
+      "falsification": {
+        "text": "Absence of mutations in ATM or TOP3A in individuals diagnosed with ataxia telangiectasia or microcephaly, growth restriction, and increased sister chromatid exchange 2, respectively, or identification of distinct molecular pathways not involving genome stability maintenance as the primary driver for each disease.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD in the coding regions of ATM or TOP3A that do not segregate with disease in affected families."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020628",
+        "diseaseBName": "microcephaly, growth restriction, and increased sister chromatid exchange 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.4429,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11890) —DISRUPTS→ Sister chromatid exchange regulation (GO:0000717); Sister chromatid exchange regulation (GO:0000717) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Microcephaly (HP:0000252); Genome stability maintenance (GO:0000747) —LEADS_TO→ Growth restriction (HP:0001510); Genome stability maintenance (GO:0000747) —LEADS_TO→ Increased sister chromatid exchange (HP:0030700). Loss-of-function mutations in ATM disrupt DNA double-strand break repair, leading to compromised genome stability. Similarly, loss-of-function mutations in TOP3A disrupt sister chromatid exchange regulation, also contributing to compromised genome stability. This shared pathway of genome stability maintenance leads to the distinct but overlapping phenotypes of ataxia, microcephaly, growth restriction, and increased sister chromatid exchange.",
+        "falsification": {
+          "text": "Absence of mutations in ATM or TOP3A in individuals diagnosed with ataxia telangiectasia or microcephaly, growth restriction, and increased sister chromatid exchange 2, respectively, or identification of distinct molecular pathways not involving genome stability maintenance as the primary driver for each disease.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD in the coding regions of ATM or TOP3A that do not segregate with disease in affected families."
+        },
+        "translational": "Understanding the shared reliance on genome stability maintenance pathways for both ataxia telangiectasia and microcephaly, growth restriction, and increased sister chromatid exchange 2 could reveal common therapeutic targets for enhancing DNA repair or mitigating genomic instability, potentially offering cross-disease treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013790",
+      "diseaseBName": "mirror movements 2",
+      "fitness": 0.4394,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); RAD51 (HGNC:9916) —BINDS→ DNA double-strand break repair (GO:0006302); RAD51 (HGNC:9916) —DISRUPTS→ neuronal development (GO:0048598); neuronal development (GO:0048598) —LEADS_TO→ Neuronal migration (HP:0033571); Neuronal migration (HP:0033571) —LEADS_TO→ Mirror movements (HP:0030173). Mutations in ATM disrupt DNA double-strand break repair, leading to ataxia. RAD51, which also participates in DNA repair, is implicated in neuronal development and migration, and its dysfunction leads to mirror movements.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); RAD51 (HGNC:9916) —BINDS→ DNA double-strand break repair (GO:0006302); RAD51 (HGNC:9916) —DISRUPTS→ neuronal development (GO:0048598); neuronal development (GO:0048598) —LEADS_TO→ Neuronal migration (HP:0033571); Neuronal migration (HP:0033571) —LEADS_TO→ Mirror movements (HP:0030173). Mutations in ATM disrupt DNA double-strand break repair, leading to ataxia. RAD51, which also participates in DNA repair, is implicated in neuronal development and migration, and its dysfunction leads to mirror movements.",
+      "falsification": {
+        "text": "Demonstration that ATM and RAD51 do not functionally interact or converge on a common downstream pathway essential for neuronal integrity would falsify this hypothesis. For instance, if mutations in ATM do not affect RAD51-mediated repair or related neuronal processes, the proposed overlap would be weakened.",
+        "gnomad_variant": "Any common variants (AF > 0.01) in the coding regions of ATM or RAD51 in gnomAD that are not associated with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013790",
+        "diseaseBName": "mirror movements 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.4394,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); RAD51 (HGNC:9916) —BINDS→ DNA double-strand break repair (GO:0006302); RAD51 (HGNC:9916) —DISRUPTS→ neuronal development (GO:0048598); neuronal development (GO:0048598) —LEADS_TO→ Neuronal migration (HP:0033571); Neuronal migration (HP:0033571) —LEADS_TO→ Mirror movements (HP:0030173). Mutations in ATM disrupt DNA double-strand break repair, leading to ataxia. RAD51, which also participates in DNA repair, is implicated in neuronal development and migration, and its dysfunction leads to mirror movements.",
+        "falsification": {
+          "text": "Demonstration that ATM and RAD51 do not functionally interact or converge on a common downstream pathway essential for neuronal integrity would falsify this hypothesis. For instance, if mutations in ATM do not affect RAD51-mediated repair or related neuronal processes, the proposed overlap would be weakened.",
+          "gnomad_variant": "Any common variants (AF > 0.01) in the coding regions of ATM or RAD51 in gnomAD that are not associated with either phenotype."
+        },
+        "translational": "Understanding the shared role of DNA repair in distinct neurological disorders could reveal novel therapeutic targets for both Ataxia Telangiectasia and Mirror Movements 2, potentially by modulating DNA repair pathways or supporting neuronal development in response to DNA damage."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012187",
+      "diseaseBName": "Fanconi anemia complementation group J",
+      "fitness": 0.435,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —BINDS→ DNA repair (GO:0006281); BRIP1 (HGNC:23104) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001878). ATM mutations disrupt DNA double-strand break repair, leading to ataxia. BRIP1 mutations also disrupt DNA repair processes, contributing to anemia and increased malignancy risk. Both ATM and BRIP1 are critical for maintaining genome stability through their roles in DNA repair pathways, hence representing a shared module overlap.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —BINDS→ DNA repair (GO:0006281); BRIP1 (HGNC:23104) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001878). ATM mutations disrupt DNA double-strand break repair, leading to ataxia. BRIP1 mutations also disrupt DNA repair processes, contributing to anemia and increased malignancy risk. Both ATM and BRIP1 are critical for maintaining genome stability through their roles in DNA repair pathways, hence representing a shared module overlap.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ATM and BRIP1 in patients with the respective other disease, or demonstration of completely independent molecular pathways that do not converge on general DNA repair or genome stability.",
+        "gnomad_variant": "Pathogenic variants in ATM and BRIP1 are rare in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012187",
+        "diseaseBName": "Fanconi anemia complementation group J",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.435,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —BINDS→ DNA repair (GO:0006281); BRIP1 (HGNC:23104) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001878). ATM mutations disrupt DNA double-strand break repair, leading to ataxia. BRIP1 mutations also disrupt DNA repair processes, contributing to anemia and increased malignancy risk. Both ATM and BRIP1 are critical for maintaining genome stability through their roles in DNA repair pathways, hence representing a shared module overlap.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ATM and BRIP1 in patients with the respective other disease, or demonstration of completely independent molecular pathways that do not converge on general DNA repair or genome stability.",
+          "gnomad_variant": "Pathogenic variants in ATM and BRIP1 are rare in the general population."
+        },
+        "translational": "Understanding the overlap in DNA repair defects between Ataxia Telangiectasia and Fanconi Anemia J can inform therapeutic strategies targeting DNA repair pathways, potentially benefiting patients with either condition. It highlights the critical role of genome stability in preventing diverse clinical manifestations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020845",
+      "diseaseBName": "progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 5",
+      "fitness": 0.432,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11926) —DISRUPTS→ Mitochondrial DNA Maintenance (GO:0000307); Mitochondrial DNA Maintenance (GO:0000307) —DISRUPTS→ Mitochondrial Respiratory Chain Complex Assembly (GO:0098787); Mitochondrial Respiratory Chain Complex Assembly (GO:0098787) —LEADS_TO→ External Ophthalmoplegia (HP:0000600); Mitochondrial DNA Maintenance (GO:0000307) —LEADS_TO→ Mitochondrial DNA Deletion (HP:0031759). Loss-of-function mutations in ATM disrupt the DNA damage response, leading to ataxia. Concurrently, loss-of-function mutations in TOP3A disrupt mitochondrial DNA maintenance, which in turn disrupts mitochondrial respiratory chain complex assembly, leading to mitochondrial DNA deletions and external ophthalmoplegia.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11926) —DISRUPTS→ Mitochondrial DNA Maintenance (GO:0000307); Mitochondrial DNA Maintenance (GO:0000307) —DISRUPTS→ Mitochondrial Respiratory Chain Complex Assembly (GO:0098787); Mitochondrial Respiratory Chain Complex Assembly (GO:0098787) —LEADS_TO→ External Ophthalmoplegia (HP:0000600); Mitochondrial DNA Maintenance (GO:0000307) —LEADS_TO→ Mitochondrial DNA Deletion (HP:0031759). Loss-of-function mutations in ATM disrupt the DNA damage response, leading to ataxia. Concurrently, loss-of-function mutations in TOP3A disrupt mitochondrial DNA maintenance, which in turn disrupts mitochondrial respiratory chain complex assembly, leading to mitochondrial DNA deletions and external ophthalmoplegia.",
+      "falsification": {
+        "text": "The absence of mutations in ATM in patients with progressive external ophthalmoplegia or mutations in TOP3A in patients with ataxia would falsify a direct shared causal gene mechanism, but not necessarily a shared downstream pathway or process."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020845",
+        "diseaseBName": "progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 5",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.432,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11926) —DISRUPTS→ Mitochondrial DNA Maintenance (GO:0000307); Mitochondrial DNA Maintenance (GO:0000307) —DISRUPTS→ Mitochondrial Respiratory Chain Complex Assembly (GO:0098787); Mitochondrial Respiratory Chain Complex Assembly (GO:0098787) —LEADS_TO→ External Ophthalmoplegia (HP:0000600); Mitochondrial DNA Maintenance (GO:0000307) —LEADS_TO→ Mitochondrial DNA Deletion (HP:0031759). Loss-of-function mutations in ATM disrupt the DNA damage response, leading to ataxia. Concurrently, loss-of-function mutations in TOP3A disrupt mitochondrial DNA maintenance, which in turn disrupts mitochondrial respiratory chain complex assembly, leading to mitochondrial DNA deletions and external ophthalmoplegia.",
+        "falsification": {
+          "text": "The absence of mutations in ATM in patients with progressive external ophthalmoplegia or mutations in TOP3A in patients with ataxia would falsify a direct shared causal gene mechanism, but not necessarily a shared downstream pathway or process."
+        },
+        "translational": "Understanding the overlap in cellular pathways affected by ATM and TOP3A mutations could reveal novel therapeutic targets for both ataxia telangiectasia and mitochondrial disorders, potentially through interventions that support DNA repair or enhance mitochondrial function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009622",
+      "diseaseBName": "Jawad syndrome",
+      "fitness": 0.4247,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic ATM variant (null) —DISRUPTS→ ATM (HGNC:792); ATM (HGNC:792) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia (MONDO:0008840); Pathogenic RBBP8 variant (null) —DISRUPTS→ RBBP8 (HGNC:10008); RBBP8 (HGNC:10008) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Jawad Syndrome (MONDO:0009622). Mutations in ATM lead to Ataxia Telangiectasia, while mutations in RBBP8 lead to Jawad Syndrome. Both ATM and RBBP8 are critical components of the DNA damage response pathway. Therefore, disruption of this shared pathway by mutations in either gene results in distinct but related disease phenotypes.",
+      "mechanism_narrative": "Pathogenic ATM variant (null) —DISRUPTS→ ATM (HGNC:792); ATM (HGNC:792) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia (MONDO:0008840); Pathogenic RBBP8 variant (null) —DISRUPTS→ RBBP8 (HGNC:10008); RBBP8 (HGNC:10008) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Jawad Syndrome (MONDO:0009622). Mutations in ATM lead to Ataxia Telangiectasia, while mutations in RBBP8 lead to Jawad Syndrome. Both ATM and RBBP8 are critical components of the DNA damage response pathway. Therefore, disruption of this shared pathway by mutations in either gene results in distinct but related disease phenotypes.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in ATM or RBBP8 with significantly different functional consequences (e.g., gain-of-function for one disease) or the complete lack of overlap in the downstream cellular pathways affected by these genes would falsify this hypothesis.",
+        "gnomad_variant": "gnomAD analysis showing common variants (AF > 1%) in the coding regions of ATM or RBBP8 that are not associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009622",
+        "diseaseBName": "Jawad syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.4247,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic ATM variant (null) —DISRUPTS→ ATM (HGNC:792); ATM (HGNC:792) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia (MONDO:0008840); Pathogenic RBBP8 variant (null) —DISRUPTS→ RBBP8 (HGNC:10008); RBBP8 (HGNC:10008) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Jawad Syndrome (MONDO:0009622). Mutations in ATM lead to Ataxia Telangiectasia, while mutations in RBBP8 lead to Jawad Syndrome. Both ATM and RBBP8 are critical components of the DNA damage response pathway. Therefore, disruption of this shared pathway by mutations in either gene results in distinct but related disease phenotypes.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in ATM or RBBP8 with significantly different functional consequences (e.g., gain-of-function for one disease) or the complete lack of overlap in the downstream cellular pathways affected by these genes would falsify this hypothesis.",
+          "gnomad_variant": "gnomAD analysis showing common variants (AF > 1%) in the coding regions of ATM or RBBP8 that are not associated with either disease."
+        },
+        "translational": "Understanding the shared role of the DNA damage response pathway in both Ataxia Telangiectasia and Jawad Syndrome could reveal common therapeutic targets for treating genomic instability and associated developmental defects. For example, interventions aimed at stabilizing the genome or enhancing DNA repair mechanisms might offer benefit in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011450",
+      "diseaseBName": "breast-ovarian cancer, familial, susceptibility to, 1",
+      "fitness": 0.4233,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM (HGNC:792) —DISRUPTS→ DNA double-strand break repair (GO:0006281); ATM (HGNC:792) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Ataxia (HP:0001251); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Ataxia (HP:0001251); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604). Loss-of-function mutations in ATM disrupt DNA double-strand break repair and cell cycle checkpoint control, leading to ataxia telangiectasia. Similarly, loss-of-function mutations in BRCA1 disrupt these same critical pathways, leading to increased susceptibility to breast and ovarian cancers.",
+      "mechanism_narrative": "ATM (HGNC:792) —DISRUPTS→ DNA double-strand break repair (GO:0006281); ATM (HGNC:792) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Ataxia (HP:0001251); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Ataxia (HP:0001251); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604). Loss-of-function mutations in ATM disrupt DNA double-strand break repair and cell cycle checkpoint control, leading to ataxia telangiectasia. Similarly, loss-of-function mutations in BRCA1 disrupt these same critical pathways, leading to increased susceptibility to breast and ovarian cancers.",
+      "falsification": {
+        "text": "If mutations in ATM and BRCA1 were found to act through entirely distinct and non-overlapping cellular pathways, or if one disease exhibited gain-of-function mutations while the other exhibited loss-of-function, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693565": 78,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693571": 68,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6796648": 62,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011450",
+        "diseaseBName": "breast-ovarian cancer, familial, susceptibility to, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693565": 78,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693571": 68,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6796648": 62,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.4233,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:792) —DISRUPTS→ DNA double-strand break repair (GO:0006281); ATM (HGNC:792) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Ataxia (HP:0001251); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Ataxia (HP:0001251); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604). Loss-of-function mutations in ATM disrupt DNA double-strand break repair and cell cycle checkpoint control, leading to ataxia telangiectasia. Similarly, loss-of-function mutations in BRCA1 disrupt these same critical pathways, leading to increased susceptibility to breast and ovarian cancers.",
+        "falsification": {
+          "text": "If mutations in ATM and BRCA1 were found to act through entirely distinct and non-overlapping cellular pathways, or if one disease exhibited gain-of-function mutations while the other exhibited loss-of-function, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the shared reliance on DNA repair and cell cycle checkpoints highlights potential therapeutic strategies targeting these pathways for both ataxia telangiectasia and hereditary breast-ovarian cancer syndromes, such as PARP inhibitors or other DNA damage response modulators."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0700270",
+      "diseaseBName": "ATM-related cancer predisposition",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Genomic instability (HP:0000707); Genomic instability (HP:0000707) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0000707) —LEADS_TO→ Cancer predisposition (HP:0002664). Loss-of-function mutations in ATM disrupt the DNA damage response pathway, leading to genomic instability, which in turn manifests as ataxia in Ataxia Telangiectasia and increased cancer risk in ATM-related cancer predisposition.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Genomic instability (HP:0000707); Genomic instability (HP:0000707) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0000707) —LEADS_TO→ Cancer predisposition (HP:0002664). Loss-of-function mutations in ATM disrupt the DNA damage response pathway, leading to genomic instability, which in turn manifests as ataxia in Ataxia Telangiectasia and increased cancer risk in ATM-related cancer predisposition.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in ATM that leads to a gain-of-function or dominant-negative effect in one disease while a loss-of-function effect is present in the other, or if ATM is found to be non-essential for the pathogenesis of either disease.",
+        "gnomad_variant": "rs1801516"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9664873",
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-349425",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0700270",
+        "diseaseBName": "ATM-related cancer predisposition",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9664873",
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-349425",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Genomic instability (HP:0000707); Genomic instability (HP:0000707) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0000707) —LEADS_TO→ Cancer predisposition (HP:0002664). Loss-of-function mutations in ATM disrupt the DNA damage response pathway, leading to genomic instability, which in turn manifests as ataxia in Ataxia Telangiectasia and increased cancer risk in ATM-related cancer predisposition.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in ATM that leads to a gain-of-function or dominant-negative effect in one disease while a loss-of-function effect is present in the other, or if ATM is found to be non-essential for the pathogenesis of either disease.",
+          "gnomad_variant": "rs1801516"
+        },
+        "translational": "Targeting the DNA damage response pathway or developing therapies that compensate for ATM loss-of-function could offer therapeutic benefits for both ataxia telangiectasia and ATM-related cancer predisposition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014986",
+      "diseaseBName": "Fanconi anemia complementation group R",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); DNA damage response (GO:0006974) —LEADS_TO→ Telangiectasia (HP:0002107); RAD51 (HGNC:9977) —DISRUPTS→ Homologous recombination (GO:0000750); Homologous recombination (GO:0000750) —LEADS_TO→ Anemia (HP:0001878); Homologous recombination (GO:0000750) —LEADS_TO→ Bone marrow failure (HP:0001887); DNA damage response (GO:0006974) —BINDS→ Homologous recombination (GO:0000750). ATM's role in initiating the DNA damage response converges with RAD51's direct role in homologous recombination, a critical sub-process of DNA repair. Defects in both pathways lead to genomic instability and distinct, yet overlapping, clinical manifestations.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); DNA damage response (GO:0006974) —LEADS_TO→ Telangiectasia (HP:0002107); RAD51 (HGNC:9977) —DISRUPTS→ Homologous recombination (GO:0000750); Homologous recombination (GO:0000750) —LEADS_TO→ Anemia (HP:0001878); Homologous recombination (GO:0000750) —LEADS_TO→ Bone marrow failure (HP:0001887); DNA damage response (GO:0006974) —BINDS→ Homologous recombination (GO:0000750). ATM's role in initiating the DNA damage response converges with RAD51's direct role in homologous recombination, a critical sub-process of DNA repair. Defects in both pathways lead to genomic instability and distinct, yet overlapping, clinical manifestations.",
+      "falsification": {
+        "text": "Demonstration that the ATM and RAD51 pathways function entirely independently with no cross-talk or shared downstream effectors involved in the pathogenesis of these specific diseases, or identification of a common variant with high frequency (>1%) in gnomAD populations within the coding regions of ATM or RAD51 that is associated with either disease.",
+        "gnomad_variant": "rs1801516"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014986",
+        "diseaseBName": "Fanconi anemia complementation group R",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); DNA damage response (GO:0006974) —LEADS_TO→ Telangiectasia (HP:0002107); RAD51 (HGNC:9977) —DISRUPTS→ Homologous recombination (GO:0000750); Homologous recombination (GO:0000750) —LEADS_TO→ Anemia (HP:0001878); Homologous recombination (GO:0000750) —LEADS_TO→ Bone marrow failure (HP:0001887); DNA damage response (GO:0006974) —BINDS→ Homologous recombination (GO:0000750). ATM's role in initiating the DNA damage response converges with RAD51's direct role in homologous recombination, a critical sub-process of DNA repair. Defects in both pathways lead to genomic instability and distinct, yet overlapping, clinical manifestations.",
+        "falsification": {
+          "text": "Demonstration that the ATM and RAD51 pathways function entirely independently with no cross-talk or shared downstream effectors involved in the pathogenesis of these specific diseases, or identification of a common variant with high frequency (>1%) in gnomAD populations within the coding regions of ATM or RAD51 that is associated with either disease.",
+          "gnomad_variant": "rs1801516"
+        },
+        "translational": "Understanding the convergence of DNA repair pathways in Ataxia Telangiectasia and Fanconi Anemia offers potential therapeutic strategies. Targeting common downstream effectors of DNA damage response or enhancing residual repair activity could provide benefit for patients with either condition. Furthermore, the shared sensitivity to DNA damaging agents highlights potential for synthetic lethality approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011715",
+      "diseaseBName": "Seckel syndrome 2",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); RBBP8 (HGNC:10064) —DISRUPTS→ Cell cycle regulation (GO:0051726); Cell cycle regulation (GO:0051726) —LEADS_TO→ Microcephaly (HP:0000252); Cell cycle regulation (GO:0051726) —LEADS_TO→ Skeletal abnormalities (HP:0002670); DNA damage response (GO:0006974) —INCREASES→ Cell cycle regulation (GO:0051726). Loss of function in ATM disrupts the DNA damage response pathway, leading to ataxia. Concurrently, loss of function in RBBP8 disrupts cell cycle regulation, resulting in microcephaly and skeletal abnormalities. Both DNA damage response and cell cycle regulation are interconnected processes, and their shared disruption contributes to the overlapping phenotypic features.",
+      "mechanism_narrative": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); RBBP8 (HGNC:10064) —DISRUPTS→ Cell cycle regulation (GO:0051726); Cell cycle regulation (GO:0051726) —LEADS_TO→ Microcephaly (HP:0000252); Cell cycle regulation (GO:0051726) —LEADS_TO→ Skeletal abnormalities (HP:0002670); DNA damage response (GO:0006974) —INCREASES→ Cell cycle regulation (GO:0051726). Loss of function in ATM disrupts the DNA damage response pathway, leading to ataxia. Concurrently, loss of function in RBBP8 disrupts cell cycle regulation, resulting in microcephaly and skeletal abnormalities. Both DNA damage response and cell cycle regulation are interconnected processes, and their shared disruption contributes to the overlapping phenotypic features.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants in ATM and RBBP8 do not lead to a loss-of-function phenotype, or if experimental evidence demonstrates that the DNA damage response and cell cycle regulation pathways are completely independent and do not influence each other in the context of these diseases, this hypothesis would be falsified.",
+        "gnomad_variant": "rs1801516"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9701192",
+        "Reactome:R-HSA-5685938",
+        "Reactome:R-HSA-5685942"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9701192": 25,
+        "Reactome:R-HSA-5685938": 38,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-5693607": 97,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-6804756": 93,
+        "Reactome:R-HSA-69473": 83,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-9709603": 24
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011715",
+        "diseaseBName": "Seckel syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9701192",
+          "Reactome:R-HSA-5685938",
+          "Reactome:R-HSA-5685942"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9701192": 25,
+          "Reactome:R-HSA-5685938": 38,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-5693607": 97,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-6804756": 93,
+          "Reactome:R-HSA-69473": 83,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-9709603": 24
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); RBBP8 (HGNC:10064) —DISRUPTS→ Cell cycle regulation (GO:0051726); Cell cycle regulation (GO:0051726) —LEADS_TO→ Microcephaly (HP:0000252); Cell cycle regulation (GO:0051726) —LEADS_TO→ Skeletal abnormalities (HP:0002670); DNA damage response (GO:0006974) —INCREASES→ Cell cycle regulation (GO:0051726). Loss of function in ATM disrupts the DNA damage response pathway, leading to ataxia. Concurrently, loss of function in RBBP8 disrupts cell cycle regulation, resulting in microcephaly and skeletal abnormalities. Both DNA damage response and cell cycle regulation are interconnected processes, and their shared disruption contributes to the overlapping phenotypic features.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants in ATM and RBBP8 do not lead to a loss-of-function phenotype, or if experimental evidence demonstrates that the DNA damage response and cell cycle regulation pathways are completely independent and do not influence each other in the context of these diseases, this hypothesis would be falsified.",
+          "gnomad_variant": "rs1801516"
+        },
+        "translational": "Understanding the shared mechanistic basis in DNA damage response and cell cycle regulation between ataxia telangiectasia and Seckel syndrome 2 could inform the development of targeted therapies aimed at restoring genomic stability or modulating cell cycle checkpoints, potentially benefiting patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T08:19:51.380Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** ataxia telangiectasia (MONDO:0008840)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 30 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Fanconi anemia, complementation group S (MONDO:0054748) | shared pathway | Tier 3 | 0.475 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 2 | microcephaly, growth restriction, and increased sister chromatid exchange 2 (MONDO:0020628) | shared pathway | Tier 3 | 0.443 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 3 | mirror movements 2 (MONDO:0013790) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 4 | Fanconi anemia complementation group J (MONDO:0012187) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 5 | progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 5 (MONDO:0020845) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 6 | Jawad syndrome (MONDO:0009622) | shared pathway | Tier 3 | 0.425 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 7 | breast-ovarian cancer, familial, susceptibility to, 1 (MONDO:0011450) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 8 | ATM-related cancer predisposition (MONDO:0700270) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9664873, Reactome:R-HSA-9701192, Reactome:R-HSA-349425, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 9 | Fanconi anemia complementation group R (MONDO:0014986) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n| 10 | Seckel syndrome 2 (MONDO:0011715) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942 |\n\n### CANDIDATE DETAIL\n#### 1. Fanconi anemia, complementation group S  —  Tier 3 — Moderate / Emerging  (fitness 0.475)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Homologous recombination (GO:0000746); ATM (HGNC:795) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —LEADS_TO→ Telangiectasia (HP:0001306); BRCA1 (HGNC:1100) —LEADS_TO→ Anemia (HP:0001878); BRCA1 (HGNC:1100) —LEADS_TO→ Bone marrow failure (HP:0001880). Mutations in ATM (causing ataxia telangiectasia) and BRCA1 (a key gene in the Fanconi anemia pathway, thus relevant to FA complementation group S) both impair DNA double-strand break repair. This leads to a convergence on the homologous recombination pathway, which, when disrupted, results in genomic instability and the characteristic phenotypes of each disease.\n\n**How to falsify it:** If experimental evidence demonstrates that ATM and BRCA1 function in entirely independent and non-interacting DNA repair sub-pathways that do not converge at any common molecular or cellular level, this hypothesis would be falsified. Specifically, if mutations in ATM do not impact homologous recombination or related DNA repair processes, or if BRCA1 mutations do not similarly affect double-strand break repair, the proposed link would be invalidated. _(variant: Presence of common pathogenic variants (AF > 0.01) in both ATM and BRCA1 in the general population, which would suggest a less specific role in rare disease etiology.)_\n\n**Why it matters:** Understanding the shared reliance of these two diseases on robust DNA repair mechanisms, particularly homologous recombination, could reveal therapeutic targets. For instance, drugs that enhance DNA repair or exploit the vulnerabilities created by repair defects might be applicable to both conditions, or specific contexts within them. Furthermore, shared pathway defects suggest potential for biomarker development or genotype-phenotype correlations that could guide personalized treatment strategies.\n\n---\n\n#### 2. microcephaly, growth restriction, and increased sister chromatid exchange 2  —  Tier 3 — Moderate / Emerging  (fitness 0.443)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11890) —DISRUPTS→ Sister chromatid exchange regulation (GO:0000717); Sister chromatid exchange regulation (GO:0000717) —LEADS_TO→ Genome stability maintenance (GO:0000747); Genome stability maintenance (GO:0000747) —LEADS_TO→ Microcephaly (HP:0000252); Genome stability maintenance (GO:0000747) —LEADS_TO→ Growth restriction (HP:0001510); Genome stability maintenance (GO:0000747) —LEADS_TO→ Increased sister chromatid exchange (HP:0030700). Loss-of-function mutations in ATM disrupt DNA double-strand break repair, leading to compromised genome stability. Similarly, loss-of-function mutations in TOP3A disrupt sister chromatid exchange regulation, also contributing to compromised genome stability. This shared pathway of genome stability maintenance leads to the distinct but overlapping phenotypes of ataxia, microcephaly, growth restriction, and increased sister chromatid exchange.\n\n**How to falsify it:** Absence of mutations in ATM or TOP3A in individuals diagnosed with ataxia telangiectasia or microcephaly, growth restriction, and increased sister chromatid exchange 2, respectively, or identification of distinct molecular pathways not involving genome stability maintenance as the primary driver for each disease. _(variant: The presence of common variants (AF > 0.01) in gnomAD in the coding regions of ATM or TOP3A that do not segregate with disease in affected families.)_\n\n**Why it matters:** Understanding the shared reliance on genome stability maintenance pathways for both ataxia telangiectasia and microcephaly, growth restriction, and increased sister chromatid exchange 2 could reveal common therapeutic targets for enhancing DNA repair or mitigating genomic instability, potentially offering cross-disease treatment strategies.\n\n---\n\n#### 3. mirror movements 2  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); RAD51 (HGNC:9916) —BINDS→ DNA double-strand break repair (GO:0006302); RAD51 (HGNC:9916) —DISRUPTS→ neuronal development (GO:0048598); neuronal development (GO:0048598) —LEADS_TO→ Neuronal migration (HP:0033571); Neuronal migration (HP:0033571) —LEADS_TO→ Mirror movements (HP:0030173). Mutations in ATM disrupt DNA double-strand break repair, leading to ataxia. RAD51, which also participates in DNA repair, is implicated in neuronal development and migration, and its dysfunction leads to mirror movements.\n\n**How to falsify it:** Demonstration that ATM and RAD51 do not functionally interact or converge on a common downstream pathway essential for neuronal integrity would falsify this hypothesis. For instance, if mutations in ATM do not affect RAD51-mediated repair or related neuronal processes, the proposed overlap would be weakened. _(variant: Any common variants (AF > 0.01) in the coding regions of ATM or RAD51 in gnomAD that are not associated with either phenotype.)_\n\n**Why it matters:** Understanding the shared role of DNA repair in distinct neurological disorders could reveal novel therapeutic targets for both Ataxia Telangiectasia and Mirror Movements 2, potentially by modulating DNA repair pathways or supporting neuronal development in response to DNA damage.\n\n---\n\n#### 4. Fanconi anemia complementation group J  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251); ATM (HGNC:795) —BINDS→ DNA repair (GO:0006281); BRIP1 (HGNC:23104) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001878). ATM mutations disrupt DNA double-strand break repair, leading to ataxia. BRIP1 mutations also disrupt DNA repair processes, contributing to anemia and increased malignancy risk. Both ATM and BRIP1 are critical for maintaining genome stability through their roles in DNA repair pathways, hence representing a shared module overlap.\n\n**How to falsify it:** Identification of pathogenic variants in ATM and BRIP1 in patients with the respective other disease, or demonstration of completely independent molecular pathways that do not converge on general DNA repair or genome stability. _(variant: Pathogenic variants in ATM and BRIP1 are rare in the general population.)_\n\n**Why it matters:** Understanding the overlap in DNA repair defects between Ataxia Telangiectasia and Fanconi Anemia J can inform therapeutic strategies targeting DNA repair pathways, potentially benefiting patients with either condition. It highlights the critical role of genome stability in preventing diverse clinical manifestations.\n\n---\n\n#### 5. progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 5  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); TOP3A (HGNC:11926) —DISRUPTS→ Mitochondrial DNA Maintenance (GO:0000307); Mitochondrial DNA Maintenance (GO:0000307) —DISRUPTS→ Mitochondrial Respiratory Chain Complex Assembly (GO:0098787); Mitochondrial Respiratory Chain Complex Assembly (GO:0098787) —LEADS_TO→ External Ophthalmoplegia (HP:0000600); Mitochondrial DNA Maintenance (GO:0000307) —LEADS_TO→ Mitochondrial DNA Deletion (HP:0031759). Loss-of-function mutations in ATM disrupt the DNA damage response, leading to ataxia. Concurrently, loss-of-function mutations in TOP3A disrupt mitochondrial DNA maintenance, which in turn disrupts mitochondrial respiratory chain complex assembly, leading to mitochondrial DNA deletions and external ophthalmoplegia.\n\n**How to falsify it:** The absence of mutations in ATM in patients with progressive external ophthalmoplegia or mutations in TOP3A in patients with ataxia would falsify a direct shared causal gene mechanism, but not necessarily a shared downstream pathway or process.\n\n**Why it matters:** Understanding the overlap in cellular pathways affected by ATM and TOP3A mutations could reveal novel therapeutic targets for both ataxia telangiectasia and mitochondrial disorders, potentially through interventions that support DNA repair or enhance mitochondrial function.\n\n---\n\n#### 6. Jawad syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.425)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** Pathogenic ATM variant (null) —DISRUPTS→ ATM (HGNC:792); ATM (HGNC:792) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia (MONDO:0008840); Pathogenic RBBP8 variant (null) —DISRUPTS→ RBBP8 (HGNC:10008); RBBP8 (HGNC:10008) —DISRUPTS→ DNA damage response pathway (GO:0006974); DNA damage response pathway (GO:0006974) —LEADS_TO→ Jawad Syndrome (MONDO:0009622). Mutations in ATM lead to Ataxia Telangiectasia, while mutations in RBBP8 lead to Jawad Syndrome. Both ATM and RBBP8 are critical components of the DNA damage response pathway. Therefore, disruption of this shared pathway by mutations in either gene results in distinct but related disease phenotypes.\n\n**How to falsify it:** The identification of pathogenic variants in ATM or RBBP8 with significantly different functional consequences (e.g., gain-of-function for one disease) or the complete lack of overlap in the downstream cellular pathways affected by these genes would falsify this hypothesis. _(variant: gnomAD analysis showing common variants (AF > 1%) in the coding regions of ATM or RBBP8 that are not associated with either disease.)_\n\n**Why it matters:** Understanding the shared role of the DNA damage response pathway in both Ataxia Telangiectasia and Jawad Syndrome could reveal common therapeutic targets for treating genomic instability and associated developmental defects. For example, interventions aimed at stabilizing the genome or enhancing DNA repair mechanisms might offer benefit in both conditions.\n\n---\n\n#### 7. breast-ovarian cancer, familial, susceptibility to, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:792) —DISRUPTS→ DNA double-strand break repair (GO:0006281); ATM (HGNC:792) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Ataxia (HP:0001251); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Ataxia (HP:0001251); BRCA1 (HGNC:1100) —DISRUPTS→ DNA double-strand break repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ Cell cycle checkpoint (GO:0007049); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to breast cancer (HP:00123602); DNA double-strand break repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604); Cell cycle checkpoint (GO:0007049) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:00123604). Loss-of-function mutations in ATM disrupt DNA double-strand break repair and cell cycle checkpoint control, leading to ataxia telangiectasia. Similarly, loss-of-function mutations in BRCA1 disrupt these same critical pathways, leading to increased susceptibility to breast and ovarian cancers.\n\n**How to falsify it:** If mutations in ATM and BRCA1 were found to act through entirely distinct and non-overlapping cellular pathways, or if one disease exhibited gain-of-function mutations while the other exhibited loss-of-function, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the shared reliance on DNA repair and cell cycle checkpoints highlights potential therapeutic strategies targeting these pathways for both ataxia telangiectasia and hereditary breast-ovarian cancer syndromes, such as PARP inhibitors or other DNA damage response modulators.\n\n---\n\n#### 8. ATM-related cancer predisposition  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9664873, Reactome:R-HSA-9701192, Reactome:R-HSA-349425, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Genomic instability (HP:0000707); Genomic instability (HP:0000707) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0000707) —LEADS_TO→ Cancer predisposition (HP:0002664). Loss-of-function mutations in ATM disrupt the DNA damage response pathway, leading to genomic instability, which in turn manifests as ataxia in Ataxia Telangiectasia and increased cancer risk in ATM-related cancer predisposition.\n\n**How to falsify it:** Discovery of a pathogenic variant in ATM that leads to a gain-of-function or dominant-negative effect in one disease while a loss-of-function effect is present in the other, or if ATM is found to be non-essential for the pathogenesis of either disease. _(variant: rs1801516)_\n\n**Why it matters:** Targeting the DNA damage response pathway or developing therapies that compensate for ATM loss-of-function could offer therapeutic benefits for both ataxia telangiectasia and ATM-related cancer predisposition.\n\n---\n\n#### 9. Fanconi anemia complementation group R  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); DNA damage response (GO:0006974) —LEADS_TO→ Telangiectasia (HP:0002107); RAD51 (HGNC:9977) —DISRUPTS→ Homologous recombination (GO:0000750); Homologous recombination (GO:0000750) —LEADS_TO→ Anemia (HP:0001878); Homologous recombination (GO:0000750) —LEADS_TO→ Bone marrow failure (HP:0001887); DNA damage response (GO:0006974) —BINDS→ Homologous recombination (GO:0000750). ATM's role in initiating the DNA damage response converges with RAD51's direct role in homologous recombination, a critical sub-process of DNA repair. Defects in both pathways lead to genomic instability and distinct, yet overlapping, clinical manifestations.\n\n**How to falsify it:** Demonstration that the ATM and RAD51 pathways function entirely independently with no cross-talk or shared downstream effectors involved in the pathogenesis of these specific diseases, or identification of a common variant with high frequency (>1%) in gnomAD populations within the coding regions of ATM or RAD51 that is associated with either disease. _(variant: rs1801516)_\n\n**Why it matters:** Understanding the convergence of DNA repair pathways in Ataxia Telangiectasia and Fanconi Anemia offers potential therapeutic strategies. Targeting common downstream effectors of DNA damage response or enhancing residual repair activity could provide benefit for patients with either condition. Furthermore, the shared sensitivity to DNA damaging agents highlights potential for synthetic lethality approaches.\n\n---\n\n#### 10. Seckel syndrome 2  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9701192, Reactome:R-HSA-5685938, Reactome:R-HSA-5685942)\n\n**Proposed mechanism:** ATM (HGNC:795) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia (HP:0001251); RBBP8 (HGNC:10064) —DISRUPTS→ Cell cycle regulation (GO:0051726); Cell cycle regulation (GO:0051726) —LEADS_TO→ Microcephaly (HP:0000252); Cell cycle regulation (GO:0051726) —LEADS_TO→ Skeletal abnormalities (HP:0002670); DNA damage response (GO:0006974) —INCREASES→ Cell cycle regulation (GO:0051726). Loss of function in ATM disrupts the DNA damage response pathway, leading to ataxia. Concurrently, loss of function in RBBP8 disrupts cell cycle regulation, resulting in microcephaly and skeletal abnormalities. Both DNA damage response and cell cycle regulation are interconnected processes, and their shared disruption contributes to the overlapping phenotypic features.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants in ATM and RBBP8 do not lead to a loss-of-function phenotype, or if experimental evidence demonstrates that the DNA damage response and cell cycle regulation pathways are completely independent and do not influence each other in the context of these diseases, this hypothesis would be falsified. _(variant: rs1801516)_\n\n**Why it matters:** Understanding the shared mechanistic basis in DNA damage response and cell cycle regulation between ataxia telangiectasia and Seckel syndrome 2 could inform the development of targeted therapies aimed at restoring genomic stability or modulating cell cycle checkpoints, potentially benefiting patients with either condition.\n\n---"
+}

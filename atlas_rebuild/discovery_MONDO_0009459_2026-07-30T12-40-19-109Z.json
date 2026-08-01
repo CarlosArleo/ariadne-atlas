@@ -1,0 +1,473 @@
+{
+  "seed": {
+    "id": "MONDO:0009459",
+    "name": "channelopathy-associated congenital insensitivity to pain, autosomal recessive"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 18,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007571",
+      "diseaseBName": "primary erythermalgia",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A (HGNC:10597) —DISRUPTS→ Loss-of-function variants in SCN9A (null); SCN9A (HGNC:10597) —DISRUPTS→ Gain-of-function variants in SCN9A (null); Loss-of-function variants in SCN9A (null) —DECREASES→ Nav1.7 channel activity in nociceptive neurons (null); Gain-of-function variants in SCN9A (null) —INCREASES→ Nav1.7 channel activity in nociceptive neurons (null); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Congenital insensitivity to pain (HP:0003481); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Erythermalgia (HP:0011761). Loss-of-function variants in SCN9A lead to decreased Nav1.7 channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A lead to increased Nav1.7 channel activity, resulting in erythermalgia. Both disease mechanisms converge on the activity of the Nav1.7 channel in nociceptive neurons.",
+      "mechanism_narrative": "SCN9A (HGNC:10597) —DISRUPTS→ Loss-of-function variants in SCN9A (null); SCN9A (HGNC:10597) —DISRUPTS→ Gain-of-function variants in SCN9A (null); Loss-of-function variants in SCN9A (null) —DECREASES→ Nav1.7 channel activity in nociceptive neurons (null); Gain-of-function variants in SCN9A (null) —INCREASES→ Nav1.7 channel activity in nociceptive neurons (null); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Congenital insensitivity to pain (HP:0003481); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Erythermalgia (HP:0011761). Loss-of-function variants in SCN9A lead to decreased Nav1.7 channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A lead to increased Nav1.7 channel activity, resulting in erythermalgia. Both disease mechanisms converge on the activity of the Nav1.7 channel in nociceptive neurons.",
+      "falsification": {
+        "text": "The identification of individuals with loss-of-function SCN9A variants presenting with erythermalgia, or gain-of-function variants presenting with congenital insensitivity to pain, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common loss-of-function variants in SCN9A in the general population (e.g., gnomAD allele frequency > 1%) would also challenge the causative role of these variants in congenital insensitivity to pain."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007571",
+        "diseaseBName": "primary erythermalgia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A (HGNC:10597) —DISRUPTS→ Loss-of-function variants in SCN9A (null); SCN9A (HGNC:10597) —DISRUPTS→ Gain-of-function variants in SCN9A (null); Loss-of-function variants in SCN9A (null) —DECREASES→ Nav1.7 channel activity in nociceptive neurons (null); Gain-of-function variants in SCN9A (null) —INCREASES→ Nav1.7 channel activity in nociceptive neurons (null); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Congenital insensitivity to pain (HP:0003481); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Erythermalgia (HP:0011761). Loss-of-function variants in SCN9A lead to decreased Nav1.7 channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A lead to increased Nav1.7 channel activity, resulting in erythermalgia. Both disease mechanisms converge on the activity of the Nav1.7 channel in nociceptive neurons.",
+        "falsification": {
+          "text": "The identification of individuals with loss-of-function SCN9A variants presenting with erythermalgia, or gain-of-function variants presenting with congenital insensitivity to pain, would falsify this hypothesis.",
+          "gnomad_variant": "The presence of common loss-of-function variants in SCN9A in the general population (e.g., gnomAD allele frequency > 1%) would also challenge the causative role of these variants in congenital insensitivity to pain."
+        },
+        "translational": "Understanding the opposing functional consequences of SCN9A mutations in these two distinct pain disorders offers potential therapeutic avenues. Modulating Nav1.7 channel activity could be explored for pain management, either by blocking channel function in conditions of hyperexcitability or by restoring function in cases of insensitivity, although the latter presents greater challenges."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008179",
+      "diseaseBName": "paroxysmal extreme pain disorder",
+      "fitness": 0.4651,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in SCN9A (MONDO:0009459) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Congenital insensitivity to pain (HP:0003422); Gain-of-function variant in SCN9A (MONDO:0008179) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Paroxysmal extreme pain (HP:0011762). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Conversely, gain-of-function mutations in SCN9A enhance sodium channel activity, leading to paroxysmal extreme pain.",
+      "mechanism_narrative": "Loss-of-function variant in SCN9A (MONDO:0009459) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Congenital insensitivity to pain (HP:0003422); Gain-of-function variant in SCN9A (MONDO:0008179) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Paroxysmal extreme pain (HP:0011762). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Conversely, gain-of-function mutations in SCN9A enhance sodium channel activity, leading to paroxysmal extreme pain.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function SCN9A variants who exhibit paroxysmal extreme pain, or individuals with gain-of-function SCN9A variants who are congenitally insensitive to pain.",
+        "gnomad_variant": "rs752704918 (a known LoF variant in SCN9A associated with CIP)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008179",
+        "diseaseBName": "paroxysmal extreme pain disorder",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "fitness": 0.4651,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SCN9A (MONDO:0009459) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Congenital insensitivity to pain (HP:0003422); Gain-of-function variant in SCN9A (MONDO:0008179) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Paroxysmal extreme pain (HP:0011762). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Conversely, gain-of-function mutations in SCN9A enhance sodium channel activity, leading to paroxysmal extreme pain.",
+        "falsification": {
+          "text": "Identification of individuals with loss-of-function SCN9A variants who exhibit paroxysmal extreme pain, or individuals with gain-of-function SCN9A variants who are congenitally insensitive to pain.",
+          "gnomad_variant": "rs752704918 (a known LoF variant in SCN9A associated with CIP)"
+        },
+        "translational": "Understanding the opposing functional consequences of SCN9A mutations in these two disorders highlights the critical role of precise ion channel regulation in pain signaling and offers potential therapeutic targets for pain management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100038",
+      "diseaseBName": "complex neurodevelopmental disorder",
+      "fitness": 0.4319,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A (HGNC:10595) —PRODUCES→ Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595); Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595) —DISRUPTS→ Neuronal excitability and pain signaling (GO:0001540); Neuronal excitability and pain signaling (GO:0001540) —LEADS_TO→ Congenital insensitivity to pain (HP:0002186); Glutamate Ionotropic Receptor NMDA Type Subunit 1 (HGNC:4540) —DISRUPTS→ NMDA receptor mediated synaptic transmission (GO:0008067); NMDA receptor mediated synaptic transmission (GO:0008067) —DISRUPTS→ Neuronal development and signaling (GO:0048666); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Motor impairment (HP:0001344); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Delayed gross motor development (HP:0000707); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Seizures (HP:0001250). Mutations in SCN9A lead to loss-of-function of Nav1.7 channels, disrupting neuronal excitability and pain signaling, causing congenital insensitivity to pain. Similarly, mutations in genes like GRIN1, which encode NMDA receptor subunits, can disrupt NMDA receptor function, thereby affecting broader neuronal development and signaling pathways, leading to complex neurodevelopmental disorders with phenotypes including intellectual disability, motor impairments, and seizures. The convergence is on the general disruption of neuronal signaling and development, which underpin the diverse phenotypes of both conditions.",
+      "mechanism_narrative": "SCN9A (HGNC:10595) —PRODUCES→ Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595); Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595) —DISRUPTS→ Neuronal excitability and pain signaling (GO:0001540); Neuronal excitability and pain signaling (GO:0001540) —LEADS_TO→ Congenital insensitivity to pain (HP:0002186); Glutamate Ionotropic Receptor NMDA Type Subunit 1 (HGNC:4540) —DISRUPTS→ NMDA receptor mediated synaptic transmission (GO:0008067); NMDA receptor mediated synaptic transmission (GO:0008067) —DISRUPTS→ Neuronal development and signaling (GO:0048666); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Motor impairment (HP:0001344); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Delayed gross motor development (HP:0000707); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Seizures (HP:0001250). Mutations in SCN9A lead to loss-of-function of Nav1.7 channels, disrupting neuronal excitability and pain signaling, causing congenital insensitivity to pain. Similarly, mutations in genes like GRIN1, which encode NMDA receptor subunits, can disrupt NMDA receptor function, thereby affecting broader neuronal development and signaling pathways, leading to complex neurodevelopmental disorders with phenotypes including intellectual disability, motor impairments, and seizures. The convergence is on the general disruption of neuronal signaling and development, which underpin the diverse phenotypes of both conditions.",
+      "falsification": {
+        "text": "Demonstration that the identified causal variants in SCN9A and genes associated with complex neurodevelopmental disorders (e.g., GRIN1, STXBP1) do not converge on shared downstream pathways affecting neuronal excitability or development, or that mutations in these genes do not lead to consistent directional effects on these pathways.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of SCN9A, GRIN1, STXBP1, or other key genes in these pathways within the gnomAD database."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100038",
+        "diseaseBName": "complex neurodevelopmental disorder",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.4319,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A (HGNC:10595) —PRODUCES→ Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595); Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595) —DISRUPTS→ Neuronal excitability and pain signaling (GO:0001540); Neuronal excitability and pain signaling (GO:0001540) —LEADS_TO→ Congenital insensitivity to pain (HP:0002186); Glutamate Ionotropic Receptor NMDA Type Subunit 1 (HGNC:4540) —DISRUPTS→ NMDA receptor mediated synaptic transmission (GO:0008067); NMDA receptor mediated synaptic transmission (GO:0008067) —DISRUPTS→ Neuronal development and signaling (GO:0048666); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Motor impairment (HP:0001344); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Delayed gross motor development (HP:0000707); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Seizures (HP:0001250). Mutations in SCN9A lead to loss-of-function of Nav1.7 channels, disrupting neuronal excitability and pain signaling, causing congenital insensitivity to pain. Similarly, mutations in genes like GRIN1, which encode NMDA receptor subunits, can disrupt NMDA receptor function, thereby affecting broader neuronal development and signaling pathways, leading to complex neurodevelopmental disorders with phenotypes including intellectual disability, motor impairments, and seizures. The convergence is on the general disruption of neuronal signaling and development, which underpin the diverse phenotypes of both conditions.",
+        "falsification": {
+          "text": "Demonstration that the identified causal variants in SCN9A and genes associated with complex neurodevelopmental disorders (e.g., GRIN1, STXBP1) do not converge on shared downstream pathways affecting neuronal excitability or development, or that mutations in these genes do not lead to consistent directional effects on these pathways.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of SCN9A, GRIN1, STXBP1, or other key genes in these pathways within the gnomAD database."
+        },
+        "translational": "Understanding the shared mechanistic basis in neuronal ion channel function and signaling pathways could reveal common therapeutic targets for pain management and neurodevelopmental interventions. For instance, modulating neuronal excitability might offer therapeutic avenues for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0054776",
+      "diseaseBName": "epilepsy, familial focal, with variable foci 4",
+      "fitness": 0.3792,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in SCN9A (null) —DISRUPTS→ SCN9A (HGNC:10604); SCN9A (HGNC:10604) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Congenital insensitivity to pain (HP:0003414); Gain-of-function variant in SCN3A (null) —DISRUPTS→ SCN3A (HGNC:10598); SCN3A (HGNC:10598) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Epilepsy, familial focal, with variable foci 4 (MONDO:0054776). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function mutations in SCN3A also disrupt neuronal sodium channel activity, but in a manner that increases neuronal excitability, leading to epilepsy. Both diseases converge on the disruption of normal neuronal sodium channel activity, albeit through opposing functional consequences on the channel itself.",
+      "mechanism_narrative": "Loss-of-function variant in SCN9A (null) —DISRUPTS→ SCN9A (HGNC:10604); SCN9A (HGNC:10604) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Congenital insensitivity to pain (HP:0003414); Gain-of-function variant in SCN3A (null) —DISRUPTS→ SCN3A (HGNC:10598); SCN3A (HGNC:10598) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Epilepsy, familial focal, with variable foci 4 (MONDO:0054776). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function mutations in SCN3A also disrupt neuronal sodium channel activity, but in a manner that increases neuronal excitability, leading to epilepsy. Both diseases converge on the disruption of normal neuronal sodium channel activity, albeit through opposing functional consequences on the channel itself.",
+      "falsification": {
+        "text": "If pathogenic variants in SCN9A are found to cause epilepsy, or pathogenic variants in SCN3A are found to cause congenital insensitivity to pain, this hypothesis would be falsified. Additionally, if the identified variants in SCN9A and SCN3A do not demonstrably alter neuronal sodium channel function in electrophysiological studies, the proposed mechanism would be weakened.",
+        "gnomad_variant": "The presence of common variants (allele frequency > 1%) in gnomAD within the coding regions of SCN9A and SCN3A that are implicated in these diseases would challenge the causality."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054776",
+        "diseaseBName": "epilepsy, familial focal, with variable foci 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.3792,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SCN9A (null) —DISRUPTS→ SCN9A (HGNC:10604); SCN9A (HGNC:10604) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Congenital insensitivity to pain (HP:0003414); Gain-of-function variant in SCN3A (null) —DISRUPTS→ SCN3A (HGNC:10598); SCN3A (HGNC:10598) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Epilepsy, familial focal, with variable foci 4 (MONDO:0054776). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function mutations in SCN3A also disrupt neuronal sodium channel activity, but in a manner that increases neuronal excitability, leading to epilepsy. Both diseases converge on the disruption of normal neuronal sodium channel activity, albeit through opposing functional consequences on the channel itself.",
+        "falsification": {
+          "text": "If pathogenic variants in SCN9A are found to cause epilepsy, or pathogenic variants in SCN3A are found to cause congenital insensitivity to pain, this hypothesis would be falsified. Additionally, if the identified variants in SCN9A and SCN3A do not demonstrably alter neuronal sodium channel function in electrophysiological studies, the proposed mechanism would be weakened.",
+          "gnomad_variant": "The presence of common variants (allele frequency > 1%) in gnomAD within the coding regions of SCN9A and SCN3A that are implicated in these diseases would challenge the causality."
+        },
+        "translational": "Understanding the shared reliance on neuronal sodium channel function, despite differing functional impacts of mutations, could lead to novel therapeutic strategies. For instance, targeting specific sodium channel subtypes or regulatory mechanisms might offer avenues for treating both pain disorders and epilepsy, potentially through modulators that restore channel balance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100062",
+      "diseaseBName": "genetic developmental and epileptic encephalopathy",
+      "fitness": 0.3781,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Congenital insensitivity to pain (HP:0000390); Gain-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Epileptic encephalopathy (HP:0011231). Loss-of-function variants in SCN9A disrupt sodium channel activity leading to congenital insensitivity to pain, while gain-of-function variants in the same gene disrupt sodium channel activity, causing neuronal hyperexcitability and epileptic encephalopathy. The convergence point is the disruption of normal sodium channel function and subsequent modulation of neuronal excitability.",
+      "mechanism_narrative": "Loss-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Congenital insensitivity to pain (HP:0000390); Gain-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Epileptic encephalopathy (HP:0011231). Loss-of-function variants in SCN9A disrupt sodium channel activity leading to congenital insensitivity to pain, while gain-of-function variants in the same gene disrupt sodium channel activity, causing neuronal hyperexcitability and epileptic encephalopathy. The convergence point is the disruption of normal sodium channel function and subsequent modulation of neuronal excitability.",
+      "falsification": {
+        "text": "If a patient presented with both congenital insensitivity to pain and epileptic encephalopathy, but genetic testing revealed pathogenic variants in two completely unrelated genes, each independently causing one of the phenotypes, this would falsify a direct mechanistic link through a single gene or pathway.",
+        "gnomad_variant": "Presence of common loss-of-function variants (e.g., MAF > 1%) in SCN9A in the general population that do not lead to congenital insensitivity to pain, or common gain-of-function variants that do not lead to epilepsy, would challenge the direct causality of these specific variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100062",
+        "diseaseBName": "genetic developmental and epileptic encephalopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.3781,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Congenital insensitivity to pain (HP:0000390); Gain-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Epileptic encephalopathy (HP:0011231). Loss-of-function variants in SCN9A disrupt sodium channel activity leading to congenital insensitivity to pain, while gain-of-function variants in the same gene disrupt sodium channel activity, causing neuronal hyperexcitability and epileptic encephalopathy. The convergence point is the disruption of normal sodium channel function and subsequent modulation of neuronal excitability.",
+        "falsification": {
+          "text": "If a patient presented with both congenital insensitivity to pain and epileptic encephalopathy, but genetic testing revealed pathogenic variants in two completely unrelated genes, each independently causing one of the phenotypes, this would falsify a direct mechanistic link through a single gene or pathway.",
+          "gnomad_variant": "Presence of common loss-of-function variants (e.g., MAF > 1%) in SCN9A in the general population that do not lead to congenital insensitivity to pain, or common gain-of-function variants that do not lead to epilepsy, would challenge the direct causality of these specific variants."
+        },
+        "translational": "Understanding the opposing functional consequences of SCN9A variants (loss-of-function vs. gain-of-function) on neuronal excitability could inform the development of targeted therapies. For congenital insensitivity to pain, enhancing channel activity might be beneficial, whereas for epileptic encephalopathy, blocking or reducing channel activity could be therapeutic. This highlights the potential for genotype-specific treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013388",
+      "diseaseBName": "developmental and epileptic encephalopathy, 11",
+      "fitness": 0.3728,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A pathogenic variant —DISRUPTS→ SCN9A (HGNC:10610); SCN9A (HGNC:10610) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Congenital insensitivity to pain (HP:0003431); SCN2A pathogenic variant —DISRUPTS→ SCN2A (HGNC:10609); SCN2A (HGNC:10609) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Epilepsy (HP:0001250); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Developmental delay (HP:0001263). Pathogenic variants in SCN9A lead to loss-of-function, disrupting normal neuronal sodium ion channel activity and resulting in congenital insensitivity to pain. Pathogenic variants in SCN2A lead to gain-of-function, also disrupting normal neuronal sodium ion channel activity, but causing neuronal hyperexcitability, leading to epilepsy and developmental delay.",
+      "mechanism_narrative": "SCN9A pathogenic variant —DISRUPTS→ SCN9A (HGNC:10610); SCN9A (HGNC:10610) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Congenital insensitivity to pain (HP:0003431); SCN2A pathogenic variant —DISRUPTS→ SCN2A (HGNC:10609); SCN2A (HGNC:10609) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Epilepsy (HP:0001250); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Developmental delay (HP:0001263). Pathogenic variants in SCN9A lead to loss-of-function, disrupting normal neuronal sodium ion channel activity and resulting in congenital insensitivity to pain. Pathogenic variants in SCN2A lead to gain-of-function, also disrupting normal neuronal sodium ion channel activity, but causing neuronal hyperexcitability, leading to epilepsy and developmental delay.",
+      "falsification": {
+        "text": "If a patient with congenital insensitivity to pain harbors a confirmed gain-of-function mutation in SCN9A, or a patient with developmental and epileptic encephalopathy 11 harbors a confirmed loss-of-function mutation in SCN2A, this hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing a high-frequency pathogenic variant in SCN9A with gain-of-function effect or in SCN2A with loss-of-function effect."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013388",
+        "diseaseBName": "developmental and epileptic encephalopathy, 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.3728,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A pathogenic variant —DISRUPTS→ SCN9A (HGNC:10610); SCN9A (HGNC:10610) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Congenital insensitivity to pain (HP:0003431); SCN2A pathogenic variant —DISRUPTS→ SCN2A (HGNC:10609); SCN2A (HGNC:10609) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Epilepsy (HP:0001250); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Developmental delay (HP:0001263). Pathogenic variants in SCN9A lead to loss-of-function, disrupting normal neuronal sodium ion channel activity and resulting in congenital insensitivity to pain. Pathogenic variants in SCN2A lead to gain-of-function, also disrupting normal neuronal sodium ion channel activity, but causing neuronal hyperexcitability, leading to epilepsy and developmental delay.",
+        "falsification": {
+          "text": "If a patient with congenital insensitivity to pain harbors a confirmed gain-of-function mutation in SCN9A, or a patient with developmental and epileptic encephalopathy 11 harbors a confirmed loss-of-function mutation in SCN2A, this hypothesis would be falsified.",
+          "gnomad_variant": "gnomAD analysis showing a high-frequency pathogenic variant in SCN9A with gain-of-function effect or in SCN2A with loss-of-function effect."
+        },
+        "translational": "Understanding the shared role of sodium channel dysfunction in these distinct neurological disorders could inform therapeutic strategies. For example, targeting specific sodium channel subtypes or modulating channel activity could offer potential treatments for both pain insensitivity and epilepsy, depending on the specific mutation and its functional consequence."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030064",
+      "diseaseBName": "episodic ataxia, type 9",
+      "fitness": 0.3693,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A (HGNC:10604) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Congenital insensitivity to pain (HP:0003304); SCN2A (HGNC:10601) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Episodic ataxia (HP:0011364). Loss-of-function mutations in SCN9A disrupt normal voltage-gated sodium channel activity, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN2A also disrupt voltage-gated sodium channel activity, causing episodic ataxia. Both genes converge on the shared pathway of voltage-gated sodium channel activity, affecting neuronal excitability and signal transmission.",
+      "mechanism_narrative": "SCN9A (HGNC:10604) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Congenital insensitivity to pain (HP:0003304); SCN2A (HGNC:10601) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Episodic ataxia (HP:0011364). Loss-of-function mutations in SCN9A disrupt normal voltage-gated sodium channel activity, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN2A also disrupt voltage-gated sodium channel activity, causing episodic ataxia. Both genes converge on the shared pathway of voltage-gated sodium channel activity, affecting neuronal excitability and signal transmission.",
+      "falsification": {
+        "text": "Demonstration that mutations in SCN9A and SCN2A do not functionally impact voltage-gated sodium channel activity in a manner consistent with the proposed gain-of-function or loss-of-function mechanisms, or identification of distinct, non-overlapping molecular pathways for each disease.",
+        "gnomad_variant": "High allele frequency (>1%) in gnomAD for pathogenic variants in SCN9A or SCN2A associated with these specific phenotypes would challenge their causal role."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030064",
+        "diseaseBName": "episodic ataxia, type 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.3693,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A (HGNC:10604) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Congenital insensitivity to pain (HP:0003304); SCN2A (HGNC:10601) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Episodic ataxia (HP:0011364). Loss-of-function mutations in SCN9A disrupt normal voltage-gated sodium channel activity, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN2A also disrupt voltage-gated sodium channel activity, causing episodic ataxia. Both genes converge on the shared pathway of voltage-gated sodium channel activity, affecting neuronal excitability and signal transmission.",
+        "falsification": {
+          "text": "Demonstration that mutations in SCN9A and SCN2A do not functionally impact voltage-gated sodium channel activity in a manner consistent with the proposed gain-of-function or loss-of-function mechanisms, or identification of distinct, non-overlapping molecular pathways for each disease.",
+          "gnomad_variant": "High allele frequency (>1%) in gnomAD for pathogenic variants in SCN9A or SCN2A associated with these specific phenotypes would challenge their causal role."
+        },
+        "translational": "Understanding the shared mechanism of voltage-gated sodium channel dysregulation offers potential therapeutic strategies targeting ion channel function that could be applicable to both congenital insensitivity to pain and episodic ataxia, although differential targeting based on the specific mutation type (LoF vs. GoF) would be crucial."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033371",
+      "diseaseBName": "developmental and epileptic encephalopathy, 62",
+      "fitness": 0.33,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A (HGNC:10596) —DECREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Congenital insensitivity to pain (HP:0003420); SCN3A (HGNC:10593) —INCREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Epileptic encephalopathy (HP:0011391). Loss-of-function mutations in SCN9A decrease neuronal excitability, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN3A increase neuronal excitability, leading to epileptic encephalopathy. Both diseases converge on the shared pathway of regulating neuronal excitability.",
+      "mechanism_narrative": "SCN9A (HGNC:10596) —DECREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Congenital insensitivity to pain (HP:0003420); SCN3A (HGNC:10593) —INCREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Epileptic encephalopathy (HP:0011391). Loss-of-function mutations in SCN9A decrease neuronal excitability, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN3A increase neuronal excitability, leading to epileptic encephalopathy. Both diseases converge on the shared pathway of regulating neuronal excitability.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function mutations in SCN9A who exhibit seizures, or gain-of-function mutations in SCN3A who exhibit congenital insensitivity to pain, would falsify this hypothesis.",
+        "gnomad_variant": "Exome or genome sequencing data showing pathogenic variants for each disease that are common in the general population (e.g., gnomAD allele frequency > 0.1%) would also cast doubt on these specific variants being causal."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033371",
+        "diseaseBName": "developmental and epileptic encephalopathy, 62",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.33,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A (HGNC:10596) —DECREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Congenital insensitivity to pain (HP:0003420); SCN3A (HGNC:10593) —INCREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Epileptic encephalopathy (HP:0011391). Loss-of-function mutations in SCN9A decrease neuronal excitability, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN3A increase neuronal excitability, leading to epileptic encephalopathy. Both diseases converge on the shared pathway of regulating neuronal excitability.",
+        "falsification": {
+          "text": "Identification of individuals with loss-of-function mutations in SCN9A who exhibit seizures, or gain-of-function mutations in SCN3A who exhibit congenital insensitivity to pain, would falsify this hypothesis.",
+          "gnomad_variant": "Exome or genome sequencing data showing pathogenic variants for each disease that are common in the general population (e.g., gnomAD allele frequency > 0.1%) would also cast doubt on these specific variants being causal."
+        },
+        "translational": "Understanding how distinct mutations in different sodium channel genes can lead to opposing effects on neuronal excitability, but ultimately manifest as severe neurological phenotypes, could inform therapeutic strategies. For instance, targeting downstream effectors of neuronal excitability might offer a common therapeutic avenue, or conversely, highlight the need for gene-specific interventions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014156",
+      "diseaseBName": "atrial fibrillation, familial, 14",
+      "fitness": 0.3222,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in SCN9A —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DECREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Congenital insensitivity to pain (HP:0003390); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN2B (HGNC:10602); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN9A (HGNC:10596); SCN2B (HGNC:10602) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); SCN9A (HGNC:10596) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function variants in SCN9A lead to impaired voltage-gated sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A or SCN2B also affect voltage-gated sodium channel activity, but in a manner that can promote atrial fibrillation.",
+      "mechanism_narrative": "Pathogenic variant in SCN9A —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DECREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Congenital insensitivity to pain (HP:0003390); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN2B (HGNC:10602); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN9A (HGNC:10596); SCN2B (HGNC:10602) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); SCN9A (HGNC:10596) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function variants in SCN9A lead to impaired voltage-gated sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A or SCN2B also affect voltage-gated sodium channel activity, but in a manner that can promote atrial fibrillation.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in SCN9A or SCN2B that causes a consistent loss-of-function phenotype in cardiac electrophysiology studies, or a consistent gain-of-function phenotype in nociception studies.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014156",
+        "diseaseBName": "atrial fibrillation, familial, 14",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.3222,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in SCN9A —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DECREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Congenital insensitivity to pain (HP:0003390); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN2B (HGNC:10602); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN9A (HGNC:10596); SCN2B (HGNC:10602) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); SCN9A (HGNC:10596) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function variants in SCN9A lead to impaired voltage-gated sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A or SCN2B also affect voltage-gated sodium channel activity, but in a manner that can promote atrial fibrillation.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in SCN9A or SCN2B that causes a consistent loss-of-function phenotype in cardiac electrophysiology studies, or a consistent gain-of-function phenotype in nociception studies.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the opposing functional consequences of SCN9A variants in different tissues (neurons vs. heart) and the role of SCN2B as a modulator could inform targeted therapeutic strategies for pain management and cardiac rhythm disorders, though the opposing functional requirements present a challenge."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012737",
+      "diseaseBName": "long QT syndrome 10",
+      "fitness": 0.2985,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SCN9A (HGNC:10604) —DISRUPTS→ Nociceptive signaling pathway (GO:0035482); Nociceptive signaling pathway (GO:0035482) —LEADS_TO→ Congenital insensitivity to pain (HP:0003417); SCN4B (HGNC:10605) —INCREASES→ Cardiac action potential duration (GO:0001978); Cardiac action potential duration (GO:0001978) —LEADS_TO→ Long QT syndrome (HP:0011676). Loss-of-function mutations in SCN9A disrupt nociceptive signaling, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN4B alter cardiac action potential duration, causing long QT syndrome. Although both genes encode sodium channel subunits and are involved in excitable cell function, their specific roles and the resulting pathologies diverge.",
+      "mechanism_narrative": "SCN9A (HGNC:10604) —DISRUPTS→ Nociceptive signaling pathway (GO:0035482); Nociceptive signaling pathway (GO:0035482) —LEADS_TO→ Congenital insensitivity to pain (HP:0003417); SCN4B (HGNC:10605) —INCREASES→ Cardiac action potential duration (GO:0001978); Cardiac action potential duration (GO:0001978) —LEADS_TO→ Long QT syndrome (HP:0011676). Loss-of-function mutations in SCN9A disrupt nociceptive signaling, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN4B alter cardiac action potential duration, causing long QT syndrome. Although both genes encode sodium channel subunits and are involved in excitable cell function, their specific roles and the resulting pathologies diverge.",
+      "falsification": {
+        "text": "The identification of patients with congenital insensitivity to pain caused by gain-of-function mutations in SCN9A, or patients with long QT syndrome caused by loss-of-function mutations in SCN4B, would falsify this hypothesis of distinct functional consequences arising from mutations in these shared genes.",
+        "gnomad_variant": "A common pathogenic variant (AF > 0.01) in gnomAD for either SCN9A or SCN4B associated with the respective disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9717207",
+        "Reactome:R-HSA-445095",
+        "Reactome:R-HSA-5576892"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9717207": 41,
+        "Reactome:R-HSA-445095": 31,
+        "Reactome:R-HSA-5576892": 34
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012737",
+        "diseaseBName": "long QT syndrome 10",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9717207",
+          "Reactome:R-HSA-445095",
+          "Reactome:R-HSA-5576892"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9717207": 41,
+          "Reactome:R-HSA-445095": 31,
+          "Reactome:R-HSA-5576892": 34
+        },
+        "fitness": 0.2985,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SCN9A (HGNC:10604) —DISRUPTS→ Nociceptive signaling pathway (GO:0035482); Nociceptive signaling pathway (GO:0035482) —LEADS_TO→ Congenital insensitivity to pain (HP:0003417); SCN4B (HGNC:10605) —INCREASES→ Cardiac action potential duration (GO:0001978); Cardiac action potential duration (GO:0001978) —LEADS_TO→ Long QT syndrome (HP:0011676). Loss-of-function mutations in SCN9A disrupt nociceptive signaling, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN4B alter cardiac action potential duration, causing long QT syndrome. Although both genes encode sodium channel subunits and are involved in excitable cell function, their specific roles and the resulting pathologies diverge.",
+        "falsification": {
+          "text": "The identification of patients with congenital insensitivity to pain caused by gain-of-function mutations in SCN9A, or patients with long QT syndrome caused by loss-of-function mutations in SCN4B, would falsify this hypothesis of distinct functional consequences arising from mutations in these shared genes.",
+          "gnomad_variant": "A common pathogenic variant (AF > 0.01) in gnomAD for either SCN9A or SCN4B associated with the respective disease phenotype."
+        },
+        "translational": "Understanding the distinct functional consequences of mutations in SCN9A and SCN4B, despite their shared role in sodium channel function, is crucial for developing targeted therapies for pain disorders and cardiac channelopathies. This highlights the complexity of ion channelopathies and the need for gene- and mutation-specific therapeutic strategies."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T12:40:19.109Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** channelopathy-associated congenital insensitivity to pain, autosomal recessive (MONDO:0009459)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 18 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | primary erythermalgia (MONDO:0007571) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 2 | paroxysmal extreme pain disorder (MONDO:0008179) | shared pathway | Tier 3 | 0.465 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 3 | complex neurodevelopmental disorder (MONDO:0100038) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 4 | epilepsy, familial focal, with variable foci 4 (MONDO:0054776) | shared pathway | Tier 3 | 0.379 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 5 | genetic developmental and epileptic encephalopathy (MONDO:0100062) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 6 | developmental and epileptic encephalopathy, 11 (MONDO:0013388) | shared pathway | Tier 3 | 0.373 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 7 | episodic ataxia, type 9 (MONDO:0030064) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 8 | developmental and epileptic encephalopathy, 62 (MONDO:0033371) | shared pathway | Tier 3 | 0.330 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 9 | atrial fibrillation, familial, 14 (MONDO:0014156) | shared pathway | Tier 3 | 0.322 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n| 10 | long QT syndrome 10 (MONDO:0012737) | shared pathway | Tier 3 | 0.298 | Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892 |\n\n### CANDIDATE DETAIL\n#### 1. primary erythermalgia  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A (HGNC:10597) —DISRUPTS→ Loss-of-function variants in SCN9A (null); SCN9A (HGNC:10597) —DISRUPTS→ Gain-of-function variants in SCN9A (null); Loss-of-function variants in SCN9A (null) —DECREASES→ Nav1.7 channel activity in nociceptive neurons (null); Gain-of-function variants in SCN9A (null) —INCREASES→ Nav1.7 channel activity in nociceptive neurons (null); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Congenital insensitivity to pain (HP:0003481); Nav1.7 channel activity in nociceptive neurons (null) —LEADS_TO→ Erythermalgia (HP:0011761). Loss-of-function variants in SCN9A lead to decreased Nav1.7 channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A lead to increased Nav1.7 channel activity, resulting in erythermalgia. Both disease mechanisms converge on the activity of the Nav1.7 channel in nociceptive neurons.\n\n**How to falsify it:** The identification of individuals with loss-of-function SCN9A variants presenting with erythermalgia, or gain-of-function variants presenting with congenital insensitivity to pain, would falsify this hypothesis. _(variant: The presence of common loss-of-function variants in SCN9A in the general population (e.g., gnomAD allele frequency > 1%) would also challenge the causative role of these variants in congenital insensitivity to pain.)_\n\n**Why it matters:** Understanding the opposing functional consequences of SCN9A mutations in these two distinct pain disorders offers potential therapeutic avenues. Modulating Nav1.7 channel activity could be explored for pain management, either by blocking channel function in conditions of hyperexcitability or by restoring function in cases of insensitivity, although the latter presents greater challenges.\n\n---\n\n#### 2. paroxysmal extreme pain disorder  —  Tier 3 — Moderate / Emerging  (fitness 0.465)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** Loss-of-function variant in SCN9A (MONDO:0009459) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Congenital insensitivity to pain (HP:0003422); Gain-of-function variant in SCN9A (MONDO:0008179) —DISRUPTS→ SCN9A (HGNC:10597); SCN9A (HGNC:10597) —DISRUPTS→ Sodium channel activity (GO:0005488); Sodium channel activity (GO:0005488) —LEADS_TO→ Paroxysmal extreme pain (HP:0011762). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Conversely, gain-of-function mutations in SCN9A enhance sodium channel activity, leading to paroxysmal extreme pain.\n\n**How to falsify it:** Identification of individuals with loss-of-function SCN9A variants who exhibit paroxysmal extreme pain, or individuals with gain-of-function SCN9A variants who are congenitally insensitive to pain. _(variant: rs752704918 (a known LoF variant in SCN9A associated with CIP))_\n\n**Why it matters:** Understanding the opposing functional consequences of SCN9A mutations in these two disorders highlights the critical role of precise ion channel regulation in pain signaling and offers potential therapeutic targets for pain management.\n\n---\n\n#### 3. complex neurodevelopmental disorder  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A (HGNC:10595) —PRODUCES→ Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595); Voltage-gated sodium channel subunit alpha Nav1.7 (HGNC:10595) —DISRUPTS→ Neuronal excitability and pain signaling (GO:0001540); Neuronal excitability and pain signaling (GO:0001540) —LEADS_TO→ Congenital insensitivity to pain (HP:0002186); Glutamate Ionotropic Receptor NMDA Type Subunit 1 (HGNC:4540) —DISRUPTS→ NMDA receptor mediated synaptic transmission (GO:0008067); NMDA receptor mediated synaptic transmission (GO:0008067) —DISRUPTS→ Neuronal development and signaling (GO:0048666); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Motor impairment (HP:0001344); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Delayed gross motor development (HP:0000707); Neuronal development and signaling (GO:0048666) —LEADS_TO→ Seizures (HP:0001250). Mutations in SCN9A lead to loss-of-function of Nav1.7 channels, disrupting neuronal excitability and pain signaling, causing congenital insensitivity to pain. Similarly, mutations in genes like GRIN1, which encode NMDA receptor subunits, can disrupt NMDA receptor function, thereby affecting broader neuronal development and signaling pathways, leading to complex neurodevelopmental disorders with phenotypes including intellectual disability, motor impairments, and seizures. The convergence is on the general disruption of neuronal signaling and development, which underpin the diverse phenotypes of both conditions.\n\n**How to falsify it:** Demonstration that the identified causal variants in SCN9A and genes associated with complex neurodevelopmental disorders (e.g., GRIN1, STXBP1) do not converge on shared downstream pathways affecting neuronal excitability or development, or that mutations in these genes do not lead to consistent directional effects on these pathways. _(variant: Presence of common variants (AF > 0.01) in the coding regions of SCN9A, GRIN1, STXBP1, or other key genes in these pathways within the gnomAD database.)_\n\n**Why it matters:** Understanding the shared mechanistic basis in neuronal ion channel function and signaling pathways could reveal common therapeutic targets for pain management and neurodevelopmental interventions. For instance, modulating neuronal excitability might offer therapeutic avenues for both conditions.\n\n---\n\n#### 4. epilepsy, familial focal, with variable foci 4  —  Tier 3 — Moderate / Emerging  (fitness 0.379)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** Loss-of-function variant in SCN9A (null) —DISRUPTS→ SCN9A (HGNC:10604); SCN9A (HGNC:10604) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Congenital insensitivity to pain (HP:0003414); Gain-of-function variant in SCN3A (null) —DISRUPTS→ SCN3A (HGNC:10598); SCN3A (HGNC:10598) —DISRUPTS→ Neuronal sodium channel activity (GO:0005071); Neuronal sodium channel activity (GO:0005071) —LEADS_TO→ Epilepsy, familial focal, with variable foci 4 (MONDO:0054776). Loss-of-function mutations in SCN9A lead to impaired sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function mutations in SCN3A also disrupt neuronal sodium channel activity, but in a manner that increases neuronal excitability, leading to epilepsy. Both diseases converge on the disruption of normal neuronal sodium channel activity, albeit through opposing functional consequences on the channel itself.\n\n**How to falsify it:** If pathogenic variants in SCN9A are found to cause epilepsy, or pathogenic variants in SCN3A are found to cause congenital insensitivity to pain, this hypothesis would be falsified. Additionally, if the identified variants in SCN9A and SCN3A do not demonstrably alter neuronal sodium channel function in electrophysiological studies, the proposed mechanism would be weakened. _(variant: The presence of common variants (allele frequency > 1%) in gnomAD within the coding regions of SCN9A and SCN3A that are implicated in these diseases would challenge the causality.)_\n\n**Why it matters:** Understanding the shared reliance on neuronal sodium channel function, despite differing functional impacts of mutations, could lead to novel therapeutic strategies. For instance, targeting specific sodium channel subtypes or regulatory mechanisms might offer avenues for treating both pain disorders and epilepsy, potentially through modulators that restore channel balance.\n\n---\n\n#### 5. genetic developmental and epileptic encephalopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** Loss-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Congenital insensitivity to pain (HP:0000390); Gain-of-function variant in SCN9A (rs755622367) —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DISRUPTS→ Sodium channel activity and neuronal excitability regulation (GO:0005479); Sodium channel activity and neuronal excitability regulation (GO:0005479) —LEADS_TO→ Epileptic encephalopathy (HP:0011231). Loss-of-function variants in SCN9A disrupt sodium channel activity leading to congenital insensitivity to pain, while gain-of-function variants in the same gene disrupt sodium channel activity, causing neuronal hyperexcitability and epileptic encephalopathy. The convergence point is the disruption of normal sodium channel function and subsequent modulation of neuronal excitability.\n\n**How to falsify it:** If a patient presented with both congenital insensitivity to pain and epileptic encephalopathy, but genetic testing revealed pathogenic variants in two completely unrelated genes, each independently causing one of the phenotypes, this would falsify a direct mechanistic link through a single gene or pathway. _(variant: Presence of common loss-of-function variants (e.g., MAF > 1%) in SCN9A in the general population that do not lead to congenital insensitivity to pain, or common gain-of-function variants that do not lead to epilepsy, would challenge the direct causality of these specific variants.)_\n\n**Why it matters:** Understanding the opposing functional consequences of SCN9A variants (loss-of-function vs. gain-of-function) on neuronal excitability could inform the development of targeted therapies. For congenital insensitivity to pain, enhancing channel activity might be beneficial, whereas for epileptic encephalopathy, blocking or reducing channel activity could be therapeutic. This highlights the potential for genotype-specific treatment strategies.\n\n---\n\n#### 6. developmental and epileptic encephalopathy, 11  —  Tier 3 — Moderate / Emerging  (fitness 0.373)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A pathogenic variant —DISRUPTS→ SCN9A (HGNC:10610); SCN9A (HGNC:10610) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Congenital insensitivity to pain (HP:0003431); SCN2A pathogenic variant —DISRUPTS→ SCN2A (HGNC:10609); SCN2A (HGNC:10609) —DISRUPTS→ Neuronal sodium ion channel activity (GO:0005887); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Epilepsy (HP:0001250); Neuronal sodium ion channel activity (GO:0005887) —LEADS_TO→ Developmental delay (HP:0001263). Pathogenic variants in SCN9A lead to loss-of-function, disrupting normal neuronal sodium ion channel activity and resulting in congenital insensitivity to pain. Pathogenic variants in SCN2A lead to gain-of-function, also disrupting normal neuronal sodium ion channel activity, but causing neuronal hyperexcitability, leading to epilepsy and developmental delay.\n\n**How to falsify it:** If a patient with congenital insensitivity to pain harbors a confirmed gain-of-function mutation in SCN9A, or a patient with developmental and epileptic encephalopathy 11 harbors a confirmed loss-of-function mutation in SCN2A, this hypothesis would be falsified. _(variant: gnomAD analysis showing a high-frequency pathogenic variant in SCN9A with gain-of-function effect or in SCN2A with loss-of-function effect.)_\n\n**Why it matters:** Understanding the shared role of sodium channel dysfunction in these distinct neurological disorders could inform therapeutic strategies. For example, targeting specific sodium channel subtypes or modulating channel activity could offer potential treatments for both pain insensitivity and epilepsy, depending on the specific mutation and its functional consequence.\n\n---\n\n#### 7. episodic ataxia, type 9  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A (HGNC:10604) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Congenital insensitivity to pain (HP:0003304); SCN2A (HGNC:10601) —DISRUPTS→ Voltage-gated sodium channel activity (GO:0005244); Voltage-gated sodium channel activity (GO:0005244) —LEADS_TO→ Episodic ataxia (HP:0011364). Loss-of-function mutations in SCN9A disrupt normal voltage-gated sodium channel activity, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN2A also disrupt voltage-gated sodium channel activity, causing episodic ataxia. Both genes converge on the shared pathway of voltage-gated sodium channel activity, affecting neuronal excitability and signal transmission.\n\n**How to falsify it:** Demonstration that mutations in SCN9A and SCN2A do not functionally impact voltage-gated sodium channel activity in a manner consistent with the proposed gain-of-function or loss-of-function mechanisms, or identification of distinct, non-overlapping molecular pathways for each disease. _(variant: High allele frequency (>1%) in gnomAD for pathogenic variants in SCN9A or SCN2A associated with these specific phenotypes would challenge their causal role.)_\n\n**Why it matters:** Understanding the shared mechanism of voltage-gated sodium channel dysregulation offers potential therapeutic strategies targeting ion channel function that could be applicable to both congenital insensitivity to pain and episodic ataxia, although differential targeting based on the specific mutation type (LoF vs. GoF) would be crucial.\n\n---\n\n#### 8. developmental and epileptic encephalopathy, 62  —  Tier 3 — Moderate / Emerging  (fitness 0.330)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A (HGNC:10596) —DECREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Congenital insensitivity to pain (HP:0003420); SCN3A (HGNC:10593) —INCREASES→ Neuronal excitability (GO:0007270); Neuronal excitability (GO:0007270) —LEADS_TO→ Epileptic encephalopathy (HP:0011391). Loss-of-function mutations in SCN9A decrease neuronal excitability, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN3A increase neuronal excitability, leading to epileptic encephalopathy. Both diseases converge on the shared pathway of regulating neuronal excitability.\n\n**How to falsify it:** Identification of individuals with loss-of-function mutations in SCN9A who exhibit seizures, or gain-of-function mutations in SCN3A who exhibit congenital insensitivity to pain, would falsify this hypothesis. _(variant: Exome or genome sequencing data showing pathogenic variants for each disease that are common in the general population (e.g., gnomAD allele frequency > 0.1%) would also cast doubt on these specific variants being causal.)_\n\n**Why it matters:** Understanding how distinct mutations in different sodium channel genes can lead to opposing effects on neuronal excitability, but ultimately manifest as severe neurological phenotypes, could inform therapeutic strategies. For instance, targeting downstream effectors of neuronal excitability might offer a common therapeutic avenue, or conversely, highlight the need for gene-specific interventions.\n\n---\n\n#### 9. atrial fibrillation, familial, 14  —  Tier 3 — Moderate / Emerging  (fitness 0.322)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** Pathogenic variant in SCN9A —DISRUPTS→ SCN9A (HGNC:10596); SCN9A (HGNC:10596) —DECREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Congenital insensitivity to pain (HP:0003390); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN2B (HGNC:10602); Pathogenic variant in SCN9A or SCN2B —DISRUPTS→ SCN9A (HGNC:10596); SCN2B (HGNC:10602) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); SCN9A (HGNC:10596) —INCREASES→ voltage-gated sodium channel activity (GO:0005390); voltage-gated sodium channel activity (GO:0005390) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function variants in SCN9A lead to impaired voltage-gated sodium channel activity, resulting in congenital insensitivity to pain. Gain-of-function variants in SCN9A or SCN2B also affect voltage-gated sodium channel activity, but in a manner that can promote atrial fibrillation.\n\n**How to falsify it:** Discovery of a pathogenic variant in SCN9A or SCN2B that causes a consistent loss-of-function phenotype in cardiac electrophysiology studies, or a consistent gain-of-function phenotype in nociception studies. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the opposing functional consequences of SCN9A variants in different tissues (neurons vs. heart) and the role of SCN2B as a modulator could inform targeted therapeutic strategies for pain management and cardiac rhythm disorders, though the opposing functional requirements present a challenge.\n\n---\n\n#### 10. long QT syndrome 10  —  Tier 3 — Moderate / Emerging  (fitness 0.298)\n**Link type:** shared pathway (Reactome:R-HSA-9717207, Reactome:R-HSA-445095, Reactome:R-HSA-5576892)\n\n**Proposed mechanism:** SCN9A (HGNC:10604) —DISRUPTS→ Nociceptive signaling pathway (GO:0035482); Nociceptive signaling pathway (GO:0035482) —LEADS_TO→ Congenital insensitivity to pain (HP:0003417); SCN4B (HGNC:10605) —INCREASES→ Cardiac action potential duration (GO:0001978); Cardiac action potential duration (GO:0001978) —LEADS_TO→ Long QT syndrome (HP:0011676). Loss-of-function mutations in SCN9A disrupt nociceptive signaling, leading to congenital insensitivity to pain. Gain-of-function mutations in SCN4B alter cardiac action potential duration, causing long QT syndrome. Although both genes encode sodium channel subunits and are involved in excitable cell function, their specific roles and the resulting pathologies diverge.\n\n**How to falsify it:** The identification of patients with congenital insensitivity to pain caused by gain-of-function mutations in SCN9A, or patients with long QT syndrome caused by loss-of-function mutations in SCN4B, would falsify this hypothesis of distinct functional consequences arising from mutations in these shared genes. _(variant: A common pathogenic variant (AF > 0.01) in gnomAD for either SCN9A or SCN4B associated with the respective disease phenotype.)_\n\n**Why it matters:** Understanding the distinct functional consequences of mutations in SCN9A and SCN4B, despite their shared role in sodium channel function, is crucial for developing targeted therapies for pain disorders and cardiac channelopathies. This highlights the complexity of ion channelopathies and the need for gene- and mutation-specific therapeutic strategies.\n\n---"
+}

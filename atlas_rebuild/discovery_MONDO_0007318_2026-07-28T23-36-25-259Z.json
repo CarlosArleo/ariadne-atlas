@@ -1,0 +1,190 @@
+{
+  "seed": {
+    "id": "MONDO:0007318",
+    "name": "Alagille syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 24,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0060713",
+      "diseaseBName": "deafness, congenital heart defects, and posterior embryotoxon",
+      "fitness": 0.7352,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (R-HSA-1909490); NOTCH2 (HGNC:7929) —DISRUPTS→ Notch signaling pathway (R-HSA-1909490); Notch signaling pathway (R-HSA-1909490) —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway (R-HSA-1909490) —LEADS_TO→ Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713); Alagille syndrome (MONDO:0007318) —LEADS_TO→ Cardiac malformations (HP:0001627); Alagille syndrome (MONDO:0007318) —LEADS_TO→ Hearing impairment (HP:0000365); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Cardiac malformations (HP:0001627); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Hearing impairment (HP:0000365); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Posterior embryotoxon (HP:0000020). Disruption of the Notch signaling pathway due to haploinsufficiency of JAG1 or NOTCH2 leads to overlapping phenotypes in Alagille syndrome and the syndrome of deafness, congenital heart defects, and posterior embryotoxon.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in JAG1 or NOTCH2 that lead to gain-of-function mutations for one disease while haploinsufficiency for the other, or the absence of any genetic link to JAG1 or NOTCH2 in affected individuals of either disease.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for known pathogenic variants in JAG1 or NOTCH2."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-8941856",
+        "Reactome:R-HSA-9013149",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008542",
+      "diseaseBName": "tetralogy of fallot",
+      "fitness": 0.7311,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "JAG1 (HGNC:6188) —DISRUPTS→ NOTCH signaling pathway (GO:0007219); NOTCH2 (HGNC:7941) —DISRUPTS→ NOTCH signaling pathway (GO:0007219); GATA4 (HGNC:4145) —LEADS_TO→ Cardiac malformations (HP:0001627); TBX1 (HGNC:11757) —LEADS_TO→ Cardiac malformations (HP:0001627); NKX2-5 (HGNC:7739) —LEADS_TO→ Cardiac malformations (HP:0001627); NOTCH signaling pathway (GO:0007219) —LEADS_TO→ Cardiac malformations (HP:0001627); NOTCH signaling pathway (GO:0007219) —LEADS_TO→ Biliary hypoplasia (HP:0001314). Mutations in JAG1 and NOTCH2, key components of the Notch signaling pathway, lead to haploinsufficiency. Disruption of the Notch signaling pathway (n3) impacts multiple developmental processes, including cardiac development (leading to phenotypes like tetralogy of Fallot, n4) and liver/biliary development (leading to phenotypes like biliary hypoplasia seen in Alagille syndrome, n5). Other genes like GATA4, TBX1, and NKX2-5 also contribute to cardiac development, but the convergence point for both diseases is the disruption of the Notch signaling pathway.",
+      "falsification": {
+        "text": "If mutations in JAG1 or NOTCH2 in patients with tetralogy of Fallot do not consistently lead to disruption of the Notch signaling pathway, or if patients with Alagille syndrome do not exhibit phenotypes linked to Notch pathway dysregulation.",
+        "gnomad_variant": "If common variants (AF > 1%) in JAG1 or NOTCH2 are found to be causal for either Alagille syndrome or tetralogy of Fallot."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-8941856",
+        "Reactome:R-HSA-9013149",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0016862",
+      "diseaseBName": "Alagille syndrome due to a JAG1 point mutation",
+      "fitness": 0.7216,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (GO:0007219); NOTCH2 (HGNC:7904) —BINDS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome (MONDO:0016862). Disruption of the JAG1 gene, either through a point mutation or other mechanisms leading to haploinsufficiency, impairs the Notch signaling pathway. This disruption results in the phenotypes associated with Alagille syndrome (MONDO:0007318 and MONDO:0016862).",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in genes other than JAG1 or NOTCH2 are the primary cause of Alagille syndrome in affected individuals, or if the Notch signaling pathway is found to be unaffected despite JAG1 mutations, this hypothesis would be falsified.",
+        "gnomad_variant": "rs121918409"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-8941856",
+        "Reactome:R-HSA-9013149",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0030458",
+      "diseaseBName": "Charcot-Marie-Tooth disease, axonal, Type 2HH",
+      "fitness": 0.6816,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "JAG1 variant causing loss of function —DISRUPTS→ JAG1 (HGNC:6188); JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (GO:0007222); Notch signaling pathway (GO:0007222) —LEADS_TO→ Biliary hypoplasia (HP:0001386); Notch signaling pathway (GO:0007222) —LEADS_TO→ Peripheral neuropathy (HP:0003489). Loss-of-function variants in JAG1 disrupt the Notch signaling pathway, leading to both biliary hypoplasia (Alagille syndrome) and peripheral neuropathy (Charcot-Marie-Tooth disease, axonal, Type 2HH).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in JAG1 with a consistent loss-of-function effect in both diseases, but leading to distinct downstream signaling disruptions that cannot explain both phenotypes, would falsify this hypothesis.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-8941856",
+        "Reactome:R-HSA-9013149",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014703",
+      "diseaseBName": "Adams-Oliver syndrome 6",
+      "fitness": 0.5411,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAG1 (HGNC:6196) —DISRUPTS→ Notch signaling pathway (WP:WP404); NOTCH2 (HGNC:7941) —DISRUPTS→ Notch signaling pathway (WP:WP404); DLL4 (HGNC:3750) —DISRUPTS→ Notch signaling pathway (WP:WP404); Notch signaling pathway (WP:WP404) —LEADS_TO→ Abnormal branching of biliary ducts (HP:0009724); Notch signaling pathway (WP:WP404) —LEADS_TO→ Limb malformation (HP:0001741). Mutations in JAG1 or NOTCH2 in Alagille syndrome, and DLL4 in Adams-Oliver syndrome 6, disrupt the Notch signaling pathway. Dysregulation of this pathway leads to distinct but overlapping phenotypic consequences such as biliary duct malformations and limb abnormalities.",
+      "falsification": {
+        "text": "If genetic studies reveal distinct, non-overlapping molecular pathways for Alagille syndrome (involving JAG1/NOTCH2) and Adams-Oliver syndrome 6 (involving DLL4), and no common downstream effectors are identified, this hypothesis would be falsified.",
+        "gnomad_variant": "The absence of pathogenic variants in JAG1, NOTCH2, or DLL4 in individuals with features of both syndromes in large population databases like gnomAD would also weaken this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0032877",
+      "diseaseBName": "neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures",
+      "fitness": 0.4349,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAG1 (HGNC:6197) —DISRUPTS→ NOTCH signaling pathway (GO:0007222); NOTCH2 (HGNC:7940) —DISRUPTS→ NOTCH signaling pathway (GO:0007222); NOTCH signaling pathway (GO:0007222) —LEADS_TO→ Alagille syndrome (MONDO:0007318); NOTCH signaling pathway (GO:0007222) —LEADS_TO→ Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877); Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877) —LEADS_TO→ Abnormal brain morphology (HP:0000272); Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877) —LEADS_TO→ Seizures (HP:0001250). Mutations in JAG1 or NOTCH2 disrupt the Notch signaling pathway, which is crucial for development. This disruption leads to the phenotypes associated with Alagille syndrome and contributes to neurodevelopmental abnormalities, including abnormal brain morphology and seizures, seen in the second disorder.",
+      "falsification": {
+        "text": "If mutations in JAG1 or NOTCH2 are found to exclusively affect specific downstream pathways unrelated to neurodevelopment in Alagille syndrome, or if the neurodevelopmental disorder arises from a completely independent genetic pathway not involving Notch signaling, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (e.g., allele frequency > 1% in gnomAD) in JAG1 or NOTCH2 that do not segregate with either disease would challenge the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011743",
+      "diseaseBName": "Alzheimer disease 4",
+      "fitness": 0.4307,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSEN2 (HGNC:9184) —DISRUPTS→ endoplasmic reticulum-associated degradation (GO:0030434); endoplasmic reticulum-associated degradation (GO:0030434) —LEADS_TO→ neurodegeneration (HP:0002090); JAG1 (HGNC:6193) —DISRUPTS→ Notch signaling pathway (GO:0007219); NOTCH2 (HGNC:7949) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome phenotype (MONDO:0007318); endoplasmic reticulum-associated degradation (GO:0030434) —LEADS_TO→ Alagille syndrome phenotype (MONDO:0007318). Mutations in PSEN2 disrupt ER-associated degradation, leading to neurodegeneration in Alzheimer disease 4. Concurrently, mutations in JAG1 or NOTCH2 disrupt the Notch signaling pathway, contributing to the Alagille syndrome phenotype. The convergence occurs as both ERAD dysfunction and Notch signaling disruption can impact cellular homeostasis and protein quality control, ultimately contributing to a broad spectrum of cellular dysfunction that can manifest in distinct but overlapping ways, including in the context of neuronal health.",
+      "falsification": {
+        "text": "Demonstration that PSEN2 has no role in ER-associated degradation or that JAG1/NOTCH2 mutations do not impact ERAD-related cellular processes would falsify this hypothesis.",
+        "gnomad_variant": "rs121918333 (a known pathogenic variant in PSEN2) has a gnomAD allele frequency < 0.0001."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014234",
+      "diseaseBName": "reticulate acropigmentation of Kitamura",
+      "fitness": 0.3999,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAG1 (HGNC:6005) —DISRUPTS→ Notch signaling pathway (GO:0007222); NOTCH2 (HGNC:7940) —DISRUPTS→ Notch signaling pathway (GO:0007222); ADAM10 (HGNC:248) —DISRUPTS→ Notch signaling pathway (GO:0007222); Notch signaling pathway (GO:0007222) —LEADS_TO→ Biliary hypoplasia (HP:0009770); Notch signaling pathway (GO:0007222) —LEADS_TO→ Skeletal abnormalities (HP:0002650); Notch signaling pathway (GO:0007222) —LEADS_TO→ Reticulate pigmentation (HP:0031787). Mutations in JAG1 and NOTCH2 cause Alagille syndrome through haploinsufficiency, disrupting the Notch signaling pathway and leading to phenotypes like biliary hypoplasia and skeletal abnormalities. We hypothesize that mutations in ADAM10 or other downstream effectors of Notch signaling cause reticulate acropigmentation of Kitamura via loss-of-function, also impacting the Notch pathway and contributing to pigmentation defects and skeletal issues.",
+      "falsification": {
+        "text": "If genetic analysis reveals no pathogenic variants in JAG1, NOTCH2, or ADAM10 in individuals with either Alagille syndrome or reticulate acropigmentation of Kitamura, or if the identified variants do not affect the Notch signaling pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "rs113003017 (a known pathogenic variant in JAG1) having a GMAF > 0.001 in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014042",
+      "diseaseBName": "left ventricular noncompaction 7",
+      "fitness": 0.3858,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JAG1 (HGNC:6190) —DISRUPTS→ Notch signaling pathway; NOTCH2 (HGNC:7940) —DISRUPTS→ Notch signaling pathway; MIB1 (HGNC:15090) —DISRUPTS→ Notch signaling pathway; Notch signaling pathway —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway —LEADS_TO→ Left ventricular noncompaction 7 (MONDO:0014042). Mutations in JAG1, NOTCH2, and MIB1 disrupt the Notch signaling pathway, which is implicated in the pathogenesis of both Alagille syndrome and left ventricular noncompaction 7.",
+      "falsification": {
+        "text": "If genetic studies reveal distinct, non-overlapping molecular pathways or entirely different sets of causal genes for Alagille syndrome and left ventricular noncompaction 7, this mechanistic link would be falsified.",
+        "gnomad_variant": "The presence of common variants (e.g., >1% allele frequency in gnomAD) in JAG1, NOTCH2, or MIB1 that do not segregate with either disease would weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0030456",
+      "diseaseBName": "muscular dystrophy, limb-girdle, autosomal recessive 27",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "JAG1 (HGNC:6190) —DISRUPTS→ NOTCH signaling pathway (WP:WP474); NOTCH signaling pathway (WP:WP474) —LEADS_TO→ Intrahepatic bile duct paucity (HP:0000072); JAG1 (HGNC:6190) —DISRUPTS→ NOTCH signaling pathway (WP:WP474); NOTCH signaling pathway (WP:WP474) —LEADS_TO→ Abnormal skeletal muscle physiology (HP:0003198); JAG1 (HGNC:6190) —BINDS→ JAG1 (HGNC:6190); NOTCH signaling pathway (WP:WP474) —BINDS→ NOTCH signaling pathway (WP:WP474). Mutations in JAG1 in Alagille syndrome disrupt the NOTCH signaling pathway, leading to phenotypes like intrahepatic bile duct paucity. Similarly, mutations in JAG1 in limb-girdle muscular dystrophy disrupt the same NOTCH pathway, impacting cellular processes necessary for muscle integrity and function, ultimately causing skeletal muscle weakness and abnormal physiology.",
+      "falsification": {
+        "text": "Demonstration that mutations in JAG1 in Alagille syndrome and limb-girdle muscular dystrophy affect entirely distinct downstream effectors of the NOTCH pathway, with no shared impact on cellular processes related to skeletal muscle development or maintenance.",
+        "gnomad_variant": "Presence of common pathogenic variants in JAG1 (e.g., gnomAD allele frequency > 0.01) that are associated with neither Alagille syndrome nor limb-girdle muscular dystrophy."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2979096",
+        "Reactome:R-HSA-2691232",
+        "Reactome:R-HSA-2894862"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:36:25.259Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Alagille syndrome (MONDO:0007318)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 24 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) | shared pathway | Tier 1 | 0.735 | Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 2 | tetralogy of fallot (MONDO:0008542) | shared pathway | Tier 1 | 0.731 | Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 3 | Alagille syndrome due to a JAG1 point mutation (MONDO:0016862) | shared pathway | Tier 1 | 0.722 | Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 4 | Charcot-Marie-Tooth disease, axonal, Type 2HH (MONDO:0030458) | shared pathway | Tier 1 | 0.682 | Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 5 | Adams-Oliver syndrome 6 (MONDO:0014703) | shared pathway | Tier 3 | 0.541 | Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 6 | neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 7 | Alzheimer disease 4 (MONDO:0011743) | shared pathway | Tier 3 | 0.431 | Reactome:R-HSA-2979096, Reactome:R-HSA-2894862 |\n| 8 | reticulate acropigmentation of Kitamura (MONDO:0014234) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 9 | left ventricular noncompaction 7 (MONDO:0014042) | shared pathway | Tier 3 | 0.386 | Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n| 10 | muscular dystrophy, limb-girdle, autosomal recessive 27 (MONDO:0030456) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862 |\n\n### CANDIDATE DETAIL\n#### 1. deafness, congenital heart defects, and posterior embryotoxon  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.735)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (R-HSA-1909490); NOTCH2 (HGNC:7929) —DISRUPTS→ Notch signaling pathway (R-HSA-1909490); Notch signaling pathway (R-HSA-1909490) —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway (R-HSA-1909490) —LEADS_TO→ Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713); Alagille syndrome (MONDO:0007318) —LEADS_TO→ Cardiac malformations (HP:0001627); Alagille syndrome (MONDO:0007318) —LEADS_TO→ Hearing impairment (HP:0000365); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Cardiac malformations (HP:0001627); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Hearing impairment (HP:0000365); Deafness, congenital heart defects, and posterior embryotoxon (MONDO:0060713) —LEADS_TO→ Posterior embryotoxon (HP:0000020). Disruption of the Notch signaling pathway due to haploinsufficiency of JAG1 or NOTCH2 leads to overlapping phenotypes in Alagille syndrome and the syndrome of deafness, congenital heart defects, and posterior embryotoxon.\n\n**How to falsify it:** Identification of pathogenic variants in JAG1 or NOTCH2 that lead to gain-of-function mutations for one disease while haploinsufficiency for the other, or the absence of any genetic link to JAG1 or NOTCH2 in affected individuals of either disease. _(variant: gnomAD allele frequency > 0.01 for known pathogenic variants in JAG1 or NOTCH2.)_\n\n**Why it matters:** Understanding the shared role of JAG1 and NOTCH2 in these distinct but overlapping conditions can inform diagnostic strategies and potentially uncover therapeutic targets for the Notch signaling pathway that could benefit patients with either syndrome.\n\n---\n\n#### 2. tetralogy of fallot  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.731)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6188) —DISRUPTS→ NOTCH signaling pathway (GO:0007219); NOTCH2 (HGNC:7941) —DISRUPTS→ NOTCH signaling pathway (GO:0007219); GATA4 (HGNC:4145) —LEADS_TO→ Cardiac malformations (HP:0001627); TBX1 (HGNC:11757) —LEADS_TO→ Cardiac malformations (HP:0001627); NKX2-5 (HGNC:7739) —LEADS_TO→ Cardiac malformations (HP:0001627); NOTCH signaling pathway (GO:0007219) —LEADS_TO→ Cardiac malformations (HP:0001627); NOTCH signaling pathway (GO:0007219) —LEADS_TO→ Biliary hypoplasia (HP:0001314). Mutations in JAG1 and NOTCH2, key components of the Notch signaling pathway, lead to haploinsufficiency. Disruption of the Notch signaling pathway (n3) impacts multiple developmental processes, including cardiac development (leading to phenotypes like tetralogy of Fallot, n4) and liver/biliary development (leading to phenotypes like biliary hypoplasia seen in Alagille syndrome, n5). Other genes like GATA4, TBX1, and NKX2-5 also contribute to cardiac development, but the convergence point for both diseases is the disruption of the Notch signaling pathway.\n\n**How to falsify it:** If mutations in JAG1 or NOTCH2 in patients with tetralogy of Fallot do not consistently lead to disruption of the Notch signaling pathway, or if patients with Alagille syndrome do not exhibit phenotypes linked to Notch pathway dysregulation. _(variant: If common variants (AF > 1%) in JAG1 or NOTCH2 are found to be causal for either Alagille syndrome or tetralogy of Fallot.)_\n\n**Why it matters:** Understanding the shared role of the Notch signaling pathway in Alagille syndrome and tetralogy of Fallot could lead to shared therapeutic strategies targeting this pathway for both conditions, or for identifying individuals at risk for one disease based on mutations associated with the other.\n\n---\n\n#### 3. Alagille syndrome due to a JAG1 point mutation  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.722)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (GO:0007219); NOTCH2 (HGNC:7904) —BINDS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome (MONDO:0016862). Disruption of the JAG1 gene, either through a point mutation or other mechanisms leading to haploinsufficiency, impairs the Notch signaling pathway. This disruption results in the phenotypes associated with Alagille syndrome (MONDO:0007318 and MONDO:0016862).\n\n**How to falsify it:** If genetic analysis reveals that mutations in genes other than JAG1 or NOTCH2 are the primary cause of Alagille syndrome in affected individuals, or if the Notch signaling pathway is found to be unaffected despite JAG1 mutations, this hypothesis would be falsified. _(variant: rs121918409)_\n\n**Why it matters:** Understanding the shared mechanism involving JAG1 and the Notch pathway in Alagille syndrome is crucial for developing targeted therapies. This could involve strategies aimed at restoring Notch signaling or compensating for JAG1 loss-of-function, potentially benefiting patients with both general Alagille syndrome and those specifically linked to JAG1 point mutations.\n\n---\n\n#### 4. Charcot-Marie-Tooth disease, axonal, Type 2HH  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.682)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-8941856, Reactome:R-HSA-9013149, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 variant causing loss of function —DISRUPTS→ JAG1 (HGNC:6188); JAG1 (HGNC:6188) —DISRUPTS→ Notch signaling pathway (GO:0007222); Notch signaling pathway (GO:0007222) —LEADS_TO→ Biliary hypoplasia (HP:0001386); Notch signaling pathway (GO:0007222) —LEADS_TO→ Peripheral neuropathy (HP:0003489). Loss-of-function variants in JAG1 disrupt the Notch signaling pathway, leading to both biliary hypoplasia (Alagille syndrome) and peripheral neuropathy (Charcot-Marie-Tooth disease, axonal, Type 2HH).\n\n**How to falsify it:** The identification of pathogenic variants in JAG1 with a consistent loss-of-function effect in both diseases, but leading to distinct downstream signaling disruptions that cannot explain both phenotypes, would falsify this hypothesis. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared genetic basis in JAG1 and the Notch signaling pathway could reveal novel therapeutic targets for both Alagille syndrome and Charcot-Marie-Tooth disease, axonal, Type 2HH, potentially through modulating Notch pathway activity.\n\n---\n\n#### 5. Adams-Oliver syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.541)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6196) —DISRUPTS→ Notch signaling pathway (WP:WP404); NOTCH2 (HGNC:7941) —DISRUPTS→ Notch signaling pathway (WP:WP404); DLL4 (HGNC:3750) —DISRUPTS→ Notch signaling pathway (WP:WP404); Notch signaling pathway (WP:WP404) —LEADS_TO→ Abnormal branching of biliary ducts (HP:0009724); Notch signaling pathway (WP:WP404) —LEADS_TO→ Limb malformation (HP:0001741). Mutations in JAG1 or NOTCH2 in Alagille syndrome, and DLL4 in Adams-Oliver syndrome 6, disrupt the Notch signaling pathway. Dysregulation of this pathway leads to distinct but overlapping phenotypic consequences such as biliary duct malformations and limb abnormalities.\n\n**How to falsify it:** If genetic studies reveal distinct, non-overlapping molecular pathways for Alagille syndrome (involving JAG1/NOTCH2) and Adams-Oliver syndrome 6 (involving DLL4), and no common downstream effectors are identified, this hypothesis would be falsified. _(variant: The absence of pathogenic variants in JAG1, NOTCH2, or DLL4 in individuals with features of both syndromes in large population databases like gnomAD would also weaken this hypothesis.)_\n\n**Why it matters:** Understanding the shared role of Notch signaling in both Alagille syndrome and Adams-Oliver syndrome 6 could reveal common therapeutic targets or strategies for treating developmental abnormalities associated with dysregulation of this pathway.\n\n---\n\n#### 6. neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6197) —DISRUPTS→ NOTCH signaling pathway (GO:0007222); NOTCH2 (HGNC:7940) —DISRUPTS→ NOTCH signaling pathway (GO:0007222); NOTCH signaling pathway (GO:0007222) —LEADS_TO→ Alagille syndrome (MONDO:0007318); NOTCH signaling pathway (GO:0007222) —LEADS_TO→ Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877); Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877) —LEADS_TO→ Abnormal brain morphology (HP:0000272); Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures (MONDO:0032877) —LEADS_TO→ Seizures (HP:0001250). Mutations in JAG1 or NOTCH2 disrupt the Notch signaling pathway, which is crucial for development. This disruption leads to the phenotypes associated with Alagille syndrome and contributes to neurodevelopmental abnormalities, including abnormal brain morphology and seizures, seen in the second disorder.\n\n**How to falsify it:** If mutations in JAG1 or NOTCH2 are found to exclusively affect specific downstream pathways unrelated to neurodevelopment in Alagille syndrome, or if the neurodevelopmental disorder arises from a completely independent genetic pathway not involving Notch signaling, this hypothesis would be falsified. _(variant: The presence of common variants (e.g., allele frequency > 1% in gnomAD) in JAG1 or NOTCH2 that do not segregate with either disease would challenge the causal link.)_\n\n**Why it matters:** Understanding the shared role of Notch signaling in Alagille syndrome and neurodevelopmental disorders could inform therapeutic strategies targeting this pathway for both conditions, potentially improving neurological outcomes.\n\n---\n\n#### 7. Alzheimer disease 4  —  Tier 3 — Moderate / Emerging  (fitness 0.431)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** PSEN2 (HGNC:9184) —DISRUPTS→ endoplasmic reticulum-associated degradation (GO:0030434); endoplasmic reticulum-associated degradation (GO:0030434) —LEADS_TO→ neurodegeneration (HP:0002090); JAG1 (HGNC:6193) —DISRUPTS→ Notch signaling pathway (GO:0007219); NOTCH2 (HGNC:7949) —DISRUPTS→ Notch signaling pathway (GO:0007219); Notch signaling pathway (GO:0007219) —LEADS_TO→ Alagille syndrome phenotype (MONDO:0007318); endoplasmic reticulum-associated degradation (GO:0030434) —LEADS_TO→ Alagille syndrome phenotype (MONDO:0007318). Mutations in PSEN2 disrupt ER-associated degradation, leading to neurodegeneration in Alzheimer disease 4. Concurrently, mutations in JAG1 or NOTCH2 disrupt the Notch signaling pathway, contributing to the Alagille syndrome phenotype. The convergence occurs as both ERAD dysfunction and Notch signaling disruption can impact cellular homeostasis and protein quality control, ultimately contributing to a broad spectrum of cellular dysfunction that can manifest in distinct but overlapping ways, including in the context of neuronal health.\n\n**How to falsify it:** Demonstration that PSEN2 has no role in ER-associated degradation or that JAG1/NOTCH2 mutations do not impact ERAD-related cellular processes would falsify this hypothesis. _(variant: rs121918333 (a known pathogenic variant in PSEN2) has a gnomAD allele frequency < 0.0001.)_\n\n**Why it matters:** Understanding the shared involvement of ERAD in both Alagille syndrome and Alzheimer disease 4 could reveal novel therapeutic targets for neurodegenerative aspects of Alagille syndrome or for early intervention in Alzheimer disease 4 by targeting protein degradation pathways.\n\n---\n\n#### 8. reticulate acropigmentation of Kitamura  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6005) —DISRUPTS→ Notch signaling pathway (GO:0007222); NOTCH2 (HGNC:7940) —DISRUPTS→ Notch signaling pathway (GO:0007222); ADAM10 (HGNC:248) —DISRUPTS→ Notch signaling pathway (GO:0007222); Notch signaling pathway (GO:0007222) —LEADS_TO→ Biliary hypoplasia (HP:0009770); Notch signaling pathway (GO:0007222) —LEADS_TO→ Skeletal abnormalities (HP:0002650); Notch signaling pathway (GO:0007222) —LEADS_TO→ Reticulate pigmentation (HP:0031787). Mutations in JAG1 and NOTCH2 cause Alagille syndrome through haploinsufficiency, disrupting the Notch signaling pathway and leading to phenotypes like biliary hypoplasia and skeletal abnormalities. We hypothesize that mutations in ADAM10 or other downstream effectors of Notch signaling cause reticulate acropigmentation of Kitamura via loss-of-function, also impacting the Notch pathway and contributing to pigmentation defects and skeletal issues.\n\n**How to falsify it:** If genetic analysis reveals no pathogenic variants in JAG1, NOTCH2, or ADAM10 in individuals with either Alagille syndrome or reticulate acropigmentation of Kitamura, or if the identified variants do not affect the Notch signaling pathway, this hypothesis would be falsified. _(variant: rs113003017 (a known pathogenic variant in JAG1) having a GMAF > 0.001 in relevant populations.)_\n\n**Why it matters:** Understanding the shared role of Notch signaling in these distinct diseases could lead to novel therapeutic strategies targeting the pathway for treating both Alagille syndrome and reticulate acropigmentation of Kitamura, particularly for overlapping skeletal manifestations.\n\n---\n\n#### 9. left ventricular noncompaction 7  —  Tier 3 — Moderate / Emerging  (fitness 0.386)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6190) —DISRUPTS→ Notch signaling pathway; NOTCH2 (HGNC:7940) —DISRUPTS→ Notch signaling pathway; MIB1 (HGNC:15090) —DISRUPTS→ Notch signaling pathway; Notch signaling pathway —LEADS_TO→ Alagille syndrome (MONDO:0007318); Notch signaling pathway —LEADS_TO→ Left ventricular noncompaction 7 (MONDO:0014042). Mutations in JAG1, NOTCH2, and MIB1 disrupt the Notch signaling pathway, which is implicated in the pathogenesis of both Alagille syndrome and left ventricular noncompaction 7.\n\n**How to falsify it:** If genetic studies reveal distinct, non-overlapping molecular pathways or entirely different sets of causal genes for Alagille syndrome and left ventricular noncompaction 7, this mechanistic link would be falsified. _(variant: The presence of common variants (e.g., >1% allele frequency in gnomAD) in JAG1, NOTCH2, or MIB1 that do not segregate with either disease would weaken the hypothesis.)_\n\n**Why it matters:** Understanding the shared role of Notch signaling in these distinct conditions could lead to novel therapeutic strategies targeting this pathway for both Alagille syndrome and left ventricular noncompaction 7.\n\n---\n\n#### 10. muscular dystrophy, limb-girdle, autosomal recessive 27  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-2979096, Reactome:R-HSA-2691232, Reactome:R-HSA-2894862)\n\n**Proposed mechanism:** JAG1 (HGNC:6190) —DISRUPTS→ NOTCH signaling pathway (WP:WP474); NOTCH signaling pathway (WP:WP474) —LEADS_TO→ Intrahepatic bile duct paucity (HP:0000072); JAG1 (HGNC:6190) —DISRUPTS→ NOTCH signaling pathway (WP:WP474); NOTCH signaling pathway (WP:WP474) —LEADS_TO→ Abnormal skeletal muscle physiology (HP:0003198); JAG1 (HGNC:6190) —BINDS→ JAG1 (HGNC:6190); NOTCH signaling pathway (WP:WP474) —BINDS→ NOTCH signaling pathway (WP:WP474). Mutations in JAG1 in Alagille syndrome disrupt the NOTCH signaling pathway, leading to phenotypes like intrahepatic bile duct paucity. Similarly, mutations in JAG1 in limb-girdle muscular dystrophy disrupt the same NOTCH pathway, impacting cellular processes necessary for muscle integrity and function, ultimately causing skeletal muscle weakness and abnormal physiology.\n\n**How to falsify it:** Demonstration that mutations in JAG1 in Alagille syndrome and limb-girdle muscular dystrophy affect entirely distinct downstream effectors of the NOTCH pathway, with no shared impact on cellular processes related to skeletal muscle development or maintenance. _(variant: Presence of common pathogenic variants in JAG1 (e.g., gnomAD allele frequency > 0.01) that are associated with neither Alagille syndrome nor limb-girdle muscular dystrophy.)_\n\n**Why it matters:** Understanding the shared role of JAG1 and the NOTCH pathway in these distinct diseases could reveal novel therapeutic targets for both Alagille syndrome and specific forms of muscular dystrophy. Modulating NOTCH signaling could offer a unified approach to address aspects of both conditions.\n\n---"
+}

@@ -1,0 +1,289 @@
+{
+  "seed": {
+    "id": "MONDO:0013047",
+    "name": "MONDO:0013047"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 7,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013877",
+      "diseaseBName": "mitochondrial pyruvate carrier deficiency",
+      "fitness": 0.4341,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHA (HGNC:6524) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Pyruvate (CHEBI:16560); Pyruvate (CHEBI:16560) —LEADS_TO→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Lactic acidosis (HP:0003134); MPC1 (HGNC:17514) —DISRUPTS→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Encephalopathy (HP:0001294). Loss-of-function mutations in LDHA (causing disease A) lead to decreased conversion of pyruvate to lactate, potentially increasing pyruvate availability for mitochondrial entry. Conversely, loss-of-function mutations in MPC1 (causing disease B) directly impair the mitochondrial pyruvate carrier, reducing pyruvate entry into the mitochondria. Both disruptions converge on the central pathway of mitochondrial pyruvate metabolism, ultimately leading to distinct but related downstream phenotypes.",
+      "mechanism_narrative": "LDHA (HGNC:6524) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Pyruvate (CHEBI:16560); Pyruvate (CHEBI:16560) —LEADS_TO→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Lactic acidosis (HP:0003134); MPC1 (HGNC:17514) —DISRUPTS→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Encephalopathy (HP:0001294). Loss-of-function mutations in LDHA (causing disease A) lead to decreased conversion of pyruvate to lactate, potentially increasing pyruvate availability for mitochondrial entry. Conversely, loss-of-function mutations in MPC1 (causing disease B) directly impair the mitochondrial pyruvate carrier, reducing pyruvate entry into the mitochondria. Both disruptions converge on the central pathway of mitochondrial pyruvate metabolism, ultimately leading to distinct but related downstream phenotypes.",
+      "falsification": {
+        "text": "The absence of lactic acidosis or encephalopathy in patients with confirmed pathogenic variants in LDHA or MPC1, respectively, would falsify this hypothesis. Additionally, if genetic studies reveal that LDHA variants associated with disease A do not show altered pyruvate to lactate conversion or affect mitochondrial pyruvate flux, this would also falsify the link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70268"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70268": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013877",
+        "diseaseBName": "mitochondrial pyruvate carrier deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70268"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70268": 19
+        },
+        "fitness": 0.4341,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHA (HGNC:6524) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Pyruvate (CHEBI:16560); Pyruvate (CHEBI:16560) —LEADS_TO→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Lactic acidosis (HP:0003134); MPC1 (HGNC:17514) —DISRUPTS→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Encephalopathy (HP:0001294). Loss-of-function mutations in LDHA (causing disease A) lead to decreased conversion of pyruvate to lactate, potentially increasing pyruvate availability for mitochondrial entry. Conversely, loss-of-function mutations in MPC1 (causing disease B) directly impair the mitochondrial pyruvate carrier, reducing pyruvate entry into the mitochondria. Both disruptions converge on the central pathway of mitochondrial pyruvate metabolism, ultimately leading to distinct but related downstream phenotypes.",
+        "falsification": {
+          "text": "The absence of lactic acidosis or encephalopathy in patients with confirmed pathogenic variants in LDHA or MPC1, respectively, would falsify this hypothesis. Additionally, if genetic studies reveal that LDHA variants associated with disease A do not show altered pyruvate to lactate conversion or affect mitochondrial pyruvate flux, this would also falsify the link."
+        },
+        "translational": "Understanding the shared role of mitochondrial pyruvate metabolism in these distinct rare diseases could reveal novel therapeutic targets. For instance, interventions aimed at modulating pyruvate levels or mitochondrial transport might offer benefits for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009949",
+      "diseaseBName": "pyruvate carboxylase deficiency disease",
+      "fitness": 0.4331,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Lactate Dehydrogenase A (HGNC:6477) —DISRUPTS→ Pyruvate (CHEBI:16564); Pyruvate (CHEBI:16564) —LEADS_TO→ Phenotypic abnormalities associated with LDHA deficiency (HP:0001328); Pyruvate Carboxylase (HGNC:8740) —DISRUPTS→ Oxaloacetate (CHEBI:17979); Oxaloacetate (CHEBI:17979) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470); Citric Acid Cycle (REACT:R-HSA-2991470) —LEADS_TO→ Phenotypic abnormalities associated with Pyruvate Carboxylase deficiency (HP:0002134); Pyruvate (CHEBI:16564) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470). Loss of function in LDHA leads to altered pyruvate metabolism, contributing to the phenotype of MONDO:0013047. Concurrently, loss of function in PC impairs the conversion of pyruvate to oxaloacetate, which is a critical step for the citric acid cycle, leading to pyruvate carboxylase deficiency disease. Both diseases converge on the disruption of central carbon metabolism, specifically impacting pyruvate availability for and flux through the citric acid cycle.",
+      "mechanism_narrative": "Lactate Dehydrogenase A (HGNC:6477) —DISRUPTS→ Pyruvate (CHEBI:16564); Pyruvate (CHEBI:16564) —LEADS_TO→ Phenotypic abnormalities associated with LDHA deficiency (HP:0001328); Pyruvate Carboxylase (HGNC:8740) —DISRUPTS→ Oxaloacetate (CHEBI:17979); Oxaloacetate (CHEBI:17979) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470); Citric Acid Cycle (REACT:R-HSA-2991470) —LEADS_TO→ Phenotypic abnormalities associated with Pyruvate Carboxylase deficiency (HP:0002134); Pyruvate (CHEBI:16564) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470). Loss of function in LDHA leads to altered pyruvate metabolism, contributing to the phenotype of MONDO:0013047. Concurrently, loss of function in PC impairs the conversion of pyruvate to oxaloacetate, which is a critical step for the citric acid cycle, leading to pyruvate carboxylase deficiency disease. Both diseases converge on the disruption of central carbon metabolism, specifically impacting pyruvate availability for and flux through the citric acid cycle.",
+      "falsification": {
+        "text": "Demonstration that mutations in LDHA do not lead to altered pyruvate levels or that mutations in PC do not impact oxaloacetate levels or citric acid cycle flux would falsify this hypothesis. Furthermore, if genetic studies show no significant overlap in individuals with both conditions and their underlying genetic defects are found to affect entirely separate cellular processes with no downstream interaction, this mechanistic link would be refuted. A gnomAD allele frequency for pathogenic variants in LDHA or PC significantly above 1% in relevant populations would also cast doubt on their causal role in rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70268"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70268": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009949",
+        "diseaseBName": "pyruvate carboxylase deficiency disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70268"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70268": 19
+        },
+        "fitness": 0.4331,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Lactate Dehydrogenase A (HGNC:6477) —DISRUPTS→ Pyruvate (CHEBI:16564); Pyruvate (CHEBI:16564) —LEADS_TO→ Phenotypic abnormalities associated with LDHA deficiency (HP:0001328); Pyruvate Carboxylase (HGNC:8740) —DISRUPTS→ Oxaloacetate (CHEBI:17979); Oxaloacetate (CHEBI:17979) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470); Citric Acid Cycle (REACT:R-HSA-2991470) —LEADS_TO→ Phenotypic abnormalities associated with Pyruvate Carboxylase deficiency (HP:0002134); Pyruvate (CHEBI:16564) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470). Loss of function in LDHA leads to altered pyruvate metabolism, contributing to the phenotype of MONDO:0013047. Concurrently, loss of function in PC impairs the conversion of pyruvate to oxaloacetate, which is a critical step for the citric acid cycle, leading to pyruvate carboxylase deficiency disease. Both diseases converge on the disruption of central carbon metabolism, specifically impacting pyruvate availability for and flux through the citric acid cycle.",
+        "falsification": {
+          "text": "Demonstration that mutations in LDHA do not lead to altered pyruvate levels or that mutations in PC do not impact oxaloacetate levels or citric acid cycle flux would falsify this hypothesis. Furthermore, if genetic studies show no significant overlap in individuals with both conditions and their underlying genetic defects are found to affect entirely separate cellular processes with no downstream interaction, this mechanistic link would be refuted. A gnomAD allele frequency for pathogenic variants in LDHA or PC significantly above 1% in relevant populations would also cast doubt on their causal role in rare diseases."
+        },
+        "translational": "Understanding this overlap could lead to shared therapeutic strategies targeting metabolic pathways, potentially benefiting patients with either condition. For instance, interventions aimed at supporting the citric acid cycle or managing pyruvate accumulation might offer therapeutic benefit across both disease modules."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013587",
+      "diseaseBName": "glycogen storage disease due to lactate dehydrogenase H-subunit deficiency",
+      "fitness": 0.4272,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHA (HGNC:6520) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693370); Glycolysis (REACT:R-HSA-5693370) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Hypoglycemia (HP:0001250); LDHB (HGNC:6521) —DISRUPTS→ Lactate metabolism (GO:0006007); Lactate metabolism (GO:0006007) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in LDHA (causing MONDO:0013047, potentially related to lactic acidosis and hypoglycemia) disrupt glycolysis, leading to altered lactate levels and downstream metabolic effects. Similarly, loss-of-function mutations in LDHB (causing glycogen storage disease due to lactate dehydrogenase H-subunit deficiency, MONDO:0013587) disrupt lactate metabolism, impacting energy production and potentially leading to phenotypes like muscle weakness. Both pathways converge on the altered flux and accumulation of lactate, a key metabolite influencing cellular energy homeostasis and substrate availability.",
+      "mechanism_narrative": "LDHA (HGNC:6520) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693370); Glycolysis (REACT:R-HSA-5693370) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Hypoglycemia (HP:0001250); LDHB (HGNC:6521) —DISRUPTS→ Lactate metabolism (GO:0006007); Lactate metabolism (GO:0006007) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in LDHA (causing MONDO:0013047, potentially related to lactic acidosis and hypoglycemia) disrupt glycolysis, leading to altered lactate levels and downstream metabolic effects. Similarly, loss-of-function mutations in LDHB (causing glycogen storage disease due to lactate dehydrogenase H-subunit deficiency, MONDO:0013587) disrupt lactate metabolism, impacting energy production and potentially leading to phenotypes like muscle weakness. Both pathways converge on the altered flux and accumulation of lactate, a key metabolite influencing cellular energy homeostasis and substrate availability.",
+      "falsification": {
+        "text": "Demonstration that mutations in LDHA and LDHB do not impair lactate dehydrogenase activity or that the downstream metabolic consequences on glycolysis and lactate metabolism are entirely distinct and unlinked.",
+        "gnomad_variant": "Presence of common pathogenic variants (e.g., allele frequency > 1%) in LDHA or LDHB in gnomAD that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70268"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70268": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013587",
+        "diseaseBName": "glycogen storage disease due to lactate dehydrogenase H-subunit deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70268"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70268": 19
+        },
+        "fitness": 0.4272,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHA (HGNC:6520) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693370); Glycolysis (REACT:R-HSA-5693370) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Hypoglycemia (HP:0001250); LDHB (HGNC:6521) —DISRUPTS→ Lactate metabolism (GO:0006007); Lactate metabolism (GO:0006007) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in LDHA (causing MONDO:0013047, potentially related to lactic acidosis and hypoglycemia) disrupt glycolysis, leading to altered lactate levels and downstream metabolic effects. Similarly, loss-of-function mutations in LDHB (causing glycogen storage disease due to lactate dehydrogenase H-subunit deficiency, MONDO:0013587) disrupt lactate metabolism, impacting energy production and potentially leading to phenotypes like muscle weakness. Both pathways converge on the altered flux and accumulation of lactate, a key metabolite influencing cellular energy homeostasis and substrate availability.",
+        "falsification": {
+          "text": "Demonstration that mutations in LDHA and LDHB do not impair lactate dehydrogenase activity or that the downstream metabolic consequences on glycolysis and lactate metabolism are entirely distinct and unlinked.",
+          "gnomad_variant": "Presence of common pathogenic variants (e.g., allele frequency > 1%) in LDHA or LDHB in gnomAD that do not segregate with either disease."
+        },
+        "translational": "Understanding the shared metabolic pathway disruption in diseases caused by LDHA and LDHB deficiencies could inform therapeutic strategies targeting glycolysis or lactate metabolism for both conditions, potentially offering parallel treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009642",
+      "diseaseBName": "orofaciodigital syndrome type II",
+      "fitness": 0.4039,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NEK1 (HGNC:26159) —DISRUPTS→ cytoskeletal organization (GO:0007010); NEK1 (HGNC:26159) —DISRUPTS→ ciliary assembly (GO:0042390); cytoskeletal organization (GO:0007010) —LEADS_TO→ Oromandibular dystonia (MONDO:0013047); ciliary assembly (GO:0042390) —LEADS_TO→ Orofaciodigital syndrome type II (MONDO:0009642). Loss-of-function mutations in NEK1 disrupt both cytoskeletal organization and ciliary assembly, leading to the distinct but related phenotypes of Oromandibular dystonia and Orofaciodigital syndrome type II, respectively.",
+      "mechanism_narrative": "NEK1 (HGNC:26159) —DISRUPTS→ cytoskeletal organization (GO:0007010); NEK1 (HGNC:26159) —DISRUPTS→ ciliary assembly (GO:0042390); cytoskeletal organization (GO:0007010) —LEADS_TO→ Oromandibular dystonia (MONDO:0013047); ciliary assembly (GO:0042390) —LEADS_TO→ Orofaciodigital syndrome type II (MONDO:0009642). Loss-of-function mutations in NEK1 disrupt both cytoskeletal organization and ciliary assembly, leading to the distinct but related phenotypes of Oromandibular dystonia and Orofaciodigital syndrome type II, respectively.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in NEK1 with a clear gain-of-function mechanism in either disease, or a complete lack of genetic association of NEK1 with either phenotype in large cohorts.",
+        "gnomad_variant": "rs142575431 (a known pathogenic variant in NEK1 associated with OFDS II, if found at high frequency in gnomAD without clear phenotypic correlation)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9861718"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9861718": 18
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009642",
+        "diseaseBName": "orofaciodigital syndrome type II",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9861718"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9861718": 18
+        },
+        "fitness": 0.4039,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NEK1 (HGNC:26159) —DISRUPTS→ cytoskeletal organization (GO:0007010); NEK1 (HGNC:26159) —DISRUPTS→ ciliary assembly (GO:0042390); cytoskeletal organization (GO:0007010) —LEADS_TO→ Oromandibular dystonia (MONDO:0013047); ciliary assembly (GO:0042390) —LEADS_TO→ Orofaciodigital syndrome type II (MONDO:0009642). Loss-of-function mutations in NEK1 disrupt both cytoskeletal organization and ciliary assembly, leading to the distinct but related phenotypes of Oromandibular dystonia and Orofaciodigital syndrome type II, respectively.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in NEK1 with a clear gain-of-function mechanism in either disease, or a complete lack of genetic association of NEK1 with either phenotype in large cohorts.",
+          "gnomad_variant": "rs142575431 (a known pathogenic variant in NEK1 associated with OFDS II, if found at high frequency in gnomAD without clear phenotypic correlation)"
+        },
+        "translational": "Understanding the shared role of NEK1 in cytoskeletal and ciliary function could reveal common therapeutic targets for both Oromandibular dystonia and Orofaciodigital syndrome type II, potentially involving modulation of NEK1 activity or downstream effectors."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009894",
+      "diseaseBName": "short-rib thoracic dysplasia 6 with or without polydactyly",
+      "fitness": 0.3805,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHA (HGNC:6540) —DISRUPTS→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ hypoglycemia (HP:0003124); NEK1 (HGNC:18700) —DECREASES→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ skeletal dysplasia (HP:0002650). Loss-of-function mutations in LDHA disrupt anaerobic glycolysis, leading to hypoglycemia in MONDO:0013047. Similarly, mutations in NEK1, implicated in MONDO:0009894, are hypothesized to indirectly impair anaerobic glycolysis, contributing to skeletal dysplasia.",
+      "mechanism_narrative": "LDHA (HGNC:6540) —DISRUPTS→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ hypoglycemia (HP:0003124); NEK1 (HGNC:18700) —DECREASES→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ skeletal dysplasia (HP:0002650). Loss-of-function mutations in LDHA disrupt anaerobic glycolysis, leading to hypoglycemia in MONDO:0013047. Similarly, mutations in NEK1, implicated in MONDO:0009894, are hypothesized to indirectly impair anaerobic glycolysis, contributing to skeletal dysplasia.",
+      "falsification": {
+        "text": "Absence of evidence for NEK1's impact on anaerobic glycolysis in relevant cellular models or patient-derived cells would falsify this proposed link. Furthermore, identification of distinct molecular pathways directly downstream of NEK1 that do not intersect with glycolysis would refute this hypothesis.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic NEK1 variants in gnomAD populations not exhibiting features of MONDO:0009894."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9861718"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9861718": 18
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009894",
+        "diseaseBName": "short-rib thoracic dysplasia 6 with or without polydactyly",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9861718"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9861718": 18
+        },
+        "fitness": 0.3805,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHA (HGNC:6540) —DISRUPTS→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ hypoglycemia (HP:0003124); NEK1 (HGNC:18700) —DECREASES→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ skeletal dysplasia (HP:0002650). Loss-of-function mutations in LDHA disrupt anaerobic glycolysis, leading to hypoglycemia in MONDO:0013047. Similarly, mutations in NEK1, implicated in MONDO:0009894, are hypothesized to indirectly impair anaerobic glycolysis, contributing to skeletal dysplasia.",
+        "falsification": {
+          "text": "Absence of evidence for NEK1's impact on anaerobic glycolysis in relevant cellular models or patient-derived cells would falsify this proposed link. Furthermore, identification of distinct molecular pathways directly downstream of NEK1 that do not intersect with glycolysis would refute this hypothesis.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic NEK1 variants in gnomAD populations not exhibiting features of MONDO:0009894."
+        },
+        "translational": "Understanding the shared role of anaerobic glycolysis in these distinct diseases could reveal novel therapeutic targets. Strategies aimed at modulating glycolysis could potentially offer benefit for both conditions, particularly if NEK1's role in this pathway is confirmed."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007067",
+      "diseaseBName": "pyruvate kinase hyperactivity",
+      "fitness": 0.3523,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PKLR (HGNC:9054) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15496); Glycolysis (GO:0006096) —PRODUCES→ Pyruvate (CHEBI:17900); Pyruvate (CHEBI:17900) —DISRUPTS→ LDHA (HGNC:6527); LDHA (HGNC:6527) —PRODUCES→ Lactate (CHEBI:15361); Glycolysis (GO:0006096) —LEADS_TO→ Hereditary nonspherocytic hemolytic anemia (MONDO:0013047); Lactate (CHEBI:15361) —LEADS_TO→ Pyruvate kinase hyperactivity (MONDO:0007067). Mutations in PKLR lead to dysregulation of glycolysis, impacting ATP production and causing hereditary nonspherocytic hemolytic anemia. Aberrant pyruvate metabolism, potentially involving LDHA, contributes to the distinct phenotype of pyruvate kinase hyperactivity.",
+      "mechanism_narrative": "PKLR (HGNC:9054) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15496); Glycolysis (GO:0006096) —PRODUCES→ Pyruvate (CHEBI:17900); Pyruvate (CHEBI:17900) —DISRUPTS→ LDHA (HGNC:6527); LDHA (HGNC:6527) —PRODUCES→ Lactate (CHEBI:15361); Glycolysis (GO:0006096) —LEADS_TO→ Hereditary nonspherocytic hemolytic anemia (MONDO:0013047); Lactate (CHEBI:15361) —LEADS_TO→ Pyruvate kinase hyperactivity (MONDO:0007067). Mutations in PKLR lead to dysregulation of glycolysis, impacting ATP production and causing hereditary nonspherocytic hemolytic anemia. Aberrant pyruvate metabolism, potentially involving LDHA, contributes to the distinct phenotype of pyruvate kinase hyperactivity.",
+      "falsification": {
+        "text": "Demonstration that LDHA activity is not significantly altered in patients with pyruvate kinase hyperactivity, or that the metabolic flux through glycolysis is not demonstrably reduced in hereditary nonspherocytic hemolytic anemia caused by PKLR mutations.",
+        "gnomad_variant": "rs79972052"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70268"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70268": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007067",
+        "diseaseBName": "pyruvate kinase hyperactivity",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70268"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70268": 19
+        },
+        "fitness": 0.3523,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PKLR (HGNC:9054) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15496); Glycolysis (GO:0006096) —PRODUCES→ Pyruvate (CHEBI:17900); Pyruvate (CHEBI:17900) —DISRUPTS→ LDHA (HGNC:6527); LDHA (HGNC:6527) —PRODUCES→ Lactate (CHEBI:15361); Glycolysis (GO:0006096) —LEADS_TO→ Hereditary nonspherocytic hemolytic anemia (MONDO:0013047); Lactate (CHEBI:15361) —LEADS_TO→ Pyruvate kinase hyperactivity (MONDO:0007067). Mutations in PKLR lead to dysregulation of glycolysis, impacting ATP production and causing hereditary nonspherocytic hemolytic anemia. Aberrant pyruvate metabolism, potentially involving LDHA, contributes to the distinct phenotype of pyruvate kinase hyperactivity.",
+        "falsification": {
+          "text": "Demonstration that LDHA activity is not significantly altered in patients with pyruvate kinase hyperactivity, or that the metabolic flux through glycolysis is not demonstrably reduced in hereditary nonspherocytic hemolytic anemia caused by PKLR mutations.",
+          "gnomad_variant": "rs79972052"
+        },
+        "translational": "Understanding the shared metabolic pathways and differential regulation by PKLR and LDHA could reveal novel therapeutic targets for red blood cell disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009950",
+      "diseaseBName": "pyruvate kinase deficiency of red cells",
+      "fitness": 0.3299,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LDHA (HGNC:6574) —DISRUPTS→ Pyruvate (CHEBI:17519); LDHA (HGNC:6574) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Pyruvate (CHEBI:17519) —DECREASES→ Glycolysis (REACT:R-HSA-569337); PKLR (HGNC:9044) —DISRUPTS→ Pyruvate (CHEBI:17519); PKLR (HGNC:9044) —DECREASES→ Glycolysis (REACT:R-HSA-569337); LDHA (HGNC:6574) —DECREASES→ Lactate (CHEBI:15360); PKLR (HGNC:9044) —DECREASES→ ATP (CHEBI:15496); Glycolysis (REACT:R-HSA-569337) —DECREASES→ ATP (CHEBI:15496); ATP (CHEBI:15496) —LEADS_TO→ Anemia (HP:0001892); ATP (CHEBI:15496) —LEADS_TO→ Hemolytic Anemia (HP:0001876). Mutations in LDHA (causing MONDO:0013047) and PKLR (causing pyruvate kinase deficiency of red cells) both impair the glycolytic pathway. LDHA mutations disrupt the conversion of pyruvate to lactate, affecting NAD+ regeneration and potentially pyruvate availability. PKLR mutations directly impair the final ATP-producing step of glycolysis. Both disruptions lead to reduced ATP production in red blood cells, ultimately causing anemia and hemolytic anemia.",
+      "mechanism_narrative": "LDHA (HGNC:6574) —DISRUPTS→ Pyruvate (CHEBI:17519); LDHA (HGNC:6574) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Pyruvate (CHEBI:17519) —DECREASES→ Glycolysis (REACT:R-HSA-569337); PKLR (HGNC:9044) —DISRUPTS→ Pyruvate (CHEBI:17519); PKLR (HGNC:9044) —DECREASES→ Glycolysis (REACT:R-HSA-569337); LDHA (HGNC:6574) —DECREASES→ Lactate (CHEBI:15360); PKLR (HGNC:9044) —DECREASES→ ATP (CHEBI:15496); Glycolysis (REACT:R-HSA-569337) —DECREASES→ ATP (CHEBI:15496); ATP (CHEBI:15496) —LEADS_TO→ Anemia (HP:0001892); ATP (CHEBI:15496) —LEADS_TO→ Hemolytic Anemia (HP:0001876). Mutations in LDHA (causing MONDO:0013047) and PKLR (causing pyruvate kinase deficiency of red cells) both impair the glycolytic pathway. LDHA mutations disrupt the conversion of pyruvate to lactate, affecting NAD+ regeneration and potentially pyruvate availability. PKLR mutations directly impair the final ATP-producing step of glycolysis. Both disruptions lead to reduced ATP production in red blood cells, ultimately causing anemia and hemolytic anemia.",
+      "falsification": {
+        "text": "Demonstration that LDHA and PKLR mutations do not converge on a shared downstream metabolic consequence or pathway disruption, or that the observed anemias in MONDO:0013047 arise from a completely independent mechanism unrelated to glycolysis or ATP production.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in LDHA or PKLR in the general population that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70268"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70268": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009950",
+        "diseaseBName": "pyruvate kinase deficiency of red cells",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70268"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70268": 19
+        },
+        "fitness": 0.3299,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LDHA (HGNC:6574) —DISRUPTS→ Pyruvate (CHEBI:17519); LDHA (HGNC:6574) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Pyruvate (CHEBI:17519) —DECREASES→ Glycolysis (REACT:R-HSA-569337); PKLR (HGNC:9044) —DISRUPTS→ Pyruvate (CHEBI:17519); PKLR (HGNC:9044) —DECREASES→ Glycolysis (REACT:R-HSA-569337); LDHA (HGNC:6574) —DECREASES→ Lactate (CHEBI:15360); PKLR (HGNC:9044) —DECREASES→ ATP (CHEBI:15496); Glycolysis (REACT:R-HSA-569337) —DECREASES→ ATP (CHEBI:15496); ATP (CHEBI:15496) —LEADS_TO→ Anemia (HP:0001892); ATP (CHEBI:15496) —LEADS_TO→ Hemolytic Anemia (HP:0001876). Mutations in LDHA (causing MONDO:0013047) and PKLR (causing pyruvate kinase deficiency of red cells) both impair the glycolytic pathway. LDHA mutations disrupt the conversion of pyruvate to lactate, affecting NAD+ regeneration and potentially pyruvate availability. PKLR mutations directly impair the final ATP-producing step of glycolysis. Both disruptions lead to reduced ATP production in red blood cells, ultimately causing anemia and hemolytic anemia.",
+        "falsification": {
+          "text": "Demonstration that LDHA and PKLR mutations do not converge on a shared downstream metabolic consequence or pathway disruption, or that the observed anemias in MONDO:0013047 arise from a completely independent mechanism unrelated to glycolysis or ATP production.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in LDHA or PKLR in the general population that do not segregate with either disease."
+        },
+        "translational": "Understanding the shared reliance of these two distinct disorders on the integrity of glycolysis opens avenues for potential therapeutic strategies targeting metabolic support or compensatory mechanisms within the red blood cell."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T00:26:44.898Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013047 (MONDO:0013047)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 7 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial pyruvate carrier deficiency (MONDO:0013877) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-70268 |\n| 2 | pyruvate carboxylase deficiency disease (MONDO:0009949) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-70268 |\n| 3 | glycogen storage disease due to lactate dehydrogenase H-subunit deficiency (MONDO:0013587) | shared pathway | Tier 3 | 0.427 | Reactome:R-HSA-70268 |\n| 4 | orofaciodigital syndrome type II (MONDO:0009642) | shared pathway | Tier 3 | 0.404 | Reactome:R-HSA-9861718 |\n| 5 | short-rib thoracic dysplasia 6 with or without polydactyly (MONDO:0009894) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-9861718 |\n| 6 | pyruvate kinase hyperactivity (MONDO:0007067) | shared pathway | Tier 3 | 0.352 | Reactome:R-HSA-70268 |\n| 7 | pyruvate kinase deficiency of red cells (MONDO:0009950) | shared pathway | Tier 3 | 0.330 | Reactome:R-HSA-70268 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial pyruvate carrier deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-70268)\n\n**Proposed mechanism:** LDHA (HGNC:6524) —DISRUPTS→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —DECREASES→ Pyruvate (CHEBI:16560); Pyruvate (CHEBI:16560) —LEADS_TO→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Lactic acidosis (HP:0003134); MPC1 (HGNC:17514) —DISRUPTS→ Mitochondrial pyruvate metabolism (GO:0006095); Mitochondrial pyruvate metabolism (GO:0006095) —LEADS_TO→ Encephalopathy (HP:0001294). Loss-of-function mutations in LDHA (causing disease A) lead to decreased conversion of pyruvate to lactate, potentially increasing pyruvate availability for mitochondrial entry. Conversely, loss-of-function mutations in MPC1 (causing disease B) directly impair the mitochondrial pyruvate carrier, reducing pyruvate entry into the mitochondria. Both disruptions converge on the central pathway of mitochondrial pyruvate metabolism, ultimately leading to distinct but related downstream phenotypes.\n\n**How to falsify it:** The absence of lactic acidosis or encephalopathy in patients with confirmed pathogenic variants in LDHA or MPC1, respectively, would falsify this hypothesis. Additionally, if genetic studies reveal that LDHA variants associated with disease A do not show altered pyruvate to lactate conversion or affect mitochondrial pyruvate flux, this would also falsify the link.\n\n**Why it matters:** Understanding the shared role of mitochondrial pyruvate metabolism in these distinct rare diseases could reveal novel therapeutic targets. For instance, interventions aimed at modulating pyruvate levels or mitochondrial transport might offer benefits for both conditions.\n\n---\n\n#### 2. pyruvate carboxylase deficiency disease  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-70268)\n\n**Proposed mechanism:** Lactate Dehydrogenase A (HGNC:6477) —DISRUPTS→ Pyruvate (CHEBI:16564); Pyruvate (CHEBI:16564) —LEADS_TO→ Phenotypic abnormalities associated with LDHA deficiency (HP:0001328); Pyruvate Carboxylase (HGNC:8740) —DISRUPTS→ Oxaloacetate (CHEBI:17979); Oxaloacetate (CHEBI:17979) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470); Citric Acid Cycle (REACT:R-HSA-2991470) —LEADS_TO→ Phenotypic abnormalities associated with Pyruvate Carboxylase deficiency (HP:0002134); Pyruvate (CHEBI:16564) —DECREASES→ Citric Acid Cycle (REACT:R-HSA-2991470). Loss of function in LDHA leads to altered pyruvate metabolism, contributing to the phenotype of MONDO:0013047. Concurrently, loss of function in PC impairs the conversion of pyruvate to oxaloacetate, which is a critical step for the citric acid cycle, leading to pyruvate carboxylase deficiency disease. Both diseases converge on the disruption of central carbon metabolism, specifically impacting pyruvate availability for and flux through the citric acid cycle.\n\n**How to falsify it:** Demonstration that mutations in LDHA do not lead to altered pyruvate levels or that mutations in PC do not impact oxaloacetate levels or citric acid cycle flux would falsify this hypothesis. Furthermore, if genetic studies show no significant overlap in individuals with both conditions and their underlying genetic defects are found to affect entirely separate cellular processes with no downstream interaction, this mechanistic link would be refuted. A gnomAD allele frequency for pathogenic variants in LDHA or PC significantly above 1% in relevant populations would also cast doubt on their causal role in rare diseases.\n\n**Why it matters:** Understanding this overlap could lead to shared therapeutic strategies targeting metabolic pathways, potentially benefiting patients with either condition. For instance, interventions aimed at supporting the citric acid cycle or managing pyruvate accumulation might offer therapeutic benefit across both disease modules.\n\n---\n\n#### 3. glycogen storage disease due to lactate dehydrogenase H-subunit deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.427)\n**Link type:** shared pathway (Reactome:R-HSA-70268)\n\n**Proposed mechanism:** LDHA (HGNC:6520) —DISRUPTS→ Glycolysis (REACT:R-HSA-5693370); Glycolysis (REACT:R-HSA-5693370) —DECREASES→ Lactate (CHEBI:15361); Lactate (CHEBI:15361) —LEADS_TO→ Hypoglycemia (HP:0001250); LDHB (HGNC:6521) —DISRUPTS→ Lactate metabolism (GO:0006007); Lactate metabolism (GO:0006007) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function mutations in LDHA (causing MONDO:0013047, potentially related to lactic acidosis and hypoglycemia) disrupt glycolysis, leading to altered lactate levels and downstream metabolic effects. Similarly, loss-of-function mutations in LDHB (causing glycogen storage disease due to lactate dehydrogenase H-subunit deficiency, MONDO:0013587) disrupt lactate metabolism, impacting energy production and potentially leading to phenotypes like muscle weakness. Both pathways converge on the altered flux and accumulation of lactate, a key metabolite influencing cellular energy homeostasis and substrate availability.\n\n**How to falsify it:** Demonstration that mutations in LDHA and LDHB do not impair lactate dehydrogenase activity or that the downstream metabolic consequences on glycolysis and lactate metabolism are entirely distinct and unlinked. _(variant: Presence of common pathogenic variants (e.g., allele frequency > 1%) in LDHA or LDHB in gnomAD that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruption in diseases caused by LDHA and LDHB deficiencies could inform therapeutic strategies targeting glycolysis or lactate metabolism for both conditions, potentially offering parallel treatment approaches.\n\n---\n\n#### 4. orofaciodigital syndrome type II  —  Tier 3 — Moderate / Emerging  (fitness 0.404)\n**Link type:** shared pathway (Reactome:R-HSA-9861718)\n\n**Proposed mechanism:** NEK1 (HGNC:26159) —DISRUPTS→ cytoskeletal organization (GO:0007010); NEK1 (HGNC:26159) —DISRUPTS→ ciliary assembly (GO:0042390); cytoskeletal organization (GO:0007010) —LEADS_TO→ Oromandibular dystonia (MONDO:0013047); ciliary assembly (GO:0042390) —LEADS_TO→ Orofaciodigital syndrome type II (MONDO:0009642). Loss-of-function mutations in NEK1 disrupt both cytoskeletal organization and ciliary assembly, leading to the distinct but related phenotypes of Oromandibular dystonia and Orofaciodigital syndrome type II, respectively.\n\n**How to falsify it:** Identification of pathogenic variants in NEK1 with a clear gain-of-function mechanism in either disease, or a complete lack of genetic association of NEK1 with either phenotype in large cohorts. _(variant: rs142575431 (a known pathogenic variant in NEK1 associated with OFDS II, if found at high frequency in gnomAD without clear phenotypic correlation))_\n\n**Why it matters:** Understanding the shared role of NEK1 in cytoskeletal and ciliary function could reveal common therapeutic targets for both Oromandibular dystonia and Orofaciodigital syndrome type II, potentially involving modulation of NEK1 activity or downstream effectors.\n\n---\n\n#### 5. short-rib thoracic dysplasia 6 with or without polydactyly  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-9861718)\n\n**Proposed mechanism:** LDHA (HGNC:6540) —DISRUPTS→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ hypoglycemia (HP:0003124); NEK1 (HGNC:18700) —DECREASES→ anaerobic glycolysis (GO:0006098); anaerobic glycolysis (GO:0006098) —LEADS_TO→ skeletal dysplasia (HP:0002650). Loss-of-function mutations in LDHA disrupt anaerobic glycolysis, leading to hypoglycemia in MONDO:0013047. Similarly, mutations in NEK1, implicated in MONDO:0009894, are hypothesized to indirectly impair anaerobic glycolysis, contributing to skeletal dysplasia.\n\n**How to falsify it:** Absence of evidence for NEK1's impact on anaerobic glycolysis in relevant cellular models or patient-derived cells would falsify this proposed link. Furthermore, identification of distinct molecular pathways directly downstream of NEK1 that do not intersect with glycolysis would refute this hypothesis. _(variant: High frequency (>1%) of pathogenic NEK1 variants in gnomAD populations not exhibiting features of MONDO:0009894.)_\n\n**Why it matters:** Understanding the shared role of anaerobic glycolysis in these distinct diseases could reveal novel therapeutic targets. Strategies aimed at modulating glycolysis could potentially offer benefit for both conditions, particularly if NEK1's role in this pathway is confirmed.\n\n---\n\n#### 6. pyruvate kinase hyperactivity  —  Tier 3 — Moderate / Emerging  (fitness 0.352)\n**Link type:** shared pathway (Reactome:R-HSA-70268)\n\n**Proposed mechanism:** PKLR (HGNC:9054) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15496); Glycolysis (GO:0006096) —PRODUCES→ Pyruvate (CHEBI:17900); Pyruvate (CHEBI:17900) —DISRUPTS→ LDHA (HGNC:6527); LDHA (HGNC:6527) —PRODUCES→ Lactate (CHEBI:15361); Glycolysis (GO:0006096) —LEADS_TO→ Hereditary nonspherocytic hemolytic anemia (MONDO:0013047); Lactate (CHEBI:15361) —LEADS_TO→ Pyruvate kinase hyperactivity (MONDO:0007067). Mutations in PKLR lead to dysregulation of glycolysis, impacting ATP production and causing hereditary nonspherocytic hemolytic anemia. Aberrant pyruvate metabolism, potentially involving LDHA, contributes to the distinct phenotype of pyruvate kinase hyperactivity.\n\n**How to falsify it:** Demonstration that LDHA activity is not significantly altered in patients with pyruvate kinase hyperactivity, or that the metabolic flux through glycolysis is not demonstrably reduced in hereditary nonspherocytic hemolytic anemia caused by PKLR mutations. _(variant: rs79972052)_\n\n**Why it matters:** Understanding the shared metabolic pathways and differential regulation by PKLR and LDHA could reveal novel therapeutic targets for red blood cell disorders.\n\n---\n\n#### 7. pyruvate kinase deficiency of red cells  —  Tier 3 — Moderate / Emerging  (fitness 0.330)\n**Link type:** shared pathway (Reactome:R-HSA-70268)\n\n**Proposed mechanism:** LDHA (HGNC:6574) —DISRUPTS→ Pyruvate (CHEBI:17519); LDHA (HGNC:6574) —DECREASES→ Glycolysis (REACT:R-HSA-569337); Pyruvate (CHEBI:17519) —DECREASES→ Glycolysis (REACT:R-HSA-569337); PKLR (HGNC:9044) —DISRUPTS→ Pyruvate (CHEBI:17519); PKLR (HGNC:9044) —DECREASES→ Glycolysis (REACT:R-HSA-569337); LDHA (HGNC:6574) —DECREASES→ Lactate (CHEBI:15360); PKLR (HGNC:9044) —DECREASES→ ATP (CHEBI:15496); Glycolysis (REACT:R-HSA-569337) —DECREASES→ ATP (CHEBI:15496); ATP (CHEBI:15496) —LEADS_TO→ Anemia (HP:0001892); ATP (CHEBI:15496) —LEADS_TO→ Hemolytic Anemia (HP:0001876). Mutations in LDHA (causing MONDO:0013047) and PKLR (causing pyruvate kinase deficiency of red cells) both impair the glycolytic pathway. LDHA mutations disrupt the conversion of pyruvate to lactate, affecting NAD+ regeneration and potentially pyruvate availability. PKLR mutations directly impair the final ATP-producing step of glycolysis. Both disruptions lead to reduced ATP production in red blood cells, ultimately causing anemia and hemolytic anemia.\n\n**How to falsify it:** Demonstration that LDHA and PKLR mutations do not converge on a shared downstream metabolic consequence or pathway disruption, or that the observed anemias in MONDO:0013047 arise from a completely independent mechanism unrelated to glycolysis or ATP production. _(variant: Identification of common variants (AF > 0.01) in LDHA or PKLR in the general population that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared reliance of these two distinct disorders on the integrity of glycolysis opens avenues for potential therapeutic strategies targeting metabolic support or compensatory mechanisms within the red blood cell.\n\n---"
+}

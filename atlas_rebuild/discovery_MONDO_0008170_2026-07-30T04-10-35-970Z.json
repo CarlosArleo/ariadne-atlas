@@ -1,0 +1,431 @@
+{
+  "seed": {
+    "id": "MONDO:0008170",
+    "name": "ovarian cancer"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 23,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0001056",
+      "diseaseBName": "gastric cancer",
+      "fitness": 0.7806,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "PIK3CA (HGNC:8975) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); AKT1 (HGNC:397) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); APC (HGNC:421) —DISRUPTS→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664). Gain-of-function mutations in PIK3CA and AKT1, and loss-of-function/disruptive mutations in APC, all converge to dysregulate the PI3K-AKT signaling pathway. This aberrant signaling promotes neoplastic progression, manifesting as both ovarian and gastric cancers.",
+      "mechanism_narrative": "PIK3CA (HGNC:8975) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); AKT1 (HGNC:397) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); APC (HGNC:421) —DISRUPTS→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664). Gain-of-function mutations in PIK3CA and AKT1, and loss-of-function/disruptive mutations in APC, all converge to dysregulate the PI3K-AKT signaling pathway. This aberrant signaling promotes neoplastic progression, manifesting as both ovarian and gastric cancers.",
+      "falsification": {
+        "text": "Falsification would occur if comprehensive genomic analysis of a large cohort of ovarian and gastric cancer patients reveals that mutations in PIK3CA, AKT1, and APC do not converge on dysregulation of the PI3K-AKT pathway, or if these mutations are found to promote distinct, non-overlapping downstream cellular processes specific to each cancer type.",
+        "gnomad_variant": "The presence of common recurrent gain-of-function variants in PIK3CA (e.g., E542K, E545K) or AKT1 (e.g., E17K) with a minor allele frequency >1% in the general population, as assessed by gnomAD, would weaken the hypothesis of these variants being specific drivers of rare disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0001056",
+        "diseaseBName": "gastric cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.7806,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:8975) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); AKT1 (HGNC:397) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); APC (HGNC:421) —DISRUPTS→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664). Gain-of-function mutations in PIK3CA and AKT1, and loss-of-function/disruptive mutations in APC, all converge to dysregulate the PI3K-AKT signaling pathway. This aberrant signaling promotes neoplastic progression, manifesting as both ovarian and gastric cancers.",
+        "falsification": {
+          "text": "Falsification would occur if comprehensive genomic analysis of a large cohort of ovarian and gastric cancer patients reveals that mutations in PIK3CA, AKT1, and APC do not converge on dysregulation of the PI3K-AKT pathway, or if these mutations are found to promote distinct, non-overlapping downstream cellular processes specific to each cancer type.",
+          "gnomad_variant": "The presence of common recurrent gain-of-function variants in PIK3CA (e.g., E542K, E545K) or AKT1 (e.g., E17K) with a minor allele frequency >1% in the general population, as assessed by gnomAD, would weaken the hypothesis of these variants being specific drivers of rare disease phenotypes."
+        },
+        "translational": "Targeting the PI3K-AKT pathway is a key strategy in cancer therapy. Understanding the shared mechanistic basis of ovarian and gastric cancers through this pathway could lead to the development of novel combination therapies or repurposing of existing drugs across both disease types, potentially improving patient outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.7798,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "PIK3CA (HGNC:9571) —INCREASES→ PI3K-Akt signaling pathway (WP:WP43); PI3K-Akt signaling pathway (WP:WP43) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Ovarian cancer (MONDO:0008170); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP722); Wnt signaling pathway (WP:WP722) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Colorectal cancer (MONDO:0005575); MLH1 (HGNC:7054) —DISRUPTS→ Mismatch repair pathway (WP:WP111); Mismatch repair pathway (WP:WP111) —DECREASES→ Cell proliferation (GO:0008283). Gain-of-function mutations in PIK3CA activate the PI3K-Akt signaling pathway, promoting cell proliferation and contributing to ovarian cancer. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to increased cell proliferation and colorectal cancer. Concurrently, loss-of-function mutations in MLH1 impair the mismatch repair pathway, leading to increased genomic instability and also contributing to colorectal cancer. Both pathways converge on dysregulated cell proliferation, a common mechanism underlying both diseases.",
+      "mechanism_narrative": "PIK3CA (HGNC:9571) —INCREASES→ PI3K-Akt signaling pathway (WP:WP43); PI3K-Akt signaling pathway (WP:WP43) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Ovarian cancer (MONDO:0008170); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP722); Wnt signaling pathway (WP:WP722) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Colorectal cancer (MONDO:0005575); MLH1 (HGNC:7054) —DISRUPTS→ Mismatch repair pathway (WP:WP111); Mismatch repair pathway (WP:WP111) —DECREASES→ Cell proliferation (GO:0008283). Gain-of-function mutations in PIK3CA activate the PI3K-Akt signaling pathway, promoting cell proliferation and contributing to ovarian cancer. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to increased cell proliferation and colorectal cancer. Concurrently, loss-of-function mutations in MLH1 impair the mismatch repair pathway, leading to increased genomic instability and also contributing to colorectal cancer. Both pathways converge on dysregulated cell proliferation, a common mechanism underlying both diseases.",
+      "falsification": {
+        "text": "Absence of mutations in PIK3CA, APC, or MLH1 in a significant proportion of patients with either ovarian or colorectal cancer, or demonstration that these genes act through entirely distinct, non-convergent pathways in each disease.",
+        "gnomad_variant": "High frequency (e.g., >1%) of pathogenic variants in PIK3CA, APC, or MLH1 in general population databases like gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005575",
+        "diseaseBName": "colorectal cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.7798,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9571) —INCREASES→ PI3K-Akt signaling pathway (WP:WP43); PI3K-Akt signaling pathway (WP:WP43) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Ovarian cancer (MONDO:0008170); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP722); Wnt signaling pathway (WP:WP722) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Colorectal cancer (MONDO:0005575); MLH1 (HGNC:7054) —DISRUPTS→ Mismatch repair pathway (WP:WP111); Mismatch repair pathway (WP:WP111) —DECREASES→ Cell proliferation (GO:0008283). Gain-of-function mutations in PIK3CA activate the PI3K-Akt signaling pathway, promoting cell proliferation and contributing to ovarian cancer. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to increased cell proliferation and colorectal cancer. Concurrently, loss-of-function mutations in MLH1 impair the mismatch repair pathway, leading to increased genomic instability and also contributing to colorectal cancer. Both pathways converge on dysregulated cell proliferation, a common mechanism underlying both diseases.",
+        "falsification": {
+          "text": "Absence of mutations in PIK3CA, APC, or MLH1 in a significant proportion of patients with either ovarian or colorectal cancer, or demonstration that these genes act through entirely distinct, non-convergent pathways in each disease.",
+          "gnomad_variant": "High frequency (e.g., >1%) of pathogenic variants in PIK3CA, APC, or MLH1 in general population databases like gnomAD."
+        },
+        "translational": "Targeting the PI3K-Akt and Wnt signaling pathways, as well as enhancing DNA mismatch repair, are active areas of cancer therapy development. Understanding the shared reliance on cell proliferation control offers potential for combination therapies or repurposed drugs effective against both ovarian and colorectal cancers."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.7151,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RB1 (HGNC:8975) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); RB1 (HGNC:8975) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); IRF1 (HGNC:3430) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); IRF1 (HGNC:3430) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Lung Cancer (MONDO:0008903); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Lung Cancer (MONDO:0008903). Loss-of-function mutations in shared genes like RB1 and IRF1 disrupt the normal regulation of the cell cycle and DNA damage response pathways, leading to uncontrolled proliferation and genomic instability, which are hallmarks of both ovarian and lung cancers.",
+      "mechanism_narrative": "RB1 (HGNC:8975) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); RB1 (HGNC:8975) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); IRF1 (HGNC:3430) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); IRF1 (HGNC:3430) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Lung Cancer (MONDO:0008903); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Lung Cancer (MONDO:0008903). Loss-of-function mutations in shared genes like RB1 and IRF1 disrupt the normal regulation of the cell cycle and DNA damage response pathways, leading to uncontrolled proliferation and genomic instability, which are hallmarks of both ovarian and lung cancers.",
+      "falsification": {
+        "text": "Absence of mutations in RB1 (HGNC:8975) or IRF1 (HGNC:3430) in a significant proportion of patients with either ovarian or lung cancer, or clear evidence that these genes do not converge on the same downstream cellular pathways in both disease contexts.",
+        "gnomad_variant": "rs112803818 (common pathogenic variant in RB1)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.7151,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RB1 (HGNC:8975) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); RB1 (HGNC:8975) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); IRF1 (HGNC:3430) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); IRF1 (HGNC:3430) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Lung Cancer (MONDO:0008903); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Lung Cancer (MONDO:0008903). Loss-of-function mutations in shared genes like RB1 and IRF1 disrupt the normal regulation of the cell cycle and DNA damage response pathways, leading to uncontrolled proliferation and genomic instability, which are hallmarks of both ovarian and lung cancers.",
+        "falsification": {
+          "text": "Absence of mutations in RB1 (HGNC:8975) or IRF1 (HGNC:3430) in a significant proportion of patients with either ovarian or lung cancer, or clear evidence that these genes do not converge on the same downstream cellular pathways in both disease contexts.",
+          "gnomad_variant": "rs112803818 (common pathogenic variant in RB1)"
+        },
+        "translational": "Identifying shared genetic underpinnings and pathway dysregulation between ovarian and lung cancers could facilitate the development of targeted therapies effective against both malignancies, or inform the repurposing of existing drugs."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011240",
+      "diseaseBName": "megalencephaly-capillary malformation-polymicrogyria syndrome",
+      "fitness": 0.6043,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Megalencephaly-capillary malformation-polymicrogyria syndrome (MONDO:0011240). Gain-of-function variants in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This hyperactivation drives uncontrolled cell proliferation and survival, contributing to the development of ovarian cancer. Concurrently, dysregulation of this same pathway during critical developmental periods can lead to abnormal neuronal growth and cortical patterning, resulting in megalencephaly-capillary malformation-polymicrogyria syndrome.",
+      "mechanism_narrative": "PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Megalencephaly-capillary malformation-polymicrogyria syndrome (MONDO:0011240). Gain-of-function variants in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This hyperactivation drives uncontrolled cell proliferation and survival, contributing to the development of ovarian cancer. Concurrently, dysregulation of this same pathway during critical developmental periods can lead to abnormal neuronal growth and cortical patterning, resulting in megalencephaly-capillary malformation-polymicrogyria syndrome.",
+      "falsification": {
+        "text": "Absence of PIK3CA activating mutations in a significant proportion of patients with either ovarian cancer or megalencephaly-capillary malformation-polymicrogyria syndrome, or identification of distinct, non-overlapping causal pathways for each disease in well-characterized cohorts.",
+        "gnomad_variant": "High allele frequency (> 1%) of the proposed PIK3CA variants in gnomAD across relevant populations would challenge their role as rare causal variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011240",
+        "diseaseBName": "megalencephaly-capillary malformation-polymicrogyria syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.6043,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Megalencephaly-capillary malformation-polymicrogyria syndrome (MONDO:0011240). Gain-of-function variants in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This hyperactivation drives uncontrolled cell proliferation and survival, contributing to the development of ovarian cancer. Concurrently, dysregulation of this same pathway during critical developmental periods can lead to abnormal neuronal growth and cortical patterning, resulting in megalencephaly-capillary malformation-polymicrogyria syndrome.",
+        "falsification": {
+          "text": "Absence of PIK3CA activating mutations in a significant proportion of patients with either ovarian cancer or megalencephaly-capillary malformation-polymicrogyria syndrome, or identification of distinct, non-overlapping causal pathways for each disease in well-characterized cohorts.",
+          "gnomad_variant": "High allele frequency (> 1%) of the proposed PIK3CA variants in gnomAD across relevant populations would challenge their role as rare causal variants."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway is a current therapeutic strategy for various cancers, including ovarian cancer. Understanding its role in megalencephaly-capillary malformation-polymicrogyria syndrome could potentially open avenues for novel therapeutic interventions aimed at modulating aberrant brain development, although this presents significant challenges due to the critical role of this pathway in normal development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013038",
+      "diseaseBName": "CLOVES syndrome",
+      "fitness": 0.6008,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "Activating PIK3CA mutation —DISRUPTS→ PIK3CA (HGNC:9535); PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ CLOVES syndrome (MONDO:0013038). Activating mutations (e.g., E545K, H1047R) in PIK3CA lead to constitutive activation of the PI3K/AKT/mTOR pathway. This pathway is crucial for cell growth, proliferation, survival, and metabolism. In ovarian cancer, hyperactivation of this pathway promotes tumor initiation, growth, and metastasis. In CLOVES syndrome, dysregulation of PIK3CA and subsequent pathway hyperactivation leads to overgrowth of mesenchymal tissues and other developmental abnormalities.",
+      "mechanism_narrative": "Activating PIK3CA mutation —DISRUPTS→ PIK3CA (HGNC:9535); PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ CLOVES syndrome (MONDO:0013038). Activating mutations (e.g., E545K, H1047R) in PIK3CA lead to constitutive activation of the PI3K/AKT/mTOR pathway. This pathway is crucial for cell growth, proliferation, survival, and metabolism. In ovarian cancer, hyperactivation of this pathway promotes tumor initiation, growth, and metastasis. In CLOVES syndrome, dysregulation of PIK3CA and subsequent pathway hyperactivation leads to overgrowth of mesenchymal tissues and other developmental abnormalities.",
+      "falsification": {
+        "text": "Absence of activating PIK3CA mutations in well-characterized cohorts of both ovarian cancer and CLOVES syndrome patients, or identification of completely distinct molecular pathways driving both diseases without overlap.",
+        "gnomad_variant": "Exome-wide allele frequency > 0.1% for known pathogenic PIK3CA variants in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013038",
+        "diseaseBName": "CLOVES syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.6008,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Activating PIK3CA mutation —DISRUPTS→ PIK3CA (HGNC:9535); PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ CLOVES syndrome (MONDO:0013038). Activating mutations (e.g., E545K, H1047R) in PIK3CA lead to constitutive activation of the PI3K/AKT/mTOR pathway. This pathway is crucial for cell growth, proliferation, survival, and metabolism. In ovarian cancer, hyperactivation of this pathway promotes tumor initiation, growth, and metastasis. In CLOVES syndrome, dysregulation of PIK3CA and subsequent pathway hyperactivation leads to overgrowth of mesenchymal tissues and other developmental abnormalities.",
+        "falsification": {
+          "text": "Absence of activating PIK3CA mutations in well-characterized cohorts of both ovarian cancer and CLOVES syndrome patients, or identification of completely distinct molecular pathways driving both diseases without overlap.",
+          "gnomad_variant": "Exome-wide allele frequency > 0.1% for known pathogenic PIK3CA variants in relevant populations."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway with inhibitors is a promising therapeutic strategy for both ovarian cancer and CLOVES syndrome. Understanding the shared molecular underpinnings can inform the development of combination therapies and personalized treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008093",
+      "diseaseBName": "nevus, epidermal",
+      "fitness": 0.5996,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PIK3CA (HGNC:8975) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Epidermal nevus (MONDO:0008093). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This pathway dysregulation drives uncontrolled cell proliferation and survival, manifesting as ovarian cancer in the context of ovarian epithelium and as epidermal nevi in the skin.",
+      "mechanism_narrative": "PIK3CA (HGNC:8975) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Epidermal nevus (MONDO:0008093). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This pathway dysregulation drives uncontrolled cell proliferation and survival, manifesting as ovarian cancer in the context of ovarian epithelium and as epidermal nevi in the skin.",
+      "falsification": {
+        "text": "Absence of activating mutations in PIK3CA in a significant proportion of patients with either ovarian cancer or epidermal nevi would weaken this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008093",
+        "diseaseBName": "nevus, epidermal",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.5996,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:8975) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Epidermal nevus (MONDO:0008093). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This pathway dysregulation drives uncontrolled cell proliferation and survival, manifesting as ovarian cancer in the context of ovarian epithelium and as epidermal nevi in the skin.",
+        "falsification": {
+          "text": "Absence of activating mutations in PIK3CA in a significant proportion of patients with either ovarian cancer or epidermal nevi would weaken this hypothesis."
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway is a potential therapeutic strategy for both ovarian cancer and certain types of epidermal nevi, particularly those with PIK3CA-activating mutations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013125",
+      "diseaseBName": "CLAPO syndrome",
+      "fitness": 0.5996,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —INCREASES→ Cellular proliferation and survival (GO:0008284); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ CLAPO syndrome (MONDO:0013125). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT signaling pathway. This hyperactivation promotes cellular proliferation and survival, contributing to the development of ovarian cancer (Disease A) and the overgrowth phenotypes seen in CLAPO syndrome (Disease B).",
+      "mechanism_narrative": "PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —INCREASES→ Cellular proliferation and survival (GO:0008284); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ CLAPO syndrome (MONDO:0013125). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT signaling pathway. This hyperactivation promotes cellular proliferation and survival, contributing to the development of ovarian cancer (Disease A) and the overgrowth phenotypes seen in CLAPO syndrome (Disease B).",
+      "falsification": {
+        "text": "The absence of activating mutations in PIK3CA in well-characterized cases of both ovarian cancer and CLAPO syndrome, or the identification of distinct, non-overlapping causal pathways for each disease.",
+        "gnomad_variant": "The presence of common, benign variants in PIK3CA (e.g., allele frequency > 1% in gnomAD) that do not lead to increased pathway activity would weaken this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013125",
+        "diseaseBName": "CLAPO syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.5996,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —INCREASES→ Cellular proliferation and survival (GO:0008284); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ CLAPO syndrome (MONDO:0013125). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT signaling pathway. This hyperactivation promotes cellular proliferation and survival, contributing to the development of ovarian cancer (Disease A) and the overgrowth phenotypes seen in CLAPO syndrome (Disease B).",
+        "falsification": {
+          "text": "The absence of activating mutations in PIK3CA in well-characterized cases of both ovarian cancer and CLAPO syndrome, or the identification of distinct, non-overlapping causal pathways for each disease.",
+          "gnomad_variant": "The presence of common, benign variants in PIK3CA (e.g., allele frequency > 1% in gnomAD) that do not lead to increased pathway activity would weaken this hypothesis."
+        },
+        "translational": "Targeting the PI3K/AKT pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the overgrowth in CLAPO syndrome. Understanding this shared mechanism could lead to the development of novel, pathway-specific inhibitors applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007962",
+      "diseaseBName": "megalodactyly",
+      "fitness": 0.5985,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ PIK3CA (HGNC:9538); Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ AKT1 (HGNC:391); PIK3CA (HGNC:9538) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); AKT1 (HGNC:391) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Megalodactyly (MONDO:0007962). Gain-of-function variants in PIK3CA or AKT1 lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This pathway's dysregulation promotes uncontrolled cellular proliferation, contributing to ovarian cancer, and abnormal tissue growth, manifesting as megalodactyly.",
+      "mechanism_narrative": "Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ PIK3CA (HGNC:9538); Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ AKT1 (HGNC:391); PIK3CA (HGNC:9538) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); AKT1 (HGNC:391) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Megalodactyly (MONDO:0007962). Gain-of-function variants in PIK3CA or AKT1 lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This pathway's dysregulation promotes uncontrolled cellular proliferation, contributing to ovarian cancer, and abnormal tissue growth, manifesting as megalodactyly.",
+      "falsification": {
+        "text": "The absence of gain-of-function mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and megalodactyly, or the identification of distinct, unrelated molecular pathways driving each condition independently, would falsify this hypothesis.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007962",
+        "diseaseBName": "megalodactyly",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.5985,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ PIK3CA (HGNC:9538); Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ AKT1 (HGNC:391); PIK3CA (HGNC:9538) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); AKT1 (HGNC:391) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Megalodactyly (MONDO:0007962). Gain-of-function variants in PIK3CA or AKT1 lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This pathway's dysregulation promotes uncontrolled cellular proliferation, contributing to ovarian cancer, and abnormal tissue growth, manifesting as megalodactyly.",
+        "falsification": {
+          "text": "The absence of gain-of-function mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and megalodactyly, or the identification of distinct, unrelated molecular pathways driving each condition independently, would falsify this hypothesis.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Targeting the PI3K/AKT/mTOR pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the overgrowth phenotypes in megalodactyly, suggesting a shared therapeutic vulnerability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011723",
+      "diseaseBName": "hemifacial myohyperplasia",
+      "fitness": 0.5978,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "PIK3CA (HGNC:9534) —INCREASES→ PI3K-Akt signaling pathway (WP263); AKT1 (HGNC:382) —INCREASES→ PI3K-Akt signaling pathway (WP263); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Hemifacial myohyperplasia (MONDO:0011723). Gain-of-function mutations in PIK3CA (HGNC:9534) and AKT1 (HGNC:382), both implicated in ovarian cancer (MONDO:0008170) and hemifacial myohyperplasia (MONDO:0011723), lead to hyperactivation of the PI3K-Akt signaling pathway (WP263), driving the cellular processes that manifest as these distinct diseases.",
+      "mechanism_narrative": "PIK3CA (HGNC:9534) —INCREASES→ PI3K-Akt signaling pathway (WP263); AKT1 (HGNC:382) —INCREASES→ PI3K-Akt signaling pathway (WP263); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Hemifacial myohyperplasia (MONDO:0011723). Gain-of-function mutations in PIK3CA (HGNC:9534) and AKT1 (HGNC:382), both implicated in ovarian cancer (MONDO:0008170) and hemifacial myohyperplasia (MONDO:0011723), lead to hyperactivation of the PI3K-Akt signaling pathway (WP263), driving the cellular processes that manifest as these distinct diseases.",
+      "falsification": {
+        "text": "The absence of activating mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and hemifacial myohyperplasia, or the identification of completely distinct and non-overlapping molecular pathways driving each disease, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common, high-frequency activating variants in PIK3CA or AKT1 in the general population (gnomAD > 1%) would suggest these are not rare disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011723",
+        "diseaseBName": "hemifacial myohyperplasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.5978,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9534) —INCREASES→ PI3K-Akt signaling pathway (WP263); AKT1 (HGNC:382) —INCREASES→ PI3K-Akt signaling pathway (WP263); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Hemifacial myohyperplasia (MONDO:0011723). Gain-of-function mutations in PIK3CA (HGNC:9534) and AKT1 (HGNC:382), both implicated in ovarian cancer (MONDO:0008170) and hemifacial myohyperplasia (MONDO:0011723), lead to hyperactivation of the PI3K-Akt signaling pathway (WP263), driving the cellular processes that manifest as these distinct diseases.",
+        "falsification": {
+          "text": "The absence of activating mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and hemifacial myohyperplasia, or the identification of completely distinct and non-overlapping molecular pathways driving each disease, would falsify this hypothesis.",
+          "gnomad_variant": "The presence of common, high-frequency activating variants in PIK3CA or AKT1 in the general population (gnomAD > 1%) would suggest these are not rare disease-causing variants."
+        },
+        "translational": "Targeting the PI3K-Akt pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the hyperplastic growth in hemifacial myohyperplasia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016419",
+      "diseaseBName": "hereditary breast carcinoma",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); AKT1 (HGNC:391) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); TP53 (HGNC:11998) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP2723); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating mutations in PIK3CA and AKT1, or loss of function in TP53, converge to dysregulate the PI3K-Akt signaling pathway, promoting the development of both ovarian cancer and hereditary breast carcinoma.",
+      "mechanism_narrative": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); AKT1 (HGNC:391) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); TP53 (HGNC:11998) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP2723); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating mutations in PIK3CA and AKT1, or loss of function in TP53, converge to dysregulate the PI3K-Akt signaling pathway, promoting the development of both ovarian cancer and hereditary breast carcinoma.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for ovarian cancer in this context are exclusively somatic and not germline, or if the causal variants for hereditary breast carcinoma are exclusively somatic and not germline, this would falsify the hypothesis of shared germline genetic origins leading to these specific disease classifications.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1250342",
+        "Reactome:R-HSA-202424",
+        "Reactome:R-HSA-2219530",
+        "Reactome:R-HSA-2424491",
+        "Reactome:R-HSA-5655302"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016419",
+        "diseaseBName": "hereditary breast carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1250342",
+          "Reactome:R-HSA-202424",
+          "Reactome:R-HSA-2219530",
+          "Reactome:R-HSA-2424491",
+          "Reactome:R-HSA-5655302"
+        ],
+        "fitness": 0.5,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); AKT1 (HGNC:391) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); TP53 (HGNC:11998) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP2723); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating mutations in PIK3CA and AKT1, or loss of function in TP53, converge to dysregulate the PI3K-Akt signaling pathway, promoting the development of both ovarian cancer and hereditary breast carcinoma.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for ovarian cancer in this context are exclusively somatic and not germline, or if the causal variants for hereditary breast carcinoma are exclusively somatic and not germline, this would falsify the hypothesis of shared germline genetic origins leading to these specific disease classifications.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting the PI3K-Akt pathway is a major area of cancer therapy. Understanding the specific genetic alterations and their functional consequences in both ovarian cancer and hereditary breast carcinoma can inform the development of more precise and effective therapeutic strategies, including the potential for repurposing drugs across these related malignancies."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T04:10:35.970Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** ovarian cancer (MONDO:0008170)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 23 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | gastric cancer (MONDO:0001056) | shared pathway | Tier 1 | 0.781 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 2 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 1 | 0.780 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 3 | lung cancer (MONDO:0008903) | shared pathway | Tier 1 | 0.715 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 4 | megalencephaly-capillary malformation-polymicrogyria syndrome (MONDO:0011240) | shared pathway | Tier 2 | 0.604 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 5 | CLOVES syndrome (MONDO:0013038) | shared pathway | Tier 2 | 0.601 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 6 | nevus, epidermal (MONDO:0008093) | shared pathway | Tier 2 | 0.600 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 7 | CLAPO syndrome (MONDO:0013125) | shared pathway | Tier 2 | 0.600 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 8 | megalodactyly (MONDO:0007962) | shared pathway | Tier 2 | 0.599 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 9 | hemifacial myohyperplasia (MONDO:0011723) | shared pathway | Tier 2 | 0.598 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n| 10 | hereditary breast carcinoma (MONDO:0016419) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302 |\n\n### CANDIDATE DETAIL\n#### 1. gastric cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.781)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:8975) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); AKT1 (HGNC:397) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); APC (HGNC:421) —DISRUPTS→ PI3K-AKT signaling pathway (REACT:R-HSA-4255420); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664); PI3K-AKT signaling pathway (REACT:R-HSA-4255420) —LEADS_TO→ Neoplastic progression (HP:0002664). Gain-of-function mutations in PIK3CA and AKT1, and loss-of-function/disruptive mutations in APC, all converge to dysregulate the PI3K-AKT signaling pathway. This aberrant signaling promotes neoplastic progression, manifesting as both ovarian and gastric cancers.\n\n**How to falsify it:** Falsification would occur if comprehensive genomic analysis of a large cohort of ovarian and gastric cancer patients reveals that mutations in PIK3CA, AKT1, and APC do not converge on dysregulation of the PI3K-AKT pathway, or if these mutations are found to promote distinct, non-overlapping downstream cellular processes specific to each cancer type. _(variant: The presence of common recurrent gain-of-function variants in PIK3CA (e.g., E542K, E545K) or AKT1 (e.g., E17K) with a minor allele frequency >1% in the general population, as assessed by gnomAD, would weaken the hypothesis of these variants being specific drivers of rare disease phenotypes.)_\n\n**Why it matters:** Targeting the PI3K-AKT pathway is a key strategy in cancer therapy. Understanding the shared mechanistic basis of ovarian and gastric cancers through this pathway could lead to the development of novel combination therapies or repurposing of existing drugs across both disease types, potentially improving patient outcomes.\n\n---\n\n#### 2. colorectal cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.780)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:9571) —INCREASES→ PI3K-Akt signaling pathway (WP:WP43); PI3K-Akt signaling pathway (WP:WP43) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Ovarian cancer (MONDO:0008170); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP722); Wnt signaling pathway (WP:WP722) —INCREASES→ Cell proliferation (GO:0008283); Cell proliferation (GO:0008283) —LEADS_TO→ Colorectal cancer (MONDO:0005575); MLH1 (HGNC:7054) —DISRUPTS→ Mismatch repair pathway (WP:WP111); Mismatch repair pathway (WP:WP111) —DECREASES→ Cell proliferation (GO:0008283). Gain-of-function mutations in PIK3CA activate the PI3K-Akt signaling pathway, promoting cell proliferation and contributing to ovarian cancer. Loss-of-function mutations in APC disrupt the Wnt signaling pathway, leading to increased cell proliferation and colorectal cancer. Concurrently, loss-of-function mutations in MLH1 impair the mismatch repair pathway, leading to increased genomic instability and also contributing to colorectal cancer. Both pathways converge on dysregulated cell proliferation, a common mechanism underlying both diseases.\n\n**How to falsify it:** Absence of mutations in PIK3CA, APC, or MLH1 in a significant proportion of patients with either ovarian or colorectal cancer, or demonstration that these genes act through entirely distinct, non-convergent pathways in each disease. _(variant: High frequency (e.g., >1%) of pathogenic variants in PIK3CA, APC, or MLH1 in general population databases like gnomAD.)_\n\n**Why it matters:** Targeting the PI3K-Akt and Wnt signaling pathways, as well as enhancing DNA mismatch repair, are active areas of cancer therapy development. Understanding the shared reliance on cell proliferation control offers potential for combination therapies or repurposed drugs effective against both ovarian and colorectal cancers.\n\n---\n\n#### 3. lung cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.715)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** RB1 (HGNC:8975) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); RB1 (HGNC:8975) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); IRF1 (HGNC:3430) —DISRUPTS→ Cell Cycle Regulation (REACT:R-HSA-1627704); IRF1 (HGNC:3430) —DISRUPTS→ DNA Damage Response (REACT:R-HSA-1644308); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); Cell Cycle Regulation (REACT:R-HSA-1627704) —LEADS_TO→ Lung Cancer (MONDO:0008903); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Ovarian Cancer (MONDO:0008170); DNA Damage Response (REACT:R-HSA-1644308) —LEADS_TO→ Lung Cancer (MONDO:0008903). Loss-of-function mutations in shared genes like RB1 and IRF1 disrupt the normal regulation of the cell cycle and DNA damage response pathways, leading to uncontrolled proliferation and genomic instability, which are hallmarks of both ovarian and lung cancers.\n\n**How to falsify it:** Absence of mutations in RB1 (HGNC:8975) or IRF1 (HGNC:3430) in a significant proportion of patients with either ovarian or lung cancer, or clear evidence that these genes do not converge on the same downstream cellular pathways in both disease contexts. _(variant: rs112803818 (common pathogenic variant in RB1))_\n\n**Why it matters:** Identifying shared genetic underpinnings and pathway dysregulation between ovarian and lung cancers could facilitate the development of targeted therapies effective against both malignancies, or inform the repurposing of existing drugs.\n\n---\n\n#### 4. megalencephaly-capillary malformation-polymicrogyria syndrome  —  Tier 2 — Strong / Probable  (fitness 0.604)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PIK3CA activating variant (COSMIC:V-COSM410707) —DISRUPTS→ PIK3CA (HGNC:9523); PIK3CA (HGNC:9523) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP43); PI3K/AKT/mTOR signaling pathway (WP:WP43) —LEADS_TO→ Megalencephaly-capillary malformation-polymicrogyria syndrome (MONDO:0011240). Gain-of-function variants in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This hyperactivation drives uncontrolled cell proliferation and survival, contributing to the development of ovarian cancer. Concurrently, dysregulation of this same pathway during critical developmental periods can lead to abnormal neuronal growth and cortical patterning, resulting in megalencephaly-capillary malformation-polymicrogyria syndrome.\n\n**How to falsify it:** Absence of PIK3CA activating mutations in a significant proportion of patients with either ovarian cancer or megalencephaly-capillary malformation-polymicrogyria syndrome, or identification of distinct, non-overlapping causal pathways for each disease in well-characterized cohorts. _(variant: High allele frequency (> 1%) of the proposed PIK3CA variants in gnomAD across relevant populations would challenge their role as rare causal variants.)_\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway is a current therapeutic strategy for various cancers, including ovarian cancer. Understanding its role in megalencephaly-capillary malformation-polymicrogyria syndrome could potentially open avenues for novel therapeutic interventions aimed at modulating aberrant brain development, although this presents significant challenges due to the critical role of this pathway in normal development.\n\n---\n\n#### 5. CLOVES syndrome  —  Tier 2 — Strong / Probable  (fitness 0.601)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** Activating PIK3CA mutation —DISRUPTS→ PIK3CA (HGNC:9535); PIK3CA (HGNC:9535) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-1690303) —LEADS_TO→ CLOVES syndrome (MONDO:0013038). Activating mutations (e.g., E545K, H1047R) in PIK3CA lead to constitutive activation of the PI3K/AKT/mTOR pathway. This pathway is crucial for cell growth, proliferation, survival, and metabolism. In ovarian cancer, hyperactivation of this pathway promotes tumor initiation, growth, and metastasis. In CLOVES syndrome, dysregulation of PIK3CA and subsequent pathway hyperactivation leads to overgrowth of mesenchymal tissues and other developmental abnormalities.\n\n**How to falsify it:** Absence of activating PIK3CA mutations in well-characterized cohorts of both ovarian cancer and CLOVES syndrome patients, or identification of completely distinct molecular pathways driving both diseases without overlap. _(variant: Exome-wide allele frequency > 0.1% for known pathogenic PIK3CA variants in relevant populations.)_\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway with inhibitors is a promising therapeutic strategy for both ovarian cancer and CLOVES syndrome. Understanding the shared molecular underpinnings can inform the development of combination therapies and personalized treatment approaches.\n\n---\n\n#### 6. nevus, epidermal  —  Tier 2 — Strong / Probable  (fitness 0.600)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:8975) —INCREASES→ PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Epidermal nevus (MONDO:0008093). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT/mTOR signaling pathway. This pathway dysregulation drives uncontrolled cell proliferation and survival, manifesting as ovarian cancer in the context of ovarian epithelium and as epidermal nevi in the skin.\n\n**How to falsify it:** Absence of activating mutations in PIK3CA in a significant proportion of patients with either ovarian cancer or epidermal nevi would weaken this hypothesis.\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway is a potential therapeutic strategy for both ovarian cancer and certain types of epidermal nevi, particularly those with PIK3CA-activating mutations.\n\n---\n\n#### 7. CLAPO syndrome  —  Tier 2 — Strong / Probable  (fitness 0.600)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:9534) —INCREASES→ PI3K/AKT signaling pathway (WP:WP449); PI3K/AKT signaling pathway (WP:WP449) —INCREASES→ Cellular proliferation and survival (GO:0008284); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Cellular proliferation and survival (GO:0008284) —LEADS_TO→ CLAPO syndrome (MONDO:0013125). Gain-of-function mutations in PIK3CA lead to hyperactivation of the PI3K/AKT signaling pathway. This hyperactivation promotes cellular proliferation and survival, contributing to the development of ovarian cancer (Disease A) and the overgrowth phenotypes seen in CLAPO syndrome (Disease B).\n\n**How to falsify it:** The absence of activating mutations in PIK3CA in well-characterized cases of both ovarian cancer and CLAPO syndrome, or the identification of distinct, non-overlapping causal pathways for each disease. _(variant: The presence of common, benign variants in PIK3CA (e.g., allele frequency > 1% in gnomAD) that do not lead to increased pathway activity would weaken this hypothesis.)_\n\n**Why it matters:** Targeting the PI3K/AKT pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the overgrowth in CLAPO syndrome. Understanding this shared mechanism could lead to the development of novel, pathway-specific inhibitors applicable to both conditions.\n\n---\n\n#### 8. megalodactyly  —  Tier 2 — Strong / Probable  (fitness 0.599)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ PIK3CA (HGNC:9538); Gain-of-function variant in PIK3CA or AKT1 (None) —INCREASES→ AKT1 (HGNC:391); PIK3CA (HGNC:9538) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); AKT1 (HGNC:391) —INCREASES→ PI3K/AKT/mTOR signaling pathway (WP:WP279); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K/AKT/mTOR signaling pathway (WP:WP279) —LEADS_TO→ Megalodactyly (MONDO:0007962). Gain-of-function variants in PIK3CA or AKT1 lead to aberrant activation of the PI3K/AKT/mTOR signaling pathway. This pathway's dysregulation promotes uncontrolled cellular proliferation, contributing to ovarian cancer, and abnormal tissue growth, manifesting as megalodactyly.\n\n**How to falsify it:** The absence of gain-of-function mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and megalodactyly, or the identification of distinct, unrelated molecular pathways driving each condition independently, would falsify this hypothesis. _(variant: None)_\n\n**Why it matters:** Targeting the PI3K/AKT/mTOR pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the overgrowth phenotypes in megalodactyly, suggesting a shared therapeutic vulnerability.\n\n---\n\n#### 9. hemifacial myohyperplasia  —  Tier 2 — Strong / Probable  (fitness 0.598)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:9534) —INCREASES→ PI3K-Akt signaling pathway (WP263); AKT1 (HGNC:382) —INCREASES→ PI3K-Akt signaling pathway (WP263); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP263) —LEADS_TO→ Hemifacial myohyperplasia (MONDO:0011723). Gain-of-function mutations in PIK3CA (HGNC:9534) and AKT1 (HGNC:382), both implicated in ovarian cancer (MONDO:0008170) and hemifacial myohyperplasia (MONDO:0011723), lead to hyperactivation of the PI3K-Akt signaling pathway (WP263), driving the cellular processes that manifest as these distinct diseases.\n\n**How to falsify it:** The absence of activating mutations in PIK3CA or AKT1 in individuals with both ovarian cancer and hemifacial myohyperplasia, or the identification of completely distinct and non-overlapping molecular pathways driving each disease, would falsify this hypothesis. _(variant: The presence of common, high-frequency activating variants in PIK3CA or AKT1 in the general population (gnomAD > 1%) would suggest these are not rare disease-causing variants.)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway is a promising therapeutic strategy for both ovarian cancer and potentially for managing the hyperplastic growth in hemifacial myohyperplasia.\n\n---\n\n#### 10. hereditary breast carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-1250342, Reactome:R-HSA-202424, Reactome:R-HSA-2219530, Reactome:R-HSA-2424491, Reactome:R-HSA-5655302)\n\n**Proposed mechanism:** PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); AKT1 (HGNC:391) —INCREASES→ PI3K-Akt signaling pathway (WP:WP2723); TP53 (HGNC:11998) —DISRUPTS→ PI3K-Akt signaling pathway (WP:WP2723); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP2723) —LEADS_TO→ Hereditary breast carcinoma (MONDO:0016419). Activating mutations in PIK3CA and AKT1, or loss of function in TP53, converge to dysregulate the PI3K-Akt signaling pathway, promoting the development of both ovarian cancer and hereditary breast carcinoma.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for ovarian cancer in this context are exclusively somatic and not germline, or if the causal variants for hereditary breast carcinoma are exclusively somatic and not germline, this would falsify the hypothesis of shared germline genetic origins leading to these specific disease classifications. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway is a major area of cancer therapy. Understanding the specific genetic alterations and their functional consequences in both ovarian cancer and hereditary breast carcinoma can inform the development of more precise and effective therapeutic strategies, including the potential for repurposing drugs across these related malignancies.\n\n---"
+}

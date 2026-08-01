@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013268",
+    "name": "MONDO:0013268"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012309",
+      "diseaseBName": "parietal foramina 2",
+      "fitness": 0.7837,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ALX4 (HGNC:450) —DISRUPTS→ Craniofacial development regulation (GO:0001958); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Frontonasal dysplasia (HP:0000267); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Parietal foramina (HP:0000253). Haploinsufficiency of ALX4 disrupts the intricate pathways regulating craniofacial development, leading to distinct but overlapping phenotypes such as frontonasal dysplasia (associated with Disease A) and parietal foramina (associated with Disease B).",
+      "mechanism_narrative": "ALX4 (HGNC:450) —DISRUPTS→ Craniofacial development regulation (GO:0001958); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Frontonasal dysplasia (HP:0000267); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Parietal foramina (HP:0000253). Haploinsufficiency of ALX4 disrupts the intricate pathways regulating craniofacial development, leading to distinct but overlapping phenotypes such as frontonasal dysplasia (associated with Disease A) and parietal foramina (associated with Disease B).",
+      "falsification": {
+        "text": "The presence of pathogenic variants in ALX4 with a consistent loss-of-function effect (e.g., nonsense mutations, frameshifts) in individuals with both MONDO:0013268 and MONDO:0012309 would support this hypothesis. Conversely, identifying distinct causal genes or gain-of-function variants for each disease would falsify it.",
+        "gnomad_variant": "ALX4 variants with allele frequency > 1% in gnomAD would call into question its role as a rare disease gene."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:450"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012309",
+        "diseaseBName": "parietal foramina 2",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:450"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7837,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "ALX4 (HGNC:450) —DISRUPTS→ Craniofacial development regulation (GO:0001958); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Frontonasal dysplasia (HP:0000267); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Parietal foramina (HP:0000253). Haploinsufficiency of ALX4 disrupts the intricate pathways regulating craniofacial development, leading to distinct but overlapping phenotypes such as frontonasal dysplasia (associated with Disease A) and parietal foramina (associated with Disease B).",
+        "falsification": {
+          "text": "The presence of pathogenic variants in ALX4 with a consistent loss-of-function effect (e.g., nonsense mutations, frameshifts) in individuals with both MONDO:0013268 and MONDO:0012309 would support this hypothesis. Conversely, identifying distinct causal genes or gain-of-function variants for each disease would falsify it.",
+          "gnomad_variant": "ALX4 variants with allele frequency > 1% in gnomAD would call into question its role as a rare disease gene."
+        },
+        "translational": "Understanding the shared role of ALX4 in these conditions could lead to the identification of common therapeutic targets or strategies for managing craniofacial development defects in both diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T02:29:24.305Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013268 (MONDO:0013268)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | parietal foramina 2 (MONDO:0012309) | shared gene | Tier 1 | 0.784 | HGNC:450 |\n\n### CANDIDATE DETAIL\n#### 1. parietal foramina 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.784)\n**Link type:** shared causal gene (HGNC:450)\n\n**Proposed mechanism:** ALX4 (HGNC:450) —DISRUPTS→ Craniofacial development regulation (GO:0001958); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Frontonasal dysplasia (HP:0000267); Craniofacial development regulation (GO:0001958) —LEADS_TO→ Parietal foramina (HP:0000253). Haploinsufficiency of ALX4 disrupts the intricate pathways regulating craniofacial development, leading to distinct but overlapping phenotypes such as frontonasal dysplasia (associated with Disease A) and parietal foramina (associated with Disease B).\n\n**How to falsify it:** The presence of pathogenic variants in ALX4 with a consistent loss-of-function effect (e.g., nonsense mutations, frameshifts) in individuals with both MONDO:0013268 and MONDO:0012309 would support this hypothesis. Conversely, identifying distinct causal genes or gain-of-function variants for each disease would falsify it. _(variant: ALX4 variants with allele frequency > 1% in gnomAD would call into question its role as a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role of ALX4 in these conditions could lead to the identification of common therapeutic targets or strategies for managing craniofacial development defects in both diseases.\n\n---"
+}

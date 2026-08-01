@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0012605",
+    "name": "MONDO:0012605"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012299",
+      "diseaseBName": "nanophthalmos 2",
+      "fitness": 0.7319,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "MFRP (HGNC:18121) —DISRUPTS→ Anterior segment development (GO:0001651); Anterior segment development (GO:0001651) —LEADS_TO→ Anterior Segment Dysgenesis (HP:0000504); Anterior segment development (GO:0001651) —LEADS_TO→ Nanophthalmos (HP:0000504). Loss-of-function mutations in MFRP disrupt anterior segment development, leading to both anterior segment dysgenesis (Disease A) and nanophthalmos (Disease B).",
+      "mechanism_narrative": "MFRP (HGNC:18121) —DISRUPTS→ Anterior segment development (GO:0001651); Anterior segment development (GO:0001651) —LEADS_TO→ Anterior Segment Dysgenesis (HP:0000504); Anterior segment development (GO:0001651) —LEADS_TO→ Nanophthalmos (HP:0000504). Loss-of-function mutations in MFRP disrupt anterior segment development, leading to both anterior segment dysgenesis (Disease A) and nanophthalmos (Disease B).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in MFRP that are predicted to cause gain-of-function or dominant-negative effects, or if mutations in MFRP are not found in a significant proportion of patients with either disease.",
+        "gnomad_variant": "Exome sequencing data in gnomAD showing a high-frequency (e.g., >0.1%) pathogenic variant in MFRP that is associated with either disease."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:18121"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012299",
+        "diseaseBName": "nanophthalmos 2",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:18121"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7319,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "MFRP (HGNC:18121) —DISRUPTS→ Anterior segment development (GO:0001651); Anterior segment development (GO:0001651) —LEADS_TO→ Anterior Segment Dysgenesis (HP:0000504); Anterior segment development (GO:0001651) —LEADS_TO→ Nanophthalmos (HP:0000504). Loss-of-function mutations in MFRP disrupt anterior segment development, leading to both anterior segment dysgenesis (Disease A) and nanophthalmos (Disease B).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in MFRP that are predicted to cause gain-of-function or dominant-negative effects, or if mutations in MFRP are not found in a significant proportion of patients with either disease.",
+          "gnomad_variant": "Exome sequencing data in gnomAD showing a high-frequency (e.g., >0.1%) pathogenic variant in MFRP that is associated with either disease."
+        },
+        "translational": "Understanding the shared genetic basis of these conditions can inform the development of targeted therapies or diagnostic strategies that address the underlying MFRP dysfunction, potentially benefiting patients with either disease."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:58:47.887Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012605 (MONDO:0012605)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | nanophthalmos 2 (MONDO:0012299) | shared gene | Tier 1 | 0.732 | HGNC:18121 |\n\n### CANDIDATE DETAIL\n#### 1. nanophthalmos 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.732)\n**Link type:** shared causal gene (HGNC:18121)\n\n**Proposed mechanism:** MFRP (HGNC:18121) —DISRUPTS→ Anterior segment development (GO:0001651); Anterior segment development (GO:0001651) —LEADS_TO→ Anterior Segment Dysgenesis (HP:0000504); Anterior segment development (GO:0001651) —LEADS_TO→ Nanophthalmos (HP:0000504). Loss-of-function mutations in MFRP disrupt anterior segment development, leading to both anterior segment dysgenesis (Disease A) and nanophthalmos (Disease B).\n\n**How to falsify it:** Identification of pathogenic variants in MFRP that are predicted to cause gain-of-function or dominant-negative effects, or if mutations in MFRP are not found in a significant proportion of patients with either disease. _(variant: Exome sequencing data in gnomAD showing a high-frequency (e.g., >0.1%) pathogenic variant in MFRP that is associated with either disease.)_\n\n**Why it matters:** Understanding the shared genetic basis of these conditions can inform the development of targeted therapies or diagnostic strategies that address the underlying MFRP dysfunction, potentially benefiting patients with either disease.\n\n---"
+}

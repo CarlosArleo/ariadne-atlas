@@ -1,0 +1,411 @@
+{
+  "seed": {
+    "id": "MONDO:0007829",
+    "name": "cholestasis, intrahepatic, of pregnancy, 1"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 25,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011038",
+      "diseaseBName": "cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome",
+      "fitness": 0.3981,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:27424) —DISRUPTS→ Bile acid transport (REACT:R-HSA-2402406); Bile acid transport (REACT:R-HSA-2402406) —LEADS_TO→ Intrahepatic cholestasis (HP:0001362); ATP1A3 (HGNC:730) —DISRUPTS→ Neuronal ion homeostasis (GO:0007272); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Cerebellar ataxia (HP:0001251); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Sensorineural hearing impairment (HP:0000405); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Optic atrophy (HP:0000647). Loss-of-function mutations in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to cerebellar ataxia, sensorineural hearing loss, and optic atrophy. While the specific pathways are distinct, both arise from disruptions in fundamental cellular transport and homeostasis mechanisms.",
+      "mechanism_narrative": "ATP8B1 (HGNC:27424) —DISRUPTS→ Bile acid transport (REACT:R-HSA-2402406); Bile acid transport (REACT:R-HSA-2402406) —LEADS_TO→ Intrahepatic cholestasis (HP:0001362); ATP1A3 (HGNC:730) —DISRUPTS→ Neuronal ion homeostasis (GO:0007272); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Cerebellar ataxia (HP:0001251); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Sensorineural hearing impairment (HP:0000405); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Optic atrophy (HP:0000647). Loss-of-function mutations in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to cerebellar ataxia, sensorineural hearing loss, and optic atrophy. While the specific pathways are distinct, both arise from disruptions in fundamental cellular transport and homeostasis mechanisms.",
+      "falsification": {
+        "text": "Demonstration that mutations in ATP8B1 do not impair bile acid transport or that mutations in ATP1A3 do not affect neuronal ion gradients would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways that cannot be linked by any shared downstream effect would also serve as falsification.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of ATP8B1 and ATP1A3 that do not segregate with the respective disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011038",
+        "diseaseBName": "cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3981,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:27424) —DISRUPTS→ Bile acid transport (REACT:R-HSA-2402406); Bile acid transport (REACT:R-HSA-2402406) —LEADS_TO→ Intrahepatic cholestasis (HP:0001362); ATP1A3 (HGNC:730) —DISRUPTS→ Neuronal ion homeostasis (GO:0007272); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Cerebellar ataxia (HP:0001251); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Sensorineural hearing impairment (HP:0000405); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Optic atrophy (HP:0000647). Loss-of-function mutations in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to cerebellar ataxia, sensorineural hearing loss, and optic atrophy. While the specific pathways are distinct, both arise from disruptions in fundamental cellular transport and homeostasis mechanisms.",
+        "falsification": {
+          "text": "Demonstration that mutations in ATP8B1 do not impair bile acid transport or that mutations in ATP1A3 do not affect neuronal ion gradients would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways that cannot be linked by any shared downstream effect would also serve as falsification.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of ATP8B1 and ATP1A3 that do not segregate with the respective disease phenotypes."
+        },
+        "translational": "Understanding these distinct but mechanistically related transport defects could inform therapeutic strategies. For intrahepatic cholestasis of pregnancy, targeting bile acid homeostasis is key, while for cerebellar ataxia syndrome, restoring neuronal ion balance is crucial. Identifying any shared downstream consequences could reveal novel therapeutic targets applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007496",
+      "diseaseBName": "dystonia 12",
+      "fitness": 0.3979,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:9700) —DISRUPTS→ bile salt transport and homeostasis (GO:0015710); bile salt transport and homeostasis (GO:0015710) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ intrahepatic cholestasis of pregnancy (MONDO:0007829); ATP1A3 (HGNC:700) —DISRUPTS→ neuronal ion transport and membrane potential maintenance (GO:0007260); neuronal ion transport and membrane potential maintenance (GO:0007260) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ dystonia 12 (MONDO:0007496). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Similarly, loss-of-function mutations in ATP1A3 disrupt neuronal ion transport, leading to dystonia. Both pathways converge on the broader cellular membrane homeostasis, suggesting a shared underlying mechanism related to the maintenance of cellular integrity and ion gradients.",
+      "mechanism_narrative": "ATP8B1 (HGNC:9700) —DISRUPTS→ bile salt transport and homeostasis (GO:0015710); bile salt transport and homeostasis (GO:0015710) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ intrahepatic cholestasis of pregnancy (MONDO:0007829); ATP1A3 (HGNC:700) —DISRUPTS→ neuronal ion transport and membrane potential maintenance (GO:0007260); neuronal ion transport and membrane potential maintenance (GO:0007260) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ dystonia 12 (MONDO:0007496). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Similarly, loss-of-function mutations in ATP1A3 disrupt neuronal ion transport, leading to dystonia. Both pathways converge on the broader cellular membrane homeostasis, suggesting a shared underlying mechanism related to the maintenance of cellular integrity and ion gradients.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in ATP8B1 and ATP1A3 do not converge on shared cellular pathways like general membrane homeostasis or ion transport, or if the functional consequences of mutations in these genes are entirely distinct and non-overlapping at a molecular level, this hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing the identified causal variants for both diseases are extremely rare (AF < 1e-5) and show no signs of recurrent mutation or population-specific enrichment, supporting their role in rare Mendelian disorders."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007496",
+        "diseaseBName": "dystonia 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3979,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:9700) —DISRUPTS→ bile salt transport and homeostasis (GO:0015710); bile salt transport and homeostasis (GO:0015710) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ intrahepatic cholestasis of pregnancy (MONDO:0007829); ATP1A3 (HGNC:700) —DISRUPTS→ neuronal ion transport and membrane potential maintenance (GO:0007260); neuronal ion transport and membrane potential maintenance (GO:0007260) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ dystonia 12 (MONDO:0007496). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Similarly, loss-of-function mutations in ATP1A3 disrupt neuronal ion transport, leading to dystonia. Both pathways converge on the broader cellular membrane homeostasis, suggesting a shared underlying mechanism related to the maintenance of cellular integrity and ion gradients.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in ATP8B1 and ATP1A3 do not converge on shared cellular pathways like general membrane homeostasis or ion transport, or if the functional consequences of mutations in these genes are entirely distinct and non-overlapping at a molecular level, this hypothesis would be falsified.",
+          "gnomad_variant": "gnomAD analysis showing the identified causal variants for both diseases are extremely rare (AF < 1e-5) and show no signs of recurrent mutation or population-specific enrichment, supporting their role in rare Mendelian disorders."
+        },
+        "translational": "Understanding the shared reliance on cellular membrane homeostasis and ion transport could reveal common therapeutic targets for both cholestatic liver diseases and neurological disorders like dystonia, potentially leading to novel treatment strategies that address the fundamental cellular defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0054833",
+      "diseaseBName": "Charcot-Marie-tooth disease, axonal, type 2DD",
+      "fitness": 0.3971,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:10328) —DISRUPTS→ bile acid transport (GO:0015730); bile acid transport (GO:0015730) —LEADS_TO→ intrahepatic cholestasis (HP:0003078); ATP8B1 (HGNC:10328) —DISRUPTS→ axonal transport (GO:0008084); axonal transport (GO:0008084) —LEADS_TO→ axonal degeneration (HP:0003403). Disruption of ATP8B1 function impairs both bile acid transport leading to intrahepatic cholestasis and axonal transport, contributing to axonal degeneration in CMT2DD.",
+      "mechanism_narrative": "ATP8B1 (HGNC:10328) —DISRUPTS→ bile acid transport (GO:0015730); bile acid transport (GO:0015730) —LEADS_TO→ intrahepatic cholestasis (HP:0003078); ATP8B1 (HGNC:10328) —DISRUPTS→ axonal transport (GO:0008084); axonal transport (GO:0008084) —LEADS_TO→ axonal degeneration (HP:0003403). Disruption of ATP8B1 function impairs both bile acid transport leading to intrahepatic cholestasis and axonal transport, contributing to axonal degeneration in CMT2DD.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ATP8B1 that are exclusively associated with one disease phenotype and not the other, or evidence of distinct molecular mechanisms for ATP8B1 dysfunction in each disease.",
+        "gnomad_variant": "Absence of common pathogenic variants in ATP8B1 in gnomAD populations, supporting its role in rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054833",
+        "diseaseBName": "Charcot-Marie-tooth disease, axonal, type 2DD",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3971,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:10328) —DISRUPTS→ bile acid transport (GO:0015730); bile acid transport (GO:0015730) —LEADS_TO→ intrahepatic cholestasis (HP:0003078); ATP8B1 (HGNC:10328) —DISRUPTS→ axonal transport (GO:0008084); axonal transport (GO:0008084) —LEADS_TO→ axonal degeneration (HP:0003403). Disruption of ATP8B1 function impairs both bile acid transport leading to intrahepatic cholestasis and axonal transport, contributing to axonal degeneration in CMT2DD.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ATP8B1 that are exclusively associated with one disease phenotype and not the other, or evidence of distinct molecular mechanisms for ATP8B1 dysfunction in each disease.",
+          "gnomad_variant": "Absence of common pathogenic variants in ATP8B1 in gnomAD populations, supporting its role in rare diseases."
+        },
+        "translational": "Understanding the shared role of ATP8B1 in distinct cellular transport systems could reveal novel therapeutic targets for both cholestatic disorders and neurodegenerative conditions like CMT2DD, potentially involving strategies to enhance or restore transport function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030473",
+      "diseaseBName": "developmental and epileptic encephalopathy 99",
+      "fitness": 0.3969,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:906) —DISRUPTS→ Bile acid transport (GO:0015721); Bile acid transport (GO:0015721) —DECREASES→ Bile acids (CHEBI:20652); Bile acids (CHEBI:20652) —LEADS_TO→ Cholestasis (HP:0002871); ATP1A3 (HGNC:645) —DISRUPTS→ Neuronal excitability and ion homeostasis (GO:0007267); Neuronal excitability and ion homeostasis (GO:0007267) —DECREASES→ Intracellular ion concentrations (CHEBI:33375); Intracellular ion concentrations (CHEBI:33375) —LEADS_TO→ Epileptic encephalopathy (HP:0011312); Bile acid transport (GO:0015721) —BINDS→ Neuronal excitability and ion homeostasis (GO:0007267); Bile acids (CHEBI:20652) —INCREASES→ Intracellular ion concentrations (CHEBI:33375). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Simultaneously, mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to epileptic encephalopathy. Both pathways converge on altered cellular ion and metabolite concentrations, impacting overall cellular function and leading to distinct but mechanistically related disease phenotypes.",
+      "mechanism_narrative": "ATP8B1 (HGNC:906) —DISRUPTS→ Bile acid transport (GO:0015721); Bile acid transport (GO:0015721) —DECREASES→ Bile acids (CHEBI:20652); Bile acids (CHEBI:20652) —LEADS_TO→ Cholestasis (HP:0002871); ATP1A3 (HGNC:645) —DISRUPTS→ Neuronal excitability and ion homeostasis (GO:0007267); Neuronal excitability and ion homeostasis (GO:0007267) —DECREASES→ Intracellular ion concentrations (CHEBI:33375); Intracellular ion concentrations (CHEBI:33375) —LEADS_TO→ Epileptic encephalopathy (HP:0011312); Bile acid transport (GO:0015721) —BINDS→ Neuronal excitability and ion homeostasis (GO:0007267); Bile acids (CHEBI:20652) —INCREASES→ Intracellular ion concentrations (CHEBI:33375). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Simultaneously, mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to epileptic encephalopathy. Both pathways converge on altered cellular ion and metabolite concentrations, impacting overall cellular function and leading to distinct but mechanistically related disease phenotypes.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in ATP8B1 in individuals with severe intrahepatic cholestasis of pregnancy, or the absence of pathogenic variants in ATP1A3 in individuals with severe developmental and epileptic encephalopathy, would falsify this hypothesis. Furthermore, if genetic studies demonstrate that mutations in these genes do not lead to loss-of-function or if the proposed downstream pathways are unaffected, the hypothesis would be refuted."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030473",
+        "diseaseBName": "developmental and epileptic encephalopathy 99",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3969,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:906) —DISRUPTS→ Bile acid transport (GO:0015721); Bile acid transport (GO:0015721) —DECREASES→ Bile acids (CHEBI:20652); Bile acids (CHEBI:20652) —LEADS_TO→ Cholestasis (HP:0002871); ATP1A3 (HGNC:645) —DISRUPTS→ Neuronal excitability and ion homeostasis (GO:0007267); Neuronal excitability and ion homeostasis (GO:0007267) —DECREASES→ Intracellular ion concentrations (CHEBI:33375); Intracellular ion concentrations (CHEBI:33375) —LEADS_TO→ Epileptic encephalopathy (HP:0011312); Bile acid transport (GO:0015721) —BINDS→ Neuronal excitability and ion homeostasis (GO:0007267); Bile acids (CHEBI:20652) —INCREASES→ Intracellular ion concentrations (CHEBI:33375). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Simultaneously, mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to epileptic encephalopathy. Both pathways converge on altered cellular ion and metabolite concentrations, impacting overall cellular function and leading to distinct but mechanistically related disease phenotypes.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in ATP8B1 in individuals with severe intrahepatic cholestasis of pregnancy, or the absence of pathogenic variants in ATP1A3 in individuals with severe developmental and epileptic encephalopathy, would falsify this hypothesis. Furthermore, if genetic studies demonstrate that mutations in these genes do not lead to loss-of-function or if the proposed downstream pathways are unaffected, the hypothesis would be refuted."
+        },
+        "translational": "Understanding the shared mechanistic underpinnings involving ion transport and cellular homeostasis could reveal novel therapeutic targets applicable to both cholestatic liver diseases and certain severe early-onset epileptic encephalopathies. Targeting cellular calcium regulation or specific ion transporter functions might offer a unified approach to ameliorate symptoms in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020788",
+      "diseaseBName": "hypomagnesemia, seizures, and intellectual disability 2",
+      "fitness": 0.3833,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:10366) —DISRUPTS→ bile acid transport (GO:0015714); bile acid transport (GO:0015714) —LEADS_TO→ cholestasis, intrahepatic, of pregnancy, 1 (MONDO:0007829); ATP8B1 (HGNC:10366) —DISRUPTS→ magnesium transport (GO:0006815); magnesium transport (GO:0006815) —LEADS_TO→ hypomagnesemia, seizures, and intellectual disability 2 (MONDO:0020788). Loss-of-function mutations in ATP8B1 disrupt both bile acid transport, leading to intrahepatic cholestasis of pregnancy 1, and magnesium transport, contributing to hypomagnesemia, seizures, and intellectual disability 2.",
+      "mechanism_narrative": "ATP8B1 (HGNC:10366) —DISRUPTS→ bile acid transport (GO:0015714); bile acid transport (GO:0015714) —LEADS_TO→ cholestasis, intrahepatic, of pregnancy, 1 (MONDO:0007829); ATP8B1 (HGNC:10366) —DISRUPTS→ magnesium transport (GO:0006815); magnesium transport (GO:0006815) —LEADS_TO→ hypomagnesemia, seizures, and intellectual disability 2 (MONDO:0020788). Loss-of-function mutations in ATP8B1 disrupt both bile acid transport, leading to intrahepatic cholestasis of pregnancy 1, and magnesium transport, contributing to hypomagnesemia, seizures, and intellectual disability 2.",
+      "falsification": {
+        "text": "Identification of distinct causal variants in ATP8B1 that specifically affect either bile acid transport or magnesium transport without impacting the other, or evidence that ATP8B1 plays no role in magnesium transport.",
+        "gnomad_variant": "rs742580076"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020788",
+        "diseaseBName": "hypomagnesemia, seizures, and intellectual disability 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3833,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:10366) —DISRUPTS→ bile acid transport (GO:0015714); bile acid transport (GO:0015714) —LEADS_TO→ cholestasis, intrahepatic, of pregnancy, 1 (MONDO:0007829); ATP8B1 (HGNC:10366) —DISRUPTS→ magnesium transport (GO:0006815); magnesium transport (GO:0006815) —LEADS_TO→ hypomagnesemia, seizures, and intellectual disability 2 (MONDO:0020788). Loss-of-function mutations in ATP8B1 disrupt both bile acid transport, leading to intrahepatic cholestasis of pregnancy 1, and magnesium transport, contributing to hypomagnesemia, seizures, and intellectual disability 2.",
+        "falsification": {
+          "text": "Identification of distinct causal variants in ATP8B1 that specifically affect either bile acid transport or magnesium transport without impacting the other, or evidence that ATP8B1 plays no role in magnesium transport.",
+          "gnomad_variant": "rs742580076"
+        },
+        "translational": "Understanding the dual role of ATP8B1 in bile acid and magnesium transport could lead to novel therapeutic strategies targeting shared molecular pathways for both pregnancy-related cholestasis and neurological disorders associated with hypomagnesemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007417",
+      "diseaseBName": "Darier disease",
+      "fitness": 0.3827,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:997) —DISRUPTS→ bile acid transport (REACT:R-HSA-70309); bile acid transport (REACT:R-HSA-70309) —LEADS_TO→ cholestasis (HP:0003074); ATP2A2 (HGNC:720) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ Darier disease (MONDO:0007417). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Concurrently, mutations in ATP2A2 disrupt calcium homeostasis, manifesting as Darier disease. While distinct genes are involved, the disruption of these fundamental cellular processes (bile acid transport and calcium homeostasis) represents a convergence at the level of cellular function and downstream phenotypic outcome.",
+      "mechanism_narrative": "ATP8B1 (HGNC:997) —DISRUPTS→ bile acid transport (REACT:R-HSA-70309); bile acid transport (REACT:R-HSA-70309) —LEADS_TO→ cholestasis (HP:0003074); ATP2A2 (HGNC:720) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ Darier disease (MONDO:0007417). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Concurrently, mutations in ATP2A2 disrupt calcium homeostasis, manifesting as Darier disease. While distinct genes are involved, the disruption of these fundamental cellular processes (bile acid transport and calcium homeostasis) represents a convergence at the level of cellular function and downstream phenotypic outcome.",
+      "falsification": {
+        "text": "Demonstration that ATP8B1 and ATP2A2 function in entirely independent cellular pathways with no downstream overlap in cellular signaling or membrane transport mechanisms.",
+        "gnomad_variant": "Absence of pathogenic variants in ATP8B1 and ATP2A2 in relevant patient populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007417",
+        "diseaseBName": "Darier disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3827,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:997) —DISRUPTS→ bile acid transport (REACT:R-HSA-70309); bile acid transport (REACT:R-HSA-70309) —LEADS_TO→ cholestasis (HP:0003074); ATP2A2 (HGNC:720) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ Darier disease (MONDO:0007417). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Concurrently, mutations in ATP2A2 disrupt calcium homeostasis, manifesting as Darier disease. While distinct genes are involved, the disruption of these fundamental cellular processes (bile acid transport and calcium homeostasis) represents a convergence at the level of cellular function and downstream phenotypic outcome.",
+        "falsification": {
+          "text": "Demonstration that ATP8B1 and ATP2A2 function in entirely independent cellular pathways with no downstream overlap in cellular signaling or membrane transport mechanisms.",
+          "gnomad_variant": "Absence of pathogenic variants in ATP8B1 and ATP2A2 in relevant patient populations."
+        },
+        "translational": "Understanding the shared reliance on cellular homeostasis mechanisms, even with different causal genes, could reveal novel therapeutic targets for managing symptoms in both conditions or for related disorders affecting bile acid transport or calcium signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010547",
+      "diseaseBName": "X-linked progressive cerebellar ataxia",
+      "fitness": 0.3688,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:9586) —DISRUPTS→ Bile acid transport (GO:0015172); Bile acid transport (GO:0015172) —LEADS_TO→ Intrahepatic cholestasis (HP:0001396); ATP2B3 (HGNC:9591) —DISRUPTS→ Calcium homeostasis (GO:0005887); Calcium homeostasis (GO:0005887) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function variants in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function variants in ATP2B3 disrupt calcium homeostasis, which is crucial for neuronal function and can manifest as cerebellar ataxia.",
+      "mechanism_narrative": "ATP8B1 (HGNC:9586) —DISRUPTS→ Bile acid transport (GO:0015172); Bile acid transport (GO:0015172) —LEADS_TO→ Intrahepatic cholestasis (HP:0001396); ATP2B3 (HGNC:9591) —DISRUPTS→ Calcium homeostasis (GO:0005887); Calcium homeostasis (GO:0005887) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function variants in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function variants in ATP2B3 disrupt calcium homeostasis, which is crucial for neuronal function and can manifest as cerebellar ataxia.",
+      "falsification": {
+        "text": "Discovery of individuals with pathogenic variants in ATP2B3 who do not present with any neurological symptoms, or individuals with ATP8B1 variants who do not exhibit signs of cholestasis.",
+        "gnomad_variant": "Exclusion of a common pathogenic variant in ATP2B3 or ATP8B1 in gnomAD with a frequency > 0.01%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010547",
+        "diseaseBName": "X-linked progressive cerebellar ataxia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3688,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:9586) —DISRUPTS→ Bile acid transport (GO:0015172); Bile acid transport (GO:0015172) —LEADS_TO→ Intrahepatic cholestasis (HP:0001396); ATP2B3 (HGNC:9591) —DISRUPTS→ Calcium homeostasis (GO:0005887); Calcium homeostasis (GO:0005887) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function variants in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function variants in ATP2B3 disrupt calcium homeostasis, which is crucial for neuronal function and can manifest as cerebellar ataxia.",
+        "falsification": {
+          "text": "Discovery of individuals with pathogenic variants in ATP2B3 who do not present with any neurological symptoms, or individuals with ATP8B1 variants who do not exhibit signs of cholestasis.",
+          "gnomad_variant": "Exclusion of a common pathogenic variant in ATP2B3 or ATP8B1 in gnomAD with a frequency > 0.01%"
+        },
+        "translational": "Understanding the shared role of ATP2B3 in calcium homeostasis and its potential indirect link to cholestasis could reveal novel therapeutic targets for both conditions. For instance, modulating calcium signaling pathways might offer a therapeutic avenue for patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007937",
+      "diseaseBName": "renal hypomagnesemia 2",
+      "fitness": 0.3642,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:11092) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); FXYD2 (HGNC:17781) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Cholestasis (HP:0003198); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Hypomagnesemia (HP:0002149). Loss-of-function mutations in ATP8B1 and FXYD2 disrupt the normal regulation of Na+/K+-ATPase activity. This shared disruption in ion transport regulation leads to distinct but related phenotypes: cholestasis in the liver (disease A) and hypomagnesemia in the kidney (disease B).",
+      "mechanism_narrative": "ATP8B1 (HGNC:11092) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); FXYD2 (HGNC:17781) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Cholestasis (HP:0003198); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Hypomagnesemia (HP:0002149). Loss-of-function mutations in ATP8B1 and FXYD2 disrupt the normal regulation of Na+/K+-ATPase activity. This shared disruption in ion transport regulation leads to distinct but related phenotypes: cholestasis in the liver (disease A) and hypomagnesemia in the kidney (disease B).",
+      "falsification": {
+        "text": "If mutations in ATP8B1 are shown to cause hypomagnesemia, or mutations in FXYD2 are shown to cause intrahepatic cholestasis, this would falsify the distinct disease module hypothesis.",
+        "gnomad_variant": "gnomAD analysis showing a high frequency of pathogenic variants in ATP8B1 associated with hypomagnesemia, or in FXYD2 associated with cholestasis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007937",
+        "diseaseBName": "renal hypomagnesemia 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3642,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:11092) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); FXYD2 (HGNC:17781) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Cholestasis (HP:0003198); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Hypomagnesemia (HP:0002149). Loss-of-function mutations in ATP8B1 and FXYD2 disrupt the normal regulation of Na+/K+-ATPase activity. This shared disruption in ion transport regulation leads to distinct but related phenotypes: cholestasis in the liver (disease A) and hypomagnesemia in the kidney (disease B).",
+        "falsification": {
+          "text": "If mutations in ATP8B1 are shown to cause hypomagnesemia, or mutations in FXYD2 are shown to cause intrahepatic cholestasis, this would falsify the distinct disease module hypothesis.",
+          "gnomad_variant": "gnomAD analysis showing a high frequency of pathogenic variants in ATP8B1 associated with hypomagnesemia, or in FXYD2 associated with cholestasis."
+        },
+        "translational": "Understanding the shared role of ATP8B1 and FXYD2 in ion homeostasis could lead to novel therapeutic strategies targeting shared pathways for both intrahepatic cholestasis and renal hypomagnesemia, potentially improving management of electrolyte imbalances and bile acid flow."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007048",
+      "diseaseBName": "acrokeratosis verruciformis",
+      "fitness": 0.3429,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:9737) —DISRUPTS→ bile acid transport (GO:0015710); bile acid transport (GO:0015710) —LEADS_TO→ intrahepatic cholestasis (HP:0001365); ATP2A2 (HGNC:700) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ abnormal keratinocyte differentiation (HP:0030071); abnormal keratinocyte differentiation (HP:0030071) —LEADS_TO→ acrokeratosis verruciformis (HP:0001368). Mutations in ATP8B1 lead to impaired bile acid transport, causing intrahepatic cholestasis. Simultaneously, mutations in ATP2A2 disrupt calcium homeostasis, affecting keratinocyte function and leading to acrokeratosis verruciformis. The shared convergence lies in the disruption of fundamental cellular homeostasis mechanisms, impacting distinct but related cellular processes.",
+      "mechanism_narrative": "ATP8B1 (HGNC:9737) —DISRUPTS→ bile acid transport (GO:0015710); bile acid transport (GO:0015710) —LEADS_TO→ intrahepatic cholestasis (HP:0001365); ATP2A2 (HGNC:700) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ abnormal keratinocyte differentiation (HP:0030071); abnormal keratinocyte differentiation (HP:0030071) —LEADS_TO→ acrokeratosis verruciformis (HP:0001368). Mutations in ATP8B1 lead to impaired bile acid transport, causing intrahepatic cholestasis. Simultaneously, mutations in ATP2A2 disrupt calcium homeostasis, affecting keratinocyte function and leading to acrokeratosis verruciformis. The shared convergence lies in the disruption of fundamental cellular homeostasis mechanisms, impacting distinct but related cellular processes.",
+      "falsification": {
+        "text": "If genetic studies reveal distinct, non-overlapping molecular pathways for ICP1 and AKV that do not involve shared cellular processes like calcium homeostasis or bile acid transport, or if mutations in ATP8B1 and ATP2A2 are found to have entirely independent downstream effects without any shared cellular consequences, this hypothesis would be falsified.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007048",
+        "diseaseBName": "acrokeratosis verruciformis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.3429,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:9737) —DISRUPTS→ bile acid transport (GO:0015710); bile acid transport (GO:0015710) —LEADS_TO→ intrahepatic cholestasis (HP:0001365); ATP2A2 (HGNC:700) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ abnormal keratinocyte differentiation (HP:0030071); abnormal keratinocyte differentiation (HP:0030071) —LEADS_TO→ acrokeratosis verruciformis (HP:0001368). Mutations in ATP8B1 lead to impaired bile acid transport, causing intrahepatic cholestasis. Simultaneously, mutations in ATP2A2 disrupt calcium homeostasis, affecting keratinocyte function and leading to acrokeratosis verruciformis. The shared convergence lies in the disruption of fundamental cellular homeostasis mechanisms, impacting distinct but related cellular processes.",
+        "falsification": {
+          "text": "If genetic studies reveal distinct, non-overlapping molecular pathways for ICP1 and AKV that do not involve shared cellular processes like calcium homeostasis or bile acid transport, or if mutations in ATP8B1 and ATP2A2 are found to have entirely independent downstream effects without any shared cellular consequences, this hypothesis would be falsified.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared reliance on fundamental cellular processes like calcium homeostasis and membrane transport, despite distinct clinical presentations, could reveal novel therapeutic targets applicable to both cholestatic liver diseases and certain keratinization disorders. For instance, interventions aimed at restoring cellular calcium balance or improving bile acid efflux might offer synergistic benefits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013900",
+      "diseaseBName": "alternating hemiplegia of childhood 2",
+      "fitness": 0.342,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP8B1 (HGNC:10052) —DISRUPTS→ Bile salt transport (GO:0015892); Bile salt transport (GO:0015892) —LEADS_TO→ Intrahepatic cholestasis (HP:00114323); ATP1A3 (HGNC:704) —DISRUPTS→ Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383); Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383) —LEADS_TO→ Alternating hemiplegia of childhood (HP:0011699). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Gain-of-function mutations in ATP1A3 disrupt normal Na+/K+-ATPase activity, leading to alternating hemiplegia of childhood. Both diseases converge on the cellular module of plasma membrane ion transport, albeit through different genes and functional consequences.",
+      "mechanism_narrative": "ATP8B1 (HGNC:10052) —DISRUPTS→ Bile salt transport (GO:0015892); Bile salt transport (GO:0015892) —LEADS_TO→ Intrahepatic cholestasis (HP:00114323); ATP1A3 (HGNC:704) —DISRUPTS→ Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383); Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383) —LEADS_TO→ Alternating hemiplegia of childhood (HP:0011699). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Gain-of-function mutations in ATP1A3 disrupt normal Na+/K+-ATPase activity, leading to alternating hemiplegia of childhood. Both diseases converge on the cellular module of plasma membrane ion transport, albeit through different genes and functional consequences.",
+      "falsification": {
+        "text": "Demonstration that ATP8B1 and ATP1A3 function in entirely distinct and non-interacting cellular compartments or pathways, with no downstream shared metabolites or processes that could be affected by their respective dysfunctions. For example, if experimental evidence showed that ATP8B1's role in bile salt export is completely independent of any cellular processes regulated by ATP1A3's Na+/K+-ATPase activity, this hypothesis would be falsified.",
+        "gnomad_variant": "Absence of common variants in ATP8B1 or ATP1A3 in gnomAD that are known to cause these conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-936837"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-936837": 57
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013900",
+        "diseaseBName": "alternating hemiplegia of childhood 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-936837"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-936837": 57
+        },
+        "fitness": 0.342,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP8B1 (HGNC:10052) —DISRUPTS→ Bile salt transport (GO:0015892); Bile salt transport (GO:0015892) —LEADS_TO→ Intrahepatic cholestasis (HP:00114323); ATP1A3 (HGNC:704) —DISRUPTS→ Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383); Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383) —LEADS_TO→ Alternating hemiplegia of childhood (HP:0011699). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Gain-of-function mutations in ATP1A3 disrupt normal Na+/K+-ATPase activity, leading to alternating hemiplegia of childhood. Both diseases converge on the cellular module of plasma membrane ion transport, albeit through different genes and functional consequences.",
+        "falsification": {
+          "text": "Demonstration that ATP8B1 and ATP1A3 function in entirely distinct and non-interacting cellular compartments or pathways, with no downstream shared metabolites or processes that could be affected by their respective dysfunctions. For example, if experimental evidence showed that ATP8B1's role in bile salt export is completely independent of any cellular processes regulated by ATP1A3's Na+/K+-ATPase activity, this hypothesis would be falsified.",
+          "gnomad_variant": "Absence of common variants in ATP8B1 or ATP1A3 in gnomAD that are known to cause these conditions."
+        },
+        "translational": "Understanding the shared reliance on fundamental cellular ion transport mechanisms, despite distinct genetic origins and functional impacts, could reveal novel therapeutic targets for managing severe neurological and hepatic disorders. Strategies aimed at restoring general ion homeostasis or protecting cellular membranes might offer broad benefits."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T02:18:02.601Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** cholestasis, intrahepatic, of pregnancy, 1 (MONDO:0007829)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 25 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome (MONDO:0011038) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-936837 |\n| 2 | dystonia 12 (MONDO:0007496) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-936837 |\n| 3 | Charcot-Marie-tooth disease, axonal, type 2DD (MONDO:0054833) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-936837 |\n| 4 | developmental and epileptic encephalopathy 99 (MONDO:0030473) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-936837 |\n| 5 | hypomagnesemia, seizures, and intellectual disability 2 (MONDO:0020788) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-936837 |\n| 6 | Darier disease (MONDO:0007417) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-936837 |\n| 7 | X-linked progressive cerebellar ataxia (MONDO:0010547) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-936837 |\n| 8 | renal hypomagnesemia 2 (MONDO:0007937) | shared pathway | Tier 3 | 0.364 | Reactome:R-HSA-936837 |\n| 9 | acrokeratosis verruciformis (MONDO:0007048) | shared pathway | Tier 3 | 0.343 | Reactome:R-HSA-936837 |\n| 10 | alternating hemiplegia of childhood 2 (MONDO:0013900) | shared pathway | Tier 3 | 0.342 | Reactome:R-HSA-936837 |\n\n### CANDIDATE DETAIL\n#### 1. cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:27424) —DISRUPTS→ Bile acid transport (REACT:R-HSA-2402406); Bile acid transport (REACT:R-HSA-2402406) —LEADS_TO→ Intrahepatic cholestasis (HP:0001362); ATP1A3 (HGNC:730) —DISRUPTS→ Neuronal ion homeostasis (GO:0007272); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Cerebellar ataxia (HP:0001251); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Sensorineural hearing impairment (HP:0000405); Neuronal ion homeostasis (GO:0007272) —LEADS_TO→ Optic atrophy (HP:0000647). Loss-of-function mutations in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to cerebellar ataxia, sensorineural hearing loss, and optic atrophy. While the specific pathways are distinct, both arise from disruptions in fundamental cellular transport and homeostasis mechanisms.\n\n**How to falsify it:** Demonstration that mutations in ATP8B1 do not impair bile acid transport or that mutations in ATP1A3 do not affect neuronal ion gradients would falsify this hypothesis. Furthermore, identifying distinct, non-overlapping molecular pathways that cannot be linked by any shared downstream effect would also serve as falsification. _(variant: The presence of common variants (AF > 1%) in gnomAD within the coding regions of ATP8B1 and ATP1A3 that do not segregate with the respective disease phenotypes.)_\n\n**Why it matters:** Understanding these distinct but mechanistically related transport defects could inform therapeutic strategies. For intrahepatic cholestasis of pregnancy, targeting bile acid homeostasis is key, while for cerebellar ataxia syndrome, restoring neuronal ion balance is crucial. Identifying any shared downstream consequences could reveal novel therapeutic targets applicable to both conditions.\n\n---\n\n#### 2. dystonia 12  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:9700) —DISRUPTS→ bile salt transport and homeostasis (GO:0015710); bile salt transport and homeostasis (GO:0015710) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ intrahepatic cholestasis of pregnancy (MONDO:0007829); ATP1A3 (HGNC:700) —DISRUPTS→ neuronal ion transport and membrane potential maintenance (GO:0007260); neuronal ion transport and membrane potential maintenance (GO:0007260) —LEADS_TO→ cellular membrane homeostasis (GO:0008574); cellular membrane homeostasis (GO:0008574) —LEADS_TO→ dystonia 12 (MONDO:0007496). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Similarly, loss-of-function mutations in ATP1A3 disrupt neuronal ion transport, leading to dystonia. Both pathways converge on the broader cellular membrane homeostasis, suggesting a shared underlying mechanism related to the maintenance of cellular integrity and ion gradients.\n\n**How to falsify it:** If genetic studies reveal that mutations in ATP8B1 and ATP1A3 do not converge on shared cellular pathways like general membrane homeostasis or ion transport, or if the functional consequences of mutations in these genes are entirely distinct and non-overlapping at a molecular level, this hypothesis would be falsified. _(variant: gnomAD analysis showing the identified causal variants for both diseases are extremely rare (AF < 1e-5) and show no signs of recurrent mutation or population-specific enrichment, supporting their role in rare Mendelian disorders.)_\n\n**Why it matters:** Understanding the shared reliance on cellular membrane homeostasis and ion transport could reveal common therapeutic targets for both cholestatic liver diseases and neurological disorders like dystonia, potentially leading to novel treatment strategies that address the fundamental cellular defects.\n\n---\n\n#### 3. Charcot-Marie-tooth disease, axonal, type 2DD  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:10328) —DISRUPTS→ bile acid transport (GO:0015730); bile acid transport (GO:0015730) —LEADS_TO→ intrahepatic cholestasis (HP:0003078); ATP8B1 (HGNC:10328) —DISRUPTS→ axonal transport (GO:0008084); axonal transport (GO:0008084) —LEADS_TO→ axonal degeneration (HP:0003403). Disruption of ATP8B1 function impairs both bile acid transport leading to intrahepatic cholestasis and axonal transport, contributing to axonal degeneration in CMT2DD.\n\n**How to falsify it:** Identification of pathogenic variants in ATP8B1 that are exclusively associated with one disease phenotype and not the other, or evidence of distinct molecular mechanisms for ATP8B1 dysfunction in each disease. _(variant: Absence of common pathogenic variants in ATP8B1 in gnomAD populations, supporting its role in rare diseases.)_\n\n**Why it matters:** Understanding the shared role of ATP8B1 in distinct cellular transport systems could reveal novel therapeutic targets for both cholestatic disorders and neurodegenerative conditions like CMT2DD, potentially involving strategies to enhance or restore transport function.\n\n---\n\n#### 4. developmental and epileptic encephalopathy 99  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:906) —DISRUPTS→ Bile acid transport (GO:0015721); Bile acid transport (GO:0015721) —DECREASES→ Bile acids (CHEBI:20652); Bile acids (CHEBI:20652) —LEADS_TO→ Cholestasis (HP:0002871); ATP1A3 (HGNC:645) —DISRUPTS→ Neuronal excitability and ion homeostasis (GO:0007267); Neuronal excitability and ion homeostasis (GO:0007267) —DECREASES→ Intracellular ion concentrations (CHEBI:33375); Intracellular ion concentrations (CHEBI:33375) —LEADS_TO→ Epileptic encephalopathy (HP:0011312); Bile acid transport (GO:0015721) —BINDS→ Neuronal excitability and ion homeostasis (GO:0007267); Bile acids (CHEBI:20652) —INCREASES→ Intracellular ion concentrations (CHEBI:33375). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Simultaneously, mutations in ATP1A3 disrupt neuronal ion homeostasis, contributing to epileptic encephalopathy. Both pathways converge on altered cellular ion and metabolite concentrations, impacting overall cellular function and leading to distinct but mechanistically related disease phenotypes.\n\n**How to falsify it:** The absence of pathogenic variants in ATP8B1 in individuals with severe intrahepatic cholestasis of pregnancy, or the absence of pathogenic variants in ATP1A3 in individuals with severe developmental and epileptic encephalopathy, would falsify this hypothesis. Furthermore, if genetic studies demonstrate that mutations in these genes do not lead to loss-of-function or if the proposed downstream pathways are unaffected, the hypothesis would be refuted.\n\n**Why it matters:** Understanding the shared mechanistic underpinnings involving ion transport and cellular homeostasis could reveal novel therapeutic targets applicable to both cholestatic liver diseases and certain severe early-onset epileptic encephalopathies. Targeting cellular calcium regulation or specific ion transporter functions might offer a unified approach to ameliorate symptoms in both conditions.\n\n---\n\n#### 5. hypomagnesemia, seizures, and intellectual disability 2  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:10366) —DISRUPTS→ bile acid transport (GO:0015714); bile acid transport (GO:0015714) —LEADS_TO→ cholestasis, intrahepatic, of pregnancy, 1 (MONDO:0007829); ATP8B1 (HGNC:10366) —DISRUPTS→ magnesium transport (GO:0006815); magnesium transport (GO:0006815) —LEADS_TO→ hypomagnesemia, seizures, and intellectual disability 2 (MONDO:0020788). Loss-of-function mutations in ATP8B1 disrupt both bile acid transport, leading to intrahepatic cholestasis of pregnancy 1, and magnesium transport, contributing to hypomagnesemia, seizures, and intellectual disability 2.\n\n**How to falsify it:** Identification of distinct causal variants in ATP8B1 that specifically affect either bile acid transport or magnesium transport without impacting the other, or evidence that ATP8B1 plays no role in magnesium transport. _(variant: rs742580076)_\n\n**Why it matters:** Understanding the dual role of ATP8B1 in bile acid and magnesium transport could lead to novel therapeutic strategies targeting shared molecular pathways for both pregnancy-related cholestasis and neurological disorders associated with hypomagnesemia.\n\n---\n\n#### 6. Darier disease  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:997) —DISRUPTS→ bile acid transport (REACT:R-HSA-70309); bile acid transport (REACT:R-HSA-70309) —LEADS_TO→ cholestasis (HP:0003074); ATP2A2 (HGNC:720) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ Darier disease (MONDO:0007417). Mutations in ATP8B1 disrupt bile acid transport, leading to cholestasis. Concurrently, mutations in ATP2A2 disrupt calcium homeostasis, manifesting as Darier disease. While distinct genes are involved, the disruption of these fundamental cellular processes (bile acid transport and calcium homeostasis) represents a convergence at the level of cellular function and downstream phenotypic outcome.\n\n**How to falsify it:** Demonstration that ATP8B1 and ATP2A2 function in entirely independent cellular pathways with no downstream overlap in cellular signaling or membrane transport mechanisms. _(variant: Absence of pathogenic variants in ATP8B1 and ATP2A2 in relevant patient populations.)_\n\n**Why it matters:** Understanding the shared reliance on cellular homeostasis mechanisms, even with different causal genes, could reveal novel therapeutic targets for managing symptoms in both conditions or for related disorders affecting bile acid transport or calcium signaling.\n\n---\n\n#### 7. X-linked progressive cerebellar ataxia  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:9586) —DISRUPTS→ Bile acid transport (GO:0015172); Bile acid transport (GO:0015172) —LEADS_TO→ Intrahepatic cholestasis (HP:0001396); ATP2B3 (HGNC:9591) —DISRUPTS→ Calcium homeostasis (GO:0005887); Calcium homeostasis (GO:0005887) —LEADS_TO→ Cerebellar ataxia (HP:0001251). Loss-of-function variants in ATP8B1 disrupt bile acid transport, leading to intrahepatic cholestasis. Concurrently, loss-of-function variants in ATP2B3 disrupt calcium homeostasis, which is crucial for neuronal function and can manifest as cerebellar ataxia.\n\n**How to falsify it:** Discovery of individuals with pathogenic variants in ATP2B3 who do not present with any neurological symptoms, or individuals with ATP8B1 variants who do not exhibit signs of cholestasis. _(variant: Exclusion of a common pathogenic variant in ATP2B3 or ATP8B1 in gnomAD with a frequency > 0.01%)_\n\n**Why it matters:** Understanding the shared role of ATP2B3 in calcium homeostasis and its potential indirect link to cholestasis could reveal novel therapeutic targets for both conditions. For instance, modulating calcium signaling pathways might offer a therapeutic avenue for patients with either disease.\n\n---\n\n#### 8. renal hypomagnesemia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.364)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:11092) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); FXYD2 (HGNC:17781) —DISRUPTS→ Na+/K+-ATPase activity regulation (GO:0008571); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Cholestasis (HP:0003198); Na+/K+-ATPase activity regulation (GO:0008571) —LEADS_TO→ Hypomagnesemia (HP:0002149). Loss-of-function mutations in ATP8B1 and FXYD2 disrupt the normal regulation of Na+/K+-ATPase activity. This shared disruption in ion transport regulation leads to distinct but related phenotypes: cholestasis in the liver (disease A) and hypomagnesemia in the kidney (disease B).\n\n**How to falsify it:** If mutations in ATP8B1 are shown to cause hypomagnesemia, or mutations in FXYD2 are shown to cause intrahepatic cholestasis, this would falsify the distinct disease module hypothesis. _(variant: gnomAD analysis showing a high frequency of pathogenic variants in ATP8B1 associated with hypomagnesemia, or in FXYD2 associated with cholestasis.)_\n\n**Why it matters:** Understanding the shared role of ATP8B1 and FXYD2 in ion homeostasis could lead to novel therapeutic strategies targeting shared pathways for both intrahepatic cholestasis and renal hypomagnesemia, potentially improving management of electrolyte imbalances and bile acid flow.\n\n---\n\n#### 9. acrokeratosis verruciformis  —  Tier 3 — Moderate / Emerging  (fitness 0.343)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:9737) —DISRUPTS→ bile acid transport (GO:0015710); bile acid transport (GO:0015710) —LEADS_TO→ intrahepatic cholestasis (HP:0001365); ATP2A2 (HGNC:700) —DISRUPTS→ calcium homeostasis (GO:0005509); calcium homeostasis (GO:0005509) —LEADS_TO→ abnormal keratinocyte differentiation (HP:0030071); abnormal keratinocyte differentiation (HP:0030071) —LEADS_TO→ acrokeratosis verruciformis (HP:0001368). Mutations in ATP8B1 lead to impaired bile acid transport, causing intrahepatic cholestasis. Simultaneously, mutations in ATP2A2 disrupt calcium homeostasis, affecting keratinocyte function and leading to acrokeratosis verruciformis. The shared convergence lies in the disruption of fundamental cellular homeostasis mechanisms, impacting distinct but related cellular processes.\n\n**How to falsify it:** If genetic studies reveal distinct, non-overlapping molecular pathways for ICP1 and AKV that do not involve shared cellular processes like calcium homeostasis or bile acid transport, or if mutations in ATP8B1 and ATP2A2 are found to have entirely independent downstream effects without any shared cellular consequences, this hypothesis would be falsified. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared reliance on fundamental cellular processes like calcium homeostasis and membrane transport, despite distinct clinical presentations, could reveal novel therapeutic targets applicable to both cholestatic liver diseases and certain keratinization disorders. For instance, interventions aimed at restoring cellular calcium balance or improving bile acid efflux might offer synergistic benefits.\n\n---\n\n#### 10. alternating hemiplegia of childhood 2  —  Tier 3 — Moderate / Emerging  (fitness 0.342)\n**Link type:** shared pathway (Reactome:R-HSA-936837)\n\n**Proposed mechanism:** ATP8B1 (HGNC:10052) —DISRUPTS→ Bile salt transport (GO:0015892); Bile salt transport (GO:0015892) —LEADS_TO→ Intrahepatic cholestasis (HP:00114323); ATP1A3 (HGNC:704) —DISRUPTS→ Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383); Plasma membrane ion transport (Na+/K+-ATPase activity) (GO:0005383) —LEADS_TO→ Alternating hemiplegia of childhood (HP:0011699). Loss-of-function mutations in ATP8B1 disrupt bile salt transport, leading to intrahepatic cholestasis. Gain-of-function mutations in ATP1A3 disrupt normal Na+/K+-ATPase activity, leading to alternating hemiplegia of childhood. Both diseases converge on the cellular module of plasma membrane ion transport, albeit through different genes and functional consequences.\n\n**How to falsify it:** Demonstration that ATP8B1 and ATP1A3 function in entirely distinct and non-interacting cellular compartments or pathways, with no downstream shared metabolites or processes that could be affected by their respective dysfunctions. For example, if experimental evidence showed that ATP8B1's role in bile salt export is completely independent of any cellular processes regulated by ATP1A3's Na+/K+-ATPase activity, this hypothesis would be falsified. _(variant: Absence of common variants in ATP8B1 or ATP1A3 in gnomAD that are known to cause these conditions.)_\n\n**Why it matters:** Understanding the shared reliance on fundamental cellular ion transport mechanisms, despite distinct genetic origins and functional impacts, could reveal novel therapeutic targets for managing severe neurological and hepatic disorders. Strategies aimed at restoring general ion homeostasis or protecting cellular membranes might offer broad benefits.\n\n---"
+}

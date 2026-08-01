@@ -1,0 +1,131 @@
+{
+  "seed": {
+    "id": "MONDO:0011411",
+    "name": "MONDO:0011411"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011583",
+      "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+      "fitness": 0.3844,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPSM2 (HGNC:26721) —DISRUPTS→ Cell polarity establishment and maintenance (GO:0007015); Cell polarity establishment and maintenance (GO:0007015) —LEADS_TO→ Cognitive impairment (HP:0001249); APP (HGNC:602) —DISRUPTS→ Amyloid beta A4 precursor protein processing (GO:0001715); Amyloid beta A4 precursor protein processing (GO:0001715) —PRODUCES→ Amyloid beta peptide (CHEBI:77799); Amyloid beta peptide (CHEBI:77799) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030666); APP (HGNC:602) —BINDS→ Cell polarity establishment and maintenance (GO:0007015). Mutations in GPSM2 cause disruptions in cell polarity, leading to cognitive impairment. APP mutations lead to altered processing of APP, increased production of amyloid beta peptide, and subsequent cerebral amyloid angiopathy. APP also interacts with pathways involved in cell polarity.",
+      "mechanism_narrative": "GPSM2 (HGNC:26721) —DISRUPTS→ Cell polarity establishment and maintenance (GO:0007015); Cell polarity establishment and maintenance (GO:0007015) —LEADS_TO→ Cognitive impairment (HP:0001249); APP (HGNC:602) —DISRUPTS→ Amyloid beta A4 precursor protein processing (GO:0001715); Amyloid beta A4 precursor protein processing (GO:0001715) —PRODUCES→ Amyloid beta peptide (CHEBI:77799); Amyloid beta peptide (CHEBI:77799) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030666); APP (HGNC:602) —BINDS→ Cell polarity establishment and maintenance (GO:0007015). Mutations in GPSM2 cause disruptions in cell polarity, leading to cognitive impairment. APP mutations lead to altered processing of APP, increased production of amyloid beta peptide, and subsequent cerebral amyloid angiopathy. APP also interacts with pathways involved in cell polarity.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the APP gene is not involved in cell polarity establishment and maintenance, or that GPSM2 mutations do not impact amyloid precursor protein processing, the proposed link would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011583",
+        "diseaseBName": "cerebral amyloid angiopathy, APP-related",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.3844,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPSM2 (HGNC:26721) —DISRUPTS→ Cell polarity establishment and maintenance (GO:0007015); Cell polarity establishment and maintenance (GO:0007015) —LEADS_TO→ Cognitive impairment (HP:0001249); APP (HGNC:602) —DISRUPTS→ Amyloid beta A4 precursor protein processing (GO:0001715); Amyloid beta A4 precursor protein processing (GO:0001715) —PRODUCES→ Amyloid beta peptide (CHEBI:77799); Amyloid beta peptide (CHEBI:77799) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030666); APP (HGNC:602) —BINDS→ Cell polarity establishment and maintenance (GO:0007015). Mutations in GPSM2 cause disruptions in cell polarity, leading to cognitive impairment. APP mutations lead to altered processing of APP, increased production of amyloid beta peptide, and subsequent cerebral amyloid angiopathy. APP also interacts with pathways involved in cell polarity.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the APP gene is not involved in cell polarity establishment and maintenance, or that GPSM2 mutations do not impact amyloid precursor protein processing, the proposed link would be falsified."
+        },
+        "translational": "Understanding the shared or interacting pathways between GPSM2 and APP could reveal novel therapeutic targets for both cognitive impairment and cerebral amyloid angiopathy, potentially by modulating APP processing or APP's interaction with cell polarity pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007088",
+      "diseaseBName": "Alzheimer disease type 1",
+      "fitness": 0.3345,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPSM2 (HGNC:20475) —LEADS_TO→ MONDO:0011411 (MONDO:0011411); APP (HGNC:640) —LEADS_TO→ amyloid beta formation (GO:0002147); amyloid beta formation (GO:0002147) —LEADS_TO→ tau phosphorylation (GO:0000057); tau phosphorylation (GO:0000057) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Mutations in GPSM2 lead to MONDO:0011411, while mutations in APP lead to Alzheimer disease type 1 via amyloid beta formation and subsequent tau phosphorylation.",
+      "mechanism_narrative": "GPSM2 (HGNC:20475) —LEADS_TO→ MONDO:0011411 (MONDO:0011411); APP (HGNC:640) —LEADS_TO→ amyloid beta formation (GO:0002147); amyloid beta formation (GO:0002147) —LEADS_TO→ tau phosphorylation (GO:0000057); tau phosphorylation (GO:0000057) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Mutations in GPSM2 lead to MONDO:0011411, while mutations in APP lead to Alzheimer disease type 1 via amyloid beta formation and subsequent tau phosphorylation.",
+      "falsification": {
+        "text": "Evidence showing that GPSM2 mutations do not impact cellular processes related to APP processing or tau phosphorylation, or that mutations in APP do not affect the pathways influenced by GPSM2, would falsify this hypothesis.",
+        "gnomad_variant": "A common variant (AF > 0.01) in GPSM2 associated with MONDO:0011411 or a common variant in APP associated with Alzheimer disease type 1."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007088",
+        "diseaseBName": "Alzheimer disease type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.3345,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPSM2 (HGNC:20475) —LEADS_TO→ MONDO:0011411 (MONDO:0011411); APP (HGNC:640) —LEADS_TO→ amyloid beta formation (GO:0002147); amyloid beta formation (GO:0002147) —LEADS_TO→ tau phosphorylation (GO:0000057); tau phosphorylation (GO:0000057) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Mutations in GPSM2 lead to MONDO:0011411, while mutations in APP lead to Alzheimer disease type 1 via amyloid beta formation and subsequent tau phosphorylation.",
+        "falsification": {
+          "text": "Evidence showing that GPSM2 mutations do not impact cellular processes related to APP processing or tau phosphorylation, or that mutations in APP do not affect the pathways influenced by GPSM2, would falsify this hypothesis.",
+          "gnomad_variant": "A common variant (AF > 0.01) in GPSM2 associated with MONDO:0011411 or a common variant in APP associated with Alzheimer disease type 1."
+        },
+        "translational": "Understanding the shared molecular pathways, particularly concerning APP processing and tau pathology, could reveal novel therapeutic targets applicable to both MONDO:0011411 and Alzheimer disease type 1, potentially leading to treatments that address common underlying mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030374",
+      "diseaseBName": "WHIM syndrome 2",
+      "fitness": 0.3123,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPSM2 (HGNC:20708) —DISRUPTS→ Ciliogenesis; Ciliogenesis —LEADS_TO→ Developmental delay (HP:0001263); CXCR2 (HGNC:2827) —DISRUPTS→ CXCR2 signaling pathway (REACT:R-HSA-73801); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Neutropenia (HP:0001877); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Immunodeficiency (HP:0002714). While GPSM2 mutations impair ciliogenesis and lead to developmental phenotypes in MONDO:0011411, gain-of-function mutations in CXCR2 dysregulate neutrophil function and trafficking in WHIM syndrome 2. The convergence occurs at the level of cellular signaling pathways, where both genes, despite their distinct primary functions, ultimately influence cellular behavior and contribute to distinct disease phenotypes through dysregulation of downstream effectors.",
+      "mechanism_narrative": "GPSM2 (HGNC:20708) —DISRUPTS→ Ciliogenesis; Ciliogenesis —LEADS_TO→ Developmental delay (HP:0001263); CXCR2 (HGNC:2827) —DISRUPTS→ CXCR2 signaling pathway (REACT:R-HSA-73801); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Neutropenia (HP:0001877); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Immunodeficiency (HP:0002714). While GPSM2 mutations impair ciliogenesis and lead to developmental phenotypes in MONDO:0011411, gain-of-function mutations in CXCR2 dysregulate neutrophil function and trafficking in WHIM syndrome 2. The convergence occurs at the level of cellular signaling pathways, where both genes, despite their distinct primary functions, ultimately influence cellular behavior and contribute to distinct disease phenotypes through dysregulation of downstream effectors.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in GPSM2 do not affect cilia formation or that CXCR2 gain-of-function mutations do not lead to aberrant neutrophil responses would falsify this hypothesis.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either GPSM2 or CXCR2 in the general population would suggest incomplete penetrance or alternative mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-418594"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-418594": 260
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030374",
+        "diseaseBName": "WHIM syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-418594"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-418594": 260
+        },
+        "fitness": 0.3123,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPSM2 (HGNC:20708) —DISRUPTS→ Ciliogenesis; Ciliogenesis —LEADS_TO→ Developmental delay (HP:0001263); CXCR2 (HGNC:2827) —DISRUPTS→ CXCR2 signaling pathway (REACT:R-HSA-73801); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Neutropenia (HP:0001877); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Immunodeficiency (HP:0002714). While GPSM2 mutations impair ciliogenesis and lead to developmental phenotypes in MONDO:0011411, gain-of-function mutations in CXCR2 dysregulate neutrophil function and trafficking in WHIM syndrome 2. The convergence occurs at the level of cellular signaling pathways, where both genes, despite their distinct primary functions, ultimately influence cellular behavior and contribute to distinct disease phenotypes through dysregulation of downstream effectors.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in GPSM2 do not affect cilia formation or that CXCR2 gain-of-function mutations do not lead to aberrant neutrophil responses would falsify this hypothesis.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either GPSM2 or CXCR2 in the general population would suggest incomplete penetrance or alternative mechanisms."
+        },
+        "translational": "Understanding the shared role of the CXCR2 signaling pathway in both conditions could lead to novel therapeutic strategies. For MONDO:0011411, targeting downstream effects of ciliogenesis defects that impact immune cells might be explored. For WHIM syndrome, therapies aimed at modulating CXCR2 signaling or downstream inflammatory pathways could be beneficial, potentially offering insights applicable to conditions with related signaling dysregulation."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T19:33:12.860Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0011411 (MONDO:0011411)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | cerebral amyloid angiopathy, APP-related (MONDO:0011583) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-418594 |\n| 2 | Alzheimer disease type 1 (MONDO:0007088) | shared pathway | Tier 3 | 0.335 | Reactome:R-HSA-418594 |\n| 3 | WHIM syndrome 2 (MONDO:0030374) | shared pathway | Tier 3 | 0.312 | Reactome:R-HSA-418594 |\n\n### CANDIDATE DETAIL\n#### 1. cerebral amyloid angiopathy, APP-related  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-418594)\n\n**Proposed mechanism:** GPSM2 (HGNC:26721) —DISRUPTS→ Cell polarity establishment and maintenance (GO:0007015); Cell polarity establishment and maintenance (GO:0007015) —LEADS_TO→ Cognitive impairment (HP:0001249); APP (HGNC:602) —DISRUPTS→ Amyloid beta A4 precursor protein processing (GO:0001715); Amyloid beta A4 precursor protein processing (GO:0001715) —PRODUCES→ Amyloid beta peptide (CHEBI:77799); Amyloid beta peptide (CHEBI:77799) —LEADS_TO→ Cerebral amyloid angiopathy (HP:0030666); APP (HGNC:602) —BINDS→ Cell polarity establishment and maintenance (GO:0007015). Mutations in GPSM2 cause disruptions in cell polarity, leading to cognitive impairment. APP mutations lead to altered processing of APP, increased production of amyloid beta peptide, and subsequent cerebral amyloid angiopathy. APP also interacts with pathways involved in cell polarity.\n\n**How to falsify it:** If genetic analysis reveals that the APP gene is not involved in cell polarity establishment and maintenance, or that GPSM2 mutations do not impact amyloid precursor protein processing, the proposed link would be falsified.\n\n**Why it matters:** Understanding the shared or interacting pathways between GPSM2 and APP could reveal novel therapeutic targets for both cognitive impairment and cerebral amyloid angiopathy, potentially by modulating APP processing or APP's interaction with cell polarity pathways.\n\n---\n\n#### 2. Alzheimer disease type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.335)\n**Link type:** shared pathway (Reactome:R-HSA-418594)\n\n**Proposed mechanism:** GPSM2 (HGNC:20475) —LEADS_TO→ MONDO:0011411 (MONDO:0011411); APP (HGNC:640) —LEADS_TO→ amyloid beta formation (GO:0002147); amyloid beta formation (GO:0002147) —LEADS_TO→ tau phosphorylation (GO:0000057); tau phosphorylation (GO:0000057) —LEADS_TO→ Alzheimer disease type 1 (MONDO:0007088). Mutations in GPSM2 lead to MONDO:0011411, while mutations in APP lead to Alzheimer disease type 1 via amyloid beta formation and subsequent tau phosphorylation.\n\n**How to falsify it:** Evidence showing that GPSM2 mutations do not impact cellular processes related to APP processing or tau phosphorylation, or that mutations in APP do not affect the pathways influenced by GPSM2, would falsify this hypothesis. _(variant: A common variant (AF > 0.01) in GPSM2 associated with MONDO:0011411 or a common variant in APP associated with Alzheimer disease type 1.)_\n\n**Why it matters:** Understanding the shared molecular pathways, particularly concerning APP processing and tau pathology, could reveal novel therapeutic targets applicable to both MONDO:0011411 and Alzheimer disease type 1, potentially leading to treatments that address common underlying mechanisms.\n\n---\n\n#### 3. WHIM syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.312)\n**Link type:** shared pathway (Reactome:R-HSA-418594)\n\n**Proposed mechanism:** GPSM2 (HGNC:20708) —DISRUPTS→ Ciliogenesis; Ciliogenesis —LEADS_TO→ Developmental delay (HP:0001263); CXCR2 (HGNC:2827) —DISRUPTS→ CXCR2 signaling pathway (REACT:R-HSA-73801); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Neutropenia (HP:0001877); CXCR2 signaling pathway (REACT:R-HSA-73801) —LEADS_TO→ Immunodeficiency (HP:0002714). While GPSM2 mutations impair ciliogenesis and lead to developmental phenotypes in MONDO:0011411, gain-of-function mutations in CXCR2 dysregulate neutrophil function and trafficking in WHIM syndrome 2. The convergence occurs at the level of cellular signaling pathways, where both genes, despite their distinct primary functions, ultimately influence cellular behavior and contribute to distinct disease phenotypes through dysregulation of downstream effectors.\n\n**How to falsify it:** Demonstration that genetic variants in GPSM2 do not affect cilia formation or that CXCR2 gain-of-function mutations do not lead to aberrant neutrophil responses would falsify this hypothesis. _(variant: Exome sequencing data from gnomAD showing a high frequency (>1%) of pathogenic variants in either GPSM2 or CXCR2 in the general population would suggest incomplete penetrance or alternative mechanisms.)_\n\n**Why it matters:** Understanding the shared role of the CXCR2 signaling pathway in both conditions could lead to novel therapeutic strategies. For MONDO:0011411, targeting downstream effects of ciliogenesis defects that impact immune cells might be explored. For WHIM syndrome, therapies aimed at modulating CXCR2 signaling or downstream inflammatory pathways could be beneficial, potentially offering insights applicable to conditions with related signaling dysregulation.\n\n---"
+}

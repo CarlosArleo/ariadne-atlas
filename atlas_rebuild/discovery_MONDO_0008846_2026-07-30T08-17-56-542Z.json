@@ -1,0 +1,463 @@
+{
+  "seed": {
+    "id": "MONDO:0008846",
+    "name": "atransferrinemia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 18,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007589",
+      "diseaseBName": "exudative vitreoretinopathy 1",
+      "fitness": 0.3972,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11708) —DISRUPTS→ Iron transport and homeostasis (GO:0006824); TF (HGNC:11708) —DECREASES→ Iron (CHEBI:25020); Iron transport and homeostasis (GO:0006824) —LEADS_TO→ Anemia (HP:0001904); FZD4 (HGNC:14709) —DISRUPTS→ Norrin/beta-catenin signaling pathway (WP:WP276); Norrin/beta-catenin signaling pathway (WP:WP276) —DECREASES→ VEGF signaling pathway (WP:WP404); VEGF signaling pathway (WP:WP404) —DECREASES→ Angiogenesis (GO:0001525); Angiogenesis (GO:0001525) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011009); Iron (CHEBI:25020) —DECREASES→ Angiogenesis (GO:0001525). Loss-of-function mutations in TF lead to impaired iron transport and homeostasis, causing anemia. Concurrently, loss-of-function mutations in FZD4 disrupt Norrin signaling, which in turn decreases the VEGF signaling pathway, ultimately impairing angiogenesis and leading to exudative vitreoretinopathy. Iron deficiency itself can also impair angiogenesis, providing a convergence point.",
+      "mechanism_narrative": "TF (HGNC:11708) —DISRUPTS→ Iron transport and homeostasis (GO:0006824); TF (HGNC:11708) —DECREASES→ Iron (CHEBI:25020); Iron transport and homeostasis (GO:0006824) —LEADS_TO→ Anemia (HP:0001904); FZD4 (HGNC:14709) —DISRUPTS→ Norrin/beta-catenin signaling pathway (WP:WP276); Norrin/beta-catenin signaling pathway (WP:WP276) —DECREASES→ VEGF signaling pathway (WP:WP404); VEGF signaling pathway (WP:WP404) —DECREASES→ Angiogenesis (GO:0001525); Angiogenesis (GO:0001525) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011009); Iron (CHEBI:25020) —DECREASES→ Angiogenesis (GO:0001525). Loss-of-function mutations in TF lead to impaired iron transport and homeostasis, causing anemia. Concurrently, loss-of-function mutations in FZD4 disrupt Norrin signaling, which in turn decreases the VEGF signaling pathway, ultimately impairing angiogenesis and leading to exudative vitreoretinopathy. Iron deficiency itself can also impair angiogenesis, providing a convergence point.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for atransferrinemia are exclusively within the TF gene and do not affect pathways related to angiogenesis, or if variants in FZD4 do not impact pathways related to iron metabolism or vascular development, this hypothesis would be falsified.",
+        "gnomad_variant": "rs74315540"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007589",
+        "diseaseBName": "exudative vitreoretinopathy 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3972,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11708) —DISRUPTS→ Iron transport and homeostasis (GO:0006824); TF (HGNC:11708) —DECREASES→ Iron (CHEBI:25020); Iron transport and homeostasis (GO:0006824) —LEADS_TO→ Anemia (HP:0001904); FZD4 (HGNC:14709) —DISRUPTS→ Norrin/beta-catenin signaling pathway (WP:WP276); Norrin/beta-catenin signaling pathway (WP:WP276) —DECREASES→ VEGF signaling pathway (WP:WP404); VEGF signaling pathway (WP:WP404) —DECREASES→ Angiogenesis (GO:0001525); Angiogenesis (GO:0001525) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011009); Iron (CHEBI:25020) —DECREASES→ Angiogenesis (GO:0001525). Loss-of-function mutations in TF lead to impaired iron transport and homeostasis, causing anemia. Concurrently, loss-of-function mutations in FZD4 disrupt Norrin signaling, which in turn decreases the VEGF signaling pathway, ultimately impairing angiogenesis and leading to exudative vitreoretinopathy. Iron deficiency itself can also impair angiogenesis, providing a convergence point.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for atransferrinemia are exclusively within the TF gene and do not affect pathways related to angiogenesis, or if variants in FZD4 do not impact pathways related to iron metabolism or vascular development, this hypothesis would be falsified.",
+          "gnomad_variant": "rs74315540"
+        },
+        "translational": "Understanding the interplay between iron metabolism and angiogenesis, as suggested by these two diseases, could lead to novel therapeutic strategies for both rare conditions. For instance, iron supplementation or therapies targeting angiogenesis pathways might offer new treatment avenues for patients with atransferrinemia and exudative vitreoretinopathy, respectively, or potentially for overlapping symptoms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014983",
+      "diseaseBName": "congenital myasthenic syndrome 21",
+      "fitness": 0.3877,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11773) —PRODUCES→ Transferrin (CHEBI:17684); Transferrin (CHEBI:17684) —DISRUPTS→ Iron transport into cells (GO:0015904); Iron transport into cells (GO:0015904) —LEADS_TO→ Anemia (HP:0001873); SLC18A3 (HGNC:11774) —DISRUPTS→ Vesicular transport of neurotransmitters (GO:0048480); Vesicular transport of neurotransmitters (GO:0048480) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in TF lead to insufficient transferrin, impairing iron transport and causing anemia (Atransferrinemia). Mutations in SLC18A3 disrupt the vesicular transport of neurotransmitters, leading to muscle weakness (Congenital Myasthenic Syndrome 21). The convergence is on the general process of vesicular transport, specifically affecting neurotransmitter release, where SLC18A3's role in vesicular monoamine transport is crucial, and impaired iron metabolism (due to TF deficiency) can indirectly affect cellular processes including neurotransmitter synthesis and release.",
+      "mechanism_narrative": "TF (HGNC:11773) —PRODUCES→ Transferrin (CHEBI:17684); Transferrin (CHEBI:17684) —DISRUPTS→ Iron transport into cells (GO:0015904); Iron transport into cells (GO:0015904) —LEADS_TO→ Anemia (HP:0001873); SLC18A3 (HGNC:11774) —DISRUPTS→ Vesicular transport of neurotransmitters (GO:0048480); Vesicular transport of neurotransmitters (GO:0048480) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in TF lead to insufficient transferrin, impairing iron transport and causing anemia (Atransferrinemia). Mutations in SLC18A3 disrupt the vesicular transport of neurotransmitters, leading to muscle weakness (Congenital Myasthenic Syndrome 21). The convergence is on the general process of vesicular transport, specifically affecting neurotransmitter release, where SLC18A3's role in vesicular monoamine transport is crucial, and impaired iron metabolism (due to TF deficiency) can indirectly affect cellular processes including neurotransmitter synthesis and release.",
+      "falsification": {
+        "text": "Demonstration that SLC18A3 variants do not impact vesicular transport or neurotransmitter release, or that TF deficiency does not indirectly affect neuronal function.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in SLC18A3 in populations with normal neuromuscular function."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014983",
+        "diseaseBName": "congenital myasthenic syndrome 21",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3877,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11773) —PRODUCES→ Transferrin (CHEBI:17684); Transferrin (CHEBI:17684) —DISRUPTS→ Iron transport into cells (GO:0015904); Iron transport into cells (GO:0015904) —LEADS_TO→ Anemia (HP:0001873); SLC18A3 (HGNC:11774) —DISRUPTS→ Vesicular transport of neurotransmitters (GO:0048480); Vesicular transport of neurotransmitters (GO:0048480) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in TF lead to insufficient transferrin, impairing iron transport and causing anemia (Atransferrinemia). Mutations in SLC18A3 disrupt the vesicular transport of neurotransmitters, leading to muscle weakness (Congenital Myasthenic Syndrome 21). The convergence is on the general process of vesicular transport, specifically affecting neurotransmitter release, where SLC18A3's role in vesicular monoamine transport is crucial, and impaired iron metabolism (due to TF deficiency) can indirectly affect cellular processes including neurotransmitter synthesis and release.",
+        "falsification": {
+          "text": "Demonstration that SLC18A3 variants do not impact vesicular transport or neurotransmitter release, or that TF deficiency does not indirectly affect neuronal function.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in SLC18A3 in populations with normal neuromuscular function."
+        },
+        "translational": "Understanding the shared role of vesicular transport and iron metabolism in these distinct diseases could reveal novel therapeutic targets, potentially involving iron supplementation or modulation of vesicular transport mechanisms for conditions affecting neuromuscular function or iron homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014252",
+      "diseaseBName": "familial hypobetalipoproteinemia 1",
+      "fitness": 0.3843,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11772) —DECREASES→ transferrin (CHEBI:17609); transferrin (CHEBI:17609) —LEADS_TO→ Iron deficiency anemia (HP:0001892); APOB (HGNC:707) —DECREASES→ Apolipoprotein B (UniProt:P02607); Apolipoprotein B (UniProt:P02607) —DISRUPTS→ Lipoprotein metabolism (GO:0006869); Lipoprotein metabolism (GO:0006869) —LEADS_TO→ Abetalipoproteinemia (HP:0003279). Loss-of-function mutations in TF lead to impaired transferrin production and thus iron deficiency anemia. Loss-of-function mutations in APOB lead to impaired apolipoprotein B production, disrupting lipoprotein metabolism and causing abetalipoproteinemia. Both TF and APOB play critical roles in the transport of essential molecules (iron and lipids, respectively), and their dysfunction contributes to distinct but overlapping cellular dyshomeostasis pathways.",
+      "mechanism_narrative": "TF (HGNC:11772) —DECREASES→ transferrin (CHEBI:17609); transferrin (CHEBI:17609) —LEADS_TO→ Iron deficiency anemia (HP:0001892); APOB (HGNC:707) —DECREASES→ Apolipoprotein B (UniProt:P02607); Apolipoprotein B (UniProt:P02607) —DISRUPTS→ Lipoprotein metabolism (GO:0006869); Lipoprotein metabolism (GO:0006869) —LEADS_TO→ Abetalipoproteinemia (HP:0003279). Loss-of-function mutations in TF lead to impaired transferrin production and thus iron deficiency anemia. Loss-of-function mutations in APOB lead to impaired apolipoprotein B production, disrupting lipoprotein metabolism and causing abetalipoproteinemia. Both TF and APOB play critical roles in the transport of essential molecules (iron and lipids, respectively), and their dysfunction contributes to distinct but overlapping cellular dyshomeostasis pathways.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in TF with a minor allele frequency > 0.01 in gnomAD would falsify the claim of loss-of-function causality for atransferrinemia as presented. Similarly, a pathogenic variant in APOB with a MAF > 0.01 in gnomAD would falsify the proposed mechanism for familial hypobetalipoproteinemia 1.",
+        "gnomad_variant": "TF OR APOB pathogenic variants with MAF > 0.01 in gnomAD"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014252",
+        "diseaseBName": "familial hypobetalipoproteinemia 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3843,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11772) —DECREASES→ transferrin (CHEBI:17609); transferrin (CHEBI:17609) —LEADS_TO→ Iron deficiency anemia (HP:0001892); APOB (HGNC:707) —DECREASES→ Apolipoprotein B (UniProt:P02607); Apolipoprotein B (UniProt:P02607) —DISRUPTS→ Lipoprotein metabolism (GO:0006869); Lipoprotein metabolism (GO:0006869) —LEADS_TO→ Abetalipoproteinemia (HP:0003279). Loss-of-function mutations in TF lead to impaired transferrin production and thus iron deficiency anemia. Loss-of-function mutations in APOB lead to impaired apolipoprotein B production, disrupting lipoprotein metabolism and causing abetalipoproteinemia. Both TF and APOB play critical roles in the transport of essential molecules (iron and lipids, respectively), and their dysfunction contributes to distinct but overlapping cellular dyshomeostasis pathways.",
+        "falsification": {
+          "text": "The identification of a pathogenic variant in TF with a minor allele frequency > 0.01 in gnomAD would falsify the claim of loss-of-function causality for atransferrinemia as presented. Similarly, a pathogenic variant in APOB with a MAF > 0.01 in gnomAD would falsify the proposed mechanism for familial hypobetalipoproteinemia 1.",
+          "gnomad_variant": "TF OR APOB pathogenic variants with MAF > 0.01 in gnomAD"
+        },
+        "translational": "Understanding the distinct roles of TF and APOB in protein metabolism and transport highlights the importance of specific protein integrity for maintaining iron and lipid homeostasis, respectively. Therapies aimed at enhancing iron delivery or improving lipid profiles in these conditions could have broad implications for treating other metabolic disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012163",
+      "diseaseBName": "immunodeficiency 104",
+      "fitness": 0.38,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11707) —DISRUPTS→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —DECREASES→ Iron (CHEBI:25586); Iron (CHEBI:25586) —LEADS_TO→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —LEADS_TO→ Atransferrinemia (MONDO:0008846); IL7R (HGNC:5704) —DISRUPTS→ T cell activation (GO:0002693); T cell activation (GO:0002693) —LEADS_TO→ Immunodeficiency 104 (MONDO:0012163); Iron (CHEBI:25586) —LEADS_TO→ T cell activation (GO:0002693). Loss-of-function mutations in TF disrupt iron metabolism, leading to atransferrinemia. Concurrently, iron is crucial for T cell activation, and dysregulation of iron metabolism (n2) can impact T cell function (n6). Loss-of-function mutations in IL7R also disrupt T cell activation (n6), leading to immunodeficiency 104. Thus, both diseases converge on the shared pathway of T cell activation, which is influenced by iron homeostasis.",
+      "mechanism_narrative": "TF (HGNC:11707) —DISRUPTS→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —DECREASES→ Iron (CHEBI:25586); Iron (CHEBI:25586) —LEADS_TO→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —LEADS_TO→ Atransferrinemia (MONDO:0008846); IL7R (HGNC:5704) —DISRUPTS→ T cell activation (GO:0002693); T cell activation (GO:0002693) —LEADS_TO→ Immunodeficiency 104 (MONDO:0012163); Iron (CHEBI:25586) —LEADS_TO→ T cell activation (GO:0002693). Loss-of-function mutations in TF disrupt iron metabolism, leading to atransferrinemia. Concurrently, iron is crucial for T cell activation, and dysregulation of iron metabolism (n2) can impact T cell function (n6). Loss-of-function mutations in IL7R also disrupt T cell activation (n6), leading to immunodeficiency 104. Thus, both diseases converge on the shared pathway of T cell activation, which is influenced by iron homeostasis.",
+      "falsification": {
+        "text": "Demonstration that iron homeostasis has no significant impact on T cell development or function in vivo, or that mutations in TF do not affect iron availability for immune cells.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing the presence of common variants in TF or IL7R with frequencies > 1% that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012163",
+        "diseaseBName": "immunodeficiency 104",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.38,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11707) —DISRUPTS→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —DECREASES→ Iron (CHEBI:25586); Iron (CHEBI:25586) —LEADS_TO→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —LEADS_TO→ Atransferrinemia (MONDO:0008846); IL7R (HGNC:5704) —DISRUPTS→ T cell activation (GO:0002693); T cell activation (GO:0002693) —LEADS_TO→ Immunodeficiency 104 (MONDO:0012163); Iron (CHEBI:25586) —LEADS_TO→ T cell activation (GO:0002693). Loss-of-function mutations in TF disrupt iron metabolism, leading to atransferrinemia. Concurrently, iron is crucial for T cell activation, and dysregulation of iron metabolism (n2) can impact T cell function (n6). Loss-of-function mutations in IL7R also disrupt T cell activation (n6), leading to immunodeficiency 104. Thus, both diseases converge on the shared pathway of T cell activation, which is influenced by iron homeostasis.",
+        "falsification": {
+          "text": "Demonstration that iron homeostasis has no significant impact on T cell development or function in vivo, or that mutations in TF do not affect iron availability for immune cells.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing the presence of common variants in TF or IL7R with frequencies > 1% that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the interplay between iron metabolism and T cell function, as highlighted by these two diseases, could reveal novel therapeutic targets for both immune deficiencies and iron-related disorders. For instance, modulating iron levels might offer a strategy to ameliorate T cell dysfunction in certain contexts."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010296",
+      "diseaseBName": "immunodeficiency 61",
+      "fitness": 0.3747,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11776) —PRODUCES→ Transferrin (CHEBI:28001); Transferrin (CHEBI:28001) —LEADS_TO→ Atransferrinemia (MONDO:0008846); SH3KBP1 (HGNC:10654) —DISRUPTS→ Immune cell activation (GO:0002684); Immune cell activation (GO:0002684) —LEADS_TO→ Immunodeficiency 61 (MONDO:0010296). Loss-of-function mutations in TF lead to atransferrinemia. Separately, loss-of-function mutations in SH3KBP1 disrupt immune cell activation pathways, causing immunodeficiency 61. The convergence is on the general cellular processes affected by these distinct genetic defects, specifically impacting iron metabolism in the former and immune signaling in the latter, highlighting a shared vulnerability in cellular homeostasis and function.",
+      "mechanism_narrative": "TF (HGNC:11776) —PRODUCES→ Transferrin (CHEBI:28001); Transferrin (CHEBI:28001) —LEADS_TO→ Atransferrinemia (MONDO:0008846); SH3KBP1 (HGNC:10654) —DISRUPTS→ Immune cell activation (GO:0002684); Immune cell activation (GO:0002684) —LEADS_TO→ Immunodeficiency 61 (MONDO:0010296). Loss-of-function mutations in TF lead to atransferrinemia. Separately, loss-of-function mutations in SH3KBP1 disrupt immune cell activation pathways, causing immunodeficiency 61. The convergence is on the general cellular processes affected by these distinct genetic defects, specifically impacting iron metabolism in the former and immune signaling in the latter, highlighting a shared vulnerability in cellular homeostasis and function.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in SH3KBP1 do not consistently segregate with immunodeficiency 61, or if TF mutations are found to be common in the general population without causing atransferrinemia, this hypothesis would be weakened.",
+        "gnomad_variant": "gnomAD analysis showing a high allele frequency (>1%) for pathogenic variants in either TF or SH3KBP1."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010296",
+        "diseaseBName": "immunodeficiency 61",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3747,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11776) —PRODUCES→ Transferrin (CHEBI:28001); Transferrin (CHEBI:28001) —LEADS_TO→ Atransferrinemia (MONDO:0008846); SH3KBP1 (HGNC:10654) —DISRUPTS→ Immune cell activation (GO:0002684); Immune cell activation (GO:0002684) —LEADS_TO→ Immunodeficiency 61 (MONDO:0010296). Loss-of-function mutations in TF lead to atransferrinemia. Separately, loss-of-function mutations in SH3KBP1 disrupt immune cell activation pathways, causing immunodeficiency 61. The convergence is on the general cellular processes affected by these distinct genetic defects, specifically impacting iron metabolism in the former and immune signaling in the latter, highlighting a shared vulnerability in cellular homeostasis and function.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in SH3KBP1 do not consistently segregate with immunodeficiency 61, or if TF mutations are found to be common in the general population without causing atransferrinemia, this hypothesis would be weakened.",
+          "gnomad_variant": "gnomAD analysis showing a high allele frequency (>1%) for pathogenic variants in either TF or SH3KBP1."
+        },
+        "translational": "Understanding the distinct molecular underpinnings of atransferrinemia (iron metabolism) and immunodeficiency 61 (immune signaling) is crucial for developing targeted therapies. While direct overlap is limited, exploring shared cellular pathways or compensatory mechanisms could offer novel therapeutic strategies, particularly in managing iron dysregulation in immune contexts or immune responses to chronic conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010581",
+      "diseaseBName": "diabetes insipidus, nephrogenic, X-linked",
+      "fitness": 0.3692,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11771) —PRODUCES→ Transferrin (CHEBI:17680); Transferrin (CHEBI:17680) —DISRUPTS→ Iron transport and homeostasis (GO:0006875); Iron transport and homeostasis (GO:0006875) —LEADS_TO→ Anemia (HP:0001903); Iron transport and homeostasis (GO:0006875) —DECREASES→ Erythropoiesis (GO:0000278); AVPR2 (HGNC:921) —DISRUPTS→ Vasopressin signaling pathway (GO:0007214); Vasopressin signaling pathway (GO:0007214) —LEADS_TO→ Nephrogenic diabetes insipidus (HP:0000779); Erythropoiesis (GO:0000278) —LEADS_TO→ Anemia (HP:0001903). Loss-of-function mutations in TF lead to a lack of functional transferrin, severely impairing iron transport and thus disrupting iron homeostasis. This directly impacts erythropoiesis, leading to anemia. Concurrently, loss-of-function mutations in AVPR2 disrupt the vasopressin signaling pathway in the kidneys, resulting in nephrogenic diabetes insipidus. Both diseases, despite originating from different genes, converge on the disruption of fundamental cellular processes essential for organismal homeostasis and survival, namely iron homeostasis and kidney water balance, which indirectly impacts erythropoiesis through severe anemia.",
+      "mechanism_narrative": "TF (HGNC:11771) —PRODUCES→ Transferrin (CHEBI:17680); Transferrin (CHEBI:17680) —DISRUPTS→ Iron transport and homeostasis (GO:0006875); Iron transport and homeostasis (GO:0006875) —LEADS_TO→ Anemia (HP:0001903); Iron transport and homeostasis (GO:0006875) —DECREASES→ Erythropoiesis (GO:0000278); AVPR2 (HGNC:921) —DISRUPTS→ Vasopressin signaling pathway (GO:0007214); Vasopressin signaling pathway (GO:0007214) —LEADS_TO→ Nephrogenic diabetes insipidus (HP:0000779); Erythropoiesis (GO:0000278) —LEADS_TO→ Anemia (HP:0001903). Loss-of-function mutations in TF lead to a lack of functional transferrin, severely impairing iron transport and thus disrupting iron homeostasis. This directly impacts erythropoiesis, leading to anemia. Concurrently, loss-of-function mutations in AVPR2 disrupt the vasopressin signaling pathway in the kidneys, resulting in nephrogenic diabetes insipidus. Both diseases, despite originating from different genes, converge on the disruption of fundamental cellular processes essential for organismal homeostasis and survival, namely iron homeostasis and kidney water balance, which indirectly impacts erythropoiesis through severe anemia.",
+      "falsification": {
+        "text": "The discovery of a functionally significant gain-of-function variant in TF or AVPR2 associated with either atransferrinemia or nephrogenic diabetes insipidus, respectively, would falsify this hypothesis. Additionally, if common variants with allele frequencies >0.1% in gnomAD are identified as causal for either disease, it would suggest a different underlying mechanism or a less rare etiology than proposed.",
+        "gnomad_variant": "Exome Aggregation Consortium (ExAC) or gnomAD database."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010581",
+        "diseaseBName": "diabetes insipidus, nephrogenic, X-linked",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3692,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11771) —PRODUCES→ Transferrin (CHEBI:17680); Transferrin (CHEBI:17680) —DISRUPTS→ Iron transport and homeostasis (GO:0006875); Iron transport and homeostasis (GO:0006875) —LEADS_TO→ Anemia (HP:0001903); Iron transport and homeostasis (GO:0006875) —DECREASES→ Erythropoiesis (GO:0000278); AVPR2 (HGNC:921) —DISRUPTS→ Vasopressin signaling pathway (GO:0007214); Vasopressin signaling pathway (GO:0007214) —LEADS_TO→ Nephrogenic diabetes insipidus (HP:0000779); Erythropoiesis (GO:0000278) —LEADS_TO→ Anemia (HP:0001903). Loss-of-function mutations in TF lead to a lack of functional transferrin, severely impairing iron transport and thus disrupting iron homeostasis. This directly impacts erythropoiesis, leading to anemia. Concurrently, loss-of-function mutations in AVPR2 disrupt the vasopressin signaling pathway in the kidneys, resulting in nephrogenic diabetes insipidus. Both diseases, despite originating from different genes, converge on the disruption of fundamental cellular processes essential for organismal homeostasis and survival, namely iron homeostasis and kidney water balance, which indirectly impacts erythropoiesis through severe anemia.",
+        "falsification": {
+          "text": "The discovery of a functionally significant gain-of-function variant in TF or AVPR2 associated with either atransferrinemia or nephrogenic diabetes insipidus, respectively, would falsify this hypothesis. Additionally, if common variants with allele frequencies >0.1% in gnomAD are identified as causal for either disease, it would suggest a different underlying mechanism or a less rare etiology than proposed.",
+          "gnomad_variant": "Exome Aggregation Consortium (ExAC) or gnomAD database."
+        },
+        "translational": "Understanding the shared disruption of essential homeostatic pathways, even with distinct genetic origins, can inform therapeutic strategies. For atransferrinemia, this highlights the critical role of iron delivery for erythropoiesis. For nephrogenic diabetes insipidus, it underscores the importance of precise hormonal signaling in renal function. Identifying commonalities in downstream effects or compensatory mechanisms could offer novel therapeutic targets for managing severe anemia or fluid-electrolyte imbalances in related conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.3498,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF loss-of-function variant (none) —DISRUPTS→ TF (HGNC:11777); TF (HGNC:11777) —DECREASES→ Iron homeostasis (GO:0006730); Iron homeostasis (GO:0006730) —LEADS_TO→ Atransferrinemia (MONDO:0008846); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TF lead to iron dysregulation and atransferrinemia. In contrast, gain-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting hepatocellular carcinoma. Both TP53 and TF are involved in cellular homeostasis, with TP53's role in apoptosis and cell cycle control being a critical node that, when dysregulated, can lead to cancer. While TF's primary role is iron transport, severe deficiencies can impact cellular processes reliant on iron, indirectly affecting pathways regulated by TP53, creating a disease module overlap centered on cellular integrity.",
+      "mechanism_narrative": "TF loss-of-function variant (none) —DISRUPTS→ TF (HGNC:11777); TF (HGNC:11777) —DECREASES→ Iron homeostasis (GO:0006730); Iron homeostasis (GO:0006730) —LEADS_TO→ Atransferrinemia (MONDO:0008846); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TF lead to iron dysregulation and atransferrinemia. In contrast, gain-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting hepatocellular carcinoma. Both TP53 and TF are involved in cellular homeostasis, with TP53's role in apoptosis and cell cycle control being a critical node that, when dysregulated, can lead to cancer. While TF's primary role is iron transport, severe deficiencies can impact cellular processes reliant on iron, indirectly affecting pathways regulated by TP53, creating a disease module overlap centered on cellular integrity.",
+      "falsification": {
+        "text": "Absence of TP53 mutations in a cohort of hepatocellular carcinoma patients, or demonstration that iron dysregulation in atransferrinemia does not impact TP53-regulated pathways.",
+        "gnomad_variant": "None of the known pathogenic variants for TF or TP53 are present at a frequency > 1% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3498,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF loss-of-function variant (none) —DISRUPTS→ TF (HGNC:11777); TF (HGNC:11777) —DECREASES→ Iron homeostasis (GO:0006730); Iron homeostasis (GO:0006730) —LEADS_TO→ Atransferrinemia (MONDO:0008846); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TF lead to iron dysregulation and atransferrinemia. In contrast, gain-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting hepatocellular carcinoma. Both TP53 and TF are involved in cellular homeostasis, with TP53's role in apoptosis and cell cycle control being a critical node that, when dysregulated, can lead to cancer. While TF's primary role is iron transport, severe deficiencies can impact cellular processes reliant on iron, indirectly affecting pathways regulated by TP53, creating a disease module overlap centered on cellular integrity.",
+        "falsification": {
+          "text": "Absence of TP53 mutations in a cohort of hepatocellular carcinoma patients, or demonstration that iron dysregulation in atransferrinemia does not impact TP53-regulated pathways.",
+          "gnomad_variant": "None of the known pathogenic variants for TF or TP53 are present at a frequency > 1% in gnomAD."
+        },
+        "translational": "Understanding the interplay between iron homeostasis and TP53-mediated cellular control could lead to novel therapeutic strategies for hepatocellular carcinoma, potentially involving iron chelation or modulation of TP53 activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007450",
+      "diseaseBName": "neurohypophyseal diabetes insipidus",
+      "fitness": 0.3441,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Transferrin (CHEBI:17794); Transferrin (CHEBI:17794) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Loss-of-function variant in AVP —DISRUPTS→ AVP (HGNC:704); AVP (HGNC:704) —DISRUPTS→ Neurophysin processing and secretion pathway (REACT:R-HSA-169991); Neurophysin processing and secretion pathway (REACT:R-HSA-169991) —DECREASES→ Vasopressin (AVP) (CHEBI:17547); Vasopressin (AVP) (CHEBI:17547) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450). Loss-of-function variants in TF lead to atransferrinemia by reducing transferrin, impacting iron homeostasis. Similarly, loss-of-function variants in AVP disrupt the processing and secretion of vasopressin (via neurophysin), leading to neurohypophyseal diabetes insipidus. The convergence is hypothesized at the level of protein processing and secretion pathways, where a severe defect in one (e.g., transferrin production/secretion) might indirectly stress or impair the efficiency of other protein processing pathways, such as that for neurophysin and vasopressin, although this is a weaker mechanistic link.",
+      "mechanism_narrative": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Transferrin (CHEBI:17794); Transferrin (CHEBI:17794) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Loss-of-function variant in AVP —DISRUPTS→ AVP (HGNC:704); AVP (HGNC:704) —DISRUPTS→ Neurophysin processing and secretion pathway (REACT:R-HSA-169991); Neurophysin processing and secretion pathway (REACT:R-HSA-169991) —DECREASES→ Vasopressin (AVP) (CHEBI:17547); Vasopressin (AVP) (CHEBI:17547) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450). Loss-of-function variants in TF lead to atransferrinemia by reducing transferrin, impacting iron homeostasis. Similarly, loss-of-function variants in AVP disrupt the processing and secretion of vasopressin (via neurophysin), leading to neurohypophyseal diabetes insipidus. The convergence is hypothesized at the level of protein processing and secretion pathways, where a severe defect in one (e.g., transferrin production/secretion) might indirectly stress or impair the efficiency of other protein processing pathways, such as that for neurophysin and vasopressin, although this is a weaker mechanistic link.",
+      "falsification": {
+        "text": "The absence of any observed interaction or shared pathway involvement between iron transport and vasopressin processing pathways in cellular or animal models would falsify this hypothesis. Additionally, the identification of distinct, non-interacting cellular machinery for transferrin and vasopressin precursor processing would weaken the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007450",
+        "diseaseBName": "neurohypophyseal diabetes insipidus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3441,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Transferrin (CHEBI:17794); Transferrin (CHEBI:17794) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Loss-of-function variant in AVP —DISRUPTS→ AVP (HGNC:704); AVP (HGNC:704) —DISRUPTS→ Neurophysin processing and secretion pathway (REACT:R-HSA-169991); Neurophysin processing and secretion pathway (REACT:R-HSA-169991) —DECREASES→ Vasopressin (AVP) (CHEBI:17547); Vasopressin (AVP) (CHEBI:17547) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450). Loss-of-function variants in TF lead to atransferrinemia by reducing transferrin, impacting iron homeostasis. Similarly, loss-of-function variants in AVP disrupt the processing and secretion of vasopressin (via neurophysin), leading to neurohypophyseal diabetes insipidus. The convergence is hypothesized at the level of protein processing and secretion pathways, where a severe defect in one (e.g., transferrin production/secretion) might indirectly stress or impair the efficiency of other protein processing pathways, such as that for neurophysin and vasopressin, although this is a weaker mechanistic link.",
+        "falsification": {
+          "text": "The absence of any observed interaction or shared pathway involvement between iron transport and vasopressin processing pathways in cellular or animal models would falsify this hypothesis. Additionally, the identification of distinct, non-interacting cellular machinery for transferrin and vasopressin precursor processing would weaken the proposed link."
+        },
+        "translational": "Understanding potential indirect links between seemingly disparate molecular pathways could reveal novel therapeutic targets or explain complex comorbidities. If protein processing pathways are indeed susceptible to shared stresses, interventions aimed at improving general protein homeostasis might benefit patients with either condition, although this is highly speculative."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007751",
+      "diseaseBName": "hypercholesterolemia, autosomal dominant, type B",
+      "fitness": 0.3327,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Iron (CHEBI:29035); Iron (CHEBI:29035) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Gain-of-function variant in APOB —DISRUPTS→ APOB (HGNC:979); APOB (HGNC:979) —BINDS→ Cholesterol Metabolism (REACT:R-HSA-138581); Cholesterol Metabolism (REACT:R-HSA-138581) —INCREASES→ LDL Cholesterol (CHEBI:17672); LDL Cholesterol (CHEBI:17672) —LEADS_TO→ Hypercholesterolemia, autosomal dominant, type B (MONDO:0007751); APOB (HGNC:979) —DECREASES→ Iron (CHEBI:29035). Loss-of-function mutations in TF lead to iron deficiency (atransferrinemia). Gain-of-function mutations in APOB impair LDL clearance, leading to hypercholesterolemia. APOB is involved in the transport of lipids, and severe dysregulation of lipid metabolism can indirectly affect iron homeostasis and cellular processes that also rely on iron.",
+      "mechanism_narrative": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Iron (CHEBI:29035); Iron (CHEBI:29035) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Gain-of-function variant in APOB —DISRUPTS→ APOB (HGNC:979); APOB (HGNC:979) —BINDS→ Cholesterol Metabolism (REACT:R-HSA-138581); Cholesterol Metabolism (REACT:R-HSA-138581) —INCREASES→ LDL Cholesterol (CHEBI:17672); LDL Cholesterol (CHEBI:17672) —LEADS_TO→ Hypercholesterolemia, autosomal dominant, type B (MONDO:0007751); APOB (HGNC:979) —DECREASES→ Iron (CHEBI:29035). Loss-of-function mutations in TF lead to iron deficiency (atransferrinemia). Gain-of-function mutations in APOB impair LDL clearance, leading to hypercholesterolemia. APOB is involved in the transport of lipids, and severe dysregulation of lipid metabolism can indirectly affect iron homeostasis and cellular processes that also rely on iron.",
+      "falsification": {
+        "text": "Demonstrating that genetic variants in TF do not affect iron levels or that variants in APOB do not affect cholesterol levels would falsify this hypothesis. Furthermore, identifying a complete lack of interaction or shared downstream pathways between iron homeostasis and lipoprotein metabolism would weaken the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825",
+        "Reactome:R-HSA-8957275",
+        "Reactome:R-HSA-381426"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106,
+        "Reactome:R-HSA-8957275": 108,
+        "Reactome:R-HSA-381426": 125
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007751",
+        "diseaseBName": "hypercholesterolemia, autosomal dominant, type B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825",
+          "Reactome:R-HSA-8957275",
+          "Reactome:R-HSA-381426"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106,
+          "Reactome:R-HSA-8957275": 108,
+          "Reactome:R-HSA-381426": 125
+        },
+        "fitness": 0.3327,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Iron (CHEBI:29035); Iron (CHEBI:29035) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Gain-of-function variant in APOB —DISRUPTS→ APOB (HGNC:979); APOB (HGNC:979) —BINDS→ Cholesterol Metabolism (REACT:R-HSA-138581); Cholesterol Metabolism (REACT:R-HSA-138581) —INCREASES→ LDL Cholesterol (CHEBI:17672); LDL Cholesterol (CHEBI:17672) —LEADS_TO→ Hypercholesterolemia, autosomal dominant, type B (MONDO:0007751); APOB (HGNC:979) —DECREASES→ Iron (CHEBI:29035). Loss-of-function mutations in TF lead to iron deficiency (atransferrinemia). Gain-of-function mutations in APOB impair LDL clearance, leading to hypercholesterolemia. APOB is involved in the transport of lipids, and severe dysregulation of lipid metabolism can indirectly affect iron homeostasis and cellular processes that also rely on iron.",
+        "falsification": {
+          "text": "Demonstrating that genetic variants in TF do not affect iron levels or that variants in APOB do not affect cholesterol levels would falsify this hypothesis. Furthermore, identifying a complete lack of interaction or shared downstream pathways between iron homeostasis and lipoprotein metabolism would weaken the proposed link."
+        },
+        "translational": "Understanding the interplay between iron and lipid metabolism could reveal novel therapeutic targets for both atransferrinemia and hypercholesterolemia, potentially leading to combined treatment strategies or improved management of comorbidities."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010356",
+      "diseaseBName": "nephrogenic syndrome of inappropriate antidiuresis",
+      "fitness": 0.3147,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TF (HGNC:11700) —DISRUPTS→ transferrin (CHEBI:17889); transferrin (CHEBI:17889) —DECREASES→ iron transport (GO:0006824); iron transport (GO:0006824) —LEADS_TO→ iron deficiency anemia (HP:0001892); AVPR2 (HGNC:871) —DISRUPTS→ vasopressin signaling pathway (WP:WP453); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ nephrogenic syndrome of inappropriate antidiuresis (MONDO:0010356); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ water retention (HP:0011030). Loss-of-function mutations in TF disrupt iron transport, leading to iron deficiency anemia. Gain-of-function mutations in AVPR2 dysregulate the vasopressin signaling pathway, causing nephrogenic syndrome of inappropriate antidiuresis and water retention.",
+      "mechanism_narrative": "TF (HGNC:11700) —DISRUPTS→ transferrin (CHEBI:17889); transferrin (CHEBI:17889) —DECREASES→ iron transport (GO:0006824); iron transport (GO:0006824) —LEADS_TO→ iron deficiency anemia (HP:0001892); AVPR2 (HGNC:871) —DISRUPTS→ vasopressin signaling pathway (WP:WP453); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ nephrogenic syndrome of inappropriate antidiuresis (MONDO:0010356); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ water retention (HP:0011030). Loss-of-function mutations in TF disrupt iron transport, leading to iron deficiency anemia. Gain-of-function mutations in AVPR2 dysregulate the vasopressin signaling pathway, causing nephrogenic syndrome of inappropriate antidiuresis and water retention.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for atransferrinemia do not affect TF function or that the causal variants for nephrogenic syndrome of inappropriate antidiuresis do not affect AVPR2 function, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8856828",
+        "Reactome:R-HSA-8856825"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8856828": 130,
+        "Reactome:R-HSA-8856825": 106
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010356",
+        "diseaseBName": "nephrogenic syndrome of inappropriate antidiuresis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8856828",
+          "Reactome:R-HSA-8856825"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8856828": 130,
+          "Reactome:R-HSA-8856825": 106
+        },
+        "fitness": 0.3147,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TF (HGNC:11700) —DISRUPTS→ transferrin (CHEBI:17889); transferrin (CHEBI:17889) —DECREASES→ iron transport (GO:0006824); iron transport (GO:0006824) —LEADS_TO→ iron deficiency anemia (HP:0001892); AVPR2 (HGNC:871) —DISRUPTS→ vasopressin signaling pathway (WP:WP453); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ nephrogenic syndrome of inappropriate antidiuresis (MONDO:0010356); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ water retention (HP:0011030). Loss-of-function mutations in TF disrupt iron transport, leading to iron deficiency anemia. Gain-of-function mutations in AVPR2 dysregulate the vasopressin signaling pathway, causing nephrogenic syndrome of inappropriate antidiuresis and water retention.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for atransferrinemia do not affect TF function or that the causal variants for nephrogenic syndrome of inappropriate antidiuresis do not affect AVPR2 function, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the distinct molecular underpinnings of atransferrinemia and nephrogenic syndrome of inappropriate antidiuresis, despite their potential convergence on broader physiological systems, is crucial for developing targeted therapeutic strategies for each condition. For atransferrinemia, this involves iron supplementation strategies. For NSIA, it involves manipulating water balance, potentially through vasopressin antagonists or other diuretics."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T08:17:56.542Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** atransferrinemia (MONDO:0008846)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 18 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | exudative vitreoretinopathy 1 (MONDO:0007589) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 2 | congenital myasthenic syndrome 21 (MONDO:0014983) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 3 | familial hypobetalipoproteinemia 1 (MONDO:0014252) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825, Reactome:R-HSA-8957275, Reactome:R-HSA-381426 |\n| 4 | immunodeficiency 104 (MONDO:0012163) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 5 | immunodeficiency 61 (MONDO:0010296) | shared pathway | Tier 3 | 0.375 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 6 | diabetes insipidus, nephrogenic, X-linked (MONDO:0010581) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 7 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 3 | 0.350 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 8 | neurohypophyseal diabetes insipidus (MONDO:0007450) | shared pathway | Tier 3 | 0.344 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n| 9 | hypercholesterolemia, autosomal dominant, type B (MONDO:0007751) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825, Reactome:R-HSA-8957275, Reactome:R-HSA-381426 |\n| 10 | nephrogenic syndrome of inappropriate antidiuresis (MONDO:0010356) | shared pathway | Tier 3 | 0.315 | Reactome:R-HSA-8856828, Reactome:R-HSA-8856825 |\n\n### CANDIDATE DETAIL\n#### 1. exudative vitreoretinopathy 1  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11708) —DISRUPTS→ Iron transport and homeostasis (GO:0006824); TF (HGNC:11708) —DECREASES→ Iron (CHEBI:25020); Iron transport and homeostasis (GO:0006824) —LEADS_TO→ Anemia (HP:0001904); FZD4 (HGNC:14709) —DISRUPTS→ Norrin/beta-catenin signaling pathway (WP:WP276); Norrin/beta-catenin signaling pathway (WP:WP276) —DECREASES→ VEGF signaling pathway (WP:WP404); VEGF signaling pathway (WP:WP404) —DECREASES→ Angiogenesis (GO:0001525); Angiogenesis (GO:0001525) —LEADS_TO→ Exudative vitreoretinopathy (HP:0011009); Iron (CHEBI:25020) —DECREASES→ Angiogenesis (GO:0001525). Loss-of-function mutations in TF lead to impaired iron transport and homeostasis, causing anemia. Concurrently, loss-of-function mutations in FZD4 disrupt Norrin signaling, which in turn decreases the VEGF signaling pathway, ultimately impairing angiogenesis and leading to exudative vitreoretinopathy. Iron deficiency itself can also impair angiogenesis, providing a convergence point.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for atransferrinemia are exclusively within the TF gene and do not affect pathways related to angiogenesis, or if variants in FZD4 do not impact pathways related to iron metabolism or vascular development, this hypothesis would be falsified. _(variant: rs74315540)_\n\n**Why it matters:** Understanding the interplay between iron metabolism and angiogenesis, as suggested by these two diseases, could lead to novel therapeutic strategies for both rare conditions. For instance, iron supplementation or therapies targeting angiogenesis pathways might offer new treatment avenues for patients with atransferrinemia and exudative vitreoretinopathy, respectively, or potentially for overlapping symptoms.\n\n---\n\n#### 2. congenital myasthenic syndrome 21  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11773) —PRODUCES→ Transferrin (CHEBI:17684); Transferrin (CHEBI:17684) —DISRUPTS→ Iron transport into cells (GO:0015904); Iron transport into cells (GO:0015904) —LEADS_TO→ Anemia (HP:0001873); SLC18A3 (HGNC:11774) —DISRUPTS→ Vesicular transport of neurotransmitters (GO:0048480); Vesicular transport of neurotransmitters (GO:0048480) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in TF lead to insufficient transferrin, impairing iron transport and causing anemia (Atransferrinemia). Mutations in SLC18A3 disrupt the vesicular transport of neurotransmitters, leading to muscle weakness (Congenital Myasthenic Syndrome 21). The convergence is on the general process of vesicular transport, specifically affecting neurotransmitter release, where SLC18A3's role in vesicular monoamine transport is crucial, and impaired iron metabolism (due to TF deficiency) can indirectly affect cellular processes including neurotransmitter synthesis and release.\n\n**How to falsify it:** Demonstration that SLC18A3 variants do not impact vesicular transport or neurotransmitter release, or that TF deficiency does not indirectly affect neuronal function. _(variant: Any common variant (AF > 0.01) in SLC18A3 in populations with normal neuromuscular function.)_\n\n**Why it matters:** Understanding the shared role of vesicular transport and iron metabolism in these distinct diseases could reveal novel therapeutic targets, potentially involving iron supplementation or modulation of vesicular transport mechanisms for conditions affecting neuromuscular function or iron homeostasis.\n\n---\n\n#### 3. familial hypobetalipoproteinemia 1  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825, Reactome:R-HSA-8957275, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** TF (HGNC:11772) —DECREASES→ transferrin (CHEBI:17609); transferrin (CHEBI:17609) —LEADS_TO→ Iron deficiency anemia (HP:0001892); APOB (HGNC:707) —DECREASES→ Apolipoprotein B (UniProt:P02607); Apolipoprotein B (UniProt:P02607) —DISRUPTS→ Lipoprotein metabolism (GO:0006869); Lipoprotein metabolism (GO:0006869) —LEADS_TO→ Abetalipoproteinemia (HP:0003279). Loss-of-function mutations in TF lead to impaired transferrin production and thus iron deficiency anemia. Loss-of-function mutations in APOB lead to impaired apolipoprotein B production, disrupting lipoprotein metabolism and causing abetalipoproteinemia. Both TF and APOB play critical roles in the transport of essential molecules (iron and lipids, respectively), and their dysfunction contributes to distinct but overlapping cellular dyshomeostasis pathways.\n\n**How to falsify it:** The identification of a pathogenic variant in TF with a minor allele frequency > 0.01 in gnomAD would falsify the claim of loss-of-function causality for atransferrinemia as presented. Similarly, a pathogenic variant in APOB with a MAF > 0.01 in gnomAD would falsify the proposed mechanism for familial hypobetalipoproteinemia 1. _(variant: TF OR APOB pathogenic variants with MAF > 0.01 in gnomAD)_\n\n**Why it matters:** Understanding the distinct roles of TF and APOB in protein metabolism and transport highlights the importance of specific protein integrity for maintaining iron and lipid homeostasis, respectively. Therapies aimed at enhancing iron delivery or improving lipid profiles in these conditions could have broad implications for treating other metabolic disorders.\n\n---\n\n#### 4. immunodeficiency 104  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11707) —DISRUPTS→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —DECREASES→ Iron (CHEBI:25586); Iron (CHEBI:25586) —LEADS_TO→ Iron metabolism (GO:0006806); Iron metabolism (GO:0006806) —LEADS_TO→ Atransferrinemia (MONDO:0008846); IL7R (HGNC:5704) —DISRUPTS→ T cell activation (GO:0002693); T cell activation (GO:0002693) —LEADS_TO→ Immunodeficiency 104 (MONDO:0012163); Iron (CHEBI:25586) —LEADS_TO→ T cell activation (GO:0002693). Loss-of-function mutations in TF disrupt iron metabolism, leading to atransferrinemia. Concurrently, iron is crucial for T cell activation, and dysregulation of iron metabolism (n2) can impact T cell function (n6). Loss-of-function mutations in IL7R also disrupt T cell activation (n6), leading to immunodeficiency 104. Thus, both diseases converge on the shared pathway of T cell activation, which is influenced by iron homeostasis.\n\n**How to falsify it:** Demonstration that iron homeostasis has no significant impact on T cell development or function in vivo, or that mutations in TF do not affect iron availability for immune cells. _(variant: Exome sequencing data from gnomAD showing the presence of common variants in TF or IL7R with frequencies > 1% that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the interplay between iron metabolism and T cell function, as highlighted by these two diseases, could reveal novel therapeutic targets for both immune deficiencies and iron-related disorders. For instance, modulating iron levels might offer a strategy to ameliorate T cell dysfunction in certain contexts.\n\n---\n\n#### 5. immunodeficiency 61  —  Tier 3 — Moderate / Emerging  (fitness 0.375)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11776) —PRODUCES→ Transferrin (CHEBI:28001); Transferrin (CHEBI:28001) —LEADS_TO→ Atransferrinemia (MONDO:0008846); SH3KBP1 (HGNC:10654) —DISRUPTS→ Immune cell activation (GO:0002684); Immune cell activation (GO:0002684) —LEADS_TO→ Immunodeficiency 61 (MONDO:0010296). Loss-of-function mutations in TF lead to atransferrinemia. Separately, loss-of-function mutations in SH3KBP1 disrupt immune cell activation pathways, causing immunodeficiency 61. The convergence is on the general cellular processes affected by these distinct genetic defects, specifically impacting iron metabolism in the former and immune signaling in the latter, highlighting a shared vulnerability in cellular homeostasis and function.\n\n**How to falsify it:** If genetic studies reveal that mutations in SH3KBP1 do not consistently segregate with immunodeficiency 61, or if TF mutations are found to be common in the general population without causing atransferrinemia, this hypothesis would be weakened. _(variant: gnomAD analysis showing a high allele frequency (>1%) for pathogenic variants in either TF or SH3KBP1.)_\n\n**Why it matters:** Understanding the distinct molecular underpinnings of atransferrinemia (iron metabolism) and immunodeficiency 61 (immune signaling) is crucial for developing targeted therapies. While direct overlap is limited, exploring shared cellular pathways or compensatory mechanisms could offer novel therapeutic strategies, particularly in managing iron dysregulation in immune contexts or immune responses to chronic conditions.\n\n---\n\n#### 6. diabetes insipidus, nephrogenic, X-linked  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11771) —PRODUCES→ Transferrin (CHEBI:17680); Transferrin (CHEBI:17680) —DISRUPTS→ Iron transport and homeostasis (GO:0006875); Iron transport and homeostasis (GO:0006875) —LEADS_TO→ Anemia (HP:0001903); Iron transport and homeostasis (GO:0006875) —DECREASES→ Erythropoiesis (GO:0000278); AVPR2 (HGNC:921) —DISRUPTS→ Vasopressin signaling pathway (GO:0007214); Vasopressin signaling pathway (GO:0007214) —LEADS_TO→ Nephrogenic diabetes insipidus (HP:0000779); Erythropoiesis (GO:0000278) —LEADS_TO→ Anemia (HP:0001903). Loss-of-function mutations in TF lead to a lack of functional transferrin, severely impairing iron transport and thus disrupting iron homeostasis. This directly impacts erythropoiesis, leading to anemia. Concurrently, loss-of-function mutations in AVPR2 disrupt the vasopressin signaling pathway in the kidneys, resulting in nephrogenic diabetes insipidus. Both diseases, despite originating from different genes, converge on the disruption of fundamental cellular processes essential for organismal homeostasis and survival, namely iron homeostasis and kidney water balance, which indirectly impacts erythropoiesis through severe anemia.\n\n**How to falsify it:** The discovery of a functionally significant gain-of-function variant in TF or AVPR2 associated with either atransferrinemia or nephrogenic diabetes insipidus, respectively, would falsify this hypothesis. Additionally, if common variants with allele frequencies >0.1% in gnomAD are identified as causal for either disease, it would suggest a different underlying mechanism or a less rare etiology than proposed. _(variant: Exome Aggregation Consortium (ExAC) or gnomAD database.)_\n\n**Why it matters:** Understanding the shared disruption of essential homeostatic pathways, even with distinct genetic origins, can inform therapeutic strategies. For atransferrinemia, this highlights the critical role of iron delivery for erythropoiesis. For nephrogenic diabetes insipidus, it underscores the importance of precise hormonal signaling in renal function. Identifying commonalities in downstream effects or compensatory mechanisms could offer novel therapeutic targets for managing severe anemia or fluid-electrolyte imbalances in related conditions.\n\n---\n\n#### 7. hepatocellular carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.350)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF loss-of-function variant (none) —DISRUPTS→ TF (HGNC:11777); TF (HGNC:11777) —DECREASES→ Iron homeostasis (GO:0006730); Iron homeostasis (GO:0006730) —LEADS_TO→ Atransferrinemia (MONDO:0008846); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ Apoptosis (GO:0006915); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); Apoptosis (GO:0006915) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TF lead to iron dysregulation and atransferrinemia. In contrast, gain-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting hepatocellular carcinoma. Both TP53 and TF are involved in cellular homeostasis, with TP53's role in apoptosis and cell cycle control being a critical node that, when dysregulated, can lead to cancer. While TF's primary role is iron transport, severe deficiencies can impact cellular processes reliant on iron, indirectly affecting pathways regulated by TP53, creating a disease module overlap centered on cellular integrity.\n\n**How to falsify it:** Absence of TP53 mutations in a cohort of hepatocellular carcinoma patients, or demonstration that iron dysregulation in atransferrinemia does not impact TP53-regulated pathways. _(variant: None of the known pathogenic variants for TF or TP53 are present at a frequency > 1% in gnomAD.)_\n\n**Why it matters:** Understanding the interplay between iron homeostasis and TP53-mediated cellular control could lead to novel therapeutic strategies for hepatocellular carcinoma, potentially involving iron chelation or modulation of TP53 activity.\n\n---\n\n#### 8. neurohypophyseal diabetes insipidus  —  Tier 3 — Moderate / Emerging  (fitness 0.344)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Transferrin (CHEBI:17794); Transferrin (CHEBI:17794) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Loss-of-function variant in AVP —DISRUPTS→ AVP (HGNC:704); AVP (HGNC:704) —DISRUPTS→ Neurophysin processing and secretion pathway (REACT:R-HSA-169991); Neurophysin processing and secretion pathway (REACT:R-HSA-169991) —DECREASES→ Vasopressin (AVP) (CHEBI:17547); Vasopressin (AVP) (CHEBI:17547) —LEADS_TO→ Neurohypophyseal diabetes insipidus (MONDO:0007450). Loss-of-function variants in TF lead to atransferrinemia by reducing transferrin, impacting iron homeostasis. Similarly, loss-of-function variants in AVP disrupt the processing and secretion of vasopressin (via neurophysin), leading to neurohypophyseal diabetes insipidus. The convergence is hypothesized at the level of protein processing and secretion pathways, where a severe defect in one (e.g., transferrin production/secretion) might indirectly stress or impair the efficiency of other protein processing pathways, such as that for neurophysin and vasopressin, although this is a weaker mechanistic link.\n\n**How to falsify it:** The absence of any observed interaction or shared pathway involvement between iron transport and vasopressin processing pathways in cellular or animal models would falsify this hypothesis. Additionally, the identification of distinct, non-interacting cellular machinery for transferrin and vasopressin precursor processing would weaken the proposed link.\n\n**Why it matters:** Understanding potential indirect links between seemingly disparate molecular pathways could reveal novel therapeutic targets or explain complex comorbidities. If protein processing pathways are indeed susceptible to shared stresses, interventions aimed at improving general protein homeostasis might benefit patients with either condition, although this is highly speculative.\n\n---\n\n#### 9. hypercholesterolemia, autosomal dominant, type B  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825, Reactome:R-HSA-8957275, Reactome:R-HSA-381426)\n\n**Proposed mechanism:** Loss-of-function variant in TF —DISRUPTS→ TF (HGNC:11770); TF (HGNC:11770) —DECREASES→ Iron (CHEBI:29035); Iron (CHEBI:29035) —LEADS_TO→ Atransferrinemia (MONDO:0008846); Gain-of-function variant in APOB —DISRUPTS→ APOB (HGNC:979); APOB (HGNC:979) —BINDS→ Cholesterol Metabolism (REACT:R-HSA-138581); Cholesterol Metabolism (REACT:R-HSA-138581) —INCREASES→ LDL Cholesterol (CHEBI:17672); LDL Cholesterol (CHEBI:17672) —LEADS_TO→ Hypercholesterolemia, autosomal dominant, type B (MONDO:0007751); APOB (HGNC:979) —DECREASES→ Iron (CHEBI:29035). Loss-of-function mutations in TF lead to iron deficiency (atransferrinemia). Gain-of-function mutations in APOB impair LDL clearance, leading to hypercholesterolemia. APOB is involved in the transport of lipids, and severe dysregulation of lipid metabolism can indirectly affect iron homeostasis and cellular processes that also rely on iron.\n\n**How to falsify it:** Demonstrating that genetic variants in TF do not affect iron levels or that variants in APOB do not affect cholesterol levels would falsify this hypothesis. Furthermore, identifying a complete lack of interaction or shared downstream pathways between iron homeostasis and lipoprotein metabolism would weaken the proposed link.\n\n**Why it matters:** Understanding the interplay between iron and lipid metabolism could reveal novel therapeutic targets for both atransferrinemia and hypercholesterolemia, potentially leading to combined treatment strategies or improved management of comorbidities.\n\n---\n\n#### 10. nephrogenic syndrome of inappropriate antidiuresis  —  Tier 3 — Moderate / Emerging  (fitness 0.315)\n**Link type:** shared pathway (Reactome:R-HSA-8856828, Reactome:R-HSA-8856825)\n\n**Proposed mechanism:** TF (HGNC:11700) —DISRUPTS→ transferrin (CHEBI:17889); transferrin (CHEBI:17889) —DECREASES→ iron transport (GO:0006824); iron transport (GO:0006824) —LEADS_TO→ iron deficiency anemia (HP:0001892); AVPR2 (HGNC:871) —DISRUPTS→ vasopressin signaling pathway (WP:WP453); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ nephrogenic syndrome of inappropriate antidiuresis (MONDO:0010356); vasopressin signaling pathway (WP:WP453) —LEADS_TO→ water retention (HP:0011030). Loss-of-function mutations in TF disrupt iron transport, leading to iron deficiency anemia. Gain-of-function mutations in AVPR2 dysregulate the vasopressin signaling pathway, causing nephrogenic syndrome of inappropriate antidiuresis and water retention.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for atransferrinemia do not affect TF function or that the causal variants for nephrogenic syndrome of inappropriate antidiuresis do not affect AVPR2 function, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the distinct molecular underpinnings of atransferrinemia and nephrogenic syndrome of inappropriate antidiuresis, despite their potential convergence on broader physiological systems, is crucial for developing targeted therapeutic strategies for each condition. For atransferrinemia, this involves iron supplementation strategies. For NSIA, it involves manipulating water balance, potentially through vasopressin antagonists or other diuretics.\n\n---"
+}

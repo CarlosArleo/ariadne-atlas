@@ -516,10 +516,18 @@
         <button class="modal-close" onclick="closePoeticModal()">&times;</button>
         <h2 style="font-size:1.05rem; font-weight:600; letter-spacing:0.32em; text-transform:lowercase; color:#e2e8f0; margin-bottom:18px;">ariadne — the shape of hope</h2>
         <div class="poetic-prose">
-            <p>The two rings are the starting point and the destination of every hypothesis. The inner ring holds the <strong style="color:#e2e8f0;">seed diseases</strong> — the rare, often overlooked conditions that each begin a journey through the interactome. The outer ring holds the <strong style="color:#e2e8f0;">partner diseases</strong> — the wider network of related biology that ARIADNE discovers. The centre is intentionally empty: a quiet void that represents the shared molecular origin of all these connections — the gene, the protein, the pathway. The rings do not touch that void; they orbit it, acknowledging that the fundamental truths of biology remain a mystery we can only approach, never possess.</p>
-            <p>The ribbons are not straight lines, because hope is not linear. Each connection is a fractal curve — a geometry inspired by tree roots, neural dendrites, lightning, and the DNA helix. Nature does not join two points with a sterile straight line; it branches, meanders, and finds its way through recursive, self-similar growth. Each ribbon arcs outward from the inner ring, never crossing the central void — each one unique, yet all following the same deep structural rules. The effect is a delicate web of living threads, each a hypothesis that could one day become a treatment, a diagnosis, a child's future.</p>
-            <p>The whole composition is meant to feel like a living organism — a flower, a mandala, a cosmic web. It measures the geometry of life itself, and its image should reflect that. When you look at the Atlas, you are not just seeing data — you are seeing the shape of the connections that bind all living things together.</p>
-            <p class="math-note">The geometry is the mathematics made visible. Radius grows monotonically outward — ARIADNE's Poincaré hyperbolic model, where the hub-origin (r → 0) is the generic singularity at the centre and real convergences reach the specific boundary rim (r → 1). The meander is a self-similar 1/f<sup>β</sup> fractal; the phases are spaced by the golden angle (137.5°, the same phyllotaxis that arranges a sunflower's seeds) — so the web is dense yet never repeats or tangles. Stronger, lower-entropy hypotheses flow cleanly; weaker, more diffuse ones wander further — still never touching the void.</p>
+            <p>Around the rim live all the rare diseases, gathered into the families of biology they belong to — the coloured arcs, each disease a faint name and a small radial mark, together drawing the circle. In the interior float the <strong style="color:#e2e8f0;">shared origins</strong>: the genes, pathways and metabolites where two different diseases secretly meet. The centre is left empty — a quiet void for the deepest, most generic machinery of life, the hubs so universal they explain nothing on their own. The Atlas orbits that void; it never crosses it.</p>
+            <p>Every thread is a hypothesis. It leaves one disease on the rim, dives inward, and braids through the single shared origin it converges on, before rising to its partner on the far side. Where many hypotheses share the same origin, their threads weave into a bright knot — and that knot is not decoration, it is the biology itself. Each thread is a rare condition reaching toward another: a chance that an insight, a drug, a diagnosis might cross from one child's disease to another's.</p>
+
+            <h3 style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:#94a3b8; margin:20px 0 8px;">How to read it</h3>
+            <p><strong style="color:#e2e8f0;">The rim</strong> is every disease, grouped by clinical family (the colour), labelled with its name and a radial tick whose length and brightness grow with how many hypotheses touch it — so recurrent "crossroads" diseases stand out and rare ones fade. Hover a family arc to light all of its connections.</p>
+            <p><strong style="color:#e2e8f0;">The stars</strong> are the shared genes and convergence nodes. Their <em>position</em> carries meaning: the deeper toward the centre a star sits, the more <em>generic</em> it is — a promiscuous hub (like TP53 or ubiquitin) the instrument deliberately distrusts; the closer to the rim, the more <em>specific and precious</em>. Their <em>brightness and size</em> follow discovery quality — the best CQS of any hypothesis meeting there — so specific, well-scored convergences shine while the generic centre stays a hush. Hover any star to see every hypothesis that converges on it; a node is coloured by type (cyan gene, green pathway/process, amber metabolite).</p>
+            <p><strong style="color:#e2e8f0;">The threads</strong> thicken gently with how connected their shared origin is. Hover a discovery in the left list, or on the map, and just that pair lights up: its two diseases named on the rim, its shared gene/pathway/metabolite flared and labelled, and every <em>sibling</em> pair that converges on the same origin glowing softly — the whole family of the same hope.</p>
+
+            <h3 style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:#94a3b8; margin:20px 0 8px;">How it moves when you filter</h3>
+            <p>Nothing here is fixed. The entire picture is computed <em>live</em> from exactly the hypotheses that pass your filters. Change a tier, a fitness floor, a family, a gene, a convergence node — and the stars re-place, the braids re-weave, and the constellation reorganises to reveal what is shared <em>under that lens</em>. That is the whole point: filtering is how the instrument shows you the unknown. By default the Atlas opens on its <strong style="color:#e2e8f0;">Exceptional</strong> discoveries (CQS 10–13, Tier 3). The right‑hand "Top Convergence Nodes" and "Top Connected Genes" recompute with every filter too — they are the shared origins the current view is resting on.</p>
+
+            <p class="math-note">The geometry is the mathematics made visible. Each thread descends monotonically in radius to its shared origin and back out, so the central void is never crossed — ARIADNE's Poincaré hyperbolic model, where generic scale-free hubs collapse toward the centre (r → 0) and specific, expert-ready convergences are pushed to the boundary rim (r → 1). A star's depth <em>is</em> that specificity; its brightness is its discovery quality (CQS). What you see is not a drawing of the data — it is the data, arranged by its own physics.</p>
         </div>
     </div>
 </div>
@@ -973,7 +981,7 @@ function toggleEliteMode() {
         btn.classList.add('active');
         btn.textContent = 'Elite Champions (On)';
         document.getElementById('filter-tier').value = 'all';
-        document.getElementById('filter-cqs').value = 'all';
+        document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
         document.getElementById('filter-fitness').value = 'all';
         document.getElementById('filter-falsif').value = 'all';
         document.getElementById('filter-novel').value = 'all';
@@ -1162,7 +1170,7 @@ function resetFilters() {
     document.getElementById('btn-focus-mode').classList.remove('active');
     document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
     document.getElementById('filter-tier').value = 'Tier 3';
-    document.getElementById('filter-cqs').value = 'all';
+    document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
     document.getElementById('filter-fitness').value = 'all';
     document.getElementById('filter-falsif').value = 'all';
     document.getElementById('filter-novel').value = 'all';
@@ -1231,7 +1239,7 @@ function initApp() {
     renderLegend();
     renderTierLegend();
     document.getElementById('filter-tier').value = 'Tier 3';
-    document.getElementById('filter-cqs').value = 'all';
+    document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
     buildAllOptLists();
     renderApp();
 }
@@ -1373,8 +1381,8 @@ function renderRadial(candidates) {
     allLinksData = [];
     const cx = width/2, cy = height/2;
     const minDim = Math.min(width, height);
-    const R_out = minDim * 0.46;
-    const CORE_MIN = minDim * 0.12, CORE_MAX = minDim * 0.40;
+    const R_out = minDim * 0.40;
+    const CORE_MIN = minDim * 0.10, CORE_MAX = minDim * 0.34;
     const RIBBON_CAP = 3500;
     const polar = (r,a) => [r*Math.cos(a), r*Math.sin(a)];
     const famColor = key => (FAMILIES.find(f => f.key === key) || FAMILIES[9]).color;
@@ -1428,8 +1436,12 @@ function renderRadial(candidates) {
     function entPos(k){ if(entPos._c[k]) return entPos._c[k]; const dis=entityDis[k]; if(!dis) return null;
         let sx=0,sy=0,n=0; dis.forEach(nm=>{ const a=diseaseAngle[nm]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); n++; } });
         const mag=Math.hypot(sx,sy); const ang=(n>0 && mag/n > 0.18)?Math.atan2(sy,sx):hashAngle(k);
-        const deg=entityDeg[k]||1; const norm=Math.log(deg)/(lgMax||1);
-        const pos={a:ang, r:CORE_MAX-norm*(CORE_MAX-CORE_MIN), deg, cqs:nodeCQS[k]||0}; entPos._c[k]=pos; return pos; }
+        const deg=entityDeg[k]||1; const norm=Math.log(deg)/(lgMax||1); const band=CORE_MAX-CORE_MIN;
+        // primary radius = recurrence (Poincare); + a stable identity-keyed scatter so equal-degree
+        // nodes form a soft cloud instead of a hard concentric ring (parametric, deterministic, not random).
+        const jit=(((hashAngle(k)+Math.PI)/(2*Math.PI))-0.5)*band*0.34;
+        let rr=CORE_MAX-norm*band+jit; if(rr<CORE_MIN*0.9)rr=CORE_MIN*0.9; if(rr>CORE_MAX+band*0.06)rr=CORE_MAX+band*0.06;
+        const pos={a:ang, r:rr, deg, cqs:nodeCQS[k]||0}; entPos._c[k]=pos; return pos; }
     entPos._c={};
     // the stars we CELEBRATE are the top discovery nodes (best CQS converging on them), not the generic hubs
     const glowCores=Object.keys(nodeCQS).sort((a,b)=>(nodeCQS[b]-nodeCQS[a])||(entityDeg[a]-entityDeg[b])).slice(0,150);
@@ -1452,18 +1464,19 @@ function renderRadial(candidates) {
     const ribbons=[];
     ordered.forEach(c=>{ const core=c._core&&entPos(c._core); if(!core) return;
         const aS=diseaseAngle[c.seedName], aP=diseaseAngle[c.partnerName]; if(aS===undefined||aP===undefined) return;
-        ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6) }); });
+        const w0=0.28+Math.min(0.75, Math.log(((c._core&&entityDeg[c._core])||1)+1)*0.18);
+        ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6), w0:w0 }); });
 
     const typeOf = k => k.indexOf('GO:')===0?['process','#10b981'] : (k.indexOf('CHEBI:')===0?['metabolite','#f59e0b'] : ((k.indexOf('REACT')===0||k.indexOf('R-HSA')===0)?['pathway','#10b981'] : (k.indexOf('HP:')===0?['phenotype','#f43f5e']:['gene','#38bdf8'])));
 
     function paintRibbons(primary, secondary){
         const anyHi=!!(primary||secondary);
         ctx.save(); ctx.translate(cx,cy); ctx.clearRect(-cx,-cy,width,height); ctx.lineCap='round';
-        ribbons.forEach(rb=>{ let al,w;
-            if(!anyHi){ al=0.16; w=0.7; }
-            else if(primary&&primary(rb)){ al=0.78; w=1.7; }
-            else if(secondary&&secondary(rb)){ al=0.30; w=1.0; }
-            else { al=0.02; w=0.6; }
+        ribbons.forEach(rb=>{ let al,w; const bw=rb.w0||0.5;
+            if(!anyHi){ al=0.16; w=bw; }
+            else if(primary&&primary(rb)){ al=0.85; w=Math.max(0.5, bw*1.0); }
+            else if(secondary&&secondary(rb)){ al=0.32; w=bw*0.75; }
+            else { al=0.02; w=bw*0.7; }
             ctx.globalAlpha=al; ctx.lineWidth=w; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
         ctx.globalAlpha=1;
         // brightness + size by DISCOVERY QUALITY (best CQS): specific rim convergences shine, generic hubs hush
@@ -1479,7 +1492,7 @@ function renderRadial(candidates) {
                 hl.forEach(rb=>{ const aS=diseaseAngle[rb.seed], aP=diseaseAngle[rb.partner];
                     const nlist=(rb.nodes&&rb.nodes.length)?rb.nodes:[rb.core];
                     nlist.forEach(nk=>{ const np=entPos(nk); if(!np) return;
-                        if(nk!==rb.core && aS!==undefined && aP!==undefined){ ctx.globalAlpha=0.72; ctx.lineWidth=1.3; ctx.strokeStyle=rb.col; ctx.stroke(braid(aS,aP,np.r,np.a)); ctx.globalAlpha=1; }
+                        if(nk!==rb.core && aS!==undefined && aP!==undefined){ ctx.globalAlpha=0.66; ctx.lineWidth=0.65; ctx.strokeStyle=rb.col; ctx.stroke(braid(aS,aP,np.r,np.a)); ctx.globalAlpha=1; }
                         if(!seenN[nk]){ seenN[nk]=1; const q=polar(np.r,np.a); const ty=typeOf(nk);
                             const g2=ctx.createRadialGradient(q[0],q[1],0,q[0],q[1],16); g2.addColorStop(0,'rgba(255,255,255,0.92)'); g2.addColorStop(1,'rgba(255,255,255,0)');
                             ctx.fillStyle=g2; ctx.beginPath(); ctx.arc(q[0],q[1],16,0,6.2832); ctx.fill();
@@ -1509,18 +1522,24 @@ function renderRadial(candidates) {
             .on('mouseover',(ev)=>{ paintRibbons(rb=>diseaseFam[rb.seed]===f||diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
             .on('click',()=>{ const el=document.getElementById('filter-family'); if(el){ el.value=f; el.dispatchEvent(new Event('change')); } });
-        const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+64, mid);
+        const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+78, mid);
         g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f)); });
 
-    // 4b. HUB diseases: crossroads on the rim, sized by how many pairs touch them (positive corroboration)
-    const hubList=Object.keys(diseaseDeg).sort((a,b)=>diseaseDeg[b]-diseaseDeg[a]).slice(0,44);
-    const hubMax=diseaseDeg[hubList[0]]||1;
-    hubList.forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined) return; const q=polar(R_out+3.5,a); const rr=Math.max(2, Math.sqrt(diseaseDeg[n]/hubMax)*6.5);
-        g.append('circle').attr('cx',q[0]).attr('cy',q[1]).attr('r',rr).attr('fill',famColor(diseaseFam[n])).attr('stroke','#0f0f11').attr('stroke-width',0.6).style('cursor','pointer')
-            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.seed===n||rb.partner===n); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+n+'</strong><br/>hub · '+diseaseDeg[n]+' links across the Atlas'; moveTooltip(ev); })
+    // 4b. Rim fringe: one radial TICK per disease (length+opacity by recurrence) forms the outer ring,
+    //     and every disease name, faint grey and radial, almost touching the ring.
+    const rimVals=Object.values(diseaseDeg); const rimDegMax=rimVals.length?Math.max.apply(null,rimVals):1;
+    Object.keys(diseaseAngle).forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined) return;
+        const dnorm=Math.min(1, Math.log(diseaseDeg[n]+1)/Math.log(rimDegMax+1));
+        const len=3+dnorm*9; const p0=polar(R_out,a), p1=polar(R_out+len,a);
+        g.append('line').attr('x1',p0[0]).attr('y1',p0[1]).attr('x2',p1[0]).attr('y2',p1[1]).attr('stroke',famColor(diseaseFam[n])).attr('stroke-width',Math.max(0.6,dnorm*1.7)).attr('opacity',0.12+dnorm*0.72).attr('pointer-events','none');
+        const lp=polar(R_out+9,a); const left=Math.cos(a)<0; const rot=a*180/Math.PI+(left?180:0);
+        g.append('text').attr('transform','translate('+lp[0].toFixed(1)+','+lp[1].toFixed(1)+') rotate('+rot.toFixed(1)+')').attr('text-anchor',left?'end':'start').attr('dy','0.3em').attr('font-size','1.9px').attr('fill','rgba(148,163,184,'+(0.26+dnorm*0.5).toFixed(2)+')').attr('pointer-events','none').text(n.length>34?n.slice(0,33)+'…':n);
+        { const h0=polar(R_out,a), h1=polar(R_out+42,a);
+          g.append('line').attr('x1',h0[0]).attr('y1',h0[1]).attr('x2',h1[0]).attr('y2',h1[1]).attr('stroke','transparent').attr('stroke-width',7).style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.seed===n||rb.partner===n); const tp=document.getElementById('canvas-tooltip'); tp.style.opacity=1; tp.innerHTML='<strong>'+n+'</strong><br/>'+famLabel(diseaseFam[n])+' · '+diseaseDeg[n]+' links'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
-            .on('click',()=>{ focusDiseaseNode=n; focusPartnerNode=null; const b=document.getElementById('btn-focus-mode'); if(b){ b.classList.add('active'); b.textContent='Focus: '+n+' (Exit)'; } renderApp(); }); });
-
+            .on('click',()=>{ focusDiseaseNode=n; focusPartnerNode=null; const b=document.getElementById('btn-focus-mode'); if(b){ b.classList.add('active'); b.textContent='Focus: '+n+' (Exit)'; } renderApp(); }); }
+    });
     // 5. labels + hit-dots for the DISCOVERY stars (top by CQS), the specific convergences worth trusting
     glowCores.forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const ty=typeOf(k);
         g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,3+ (cp.cqs||0)*0.5)).attr('fill','transparent').style('cursor','pointer')

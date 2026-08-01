@@ -1,0 +1,421 @@
+{
+  "seed": {
+    "id": "MONDO:0007064",
+    "name": "severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 16,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010298",
+      "diseaseBName": "Lesch-Nyhan syndrome",
+      "fitness": 0.4587,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine deaminase (HGNC:78) —DECREASES→ Adenosine (CHEBI:17740); Adenosine (CHEBI:17740) —INCREASES→ dATP accumulation (CHEBI:15378); dATP accumulation (CHEBI:15378) —LEADS_TO→ T cell development block (HP:0005343); Hypoxanthine phosphoribosyltransferase 1 (HGNC:4844) —DISRUPTS→ Loss of HGPRT activity (GO:0004723); Loss of HGPRT activity (GO:0004723) —LEADS_TO→ Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —INCREASES→ Urate accumulation (CHEBI:17441); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —LEADS_TO→ Neurodegeneration (HP:0002182). Loss of function in ADA leads to adenosine accumulation and subsequent dATP accumulation, inhibiting T-cell development. Loss of function in HPRT1 disrupts purine salvage, leading to accumulation of upstream purine metabolites and uric acid, and downstream neurodegeneration. Both pathways converge on the dysregulation of purine metabolism, affecting different branches and leading to distinct phenotypes.",
+      "mechanism_narrative": "Adenosine deaminase (HGNC:78) —DECREASES→ Adenosine (CHEBI:17740); Adenosine (CHEBI:17740) —INCREASES→ dATP accumulation (CHEBI:15378); dATP accumulation (CHEBI:15378) —LEADS_TO→ T cell development block (HP:0005343); Hypoxanthine phosphoribosyltransferase 1 (HGNC:4844) —DISRUPTS→ Loss of HGPRT activity (GO:0004723); Loss of HGPRT activity (GO:0004723) —LEADS_TO→ Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —INCREASES→ Urate accumulation (CHEBI:17441); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —LEADS_TO→ Neurodegeneration (HP:0002182). Loss of function in ADA leads to adenosine accumulation and subsequent dATP accumulation, inhibiting T-cell development. Loss of function in HPRT1 disrupts purine salvage, leading to accumulation of upstream purine metabolites and uric acid, and downstream neurodegeneration. Both pathways converge on the dysregulation of purine metabolism, affecting different branches and leading to distinct phenotypes.",
+      "falsification": {
+        "text": "The identification of a common genetic variant with a minor allele frequency > 1% in gnomAD within the coding regions of both ADA and HPRT1 would cast doubt on the causal role of rare variants in these distinct diseases.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010298",
+        "diseaseBName": "Lesch-Nyhan syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.4587,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine deaminase (HGNC:78) —DECREASES→ Adenosine (CHEBI:17740); Adenosine (CHEBI:17740) —INCREASES→ dATP accumulation (CHEBI:15378); dATP accumulation (CHEBI:15378) —LEADS_TO→ T cell development block (HP:0005343); Hypoxanthine phosphoribosyltransferase 1 (HGNC:4844) —DISRUPTS→ Loss of HGPRT activity (GO:0004723); Loss of HGPRT activity (GO:0004723) —LEADS_TO→ Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —INCREASES→ Urate accumulation (CHEBI:17441); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —LEADS_TO→ Neurodegeneration (HP:0002182). Loss of function in ADA leads to adenosine accumulation and subsequent dATP accumulation, inhibiting T-cell development. Loss of function in HPRT1 disrupts purine salvage, leading to accumulation of upstream purine metabolites and uric acid, and downstream neurodegeneration. Both pathways converge on the dysregulation of purine metabolism, affecting different branches and leading to distinct phenotypes.",
+        "falsification": {
+          "text": "The identification of a common genetic variant with a minor allele frequency > 1% in gnomAD within the coding regions of both ADA and HPRT1 would cast doubt on the causal role of rare variants in these distinct diseases.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared purine metabolic dysregulation in these distinct diseases could reveal novel therapeutic targets. For instance, modulating adenosine levels or purine salvage pathways might offer adjunctive therapies for either SCID or Lesch-Nyhan syndrome, or potentially uncover links to other purine-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013171",
+      "diseaseBName": "purine nucleoside phosphorylase deficiency",
+      "fitness": 0.436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ADA (HGNC:104) —DISRUPTS→ deoxyadenosine triphosphate (CHEBI:35055); ADA (HGNC:104) —DECREASES→ Purine Metabolism (P00000); deoxyadenosine triphosphate (CHEBI:35055) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711); Severe combined immunodeficiency (HP:0002711) —LEADS_TO→ T cell-negative, B cell-negative, NK cell-negative (HP:0005305); PNP (HGNC:9045) —DISRUPTS→ deoxyguanosine (CHEBI:17503); PNP (HGNC:9045) —DECREASES→ Purine Metabolism (P00000); deoxyguanosine (CHEBI:17503) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711). Mutations in ADA lead to accumulation of deoxyadenosine triphosphate, which inhibits DNA synthesis in lymphocytes. Mutations in PNP lead to accumulation of deoxyguanosine, which is toxic to lymphocytes. Both disrupt purine metabolism and result in severe combined immunodeficiency.",
+      "mechanism_narrative": "ADA (HGNC:104) —DISRUPTS→ deoxyadenosine triphosphate (CHEBI:35055); ADA (HGNC:104) —DECREASES→ Purine Metabolism (P00000); deoxyadenosine triphosphate (CHEBI:35055) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711); Severe combined immunodeficiency (HP:0002711) —LEADS_TO→ T cell-negative, B cell-negative, NK cell-negative (HP:0005305); PNP (HGNC:9045) —DISRUPTS→ deoxyguanosine (CHEBI:17503); PNP (HGNC:9045) —DECREASES→ Purine Metabolism (P00000); deoxyguanosine (CHEBI:17503) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711). Mutations in ADA lead to accumulation of deoxyadenosine triphosphate, which inhibits DNA synthesis in lymphocytes. Mutations in PNP lead to accumulation of deoxyguanosine, which is toxic to lymphocytes. Both disrupt purine metabolism and result in severe combined immunodeficiency.",
+      "falsification": {
+        "text": "Demonstration that the accumulation of deoxyadenosine triphosphate in ADA deficiency does not inhibit lymphocyte proliferation, or that deoxyguanosine accumulation in PNP deficiency does not cause lymphocyte toxicity.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217",
+        "Reactome:R-HSA-9755088"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13,
+        "Reactome:R-HSA-9755088": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013171",
+        "diseaseBName": "purine nucleoside phosphorylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217",
+          "Reactome:R-HSA-9755088"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13,
+          "Reactome:R-HSA-9755088": 11
+        },
+        "fitness": 0.436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ADA (HGNC:104) —DISRUPTS→ deoxyadenosine triphosphate (CHEBI:35055); ADA (HGNC:104) —DECREASES→ Purine Metabolism (P00000); deoxyadenosine triphosphate (CHEBI:35055) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711); Severe combined immunodeficiency (HP:0002711) —LEADS_TO→ T cell-negative, B cell-negative, NK cell-negative (HP:0005305); PNP (HGNC:9045) —DISRUPTS→ deoxyguanosine (CHEBI:17503); PNP (HGNC:9045) —DECREASES→ Purine Metabolism (P00000); deoxyguanosine (CHEBI:17503) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711). Mutations in ADA lead to accumulation of deoxyadenosine triphosphate, which inhibits DNA synthesis in lymphocytes. Mutations in PNP lead to accumulation of deoxyguanosine, which is toxic to lymphocytes. Both disrupt purine metabolism and result in severe combined immunodeficiency.",
+        "falsification": {
+          "text": "Demonstration that the accumulation of deoxyadenosine triphosphate in ADA deficiency does not inhibit lymphocyte proliferation, or that deoxyguanosine accumulation in PNP deficiency does not cause lymphocyte toxicity.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared pathway of purine metabolism disruption in these two forms of SCID can inform therapeutic strategies, such as enzyme replacement therapy for ADA deficiency or potentially purine analog targeted therapies for PNP deficiency, and highlights the critical role of purine metabolism in immune cell development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100255",
+      "diseaseBName": "adenosine kinase deficiency",
+      "fitness": 0.4334,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine deaminase (HGNC:85) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —PRODUCES→ Inosine (CHEBI:17570); Inosine (CHEBI:17570) —LEADS_TO→ Purine Metabolism (GO:0006152); Purine Metabolism (GO:0006152) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001877); Adenosine kinase (HGNC:215) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ ATP Depletion (GO:0006073); ATP Depletion (GO:0006073) —LEADS_TO→ Adenosine Kinase Deficiency Phenotype (MONDO:0100255). Loss of function in ADA leads to accumulation of adenosine, which is then converted to inosine, impacting purine metabolism and causing SCID. Loss of function in ADK leads to accumulation of adenosine, which is shunted towards ATP synthesis, eventually leading to ATP depletion and the phenotype associated with ADK deficiency. Both diseases converge on the dysregulation of adenosine levels and subsequent impacts on purine metabolism and cellular energy states.",
+      "mechanism_narrative": "Adenosine deaminase (HGNC:85) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —PRODUCES→ Inosine (CHEBI:17570); Inosine (CHEBI:17570) —LEADS_TO→ Purine Metabolism (GO:0006152); Purine Metabolism (GO:0006152) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001877); Adenosine kinase (HGNC:215) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ ATP Depletion (GO:0006073); ATP Depletion (GO:0006073) —LEADS_TO→ Adenosine Kinase Deficiency Phenotype (MONDO:0100255). Loss of function in ADA leads to accumulation of adenosine, which is then converted to inosine, impacting purine metabolism and causing SCID. Loss of function in ADK leads to accumulation of adenosine, which is shunted towards ATP synthesis, eventually leading to ATP depletion and the phenotype associated with ADK deficiency. Both diseases converge on the dysregulation of adenosine levels and subsequent impacts on purine metabolism and cellular energy states.",
+      "falsification": {
+        "text": "If genetic analysis reveals that patients diagnosed with SCID-ADA do not have mutations in ADA, or patients with ADK deficiency do not have mutations in ADK, this hypothesis would be falsified. Furthermore, if the accumulation of adenosine or downstream metabolites (e.g., dATP in SCID-ADA) is not observed in affected individuals, the proposed metabolic link would be refuted.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in ADA or ADK found in gnomAD that is not associated with either disease would weaken the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217",
+        "Reactome:R-HSA-9755088"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13,
+        "Reactome:R-HSA-9755088": 11
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100255",
+        "diseaseBName": "adenosine kinase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217",
+          "Reactome:R-HSA-9755088"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13,
+          "Reactome:R-HSA-9755088": 11
+        },
+        "fitness": 0.4334,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine deaminase (HGNC:85) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —PRODUCES→ Inosine (CHEBI:17570); Inosine (CHEBI:17570) —LEADS_TO→ Purine Metabolism (GO:0006152); Purine Metabolism (GO:0006152) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001877); Adenosine kinase (HGNC:215) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ ATP Depletion (GO:0006073); ATP Depletion (GO:0006073) —LEADS_TO→ Adenosine Kinase Deficiency Phenotype (MONDO:0100255). Loss of function in ADA leads to accumulation of adenosine, which is then converted to inosine, impacting purine metabolism and causing SCID. Loss of function in ADK leads to accumulation of adenosine, which is shunted towards ATP synthesis, eventually leading to ATP depletion and the phenotype associated with ADK deficiency. Both diseases converge on the dysregulation of adenosine levels and subsequent impacts on purine metabolism and cellular energy states.",
+        "falsification": {
+          "text": "If genetic analysis reveals that patients diagnosed with SCID-ADA do not have mutations in ADA, or patients with ADK deficiency do not have mutations in ADK, this hypothesis would be falsified. Furthermore, if the accumulation of adenosine or downstream metabolites (e.g., dATP in SCID-ADA) is not observed in affected individuals, the proposed metabolic link would be refuted.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in ADA or ADK found in gnomAD that is not associated with either disease would weaken the causal link."
+        },
+        "translational": "Understanding the shared metabolic pathway disruption in ADA and ADK deficiencies could lead to the development of novel therapeutic strategies. For instance, interventions aimed at restoring purine balance or managing adenosine levels might offer benefit to patients with either condition. Investigating the specific downstream effects of adenosine accumulation in both diseases could reveal new therapeutic targets for immune reconstitution or neurological protection."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009636",
+      "diseaseBName": "mitochondrial DNA depletion syndrome 3 (hepatocerebral type)",
+      "fitness": 0.4304,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine Deaminase (HGNC:240) —DECREASES→ Adenosine (CHEBI:17488); Adenosine (CHEBI:17488) —INCREASES→ Deoxyadenosine triphosphate (CHEBI:17494); Deoxyadenosine triphosphate (CHEBI:17494) —LEADS_TO→ Lymphocyte toxicity (HP:0002710); Deoxyguanosine kinase (HGNC:2795) —DISRUPTS→ Mitochondrial DNA (HP:0001471); Mitochondrial DNA (HP:0001471) —LEADS_TO→ Mitochondrial dysfunction (HP:0001874); Lymphocyte toxicity (HP:0002710) —LEADS_TO→ Cellular energetic deficit (HP:0001909); Mitochondrial dysfunction (HP:0001874) —LEADS_TO→ Cellular energetic deficit (HP:0001909). Loss-of-function mutations in ADA lead to accumulation of adenosine and dATP, causing lymphocyte toxicity. Concurrently, loss-of-function mutations in DGUOK impair mitochondrial DNA replication, leading to mitochondrial dysfunction. Both pathways converge on cellular energetic deficits, contributing to the complex pathology of these diseases.",
+      "mechanism_narrative": "Adenosine Deaminase (HGNC:240) —DECREASES→ Adenosine (CHEBI:17488); Adenosine (CHEBI:17488) —INCREASES→ Deoxyadenosine triphosphate (CHEBI:17494); Deoxyadenosine triphosphate (CHEBI:17494) —LEADS_TO→ Lymphocyte toxicity (HP:0002710); Deoxyguanosine kinase (HGNC:2795) —DISRUPTS→ Mitochondrial DNA (HP:0001471); Mitochondrial DNA (HP:0001471) —LEADS_TO→ Mitochondrial dysfunction (HP:0001874); Lymphocyte toxicity (HP:0002710) —LEADS_TO→ Cellular energetic deficit (HP:0001909); Mitochondrial dysfunction (HP:0001874) —LEADS_TO→ Cellular energetic deficit (HP:0001909). Loss-of-function mutations in ADA lead to accumulation of adenosine and dATP, causing lymphocyte toxicity. Concurrently, loss-of-function mutations in DGUOK impair mitochondrial DNA replication, leading to mitochondrial dysfunction. Both pathways converge on cellular energetic deficits, contributing to the complex pathology of these diseases.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in ADA or DGUOK do not segregate with the respective disease phenotypes in affected families, or if the proposed downstream metabolites/pathways show no significant alteration in patient samples, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in the gnomAD database within the coding regions of ADA and DGUOK that are also associated with the respective disease phenotypes would challenge the pathogenicity of these variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009636",
+        "diseaseBName": "mitochondrial DNA depletion syndrome 3 (hepatocerebral type)",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.4304,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine Deaminase (HGNC:240) —DECREASES→ Adenosine (CHEBI:17488); Adenosine (CHEBI:17488) —INCREASES→ Deoxyadenosine triphosphate (CHEBI:17494); Deoxyadenosine triphosphate (CHEBI:17494) —LEADS_TO→ Lymphocyte toxicity (HP:0002710); Deoxyguanosine kinase (HGNC:2795) —DISRUPTS→ Mitochondrial DNA (HP:0001471); Mitochondrial DNA (HP:0001471) —LEADS_TO→ Mitochondrial dysfunction (HP:0001874); Lymphocyte toxicity (HP:0002710) —LEADS_TO→ Cellular energetic deficit (HP:0001909); Mitochondrial dysfunction (HP:0001874) —LEADS_TO→ Cellular energetic deficit (HP:0001909). Loss-of-function mutations in ADA lead to accumulation of adenosine and dATP, causing lymphocyte toxicity. Concurrently, loss-of-function mutations in DGUOK impair mitochondrial DNA replication, leading to mitochondrial dysfunction. Both pathways converge on cellular energetic deficits, contributing to the complex pathology of these diseases.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in ADA or DGUOK do not segregate with the respective disease phenotypes in affected families, or if the proposed downstream metabolites/pathways show no significant alteration in patient samples, this hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in the gnomAD database within the coding regions of ADA and DGUOK that are also associated with the respective disease phenotypes would challenge the pathogenicity of these variants."
+        },
+        "translational": "Understanding the shared downstream effects of adenosine accumulation and mitochondrial dysfunction could reveal novel therapeutic targets for both SCID-ADA and MDDS3, potentially including strategies to restore cellular energy homeostasis or mitigate the toxic accumulation of specific metabolites."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013869",
+      "diseaseBName": "adenine phosphoribosyltransferase deficiency",
+      "fitness": 0.4201,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ADA (HGNC:100) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —LEADS_TO→ Purine Metabolism (GO:0006159); Purine Metabolism (GO:0006159) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001864); APRT (HGNC:575) —DECREASES→ Adenine (CHEBI:17233); Adenine (CHEBI:17233) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712); 2,8-dihydroxyadenine (CHEBI:15712) —LEADS_TO→ Nephrolithiasis (HP:0000834); Purine Metabolism (GO:0006159) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Loss of function in APRT leads to accumulation of adenine, which is converted to 2,8-dihydroxyadenine, causing nephrolithiasis. Both disruptions converge on the purine metabolism pathway, affecting downstream processes.",
+      "mechanism_narrative": "ADA (HGNC:100) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —LEADS_TO→ Purine Metabolism (GO:0006159); Purine Metabolism (GO:0006159) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001864); APRT (HGNC:575) —DECREASES→ Adenine (CHEBI:17233); Adenine (CHEBI:17233) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712); 2,8-dihydroxyadenine (CHEBI:15712) —LEADS_TO→ Nephrolithiasis (HP:0000834); Purine Metabolism (GO:0006159) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Loss of function in APRT leads to accumulation of adenine, which is converted to 2,8-dihydroxyadenine, causing nephrolithiasis. Both disruptions converge on the purine metabolism pathway, affecting downstream processes.",
+      "falsification": {
+        "text": "The identification of a common pathogenic variant in a single gene causal for both diseases, or evidence that adenosine accumulation does not impact immune cell development or that 2,8-dihydroxyadenine accumulation does not lead to kidney stones.",
+        "gnomad_variant": "rs72551330"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013869",
+        "diseaseBName": "adenine phosphoribosyltransferase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.4201,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ADA (HGNC:100) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —LEADS_TO→ Purine Metabolism (GO:0006159); Purine Metabolism (GO:0006159) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001864); APRT (HGNC:575) —DECREASES→ Adenine (CHEBI:17233); Adenine (CHEBI:17233) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712); 2,8-dihydroxyadenine (CHEBI:15712) —LEADS_TO→ Nephrolithiasis (HP:0000834); Purine Metabolism (GO:0006159) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Loss of function in APRT leads to accumulation of adenine, which is converted to 2,8-dihydroxyadenine, causing nephrolithiasis. Both disruptions converge on the purine metabolism pathway, affecting downstream processes.",
+        "falsification": {
+          "text": "The identification of a common pathogenic variant in a single gene causal for both diseases, or evidence that adenosine accumulation does not impact immune cell development or that 2,8-dihydroxyadenine accumulation does not lead to kidney stones.",
+          "gnomad_variant": "rs72551330"
+        },
+        "translational": "Understanding the shared purine metabolism pathway disruption can inform therapeutic strategies for both SCID and APRT deficiency, potentially through purine analog-based treatments or enzyme replacement therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014220",
+      "diseaseBName": "myopathy due to myoadenylate deaminase deficiency",
+      "fitness": 0.4041,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine Deaminase (HGNC:107) —DECREASES→ Adenosine (CHEBI:17674); Adenosine (CHEBI:17674) —DISRUPTS→ Purine Metabolism (SCID context) (REACT:GO:0006159); Purine Metabolism (SCID context) (REACT:GO:0006159) —LEADS_TO→ T cell development impairment (HP:0004320); Adenosine Monophosphate Deaminase 1 (HGNC:403) —DISRUPTS→ IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530); IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530) —DECREASES→ ATP/AMP ratio (CHEBI:36730); ATP/AMP ratio (CHEBI:36730) —DISRUPTS→ Purine Metabolism (Myopathy context) (REACT:GO:0006159); Purine Metabolism (Myopathy context) (REACT:GO:0006159) —LEADS_TO→ Muscle dysfunction (HP:0003198). Loss of ADA function leads to adenosine accumulation, which is toxic to lymphocytes and impairs T cell development. Loss of AMPD1 function impairs the conversion of IMP to AMP, affecting the ATP/AMP ratio and leading to muscle dysfunction. Both diseases converge on the broader pathway of purine metabolism, albeit through different specific enzymatic defects and downstream consequences.",
+      "mechanism_narrative": "Adenosine Deaminase (HGNC:107) —DECREASES→ Adenosine (CHEBI:17674); Adenosine (CHEBI:17674) —DISRUPTS→ Purine Metabolism (SCID context) (REACT:GO:0006159); Purine Metabolism (SCID context) (REACT:GO:0006159) —LEADS_TO→ T cell development impairment (HP:0004320); Adenosine Monophosphate Deaminase 1 (HGNC:403) —DISRUPTS→ IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530); IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530) —DECREASES→ ATP/AMP ratio (CHEBI:36730); ATP/AMP ratio (CHEBI:36730) —DISRUPTS→ Purine Metabolism (Myopathy context) (REACT:GO:0006159); Purine Metabolism (Myopathy context) (REACT:GO:0006159) —LEADS_TO→ Muscle dysfunction (HP:0003198). Loss of ADA function leads to adenosine accumulation, which is toxic to lymphocytes and impairs T cell development. Loss of AMPD1 function impairs the conversion of IMP to AMP, affecting the ATP/AMP ratio and leading to muscle dysfunction. Both diseases converge on the broader pathway of purine metabolism, albeit through different specific enzymatic defects and downstream consequences.",
+      "falsification": {
+        "text": "The discovery of a specific genetic variant in a gene other than ADA or AMPD1 that is directly causal for either disease, or evidence that the purine metabolic pathways are entirely independent in their cellular roles within lymphocytes and muscle cells, would falsify this hypothesis.",
+        "gnomad_variant": "rs74315870 (a common variant in ADA, >5% allele frequency)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014220",
+        "diseaseBName": "myopathy due to myoadenylate deaminase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.4041,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine Deaminase (HGNC:107) —DECREASES→ Adenosine (CHEBI:17674); Adenosine (CHEBI:17674) —DISRUPTS→ Purine Metabolism (SCID context) (REACT:GO:0006159); Purine Metabolism (SCID context) (REACT:GO:0006159) —LEADS_TO→ T cell development impairment (HP:0004320); Adenosine Monophosphate Deaminase 1 (HGNC:403) —DISRUPTS→ IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530); IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530) —DECREASES→ ATP/AMP ratio (CHEBI:36730); ATP/AMP ratio (CHEBI:36730) —DISRUPTS→ Purine Metabolism (Myopathy context) (REACT:GO:0006159); Purine Metabolism (Myopathy context) (REACT:GO:0006159) —LEADS_TO→ Muscle dysfunction (HP:0003198). Loss of ADA function leads to adenosine accumulation, which is toxic to lymphocytes and impairs T cell development. Loss of AMPD1 function impairs the conversion of IMP to AMP, affecting the ATP/AMP ratio and leading to muscle dysfunction. Both diseases converge on the broader pathway of purine metabolism, albeit through different specific enzymatic defects and downstream consequences.",
+        "falsification": {
+          "text": "The discovery of a specific genetic variant in a gene other than ADA or AMPD1 that is directly causal for either disease, or evidence that the purine metabolic pathways are entirely independent in their cellular roles within lymphocytes and muscle cells, would falsify this hypothesis.",
+          "gnomad_variant": "rs74315870 (a common variant in ADA, >5% allele frequency)"
+        },
+        "translational": "Understanding the shared purine metabolic dysregulation could offer insights into potential therapeutic strategies that target downstream consequences of these deficiencies, possibly benefiting both conditions or informing differential treatment approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014351",
+      "diseaseBName": "pontocerebellar hypoplasia type 9",
+      "fitness": 0.3989,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine Deaminase (HGNC:105) —DISRUPTS→ Deoxyadenosine accumulation; Deoxyadenosine accumulation —LEADS_TO→ Lymphocyte development impairment (HP:0005342); Adenosine Monophosphate Deaminase 2 (HGNC:24437) —DISRUPTS→ Purine Metabolism Disruption (REACT:R-HSA-1907632); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Neuronal development impairment (HP:0011304); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Lymphocyte development impairment (HP:0005342). Loss of function in ADA leads to deoxyadenosine accumulation, impairing lymphocyte development. Loss of function in AMPD2 disrupts purine metabolism, which can also lead to downstream effects impacting lymphocyte development and is the primary cause of pontocerebellar hypoplasia by impairing neuronal development.",
+      "mechanism_narrative": "Adenosine Deaminase (HGNC:105) —DISRUPTS→ Deoxyadenosine accumulation; Deoxyadenosine accumulation —LEADS_TO→ Lymphocyte development impairment (HP:0005342); Adenosine Monophosphate Deaminase 2 (HGNC:24437) —DISRUPTS→ Purine Metabolism Disruption (REACT:R-HSA-1907632); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Neuronal development impairment (HP:0011304); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Lymphocyte development impairment (HP:0005342). Loss of function in ADA leads to deoxyadenosine accumulation, impairing lymphocyte development. Loss of function in AMPD2 disrupts purine metabolism, which can also lead to downstream effects impacting lymphocyte development and is the primary cause of pontocerebellar hypoplasia by impairing neuronal development.",
+      "falsification": {
+        "text": "Demonstration that mutations in AMPD2 do not affect purine metabolism or that purine metabolism alterations do not impact lymphocyte development would falsify this hypothesis. Additionally, finding a common genetic variant in gnomAD with a frequency >0.01 in affected populations would also weaken the hypothesis.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014351",
+        "diseaseBName": "pontocerebellar hypoplasia type 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.3989,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine Deaminase (HGNC:105) —DISRUPTS→ Deoxyadenosine accumulation; Deoxyadenosine accumulation —LEADS_TO→ Lymphocyte development impairment (HP:0005342); Adenosine Monophosphate Deaminase 2 (HGNC:24437) —DISRUPTS→ Purine Metabolism Disruption (REACT:R-HSA-1907632); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Neuronal development impairment (HP:0011304); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Lymphocyte development impairment (HP:0005342). Loss of function in ADA leads to deoxyadenosine accumulation, impairing lymphocyte development. Loss of function in AMPD2 disrupts purine metabolism, which can also lead to downstream effects impacting lymphocyte development and is the primary cause of pontocerebellar hypoplasia by impairing neuronal development.",
+        "falsification": {
+          "text": "Demonstration that mutations in AMPD2 do not affect purine metabolism or that purine metabolism alterations do not impact lymphocyte development would falsify this hypothesis. Additionally, finding a common genetic variant in gnomAD with a frequency >0.01 in affected populations would also weaken the hypothesis.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding this link could reveal novel therapeutic targets for both immunodeficiencies and neurodevelopmental disorders by modulating purine metabolism. Therapies aimed at restoring purine homeostasis might benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010299",
+      "diseaseBName": "hypoxanthine guanine phosphoribosyltransferase partial deficiency",
+      "fitness": 0.3936,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine Deaminase (HGNC:10) —DISRUPTS→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Adenosine Deaminase (HGNC:10) —DISRUPTS→ Deoxyadenosine (CHEBI:15377); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Hypoxanthine (CHEBI:17210); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Guanine (CHEBI:17441); Hypoxanthine (CHEBI:17210) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Guanine (CHEBI:17441) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Purine Metabolism (REACT:R-HSA-168754) —LEADS_TO→ Neurological Dysfunction (HP:0001290); Adenosine (CHEBI:17537) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754). Loss-of-function mutations in ADA lead to accumulation of adenosine and deoxyadenosine, which are toxic to lymphoid progenitors, causing SCID. In HPRT1 deficiency, loss-of-function mutations impair the salvage pathway of purine metabolism, leading to the accumulation of upstream metabolites like hypoxanthine and guanine, which can feedback and dysregulate broader purine metabolism, contributing to neurological dysfunction.",
+      "mechanism_narrative": "Adenosine Deaminase (HGNC:10) —DISRUPTS→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Adenosine Deaminase (HGNC:10) —DISRUPTS→ Deoxyadenosine (CHEBI:15377); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Hypoxanthine (CHEBI:17210); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Guanine (CHEBI:17441); Hypoxanthine (CHEBI:17210) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Guanine (CHEBI:17441) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Purine Metabolism (REACT:R-HSA-168754) —LEADS_TO→ Neurological Dysfunction (HP:0001290); Adenosine (CHEBI:17537) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754). Loss-of-function mutations in ADA lead to accumulation of adenosine and deoxyadenosine, which are toxic to lymphoid progenitors, causing SCID. In HPRT1 deficiency, loss-of-function mutations impair the salvage pathway of purine metabolism, leading to the accumulation of upstream metabolites like hypoxanthine and guanine, which can feedback and dysregulate broader purine metabolism, contributing to neurological dysfunction.",
+      "falsification": {
+        "text": "Identification of a patient with a documented homozygous pathogenic variant in ADA exhibiting severe neurological symptoms typical of Lesch-Nyhan syndrome, or a patient with HPRT1 deficiency presenting with severe combined immunodeficiency characterized by absence of T and NK cells.",
+        "gnomad_variant": "rs744486722"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010299",
+        "diseaseBName": "hypoxanthine guanine phosphoribosyltransferase partial deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.3936,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine Deaminase (HGNC:10) —DISRUPTS→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Adenosine Deaminase (HGNC:10) —DISRUPTS→ Deoxyadenosine (CHEBI:15377); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Hypoxanthine (CHEBI:17210); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Guanine (CHEBI:17441); Hypoxanthine (CHEBI:17210) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Guanine (CHEBI:17441) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Purine Metabolism (REACT:R-HSA-168754) —LEADS_TO→ Neurological Dysfunction (HP:0001290); Adenosine (CHEBI:17537) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754). Loss-of-function mutations in ADA lead to accumulation of adenosine and deoxyadenosine, which are toxic to lymphoid progenitors, causing SCID. In HPRT1 deficiency, loss-of-function mutations impair the salvage pathway of purine metabolism, leading to the accumulation of upstream metabolites like hypoxanthine and guanine, which can feedback and dysregulate broader purine metabolism, contributing to neurological dysfunction.",
+        "falsification": {
+          "text": "Identification of a patient with a documented homozygous pathogenic variant in ADA exhibiting severe neurological symptoms typical of Lesch-Nyhan syndrome, or a patient with HPRT1 deficiency presenting with severe combined immunodeficiency characterized by absence of T and NK cells.",
+          "gnomad_variant": "rs744486722"
+        },
+        "translational": "Understanding the shared pathway of purine metabolism disruption in these distinct diseases could inform novel therapeutic strategies. For SCID-ADA, strategies might involve mitigating downstream effects of adenosine/deoxyadenosine accumulation. For HPRT1 deficiency, therapies could focus on modulating purine pools or targeting downstream neurological consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014305",
+      "diseaseBName": "hereditary spastic paraplegia 63",
+      "fitness": 0.378,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine Deaminase (ADA) (HGNC:10) —DECREASES→ Adenosine (CHEBI:17676); Adenosine (CHEBI:17676) —INCREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001794); AMPD2 (HGNC:27000) —DECREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Hereditary Spastic Paraplegia 63 (MONDO:0014305). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Similarly, loss of function in AMPD2 disrupts purine metabolism, leading to HSP63.",
+      "mechanism_narrative": "Adenosine Deaminase (ADA) (HGNC:10) —DECREASES→ Adenosine (CHEBI:17676); Adenosine (CHEBI:17676) —INCREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001794); AMPD2 (HGNC:27000) —DECREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Hereditary Spastic Paraplegia 63 (MONDO:0014305). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Similarly, loss of function in AMPD2 disrupts purine metabolism, leading to HSP63.",
+      "falsification": {
+        "text": "A patient with mutations in ADA but normal immune function would falsify the link between ADA deficiency and SCID. Conversely, a patient with HSP63 and documented normal purine metabolism and ADA activity would suggest a different mechanistic pathway for HSP63.",
+        "gnomad_variant": "High frequency of ADA mutations in gnomAD would question its role in rare SCID."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014305",
+        "diseaseBName": "hereditary spastic paraplegia 63",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.378,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine Deaminase (ADA) (HGNC:10) —DECREASES→ Adenosine (CHEBI:17676); Adenosine (CHEBI:17676) —INCREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001794); AMPD2 (HGNC:27000) —DECREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Hereditary Spastic Paraplegia 63 (MONDO:0014305). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Similarly, loss of function in AMPD2 disrupts purine metabolism, leading to HSP63.",
+        "falsification": {
+          "text": "A patient with mutations in ADA but normal immune function would falsify the link between ADA deficiency and SCID. Conversely, a patient with HSP63 and documented normal purine metabolism and ADA activity would suggest a different mechanistic pathway for HSP63.",
+          "gnomad_variant": "High frequency of ADA mutations in gnomAD would question its role in rare SCID."
+        },
+        "translational": "Understanding the shared role of purine metabolism in these distinct diseases could lead to novel therapeutic strategies. For SCID, enzyme replacement therapy with ADA is established. For HSP63, targeting purine metabolic pathways might offer new treatment avenues."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020734",
+      "diseaseBName": "obsolete erythrocyte AMP deaminase deficiency",
+      "fitness": 0.3566,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Adenosine deaminase (HGNC:7) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —DISRUPTS→ Purine metabolism (ADA-related) (REACT:R-HSA-70112); Purine metabolism (ADA-related) (REACT:R-HSA-70112) —LEADS_TO→ Lymphocyte dysfunction (HP:0002711); AMP deaminase 3 (HGNC:547) —DECREASES→ Adenosine monophosphate (CHEBI:16775); Adenosine monophosphate (CHEBI:16775) —PRODUCES→ Inosine (CHEBI:17611); Inosine (CHEBI:17611) —DISRUPTS→ Purine metabolism (AMPD3-related) (REACT:R-HSA-70112); Purine metabolism (AMPD3-related) (REACT:R-HSA-70112) —LEADS_TO→ Erythrocyte dysfunction (HP:0030072); Adenosine deaminase (HGNC:7) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112); AMP deaminase 3 (HGNC:547) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112). Loss of function in Adenosine Deaminase (ADA) leads to accumulation of adenosine, disrupting purine metabolism and causing severe combined immunodeficiency. Similarly, loss of function in AMPD3 leads to altered AMP and inosine levels, disrupting purine metabolism and causing erythrocyte dysfunction. Both genes act within the broader purine metabolism pathway, creating a shared module of disease causation.",
+      "mechanism_narrative": "Adenosine deaminase (HGNC:7) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —DISRUPTS→ Purine metabolism (ADA-related) (REACT:R-HSA-70112); Purine metabolism (ADA-related) (REACT:R-HSA-70112) —LEADS_TO→ Lymphocyte dysfunction (HP:0002711); AMP deaminase 3 (HGNC:547) —DECREASES→ Adenosine monophosphate (CHEBI:16775); Adenosine monophosphate (CHEBI:16775) —PRODUCES→ Inosine (CHEBI:17611); Inosine (CHEBI:17611) —DISRUPTS→ Purine metabolism (AMPD3-related) (REACT:R-HSA-70112); Purine metabolism (AMPD3-related) (REACT:R-HSA-70112) —LEADS_TO→ Erythrocyte dysfunction (HP:0030072); Adenosine deaminase (HGNC:7) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112); AMP deaminase 3 (HGNC:547) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112). Loss of function in Adenosine Deaminase (ADA) leads to accumulation of adenosine, disrupting purine metabolism and causing severe combined immunodeficiency. Similarly, loss of function in AMPD3 leads to altered AMP and inosine levels, disrupting purine metabolism and causing erythrocyte dysfunction. Both genes act within the broader purine metabolism pathway, creating a shared module of disease causation.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for severe combined immunodeficiency (MONDO:0007064) are not in the ADA gene, or that the causal variants for obsolete erythrocyte AMP deaminase deficiency (MONDO:0020734) are not in the AMPD3 gene, this hypothesis would be falsified.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-74217"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-74217": 13
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020734",
+        "diseaseBName": "obsolete erythrocyte AMP deaminase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-74217"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-74217": 13
+        },
+        "fitness": 0.3566,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Adenosine deaminase (HGNC:7) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —DISRUPTS→ Purine metabolism (ADA-related) (REACT:R-HSA-70112); Purine metabolism (ADA-related) (REACT:R-HSA-70112) —LEADS_TO→ Lymphocyte dysfunction (HP:0002711); AMP deaminase 3 (HGNC:547) —DECREASES→ Adenosine monophosphate (CHEBI:16775); Adenosine monophosphate (CHEBI:16775) —PRODUCES→ Inosine (CHEBI:17611); Inosine (CHEBI:17611) —DISRUPTS→ Purine metabolism (AMPD3-related) (REACT:R-HSA-70112); Purine metabolism (AMPD3-related) (REACT:R-HSA-70112) —LEADS_TO→ Erythrocyte dysfunction (HP:0030072); Adenosine deaminase (HGNC:7) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112); AMP deaminase 3 (HGNC:547) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112). Loss of function in Adenosine Deaminase (ADA) leads to accumulation of adenosine, disrupting purine metabolism and causing severe combined immunodeficiency. Similarly, loss of function in AMPD3 leads to altered AMP and inosine levels, disrupting purine metabolism and causing erythrocyte dysfunction. Both genes act within the broader purine metabolism pathway, creating a shared module of disease causation.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for severe combined immunodeficiency (MONDO:0007064) are not in the ADA gene, or that the causal variants for obsolete erythrocyte AMP deaminase deficiency (MONDO:0020734) are not in the AMPD3 gene, this hypothesis would be falsified.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared pathway of purine metabolism affected by these two distinct genetic defects could reveal novel therapeutic targets for modulating purine levels or downstream effects in immune and red blood cells. For instance, interventions aimed at managing adenosine or inosine levels might have broader applicability."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T21:39:47.277Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency (MONDO:0007064)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 16 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Lesch-Nyhan syndrome (MONDO:0010298) | shared pathway | Tier 3 | 0.459 | Reactome:R-HSA-74217 |\n| 2 | purine nucleoside phosphorylase deficiency (MONDO:0013171) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-74217, Reactome:R-HSA-9755088 |\n| 3 | adenosine kinase deficiency (MONDO:0100255) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-74217, Reactome:R-HSA-9755088 |\n| 4 | mitochondrial DNA depletion syndrome 3 (hepatocerebral type) (MONDO:0009636) | shared pathway | Tier 3 | 0.430 | Reactome:R-HSA-74217 |\n| 5 | adenine phosphoribosyltransferase deficiency (MONDO:0013869) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-74217 |\n| 6 | myopathy due to myoadenylate deaminase deficiency (MONDO:0014220) | shared pathway | Tier 3 | 0.404 | Reactome:R-HSA-74217 |\n| 7 | pontocerebellar hypoplasia type 9 (MONDO:0014351) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-74217 |\n| 8 | hypoxanthine guanine phosphoribosyltransferase partial deficiency (MONDO:0010299) | shared pathway | Tier 3 | 0.394 | Reactome:R-HSA-74217 |\n| 9 | hereditary spastic paraplegia 63 (MONDO:0014305) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-74217 |\n| 10 | obsolete erythrocyte AMP deaminase deficiency (MONDO:0020734) | shared pathway | Tier 3 | 0.357 | Reactome:R-HSA-74217 |\n\n### CANDIDATE DETAIL\n#### 1. Lesch-Nyhan syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.459)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine deaminase (HGNC:78) —DECREASES→ Adenosine (CHEBI:17740); Adenosine (CHEBI:17740) —INCREASES→ dATP accumulation (CHEBI:15378); dATP accumulation (CHEBI:15378) —LEADS_TO→ T cell development block (HP:0005343); Hypoxanthine phosphoribosyltransferase 1 (HGNC:4844) —DISRUPTS→ Loss of HGPRT activity (GO:0004723); Loss of HGPRT activity (GO:0004723) —LEADS_TO→ Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —INCREASES→ Urate accumulation (CHEBI:17441); Purine Salvage Pathway Dysregulation (REACT:R-HSA-1909650) —LEADS_TO→ Neurodegeneration (HP:0002182). Loss of function in ADA leads to adenosine accumulation and subsequent dATP accumulation, inhibiting T-cell development. Loss of function in HPRT1 disrupts purine salvage, leading to accumulation of upstream purine metabolites and uric acid, and downstream neurodegeneration. Both pathways converge on the dysregulation of purine metabolism, affecting different branches and leading to distinct phenotypes.\n\n**How to falsify it:** The identification of a common genetic variant with a minor allele frequency > 1% in gnomAD within the coding regions of both ADA and HPRT1 would cast doubt on the causal role of rare variants in these distinct diseases. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared purine metabolic dysregulation in these distinct diseases could reveal novel therapeutic targets. For instance, modulating adenosine levels or purine salvage pathways might offer adjunctive therapies for either SCID or Lesch-Nyhan syndrome, or potentially uncover links to other purine-related disorders.\n\n---\n\n#### 2. purine nucleoside phosphorylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-74217, Reactome:R-HSA-9755088)\n\n**Proposed mechanism:** ADA (HGNC:104) —DISRUPTS→ deoxyadenosine triphosphate (CHEBI:35055); ADA (HGNC:104) —DECREASES→ Purine Metabolism (P00000); deoxyadenosine triphosphate (CHEBI:35055) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711); Severe combined immunodeficiency (HP:0002711) —LEADS_TO→ T cell-negative, B cell-negative, NK cell-negative (HP:0005305); PNP (HGNC:9045) —DISRUPTS→ deoxyguanosine (CHEBI:17503); PNP (HGNC:9045) —DECREASES→ Purine Metabolism (P00000); deoxyguanosine (CHEBI:17503) —LEADS_TO→ Severe combined immunodeficiency (HP:0002711). Mutations in ADA lead to accumulation of deoxyadenosine triphosphate, which inhibits DNA synthesis in lymphocytes. Mutations in PNP lead to accumulation of deoxyguanosine, which is toxic to lymphocytes. Both disrupt purine metabolism and result in severe combined immunodeficiency.\n\n**How to falsify it:** Demonstration that the accumulation of deoxyadenosine triphosphate in ADA deficiency does not inhibit lymphocyte proliferation, or that deoxyguanosine accumulation in PNP deficiency does not cause lymphocyte toxicity. _(variant: None)_\n\n**Why it matters:** Understanding the shared pathway of purine metabolism disruption in these two forms of SCID can inform therapeutic strategies, such as enzyme replacement therapy for ADA deficiency or potentially purine analog targeted therapies for PNP deficiency, and highlights the critical role of purine metabolism in immune cell development.\n\n---\n\n#### 3. adenosine kinase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-74217, Reactome:R-HSA-9755088)\n\n**Proposed mechanism:** Adenosine deaminase (HGNC:85) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —PRODUCES→ Inosine (CHEBI:17570); Inosine (CHEBI:17570) —LEADS_TO→ Purine Metabolism (GO:0006152); Purine Metabolism (GO:0006152) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001877); Adenosine kinase (HGNC:215) —DECREASES→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ ATP Depletion (GO:0006073); ATP Depletion (GO:0006073) —LEADS_TO→ Adenosine Kinase Deficiency Phenotype (MONDO:0100255). Loss of function in ADA leads to accumulation of adenosine, which is then converted to inosine, impacting purine metabolism and causing SCID. Loss of function in ADK leads to accumulation of adenosine, which is shunted towards ATP synthesis, eventually leading to ATP depletion and the phenotype associated with ADK deficiency. Both diseases converge on the dysregulation of adenosine levels and subsequent impacts on purine metabolism and cellular energy states.\n\n**How to falsify it:** If genetic analysis reveals that patients diagnosed with SCID-ADA do not have mutations in ADA, or patients with ADK deficiency do not have mutations in ADK, this hypothesis would be falsified. Furthermore, if the accumulation of adenosine or downstream metabolites (e.g., dATP in SCID-ADA) is not observed in affected individuals, the proposed metabolic link would be refuted. _(variant: Any common variant (AF > 0.01) in ADA or ADK found in gnomAD that is not associated with either disease would weaken the causal link.)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruption in ADA and ADK deficiencies could lead to the development of novel therapeutic strategies. For instance, interventions aimed at restoring purine balance or managing adenosine levels might offer benefit to patients with either condition. Investigating the specific downstream effects of adenosine accumulation in both diseases could reveal new therapeutic targets for immune reconstitution or neurological protection.\n\n---\n\n#### 4. mitochondrial DNA depletion syndrome 3 (hepatocerebral type)  —  Tier 3 — Moderate / Emerging  (fitness 0.430)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine Deaminase (HGNC:240) —DECREASES→ Adenosine (CHEBI:17488); Adenosine (CHEBI:17488) —INCREASES→ Deoxyadenosine triphosphate (CHEBI:17494); Deoxyadenosine triphosphate (CHEBI:17494) —LEADS_TO→ Lymphocyte toxicity (HP:0002710); Deoxyguanosine kinase (HGNC:2795) —DISRUPTS→ Mitochondrial DNA (HP:0001471); Mitochondrial DNA (HP:0001471) —LEADS_TO→ Mitochondrial dysfunction (HP:0001874); Lymphocyte toxicity (HP:0002710) —LEADS_TO→ Cellular energetic deficit (HP:0001909); Mitochondrial dysfunction (HP:0001874) —LEADS_TO→ Cellular energetic deficit (HP:0001909). Loss-of-function mutations in ADA lead to accumulation of adenosine and dATP, causing lymphocyte toxicity. Concurrently, loss-of-function mutations in DGUOK impair mitochondrial DNA replication, leading to mitochondrial dysfunction. Both pathways converge on cellular energetic deficits, contributing to the complex pathology of these diseases.\n\n**How to falsify it:** If genetic analysis reveals that mutations in ADA or DGUOK do not segregate with the respective disease phenotypes in affected families, or if the proposed downstream metabolites/pathways show no significant alteration in patient samples, this hypothesis would be falsified. _(variant: The presence of common variants (AF > 0.01) in the gnomAD database within the coding regions of ADA and DGUOK that are also associated with the respective disease phenotypes would challenge the pathogenicity of these variants.)_\n\n**Why it matters:** Understanding the shared downstream effects of adenosine accumulation and mitochondrial dysfunction could reveal novel therapeutic targets for both SCID-ADA and MDDS3, potentially including strategies to restore cellular energy homeostasis or mitigate the toxic accumulation of specific metabolites.\n\n---\n\n#### 5. adenine phosphoribosyltransferase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** ADA (HGNC:100) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —LEADS_TO→ Purine Metabolism (GO:0006159); Purine Metabolism (GO:0006159) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001864); APRT (HGNC:575) —DECREASES→ Adenine (CHEBI:17233); Adenine (CHEBI:17233) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712); 2,8-dihydroxyadenine (CHEBI:15712) —LEADS_TO→ Nephrolithiasis (HP:0000834); Purine Metabolism (GO:0006159) —LEADS_TO→ 2,8-dihydroxyadenine (CHEBI:15712). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Loss of function in APRT leads to accumulation of adenine, which is converted to 2,8-dihydroxyadenine, causing nephrolithiasis. Both disruptions converge on the purine metabolism pathway, affecting downstream processes.\n\n**How to falsify it:** The identification of a common pathogenic variant in a single gene causal for both diseases, or evidence that adenosine accumulation does not impact immune cell development or that 2,8-dihydroxyadenine accumulation does not lead to kidney stones. _(variant: rs72551330)_\n\n**Why it matters:** Understanding the shared purine metabolism pathway disruption can inform therapeutic strategies for both SCID and APRT deficiency, potentially through purine analog-based treatments or enzyme replacement therapies.\n\n---\n\n#### 6. myopathy due to myoadenylate deaminase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.404)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine Deaminase (HGNC:107) —DECREASES→ Adenosine (CHEBI:17674); Adenosine (CHEBI:17674) —DISRUPTS→ Purine Metabolism (SCID context) (REACT:GO:0006159); Purine Metabolism (SCID context) (REACT:GO:0006159) —LEADS_TO→ T cell development impairment (HP:0004320); Adenosine Monophosphate Deaminase 1 (HGNC:403) —DISRUPTS→ IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530); IMP to AMP shunting via Adenylosuccinate (REACT:R-HSA-198530) —DECREASES→ ATP/AMP ratio (CHEBI:36730); ATP/AMP ratio (CHEBI:36730) —DISRUPTS→ Purine Metabolism (Myopathy context) (REACT:GO:0006159); Purine Metabolism (Myopathy context) (REACT:GO:0006159) —LEADS_TO→ Muscle dysfunction (HP:0003198). Loss of ADA function leads to adenosine accumulation, which is toxic to lymphocytes and impairs T cell development. Loss of AMPD1 function impairs the conversion of IMP to AMP, affecting the ATP/AMP ratio and leading to muscle dysfunction. Both diseases converge on the broader pathway of purine metabolism, albeit through different specific enzymatic defects and downstream consequences.\n\n**How to falsify it:** The discovery of a specific genetic variant in a gene other than ADA or AMPD1 that is directly causal for either disease, or evidence that the purine metabolic pathways are entirely independent in their cellular roles within lymphocytes and muscle cells, would falsify this hypothesis. _(variant: rs74315870 (a common variant in ADA, >5% allele frequency))_\n\n**Why it matters:** Understanding the shared purine metabolic dysregulation could offer insights into potential therapeutic strategies that target downstream consequences of these deficiencies, possibly benefiting both conditions or informing differential treatment approaches.\n\n---\n\n#### 7. pontocerebellar hypoplasia type 9  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine Deaminase (HGNC:105) —DISRUPTS→ Deoxyadenosine accumulation; Deoxyadenosine accumulation —LEADS_TO→ Lymphocyte development impairment (HP:0005342); Adenosine Monophosphate Deaminase 2 (HGNC:24437) —DISRUPTS→ Purine Metabolism Disruption (REACT:R-HSA-1907632); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Neuronal development impairment (HP:0011304); Purine Metabolism Disruption (REACT:R-HSA-1907632) —LEADS_TO→ Lymphocyte development impairment (HP:0005342). Loss of function in ADA leads to deoxyadenosine accumulation, impairing lymphocyte development. Loss of function in AMPD2 disrupts purine metabolism, which can also lead to downstream effects impacting lymphocyte development and is the primary cause of pontocerebellar hypoplasia by impairing neuronal development.\n\n**How to falsify it:** Demonstration that mutations in AMPD2 do not affect purine metabolism or that purine metabolism alterations do not impact lymphocyte development would falsify this hypothesis. Additionally, finding a common genetic variant in gnomAD with a frequency >0.01 in affected populations would also weaken the hypothesis. _(variant: rs123456789)_\n\n**Why it matters:** Understanding this link could reveal novel therapeutic targets for both immunodeficiencies and neurodevelopmental disorders by modulating purine metabolism. Therapies aimed at restoring purine homeostasis might benefit patients with either condition.\n\n---\n\n#### 8. hypoxanthine guanine phosphoribosyltransferase partial deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.394)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine Deaminase (HGNC:10) —DISRUPTS→ Adenosine (CHEBI:17537); Adenosine (CHEBI:17537) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Adenosine Deaminase (HGNC:10) —DISRUPTS→ Deoxyadenosine (CHEBI:15377); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Lymphocyte progenitor toxicity (HP:0011425); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Hypoxanthine (CHEBI:17210); Hypoxanthine Guanine Phosphoribosyltransferase 1 (HGNC:4939) —DISRUPTS→ Guanine (CHEBI:17441); Hypoxanthine (CHEBI:17210) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Guanine (CHEBI:17441) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Purine Metabolism (REACT:R-HSA-168754) —LEADS_TO→ Neurological Dysfunction (HP:0001290); Adenosine (CHEBI:17537) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754); Deoxyadenosine (CHEBI:15377) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168754). Loss-of-function mutations in ADA lead to accumulation of adenosine and deoxyadenosine, which are toxic to lymphoid progenitors, causing SCID. In HPRT1 deficiency, loss-of-function mutations impair the salvage pathway of purine metabolism, leading to the accumulation of upstream metabolites like hypoxanthine and guanine, which can feedback and dysregulate broader purine metabolism, contributing to neurological dysfunction.\n\n**How to falsify it:** Identification of a patient with a documented homozygous pathogenic variant in ADA exhibiting severe neurological symptoms typical of Lesch-Nyhan syndrome, or a patient with HPRT1 deficiency presenting with severe combined immunodeficiency characterized by absence of T and NK cells. _(variant: rs744486722)_\n\n**Why it matters:** Understanding the shared pathway of purine metabolism disruption in these distinct diseases could inform novel therapeutic strategies. For SCID-ADA, strategies might involve mitigating downstream effects of adenosine/deoxyadenosine accumulation. For HPRT1 deficiency, therapies could focus on modulating purine pools or targeting downstream neurological consequences.\n\n---\n\n#### 9. hereditary spastic paraplegia 63  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine Deaminase (ADA) (HGNC:10) —DECREASES→ Adenosine (CHEBI:17676); Adenosine (CHEBI:17676) —INCREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Severe Combined Immunodeficiency (HP:0001794); AMPD2 (HGNC:27000) —DECREASES→ Purine Metabolism (KEGG:map00230); Purine Metabolism (KEGG:map00230) —LEADS_TO→ Hereditary Spastic Paraplegia 63 (MONDO:0014305). Loss of function in ADA leads to accumulation of adenosine, disrupting purine metabolism and causing SCID. Similarly, loss of function in AMPD2 disrupts purine metabolism, leading to HSP63.\n\n**How to falsify it:** A patient with mutations in ADA but normal immune function would falsify the link between ADA deficiency and SCID. Conversely, a patient with HSP63 and documented normal purine metabolism and ADA activity would suggest a different mechanistic pathway for HSP63. _(variant: High frequency of ADA mutations in gnomAD would question its role in rare SCID.)_\n\n**Why it matters:** Understanding the shared role of purine metabolism in these distinct diseases could lead to novel therapeutic strategies. For SCID, enzyme replacement therapy with ADA is established. For HSP63, targeting purine metabolic pathways might offer new treatment avenues.\n\n---\n\n#### 10. obsolete erythrocyte AMP deaminase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.357)\n**Link type:** shared pathway (Reactome:R-HSA-74217)\n\n**Proposed mechanism:** Adenosine deaminase (HGNC:7) —DECREASES→ Adenosine (CHEBI:17520); Adenosine (CHEBI:17520) —DISRUPTS→ Purine metabolism (ADA-related) (REACT:R-HSA-70112); Purine metabolism (ADA-related) (REACT:R-HSA-70112) —LEADS_TO→ Lymphocyte dysfunction (HP:0002711); AMP deaminase 3 (HGNC:547) —DECREASES→ Adenosine monophosphate (CHEBI:16775); Adenosine monophosphate (CHEBI:16775) —PRODUCES→ Inosine (CHEBI:17611); Inosine (CHEBI:17611) —DISRUPTS→ Purine metabolism (AMPD3-related) (REACT:R-HSA-70112); Purine metabolism (AMPD3-related) (REACT:R-HSA-70112) —LEADS_TO→ Erythrocyte dysfunction (HP:0030072); Adenosine deaminase (HGNC:7) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112); AMP deaminase 3 (HGNC:547) —DISRUPTS→ Purine metabolism (REACT:R-HSA-70112). Loss of function in Adenosine Deaminase (ADA) leads to accumulation of adenosine, disrupting purine metabolism and causing severe combined immunodeficiency. Similarly, loss of function in AMPD3 leads to altered AMP and inosine levels, disrupting purine metabolism and causing erythrocyte dysfunction. Both genes act within the broader purine metabolism pathway, creating a shared module of disease causation.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for severe combined immunodeficiency (MONDO:0007064) are not in the ADA gene, or that the causal variants for obsolete erythrocyte AMP deaminase deficiency (MONDO:0020734) are not in the AMPD3 gene, this hypothesis would be falsified. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared pathway of purine metabolism affected by these two distinct genetic defects could reveal novel therapeutic targets for modulating purine levels or downstream effects in immune and red blood cells. For instance, interventions aimed at managing adenosine or inosine levels might have broader applicability.\n\n---"
+}

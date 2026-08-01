@@ -1,0 +1,101 @@
+{
+  "seed": {
+    "id": "MONDO:0012258",
+    "name": "epidermolysis bullosa simplex 2E, with migratory circinate erythema"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012180",
+      "diseaseBName": "arrhythmogenic right ventricular dysplasia 9",
+      "fitness": 0.455,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KRT5 (HGNC:6411) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); PKP2 (HGNC:9440) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Blistering of the skin (HP:0001010); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Arrhythmia (HP:0011692). Disruptions in KRT5 and PKP2 impair the assembly and function of epithelial and cardiac cell adhesion complexes, respectively, leading to the distinct phenotypes of blistering skin and cardiac arrhythmias.",
+      "mechanism_narrative": "KRT5 (HGNC:6411) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); PKP2 (HGNC:9440) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Blistering of the skin (HP:0001010); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Arrhythmia (HP:0011692). Disruptions in KRT5 and PKP2 impair the assembly and function of epithelial and cardiac cell adhesion complexes, respectively, leading to the distinct phenotypes of blistering skin and cardiac arrhythmias.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in KRT5 or PKP2 with a minor allele frequency > 1% in gnomAD for the respective disease population.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6809371",
+        "Reactome:R-HSA-6805567"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6809371": 129,
+        "Reactome:R-HSA-6805567": 154
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012180",
+        "diseaseBName": "arrhythmogenic right ventricular dysplasia 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6809371",
+          "Reactome:R-HSA-6805567"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6809371": 129,
+          "Reactome:R-HSA-6805567": 154
+        },
+        "fitness": 0.455,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KRT5 (HGNC:6411) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); PKP2 (HGNC:9440) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Blistering of the skin (HP:0001010); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Arrhythmia (HP:0011692). Disruptions in KRT5 and PKP2 impair the assembly and function of epithelial and cardiac cell adhesion complexes, respectively, leading to the distinct phenotypes of blistering skin and cardiac arrhythmias.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in KRT5 or PKP2 with a minor allele frequency > 1% in gnomAD for the respective disease population.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared reliance on protein complexes involved in cellular adhesion opens avenues for therapeutic strategies that could target common pathways to mitigate both skin fragility and cardiac dysfunction, potentially through stabilizing protein interactions or enhancing cellular repair mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011472",
+      "diseaseBName": "epidermolysis bullosa simplex due to plakophilin deficiency",
+      "fitness": 0.3814,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KRT5 (HGNC:6416) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); PKP1 (HGNC:9027) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); Keratin intermediate filament organization (GO:0007033) —LEADS_TO→ Skin fragility (HP:0003474); KRT5 (HGNC:6416) —LEADS_TO→ Epidermolysis bullosa simplex 2E (MONDO:0012258); PKP1 (HGNC:9027) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472). Mutations in KRT5 (disease A) and PKP1 (disease B) both disrupt the keratin intermediate filament organization pathway, ultimately leading to the shared phenotype of skin fragility.",
+      "mechanism_narrative": "KRT5 (HGNC:6416) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); PKP1 (HGNC:9027) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); Keratin intermediate filament organization (GO:0007033) —LEADS_TO→ Skin fragility (HP:0003474); KRT5 (HGNC:6416) —LEADS_TO→ Epidermolysis bullosa simplex 2E (MONDO:0012258); PKP1 (HGNC:9027) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472). Mutations in KRT5 (disease A) and PKP1 (disease B) both disrupt the keratin intermediate filament organization pathway, ultimately leading to the shared phenotype of skin fragility.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in KRT5 and PKP1 do not impact the keratin intermediate filament organization pathway, or if the identified mutations do not lead to a loss-of-function or haploinsufficiency effect on keratin network integrity, the proposed mechanistic link would be falsified. Additionally, if disease A and disease B are shown to affect entirely separate cellular processes with no downstream functional overlap, this hypothesis would be refuted.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of KRT5 and PKP1 that do not segregate with either disease would weaken the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6809371",
+        "Reactome:R-HSA-6805567"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6809371": 129,
+        "Reactome:R-HSA-6805567": 154
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011472",
+        "diseaseBName": "epidermolysis bullosa simplex due to plakophilin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6809371",
+          "Reactome:R-HSA-6805567"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6809371": 129,
+          "Reactome:R-HSA-6805567": 154
+        },
+        "fitness": 0.3814,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KRT5 (HGNC:6416) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); PKP1 (HGNC:9027) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); Keratin intermediate filament organization (GO:0007033) —LEADS_TO→ Skin fragility (HP:0003474); KRT5 (HGNC:6416) —LEADS_TO→ Epidermolysis bullosa simplex 2E (MONDO:0012258); PKP1 (HGNC:9027) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472). Mutations in KRT5 (disease A) and PKP1 (disease B) both disrupt the keratin intermediate filament organization pathway, ultimately leading to the shared phenotype of skin fragility.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in KRT5 and PKP1 do not impact the keratin intermediate filament organization pathway, or if the identified mutations do not lead to a loss-of-function or haploinsufficiency effect on keratin network integrity, the proposed mechanistic link would be falsified. Additionally, if disease A and disease B are shown to affect entirely separate cellular processes with no downstream functional overlap, this hypothesis would be refuted.",
+          "gnomad_variant": "The presence of common variants (AF > 1%) in gnomAD within the coding regions of KRT5 and PKP1 that do not segregate with either disease would weaken the causal link."
+        },
+        "translational": "Understanding the shared mechanistic basis in keratin intermediate filament organization between these two forms of epidermolysis bullosa could inform therapeutic strategies. Targeting pathways downstream of keratin network disruption, or exploring gene therapy approaches for either KRT5 or PKP1, might offer a unified treatment avenue for patients with either disease, especially given the shared phenotypic outcome of skin fragility."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T13:40:22.494Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** epidermolysis bullosa simplex 2E, with migratory circinate erythema (MONDO:0012258)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | arrhythmogenic right ventricular dysplasia 9 (MONDO:0012180) | shared pathway | Tier 3 | 0.455 | Reactome:R-HSA-6809371, Reactome:R-HSA-6805567 |\n| 2 | epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-6809371, Reactome:R-HSA-6805567 |\n\n### CANDIDATE DETAIL\n#### 1. arrhythmogenic right ventricular dysplasia 9  —  Tier 3 — Moderate / Emerging  (fitness 0.455)\n**Link type:** shared pathway (Reactome:R-HSA-6809371, Reactome:R-HSA-6805567)\n\n**Proposed mechanism:** KRT5 (HGNC:6411) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); PKP2 (HGNC:9440) —DISRUPTS→ Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Blistering of the skin (HP:0001010); Epithelial and Cardiac Cell Adhesion Complex Assembly (GO:0034094) —LEADS_TO→ Arrhythmia (HP:0011692). Disruptions in KRT5 and PKP2 impair the assembly and function of epithelial and cardiac cell adhesion complexes, respectively, leading to the distinct phenotypes of blistering skin and cardiac arrhythmias.\n\n**How to falsify it:** Discovery of a pathogenic variant in KRT5 or PKP2 with a minor allele frequency > 1% in gnomAD for the respective disease population. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared reliance on protein complexes involved in cellular adhesion opens avenues for therapeutic strategies that could target common pathways to mitigate both skin fragility and cardiac dysfunction, potentially through stabilizing protein interactions or enhancing cellular repair mechanisms.\n\n---\n\n#### 2. epidermolysis bullosa simplex due to plakophilin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-6809371, Reactome:R-HSA-6805567)\n\n**Proposed mechanism:** KRT5 (HGNC:6416) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); PKP1 (HGNC:9027) —DISRUPTS→ Keratin intermediate filament organization (GO:0007033); Keratin intermediate filament organization (GO:0007033) —LEADS_TO→ Skin fragility (HP:0003474); KRT5 (HGNC:6416) —LEADS_TO→ Epidermolysis bullosa simplex 2E (MONDO:0012258); PKP1 (HGNC:9027) —LEADS_TO→ Epidermolysis bullosa simplex due to plakophilin deficiency (MONDO:0011472). Mutations in KRT5 (disease A) and PKP1 (disease B) both disrupt the keratin intermediate filament organization pathway, ultimately leading to the shared phenotype of skin fragility.\n\n**How to falsify it:** If genetic analysis reveals that mutations in KRT5 and PKP1 do not impact the keratin intermediate filament organization pathway, or if the identified mutations do not lead to a loss-of-function or haploinsufficiency effect on keratin network integrity, the proposed mechanistic link would be falsified. Additionally, if disease A and disease B are shown to affect entirely separate cellular processes with no downstream functional overlap, this hypothesis would be refuted. _(variant: The presence of common variants (AF > 1%) in gnomAD within the coding regions of KRT5 and PKP1 that do not segregate with either disease would weaken the causal link.)_\n\n**Why it matters:** Understanding the shared mechanistic basis in keratin intermediate filament organization between these two forms of epidermolysis bullosa could inform therapeutic strategies. Targeting pathways downstream of keratin network disruption, or exploring gene therapy approaches for either KRT5 or PKP1, might offer a unified treatment avenue for patients with either disease, especially given the shared phenotypic outcome of skin fragility.\n\n---"
+}

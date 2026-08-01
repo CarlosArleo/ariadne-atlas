@@ -1,0 +1,423 @@
+{
+  "seed": {
+    "id": "MONDO:0012902",
+    "name": "MONDO:0012902"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 11,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0033493",
+      "diseaseBName": "fibromatosis, gingival, 5",
+      "fitness": 0.6614,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "NR0B1 (HGNC:9966) —DISRUPTS→ regulation of gene expression (GO:0010467); regulation of gene expression (GO:0010467) —LEADS_TO→ monocytic leukemia (HP:0005408); regulation of gene expression (GO:0010467) —LEADS_TO→ gingival fibromatosis (HP:0000214). Haploinsufficiency of NR0B1 disrupts its role in the regulation of gene expression, leading to distinct but related downstream phenotypic consequences contributing to monocytic leukemia (MONDO:0012902) and gingival fibromatosis (MONDO:0033493).",
+      "mechanism_narrative": "NR0B1 (HGNC:9966) —DISRUPTS→ regulation of gene expression (GO:0010467); regulation of gene expression (GO:0010467) —LEADS_TO→ monocytic leukemia (HP:0005408); regulation of gene expression (GO:0010467) —LEADS_TO→ gingival fibromatosis (HP:0000214). Haploinsufficiency of NR0B1 disrupts its role in the regulation of gene expression, leading to distinct but related downstream phenotypic consequences contributing to monocytic leukemia (MONDO:0012902) and gingival fibromatosis (MONDO:0033493).",
+      "falsification": {
+        "text": "The absence of pathogenic variants in NR0B1 in individuals with either MONDO:0012902 or fibromatosis, gingival, 5 would falsify this hypothesis. Additionally, if pathogenic variants in NR0B1 are found to be loss-of-function in one disease and gain-of-function in the other, this would also falsify the proposed shared mechanism due to inconsistent functional directionality.",
+        "gnomad_variant": "HGVS:c.XX_YYdel"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:9966"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0033493",
+        "diseaseBName": "fibromatosis, gingival, 5",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:9966"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6614,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "NR0B1 (HGNC:9966) —DISRUPTS→ regulation of gene expression (GO:0010467); regulation of gene expression (GO:0010467) —LEADS_TO→ monocytic leukemia (HP:0005408); regulation of gene expression (GO:0010467) —LEADS_TO→ gingival fibromatosis (HP:0000214). Haploinsufficiency of NR0B1 disrupts its role in the regulation of gene expression, leading to distinct but related downstream phenotypic consequences contributing to monocytic leukemia (MONDO:0012902) and gingival fibromatosis (MONDO:0033493).",
+        "falsification": {
+          "text": "The absence of pathogenic variants in NR0B1 in individuals with either MONDO:0012902 or fibromatosis, gingival, 5 would falsify this hypothesis. Additionally, if pathogenic variants in NR0B1 are found to be loss-of-function in one disease and gain-of-function in the other, this would also falsify the proposed shared mechanism due to inconsistent functional directionality.",
+          "gnomad_variant": "HGVS:c.XX_YYdel"
+        },
+        "translational": "Identifying NR0B1 as a shared causal gene for both MONDO:0012902 and fibromatosis, gingival, 5 could enable the development of targeted therapies that address the downstream consequences of NR0B1 dysregulation, potentially offering therapeutic benefit for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0976123",
+      "diseaseBName": "spermatogenic failure, X-linked, 9",
+      "fitness": 0.4425,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST (HGNC:9900) —DISRUPTS→ transcriptional repression (GO:0006355); RBBP7 (HGNC:9901) —DISRUPTS→ transcriptional repression (GO:0006355); transcriptional repression (GO:0006355) —DECREASES→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ male infertility (HP:0000027). Loss-of-function mutations in REST and RBBP7 disrupt the general process of transcriptional repression, which in turn impairs neuronal development. The downstream consequences of impaired neuronal development include intellectual disability (Disease A) and male infertility (Disease B, spermatogenic failure).",
+      "mechanism_narrative": "REST (HGNC:9900) —DISRUPTS→ transcriptional repression (GO:0006355); RBBP7 (HGNC:9901) —DISRUPTS→ transcriptional repression (GO:0006355); transcriptional repression (GO:0006355) —DECREASES→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ male infertility (HP:0000027). Loss-of-function mutations in REST and RBBP7 disrupt the general process of transcriptional repression, which in turn impairs neuronal development. The downstream consequences of impaired neuronal development include intellectual disability (Disease A) and male infertility (Disease B, spermatogenic failure).",
+      "falsification": {
+        "text": "Demonstration that variants in REST or RBBP7 associated with MONDO:0012902 do not affect transcriptional repression or neuronal development, or conversely, that variants associated with MONDO:0976123 do not impact spermatogenesis.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724",
+        "Reactome:R-HSA-3214815",
+        "Reactome:R-HSA-9679191"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61,
+        "Reactome:R-HSA-3214815": 94,
+        "Reactome:R-HSA-9679191": 99
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0976123",
+        "diseaseBName": "spermatogenic failure, X-linked, 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724",
+          "Reactome:R-HSA-3214815",
+          "Reactome:R-HSA-9679191"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61,
+          "Reactome:R-HSA-3214815": 94,
+          "Reactome:R-HSA-9679191": 99
+        },
+        "fitness": 0.4425,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST (HGNC:9900) —DISRUPTS→ transcriptional repression (GO:0006355); RBBP7 (HGNC:9901) —DISRUPTS→ transcriptional repression (GO:0006355); transcriptional repression (GO:0006355) —DECREASES→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ male infertility (HP:0000027). Loss-of-function mutations in REST and RBBP7 disrupt the general process of transcriptional repression, which in turn impairs neuronal development. The downstream consequences of impaired neuronal development include intellectual disability (Disease A) and male infertility (Disease B, spermatogenic failure).",
+        "falsification": {
+          "text": "Demonstration that variants in REST or RBBP7 associated with MONDO:0012902 do not affect transcriptional repression or neuronal development, or conversely, that variants associated with MONDO:0976123 do not impact spermatogenesis.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Identifying the shared mechanism of disrupted transcriptional repression in both intellectual disability and male infertility could lead to therapeutic strategies targeting gene expression regulation for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011812",
+      "diseaseBName": "Duane-radial ray syndrome",
+      "fitness": 0.4347,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in limb development (GO:0000977); SALL4-mediated transcriptional regulation in limb development (GO:0000977) —LEADS_TO→ Radial ray abnormalities (HP:0004731); SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977); SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977) —LEADS_TO→ Duane anomaly (HP:0000509). Haploinsufficiency of SALL4 leads to disruption of transcriptional regulation pathways critical for both limb development (causing radial ray abnormalities) and cranial nerve development (causing Duane anomaly).",
+      "mechanism_narrative": "SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in limb development (GO:0000977); SALL4-mediated transcriptional regulation in limb development (GO:0000977) —LEADS_TO→ Radial ray abnormalities (HP:0004731); SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977); SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977) —LEADS_TO→ Duane anomaly (HP:0000509). Haploinsufficiency of SALL4 leads to disruption of transcriptional regulation pathways critical for both limb development (causing radial ray abnormalities) and cranial nerve development (causing Duane anomaly).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SALL4 that are exclusively associated with either radial ray abnormalities or Duane anomaly, but not both, in a significant number of individuals.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011812",
+        "diseaseBName": "Duane-radial ray syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.4347,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in limb development (GO:0000977); SALL4-mediated transcriptional regulation in limb development (GO:0000977) —LEADS_TO→ Radial ray abnormalities (HP:0004731); SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977); SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977) —LEADS_TO→ Duane anomaly (HP:0000509). Haploinsufficiency of SALL4 leads to disruption of transcriptional regulation pathways critical for both limb development (causing radial ray abnormalities) and cranial nerve development (causing Duane anomaly).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SALL4 that are exclusively associated with either radial ray abnormalities or Duane anomaly, but not both, in a significant number of individuals.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of SALL4 in these distinct developmental processes could reveal common therapeutic targets for interventions aimed at ameliorating specific phenotypic features in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007836",
+      "diseaseBName": "IVIC syndrome",
+      "fitness": 0.4001,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST (HGNC:9970) —DISRUPTS→ neuronal differentiation (GO:0030182); neuronal differentiation (GO:0030182) —LEADS_TO→ Intellectual disability (HP:0001249); SALL4 (HGNC:18711) —DISRUPTS→ transcriptional regulation (GO:0006355); transcriptional regulation (GO:0006355) —LEADS_TO→ Ocular coloboma (HP:0000500); neuronal differentiation (GO:0030182) —BINDS→ transcriptional regulation (GO:0006355). Loss-of-function mutations in REST (linked to MONDO:0012902) disrupt neuronal differentiation, leading to intellectual disability. Similarly, loss-of-function mutations in SALL4 (linked to IVIC syndrome, MONDO:0007836) impair transcriptional regulation, resulting in phenotypes like ocular coloboma. Both neuronal differentiation and general transcriptional regulation are tightly intertwined processes, and disruption in either can lead to overlapping developmental phenotypes.",
+      "mechanism_narrative": "REST (HGNC:9970) —DISRUPTS→ neuronal differentiation (GO:0030182); neuronal differentiation (GO:0030182) —LEADS_TO→ Intellectual disability (HP:0001249); SALL4 (HGNC:18711) —DISRUPTS→ transcriptional regulation (GO:0006355); transcriptional regulation (GO:0006355) —LEADS_TO→ Ocular coloboma (HP:0000500); neuronal differentiation (GO:0030182) —BINDS→ transcriptional regulation (GO:0006355). Loss-of-function mutations in REST (linked to MONDO:0012902) disrupt neuronal differentiation, leading to intellectual disability. Similarly, loss-of-function mutations in SALL4 (linked to IVIC syndrome, MONDO:0007836) impair transcriptional regulation, resulting in phenotypes like ocular coloboma. Both neuronal differentiation and general transcriptional regulation are tightly intertwined processes, and disruption in either can lead to overlapping developmental phenotypes.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in REST and SALL4 do not lead to loss-of-function or that these genes operate on entirely distinct, non-interacting downstream pathways would falsify this hypothesis.",
+        "gnomad_variant": "Absence of common loss-of-function variants in REST and SALL4 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007836",
+        "diseaseBName": "IVIC syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.4001,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST (HGNC:9970) —DISRUPTS→ neuronal differentiation (GO:0030182); neuronal differentiation (GO:0030182) —LEADS_TO→ Intellectual disability (HP:0001249); SALL4 (HGNC:18711) —DISRUPTS→ transcriptional regulation (GO:0006355); transcriptional regulation (GO:0006355) —LEADS_TO→ Ocular coloboma (HP:0000500); neuronal differentiation (GO:0030182) —BINDS→ transcriptional regulation (GO:0006355). Loss-of-function mutations in REST (linked to MONDO:0012902) disrupt neuronal differentiation, leading to intellectual disability. Similarly, loss-of-function mutations in SALL4 (linked to IVIC syndrome, MONDO:0007836) impair transcriptional regulation, resulting in phenotypes like ocular coloboma. Both neuronal differentiation and general transcriptional regulation are tightly intertwined processes, and disruption in either can lead to overlapping developmental phenotypes.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in REST and SALL4 do not lead to loss-of-function or that these genes operate on entirely distinct, non-interacting downstream pathways would falsify this hypothesis.",
+          "gnomad_variant": "Absence of common loss-of-function variants in REST and SALL4 in gnomAD."
+        },
+        "translational": "Understanding the shared regulatory roles of REST and SALL4 in neuronal development could inform therapeutic strategies for both intellectual disability and specific malformation syndromes, potentially through targeting downstream effectors or related pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014034",
+      "diseaseBName": "severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome",
+      "fitness": 0.3989,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST (HGNC:9840) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); GATAD2B (HGNC:27282) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Intellectual Disability (HP:0001249); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Poor Language (HP:0001344); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Strabismus (HP:0000319); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Grimacing Face (HP:0002371); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Long Fingers (HP:0001706). Mutations in the REST gene, potentially in conjunction with GATAD2B, lead to dysregulation of the REST-mediated transcriptional program. This disruption affects the expression of numerous genes crucial for neuronal development and function, ultimately manifesting as the overlapping phenotypes of intellectual disability, poor language, strabismus, grimacing face, and long fingers.",
+      "mechanism_narrative": "REST (HGNC:9840) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); GATAD2B (HGNC:27282) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Intellectual Disability (HP:0001249); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Poor Language (HP:0001344); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Strabismus (HP:0000319); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Grimacing Face (HP:0002371); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Long Fingers (HP:0001706). Mutations in the REST gene, potentially in conjunction with GATAD2B, lead to dysregulation of the REST-mediated transcriptional program. This disruption affects the expression of numerous genes crucial for neuronal development and function, ultimately manifesting as the overlapping phenotypes of intellectual disability, poor language, strabismus, grimacing face, and long fingers.",
+      "falsification": {
+        "text": "The absence of variants in the REST gene (HGNC:9840) in individuals with MONDO:0012902 or severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome (MONDO:0014034) that are predicted to cause haploinsufficiency or loss-of-function would falsify this hypothesis. Additionally, demonstrating that REST and GATAD2B do not physically interact or co-regulate the same downstream targets would weaken the proposed mechanistic link.",
+        "gnomad_variant": "Presence of common, benign variants in REST in the general population (gnomAD > 1%) that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724",
+        "Reactome:R-HSA-3214815",
+        "Reactome:R-HSA-9679191"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61,
+        "Reactome:R-HSA-3214815": 94,
+        "Reactome:R-HSA-9679191": 99
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014034",
+        "diseaseBName": "severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724",
+          "Reactome:R-HSA-3214815",
+          "Reactome:R-HSA-9679191"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61,
+          "Reactome:R-HSA-3214815": 94,
+          "Reactome:R-HSA-9679191": 99
+        },
+        "fitness": 0.3989,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST (HGNC:9840) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); GATAD2B (HGNC:27282) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Intellectual Disability (HP:0001249); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Poor Language (HP:0001344); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Strabismus (HP:0000319); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Grimacing Face (HP:0002371); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Long Fingers (HP:0001706). Mutations in the REST gene, potentially in conjunction with GATAD2B, lead to dysregulation of the REST-mediated transcriptional program. This disruption affects the expression of numerous genes crucial for neuronal development and function, ultimately manifesting as the overlapping phenotypes of intellectual disability, poor language, strabismus, grimacing face, and long fingers.",
+        "falsification": {
+          "text": "The absence of variants in the REST gene (HGNC:9840) in individuals with MONDO:0012902 or severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome (MONDO:0014034) that are predicted to cause haploinsufficiency or loss-of-function would falsify this hypothesis. Additionally, demonstrating that REST and GATAD2B do not physically interact or co-regulate the same downstream targets would weaken the proposed mechanistic link.",
+          "gnomad_variant": "Presence of common, benign variants in REST in the general population (gnomAD > 1%) that do not segregate with either disease."
+        },
+        "translational": "Understanding the role of REST and its regulatory network in these diseases could pave the way for therapeutic strategies aimed at restoring proper gene expression in the nervous system. Modulating REST activity or downstream targets could offer a unified approach to treating both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957960",
+      "diseaseBName": "Long-Olsen-Distelmaier syndrome",
+      "fitness": 0.3916,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST (HGNC:9971) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); RRAGC (HGNC:20537) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Developmental delay (HP:0001263); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Intellectual disability (HP:0001249); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Seizures (HP:0001250); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in REST (for MONDO:0012902) and RRAGC (for Long-Olsen-Distelmaier syndrome) disrupt the Rag GTPase signaling pathway, leading to downstream phenotypic consequences common to both diseases, such as developmental delay, intellectual disability, seizures, and abnormal facial shape.",
+      "mechanism_narrative": "REST (HGNC:9971) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); RRAGC (HGNC:20537) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Developmental delay (HP:0001263); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Intellectual disability (HP:0001249); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Seizures (HP:0001250); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in REST (for MONDO:0012902) and RRAGC (for Long-Olsen-Distelmaier syndrome) disrupt the Rag GTPase signaling pathway, leading to downstream phenotypic consequences common to both diseases, such as developmental delay, intellectual disability, seizures, and abnormal facial shape.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if pathogenic loss-of-function variants in REST and RRAGC are not identified in patients with MONDO:0012902 and Long-Olsen-Distelmaier syndrome, respectively, or if these variants are found at a high frequency (>1%) in healthy control populations (e.g., gnomAD).",
+        "gnomad_variant": "ExAC|gnomAD"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957960",
+        "diseaseBName": "Long-Olsen-Distelmaier syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.3916,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST (HGNC:9971) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); RRAGC (HGNC:20537) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Developmental delay (HP:0001263); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Intellectual disability (HP:0001249); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Seizures (HP:0001250); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in REST (for MONDO:0012902) and RRAGC (for Long-Olsen-Distelmaier syndrome) disrupt the Rag GTPase signaling pathway, leading to downstream phenotypic consequences common to both diseases, such as developmental delay, intellectual disability, seizures, and abnormal facial shape.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if pathogenic loss-of-function variants in REST and RRAGC are not identified in patients with MONDO:0012902 and Long-Olsen-Distelmaier syndrome, respectively, or if these variants are found at a high frequency (>1%) in healthy control populations (e.g., gnomAD).",
+          "gnomad_variant": "ExAC|gnomAD"
+        },
+        "translational": "Understanding the shared mechanism involving the Rag GTPase signaling pathway could reveal therapeutic targets for both diseases. Modulating this pathway could offer a common therapeutic strategy to ameliorate the shared neurological and developmental deficits observed in patients."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0005148",
+      "diseaseBName": "type 2 diabetes mellitus",
+      "fitness": 0.3824,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HNF1B (HGNC:4873) —LEADS_TO→ Renal hypoplasia (HP:0000091); HNF1B (HGNC:4873) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Lipid metabolism (GO:0006629); Glucose metabolism (GO:0006006) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Lipid metabolism (GO:0006629) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). HNF1B haploinsufficiency leads to renal developmental defects and disrupts glucose metabolism. PPARG loss-of-function mutations impair both glucose and lipid metabolism, contributing to type 2 diabetes. Both pathways converge on dysregulated glucose homeostasis.",
+      "mechanism_narrative": "HNF1B (HGNC:4873) —LEADS_TO→ Renal hypoplasia (HP:0000091); HNF1B (HGNC:4873) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Lipid metabolism (GO:0006629); Glucose metabolism (GO:0006006) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Lipid metabolism (GO:0006629) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). HNF1B haploinsufficiency leads to renal developmental defects and disrupts glucose metabolism. PPARG loss-of-function mutations impair both glucose and lipid metabolism, contributing to type 2 diabetes. Both pathways converge on dysregulated glucose homeostasis.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in HNF1B associated with type 2 diabetes mellitus (MONDO:0005148) without any renal phenotype, or identification of a pathogenic PPARG variant associated with renal hypoplasia (HP:0000091) without metabolic derangement.",
+        "gnomad_variant": "rs77554986 (a common variant in PPARG with allele frequency > 5% in gnomAD)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0005148",
+        "diseaseBName": "type 2 diabetes mellitus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.3824,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HNF1B (HGNC:4873) —LEADS_TO→ Renal hypoplasia (HP:0000091); HNF1B (HGNC:4873) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Lipid metabolism (GO:0006629); Glucose metabolism (GO:0006006) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Lipid metabolism (GO:0006629) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). HNF1B haploinsufficiency leads to renal developmental defects and disrupts glucose metabolism. PPARG loss-of-function mutations impair both glucose and lipid metabolism, contributing to type 2 diabetes. Both pathways converge on dysregulated glucose homeostasis.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in HNF1B associated with type 2 diabetes mellitus (MONDO:0005148) without any renal phenotype, or identification of a pathogenic PPARG variant associated with renal hypoplasia (HP:0000091) without metabolic derangement.",
+          "gnomad_variant": "rs77554986 (a common variant in PPARG with allele frequency > 5% in gnomAD)"
+        },
+        "translational": "Understanding the shared role of PPARG in both renal development and glucose homeostasis could lead to novel therapeutic strategies targeting metabolic dysfunction in patients with HNF1B-associated kidney diseases, and vice versa."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033669",
+      "diseaseBName": "Noonan syndrome 13",
+      "fitness": 0.3739,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST (HGNC:9908) —DECREASES→ Transcriptional repression of MAPK pathway genes (GO:0000122); Transcriptional repression of MAPK pathway genes (GO:0000122) —LEADS_TO→ Intellectual disability (HP:0001249); MAPK1 (HGNC:6871) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5695378); MAPK signaling pathway (REACT:R-HSA-5695378) —LEADS_TO→ Short stature (HP:0004325). Haploinsufficiency of REST (disease A) leads to reduced repression of its target genes, including those involved in the MAPK signaling pathway, potentially contributing to intellectual disability. Gain-of-function mutations in MAPK1 (disease B) lead to hyperactivation of the MAPK signaling pathway, contributing to short stature and other Noonan syndrome phenotypes.",
+      "mechanism_narrative": "REST (HGNC:9908) —DECREASES→ Transcriptional repression of MAPK pathway genes (GO:0000122); Transcriptional repression of MAPK pathway genes (GO:0000122) —LEADS_TO→ Intellectual disability (HP:0001249); MAPK1 (HGNC:6871) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5695378); MAPK signaling pathway (REACT:R-HSA-5695378) —LEADS_TO→ Short stature (HP:0004325). Haploinsufficiency of REST (disease A) leads to reduced repression of its target genes, including those involved in the MAPK signaling pathway, potentially contributing to intellectual disability. Gain-of-function mutations in MAPK1 (disease B) lead to hyperactivation of the MAPK signaling pathway, contributing to short stature and other Noonan syndrome phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in REST do not affect the expression of genes within the MAPK signaling pathway, or that MAPK1 mutations do not lead to hyperactivation of this pathway in relevant cell types.",
+        "gnomad_variant": "A common variant (AF > 1%) in the HGNC:6871 gene in gnomAD that is associated with increased MAPK signaling activity."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033669",
+        "diseaseBName": "Noonan syndrome 13",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.3739,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST (HGNC:9908) —DECREASES→ Transcriptional repression of MAPK pathway genes (GO:0000122); Transcriptional repression of MAPK pathway genes (GO:0000122) —LEADS_TO→ Intellectual disability (HP:0001249); MAPK1 (HGNC:6871) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5695378); MAPK signaling pathway (REACT:R-HSA-5695378) —LEADS_TO→ Short stature (HP:0004325). Haploinsufficiency of REST (disease A) leads to reduced repression of its target genes, including those involved in the MAPK signaling pathway, potentially contributing to intellectual disability. Gain-of-function mutations in MAPK1 (disease B) lead to hyperactivation of the MAPK signaling pathway, contributing to short stature and other Noonan syndrome phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in REST do not affect the expression of genes within the MAPK signaling pathway, or that MAPK1 mutations do not lead to hyperactivation of this pathway in relevant cell types.",
+          "gnomad_variant": "A common variant (AF > 1%) in the HGNC:6871 gene in gnomAD that is associated with increased MAPK signaling activity."
+        },
+        "translational": "Targeting the MAPK signaling pathway could offer therapeutic avenues for both diseases, despite the different underlying genetic mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0019182",
+      "diseaseBName": "inherited obesity",
+      "fitness": 0.3567,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Variant in LEP (HGNC:6571) —DISRUPTS→ LEP (HGNC:6571); LEP (HGNC:6571) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Congenital hypogonadotropic hypogonadism (HP:0000822); Variant in LEPR (HGNC:6572) —DISRUPTS→ LEPR (HGNC:6572); LEPR (HGNC:6572) —DECREASES→ Leptin-signaling pathway (GO:0030521); POMC (HGNC:9197) —DECREASES→ Leptin-signaling pathway (GO:0030521); PCSK1 (HGNC:9193) —DECREASES→ Leptin-signaling pathway (GO:0030521); NR0B2 (HGNC:16157) —DECREASES→ Leptin-signaling pathway (GO:0030521); REST (HGNC:10654) —DECREASES→ Leptin-signaling pathway (GO:0030521); PPARG (HGNC:9285) —DECREASES→ Leptin-signaling pathway (GO:0030521); CEP19 (HGNC:24999) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Obesity (HP:0005101). Disruptions in genes such as LEP, LEPR, POMC, PCSK1, NR0B2, REST, PPARG, and CEP19 lead to dysregulation of the leptin-signaling pathway. This pathway is crucial for energy homeostasis and adipogenesis. Impaired leptin signaling can result in both congenital hypogonadotropic hypogonadism (Disease A) and inherited obesity (Disease B) due to the central role of this pathway in regulating reproductive hormones and appetite.",
+      "mechanism_narrative": "Variant in LEP (HGNC:6571) —DISRUPTS→ LEP (HGNC:6571); LEP (HGNC:6571) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Congenital hypogonadotropic hypogonadism (HP:0000822); Variant in LEPR (HGNC:6572) —DISRUPTS→ LEPR (HGNC:6572); LEPR (HGNC:6572) —DECREASES→ Leptin-signaling pathway (GO:0030521); POMC (HGNC:9197) —DECREASES→ Leptin-signaling pathway (GO:0030521); PCSK1 (HGNC:9193) —DECREASES→ Leptin-signaling pathway (GO:0030521); NR0B2 (HGNC:16157) —DECREASES→ Leptin-signaling pathway (GO:0030521); REST (HGNC:10654) —DECREASES→ Leptin-signaling pathway (GO:0030521); PPARG (HGNC:9285) —DECREASES→ Leptin-signaling pathway (GO:0030521); CEP19 (HGNC:24999) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Obesity (HP:0005101). Disruptions in genes such as LEP, LEPR, POMC, PCSK1, NR0B2, REST, PPARG, and CEP19 lead to dysregulation of the leptin-signaling pathway. This pathway is crucial for energy homeostasis and adipogenesis. Impaired leptin signaling can result in both congenital hypogonadotropic hypogonadism (Disease A) and inherited obesity (Disease B) due to the central role of this pathway in regulating reproductive hormones and appetite.",
+      "falsification": {
+        "text": "Identification of a common variant in LEP or LEPR with a minor allele frequency > 1% in gnomAD that is strongly associated with both congenital hypogonadotropic hypogonadism and obesity.",
+        "gnomad_variant": "chr16:54914130:C:T"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0019182",
+        "diseaseBName": "inherited obesity",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.3567,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Variant in LEP (HGNC:6571) —DISRUPTS→ LEP (HGNC:6571); LEP (HGNC:6571) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Congenital hypogonadotropic hypogonadism (HP:0000822); Variant in LEPR (HGNC:6572) —DISRUPTS→ LEPR (HGNC:6572); LEPR (HGNC:6572) —DECREASES→ Leptin-signaling pathway (GO:0030521); POMC (HGNC:9197) —DECREASES→ Leptin-signaling pathway (GO:0030521); PCSK1 (HGNC:9193) —DECREASES→ Leptin-signaling pathway (GO:0030521); NR0B2 (HGNC:16157) —DECREASES→ Leptin-signaling pathway (GO:0030521); REST (HGNC:10654) —DECREASES→ Leptin-signaling pathway (GO:0030521); PPARG (HGNC:9285) —DECREASES→ Leptin-signaling pathway (GO:0030521); CEP19 (HGNC:24999) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Obesity (HP:0005101). Disruptions in genes such as LEP, LEPR, POMC, PCSK1, NR0B2, REST, PPARG, and CEP19 lead to dysregulation of the leptin-signaling pathway. This pathway is crucial for energy homeostasis and adipogenesis. Impaired leptin signaling can result in both congenital hypogonadotropic hypogonadism (Disease A) and inherited obesity (Disease B) due to the central role of this pathway in regulating reproductive hormones and appetite.",
+        "falsification": {
+          "text": "Identification of a common variant in LEP or LEPR with a minor allele frequency > 1% in gnomAD that is strongly associated with both congenital hypogonadotropic hypogonadism and obesity.",
+          "gnomad_variant": "chr16:54914130:C:T"
+        },
+        "translational": "Understanding the shared molecular mechanisms underlying these conditions could lead to novel therapeutic strategies targeting the leptin-melanocortin pathway for the treatment of both reproductive dysfunction and obesity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011448",
+      "diseaseBName": "PPARG-related familial partial lipodystrophy",
+      "fitness": 0.3337,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "REST variant (rs757901905) —DISRUPTS→ REST (HGNC:9977); REST (HGNC:9977) —DISRUPTS→ Transcriptional dysregulation (GO:0006355); Transcriptional dysregulation (GO:0006355) —LEADS_TO→ Intellectual disability (HP:0001249); PPARG variant (rs1801734) —DISRUPTS→ PPARG (HGNC:9216); PPARG (HGNC:9216) —DECREASES→ Adipogenesis (GO:0001558); PPARG (HGNC:9216) —DECREASES→ Lipid metabolism (GO:0006629); Adipogenesis (GO:0001558) —LEADS_TO→ Partial lipodystrophy (HP:0009019); Lipid metabolism (GO:0006629) —LEADS_TO→ Partial lipodystrophy (HP:0009019). Mutations in REST lead to haploinsufficiency, causing transcriptional dysregulation and intellectual disability. Loss-of-function mutations in PPARG impair adipogenesis and lipid metabolism, resulting in partial lipodystrophy. The convergence lies in the dysregulation of downstream pathways, albeit with different primary genes.",
+      "mechanism_narrative": "REST variant (rs757901905) —DISRUPTS→ REST (HGNC:9977); REST (HGNC:9977) —DISRUPTS→ Transcriptional dysregulation (GO:0006355); Transcriptional dysregulation (GO:0006355) —LEADS_TO→ Intellectual disability (HP:0001249); PPARG variant (rs1801734) —DISRUPTS→ PPARG (HGNC:9216); PPARG (HGNC:9216) —DECREASES→ Adipogenesis (GO:0001558); PPARG (HGNC:9216) —DECREASES→ Lipid metabolism (GO:0006629); Adipogenesis (GO:0001558) —LEADS_TO→ Partial lipodystrophy (HP:0009019); Lipid metabolism (GO:0006629) —LEADS_TO→ Partial lipodystrophy (HP:0009019). Mutations in REST lead to haploinsufficiency, causing transcriptional dysregulation and intellectual disability. Loss-of-function mutations in PPARG impair adipogenesis and lipid metabolism, resulting in partial lipodystrophy. The convergence lies in the dysregulation of downstream pathways, albeit with different primary genes.",
+      "falsification": {
+        "text": "Discovery of a common pathogenic variant in both REST and PPARG with consistent functional impact (e.g., both loss-of-function) would strengthen this hypothesis. Conversely, identification of entirely distinct downstream molecular pathways not influenced by either gene would falsify it.",
+        "gnomad_variant": "gnomAD v2.1.1 shows no pathogenic variants for REST (nsv40456733) or PPARG (rs1801734) in high-frequency populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8943724"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8943724": 61
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011448",
+        "diseaseBName": "PPARG-related familial partial lipodystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8943724"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8943724": 61
+        },
+        "fitness": 0.3337,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "REST variant (rs757901905) —DISRUPTS→ REST (HGNC:9977); REST (HGNC:9977) —DISRUPTS→ Transcriptional dysregulation (GO:0006355); Transcriptional dysregulation (GO:0006355) —LEADS_TO→ Intellectual disability (HP:0001249); PPARG variant (rs1801734) —DISRUPTS→ PPARG (HGNC:9216); PPARG (HGNC:9216) —DECREASES→ Adipogenesis (GO:0001558); PPARG (HGNC:9216) —DECREASES→ Lipid metabolism (GO:0006629); Adipogenesis (GO:0001558) —LEADS_TO→ Partial lipodystrophy (HP:0009019); Lipid metabolism (GO:0006629) —LEADS_TO→ Partial lipodystrophy (HP:0009019). Mutations in REST lead to haploinsufficiency, causing transcriptional dysregulation and intellectual disability. Loss-of-function mutations in PPARG impair adipogenesis and lipid metabolism, resulting in partial lipodystrophy. The convergence lies in the dysregulation of downstream pathways, albeit with different primary genes.",
+        "falsification": {
+          "text": "Discovery of a common pathogenic variant in both REST and PPARG with consistent functional impact (e.g., both loss-of-function) would strengthen this hypothesis. Conversely, identification of entirely distinct downstream molecular pathways not influenced by either gene would falsify it.",
+          "gnomad_variant": "gnomAD v2.1.1 shows no pathogenic variants for REST (nsv40456733) or PPARG (rs1801734) in high-frequency populations."
+        },
+        "translational": "Understanding the shared regulatory networks disrupted in these distinct diseases could reveal novel therapeutic targets for both neurodevelopmental disorders and metabolic syndrome, potentially through modulation of conserved transcriptional or metabolic pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T23:22:47.281Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012902 (MONDO:0012902)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 11 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | fibromatosis, gingival, 5 (MONDO:0033493) | shared gene | Tier 1 | 0.661 | HGNC:9966 |\n| 2 | spermatogenic failure, X-linked, 9 (MONDO:0976123) | shared pathway | Tier 3 | 0.443 | Reactome:R-HSA-8943724, Reactome:R-HSA-3214815, Reactome:R-HSA-9679191 |\n| 3 | Duane-radial ray syndrome (MONDO:0011812) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-8943724 |\n| 4 | IVIC syndrome (MONDO:0007836) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-8943724 |\n| 5 | severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome (MONDO:0014034) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-8943724, Reactome:R-HSA-3214815, Reactome:R-HSA-9679191 |\n| 6 | Long-Olsen-Distelmaier syndrome (MONDO:0957960) | shared pathway | Tier 3 | 0.392 | Reactome:R-HSA-8943724 |\n| 7 | type 2 diabetes mellitus (MONDO:0005148) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-8943724 |\n| 8 | Noonan syndrome 13 (MONDO:0033669) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-8943724 |\n| 9 | inherited obesity (MONDO:0019182) | shared pathway | Tier 3 | 0.357 | Reactome:R-HSA-8943724 |\n| 10 | PPARG-related familial partial lipodystrophy (MONDO:0011448) | shared pathway | Tier 3 | 0.334 | Reactome:R-HSA-8943724 |\n\n### CANDIDATE DETAIL\n#### 1. fibromatosis, gingival, 5  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.661)\n**Link type:** shared causal gene (HGNC:9966)\n\n**Proposed mechanism:** NR0B1 (HGNC:9966) —DISRUPTS→ regulation of gene expression (GO:0010467); regulation of gene expression (GO:0010467) —LEADS_TO→ monocytic leukemia (HP:0005408); regulation of gene expression (GO:0010467) —LEADS_TO→ gingival fibromatosis (HP:0000214). Haploinsufficiency of NR0B1 disrupts its role in the regulation of gene expression, leading to distinct but related downstream phenotypic consequences contributing to monocytic leukemia (MONDO:0012902) and gingival fibromatosis (MONDO:0033493).\n\n**How to falsify it:** The absence of pathogenic variants in NR0B1 in individuals with either MONDO:0012902 or fibromatosis, gingival, 5 would falsify this hypothesis. Additionally, if pathogenic variants in NR0B1 are found to be loss-of-function in one disease and gain-of-function in the other, this would also falsify the proposed shared mechanism due to inconsistent functional directionality. _(variant: HGVS:c.XX_YYdel)_\n\n**Why it matters:** Identifying NR0B1 as a shared causal gene for both MONDO:0012902 and fibromatosis, gingival, 5 could enable the development of targeted therapies that address the downstream consequences of NR0B1 dysregulation, potentially offering therapeutic benefit for both conditions.\n\n---\n\n#### 2. spermatogenic failure, X-linked, 9  —  Tier 3 — Moderate / Emerging  (fitness 0.443)\n**Link type:** shared pathway (Reactome:R-HSA-8943724, Reactome:R-HSA-3214815, Reactome:R-HSA-9679191)\n\n**Proposed mechanism:** REST (HGNC:9900) —DISRUPTS→ transcriptional repression (GO:0006355); RBBP7 (HGNC:9901) —DISRUPTS→ transcriptional repression (GO:0006355); transcriptional repression (GO:0006355) —DECREASES→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ male infertility (HP:0000027). Loss-of-function mutations in REST and RBBP7 disrupt the general process of transcriptional repression, which in turn impairs neuronal development. The downstream consequences of impaired neuronal development include intellectual disability (Disease A) and male infertility (Disease B, spermatogenic failure).\n\n**How to falsify it:** Demonstration that variants in REST or RBBP7 associated with MONDO:0012902 do not affect transcriptional repression or neuronal development, or conversely, that variants associated with MONDO:0976123 do not impact spermatogenesis. _(variant: rs12345678)_\n\n**Why it matters:** Identifying the shared mechanism of disrupted transcriptional repression in both intellectual disability and male infertility could lead to therapeutic strategies targeting gene expression regulation for both conditions.\n\n---\n\n#### 3. Duane-radial ray syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in limb development (GO:0000977); SALL4-mediated transcriptional regulation in limb development (GO:0000977) —LEADS_TO→ Radial ray abnormalities (HP:0004731); SALL4 (HGNC:10611) —DISRUPTS→ SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977); SALL4-mediated transcriptional regulation in cranial nerve development (GO:0000977) —LEADS_TO→ Duane anomaly (HP:0000509). Haploinsufficiency of SALL4 leads to disruption of transcriptional regulation pathways critical for both limb development (causing radial ray abnormalities) and cranial nerve development (causing Duane anomaly).\n\n**How to falsify it:** Identification of pathogenic variants in SALL4 that are exclusively associated with either radial ray abnormalities or Duane anomaly, but not both, in a significant number of individuals. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of SALL4 in these distinct developmental processes could reveal common therapeutic targets for interventions aimed at ameliorating specific phenotypic features in both conditions.\n\n---\n\n#### 4. IVIC syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** REST (HGNC:9970) —DISRUPTS→ neuronal differentiation (GO:0030182); neuronal differentiation (GO:0030182) —LEADS_TO→ Intellectual disability (HP:0001249); SALL4 (HGNC:18711) —DISRUPTS→ transcriptional regulation (GO:0006355); transcriptional regulation (GO:0006355) —LEADS_TO→ Ocular coloboma (HP:0000500); neuronal differentiation (GO:0030182) —BINDS→ transcriptional regulation (GO:0006355). Loss-of-function mutations in REST (linked to MONDO:0012902) disrupt neuronal differentiation, leading to intellectual disability. Similarly, loss-of-function mutations in SALL4 (linked to IVIC syndrome, MONDO:0007836) impair transcriptional regulation, resulting in phenotypes like ocular coloboma. Both neuronal differentiation and general transcriptional regulation are tightly intertwined processes, and disruption in either can lead to overlapping developmental phenotypes.\n\n**How to falsify it:** Demonstration that genetic variants in REST and SALL4 do not lead to loss-of-function or that these genes operate on entirely distinct, non-interacting downstream pathways would falsify this hypothesis. _(variant: Absence of common loss-of-function variants in REST and SALL4 in gnomAD.)_\n\n**Why it matters:** Understanding the shared regulatory roles of REST and SALL4 in neuronal development could inform therapeutic strategies for both intellectual disability and specific malformation syndromes, potentially through targeting downstream effectors or related pathways.\n\n---\n\n#### 5. severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-8943724, Reactome:R-HSA-3214815, Reactome:R-HSA-9679191)\n\n**Proposed mechanism:** REST (HGNC:9840) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); GATAD2B (HGNC:27282) —DISRUPTS→ Transcriptional Regulation by REST (GO:0000977); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Intellectual Disability (HP:0001249); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Poor Language (HP:0001344); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Strabismus (HP:0000319); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Grimacing Face (HP:0002371); Transcriptional Regulation by REST (GO:0000977) —LEADS_TO→ Long Fingers (HP:0001706). Mutations in the REST gene, potentially in conjunction with GATAD2B, lead to dysregulation of the REST-mediated transcriptional program. This disruption affects the expression of numerous genes crucial for neuronal development and function, ultimately manifesting as the overlapping phenotypes of intellectual disability, poor language, strabismus, grimacing face, and long fingers.\n\n**How to falsify it:** The absence of variants in the REST gene (HGNC:9840) in individuals with MONDO:0012902 or severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome (MONDO:0014034) that are predicted to cause haploinsufficiency or loss-of-function would falsify this hypothesis. Additionally, demonstrating that REST and GATAD2B do not physically interact or co-regulate the same downstream targets would weaken the proposed mechanistic link. _(variant: Presence of common, benign variants in REST in the general population (gnomAD > 1%) that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the role of REST and its regulatory network in these diseases could pave the way for therapeutic strategies aimed at restoring proper gene expression in the nervous system. Modulating REST activity or downstream targets could offer a unified approach to treating both conditions.\n\n---\n\n#### 6. Long-Olsen-Distelmaier syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.392)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** REST (HGNC:9971) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); RRAGC (HGNC:20537) —DISRUPTS→ Rag GTPase signaling pathway (GO:0035218); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Developmental delay (HP:0001263); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Intellectual disability (HP:0001249); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Seizures (HP:0001250); Rag GTPase signaling pathway (GO:0035218) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in REST (for MONDO:0012902) and RRAGC (for Long-Olsen-Distelmaier syndrome) disrupt the Rag GTPase signaling pathway, leading to downstream phenotypic consequences common to both diseases, such as developmental delay, intellectual disability, seizures, and abnormal facial shape.\n\n**How to falsify it:** The hypothesis would be falsified if pathogenic loss-of-function variants in REST and RRAGC are not identified in patients with MONDO:0012902 and Long-Olsen-Distelmaier syndrome, respectively, or if these variants are found at a high frequency (>1%) in healthy control populations (e.g., gnomAD). _(variant: ExAC|gnomAD)_\n\n**Why it matters:** Understanding the shared mechanism involving the Rag GTPase signaling pathway could reveal therapeutic targets for both diseases. Modulating this pathway could offer a common therapeutic strategy to ameliorate the shared neurological and developmental deficits observed in patients.\n\n---\n\n#### 7. type 2 diabetes mellitus  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** HNF1B (HGNC:4873) —LEADS_TO→ Renal hypoplasia (HP:0000091); HNF1B (HGNC:4873) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Glucose metabolism (GO:0006006); PPARG (HGNC:9296) —DISRUPTS→ Lipid metabolism (GO:0006629); Glucose metabolism (GO:0006006) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148); Lipid metabolism (GO:0006629) —LEADS_TO→ Type 2 diabetes mellitus (MONDO:0005148). HNF1B haploinsufficiency leads to renal developmental defects and disrupts glucose metabolism. PPARG loss-of-function mutations impair both glucose and lipid metabolism, contributing to type 2 diabetes. Both pathways converge on dysregulated glucose homeostasis.\n\n**How to falsify it:** Discovery of a pathogenic variant in HNF1B associated with type 2 diabetes mellitus (MONDO:0005148) without any renal phenotype, or identification of a pathogenic PPARG variant associated with renal hypoplasia (HP:0000091) without metabolic derangement. _(variant: rs77554986 (a common variant in PPARG with allele frequency > 5% in gnomAD))_\n\n**Why it matters:** Understanding the shared role of PPARG in both renal development and glucose homeostasis could lead to novel therapeutic strategies targeting metabolic dysfunction in patients with HNF1B-associated kidney diseases, and vice versa.\n\n---\n\n#### 8. Noonan syndrome 13  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** REST (HGNC:9908) —DECREASES→ Transcriptional repression of MAPK pathway genes (GO:0000122); Transcriptional repression of MAPK pathway genes (GO:0000122) —LEADS_TO→ Intellectual disability (HP:0001249); MAPK1 (HGNC:6871) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-5695378); MAPK signaling pathway (REACT:R-HSA-5695378) —LEADS_TO→ Short stature (HP:0004325). Haploinsufficiency of REST (disease A) leads to reduced repression of its target genes, including those involved in the MAPK signaling pathway, potentially contributing to intellectual disability. Gain-of-function mutations in MAPK1 (disease B) lead to hyperactivation of the MAPK signaling pathway, contributing to short stature and other Noonan syndrome phenotypes.\n\n**How to falsify it:** Demonstration that mutations in REST do not affect the expression of genes within the MAPK signaling pathway, or that MAPK1 mutations do not lead to hyperactivation of this pathway in relevant cell types. _(variant: A common variant (AF > 1%) in the HGNC:6871 gene in gnomAD that is associated with increased MAPK signaling activity.)_\n\n**Why it matters:** Targeting the MAPK signaling pathway could offer therapeutic avenues for both diseases, despite the different underlying genetic mechanisms.\n\n---\n\n#### 9. inherited obesity  —  Tier 3 — Moderate / Emerging  (fitness 0.357)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** Variant in LEP (HGNC:6571) —DISRUPTS→ LEP (HGNC:6571); LEP (HGNC:6571) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Congenital hypogonadotropic hypogonadism (HP:0000822); Variant in LEPR (HGNC:6572) —DISRUPTS→ LEPR (HGNC:6572); LEPR (HGNC:6572) —DECREASES→ Leptin-signaling pathway (GO:0030521); POMC (HGNC:9197) —DECREASES→ Leptin-signaling pathway (GO:0030521); PCSK1 (HGNC:9193) —DECREASES→ Leptin-signaling pathway (GO:0030521); NR0B2 (HGNC:16157) —DECREASES→ Leptin-signaling pathway (GO:0030521); REST (HGNC:10654) —DECREASES→ Leptin-signaling pathway (GO:0030521); PPARG (HGNC:9285) —DECREASES→ Leptin-signaling pathway (GO:0030521); CEP19 (HGNC:24999) —DECREASES→ Leptin-signaling pathway (GO:0030521); Leptin-signaling pathway (GO:0030521) —LEADS_TO→ Obesity (HP:0005101). Disruptions in genes such as LEP, LEPR, POMC, PCSK1, NR0B2, REST, PPARG, and CEP19 lead to dysregulation of the leptin-signaling pathway. This pathway is crucial for energy homeostasis and adipogenesis. Impaired leptin signaling can result in both congenital hypogonadotropic hypogonadism (Disease A) and inherited obesity (Disease B) due to the central role of this pathway in regulating reproductive hormones and appetite.\n\n**How to falsify it:** Identification of a common variant in LEP or LEPR with a minor allele frequency > 1% in gnomAD that is strongly associated with both congenital hypogonadotropic hypogonadism and obesity. _(variant: chr16:54914130:C:T)_\n\n**Why it matters:** Understanding the shared molecular mechanisms underlying these conditions could lead to novel therapeutic strategies targeting the leptin-melanocortin pathway for the treatment of both reproductive dysfunction and obesity.\n\n---\n\n#### 10. PPARG-related familial partial lipodystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.334)\n**Link type:** shared pathway (Reactome:R-HSA-8943724)\n\n**Proposed mechanism:** REST variant (rs757901905) —DISRUPTS→ REST (HGNC:9977); REST (HGNC:9977) —DISRUPTS→ Transcriptional dysregulation (GO:0006355); Transcriptional dysregulation (GO:0006355) —LEADS_TO→ Intellectual disability (HP:0001249); PPARG variant (rs1801734) —DISRUPTS→ PPARG (HGNC:9216); PPARG (HGNC:9216) —DECREASES→ Adipogenesis (GO:0001558); PPARG (HGNC:9216) —DECREASES→ Lipid metabolism (GO:0006629); Adipogenesis (GO:0001558) —LEADS_TO→ Partial lipodystrophy (HP:0009019); Lipid metabolism (GO:0006629) —LEADS_TO→ Partial lipodystrophy (HP:0009019). Mutations in REST lead to haploinsufficiency, causing transcriptional dysregulation and intellectual disability. Loss-of-function mutations in PPARG impair adipogenesis and lipid metabolism, resulting in partial lipodystrophy. The convergence lies in the dysregulation of downstream pathways, albeit with different primary genes.\n\n**How to falsify it:** Discovery of a common pathogenic variant in both REST and PPARG with consistent functional impact (e.g., both loss-of-function) would strengthen this hypothesis. Conversely, identification of entirely distinct downstream molecular pathways not influenced by either gene would falsify it. _(variant: gnomAD v2.1.1 shows no pathogenic variants for REST (nsv40456733) or PPARG (rs1801734) in high-frequency populations.)_\n\n**Why it matters:** Understanding the shared regulatory networks disrupted in these distinct diseases could reveal novel therapeutic targets for both neurodevelopmental disorders and metabolic syndrome, potentially through modulation of conserved transcriptional or metabolic pathways.\n\n---"
+}

@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013823",
+    "name": "MONDO:0013823"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0032732",
+      "diseaseBName": "hearing loss, autosomal recessive 113",
+      "fitness": 0.7652,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "CEACAM16 (HGNC:31948) —DISRUPTS→ Extracellular matrix organization (GO:0007155); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Abnormal hair morphology (HP:0000970); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Hearing impairment (HP:0000388). Loss-of-function variants in CEACAM16 disrupt extracellular matrix organization, leading to both abnormal hair morphology (associated with Disease A, e.g., ectodermal dysplasia with hair defects) and hearing impairment (associated with Disease B, hearing loss, autosomal recessive 113).",
+      "mechanism_narrative": "CEACAM16 (HGNC:31948) —DISRUPTS→ Extracellular matrix organization (GO:0007155); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Abnormal hair morphology (HP:0000970); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Hearing impairment (HP:0000388). Loss-of-function variants in CEACAM16 disrupt extracellular matrix organization, leading to both abnormal hair morphology (associated with Disease A, e.g., ectodermal dysplasia with hair defects) and hearing impairment (associated with Disease B, hearing loss, autosomal recessive 113).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in CEACAM16 that are exclusively associated with one of the two diseases and not the other, or variants with a gain-of-function effect, would falsify this hypothesis.",
+        "gnomad_variant": "Pathogenic variants in CEACAM16 with a frequency > 0.01% in gnomAD."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:31948"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0032732",
+        "diseaseBName": "hearing loss, autosomal recessive 113",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:31948"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7652,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "CEACAM16 (HGNC:31948) —DISRUPTS→ Extracellular matrix organization (GO:0007155); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Abnormal hair morphology (HP:0000970); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Hearing impairment (HP:0000388). Loss-of-function variants in CEACAM16 disrupt extracellular matrix organization, leading to both abnormal hair morphology (associated with Disease A, e.g., ectodermal dysplasia with hair defects) and hearing impairment (associated with Disease B, hearing loss, autosomal recessive 113).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in CEACAM16 that are exclusively associated with one of the two diseases and not the other, or variants with a gain-of-function effect, would falsify this hypothesis.",
+          "gnomad_variant": "Pathogenic variants in CEACAM16 with a frequency > 0.01% in gnomAD."
+        },
+        "translational": "Understanding the role of CEACAM16 in extracellular matrix organization could lead to therapeutic strategies targeting shared pathways for both hair and hearing defects. For instance, therapies aimed at restoring extracellular matrix integrity might benefit patients with both conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T08:14:26.602Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013823 (MONDO:0013823)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hearing loss, autosomal recessive 113 (MONDO:0032732) | shared gene | Tier 1 | 0.765 | HGNC:31948 |\n\n### CANDIDATE DETAIL\n#### 1. hearing loss, autosomal recessive 113  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.765)\n**Link type:** shared causal gene (HGNC:31948)\n\n**Proposed mechanism:** CEACAM16 (HGNC:31948) —DISRUPTS→ Extracellular matrix organization (GO:0007155); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Abnormal hair morphology (HP:0000970); Extracellular matrix organization (GO:0007155) —LEADS_TO→ Hearing impairment (HP:0000388). Loss-of-function variants in CEACAM16 disrupt extracellular matrix organization, leading to both abnormal hair morphology (associated with Disease A, e.g., ectodermal dysplasia with hair defects) and hearing impairment (associated with Disease B, hearing loss, autosomal recessive 113).\n\n**How to falsify it:** The identification of pathogenic variants in CEACAM16 that are exclusively associated with one of the two diseases and not the other, or variants with a gain-of-function effect, would falsify this hypothesis. _(variant: Pathogenic variants in CEACAM16 with a frequency > 0.01% in gnomAD.)_\n\n**Why it matters:** Understanding the role of CEACAM16 in extracellular matrix organization could lead to therapeutic strategies targeting shared pathways for both hair and hearing defects. For instance, therapies aimed at restoring extracellular matrix integrity might benefit patients with both conditions.\n\n---"
+}

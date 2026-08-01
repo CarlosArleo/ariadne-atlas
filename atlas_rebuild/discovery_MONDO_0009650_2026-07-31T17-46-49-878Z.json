@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0009650",
+    "name": "MONDO:0009650"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0018931",
+      "diseaseBName": "mucolipidosis type III, alpha/beta",
+      "fitness": 0.7847,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "GNPTAB (HGNC:29670) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Abnormal lysosomal targeting (HP:0011183); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Skeletal dysplasia (HP:0005981); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Coarse facial features (HP:0000280); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Hepatosplenomegaly (HP:0000764). Mutations in GNPTAB lead to a dysfunctional N-acetylglucosamine-1-phosphotransferase enzyme, impairing the proper targeting of lysosomal enzymes due to failed phosphorylation. This results in the accumulation of undegraded substrates within lysosomes, manifesting as skeletal dysplasia, coarse facial features, and hepatosplenomegaly in both diseases.",
+      "mechanism_narrative": "GNPTAB (HGNC:29670) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Abnormal lysosomal targeting (HP:0011183); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Skeletal dysplasia (HP:0005981); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Coarse facial features (HP:0000280); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Hepatosplenomegaly (HP:0000764). Mutations in GNPTAB lead to a dysfunctional N-acetylglucosamine-1-phosphotransferase enzyme, impairing the proper targeting of lysosomal enzymes due to failed phosphorylation. This results in the accumulation of undegraded substrates within lysosomes, manifesting as skeletal dysplasia, coarse facial features, and hepatosplenomegaly in both diseases.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in GNPTAB with a clear dominant-negative effect or gain-of-function mechanism in one of the diseases, while the other exhibits loss-of-function, would falsify the shared loss-of-function mechanism.",
+        "gnomad_variant": "gnomad v2.1.1 allele frequency > 0.001 for pathogenic missense variants in GNPTAB."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29670"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0018931",
+        "diseaseBName": "mucolipidosis type III, alpha/beta",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29670"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7847,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "GNPTAB (HGNC:29670) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Abnormal lysosomal targeting (HP:0011183); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Skeletal dysplasia (HP:0005981); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Coarse facial features (HP:0000280); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Hepatosplenomegaly (HP:0000764). Mutations in GNPTAB lead to a dysfunctional N-acetylglucosamine-1-phosphotransferase enzyme, impairing the proper targeting of lysosomal enzymes due to failed phosphorylation. This results in the accumulation of undegraded substrates within lysosomes, manifesting as skeletal dysplasia, coarse facial features, and hepatosplenomegaly in both diseases.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in GNPTAB with a clear dominant-negative effect or gain-of-function mechanism in one of the diseases, while the other exhibits loss-of-function, would falsify the shared loss-of-function mechanism.",
+          "gnomad_variant": "gnomad v2.1.1 allele frequency > 0.001 for pathogenic missense variants in GNPTAB."
+        },
+        "translational": "Understanding the shared mechanism of impaired lysosomal enzyme targeting due to GNPTAB mutations provides a basis for developing targeted therapies aimed at restoring proper lysosomal function or compensating for the enzyme deficiency in both mucolipidosis type III alpha/beta and the other related lysosomal storage disorder."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:46:49.878Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0009650 (MONDO:0009650)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mucolipidosis type III, alpha/beta (MONDO:0018931) | shared gene | Tier 1 | 0.785 | HGNC:29670 |\n\n### CANDIDATE DETAIL\n#### 1. mucolipidosis type III, alpha/beta  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.785)\n**Link type:** shared causal gene (HGNC:29670)\n\n**Proposed mechanism:** GNPTAB (HGNC:29670) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Abnormal lysosomal targeting (HP:0011183); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Skeletal dysplasia (HP:0005981); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Coarse facial features (HP:0000280); Abnormal lysosomal targeting (HP:0011183) —LEADS_TO→ Hepatosplenomegaly (HP:0000764). Mutations in GNPTAB lead to a dysfunctional N-acetylglucosamine-1-phosphotransferase enzyme, impairing the proper targeting of lysosomal enzymes due to failed phosphorylation. This results in the accumulation of undegraded substrates within lysosomes, manifesting as skeletal dysplasia, coarse facial features, and hepatosplenomegaly in both diseases.\n\n**How to falsify it:** Identification of pathogenic variants in GNPTAB with a clear dominant-negative effect or gain-of-function mechanism in one of the diseases, while the other exhibits loss-of-function, would falsify the shared loss-of-function mechanism. _(variant: gnomad v2.1.1 allele frequency > 0.001 for pathogenic missense variants in GNPTAB.)_\n\n**Why it matters:** Understanding the shared mechanism of impaired lysosomal enzyme targeting due to GNPTAB mutations provides a basis for developing targeted therapies aimed at restoring proper lysosomal function or compensating for the enzyme deficiency in both mucolipidosis type III alpha/beta and the other related lysosomal storage disorder.\n\n---"
+}

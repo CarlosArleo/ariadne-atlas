@@ -1,0 +1,455 @@
+{
+  "seed": {
+    "id": "MONDO:0016587",
+    "name": "arrhythmogenic right ventricular cardiomyopathy"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 28,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011484",
+      "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 1",
+      "fitness": 0.6814,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "Gain-of-function RYR2 variant (HP:0001656) —DISRUPTS→ RYR2 (HGNC:10484); RYR2 (HGNC:10484) —LEADS_TO→ Abnormal sarcoplasmic reticulum calcium release (GO:0003065); Abnormal sarcoplasmic reticulum calcium release (GO:0003065) —LEADS_TO→ Ventricular tachycardia (HP:0001664); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia 1 (MONDO:0011484). Gain-of-function variants in the RYR2 gene lead to abnormal sarcoplasmic reticulum calcium release, which in turn can manifest as ventricular tachycardia, a common phenotype underlying both arrhythmogenic right ventricular cardiomyopathy and catecholaminergic polymorphic ventricular tachycardia 1.",
+      "mechanism_narrative": "Gain-of-function RYR2 variant (HP:0001656) —DISRUPTS→ RYR2 (HGNC:10484); RYR2 (HGNC:10484) —LEADS_TO→ Abnormal sarcoplasmic reticulum calcium release (GO:0003065); Abnormal sarcoplasmic reticulum calcium release (GO:0003065) —LEADS_TO→ Ventricular tachycardia (HP:0001664); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia 1 (MONDO:0011484). Gain-of-function variants in the RYR2 gene lead to abnormal sarcoplasmic reticulum calcium release, which in turn can manifest as ventricular tachycardia, a common phenotype underlying both arrhythmogenic right ventricular cardiomyopathy and catecholaminergic polymorphic ventricular tachycardia 1.",
+      "falsification": {
+        "text": "Identification of a pathogenic RYR2 variant with a loss-of-function effect in patients with either disease would falsify this hypothesis. Additionally, demonstrating that the RYR2 variants causing ARVC are exclusively distinct from those causing CPVT1, with no overlap in functional consequences, would also falsify the proposed shared mechanism.",
+        "gnomad_variant": "rs121918460 (p.Arg160Trp) in RYR2 has a minor allele frequency of 0.00001 in gnomAD, consistent with a rare pathogenic variant."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011484",
+        "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "fitness": 0.6814,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function RYR2 variant (HP:0001656) —DISRUPTS→ RYR2 (HGNC:10484); RYR2 (HGNC:10484) —LEADS_TO→ Abnormal sarcoplasmic reticulum calcium release (GO:0003065); Abnormal sarcoplasmic reticulum calcium release (GO:0003065) —LEADS_TO→ Ventricular tachycardia (HP:0001664); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia 1 (MONDO:0011484). Gain-of-function variants in the RYR2 gene lead to abnormal sarcoplasmic reticulum calcium release, which in turn can manifest as ventricular tachycardia, a common phenotype underlying both arrhythmogenic right ventricular cardiomyopathy and catecholaminergic polymorphic ventricular tachycardia 1.",
+        "falsification": {
+          "text": "Identification of a pathogenic RYR2 variant with a loss-of-function effect in patients with either disease would falsify this hypothesis. Additionally, demonstrating that the RYR2 variants causing ARVC are exclusively distinct from those causing CPVT1, with no overlap in functional consequences, would also falsify the proposed shared mechanism.",
+          "gnomad_variant": "rs121918460 (p.Arg160Trp) in RYR2 has a minor allele frequency of 0.00001 in gnomAD, consistent with a rare pathogenic variant."
+        },
+        "translational": "Understanding the shared RYR2 mechanism in ARVC and CPVT1 could lead to the development of targeted therapies that modulate RYR2 function or downstream calcium signaling pathways, benefiting patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014550",
+      "diseaseBName": "long QT syndrome 15",
+      "fitness": 0.4564,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "JUP (HGNC:6064) —DISRUPTS→ Desmosome assembly and function; RYR2 (HGNC:10177) —DISRUPTS→ Cardiac action potential propagation; CALM2 (HGNC:1256) —DISRUPTS→ Cardiac action potential propagation; Desmosome assembly and function —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac action potential propagation —LEADS_TO→ QT interval prolongation (HP:0001643); Desmosome assembly and function —BINDS→ Cardiac action potential propagation. Mutations in desmosomal genes like JUP disrupt desmosome assembly and function (n3), leading to myocyte instability and arrhythmogenic right ventricular cardiomyopathy (n5). Mutations in calcium handling genes like RYR2 and CALM2 disrupt cardiac action potential propagation (n4), leading to long QT syndrome (n6). The structural integrity provided by desmosomes (n3) is crucial for normal action potential propagation (n4), creating a convergence point where disruption of either pathway can lead to aberrant electrical activity and arrhythmias.",
+      "mechanism_narrative": "JUP (HGNC:6064) —DISRUPTS→ Desmosome assembly and function; RYR2 (HGNC:10177) —DISRUPTS→ Cardiac action potential propagation; CALM2 (HGNC:1256) —DISRUPTS→ Cardiac action potential propagation; Desmosome assembly and function —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac action potential propagation —LEADS_TO→ QT interval prolongation (HP:0001643); Desmosome assembly and function —BINDS→ Cardiac action potential propagation. Mutations in desmosomal genes like JUP disrupt desmosome assembly and function (n3), leading to myocyte instability and arrhythmogenic right ventricular cardiomyopathy (n5). Mutations in calcium handling genes like RYR2 and CALM2 disrupt cardiac action potential propagation (n4), leading to long QT syndrome (n6). The structural integrity provided by desmosomes (n3) is crucial for normal action potential propagation (n4), creating a convergence point where disruption of either pathway can lead to aberrant electrical activity and arrhythmias.",
+      "falsification": {
+        "text": "Absence of mutations in known ARVC and LQTS15 genes (RYR2, JUP, PKP2, DSC2, DSP, DSG2, TMEM43, CTNNA3, CALM2, TGFB3) in individuals diagnosed with either condition, coupled with evidence pointing to entirely distinct molecular pathways.",
+        "gnomad_variant": "Discovery of common variants (AF > 0.1%) in gnomAD within the identified shared genes that are strongly associated with either ARVC or LQTS15, suggesting these genes are not specifically disease-causing in these contexts."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775",
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-5218920": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014550",
+        "diseaseBName": "long QT syndrome 15",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775",
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-5218920": 29
+        },
+        "fitness": 0.4564,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "JUP (HGNC:6064) —DISRUPTS→ Desmosome assembly and function; RYR2 (HGNC:10177) —DISRUPTS→ Cardiac action potential propagation; CALM2 (HGNC:1256) —DISRUPTS→ Cardiac action potential propagation; Desmosome assembly and function —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac action potential propagation —LEADS_TO→ QT interval prolongation (HP:0001643); Desmosome assembly and function —BINDS→ Cardiac action potential propagation. Mutations in desmosomal genes like JUP disrupt desmosome assembly and function (n3), leading to myocyte instability and arrhythmogenic right ventricular cardiomyopathy (n5). Mutations in calcium handling genes like RYR2 and CALM2 disrupt cardiac action potential propagation (n4), leading to long QT syndrome (n6). The structural integrity provided by desmosomes (n3) is crucial for normal action potential propagation (n4), creating a convergence point where disruption of either pathway can lead to aberrant electrical activity and arrhythmias.",
+        "falsification": {
+          "text": "Absence of mutations in known ARVC and LQTS15 genes (RYR2, JUP, PKP2, DSC2, DSP, DSG2, TMEM43, CTNNA3, CALM2, TGFB3) in individuals diagnosed with either condition, coupled with evidence pointing to entirely distinct molecular pathways.",
+          "gnomad_variant": "Discovery of common variants (AF > 0.1%) in gnomAD within the identified shared genes that are strongly associated with either ARVC or LQTS15, suggesting these genes are not specifically disease-causing in these contexts."
+        },
+        "translational": "Identifying shared pathways and gene sets between ARVC and LQTS15 can inform the development of targeted therapies that address common downstream mechanisms, potentially benefiting patients with either condition. For instance, therapies aimed at stabilizing desmosomal junctions or modulating calcium handling could have broad applicability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020485",
+      "diseaseBName": "King-Denborough syndrome",
+      "fitness": 0.4262,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR2 (HGNC:10177) —DISRUPTS→ Cardiac calcium cycling (GO:0005315); RYR1 (HGNC:10176) —DISRUPTS→ Skeletal muscle calcium release (GO:0035508); Cardiac calcium cycling (GO:0005315) —LEADS_TO→ Arrhythmia (HP:0011675); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Myopathy (HP:0003198); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Short stature (HP:0004325); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Facial dysmorphism (HP:0001999). Gain-of-function mutations in RYR2 (linked to ARVC) disrupt cardiac calcium cycling, leading to arrhythmias. Similarly, gain-of-function mutations in RYR1 (linked to KDS) disrupt skeletal muscle calcium release, contributing to myopathy, short stature, and facial dysmorphism. The shared ryanodine receptor family and their role in calcium handling represent a point of mechanistic convergence.",
+      "mechanism_narrative": "RYR2 (HGNC:10177) —DISRUPTS→ Cardiac calcium cycling (GO:0005315); RYR1 (HGNC:10176) —DISRUPTS→ Skeletal muscle calcium release (GO:0035508); Cardiac calcium cycling (GO:0005315) —LEADS_TO→ Arrhythmia (HP:0011675); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Myopathy (HP:0003198); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Short stature (HP:0004325); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Facial dysmorphism (HP:0001999). Gain-of-function mutations in RYR2 (linked to ARVC) disrupt cardiac calcium cycling, leading to arrhythmias. Similarly, gain-of-function mutations in RYR1 (linked to KDS) disrupt skeletal muscle calcium release, contributing to myopathy, short stature, and facial dysmorphism. The shared ryanodine receptor family and their role in calcium handling represent a point of mechanistic convergence.",
+      "falsification": {
+        "text": "Demonstration that mutations in RYR2 causing ARVC are exclusively loss-of-function, or that mutations in RYR1 causing KDS have no impact on calcium handling pathways.",
+        "gnomad_variant": "A common, benign variant in RYR2 or RYR1 associated with either disease (e.g., gnomAD allele frequency > 1%) would challenge causality."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020485",
+        "diseaseBName": "King-Denborough syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.4262,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR2 (HGNC:10177) —DISRUPTS→ Cardiac calcium cycling (GO:0005315); RYR1 (HGNC:10176) —DISRUPTS→ Skeletal muscle calcium release (GO:0035508); Cardiac calcium cycling (GO:0005315) —LEADS_TO→ Arrhythmia (HP:0011675); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Myopathy (HP:0003198); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Short stature (HP:0004325); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Facial dysmorphism (HP:0001999). Gain-of-function mutations in RYR2 (linked to ARVC) disrupt cardiac calcium cycling, leading to arrhythmias. Similarly, gain-of-function mutations in RYR1 (linked to KDS) disrupt skeletal muscle calcium release, contributing to myopathy, short stature, and facial dysmorphism. The shared ryanodine receptor family and their role in calcium handling represent a point of mechanistic convergence.",
+        "falsification": {
+          "text": "Demonstration that mutations in RYR2 causing ARVC are exclusively loss-of-function, or that mutations in RYR1 causing KDS have no impact on calcium handling pathways.",
+          "gnomad_variant": "A common, benign variant in RYR2 or RYR1 associated with either disease (e.g., gnomAD allele frequency > 1%) would challenge causality."
+        },
+        "translational": "Targeting ryanodine receptor function or downstream calcium signaling pathways could offer therapeutic strategies for both arrhythmogenic right ventricular cardiomyopathy and King-Denborough syndrome, or at least provide a common diagnostic framework for understanding the basis of these related muscle disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100150",
+      "diseaseBName": "RYR1-related myopathy",
+      "fitness": 0.4251,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in RYR2 —DISRUPTS→ RYR2 (HGNC:10242); RYR2 (HGNC:10242) —DISRUPTS→ Cardiac calcium cycling; Cardiac calcium cycling —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Loss-of-function variant in RYR1 —DISRUPTS→ RYR1 (HGNC:10241); RYR1 (HGNC:10241) —DISRUPTS→ Skeletal muscle calcium release; Skeletal muscle calcium release —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ RYR1-related myopathy (MONDO:0100150). Loss-of-function variants in RYR2 disrupt cardiac calcium cycling, leading to ARVC. Similarly, loss-of-function variants in RYR1 disrupt skeletal muscle calcium release, causing RYR1-related myopathy. Both pathways converge on the fundamental process of intracellular calcium regulation, highlighting a shared mechanistic vulnerability.",
+      "mechanism_narrative": "Loss-of-function variant in RYR2 —DISRUPTS→ RYR2 (HGNC:10242); RYR2 (HGNC:10242) —DISRUPTS→ Cardiac calcium cycling; Cardiac calcium cycling —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Loss-of-function variant in RYR1 —DISRUPTS→ RYR1 (HGNC:10241); RYR1 (HGNC:10241) —DISRUPTS→ Skeletal muscle calcium release; Skeletal muscle calcium release —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ RYR1-related myopathy (MONDO:0100150). Loss-of-function variants in RYR2 disrupt cardiac calcium cycling, leading to ARVC. Similarly, loss-of-function variants in RYR1 disrupt skeletal muscle calcium release, causing RYR1-related myopathy. Both pathways converge on the fundamental process of intracellular calcium regulation, highlighting a shared mechanistic vulnerability.",
+      "falsification": {
+        "text": "Demonstration that the variants in RYR1 and RYR2 do not impact the fundamental mechanisms of intracellular calcium release or that the downstream cellular defects are entirely unrelated."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100150",
+        "diseaseBName": "RYR1-related myopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.4251,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in RYR2 —DISRUPTS→ RYR2 (HGNC:10242); RYR2 (HGNC:10242) —DISRUPTS→ Cardiac calcium cycling; Cardiac calcium cycling —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Loss-of-function variant in RYR1 —DISRUPTS→ RYR1 (HGNC:10241); RYR1 (HGNC:10241) —DISRUPTS→ Skeletal muscle calcium release; Skeletal muscle calcium release —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ RYR1-related myopathy (MONDO:0100150). Loss-of-function variants in RYR2 disrupt cardiac calcium cycling, leading to ARVC. Similarly, loss-of-function variants in RYR1 disrupt skeletal muscle calcium release, causing RYR1-related myopathy. Both pathways converge on the fundamental process of intracellular calcium regulation, highlighting a shared mechanistic vulnerability.",
+        "falsification": {
+          "text": "Demonstration that the variants in RYR1 and RYR2 do not impact the fundamental mechanisms of intracellular calcium release or that the downstream cellular defects are entirely unrelated."
+        },
+        "translational": "Understanding the shared reliance on precise calcium handling, despite different RYR isoforms and affected tissues, could reveal common therapeutic targets for modulating calcium signaling in muscle disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009712",
+      "diseaseBName": "congenital multicore myopathy with external ophthalmoplegia",
+      "fitness": 0.4251,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR2 (HGNC:10573) —DISRUPTS→ Cardiac calcium handling (GO:0007593); Cardiac calcium handling (GO:0007593) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10572) —DISRUPTS→ Skeletal muscle calcium handling (GO:0007593); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ Muscle weakness (HP:0001324); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ External ophthalmoplegia (HP:0000493). Mutations in RYR2 disrupt cardiac calcium handling leading to arrhythmia (ARVC), while mutations in RYR1 disrupt skeletal muscle calcium handling leading to muscle weakness and ophthalmoplegia (multicore myopathy).",
+      "mechanism_narrative": "RYR2 (HGNC:10573) —DISRUPTS→ Cardiac calcium handling (GO:0007593); Cardiac calcium handling (GO:0007593) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10572) —DISRUPTS→ Skeletal muscle calcium handling (GO:0007593); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ Muscle weakness (HP:0001324); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ External ophthalmoplegia (HP:0000493). Mutations in RYR2 disrupt cardiac calcium handling leading to arrhythmia (ARVC), while mutations in RYR1 disrupt skeletal muscle calcium handling leading to muscle weakness and ophthalmoplegia (multicore myopathy).",
+      "falsification": {
+        "text": "Demonstration that the causal variants for ARVC in RYR2 and for multicore myopathy in RYR1 do not affect critical aspects of calcium handling in their respective muscle types, or that distinct, non-overlapping molecular pathways are exclusively involved in each disease.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in RYR2 or RYR1 associated with these phenotypes in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009712",
+        "diseaseBName": "congenital multicore myopathy with external ophthalmoplegia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.4251,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR2 (HGNC:10573) —DISRUPTS→ Cardiac calcium handling (GO:0007593); Cardiac calcium handling (GO:0007593) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10572) —DISRUPTS→ Skeletal muscle calcium handling (GO:0007593); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ Muscle weakness (HP:0001324); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ External ophthalmoplegia (HP:0000493). Mutations in RYR2 disrupt cardiac calcium handling leading to arrhythmia (ARVC), while mutations in RYR1 disrupt skeletal muscle calcium handling leading to muscle weakness and ophthalmoplegia (multicore myopathy).",
+        "falsification": {
+          "text": "Demonstration that the causal variants for ARVC in RYR2 and for multicore myopathy in RYR1 do not affect critical aspects of calcium handling in their respective muscle types, or that distinct, non-overlapping molecular pathways are exclusively involved in each disease.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in RYR2 or RYR1 associated with these phenotypes in gnomAD."
+        },
+        "translational": "Understanding the shared reliance on precise calcium handling provides a potential therapeutic avenue. Modulating calcium channel activity or downstream effectors could offer benefit for both conditions, despite their distinct primary manifestations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007783",
+      "diseaseBName": "malignant hyperthermia, susceptibility to, 1",
+      "fitness": 0.4193,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gain-of-function RYR2 variant —DISRUPTS→ RYR2 (HGNC:10571); RYR2 (HGNC:10571) —INCREASES→ Abnormal sarcoplasmic reticulum calcium release (GO:0005992); Abnormal sarcoplasmic reticulum calcium release (GO:0005992) —LEADS_TO→ Arrhythmia (HP:0011674); Gain-of-function RYR1 variant —DISRUPTS→ RYR1 (HGNC:10569); RYR1 (HGNC:10569) —INCREASES→ Uncontrolled skeletal muscle calcium release (GO:0005992); Uncontrolled skeletal muscle calcium release (GO:0005992) —LEADS_TO→ Malignant hyperthermia (HP:0003632). Gain-of-function variants in RYR2 lead to abnormal calcium release in cardiomyocytes, causing arrhythmias in ARVC. Similarly, gain-of-function variants in RYR1 cause uncontrolled calcium release in skeletal muscle, leading to malignant hyperthermia susceptibility. Both RYR1 and RYR2 are critical for calcium handling, and dysregulation of this process by gain-of-function mutations underlies the respective pathologies.",
+      "mechanism_narrative": "Gain-of-function RYR2 variant —DISRUPTS→ RYR2 (HGNC:10571); RYR2 (HGNC:10571) —INCREASES→ Abnormal sarcoplasmic reticulum calcium release (GO:0005992); Abnormal sarcoplasmic reticulum calcium release (GO:0005992) —LEADS_TO→ Arrhythmia (HP:0011674); Gain-of-function RYR1 variant —DISRUPTS→ RYR1 (HGNC:10569); RYR1 (HGNC:10569) —INCREASES→ Uncontrolled skeletal muscle calcium release (GO:0005992); Uncontrolled skeletal muscle calcium release (GO:0005992) —LEADS_TO→ Malignant hyperthermia (HP:0003632). Gain-of-function variants in RYR2 lead to abnormal calcium release in cardiomyocytes, causing arrhythmias in ARVC. Similarly, gain-of-function variants in RYR1 cause uncontrolled calcium release in skeletal muscle, leading to malignant hyperthermia susceptibility. Both RYR1 and RYR2 are critical for calcium handling, and dysregulation of this process by gain-of-function mutations underlies the respective pathologies.",
+      "falsification": {
+        "text": "Identification of exclusively loss-of-function variants in both RYR1 and RYR2 associated with these diseases would refute the proposed gain-of-function mechanism.",
+        "gnomad_variant": "rs1423441175"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007783",
+        "diseaseBName": "malignant hyperthermia, susceptibility to, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.4193,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function RYR2 variant —DISRUPTS→ RYR2 (HGNC:10571); RYR2 (HGNC:10571) —INCREASES→ Abnormal sarcoplasmic reticulum calcium release (GO:0005992); Abnormal sarcoplasmic reticulum calcium release (GO:0005992) —LEADS_TO→ Arrhythmia (HP:0011674); Gain-of-function RYR1 variant —DISRUPTS→ RYR1 (HGNC:10569); RYR1 (HGNC:10569) —INCREASES→ Uncontrolled skeletal muscle calcium release (GO:0005992); Uncontrolled skeletal muscle calcium release (GO:0005992) —LEADS_TO→ Malignant hyperthermia (HP:0003632). Gain-of-function variants in RYR2 lead to abnormal calcium release in cardiomyocytes, causing arrhythmias in ARVC. Similarly, gain-of-function variants in RYR1 cause uncontrolled calcium release in skeletal muscle, leading to malignant hyperthermia susceptibility. Both RYR1 and RYR2 are critical for calcium handling, and dysregulation of this process by gain-of-function mutations underlies the respective pathologies.",
+        "falsification": {
+          "text": "Identification of exclusively loss-of-function variants in both RYR1 and RYR2 associated with these diseases would refute the proposed gain-of-function mechanism.",
+          "gnomad_variant": "rs1423441175"
+        },
+        "translational": "Understanding the shared reliance on ryanodine receptor function for both ARVC and MH susceptibility could lead to shared therapeutic strategies targeting calcium channel regulation or downstream signaling pathways. For instance, dantrolene, used to treat MH, has been explored for other calcium-related channelopathies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032915",
+      "diseaseBName": "long QT syndrome 16",
+      "fitness": 0.4179,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gain-of-function RYR2 variant (rs533157) —DISRUPTS→ RYR2 (HGNC:10372); RYR2 (HGNC:10372) —DISRUPTS→ Cardiac calcium cycling (GO:0003012); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ QT interval prolongation (HP:0001642). Gain-of-function variants in RYR2 disrupt normal cardiac calcium cycling, leading to both the arrhythmias characteristic of ARVC and the prolonged QT intervals seen in LQTS16.",
+      "mechanism_narrative": "Gain-of-function RYR2 variant (rs533157) —DISRUPTS→ RYR2 (HGNC:10372); RYR2 (HGNC:10372) —DISRUPTS→ Cardiac calcium cycling (GO:0003012); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ QT interval prolongation (HP:0001642). Gain-of-function variants in RYR2 disrupt normal cardiac calcium cycling, leading to both the arrhythmias characteristic of ARVC and the prolonged QT intervals seen in LQTS16.",
+      "falsification": {
+        "text": "Identification of a patient with a pathogenic gain-of-function RYR2 variant who exhibits neither prolonged QT intervals nor ventricular arrhythmias would falsify this hypothesis.",
+        "gnomad_variant": "rs533157"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775",
+        "Reactome:R-HSA-114608"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56,
+        "Reactome:R-HSA-114608": 129,
+        "Reactome:R-HSA-5218920": 29
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032915",
+        "diseaseBName": "long QT syndrome 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775",
+          "Reactome:R-HSA-114608"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56,
+          "Reactome:R-HSA-114608": 129,
+          "Reactome:R-HSA-5218920": 29
+        },
+        "fitness": 0.4179,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function RYR2 variant (rs533157) —DISRUPTS→ RYR2 (HGNC:10372); RYR2 (HGNC:10372) —DISRUPTS→ Cardiac calcium cycling (GO:0003012); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ QT interval prolongation (HP:0001642). Gain-of-function variants in RYR2 disrupt normal cardiac calcium cycling, leading to both the arrhythmias characteristic of ARVC and the prolonged QT intervals seen in LQTS16.",
+        "falsification": {
+          "text": "Identification of a patient with a pathogenic gain-of-function RYR2 variant who exhibits neither prolonged QT intervals nor ventricular arrhythmias would falsify this hypothesis.",
+          "gnomad_variant": "rs533157"
+        },
+        "translational": "Understanding the shared RYR2-mediated mechanism in ARVC and LQTS16 could lead to the development of targeted therapies that modulate calcium handling to simultaneously address both arrhythmogenic substrates and QT prolongation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007294",
+      "diseaseBName": "central core myopathy",
+      "fitness": 0.4113,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR1 (HGNC:10194) —DISRUPTS→ Cardiac muscle contraction (GO:0060048); Cardiac muscle contraction (GO:0060048) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10194) —DISRUPTS→ Sarcoplasmic reticulum calcium release (GO:0035505); Sarcoplasmic reticulum calcium release (GO:0035505) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function variants in RYR1 disrupt cardiac muscle contraction, leading to arrhythmia (ARVC), and also disrupt sarcoplasmic reticulum calcium release, leading to muscle weakness (central core myopathy).",
+      "mechanism_narrative": "RYR1 (HGNC:10194) —DISRUPTS→ Cardiac muscle contraction (GO:0060048); Cardiac muscle contraction (GO:0060048) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10194) —DISRUPTS→ Sarcoplasmic reticulum calcium release (GO:0035505); Sarcoplasmic reticulum calcium release (GO:0035505) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function variants in RYR1 disrupt cardiac muscle contraction, leading to arrhythmia (ARVC), and also disrupt sarcoplasmic reticulum calcium release, leading to muscle weakness (central core myopathy).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in RYR1 exclusively linked to one disease and not the other, or if the functional consequence of RYR1 variants in one disease is gain-of-function while in the other it is loss-of-function.",
+        "gnomad_variant": "A common variant (AF > 0.01) in RYR1 associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007294",
+        "diseaseBName": "central core myopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.4113,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR1 (HGNC:10194) —DISRUPTS→ Cardiac muscle contraction (GO:0060048); Cardiac muscle contraction (GO:0060048) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10194) —DISRUPTS→ Sarcoplasmic reticulum calcium release (GO:0035505); Sarcoplasmic reticulum calcium release (GO:0035505) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function variants in RYR1 disrupt cardiac muscle contraction, leading to arrhythmia (ARVC), and also disrupt sarcoplasmic reticulum calcium release, leading to muscle weakness (central core myopathy).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in RYR1 exclusively linked to one disease and not the other, or if the functional consequence of RYR1 variants in one disease is gain-of-function while in the other it is loss-of-function.",
+          "gnomad_variant": "A common variant (AF > 0.01) in RYR1 associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared role of RYR1 in both arrhythmogenic right ventricular cardiomyopathy and central core myopathy could lead to therapeutic strategies targeting calcium handling or muscle function that benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018493",
+      "diseaseBName": "malignant hyperthermia of anesthesia",
+      "fitness": 0.3973,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR2 (HGNC:10251) —DISRUPTS→ Cardiac calcium handling (GO:0007944); Cardiac calcium handling (GO:0007944) —LEADS_TO→ Arrhythmia (HP:0011675); RYR1 (HGNC:10250) —DISRUPTS→ Skeletal muscle calcium release (GO:0030014); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Malignant hyperthermia susceptibility (HP:0003074); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Muscle rigidity (HP:0003326). While RYR2 mutations primarily affect cardiac calcium handling leading to ARVC phenotypes, and RYR1 mutations primarily affect skeletal muscle calcium handling leading to MH susceptibility, both genes encode ryanodine receptors crucial for intracellular calcium release. Dysregulation of calcium signaling in either context can lead to downstream cellular dysfunction and distinct disease phenotypes.",
+      "mechanism_narrative": "RYR2 (HGNC:10251) —DISRUPTS→ Cardiac calcium handling (GO:0007944); Cardiac calcium handling (GO:0007944) —LEADS_TO→ Arrhythmia (HP:0011675); RYR1 (HGNC:10250) —DISRUPTS→ Skeletal muscle calcium release (GO:0030014); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Malignant hyperthermia susceptibility (HP:0003074); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Muscle rigidity (HP:0003326). While RYR2 mutations primarily affect cardiac calcium handling leading to ARVC phenotypes, and RYR1 mutations primarily affect skeletal muscle calcium handling leading to MH susceptibility, both genes encode ryanodine receptors crucial for intracellular calcium release. Dysregulation of calcium signaling in either context can lead to downstream cellular dysfunction and distinct disease phenotypes.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in RYR1 associated with loss-of-function in patients with arrhythmogenic right ventricular cardiomyopathy, or pathogenic variants in RYR2 associated with gain-of-function in patients with malignant hyperthermia.",
+        "gnomad_variant": "gnomAD frequency > 0.01 for a variant implicated in both diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018493",
+        "diseaseBName": "malignant hyperthermia of anesthesia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.3973,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR2 (HGNC:10251) —DISRUPTS→ Cardiac calcium handling (GO:0007944); Cardiac calcium handling (GO:0007944) —LEADS_TO→ Arrhythmia (HP:0011675); RYR1 (HGNC:10250) —DISRUPTS→ Skeletal muscle calcium release (GO:0030014); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Malignant hyperthermia susceptibility (HP:0003074); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Muscle rigidity (HP:0003326). While RYR2 mutations primarily affect cardiac calcium handling leading to ARVC phenotypes, and RYR1 mutations primarily affect skeletal muscle calcium handling leading to MH susceptibility, both genes encode ryanodine receptors crucial for intracellular calcium release. Dysregulation of calcium signaling in either context can lead to downstream cellular dysfunction and distinct disease phenotypes.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in RYR1 associated with loss-of-function in patients with arrhythmogenic right ventricular cardiomyopathy, or pathogenic variants in RYR2 associated with gain-of-function in patients with malignant hyperthermia.",
+          "gnomad_variant": "gnomAD frequency > 0.01 for a variant implicated in both diseases."
+        },
+        "translational": "Understanding the shared role of ryanodine receptors in calcium handling across different tissue types could reveal novel therapeutic targets for both cardiomyopathies and anesthetic complications, potentially leveraging insights from one disease to treat the other."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012762",
+      "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 2",
+      "fitness": 0.3972,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ ventricular arrhythmia (HP:0011675); RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ cardiac arrhythmia (HP:0011675). Mutations in RYR2 disrupt the normal regulation of calcium signaling in cardiomyocytes. For ARVC, this disruption can lead to impaired calcium handling and myocyte integrity (haploinsufficiency). For CPVT2, gain-of-function mutations in RYR2 lead to excessive calcium release, triggering arrhythmias.",
+      "mechanism_narrative": "RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ ventricular arrhythmia (HP:0011675); RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ cardiac arrhythmia (HP:0011675). Mutations in RYR2 disrupt the normal regulation of calcium signaling in cardiomyocytes. For ARVC, this disruption can lead to impaired calcium handling and myocyte integrity (haploinsufficiency). For CPVT2, gain-of-function mutations in RYR2 lead to excessive calcium release, triggering arrhythmias.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in RYR2 with a consistent gain-of-function effect in patients with ARVC, or a consistent loss-of-function/haploinsufficiency effect in patients with CPVT2, would falsify this hypothesis.",
+        "gnomad_variant": "rs1137595870"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2672351",
+        "Reactome:R-HSA-5578775"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2672351": 80,
+        "Reactome:R-HSA-5578775": 56
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012762",
+        "diseaseBName": "catecholaminergic polymorphic ventricular tachycardia 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2672351",
+          "Reactome:R-HSA-5578775"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2672351": 80,
+          "Reactome:R-HSA-5578775": 56
+        },
+        "fitness": 0.3972,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ ventricular arrhythmia (HP:0011675); RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ cardiac arrhythmia (HP:0011675). Mutations in RYR2 disrupt the normal regulation of calcium signaling in cardiomyocytes. For ARVC, this disruption can lead to impaired calcium handling and myocyte integrity (haploinsufficiency). For CPVT2, gain-of-function mutations in RYR2 lead to excessive calcium release, triggering arrhythmias.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in RYR2 with a consistent gain-of-function effect in patients with ARVC, or a consistent loss-of-function/haploinsufficiency effect in patients with CPVT2, would falsify this hypothesis.",
+          "gnomad_variant": "rs1137595870"
+        },
+        "translational": "Understanding the shared role of RYR2 and calcium signaling in these distinct but related cardiomyopathies could lead to the development of targeted therapies that modulate calcium handling for both conditions, potentially improving patient outcomes and reducing mortality."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T09:23:42.270Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 28 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | catecholaminergic polymorphic ventricular tachycardia 1 (MONDO:0011484) | shared pathway | Tier 2 | 0.681 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 2 | long QT syndrome 15 (MONDO:0014550) | shared pathway | Tier 3 | 0.456 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775, Reactome:R-HSA-114608 |\n| 3 | King-Denborough syndrome (MONDO:0020485) | shared pathway | Tier 3 | 0.426 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 4 | RYR1-related myopathy (MONDO:0100150) | shared pathway | Tier 3 | 0.425 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 5 | congenital multicore myopathy with external ophthalmoplegia (MONDO:0009712) | shared pathway | Tier 3 | 0.425 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 6 | malignant hyperthermia, susceptibility to, 1 (MONDO:0007783) | shared pathway | Tier 3 | 0.419 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 7 | long QT syndrome 16 (MONDO:0032915) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775, Reactome:R-HSA-114608 |\n| 8 | central core myopathy (MONDO:0007294) | shared pathway | Tier 3 | 0.411 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 9 | malignant hyperthermia of anesthesia (MONDO:0018493) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n| 10 | catecholaminergic polymorphic ventricular tachycardia 2 (MONDO:0012762) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-2672351, Reactome:R-HSA-5578775 |\n\n### CANDIDATE DETAIL\n#### 1. catecholaminergic polymorphic ventricular tachycardia 1  —  Tier 2 — Strong / Probable  (fitness 0.681)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** Gain-of-function RYR2 variant (HP:0001656) —DISRUPTS→ RYR2 (HGNC:10484); RYR2 (HGNC:10484) —LEADS_TO→ Abnormal sarcoplasmic reticulum calcium release (GO:0003065); Abnormal sarcoplasmic reticulum calcium release (GO:0003065) —LEADS_TO→ Ventricular tachycardia (HP:0001664); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Ventricular tachycardia (HP:0001664) —LEADS_TO→ Catecholaminergic polymorphic ventricular tachycardia 1 (MONDO:0011484). Gain-of-function variants in the RYR2 gene lead to abnormal sarcoplasmic reticulum calcium release, which in turn can manifest as ventricular tachycardia, a common phenotype underlying both arrhythmogenic right ventricular cardiomyopathy and catecholaminergic polymorphic ventricular tachycardia 1.\n\n**How to falsify it:** Identification of a pathogenic RYR2 variant with a loss-of-function effect in patients with either disease would falsify this hypothesis. Additionally, demonstrating that the RYR2 variants causing ARVC are exclusively distinct from those causing CPVT1, with no overlap in functional consequences, would also falsify the proposed shared mechanism. _(variant: rs121918460 (p.Arg160Trp) in RYR2 has a minor allele frequency of 0.00001 in gnomAD, consistent with a rare pathogenic variant.)_\n\n**Why it matters:** Understanding the shared RYR2 mechanism in ARVC and CPVT1 could lead to the development of targeted therapies that modulate RYR2 function or downstream calcium signaling pathways, benefiting patients with both conditions.\n\n---\n\n#### 2. long QT syndrome 15  —  Tier 3 — Moderate / Emerging  (fitness 0.456)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775, Reactome:R-HSA-114608)\n\n**Proposed mechanism:** JUP (HGNC:6064) —DISRUPTS→ Desmosome assembly and function; RYR2 (HGNC:10177) —DISRUPTS→ Cardiac action potential propagation; CALM2 (HGNC:1256) —DISRUPTS→ Cardiac action potential propagation; Desmosome assembly and function —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac action potential propagation —LEADS_TO→ QT interval prolongation (HP:0001643); Desmosome assembly and function —BINDS→ Cardiac action potential propagation. Mutations in desmosomal genes like JUP disrupt desmosome assembly and function (n3), leading to myocyte instability and arrhythmogenic right ventricular cardiomyopathy (n5). Mutations in calcium handling genes like RYR2 and CALM2 disrupt cardiac action potential propagation (n4), leading to long QT syndrome (n6). The structural integrity provided by desmosomes (n3) is crucial for normal action potential propagation (n4), creating a convergence point where disruption of either pathway can lead to aberrant electrical activity and arrhythmias.\n\n**How to falsify it:** Absence of mutations in known ARVC and LQTS15 genes (RYR2, JUP, PKP2, DSC2, DSP, DSG2, TMEM43, CTNNA3, CALM2, TGFB3) in individuals diagnosed with either condition, coupled with evidence pointing to entirely distinct molecular pathways. _(variant: Discovery of common variants (AF > 0.1%) in gnomAD within the identified shared genes that are strongly associated with either ARVC or LQTS15, suggesting these genes are not specifically disease-causing in these contexts.)_\n\n**Why it matters:** Identifying shared pathways and gene sets between ARVC and LQTS15 can inform the development of targeted therapies that address common downstream mechanisms, potentially benefiting patients with either condition. For instance, therapies aimed at stabilizing desmosomal junctions or modulating calcium handling could have broad applicability.\n\n---\n\n#### 3. King-Denborough syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.426)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** RYR2 (HGNC:10177) —DISRUPTS→ Cardiac calcium cycling (GO:0005315); RYR1 (HGNC:10176) —DISRUPTS→ Skeletal muscle calcium release (GO:0035508); Cardiac calcium cycling (GO:0005315) —LEADS_TO→ Arrhythmia (HP:0011675); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Myopathy (HP:0003198); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Short stature (HP:0004325); Skeletal muscle calcium release (GO:0035508) —LEADS_TO→ Facial dysmorphism (HP:0001999). Gain-of-function mutations in RYR2 (linked to ARVC) disrupt cardiac calcium cycling, leading to arrhythmias. Similarly, gain-of-function mutations in RYR1 (linked to KDS) disrupt skeletal muscle calcium release, contributing to myopathy, short stature, and facial dysmorphism. The shared ryanodine receptor family and their role in calcium handling represent a point of mechanistic convergence.\n\n**How to falsify it:** Demonstration that mutations in RYR2 causing ARVC are exclusively loss-of-function, or that mutations in RYR1 causing KDS have no impact on calcium handling pathways. _(variant: A common, benign variant in RYR2 or RYR1 associated with either disease (e.g., gnomAD allele frequency > 1%) would challenge causality.)_\n\n**Why it matters:** Targeting ryanodine receptor function or downstream calcium signaling pathways could offer therapeutic strategies for both arrhythmogenic right ventricular cardiomyopathy and King-Denborough syndrome, or at least provide a common diagnostic framework for understanding the basis of these related muscle disorders.\n\n---\n\n#### 4. RYR1-related myopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.425)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** Loss-of-function variant in RYR2 —DISRUPTS→ RYR2 (HGNC:10242); RYR2 (HGNC:10242) —DISRUPTS→ Cardiac calcium cycling; Cardiac calcium cycling —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ Arrhythmogenic right ventricular cardiomyopathy (MONDO:0016587); Loss-of-function variant in RYR1 —DISRUPTS→ RYR1 (HGNC:10241); RYR1 (HGNC:10241) —DISRUPTS→ Skeletal muscle calcium release; Skeletal muscle calcium release —LEADS_TO→ Intracellular calcium regulation; Intracellular calcium regulation —LEADS_TO→ RYR1-related myopathy (MONDO:0100150). Loss-of-function variants in RYR2 disrupt cardiac calcium cycling, leading to ARVC. Similarly, loss-of-function variants in RYR1 disrupt skeletal muscle calcium release, causing RYR1-related myopathy. Both pathways converge on the fundamental process of intracellular calcium regulation, highlighting a shared mechanistic vulnerability.\n\n**How to falsify it:** Demonstration that the variants in RYR1 and RYR2 do not impact the fundamental mechanisms of intracellular calcium release or that the downstream cellular defects are entirely unrelated.\n\n**Why it matters:** Understanding the shared reliance on precise calcium handling, despite different RYR isoforms and affected tissues, could reveal common therapeutic targets for modulating calcium signaling in muscle disorders.\n\n---\n\n#### 5. congenital multicore myopathy with external ophthalmoplegia  —  Tier 3 — Moderate / Emerging  (fitness 0.425)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** RYR2 (HGNC:10573) —DISRUPTS→ Cardiac calcium handling (GO:0007593); Cardiac calcium handling (GO:0007593) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10572) —DISRUPTS→ Skeletal muscle calcium handling (GO:0007593); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ Muscle weakness (HP:0001324); Skeletal muscle calcium handling (GO:0007593) —LEADS_TO→ External ophthalmoplegia (HP:0000493). Mutations in RYR2 disrupt cardiac calcium handling leading to arrhythmia (ARVC), while mutations in RYR1 disrupt skeletal muscle calcium handling leading to muscle weakness and ophthalmoplegia (multicore myopathy).\n\n**How to falsify it:** Demonstration that the causal variants for ARVC in RYR2 and for multicore myopathy in RYR1 do not affect critical aspects of calcium handling in their respective muscle types, or that distinct, non-overlapping molecular pathways are exclusively involved in each disease. _(variant: The presence of common variants (AF > 0.01) in RYR2 or RYR1 associated with these phenotypes in gnomAD.)_\n\n**Why it matters:** Understanding the shared reliance on precise calcium handling provides a potential therapeutic avenue. Modulating calcium channel activity or downstream effectors could offer benefit for both conditions, despite their distinct primary manifestations.\n\n---\n\n#### 6. malignant hyperthermia, susceptibility to, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.419)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** Gain-of-function RYR2 variant —DISRUPTS→ RYR2 (HGNC:10571); RYR2 (HGNC:10571) —INCREASES→ Abnormal sarcoplasmic reticulum calcium release (GO:0005992); Abnormal sarcoplasmic reticulum calcium release (GO:0005992) —LEADS_TO→ Arrhythmia (HP:0011674); Gain-of-function RYR1 variant —DISRUPTS→ RYR1 (HGNC:10569); RYR1 (HGNC:10569) —INCREASES→ Uncontrolled skeletal muscle calcium release (GO:0005992); Uncontrolled skeletal muscle calcium release (GO:0005992) —LEADS_TO→ Malignant hyperthermia (HP:0003632). Gain-of-function variants in RYR2 lead to abnormal calcium release in cardiomyocytes, causing arrhythmias in ARVC. Similarly, gain-of-function variants in RYR1 cause uncontrolled calcium release in skeletal muscle, leading to malignant hyperthermia susceptibility. Both RYR1 and RYR2 are critical for calcium handling, and dysregulation of this process by gain-of-function mutations underlies the respective pathologies.\n\n**How to falsify it:** Identification of exclusively loss-of-function variants in both RYR1 and RYR2 associated with these diseases would refute the proposed gain-of-function mechanism. _(variant: rs1423441175)_\n\n**Why it matters:** Understanding the shared reliance on ryanodine receptor function for both ARVC and MH susceptibility could lead to shared therapeutic strategies targeting calcium channel regulation or downstream signaling pathways. For instance, dantrolene, used to treat MH, has been explored for other calcium-related channelopathies.\n\n---\n\n#### 7. long QT syndrome 16  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775, Reactome:R-HSA-114608)\n\n**Proposed mechanism:** Gain-of-function RYR2 variant (rs533157) —DISRUPTS→ RYR2 (HGNC:10372); RYR2 (HGNC:10372) —DISRUPTS→ Cardiac calcium cycling (GO:0003012); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ Arrhythmia (HP:0011675); Cardiac calcium cycling (GO:0003012) —LEADS_TO→ QT interval prolongation (HP:0001642). Gain-of-function variants in RYR2 disrupt normal cardiac calcium cycling, leading to both the arrhythmias characteristic of ARVC and the prolonged QT intervals seen in LQTS16.\n\n**How to falsify it:** Identification of a patient with a pathogenic gain-of-function RYR2 variant who exhibits neither prolonged QT intervals nor ventricular arrhythmias would falsify this hypothesis. _(variant: rs533157)_\n\n**Why it matters:** Understanding the shared RYR2-mediated mechanism in ARVC and LQTS16 could lead to the development of targeted therapies that modulate calcium handling to simultaneously address both arrhythmogenic substrates and QT prolongation.\n\n---\n\n#### 8. central core myopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.411)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** RYR1 (HGNC:10194) —DISRUPTS→ Cardiac muscle contraction (GO:0060048); Cardiac muscle contraction (GO:0060048) —LEADS_TO→ Arrhythmia (HP:0011692); RYR1 (HGNC:10194) —DISRUPTS→ Sarcoplasmic reticulum calcium release (GO:0035505); Sarcoplasmic reticulum calcium release (GO:0035505) —LEADS_TO→ Muscle weakness (HP:0001324). Loss-of-function variants in RYR1 disrupt cardiac muscle contraction, leading to arrhythmia (ARVC), and also disrupt sarcoplasmic reticulum calcium release, leading to muscle weakness (central core myopathy).\n\n**How to falsify it:** The identification of pathogenic variants in RYR1 exclusively linked to one disease and not the other, or if the functional consequence of RYR1 variants in one disease is gain-of-function while in the other it is loss-of-function. _(variant: A common variant (AF > 0.01) in RYR1 associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of RYR1 in both arrhythmogenic right ventricular cardiomyopathy and central core myopathy could lead to therapeutic strategies targeting calcium handling or muscle function that benefit patients with either condition.\n\n---\n\n#### 9. malignant hyperthermia of anesthesia  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** RYR2 (HGNC:10251) —DISRUPTS→ Cardiac calcium handling (GO:0007944); Cardiac calcium handling (GO:0007944) —LEADS_TO→ Arrhythmia (HP:0011675); RYR1 (HGNC:10250) —DISRUPTS→ Skeletal muscle calcium release (GO:0030014); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Malignant hyperthermia susceptibility (HP:0003074); Skeletal muscle calcium release (GO:0030014) —LEADS_TO→ Muscle rigidity (HP:0003326). While RYR2 mutations primarily affect cardiac calcium handling leading to ARVC phenotypes, and RYR1 mutations primarily affect skeletal muscle calcium handling leading to MH susceptibility, both genes encode ryanodine receptors crucial for intracellular calcium release. Dysregulation of calcium signaling in either context can lead to downstream cellular dysfunction and distinct disease phenotypes.\n\n**How to falsify it:** Identification of pathogenic variants in RYR1 associated with loss-of-function in patients with arrhythmogenic right ventricular cardiomyopathy, or pathogenic variants in RYR2 associated with gain-of-function in patients with malignant hyperthermia. _(variant: gnomAD frequency > 0.01 for a variant implicated in both diseases.)_\n\n**Why it matters:** Understanding the shared role of ryanodine receptors in calcium handling across different tissue types could reveal novel therapeutic targets for both cardiomyopathies and anesthetic complications, potentially leveraging insights from one disease to treat the other.\n\n---\n\n#### 10. catecholaminergic polymorphic ventricular tachycardia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-2672351, Reactome:R-HSA-5578775)\n\n**Proposed mechanism:** RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ ventricular arrhythmia (HP:0011675); RYR2 (HGNC:10233) —DISRUPTS→ calcium signaling (GO:0005887); calcium signaling (GO:0005887) —LEADS_TO→ cardiac arrhythmia (HP:0011675). Mutations in RYR2 disrupt the normal regulation of calcium signaling in cardiomyocytes. For ARVC, this disruption can lead to impaired calcium handling and myocyte integrity (haploinsufficiency). For CPVT2, gain-of-function mutations in RYR2 lead to excessive calcium release, triggering arrhythmias.\n\n**How to falsify it:** The identification of pathogenic variants in RYR2 with a consistent gain-of-function effect in patients with ARVC, or a consistent loss-of-function/haploinsufficiency effect in patients with CPVT2, would falsify this hypothesis. _(variant: rs1137595870)_\n\n**Why it matters:** Understanding the shared role of RYR2 and calcium signaling in these distinct but related cardiomyopathies could lead to the development of targeted therapies that modulate calcium handling for both conditions, potentially improving patient outcomes and reducing mortality.\n\n---"
+}

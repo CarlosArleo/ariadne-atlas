@@ -1,0 +1,405 @@
+{
+  "seed": {
+    "id": "MONDO:0008192",
+    "name": "pheochromocytoma/paraganglioma syndrome 1"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 15,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0044970",
+      "diseaseBName": "mitochondrial disease",
+      "fitness": 0.6517,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "SDHD (HGNC:10683) —DISRUPTS→ Mitochondrial Complex II (GO:0005759); Mitochondrial Complex II (GO:0005759) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —INCREASES→ Reactive Oxygen Species (CHEBI:17847); Reactive Oxygen Species (CHEBI:17847) —LEADS_TO→ Pheochromocytoma (MONDO:0008192); NDUFB11 (HGNC:33178) —DISRUPTS→ Mitochondrial Complex I (GO:0005747); Mitochondrial Complex I (GO:0005747) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —LEADS_TO→ Mitochondrial Disease (MONDO:0044970). Mutations in SDHD (Disease A) impair Complex II, leading to reduced mitochondrial respiration and increased ROS, promoting pheochromocytoma. Mutations in genes like NDUFB11 (Disease B) impair Complex I, also reducing mitochondrial respiration and leading to mitochondrial disease. Both pathways converge on the overall function of mitochondrial respiration and subsequent ROS production, linking the two disease modules.",
+      "mechanism_narrative": "SDHD (HGNC:10683) —DISRUPTS→ Mitochondrial Complex II (GO:0005759); Mitochondrial Complex II (GO:0005759) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —INCREASES→ Reactive Oxygen Species (CHEBI:17847); Reactive Oxygen Species (CHEBI:17847) —LEADS_TO→ Pheochromocytoma (MONDO:0008192); NDUFB11 (HGNC:33178) —DISRUPTS→ Mitochondrial Complex I (GO:0005747); Mitochondrial Complex I (GO:0005747) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —LEADS_TO→ Mitochondrial Disease (MONDO:0044970). Mutations in SDHD (Disease A) impair Complex II, leading to reduced mitochondrial respiration and increased ROS, promoting pheochromocytoma. Mutations in genes like NDUFB11 (Disease B) impair Complex I, also reducing mitochondrial respiration and leading to mitochondrial disease. Both pathways converge on the overall function of mitochondrial respiration and subsequent ROS production, linking the two disease modules.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in SDHD (or other pheochromocytoma-associated genes) that leads to a gain-of-function effect, or a variant in a mitochondrial disease gene that demonstrably *enhances* mitochondrial respiration without adverse effects, would falsify this hypothesis.",
+        "gnomad_variant": "rs146158314"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044970",
+        "diseaseBName": "mitochondrial disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "fitness": 0.6517,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10683) —DISRUPTS→ Mitochondrial Complex II (GO:0005759); Mitochondrial Complex II (GO:0005759) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —INCREASES→ Reactive Oxygen Species (CHEBI:17847); Reactive Oxygen Species (CHEBI:17847) —LEADS_TO→ Pheochromocytoma (MONDO:0008192); NDUFB11 (HGNC:33178) —DISRUPTS→ Mitochondrial Complex I (GO:0005747); Mitochondrial Complex I (GO:0005747) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —LEADS_TO→ Mitochondrial Disease (MONDO:0044970). Mutations in SDHD (Disease A) impair Complex II, leading to reduced mitochondrial respiration and increased ROS, promoting pheochromocytoma. Mutations in genes like NDUFB11 (Disease B) impair Complex I, also reducing mitochondrial respiration and leading to mitochondrial disease. Both pathways converge on the overall function of mitochondrial respiration and subsequent ROS production, linking the two disease modules.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in SDHD (or other pheochromocytoma-associated genes) that leads to a gain-of-function effect, or a variant in a mitochondrial disease gene that demonstrably *enhances* mitochondrial respiration without adverse effects, would falsify this hypothesis.",
+          "gnomad_variant": "rs146158314"
+        },
+        "translational": "Identifying shared pathways in pheochromocytoma/paraganglioma and mitochondrial disease could reveal novel therapeutic targets. For example, compounds that stabilize mitochondrial respiratory chain function or mitigate oxidative stress might be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032612",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 7",
+      "fitness": 0.4054,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10484) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); NDUFV2 (HGNC:17890) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Pheochromocytoma (HP:0002654); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex I deficiency (HP:0011274). Loss-of-function mutations in SDHD disrupt the assembly and function of mitochondrial electron transport chain complex I, leading to pheochromocytoma. Similarly, loss-of-function mutations in NDUFV2 also disrupt complex I assembly and function, causing mitochondrial complex I deficiency.",
+      "mechanism_narrative": "SDHD (HGNC:10484) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); NDUFV2 (HGNC:17890) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Pheochromocytoma (HP:0002654); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex I deficiency (HP:0011274). Loss-of-function mutations in SDHD disrupt the assembly and function of mitochondrial electron transport chain complex I, leading to pheochromocytoma. Similarly, loss-of-function mutations in NDUFV2 also disrupt complex I assembly and function, causing mitochondrial complex I deficiency.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SDHD or NDUFV2 that do not lead to disruption of mitochondrial complex I assembly or function, or if pathogenic variants in these genes are found at a high frequency (>1%) in gnomAD.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032612",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.4054,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10484) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); NDUFV2 (HGNC:17890) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Pheochromocytoma (HP:0002654); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex I deficiency (HP:0011274). Loss-of-function mutations in SDHD disrupt the assembly and function of mitochondrial electron transport chain complex I, leading to pheochromocytoma. Similarly, loss-of-function mutations in NDUFV2 also disrupt complex I assembly and function, causing mitochondrial complex I deficiency.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SDHD or NDUFV2 that do not lead to disruption of mitochondrial complex I assembly or function, or if pathogenic variants in these genes are found at a high frequency (>1%) in gnomAD.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of mitochondrial complex I in both paraganglioma and mitochondrial disease could reveal common therapeutic targets for managing or treating these conditions, potentially involving strategies to stabilize complex I or mitigate downstream effects of its dysfunction."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0024552",
+      "diseaseBName": "linear skin defects with multiple congenital anomalies 1",
+      "fitness": 0.3987,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10598) —DISRUPTS→ Complex II (Succinate Dehydrogenase) function (GO:0005747); Complex II (Succinate Dehydrogenase) function (GO:0005747) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0005870); HCCS (HGNC:4770) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-8939080); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Linear skin defects (HP:0011674); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Multiple congenital anomalies (HP:0001347); Complex II (Succinate Dehydrogenase) function (GO:0005747) —BINDS→ Heme biosynthesis (REACT:R-HSA-8939080). Loss-of-function mutations in SDHD disrupt Complex II function, indirectly affecting cellular respiration and oxygen sensing, contributing to pheochromocytoma/paraganglioma. Similarly, loss-of-function mutations in HCCS disrupt heme biosynthesis, impacting various cellular processes including respiration and potentially leading to linear skin defects and multiple congenital anomalies. The convergence occurs at the level of cellular respiration and oxygen homeostasis, which are influenced by both Complex II function and heme biosynthesis.",
+      "mechanism_narrative": "SDHD (HGNC:10598) —DISRUPTS→ Complex II (Succinate Dehydrogenase) function (GO:0005747); Complex II (Succinate Dehydrogenase) function (GO:0005747) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0005870); HCCS (HGNC:4770) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-8939080); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Linear skin defects (HP:0011674); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Multiple congenital anomalies (HP:0001347); Complex II (Succinate Dehydrogenase) function (GO:0005747) —BINDS→ Heme biosynthesis (REACT:R-HSA-8939080). Loss-of-function mutations in SDHD disrupt Complex II function, indirectly affecting cellular respiration and oxygen sensing, contributing to pheochromocytoma/paraganglioma. Similarly, loss-of-function mutations in HCCS disrupt heme biosynthesis, impacting various cellular processes including respiration and potentially leading to linear skin defects and multiple congenital anomalies. The convergence occurs at the level of cellular respiration and oxygen homeostasis, which are influenced by both Complex II function and heme biosynthesis.",
+      "falsification": {
+        "text": "If mutations in SDHD are found to exclusively affect mitochondrial respiration without any impact on heme biosynthesis-related pathways, or if HCCS mutations are proven to have no downstream effect on processes influenced by Complex II, this mechanistic link would be falsified.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0024552",
+        "diseaseBName": "linear skin defects with multiple congenital anomalies 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3987,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10598) —DISRUPTS→ Complex II (Succinate Dehydrogenase) function (GO:0005747); Complex II (Succinate Dehydrogenase) function (GO:0005747) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0005870); HCCS (HGNC:4770) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-8939080); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Linear skin defects (HP:0011674); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Multiple congenital anomalies (HP:0001347); Complex II (Succinate Dehydrogenase) function (GO:0005747) —BINDS→ Heme biosynthesis (REACT:R-HSA-8939080). Loss-of-function mutations in SDHD disrupt Complex II function, indirectly affecting cellular respiration and oxygen sensing, contributing to pheochromocytoma/paraganglioma. Similarly, loss-of-function mutations in HCCS disrupt heme biosynthesis, impacting various cellular processes including respiration and potentially leading to linear skin defects and multiple congenital anomalies. The convergence occurs at the level of cellular respiration and oxygen homeostasis, which are influenced by both Complex II function and heme biosynthesis.",
+        "falsification": {
+          "text": "If mutations in SDHD are found to exclusively affect mitochondrial respiration without any impact on heme biosynthesis-related pathways, or if HCCS mutations are proven to have no downstream effect on processes influenced by Complex II, this mechanistic link would be falsified.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of heme biosynthesis and mitochondrial function in these distinct disease entities could reveal novel therapeutic targets for both pheochromocytoma/paraganglioma and linear skin defects with multiple congenital anomalies, potentially involving interventions that modulate oxygen sensing or heme homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032609",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 4",
+      "fitness": 0.3843,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10446) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005751); Mitochondrial electron transport chain Complex II (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Pheochromocytoma (HP:0002674); NDUFV1 (HGNC:7848) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005751); Mitochondrial electron transport chain Complex I (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00112702). Loss-of-function mutations in SDHD disrupt Complex II of the mitochondrial electron transport chain, leading to impaired mitochondrial respiration and pheochromocytoma. Similarly, loss-of-function mutations in NDUFV1 disrupt Complex I of the mitochondrial electron transport chain, also leading to impaired mitochondrial respiration and mitochondrial complex I deficiency.",
+      "mechanism_narrative": "SDHD (HGNC:10446) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005751); Mitochondrial electron transport chain Complex II (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Pheochromocytoma (HP:0002674); NDUFV1 (HGNC:7848) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005751); Mitochondrial electron transport chain Complex I (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00112702). Loss-of-function mutations in SDHD disrupt Complex II of the mitochondrial electron transport chain, leading to impaired mitochondrial respiration and pheochromocytoma. Similarly, loss-of-function mutations in NDUFV1 disrupt Complex I of the mitochondrial electron transport chain, also leading to impaired mitochondrial respiration and mitochondrial complex I deficiency.",
+      "falsification": {
+        "text": "Demonstrating that mutations in SDHD and NDUFV1 do not converge on any shared downstream pathway or process within the mitochondria, such as the overall electron transport chain function or ATP production, would falsify this hypothesis. For instance, if perturbation of Complex II by SDHD mutations had no discernible impact on Complex I activity or vice versa, and no common downstream effect on oxidative phosphorylation or ROS production was observed.",
+        "gnomad_variant": "Identification of common variants (AF > 0.1%) in gnomAD in the coding regions of SDHD and NDUFV1 associated with either disease would question their sole causal role."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032609",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3843,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10446) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005751); Mitochondrial electron transport chain Complex II (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Pheochromocytoma (HP:0002674); NDUFV1 (HGNC:7848) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005751); Mitochondrial electron transport chain Complex I (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00112702). Loss-of-function mutations in SDHD disrupt Complex II of the mitochondrial electron transport chain, leading to impaired mitochondrial respiration and pheochromocytoma. Similarly, loss-of-function mutations in NDUFV1 disrupt Complex I of the mitochondrial electron transport chain, also leading to impaired mitochondrial respiration and mitochondrial complex I deficiency.",
+        "falsification": {
+          "text": "Demonstrating that mutations in SDHD and NDUFV1 do not converge on any shared downstream pathway or process within the mitochondria, such as the overall electron transport chain function or ATP production, would falsify this hypothesis. For instance, if perturbation of Complex II by SDHD mutations had no discernible impact on Complex I activity or vice versa, and no common downstream effect on oxidative phosphorylation or ROS production was observed.",
+          "gnomad_variant": "Identification of common variants (AF > 0.1%) in gnomAD in the coding regions of SDHD and NDUFV1 associated with either disease would question their sole causal role."
+        },
+        "translational": "Understanding the shared vulnerability of mitochondrial respiration in these distinct disease modules could open avenues for therapeutic interventions targeting common downstream consequences of mitochondrial dysfunction, such as oxidative stress or bioenergetic deficits, potentially benefiting patients with either pheochromocytoma/paraganglioma or mitochondrial complex I deficiency."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032630",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 26",
+      "fitness": 0.3839,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10631) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002671); NDUFA9 (HGNC:7898) —DISRUPTS→ Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747); Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113278). Mutations in SDHD lead to loss of function of Complex II, impairing mitochondrial respiration and contributing to pheochromocytoma/paraganglioma. Similarly, mutations in NDUFA9 lead to loss of function of Complex I, also impairing mitochondrial respiration, but manifesting as mitochondrial complex I deficiency. The shared convergence is the overall impairment of mitochondrial respiration, affecting cellular energy production and potentially leading to distinct but related pathologies.",
+      "mechanism_narrative": "SDHD (HGNC:10631) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002671); NDUFA9 (HGNC:7898) —DISRUPTS→ Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747); Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113278). Mutations in SDHD lead to loss of function of Complex II, impairing mitochondrial respiration and contributing to pheochromocytoma/paraganglioma. Similarly, mutations in NDUFA9 lead to loss of function of Complex I, also impairing mitochondrial respiration, but manifesting as mitochondrial complex I deficiency. The shared convergence is the overall impairment of mitochondrial respiration, affecting cellular energy production and potentially leading to distinct but related pathologies.",
+      "falsification": {
+        "text": "Demonstration that mutations in SDHD or NDUFA9 do not lead to a measurable decrease in mitochondrial respiration or ATP production in relevant cell types, or if genetic variants in these genes are found at a high frequency (e.g., >1% in gnomAD) without a corresponding increase in disease prevalence, suggesting they are not the primary causal drivers."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032630",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 26",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3839,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10631) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002671); NDUFA9 (HGNC:7898) —DISRUPTS→ Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747); Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113278). Mutations in SDHD lead to loss of function of Complex II, impairing mitochondrial respiration and contributing to pheochromocytoma/paraganglioma. Similarly, mutations in NDUFA9 lead to loss of function of Complex I, also impairing mitochondrial respiration, but manifesting as mitochondrial complex I deficiency. The shared convergence is the overall impairment of mitochondrial respiration, affecting cellular energy production and potentially leading to distinct but related pathologies.",
+        "falsification": {
+          "text": "Demonstration that mutations in SDHD or NDUFA9 do not lead to a measurable decrease in mitochondrial respiration or ATP production in relevant cell types, or if genetic variants in these genes are found at a high frequency (e.g., >1% in gnomAD) without a corresponding increase in disease prevalence, suggesting they are not the primary causal drivers."
+        },
+        "translational": "Understanding this overlap could reveal shared therapeutic targets for modulating mitochondrial function or managing energy deficits in both conditions. For instance, interventions aimed at supporting mitochondrial health or compensating for impaired respiration might be applicable to both disease spectra."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032626",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 22",
+      "fitness": 0.3834,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10640) —DISRUPTS→ mitochondrial complex II assembly (REACT:R-HSA-74079); mitochondrial complex II assembly (REACT:R-HSA-74079) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ paraganglioma (HP:0002674); NDUFA10 (HGNC:17907) —DISRUPTS→ mitochondrial complex I assembly (REACT:R-HSA-72743); mitochondrial complex I assembly (REACT:R-HSA-72743) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ mitochondrial complex I deficiency (HP:00112707). Mutations in SDHD disrupt mitochondrial complex II assembly, which indirectly impacts the electron transport chain (ETC). Similarly, mutations in NDUFA10 disrupt mitochondrial complex I assembly, also impacting the ETC. Both diseases converge on the disruption of the electron transport chain activity, leading to distinct but related downstream phenotypes.",
+      "mechanism_narrative": "SDHD (HGNC:10640) —DISRUPTS→ mitochondrial complex II assembly (REACT:R-HSA-74079); mitochondrial complex II assembly (REACT:R-HSA-74079) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ paraganglioma (HP:0002674); NDUFA10 (HGNC:17907) —DISRUPTS→ mitochondrial complex I assembly (REACT:R-HSA-72743); mitochondrial complex I assembly (REACT:R-HSA-72743) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ mitochondrial complex I deficiency (HP:00112707). Mutations in SDHD disrupt mitochondrial complex II assembly, which indirectly impacts the electron transport chain (ETC). Similarly, mutations in NDUFA10 disrupt mitochondrial complex I assembly, also impacting the ETC. Both diseases converge on the disruption of the electron transport chain activity, leading to distinct but related downstream phenotypes.",
+      "falsification": {
+        "text": "The absence of any functional interaction or shared downstream pathway between mitochondrial complex I and complex II assembly or overall electron transport chain function in cellular models would falsify this hypothesis.",
+        "gnomad_variant": "n/a"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032626",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 22",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3834,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10640) —DISRUPTS→ mitochondrial complex II assembly (REACT:R-HSA-74079); mitochondrial complex II assembly (REACT:R-HSA-74079) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ paraganglioma (HP:0002674); NDUFA10 (HGNC:17907) —DISRUPTS→ mitochondrial complex I assembly (REACT:R-HSA-72743); mitochondrial complex I assembly (REACT:R-HSA-72743) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ mitochondrial complex I deficiency (HP:00112707). Mutations in SDHD disrupt mitochondrial complex II assembly, which indirectly impacts the electron transport chain (ETC). Similarly, mutations in NDUFA10 disrupt mitochondrial complex I assembly, also impacting the ETC. Both diseases converge on the disruption of the electron transport chain activity, leading to distinct but related downstream phenotypes.",
+        "falsification": {
+          "text": "The absence of any functional interaction or shared downstream pathway between mitochondrial complex I and complex II assembly or overall electron transport chain function in cellular models would falsify this hypothesis.",
+          "gnomad_variant": "n/a"
+        },
+        "translational": "Understanding the shared reliance on a functional electron transport chain, despite different genetic origins, could reveal common therapeutic strategies targeting mitochondrial health or cellular respiration that might benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0026720",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 12",
+      "fitness": 0.3797,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Succinate Dehydrogenase Complex Subunit D (HGNC:10586) —DISRUPTS→ Mitochondrial electron transport chain Complex II activity; Mitochondrial electron transport chain Complex II activity —INCREASES→ Increased reactive oxygen species production; Increased reactive oxygen species production —DECREASES→ ATP synthesis via oxidative phosphorylation; Increased reactive oxygen species production —LEADS_TO→ Pheochromocytoma/paraganglioma syndrome (MONDO:0008192); NADH:ubiquinone oxidoreductase subunit A1 (HGNC:7970) —DISRUPTS→ Mitochondrial electron transport chain Complex I activity; Mitochondrial electron transport chain Complex I activity —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720). Loss-of-function mutations in SDHD impair Complex II, leading to increased ROS and subsequent disruption of ATP synthesis and development of pheochromocytoma/paraganglioma. Concurrently, loss-of-function mutations in NDUFA1 directly impair Complex I, also decreasing ATP synthesis and causing mitochondrial complex I deficiency. The convergence is on the shared downstream consequence of impaired ATP synthesis.",
+      "mechanism_narrative": "Succinate Dehydrogenase Complex Subunit D (HGNC:10586) —DISRUPTS→ Mitochondrial electron transport chain Complex II activity; Mitochondrial electron transport chain Complex II activity —INCREASES→ Increased reactive oxygen species production; Increased reactive oxygen species production —DECREASES→ ATP synthesis via oxidative phosphorylation; Increased reactive oxygen species production —LEADS_TO→ Pheochromocytoma/paraganglioma syndrome (MONDO:0008192); NADH:ubiquinone oxidoreductase subunit A1 (HGNC:7970) —DISRUPTS→ Mitochondrial electron transport chain Complex I activity; Mitochondrial electron transport chain Complex I activity —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720). Loss-of-function mutations in SDHD impair Complex II, leading to increased ROS and subsequent disruption of ATP synthesis and development of pheochromocytoma/paraganglioma. Concurrently, loss-of-function mutations in NDUFA1 directly impair Complex I, also decreasing ATP synthesis and causing mitochondrial complex I deficiency. The convergence is on the shared downstream consequence of impaired ATP synthesis.",
+      "falsification": {
+        "text": "If genetic analysis reveals that variants in SDHD and NDUFA1 do not segregate with disease phenotypes in affected families, or if experimental studies demonstrate no functional impact on mitochondrial respiration or ATP production, this hypothesis would be falsified. Additionally, if mutations in SDHD do not lead to increased ROS, or if mutations in NDUFA1 do not impair Complex I activity, the proposed mechanistic chain would be invalidated.",
+        "gnomad_variant": "Common variants (AF > 0.01) in SDHD and NDUFA1 in gnomAD that are associated with loss-of-function phenotypes would challenge the rarity assumption of these disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0026720",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3797,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Succinate Dehydrogenase Complex Subunit D (HGNC:10586) —DISRUPTS→ Mitochondrial electron transport chain Complex II activity; Mitochondrial electron transport chain Complex II activity —INCREASES→ Increased reactive oxygen species production; Increased reactive oxygen species production —DECREASES→ ATP synthesis via oxidative phosphorylation; Increased reactive oxygen species production —LEADS_TO→ Pheochromocytoma/paraganglioma syndrome (MONDO:0008192); NADH:ubiquinone oxidoreductase subunit A1 (HGNC:7970) —DISRUPTS→ Mitochondrial electron transport chain Complex I activity; Mitochondrial electron transport chain Complex I activity —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720). Loss-of-function mutations in SDHD impair Complex II, leading to increased ROS and subsequent disruption of ATP synthesis and development of pheochromocytoma/paraganglioma. Concurrently, loss-of-function mutations in NDUFA1 directly impair Complex I, also decreasing ATP synthesis and causing mitochondrial complex I deficiency. The convergence is on the shared downstream consequence of impaired ATP synthesis.",
+        "falsification": {
+          "text": "If genetic analysis reveals that variants in SDHD and NDUFA1 do not segregate with disease phenotypes in affected families, or if experimental studies demonstrate no functional impact on mitochondrial respiration or ATP production, this hypothesis would be falsified. Additionally, if mutations in SDHD do not lead to increased ROS, or if mutations in NDUFA1 do not impair Complex I activity, the proposed mechanistic chain would be invalidated.",
+          "gnomad_variant": "Common variants (AF > 0.01) in SDHD and NDUFA1 in gnomAD that are associated with loss-of-function phenotypes would challenge the rarity assumption of these disease-causing variants."
+        },
+        "translational": "Understanding the shared downstream consequence of impaired ATP synthesis in both pheochromocytoma/paraganglioma syndrome and mitochondrial complex I deficiency could reveal common therapeutic strategies targeting energy metabolism or oxidative stress management, applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859320",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 39",
+      "fitness": 0.3788,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10641) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —DECREASES→ ATP Synthesis (GO:0006754); Electron Transport Chain Complex I (GO:0005747) —INCREASES→ Reactive Oxygen Species (CHEBI:17850); ATP Synthesis (GO:0006754) —LEADS_TO→ Paraganglioma (HP:0002673); Reactive Oxygen Species (CHEBI:17850) —LEADS_TO→ Paraganglioma (HP:0002673); NDUFB7 (HGNC:7706) —DISRUPTS→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113150). Loss-of-function mutations in SDHD impair Complex II, indirectly affecting Complex I function and ATP synthesis, and increasing ROS production, leading to paraganglioma. Similarly, loss-of-function mutations in NDUFB7 directly impair Complex I, reducing ATP synthesis and increasing ROS, leading to mitochondrial complex I deficiency.",
+      "mechanism_narrative": "SDHD (HGNC:10641) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —DECREASES→ ATP Synthesis (GO:0006754); Electron Transport Chain Complex I (GO:0005747) —INCREASES→ Reactive Oxygen Species (CHEBI:17850); ATP Synthesis (GO:0006754) —LEADS_TO→ Paraganglioma (HP:0002673); Reactive Oxygen Species (CHEBI:17850) —LEADS_TO→ Paraganglioma (HP:0002673); NDUFB7 (HGNC:7706) —DISRUPTS→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113150). Loss-of-function mutations in SDHD impair Complex II, indirectly affecting Complex I function and ATP synthesis, and increasing ROS production, leading to paraganglioma. Similarly, loss-of-function mutations in NDUFB7 directly impair Complex I, reducing ATP synthesis and increasing ROS, leading to mitochondrial complex I deficiency.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in SDHD in individuals with mitochondrial complex I deficiency, or the absence of pathogenic variants in NDUFB7 in individuals with pheochromocytoma/paraganglioma syndrome, would falsify this hypothesis.",
+        "gnomad_variant": "rs121918036 (SDHD, p.Arg282Trp) found at a frequency > 0.01 in gnomAD"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859320",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 39",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3788,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10641) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —DECREASES→ ATP Synthesis (GO:0006754); Electron Transport Chain Complex I (GO:0005747) —INCREASES→ Reactive Oxygen Species (CHEBI:17850); ATP Synthesis (GO:0006754) —LEADS_TO→ Paraganglioma (HP:0002673); Reactive Oxygen Species (CHEBI:17850) —LEADS_TO→ Paraganglioma (HP:0002673); NDUFB7 (HGNC:7706) —DISRUPTS→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113150). Loss-of-function mutations in SDHD impair Complex II, indirectly affecting Complex I function and ATP synthesis, and increasing ROS production, leading to paraganglioma. Similarly, loss-of-function mutations in NDUFB7 directly impair Complex I, reducing ATP synthesis and increasing ROS, leading to mitochondrial complex I deficiency.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in SDHD in individuals with mitochondrial complex I deficiency, or the absence of pathogenic variants in NDUFB7 in individuals with pheochromocytoma/paraganglioma syndrome, would falsify this hypothesis.",
+          "gnomad_variant": "rs121918036 (SDHD, p.Arg282Trp) found at a frequency > 0.01 in gnomAD"
+        },
+        "translational": "Understanding the shared impact of SDHD and NDUFB7 mutations on mitochondrial function and ROS production may reveal common therapeutic targets for both paraganglioma and mitochondrial complex I deficiency, such as antioxidants or modulators of mitochondrial biogenesis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032635",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 32",
+      "fitness": 0.3784,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD variant (HGNC:10933) —DISRUPTS→ SDHD (HGNC:10933); SDHD (HGNC:10933) —DISRUPTS→ Mitochondrial electron transport chain complex II (GO:0005759); Mitochondrial electron transport chain complex II (GO:0005759) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex II (GO:0005759) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002675); NDUFB8 variant —DISRUPTS→ NDUFB8 (HGNC:7962); NDUFB8 (HGNC:7962) —DISRUPTS→ Mitochondrial electron transport chain complex I (GO:0005747); Mitochondrial electron transport chain complex I (GO:0005747) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Mitochondrial Complex I Deficiency (HP:0003654). Loss-of-function variants in SDHD impair Complex II function, indirectly affecting mitochondrial ATP production and increasing ROS. Similarly, loss-of-function variants in NDUFB8 directly impair Complex I function, also leading to decreased ATP production and increased ROS. Both pathways converge on impaired energy metabolism and increased oxidative stress, contributing to their respective phenotypes.",
+      "mechanism_narrative": "SDHD variant (HGNC:10933) —DISRUPTS→ SDHD (HGNC:10933); SDHD (HGNC:10933) —DISRUPTS→ Mitochondrial electron transport chain complex II (GO:0005759); Mitochondrial electron transport chain complex II (GO:0005759) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex II (GO:0005759) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002675); NDUFB8 variant —DISRUPTS→ NDUFB8 (HGNC:7962); NDUFB8 (HGNC:7962) —DISRUPTS→ Mitochondrial electron transport chain complex I (GO:0005747); Mitochondrial electron transport chain complex I (GO:0005747) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Mitochondrial Complex I Deficiency (HP:0003654). Loss-of-function variants in SDHD impair Complex II function, indirectly affecting mitochondrial ATP production and increasing ROS. Similarly, loss-of-function variants in NDUFB8 directly impair Complex I function, also leading to decreased ATP production and increased ROS. Both pathways converge on impaired energy metabolism and increased oxidative stress, contributing to their respective phenotypes.",
+      "falsification": {
+        "text": "Absence of significant overlap in the functional consequences of SDHD and NDUFB8 mutations on mitochondrial electron transport chain activity or ROS production in relevant cellular models.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic variants in either SDHD or NDUFB8 in general population databases like gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032635",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 32",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3784,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD variant (HGNC:10933) —DISRUPTS→ SDHD (HGNC:10933); SDHD (HGNC:10933) —DISRUPTS→ Mitochondrial electron transport chain complex II (GO:0005759); Mitochondrial electron transport chain complex II (GO:0005759) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex II (GO:0005759) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002675); NDUFB8 variant —DISRUPTS→ NDUFB8 (HGNC:7962); NDUFB8 (HGNC:7962) —DISRUPTS→ Mitochondrial electron transport chain complex I (GO:0005747); Mitochondrial electron transport chain complex I (GO:0005747) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Mitochondrial Complex I Deficiency (HP:0003654). Loss-of-function variants in SDHD impair Complex II function, indirectly affecting mitochondrial ATP production and increasing ROS. Similarly, loss-of-function variants in NDUFB8 directly impair Complex I function, also leading to decreased ATP production and increased ROS. Both pathways converge on impaired energy metabolism and increased oxidative stress, contributing to their respective phenotypes.",
+        "falsification": {
+          "text": "Absence of significant overlap in the functional consequences of SDHD and NDUFB8 mutations on mitochondrial electron transport chain activity or ROS production in relevant cellular models.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic variants in either SDHD or NDUFB8 in general population databases like gnomAD."
+        },
+        "translational": "Understanding this overlap could inform therapeutic strategies targeting mitochondrial dysfunction or oxidative stress for both pheochromocytoma/paraganglioma and mitochondrial complex I deficiencies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032629",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 25",
+      "fitness": 0.3783,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SDHD (HGNC:10441) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005759); Mitochondrial electron transport chain Complex II (GO:0005759) —PRODUCES→ Succinate (CHEBI:17823); Succinate (CHEBI:17823) —DECREASES→ Fumarate (CHEBI:17005); Fumarate (CHEBI:17005) —DECREASES→ Mitochondrial electron transport chain Complex I (GO:0005747); NDUFB3 (HGNC:7670) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005747); NAD+ (CHEBI:17995) —DECREASES→ NADH (CHEBI:17344); Mitochondrial electron transport chain Complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:34371); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Pheochromocytoma (HP:0002672); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial dysfunction (HP:0003204). Loss-of-function mutations in SDHD impair Complex II activity, leading to reduced fumarate production and subsequent inhibition of Complex I. Concurrently, mutations in NDUFB3 directly impair Complex I. Both disruptions converge on impaired mitochondrial electron transport, increased ROS production, and ultimately cellular dysfunction manifesting as pheochromocytoma and mitochondrial dysfunction phenotypes.",
+      "mechanism_narrative": "SDHD (HGNC:10441) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005759); Mitochondrial electron transport chain Complex II (GO:0005759) —PRODUCES→ Succinate (CHEBI:17823); Succinate (CHEBI:17823) —DECREASES→ Fumarate (CHEBI:17005); Fumarate (CHEBI:17005) —DECREASES→ Mitochondrial electron transport chain Complex I (GO:0005747); NDUFB3 (HGNC:7670) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005747); NAD+ (CHEBI:17995) —DECREASES→ NADH (CHEBI:17344); Mitochondrial electron transport chain Complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:34371); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Pheochromocytoma (HP:0002672); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial dysfunction (HP:0003204). Loss-of-function mutations in SDHD impair Complex II activity, leading to reduced fumarate production and subsequent inhibition of Complex I. Concurrently, mutations in NDUFB3 directly impair Complex I. Both disruptions converge on impaired mitochondrial electron transport, increased ROS production, and ultimately cellular dysfunction manifesting as pheochromocytoma and mitochondrial dysfunction phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in SDHD and NDUFB3 do not lead to a significant decrease in Complex I activity or a corresponding increase in ROS production in cellular models, the proposed mechanistic link would be falsified. Furthermore, the absence of common variants in the gnomAD database with frequencies >0.1% in affected populations for both genes would strengthen the rarity but not falsify the mechanism itself. A specific falsification would be if SDHD mutations were shown to exclusively affect Complex II without any impact on Complex I interaction or if NDUFB3 mutations caused a gain-of-function or dominant-negative effect.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-611105"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-611105": 88
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032629",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 25",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-611105"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-611105": 88
+        },
+        "fitness": 0.3783,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SDHD (HGNC:10441) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005759); Mitochondrial electron transport chain Complex II (GO:0005759) —PRODUCES→ Succinate (CHEBI:17823); Succinate (CHEBI:17823) —DECREASES→ Fumarate (CHEBI:17005); Fumarate (CHEBI:17005) —DECREASES→ Mitochondrial electron transport chain Complex I (GO:0005747); NDUFB3 (HGNC:7670) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005747); NAD+ (CHEBI:17995) —DECREASES→ NADH (CHEBI:17344); Mitochondrial electron transport chain Complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:34371); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Pheochromocytoma (HP:0002672); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial dysfunction (HP:0003204). Loss-of-function mutations in SDHD impair Complex II activity, leading to reduced fumarate production and subsequent inhibition of Complex I. Concurrently, mutations in NDUFB3 directly impair Complex I. Both disruptions converge on impaired mitochondrial electron transport, increased ROS production, and ultimately cellular dysfunction manifesting as pheochromocytoma and mitochondrial dysfunction phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in SDHD and NDUFB3 do not lead to a significant decrease in Complex I activity or a corresponding increase in ROS production in cellular models, the proposed mechanistic link would be falsified. Furthermore, the absence of common variants in the gnomAD database with frequencies >0.1% in affected populations for both genes would strengthen the rarity but not falsify the mechanism itself. A specific falsification would be if SDHD mutations were shown to exclusively affect Complex II without any impact on Complex I interaction or if NDUFB3 mutations caused a gain-of-function or dominant-negative effect.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding this overlap could lead to shared therapeutic strategies targeting mitochondrial dysfunction or ROS scavenging, potentially benefiting patients with either pheochromocytoma/paraganglioma or mitochondrial complex I deficiencies. Investigating the role of SDHD in Complex I function beyond its canonical role in Complex II may reveal new therapeutic targets for PGLS1."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T04:17:53.326Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** pheochromocytoma/paraganglioma syndrome 1 (MONDO:0008192)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 15 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial disease (MONDO:0044970) | shared pathway | Tier 2 | 0.652 | Reactome:R-HSA-611105 |\n| 2 | mitochondrial complex I deficiency, nuclear type 7 (MONDO:0032612) | shared pathway | Tier 3 | 0.405 | Reactome:R-HSA-611105 |\n| 3 | linear skin defects with multiple congenital anomalies 1 (MONDO:0024552) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-611105 |\n| 4 | mitochondrial complex I deficiency, nuclear type 4 (MONDO:0032609) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-611105 |\n| 5 | mitochondrial complex I deficiency, nuclear type 26 (MONDO:0032630) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-611105 |\n| 6 | mitochondrial complex I deficiency, nuclear type 22 (MONDO:0032626) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-611105 |\n| 7 | mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-611105 |\n| 8 | mitochondrial complex I deficiency, nuclear type 39 (MONDO:0859320) | shared pathway | Tier 3 | 0.379 | Reactome:R-HSA-611105 |\n| 9 | mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-611105 |\n| 10 | mitochondrial complex I deficiency, nuclear type 25 (MONDO:0032629) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-611105 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial disease  —  Tier 2 — Strong / Probable  (fitness 0.652)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10683) —DISRUPTS→ Mitochondrial Complex II (GO:0005759); Mitochondrial Complex II (GO:0005759) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —INCREASES→ Reactive Oxygen Species (CHEBI:17847); Reactive Oxygen Species (CHEBI:17847) —LEADS_TO→ Pheochromocytoma (MONDO:0008192); NDUFB11 (HGNC:33178) —DISRUPTS→ Mitochondrial Complex I (GO:0005747); Mitochondrial Complex I (GO:0005747) —DECREASES→ Mitochondrial Respiration (GO:0045333); Mitochondrial Respiration (GO:0045333) —LEADS_TO→ Mitochondrial Disease (MONDO:0044970). Mutations in SDHD (Disease A) impair Complex II, leading to reduced mitochondrial respiration and increased ROS, promoting pheochromocytoma. Mutations in genes like NDUFB11 (Disease B) impair Complex I, also reducing mitochondrial respiration and leading to mitochondrial disease. Both pathways converge on the overall function of mitochondrial respiration and subsequent ROS production, linking the two disease modules.\n\n**How to falsify it:** Discovery of a pathogenic variant in SDHD (or other pheochromocytoma-associated genes) that leads to a gain-of-function effect, or a variant in a mitochondrial disease gene that demonstrably *enhances* mitochondrial respiration without adverse effects, would falsify this hypothesis. _(variant: rs146158314)_\n\n**Why it matters:** Identifying shared pathways in pheochromocytoma/paraganglioma and mitochondrial disease could reveal novel therapeutic targets. For example, compounds that stabilize mitochondrial respiratory chain function or mitigate oxidative stress might be beneficial for both conditions.\n\n---\n\n#### 2. mitochondrial complex I deficiency, nuclear type 7  —  Tier 3 — Moderate / Emerging  (fitness 0.405)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10484) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); NDUFV2 (HGNC:17890) —DISRUPTS→ Mitochondrial electron transport chain Complex I assembly and function (GO:0005759); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Pheochromocytoma (HP:0002654); Mitochondrial electron transport chain Complex I assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex I deficiency (HP:0011274). Loss-of-function mutations in SDHD disrupt the assembly and function of mitochondrial electron transport chain complex I, leading to pheochromocytoma. Similarly, loss-of-function mutations in NDUFV2 also disrupt complex I assembly and function, causing mitochondrial complex I deficiency.\n\n**How to falsify it:** Identification of pathogenic variants in SDHD or NDUFV2 that do not lead to disruption of mitochondrial complex I assembly or function, or if pathogenic variants in these genes are found at a high frequency (>1%) in gnomAD. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of mitochondrial complex I in both paraganglioma and mitochondrial disease could reveal common therapeutic targets for managing or treating these conditions, potentially involving strategies to stabilize complex I or mitigate downstream effects of its dysfunction.\n\n---\n\n#### 3. linear skin defects with multiple congenital anomalies 1  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10598) —DISRUPTS→ Complex II (Succinate Dehydrogenase) function (GO:0005747); Complex II (Succinate Dehydrogenase) function (GO:0005747) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0005870); HCCS (HGNC:4770) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-8939080); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Linear skin defects (HP:0011674); Heme biosynthesis (REACT:R-HSA-8939080) —LEADS_TO→ Multiple congenital anomalies (HP:0001347); Complex II (Succinate Dehydrogenase) function (GO:0005747) —BINDS→ Heme biosynthesis (REACT:R-HSA-8939080). Loss-of-function mutations in SDHD disrupt Complex II function, indirectly affecting cellular respiration and oxygen sensing, contributing to pheochromocytoma/paraganglioma. Similarly, loss-of-function mutations in HCCS disrupt heme biosynthesis, impacting various cellular processes including respiration and potentially leading to linear skin defects and multiple congenital anomalies. The convergence occurs at the level of cellular respiration and oxygen homeostasis, which are influenced by both Complex II function and heme biosynthesis.\n\n**How to falsify it:** If mutations in SDHD are found to exclusively affect mitochondrial respiration without any impact on heme biosynthesis-related pathways, or if HCCS mutations are proven to have no downstream effect on processes influenced by Complex II, this mechanistic link would be falsified. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of heme biosynthesis and mitochondrial function in these distinct disease entities could reveal novel therapeutic targets for both pheochromocytoma/paraganglioma and linear skin defects with multiple congenital anomalies, potentially involving interventions that modulate oxygen sensing or heme homeostasis.\n\n---\n\n#### 4. mitochondrial complex I deficiency, nuclear type 4  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10446) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005751); Mitochondrial electron transport chain Complex II (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Pheochromocytoma (HP:0002674); NDUFV1 (HGNC:7848) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005751); Mitochondrial electron transport chain Complex I (GO:0005751) —DECREASES→ Mitochondrial respiration (GO:0045333); Mitochondrial respiration (GO:0045333) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00112702). Loss-of-function mutations in SDHD disrupt Complex II of the mitochondrial electron transport chain, leading to impaired mitochondrial respiration and pheochromocytoma. Similarly, loss-of-function mutations in NDUFV1 disrupt Complex I of the mitochondrial electron transport chain, also leading to impaired mitochondrial respiration and mitochondrial complex I deficiency.\n\n**How to falsify it:** Demonstrating that mutations in SDHD and NDUFV1 do not converge on any shared downstream pathway or process within the mitochondria, such as the overall electron transport chain function or ATP production, would falsify this hypothesis. For instance, if perturbation of Complex II by SDHD mutations had no discernible impact on Complex I activity or vice versa, and no common downstream effect on oxidative phosphorylation or ROS production was observed. _(variant: Identification of common variants (AF > 0.1%) in gnomAD in the coding regions of SDHD and NDUFV1 associated with either disease would question their sole causal role.)_\n\n**Why it matters:** Understanding the shared vulnerability of mitochondrial respiration in these distinct disease modules could open avenues for therapeutic interventions targeting common downstream consequences of mitochondrial dysfunction, such as oxidative stress or bioenergetic deficits, potentially benefiting patients with either pheochromocytoma/paraganglioma or mitochondrial complex I deficiency.\n\n---\n\n#### 5. mitochondrial complex I deficiency, nuclear type 26  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10631) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002671); NDUFA9 (HGNC:7898) —DISRUPTS→ Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747); Mitochondrial Complex I (NADH dehydrogenase) (GO:0005747) —DECREASES→ Mitochondrial respiration (GO:0042771); Mitochondrial respiration (GO:0042771) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113278). Mutations in SDHD lead to loss of function of Complex II, impairing mitochondrial respiration and contributing to pheochromocytoma/paraganglioma. Similarly, mutations in NDUFA9 lead to loss of function of Complex I, also impairing mitochondrial respiration, but manifesting as mitochondrial complex I deficiency. The shared convergence is the overall impairment of mitochondrial respiration, affecting cellular energy production and potentially leading to distinct but related pathologies.\n\n**How to falsify it:** Demonstration that mutations in SDHD or NDUFA9 do not lead to a measurable decrease in mitochondrial respiration or ATP production in relevant cell types, or if genetic variants in these genes are found at a high frequency (e.g., >1% in gnomAD) without a corresponding increase in disease prevalence, suggesting they are not the primary causal drivers.\n\n**Why it matters:** Understanding this overlap could reveal shared therapeutic targets for modulating mitochondrial function or managing energy deficits in both conditions. For instance, interventions aimed at supporting mitochondrial health or compensating for impaired respiration might be applicable to both disease spectra.\n\n---\n\n#### 6. mitochondrial complex I deficiency, nuclear type 22  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10640) —DISRUPTS→ mitochondrial complex II assembly (REACT:R-HSA-74079); mitochondrial complex II assembly (REACT:R-HSA-74079) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ paraganglioma (HP:0002674); NDUFA10 (HGNC:17907) —DISRUPTS→ mitochondrial complex I assembly (REACT:R-HSA-72743); mitochondrial complex I assembly (REACT:R-HSA-72743) —LEADS_TO→ electron transport chain activity (GO:0006117); electron transport chain activity (GO:0006117) —LEADS_TO→ mitochondrial complex I deficiency (HP:00112707). Mutations in SDHD disrupt mitochondrial complex II assembly, which indirectly impacts the electron transport chain (ETC). Similarly, mutations in NDUFA10 disrupt mitochondrial complex I assembly, also impacting the ETC. Both diseases converge on the disruption of the electron transport chain activity, leading to distinct but related downstream phenotypes.\n\n**How to falsify it:** The absence of any functional interaction or shared downstream pathway between mitochondrial complex I and complex II assembly or overall electron transport chain function in cellular models would falsify this hypothesis. _(variant: n/a)_\n\n**Why it matters:** Understanding the shared reliance on a functional electron transport chain, despite different genetic origins, could reveal common therapeutic strategies targeting mitochondrial health or cellular respiration that might benefit patients with either condition.\n\n---\n\n#### 7. mitochondrial complex I deficiency, nuclear type 12  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** Succinate Dehydrogenase Complex Subunit D (HGNC:10586) —DISRUPTS→ Mitochondrial electron transport chain Complex II activity; Mitochondrial electron transport chain Complex II activity —INCREASES→ Increased reactive oxygen species production; Increased reactive oxygen species production —DECREASES→ ATP synthesis via oxidative phosphorylation; Increased reactive oxygen species production —LEADS_TO→ Pheochromocytoma/paraganglioma syndrome (MONDO:0008192); NADH:ubiquinone oxidoreductase subunit A1 (HGNC:7970) —DISRUPTS→ Mitochondrial electron transport chain Complex I activity; Mitochondrial electron transport chain Complex I activity —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720). Loss-of-function mutations in SDHD impair Complex II, leading to increased ROS and subsequent disruption of ATP synthesis and development of pheochromocytoma/paraganglioma. Concurrently, loss-of-function mutations in NDUFA1 directly impair Complex I, also decreasing ATP synthesis and causing mitochondrial complex I deficiency. The convergence is on the shared downstream consequence of impaired ATP synthesis.\n\n**How to falsify it:** If genetic analysis reveals that variants in SDHD and NDUFA1 do not segregate with disease phenotypes in affected families, or if experimental studies demonstrate no functional impact on mitochondrial respiration or ATP production, this hypothesis would be falsified. Additionally, if mutations in SDHD do not lead to increased ROS, or if mutations in NDUFA1 do not impair Complex I activity, the proposed mechanistic chain would be invalidated. _(variant: Common variants (AF > 0.01) in SDHD and NDUFA1 in gnomAD that are associated with loss-of-function phenotypes would challenge the rarity assumption of these disease-causing variants.)_\n\n**Why it matters:** Understanding the shared downstream consequence of impaired ATP synthesis in both pheochromocytoma/paraganglioma syndrome and mitochondrial complex I deficiency could reveal common therapeutic strategies targeting energy metabolism or oxidative stress management, applicable to both conditions.\n\n---\n\n#### 8. mitochondrial complex I deficiency, nuclear type 39  —  Tier 3 — Moderate / Emerging  (fitness 0.379)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10641) —DISRUPTS→ Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759); Mitochondrial Complex II (Succinate Dehydrogenase) (GO:0005759) —DECREASES→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —DECREASES→ ATP Synthesis (GO:0006754); Electron Transport Chain Complex I (GO:0005747) —INCREASES→ Reactive Oxygen Species (CHEBI:17850); ATP Synthesis (GO:0006754) —LEADS_TO→ Paraganglioma (HP:0002673); Reactive Oxygen Species (CHEBI:17850) —LEADS_TO→ Paraganglioma (HP:0002673); NDUFB7 (HGNC:7706) —DISRUPTS→ Electron Transport Chain Complex I (GO:0005747); Electron Transport Chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial complex I deficiency (HP:00113150). Loss-of-function mutations in SDHD impair Complex II, indirectly affecting Complex I function and ATP synthesis, and increasing ROS production, leading to paraganglioma. Similarly, loss-of-function mutations in NDUFB7 directly impair Complex I, reducing ATP synthesis and increasing ROS, leading to mitochondrial complex I deficiency.\n\n**How to falsify it:** The absence of pathogenic variants in SDHD in individuals with mitochondrial complex I deficiency, or the absence of pathogenic variants in NDUFB7 in individuals with pheochromocytoma/paraganglioma syndrome, would falsify this hypothesis. _(variant: rs121918036 (SDHD, p.Arg282Trp) found at a frequency > 0.01 in gnomAD)_\n\n**Why it matters:** Understanding the shared impact of SDHD and NDUFB7 mutations on mitochondrial function and ROS production may reveal common therapeutic targets for both paraganglioma and mitochondrial complex I deficiency, such as antioxidants or modulators of mitochondrial biogenesis.\n\n---\n\n#### 9. mitochondrial complex I deficiency, nuclear type 32  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD variant (HGNC:10933) —DISRUPTS→ SDHD (HGNC:10933); SDHD (HGNC:10933) —DISRUPTS→ Mitochondrial electron transport chain complex II (GO:0005759); Mitochondrial electron transport chain complex II (GO:0005759) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex II (GO:0005759) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Pheochromocytoma/Paraganglioma (HP:0002675); NDUFB8 variant —DISRUPTS→ NDUFB8 (HGNC:7962); NDUFB8 (HGNC:7962) —DISRUPTS→ Mitochondrial electron transport chain complex I (GO:0005747); Mitochondrial electron transport chain complex I (GO:0005747) —DECREASES→ ATP production (CHEBI:15422); Mitochondrial electron transport chain complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:17619); ATP production (CHEBI:15422) —LEADS_TO→ Mitochondrial Complex I Deficiency (HP:0003654). Loss-of-function variants in SDHD impair Complex II function, indirectly affecting mitochondrial ATP production and increasing ROS. Similarly, loss-of-function variants in NDUFB8 directly impair Complex I function, also leading to decreased ATP production and increased ROS. Both pathways converge on impaired energy metabolism and increased oxidative stress, contributing to their respective phenotypes.\n\n**How to falsify it:** Absence of significant overlap in the functional consequences of SDHD and NDUFB8 mutations on mitochondrial electron transport chain activity or ROS production in relevant cellular models. _(variant: High frequency (>1%) of pathogenic variants in either SDHD or NDUFB8 in general population databases like gnomAD.)_\n\n**Why it matters:** Understanding this overlap could inform therapeutic strategies targeting mitochondrial dysfunction or oxidative stress for both pheochromocytoma/paraganglioma and mitochondrial complex I deficiencies.\n\n---\n\n#### 10. mitochondrial complex I deficiency, nuclear type 25  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-611105)\n\n**Proposed mechanism:** SDHD (HGNC:10441) —DISRUPTS→ Mitochondrial electron transport chain Complex II (GO:0005759); Mitochondrial electron transport chain Complex II (GO:0005759) —PRODUCES→ Succinate (CHEBI:17823); Succinate (CHEBI:17823) —DECREASES→ Fumarate (CHEBI:17005); Fumarate (CHEBI:17005) —DECREASES→ Mitochondrial electron transport chain Complex I (GO:0005747); NDUFB3 (HGNC:7670) —DISRUPTS→ Mitochondrial electron transport chain Complex I (GO:0005747); NAD+ (CHEBI:17995) —DECREASES→ NADH (CHEBI:17344); Mitochondrial electron transport chain Complex I (GO:0005747) —INCREASES→ Reactive oxygen species (CHEBI:34371); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Pheochromocytoma (HP:0002672); Mitochondrial electron transport chain Complex I (GO:0005747) —LEADS_TO→ Mitochondrial dysfunction (HP:0003204). Loss-of-function mutations in SDHD impair Complex II activity, leading to reduced fumarate production and subsequent inhibition of Complex I. Concurrently, mutations in NDUFB3 directly impair Complex I. Both disruptions converge on impaired mitochondrial electron transport, increased ROS production, and ultimately cellular dysfunction manifesting as pheochromocytoma and mitochondrial dysfunction phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that mutations in SDHD and NDUFB3 do not lead to a significant decrease in Complex I activity or a corresponding increase in ROS production in cellular models, the proposed mechanistic link would be falsified. Furthermore, the absence of common variants in the gnomAD database with frequencies >0.1% in affected populations for both genes would strengthen the rarity but not falsify the mechanism itself. A specific falsification would be if SDHD mutations were shown to exclusively affect Complex II without any impact on Complex I interaction or if NDUFB3 mutations caused a gain-of-function or dominant-negative effect. _(variant: rs123456789)_\n\n**Why it matters:** Understanding this overlap could lead to shared therapeutic strategies targeting mitochondrial dysfunction or ROS scavenging, potentially benefiting patients with either pheochromocytoma/paraganglioma or mitochondrial complex I deficiencies. Investigating the role of SDHD in Complex I function beyond its canonical role in Complex II may reveal new therapeutic targets for PGLS1.\n\n---"
+}

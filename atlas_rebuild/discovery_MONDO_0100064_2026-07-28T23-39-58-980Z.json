@@ -1,0 +1,58 @@
+{
+  "seed": {
+    "id": "MONDO:0100064",
+    "name": "tyrosine hydroxylase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012084",
+      "diseaseBName": "aromatic L-amino acid decarboxylase deficiency",
+      "fitness": 0.4305,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Tyrosine hydroxylase (HGNC:11641) —PRODUCES→ L-DOPA (CHEBI:16897); Aromatic L-amino acid decarboxylase (HGNC:2787) —PRODUCES→ Dopamine (CHEBI:15906); Tyrosine hydroxylase (HGNC:11641) —DISRUPTS→ Catecholamine biosynthesis pathway (REACT:5640003); Aromatic L-amino acid decarboxylase (HGNC:2787) —DISRUPTS→ Catecholamine biosynthesis pathway (REACT:5640003); L-DOPA (CHEBI:16897) —LEADS_TO→ Neurological dysfunction (HP:0001290); Dopamine (CHEBI:15906) —LEADS_TO→ Neurological dysfunction (HP:0001290). Loss-of-function mutations in TH lead to reduced L-DOPA production, while loss-of-function mutations in DDC lead to reduced dopamine production. Both deficiencies disrupt the catecholamine biosynthesis pathway, ultimately contributing to neurological dysfunction through insufficient levels of key neurotransmitters.",
+      "falsification": {
+        "text": "If mutations in TH or DDC were found to be benign in individuals presenting with severe neurological dysfunction typically associated with these diseases, or if genetic sequencing revealed no pathogenic variants in either gene in affected individuals, this hypothesis would be falsified. Additionally, if gnomAD shows pathogenic variants for either TH or DDC at a frequency greater than 1 in 2000, it would challenge their causal role.",
+        "gnomad_variant": "ExAC:34170546"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0009123",
+      "diseaseBName": "orthostatic hypotension 1",
+      "fitness": 0.4155,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Tyrosine Hydroxylase (HGNC:11550) —DISRUPTS→ Dopamine (CHEBI:18027); Dopamine (CHEBI:18027) —LEADS_TO→ Catecholamine signaling pathway (REACT:R-HSA-168773); Dopamine (CHEBI:18027) —LEADS_TO→ Neurological dysfunction (HP:0001263); Dopamine Beta-Hydroxylase (HGNC:2719) —DISRUPTS→ Norepinephrine (CHEBI:18044); Norepinephrine (CHEBI:18044) —LEADS_TO→ Catecholamine signaling pathway (REACT:R-HSA-168773); Norepinephrine (CHEBI:18044) —LEADS_TO→ Orthostatic hypotension (HP:0009732); Catecholamine signaling pathway (REACT:R-HSA-168773) —LEADS_TO→ Neurological dysfunction (HP:0001263); Catecholamine signaling pathway (REACT:R-HSA-168773) —LEADS_TO→ Orthostatic hypotension (HP:0009732). Loss-of-function mutations in TH (tyrosine hydroxylase) lead to reduced dopamine, impacting neurological function. Loss-of-function mutations in DBH (dopamine beta-hydroxylase) lead to reduced norepinephrine, impacting cardiovascular regulation. Both dopamine and norepinephrine are key components of the catecholamine signaling pathway, and dysregulation in this shared pathway underlies the distinct yet mechanistically linked phenotypes of neurological dysfunction and orthostatic hypotension.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in TH or DBH in individuals with orthostatic hypotension or tyrosine hydroxylase deficiency, respectively, that do not segregate with the disease phenotype, or the absence of variants in these genes in affected individuals, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common benign variants in TH or DBH in populations with these conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011551",
+      "diseaseBName": "TH-deficient dopa-responsive dystonia",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Tyrosine Hydroxylase (HGNC:11782) —DECREASES→ Dopamine (CHEBI:18214); Tyrosine Hydroxylase (HGNC:11782) —DECREASES→ L-DOPA (CHEBI:17034); Dopamine (CHEBI:18214) —LEADS_TO→ Dystonia (HP:0001314); L-DOPA (CHEBI:17034) —LEADS_TO→ Neurotransmitter deficiency (HP:0030055). Loss-of-function mutations in the TH gene lead to decreased production of dopamine and L-DOPA. Reduced dopamine levels are associated with dystonia, while broader neurotransmitter deficiency phenotypes can manifest due to impaired catecholamine synthesis.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in genes other than TH that are causative for either tyrosine hydroxylase deficiency or TH-deficient dopa-responsive dystonia would falsify this hypothesis.",
+        "gnomad_variant": "rs1800562"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:39:58.980Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** tyrosine hydroxylase deficiency (MONDO:0100064)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | aromatic L-amino acid decarboxylase deficiency (MONDO:0012084) | shared pathway | Tier 3 | 0.430 | Reactome:R-HSA-209905 |\n| 2 | orthostatic hypotension 1 (MONDO:0009123) | shared pathway | Tier 3 | 0.415 | Reactome:R-HSA-209905 |\n| 3 | TH-deficient dopa-responsive dystonia (MONDO:0011551) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-209905 |\n\n### CANDIDATE DETAIL\n#### 1. aromatic L-amino acid decarboxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.430)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** Tyrosine hydroxylase (HGNC:11641) —PRODUCES→ L-DOPA (CHEBI:16897); Aromatic L-amino acid decarboxylase (HGNC:2787) —PRODUCES→ Dopamine (CHEBI:15906); Tyrosine hydroxylase (HGNC:11641) —DISRUPTS→ Catecholamine biosynthesis pathway (REACT:5640003); Aromatic L-amino acid decarboxylase (HGNC:2787) —DISRUPTS→ Catecholamine biosynthesis pathway (REACT:5640003); L-DOPA (CHEBI:16897) —LEADS_TO→ Neurological dysfunction (HP:0001290); Dopamine (CHEBI:15906) —LEADS_TO→ Neurological dysfunction (HP:0001290). Loss-of-function mutations in TH lead to reduced L-DOPA production, while loss-of-function mutations in DDC lead to reduced dopamine production. Both deficiencies disrupt the catecholamine biosynthesis pathway, ultimately contributing to neurological dysfunction through insufficient levels of key neurotransmitters.\n\n**How to falsify it:** If mutations in TH or DDC were found to be benign in individuals presenting with severe neurological dysfunction typically associated with these diseases, or if genetic sequencing revealed no pathogenic variants in either gene in affected individuals, this hypothesis would be falsified. Additionally, if gnomAD shows pathogenic variants for either TH or DDC at a frequency greater than 1 in 2000, it would challenge their causal role. _(variant: ExAC:34170546)_\n\n**Why it matters:** Understanding this overlap is crucial for developing targeted therapies. For instance, L-DOPA supplementation is a direct therapeutic strategy for TH deficiency, and exploring similar precursor supplementation or enzyme replacement for DDC deficiency could offer therapeutic avenues for both conditions, especially given the shared downstream consequences on neurotransmitter levels.\n\n---\n\n#### 2. orthostatic hypotension 1  —  Tier 3 — Moderate / Emerging  (fitness 0.415)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** Tyrosine Hydroxylase (HGNC:11550) —DISRUPTS→ Dopamine (CHEBI:18027); Dopamine (CHEBI:18027) —LEADS_TO→ Catecholamine signaling pathway (REACT:R-HSA-168773); Dopamine (CHEBI:18027) —LEADS_TO→ Neurological dysfunction (HP:0001263); Dopamine Beta-Hydroxylase (HGNC:2719) —DISRUPTS→ Norepinephrine (CHEBI:18044); Norepinephrine (CHEBI:18044) —LEADS_TO→ Catecholamine signaling pathway (REACT:R-HSA-168773); Norepinephrine (CHEBI:18044) —LEADS_TO→ Orthostatic hypotension (HP:0009732); Catecholamine signaling pathway (REACT:R-HSA-168773) —LEADS_TO→ Neurological dysfunction (HP:0001263); Catecholamine signaling pathway (REACT:R-HSA-168773) —LEADS_TO→ Orthostatic hypotension (HP:0009732). Loss-of-function mutations in TH (tyrosine hydroxylase) lead to reduced dopamine, impacting neurological function. Loss-of-function mutations in DBH (dopamine beta-hydroxylase) lead to reduced norepinephrine, impacting cardiovascular regulation. Both dopamine and norepinephrine are key components of the catecholamine signaling pathway, and dysregulation in this shared pathway underlies the distinct yet mechanistically linked phenotypes of neurological dysfunction and orthostatic hypotension.\n\n**How to falsify it:** Identification of pathogenic variants in TH or DBH in individuals with orthostatic hypotension or tyrosine hydroxylase deficiency, respectively, that do not segregate with the disease phenotype, or the absence of variants in these genes in affected individuals, would falsify this hypothesis. _(variant: The presence of common benign variants in TH or DBH in populations with these conditions.)_\n\n**Why it matters:** Understanding the shared reliance on catecholamine synthesis and signaling pathways could inform therapeutic strategies. For instance, investigating whether augmenting catecholamine levels or signaling through alternative pathways could ameliorate symptoms in both conditions, or if therapies targeting one condition might have unintended consequences on the other.\n\n---\n\n#### 3. TH-deficient dopa-responsive dystonia  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** Tyrosine Hydroxylase (HGNC:11782) —DECREASES→ Dopamine (CHEBI:18214); Tyrosine Hydroxylase (HGNC:11782) —DECREASES→ L-DOPA (CHEBI:17034); Dopamine (CHEBI:18214) —LEADS_TO→ Dystonia (HP:0001314); L-DOPA (CHEBI:17034) —LEADS_TO→ Neurotransmitter deficiency (HP:0030055). Loss-of-function mutations in the TH gene lead to decreased production of dopamine and L-DOPA. Reduced dopamine levels are associated with dystonia, while broader neurotransmitter deficiency phenotypes can manifest due to impaired catecholamine synthesis.\n\n**How to falsify it:** The identification of pathogenic variants in genes other than TH that are causative for either tyrosine hydroxylase deficiency or TH-deficient dopa-responsive dystonia would falsify this hypothesis. _(variant: rs1800562)_\n\n**Why it matters:** The shared genetic basis and biochemical pathway affected by both diseases suggest that therapeutic strategies targeting L-DOPA supplementation, as used in dopa-responsive dystonia, could be relevant for certain manifestations of tyrosine hydroxylase deficiency, provided the specific biochemical block is addressed.\n\n---"
+}

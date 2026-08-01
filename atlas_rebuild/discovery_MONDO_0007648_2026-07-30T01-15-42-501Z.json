@@ -1,0 +1,417 @@
+{
+  "seed": {
+    "id": "MONDO:0007648",
+    "name": "hereditary diffuse gastric adenocarcinoma"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 15,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012687",
+      "diseaseBName": "familial cavitary optic disk anomaly",
+      "fitness": 0.4107,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2094) —DISRUPTS→ Cell adhesion (GO:0007155); Cell adhesion (GO:0007155) —LEADS_TO→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Extracellular matrix organization (GO:0030198); CDH1 (HGNC:2094) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP19 (HGNC:7507) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687); MMP19 (HGNC:7507) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687). Loss of function in CDH1 disrupts cell adhesion, promoting epithelial-mesenchymal transition and ultimately affecting extracellular matrix organization, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss of function in MMP19 directly disrupts extracellular matrix organization, contributing to familial cavitary optic disk anomaly. The convergence is on the shared pathway of extracellular matrix organization.",
+      "mechanism_narrative": "CDH1 (HGNC:2094) —DISRUPTS→ Cell adhesion (GO:0007155); Cell adhesion (GO:0007155) —LEADS_TO→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Extracellular matrix organization (GO:0030198); CDH1 (HGNC:2094) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP19 (HGNC:7507) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687); MMP19 (HGNC:7507) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687). Loss of function in CDH1 disrupts cell adhesion, promoting epithelial-mesenchymal transition and ultimately affecting extracellular matrix organization, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss of function in MMP19 directly disrupts extracellular matrix organization, contributing to familial cavitary optic disk anomaly. The convergence is on the shared pathway of extracellular matrix organization.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in CDH1 do not lead to loss-of-function phenotypes impacting cell adhesion or EMT, or if mutations in MMP19 do not affect extracellular matrix organization, this hypothesis would be falsified. Additionally, if common variants in CDH1 or MMP19 are found at a high frequency (>1%) in gnomAD within populations relevant to these rare diseases, it would challenge their primary causal role.",
+        "gnomad_variant": "rs112653567 (CDH1 c.1639G>A, p.Glu547Lys) or other known pathogenic variants in CDH1/MMP19 with high allele frequency"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012687",
+        "diseaseBName": "familial cavitary optic disk anomaly",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.4107,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2094) —DISRUPTS→ Cell adhesion (GO:0007155); Cell adhesion (GO:0007155) —LEADS_TO→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Extracellular matrix organization (GO:0030198); CDH1 (HGNC:2094) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP19 (HGNC:7507) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687); MMP19 (HGNC:7507) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687). Loss of function in CDH1 disrupts cell adhesion, promoting epithelial-mesenchymal transition and ultimately affecting extracellular matrix organization, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss of function in MMP19 directly disrupts extracellular matrix organization, contributing to familial cavitary optic disk anomaly. The convergence is on the shared pathway of extracellular matrix organization.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in CDH1 do not lead to loss-of-function phenotypes impacting cell adhesion or EMT, or if mutations in MMP19 do not affect extracellular matrix organization, this hypothesis would be falsified. Additionally, if common variants in CDH1 or MMP19 are found at a high frequency (>1%) in gnomAD within populations relevant to these rare diseases, it would challenge their primary causal role.",
+          "gnomad_variant": "rs112653567 (CDH1 c.1639G>A, p.Glu547Lys) or other known pathogenic variants in CDH1/MMP19 with high allele frequency"
+        },
+        "translational": "Understanding the shared role in extracellular matrix regulation could suggest therapeutic strategies targeting matrix remodeling pathways for both gastric cancer progression and optic nerve anomalies. For instance, modulating MMP activity or ECM composition might offer avenues for treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009597",
+      "diseaseBName": "metaphyseal chondrodysplasia, Spahr type",
+      "fitness": 0.3905,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Gastrointestinal Cancer (HP:0002671); MMP13 (HGNC:7467) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Impaired Cartilage Development (HP:0002712); Gastrointestinal Cancer (HP:0002671) —LEADS_TO→ Gastric Adenocarcinoma (MONDO:0007648); Impaired Cartilage Development (HP:0002712) —LEADS_TO→ Metaphyseal Chondrodysplasia, Spahr type (MONDO:0009597). Loss-of-function mutations in CDH1 disrupt extracellular matrix organization, contributing to gastric adenocarcinoma. Similarly, loss-of-function mutations in MMP13 disrupt extracellular matrix organization, leading to impaired cartilage development and metaphyseal chondrodysplasia.",
+      "mechanism_narrative": "CDH1 (HGNC:2090) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Gastrointestinal Cancer (HP:0002671); MMP13 (HGNC:7467) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Impaired Cartilage Development (HP:0002712); Gastrointestinal Cancer (HP:0002671) —LEADS_TO→ Gastric Adenocarcinoma (MONDO:0007648); Impaired Cartilage Development (HP:0002712) —LEADS_TO→ Metaphyseal Chondrodysplasia, Spahr type (MONDO:0009597). Loss-of-function mutations in CDH1 disrupt extracellular matrix organization, contributing to gastric adenocarcinoma. Similarly, loss-of-function mutations in MMP13 disrupt extracellular matrix organization, leading to impaired cartilage development and metaphyseal chondrodysplasia.",
+      "falsification": {
+        "text": "The absence of any shared molecular pathways or processes involved in extracellular matrix remodeling between CDH1 and MMP13 function would falsify this hypothesis. Specifically, if CDH1's role is solely in cell-cell adhesion and MMP13's role is exclusively in matrix degradation without any common downstream effectors impacting matrix organization, the hypothesis would be invalidated.",
+        "gnomad_variant": "Identification of a common, highly penetrant variant in CDH1 or MMP13 with a very low allele frequency (<0.01%) in gnomAD would support the disease-causing role but not necessarily the mechanistic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009597",
+        "diseaseBName": "metaphyseal chondrodysplasia, Spahr type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3905,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Gastrointestinal Cancer (HP:0002671); MMP13 (HGNC:7467) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Impaired Cartilage Development (HP:0002712); Gastrointestinal Cancer (HP:0002671) —LEADS_TO→ Gastric Adenocarcinoma (MONDO:0007648); Impaired Cartilage Development (HP:0002712) —LEADS_TO→ Metaphyseal Chondrodysplasia, Spahr type (MONDO:0009597). Loss-of-function mutations in CDH1 disrupt extracellular matrix organization, contributing to gastric adenocarcinoma. Similarly, loss-of-function mutations in MMP13 disrupt extracellular matrix organization, leading to impaired cartilage development and metaphyseal chondrodysplasia.",
+        "falsification": {
+          "text": "The absence of any shared molecular pathways or processes involved in extracellular matrix remodeling between CDH1 and MMP13 function would falsify this hypothesis. Specifically, if CDH1's role is solely in cell-cell adhesion and MMP13's role is exclusively in matrix degradation without any common downstream effectors impacting matrix organization, the hypothesis would be invalidated.",
+          "gnomad_variant": "Identification of a common, highly penetrant variant in CDH1 or MMP13 with a very low allele frequency (<0.01%) in gnomAD would support the disease-causing role but not necessarily the mechanistic link."
+        },
+        "translational": "Understanding the shared role in extracellular matrix organization could reveal novel therapeutic targets for both cancer and skeletal dysplasias. For instance, targeting specific matrix metalloproteinases or their regulators might offer a common therapeutic strategy, although the specificity for cancer versus skeletal development would need careful consideration."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009140",
+      "diseaseBName": "Silverman-Handmaker type dyssegmental dysplasia",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ Impaired cell-cell adhesion (HP:0001924); Impaired cell-cell adhesion (HP:0001924) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4947) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis (GO:0032960); Collagen Synthesis (GO:0032960) —LEADS_TO→ Dyssegmental dysplasia (MONDO:0009140). CDH1 mutations lead to impaired cell-cell adhesion, contributing to gastric adenocarcinoma. HSPG2 mutations disrupt extracellular matrix organization and collagen synthesis, leading to dyssegmental dysplasia. The convergence is on the broader cellular processes of ECM organization and collagen synthesis, which are crucial for both tissue integrity and cellular communication.",
+      "mechanism_narrative": "CDH1 (HGNC:2090) —DISRUPTS→ Impaired cell-cell adhesion (HP:0001924); Impaired cell-cell adhesion (HP:0001924) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4947) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis (GO:0032960); Collagen Synthesis (GO:0032960) —LEADS_TO→ Dyssegmental dysplasia (MONDO:0009140). CDH1 mutations lead to impaired cell-cell adhesion, contributing to gastric adenocarcinoma. HSPG2 mutations disrupt extracellular matrix organization and collagen synthesis, leading to dyssegmental dysplasia. The convergence is on the broader cellular processes of ECM organization and collagen synthesis, which are crucial for both tissue integrity and cellular communication.",
+      "falsification": {
+        "text": "Demonstration that mutations in HSPG2 do not lead to any detectable disruption in extracellular matrix organization or collagen synthesis pathways in patient-derived cells or animal models.",
+        "gnomad_variant": "A common pathogenic variant in HSPG2 with a gnomAD allele frequency > 0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81,
+        "Reactome:R-HSA-216083": 85
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009140",
+        "diseaseBName": "Silverman-Handmaker type dyssegmental dysplasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81,
+          "Reactome:R-HSA-216083": 85
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ Impaired cell-cell adhesion (HP:0001924); Impaired cell-cell adhesion (HP:0001924) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4947) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis (GO:0032960); Collagen Synthesis (GO:0032960) —LEADS_TO→ Dyssegmental dysplasia (MONDO:0009140). CDH1 mutations lead to impaired cell-cell adhesion, contributing to gastric adenocarcinoma. HSPG2 mutations disrupt extracellular matrix organization and collagen synthesis, leading to dyssegmental dysplasia. The convergence is on the broader cellular processes of ECM organization and collagen synthesis, which are crucial for both tissue integrity and cellular communication.",
+        "falsification": {
+          "text": "Demonstration that mutations in HSPG2 do not lead to any detectable disruption in extracellular matrix organization or collagen synthesis pathways in patient-derived cells or animal models.",
+          "gnomad_variant": "A common pathogenic variant in HSPG2 with a gnomAD allele frequency > 0.01"
+        },
+        "translational": "Understanding the shared role of ECM integrity and collagen synthesis in these distinct diseases could reveal novel therapeutic targets. For instance, strategies aimed at stabilizing the ECM or enhancing collagen cross-linking might offer therapeutic benefits for both conditions, or at least highlight shared vulnerabilities in cellular structure maintenance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100435",
+      "diseaseBName": "Schwartz-Jampel syndrome type 1",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2122) —DISRUPTS→ E-cadherin mediated cell adhesion (GO:0007156); E-cadherin mediated cell adhesion (GO:0007156) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4905) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Schwartz-Jampel syndrome type 1 (MONDO:0100435). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell adhesion, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in HSPG2 disrupt extracellular matrix organization, which contributes to the skeletal abnormalities seen in Schwartz-Jampel syndrome type 1. The shared overlap is the disruption of extracellular matrix organization, as CDH1 also plays a role in regulating the extracellular matrix environment.",
+      "mechanism_narrative": "CDH1 (HGNC:2122) —DISRUPTS→ E-cadherin mediated cell adhesion (GO:0007156); E-cadherin mediated cell adhesion (GO:0007156) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4905) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Schwartz-Jampel syndrome type 1 (MONDO:0100435). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell adhesion, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in HSPG2 disrupt extracellular matrix organization, which contributes to the skeletal abnormalities seen in Schwartz-Jampel syndrome type 1. The shared overlap is the disruption of extracellular matrix organization, as CDH1 also plays a role in regulating the extracellular matrix environment.",
+      "falsification": {
+        "text": "Demonstration that CDH1 has no role in extracellular matrix organization or that mutations in CDH1 do not impact the extracellular matrix environment in a way that converges with the effects of HSPG2 mutations.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a common variant (AF > 0.01) in CDH1 or HSPG2 that is associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81,
+        "Reactome:R-HSA-216083": 85
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100435",
+        "diseaseBName": "Schwartz-Jampel syndrome type 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81,
+          "Reactome:R-HSA-216083": 85
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2122) —DISRUPTS→ E-cadherin mediated cell adhesion (GO:0007156); E-cadherin mediated cell adhesion (GO:0007156) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4905) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Schwartz-Jampel syndrome type 1 (MONDO:0100435). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell adhesion, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in HSPG2 disrupt extracellular matrix organization, which contributes to the skeletal abnormalities seen in Schwartz-Jampel syndrome type 1. The shared overlap is the disruption of extracellular matrix organization, as CDH1 also plays a role in regulating the extracellular matrix environment.",
+        "falsification": {
+          "text": "Demonstration that CDH1 has no role in extracellular matrix organization or that mutations in CDH1 do not impact the extracellular matrix environment in a way that converges with the effects of HSPG2 mutations.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a common variant (AF > 0.01) in CDH1 or HSPG2 that is associated with either disease."
+        },
+        "translational": "Understanding the shared mechanism of extracellular matrix disruption could reveal novel therapeutic targets for both hereditary diffuse gastric adenocarcinoma and Schwartz-Jampel syndrome type 1, potentially involving matrix-modulating agents or therapies that stabilize cellular adhesion."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011198",
+      "diseaseBName": "spondyloepimetaphyseal dysplasia, Missouri type",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:1701) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP13 (HGNC:7479) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Spondyloepimetaphyseal dysplasia, Missouri type (MONDO:0011198); Epithelial-mesenchymal transition (GO:0001837) —BINDS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in CDH1 disrupt epithelial-mesenchymal transition, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP13 disrupt extracellular matrix remodeling, causing spondyloepimetaphyseal dysplasia. Both EMT and ECM remodeling are interconnected processes, with EMT often involving changes in the ECM, thus creating a mechanistic overlap.",
+      "mechanism_narrative": "CDH1 (HGNC:1701) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP13 (HGNC:7479) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Spondyloepimetaphyseal dysplasia, Missouri type (MONDO:0011198); Epithelial-mesenchymal transition (GO:0001837) —BINDS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in CDH1 disrupt epithelial-mesenchymal transition, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP13 disrupt extracellular matrix remodeling, causing spondyloepimetaphyseal dysplasia. Both EMT and ECM remodeling are interconnected processes, with EMT often involving changes in the ECM, thus creating a mechanistic overlap.",
+      "falsification": {
+        "text": "If functional studies demonstrate that CDH1 mutations do not impact EMT or that MMP13 mutations do not affect ECM remodeling in relevant cellular models, this hypothesis would be falsified. Additionally, the absence of any detectable interaction or co-regulation between the pathways of EMT and ECM remodeling in any biological context would also serve as a falsification condition.",
+        "gnomad_variant": "e.g., If a common variant (AF > 1%) in CDH1 or MMP13 is found to be pathogenic for either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011198",
+        "diseaseBName": "spondyloepimetaphyseal dysplasia, Missouri type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:1701) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP13 (HGNC:7479) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Spondyloepimetaphyseal dysplasia, Missouri type (MONDO:0011198); Epithelial-mesenchymal transition (GO:0001837) —BINDS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in CDH1 disrupt epithelial-mesenchymal transition, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP13 disrupt extracellular matrix remodeling, causing spondyloepimetaphyseal dysplasia. Both EMT and ECM remodeling are interconnected processes, with EMT often involving changes in the ECM, thus creating a mechanistic overlap.",
+        "falsification": {
+          "text": "If functional studies demonstrate that CDH1 mutations do not impact EMT or that MMP13 mutations do not affect ECM remodeling in relevant cellular models, this hypothesis would be falsified. Additionally, the absence of any detectable interaction or co-regulation between the pathways of EMT and ECM remodeling in any biological context would also serve as a falsification condition.",
+          "gnomad_variant": "e.g., If a common variant (AF > 1%) in CDH1 or MMP13 is found to be pathogenic for either disease."
+        },
+        "translational": "Understanding the overlap in extracellular matrix regulation between gastric cancer and skeletal dysplasia could reveal novel therapeutic targets for both conditions. For instance, modulating ECM remodeling might offer a strategy to inhibit gastric cancer metastasis or to improve skeletal integrity in dysplasia patients."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009809",
+      "diseaseBName": "multicentric osteolysis, nodulosis, and arthropathy",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2104) —DISRUPTS→ E-cadherin mediated cell-cell adhesion (GO:0007155); E-cadherin mediated cell-cell adhesion (GO:0007155) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP2 (HGNC:7486) —DISRUPTS→ Extracellular matrix degradation (REACT:R-HSA-157237); Extracellular matrix degradation (REACT:R-HSA-157237) —LEADS_TO→ Multicentric osteolysis, nodulosis, and arthropathy (MONDO:0009809). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell-cell adhesion, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP2 disrupt extracellular matrix degradation, contributing to multicentric osteolysis, nodulosis, and arthropathy. The shared pathway of extracellular matrix remodeling, influenced by MMP2, provides a mechanistic link.",
+      "mechanism_narrative": "CDH1 (HGNC:2104) —DISRUPTS→ E-cadherin mediated cell-cell adhesion (GO:0007155); E-cadherin mediated cell-cell adhesion (GO:0007155) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP2 (HGNC:7486) —DISRUPTS→ Extracellular matrix degradation (REACT:R-HSA-157237); Extracellular matrix degradation (REACT:R-HSA-157237) —LEADS_TO→ Multicentric osteolysis, nodulosis, and arthropathy (MONDO:0009809). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell-cell adhesion, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP2 disrupt extracellular matrix degradation, contributing to multicentric osteolysis, nodulosis, and arthropathy. The shared pathway of extracellular matrix remodeling, influenced by MMP2, provides a mechanistic link.",
+      "falsification": {
+        "text": "Demonstration that mutations in CDH1 do not impact MMP2 activity or the extracellular matrix degradation pathway, or conversely, that MMP2 mutations do not affect cell adhesion pathways relevant to gastric cancer.",
+        "gnomad_variant": "A pathogenic variant in CDH1 with a gnomAD allele frequency > 0.001"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009809",
+        "diseaseBName": "multicentric osteolysis, nodulosis, and arthropathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2104) —DISRUPTS→ E-cadherin mediated cell-cell adhesion (GO:0007155); E-cadherin mediated cell-cell adhesion (GO:0007155) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP2 (HGNC:7486) —DISRUPTS→ Extracellular matrix degradation (REACT:R-HSA-157237); Extracellular matrix degradation (REACT:R-HSA-157237) —LEADS_TO→ Multicentric osteolysis, nodulosis, and arthropathy (MONDO:0009809). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell-cell adhesion, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP2 disrupt extracellular matrix degradation, contributing to multicentric osteolysis, nodulosis, and arthropathy. The shared pathway of extracellular matrix remodeling, influenced by MMP2, provides a mechanistic link.",
+        "falsification": {
+          "text": "Demonstration that mutations in CDH1 do not impact MMP2 activity or the extracellular matrix degradation pathway, or conversely, that MMP2 mutations do not affect cell adhesion pathways relevant to gastric cancer.",
+          "gnomad_variant": "A pathogenic variant in CDH1 with a gnomAD allele frequency > 0.001"
+        },
+        "translational": "Targeting MMP2 activity could potentially offer therapeutic benefits for both gastric cancer progression and bone/joint degradation, though the specific therapeutic strategies would likely differ based on the primary disease context."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009675",
+      "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2A",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); CAPN3 (HGNC:1573) —DISRUPTS→ Extracellular matrix remodeling (GO:0030198); Extracellular matrix remodeling (GO:0030198) —LEADS_TO→ Limb-girdle muscular dystrophy type 2A (MONDO:0009675). Loss of function in CDH1 disrupts epithelial cell adhesion, promoting epithelial-mesenchymal transition and leading to gastric adenocarcinoma. Separately, loss of function in CAPN3 disrupts extracellular matrix remodeling in muscle, leading to limb-girdle muscular dystrophy. The convergence is on the broad biological process of extracellular matrix remodeling, which is affected by both pathways, albeit through different specific mechanisms and downstream consequences.",
+      "mechanism_narrative": "CDH1 (HGNC:2090) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); CAPN3 (HGNC:1573) —DISRUPTS→ Extracellular matrix remodeling (GO:0030198); Extracellular matrix remodeling (GO:0030198) —LEADS_TO→ Limb-girdle muscular dystrophy type 2A (MONDO:0009675). Loss of function in CDH1 disrupts epithelial cell adhesion, promoting epithelial-mesenchymal transition and leading to gastric adenocarcinoma. Separately, loss of function in CAPN3 disrupts extracellular matrix remodeling in muscle, leading to limb-girdle muscular dystrophy. The convergence is on the broad biological process of extracellular matrix remodeling, which is affected by both pathways, albeit through different specific mechanisms and downstream consequences.",
+      "falsification": {
+        "text": "Demonstration that CDH1 and CAPN3 do not functionally interact or regulate any common downstream pathways involved in cellular adhesion or matrix maintenance, or that mutations in one gene do not affect the expression or function of proteins involved in the other's disease pathway.",
+        "gnomad_variant": "Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of CDH1 and CAPN3 that are not associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009675",
+        "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2A",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2090) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); CAPN3 (HGNC:1573) —DISRUPTS→ Extracellular matrix remodeling (GO:0030198); Extracellular matrix remodeling (GO:0030198) —LEADS_TO→ Limb-girdle muscular dystrophy type 2A (MONDO:0009675). Loss of function in CDH1 disrupts epithelial cell adhesion, promoting epithelial-mesenchymal transition and leading to gastric adenocarcinoma. Separately, loss of function in CAPN3 disrupts extracellular matrix remodeling in muscle, leading to limb-girdle muscular dystrophy. The convergence is on the broad biological process of extracellular matrix remodeling, which is affected by both pathways, albeit through different specific mechanisms and downstream consequences.",
+        "falsification": {
+          "text": "Demonstration that CDH1 and CAPN3 do not functionally interact or regulate any common downstream pathways involved in cellular adhesion or matrix maintenance, or that mutations in one gene do not affect the expression or function of proteins involved in the other's disease pathway.",
+          "gnomad_variant": "Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of CDH1 and CAPN3 that are not associated with either disease."
+        },
+        "translational": "Understanding the shared principles of cellular adhesion and extracellular matrix regulation, even when mediated by distinct genes, could inform therapeutic strategies targeting common downstream effectors or pathways in both cancer and degenerative muscle diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0025712",
+      "diseaseBName": "angioedema, hereditary, 4",
+      "fitness": 0.3661,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:1907) —DISRUPTS→ Epithelial cell adhesion and basement membrane integrity (GO:0034332); Epithelial cell adhesion and basement membrane integrity (GO:0034332) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); PLG (HGNC:9066) —DISRUPTS→ Fibrinolysis and extracellular matrix remodeling (GO:0007594); Fibrinolysis and extracellular matrix remodeling (GO:0007594) —LEADS_TO→ Hereditary angioedema, 4 (MONDO:0025712). Mutations in CDH1 disrupt epithelial cell adhesion and basement membrane integrity, leading to hereditary diffuse gastric adenocarcinoma. Separately, mutations in PLG disrupt fibrinolysis and extracellular matrix remodeling, leading to hereditary angioedema type 4. The convergence lies in the shared impact on cellular and extracellular matrix stability, although through distinct specific pathways.",
+      "mechanism_narrative": "CDH1 (HGNC:1907) —DISRUPTS→ Epithelial cell adhesion and basement membrane integrity (GO:0034332); Epithelial cell adhesion and basement membrane integrity (GO:0034332) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); PLG (HGNC:9066) —DISRUPTS→ Fibrinolysis and extracellular matrix remodeling (GO:0007594); Fibrinolysis and extracellular matrix remodeling (GO:0007594) —LEADS_TO→ Hereditary angioedema, 4 (MONDO:0025712). Mutations in CDH1 disrupt epithelial cell adhesion and basement membrane integrity, leading to hereditary diffuse gastric adenocarcinoma. Separately, mutations in PLG disrupt fibrinolysis and extracellular matrix remodeling, leading to hereditary angioedema type 4. The convergence lies in the shared impact on cellular and extracellular matrix stability, although through distinct specific pathways.",
+      "falsification": {
+        "text": "Demonstration that mutations in CDH1 do not lead to loss-of-function or that PLG mutations do not lead to loss-of-function in relevant cellular models would falsify this hypothesis. Additionally, identifying distinct molecular mechanisms for each disease that do not share any common downstream effectors or pathways would also falsify this link.",
+        "gnomad_variant": "Identification of common, benign variants (e.g., >1% allele frequency in gnomAD) in CDH1 associated with gastric cancer or in PLG associated with angioedema."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0025712",
+        "diseaseBName": "angioedema, hereditary, 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3661,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:1907) —DISRUPTS→ Epithelial cell adhesion and basement membrane integrity (GO:0034332); Epithelial cell adhesion and basement membrane integrity (GO:0034332) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); PLG (HGNC:9066) —DISRUPTS→ Fibrinolysis and extracellular matrix remodeling (GO:0007594); Fibrinolysis and extracellular matrix remodeling (GO:0007594) —LEADS_TO→ Hereditary angioedema, 4 (MONDO:0025712). Mutations in CDH1 disrupt epithelial cell adhesion and basement membrane integrity, leading to hereditary diffuse gastric adenocarcinoma. Separately, mutations in PLG disrupt fibrinolysis and extracellular matrix remodeling, leading to hereditary angioedema type 4. The convergence lies in the shared impact on cellular and extracellular matrix stability, although through distinct specific pathways.",
+        "falsification": {
+          "text": "Demonstration that mutations in CDH1 do not lead to loss-of-function or that PLG mutations do not lead to loss-of-function in relevant cellular models would falsify this hypothesis. Additionally, identifying distinct molecular mechanisms for each disease that do not share any common downstream effectors or pathways would also falsify this link.",
+          "gnomad_variant": "Identification of common, benign variants (e.g., >1% allele frequency in gnomAD) in CDH1 associated with gastric cancer or in PLG associated with angioedema."
+        },
+        "translational": "Understanding the link between CDH1 and PLG function could reveal novel therapeutic targets for both hereditary diffuse gastric adenocarcinoma and hereditary angioedema. For instance, targeting pathways involved in matrix remodeling might offer benefits in gastric cancer, or understanding cell adhesion mechanisms could inform treatments for angioedema."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010201",
+      "diseaseBName": "Winchester syndrome",
+      "fitness": 0.3661,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDH1 (HGNC:2111) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP14 (HGNC:7501) —DISRUPTS→ Extracellular matrix degradation (GO:0009251); Extracellular matrix degradation (GO:0009251) —LEADS_TO→ Winchester syndrome (MONDO:0010201). Loss-of-function mutations in CDH1 lead to hereditary diffuse gastric adenocarcinoma. Separately, loss-of-function mutations in MMP14 disrupt extracellular matrix degradation, leading to Winchester syndrome. The shared mechanism lies in the functional consequence of MMP14 dysfunction on extracellular matrix remodeling, which is a key process dysregulated in Winchester syndrome.",
+      "mechanism_narrative": "CDH1 (HGNC:2111) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP14 (HGNC:7501) —DISRUPTS→ Extracellular matrix degradation (GO:0009251); Extracellular matrix degradation (GO:0009251) —LEADS_TO→ Winchester syndrome (MONDO:0010201). Loss-of-function mutations in CDH1 lead to hereditary diffuse gastric adenocarcinoma. Separately, loss-of-function mutations in MMP14 disrupt extracellular matrix degradation, leading to Winchester syndrome. The shared mechanism lies in the functional consequence of MMP14 dysfunction on extracellular matrix remodeling, which is a key process dysregulated in Winchester syndrome.",
+      "falsification": {
+        "text": "Demonstration that MMP14 function is entirely unrelated to the pathogenesis of hereditary diffuse gastric adenocarcinoma, or that CDH1 plays no role in extracellular matrix dynamics relevant to Winchester syndrome.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010201",
+        "diseaseBName": "Winchester syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.3661,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDH1 (HGNC:2111) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP14 (HGNC:7501) —DISRUPTS→ Extracellular matrix degradation (GO:0009251); Extracellular matrix degradation (GO:0009251) —LEADS_TO→ Winchester syndrome (MONDO:0010201). Loss-of-function mutations in CDH1 lead to hereditary diffuse gastric adenocarcinoma. Separately, loss-of-function mutations in MMP14 disrupt extracellular matrix degradation, leading to Winchester syndrome. The shared mechanism lies in the functional consequence of MMP14 dysfunction on extracellular matrix remodeling, which is a key process dysregulated in Winchester syndrome.",
+        "falsification": {
+          "text": "Demonstration that MMP14 function is entirely unrelated to the pathogenesis of hereditary diffuse gastric adenocarcinoma, or that CDH1 plays no role in extracellular matrix dynamics relevant to Winchester syndrome.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared role of MMP14 in extracellular matrix degradation could reveal therapeutic targets applicable to both conditions, potentially by modulating matrix remodeling processes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009009",
+      "diseaseBName": "hypoplasminogenemia",
+      "fitness": 0.2747,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLG (HGNC:9122) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); PLG (HGNC:9122) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); CDH1 (HGNC:2275) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); CDH1 (HGNC:2275) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in PLG cause hypoplasminogenemia. Both PLG and CDH1 (causal for HDGC) are involved in extracellular matrix remodeling. Dysregulation of ECM remodeling by either gene can contribute to their respective disease phenotypes. The convergence is on the shared pathway of ECM remodeling.",
+      "mechanism_narrative": "PLG (HGNC:9122) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); PLG (HGNC:9122) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); CDH1 (HGNC:2275) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); CDH1 (HGNC:2275) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in PLG cause hypoplasminogenemia. Both PLG and CDH1 (causal for HDGC) are involved in extracellular matrix remodeling. Dysregulation of ECM remodeling by either gene can contribute to their respective disease phenotypes. The convergence is on the shared pathway of ECM remodeling.",
+      "falsification": {
+        "text": "If genetic studies of hereditary diffuse gastric adenocarcinoma patients reveal no association with altered PLG function or expression, and the primary driver remains CDH1 mutations affecting cell-cell adhesion without impacting extracellular matrix remodeling in a manner shared with hypoplasminogenemia, then this hypothesis would be falsified.",
+        "gnomad_variant": "Exome sequencing data from gnomAD shows a low frequency of pathogenic variants in PLG, consistent with a rare disease gene."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1474228"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1474228": 81
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009009",
+        "diseaseBName": "hypoplasminogenemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1474228"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1474228": 81
+        },
+        "fitness": 0.2747,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLG (HGNC:9122) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); PLG (HGNC:9122) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); CDH1 (HGNC:2275) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); CDH1 (HGNC:2275) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in PLG cause hypoplasminogenemia. Both PLG and CDH1 (causal for HDGC) are involved in extracellular matrix remodeling. Dysregulation of ECM remodeling by either gene can contribute to their respective disease phenotypes. The convergence is on the shared pathway of ECM remodeling.",
+        "falsification": {
+          "text": "If genetic studies of hereditary diffuse gastric adenocarcinoma patients reveal no association with altered PLG function or expression, and the primary driver remains CDH1 mutations affecting cell-cell adhesion without impacting extracellular matrix remodeling in a manner shared with hypoplasminogenemia, then this hypothesis would be falsified.",
+          "gnomad_variant": "Exome sequencing data from gnomAD shows a low frequency of pathogenic variants in PLG, consistent with a rare disease gene."
+        },
+        "translational": "Understanding the shared role in extracellular matrix remodeling could reveal novel therapeutic targets for gastric cancer that leverage the fibrinolytic system, or suggest monitoring for coagulation defects in gastric cancer patients. Conversely, patients with hypoplasminogenemia might have subtle predispositions to certain cancer types if their fibrinolytic system is compromised."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T01:15:42.501Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hereditary diffuse gastric adenocarcinoma (MONDO:0007648)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 15 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | familial cavitary optic disk anomaly (MONDO:0012687) | shared pathway | Tier 3 | 0.411 | Reactome:R-HSA-1474228 |\n| 2 | metaphyseal chondrodysplasia, Spahr type (MONDO:0009597) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-1474228 |\n| 3 | Silverman-Handmaker type dyssegmental dysplasia (MONDO:0009140) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-1474228 |\n| 4 | Schwartz-Jampel syndrome type 1 (MONDO:0100435) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-1474228 |\n| 5 | spondyloepimetaphyseal dysplasia, Missouri type (MONDO:0011198) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-1474228 |\n| 6 | multicentric osteolysis, nodulosis, and arthropathy (MONDO:0009809) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-1474228 |\n| 7 | autosomal recessive limb-girdle muscular dystrophy type 2A (MONDO:0009675) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-1474228 |\n| 8 | angioedema, hereditary, 4 (MONDO:0025712) | shared pathway | Tier 3 | 0.366 | Reactome:R-HSA-1474228 |\n| 9 | Winchester syndrome (MONDO:0010201) | shared pathway | Tier 3 | 0.366 | Reactome:R-HSA-1474228 |\n| 10 | hypoplasminogenemia (MONDO:0009009) | shared pathway | Tier 3 | 0.275 | Reactome:R-HSA-1474228 |\n\n### CANDIDATE DETAIL\n#### 1. familial cavitary optic disk anomaly  —  Tier 3 — Moderate / Emerging  (fitness 0.411)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2094) —DISRUPTS→ Cell adhesion (GO:0007155); Cell adhesion (GO:0007155) —LEADS_TO→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Extracellular matrix organization (GO:0030198); CDH1 (HGNC:2094) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP19 (HGNC:7507) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687); MMP19 (HGNC:7507) —LEADS_TO→ Familial cavitary optic disk anomaly (MONDO:0012687). Loss of function in CDH1 disrupts cell adhesion, promoting epithelial-mesenchymal transition and ultimately affecting extracellular matrix organization, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss of function in MMP19 directly disrupts extracellular matrix organization, contributing to familial cavitary optic disk anomaly. The convergence is on the shared pathway of extracellular matrix organization.\n\n**How to falsify it:** If genetic studies reveal that mutations in CDH1 do not lead to loss-of-function phenotypes impacting cell adhesion or EMT, or if mutations in MMP19 do not affect extracellular matrix organization, this hypothesis would be falsified. Additionally, if common variants in CDH1 or MMP19 are found at a high frequency (>1%) in gnomAD within populations relevant to these rare diseases, it would challenge their primary causal role. _(variant: rs112653567 (CDH1 c.1639G>A, p.Glu547Lys) or other known pathogenic variants in CDH1/MMP19 with high allele frequency)_\n\n**Why it matters:** Understanding the shared role in extracellular matrix regulation could suggest therapeutic strategies targeting matrix remodeling pathways for both gastric cancer progression and optic nerve anomalies. For instance, modulating MMP activity or ECM composition might offer avenues for treatment.\n\n---\n\n#### 2. metaphyseal chondrodysplasia, Spahr type  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2090) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Gastrointestinal Cancer (HP:0002671); MMP13 (HGNC:7467) —DISRUPTS→ extracellular matrix organization (GO:0030198); extracellular matrix organization (GO:0030198) —LEADS_TO→ Impaired Cartilage Development (HP:0002712); Gastrointestinal Cancer (HP:0002671) —LEADS_TO→ Gastric Adenocarcinoma (MONDO:0007648); Impaired Cartilage Development (HP:0002712) —LEADS_TO→ Metaphyseal Chondrodysplasia, Spahr type (MONDO:0009597). Loss-of-function mutations in CDH1 disrupt extracellular matrix organization, contributing to gastric adenocarcinoma. Similarly, loss-of-function mutations in MMP13 disrupt extracellular matrix organization, leading to impaired cartilage development and metaphyseal chondrodysplasia.\n\n**How to falsify it:** The absence of any shared molecular pathways or processes involved in extracellular matrix remodeling between CDH1 and MMP13 function would falsify this hypothesis. Specifically, if CDH1's role is solely in cell-cell adhesion and MMP13's role is exclusively in matrix degradation without any common downstream effectors impacting matrix organization, the hypothesis would be invalidated. _(variant: Identification of a common, highly penetrant variant in CDH1 or MMP13 with a very low allele frequency (<0.01%) in gnomAD would support the disease-causing role but not necessarily the mechanistic link.)_\n\n**Why it matters:** Understanding the shared role in extracellular matrix organization could reveal novel therapeutic targets for both cancer and skeletal dysplasias. For instance, targeting specific matrix metalloproteinases or their regulators might offer a common therapeutic strategy, although the specificity for cancer versus skeletal development would need careful consideration.\n\n---\n\n#### 3. Silverman-Handmaker type dyssegmental dysplasia  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2090) —DISRUPTS→ Impaired cell-cell adhesion (HP:0001924); Impaired cell-cell adhesion (HP:0001924) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4947) —DISRUPTS→ Extracellular Matrix Organization (GO:0030198); Extracellular Matrix Organization (GO:0030198) —LEADS_TO→ Collagen Synthesis (GO:0032960); Collagen Synthesis (GO:0032960) —LEADS_TO→ Dyssegmental dysplasia (MONDO:0009140). CDH1 mutations lead to impaired cell-cell adhesion, contributing to gastric adenocarcinoma. HSPG2 mutations disrupt extracellular matrix organization and collagen synthesis, leading to dyssegmental dysplasia. The convergence is on the broader cellular processes of ECM organization and collagen synthesis, which are crucial for both tissue integrity and cellular communication.\n\n**How to falsify it:** Demonstration that mutations in HSPG2 do not lead to any detectable disruption in extracellular matrix organization or collagen synthesis pathways in patient-derived cells or animal models. _(variant: A common pathogenic variant in HSPG2 with a gnomAD allele frequency > 0.01)_\n\n**Why it matters:** Understanding the shared role of ECM integrity and collagen synthesis in these distinct diseases could reveal novel therapeutic targets. For instance, strategies aimed at stabilizing the ECM or enhancing collagen cross-linking might offer therapeutic benefits for both conditions, or at least highlight shared vulnerabilities in cellular structure maintenance.\n\n---\n\n#### 4. Schwartz-Jampel syndrome type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2122) —DISRUPTS→ E-cadherin mediated cell adhesion (GO:0007156); E-cadherin mediated cell adhesion (GO:0007156) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); HSPG2 (HGNC:4905) —DISRUPTS→ Extracellular matrix organization (GO:0030198); Extracellular matrix organization (GO:0030198) —LEADS_TO→ Schwartz-Jampel syndrome type 1 (MONDO:0100435). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell adhesion, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in HSPG2 disrupt extracellular matrix organization, which contributes to the skeletal abnormalities seen in Schwartz-Jampel syndrome type 1. The shared overlap is the disruption of extracellular matrix organization, as CDH1 also plays a role in regulating the extracellular matrix environment.\n\n**How to falsify it:** Demonstration that CDH1 has no role in extracellular matrix organization or that mutations in CDH1 do not impact the extracellular matrix environment in a way that converges with the effects of HSPG2 mutations. _(variant: Exome sequencing data from gnomAD showing a common variant (AF > 0.01) in CDH1 or HSPG2 that is associated with either disease.)_\n\n**Why it matters:** Understanding the shared mechanism of extracellular matrix disruption could reveal novel therapeutic targets for both hereditary diffuse gastric adenocarcinoma and Schwartz-Jampel syndrome type 1, potentially involving matrix-modulating agents or therapies that stabilize cellular adhesion.\n\n---\n\n#### 5. spondyloepimetaphyseal dysplasia, Missouri type  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:1701) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP13 (HGNC:7479) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); Extracellular matrix remodeling (GO:0031012) —LEADS_TO→ Spondyloepimetaphyseal dysplasia, Missouri type (MONDO:0011198); Epithelial-mesenchymal transition (GO:0001837) —BINDS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in CDH1 disrupt epithelial-mesenchymal transition, leading to gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP13 disrupt extracellular matrix remodeling, causing spondyloepimetaphyseal dysplasia. Both EMT and ECM remodeling are interconnected processes, with EMT often involving changes in the ECM, thus creating a mechanistic overlap.\n\n**How to falsify it:** If functional studies demonstrate that CDH1 mutations do not impact EMT or that MMP13 mutations do not affect ECM remodeling in relevant cellular models, this hypothesis would be falsified. Additionally, the absence of any detectable interaction or co-regulation between the pathways of EMT and ECM remodeling in any biological context would also serve as a falsification condition. _(variant: e.g., If a common variant (AF > 1%) in CDH1 or MMP13 is found to be pathogenic for either disease.)_\n\n**Why it matters:** Understanding the overlap in extracellular matrix regulation between gastric cancer and skeletal dysplasia could reveal novel therapeutic targets for both conditions. For instance, modulating ECM remodeling might offer a strategy to inhibit gastric cancer metastasis or to improve skeletal integrity in dysplasia patients.\n\n---\n\n#### 6. multicentric osteolysis, nodulosis, and arthropathy  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2104) —DISRUPTS→ E-cadherin mediated cell-cell adhesion (GO:0007155); E-cadherin mediated cell-cell adhesion (GO:0007155) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); MMP2 (HGNC:7486) —DISRUPTS→ Extracellular matrix degradation (REACT:R-HSA-157237); Extracellular matrix degradation (REACT:R-HSA-157237) —LEADS_TO→ Multicentric osteolysis, nodulosis, and arthropathy (MONDO:0009809). Loss-of-function mutations in CDH1 disrupt E-cadherin mediated cell-cell adhesion, leading to hereditary diffuse gastric adenocarcinoma. Concurrently, loss-of-function mutations in MMP2 disrupt extracellular matrix degradation, contributing to multicentric osteolysis, nodulosis, and arthropathy. The shared pathway of extracellular matrix remodeling, influenced by MMP2, provides a mechanistic link.\n\n**How to falsify it:** Demonstration that mutations in CDH1 do not impact MMP2 activity or the extracellular matrix degradation pathway, or conversely, that MMP2 mutations do not affect cell adhesion pathways relevant to gastric cancer. _(variant: A pathogenic variant in CDH1 with a gnomAD allele frequency > 0.001)_\n\n**Why it matters:** Targeting MMP2 activity could potentially offer therapeutic benefits for both gastric cancer progression and bone/joint degradation, though the specific therapeutic strategies would likely differ based on the primary disease context.\n\n---\n\n#### 7. autosomal recessive limb-girdle muscular dystrophy type 2A  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2090) —DISRUPTS→ Epithelial-mesenchymal transition (GO:0001837); Epithelial-mesenchymal transition (GO:0001837) —LEADS_TO→ Gastric adenocarcinoma (MONDO:0007648); CAPN3 (HGNC:1573) —DISRUPTS→ Extracellular matrix remodeling (GO:0030198); Extracellular matrix remodeling (GO:0030198) —LEADS_TO→ Limb-girdle muscular dystrophy type 2A (MONDO:0009675). Loss of function in CDH1 disrupts epithelial cell adhesion, promoting epithelial-mesenchymal transition and leading to gastric adenocarcinoma. Separately, loss of function in CAPN3 disrupts extracellular matrix remodeling in muscle, leading to limb-girdle muscular dystrophy. The convergence is on the broad biological process of extracellular matrix remodeling, which is affected by both pathways, albeit through different specific mechanisms and downstream consequences.\n\n**How to falsify it:** Demonstration that CDH1 and CAPN3 do not functionally interact or regulate any common downstream pathways involved in cellular adhesion or matrix maintenance, or that mutations in one gene do not affect the expression or function of proteins involved in the other's disease pathway. _(variant: Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of CDH1 and CAPN3 that are not associated with either disease.)_\n\n**Why it matters:** Understanding the shared principles of cellular adhesion and extracellular matrix regulation, even when mediated by distinct genes, could inform therapeutic strategies targeting common downstream effectors or pathways in both cancer and degenerative muscle diseases.\n\n---\n\n#### 8. angioedema, hereditary, 4  —  Tier 3 — Moderate / Emerging  (fitness 0.366)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:1907) —DISRUPTS→ Epithelial cell adhesion and basement membrane integrity (GO:0034332); Epithelial cell adhesion and basement membrane integrity (GO:0034332) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); PLG (HGNC:9066) —DISRUPTS→ Fibrinolysis and extracellular matrix remodeling (GO:0007594); Fibrinolysis and extracellular matrix remodeling (GO:0007594) —LEADS_TO→ Hereditary angioedema, 4 (MONDO:0025712). Mutations in CDH1 disrupt epithelial cell adhesion and basement membrane integrity, leading to hereditary diffuse gastric adenocarcinoma. Separately, mutations in PLG disrupt fibrinolysis and extracellular matrix remodeling, leading to hereditary angioedema type 4. The convergence lies in the shared impact on cellular and extracellular matrix stability, although through distinct specific pathways.\n\n**How to falsify it:** Demonstration that mutations in CDH1 do not lead to loss-of-function or that PLG mutations do not lead to loss-of-function in relevant cellular models would falsify this hypothesis. Additionally, identifying distinct molecular mechanisms for each disease that do not share any common downstream effectors or pathways would also falsify this link. _(variant: Identification of common, benign variants (e.g., >1% allele frequency in gnomAD) in CDH1 associated with gastric cancer or in PLG associated with angioedema.)_\n\n**Why it matters:** Understanding the link between CDH1 and PLG function could reveal novel therapeutic targets for both hereditary diffuse gastric adenocarcinoma and hereditary angioedema. For instance, targeting pathways involved in matrix remodeling might offer benefits in gastric cancer, or understanding cell adhesion mechanisms could inform treatments for angioedema.\n\n---\n\n#### 9. Winchester syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.366)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** CDH1 (HGNC:2111) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); MMP14 (HGNC:7501) —DISRUPTS→ Extracellular matrix degradation (GO:0009251); Extracellular matrix degradation (GO:0009251) —LEADS_TO→ Winchester syndrome (MONDO:0010201). Loss-of-function mutations in CDH1 lead to hereditary diffuse gastric adenocarcinoma. Separately, loss-of-function mutations in MMP14 disrupt extracellular matrix degradation, leading to Winchester syndrome. The shared mechanism lies in the functional consequence of MMP14 dysfunction on extracellular matrix remodeling, which is a key process dysregulated in Winchester syndrome.\n\n**How to falsify it:** Demonstration that MMP14 function is entirely unrelated to the pathogenesis of hereditary diffuse gastric adenocarcinoma, or that CDH1 plays no role in extracellular matrix dynamics relevant to Winchester syndrome. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of MMP14 in extracellular matrix degradation could reveal therapeutic targets applicable to both conditions, potentially by modulating matrix remodeling processes.\n\n---\n\n#### 10. hypoplasminogenemia  —  Tier 3 — Moderate / Emerging  (fitness 0.275)\n**Link type:** shared pathway (Reactome:R-HSA-1474228)\n\n**Proposed mechanism:** PLG (HGNC:9122) —LEADS_TO→ Hypoplasminogenemia (MONDO:0009009); PLG (HGNC:9122) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012); CDH1 (HGNC:2275) —LEADS_TO→ Hereditary diffuse gastric adenocarcinoma (MONDO:0007648); CDH1 (HGNC:2275) —DISRUPTS→ Extracellular matrix remodeling (GO:0031012). Loss-of-function mutations in PLG cause hypoplasminogenemia. Both PLG and CDH1 (causal for HDGC) are involved in extracellular matrix remodeling. Dysregulation of ECM remodeling by either gene can contribute to their respective disease phenotypes. The convergence is on the shared pathway of ECM remodeling.\n\n**How to falsify it:** If genetic studies of hereditary diffuse gastric adenocarcinoma patients reveal no association with altered PLG function or expression, and the primary driver remains CDH1 mutations affecting cell-cell adhesion without impacting extracellular matrix remodeling in a manner shared with hypoplasminogenemia, then this hypothesis would be falsified. _(variant: Exome sequencing data from gnomAD shows a low frequency of pathogenic variants in PLG, consistent with a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role in extracellular matrix remodeling could reveal novel therapeutic targets for gastric cancer that leverage the fibrinolytic system, or suggest monitoring for coagulation defects in gastric cancer patients. Conversely, patients with hypoplasminogenemia might have subtle predispositions to certain cancer types if their fibrinolytic system is compromised.\n\n---"
+}

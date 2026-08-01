@@ -1,0 +1,203 @@
+{
+  "seed": {
+    "id": "MONDO:0009026",
+    "name": "Costello syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 49,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0044792",
+      "diseaseBName": "large congenital melanocytic nevus",
+      "fitness": 0.7988,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HRAS (HGNC:4837) —DISRUPTS→ RAS/MAPK signaling pathway (P00000); RAS/MAPK signaling pathway (P00000) —INCREASES→ Cell proliferation (HP:0001377); RAS/MAPK signaling pathway (P00000) —INCREASES→ Abnormal melanocyte proliferation (HP:0030164); Cell proliferation (HP:0001377) —LEADS_TO→ Costello syndrome (MONDO:0009026); Abnormal melanocyte proliferation (HP:0030164) —LEADS_TO→ Large congenital melanocytic nevus (MONDO:0044792). Gain-of-function mutations in HRAS lead to aberrant activation of the RAS/MAPK signaling pathway, which in turn drives excessive cell proliferation, manifesting as Costello syndrome and contributing to the development of large congenital melanocytic nevi.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in HRAS with a demonstrably loss-of-function effect in both Costello syndrome and large congenital melanocytic nevi, or the absence of any shared downstream signaling pathway activation.",
+        "gnomad_variant": "rs12950120 (a common variant in HRAS, although not typically associated with these specific gain-of-function syndromes)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008097",
+      "diseaseBName": "linear nevus sebaceous syndrome",
+      "fitness": 0.7973,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HRAS (HGNC:4835) —INCREASES→ MAPK signaling pathway (GO:0000165); MAPK signaling pathway (GO:0000165) —INCREASES→ Regulation of cell proliferation (GO:0008284); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Cardiomyopathy (HP:0001638); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Intellectual disability (HP:0001249); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Facial dysmorphism (HP:0001999); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Seizures (HP:0001250). Gain-of-function mutations in HRAS lead to constitutive activation of the MAPK signaling pathway, which in turn dysregulates cell proliferation. This aberrant cell proliferation underlies the diverse phenotypes observed in both Costello syndrome and linear nevus sebaceous syndrome, including cardiomyopathy, intellectual disability, facial dysmorphism, and seizures.",
+      "falsification": {
+        "text": "Absence of gain-of-function mutations in HRAS in individuals diagnosed with either Costello syndrome or linear nevus sebaceous syndrome, or identification of distinct pathogenic mechanisms not involving HRAS activation in a significant proportion of cases.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008093",
+      "diseaseBName": "nevus, epidermal",
+      "fitness": 0.7841,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HRAS (HGNC:5173) —INCREASES→ RAS/MAPK signaling pathway (GO:0000165); RAS/MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation (HP:0002138); RAS/MAPK signaling pathway (GO:0000165) —LEADS_TO→ Skin lesion (HP:0000981). Gain-of-function mutations in HRAS lead to constitutive activation of the RAS/MAPK signaling pathway. This aberrant signaling results in abnormal cellular proliferation, a common feature in Costello syndrome, and also contributes to the development of skin lesions characteristic of epidermal nevi.",
+      "falsification": {
+        "text": "If pathogenic variants in HRAS are found to be exclusively loss-of-function or if the RAS/MAPK pathway is not consistently activated in both conditions, this hypothesis would be falsified.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0021060",
+      "diseaseBName": "RASopathy",
+      "fitness": 0.7684,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Activating mutation in HRAS —DISRUPTS→ HRAS (HGNC:4830); HRAS (HGNC:4830) —INCREASES→ MAPK signaling pathway (WP:WP529); MAPK signaling pathway (WP:WP529) —LEADS_TO→ Costello syndrome phenotype (MONDO:0009026); Activating mutation in NF1 (loss of negative regulation) —DISRUPTS→ NF1 (HGNC:7847); NF1 (HGNC:7847) —INCREASES→ MAPK signaling pathway (WP:WP529); MAPK signaling pathway (WP:WP529) —LEADS_TO→ RASopathy phenotype (MONDO:0021060). Gain-of-function mutations in HRAS (Costello syndrome) and loss-of-function mutations in NF1 (a negative regulator of RAS signaling, contributing to RASopathies) both lead to hyperactivation of the MAPK signaling pathway. This shared hyperactivation converges to drive the distinct, yet overlapping, phenotypic manifestations of Costello syndrome and RASopathies.",
+      "falsification": {
+        "text": "If Costello syndrome were found to be driven by a loss-of-function mutation in HRAS or another RAS pathway component, or if RASopathies were consistently linked to gain-of-function mutations in negative regulators of the pathway, this shared gain-of-function mechanism would be falsified.",
+        "gnomad_variant": "A common pathogenic variant (e.g., allele frequency > 0.1%) in HRAS or NF1 identified in gnomAD populations would call into question the pathogenicity of this variant as a driver for rare monogenic diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0018997",
+      "diseaseBName": "Noonan syndrome",
+      "fitness": 0.7381,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Gain-of-function HRAS variant (rs144822156) —INCREASES→ HRAS (HGNC:4820); HRAS (HGNC:4820) —INCREASES→ RAS signaling pathway (WP:P004); RAS signaling pathway (WP:P004) —LEADS_TO→ Cardiomyopathy (HP:0001638); RAS signaling pathway (WP:P004) —LEADS_TO→ Intellectual disability (HP:0001249); Gain-of-function PTPN11 variant (rs113991456) —INCREASES→ PTPN11 (HGNC:9107); PTPN11 (HGNC:9107) —INCREASES→ RAS signaling pathway (WP:P004). Gain-of-function mutations in HRAS (Costello syndrome) and PTPN11 (Noonan syndrome) both lead to hyperactivation of the RAS/MAPK signaling pathway, resulting in overlapping phenotypes such as cardiomyopathy and intellectual disability.",
+      "falsification": {
+        "text": "If a significant proportion of Costello syndrome cases were found to be caused by loss-of-function mutations in HRAS or other RAS pathway genes, or if Noonan syndrome cases were linked to distinct pathways not involving RAS/MAPK hyperactivation, this proposed mechanistic link would be falsified.",
+        "gnomad_variant": "rs144822156"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008566",
+      "diseaseBName": "thyroid cancer, nonmedullary, 2",
+      "fitness": 0.7325,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HRAS (HGNC:5173) —INCREASES→ RAS signaling pathway (R-HSA-8963684); RAS signaling pathway (R-HSA-8963684) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); RAS signaling pathway (R-HSA-8963684) —LEADS_TO→ Thyroid cancer (MONDO:0008566). Gain-of-function mutations in HRAS lead to constitutive activation of the RAS signaling pathway. This aberrant signaling drives abnormal cell proliferation, a common feature in Costello syndrome, and specifically contributes to the development of thyroid cancer in nonmedullary thyroid cancer type 2.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in HRAS exhibiting a loss-of-function effect in patients with either Costello syndrome or nonmedullary thyroid cancer type 2, or a complete lack of HRAS involvement in the pathogenesis of either disease.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0001187",
+      "diseaseBName": "urinary bladder cancer",
+      "fitness": 0.726,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HRAS (HGNC:5173) —INCREASES→ RAS signaling pathway (WP:P08712); RAS signaling pathway (WP:P08712) —INCREASES→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Costello syndrome (MONDO:0009026); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Activating mutations in the HRAS gene lead to a hyperactivated RAS signaling pathway, which in turn promotes abnormal cell proliferation. This aberrant proliferation is a core feature contributing to the phenotype of Costello syndrome and is also a critical step in the development of urinary bladder cancer.",
+      "falsification": {
+        "text": "The absence of activating mutations in HRAS in a significant proportion of Costello syndrome patients or urinary bladder cancer patients would falsify this hypothesis. Specifically, if Costello syndrome were found to be exclusively caused by loss-of-function mutations in a different gene, or if bladder cancer were solely driven by distinct pathways without HRAS involvement, this link would be weakened.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013186",
+      "diseaseBName": "Noonan syndrome 6",
+      "fitness": 0.5502,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HRAS (HGNC:4837) —DISRUPTS→ RAS signaling pathway (REACT:R-HSA-8963684); NRAS (HGNC:7929) —DISRUPTS→ RAS signaling pathway (REACT:R-HSA-8963684); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Cardiomyopathy (HP:0001638); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Intellectual disability (HP:0001249); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Failure to thrive (HP:0001558); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Coarse facial features (HP:0000284). Gain-of-function mutations in HRAS (Costello syndrome) and NRAS (Noonan syndrome 6) both lead to aberrant activation of the RAS signaling pathway. This dysregulated pathway contributes to a shared set of downstream phenotypes including cardiomyopathy, intellectual disability, failure to thrive, and coarse facial features.",
+      "falsification": {
+        "text": "If evidence emerges that the specific mutations in HRAS causing Costello syndrome and NRAS causing Noonan syndrome 6 do not converge on the same downstream effectors within the RAS signaling pathway, or if distinct sets of phenotypes are demonstrably linked to completely separate downstream branches, this hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing common variants in HRAS and NRAS associated with these phenotypes with allele frequencies above 0.01%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0009578",
+      "diseaseBName": "neurocutaneous melanocytosis",
+      "fitness": 0.5473,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HRAS gain-of-function variant (None) —DISRUPTS→ HRAS (HGNC:4835); HRAS (HGNC:4835) —INCREASES→ RAS signaling pathway (WP:P00510); RAS signaling pathway (WP:P00510) —INCREASES→ Cardiomyopathy (HP:0001638); RAS signaling pathway (WP:P00510) —INCREASES→ Congenital heart defect (HP:0001627); RAS signaling pathway (WP:P00510) —INCREASES→ Melanocytic nevus (HP:0002787); RAS signaling pathway (WP:P00510) —INCREASES→ Congenital melanocytic nevus (HP:0011241). Gain-of-function variants in HRAS lead to constitutive activation of the RAS signaling pathway. This aberrant signaling contributes to the phenotypes observed in Costello syndrome, including cardiomyopathy and congenital heart defects. While not directly caused by HRAS mutations, dysregulation of the RAS signaling pathway can also contribute to the proliferation of melanocytes, leading to melanocytic nevi and congenital melanocytic nevi seen in neurocutaneous melanocytosis.",
+      "falsification": {
+        "text": "Absence of evidence for HRAS involvement or dysregulation in the pathogenesis of neurocutaneous melanocytosis, or identification of distinct molecular pathways that fully explain the phenotypes of both diseases without overlap.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0005575",
+      "diseaseBName": "colorectal cancer",
+      "fitness": 0.5253,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HRAS (HGNC:4830) —INCREASES→ MAPK signaling pathway (KEGG:04010); MAPK signaling pathway (KEGG:04010) —LEADS_TO→ Increased cell proliferation (HP:0001377); APC (HGNC:548) —DISRUPTS→ Wnt signaling pathway (KEGG:04310); Wnt signaling pathway (KEGG:04310) —INCREASES→ Increased cell proliferation (HP:0001377); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (KEGG:04310); AXIN2 (HGNC:754) —DISRUPTS→ Wnt signaling pathway (KEGG:04310); Increased cell proliferation (HP:0001377) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Gain-of-function mutations in HRAS in Costello syndrome lead to increased MAPK signaling and cell proliferation. Loss-of-function mutations in APC, often accompanied by alterations in CTNNB1 and AXIN2, disrupt the Wnt signaling pathway, also leading to increased cell proliferation and ultimately colorectal cancer. The shared convergence point is increased cell proliferation, a key driver for both the developmental abnormalities in Costello syndrome and the tumorigenesis in colorectal cancer.",
+      "falsification": {
+        "text": "If genetic analysis of colorectal cancer samples reveals no evidence of APC, CTNNB1, or AXIN2 pathway dysregulation, or if Costello syndrome is definitively linked to a pathway completely independent of Wnt signaling and cell proliferation.",
+        "gnomad_variant": "rs121918302 (HRAS G12V)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-167044",
+        "Reactome:R-HSA-186763",
+        "Reactome:R-HSA-2428933",
+        "Reactome:R-HSA-5218921",
+        "Reactome:R-HSA-5654688"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T21:13:15.622Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Costello syndrome (MONDO:0009026)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 49 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | large congenital melanocytic nevus (MONDO:0044792) | shared pathway | Tier 1 | 0.799 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 2 | linear nevus sebaceous syndrome (MONDO:0008097) | shared pathway | Tier 1 | 0.797 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 3 | nevus, epidermal (MONDO:0008093) | shared pathway | Tier 1 | 0.784 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 4 | RASopathy (MONDO:0021060) | shared pathway | Tier 1 | 0.768 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 5 | Noonan syndrome (MONDO:0018997) | shared pathway | Tier 1 | 0.738 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 6 | thyroid cancer, nonmedullary, 2 (MONDO:0008566) | shared pathway | Tier 1 | 0.733 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 7 | urinary bladder cancer (MONDO:0001187) | shared pathway | Tier 1 | 0.726 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 8 | Noonan syndrome 6 (MONDO:0013186) | shared pathway | Tier 3 | 0.550 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 9 | neurocutaneous melanocytosis (MONDO:0009578) | shared pathway | Tier 3 | 0.547 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n| 10 | colorectal cancer (MONDO:0005575) | shared pathway | Tier 3 | 0.525 | Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688 |\n\n### CANDIDATE DETAIL\n#### 1. large congenital melanocytic nevus  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.799)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:4837) —DISRUPTS→ RAS/MAPK signaling pathway (P00000); RAS/MAPK signaling pathway (P00000) —INCREASES→ Cell proliferation (HP:0001377); RAS/MAPK signaling pathway (P00000) —INCREASES→ Abnormal melanocyte proliferation (HP:0030164); Cell proliferation (HP:0001377) —LEADS_TO→ Costello syndrome (MONDO:0009026); Abnormal melanocyte proliferation (HP:0030164) —LEADS_TO→ Large congenital melanocytic nevus (MONDO:0044792). Gain-of-function mutations in HRAS lead to aberrant activation of the RAS/MAPK signaling pathway, which in turn drives excessive cell proliferation, manifesting as Costello syndrome and contributing to the development of large congenital melanocytic nevi.\n\n**How to falsify it:** Identification of pathogenic variants in HRAS with a demonstrably loss-of-function effect in both Costello syndrome and large congenital melanocytic nevi, or the absence of any shared downstream signaling pathway activation. _(variant: rs12950120 (a common variant in HRAS, although not typically associated with these specific gain-of-function syndromes))_\n\n**Why it matters:** Targeting the activated RAS/MAPK pathway, particularly downstream effectors of HRAS, could offer therapeutic strategies for both Costello syndrome and large congenital melanocytic nevi. Understanding the shared genetic origin provides a basis for developing unified treatment approaches.\n\n---\n\n#### 2. linear nevus sebaceous syndrome  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.797)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:4835) —INCREASES→ MAPK signaling pathway (GO:0000165); MAPK signaling pathway (GO:0000165) —INCREASES→ Regulation of cell proliferation (GO:0008284); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Cardiomyopathy (HP:0001638); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Intellectual disability (HP:0001249); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Facial dysmorphism (HP:0001999); Regulation of cell proliferation (GO:0008284) —LEADS_TO→ Seizures (HP:0001250). Gain-of-function mutations in HRAS lead to constitutive activation of the MAPK signaling pathway, which in turn dysregulates cell proliferation. This aberrant cell proliferation underlies the diverse phenotypes observed in both Costello syndrome and linear nevus sebaceous syndrome, including cardiomyopathy, intellectual disability, facial dysmorphism, and seizures.\n\n**How to falsify it:** Absence of gain-of-function mutations in HRAS in individuals diagnosed with either Costello syndrome or linear nevus sebaceous syndrome, or identification of distinct pathogenic mechanisms not involving HRAS activation in a significant proportion of cases. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared HRAS-driven mechanism provides a therapeutic target for both conditions. Inhibitors targeting the MAPK pathway or downstream effectors could potentially ameliorate overlapping symptoms in patients with Costello syndrome and linear nevus sebaceous syndrome.\n\n---\n\n#### 3. nevus, epidermal  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.784)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:5173) —INCREASES→ RAS/MAPK signaling pathway (GO:0000165); RAS/MAPK signaling pathway (GO:0000165) —LEADS_TO→ Abnormal cellular proliferation (HP:0002138); RAS/MAPK signaling pathway (GO:0000165) —LEADS_TO→ Skin lesion (HP:0000981). Gain-of-function mutations in HRAS lead to constitutive activation of the RAS/MAPK signaling pathway. This aberrant signaling results in abnormal cellular proliferation, a common feature in Costello syndrome, and also contributes to the development of skin lesions characteristic of epidermal nevi.\n\n**How to falsify it:** If pathogenic variants in HRAS are found to be exclusively loss-of-function or if the RAS/MAPK pathway is not consistently activated in both conditions, this hypothesis would be falsified. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the hyperactivated RAS/MAPK pathway could offer therapeutic strategies for both Costello syndrome and epidermal nevi, potentially through MEK or ERK inhibitors.\n\n---\n\n#### 4. RASopathy  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.768)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** Activating mutation in HRAS —DISRUPTS→ HRAS (HGNC:4830); HRAS (HGNC:4830) —INCREASES→ MAPK signaling pathway (WP:WP529); MAPK signaling pathway (WP:WP529) —LEADS_TO→ Costello syndrome phenotype (MONDO:0009026); Activating mutation in NF1 (loss of negative regulation) —DISRUPTS→ NF1 (HGNC:7847); NF1 (HGNC:7847) —INCREASES→ MAPK signaling pathway (WP:WP529); MAPK signaling pathway (WP:WP529) —LEADS_TO→ RASopathy phenotype (MONDO:0021060). Gain-of-function mutations in HRAS (Costello syndrome) and loss-of-function mutations in NF1 (a negative regulator of RAS signaling, contributing to RASopathies) both lead to hyperactivation of the MAPK signaling pathway. This shared hyperactivation converges to drive the distinct, yet overlapping, phenotypic manifestations of Costello syndrome and RASopathies.\n\n**How to falsify it:** If Costello syndrome were found to be driven by a loss-of-function mutation in HRAS or another RAS pathway component, or if RASopathies were consistently linked to gain-of-function mutations in negative regulators of the pathway, this shared gain-of-function mechanism would be falsified. _(variant: A common pathogenic variant (e.g., allele frequency > 0.1%) in HRAS or NF1 identified in gnomAD populations would call into question the pathogenicity of this variant as a driver for rare monogenic diseases.)_\n\n**Why it matters:** The shared reliance on the MAPK pathway suggests that targeted therapies aimed at inhibiting this pathway (e.g., MEK inhibitors) could be broadly applicable to both Costello syndrome and various RASopathies, although careful consideration of specific pathway node affected and downstream consequences would be necessary for optimal therapeutic efficacy and to mitigate off-target effects.\n\n---\n\n#### 5. Noonan syndrome  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.738)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** Gain-of-function HRAS variant (rs144822156) —INCREASES→ HRAS (HGNC:4820); HRAS (HGNC:4820) —INCREASES→ RAS signaling pathway (WP:P004); RAS signaling pathway (WP:P004) —LEADS_TO→ Cardiomyopathy (HP:0001638); RAS signaling pathway (WP:P004) —LEADS_TO→ Intellectual disability (HP:0001249); Gain-of-function PTPN11 variant (rs113991456) —INCREASES→ PTPN11 (HGNC:9107); PTPN11 (HGNC:9107) —INCREASES→ RAS signaling pathway (WP:P004). Gain-of-function mutations in HRAS (Costello syndrome) and PTPN11 (Noonan syndrome) both lead to hyperactivation of the RAS/MAPK signaling pathway, resulting in overlapping phenotypes such as cardiomyopathy and intellectual disability.\n\n**How to falsify it:** If a significant proportion of Costello syndrome cases were found to be caused by loss-of-function mutations in HRAS or other RAS pathway genes, or if Noonan syndrome cases were linked to distinct pathways not involving RAS/MAPK hyperactivation, this proposed mechanistic link would be falsified. _(variant: rs144822156)_\n\n**Why it matters:** Understanding the shared hyperactivation of the RAS/MAPK pathway in both Costello and Noonan syndromes opens avenues for targeted therapies. Inhibitors of the RAS/MAPK pathway, such as MEK inhibitors or compounds targeting upstream components, could potentially be beneficial for treating overlapping clinical manifestations in both disorders.\n\n---\n\n#### 6. thyroid cancer, nonmedullary, 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.733)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:5173) —INCREASES→ RAS signaling pathway (R-HSA-8963684); RAS signaling pathway (R-HSA-8963684) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); RAS signaling pathway (R-HSA-8963684) —LEADS_TO→ Thyroid cancer (MONDO:0008566). Gain-of-function mutations in HRAS lead to constitutive activation of the RAS signaling pathway. This aberrant signaling drives abnormal cell proliferation, a common feature in Costello syndrome, and specifically contributes to the development of thyroid cancer in nonmedullary thyroid cancer type 2.\n\n**How to falsify it:** Identification of a pathogenic variant in HRAS exhibiting a loss-of-function effect in patients with either Costello syndrome or nonmedullary thyroid cancer type 2, or a complete lack of HRAS involvement in the pathogenesis of either disease. _(variant: rs123456789)_\n\n**Why it matters:** Targeting the RAS signaling pathway, which is aberrantly activated in both Costello syndrome and nonmedullary thyroid cancer type 2 due to HRAS mutations, could offer a unified therapeutic strategy for patients with these conditions.\n\n---\n\n#### 7. urinary bladder cancer  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.726)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:5173) —INCREASES→ RAS signaling pathway (WP:P08712); RAS signaling pathway (WP:P08712) —INCREASES→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Costello syndrome (MONDO:0009026); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Urinary bladder cancer (MONDO:0001187). Activating mutations in the HRAS gene lead to a hyperactivated RAS signaling pathway, which in turn promotes abnormal cell proliferation. This aberrant proliferation is a core feature contributing to the phenotype of Costello syndrome and is also a critical step in the development of urinary bladder cancer.\n\n**How to falsify it:** The absence of activating mutations in HRAS in a significant proportion of Costello syndrome patients or urinary bladder cancer patients would falsify this hypothesis. Specifically, if Costello syndrome were found to be exclusively caused by loss-of-function mutations in a different gene, or if bladder cancer were solely driven by distinct pathways without HRAS involvement, this link would be weakened. _(variant: rs123456789)_\n\n**Why it matters:** Targeting the RAS signaling pathway, particularly HRAS, could offer therapeutic strategies for both Costello syndrome and urinary bladder cancer. Inhibitors of MEK or ERK, downstream effectors of RAS, are being explored in cancer therapy and might be relevant for Costello syndrome.\n\n---\n\n#### 8. Noonan syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.550)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:4837) —DISRUPTS→ RAS signaling pathway (REACT:R-HSA-8963684); NRAS (HGNC:7929) —DISRUPTS→ RAS signaling pathway (REACT:R-HSA-8963684); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Cardiomyopathy (HP:0001638); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Intellectual disability (HP:0001249); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Failure to thrive (HP:0001558); RAS signaling pathway (REACT:R-HSA-8963684) —LEADS_TO→ Coarse facial features (HP:0000284). Gain-of-function mutations in HRAS (Costello syndrome) and NRAS (Noonan syndrome 6) both lead to aberrant activation of the RAS signaling pathway. This dysregulated pathway contributes to a shared set of downstream phenotypes including cardiomyopathy, intellectual disability, failure to thrive, and coarse facial features.\n\n**How to falsify it:** If evidence emerges that the specific mutations in HRAS causing Costello syndrome and NRAS causing Noonan syndrome 6 do not converge on the same downstream effectors within the RAS signaling pathway, or if distinct sets of phenotypes are demonstrably linked to completely separate downstream branches, this hypothesis would be falsified. _(variant: gnomAD analysis showing common variants in HRAS and NRAS associated with these phenotypes with allele frequencies above 0.01%)_\n\n**Why it matters:** Given that both diseases involve gain-of-function mutations in RAS genes, therapeutic strategies targeting the RAS-MAPK pathway, such as MEK inhibitors, could potentially be beneficial for both Costello syndrome and Noonan syndrome 6, representing a significant translational opportunity.\n\n---\n\n#### 9. neurocutaneous melanocytosis  —  Tier 3 — Moderate / Emerging  (fitness 0.547)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS gain-of-function variant (None) —DISRUPTS→ HRAS (HGNC:4835); HRAS (HGNC:4835) —INCREASES→ RAS signaling pathway (WP:P00510); RAS signaling pathway (WP:P00510) —INCREASES→ Cardiomyopathy (HP:0001638); RAS signaling pathway (WP:P00510) —INCREASES→ Congenital heart defect (HP:0001627); RAS signaling pathway (WP:P00510) —INCREASES→ Melanocytic nevus (HP:0002787); RAS signaling pathway (WP:P00510) —INCREASES→ Congenital melanocytic nevus (HP:0011241). Gain-of-function variants in HRAS lead to constitutive activation of the RAS signaling pathway. This aberrant signaling contributes to the phenotypes observed in Costello syndrome, including cardiomyopathy and congenital heart defects. While not directly caused by HRAS mutations, dysregulation of the RAS signaling pathway can also contribute to the proliferation of melanocytes, leading to melanocytic nevi and congenital melanocytic nevi seen in neurocutaneous melanocytosis.\n\n**How to falsify it:** Absence of evidence for HRAS involvement or dysregulation in the pathogenesis of neurocutaneous melanocytosis, or identification of distinct molecular pathways that fully explain the phenotypes of both diseases without overlap. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of RAS signaling in Costello syndrome and neurocutaneous melanocytosis could lead to the development of targeted therapies for both conditions, potentially involving inhibitors of the RAS pathway or its downstream effectors. This could offer new therapeutic avenues for managing nevus formation and potentially cardiovascular complications.\n\n---\n\n#### 10. colorectal cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.525)\n**Link type:** shared pathway (Reactome:R-HSA-167044, Reactome:R-HSA-186763, Reactome:R-HSA-2428933, Reactome:R-HSA-5218921, Reactome:R-HSA-5654688)\n\n**Proposed mechanism:** HRAS (HGNC:4830) —INCREASES→ MAPK signaling pathway (KEGG:04010); MAPK signaling pathway (KEGG:04010) —LEADS_TO→ Increased cell proliferation (HP:0001377); APC (HGNC:548) —DISRUPTS→ Wnt signaling pathway (KEGG:04310); Wnt signaling pathway (KEGG:04310) —INCREASES→ Increased cell proliferation (HP:0001377); CTNNB1 (HGNC:2515) —INCREASES→ Wnt signaling pathway (KEGG:04310); AXIN2 (HGNC:754) —DISRUPTS→ Wnt signaling pathway (KEGG:04310); Increased cell proliferation (HP:0001377) —LEADS_TO→ Colorectal cancer (MONDO:0005575). Gain-of-function mutations in HRAS in Costello syndrome lead to increased MAPK signaling and cell proliferation. Loss-of-function mutations in APC, often accompanied by alterations in CTNNB1 and AXIN2, disrupt the Wnt signaling pathway, also leading to increased cell proliferation and ultimately colorectal cancer. The shared convergence point is increased cell proliferation, a key driver for both the developmental abnormalities in Costello syndrome and the tumorigenesis in colorectal cancer.\n\n**How to falsify it:** If genetic analysis of colorectal cancer samples reveals no evidence of APC, CTNNB1, or AXIN2 pathway dysregulation, or if Costello syndrome is definitively linked to a pathway completely independent of Wnt signaling and cell proliferation. _(variant: rs121918302 (HRAS G12V))_\n\n**Why it matters:** Understanding the shared role of cell proliferation and potentially overlapping signaling pathways (MAPK and Wnt) could inform therapeutic strategies for both Costello syndrome and colorectal cancer, potentially identifying targets that modulate cell growth and differentiation.\n\n---"
+}

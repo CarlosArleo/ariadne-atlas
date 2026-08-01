@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0011323",
+    "name": "MONDO:0011323"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008031",
+      "diseaseBName": "facioscapulohumeral muscular dystrophy 2",
+      "fitness": 0.7174,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SMCHD1 pathogenic variant (MONDO:0011323) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 pathogenic variant (MONDO:0008031) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 (HGNC:14400) —LEADS_TO→ Epigenetic regulation of gene expression (GO:0006355); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Facioscapulohumeral muscular dystrophy (HP:0003691); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Intellectual disability, autosomal dominant 31 (HP:0011371). Pathogenic variants in SMCHD1 lead to haploinsufficiency, disrupting its role in epigenetic regulation. This disruption affects gene expression patterns critical for muscle development and neuronal function, manifesting as facioscapulohumeral muscular dystrophy and intellectual disability.",
+      "mechanism_narrative": "SMCHD1 pathogenic variant (MONDO:0011323) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 pathogenic variant (MONDO:0008031) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 (HGNC:14400) —LEADS_TO→ Epigenetic regulation of gene expression (GO:0006355); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Facioscapulohumeral muscular dystrophy (HP:0003691); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Intellectual disability, autosomal dominant 31 (HP:0011371). Pathogenic variants in SMCHD1 lead to haploinsufficiency, disrupting its role in epigenetic regulation. This disruption affects gene expression patterns critical for muscle development and neuronal function, manifesting as facioscapulohumeral muscular dystrophy and intellectual disability.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in SMCHD1 with a greater than 5% frequency in gnomAD would falsify the hypothesis that these variants are causal for these rare diseases.",
+        "gnomad_variant": "HGNC:14400"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29090"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008031",
+        "diseaseBName": "facioscapulohumeral muscular dystrophy 2",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29090"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7174,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "SMCHD1 pathogenic variant (MONDO:0011323) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 pathogenic variant (MONDO:0008031) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 (HGNC:14400) —LEADS_TO→ Epigenetic regulation of gene expression (GO:0006355); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Facioscapulohumeral muscular dystrophy (HP:0003691); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Intellectual disability, autosomal dominant 31 (HP:0011371). Pathogenic variants in SMCHD1 lead to haploinsufficiency, disrupting its role in epigenetic regulation. This disruption affects gene expression patterns critical for muscle development and neuronal function, manifesting as facioscapulohumeral muscular dystrophy and intellectual disability.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in SMCHD1 with a greater than 5% frequency in gnomAD would falsify the hypothesis that these variants are causal for these rare diseases.",
+          "gnomad_variant": "HGNC:14400"
+        },
+        "translational": "Understanding the shared mechanism involving SMCHD1 and epigenetic regulation may reveal common therapeutic targets for both facioscapulohumeral muscular dystrophy and intellectual disability, potentially leading to novel treatment strategies."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T18:51:34.935Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0011323 (MONDO:0011323)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | facioscapulohumeral muscular dystrophy 2 (MONDO:0008031) | shared gene | Tier 1 | 0.717 | HGNC:29090 |\n\n### CANDIDATE DETAIL\n#### 1. facioscapulohumeral muscular dystrophy 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared causal gene (HGNC:29090)\n\n**Proposed mechanism:** SMCHD1 pathogenic variant (MONDO:0011323) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 pathogenic variant (MONDO:0008031) —DISRUPTS→ SMCHD1 (HGNC:14400); SMCHD1 (HGNC:14400) —LEADS_TO→ Epigenetic regulation of gene expression (GO:0006355); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Facioscapulohumeral muscular dystrophy (HP:0003691); Epigenetic regulation of gene expression (GO:0006355) —LEADS_TO→ Intellectual disability, autosomal dominant 31 (HP:0011371). Pathogenic variants in SMCHD1 lead to haploinsufficiency, disrupting its role in epigenetic regulation. This disruption affects gene expression patterns critical for muscle development and neuronal function, manifesting as facioscapulohumeral muscular dystrophy and intellectual disability.\n\n**How to falsify it:** The identification of pathogenic variants in SMCHD1 with a greater than 5% frequency in gnomAD would falsify the hypothesis that these variants are causal for these rare diseases. _(variant: HGNC:14400)_\n\n**Why it matters:** Understanding the shared mechanism involving SMCHD1 and epigenetic regulation may reveal common therapeutic targets for both facioscapulohumeral muscular dystrophy and intellectual disability, potentially leading to novel treatment strategies.\n\n---"
+}

@@ -1,0 +1,455 @@
+{
+  "seed": {
+    "id": "MONDO:0012608",
+    "name": "MONDO:0012608"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 13,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014154",
+      "diseaseBName": "Charcot-Marie-Tooth disease recessive intermediate C",
+      "fitness": 0.7825,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "PLEKHG5 (HGNC:29105) —DISRUPTS→ Cytokinesis (GO:0007049); Cytokinesis (GO:0007049) —LEADS_TO→ Motor neuropathy (HP:0002472); PLEKHG5 (HGNC:29105) —DISRUPTS→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Cerebellar hypoplasia (HP:0001347). Loss-of-function mutations in PLEKHG5 disrupt both cytokinesis, leading to motor neuropathy (Disease B), and axon guidance, leading to cerebellar hypoplasia (Disease A).",
+      "mechanism_narrative": "PLEKHG5 (HGNC:29105) —DISRUPTS→ Cytokinesis (GO:0007049); Cytokinesis (GO:0007049) —LEADS_TO→ Motor neuropathy (HP:0002472); PLEKHG5 (HGNC:29105) —DISRUPTS→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Cerebellar hypoplasia (HP:0001347). Loss-of-function mutations in PLEKHG5 disrupt both cytokinesis, leading to motor neuropathy (Disease B), and axon guidance, leading to cerebellar hypoplasia (Disease A).",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in PLEKHG5 in individuals with either disease A or disease B that are not loss-of-function, or identification of distinct causal genes for each disease that do not converge on shared downstream pathways."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29105"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0014154",
+        "diseaseBName": "Charcot-Marie-Tooth disease recessive intermediate C",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29105"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7825,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "PLEKHG5 (HGNC:29105) —DISRUPTS→ Cytokinesis (GO:0007049); Cytokinesis (GO:0007049) —LEADS_TO→ Motor neuropathy (HP:0002472); PLEKHG5 (HGNC:29105) —DISRUPTS→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Cerebellar hypoplasia (HP:0001347). Loss-of-function mutations in PLEKHG5 disrupt both cytokinesis, leading to motor neuropathy (Disease B), and axon guidance, leading to cerebellar hypoplasia (Disease A).",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in PLEKHG5 in individuals with either disease A or disease B that are not loss-of-function, or identification of distinct causal genes for each disease that do not converge on shared downstream pathways."
+        },
+        "translational": "Understanding the shared role of PLEKHG5 in cytokinesis and axon guidance offers a potential therapeutic target for both diseases, aiming to restore normal cellular processes and alleviate neurological symptoms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018997",
+      "diseaseBName": "Noonan syndrome",
+      "fitness": 0.4423,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Abnormal immune system physiology (HP:0002715); PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Short stature (HP:0004325). Gain-of-function mutations in PTPN11 dysregulate the MAPK signaling pathway. In MONDO:0012608, this dysregulation leads to abnormal immune system physiology. In Noonan syndrome, the same pathway dysregulation leads to short stature.",
+      "mechanism_narrative": "PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Abnormal immune system physiology (HP:0002715); PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Short stature (HP:0004325). Gain-of-function mutations in PTPN11 dysregulate the MAPK signaling pathway. In MONDO:0012608, this dysregulation leads to abnormal immune system physiology. In Noonan syndrome, the same pathway dysregulation leads to short stature.",
+      "falsification": {
+        "text": "Demonstration that causal variants in PTPN11 for MONDO:0012608 lead to loss-of-function, or that the MAPK signaling pathway is not convergently affected in both conditions.",
+        "gnomad_variant": "None specified"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58,
+        "Reactome:R-HSA-9696273": 42
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018997",
+        "diseaseBName": "Noonan syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58,
+          "Reactome:R-HSA-9696273": 42
+        },
+        "fitness": 0.4423,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Abnormal immune system physiology (HP:0002715); PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Short stature (HP:0004325). Gain-of-function mutations in PTPN11 dysregulate the MAPK signaling pathway. In MONDO:0012608, this dysregulation leads to abnormal immune system physiology. In Noonan syndrome, the same pathway dysregulation leads to short stature.",
+        "falsification": {
+          "text": "Demonstration that causal variants in PTPN11 for MONDO:0012608 lead to loss-of-function, or that the MAPK signaling pathway is not convergently affected in both conditions.",
+          "gnomad_variant": "None specified"
+        },
+        "translational": "Targeting the MAPK signaling pathway could offer therapeutic strategies for both MONDO:0012608 and Noonan syndrome, potentially by modulating PTPN11 activity or downstream effectors."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014892",
+      "diseaseBName": "micrognathia-recurrent infections-behavioral abnormalities-mild intellectual disability syndrome",
+      "fitness": 0.4331,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLEKHG5 (HGNC:24174) —DISRUPTS→ cytoskeletal organization (GO:0007010); TRIO (HGNC:12034) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ cell migration (GO:0016477); cell migration (GO:0016477) —LEADS_TO→ intellectual disability (HP:0001249); cell migration (GO:0016477) —LEADS_TO→ recurrent infections (HP:0002719); cell migration (GO:0016477) —LEADS_TO→ micrognathia (HP:0000347). Loss-of-function mutations in PLEKHG5 (associated with MONDO:0012608) and TRIO (associated with MONDO:0014892) both disrupt cytoskeletal organization, which in turn impairs cell migration. This shared downstream pathway disruption ultimately leads to the distinct but overlapping phenotypes of intellectual disability, recurrent infections, and micrognathia.",
+      "mechanism_narrative": "PLEKHG5 (HGNC:24174) —DISRUPTS→ cytoskeletal organization (GO:0007010); TRIO (HGNC:12034) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ cell migration (GO:0016477); cell migration (GO:0016477) —LEADS_TO→ intellectual disability (HP:0001249); cell migration (GO:0016477) —LEADS_TO→ recurrent infections (HP:0002719); cell migration (GO:0016477) —LEADS_TO→ micrognathia (HP:0000347). Loss-of-function mutations in PLEKHG5 (associated with MONDO:0012608) and TRIO (associated with MONDO:0014892) both disrupt cytoskeletal organization, which in turn impairs cell migration. This shared downstream pathway disruption ultimately leads to the distinct but overlapping phenotypes of intellectual disability, recurrent infections, and micrognathia.",
+      "falsification": {
+        "text": "If mutations in PLEKHG5 and TRIO are found to independently affect distinct cellular pathways that do not converge on cytoskeletal organization or cell migration, or if these genes are demonstrated to have completely disparate functional roles in the context of these diseases, this hypothesis would be falsified. Additionally, if genetic evidence shows no significant overlap in affected individuals or populations, the link would be weakened.",
+        "gnomad_variant": "The presence of common pathogenic variants (AF > 0.1%) in PLEKHG5 or TRIO in gnomAD that do not segregate with either disease would challenge the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58,
+        "Reactome:R-HSA-8980692": 148
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014892",
+        "diseaseBName": "micrognathia-recurrent infections-behavioral abnormalities-mild intellectual disability syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58,
+          "Reactome:R-HSA-8980692": 148
+        },
+        "fitness": 0.4331,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLEKHG5 (HGNC:24174) —DISRUPTS→ cytoskeletal organization (GO:0007010); TRIO (HGNC:12034) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ cell migration (GO:0016477); cell migration (GO:0016477) —LEADS_TO→ intellectual disability (HP:0001249); cell migration (GO:0016477) —LEADS_TO→ recurrent infections (HP:0002719); cell migration (GO:0016477) —LEADS_TO→ micrognathia (HP:0000347). Loss-of-function mutations in PLEKHG5 (associated with MONDO:0012608) and TRIO (associated with MONDO:0014892) both disrupt cytoskeletal organization, which in turn impairs cell migration. This shared downstream pathway disruption ultimately leads to the distinct but overlapping phenotypes of intellectual disability, recurrent infections, and micrognathia.",
+        "falsification": {
+          "text": "If mutations in PLEKHG5 and TRIO are found to independently affect distinct cellular pathways that do not converge on cytoskeletal organization or cell migration, or if these genes are demonstrated to have completely disparate functional roles in the context of these diseases, this hypothesis would be falsified. Additionally, if genetic evidence shows no significant overlap in affected individuals or populations, the link would be weakened.",
+          "gnomad_variant": "The presence of common pathogenic variants (AF > 0.1%) in PLEKHG5 or TRIO in gnomAD that do not segregate with either disease would challenge the causal link."
+        },
+        "translational": "Identifying a shared mechanistic link through cytoskeletal regulation and cell migration for these two distinct rare diseases could enable the development of targeted therapies that address common downstream molecular defects, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032939",
+      "diseaseBName": "intellectual developmental disorder, autosomal dominant 63, with macrocephaly",
+      "fitness": 0.4323,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLEKHG5 (HGNC:23769) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); PLEKHG5 (HGNC:23769) —DISRUPTS→ Neuronal development (GO:0048666); TRIO (HGNC:12050) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); TRIO (HGNC:12050) —DISRUPTS→ Neuronal development (GO:0048666); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Seizures (HP:0001250); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Macrocephaly (HP:0000252); Neuronal development (GO:0048666) —LEADS_TO→ Seizures (HP:0001250); Neuronal development (GO:0048666) —LEADS_TO→ Global developmental delay (HP:0001263). Mutations in PLEKHG5 and TRIO disrupt the regulation of the actin cytoskeleton and neuronal development pathways, leading to overlapping phenotypic features of seizures, macrocephaly, and global developmental delay.",
+      "mechanism_narrative": "PLEKHG5 (HGNC:23769) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); PLEKHG5 (HGNC:23769) —DISRUPTS→ Neuronal development (GO:0048666); TRIO (HGNC:12050) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); TRIO (HGNC:12050) —DISRUPTS→ Neuronal development (GO:0048666); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Seizures (HP:0001250); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Macrocephaly (HP:0000252); Neuronal development (GO:0048666) —LEADS_TO→ Seizures (HP:0001250); Neuronal development (GO:0048666) —LEADS_TO→ Global developmental delay (HP:0001263). Mutations in PLEKHG5 and TRIO disrupt the regulation of the actin cytoskeleton and neuronal development pathways, leading to overlapping phenotypic features of seizures, macrocephaly, and global developmental delay.",
+      "falsification": {
+        "text": "Absence of significant overlap in the affected biological pathways (e.g., cytoskeletal regulation, neuronal development) or failure to demonstrate disruption of these pathways by variants in PLEKHG5 and TRIO in relevant cellular or animal models.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58,
+        "Reactome:R-HSA-8980692": 148
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032939",
+        "diseaseBName": "intellectual developmental disorder, autosomal dominant 63, with macrocephaly",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58,
+          "Reactome:R-HSA-8980692": 148
+        },
+        "fitness": 0.4323,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLEKHG5 (HGNC:23769) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); PLEKHG5 (HGNC:23769) —DISRUPTS→ Neuronal development (GO:0048666); TRIO (HGNC:12050) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); TRIO (HGNC:12050) —DISRUPTS→ Neuronal development (GO:0048666); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Seizures (HP:0001250); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Macrocephaly (HP:0000252); Neuronal development (GO:0048666) —LEADS_TO→ Seizures (HP:0001250); Neuronal development (GO:0048666) —LEADS_TO→ Global developmental delay (HP:0001263). Mutations in PLEKHG5 and TRIO disrupt the regulation of the actin cytoskeleton and neuronal development pathways, leading to overlapping phenotypic features of seizures, macrocephaly, and global developmental delay.",
+        "falsification": {
+          "text": "Absence of significant overlap in the affected biological pathways (e.g., cytoskeletal regulation, neuronal development) or failure to demonstrate disruption of these pathways by variants in PLEKHG5 and TRIO in relevant cellular or animal models.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared mechanistic link through cytoskeletal regulation and neuronal development could reveal common therapeutic targets for both MONDO:0012608 and intellectual developmental disorder, autosomal dominant 63, with macrocephaly, potentially leading to novel treatment strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012547",
+      "diseaseBName": "Noonan syndrome 4",
+      "fitness": 0.4128,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOS1 (HGNC:11070) —INCREASES→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Facial dysmorphism (HP:0001999); PLEKHG5 (HGNC:28790) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Intellectual disability, severe (HP:0010864). Gain-of-function mutations in SOS1 lead to aberrant activation of the RAS-MAPK pathway, causing Noonan syndrome 4 phenotypes including facial dysmorphism. While PLEKHG5 is also implicated in a rare disease, it too appears to converge on disrupting or dysregulating the RAS-MAPK signaling pathway, leading to distinct but potentially overlapping downstream phenotypes such as intellectual disability.",
+      "mechanism_narrative": "SOS1 (HGNC:11070) —INCREASES→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Facial dysmorphism (HP:0001999); PLEKHG5 (HGNC:28790) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Intellectual disability, severe (HP:0010864). Gain-of-function mutations in SOS1 lead to aberrant activation of the RAS-MAPK pathway, causing Noonan syndrome 4 phenotypes including facial dysmorphism. While PLEKHG5 is also implicated in a rare disease, it too appears to converge on disrupting or dysregulating the RAS-MAPK signaling pathway, leading to distinct but potentially overlapping downstream phenotypes such as intellectual disability.",
+      "falsification": {
+        "text": "If mutations in PLEKHG5 do not impact the RAS-MAPK signaling pathway, or if the observed phenotypes for the rare disease are definitively not downstream consequences of RAS-MAPK dysregulation, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome or genome sequencing data showing a common pathogenic variant in PLEKHG5 or SOS1 with a MAF > 0.01 would challenge the rarity of the proposed mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012547",
+        "diseaseBName": "Noonan syndrome 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58
+        },
+        "fitness": 0.4128,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOS1 (HGNC:11070) —INCREASES→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Facial dysmorphism (HP:0001999); PLEKHG5 (HGNC:28790) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Intellectual disability, severe (HP:0010864). Gain-of-function mutations in SOS1 lead to aberrant activation of the RAS-MAPK pathway, causing Noonan syndrome 4 phenotypes including facial dysmorphism. While PLEKHG5 is also implicated in a rare disease, it too appears to converge on disrupting or dysregulating the RAS-MAPK signaling pathway, leading to distinct but potentially overlapping downstream phenotypes such as intellectual disability.",
+        "falsification": {
+          "text": "If mutations in PLEKHG5 do not impact the RAS-MAPK signaling pathway, or if the observed phenotypes for the rare disease are definitively not downstream consequences of RAS-MAPK dysregulation, this hypothesis would be falsified.",
+          "gnomad_variant": "Exome or genome sequencing data showing a common pathogenic variant in PLEKHG5 or SOS1 with a MAF > 0.01 would challenge the rarity of the proposed mechanism."
+        },
+        "translational": "Understanding the shared reliance on the RAS-MAPK pathway could reveal common therapeutic targets or strategies for both Noonan syndrome 4 and the other rare disease, potentially involving modulation of this critical signaling cascade."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859256",
+      "diseaseBName": "neurodevelopmental disorder with language delay and seizures",
+      "fitness": 0.3987,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLEKHG5 (HGNC:24407) —DISRUPTS→ Rac1 signaling pathway; TIAM1 (HGNC:11701) —DISRUPTS→ Rac1 signaling pathway; Rac1 signaling pathway —LEADS_TO→ Seizures (HP:0001250); Rac1 signaling pathway —LEADS_TO→ Delayed speech and language development (HP:0000750). Loss-of-function mutations in PLEKHG5 and TIAM1 disrupt the Rac1 signaling pathway, leading to overlapping phenotypes of seizures and delayed speech and language development.",
+      "mechanism_narrative": "PLEKHG5 (HGNC:24407) —DISRUPTS→ Rac1 signaling pathway; TIAM1 (HGNC:11701) —DISRUPTS→ Rac1 signaling pathway; Rac1 signaling pathway —LEADS_TO→ Seizures (HP:0001250); Rac1 signaling pathway —LEADS_TO→ Delayed speech and language development (HP:0000750). Loss-of-function mutations in PLEKHG5 and TIAM1 disrupt the Rac1 signaling pathway, leading to overlapping phenotypes of seizures and delayed speech and language development.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if mutations in PLEKHG5 or TIAM1 were shown to exclusively affect distinct, non-overlapping molecular pathways that cannot explain the shared phenotypes, or if pathogenic variants in these genes were found at a high frequency (e.g., >0.1%) in healthy control populations (e.g., gnomAD) for both disease contexts.",
+        "gnomad_variant": "Exome Variant Frequency > 0.001 for variants in PLEKHG5 or TIAM1 associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648",
+        "Reactome:R-HSA-8980692"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58,
+        "Reactome:R-HSA-8980692": 148
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859256",
+        "diseaseBName": "neurodevelopmental disorder with language delay and seizures",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648",
+          "Reactome:R-HSA-8980692"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58,
+          "Reactome:R-HSA-8980692": 148
+        },
+        "fitness": 0.3987,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLEKHG5 (HGNC:24407) —DISRUPTS→ Rac1 signaling pathway; TIAM1 (HGNC:11701) —DISRUPTS→ Rac1 signaling pathway; Rac1 signaling pathway —LEADS_TO→ Seizures (HP:0001250); Rac1 signaling pathway —LEADS_TO→ Delayed speech and language development (HP:0000750). Loss-of-function mutations in PLEKHG5 and TIAM1 disrupt the Rac1 signaling pathway, leading to overlapping phenotypes of seizures and delayed speech and language development.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if mutations in PLEKHG5 or TIAM1 were shown to exclusively affect distinct, non-overlapping molecular pathways that cannot explain the shared phenotypes, or if pathogenic variants in these genes were found at a high frequency (e.g., >0.1%) in healthy control populations (e.g., gnomAD) for both disease contexts.",
+          "gnomad_variant": "Exome Variant Frequency > 0.001 for variants in PLEKHG5 or TIAM1 associated with either disease."
+        },
+        "translational": "Understanding the shared role of PLEKHG5 and TIAM1 in the Rac1 signaling pathway could reveal common therapeutic targets for MONDO:0012608 and neurodevelopmental disorder with language delay and seizures (MONDO:0859256), potentially enabling the repurposing of drugs or the development of novel interventions that modulate Rac1 signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007609",
+      "diseaseBName": "fibromatosis, gingival, 1",
+      "fitness": 0.3862,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOS1 (HGNC:11094) —INCREASES→ Ras signaling pathway (P04650); Ras signaling pathway (P04650) —LEADS_TO→ Abnormal cellular proliferation (HP:0002104); Ras signaling pathway (P04650) —LEADS_TO→ Gingival fibromatosis (HP:0011273). Gain-of-function mutations in SOS1 lead to hyperactivation of the Ras signaling pathway, which in turn drives abnormal cellular proliferation seen in MONDO:0012608 and the specific gingival fibromatosis observed in MONDO:0007609.",
+      "mechanism_narrative": "SOS1 (HGNC:11094) —INCREASES→ Ras signaling pathway (P04650); Ras signaling pathway (P04650) —LEADS_TO→ Abnormal cellular proliferation (HP:0002104); Ras signaling pathway (P04650) —LEADS_TO→ Gingival fibromatosis (HP:0011273). Gain-of-function mutations in SOS1 lead to hyperactivation of the Ras signaling pathway, which in turn drives abnormal cellular proliferation seen in MONDO:0012608 and the specific gingival fibromatosis observed in MONDO:0007609.",
+      "falsification": {
+        "text": "Absence of gain-of-function mutations in SOS1 in patients with either MONDO:0012608 or fibromatosis, gingival, 1 (MONDO:0007609), or identification of distinct causal pathways for each disease.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007609",
+        "diseaseBName": "fibromatosis, gingival, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58
+        },
+        "fitness": 0.3862,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SOS1 (HGNC:11094) —INCREASES→ Ras signaling pathway (P04650); Ras signaling pathway (P04650) —LEADS_TO→ Abnormal cellular proliferation (HP:0002104); Ras signaling pathway (P04650) —LEADS_TO→ Gingival fibromatosis (HP:0011273). Gain-of-function mutations in SOS1 lead to hyperactivation of the Ras signaling pathway, which in turn drives abnormal cellular proliferation seen in MONDO:0012608 and the specific gingival fibromatosis observed in MONDO:0007609.",
+        "falsification": {
+          "text": "Absence of gain-of-function mutations in SOS1 in patients with either MONDO:0012608 or fibromatosis, gingival, 1 (MONDO:0007609), or identification of distinct causal pathways for each disease.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting the Ras signaling pathway could offer a unified therapeutic strategy for both MONDO:0012608 and gingival fibromatosis, MONDO:0007609."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014766",
+      "diseaseBName": "leukodystrophy and acquired microcephaly with or without dystonia;",
+      "fitness": 0.385,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLEKHG5 (HGNC:21851) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG5 (HGNC:21851) —DISRUPTS→ neuronal development (GO:0048666); PLEKHG2 (HGNC:21850) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG2 (HGNC:21850) —DISRUPTS→ neuronal development (GO:0048666); cytoskeletal organization (GO:0007010) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal organization (GO:0007010) —LEADS_TO→ leukodystrophy (HP:0002394); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ acquired microcephaly (HP:0033069); neuronal development (GO:0048666) —LEADS_TO→ dystonia (HP:0001334). Loss-of-function mutations in PLEKHG5 (causative for MONDO:0012608) and PLEKHG2 (causative for MONDO:0014766) both disrupt critical pathways for cytoskeletal organization and neuronal development, ultimately leading to overlapping phenotypes such as intellectual disability, leukodystrophy, acquired microcephaly, and dystonia.",
+      "mechanism_narrative": "PLEKHG5 (HGNC:21851) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG5 (HGNC:21851) —DISRUPTS→ neuronal development (GO:0048666); PLEKHG2 (HGNC:21850) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG2 (HGNC:21850) —DISRUPTS→ neuronal development (GO:0048666); cytoskeletal organization (GO:0007010) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal organization (GO:0007010) —LEADS_TO→ leukodystrophy (HP:0002394); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ acquired microcephaly (HP:0033069); neuronal development (GO:0048666) —LEADS_TO→ dystonia (HP:0001334). Loss-of-function mutations in PLEKHG5 (causative for MONDO:0012608) and PLEKHG2 (causative for MONDO:0014766) both disrupt critical pathways for cytoskeletal organization and neuronal development, ultimately leading to overlapping phenotypes such as intellectual disability, leukodystrophy, acquired microcephaly, and dystonia.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in PLEKHG5 or PLEKHG2 that lead to a gain-of-function mechanism, or the absence of any significant phenotypic overlap in individuals with biallelic loss-of-function variants in these genes, would falsify this hypothesis.",
+        "gnomad_variant": "Exome or genome sequencing data from gnomAD showing common (allele frequency > 1%) pathogenic loss-of-function variants in either PLEKHG5 or PLEKHG2."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014766",
+        "diseaseBName": "leukodystrophy and acquired microcephaly with or without dystonia;",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58
+        },
+        "fitness": 0.385,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLEKHG5 (HGNC:21851) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG5 (HGNC:21851) —DISRUPTS→ neuronal development (GO:0048666); PLEKHG2 (HGNC:21850) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG2 (HGNC:21850) —DISRUPTS→ neuronal development (GO:0048666); cytoskeletal organization (GO:0007010) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal organization (GO:0007010) —LEADS_TO→ leukodystrophy (HP:0002394); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ acquired microcephaly (HP:0033069); neuronal development (GO:0048666) —LEADS_TO→ dystonia (HP:0001334). Loss-of-function mutations in PLEKHG5 (causative for MONDO:0012608) and PLEKHG2 (causative for MONDO:0014766) both disrupt critical pathways for cytoskeletal organization and neuronal development, ultimately leading to overlapping phenotypes such as intellectual disability, leukodystrophy, acquired microcephaly, and dystonia.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in PLEKHG5 or PLEKHG2 that lead to a gain-of-function mechanism, or the absence of any significant phenotypic overlap in individuals with biallelic loss-of-function variants in these genes, would falsify this hypothesis.",
+          "gnomad_variant": "Exome or genome sequencing data from gnomAD showing common (allele frequency > 1%) pathogenic loss-of-function variants in either PLEKHG5 or PLEKHG2."
+        },
+        "translational": "Understanding the shared mechanisms involving cytoskeletal regulation and neuronal development mediated by PLEKHG5 and PLEKHG2 could reveal common therapeutic targets for these distinct but mechanistically related rare neurological disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014691",
+      "diseaseBName": "Noonan syndrome 9",
+      "fitness": 0.3659,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PLEKHG5 (HGNC:20900) —LEADS_TO→ Familial atrial fibrillation (HP:0030673); SOS2 (HGNC:10704) —DISRUPTS→ RAS signaling pathway (WP:WP107); RAS signaling pathway (WP:WP107) —LEADS_TO→ Noonan syndrome (HP:0001649); PLEKHG5 (HGNC:20900) —BINDS→ RAS signaling pathway (WP:WP107). PLEKHG5, associated with familial atrial fibrillation, interacts with components of the RAS signaling pathway. Mutations in SOS2, causing Noonan syndrome 9, lead to aberrant activation of the RAS signaling pathway. Thus, both diseases converge on dysregulation of the RAS signaling pathway, albeit through different mechanisms and potentially different downstream effects within the pathway.",
+      "mechanism_narrative": "PLEKHG5 (HGNC:20900) —LEADS_TO→ Familial atrial fibrillation (HP:0030673); SOS2 (HGNC:10704) —DISRUPTS→ RAS signaling pathway (WP:WP107); RAS signaling pathway (WP:WP107) —LEADS_TO→ Noonan syndrome (HP:0001649); PLEKHG5 (HGNC:20900) —BINDS→ RAS signaling pathway (WP:WP107). PLEKHG5, associated with familial atrial fibrillation, interacts with components of the RAS signaling pathway. Mutations in SOS2, causing Noonan syndrome 9, lead to aberrant activation of the RAS signaling pathway. Thus, both diseases converge on dysregulation of the RAS signaling pathway, albeit through different mechanisms and potentially different downstream effects within the pathway.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in PLEKHG5 do not impact the RAS signaling pathway or that SOS2 variants do not affect cardiac function.",
+        "gnomad_variant": "rs756477785 (a potential pathogenic variant in PLEKHG5)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014691",
+        "diseaseBName": "Noonan syndrome 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58
+        },
+        "fitness": 0.3659,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PLEKHG5 (HGNC:20900) —LEADS_TO→ Familial atrial fibrillation (HP:0030673); SOS2 (HGNC:10704) —DISRUPTS→ RAS signaling pathway (WP:WP107); RAS signaling pathway (WP:WP107) —LEADS_TO→ Noonan syndrome (HP:0001649); PLEKHG5 (HGNC:20900) —BINDS→ RAS signaling pathway (WP:WP107). PLEKHG5, associated with familial atrial fibrillation, interacts with components of the RAS signaling pathway. Mutations in SOS2, causing Noonan syndrome 9, lead to aberrant activation of the RAS signaling pathway. Thus, both diseases converge on dysregulation of the RAS signaling pathway, albeit through different mechanisms and potentially different downstream effects within the pathway.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in PLEKHG5 do not impact the RAS signaling pathway or that SOS2 variants do not affect cardiac function.",
+          "gnomad_variant": "rs756477785 (a potential pathogenic variant in PLEKHG5)"
+        },
+        "translational": "Understanding the shared convergence on the RAS signaling pathway, despite distinct causal genes and initial functional consequences, could reveal therapeutic targets applicable to both familial atrial fibrillation and Noonan syndrome, particularly those modulating specific nodes within the RAS pathway."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021060",
+      "diseaseBName": "RASopathy",
+      "fitness": 0.3446,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PTPN11 (HGNC:9577) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Intellectual disability (HP:0001249); HRAS (HGNC:4837) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Developmental delay (HP:0001263). Gain-of-function variants in RASopathy-associated genes like HRAS dysregulate the MAPK signaling pathway, leading to phenotypes like developmental delay. Similarly, variants in PTPN11, a key regulator of the MAPK pathway, are implicated in MONDO:0012608 and can lead to intellectual disability, suggesting a shared convergence on MAPK pathway dysregulation.",
+      "mechanism_narrative": "PTPN11 (HGNC:9577) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Intellectual disability (HP:0001249); HRAS (HGNC:4837) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Developmental delay (HP:0001263). Gain-of-function variants in RASopathy-associated genes like HRAS dysregulate the MAPK signaling pathway, leading to phenotypes like developmental delay. Similarly, variants in PTPN11, a key regulator of the MAPK pathway, are implicated in MONDO:0012608 and can lead to intellectual disability, suggesting a shared convergence on MAPK pathway dysregulation.",
+      "falsification": {
+        "text": "If genetic studies demonstrate that MONDO:0012608 is caused by variants in genes that function entirely independently of the MAPK signaling pathway and do not converge on any shared downstream effectors with RASopathy genes, this hypothesis would be falsified.",
+        "gnomad_variant": "GnomAD allele frequency > 0.01 for a pathogenic variant in PTPN11 or HRAS in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-416482",
+        "Reactome:R-HSA-193648"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-416482": 79,
+        "Reactome:R-HSA-193648": 58
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021060",
+        "diseaseBName": "RASopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-416482",
+          "Reactome:R-HSA-193648"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-416482": 79,
+          "Reactome:R-HSA-193648": 58
+        },
+        "fitness": 0.3446,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PTPN11 (HGNC:9577) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Intellectual disability (HP:0001249); HRAS (HGNC:4837) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Developmental delay (HP:0001263). Gain-of-function variants in RASopathy-associated genes like HRAS dysregulate the MAPK signaling pathway, leading to phenotypes like developmental delay. Similarly, variants in PTPN11, a key regulator of the MAPK pathway, are implicated in MONDO:0012608 and can lead to intellectual disability, suggesting a shared convergence on MAPK pathway dysregulation.",
+        "falsification": {
+          "text": "If genetic studies demonstrate that MONDO:0012608 is caused by variants in genes that function entirely independently of the MAPK signaling pathway and do not converge on any shared downstream effectors with RASopathy genes, this hypothesis would be falsified.",
+          "gnomad_variant": "GnomAD allele frequency > 0.01 for a pathogenic variant in PTPN11 or HRAS in relevant populations."
+        },
+        "translational": "Understanding the shared reliance on MAPK pathway signaling could enable the repurposing of therapies developed for one condition to treat the other, particularly those targeting MAPK pathway modulation."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T21:00:01.441Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012608 (MONDO:0012608)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 13 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Charcot-Marie-Tooth disease recessive intermediate C (MONDO:0014154) | shared gene | Tier 1 | 0.782 | HGNC:29105 |\n| 2 | Noonan syndrome (MONDO:0018997) | shared pathway | Tier 3 | 0.442 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n| 3 | micrognathia-recurrent infections-behavioral abnormalities-mild intellectual disability syndrome (MONDO:0014892) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692 |\n| 4 | intellectual developmental disorder, autosomal dominant 63, with macrocephaly (MONDO:0032939) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692 |\n| 5 | Noonan syndrome 4 (MONDO:0012547) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n| 6 | neurodevelopmental disorder with language delay and seizures (MONDO:0859256) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692 |\n| 7 | fibromatosis, gingival, 1 (MONDO:0007609) | shared pathway | Tier 3 | 0.386 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n| 8 | leukodystrophy and acquired microcephaly with or without dystonia; (MONDO:0014766) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n| 9 | Noonan syndrome 9 (MONDO:0014691) | shared pathway | Tier 3 | 0.366 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n| 10 | RASopathy (MONDO:0021060) | shared pathway | Tier 3 | 0.345 | Reactome:R-HSA-416482, Reactome:R-HSA-193648 |\n\n### CANDIDATE DETAIL\n#### 1. Charcot-Marie-Tooth disease recessive intermediate C  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared causal gene (HGNC:29105)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:29105) —DISRUPTS→ Cytokinesis (GO:0007049); Cytokinesis (GO:0007049) —LEADS_TO→ Motor neuropathy (HP:0002472); PLEKHG5 (HGNC:29105) —DISRUPTS→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Cerebellar hypoplasia (HP:0001347). Loss-of-function mutations in PLEKHG5 disrupt both cytokinesis, leading to motor neuropathy (Disease B), and axon guidance, leading to cerebellar hypoplasia (Disease A).\n\n**How to falsify it:** Discovery of pathogenic variants in PLEKHG5 in individuals with either disease A or disease B that are not loss-of-function, or identification of distinct causal genes for each disease that do not converge on shared downstream pathways.\n\n**Why it matters:** Understanding the shared role of PLEKHG5 in cytokinesis and axon guidance offers a potential therapeutic target for both diseases, aiming to restore normal cellular processes and alleviate neurological symptoms.\n\n---\n\n#### 2. Noonan syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.442)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Abnormal immune system physiology (HP:0002715); PTPN11 (HGNC:9403) —DISRUPTS→ MAPK signaling pathway (R-HSA-5693294); MAPK signaling pathway (R-HSA-5693294) —LEADS_TO→ Short stature (HP:0004325). Gain-of-function mutations in PTPN11 dysregulate the MAPK signaling pathway. In MONDO:0012608, this dysregulation leads to abnormal immune system physiology. In Noonan syndrome, the same pathway dysregulation leads to short stature.\n\n**How to falsify it:** Demonstration that causal variants in PTPN11 for MONDO:0012608 lead to loss-of-function, or that the MAPK signaling pathway is not convergently affected in both conditions. _(variant: None specified)_\n\n**Why it matters:** Targeting the MAPK signaling pathway could offer therapeutic strategies for both MONDO:0012608 and Noonan syndrome, potentially by modulating PTPN11 activity or downstream effectors.\n\n---\n\n#### 3. micrognathia-recurrent infections-behavioral abnormalities-mild intellectual disability syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:24174) —DISRUPTS→ cytoskeletal organization (GO:0007010); TRIO (HGNC:12034) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ cell migration (GO:0016477); cell migration (GO:0016477) —LEADS_TO→ intellectual disability (HP:0001249); cell migration (GO:0016477) —LEADS_TO→ recurrent infections (HP:0002719); cell migration (GO:0016477) —LEADS_TO→ micrognathia (HP:0000347). Loss-of-function mutations in PLEKHG5 (associated with MONDO:0012608) and TRIO (associated with MONDO:0014892) both disrupt cytoskeletal organization, which in turn impairs cell migration. This shared downstream pathway disruption ultimately leads to the distinct but overlapping phenotypes of intellectual disability, recurrent infections, and micrognathia.\n\n**How to falsify it:** If mutations in PLEKHG5 and TRIO are found to independently affect distinct cellular pathways that do not converge on cytoskeletal organization or cell migration, or if these genes are demonstrated to have completely disparate functional roles in the context of these diseases, this hypothesis would be falsified. Additionally, if genetic evidence shows no significant overlap in affected individuals or populations, the link would be weakened. _(variant: The presence of common pathogenic variants (AF > 0.1%) in PLEKHG5 or TRIO in gnomAD that do not segregate with either disease would challenge the causal link.)_\n\n**Why it matters:** Identifying a shared mechanistic link through cytoskeletal regulation and cell migration for these two distinct rare diseases could enable the development of targeted therapies that address common downstream molecular defects, potentially benefiting patients with either condition.\n\n---\n\n#### 4. intellectual developmental disorder, autosomal dominant 63, with macrocephaly  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:23769) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); PLEKHG5 (HGNC:23769) —DISRUPTS→ Neuronal development (GO:0048666); TRIO (HGNC:12050) —DISRUPTS→ Regulation of actin cytoskeleton (GO:0030036); TRIO (HGNC:12050) —DISRUPTS→ Neuronal development (GO:0048666); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Seizures (HP:0001250); Regulation of actin cytoskeleton (GO:0030036) —LEADS_TO→ Macrocephaly (HP:0000252); Neuronal development (GO:0048666) —LEADS_TO→ Seizures (HP:0001250); Neuronal development (GO:0048666) —LEADS_TO→ Global developmental delay (HP:0001263). Mutations in PLEKHG5 and TRIO disrupt the regulation of the actin cytoskeleton and neuronal development pathways, leading to overlapping phenotypic features of seizures, macrocephaly, and global developmental delay.\n\n**How to falsify it:** Absence of significant overlap in the affected biological pathways (e.g., cytoskeletal regulation, neuronal development) or failure to demonstrate disruption of these pathways by variants in PLEKHG5 and TRIO in relevant cellular or animal models. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared mechanistic link through cytoskeletal regulation and neuronal development could reveal common therapeutic targets for both MONDO:0012608 and intellectual developmental disorder, autosomal dominant 63, with macrocephaly, potentially leading to novel treatment strategies.\n\n---\n\n#### 5. Noonan syndrome 4  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** SOS1 (HGNC:11070) —INCREASES→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Facial dysmorphism (HP:0001999); PLEKHG5 (HGNC:28790) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP443); RAS-MAPK signaling pathway (WP:WP443) —LEADS_TO→ Intellectual disability, severe (HP:0010864). Gain-of-function mutations in SOS1 lead to aberrant activation of the RAS-MAPK pathway, causing Noonan syndrome 4 phenotypes including facial dysmorphism. While PLEKHG5 is also implicated in a rare disease, it too appears to converge on disrupting or dysregulating the RAS-MAPK signaling pathway, leading to distinct but potentially overlapping downstream phenotypes such as intellectual disability.\n\n**How to falsify it:** If mutations in PLEKHG5 do not impact the RAS-MAPK signaling pathway, or if the observed phenotypes for the rare disease are definitively not downstream consequences of RAS-MAPK dysregulation, this hypothesis would be falsified. _(variant: Exome or genome sequencing data showing a common pathogenic variant in PLEKHG5 or SOS1 with a MAF > 0.01 would challenge the rarity of the proposed mechanism.)_\n\n**Why it matters:** Understanding the shared reliance on the RAS-MAPK pathway could reveal common therapeutic targets or strategies for both Noonan syndrome 4 and the other rare disease, potentially involving modulation of this critical signaling cascade.\n\n---\n\n#### 6. neurodevelopmental disorder with language delay and seizures  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648, Reactome:R-HSA-8980692)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:24407) —DISRUPTS→ Rac1 signaling pathway; TIAM1 (HGNC:11701) —DISRUPTS→ Rac1 signaling pathway; Rac1 signaling pathway —LEADS_TO→ Seizures (HP:0001250); Rac1 signaling pathway —LEADS_TO→ Delayed speech and language development (HP:0000750). Loss-of-function mutations in PLEKHG5 and TIAM1 disrupt the Rac1 signaling pathway, leading to overlapping phenotypes of seizures and delayed speech and language development.\n\n**How to falsify it:** The hypothesis would be falsified if mutations in PLEKHG5 or TIAM1 were shown to exclusively affect distinct, non-overlapping molecular pathways that cannot explain the shared phenotypes, or if pathogenic variants in these genes were found at a high frequency (e.g., >0.1%) in healthy control populations (e.g., gnomAD) for both disease contexts. _(variant: Exome Variant Frequency > 0.001 for variants in PLEKHG5 or TIAM1 associated with either disease.)_\n\n**Why it matters:** Understanding the shared role of PLEKHG5 and TIAM1 in the Rac1 signaling pathway could reveal common therapeutic targets for MONDO:0012608 and neurodevelopmental disorder with language delay and seizures (MONDO:0859256), potentially enabling the repurposing of drugs or the development of novel interventions that modulate Rac1 signaling.\n\n---\n\n#### 7. fibromatosis, gingival, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.386)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** SOS1 (HGNC:11094) —INCREASES→ Ras signaling pathway (P04650); Ras signaling pathway (P04650) —LEADS_TO→ Abnormal cellular proliferation (HP:0002104); Ras signaling pathway (P04650) —LEADS_TO→ Gingival fibromatosis (HP:0011273). Gain-of-function mutations in SOS1 lead to hyperactivation of the Ras signaling pathway, which in turn drives abnormal cellular proliferation seen in MONDO:0012608 and the specific gingival fibromatosis observed in MONDO:0007609.\n\n**How to falsify it:** Absence of gain-of-function mutations in SOS1 in patients with either MONDO:0012608 or fibromatosis, gingival, 1 (MONDO:0007609), or identification of distinct causal pathways for each disease. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the Ras signaling pathway could offer a unified therapeutic strategy for both MONDO:0012608 and gingival fibromatosis, MONDO:0007609.\n\n---\n\n#### 8. leukodystrophy and acquired microcephaly with or without dystonia;  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:21851) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG5 (HGNC:21851) —DISRUPTS→ neuronal development (GO:0048666); PLEKHG2 (HGNC:21850) —DISRUPTS→ cytoskeletal organization (GO:0007010); PLEKHG2 (HGNC:21850) —DISRUPTS→ neuronal development (GO:0048666); cytoskeletal organization (GO:0007010) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal organization (GO:0007010) —LEADS_TO→ leukodystrophy (HP:0002394); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); neuronal development (GO:0048666) —LEADS_TO→ acquired microcephaly (HP:0033069); neuronal development (GO:0048666) —LEADS_TO→ dystonia (HP:0001334). Loss-of-function mutations in PLEKHG5 (causative for MONDO:0012608) and PLEKHG2 (causative for MONDO:0014766) both disrupt critical pathways for cytoskeletal organization and neuronal development, ultimately leading to overlapping phenotypes such as intellectual disability, leukodystrophy, acquired microcephaly, and dystonia.\n\n**How to falsify it:** The identification of pathogenic variants in PLEKHG5 or PLEKHG2 that lead to a gain-of-function mechanism, or the absence of any significant phenotypic overlap in individuals with biallelic loss-of-function variants in these genes, would falsify this hypothesis. _(variant: Exome or genome sequencing data from gnomAD showing common (allele frequency > 1%) pathogenic loss-of-function variants in either PLEKHG5 or PLEKHG2.)_\n\n**Why it matters:** Understanding the shared mechanisms involving cytoskeletal regulation and neuronal development mediated by PLEKHG5 and PLEKHG2 could reveal common therapeutic targets for these distinct but mechanistically related rare neurological disorders.\n\n---\n\n#### 9. Noonan syndrome 9  —  Tier 3 — Moderate / Emerging  (fitness 0.366)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** PLEKHG5 (HGNC:20900) —LEADS_TO→ Familial atrial fibrillation (HP:0030673); SOS2 (HGNC:10704) —DISRUPTS→ RAS signaling pathway (WP:WP107); RAS signaling pathway (WP:WP107) —LEADS_TO→ Noonan syndrome (HP:0001649); PLEKHG5 (HGNC:20900) —BINDS→ RAS signaling pathway (WP:WP107). PLEKHG5, associated with familial atrial fibrillation, interacts with components of the RAS signaling pathway. Mutations in SOS2, causing Noonan syndrome 9, lead to aberrant activation of the RAS signaling pathway. Thus, both diseases converge on dysregulation of the RAS signaling pathway, albeit through different mechanisms and potentially different downstream effects within the pathway.\n\n**How to falsify it:** Demonstration that genetic variants in PLEKHG5 do not impact the RAS signaling pathway or that SOS2 variants do not affect cardiac function. _(variant: rs756477785 (a potential pathogenic variant in PLEKHG5))_\n\n**Why it matters:** Understanding the shared convergence on the RAS signaling pathway, despite distinct causal genes and initial functional consequences, could reveal therapeutic targets applicable to both familial atrial fibrillation and Noonan syndrome, particularly those modulating specific nodes within the RAS pathway.\n\n---\n\n#### 10. RASopathy  —  Tier 3 — Moderate / Emerging  (fitness 0.345)\n**Link type:** shared pathway (Reactome:R-HSA-416482, Reactome:R-HSA-193648)\n\n**Proposed mechanism:** PTPN11 (HGNC:9577) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Intellectual disability (HP:0001249); HRAS (HGNC:4837) —DISRUPTS→ MAPK signaling pathway (REACT:R-HSA-5664307); MAPK signaling pathway (REACT:R-HSA-5664307) —LEADS_TO→ Developmental delay (HP:0001263). Gain-of-function variants in RASopathy-associated genes like HRAS dysregulate the MAPK signaling pathway, leading to phenotypes like developmental delay. Similarly, variants in PTPN11, a key regulator of the MAPK pathway, are implicated in MONDO:0012608 and can lead to intellectual disability, suggesting a shared convergence on MAPK pathway dysregulation.\n\n**How to falsify it:** If genetic studies demonstrate that MONDO:0012608 is caused by variants in genes that function entirely independently of the MAPK signaling pathway and do not converge on any shared downstream effectors with RASopathy genes, this hypothesis would be falsified. _(variant: GnomAD allele frequency > 0.01 for a pathogenic variant in PTPN11 or HRAS in relevant populations.)_\n\n**Why it matters:** Understanding the shared reliance on MAPK pathway signaling could enable the repurposing of therapies developed for one condition to treat the other, particularly those targeting MAPK pathway modulation.\n\n---"
+}

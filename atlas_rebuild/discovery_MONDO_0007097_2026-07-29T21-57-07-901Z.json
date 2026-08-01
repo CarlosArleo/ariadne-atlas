@@ -1,0 +1,447 @@
+{
+  "seed": {
+    "id": "MONDO:0007097",
+    "name": "Finnish type amyloidosis"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 25,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0957813",
+      "diseaseBName": "spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia",
+      "fitness": 0.449,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN (HGNC:4444) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 (HGNC:11155) —DISRUPTS→ plasma membrane integrity (GO:0005886); plasma membrane integrity (GO:0005886) —LEADS_TO→ Spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia (MONDO:0957813); actin cytoskeleton organization (GO:0007010) —BINDS→ plasma membrane integrity (GO:0005886). Loss-of-function mutations in GSN disrupt actin cytoskeleton organization, leading to amyloidosis. Separately, loss-of-function mutations in SPTAN1 disrupt plasma membrane integrity. The actin cytoskeleton is critical for maintaining plasma membrane integrity, thus these two pathways converge on the maintenance of cellular structure.",
+      "mechanism_narrative": "GSN (HGNC:4444) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 (HGNC:11155) —DISRUPTS→ plasma membrane integrity (GO:0005886); plasma membrane integrity (GO:0005886) —LEADS_TO→ Spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia (MONDO:0957813); actin cytoskeleton organization (GO:0007010) —BINDS→ plasma membrane integrity (GO:0005886). Loss-of-function mutations in GSN disrupt actin cytoskeleton organization, leading to amyloidosis. Separately, loss-of-function mutations in SPTAN1 disrupt plasma membrane integrity. The actin cytoskeleton is critical for maintaining plasma membrane integrity, thus these two pathways converge on the maintenance of cellular structure.",
+      "falsification": {
+        "text": "If pathogenic variants in GSN are found to be solely associated with amyloidosis and pathogenic variants in SPTAN1 are solely associated with spastic paraplegia 91, with no shared downstream effects on cellular structural integrity or cytoskeletal organization, this hypothesis would be falsified. Additionally, if common variants in GSN or SPTAN1 with frequencies >1% in gnomAD are found to be causal for these rare diseases, it would suggest a different etiology.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9662361"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9662361": 50
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957813",
+        "diseaseBName": "spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9662361"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9662361": 50
+        },
+        "fitness": 0.449,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN (HGNC:4444) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 (HGNC:11155) —DISRUPTS→ plasma membrane integrity (GO:0005886); plasma membrane integrity (GO:0005886) —LEADS_TO→ Spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia (MONDO:0957813); actin cytoskeleton organization (GO:0007010) —BINDS→ plasma membrane integrity (GO:0005886). Loss-of-function mutations in GSN disrupt actin cytoskeleton organization, leading to amyloidosis. Separately, loss-of-function mutations in SPTAN1 disrupt plasma membrane integrity. The actin cytoskeleton is critical for maintaining plasma membrane integrity, thus these two pathways converge on the maintenance of cellular structure.",
+        "falsification": {
+          "text": "If pathogenic variants in GSN are found to be solely associated with amyloidosis and pathogenic variants in SPTAN1 are solely associated with spastic paraplegia 91, with no shared downstream effects on cellular structural integrity or cytoskeletal organization, this hypothesis would be falsified. Additionally, if common variants in GSN or SPTAN1 with frequencies >1% in gnomAD are found to be causal for these rare diseases, it would suggest a different etiology.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared reliance on cytoskeletal integrity and plasma membrane stability may reveal novel therapeutic targets for both Finnish type amyloidosis and spastic paraplegia 91, potentially involving interventions that bolster cellular structural resilience or modulate actin dynamics."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012807",
+      "diseaseBName": "epidermolysis bullosa simplex 5C, with pyloric atresia",
+      "fitness": 0.4487,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN pathogenic variant (PMID:17344448) —DISRUPTS→ GSN (HGNC:4417); GSN (HGNC:4417) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Amyloidosis (HP:0003209); PLEC pathogenic variant (PMID:22101765) —DISRUPTS→ PLEC (HGNC:9020); PLEC (HGNC:9020) —DECREASES→ Integrin signaling (GO:0007251); Integrin signaling (GO:0007251) —LEADS_TO→ Pyloric atresia (HP:0002032); PLEC (HGNC:9020) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Epidermolysis bullosa (HP:0001072). Pathogenic variants in GSN lead to impaired actin cytoskeleton organization, contributing to amyloidosis. Similarly, variants in PLEC disrupt both actin cytoskeleton organization and integrin signaling, leading to epidermolysis bullosa simplex with pyloric atresia. The convergence on actin cytoskeleton organization represents the shared mechanistic link.",
+      "mechanism_narrative": "GSN pathogenic variant (PMID:17344448) —DISRUPTS→ GSN (HGNC:4417); GSN (HGNC:4417) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Amyloidosis (HP:0003209); PLEC pathogenic variant (PMID:22101765) —DISRUPTS→ PLEC (HGNC:9020); PLEC (HGNC:9020) —DECREASES→ Integrin signaling (GO:0007251); Integrin signaling (GO:0007251) —LEADS_TO→ Pyloric atresia (HP:0002032); PLEC (HGNC:9020) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Epidermolysis bullosa (HP:0001072). Pathogenic variants in GSN lead to impaired actin cytoskeleton organization, contributing to amyloidosis. Similarly, variants in PLEC disrupt both actin cytoskeleton organization and integrin signaling, leading to epidermolysis bullosa simplex with pyloric atresia. The convergence on actin cytoskeleton organization represents the shared mechanistic link.",
+      "falsification": {
+        "text": "Absence of mutations in GSN and PLEC in patients presenting with these respective disease phenotypes, or identification of a distinct, non-overlapping molecular pathway for each disease.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic GSN or PLEC variants in general population databases like gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012807",
+        "diseaseBName": "epidermolysis bullosa simplex 5C, with pyloric atresia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.4487,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN pathogenic variant (PMID:17344448) —DISRUPTS→ GSN (HGNC:4417); GSN (HGNC:4417) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Amyloidosis (HP:0003209); PLEC pathogenic variant (PMID:22101765) —DISRUPTS→ PLEC (HGNC:9020); PLEC (HGNC:9020) —DECREASES→ Integrin signaling (GO:0007251); Integrin signaling (GO:0007251) —LEADS_TO→ Pyloric atresia (HP:0002032); PLEC (HGNC:9020) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Epidermolysis bullosa (HP:0001072). Pathogenic variants in GSN lead to impaired actin cytoskeleton organization, contributing to amyloidosis. Similarly, variants in PLEC disrupt both actin cytoskeleton organization and integrin signaling, leading to epidermolysis bullosa simplex with pyloric atresia. The convergence on actin cytoskeleton organization represents the shared mechanistic link.",
+        "falsification": {
+          "text": "Absence of mutations in GSN and PLEC in patients presenting with these respective disease phenotypes, or identification of a distinct, non-overlapping molecular pathway for each disease.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic GSN or PLEC variants in general population databases like gnomAD."
+        },
+        "translational": "Understanding the shared role of actin cytoskeleton regulation in these distinct diseases could reveal common therapeutic targets for improving cellular structural integrity and preventing disease progression."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014661",
+      "diseaseBName": "epidermolysis bullosa simplex with nail dystrophy",
+      "fitness": 0.4382,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gelsolin (HGNC:4425) —DISRUPTS→ amyloid fibril formation (GO:0002544); amyloid fibril formation (GO:0002544) —LEADS_TO→ Finnish type amyloidosis phenotype (HP:0001770); Plectin (HGNC:9180) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366); Plectin (HGNC:9180) —DISRUPTS→ intermediate filament organization (GO:0030496); intermediate filament organization (GO:0030496) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366). Mutations in GSN lead to dysfunctional gelsolin, impairing actin dynamics and promoting amyloid fibril formation, causing Finnish type amyloidosis. Mutations in PLEC lead to dysfunctional plectin, disrupting both the actin and intermediate filament cytoskeletal networks, causing epidermolysis bullosa simplex with nail dystrophy. The convergence is on the cellular structural integrity pathways, specifically cytoskeletal and intermediate filament organization, which are essential for both cellular homeostasis and tissue integrity.",
+      "mechanism_narrative": "Gelsolin (HGNC:4425) —DISRUPTS→ amyloid fibril formation (GO:0002544); amyloid fibril formation (GO:0002544) —LEADS_TO→ Finnish type amyloidosis phenotype (HP:0001770); Plectin (HGNC:9180) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366); Plectin (HGNC:9180) —DISRUPTS→ intermediate filament organization (GO:0030496); intermediate filament organization (GO:0030496) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366). Mutations in GSN lead to dysfunctional gelsolin, impairing actin dynamics and promoting amyloid fibril formation, causing Finnish type amyloidosis. Mutations in PLEC lead to dysfunctional plectin, disrupting both the actin and intermediate filament cytoskeletal networks, causing epidermolysis bullosa simplex with nail dystrophy. The convergence is on the cellular structural integrity pathways, specifically cytoskeletal and intermediate filament organization, which are essential for both cellular homeostasis and tissue integrity.",
+      "falsification": {
+        "text": "The absence of any observed functional overlap between GSN and PLEC in cellular assays investigating cytoskeletal organization or protein aggregation would falsify this hypothesis. Furthermore, if genetic evidence emerges demonstrating that mutations in either GSN or PLEC do not lead to loss-of-function phenotypes relevant to their respective diseases, this would also be falsifying.",
+        "gnomad_variant": "A common pathogenic variant (allele frequency > 1% in relevant populations) in GSN or PLEC associated with either disease would suggest incomplete penetrance or alternative etiologies."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014661",
+        "diseaseBName": "epidermolysis bullosa simplex with nail dystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.4382,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gelsolin (HGNC:4425) —DISRUPTS→ amyloid fibril formation (GO:0002544); amyloid fibril formation (GO:0002544) —LEADS_TO→ Finnish type amyloidosis phenotype (HP:0001770); Plectin (HGNC:9180) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366); Plectin (HGNC:9180) —DISRUPTS→ intermediate filament organization (GO:0030496); intermediate filament organization (GO:0030496) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366). Mutations in GSN lead to dysfunctional gelsolin, impairing actin dynamics and promoting amyloid fibril formation, causing Finnish type amyloidosis. Mutations in PLEC lead to dysfunctional plectin, disrupting both the actin and intermediate filament cytoskeletal networks, causing epidermolysis bullosa simplex with nail dystrophy. The convergence is on the cellular structural integrity pathways, specifically cytoskeletal and intermediate filament organization, which are essential for both cellular homeostasis and tissue integrity.",
+        "falsification": {
+          "text": "The absence of any observed functional overlap between GSN and PLEC in cellular assays investigating cytoskeletal organization or protein aggregation would falsify this hypothesis. Furthermore, if genetic evidence emerges demonstrating that mutations in either GSN or PLEC do not lead to loss-of-function phenotypes relevant to their respective diseases, this would also be falsifying.",
+          "gnomad_variant": "A common pathogenic variant (allele frequency > 1% in relevant populations) in GSN or PLEC associated with either disease would suggest incomplete penetrance or alternative etiologies."
+        },
+        "translational": "Understanding the shared reliance on cytoskeletal integrity and protein homeostasis pathways could reveal novel therapeutic targets for both amyloidosis and epidermolysis bullosa, potentially involving strategies to stabilize cytoskeletal components or enhance protein clearance mechanisms."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009181",
+      "diseaseBName": "epidermolysis bullosa simplex 5B, with muscular dystrophy",
+      "fitness": 0.4352,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN (HGNC:4508) —DISRUPTS→ Amyloid fibril formation (REACT:R-HSA-194079); Amyloid fibril formation (REACT:R-HSA-194079) —LEADS_TO→ Amyloidosis (HP:0002682); PLEC (HGNC:9101) —DISRUPTS→ Cytoskeletal integrity and cell adhesion (GO:0007010); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007333); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Muscular dystrophy (HP:0003198). GSN mutations lead to amyloidogenic protein misfolding and aggregation, causing amyloidosis. PLEC mutations disrupt cytoskeletal integrity, leading to blistering and muscular dystrophy. The convergence is on the general cellular machinery responsible for protein processing and structural support, where defects in either GSN or PLEC compromise cellular homeostasis, albeit through different specific downstream pathways.",
+      "mechanism_narrative": "GSN (HGNC:4508) —DISRUPTS→ Amyloid fibril formation (REACT:R-HSA-194079); Amyloid fibril formation (REACT:R-HSA-194079) —LEADS_TO→ Amyloidosis (HP:0002682); PLEC (HGNC:9101) —DISRUPTS→ Cytoskeletal integrity and cell adhesion (GO:0007010); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007333); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Muscular dystrophy (HP:0003198). GSN mutations lead to amyloidogenic protein misfolding and aggregation, causing amyloidosis. PLEC mutations disrupt cytoskeletal integrity, leading to blistering and muscular dystrophy. The convergence is on the general cellular machinery responsible for protein processing and structural support, where defects in either GSN or PLEC compromise cellular homeostasis, albeit through different specific downstream pathways.",
+      "falsification": {
+        "text": "The absence of mutations in GSN in individuals with epidermolysis bullosa simplex 5B with muscular dystrophy, or the absence of mutations in PLEC in individuals with Finnish type amyloidosis, would falsify a direct shared causal gene hypothesis. Furthermore, if experimental models demonstrate completely independent molecular pathways downstream of GSN and PLEC that do not interact or converge at any level, this would also weaken the proposed overlap.",
+        "gnomad_variant": "The identification of common variants (AF > 0.01) in GSN or PLEC in healthy populations that recapitulate the disease-causing mutations would also serve as a falsification condition."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009181",
+        "diseaseBName": "epidermolysis bullosa simplex 5B, with muscular dystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.4352,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN (HGNC:4508) —DISRUPTS→ Amyloid fibril formation (REACT:R-HSA-194079); Amyloid fibril formation (REACT:R-HSA-194079) —LEADS_TO→ Amyloidosis (HP:0002682); PLEC (HGNC:9101) —DISRUPTS→ Cytoskeletal integrity and cell adhesion (GO:0007010); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007333); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Muscular dystrophy (HP:0003198). GSN mutations lead to amyloidogenic protein misfolding and aggregation, causing amyloidosis. PLEC mutations disrupt cytoskeletal integrity, leading to blistering and muscular dystrophy. The convergence is on the general cellular machinery responsible for protein processing and structural support, where defects in either GSN or PLEC compromise cellular homeostasis, albeit through different specific downstream pathways.",
+        "falsification": {
+          "text": "The absence of mutations in GSN in individuals with epidermolysis bullosa simplex 5B with muscular dystrophy, or the absence of mutations in PLEC in individuals with Finnish type amyloidosis, would falsify a direct shared causal gene hypothesis. Furthermore, if experimental models demonstrate completely independent molecular pathways downstream of GSN and PLEC that do not interact or converge at any level, this would also weaken the proposed overlap.",
+          "gnomad_variant": "The identification of common variants (AF > 0.01) in GSN or PLEC in healthy populations that recapitulate the disease-causing mutations would also serve as a falsification condition."
+        },
+        "translational": "Understanding the shared molecular underpinnings of these diseases, even if arising from different genes, could reveal common therapeutic targets for protein misfolding or cytoskeletal stabilization, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007555",
+      "diseaseBName": "epidermolysis bullosa simplex 5A, Ogna type",
+      "fitness": 0.4342,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN (HGNC:4437) —LEADS_TO→ Amyloidosis (HP:0003056); PLEC (HGNC:9880) —DISRUPTS→ intermediate filament organization (GO:0007094); intermediate filament organization (GO:0007094) —LEADS_TO→ cytoskeletal integrity (GO:0007010); cytoskeletal integrity (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007339); GSN (HGNC:4437) —DISRUPTS→ cytoskeletal integrity (GO:0007010). Loss-of-function mutations in GSN lead to amyloid deposition (Finnish type amyloidosis). Concurrently, loss-of-function mutations in PLEC disrupt intermediate filament organization, impacting overall cytoskeletal integrity, and leading to Epidermolysis Bullosa Simplex. The hypothesis is that both GSN and PLEC dysfunction converge on compromising cellular cytoskeletal integrity.",
+      "mechanism_narrative": "GSN (HGNC:4437) —LEADS_TO→ Amyloidosis (HP:0003056); PLEC (HGNC:9880) —DISRUPTS→ intermediate filament organization (GO:0007094); intermediate filament organization (GO:0007094) —LEADS_TO→ cytoskeletal integrity (GO:0007010); cytoskeletal integrity (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007339); GSN (HGNC:4437) —DISRUPTS→ cytoskeletal integrity (GO:0007010). Loss-of-function mutations in GSN lead to amyloid deposition (Finnish type amyloidosis). Concurrently, loss-of-function mutations in PLEC disrupt intermediate filament organization, impacting overall cytoskeletal integrity, and leading to Epidermolysis Bullosa Simplex. The hypothesis is that both GSN and PLEC dysfunction converge on compromising cellular cytoskeletal integrity.",
+      "falsification": {
+        "text": "If a comprehensive analysis of cellular models or patient-derived tissues shows no overlapping molecular defects in intermediate filament organization or general cytoskeletal integrity pathways between the two diseases, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in GSN or PLEC associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007555",
+        "diseaseBName": "epidermolysis bullosa simplex 5A, Ogna type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.4342,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN (HGNC:4437) —LEADS_TO→ Amyloidosis (HP:0003056); PLEC (HGNC:9880) —DISRUPTS→ intermediate filament organization (GO:0007094); intermediate filament organization (GO:0007094) —LEADS_TO→ cytoskeletal integrity (GO:0007010); cytoskeletal integrity (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007339); GSN (HGNC:4437) —DISRUPTS→ cytoskeletal integrity (GO:0007010). Loss-of-function mutations in GSN lead to amyloid deposition (Finnish type amyloidosis). Concurrently, loss-of-function mutations in PLEC disrupt intermediate filament organization, impacting overall cytoskeletal integrity, and leading to Epidermolysis Bullosa Simplex. The hypothesis is that both GSN and PLEC dysfunction converge on compromising cellular cytoskeletal integrity.",
+        "falsification": {
+          "text": "If a comprehensive analysis of cellular models or patient-derived tissues shows no overlapping molecular defects in intermediate filament organization or general cytoskeletal integrity pathways between the two diseases, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in GSN or PLEC associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared downstream effects on cytoskeletal integrity could reveal novel therapeutic targets for both amyloidosis and epidermolysis bullosa, potentially involving stabilization of the cytoskeleton or enhancement of protein clearance pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.4112,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Amyloidosis (HP:0003138); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TP53 disrupt DNA damage response and apoptosis pathways, leading to the accumulation of misfolded proteins and amyloid formation characteristic of Finnish type amyloidosis. Concurrently, disruption of TP53 function impairs cell cycle regulation, promoting uncontrolled proliferation and increasing the risk of hepatocellular carcinoma.",
+      "mechanism_narrative": "TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Amyloidosis (HP:0003138); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TP53 disrupt DNA damage response and apoptosis pathways, leading to the accumulation of misfolded proteins and amyloid formation characteristic of Finnish type amyloidosis. Concurrently, disruption of TP53 function impairs cell cycle regulation, promoting uncontrolled proliferation and increasing the risk of hepatocellular carcinoma.",
+      "falsification": {
+        "text": "The presence of homozygous, loss-of-function pathogenic variants in TP53 in individuals with Finnish type amyloidosis who do not develop hepatocellular carcinoma, or vice versa, would challenge this hypothesis. Additionally, if TP53 variants associated with Finnish type amyloidosis are exclusively gain-of-function or dominant-negative, while those for HCC are loss-of-function, this would falsify the proposed shared mechanism.",
+        "gnomad_variant": "rs1800371"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12,
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12,
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.4112,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Amyloidosis (HP:0003138); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TP53 disrupt DNA damage response and apoptosis pathways, leading to the accumulation of misfolded proteins and amyloid formation characteristic of Finnish type amyloidosis. Concurrently, disruption of TP53 function impairs cell cycle regulation, promoting uncontrolled proliferation and increasing the risk of hepatocellular carcinoma.",
+        "falsification": {
+          "text": "The presence of homozygous, loss-of-function pathogenic variants in TP53 in individuals with Finnish type amyloidosis who do not develop hepatocellular carcinoma, or vice versa, would challenge this hypothesis. Additionally, if TP53 variants associated with Finnish type amyloidosis are exclusively gain-of-function or dominant-negative, while those for HCC are loss-of-function, this would falsify the proposed shared mechanism.",
+          "gnomad_variant": "rs1800371"
+        },
+        "translational": "Targeting TP53 pathways or downstream effectors could offer a dual therapeutic strategy for both Finnish type amyloidosis and hepatocellular carcinoma, potentially by restoring DNA repair mechanisms or inducing apoptosis in cancer cells."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013277",
+      "diseaseBName": "developmental and epileptic encephalopathy, 5",
+      "fitness": 0.4105,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN pathogenic variant (HP:0000001) —DISRUPTS→ GSN (HGNC:4525); GSN (HGNC:4525) —DECREASES→ Amyloid precursor processing (REACT:R-HSA-75919); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 pathogenic variant (HP:0000001) —DISRUPTS→ SPTAN1 (HGNC:11168); SPTAN1 (HGNC:11168) —DECREASES→ Cytoskeletal integrity (GO:0007010); Cytoskeletal integrity (GO:0007010) —LEADS_TO→ Protein aggregation (GO:0000422); Protein aggregation (GO:0000422) —LEADS_TO→ Developmental and epileptic encephalopathy, 5 (MONDO:0013277); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Protein aggregation (GO:0000422). Pathogenic variants in GSN disrupt amyloid precursor processing, leading to amyloidosis. Pathogenic variants in SPTAN1 disrupt cytoskeletal integrity, contributing to protein aggregation and developmental and epileptic encephalopathy 5. Both disrupted amyloid precursor processing and compromised cytoskeletal integrity can converge on increased protein aggregation, a shared mechanism.",
+      "mechanism_narrative": "GSN pathogenic variant (HP:0000001) —DISRUPTS→ GSN (HGNC:4525); GSN (HGNC:4525) —DECREASES→ Amyloid precursor processing (REACT:R-HSA-75919); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 pathogenic variant (HP:0000001) —DISRUPTS→ SPTAN1 (HGNC:11168); SPTAN1 (HGNC:11168) —DECREASES→ Cytoskeletal integrity (GO:0007010); Cytoskeletal integrity (GO:0007010) —LEADS_TO→ Protein aggregation (GO:0000422); Protein aggregation (GO:0000422) —LEADS_TO→ Developmental and epileptic encephalopathy, 5 (MONDO:0013277); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Protein aggregation (GO:0000422). Pathogenic variants in GSN disrupt amyloid precursor processing, leading to amyloidosis. Pathogenic variants in SPTAN1 disrupt cytoskeletal integrity, contributing to protein aggregation and developmental and epileptic encephalopathy 5. Both disrupted amyloid precursor processing and compromised cytoskeletal integrity can converge on increased protein aggregation, a shared mechanism.",
+      "falsification": {
+        "text": "The identification of a common pathogenic variant in GSN or SPTAN1 with a high allele frequency (>1%) in gnomAD populations would falsify the claim that these specific variants are causal.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9662361"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9662361": 50
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013277",
+        "diseaseBName": "developmental and epileptic encephalopathy, 5",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9662361"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9662361": 50
+        },
+        "fitness": 0.4105,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN pathogenic variant (HP:0000001) —DISRUPTS→ GSN (HGNC:4525); GSN (HGNC:4525) —DECREASES→ Amyloid precursor processing (REACT:R-HSA-75919); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 pathogenic variant (HP:0000001) —DISRUPTS→ SPTAN1 (HGNC:11168); SPTAN1 (HGNC:11168) —DECREASES→ Cytoskeletal integrity (GO:0007010); Cytoskeletal integrity (GO:0007010) —LEADS_TO→ Protein aggregation (GO:0000422); Protein aggregation (GO:0000422) —LEADS_TO→ Developmental and epileptic encephalopathy, 5 (MONDO:0013277); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Protein aggregation (GO:0000422). Pathogenic variants in GSN disrupt amyloid precursor processing, leading to amyloidosis. Pathogenic variants in SPTAN1 disrupt cytoskeletal integrity, contributing to protein aggregation and developmental and epileptic encephalopathy 5. Both disrupted amyloid precursor processing and compromised cytoskeletal integrity can converge on increased protein aggregation, a shared mechanism.",
+        "falsification": {
+          "text": "The identification of a common pathogenic variant in GSN or SPTAN1 with a high allele frequency (>1%) in gnomAD populations would falsify the claim that these specific variants are causal.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared downstream mechanism of protein aggregation could reveal therapeutic targets applicable to both Finnish type amyloidosis and developmental and epileptic encephalopathy 5, potentially through interventions that enhance protein clearance or reduce aggregation propensity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957875",
+      "diseaseBName": "neuronopathy, distal hereditary motor, autosomal dominant 11",
+      "fitness": 0.3997,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GSN (HGNC:4525) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ amyloidosis (HP:0002680); SPTAN1 (HGNC:11217) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ distal hereditary motor neuropathy (HP:0003741). Loss-of-function mutations in GSN (Finnish type amyloidosis) and SPTAN1 (distal hereditary motor neuronopathy type 11) both converge on disrupting the organization and function of intermediate filaments, leading to distinct but related pathologies.",
+      "mechanism_narrative": "GSN (HGNC:4525) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ amyloidosis (HP:0002680); SPTAN1 (HGNC:11217) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ distal hereditary motor neuropathy (HP:0003741). Loss-of-function mutations in GSN (Finnish type amyloidosis) and SPTAN1 (distal hereditary motor neuronopathy type 11) both converge on disrupting the organization and function of intermediate filaments, leading to distinct but related pathologies.",
+      "falsification": {
+        "text": "Demonstration that mutations in GSN and SPTAN1 affect entirely separate cellular pathways with no shared downstream effectors or processes, or if pathogenic variants in GSN and SPTAN1 are found at high frequency in unaffected individuals in gnomAD.",
+        "gnomad_variant": "Pathogenic variants for GSN or SPTAN1 with >0.1% allele frequency in gnomAD"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9662361"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9662361": 50
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957875",
+        "diseaseBName": "neuronopathy, distal hereditary motor, autosomal dominant 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9662361"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9662361": 50
+        },
+        "fitness": 0.3997,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN (HGNC:4525) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ amyloidosis (HP:0002680); SPTAN1 (HGNC:11217) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ distal hereditary motor neuropathy (HP:0003741). Loss-of-function mutations in GSN (Finnish type amyloidosis) and SPTAN1 (distal hereditary motor neuronopathy type 11) both converge on disrupting the organization and function of intermediate filaments, leading to distinct but related pathologies.",
+        "falsification": {
+          "text": "Demonstration that mutations in GSN and SPTAN1 affect entirely separate cellular pathways with no shared downstream effectors or processes, or if pathogenic variants in GSN and SPTAN1 are found at high frequency in unaffected individuals in gnomAD.",
+          "gnomad_variant": "Pathogenic variants for GSN or SPTAN1 with >0.1% allele frequency in gnomAD"
+        },
+        "translational": "Identifying a shared mechanistic vulnerability in the intermediate filament network could reveal novel therapeutic targets for both amyloidosis and motor neuronopathies, such as drugs that stabilize intermediate filaments or enhance their repair."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957815",
+      "diseaseBName": "developmental delay with or without epilepsy",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Gelsolin (HGNC:4371) —DISRUPTS→ Cytoskeletal Integrity; Gelsolin (HGNC:4371) —DISRUPTS→ Amyloid Deposition; Cytoskeletal Integrity —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Amyloid Deposition —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Cytoskeletal Integrity; Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Neuronal Development; Cytoskeletal Integrity —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815); Neuronal Development —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815). Mutations in GSN disrupt cytoskeletal integrity and lead to amyloid deposition, causing Finnish type amyloidosis. Mutations in SPTAN1 also disrupt cytoskeletal integrity and neuronal development, leading to developmental delay with or without epilepsy. The shared disruption of cytoskeletal integrity represents a mechanistic overlap.",
+      "mechanism_narrative": "Gelsolin (HGNC:4371) —DISRUPTS→ Cytoskeletal Integrity; Gelsolin (HGNC:4371) —DISRUPTS→ Amyloid Deposition; Cytoskeletal Integrity —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Amyloid Deposition —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Cytoskeletal Integrity; Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Neuronal Development; Cytoskeletal Integrity —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815); Neuronal Development —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815). Mutations in GSN disrupt cytoskeletal integrity and lead to amyloid deposition, causing Finnish type amyloidosis. Mutations in SPTAN1 also disrupt cytoskeletal integrity and neuronal development, leading to developmental delay with or without epilepsy. The shared disruption of cytoskeletal integrity represents a mechanistic overlap.",
+      "falsification": {
+        "text": "If GSN and SPTAN1 were shown to act in completely independent cellular pathways with no downstream overlap in protein function or cellular processes, this hypothesis would be falsified. Specifically, if mutations in GSN primarily affected extracellular matrix formation without impacting intracellular cytoskeletal dynamics, and SPTAN1 mutations exclusively affected intracellular neuronal trafficking without altering general cytoskeletal stability, the link would be weakened.",
+        "gnomad_variant": "Discovery of common (AF > 1%) loss-of-function variants in GSN associated with amyloidosis or SPTAN1 associated with developmental delay would challenge the rare disease assumption."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870",
+        "Reactome:R-HSA-6798695",
+        "Reactome:R-HSA-9662361"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12,
+        "Reactome:R-HSA-6798695": 478,
+        "Reactome:R-HSA-9662361": 50
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957815",
+        "diseaseBName": "developmental delay with or without epilepsy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870",
+          "Reactome:R-HSA-6798695",
+          "Reactome:R-HSA-9662361"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12,
+          "Reactome:R-HSA-6798695": 478,
+          "Reactome:R-HSA-9662361": 50
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gelsolin (HGNC:4371) —DISRUPTS→ Cytoskeletal Integrity; Gelsolin (HGNC:4371) —DISRUPTS→ Amyloid Deposition; Cytoskeletal Integrity —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Amyloid Deposition —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Cytoskeletal Integrity; Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Neuronal Development; Cytoskeletal Integrity —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815); Neuronal Development —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815). Mutations in GSN disrupt cytoskeletal integrity and lead to amyloid deposition, causing Finnish type amyloidosis. Mutations in SPTAN1 also disrupt cytoskeletal integrity and neuronal development, leading to developmental delay with or without epilepsy. The shared disruption of cytoskeletal integrity represents a mechanistic overlap.",
+        "falsification": {
+          "text": "If GSN and SPTAN1 were shown to act in completely independent cellular pathways with no downstream overlap in protein function or cellular processes, this hypothesis would be falsified. Specifically, if mutations in GSN primarily affected extracellular matrix formation without impacting intracellular cytoskeletal dynamics, and SPTAN1 mutations exclusively affected intracellular neuronal trafficking without altering general cytoskeletal stability, the link would be weakened.",
+          "gnomad_variant": "Discovery of common (AF > 1%) loss-of-function variants in GSN associated with amyloidosis or SPTAN1 associated with developmental delay would challenge the rare disease assumption."
+        },
+        "translational": "Understanding the shared role of GSN and SPTAN1 in maintaining cytoskeletal integrity could reveal common therapeutic targets for both amyloidosis and neurodevelopmental disorders, potentially involving stabilization of the cytoskeleton or modulation of protein aggregation pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013390",
+      "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2Q",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "GSN variant associated with Finnish type amyloidosis (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Amyloid deposition (HP:0011072); GSN variant associated with LGMD2Q (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in the GSN gene lead to impaired actin dynamics and cytoskeletal organization. In Finnish type amyloidosis, this disruption contributes to abnormal protein aggregation and amyloid deposition. In LGMD2Q, the compromised cytoskeletal integrity in muscle cells results in progressive muscle weakness.",
+      "mechanism_narrative": "GSN variant associated with Finnish type amyloidosis (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Amyloid deposition (HP:0011072); GSN variant associated with LGMD2Q (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in the GSN gene lead to impaired actin dynamics and cytoskeletal organization. In Finnish type amyloidosis, this disruption contributes to abnormal protein aggregation and amyloid deposition. In LGMD2Q, the compromised cytoskeletal integrity in muscle cells results in progressive muscle weakness.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in GSN with a gain-of-function mechanism in either disease, or the absence of any GSN variants in affected individuals, would falsify this hypothesis.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a highly prevalent (e.g., >1%) pathogenic variant in GSN associated with either Finnish type amyloidosis or LGMD2Q."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-264870"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-264870": 12
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013390",
+        "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2Q",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-264870"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-264870": 12
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GSN variant associated with Finnish type amyloidosis (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Amyloid deposition (HP:0011072); GSN variant associated with LGMD2Q (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in the GSN gene lead to impaired actin dynamics and cytoskeletal organization. In Finnish type amyloidosis, this disruption contributes to abnormal protein aggregation and amyloid deposition. In LGMD2Q, the compromised cytoskeletal integrity in muscle cells results in progressive muscle weakness.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in GSN with a gain-of-function mechanism in either disease, or the absence of any GSN variants in affected individuals, would falsify this hypothesis.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing a highly prevalent (e.g., >1%) pathogenic variant in GSN associated with either Finnish type amyloidosis or LGMD2Q."
+        },
+        "translational": "Understanding the shared role of GSN in both amyloidosis and muscular dystrophy could reveal novel therapeutic targets aimed at stabilizing the cytoskeleton or modulating actin dynamics, potentially benefiting patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T21:57:07.901Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Finnish type amyloidosis (MONDO:0007097)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 25 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia (MONDO:0957813) | shared pathway | Tier 3 | 0.449 | Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361 |\n| 2 | epidermolysis bullosa simplex 5C, with pyloric atresia (MONDO:0012807) | shared pathway | Tier 3 | 0.449 | Reactome:R-HSA-264870 |\n| 3 | epidermolysis bullosa simplex with nail dystrophy (MONDO:0014661) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-264870 |\n| 4 | epidermolysis bullosa simplex 5B, with muscular dystrophy (MONDO:0009181) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-264870 |\n| 5 | epidermolysis bullosa simplex 5A, Ogna type (MONDO:0007555) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-264870 |\n| 6 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 3 | 0.411 | Reactome:R-HSA-264870 |\n| 7 | developmental and epileptic encephalopathy, 5 (MONDO:0013277) | shared pathway | Tier 3 | 0.410 | Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361 |\n| 8 | neuronopathy, distal hereditary motor, autosomal dominant 11 (MONDO:0957875) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361 |\n| 9 | developmental delay with or without epilepsy (MONDO:0957815) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361 |\n| 10 | autosomal recessive limb-girdle muscular dystrophy type 2Q (MONDO:0013390) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-264870 |\n\n### CANDIDATE DETAIL\n#### 1. spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia  —  Tier 3 — Moderate / Emerging  (fitness 0.449)\n**Link type:** shared pathway (Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361)\n\n**Proposed mechanism:** GSN (HGNC:4444) —DISRUPTS→ actin cytoskeleton organization (GO:0007010); actin cytoskeleton organization (GO:0007010) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 (HGNC:11155) —DISRUPTS→ plasma membrane integrity (GO:0005886); plasma membrane integrity (GO:0005886) —LEADS_TO→ Spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia (MONDO:0957813); actin cytoskeleton organization (GO:0007010) —BINDS→ plasma membrane integrity (GO:0005886). Loss-of-function mutations in GSN disrupt actin cytoskeleton organization, leading to amyloidosis. Separately, loss-of-function mutations in SPTAN1 disrupt plasma membrane integrity. The actin cytoskeleton is critical for maintaining plasma membrane integrity, thus these two pathways converge on the maintenance of cellular structure.\n\n**How to falsify it:** If pathogenic variants in GSN are found to be solely associated with amyloidosis and pathogenic variants in SPTAN1 are solely associated with spastic paraplegia 91, with no shared downstream effects on cellular structural integrity or cytoskeletal organization, this hypothesis would be falsified. Additionally, if common variants in GSN or SPTAN1 with frequencies >1% in gnomAD are found to be causal for these rare diseases, it would suggest a different etiology. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal integrity and plasma membrane stability may reveal novel therapeutic targets for both Finnish type amyloidosis and spastic paraplegia 91, potentially involving interventions that bolster cellular structural resilience or modulate actin dynamics.\n\n---\n\n#### 2. epidermolysis bullosa simplex 5C, with pyloric atresia  —  Tier 3 — Moderate / Emerging  (fitness 0.449)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** GSN pathogenic variant (PMID:17344448) —DISRUPTS→ GSN (HGNC:4417); GSN (HGNC:4417) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Amyloidosis (HP:0003209); PLEC pathogenic variant (PMID:22101765) —DISRUPTS→ PLEC (HGNC:9020); PLEC (HGNC:9020) —DECREASES→ Integrin signaling (GO:0007251); Integrin signaling (GO:0007251) —LEADS_TO→ Pyloric atresia (HP:0002032); PLEC (HGNC:9020) —DECREASES→ Actin cytoskeleton organization (GO:0030036); Actin cytoskeleton organization (GO:0030036) —LEADS_TO→ Epidermolysis bullosa (HP:0001072). Pathogenic variants in GSN lead to impaired actin cytoskeleton organization, contributing to amyloidosis. Similarly, variants in PLEC disrupt both actin cytoskeleton organization and integrin signaling, leading to epidermolysis bullosa simplex with pyloric atresia. The convergence on actin cytoskeleton organization represents the shared mechanistic link.\n\n**How to falsify it:** Absence of mutations in GSN and PLEC in patients presenting with these respective disease phenotypes, or identification of a distinct, non-overlapping molecular pathway for each disease. _(variant: High frequency (>1%) of pathogenic GSN or PLEC variants in general population databases like gnomAD.)_\n\n**Why it matters:** Understanding the shared role of actin cytoskeleton regulation in these distinct diseases could reveal common therapeutic targets for improving cellular structural integrity and preventing disease progression.\n\n---\n\n#### 3. epidermolysis bullosa simplex with nail dystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** Gelsolin (HGNC:4425) —DISRUPTS→ amyloid fibril formation (GO:0002544); amyloid fibril formation (GO:0002544) —LEADS_TO→ Finnish type amyloidosis phenotype (HP:0001770); Plectin (HGNC:9180) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366); Plectin (HGNC:9180) —DISRUPTS→ intermediate filament organization (GO:0030496); intermediate filament organization (GO:0030496) —LEADS_TO→ epidermolysis bullosa simplex phenotype (HP:0007366). Mutations in GSN lead to dysfunctional gelsolin, impairing actin dynamics and promoting amyloid fibril formation, causing Finnish type amyloidosis. Mutations in PLEC lead to dysfunctional plectin, disrupting both the actin and intermediate filament cytoskeletal networks, causing epidermolysis bullosa simplex with nail dystrophy. The convergence is on the cellular structural integrity pathways, specifically cytoskeletal and intermediate filament organization, which are essential for both cellular homeostasis and tissue integrity.\n\n**How to falsify it:** The absence of any observed functional overlap between GSN and PLEC in cellular assays investigating cytoskeletal organization or protein aggregation would falsify this hypothesis. Furthermore, if genetic evidence emerges demonstrating that mutations in either GSN or PLEC do not lead to loss-of-function phenotypes relevant to their respective diseases, this would also be falsifying. _(variant: A common pathogenic variant (allele frequency > 1% in relevant populations) in GSN or PLEC associated with either disease would suggest incomplete penetrance or alternative etiologies.)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal integrity and protein homeostasis pathways could reveal novel therapeutic targets for both amyloidosis and epidermolysis bullosa, potentially involving strategies to stabilize cytoskeletal components or enhance protein clearance mechanisms.\n\n---\n\n#### 4. epidermolysis bullosa simplex 5B, with muscular dystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** GSN (HGNC:4508) —DISRUPTS→ Amyloid fibril formation (REACT:R-HSA-194079); Amyloid fibril formation (REACT:R-HSA-194079) —LEADS_TO→ Amyloidosis (HP:0002682); PLEC (HGNC:9101) —DISRUPTS→ Cytoskeletal integrity and cell adhesion (GO:0007010); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007333); Cytoskeletal integrity and cell adhesion (GO:0007010) —LEADS_TO→ Muscular dystrophy (HP:0003198). GSN mutations lead to amyloidogenic protein misfolding and aggregation, causing amyloidosis. PLEC mutations disrupt cytoskeletal integrity, leading to blistering and muscular dystrophy. The convergence is on the general cellular machinery responsible for protein processing and structural support, where defects in either GSN or PLEC compromise cellular homeostasis, albeit through different specific downstream pathways.\n\n**How to falsify it:** The absence of mutations in GSN in individuals with epidermolysis bullosa simplex 5B with muscular dystrophy, or the absence of mutations in PLEC in individuals with Finnish type amyloidosis, would falsify a direct shared causal gene hypothesis. Furthermore, if experimental models demonstrate completely independent molecular pathways downstream of GSN and PLEC that do not interact or converge at any level, this would also weaken the proposed overlap. _(variant: The identification of common variants (AF > 0.01) in GSN or PLEC in healthy populations that recapitulate the disease-causing mutations would also serve as a falsification condition.)_\n\n**Why it matters:** Understanding the shared molecular underpinnings of these diseases, even if arising from different genes, could reveal common therapeutic targets for protein misfolding or cytoskeletal stabilization, potentially benefiting patients with either condition.\n\n---\n\n#### 5. epidermolysis bullosa simplex 5A, Ogna type  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** GSN (HGNC:4437) —LEADS_TO→ Amyloidosis (HP:0003056); PLEC (HGNC:9880) —DISRUPTS→ intermediate filament organization (GO:0007094); intermediate filament organization (GO:0007094) —LEADS_TO→ cytoskeletal integrity (GO:0007010); cytoskeletal integrity (GO:0007010) —LEADS_TO→ Epidermolysis bullosa simplex (HP:0007339); GSN (HGNC:4437) —DISRUPTS→ cytoskeletal integrity (GO:0007010). Loss-of-function mutations in GSN lead to amyloid deposition (Finnish type amyloidosis). Concurrently, loss-of-function mutations in PLEC disrupt intermediate filament organization, impacting overall cytoskeletal integrity, and leading to Epidermolysis Bullosa Simplex. The hypothesis is that both GSN and PLEC dysfunction converge on compromising cellular cytoskeletal integrity.\n\n**How to falsify it:** If a comprehensive analysis of cellular models or patient-derived tissues shows no overlapping molecular defects in intermediate filament organization or general cytoskeletal integrity pathways between the two diseases, this hypothesis would be falsified. _(variant: Presence of common variants (AF > 0.01) in GSN or PLEC associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared downstream effects on cytoskeletal integrity could reveal novel therapeutic targets for both amyloidosis and epidermolysis bullosa, potentially involving stabilization of the cytoskeleton or enhancement of protein clearance pathways.\n\n---\n\n#### 6. hepatocellular carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.411)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation (GO:0007049); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Amyloidosis (HP:0003138); Cell cycle regulation (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). Loss-of-function mutations in TP53 disrupt DNA damage response and apoptosis pathways, leading to the accumulation of misfolded proteins and amyloid formation characteristic of Finnish type amyloidosis. Concurrently, disruption of TP53 function impairs cell cycle regulation, promoting uncontrolled proliferation and increasing the risk of hepatocellular carcinoma.\n\n**How to falsify it:** The presence of homozygous, loss-of-function pathogenic variants in TP53 in individuals with Finnish type amyloidosis who do not develop hepatocellular carcinoma, or vice versa, would challenge this hypothesis. Additionally, if TP53 variants associated with Finnish type amyloidosis are exclusively gain-of-function or dominant-negative, while those for HCC are loss-of-function, this would falsify the proposed shared mechanism. _(variant: rs1800371)_\n\n**Why it matters:** Targeting TP53 pathways or downstream effectors could offer a dual therapeutic strategy for both Finnish type amyloidosis and hepatocellular carcinoma, potentially by restoring DNA repair mechanisms or inducing apoptosis in cancer cells.\n\n---\n\n#### 7. developmental and epileptic encephalopathy, 5  —  Tier 3 — Moderate / Emerging  (fitness 0.410)\n**Link type:** shared pathway (Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361)\n\n**Proposed mechanism:** GSN pathogenic variant (HP:0000001) —DISRUPTS→ GSN (HGNC:4525); GSN (HGNC:4525) —DECREASES→ Amyloid precursor processing (REACT:R-HSA-75919); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Amyloidosis (MONDO:0007097); SPTAN1 pathogenic variant (HP:0000001) —DISRUPTS→ SPTAN1 (HGNC:11168); SPTAN1 (HGNC:11168) —DECREASES→ Cytoskeletal integrity (GO:0007010); Cytoskeletal integrity (GO:0007010) —LEADS_TO→ Protein aggregation (GO:0000422); Protein aggregation (GO:0000422) —LEADS_TO→ Developmental and epileptic encephalopathy, 5 (MONDO:0013277); Amyloid precursor processing (REACT:R-HSA-75919) —LEADS_TO→ Protein aggregation (GO:0000422). Pathogenic variants in GSN disrupt amyloid precursor processing, leading to amyloidosis. Pathogenic variants in SPTAN1 disrupt cytoskeletal integrity, contributing to protein aggregation and developmental and epileptic encephalopathy 5. Both disrupted amyloid precursor processing and compromised cytoskeletal integrity can converge on increased protein aggregation, a shared mechanism.\n\n**How to falsify it:** The identification of a common pathogenic variant in GSN or SPTAN1 with a high allele frequency (>1%) in gnomAD populations would falsify the claim that these specific variants are causal. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared downstream mechanism of protein aggregation could reveal therapeutic targets applicable to both Finnish type amyloidosis and developmental and epileptic encephalopathy 5, potentially through interventions that enhance protein clearance or reduce aggregation propensity.\n\n---\n\n#### 8. neuronopathy, distal hereditary motor, autosomal dominant 11  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361)\n\n**Proposed mechanism:** GSN (HGNC:4525) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ amyloidosis (HP:0002680); SPTAN1 (HGNC:11217) —DISRUPTS→ intermediate filament organization (GO:0007009); intermediate filament organization (GO:0007009) —LEADS_TO→ distal hereditary motor neuropathy (HP:0003741). Loss-of-function mutations in GSN (Finnish type amyloidosis) and SPTAN1 (distal hereditary motor neuronopathy type 11) both converge on disrupting the organization and function of intermediate filaments, leading to distinct but related pathologies.\n\n**How to falsify it:** Demonstration that mutations in GSN and SPTAN1 affect entirely separate cellular pathways with no shared downstream effectors or processes, or if pathogenic variants in GSN and SPTAN1 are found at high frequency in unaffected individuals in gnomAD. _(variant: Pathogenic variants for GSN or SPTAN1 with >0.1% allele frequency in gnomAD)_\n\n**Why it matters:** Identifying a shared mechanistic vulnerability in the intermediate filament network could reveal novel therapeutic targets for both amyloidosis and motor neuronopathies, such as drugs that stabilize intermediate filaments or enhance their repair.\n\n---\n\n#### 9. developmental delay with or without epilepsy  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-264870, Reactome:R-HSA-6798695, Reactome:R-HSA-9662361)\n\n**Proposed mechanism:** Gelsolin (HGNC:4371) —DISRUPTS→ Cytoskeletal Integrity; Gelsolin (HGNC:4371) —DISRUPTS→ Amyloid Deposition; Cytoskeletal Integrity —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Amyloid Deposition —LEADS_TO→ Finnish type amyloidosis phenotype (MONDO:0007097); Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Cytoskeletal Integrity; Spectrin Alpha Non-Erythrocytic 1 (HGNC:11052) —DISRUPTS→ Neuronal Development; Cytoskeletal Integrity —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815); Neuronal Development —LEADS_TO→ Developmental delay with or without epilepsy phenotype (MONDO:0957815). Mutations in GSN disrupt cytoskeletal integrity and lead to amyloid deposition, causing Finnish type amyloidosis. Mutations in SPTAN1 also disrupt cytoskeletal integrity and neuronal development, leading to developmental delay with or without epilepsy. The shared disruption of cytoskeletal integrity represents a mechanistic overlap.\n\n**How to falsify it:** If GSN and SPTAN1 were shown to act in completely independent cellular pathways with no downstream overlap in protein function or cellular processes, this hypothesis would be falsified. Specifically, if mutations in GSN primarily affected extracellular matrix formation without impacting intracellular cytoskeletal dynamics, and SPTAN1 mutations exclusively affected intracellular neuronal trafficking without altering general cytoskeletal stability, the link would be weakened. _(variant: Discovery of common (AF > 1%) loss-of-function variants in GSN associated with amyloidosis or SPTAN1 associated with developmental delay would challenge the rare disease assumption.)_\n\n**Why it matters:** Understanding the shared role of GSN and SPTAN1 in maintaining cytoskeletal integrity could reveal common therapeutic targets for both amyloidosis and neurodevelopmental disorders, potentially involving stabilization of the cytoskeleton or modulation of protein aggregation pathways.\n\n---\n\n#### 10. autosomal recessive limb-girdle muscular dystrophy type 2Q  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-264870)\n\n**Proposed mechanism:** GSN variant associated with Finnish type amyloidosis (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Amyloid deposition (HP:0011072); GSN variant associated with LGMD2Q (HGVS:unknown) —DISRUPTS→ Gelsolin (HGNC:4510); Gelsolin (HGNC:4510) —DECREASES→ Actin dynamics and cytoskeletal organization (GO:0007010); Actin dynamics and cytoskeletal organization (GO:0007010) —LEADS_TO→ Muscle weakness (HP:0001324). Mutations in the GSN gene lead to impaired actin dynamics and cytoskeletal organization. In Finnish type amyloidosis, this disruption contributes to abnormal protein aggregation and amyloid deposition. In LGMD2Q, the compromised cytoskeletal integrity in muscle cells results in progressive muscle weakness.\n\n**How to falsify it:** The identification of pathogenic variants in GSN with a gain-of-function mechanism in either disease, or the absence of any GSN variants in affected individuals, would falsify this hypothesis. _(variant: Exome sequencing data from gnomAD showing a highly prevalent (e.g., >1%) pathogenic variant in GSN associated with either Finnish type amyloidosis or LGMD2Q.)_\n\n**Why it matters:** Understanding the shared role of GSN in both amyloidosis and muscular dystrophy could reveal novel therapeutic targets aimed at stabilizing the cytoskeleton or modulating actin dynamics, potentially benefiting patients with either condition.\n\n---"
+}

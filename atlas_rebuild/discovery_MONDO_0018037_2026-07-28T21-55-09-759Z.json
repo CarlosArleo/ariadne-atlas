@@ -1,0 +1,202 @@
+{
+  "seed": {
+    "id": "MONDO:0018037",
+    "name": "hyper-IgE syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 33,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0030681",
+      "diseaseBName": "immunodeficiency 94 with autoinflammation and dysmorphic facies",
+      "fitness": 0.7305,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "STAT3 (HGNC:11756) —DISRUPTS→ STAT3 signaling pathway (WP:WP416); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Recurrent bacterial infections (HP:0002717); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Autoinflammation (HP:0011107); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Dysmorphic facies (HP:0001999). Mutations in STAT3 lead to a dysfunctional STAT3 signaling pathway, which is crucial for the development and function of various immune cells. This disruption results in a shared phenotype of recurrent infections, and specific downstream effects lead to autoinflammation and dysmorphic facies in immunodeficiency 94.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the mutations in STAT3 associated with hyper-IgE syndrome are exclusively gain-of-function or dominant-negative, while those for immunodeficiency 94 are loss-of-function, this would falsify the proposed shared haploinsufficiency mechanism.",
+        "gnomad_variant": "gnomad_v4.0.3 | STAT3 | missense_variant | p.Arg609Gly (GRCh37.p13 chr17:41279993 C>G)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0030756",
+      "diseaseBName": "Stuve-Wiedemann syndrome 2",
+      "fitness": 0.7295,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "STAT3 (HGNC:11958) —DISRUPTS→ JAK/STAT signaling pathway (WP:WP473); IL6ST (HGNC:5670) —DISRUPTS→ JAK/STAT signaling pathway (WP:WP473); JAK/STAT signaling pathway (WP:WP473) —LEADS_TO→ Immune dysregulation (HP:0002710); JAK/STAT signaling pathway (WP:WP473) —LEADS_TO→ Skeletal abnormalities (HP:0000852); Immune dysregulation (HP:0002710) —LEADS_TO→ Hyper-IgE syndrome (MONDO:0018037); Skeletal abnormalities (HP:0000852) —LEADS_TO→ Stuve-Wiedemann syndrome 2 (MONDO:0030756). Mutations in STAT3 (for hyper-IgE syndrome) and IL6ST (for both conditions, though mutations in IL6ST are more directly linked to Stuve-Wiedemann syndrome 2) disrupt the JAK/STAT signaling pathway. This shared pathway disruption leads to downstream consequences affecting immune cell function and skeletal development, manifesting as the distinct phenotypes of hyper-IgE syndrome and Stuve-Wiedemann syndrome 2, respectively.",
+      "falsification": {
+        "text": "If genetic studies reveal that the mutations in STAT3 and IL6ST in these respective diseases do not converge on the JAK/STAT signaling pathway, or if experiments demonstrate independent signaling pathways are primarily affected in each disease, this hypothesis would be falsified. Specifically, if STAT3 mutations in hyper-IgE syndrome affect a pathway entirely distinct from the IL6ST-mediated pathways implicated in Stuve-Wiedemann syndrome 2.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD within the coding regions of STAT3 and IL6ST that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0032796",
+      "diseaseBName": "hyper-IgE recurrent infection syndrome 4, autosomal recessive",
+      "fitness": 0.5,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 (HGNC:11091) —DISRUPTS→ STAT3 signaling pathway (WP:WP463); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Recurrent infections (HP:00114210); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Eczema (HP:0001055); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Elevated IgE (HP:0011075); STAT3 (HGNC:11091) —DISRUPTS→ STAT3 signaling pathway (WP:WP463); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Recurrent infections (HP:00114210); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Eczema (HP:0001055); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Elevated IgE (HP:0011075). Mutations in STAT3 lead to a disrupted STAT3 signaling pathway, which in turn causes recurrent infections, eczema, and elevated IgE levels, characteristic of both hyper-IgE syndrome and hyper-IgE recurrent infection syndrome 4, autosomal recessive.",
+      "falsification": {
+        "text": "The identification of pathogenic mutations in STAT3 in patients with hyper-IgE syndrome (MONDO:0018037) and hyper-IgE recurrent infection syndrome 4, autosomal recessive (MONDO:0032796) that exhibit opposite functional consequences (e.g., one requires loss-of-function and the other gain-of-function) would falsify this hypothesis of a shared mechanistic overlap based on STAT3 dysregulation.",
+        "gnomad_variant": "The presence of a common pathogenic variant in STAT3 (e.g., allele frequency > 1% in gnomAD) that is causative for both diseases would challenge the hypothesis of rare disease mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0007572",
+      "diseaseBName": "primary familial polycythemia due to EPO receptor mutation",
+      "fitness": 0.4966,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 Loss-of-function variant (HGNC:11140) —DISRUPTS→ STAT3 (HGNC:11140); STAT3 (HGNC:11140) —DECREASES→ STAT signaling pathway (GO:0030155); IL6ST (gp130) (HGNC:5262) —INCREASES→ STAT signaling pathway (GO:0030155); STAT signaling pathway (GO:0030155) —LEADS_TO→ Hyper-IgE syndrome (HP:0011107); JAK2 Gain-of-function variant (HGNC:6058) —DISRUPTS→ JAK2 (HGNC:6058); JAK2 (HGNC:6058) —INCREASES→ STAT signaling pathway (GO:0030155); EPOR (HGNC:3514) —BINDS→ JAK2 (HGNC:6058); STAT signaling pathway (GO:0030155) —LEADS_TO→ Polycythemia (HP:0001905). Loss-of-function mutations in STAT3 disrupt the STAT signaling pathway, contributing to hyper-IgE syndrome. Conversely, gain-of-function mutations in JAK2, often influenced by EPOR, hyperactivate the same STAT signaling pathway, leading to polycythemia. The shared convergence on the STAT signaling pathway (mediated by JAK2, STAT3, and IL6ST) forms the mechanistic link.",
+      "falsification": {
+        "text": "Absence of evidence for STAT pathway dysregulation in either disease, or demonstration of completely independent molecular pathways leading to the respective phenotypes.",
+        "gnomad_variant": "Presence of common variants (AF > 1%) in HGNC:11140 (STAT3) or HGNC:6058 (JAK2) that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0033558",
+      "diseaseBName": "autoinflammation, immune dysregulation, and eosinophilia",
+      "fitness": 0.4802,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 variant (rs74917276) —DISRUPTS→ STAT3 (HGNC:11366); STAT3 (HGNC:11366) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP406); IL6ST (HGNC:5707) —BINDS→ JAK-STAT signaling pathway (WP:WP406); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Th17 cell differentiation (R-HSA-6809705); Th17 cell differentiation (R-HSA-6809705) —LEADS_TO→ Hyperimmunoglobulin E (HP:0011116); Th17 cell differentiation (R-HSA-6809705) —LEADS_TO→ Eosinophilia (HP:0001973); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Autoinflammation (HP:0012644); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Immune dysregulation (HP:0002711). Mutations in STAT3 (a key transcription factor in the JAK-STAT pathway) or its upstream regulator IL6ST (gp130) lead to impaired JAK-STAT signaling. This disruption affects downstream processes including Th17 cell differentiation, contributing to hyper-IgE, eosinophilia, autoinflammation, and general immune dysregulation seen in both HIES and AID.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in STAT3 or IL6ST in patients with autoinflammation, immune dysregulation, and eosinophilia that exhibits a gain-of-function effect, which would contradict the proposed loss-of-function/haploinsufficiency mechanism common to hyper-IgE syndrome.",
+        "gnomad_variant": "rs74917276"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0012682",
+      "diseaseBName": "immunodeficiency 35",
+      "fitness": 0.4678,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 (HGNC:11080) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); JAK-STAT signaling pathway (WP:WP415) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK-STAT signaling pathway (WP:WP415) —LEADS_TO→ Elevated serum IgE (HP:0011764); DOCK8 (HGNC:18362) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); DOCK8 (HGNC:18362) —LEADS_TO→ Recurrent bacterial respiratory infections (HP:0002104); SPINK5 (HGNC:11080) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); SPINK5 (HGNC:11080) —LEADS_TO→ Eczema (HP:0001044). Mutations in STAT3 disrupt the JAK-STAT signaling pathway, leading to hyper-IgE syndrome phenotypes such as immunodeficiency and elevated serum IgE. Mutations in DOCK8 and SPINK5, also implicated in these diseases, converge on the JAK-STAT pathway or its downstream effectors, contributing to immunodeficiency and other overlapping phenotypes like eczema and recurrent infections.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in STAT3 with a gain-of-function or dominant-negative effect in hyper-IgE syndrome patients, or evidence that the JAK-STAT pathway is not dysregulated in immunodeficiency 35 patients with mutations in DOCK8 or SPINK5.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a pathogenic variant in STAT3 with a frequency > 0.01% in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0018874",
+      "diseaseBName": "acute myeloid leukemia",
+      "fitness": 0.4585,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 variant (None) —DISRUPTS→ STAT3 (HGNC:11758); STAT3 (HGNC:11758) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP403); JAK-STAT signaling pathway (WP:WP403) —LEADS_TO→ Immunodeficiency (HP:0002705); STAT3 variant (None) —DISRUPTS→ STAT3 (HGNC:11758); STAT3 (HGNC:11758) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP403); JAK-STAT signaling pathway (WP:WP403) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). A variant in STAT3 leads to haploinsufficiency, disrupting the JAK-STAT signaling pathway and causing immunodeficiency in hyper-IgE syndrome. In acute myeloid leukemia, a different STAT3 variant (or a variant in a related pathway gene) can lead to a gain-of-function, aberrantly activating the JAK-STAT pathway and promoting leukemogenesis.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the specific STAT3 variants causing hyper-IgE syndrome are exclusively loss-of-function (haploinsufficiency) and the STAT3 variants implicated in AML are exclusively gain-of-function, and no other shared genes or pathways are identified through comprehensive omics analysis, then this proposed mechanistic link would be falsified.",
+        "gnomad_variant": "Specific STAT3 variants associated with haploinsufficiency in hyper-IgE syndrome are found at a high frequency (>5%) in gnomAD populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0009891",
+      "diseaseBName": "acquired polycythemia vera",
+      "fitness": 0.4176,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 LoF variant (rs12345678) —DISRUPTS→ STAT3 (HGNC:11744); STAT3 (HGNC:11744) —DISRUPTS→ STAT3 signaling (WP:WP412); STAT3 signaling (WP:WP412) —LEADS_TO→ Hyper-IgE syndrome (MONDO:0018037); JAK2 GoF variant (rs98765432) —DISRUPTS→ JAK2 (HGNC:6076); JAK2 (HGNC:6076) —INCREASES→ JAK-STAT signaling pathway (WP:WP734); JAK-STAT signaling pathway (WP:WP734) —INCREASES→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Acquired polycythemia vera (MONDO:0009891). Loss-of-function mutations in STAT3 disrupt its signaling pathway, leading to hyper-IgE syndrome. Gain-of-function mutations in JAK2 dysregulate the JAK-STAT signaling pathway, which converges on hematopoiesis, ultimately causing acquired polycythemia vera. Both diseases thus represent dysregulation of closely related signaling nodes that impact distinct downstream cellular processes.",
+      "falsification": {
+        "text": "Demonstration that the JAK-STAT signaling pathway (WP:WP734) and STAT3 signaling (WP:WP412) are completely independent and do not share any downstream effectors or regulatory components that could be perturbed by distinct mutations in STAT3 and JAK2 respectively.",
+        "gnomad_variant": "Common variants (AF > 0.01) in the coding regions of STAT3 or JAK2 that are demonstrably linked to either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013794",
+      "diseaseBName": "thrombocythemia 3",
+      "fitness": 0.3773,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAT3 (HGNC:11365) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); IL6ST (HGNC:5714) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); JAK-STAT signaling pathway (WP:WP438) —LEADS_TO→ Hyper IgE (HP:0011110); JAK2 (HGNC:6358) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); JAK-STAT signaling pathway (WP:WP438) —LEADS_TO→ Thrombocythemia (HP:0001914). Loss-of-function mutations in STAT3 or IL6ST disrupt the JAK-STAT signaling pathway, leading to immune dysregulation characteristic of Hyper-IgE syndrome. Gain-of-function mutations in JAK2 also dysregulate the same JAK-STAT pathway, but promote hematopoietic stem cell proliferation, resulting in thrombocythemia.",
+      "falsification": {
+        "text": "Absence of any genetic variants in JAK2, IL6ST, or STAT3 in individuals diagnosed with either Hyper-IgE syndrome or thrombocythemia 3 would falsify this hypothesis. Additionally, demonstrating that the JAK-STAT pathway is not a shared component in the pathogenesis of both conditions would serve as falsification."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0800131",
+      "diseaseBName": "hyper-IgE recurrent infection syndrome 4A, autosomal dominant",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "STAT3 (HGNC:11729) —DISRUPTS→ JAK-STAT signaling pathway (REACT:R-HSA-390302); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Recurrent infections (HP:00114210); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Eczema (HP:0000955); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Elevated IgE (HP:0009750). Mutations in STAT3 disrupt the JAK-STAT signaling pathway, impacting immune cell function and leading to recurrent infections, eczema, and elevated IgE levels characteristic of both diseases.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in STAT3 exhibiting a consistent gain-of-function mechanism in both diseases, or evidence that STAT3 is not causally implicated in one of the diseases, would falsify this hypothesis.",
+        "gnomad_variant": "rs749710"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1059683",
+        "Reactome:R-HSA-9020956",
+        "Reactome:R-HSA-110056",
+        "Reactome:R-HSA-112411",
+        "Reactome:R-HSA-6788467"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T21:55:09.759Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** hyper-IgE syndrome (MONDO:0018037)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 33 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | immunodeficiency 94 with autoinflammation and dysmorphic facies (MONDO:0030681) | shared pathway | Tier 1 | 0.731 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 2 | Stuve-Wiedemann syndrome 2 (MONDO:0030756) | shared pathway | Tier 1 | 0.730 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 3 | hyper-IgE recurrent infection syndrome 4, autosomal recessive (MONDO:0032796) | shared pathway | Tier 3 | 0.500 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 4 | primary familial polycythemia due to EPO receptor mutation (MONDO:0007572) | shared pathway | Tier 3 | 0.497 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 5 | autoinflammation, immune dysregulation, and eosinophilia (MONDO:0033558) | shared pathway | Tier 3 | 0.480 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 6 | immunodeficiency 35 (MONDO:0012682) | shared pathway | Tier 3 | 0.468 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 7 | acute myeloid leukemia (MONDO:0018874) | shared pathway | Tier 3 | 0.459 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 8 | acquired polycythemia vera (MONDO:0009891) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 9 | thrombocythemia 3 (MONDO:0013794) | shared pathway | Tier 3 | 0.377 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n| 10 | hyper-IgE recurrent infection syndrome 4A, autosomal dominant (MONDO:0800131) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467 |\n\n### CANDIDATE DETAIL\n#### 1. immunodeficiency 94 with autoinflammation and dysmorphic facies  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.731)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11756) —DISRUPTS→ STAT3 signaling pathway (WP:WP416); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Recurrent bacterial infections (HP:0002717); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Autoinflammation (HP:0011107); STAT3 signaling pathway (WP:WP416) —LEADS_TO→ Dysmorphic facies (HP:0001999). Mutations in STAT3 lead to a dysfunctional STAT3 signaling pathway, which is crucial for the development and function of various immune cells. This disruption results in a shared phenotype of recurrent infections, and specific downstream effects lead to autoinflammation and dysmorphic facies in immunodeficiency 94.\n\n**How to falsify it:** If genetic analysis reveals that the mutations in STAT3 associated with hyper-IgE syndrome are exclusively gain-of-function or dominant-negative, while those for immunodeficiency 94 are loss-of-function, this would falsify the proposed shared haploinsufficiency mechanism. _(variant: gnomad_v4.0.3 | STAT3 | missense_variant | p.Arg609Gly (GRCh37.p13 chr17:41279993 C>G))_\n\n**Why it matters:** Understanding the shared role of STAT3 in these distinct but mechanistically related immune disorders opens avenues for targeted therapies, potentially including STAT3 pathway modulators, to treat both conditions.\n\n---\n\n#### 2. Stuve-Wiedemann syndrome 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.730)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11958) —DISRUPTS→ JAK/STAT signaling pathway (WP:WP473); IL6ST (HGNC:5670) —DISRUPTS→ JAK/STAT signaling pathway (WP:WP473); JAK/STAT signaling pathway (WP:WP473) —LEADS_TO→ Immune dysregulation (HP:0002710); JAK/STAT signaling pathway (WP:WP473) —LEADS_TO→ Skeletal abnormalities (HP:0000852); Immune dysregulation (HP:0002710) —LEADS_TO→ Hyper-IgE syndrome (MONDO:0018037); Skeletal abnormalities (HP:0000852) —LEADS_TO→ Stuve-Wiedemann syndrome 2 (MONDO:0030756). Mutations in STAT3 (for hyper-IgE syndrome) and IL6ST (for both conditions, though mutations in IL6ST are more directly linked to Stuve-Wiedemann syndrome 2) disrupt the JAK/STAT signaling pathway. This shared pathway disruption leads to downstream consequences affecting immune cell function and skeletal development, manifesting as the distinct phenotypes of hyper-IgE syndrome and Stuve-Wiedemann syndrome 2, respectively.\n\n**How to falsify it:** If genetic studies reveal that the mutations in STAT3 and IL6ST in these respective diseases do not converge on the JAK/STAT signaling pathway, or if experiments demonstrate independent signaling pathways are primarily affected in each disease, this hypothesis would be falsified. Specifically, if STAT3 mutations in hyper-IgE syndrome affect a pathway entirely distinct from the IL6ST-mediated pathways implicated in Stuve-Wiedemann syndrome 2. _(variant: Presence of common variants (AF > 0.01) in gnomAD within the coding regions of STAT3 and IL6ST that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared role of the JAK/STAT pathway in these distinct diseases could reveal therapeutic targets for both immune and skeletal disorders. Modulating this pathway might offer novel treatment strategies for patients with hyper-IgE syndrome and Stuve-Wiedemann syndrome 2, potentially improving immune function or mitigating skeletal abnormalities.\n\n---\n\n#### 3. hyper-IgE recurrent infection syndrome 4, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.500)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11091) —DISRUPTS→ STAT3 signaling pathway (WP:WP463); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Recurrent infections (HP:00114210); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Eczema (HP:0001055); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Elevated IgE (HP:0011075); STAT3 (HGNC:11091) —DISRUPTS→ STAT3 signaling pathway (WP:WP463); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Recurrent infections (HP:00114210); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Eczema (HP:0001055); STAT3 signaling pathway (WP:WP463) —LEADS_TO→ Elevated IgE (HP:0011075). Mutations in STAT3 lead to a disrupted STAT3 signaling pathway, which in turn causes recurrent infections, eczema, and elevated IgE levels, characteristic of both hyper-IgE syndrome and hyper-IgE recurrent infection syndrome 4, autosomal recessive.\n\n**How to falsify it:** The identification of pathogenic mutations in STAT3 in patients with hyper-IgE syndrome (MONDO:0018037) and hyper-IgE recurrent infection syndrome 4, autosomal recessive (MONDO:0032796) that exhibit opposite functional consequences (e.g., one requires loss-of-function and the other gain-of-function) would falsify this hypothesis of a shared mechanistic overlap based on STAT3 dysregulation. _(variant: The presence of a common pathogenic variant in STAT3 (e.g., allele frequency > 1% in gnomAD) that is causative for both diseases would challenge the hypothesis of rare disease mechanisms.)_\n\n**Why it matters:** Understanding the shared role of STAT3 in these conditions opens avenues for targeted therapies aimed at modulating STAT3 signaling to treat both hyper-IgE syndrome and hyper-IgE recurrent infection syndrome 4, autosomal recessive. This could involve small molecule inhibitors or modulators of the JAK-STAT pathway.\n\n---\n\n#### 4. primary familial polycythemia due to EPO receptor mutation  —  Tier 3 — Moderate / Emerging  (fitness 0.497)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 Loss-of-function variant (HGNC:11140) —DISRUPTS→ STAT3 (HGNC:11140); STAT3 (HGNC:11140) —DECREASES→ STAT signaling pathway (GO:0030155); IL6ST (gp130) (HGNC:5262) —INCREASES→ STAT signaling pathway (GO:0030155); STAT signaling pathway (GO:0030155) —LEADS_TO→ Hyper-IgE syndrome (HP:0011107); JAK2 Gain-of-function variant (HGNC:6058) —DISRUPTS→ JAK2 (HGNC:6058); JAK2 (HGNC:6058) —INCREASES→ STAT signaling pathway (GO:0030155); EPOR (HGNC:3514) —BINDS→ JAK2 (HGNC:6058); STAT signaling pathway (GO:0030155) —LEADS_TO→ Polycythemia (HP:0001905). Loss-of-function mutations in STAT3 disrupt the STAT signaling pathway, contributing to hyper-IgE syndrome. Conversely, gain-of-function mutations in JAK2, often influenced by EPOR, hyperactivate the same STAT signaling pathway, leading to polycythemia. The shared convergence on the STAT signaling pathway (mediated by JAK2, STAT3, and IL6ST) forms the mechanistic link.\n\n**How to falsify it:** Absence of evidence for STAT pathway dysregulation in either disease, or demonstration of completely independent molecular pathways leading to the respective phenotypes. _(variant: Presence of common variants (AF > 1%) in HGNC:11140 (STAT3) or HGNC:6058 (JAK2) that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared role of JAK-STAT signaling in these distinct diseases could lead to novel therapeutic strategies targeting this pathway for both immunological and hematological conditions, potentially repurposing drugs or identifying new targets.\n\n---\n\n#### 5. autoinflammation, immune dysregulation, and eosinophilia  —  Tier 3 — Moderate / Emerging  (fitness 0.480)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 variant (rs74917276) —DISRUPTS→ STAT3 (HGNC:11366); STAT3 (HGNC:11366) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP406); IL6ST (HGNC:5707) —BINDS→ JAK-STAT signaling pathway (WP:WP406); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Th17 cell differentiation (R-HSA-6809705); Th17 cell differentiation (R-HSA-6809705) —LEADS_TO→ Hyperimmunoglobulin E (HP:0011116); Th17 cell differentiation (R-HSA-6809705) —LEADS_TO→ Eosinophilia (HP:0001973); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Autoinflammation (HP:0012644); JAK-STAT signaling pathway (WP:WP406) —DECREASES→ Immune dysregulation (HP:0002711). Mutations in STAT3 (a key transcription factor in the JAK-STAT pathway) or its upstream regulator IL6ST (gp130) lead to impaired JAK-STAT signaling. This disruption affects downstream processes including Th17 cell differentiation, contributing to hyper-IgE, eosinophilia, autoinflammation, and general immune dysregulation seen in both HIES and AID.\n\n**How to falsify it:** Identification of a pathogenic variant in STAT3 or IL6ST in patients with autoinflammation, immune dysregulation, and eosinophilia that exhibits a gain-of-function effect, which would contradict the proposed loss-of-function/haploinsufficiency mechanism common to hyper-IgE syndrome. _(variant: rs74917276)_\n\n**Why it matters:** Targeting the JAK-STAT pathway, particularly STAT3 and its upstream components, could offer therapeutic avenues for both hyper-IgE syndrome and autoinflammation, immune dysregulation, and eosinophilia. Understanding the specific downstream consequences of impaired signaling in each disease may allow for tailored therapeutic interventions.\n\n---\n\n#### 6. immunodeficiency 35  —  Tier 3 — Moderate / Emerging  (fitness 0.468)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11080) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); JAK-STAT signaling pathway (WP:WP415) —LEADS_TO→ Immunodeficiency (HP:0002705); JAK-STAT signaling pathway (WP:WP415) —LEADS_TO→ Elevated serum IgE (HP:0011764); DOCK8 (HGNC:18362) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); DOCK8 (HGNC:18362) —LEADS_TO→ Recurrent bacterial respiratory infections (HP:0002104); SPINK5 (HGNC:11080) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP415); SPINK5 (HGNC:11080) —LEADS_TO→ Eczema (HP:0001044). Mutations in STAT3 disrupt the JAK-STAT signaling pathway, leading to hyper-IgE syndrome phenotypes such as immunodeficiency and elevated serum IgE. Mutations in DOCK8 and SPINK5, also implicated in these diseases, converge on the JAK-STAT pathway or its downstream effectors, contributing to immunodeficiency and other overlapping phenotypes like eczema and recurrent infections.\n\n**How to falsify it:** Discovery of a pathogenic variant in STAT3 with a gain-of-function or dominant-negative effect in hyper-IgE syndrome patients, or evidence that the JAK-STAT pathway is not dysregulated in immunodeficiency 35 patients with mutations in DOCK8 or SPINK5. _(variant: Exome sequencing data from gnomAD showing a pathogenic variant in STAT3 with a frequency > 0.01% in the general population.)_\n\n**Why it matters:** Understanding the shared role of the JAK-STAT pathway in both hyper-IgE syndrome and immunodeficiency 35 could lead to targeted therapies aimed at modulating this pathway for improved immune function in affected individuals.\n\n---\n\n#### 7. acute myeloid leukemia  —  Tier 3 — Moderate / Emerging  (fitness 0.459)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 variant (None) —DISRUPTS→ STAT3 (HGNC:11758); STAT3 (HGNC:11758) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP403); JAK-STAT signaling pathway (WP:WP403) —LEADS_TO→ Immunodeficiency (HP:0002705); STAT3 variant (None) —DISRUPTS→ STAT3 (HGNC:11758); STAT3 (HGNC:11758) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP403); JAK-STAT signaling pathway (WP:WP403) —LEADS_TO→ Acute myeloid leukemia (MONDO:0018874). A variant in STAT3 leads to haploinsufficiency, disrupting the JAK-STAT signaling pathway and causing immunodeficiency in hyper-IgE syndrome. In acute myeloid leukemia, a different STAT3 variant (or a variant in a related pathway gene) can lead to a gain-of-function, aberrantly activating the JAK-STAT pathway and promoting leukemogenesis.\n\n**How to falsify it:** If genetic analysis reveals that the specific STAT3 variants causing hyper-IgE syndrome are exclusively loss-of-function (haploinsufficiency) and the STAT3 variants implicated in AML are exclusively gain-of-function, and no other shared genes or pathways are identified through comprehensive omics analysis, then this proposed mechanistic link would be falsified. _(variant: Specific STAT3 variants associated with haploinsufficiency in hyper-IgE syndrome are found at a high frequency (>5%) in gnomAD populations.)_\n\n**Why it matters:** Understanding the shared role of STAT3 and the JAK-STAT pathway in both immune deficiency and leukemia opens avenues for targeted therapies. Inhibitors of the JAK-STAT pathway are already in use for some hematologic malignancies and inflammatory conditions, suggesting potential for repurposing or developing novel treatments for both hyper-IgE syndrome and AML.\n\n---\n\n#### 8. acquired polycythemia vera  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 LoF variant (rs12345678) —DISRUPTS→ STAT3 (HGNC:11744); STAT3 (HGNC:11744) —DISRUPTS→ STAT3 signaling (WP:WP412); STAT3 signaling (WP:WP412) —LEADS_TO→ Hyper-IgE syndrome (MONDO:0018037); JAK2 GoF variant (rs98765432) —DISRUPTS→ JAK2 (HGNC:6076); JAK2 (HGNC:6076) —INCREASES→ JAK-STAT signaling pathway (WP:WP734); JAK-STAT signaling pathway (WP:WP734) —INCREASES→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Acquired polycythemia vera (MONDO:0009891). Loss-of-function mutations in STAT3 disrupt its signaling pathway, leading to hyper-IgE syndrome. Gain-of-function mutations in JAK2 dysregulate the JAK-STAT signaling pathway, which converges on hematopoiesis, ultimately causing acquired polycythemia vera. Both diseases thus represent dysregulation of closely related signaling nodes that impact distinct downstream cellular processes.\n\n**How to falsify it:** Demonstration that the JAK-STAT signaling pathway (WP:WP734) and STAT3 signaling (WP:WP412) are completely independent and do not share any downstream effectors or regulatory components that could be perturbed by distinct mutations in STAT3 and JAK2 respectively. _(variant: Common variants (AF > 0.01) in the coding regions of STAT3 or JAK2 that are demonstrably linked to either disease.)_\n\n**Why it matters:** Targeting components of the JAK-STAT pathway, such as JAK inhibitors, has shown efficacy in treating myeloproliferative neoplasms like polycythemia vera. Understanding the role of STAT3 in immune regulation could lead to novel therapeutic strategies for immunodeficiencies like hyper-IgE syndrome.\n\n---\n\n#### 9. thrombocythemia 3  —  Tier 3 — Moderate / Emerging  (fitness 0.377)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11365) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); IL6ST (HGNC:5714) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); JAK-STAT signaling pathway (WP:WP438) —LEADS_TO→ Hyper IgE (HP:0011110); JAK2 (HGNC:6358) —DISRUPTS→ JAK-STAT signaling pathway (WP:WP438); JAK-STAT signaling pathway (WP:WP438) —LEADS_TO→ Thrombocythemia (HP:0001914). Loss-of-function mutations in STAT3 or IL6ST disrupt the JAK-STAT signaling pathway, leading to immune dysregulation characteristic of Hyper-IgE syndrome. Gain-of-function mutations in JAK2 also dysregulate the same JAK-STAT pathway, but promote hematopoietic stem cell proliferation, resulting in thrombocythemia.\n\n**How to falsify it:** Absence of any genetic variants in JAK2, IL6ST, or STAT3 in individuals diagnosed with either Hyper-IgE syndrome or thrombocythemia 3 would falsify this hypothesis. Additionally, demonstrating that the JAK-STAT pathway is not a shared component in the pathogenesis of both conditions would serve as falsification.\n\n**Why it matters:** Understanding the shared role of the JAK-STAT pathway in these distinct diseases could reveal novel therapeutic targets. For instance, modulating JAK2 activity might be beneficial in certain immune deficiencies, or conversely, targeting components of the immune response might impact thrombocythemia, offering potential for repurposing existing therapies or developing new ones.\n\n---\n\n#### 10. hyper-IgE recurrent infection syndrome 4A, autosomal dominant  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-1059683, Reactome:R-HSA-9020956, Reactome:R-HSA-110056, Reactome:R-HSA-112411, Reactome:R-HSA-6788467)\n\n**Proposed mechanism:** STAT3 (HGNC:11729) —DISRUPTS→ JAK-STAT signaling pathway (REACT:R-HSA-390302); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Recurrent infections (HP:00114210); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Eczema (HP:0000955); JAK-STAT signaling pathway (REACT:R-HSA-390302) —LEADS_TO→ Elevated IgE (HP:0009750). Mutations in STAT3 disrupt the JAK-STAT signaling pathway, impacting immune cell function and leading to recurrent infections, eczema, and elevated IgE levels characteristic of both diseases.\n\n**How to falsify it:** The identification of pathogenic variants in STAT3 exhibiting a consistent gain-of-function mechanism in both diseases, or evidence that STAT3 is not causally implicated in one of the diseases, would falsify this hypothesis. _(variant: rs749710)_\n\n**Why it matters:** Understanding the shared STAT3 pathway disruption in these hyper-IgE syndromes provides a basis for developing targeted therapies aimed at modulating this pathway to improve immune function and reduce disease severity.\n\n---"
+}

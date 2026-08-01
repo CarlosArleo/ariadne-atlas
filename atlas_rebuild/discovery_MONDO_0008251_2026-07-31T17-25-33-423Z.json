@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0008251",
+    "name": "familial pityriasis rubra pilaris"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011269",
+      "diseaseBName": "psoriasis 2",
+      "fitness": 0.7248,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "CARD14 (HGNC:16446) —INCREASES→ NF-kappaB signaling pathway (REACT:R-HSA-569095); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Abnormal skin development (HP:0000951); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Psoriasis (HP:0002367). Gain-of-function variants in CARD14 lead to aberrant activation of the NF-kappaB signaling pathway, which in turn results in abnormal skin development seen in pityriasis rubra pilaris and the characteristic skin lesions of psoriasis.",
+      "mechanism_narrative": "CARD14 (HGNC:16446) —INCREASES→ NF-kappaB signaling pathway (REACT:R-HSA-569095); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Abnormal skin development (HP:0000951); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Psoriasis (HP:0002367). Gain-of-function variants in CARD14 lead to aberrant activation of the NF-kappaB signaling pathway, which in turn results in abnormal skin development seen in pityriasis rubra pilaris and the characteristic skin lesions of psoriasis.",
+      "falsification": {
+        "text": "Identification of a loss-of-function variant in CARD14 that causes either disease, or complete lack of association between CARD14 variants and both diseases in large cohorts.",
+        "gnomad_variant": "rs114572160"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:16446"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0011269",
+        "diseaseBName": "psoriasis 2",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:16446"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7248,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "CARD14 (HGNC:16446) —INCREASES→ NF-kappaB signaling pathway (REACT:R-HSA-569095); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Abnormal skin development (HP:0000951); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Psoriasis (HP:0002367). Gain-of-function variants in CARD14 lead to aberrant activation of the NF-kappaB signaling pathway, which in turn results in abnormal skin development seen in pityriasis rubra pilaris and the characteristic skin lesions of psoriasis.",
+        "falsification": {
+          "text": "Identification of a loss-of-function variant in CARD14 that causes either disease, or complete lack of association between CARD14 variants and both diseases in large cohorts.",
+          "gnomad_variant": "rs114572160"
+        },
+        "translational": "Targeting the CARD14-mediated NF-kappaB signaling pathway could offer therapeutic strategies for both pityriasis rubra pilaris and psoriasis."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:25:33.423Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** familial pityriasis rubra pilaris (MONDO:0008251)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | psoriasis 2 (MONDO:0011269) | shared gene | Tier 1 | 0.725 | HGNC:16446 |\n\n### CANDIDATE DETAIL\n#### 1. psoriasis 2  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.725)\n**Link type:** shared causal gene (HGNC:16446)\n\n**Proposed mechanism:** CARD14 (HGNC:16446) —INCREASES→ NF-kappaB signaling pathway (REACT:R-HSA-569095); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Abnormal skin development (HP:0000951); NF-kappaB signaling pathway (REACT:R-HSA-569095) —LEADS_TO→ Psoriasis (HP:0002367). Gain-of-function variants in CARD14 lead to aberrant activation of the NF-kappaB signaling pathway, which in turn results in abnormal skin development seen in pityriasis rubra pilaris and the characteristic skin lesions of psoriasis.\n\n**How to falsify it:** Identification of a loss-of-function variant in CARD14 that causes either disease, or complete lack of association between CARD14 variants and both diseases in large cohorts. _(variant: rs114572160)_\n\n**Why it matters:** Targeting the CARD14-mediated NF-kappaB signaling pathway could offer therapeutic strategies for both pityriasis rubra pilaris and psoriasis.\n\n---"
+}

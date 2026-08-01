@@ -1,0 +1,93 @@
+{
+  "seed": {
+    "id": "MONDO:0012084",
+    "name": "aromatic L-amino acid decarboxylase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011551",
+      "diseaseBName": "TH-deficient dopa-responsive dystonia",
+      "fitness": 0.4378,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Aromatic L-amino acid decarboxylase (HGNC:2786) —DISRUPTS→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ AADC deficiency symptoms (HP:0002102); Tyrosine hydroxylase (HGNC:11677) —DISRUPTS→ L-DOPA (CHEBI:16770); L-DOPA (CHEBI:16770) —LEADS_TO→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ Catecholamine biosynthesis (P00001); Catecholamine biosynthesis (P00001) —LEADS_TO→ Dopa-responsive dystonia symptoms (HP:0001305). Loss-of-function mutations in DDC lead to decreased dopamine production, causing AADC deficiency symptoms. Loss-of-function mutations in TH lead to decreased L-DOPA production, which is a precursor to dopamine. The downstream effect of TH deficiency is also a significant reduction in dopamine levels, impacting catecholamine biosynthesis and leading to dopa-responsive dystonia symptoms. Both diseases converge on the central role of dopamine and catecholamine metabolism.",
+      "mechanism_narrative": "Aromatic L-amino acid decarboxylase (HGNC:2786) —DISRUPTS→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ AADC deficiency symptoms (HP:0002102); Tyrosine hydroxylase (HGNC:11677) —DISRUPTS→ L-DOPA (CHEBI:16770); L-DOPA (CHEBI:16770) —LEADS_TO→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ Catecholamine biosynthesis (P00001); Catecholamine biosynthesis (P00001) —LEADS_TO→ Dopa-responsive dystonia symptoms (HP:0001305). Loss-of-function mutations in DDC lead to decreased dopamine production, causing AADC deficiency symptoms. Loss-of-function mutations in TH lead to decreased L-DOPA production, which is a precursor to dopamine. The downstream effect of TH deficiency is also a significant reduction in dopamine levels, impacting catecholamine biosynthesis and leading to dopa-responsive dystonia symptoms. Both diseases converge on the central role of dopamine and catecholamine metabolism.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in DDC who do not exhibit neurological phenotypes or individuals with pathogenic variants in TH who do not exhibit neurological phenotypes, or demonstration of significant dopamine production despite DDC deficiency, would falsify this hypothesis.",
+        "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of pathogenic variants in either DDC or TH in the general population without these conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-209905": 4
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011551",
+        "diseaseBName": "TH-deficient dopa-responsive dystonia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-209905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-209905": 4
+        },
+        "fitness": 0.4378,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Aromatic L-amino acid decarboxylase (HGNC:2786) —DISRUPTS→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ AADC deficiency symptoms (HP:0002102); Tyrosine hydroxylase (HGNC:11677) —DISRUPTS→ L-DOPA (CHEBI:16770); L-DOPA (CHEBI:16770) —LEADS_TO→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ Catecholamine biosynthesis (P00001); Catecholamine biosynthesis (P00001) —LEADS_TO→ Dopa-responsive dystonia symptoms (HP:0001305). Loss-of-function mutations in DDC lead to decreased dopamine production, causing AADC deficiency symptoms. Loss-of-function mutations in TH lead to decreased L-DOPA production, which is a precursor to dopamine. The downstream effect of TH deficiency is also a significant reduction in dopamine levels, impacting catecholamine biosynthesis and leading to dopa-responsive dystonia symptoms. Both diseases converge on the central role of dopamine and catecholamine metabolism.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in DDC who do not exhibit neurological phenotypes or individuals with pathogenic variants in TH who do not exhibit neurological phenotypes, or demonstration of significant dopamine production despite DDC deficiency, would falsify this hypothesis.",
+          "gnomad_variant": "gnomAD analysis showing a high frequency (>1%) of pathogenic variants in either DDC or TH in the general population without these conditions."
+        },
+        "translational": "Understanding the shared pathway of catecholamine biosynthesis and the distinct roles of DDC and TH provides a basis for exploring therapeutic strategies. While L-DOPA is a primary treatment for TH deficiency, the treatment for AADC deficiency is more complex and may involve neurotransmitter precursor supplementation and cofactor therapy. Identifying the precise metabolic bottleneck and its downstream consequences in both conditions is crucial for optimizing patient management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009123",
+      "diseaseBName": "orthostatic hypotension 1",
+      "fitness": 0.436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DDC (HGNC:2790) —DISRUPTS→ L-DOPA (CHEBI:17907); L-DOPA (CHEBI:17907) —DISRUPTS→ Dopamine (CHEBI:17908); Dopamine (CHEBI:17908) —LEADS_TO→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); DBH (HGNC:2540) —DISRUPTS→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); Norepinephrine biosynthesis (REACT:R-HSA-1901014) —DECREASES→ Norepinephrine (CHEBI:17917); Norepinephrine (CHEBI:17917) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Norepinephrine (CHEBI:17917) —LEADS_TO→ Orthostatic hypotension (HP:0001256). Loss of function in DDC leads to reduced conversion of L-DOPA to dopamine. Dopamine is a precursor for norepinephrine biosynthesis. DBH is also essential for norepinephrine biosynthesis. Therefore, mutations in either DDC or DBH can impair norepinephrine production, leading to phenotypes like Aromatic L-amino acid decarboxylase deficiency and Orthostatic Hypotension.",
+      "mechanism_narrative": "DDC (HGNC:2790) —DISRUPTS→ L-DOPA (CHEBI:17907); L-DOPA (CHEBI:17907) —DISRUPTS→ Dopamine (CHEBI:17908); Dopamine (CHEBI:17908) —LEADS_TO→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); DBH (HGNC:2540) —DISRUPTS→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); Norepinephrine biosynthesis (REACT:R-HSA-1901014) —DECREASES→ Norepinephrine (CHEBI:17917); Norepinephrine (CHEBI:17917) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Norepinephrine (CHEBI:17917) —LEADS_TO→ Orthostatic hypotension (HP:0001256). Loss of function in DDC leads to reduced conversion of L-DOPA to dopamine. Dopamine is a precursor for norepinephrine biosynthesis. DBH is also essential for norepinephrine biosynthesis. Therefore, mutations in either DDC or DBH can impair norepinephrine production, leading to phenotypes like Aromatic L-amino acid decarboxylase deficiency and Orthostatic Hypotension.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in DDC or DBH that is associated with Aromatic L-amino acid decarboxylase deficiency but not with orthostatic hypotension, or vice versa, would falsify this hypothesis.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-209905": 4
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009123",
+        "diseaseBName": "orthostatic hypotension 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-209905"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-209905": 4
+        },
+        "fitness": 0.436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "DDC (HGNC:2790) —DISRUPTS→ L-DOPA (CHEBI:17907); L-DOPA (CHEBI:17907) —DISRUPTS→ Dopamine (CHEBI:17908); Dopamine (CHEBI:17908) —LEADS_TO→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); DBH (HGNC:2540) —DISRUPTS→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); Norepinephrine biosynthesis (REACT:R-HSA-1901014) —DECREASES→ Norepinephrine (CHEBI:17917); Norepinephrine (CHEBI:17917) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Norepinephrine (CHEBI:17917) —LEADS_TO→ Orthostatic hypotension (HP:0001256). Loss of function in DDC leads to reduced conversion of L-DOPA to dopamine. Dopamine is a precursor for norepinephrine biosynthesis. DBH is also essential for norepinephrine biosynthesis. Therefore, mutations in either DDC or DBH can impair norepinephrine production, leading to phenotypes like Aromatic L-amino acid decarboxylase deficiency and Orthostatic Hypotension.",
+        "falsification": {
+          "text": "The identification of a pathogenic variant in DDC or DBH that is associated with Aromatic L-amino acid decarboxylase deficiency but not with orthostatic hypotension, or vice versa, would falsify this hypothesis.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding this shared mechanistic link could lead to novel therapeutic strategies for both conditions. For instance, targeting L-DOPA supplementation or exploring downstream effects of dopamine could be beneficial for Aromatic L-amino acid decarboxylase deficiency, while strategies aimed at enhancing norepinephrine levels or signaling could benefit patients with Orthostatic Hypotension."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T10:37:53.678Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** aromatic L-amino acid decarboxylase deficiency (MONDO:0012084)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | TH-deficient dopa-responsive dystonia (MONDO:0011551) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-209905 |\n| 2 | orthostatic hypotension 1 (MONDO:0009123) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-209905 |\n\n### CANDIDATE DETAIL\n#### 1. TH-deficient dopa-responsive dystonia  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** Aromatic L-amino acid decarboxylase (HGNC:2786) —DISRUPTS→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ AADC deficiency symptoms (HP:0002102); Tyrosine hydroxylase (HGNC:11677) —DISRUPTS→ L-DOPA (CHEBI:16770); L-DOPA (CHEBI:16770) —LEADS_TO→ Dopamine (CHEBI:18220); Dopamine (CHEBI:18220) —LEADS_TO→ Catecholamine biosynthesis (P00001); Catecholamine biosynthesis (P00001) —LEADS_TO→ Dopa-responsive dystonia symptoms (HP:0001305). Loss-of-function mutations in DDC lead to decreased dopamine production, causing AADC deficiency symptoms. Loss-of-function mutations in TH lead to decreased L-DOPA production, which is a precursor to dopamine. The downstream effect of TH deficiency is also a significant reduction in dopamine levels, impacting catecholamine biosynthesis and leading to dopa-responsive dystonia symptoms. Both diseases converge on the central role of dopamine and catecholamine metabolism.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in DDC who do not exhibit neurological phenotypes or individuals with pathogenic variants in TH who do not exhibit neurological phenotypes, or demonstration of significant dopamine production despite DDC deficiency, would falsify this hypothesis. _(variant: gnomAD analysis showing a high frequency (>1%) of pathogenic variants in either DDC or TH in the general population without these conditions.)_\n\n**Why it matters:** Understanding the shared pathway of catecholamine biosynthesis and the distinct roles of DDC and TH provides a basis for exploring therapeutic strategies. While L-DOPA is a primary treatment for TH deficiency, the treatment for AADC deficiency is more complex and may involve neurotransmitter precursor supplementation and cofactor therapy. Identifying the precise metabolic bottleneck and its downstream consequences in both conditions is crucial for optimizing patient management.\n\n---\n\n#### 2. orthostatic hypotension 1  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** DDC (HGNC:2790) —DISRUPTS→ L-DOPA (CHEBI:17907); L-DOPA (CHEBI:17907) —DISRUPTS→ Dopamine (CHEBI:17908); Dopamine (CHEBI:17908) —LEADS_TO→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); DBH (HGNC:2540) —DISRUPTS→ Norepinephrine biosynthesis (REACT:R-HSA-1901014); Norepinephrine biosynthesis (REACT:R-HSA-1901014) —DECREASES→ Norepinephrine (CHEBI:17917); Norepinephrine (CHEBI:17917) —LEADS_TO→ Aromatic L-amino acid decarboxylase deficiency (MONDO:0012084); Norepinephrine (CHEBI:17917) —LEADS_TO→ Orthostatic hypotension (HP:0001256). Loss of function in DDC leads to reduced conversion of L-DOPA to dopamine. Dopamine is a precursor for norepinephrine biosynthesis. DBH is also essential for norepinephrine biosynthesis. Therefore, mutations in either DDC or DBH can impair norepinephrine production, leading to phenotypes like Aromatic L-amino acid decarboxylase deficiency and Orthostatic Hypotension.\n\n**How to falsify it:** The identification of a pathogenic variant in DDC or DBH that is associated with Aromatic L-amino acid decarboxylase deficiency but not with orthostatic hypotension, or vice versa, would falsify this hypothesis. _(variant: rs12345678)_\n\n**Why it matters:** Understanding this shared mechanistic link could lead to novel therapeutic strategies for both conditions. For instance, targeting L-DOPA supplementation or exploring downstream effects of dopamine could be beneficial for Aromatic L-amino acid decarboxylase deficiency, while strategies aimed at enhancing norepinephrine levels or signaling could benefit patients with Orthostatic Hypotension.\n\n---"
+}

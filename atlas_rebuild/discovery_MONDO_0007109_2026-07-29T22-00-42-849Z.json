@@ -1,0 +1,337 @@
+{
+  "seed": {
+    "id": "MONDO:0007109",
+    "name": "congenital dyserythropoietic anemia type 3"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 7,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0009528",
+      "diseaseBName": "chylomicron retention disease",
+      "fitness": 0.4349,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KIF23 (HGNC:18908) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; SAR1B (HGNC:10647) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; Golgi apparatus-mediated protein trafficking —LEADS_TO→ Congenital dyserythropoietic anemia (HP:0001891); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Chylomicron retention (HP:0030048); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Abetalipoproteinemia (HP:0001923). Loss-of-function mutations in KIF23 (causing CDAN3) and SAR1B (causing CRD) both converge on disrupting the general process of Golgi apparatus-mediated protein trafficking, leading to distinct but related hematological and absorptive phenotypes.",
+      "mechanism_narrative": "KIF23 (HGNC:18908) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; SAR1B (HGNC:10647) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; Golgi apparatus-mediated protein trafficking —LEADS_TO→ Congenital dyserythropoietic anemia (HP:0001891); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Chylomicron retention (HP:0030048); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Abetalipoproteinemia (HP:0001923). Loss-of-function mutations in KIF23 (causing CDAN3) and SAR1B (causing CRD) both converge on disrupting the general process of Golgi apparatus-mediated protein trafficking, leading to distinct but related hematological and absorptive phenotypes.",
+      "falsification": {
+        "text": "Demonstration that KIF23 and SAR1B act in completely independent cellular pathways with no overlap in protein trafficking, vesicular transport, or Golgi function, or identification of gain-of-function or dominant-negative mutations in either gene.",
+        "gnomad_variant": "Presence of a homozygous loss-of-function variant in KIF23 or SAR1B in the gnomAD database with a frequency > 0.01% for either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009528",
+        "diseaseBName": "chylomicron retention disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126
+        },
+        "fitness": 0.4349,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:18908) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; SAR1B (HGNC:10647) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; Golgi apparatus-mediated protein trafficking —LEADS_TO→ Congenital dyserythropoietic anemia (HP:0001891); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Chylomicron retention (HP:0030048); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Abetalipoproteinemia (HP:0001923). Loss-of-function mutations in KIF23 (causing CDAN3) and SAR1B (causing CRD) both converge on disrupting the general process of Golgi apparatus-mediated protein trafficking, leading to distinct but related hematological and absorptive phenotypes.",
+        "falsification": {
+          "text": "Demonstration that KIF23 and SAR1B act in completely independent cellular pathways with no overlap in protein trafficking, vesicular transport, or Golgi function, or identification of gain-of-function or dominant-negative mutations in either gene.",
+          "gnomad_variant": "Presence of a homozygous loss-of-function variant in KIF23 or SAR1B in the gnomAD database with a frequency > 0.01% for either disease."
+        },
+        "translational": "Understanding the shared pathway of protein trafficking disruption in CDAN3 and CRD could reveal common therapeutic targets for improving protein secretion and cellular homeostasis in both rare genetic disorders, potentially through strategies aimed at enhancing Golgi function or compensating for transport defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009737",
+      "diseaseBName": "galactosialidosis",
+      "fitness": 0.4132,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KIF23 (HGNC:28242) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); CTSA (HGNC:2406) —DISRUPTS→ lysosomal protein degradation (GO:0005773); lysosomal protein degradation (GO:0005773) —LEADS_TO→ Galactosialidosis (MONDO:0009737). Loss of function in KIF23 leads to CDG IIIA. Loss of function in CTSA disrupts the lysosomal protein degradation pathway, leading to galactosialidosis. The shared mechanism is the convergence on the general pathway of lysosomal protein degradation, where CTSA is a key enzyme.",
+      "mechanism_narrative": "KIF23 (HGNC:28242) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); CTSA (HGNC:2406) —DISRUPTS→ lysosomal protein degradation (GO:0005773); lysosomal protein degradation (GO:0005773) —LEADS_TO→ Galactosialidosis (MONDO:0009737). Loss of function in KIF23 leads to CDG IIIA. Loss of function in CTSA disrupts the lysosomal protein degradation pathway, leading to galactosialidosis. The shared mechanism is the convergence on the general pathway of lysosomal protein degradation, where CTSA is a key enzyme.",
+      "falsification": {
+        "text": "Demonstration that mutations in KIF23 do not impact lysosomal function or protein turnover in erythroid precursors, or that CTSA activity is completely independent of KIF23 function in any cell type.",
+        "gnomad_variant": "rs74315473 (a common variant in CTSA, if found to be pathogenic)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009737",
+        "diseaseBName": "galactosialidosis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.4132,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:28242) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); CTSA (HGNC:2406) —DISRUPTS→ lysosomal protein degradation (GO:0005773); lysosomal protein degradation (GO:0005773) —LEADS_TO→ Galactosialidosis (MONDO:0009737). Loss of function in KIF23 leads to CDG IIIA. Loss of function in CTSA disrupts the lysosomal protein degradation pathway, leading to galactosialidosis. The shared mechanism is the convergence on the general pathway of lysosomal protein degradation, where CTSA is a key enzyme.",
+        "falsification": {
+          "text": "Demonstration that mutations in KIF23 do not impact lysosomal function or protein turnover in erythroid precursors, or that CTSA activity is completely independent of KIF23 function in any cell type.",
+          "gnomad_variant": "rs74315473 (a common variant in CTSA, if found to be pathogenic)"
+        },
+        "translational": "Understanding the overlap in lysosomal protein degradation pathways could reveal therapeutic targets for both CDG IIIA and galactosialidosis, potentially through enhancing lysosomal clearance mechanisms or compensating for enzyme deficiencies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030827",
+      "diseaseBName": "macrothrombocytopenia, isolated, 2, autosomal dominant",
+      "fitness": 0.4003,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KIF23 (HGNC:21728) —DISRUPTS→ cytoskeletal organization (GO:0007010); KIF23 (HGNC:21728) —DISRUPTS→ mitotic spindle function (GO:0005819); TUBA8 (HGNC:11667) —DISRUPTS→ cytoskeletal organization (GO:0007010); TUBA8 (HGNC:11667) —DISRUPTS→ mitotic spindle function (GO:0005819); cytoskeletal organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); mitotic spindle function (GO:0005819) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Mutations in KIF23 and TUBA8 impair cytoskeletal organization and mitotic spindle function, leading to distinct but related hematologic phenotypes in congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant.",
+      "mechanism_narrative": "KIF23 (HGNC:21728) —DISRUPTS→ cytoskeletal organization (GO:0007010); KIF23 (HGNC:21728) —DISRUPTS→ mitotic spindle function (GO:0005819); TUBA8 (HGNC:11667) —DISRUPTS→ cytoskeletal organization (GO:0007010); TUBA8 (HGNC:11667) —DISRUPTS→ mitotic spindle function (GO:0005819); cytoskeletal organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); mitotic spindle function (GO:0005819) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Mutations in KIF23 and TUBA8 impair cytoskeletal organization and mitotic spindle function, leading to distinct but related hematologic phenotypes in congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in KIF23 or TUBA8 in individuals with either congenital dyserythropoietic anemia type 3 or macrothrombocytopenia, isolated, 2, autosomal dominant, that do not disrupt cytoskeletal organization or mitotic spindle function, would falsify this hypothesis. Additionally, the absence of mutations in KIF23 and TUBA8 in well-characterized cohorts of patients with these respective diseases would also serve as a falsification condition."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-6811434",
+        "Reactome:R-HSA-983189",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-6811434": 100,
+        "Reactome:R-HSA-983189": 61,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030827",
+        "diseaseBName": "macrothrombocytopenia, isolated, 2, autosomal dominant",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-6811434",
+          "Reactome:R-HSA-983189",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-6811434": 100,
+          "Reactome:R-HSA-983189": 61,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.4003,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:21728) —DISRUPTS→ cytoskeletal organization (GO:0007010); KIF23 (HGNC:21728) —DISRUPTS→ mitotic spindle function (GO:0005819); TUBA8 (HGNC:11667) —DISRUPTS→ cytoskeletal organization (GO:0007010); TUBA8 (HGNC:11667) —DISRUPTS→ mitotic spindle function (GO:0005819); cytoskeletal organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); mitotic spindle function (GO:0005819) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Mutations in KIF23 and TUBA8 impair cytoskeletal organization and mitotic spindle function, leading to distinct but related hematologic phenotypes in congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in KIF23 or TUBA8 in individuals with either congenital dyserythropoietic anemia type 3 or macrothrombocytopenia, isolated, 2, autosomal dominant, that do not disrupt cytoskeletal organization or mitotic spindle function, would falsify this hypothesis. Additionally, the absence of mutations in KIF23 and TUBA8 in well-characterized cohorts of patients with these respective diseases would also serve as a falsification condition."
+        },
+        "translational": "Understanding the shared molecular pathways underlying congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant, mediated by KIF23 and TUBA8, could reveal common therapeutic targets for improving hematopoietic cell development and function in these rare blood disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012399",
+      "diseaseBName": "complex cortical dysplasia with other brain malformations 7",
+      "fitness": 0.3969,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KIF23 (HGNC:6295) —DISRUPTS→ cytoskeleton organization (GO:0007010); cytoskeleton organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); TUBB2B (HGNC:11700) —DISRUPTS→ mitotic spindle assembly (GO:0005819); mitotic spindle assembly (GO:0005819) —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); cytoskeleton organization (GO:0007010) —BINDS→ mitotic spindle assembly (GO:0005819). Haploinsufficiency of KIF23 (involved in cytoskeleton organization) leads to congenital dyserythropoietic anemia type 3. Haploinsufficiency of TUBB2B (involved in mitotic spindle assembly) leads to complex cortical dysplasia with other brain malformations 7. Both cytoskeleton organization and mitotic spindle assembly are tightly regulated processes that converge on maintaining cellular integrity and proper cell division, and disruptions in either can lead to developmental defects.",
+      "mechanism_narrative": "KIF23 (HGNC:6295) —DISRUPTS→ cytoskeleton organization (GO:0007010); cytoskeleton organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); TUBB2B (HGNC:11700) —DISRUPTS→ mitotic spindle assembly (GO:0005819); mitotic spindle assembly (GO:0005819) —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); cytoskeleton organization (GO:0007010) —BINDS→ mitotic spindle assembly (GO:0005819). Haploinsufficiency of KIF23 (involved in cytoskeleton organization) leads to congenital dyserythropoietic anemia type 3. Haploinsufficiency of TUBB2B (involved in mitotic spindle assembly) leads to complex cortical dysplasia with other brain malformations 7. Both cytoskeleton organization and mitotic spindle assembly are tightly regulated processes that converge on maintaining cellular integrity and proper cell division, and disruptions in either can lead to developmental defects.",
+      "falsification": {
+        "text": "Demonstration that KIF23 and TUBB2B function in entirely independent cellular pathways with no downstream overlap in cellular integrity or cell division processes, or identification of common variants with high allele frequency (>1%) in gnomAD for the pathogenic variants associated with each disease.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-6811434",
+        "Reactome:R-HSA-983189",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-6811434": 100,
+        "Reactome:R-HSA-983189": 61,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012399",
+        "diseaseBName": "complex cortical dysplasia with other brain malformations 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-6811434",
+          "Reactome:R-HSA-983189",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-6811434": 100,
+          "Reactome:R-HSA-983189": 61,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.3969,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:6295) —DISRUPTS→ cytoskeleton organization (GO:0007010); cytoskeleton organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); TUBB2B (HGNC:11700) —DISRUPTS→ mitotic spindle assembly (GO:0005819); mitotic spindle assembly (GO:0005819) —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); cytoskeleton organization (GO:0007010) —BINDS→ mitotic spindle assembly (GO:0005819). Haploinsufficiency of KIF23 (involved in cytoskeleton organization) leads to congenital dyserythropoietic anemia type 3. Haploinsufficiency of TUBB2B (involved in mitotic spindle assembly) leads to complex cortical dysplasia with other brain malformations 7. Both cytoskeleton organization and mitotic spindle assembly are tightly regulated processes that converge on maintaining cellular integrity and proper cell division, and disruptions in either can lead to developmental defects.",
+        "falsification": {
+          "text": "Demonstration that KIF23 and TUBB2B function in entirely independent cellular pathways with no downstream overlap in cellular integrity or cell division processes, or identification of common variants with high allele frequency (>1%) in gnomAD for the pathogenic variants associated with each disease.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared mechanistic basis in cytoskeletal dynamics and cell division could reveal novel therapeutic targets applicable to both anemia and neurological malformation syndromes, potentially through modulating specific protein interactions or cellular pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0021573",
+      "diseaseBName": "oocyte maturation defect 2",
+      "fitness": 0.3968,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KIF23 (HGNC:6292) —DISRUPTS→ mitotic spindle organization (GO:0005819); TUBB8 (HGNC:20437) —DISRUPTS→ mitotic spindle organization (GO:0005819); mitotic spindle organization (GO:0005819) —LEADS_TO→ cytokinesis (GO:0000275); cytokinesis (GO:0000275) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); cytokinesis (GO:0000275) —LEADS_TO→ Oocyte maturation defect 2 (MONDO:0021573). Loss-of-function mutations in KIF23 (involved in CDAN3) and TUBB8 (involved in OMD2) both disrupt mitotic spindle organization. This disruption ultimately impairs cytokinesis, leading to the distinct phenotypes of congenital dyserythropoietic anemia type 3 and oocyte maturation defect 2, respectively, highlighting a shared downstream pathway critical for cell division.",
+      "mechanism_narrative": "KIF23 (HGNC:6292) —DISRUPTS→ mitotic spindle organization (GO:0005819); TUBB8 (HGNC:20437) —DISRUPTS→ mitotic spindle organization (GO:0005819); mitotic spindle organization (GO:0005819) —LEADS_TO→ cytokinesis (GO:0000275); cytokinesis (GO:0000275) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); cytokinesis (GO:0000275) —LEADS_TO→ Oocyte maturation defect 2 (MONDO:0021573). Loss-of-function mutations in KIF23 (involved in CDAN3) and TUBB8 (involved in OMD2) both disrupt mitotic spindle organization. This disruption ultimately impairs cytokinesis, leading to the distinct phenotypes of congenital dyserythropoietic anemia type 3 and oocyte maturation defect 2, respectively, highlighting a shared downstream pathway critical for cell division.",
+      "falsification": {
+        "text": "If mutations in KIF23 and TUBB8 are shown to operate through entirely independent cellular pathways that do not converge on mitotic spindle organization or cytokinesis, or if specific variants in KIF23 are found at a high frequency (>1%) in gnomAD exomes in populations unaffected by CDAN3, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-6811434",
+        "Reactome:R-HSA-983189",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-6811434": 100,
+        "Reactome:R-HSA-983189": 61,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0021573",
+        "diseaseBName": "oocyte maturation defect 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-6811434",
+          "Reactome:R-HSA-983189",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-6811434": 100,
+          "Reactome:R-HSA-983189": 61,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.3968,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:6292) —DISRUPTS→ mitotic spindle organization (GO:0005819); TUBB8 (HGNC:20437) —DISRUPTS→ mitotic spindle organization (GO:0005819); mitotic spindle organization (GO:0005819) —LEADS_TO→ cytokinesis (GO:0000275); cytokinesis (GO:0000275) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); cytokinesis (GO:0000275) —LEADS_TO→ Oocyte maturation defect 2 (MONDO:0021573). Loss-of-function mutations in KIF23 (involved in CDAN3) and TUBB8 (involved in OMD2) both disrupt mitotic spindle organization. This disruption ultimately impairs cytokinesis, leading to the distinct phenotypes of congenital dyserythropoietic anemia type 3 and oocyte maturation defect 2, respectively, highlighting a shared downstream pathway critical for cell division.",
+        "falsification": {
+          "text": "If mutations in KIF23 and TUBB8 are shown to operate through entirely independent cellular pathways that do not converge on mitotic spindle organization or cytokinesis, or if specific variants in KIF23 are found at a high frequency (>1%) in gnomAD exomes in populations unaffected by CDAN3, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the shared role of KIF23 and TUBB8 in cell division could reveal novel therapeutic targets for both hematological disorders and reproductive medicine. Interventions aimed at improving mitotic spindle integrity or cytokinesis could potentially benefit patients with either CDAN3 or OMD2."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010949",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+      "fitness": 0.3823,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RAB7A (HGNC:9784) —DISRUPTS→ Late endosome-lysosome trafficking and fusion (GO:0005768); Late endosome-lysosome trafficking and fusion (GO:0005768) —LEADS_TO→ Anemia (HP:0001878); RAB7A (HGNC:9784) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0005769); Autophagosome-lysosome fusion (GO:0005769) —LEADS_TO→ Peripheral neuropathy (HP:0003404). Loss-of-function mutations in RAB7A impair late endosome-lysosome trafficking and fusion. In erythroid precursors, this leads to ineffective erythropoiesis and anemia (CDAN3). In neurons, impaired autophagosome-lysosome fusion and subsequent accumulation of toxic protein aggregates contribute to peripheral neuropathy (CMT2B).",
+      "mechanism_narrative": "RAB7A (HGNC:9784) —DISRUPTS→ Late endosome-lysosome trafficking and fusion (GO:0005768); Late endosome-lysosome trafficking and fusion (GO:0005768) —LEADS_TO→ Anemia (HP:0001878); RAB7A (HGNC:9784) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0005769); Autophagosome-lysosome fusion (GO:0005769) —LEADS_TO→ Peripheral neuropathy (HP:0003404). Loss-of-function mutations in RAB7A impair late endosome-lysosome trafficking and fusion. In erythroid precursors, this leads to ineffective erythropoiesis and anemia (CDAN3). In neurons, impaired autophagosome-lysosome fusion and subsequent accumulation of toxic protein aggregates contribute to peripheral neuropathy (CMT2B).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in RAB7A with a clear gain-of-function or dominant-negative effect in either CDAN3 or CMT2B patients would falsify this hypothesis. Additionally, finding no significant enrichment of loss-of-function variants in RAB7A in patient cohorts for both diseases would also falsify this hypothesis.",
+        "gnomad_variant": "Any common (AF > 0.01) loss-of-function variant in RAB7A found in gnomAD would weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010949",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 2B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.3823,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RAB7A (HGNC:9784) —DISRUPTS→ Late endosome-lysosome trafficking and fusion (GO:0005768); Late endosome-lysosome trafficking and fusion (GO:0005768) —LEADS_TO→ Anemia (HP:0001878); RAB7A (HGNC:9784) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0005769); Autophagosome-lysosome fusion (GO:0005769) —LEADS_TO→ Peripheral neuropathy (HP:0003404). Loss-of-function mutations in RAB7A impair late endosome-lysosome trafficking and fusion. In erythroid precursors, this leads to ineffective erythropoiesis and anemia (CDAN3). In neurons, impaired autophagosome-lysosome fusion and subsequent accumulation of toxic protein aggregates contribute to peripheral neuropathy (CMT2B).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in RAB7A with a clear gain-of-function or dominant-negative effect in either CDAN3 or CMT2B patients would falsify this hypothesis. Additionally, finding no significant enrichment of loss-of-function variants in RAB7A in patient cohorts for both diseases would also falsify this hypothesis.",
+          "gnomad_variant": "Any common (AF > 0.01) loss-of-function variant in RAB7A found in gnomAD would weaken the hypothesis."
+        },
+        "translational": "Understanding the shared role of RAB7A in these distinct diseases could pave the way for therapeutic strategies targeting lysosomal function and trafficking that may benefit patients with both CDAN3 and CMT2B."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0980711",
+      "diseaseBName": "brain small vessel disease 6 with leukoencephalopathy",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "KIF23 (HGNC:6397) —DISRUPTS→ cell division (GO:0051301); cell division (GO:0051301) —LEADS_TO→ dyserythropoiesis (HP:0001900); KIF23 (HGNC:6397) —DISRUPTS→ cytoskeletal dynamics (GO:0007010); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ leukoencephalopathy (HP:0002374); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ small vessel disease (HP:0030770). Mutations in KIF23 (HGNC:6397) in CDAG3 lead to disruption of cell division (GO:0051301), causing dyserythropoiesis (HP:0001900). Similarly, disruption of cytoskeletal dynamics (GO:0007010) by KIF23 mutations or mutations in related genes in BSVD6 can lead to leukoencephalopathy (HP:0002374) and small vessel disease (HP:0030770).",
+      "mechanism_narrative": "KIF23 (HGNC:6397) —DISRUPTS→ cell division (GO:0051301); cell division (GO:0051301) —LEADS_TO→ dyserythropoiesis (HP:0001900); KIF23 (HGNC:6397) —DISRUPTS→ cytoskeletal dynamics (GO:0007010); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ leukoencephalopathy (HP:0002374); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ small vessel disease (HP:0030770). Mutations in KIF23 (HGNC:6397) in CDAG3 lead to disruption of cell division (GO:0051301), causing dyserythropoiesis (HP:0001900). Similarly, disruption of cytoskeletal dynamics (GO:0007010) by KIF23 mutations or mutations in related genes in BSVD6 can lead to leukoencephalopathy (HP:0002374) and small vessel disease (HP:0030770).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in KIF23 in patients with BSVD6 with a clear loss-of-function effect, or conversely, demonstration that KIF23 variants do not impact pathways relevant to BSVD6 phenotypes.",
+        "gnomad_variant": "gnomad v3.1.2 shows KIF23 has a pLI of 1 and is under strong purifying selection, with very few loss-of-function variants observed. The presence of a common pathogenic variant (AF > 0.001) in gnomAD would falsify a strict LoF mechanism for either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-2132295",
+        "Reactome:R-HSA-9979719"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-2132295": 126,
+        "Reactome:R-HSA-9979719": 95
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0980711",
+        "diseaseBName": "brain small vessel disease 6 with leukoencephalopathy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-2132295",
+          "Reactome:R-HSA-9979719"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-2132295": 126,
+          "Reactome:R-HSA-9979719": 95
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KIF23 (HGNC:6397) —DISRUPTS→ cell division (GO:0051301); cell division (GO:0051301) —LEADS_TO→ dyserythropoiesis (HP:0001900); KIF23 (HGNC:6397) —DISRUPTS→ cytoskeletal dynamics (GO:0007010); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ leukoencephalopathy (HP:0002374); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ small vessel disease (HP:0030770). Mutations in KIF23 (HGNC:6397) in CDAG3 lead to disruption of cell division (GO:0051301), causing dyserythropoiesis (HP:0001900). Similarly, disruption of cytoskeletal dynamics (GO:0007010) by KIF23 mutations or mutations in related genes in BSVD6 can lead to leukoencephalopathy (HP:0002374) and small vessel disease (HP:0030770).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in KIF23 in patients with BSVD6 with a clear loss-of-function effect, or conversely, demonstration that KIF23 variants do not impact pathways relevant to BSVD6 phenotypes.",
+          "gnomad_variant": "gnomad v3.1.2 shows KIF23 has a pLI of 1 and is under strong purifying selection, with very few loss-of-function variants observed. The presence of a common pathogenic variant (AF > 0.001) in gnomAD would falsify a strict LoF mechanism for either disease."
+        },
+        "translational": "Understanding the shared role of KIF23 and cytoskeletal dynamics could reveal novel therapeutic targets for both rare blood disorders and neurovascular conditions, potentially leading to treatments that improve red blood cell production and brain vascular health."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T22:00:42.849Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** congenital dyserythropoietic anemia type 3 (MONDO:0007109)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 7 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | chylomicron retention disease (MONDO:0009528) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-2132295 |\n| 2 | galactosialidosis (MONDO:0009737) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-2132295, Reactome:R-HSA-9979719 |\n| 3 | macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719 |\n| 4 | complex cortical dysplasia with other brain malformations 7 (MONDO:0012399) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719 |\n| 5 | oocyte maturation defect 2 (MONDO:0021573) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719 |\n| 6 | Charcot-Marie-Tooth disease type 2B (MONDO:0010949) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-2132295, Reactome:R-HSA-9979719 |\n| 7 | brain small vessel disease 6 with leukoencephalopathy (MONDO:0980711) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-2132295, Reactome:R-HSA-9979719 |\n\n### CANDIDATE DETAIL\n#### 1. chylomicron retention disease  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-2132295)\n\n**Proposed mechanism:** KIF23 (HGNC:18908) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; SAR1B (HGNC:10647) —DISRUPTS→ Golgi apparatus-mediated protein trafficking; Golgi apparatus-mediated protein trafficking —LEADS_TO→ Congenital dyserythropoietic anemia (HP:0001891); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Chylomicron retention (HP:0030048); Golgi apparatus-mediated protein trafficking —LEADS_TO→ Abetalipoproteinemia (HP:0001923). Loss-of-function mutations in KIF23 (causing CDAN3) and SAR1B (causing CRD) both converge on disrupting the general process of Golgi apparatus-mediated protein trafficking, leading to distinct but related hematological and absorptive phenotypes.\n\n**How to falsify it:** Demonstration that KIF23 and SAR1B act in completely independent cellular pathways with no overlap in protein trafficking, vesicular transport, or Golgi function, or identification of gain-of-function or dominant-negative mutations in either gene. _(variant: Presence of a homozygous loss-of-function variant in KIF23 or SAR1B in the gnomAD database with a frequency > 0.01% for either disease.)_\n\n**Why it matters:** Understanding the shared pathway of protein trafficking disruption in CDAN3 and CRD could reveal common therapeutic targets for improving protein secretion and cellular homeostasis in both rare genetic disorders, potentially through strategies aimed at enhancing Golgi function or compensating for transport defects.\n\n---\n\n#### 2. galactosialidosis  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** KIF23 (HGNC:28242) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); CTSA (HGNC:2406) —DISRUPTS→ lysosomal protein degradation (GO:0005773); lysosomal protein degradation (GO:0005773) —LEADS_TO→ Galactosialidosis (MONDO:0009737). Loss of function in KIF23 leads to CDG IIIA. Loss of function in CTSA disrupts the lysosomal protein degradation pathway, leading to galactosialidosis. The shared mechanism is the convergence on the general pathway of lysosomal protein degradation, where CTSA is a key enzyme.\n\n**How to falsify it:** Demonstration that mutations in KIF23 do not impact lysosomal function or protein turnover in erythroid precursors, or that CTSA activity is completely independent of KIF23 function in any cell type. _(variant: rs74315473 (a common variant in CTSA, if found to be pathogenic))_\n\n**Why it matters:** Understanding the overlap in lysosomal protein degradation pathways could reveal therapeutic targets for both CDG IIIA and galactosialidosis, potentially through enhancing lysosomal clearance mechanisms or compensating for enzyme deficiencies.\n\n---\n\n#### 3. macrothrombocytopenia, isolated, 2, autosomal dominant  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** KIF23 (HGNC:21728) —DISRUPTS→ cytoskeletal organization (GO:0007010); KIF23 (HGNC:21728) —DISRUPTS→ mitotic spindle function (GO:0005819); TUBA8 (HGNC:11667) —DISRUPTS→ cytoskeletal organization (GO:0007010); TUBA8 (HGNC:11667) —DISRUPTS→ mitotic spindle function (GO:0005819); cytoskeletal organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); mitotic spindle function (GO:0005819) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Mutations in KIF23 and TUBA8 impair cytoskeletal organization and mitotic spindle function, leading to distinct but related hematologic phenotypes in congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant.\n\n**How to falsify it:** The identification of pathogenic variants in KIF23 or TUBA8 in individuals with either congenital dyserythropoietic anemia type 3 or macrothrombocytopenia, isolated, 2, autosomal dominant, that do not disrupt cytoskeletal organization or mitotic spindle function, would falsify this hypothesis. Additionally, the absence of mutations in KIF23 and TUBA8 in well-characterized cohorts of patients with these respective diseases would also serve as a falsification condition.\n\n**Why it matters:** Understanding the shared molecular pathways underlying congenital dyserythropoietic anemia type 3 and macrothrombocytopenia, isolated, 2, autosomal dominant, mediated by KIF23 and TUBA8, could reveal common therapeutic targets for improving hematopoietic cell development and function in these rare blood disorders.\n\n---\n\n#### 4. complex cortical dysplasia with other brain malformations 7  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** KIF23 (HGNC:6295) —DISRUPTS→ cytoskeleton organization (GO:0007010); cytoskeleton organization (GO:0007010) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); TUBB2B (HGNC:11700) —DISRUPTS→ mitotic spindle assembly (GO:0005819); mitotic spindle assembly (GO:0005819) —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); cytoskeleton organization (GO:0007010) —BINDS→ mitotic spindle assembly (GO:0005819). Haploinsufficiency of KIF23 (involved in cytoskeleton organization) leads to congenital dyserythropoietic anemia type 3. Haploinsufficiency of TUBB2B (involved in mitotic spindle assembly) leads to complex cortical dysplasia with other brain malformations 7. Both cytoskeleton organization and mitotic spindle assembly are tightly regulated processes that converge on maintaining cellular integrity and proper cell division, and disruptions in either can lead to developmental defects.\n\n**How to falsify it:** Demonstration that KIF23 and TUBB2B function in entirely independent cellular pathways with no downstream overlap in cellular integrity or cell division processes, or identification of common variants with high allele frequency (>1%) in gnomAD for the pathogenic variants associated with each disease. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared mechanistic basis in cytoskeletal dynamics and cell division could reveal novel therapeutic targets applicable to both anemia and neurological malformation syndromes, potentially through modulating specific protein interactions or cellular pathways.\n\n---\n\n#### 5. oocyte maturation defect 2  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-6811434, Reactome:R-HSA-983189, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** KIF23 (HGNC:6292) —DISRUPTS→ mitotic spindle organization (GO:0005819); TUBB8 (HGNC:20437) —DISRUPTS→ mitotic spindle organization (GO:0005819); mitotic spindle organization (GO:0005819) —LEADS_TO→ cytokinesis (GO:0000275); cytokinesis (GO:0000275) —LEADS_TO→ Congenital dyserythropoietic anemia type 3 (MONDO:0007109); cytokinesis (GO:0000275) —LEADS_TO→ Oocyte maturation defect 2 (MONDO:0021573). Loss-of-function mutations in KIF23 (involved in CDAN3) and TUBB8 (involved in OMD2) both disrupt mitotic spindle organization. This disruption ultimately impairs cytokinesis, leading to the distinct phenotypes of congenital dyserythropoietic anemia type 3 and oocyte maturation defect 2, respectively, highlighting a shared downstream pathway critical for cell division.\n\n**How to falsify it:** If mutations in KIF23 and TUBB8 are shown to operate through entirely independent cellular pathways that do not converge on mitotic spindle organization or cytokinesis, or if specific variants in KIF23 are found at a high frequency (>1%) in gnomAD exomes in populations unaffected by CDAN3, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the shared role of KIF23 and TUBB8 in cell division could reveal novel therapeutic targets for both hematological disorders and reproductive medicine. Interventions aimed at improving mitotic spindle integrity or cytokinesis could potentially benefit patients with either CDAN3 or OMD2.\n\n---\n\n#### 6. Charcot-Marie-Tooth disease type 2B  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** RAB7A (HGNC:9784) —DISRUPTS→ Late endosome-lysosome trafficking and fusion (GO:0005768); Late endosome-lysosome trafficking and fusion (GO:0005768) —LEADS_TO→ Anemia (HP:0001878); RAB7A (HGNC:9784) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0005769); Autophagosome-lysosome fusion (GO:0005769) —LEADS_TO→ Peripheral neuropathy (HP:0003404). Loss-of-function mutations in RAB7A impair late endosome-lysosome trafficking and fusion. In erythroid precursors, this leads to ineffective erythropoiesis and anemia (CDAN3). In neurons, impaired autophagosome-lysosome fusion and subsequent accumulation of toxic protein aggregates contribute to peripheral neuropathy (CMT2B).\n\n**How to falsify it:** Identification of pathogenic variants in RAB7A with a clear gain-of-function or dominant-negative effect in either CDAN3 or CMT2B patients would falsify this hypothesis. Additionally, finding no significant enrichment of loss-of-function variants in RAB7A in patient cohorts for both diseases would also falsify this hypothesis. _(variant: Any common (AF > 0.01) loss-of-function variant in RAB7A found in gnomAD would weaken the hypothesis.)_\n\n**Why it matters:** Understanding the shared role of RAB7A in these distinct diseases could pave the way for therapeutic strategies targeting lysosomal function and trafficking that may benefit patients with both CDAN3 and CMT2B.\n\n---\n\n#### 7. brain small vessel disease 6 with leukoencephalopathy  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-2132295, Reactome:R-HSA-9979719)\n\n**Proposed mechanism:** KIF23 (HGNC:6397) —DISRUPTS→ cell division (GO:0051301); cell division (GO:0051301) —LEADS_TO→ dyserythropoiesis (HP:0001900); KIF23 (HGNC:6397) —DISRUPTS→ cytoskeletal dynamics (GO:0007010); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ leukoencephalopathy (HP:0002374); cytoskeletal dynamics (GO:0007010) —LEADS_TO→ small vessel disease (HP:0030770). Mutations in KIF23 (HGNC:6397) in CDAG3 lead to disruption of cell division (GO:0051301), causing dyserythropoiesis (HP:0001900). Similarly, disruption of cytoskeletal dynamics (GO:0007010) by KIF23 mutations or mutations in related genes in BSVD6 can lead to leukoencephalopathy (HP:0002374) and small vessel disease (HP:0030770).\n\n**How to falsify it:** Identification of pathogenic variants in KIF23 in patients with BSVD6 with a clear loss-of-function effect, or conversely, demonstration that KIF23 variants do not impact pathways relevant to BSVD6 phenotypes. _(variant: gnomad v3.1.2 shows KIF23 has a pLI of 1 and is under strong purifying selection, with very few loss-of-function variants observed. The presence of a common pathogenic variant (AF > 0.001) in gnomAD would falsify a strict LoF mechanism for either disease.)_\n\n**Why it matters:** Understanding the shared role of KIF23 and cytoskeletal dynamics could reveal novel therapeutic targets for both rare blood disorders and neurovascular conditions, potentially leading to treatments that improve red blood cell production and brain vascular health.\n\n---"
+}

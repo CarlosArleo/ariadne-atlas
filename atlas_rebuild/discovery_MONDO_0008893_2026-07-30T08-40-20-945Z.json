@@ -1,0 +1,93 @@
+{
+  "seed": {
+    "id": "MONDO:0008893",
+    "name": "C syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0020615",
+      "diseaseBName": "obsolete blood group system, landsteiner-wiener",
+      "fitness": 0.38,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ICAM4 (HGNC:27661) —DISRUPTS→ Integrin signaling pathway (P00037); CD96 (HGNC:17065) —DISRUPTS→ Integrin signaling pathway (P00037); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal red blood cell morphology (HP:0001874); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal erythrocyte antigen expression (HP:0011297). Loss-of-function mutations in ICAM4 (causative for C syndrome) and CD96 (causative for obsolete blood group system, landsteiner-wiener) converge on disrupting the integrin signaling pathway. This disruption leads to abnormal red blood cell morphology and abnormal erythrocyte antigen expression, respectively.",
+      "mechanism_narrative": "ICAM4 (HGNC:27661) —DISRUPTS→ Integrin signaling pathway (P00037); CD96 (HGNC:17065) —DISRUPTS→ Integrin signaling pathway (P00037); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal red blood cell morphology (HP:0001874); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal erythrocyte antigen expression (HP:0011297). Loss-of-function mutations in ICAM4 (causative for C syndrome) and CD96 (causative for obsolete blood group system, landsteiner-wiener) converge on disrupting the integrin signaling pathway. This disruption leads to abnormal red blood cell morphology and abnormal erythrocyte antigen expression, respectively.",
+      "falsification": {
+        "text": "The absence of any observed overlap in the functional consequences of ICAM4 and CD96 mutations on the integrin signaling pathway, or if mutations in either gene do not lead to the respective disease phenotypes.",
+        "gnomad_variant": "rs12345678 (hypothetical variant in ICAM4 or CD96 with high frequency in gnomAD)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-198933"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-198933": 131
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020615",
+        "diseaseBName": "obsolete blood group system, landsteiner-wiener",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-198933"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-198933": 131
+        },
+        "fitness": 0.38,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ICAM4 (HGNC:27661) —DISRUPTS→ Integrin signaling pathway (P00037); CD96 (HGNC:17065) —DISRUPTS→ Integrin signaling pathway (P00037); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal red blood cell morphology (HP:0001874); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal erythrocyte antigen expression (HP:0011297). Loss-of-function mutations in ICAM4 (causative for C syndrome) and CD96 (causative for obsolete blood group system, landsteiner-wiener) converge on disrupting the integrin signaling pathway. This disruption leads to abnormal red blood cell morphology and abnormal erythrocyte antigen expression, respectively.",
+        "falsification": {
+          "text": "The absence of any observed overlap in the functional consequences of ICAM4 and CD96 mutations on the integrin signaling pathway, or if mutations in either gene do not lead to the respective disease phenotypes.",
+          "gnomad_variant": "rs12345678 (hypothetical variant in ICAM4 or CD96 with high frequency in gnomAD)"
+        },
+        "translational": "Understanding the shared mechanism involving the integrin signaling pathway could reveal novel therapeutic targets for both C syndrome and blood group system disorders, potentially improving red blood cell function or mitigating associated complications."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013417",
+      "diseaseBName": "complement component 3 deficiency",
+      "fitness": 0.359,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CD96 (HGNC:2365) —LEADS_TO→ C syndrome (MONDO:0008893); C3 (HGNC:248) —DISRUPTS→ Complement cascade (GO:0006955); Complement cascade (GO:0006955) —LEADS_TO→ Complement component 3 deficiency (MONDO:0013417); CD96 (HGNC:2365) —DECREASES→ Complement cascade (GO:0006955). Loss-of-function variants in CD96 (causative for C syndrome) lead to a decrease in the overall activity of the complement cascade. Concurrently, loss-of-function variants in C3 directly disrupt the complement cascade, leading to complement component 3 deficiency. The convergence point is the shared disruption of the complement cascade, impacting its overall function and downstream effects.",
+      "mechanism_narrative": "CD96 (HGNC:2365) —LEADS_TO→ C syndrome (MONDO:0008893); C3 (HGNC:248) —DISRUPTS→ Complement cascade (GO:0006955); Complement cascade (GO:0006955) —LEADS_TO→ Complement component 3 deficiency (MONDO:0013417); CD96 (HGNC:2365) —DECREASES→ Complement cascade (GO:0006955). Loss-of-function variants in CD96 (causative for C syndrome) lead to a decrease in the overall activity of the complement cascade. Concurrently, loss-of-function variants in C3 directly disrupt the complement cascade, leading to complement component 3 deficiency. The convergence point is the shared disruption of the complement cascade, impacting its overall function and downstream effects.",
+      "falsification": {
+        "text": "If genetic evidence shows that CD96 variants do not impact complement cascade function, or if C3 variants are found to have no effect on the complement cascade, this hypothesis would be falsified.",
+        "gnomad_variant": "A common pathogenic variant in CD96 (e.g., gnomAD allele frequency > 0.1%) would challenge its role as a rare disease gene for C syndrome."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-198933"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-198933": 131
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013417",
+        "diseaseBName": "complement component 3 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-198933"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-198933": 131
+        },
+        "fitness": 0.359,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CD96 (HGNC:2365) —LEADS_TO→ C syndrome (MONDO:0008893); C3 (HGNC:248) —DISRUPTS→ Complement cascade (GO:0006955); Complement cascade (GO:0006955) —LEADS_TO→ Complement component 3 deficiency (MONDO:0013417); CD96 (HGNC:2365) —DECREASES→ Complement cascade (GO:0006955). Loss-of-function variants in CD96 (causative for C syndrome) lead to a decrease in the overall activity of the complement cascade. Concurrently, loss-of-function variants in C3 directly disrupt the complement cascade, leading to complement component 3 deficiency. The convergence point is the shared disruption of the complement cascade, impacting its overall function and downstream effects.",
+        "falsification": {
+          "text": "If genetic evidence shows that CD96 variants do not impact complement cascade function, or if C3 variants are found to have no effect on the complement cascade, this hypothesis would be falsified.",
+          "gnomad_variant": "A common pathogenic variant in CD96 (e.g., gnomAD allele frequency > 0.1%) would challenge its role as a rare disease gene for C syndrome."
+        },
+        "translational": "Understanding the shared involvement of the complement cascade in both C syndrome and C3 deficiency could reveal novel therapeutic targets for modulating immune responses in these conditions. For instance, therapies aimed at restoring or modulating complement activity might be applicable to both diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T08:40:20.945Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** C syndrome (MONDO:0008893)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | obsolete blood group system, landsteiner-wiener (MONDO:0020615) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-198933 |\n| 2 | complement component 3 deficiency (MONDO:0013417) | shared pathway | Tier 3 | 0.359 | Reactome:R-HSA-198933 |\n\n### CANDIDATE DETAIL\n#### 1. obsolete blood group system, landsteiner-wiener  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-198933)\n\n**Proposed mechanism:** ICAM4 (HGNC:27661) —DISRUPTS→ Integrin signaling pathway (P00037); CD96 (HGNC:17065) —DISRUPTS→ Integrin signaling pathway (P00037); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal red blood cell morphology (HP:0001874); Integrin signaling pathway (P00037) —LEADS_TO→ Abnormal erythrocyte antigen expression (HP:0011297). Loss-of-function mutations in ICAM4 (causative for C syndrome) and CD96 (causative for obsolete blood group system, landsteiner-wiener) converge on disrupting the integrin signaling pathway. This disruption leads to abnormal red blood cell morphology and abnormal erythrocyte antigen expression, respectively.\n\n**How to falsify it:** The absence of any observed overlap in the functional consequences of ICAM4 and CD96 mutations on the integrin signaling pathway, or if mutations in either gene do not lead to the respective disease phenotypes. _(variant: rs12345678 (hypothetical variant in ICAM4 or CD96 with high frequency in gnomAD))_\n\n**Why it matters:** Understanding the shared mechanism involving the integrin signaling pathway could reveal novel therapeutic targets for both C syndrome and blood group system disorders, potentially improving red blood cell function or mitigating associated complications.\n\n---\n\n#### 2. complement component 3 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.359)\n**Link type:** shared pathway (Reactome:R-HSA-198933)\n\n**Proposed mechanism:** CD96 (HGNC:2365) —LEADS_TO→ C syndrome (MONDO:0008893); C3 (HGNC:248) —DISRUPTS→ Complement cascade (GO:0006955); Complement cascade (GO:0006955) —LEADS_TO→ Complement component 3 deficiency (MONDO:0013417); CD96 (HGNC:2365) —DECREASES→ Complement cascade (GO:0006955). Loss-of-function variants in CD96 (causative for C syndrome) lead to a decrease in the overall activity of the complement cascade. Concurrently, loss-of-function variants in C3 directly disrupt the complement cascade, leading to complement component 3 deficiency. The convergence point is the shared disruption of the complement cascade, impacting its overall function and downstream effects.\n\n**How to falsify it:** If genetic evidence shows that CD96 variants do not impact complement cascade function, or if C3 variants are found to have no effect on the complement cascade, this hypothesis would be falsified. _(variant: A common pathogenic variant in CD96 (e.g., gnomAD allele frequency > 0.1%) would challenge its role as a rare disease gene for C syndrome.)_\n\n**Why it matters:** Understanding the shared involvement of the complement cascade in both C syndrome and C3 deficiency could reveal novel therapeutic targets for modulating immune responses in these conditions. For instance, therapies aimed at restoring or modulating complement activity might be applicable to both diseases.\n\n---"
+}

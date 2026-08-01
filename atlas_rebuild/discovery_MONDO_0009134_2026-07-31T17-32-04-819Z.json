@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0009134",
+    "name": "congenital dyserythropoietic anemia type 2"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014802",
+      "diseaseBName": "Cowden syndrome 7",
+      "fitness": 0.7145,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SEC23B (HGNC:10702) —DISRUPTS→ COPII vesicle coating (GO:0030144); COPII vesicle coating (GO:0030144) —LEADS_TO→ Congenital dyserythropoietic anemia (MONDO:0009134); COPII vesicle coating (GO:0030144) —LEADS_TO→ Cowden syndrome 7 (MONDO:0014802). Loss-of-function mutations in SEC23B disrupt the COPII vesicle coating machinery, which is essential for protein transport from the endoplasmic reticulum to the Golgi. This disruption leads to distinct cellular defects that manifest as the distinct phenotypes of congenital dyserythropoietic anemia type 2 and Cowden syndrome 7.",
+      "mechanism_narrative": "SEC23B (HGNC:10702) —DISRUPTS→ COPII vesicle coating (GO:0030144); COPII vesicle coating (GO:0030144) —LEADS_TO→ Congenital dyserythropoietic anemia (MONDO:0009134); COPII vesicle coating (GO:0030144) —LEADS_TO→ Cowden syndrome 7 (MONDO:0014802). Loss-of-function mutations in SEC23B disrupt the COPII vesicle coating machinery, which is essential for protein transport from the endoplasmic reticulum to the Golgi. This disruption leads to distinct cellular defects that manifest as the distinct phenotypes of congenital dyserythropoietic anemia type 2 and Cowden syndrome 7.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SEC23B with a significantly different functional consequence (e.g., gain-of-function) in one of the diseases, or demonstration of a complete lack of overlap in the affected cellular pathways.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:10702"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0014802",
+        "diseaseBName": "Cowden syndrome 7",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:10702"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7145,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "SEC23B (HGNC:10702) —DISRUPTS→ COPII vesicle coating (GO:0030144); COPII vesicle coating (GO:0030144) —LEADS_TO→ Congenital dyserythropoietic anemia (MONDO:0009134); COPII vesicle coating (GO:0030144) —LEADS_TO→ Cowden syndrome 7 (MONDO:0014802). Loss-of-function mutations in SEC23B disrupt the COPII vesicle coating machinery, which is essential for protein transport from the endoplasmic reticulum to the Golgi. This disruption leads to distinct cellular defects that manifest as the distinct phenotypes of congenital dyserythropoietic anemia type 2 and Cowden syndrome 7.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in SEC23B with a significantly different functional consequence (e.g., gain-of-function) in one of the diseases, or demonstration of a complete lack of overlap in the affected cellular pathways.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of SEC23B in both diseases could potentially lead to therapeutic strategies that target the common pathway of COPII vesicle transport, offering benefits for both conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:32:04.819Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** congenital dyserythropoietic anemia type 2 (MONDO:0009134)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Cowden syndrome 7 (MONDO:0014802) | shared gene | Tier 1 | 0.715 | HGNC:10702 |\n\n### CANDIDATE DETAIL\n#### 1. Cowden syndrome 7  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.715)\n**Link type:** shared causal gene (HGNC:10702)\n\n**Proposed mechanism:** SEC23B (HGNC:10702) —DISRUPTS→ COPII vesicle coating (GO:0030144); COPII vesicle coating (GO:0030144) —LEADS_TO→ Congenital dyserythropoietic anemia (MONDO:0009134); COPII vesicle coating (GO:0030144) —LEADS_TO→ Cowden syndrome 7 (MONDO:0014802). Loss-of-function mutations in SEC23B disrupt the COPII vesicle coating machinery, which is essential for protein transport from the endoplasmic reticulum to the Golgi. This disruption leads to distinct cellular defects that manifest as the distinct phenotypes of congenital dyserythropoietic anemia type 2 and Cowden syndrome 7.\n\n**How to falsify it:** Identification of pathogenic variants in SEC23B with a significantly different functional consequence (e.g., gain-of-function) in one of the diseases, or demonstration of a complete lack of overlap in the affected cellular pathways. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of SEC23B in both diseases could potentially lead to therapeutic strategies that target the common pathway of COPII vesicle transport, offering benefits for both conditions.\n\n---"
+}

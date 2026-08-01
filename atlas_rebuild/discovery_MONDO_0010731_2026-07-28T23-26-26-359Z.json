@@ -1,0 +1,203 @@
+{
+  "seed": {
+    "id": "MONDO:0010731",
+    "name": "Simpson-Golabi-Behmel syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 26,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010431",
+      "diseaseBName": "Joubert syndrome 10",
+      "fitness": 0.7344,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "OFD1 (HGNC:8726) —DISRUPTS→ ciliary protein trafficking (GO:0007468); ciliary protein trafficking (GO:0007468) —LEADS_TO→ Joubert syndrome 10 (MONDO:0010431); GPC3 (HGNC:4504) —DISRUPTS→ ciliary protein trafficking (GO:0007468); ciliary protein trafficking (GO:0007468) —LEADS_TO→ Simpson-Golabi-Behmel syndrome (MONDO:0010731). Mutations in OFD1 disrupt ciliary protein trafficking, leading to Joubert syndrome 10. Similarly, mutations in GPC3 also impact ciliary protein trafficking, contributing to Simpson-Golabi-Behmel syndrome.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for Simpson-Golabi-Behmel syndrome in a given patient do not affect OFD1 or GPC3, or if the affected pathways are demonstrably distinct and unrelated to ciliary function.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008872",
+      "diseaseBName": "microcephalic osteodysplastic primordial dwarfism type II",
+      "fitness": 0.5084,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OFD1 (HGNC:8774) —DISRUPTS→ Centrosome assembly and function; PCNT (HGNC:8724) —DISRUPTS→ Centrosome assembly and function; Centrosome assembly and function —LEADS_TO→ Abnormal brain size (HP:0000252); Centrosome assembly and function —LEADS_TO→ Short stature (HP:0004322); Centrosome assembly and function —LEADS_TO→ Overgrowth (HP:0011354); Centrosome assembly and function —LEADS_TO→ Skeletal dysplasia (HP:0002670). Both OFD1 (implicated in Simpson-Golabi-Behmel syndrome) and PCNT (causative gene for MOPDII) are critical for centrosome assembly and function. Disruptions in these genes lead to a shared downstream effect on centrosome integrity, manifesting in overlapping phenotypes such as abnormal brain size, short stature, and skeletal dysplasia. While SGBS also involves overgrowth, the shared core defect in centrosome biology links these conditions.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in OFD1 and PCNT do not converge on a common downstream pathway related to centrosome function, or if distinct molecular pathways are identified for each gene's role in the respective diseases that do not intersect.",
+        "gnomad_variant": "Variants in OFD1 or PCNT with a gnomAD allele frequency above 0.1% that are not associated with either Simpson-Golabi-Behmel syndrome or microcephalic osteodysplastic primordial dwarfism type II, respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011488",
+      "diseaseBName": "microcephaly 3, primary, autosomal recessive",
+      "fitness": 0.4863,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OFD1 (HGNC:8705) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039) —LEADS_TO→ Abnormal Cilia (HP:0032591); Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039) —LEADS_TO→ Primary Microcephaly (HP:0000252); CDK5RAP2 (HGNC:20265) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); GPC3 (HGNC:4104) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); OFD1 (HGNC:8705) —LEADS_TO→ Overgrowth Syndrome (HP:0005574); GPC3 (HGNC:4104) —LEADS_TO→ Overgrowth Syndrome (HP:0005574). Mutations in OFD1 disrupt centrosome function and cilium assembly, leading to overgrowth phenotypes in Simpson-Golabi-Behmel syndrome and potentially contributing to microcephaly. Similarly, mutations in CDK5RAP2 also disrupt centrosome function and cilium assembly, directly causing primary microcephaly. The shared disruption of centrosome and cilium function represents a mechanistic overlap.",
+      "falsification": {
+        "text": "Demonstration that OFD1, GPC3, and CDK5RAP2 function in completely independent cellular pathways with no downstream convergence on shared protein complexes, signaling cascades, or cellular structures relevant to both growth and neurodevelopment.",
+        "gnomad_variant": "The identification of common variants (AF > 0.01) in OFD1, GPC3, or CDK5RAP2 that are not associated with either Simpson-Golabi-Behmel syndrome or primary microcephaly 3 would challenge their causal roles."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011504",
+      "diseaseBName": "NDE1-related microhydranencephaly",
+      "fitness": 0.4858,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OFD1 (HGNC:8799) —DISRUPTS→ Centrosome function (GO:0005813); Centrosome function (GO:0005813) —LEADS_TO→ Abnormal neuronal migration (HP:0033690); Centrosome function (GO:0005813) —LEADS_TO→ Overgrowth (HP:0001558); Centrosome function (GO:0005813) —LEADS_TO→ Intellectual disability (HP:0001249); NDE1 (HGNC:17904) —DISRUPTS→ Centrosome function (GO:0005813); NDE1 (HGNC:17904) —LEADS_TO→ Microhydranencephaly (HP:00126371); NDE1 (HGNC:17904) —LEADS_TO→ Abnormal neuronal migration (HP:0033690). Mutations in OFD1 and NDE1 both disrupt centrosome function, a critical process for proper neuronal migration and overall development. Defects in centrosome function lead to abnormal neuronal migration (shared phenotype), abnormal brain development (microhydranencephaly), intellectual disability, and in the case of OFD1 mutations, can also contribute to overgrowth phenotypes characteristic of Simpson-Golabi-Behmel syndrome.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in OFD1 that do not impact centrosome function or associated downstream phenotypes, or conversely, identification of a completely independent molecular pathway for NDE1's role in microhydranencephaly that shows no overlap with OFD1's molecular targets.",
+        "gnomad_variant": "ExAC:rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013527",
+      "diseaseBName": "lissencephaly 4",
+      "fitness": 0.4858,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Disease-causing variant in OFD1 —DISRUPTS→ OFD1 (HGNC:8670); Disease-causing variant in NDE1 —DISRUPTS→ NDE1 (HGNC:28829); OFD1 (HGNC:8670) —DISRUPTS→ ciliary protein transport (GO:0031013); NDE1 (HGNC:28829) —DISRUPTS→ ciliary protein transport (GO:0031013); ciliary protein transport (GO:0031013) —LEADS_TO→ axon guidance (GO:0007411); axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0011045); axon guidance (GO:0007411) —LEADS_TO→ Macrocephaly (HP:0000252). Disruption of OFD1 and NDE1 function impairs ciliary protein transport, which is crucial for proper axon guidance, leading to abnormal cerebral cortex morphology (lissencephaly) and macrocephaly (Simpson-Golabi-Behmel syndrome).",
+      "falsification": {
+        "text": "Absence of mutations in OFD1 and NDE1 in patients diagnosed with either Simpson-Golabi-Behmel syndrome or lissencephaly 4, especially if GPC3 mutations are also absent in SGBS patients.",
+        "gnomad_variant": "Common variants (AF > 0.01) in OFD1 or NDE1 in gnomAD populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014256",
+      "diseaseBName": "retinitis pigmentosa 67",
+      "fitness": 0.466,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "OFD1 pathogenic variant (MONDO:0010731) —LEADS_TO→ OFD1 (HGNC:8771); OFD1 pathogenic variant (MONDO:0014256) —LEADS_TO→ OFD1 (HGNC:8771); OFD1 (HGNC:8771) —DISRUPTS→ Centrosome function and assembly (GO:0030072); OFD1 (HGNC:8771) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Centrosome function and assembly (GO:0030072) —LEADS_TO→ Overgrowth syndrome (HP:0001397); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Retinitis pigmentosa (HP:0000547). Pathogenic variants in OFD1 disrupt centrosome function and cytoskeletal organization, leading to the distinct phenotypes of Simpson-Golabi-Behmel syndrome and retinitis pigmentosa 67, respectively.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if pathogenic variants in OFD1 were found to be exclusively associated with one disease and not implicated in the other, or if OFD1 was definitively proven to have no role in the cellular processes leading to retinitis pigmentosa 67.",
+        "gnomad_variant": "Presence of common benign variants in OFD1 in gnomAD would not falsify the hypothesis, as it pertains to rare pathogenic variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014605",
+      "diseaseBName": "Houge-Janssens syndrome 2",
+      "fitness": 0.4653,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPC3 (HGNC:4394) —DISRUPTS→ Centrosome function (GO:0005814); GPC3 (HGNC:4394) —DISRUPTS→ Cytoskeletal organization (GO:0007010); GPC3 (HGNC:4394) —LEADS_TO→ Overgrowth (HP:0001510); OFD1 (HGNC:8770) —DISRUPTS→ Centrosome function (GO:0005814); PPP2R1A (HGNC:9000) —DISRUPTS→ Centrosome function (GO:0005814); OFD1 (HGNC:8770) —DISRUPTS→ Cytoskeletal organization (GO:0007010); PPP2R1A (HGNC:9000) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Centrosome function (GO:0005814) —LEADS_TO→ Intellectual disability (HP:0001249); Centrosome function (GO:0005814) —LEADS_TO→ Craniofacial abnormalities (HP:0000252); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual disability (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Craniofacial abnormalities (HP:0000252). Both Simpson-Golabi-Behmel syndrome (via GPC3 haploinsufficiency) and Houge-Janssens syndrome 2 (via OFD1 and PPP2R1A loss-of-function) converge on the disruption of centrosome function and cytoskeletal organization, leading to overlapping developmental phenotypes such as overgrowth, intellectual disability, and craniofacial abnormalities.",
+      "falsification": {
+        "text": "Demonstration that mutations in OFD1, GPC3, and PPP2R1A do not converge on shared pathways like centrosome function or cytoskeletal organization, or that the observed phenotypes are entirely independent of these pathways.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in OFD1, GPC3, or PPP2R1A associated with either Simpson-Golabi-Behmel syndrome or Houge-Janssens syndrome 2, which would suggest a different underlying mechanism or a lack of pathogenicity for these specific variants in the context of these syndromes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0012029",
+      "diseaseBName": "microcephaly 6, primary, autosomal recessive",
+      "fitness": 0.4621,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPC3 (HGNC:4232) —DISRUPTS→ Glypican 3 signaling pathway (GO:0035572); Glypican 3 signaling pathway (GO:0035572) —LEADS_TO→ Simpson-Golabi-Behmel syndrome (MONDO:0010731); Glypican 3 signaling pathway (GO:0035572) —LEADS_TO→ Overgrowth (HP:0001397); GPC3 (HGNC:4232) —DISRUPTS→ Microcephaly (HP:0000252); GPC3 (HGNC:4232) —LEADS_TO→ Primary microcephaly 6, autosomal recessive (MONDO:0012029). Disruption of GPC3 function impacts the glypican 3 signaling pathway, leading to both overgrowth phenotypes characteristic of Simpson-Golabi-Behmel syndrome and microcephaly seen in primary microcephaly 6. The shared gene GPC3 acts as the convergence point, with different mutational consequences (haploinsufficiency vs. loss-of-function) leading to distinct, albeit related, phenotypic outcomes affecting growth regulation.",
+      "falsification": {
+        "text": "If mutations in GPC3 are found to be exclusively associated with Simpson-Golabi-Behmel syndrome and not with primary microcephaly 6, or vice versa, this proposed mechanistic link would be falsified. Furthermore, if genetic studies reveal distinct, non-overlapping functional pathways affected by GPC3 mutations in each disease, the hypothesis would be weakened.",
+        "gnomad_variant": "Exclusion of pathogenic variants in GPC3 from gnomAD databases for individuals diagnosed with primary microcephaly 6 or Simpson-Golabi-Behmel syndrome."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011830",
+      "diseaseBName": "lissencephaly due to LIS1 mutation",
+      "fitness": 0.4487,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PAFAH1B1 (HGNC:8701) —DISRUPTS→ Neuronal migration (GO:0001705); Neuronal migration (GO:0001705) —LEADS_TO→ Abnormal neuronal migration (HP:0001312); Abnormal neuronal migration (HP:0001312) —LEADS_TO→ Intellectual disability (HP:0001249); Abnormal neuronal migration (HP:0001312) —LEADS_TO→ Macrocephaly (HP:0000256); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Coarse facial features (HP:0000264); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Congenital diaphragmatic hernia (HP:0000760); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Growth deficiency (HP:0001510). PAFAH1B1 (LIS1) is crucial for neuronal migration. Loss-of-function mutations in PAFAH1B1 cause lissencephaly by disrupting neuronal migration. In Simpson-Golabi-Behmel syndrome, PAFAH1B1 haploinsufficiency, alongside other genes, contributes to the complex phenotype, which includes some overlapping features with lissencephaly, suggesting a shared downstream impact on neuronal development and potentially other processes regulated by PAFAH1B1.",
+      "falsification": {
+        "text": "The absence of PAFAH1B1 mutations in individuals with Simpson-Golabi-Behmel syndrome and the presence of mutations in distinct, unrelated pathways for both conditions would falsify this hypothesis.",
+        "gnomad_variant": "A common variant (AF > 1%) in HGNC:8701 associated with either condition."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013358",
+      "diseaseBName": "Seckel syndrome 4",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Glypican 3 (HGNC:4270) —DISRUPTS→ Centrosome duplication and function; Centrosome duplication and function —LEADS_TO→ Simpson-Golabi-Behmel syndrome related phenotypes (HP:0000007); Orf1p (HGNC:8703) —DISRUPTS→ Centrosome duplication and function; Centrosome duplication and function —LEADS_TO→ Seckel syndrome related phenotypes (HP:0000007). Mutations in GPC3 in Simpson-Golabi-Behmel syndrome and OFD1 in Seckel syndrome 4 both disrupt the critical pathway of centrosome duplication and function, leading to overlapping phenotypic consequences.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in GPC3 and OFD1 do not converge on a shared pathway involved in centrosome duplication and function, or if patients with mutations in one gene do not exhibit phenotypes consistent with disruption of this pathway, this hypothesis would be falsified.",
+        "gnomad_variant": "Analysis of GPC3 and OFD1 in gnomAD showing common variants that do not segregate with either disease would weaken this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-380259",
+        "Reactome:R-HSA-380320",
+        "Reactome:R-HSA-380284",
+        "Reactome:R-HSA-5620912",
+        "Reactome:R-HSA-8854518"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:26:26.359Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Simpson-Golabi-Behmel syndrome (MONDO:0010731)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 26 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Joubert syndrome 10 (MONDO:0010431) | shared pathway | Tier 1 | 0.734 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 2 | microcephalic osteodysplastic primordial dwarfism type II (MONDO:0008872) | shared pathway | Tier 3 | 0.508 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 3 | microcephaly 3, primary, autosomal recessive (MONDO:0011488) | shared pathway | Tier 3 | 0.486 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 4 | NDE1-related microhydranencephaly (MONDO:0011504) | shared pathway | Tier 3 | 0.486 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 5 | lissencephaly 4 (MONDO:0013527) | shared pathway | Tier 3 | 0.486 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 6 | retinitis pigmentosa 67 (MONDO:0014256) | shared pathway | Tier 3 | 0.466 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 7 | Houge-Janssens syndrome 2 (MONDO:0014605) | shared pathway | Tier 3 | 0.465 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 8 | microcephaly 6, primary, autosomal recessive (MONDO:0012029) | shared pathway | Tier 3 | 0.462 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 9 | lissencephaly due to LIS1 mutation (MONDO:0011830) | shared pathway | Tier 3 | 0.449 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n| 10 | Seckel syndrome 4 (MONDO:0013358) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518 |\n\n### CANDIDATE DETAIL\n#### 1. Joubert syndrome 10  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.734)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** OFD1 (HGNC:8726) —DISRUPTS→ ciliary protein trafficking (GO:0007468); ciliary protein trafficking (GO:0007468) —LEADS_TO→ Joubert syndrome 10 (MONDO:0010431); GPC3 (HGNC:4504) —DISRUPTS→ ciliary protein trafficking (GO:0007468); ciliary protein trafficking (GO:0007468) —LEADS_TO→ Simpson-Golabi-Behmel syndrome (MONDO:0010731). Mutations in OFD1 disrupt ciliary protein trafficking, leading to Joubert syndrome 10. Similarly, mutations in GPC3 also impact ciliary protein trafficking, contributing to Simpson-Golabi-Behmel syndrome.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for Simpson-Golabi-Behmel syndrome in a given patient do not affect OFD1 or GPC3, or if the affected pathways are demonstrably distinct and unrelated to ciliary function. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of OFD1 and GPC3 in ciliary protein trafficking could reveal common therapeutic targets for both Simpson-Golabi-Behmel syndrome and Joubert syndrome 10, potentially leading to treatments that address aspects of both developmental disorders.\n\n---\n\n#### 2. microcephalic osteodysplastic primordial dwarfism type II  —  Tier 3 — Moderate / Emerging  (fitness 0.508)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** OFD1 (HGNC:8774) —DISRUPTS→ Centrosome assembly and function; PCNT (HGNC:8724) —DISRUPTS→ Centrosome assembly and function; Centrosome assembly and function —LEADS_TO→ Abnormal brain size (HP:0000252); Centrosome assembly and function —LEADS_TO→ Short stature (HP:0004322); Centrosome assembly and function —LEADS_TO→ Overgrowth (HP:0011354); Centrosome assembly and function —LEADS_TO→ Skeletal dysplasia (HP:0002670). Both OFD1 (implicated in Simpson-Golabi-Behmel syndrome) and PCNT (causative gene for MOPDII) are critical for centrosome assembly and function. Disruptions in these genes lead to a shared downstream effect on centrosome integrity, manifesting in overlapping phenotypes such as abnormal brain size, short stature, and skeletal dysplasia. While SGBS also involves overgrowth, the shared core defect in centrosome biology links these conditions.\n\n**How to falsify it:** If genetic analysis reveals that mutations in OFD1 and PCNT do not converge on a common downstream pathway related to centrosome function, or if distinct molecular pathways are identified for each gene's role in the respective diseases that do not intersect. _(variant: Variants in OFD1 or PCNT with a gnomAD allele frequency above 0.1% that are not associated with either Simpson-Golabi-Behmel syndrome or microcephalic osteodysplastic primordial dwarfism type II, respectively.)_\n\n**Why it matters:** Understanding the shared role of centrosome dysfunction in these distinct primordial dwarfism syndromes could reveal common therapeutic targets for improving cellular homeostasis and mitigating developmental defects. Targeting pathways downstream of centrosome malfunction could offer a unified treatment strategy.\n\n---\n\n#### 3. microcephaly 3, primary, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.486)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** OFD1 (HGNC:8705) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039) —LEADS_TO→ Abnormal Cilia (HP:0032591); Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039) —LEADS_TO→ Primary Microcephaly (HP:0000252); CDK5RAP2 (HGNC:20265) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); GPC3 (HGNC:4104) —DISRUPTS→ Centrosome Function and Cilium Assembly (GO:0005814|GO:0007039); OFD1 (HGNC:8705) —LEADS_TO→ Overgrowth Syndrome (HP:0005574); GPC3 (HGNC:4104) —LEADS_TO→ Overgrowth Syndrome (HP:0005574). Mutations in OFD1 disrupt centrosome function and cilium assembly, leading to overgrowth phenotypes in Simpson-Golabi-Behmel syndrome and potentially contributing to microcephaly. Similarly, mutations in CDK5RAP2 also disrupt centrosome function and cilium assembly, directly causing primary microcephaly. The shared disruption of centrosome and cilium function represents a mechanistic overlap.\n\n**How to falsify it:** Demonstration that OFD1, GPC3, and CDK5RAP2 function in completely independent cellular pathways with no downstream convergence on shared protein complexes, signaling cascades, or cellular structures relevant to both growth and neurodevelopment. _(variant: The identification of common variants (AF > 0.01) in OFD1, GPC3, or CDK5RAP2 that are not associated with either Simpson-Golabi-Behmel syndrome or primary microcephaly 3 would challenge their causal roles.)_\n\n**Why it matters:** Understanding the shared role of OFD1 in centrosome and cilium function in both overgrowth and microcephaly syndromes could reveal common therapeutic targets or diagnostic markers for neurodevelopmental disorders and genetic overgrowth conditions.\n\n---\n\n#### 4. NDE1-related microhydranencephaly  —  Tier 3 — Moderate / Emerging  (fitness 0.486)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** OFD1 (HGNC:8799) —DISRUPTS→ Centrosome function (GO:0005813); Centrosome function (GO:0005813) —LEADS_TO→ Abnormal neuronal migration (HP:0033690); Centrosome function (GO:0005813) —LEADS_TO→ Overgrowth (HP:0001558); Centrosome function (GO:0005813) —LEADS_TO→ Intellectual disability (HP:0001249); NDE1 (HGNC:17904) —DISRUPTS→ Centrosome function (GO:0005813); NDE1 (HGNC:17904) —LEADS_TO→ Microhydranencephaly (HP:00126371); NDE1 (HGNC:17904) —LEADS_TO→ Abnormal neuronal migration (HP:0033690). Mutations in OFD1 and NDE1 both disrupt centrosome function, a critical process for proper neuronal migration and overall development. Defects in centrosome function lead to abnormal neuronal migration (shared phenotype), abnormal brain development (microhydranencephaly), intellectual disability, and in the case of OFD1 mutations, can also contribute to overgrowth phenotypes characteristic of Simpson-Golabi-Behmel syndrome.\n\n**How to falsify it:** Discovery of pathogenic variants in OFD1 that do not impact centrosome function or associated downstream phenotypes, or conversely, identification of a completely independent molecular pathway for NDE1's role in microhydranencephaly that shows no overlap with OFD1's molecular targets. _(variant: ExAC:rs123456789)_\n\n**Why it matters:** Understanding the shared role of OFD1 and NDE1 in centrosome function and neuronal development could reveal common therapeutic targets for intellectual disability and brain malformations seen in both Simpson-Golabi-Behmel syndrome and NDE1-related microhydranencephaly, potentially through modulation of centrosome integrity or signaling pathways.\n\n---\n\n#### 5. lissencephaly 4  —  Tier 3 — Moderate / Emerging  (fitness 0.486)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** Disease-causing variant in OFD1 —DISRUPTS→ OFD1 (HGNC:8670); Disease-causing variant in NDE1 —DISRUPTS→ NDE1 (HGNC:28829); OFD1 (HGNC:8670) —DISRUPTS→ ciliary protein transport (GO:0031013); NDE1 (HGNC:28829) —DISRUPTS→ ciliary protein transport (GO:0031013); ciliary protein transport (GO:0031013) —LEADS_TO→ axon guidance (GO:0007411); axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0011045); axon guidance (GO:0007411) —LEADS_TO→ Macrocephaly (HP:0000252). Disruption of OFD1 and NDE1 function impairs ciliary protein transport, which is crucial for proper axon guidance, leading to abnormal cerebral cortex morphology (lissencephaly) and macrocephaly (Simpson-Golabi-Behmel syndrome).\n\n**How to falsify it:** Absence of mutations in OFD1 and NDE1 in patients diagnosed with either Simpson-Golabi-Behmel syndrome or lissencephaly 4, especially if GPC3 mutations are also absent in SGBS patients. _(variant: Common variants (AF > 0.01) in OFD1 or NDE1 in gnomAD populations.)_\n\n**Why it matters:** Understanding the shared role of OFD1 and NDE1 in ciliary function and axon guidance could reveal novel therapeutic targets for both lissencephaly and Simpson-Golabi-Behmel syndrome, potentially by modulating these pathways.\n\n---\n\n#### 6. retinitis pigmentosa 67  —  Tier 3 — Moderate / Emerging  (fitness 0.466)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** OFD1 pathogenic variant (MONDO:0010731) —LEADS_TO→ OFD1 (HGNC:8771); OFD1 pathogenic variant (MONDO:0014256) —LEADS_TO→ OFD1 (HGNC:8771); OFD1 (HGNC:8771) —DISRUPTS→ Centrosome function and assembly (GO:0030072); OFD1 (HGNC:8771) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Centrosome function and assembly (GO:0030072) —LEADS_TO→ Overgrowth syndrome (HP:0001397); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Retinitis pigmentosa (HP:0000547). Pathogenic variants in OFD1 disrupt centrosome function and cytoskeletal organization, leading to the distinct phenotypes of Simpson-Golabi-Behmel syndrome and retinitis pigmentosa 67, respectively.\n\n**How to falsify it:** The hypothesis would be falsified if pathogenic variants in OFD1 were found to be exclusively associated with one disease and not implicated in the other, or if OFD1 was definitively proven to have no role in the cellular processes leading to retinitis pigmentosa 67. _(variant: Presence of common benign variants in OFD1 in gnomAD would not falsify the hypothesis, as it pertains to rare pathogenic variants.)_\n\n**Why it matters:** Understanding the shared role of OFD1 in centrosome and cytoskeletal function could reveal novel therapeutic targets for both overgrowth disorders and retinal degenerations, potentially leading to cross-disease treatment strategies.\n\n---\n\n#### 7. Houge-Janssens syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.465)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** GPC3 (HGNC:4394) —DISRUPTS→ Centrosome function (GO:0005814); GPC3 (HGNC:4394) —DISRUPTS→ Cytoskeletal organization (GO:0007010); GPC3 (HGNC:4394) —LEADS_TO→ Overgrowth (HP:0001510); OFD1 (HGNC:8770) —DISRUPTS→ Centrosome function (GO:0005814); PPP2R1A (HGNC:9000) —DISRUPTS→ Centrosome function (GO:0005814); OFD1 (HGNC:8770) —DISRUPTS→ Cytoskeletal organization (GO:0007010); PPP2R1A (HGNC:9000) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Centrosome function (GO:0005814) —LEADS_TO→ Intellectual disability (HP:0001249); Centrosome function (GO:0005814) —LEADS_TO→ Craniofacial abnormalities (HP:0000252); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Intellectual disability (HP:0001249); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Craniofacial abnormalities (HP:0000252). Both Simpson-Golabi-Behmel syndrome (via GPC3 haploinsufficiency) and Houge-Janssens syndrome 2 (via OFD1 and PPP2R1A loss-of-function) converge on the disruption of centrosome function and cytoskeletal organization, leading to overlapping developmental phenotypes such as overgrowth, intellectual disability, and craniofacial abnormalities.\n\n**How to falsify it:** Demonstration that mutations in OFD1, GPC3, and PPP2R1A do not converge on shared pathways like centrosome function or cytoskeletal organization, or that the observed phenotypes are entirely independent of these pathways. _(variant: The presence of common variants (AF > 1%) in OFD1, GPC3, or PPP2R1A associated with either Simpson-Golabi-Behmel syndrome or Houge-Janssens syndrome 2, which would suggest a different underlying mechanism or a lack of pathogenicity for these specific variants in the context of these syndromes.)_\n\n**Why it matters:** Understanding the shared downstream pathways disrupted by mutations in GPC3, OFD1, and PPP2R1A could reveal common therapeutic targets for Simpson-Golabi-Behmel syndrome and Houge-Janssens syndrome 2, potentially involving modulation of centrosome function or cytoskeletal dynamics.\n\n---\n\n#### 8. microcephaly 6, primary, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.462)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** GPC3 (HGNC:4232) —DISRUPTS→ Glypican 3 signaling pathway (GO:0035572); Glypican 3 signaling pathway (GO:0035572) —LEADS_TO→ Simpson-Golabi-Behmel syndrome (MONDO:0010731); Glypican 3 signaling pathway (GO:0035572) —LEADS_TO→ Overgrowth (HP:0001397); GPC3 (HGNC:4232) —DISRUPTS→ Microcephaly (HP:0000252); GPC3 (HGNC:4232) —LEADS_TO→ Primary microcephaly 6, autosomal recessive (MONDO:0012029). Disruption of GPC3 function impacts the glypican 3 signaling pathway, leading to both overgrowth phenotypes characteristic of Simpson-Golabi-Behmel syndrome and microcephaly seen in primary microcephaly 6. The shared gene GPC3 acts as the convergence point, with different mutational consequences (haploinsufficiency vs. loss-of-function) leading to distinct, albeit related, phenotypic outcomes affecting growth regulation.\n\n**How to falsify it:** If mutations in GPC3 are found to be exclusively associated with Simpson-Golabi-Behmel syndrome and not with primary microcephaly 6, or vice versa, this proposed mechanistic link would be falsified. Furthermore, if genetic studies reveal distinct, non-overlapping functional pathways affected by GPC3 mutations in each disease, the hypothesis would be weakened. _(variant: Exclusion of pathogenic variants in GPC3 from gnomAD databases for individuals diagnosed with primary microcephaly 6 or Simpson-Golabi-Behmel syndrome.)_\n\n**Why it matters:** Understanding the shared role of GPC3 in both overgrowth and microcephaly syndromes could lead to novel therapeutic strategies targeting the glypican 3 signaling pathway. Interventions aimed at modulating this pathway might offer a unified approach to managing growth abnormalities in these distinct conditions.\n\n---\n\n#### 9. lissencephaly due to LIS1 mutation  —  Tier 3 — Moderate / Emerging  (fitness 0.449)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** PAFAH1B1 (HGNC:8701) —DISRUPTS→ Neuronal migration (GO:0001705); Neuronal migration (GO:0001705) —LEADS_TO→ Abnormal neuronal migration (HP:0001312); Abnormal neuronal migration (HP:0001312) —LEADS_TO→ Intellectual disability (HP:0001249); Abnormal neuronal migration (HP:0001312) —LEADS_TO→ Macrocephaly (HP:0000256); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Coarse facial features (HP:0000264); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Congenital diaphragmatic hernia (HP:0000760); PAFAH1B1 (HGNC:8701) —LEADS_TO→ Growth deficiency (HP:0001510). PAFAH1B1 (LIS1) is crucial for neuronal migration. Loss-of-function mutations in PAFAH1B1 cause lissencephaly by disrupting neuronal migration. In Simpson-Golabi-Behmel syndrome, PAFAH1B1 haploinsufficiency, alongside other genes, contributes to the complex phenotype, which includes some overlapping features with lissencephaly, suggesting a shared downstream impact on neuronal development and potentially other processes regulated by PAFAH1B1.\n\n**How to falsify it:** The absence of PAFAH1B1 mutations in individuals with Simpson-Golabi-Behmel syndrome and the presence of mutations in distinct, unrelated pathways for both conditions would falsify this hypothesis. _(variant: A common variant (AF > 1%) in HGNC:8701 associated with either condition.)_\n\n**Why it matters:** Understanding the shared role of PAFAH1B1 in both conditions could inform therapeutic strategies targeting neuronal development pathways, potentially offering benefits for both lissencephaly and specific aspects of Simpson-Golabi-Behmel syndrome.\n\n---\n\n#### 10. Seckel syndrome 4  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-380259, Reactome:R-HSA-380320, Reactome:R-HSA-380284, Reactome:R-HSA-5620912, Reactome:R-HSA-8854518)\n\n**Proposed mechanism:** Glypican 3 (HGNC:4270) —DISRUPTS→ Centrosome duplication and function; Centrosome duplication and function —LEADS_TO→ Simpson-Golabi-Behmel syndrome related phenotypes (HP:0000007); Orf1p (HGNC:8703) —DISRUPTS→ Centrosome duplication and function; Centrosome duplication and function —LEADS_TO→ Seckel syndrome related phenotypes (HP:0000007). Mutations in GPC3 in Simpson-Golabi-Behmel syndrome and OFD1 in Seckel syndrome 4 both disrupt the critical pathway of centrosome duplication and function, leading to overlapping phenotypic consequences.\n\n**How to falsify it:** If genetic analysis reveals that mutations in GPC3 and OFD1 do not converge on a shared pathway involved in centrosome duplication and function, or if patients with mutations in one gene do not exhibit phenotypes consistent with disruption of this pathway, this hypothesis would be falsified. _(variant: Analysis of GPC3 and OFD1 in gnomAD showing common variants that do not segregate with either disease would weaken this hypothesis.)_\n\n**Why it matters:** Understanding the shared mechanism involving centrosome function could reveal novel therapeutic targets for both Simpson-Golabi-Behmel syndrome and Seckel syndrome 4, potentially leading to treatments that address the overlapping phenotypic spectrum.\n\n---"
+}

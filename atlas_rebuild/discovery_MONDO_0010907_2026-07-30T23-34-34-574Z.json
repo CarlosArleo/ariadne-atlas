@@ -1,0 +1,133 @@
+{
+  "seed": {
+    "id": "MONDO:0010907",
+    "name": "familial hypertryptophanemia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0060554",
+      "diseaseBName": "vertebral, cardiac, renal, and limb defects syndrome 1",
+      "fitness": 0.4292,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Tryptophan 2,3-dioxygenase (HGNC:11441) —DECREASES→ Tryptophan (CHEBI:17497); Tryptophan (CHEBI:17497) —DISRUPTS→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Familial hypertryptophanemia (MONDO:0010907); 3-hydroxyanthranilate 3,4-dioxygenase (HGNC:4798) —DECREASES→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Vertebral, cardiac, renal, and limb defects syndrome 1 (MONDO:0060554). Loss-of-function mutations in TDO2 (Familial hypertryptophanemia) and HAAO (Vertebral, cardiac, renal, and limb defects syndrome 1) both impair tryptophan metabolism, leading to distinct but related downstream phenotypic consequences.",
+      "mechanism_narrative": "Tryptophan 2,3-dioxygenase (HGNC:11441) —DECREASES→ Tryptophan (CHEBI:17497); Tryptophan (CHEBI:17497) —DISRUPTS→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Familial hypertryptophanemia (MONDO:0010907); 3-hydroxyanthranilate 3,4-dioxygenase (HGNC:4798) —DECREASES→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Vertebral, cardiac, renal, and limb defects syndrome 1 (MONDO:0060554). Loss-of-function mutations in TDO2 (Familial hypertryptophanemia) and HAAO (Vertebral, cardiac, renal, and limb defects syndrome 1) both impair tryptophan metabolism, leading to distinct but related downstream phenotypic consequences.",
+      "falsification": {
+        "text": "The discovery of a patient with familial hypertryptophanemia and normal tryptophan metabolism, or a patient with VCRLD syndrome with no identifiable mutation in HAAO or evidence of tryptophan metabolic dysfunction, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in the GnomAD database associated with loss-of-function in TDO2 or HAAO that do not segregate with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71240"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71240": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0060554",
+        "diseaseBName": "vertebral, cardiac, renal, and limb defects syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71240"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71240": 14
+        },
+        "fitness": 0.4292,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Tryptophan 2,3-dioxygenase (HGNC:11441) —DECREASES→ Tryptophan (CHEBI:17497); Tryptophan (CHEBI:17497) —DISRUPTS→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Familial hypertryptophanemia (MONDO:0010907); 3-hydroxyanthranilate 3,4-dioxygenase (HGNC:4798) —DECREASES→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Vertebral, cardiac, renal, and limb defects syndrome 1 (MONDO:0060554). Loss-of-function mutations in TDO2 (Familial hypertryptophanemia) and HAAO (Vertebral, cardiac, renal, and limb defects syndrome 1) both impair tryptophan metabolism, leading to distinct but related downstream phenotypic consequences.",
+        "falsification": {
+          "text": "The discovery of a patient with familial hypertryptophanemia and normal tryptophan metabolism, or a patient with VCRLD syndrome with no identifiable mutation in HAAO or evidence of tryptophan metabolic dysfunction, would falsify this hypothesis.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in the GnomAD database associated with loss-of-function in TDO2 or HAAO that do not segregate with either phenotype."
+        },
+        "translational": "Understanding the shared pathway of tryptophan metabolism could reveal common therapeutic targets or biomarkers for these seemingly disparate conditions. Modulating tryptophan levels or downstream metabolites might offer a unified approach to treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009372",
+      "diseaseBName": "encephalopathy due to hydroxykynureninuria",
+      "fitness": 0.4156,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TDO2 (HGNC:11743) —DISRUPTS→ Tryptophan (CHEBI:17703); Tryptophan (CHEBI:17703) —LEADS_TO→ Kynurenine pathway (REACT:R-HSA-1916714); Kynurenine pathway (REACT:R-HSA-1916714) —PRODUCES→ Kynurenine (CHEBI:17511); Kynurenine (CHEBI:17511) —LEADS_TO→ KYNU (HGNC:6474); KYNU (HGNC:6474) —DISRUPTS→ Hydroxykynurenine (CHEBI:17512); Hydroxykynurenine (CHEBI:17512) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function in TDO2 leads to hypertryptophanemia. Tryptophan is a precursor in the kynurenine pathway. Mutations in KYNU lead to hydroxykynureninuria, an accumulation of hydroxykynurenine and potentially upstream metabolites like kynurenine, which can contribute to neurotoxicity and encephalopathy. Both diseases converge on disruptions within the kynurenine pathway and its downstream metabolic products, impacting neurological function.",
+      "mechanism_narrative": "TDO2 (HGNC:11743) —DISRUPTS→ Tryptophan (CHEBI:17703); Tryptophan (CHEBI:17703) —LEADS_TO→ Kynurenine pathway (REACT:R-HSA-1916714); Kynurenine pathway (REACT:R-HSA-1916714) —PRODUCES→ Kynurenine (CHEBI:17511); Kynurenine (CHEBI:17511) —LEADS_TO→ KYNU (HGNC:6474); KYNU (HGNC:6474) —DISRUPTS→ Hydroxykynurenine (CHEBI:17512); Hydroxykynurenine (CHEBI:17512) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function in TDO2 leads to hypertryptophanemia. Tryptophan is a precursor in the kynurenine pathway. Mutations in KYNU lead to hydroxykynureninuria, an accumulation of hydroxykynurenine and potentially upstream metabolites like kynurenine, which can contribute to neurotoxicity and encephalopathy. Both diseases converge on disruptions within the kynurenine pathway and its downstream metabolic products, impacting neurological function.",
+      "falsification": {
+        "text": "Demonstration that mutations in TDO2 do not lead to increased tryptophan levels or that mutations in KYNU do not lead to accumulation of hydroxykynurenine or related neurotoxic metabolites.",
+        "gnomad_variant": "Identification of common variants (AF > 1%) in gnomAD in the coding regions of TDO2 and KYNU that are associated with either familial hypertryptophanemia or encephalopathy due to hydroxykynureninuria, respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71240"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71240": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009372",
+        "diseaseBName": "encephalopathy due to hydroxykynureninuria",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71240"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71240": 14
+        },
+        "fitness": 0.4156,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TDO2 (HGNC:11743) —DISRUPTS→ Tryptophan (CHEBI:17703); Tryptophan (CHEBI:17703) —LEADS_TO→ Kynurenine pathway (REACT:R-HSA-1916714); Kynurenine pathway (REACT:R-HSA-1916714) —PRODUCES→ Kynurenine (CHEBI:17511); Kynurenine (CHEBI:17511) —LEADS_TO→ KYNU (HGNC:6474); KYNU (HGNC:6474) —DISRUPTS→ Hydroxykynurenine (CHEBI:17512); Hydroxykynurenine (CHEBI:17512) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function in TDO2 leads to hypertryptophanemia. Tryptophan is a precursor in the kynurenine pathway. Mutations in KYNU lead to hydroxykynureninuria, an accumulation of hydroxykynurenine and potentially upstream metabolites like kynurenine, which can contribute to neurotoxicity and encephalopathy. Both diseases converge on disruptions within the kynurenine pathway and its downstream metabolic products, impacting neurological function.",
+        "falsification": {
+          "text": "Demonstration that mutations in TDO2 do not lead to increased tryptophan levels or that mutations in KYNU do not lead to accumulation of hydroxykynurenine or related neurotoxic metabolites.",
+          "gnomad_variant": "Identification of common variants (AF > 1%) in gnomAD in the coding regions of TDO2 and KYNU that are associated with either familial hypertryptophanemia or encephalopathy due to hydroxykynureninuria, respectively."
+        },
+        "translational": "Understanding the shared metabolic pathway disruption in the kynurenine pathway for both familial hypertryptophanemia and encephalopathy due to hydroxykynureninuria could reveal common therapeutic targets for managing neurotoxicity, potentially involving modulation of tryptophan metabolism or kynurenine pathway intermediates."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0060555",
+      "diseaseBName": "vertebral, cardiac, renal, and limb defects syndrome 2",
+      "fitness": 0.3802,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan (CHEBI:17001); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Kynurenine (CHEBI:17000); Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Tryptophan (CHEBI:17001) —LEADS_TO→ Hypertryptophanemia (HP:0030128); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Vertebral defects (HP:0000925); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Cardiac defects (HP:0001627); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Renal defects (HP:0000077); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Limb defects (HP:0001157). Loss-of-function mutations in either TDO2 or KYNU disrupt tryptophan metabolism. TDO2's primary role is to initiate the catabolism of tryptophan to N-formylkynurenine. KYNU further processes kynurenine. Dysregulation of tryptophan metabolism, particularly the accumulation of tryptophan or its metabolites, can have pleiotropic effects. In familial hypertryptophanemia, this leads to elevated tryptophan levels. For VBCR syndrome 2, the disruption in tryptophan metabolism, potentially through effects on kynurenine or downstream signaling molecules, could contribute to the observed vertebral, cardiac, renal, and limb defects, suggesting a shared pathway disruption.",
+      "mechanism_narrative": "Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan (CHEBI:17001); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Kynurenine (CHEBI:17000); Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Tryptophan (CHEBI:17001) —LEADS_TO→ Hypertryptophanemia (HP:0030128); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Vertebral defects (HP:0000925); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Cardiac defects (HP:0001627); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Renal defects (HP:0000077); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Limb defects (HP:0001157). Loss-of-function mutations in either TDO2 or KYNU disrupt tryptophan metabolism. TDO2's primary role is to initiate the catabolism of tryptophan to N-formylkynurenine. KYNU further processes kynurenine. Dysregulation of tryptophan metabolism, particularly the accumulation of tryptophan or its metabolites, can have pleiotropic effects. In familial hypertryptophanemia, this leads to elevated tryptophan levels. For VBCR syndrome 2, the disruption in tryptophan metabolism, potentially through effects on kynurenine or downstream signaling molecules, could contribute to the observed vertebral, cardiac, renal, and limb defects, suggesting a shared pathway disruption.",
+      "falsification": {
+        "text": "Absence of loss-of-function variants in TDO2 or KYNU in individuals with familial hypertryptophanemia and VBCR syndrome 2, or identification of distinct, unrelated molecular mechanisms for each disease.",
+        "gnomad_variant": "Exclusion of pathogenic variants in TDO2 and KYNU in gnomAD with allele frequency > 0.01 for familial hypertryptophanemia and VBCR syndrome 2 respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-71240"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-71240": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0060555",
+        "diseaseBName": "vertebral, cardiac, renal, and limb defects syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-71240"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-71240": 14
+        },
+        "fitness": 0.3802,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan (CHEBI:17001); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Kynurenine (CHEBI:17000); Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Tryptophan (CHEBI:17001) —LEADS_TO→ Hypertryptophanemia (HP:0030128); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Vertebral defects (HP:0000925); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Cardiac defects (HP:0001627); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Renal defects (HP:0000077); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Limb defects (HP:0001157). Loss-of-function mutations in either TDO2 or KYNU disrupt tryptophan metabolism. TDO2's primary role is to initiate the catabolism of tryptophan to N-formylkynurenine. KYNU further processes kynurenine. Dysregulation of tryptophan metabolism, particularly the accumulation of tryptophan or its metabolites, can have pleiotropic effects. In familial hypertryptophanemia, this leads to elevated tryptophan levels. For VBCR syndrome 2, the disruption in tryptophan metabolism, potentially through effects on kynurenine or downstream signaling molecules, could contribute to the observed vertebral, cardiac, renal, and limb defects, suggesting a shared pathway disruption.",
+        "falsification": {
+          "text": "Absence of loss-of-function variants in TDO2 or KYNU in individuals with familial hypertryptophanemia and VBCR syndrome 2, or identification of distinct, unrelated molecular mechanisms for each disease.",
+          "gnomad_variant": "Exclusion of pathogenic variants in TDO2 and KYNU in gnomAD with allele frequency > 0.01 for familial hypertryptophanemia and VBCR syndrome 2 respectively."
+        },
+        "translational": "Understanding the shared role of TDO2 and KYNU in tryptophan metabolism could reveal common therapeutic targets or strategies for managing both familial hypertryptophanemia and VBCR syndrome 2, potentially involving modulation of tryptophan levels or downstream pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T23:34:34.574Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** familial hypertryptophanemia (MONDO:0010907)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | vertebral, cardiac, renal, and limb defects syndrome 1 (MONDO:0060554) | shared pathway | Tier 3 | 0.429 | Reactome:R-HSA-71240 |\n| 2 | encephalopathy due to hydroxykynureninuria (MONDO:0009372) | shared pathway | Tier 3 | 0.416 | Reactome:R-HSA-71240 |\n| 3 | vertebral, cardiac, renal, and limb defects syndrome 2 (MONDO:0060555) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-71240 |\n\n### CANDIDATE DETAIL\n#### 1. vertebral, cardiac, renal, and limb defects syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.429)\n**Link type:** shared pathway (Reactome:R-HSA-71240)\n\n**Proposed mechanism:** Tryptophan 2,3-dioxygenase (HGNC:11441) —DECREASES→ Tryptophan (CHEBI:17497); Tryptophan (CHEBI:17497) —DISRUPTS→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Familial hypertryptophanemia (MONDO:0010907); 3-hydroxyanthranilate 3,4-dioxygenase (HGNC:4798) —DECREASES→ Tryptophan metabolism (GO:0006568); Tryptophan metabolism (GO:0006568) —LEADS_TO→ Vertebral, cardiac, renal, and limb defects syndrome 1 (MONDO:0060554). Loss-of-function mutations in TDO2 (Familial hypertryptophanemia) and HAAO (Vertebral, cardiac, renal, and limb defects syndrome 1) both impair tryptophan metabolism, leading to distinct but related downstream phenotypic consequences.\n\n**How to falsify it:** The discovery of a patient with familial hypertryptophanemia and normal tryptophan metabolism, or a patient with VCRLD syndrome with no identifiable mutation in HAAO or evidence of tryptophan metabolic dysfunction, would falsify this hypothesis. _(variant: The presence of common variants (AF > 0.01) in the GnomAD database associated with loss-of-function in TDO2 or HAAO that do not segregate with either phenotype.)_\n\n**Why it matters:** Understanding the shared pathway of tryptophan metabolism could reveal common therapeutic targets or biomarkers for these seemingly disparate conditions. Modulating tryptophan levels or downstream metabolites might offer a unified approach to treatment.\n\n---\n\n#### 2. encephalopathy due to hydroxykynureninuria  —  Tier 3 — Moderate / Emerging  (fitness 0.416)\n**Link type:** shared pathway (Reactome:R-HSA-71240)\n\n**Proposed mechanism:** TDO2 (HGNC:11743) —DISRUPTS→ Tryptophan (CHEBI:17703); Tryptophan (CHEBI:17703) —LEADS_TO→ Kynurenine pathway (REACT:R-HSA-1916714); Kynurenine pathway (REACT:R-HSA-1916714) —PRODUCES→ Kynurenine (CHEBI:17511); Kynurenine (CHEBI:17511) —LEADS_TO→ KYNU (HGNC:6474); KYNU (HGNC:6474) —DISRUPTS→ Hydroxykynurenine (CHEBI:17512); Hydroxykynurenine (CHEBI:17512) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Encephalopathy (HP:0001295); Kynurenine (CHEBI:17511) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function in TDO2 leads to hypertryptophanemia. Tryptophan is a precursor in the kynurenine pathway. Mutations in KYNU lead to hydroxykynureninuria, an accumulation of hydroxykynurenine and potentially upstream metabolites like kynurenine, which can contribute to neurotoxicity and encephalopathy. Both diseases converge on disruptions within the kynurenine pathway and its downstream metabolic products, impacting neurological function.\n\n**How to falsify it:** Demonstration that mutations in TDO2 do not lead to increased tryptophan levels or that mutations in KYNU do not lead to accumulation of hydroxykynurenine or related neurotoxic metabolites. _(variant: Identification of common variants (AF > 1%) in gnomAD in the coding regions of TDO2 and KYNU that are associated with either familial hypertryptophanemia or encephalopathy due to hydroxykynureninuria, respectively.)_\n\n**Why it matters:** Understanding the shared metabolic pathway disruption in the kynurenine pathway for both familial hypertryptophanemia and encephalopathy due to hydroxykynureninuria could reveal common therapeutic targets for managing neurotoxicity, potentially involving modulation of tryptophan metabolism or kynurenine pathway intermediates.\n\n---\n\n#### 3. vertebral, cardiac, renal, and limb defects syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-71240)\n\n**Proposed mechanism:** Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan (CHEBI:17001); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Kynurenine (CHEBI:17000); Tryptophan 2,3-dioxygenase (TDO2) (HGNC:11800) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Kynureninase (KYNU) (HGNC:6479) —DISRUPTS→ Tryptophan metabolism (REACT:R-HSA-1908787); Tryptophan (CHEBI:17001) —LEADS_TO→ Hypertryptophanemia (HP:0030128); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Vertebral defects (HP:0000925); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Cardiac defects (HP:0001627); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Renal defects (HP:0000077); Tryptophan metabolism (REACT:R-HSA-1908787) —LEADS_TO→ Limb defects (HP:0001157). Loss-of-function mutations in either TDO2 or KYNU disrupt tryptophan metabolism. TDO2's primary role is to initiate the catabolism of tryptophan to N-formylkynurenine. KYNU further processes kynurenine. Dysregulation of tryptophan metabolism, particularly the accumulation of tryptophan or its metabolites, can have pleiotropic effects. In familial hypertryptophanemia, this leads to elevated tryptophan levels. For VBCR syndrome 2, the disruption in tryptophan metabolism, potentially through effects on kynurenine or downstream signaling molecules, could contribute to the observed vertebral, cardiac, renal, and limb defects, suggesting a shared pathway disruption.\n\n**How to falsify it:** Absence of loss-of-function variants in TDO2 or KYNU in individuals with familial hypertryptophanemia and VBCR syndrome 2, or identification of distinct, unrelated molecular mechanisms for each disease. _(variant: Exclusion of pathogenic variants in TDO2 and KYNU in gnomAD with allele frequency > 0.01 for familial hypertryptophanemia and VBCR syndrome 2 respectively.)_\n\n**Why it matters:** Understanding the shared role of TDO2 and KYNU in tryptophan metabolism could reveal common therapeutic targets or strategies for managing both familial hypertryptophanemia and VBCR syndrome 2, potentially involving modulation of tryptophan levels or downstream pathways.\n\n---"
+}

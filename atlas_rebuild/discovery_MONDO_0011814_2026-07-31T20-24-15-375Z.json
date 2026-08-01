@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0011814",
+    "name": "MONDO:0011814"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0009130",
+      "diseaseBName": "Dyggve-Melchior-Clausen disease",
+      "fitness": 0.733,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "DYM (HGNC:21317) —DISRUPTS→ Lysosomal protein degradation (GO:0000422); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in DYM disrupt lysosomal protein degradation, leading to a shared pathway dysfunction that manifests as skeletal dysplasia and abnormal facial shape in both diseases.",
+      "mechanism_narrative": "DYM (HGNC:21317) —DISRUPTS→ Lysosomal protein degradation (GO:0000422); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in DYM disrupt lysosomal protein degradation, leading to a shared pathway dysfunction that manifests as skeletal dysplasia and abnormal facial shape in both diseases.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in DYM with a gain-of-function mechanism in either disease, or the demonstration that the causal variants for each disease affect entirely distinct cellular processes not related to lysosomal protein degradation.",
+        "gnomad_variant": "rs743419227"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:21317"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0009130",
+        "diseaseBName": "Dyggve-Melchior-Clausen disease",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:21317"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.733,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "DYM (HGNC:21317) —DISRUPTS→ Lysosomal protein degradation (GO:0000422); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in DYM disrupt lysosomal protein degradation, leading to a shared pathway dysfunction that manifests as skeletal dysplasia and abnormal facial shape in both diseases.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in DYM with a gain-of-function mechanism in either disease, or the demonstration that the causal variants for each disease affect entirely distinct cellular processes not related to lysosomal protein degradation.",
+          "gnomad_variant": "rs743419227"
+        },
+        "translational": "Understanding the shared mechanism of lysosomal protein degradation disruption in DYM-related disorders could lead to therapeutic strategies targeting this pathway for both disease A and Dyggve-Melchior-Clausen disease."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:24:15.375Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0011814 (MONDO:0011814)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Dyggve-Melchior-Clausen disease (MONDO:0009130) | shared gene | Tier 1 | 0.733 | HGNC:21317 |\n\n### CANDIDATE DETAIL\n#### 1. Dyggve-Melchior-Clausen disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.733)\n**Link type:** shared causal gene (HGNC:21317)\n\n**Proposed mechanism:** DYM (HGNC:21317) —DISRUPTS→ Lysosomal protein degradation (GO:0000422); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Skeletal dysplasia (HP:0004325); Lysosomal protein degradation (GO:0000422) —LEADS_TO→ Abnormal facial shape (HP:0001999). Loss-of-function mutations in DYM disrupt lysosomal protein degradation, leading to a shared pathway dysfunction that manifests as skeletal dysplasia and abnormal facial shape in both diseases.\n\n**How to falsify it:** The identification of pathogenic variants in DYM with a gain-of-function mechanism in either disease, or the demonstration that the causal variants for each disease affect entirely distinct cellular processes not related to lysosomal protein degradation. _(variant: rs743419227)_\n\n**Why it matters:** Understanding the shared mechanism of lysosomal protein degradation disruption in DYM-related disorders could lead to therapeutic strategies targeting this pathway for both disease A and Dyggve-Melchior-Clausen disease.\n\n---"
+}

@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0009724",
+    "name": "MONDO:0009724"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008061",
+      "diseaseBName": "nail-patella syndrome",
+      "fitness": 0.77,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "LMX1B (HGNC:6654) —DISRUPTS→ LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal skeletal development (HP:0000960); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal patella morphology (HP:0002775). Mutations in LMX1B lead to haploinsufficiency, disrupting its role in transcriptional regulation, which in turn affects skeletal and patellar development, causing the phenotypes observed in both diseases.",
+      "mechanism_narrative": "LMX1B (HGNC:6654) —DISRUPTS→ LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal skeletal development (HP:0000960); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal patella morphology (HP:0002775). Mutations in LMX1B lead to haploinsufficiency, disrupting its role in transcriptional regulation, which in turn affects skeletal and patellar development, causing the phenotypes observed in both diseases.",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in LMX1B are exclusively associated with one disease and not the other, or that the functional consequence of LMX1B mutations differs between the two diseases (e.g., loss-of-function in one and gain-of-function in the other).",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:6654"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008061",
+        "diseaseBName": "nail-patella syndrome",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:6654"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.77,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "LMX1B (HGNC:6654) —DISRUPTS→ LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal skeletal development (HP:0000960); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal patella morphology (HP:0002775). Mutations in LMX1B lead to haploinsufficiency, disrupting its role in transcriptional regulation, which in turn affects skeletal and patellar development, causing the phenotypes observed in both diseases.",
+        "falsification": {
+          "text": "Demonstration that pathogenic variants in LMX1B are exclusively associated with one disease and not the other, or that the functional consequence of LMX1B mutations differs between the two diseases (e.g., loss-of-function in one and gain-of-function in the other).",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared genetic basis of these conditions can inform the development of targeted therapies that aim to restore LMX1B function or downstream pathways, potentially benefiting patients with either disease."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:48:01.472Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0009724 (MONDO:0009724)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | nail-patella syndrome (MONDO:0008061) | shared gene | Tier 1 | 0.770 | HGNC:6654 |\n\n### CANDIDATE DETAIL\n#### 1. nail-patella syndrome  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.770)\n**Link type:** shared causal gene (HGNC:6654)\n\n**Proposed mechanism:** LMX1B (HGNC:6654) —DISRUPTS→ LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal skeletal development (HP:0000960); LMX1B-mediated transcriptional regulation of skeletal and limb development (GO:0000987) —LEADS_TO→ Abnormal patella morphology (HP:0002775). Mutations in LMX1B lead to haploinsufficiency, disrupting its role in transcriptional regulation, which in turn affects skeletal and patellar development, causing the phenotypes observed in both diseases.\n\n**How to falsify it:** Demonstration that pathogenic variants in LMX1B are exclusively associated with one disease and not the other, or that the functional consequence of LMX1B mutations differs between the two diseases (e.g., loss-of-function in one and gain-of-function in the other). _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared genetic basis of these conditions can inform the development of targeted therapies that aim to restore LMX1B function or downstream pathways, potentially benefiting patients with either disease.\n\n---"
+}

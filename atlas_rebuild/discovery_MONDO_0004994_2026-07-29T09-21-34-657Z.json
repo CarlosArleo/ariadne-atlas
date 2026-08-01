@@ -1,0 +1,247 @@
+{
+  "seed": {
+    "id": "MONDO:0004994",
+    "name": "cardiomyopathy"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 15,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014667",
+      "diseaseBName": "cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3",
+      "fitness": 0.6976,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "Pathogenic variants in COA5 (HGNC:33848) —DISRUPTS→ COA5 (HGNC:33848); COA5 (HGNC:33848) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly (GO:0005747); Mitochondrial electron transport chain complex IV assembly (GO:0005747) —DECREASES→ ATP production (CHEBI:15378); ATP production (CHEBI:15378) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP production (CHEBI:15378) —LEADS_TO→ Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3 (MONDO:0014667). Loss-of-function variants in COA5 disrupt the assembly of mitochondrial electron transport chain complex IV, leading to reduced ATP production, which manifests as cardiomyopathy in disease A and fatal infantile cardioencephalomyopathy in disease B.",
+      "mechanism_narrative": "Pathogenic variants in COA5 (HGNC:33848) —DISRUPTS→ COA5 (HGNC:33848); COA5 (HGNC:33848) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly (GO:0005747); Mitochondrial electron transport chain complex IV assembly (GO:0005747) —DECREASES→ ATP production (CHEBI:15378); ATP production (CHEBI:15378) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP production (CHEBI:15378) —LEADS_TO→ Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3 (MONDO:0014667). Loss-of-function variants in COA5 disrupt the assembly of mitochondrial electron transport chain complex IV, leading to reduced ATP production, which manifests as cardiomyopathy in disease A and fatal infantile cardioencephalomyopathy in disease B.",
+      "falsification": {
+        "text": "The presence of a homozygous or compound heterozygous pathogenic variant in COA5 (HGNC:33848) in individuals with cardiomyopathy (MONDO:0004994) but without the specific neurological and infantile lethality features of MONDO:0014667, or conversely, individuals with MONDO:0014667 but lacking overt cardiomyopathy, would challenge this direct mechanistic link.",
+        "gnomad_variant": "Exome Variant Server (ExAC/gnomAD) data showing a high frequency (e.g., >0.1%) of pathogenic variants in COA5 in the general population would also falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014667",
+        "diseaseBName": "cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "fitness": 0.6976,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variants in COA5 (HGNC:33848) —DISRUPTS→ COA5 (HGNC:33848); COA5 (HGNC:33848) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly (GO:0005747); Mitochondrial electron transport chain complex IV assembly (GO:0005747) —DECREASES→ ATP production (CHEBI:15378); ATP production (CHEBI:15378) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP production (CHEBI:15378) —LEADS_TO→ Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3 (MONDO:0014667). Loss-of-function variants in COA5 disrupt the assembly of mitochondrial electron transport chain complex IV, leading to reduced ATP production, which manifests as cardiomyopathy in disease A and fatal infantile cardioencephalomyopathy in disease B.",
+        "falsification": {
+          "text": "The presence of a homozygous or compound heterozygous pathogenic variant in COA5 (HGNC:33848) in individuals with cardiomyopathy (MONDO:0004994) but without the specific neurological and infantile lethality features of MONDO:0014667, or conversely, individuals with MONDO:0014667 but lacking overt cardiomyopathy, would challenge this direct mechanistic link.",
+          "gnomad_variant": "Exome Variant Server (ExAC/gnomAD) data showing a high frequency (e.g., >0.1%) of pathogenic variants in COA5 in the general population would also falsify this hypothesis."
+        },
+        "translational": "Targeting mitochondrial function or pathways involved in cytochrome c oxidase assembly could offer therapeutic avenues for both diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859567",
+      "diseaseBName": "craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2",
+      "fitness": 0.5349,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gain-of-function variant in MAP2K1 (HGNC:6842) —DISRUPTS→ MAP2K1 (HGNC:6842); MAP2K1 (HGNC:6842) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Cardiomyopathy (HP:0001638); Gain-of-function variant in SOS1 (HGNC:11053) —DISRUPTS→ SOS1 (HGNC:11053); SOS1 (HGNC:11053) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Craniofacial dysmorphism (HP:0000252); RAS signaling pathway (WP:WP510) —LEADS_TO→ Skeletal anomalies (HP:0000924); RAS signaling pathway (WP:WP510) —LEADS_TO→ Impaired intellectual development (HP:0001249). Gain-of-function mutations in genes like MAP2K1 (MEK1) and SOS1, which are components of the RAS signaling pathway, lead to its aberrant activation. This overactivation impacts cellular processes critical for both cardiac development and function (leading to cardiomyopathy) and embryonic development, affecting craniofacial, skeletal, and neurological systems (leading to craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development).",
+      "mechanism_narrative": "Gain-of-function variant in MAP2K1 (HGNC:6842) —DISRUPTS→ MAP2K1 (HGNC:6842); MAP2K1 (HGNC:6842) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Cardiomyopathy (HP:0001638); Gain-of-function variant in SOS1 (HGNC:11053) —DISRUPTS→ SOS1 (HGNC:11053); SOS1 (HGNC:11053) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Craniofacial dysmorphism (HP:0000252); RAS signaling pathway (WP:WP510) —LEADS_TO→ Skeletal anomalies (HP:0000924); RAS signaling pathway (WP:WP510) —LEADS_TO→ Impaired intellectual development (HP:0001249). Gain-of-function mutations in genes like MAP2K1 (MEK1) and SOS1, which are components of the RAS signaling pathway, lead to its aberrant activation. This overactivation impacts cellular processes critical for both cardiac development and function (leading to cardiomyopathy) and embryonic development, affecting craniofacial, skeletal, and neurological systems (leading to craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development).",
+      "falsification": {
+        "text": "The identification of exclusive loss-of-function mutations in the causal genes for each disease, or the demonstration that the RAS signaling pathway is not activated in affected tissues of either disease, would falsify this hypothesis.",
+        "gnomad_variant": "Presence of a common benign variant in the HGNC genes (e.g., MAP2K1, SOS1) in gnomAD with allele frequency > 1% would weaken the hypothesis for that specific gene, but not the overall pathway convergence if other related genes are affected."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9864848": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859567",
+        "diseaseBName": "craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9864848": 48
+        },
+        "fitness": 0.5349,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function variant in MAP2K1 (HGNC:6842) —DISRUPTS→ MAP2K1 (HGNC:6842); MAP2K1 (HGNC:6842) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Cardiomyopathy (HP:0001638); Gain-of-function variant in SOS1 (HGNC:11053) —DISRUPTS→ SOS1 (HGNC:11053); SOS1 (HGNC:11053) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Craniofacial dysmorphism (HP:0000252); RAS signaling pathway (WP:WP510) —LEADS_TO→ Skeletal anomalies (HP:0000924); RAS signaling pathway (WP:WP510) —LEADS_TO→ Impaired intellectual development (HP:0001249). Gain-of-function mutations in genes like MAP2K1 (MEK1) and SOS1, which are components of the RAS signaling pathway, lead to its aberrant activation. This overactivation impacts cellular processes critical for both cardiac development and function (leading to cardiomyopathy) and embryonic development, affecting craniofacial, skeletal, and neurological systems (leading to craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development).",
+        "falsification": {
+          "text": "The identification of exclusive loss-of-function mutations in the causal genes for each disease, or the demonstration that the RAS signaling pathway is not activated in affected tissues of either disease, would falsify this hypothesis.",
+          "gnomad_variant": "Presence of a common benign variant in the HGNC genes (e.g., MAP2K1, SOS1) in gnomAD with allele frequency > 1% would weaken the hypothesis for that specific gene, but not the overall pathway convergence if other related genes are affected."
+        },
+        "translational": "Targeting the RAS signaling pathway, which is implicated in both cancer and developmental disorders, could offer therapeutic avenues for both cardiomyopathy and syndromic developmental disorders. Inhibitors of MEK (like trametinib) or other RAS pathway components might be explored, although careful consideration of developmental effects would be paramount."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012992",
+      "diseaseBName": "pancreatic insufficiency-anemia-hyperostosis syndrome",
+      "fitness": 0.447,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TAFAZZIN (HGNC:11429) —DISRUPTS→ Cardiolipin biosynthesis (GO:0006636); Cardiolipin biosynthesis (GO:0006636) —DECREASES→ Mitochondrial function (GO:0005759); Mitochondrial function (GO:0005759) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); Mitochondrial function (GO:0005759) —LEADS_TO→ Pancreatic insufficiency-anemia-hyperostosis syndrome (MONDO:0012992). Loss-of-function mutations in TAFAZZIN disrupt cardiolipin biosynthesis, leading to impaired mitochondrial function. This mitochondrial dysfunction manifests as cardiomyopathy in disease A and contributes to the complex phenotype of pancreatic insufficiency-anemia-hyperostosis syndrome in disease B.",
+      "mechanism_narrative": "TAFAZZIN (HGNC:11429) —DISRUPTS→ Cardiolipin biosynthesis (GO:0006636); Cardiolipin biosynthesis (GO:0006636) —DECREASES→ Mitochondrial function (GO:0005759); Mitochondrial function (GO:0005759) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); Mitochondrial function (GO:0005759) —LEADS_TO→ Pancreatic insufficiency-anemia-hyperostosis syndrome (MONDO:0012992). Loss-of-function mutations in TAFAZZIN disrupt cardiolipin biosynthesis, leading to impaired mitochondrial function. This mitochondrial dysfunction manifests as cardiomyopathy in disease A and contributes to the complex phenotype of pancreatic insufficiency-anemia-hyperostosis syndrome in disease B.",
+      "falsification": {
+        "text": "Demonstration that mutations in TAFAZZIN do not impair cardiolipin biosynthesis or that mitochondrial function is unaffected in patients with either disease.",
+        "gnomad_variant": "rs375181007"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9864848": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012992",
+        "diseaseBName": "pancreatic insufficiency-anemia-hyperostosis syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9864848": 48
+        },
+        "fitness": 0.447,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TAFAZZIN (HGNC:11429) —DISRUPTS→ Cardiolipin biosynthesis (GO:0006636); Cardiolipin biosynthesis (GO:0006636) —DECREASES→ Mitochondrial function (GO:0005759); Mitochondrial function (GO:0005759) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); Mitochondrial function (GO:0005759) —LEADS_TO→ Pancreatic insufficiency-anemia-hyperostosis syndrome (MONDO:0012992). Loss-of-function mutations in TAFAZZIN disrupt cardiolipin biosynthesis, leading to impaired mitochondrial function. This mitochondrial dysfunction manifests as cardiomyopathy in disease A and contributes to the complex phenotype of pancreatic insufficiency-anemia-hyperostosis syndrome in disease B.",
+        "falsification": {
+          "text": "Demonstration that mutations in TAFAZZIN do not impair cardiolipin biosynthesis or that mitochondrial function is unaffected in patients with either disease.",
+          "gnomad_variant": "rs375181007"
+        },
+        "translational": "Targeting cardiolipin biosynthesis or downstream mitochondrial function could offer therapeutic strategies for both cardiomyopathy and pancreatic insufficiency-anemia-hyperostosis syndrome."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859160",
+      "diseaseBName": "mitochondrial complex IV deficiency, nuclear type 22",
+      "fitness": 0.4325,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Nuclear genes encoding Cytochrome c oxidase subunits or assembly factors (HGNC:25634) —DISRUPTS→ Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746); Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746) —DECREASES→ ATP production (GO:0006074); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638); Cardiomyopathy-associated gene (e.g., TTN, MYH7, LMNA) (HGNC:11989) —DISRUPTS→ Cardiac muscle structure and function maintenance (GO:0003001); Cardiac muscle structure and function maintenance (GO:0003001) —DECREASES→ Impaired cardiac function (HP:0001638); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638). Deficiency in mitochondrial complex IV impairs ATP production, leading to energy deficit in high-energy demanding tissues like the heart, causing cardiomyopathy. Concurrently, mutations in various cardiomyopathy-associated genes disrupt cardiac muscle structure and function, also leading to impaired cardiac function. Both pathways converge on the consequence of impaired cardiac function due to energy deficit and structural abnormalities.",
+      "mechanism_narrative": "Nuclear genes encoding Cytochrome c oxidase subunits or assembly factors (HGNC:25634) —DISRUPTS→ Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746); Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746) —DECREASES→ ATP production (GO:0006074); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638); Cardiomyopathy-associated gene (e.g., TTN, MYH7, LMNA) (HGNC:11989) —DISRUPTS→ Cardiac muscle structure and function maintenance (GO:0003001); Cardiac muscle structure and function maintenance (GO:0003001) —DECREASES→ Impaired cardiac function (HP:0001638); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638). Deficiency in mitochondrial complex IV impairs ATP production, leading to energy deficit in high-energy demanding tissues like the heart, causing cardiomyopathy. Concurrently, mutations in various cardiomyopathy-associated genes disrupt cardiac muscle structure and function, also leading to impaired cardiac function. Both pathways converge on the consequence of impaired cardiac function due to energy deficit and structural abnormalities.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in a gene known to cause mitochondrial complex IV deficiency (e.g., mutations in nuclear-encoded subunits or assembly factors) that does not also lead to detectable cardiac dysfunction or cardiomyopathy.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9864848": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859160",
+        "diseaseBName": "mitochondrial complex IV deficiency, nuclear type 22",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9864848": 48
+        },
+        "fitness": 0.4325,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Nuclear genes encoding Cytochrome c oxidase subunits or assembly factors (HGNC:25634) —DISRUPTS→ Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746); Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746) —DECREASES→ ATP production (GO:0006074); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638); Cardiomyopathy-associated gene (e.g., TTN, MYH7, LMNA) (HGNC:11989) —DISRUPTS→ Cardiac muscle structure and function maintenance (GO:0003001); Cardiac muscle structure and function maintenance (GO:0003001) —DECREASES→ Impaired cardiac function (HP:0001638); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638). Deficiency in mitochondrial complex IV impairs ATP production, leading to energy deficit in high-energy demanding tissues like the heart, causing cardiomyopathy. Concurrently, mutations in various cardiomyopathy-associated genes disrupt cardiac muscle structure and function, also leading to impaired cardiac function. Both pathways converge on the consequence of impaired cardiac function due to energy deficit and structural abnormalities.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in a gene known to cause mitochondrial complex IV deficiency (e.g., mutations in nuclear-encoded subunits or assembly factors) that does not also lead to detectable cardiac dysfunction or cardiomyopathy.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding this overlap could identify novel therapeutic targets for cardiomyopathy by focusing on mitochondrial function enhancement or protecting cardiac cells from energy deprivation. Conversely, strategies to improve cardiac muscle integrity might benefit patients with mitochondrial disorders affecting the heart."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033636",
+      "diseaseBName": "mitochondrial complex IV deficiency, nuclear type 4",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "TAFAZZIN (HGNC:11576) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); TAFAZZIN (HGNC:11576) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); COA5 (HGNC:28184) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —LEADS_TO→ Mitochondrial complex IV deficiency, nuclear type 4 (MONDO:0033636); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —DECREASES→ ATP synthesis (GO:0006754); ATP synthesis (GO:0006754) —DECREASES→ Cardiomyopathy (MONDO:0004994). Mutations in TAFAZZIN (involved in cardiolipin biosynthesis, essential for mitochondrial function) can lead to cardiomyopathy. Similarly, mutations in COA5, a component of mitochondrial complex IV, directly impair complex IV assembly, leading to mitochondrial complex IV deficiency. Both disruptions converge on impaired mitochondrial respiratory chain function and reduced ATP synthesis, which can manifest as cardiomyopathy.",
+      "mechanism_narrative": "TAFAZZIN (HGNC:11576) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); TAFAZZIN (HGNC:11576) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); COA5 (HGNC:28184) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —LEADS_TO→ Mitochondrial complex IV deficiency, nuclear type 4 (MONDO:0033636); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —DECREASES→ ATP synthesis (GO:0006754); ATP synthesis (GO:0006754) —DECREASES→ Cardiomyopathy (MONDO:0004994). Mutations in TAFAZZIN (involved in cardiolipin biosynthesis, essential for mitochondrial function) can lead to cardiomyopathy. Similarly, mutations in COA5, a component of mitochondrial complex IV, directly impair complex IV assembly, leading to mitochondrial complex IV deficiency. Both disruptions converge on impaired mitochondrial respiratory chain function and reduced ATP synthesis, which can manifest as cardiomyopathy.",
+      "falsification": {
+        "text": "Demonstration that variants in TAFAZZIN (HGNC:11576) or COA5 (HGNC:28184) do not lead to reduced mitochondrial function or ATP production in cardiac tissue.",
+        "gnomad_variant": "rs142202099 (TAFAZZIN)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9864848": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033636",
+        "diseaseBName": "mitochondrial complex IV deficiency, nuclear type 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9864848": 48
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TAFAZZIN (HGNC:11576) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); TAFAZZIN (HGNC:11576) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); COA5 (HGNC:28184) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —LEADS_TO→ Mitochondrial complex IV deficiency, nuclear type 4 (MONDO:0033636); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —DECREASES→ ATP synthesis (GO:0006754); ATP synthesis (GO:0006754) —DECREASES→ Cardiomyopathy (MONDO:0004994). Mutations in TAFAZZIN (involved in cardiolipin biosynthesis, essential for mitochondrial function) can lead to cardiomyopathy. Similarly, mutations in COA5, a component of mitochondrial complex IV, directly impair complex IV assembly, leading to mitochondrial complex IV deficiency. Both disruptions converge on impaired mitochondrial respiratory chain function and reduced ATP synthesis, which can manifest as cardiomyopathy.",
+        "falsification": {
+          "text": "Demonstration that variants in TAFAZZIN (HGNC:11576) or COA5 (HGNC:28184) do not lead to reduced mitochondrial function or ATP production in cardiac tissue.",
+          "gnomad_variant": "rs142202099 (TAFAZZIN)"
+        },
+        "translational": "Understanding this overlap could lead to therapeutic strategies targeting mitochondrial function or energy metabolism for patients with certain types of cardiomyopathy, or conversely, highlight cardiac monitoring for patients with mitochondrial complex IV deficiencies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014733",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 4K",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "FLNC variant leading to cardiomyopathy (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Cardiac cytoskeletal integrity; Cardiac cytoskeletal integrity —LEADS_TO→ Cardiomyopathy (MONDO:0004994); FLNC variant leading to CMTD (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Neuronal cytoskeletal integrity; Neuronal cytoskeletal integrity —LEADS_TO→ Charcot-Marie-Tooth disease type 4K (MONDO:0014733). Mutations in the FLNC gene disrupt the integrity of the cytoskeleton in both cardiac and neuronal cells, leading to distinct but mechanistically related pathologies.",
+      "mechanism_narrative": "FLNC variant leading to cardiomyopathy (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Cardiac cytoskeletal integrity; Cardiac cytoskeletal integrity —LEADS_TO→ Cardiomyopathy (MONDO:0004994); FLNC variant leading to CMTD (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Neuronal cytoskeletal integrity; Neuronal cytoskeletal integrity —LEADS_TO→ Charcot-Marie-Tooth disease type 4K (MONDO:0014733). Mutations in the FLNC gene disrupt the integrity of the cytoskeleton in both cardiac and neuronal cells, leading to distinct but mechanistically related pathologies.",
+      "falsification": {
+        "text": "Identification of pathogenic FLNC variants with a gain-of-function mechanism in either disease would falsify this hypothesis of shared loss-of-function.",
+        "gnomad_variant": "rs751740"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9864848"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9864848": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014733",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 4K",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9864848"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9864848": 48
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FLNC variant leading to cardiomyopathy (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Cardiac cytoskeletal integrity; Cardiac cytoskeletal integrity —LEADS_TO→ Cardiomyopathy (MONDO:0004994); FLNC variant leading to CMTD (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Neuronal cytoskeletal integrity; Neuronal cytoskeletal integrity —LEADS_TO→ Charcot-Marie-Tooth disease type 4K (MONDO:0014733). Mutations in the FLNC gene disrupt the integrity of the cytoskeleton in both cardiac and neuronal cells, leading to distinct but mechanistically related pathologies.",
+        "falsification": {
+          "text": "Identification of pathogenic FLNC variants with a gain-of-function mechanism in either disease would falsify this hypothesis of shared loss-of-function.",
+          "gnomad_variant": "rs751740"
+        },
+        "translational": "Understanding the shared role of FLNC in cytoskeletal integrity could reveal common therapeutic targets for both cardiac and neurological degenerative disorders."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T09:21:34.657Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** cardiomyopathy (MONDO:0004994)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 15 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial disease (MONDO:0044970) | shared pathway | Tier 1 | 0.813 | Reactome:R-HSA-9864848 |\n| 2 | cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3 (MONDO:0014667) | shared pathway | Tier 2 | 0.698 | Reactome:R-HSA-9864848 |\n| 3 | craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2 (MONDO:0859567) | shared pathway | Tier 3 | 0.535 | Reactome:R-HSA-9864848 |\n| 4 | mitochondrial complex IV deficiency, nuclear type 10 (MONDO:0033639) | shared pathway | Tier 3 | 0.483 | Reactome:R-HSA-9864848 |\n| 5 | mitochondrial complex IV deficiency, nuclear type 8 (MONDO:0033638) | shared pathway | Tier 3 | 0.480 | Reactome:R-HSA-9864848 |\n| 6 | mitochondrial complex IV deficiency, nuclear type 1 (MONDO:0700250) | shared pathway | Tier 3 | 0.474 | Reactome:R-HSA-9864848 |\n| 7 | pancreatic insufficiency-anemia-hyperostosis syndrome (MONDO:0012992) | shared pathway | Tier 3 | 0.447 | Reactome:R-HSA-9864848 |\n| 8 | mitochondrial complex IV deficiency, nuclear type 22 (MONDO:0859160) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-9864848 |\n| 9 | mitochondrial complex IV deficiency, nuclear type 4 (MONDO:0033636) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9864848 |\n| 10 | Charcot-Marie-Tooth disease type 4K (MONDO:0014733) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-9864848 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.813)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** NDUFS4 (HGNC:7776) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032981); NDUFAF2 (HGNC:25588) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032981); Mitochondrial Complex I Assembly (GO:0032981) —LEADS_TO→ Cardiomyopathy (HP:0001638); Mitochondrial Complex I Assembly (GO:0032981) —LEADS_TO→ Mitochondrial disease (HP:0001254). Loss-of-function variants in NDUFS4 and NDUFAF2 disrupt the assembly of mitochondrial Complex I, leading to shared downstream manifestations in both cardiac tissue and broader systemic mitochondrial function.\n\n**How to falsify it:** The hypothesis would be refuted if phenotypic manifestations in these diseases were shown to be entirely independent of complex I assembly efficiency, or if cardiac tissue showed no significant reliance on the specific NDUF-dependent assembly module. _(variant: rs121918342)_\n\n**Why it matters:** Understanding the shared dependency on complex I assembly factors suggests potential therapeutic targets for mitigating cardiac progression in patients with primary mitochondrial disorders.\n\n---\n\n#### 2. cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3  —  Tier 2 — Strong / Probable  (fitness 0.698)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** Pathogenic variants in COA5 (HGNC:33848) —DISRUPTS→ COA5 (HGNC:33848); COA5 (HGNC:33848) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly (GO:0005747); Mitochondrial electron transport chain complex IV assembly (GO:0005747) —DECREASES→ ATP production (CHEBI:15378); ATP production (CHEBI:15378) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP production (CHEBI:15378) —LEADS_TO→ Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3 (MONDO:0014667). Loss-of-function variants in COA5 disrupt the assembly of mitochondrial electron transport chain complex IV, leading to reduced ATP production, which manifests as cardiomyopathy in disease A and fatal infantile cardioencephalomyopathy in disease B.\n\n**How to falsify it:** The presence of a homozygous or compound heterozygous pathogenic variant in COA5 (HGNC:33848) in individuals with cardiomyopathy (MONDO:0004994) but without the specific neurological and infantile lethality features of MONDO:0014667, or conversely, individuals with MONDO:0014667 but lacking overt cardiomyopathy, would challenge this direct mechanistic link. _(variant: Exome Variant Server (ExAC/gnomAD) data showing a high frequency (e.g., >0.1%) of pathogenic variants in COA5 in the general population would also falsify this hypothesis.)_\n\n**Why it matters:** Targeting mitochondrial function or pathways involved in cytochrome c oxidase assembly could offer therapeutic avenues for both diseases.\n\n---\n\n#### 3. craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.535)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** Gain-of-function variant in MAP2K1 (HGNC:6842) —DISRUPTS→ MAP2K1 (HGNC:6842); MAP2K1 (HGNC:6842) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Cardiomyopathy (HP:0001638); Gain-of-function variant in SOS1 (HGNC:11053) —DISRUPTS→ SOS1 (HGNC:11053); SOS1 (HGNC:11053) —INCREASES→ RAS signaling pathway (WP:WP510); RAS signaling pathway (WP:WP510) —LEADS_TO→ Craniofacial dysmorphism (HP:0000252); RAS signaling pathway (WP:WP510) —LEADS_TO→ Skeletal anomalies (HP:0000924); RAS signaling pathway (WP:WP510) —LEADS_TO→ Impaired intellectual development (HP:0001249). Gain-of-function mutations in genes like MAP2K1 (MEK1) and SOS1, which are components of the RAS signaling pathway, lead to its aberrant activation. This overactivation impacts cellular processes critical for both cardiac development and function (leading to cardiomyopathy) and embryonic development, affecting craniofacial, skeletal, and neurological systems (leading to craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development).\n\n**How to falsify it:** The identification of exclusive loss-of-function mutations in the causal genes for each disease, or the demonstration that the RAS signaling pathway is not activated in affected tissues of either disease, would falsify this hypothesis. _(variant: Presence of a common benign variant in the HGNC genes (e.g., MAP2K1, SOS1) in gnomAD with allele frequency > 1% would weaken the hypothesis for that specific gene, but not the overall pathway convergence if other related genes are affected.)_\n\n**Why it matters:** Targeting the RAS signaling pathway, which is implicated in both cancer and developmental disorders, could offer therapeutic avenues for both cardiomyopathy and syndromic developmental disorders. Inhibitors of MEK (like trametinib) or other RAS pathway components might be explored, although careful consideration of developmental effects would be paramount.\n\n---\n\n#### 4. mitochondrial complex IV deficiency, nuclear type 10  —  Tier 3 — Moderate / Emerging  (fitness 0.483)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** COX15 (HGNC:2953) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly and function (GO:0005751); TAFAZZIN (HGNC:11570) —DISRUPTS→ Mitochondrial electron transport chain complex IV assembly and function (GO:0005751); Mitochondrial electron transport chain complex IV assembly and function (GO:0005751) —DECREASES→ ATP synthesis (GO:0006073); ATP synthesis (GO:0006073) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); ATP synthesis (GO:0006073) —LEADS_TO→ Mitochondrial complex IV deficiency, nuclear type 10 (MONDO:0033639). Mutations in COX15 and TAFAZZIN disrupt the assembly and function of mitochondrial complex IV, leading to decreased ATP synthesis. This energy deficit impacts cardiac muscle function, causing cardiomyopathy, and is the direct cause of mitochondrial complex IV deficiency.\n\n**How to falsify it:** If genetic analysis reveals that the primary causal variants in patients with cardiomyopathy and mitochondrial complex IV deficiency affect entirely separate pathways with no overlap in mitochondrial function or ATP production, this hypothesis would be falsified. _(variant: rs121908200 (HGMD-ID: CM982930) in COX15, which is associated with mitochondrial complex IV deficiency, has a gnomAD allele frequency of 0.00001, not high enough to falsify.)_\n\n**Why it matters:** Understanding this overlap could lead to therapeutic strategies targeting energy metabolism or mitochondrial function to treat both cardiomyopathy and mitochondrial complex IV deficiency, potentially through small molecules that enhance ATP production or mitochondrial biogenesis.\n\n---\n\n#### 5. mitochondrial complex IV deficiency, nuclear type 8  —  Tier 3 — Moderate / Emerging  (fitness 0.480)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** COX15 (HGNC:2508) —DISRUPTS→ Mitochondrial respiratory chain complex IV (GO:0005746); Mitochondrial respiratory chain complex IV (GO:0005746) —DECREASES→ Oxidative phosphorylation (GO:0006119); Oxidative phosphorylation (GO:0006119) —DECREASES→ ATP production (HP:0004328); TTN (HGNC:11570) —DISRUPTS→ Cardiac function (HP:0011675); ATP production (HP:0004328) —DECREASES→ Cardiac function (HP:0011675). Loss-of-function mutations in COX15 disrupt mitochondrial complex IV assembly and function, leading to decreased oxidative phosphorylation and ATP production, which severely impacts cardiac function. Similarly, loss-of-function mutations in TTN, a major component of the sarcomere, directly disrupt cardiac function.\n\n**How to falsify it:** The absence of mutations in COX15 or TTN in patients presenting with these specific phenotypes, or the identification of distinct molecular pathways not involving mitochondrial function or cardiac structure, would falsify this hypothesis. _(variant: rs121912795)_\n\n**Why it matters:** Understanding the shared impact on mitochondrial energy production and cardiac function could lead to therapeutic strategies targeting metabolic support or improving cardiac resilience in patients with either condition.\n\n---\n\n#### 6. mitochondrial complex IV deficiency, nuclear type 1  —  Tier 3 — Moderate / Emerging  (fitness 0.474)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** SURF1 (HGNC:11473) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly and function; Mitochondrial respiratory chain complex IV assembly and function —LEADS_TO→ Mitochondrial complex IV deficiency (MONDO:0700250); LMNA (HGNC:6749) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly and function; LMNA (HGNC:6749) —LEADS_TO→ Cardiomyopathy (MONDO:0004994). Mutations in SURF1 disrupt the assembly and function of mitochondrial respiratory chain complex IV, leading to mitochondrial complex IV deficiency. Mutations in LMNA, a gene associated with cardiomyopathy, can also indirectly disrupt mitochondrial function by affecting mitochondrial structural integrity and dynamics, ultimately contributing to cardiomyopathy. The shared convergence node is the functional integrity of mitochondrial respiratory chain complex IV.\n\n**How to falsify it:** If genetic analysis reveals distinct, non-overlapping molecular pathways for cardiomyopathy and mitochondrial complex IV deficiency, with no shared downstream effects on mitochondrial complex IV function or structure, this hypothesis would be falsified. _(variant: rs121908110 (SURF1 c.772+1G>A) with an allele frequency > 0.001 in gnomAD.)_\n\n**Why it matters:** Understanding this overlap could lead to novel therapeutic strategies for cardiomyopathy by targeting mitochondrial dysfunction, or conversely, suggest that managing cardiac health is critical in patients with mitochondrial complex IV deficiency.\n\n---\n\n#### 7. pancreatic insufficiency-anemia-hyperostosis syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.447)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** TAFAZZIN (HGNC:11429) —DISRUPTS→ Cardiolipin biosynthesis (GO:0006636); Cardiolipin biosynthesis (GO:0006636) —DECREASES→ Mitochondrial function (GO:0005759); Mitochondrial function (GO:0005759) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); Mitochondrial function (GO:0005759) —LEADS_TO→ Pancreatic insufficiency-anemia-hyperostosis syndrome (MONDO:0012992). Loss-of-function mutations in TAFAZZIN disrupt cardiolipin biosynthesis, leading to impaired mitochondrial function. This mitochondrial dysfunction manifests as cardiomyopathy in disease A and contributes to the complex phenotype of pancreatic insufficiency-anemia-hyperostosis syndrome in disease B.\n\n**How to falsify it:** Demonstration that mutations in TAFAZZIN do not impair cardiolipin biosynthesis or that mitochondrial function is unaffected in patients with either disease. _(variant: rs375181007)_\n\n**Why it matters:** Targeting cardiolipin biosynthesis or downstream mitochondrial function could offer therapeutic strategies for both cardiomyopathy and pancreatic insufficiency-anemia-hyperostosis syndrome.\n\n---\n\n#### 8. mitochondrial complex IV deficiency, nuclear type 22  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** Nuclear genes encoding Cytochrome c oxidase subunits or assembly factors (HGNC:25634) —DISRUPTS→ Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746); Mitochondrial Complex IV (Cytochrome c oxidase) (GO:0005746) —DECREASES→ ATP production (GO:0006074); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638); Cardiomyopathy-associated gene (e.g., TTN, MYH7, LMNA) (HGNC:11989) —DISRUPTS→ Cardiac muscle structure and function maintenance (GO:0003001); Cardiac muscle structure and function maintenance (GO:0003001) —DECREASES→ Impaired cardiac function (HP:0001638); ATP production (GO:0006074) —DECREASES→ Impaired cardiac function (HP:0001638). Deficiency in mitochondrial complex IV impairs ATP production, leading to energy deficit in high-energy demanding tissues like the heart, causing cardiomyopathy. Concurrently, mutations in various cardiomyopathy-associated genes disrupt cardiac muscle structure and function, also leading to impaired cardiac function. Both pathways converge on the consequence of impaired cardiac function due to energy deficit and structural abnormalities.\n\n**How to falsify it:** Identification of a pathogenic variant in a gene known to cause mitochondrial complex IV deficiency (e.g., mutations in nuclear-encoded subunits or assembly factors) that does not also lead to detectable cardiac dysfunction or cardiomyopathy. _(variant: None)_\n\n**Why it matters:** Understanding this overlap could identify novel therapeutic targets for cardiomyopathy by focusing on mitochondrial function enhancement or protecting cardiac cells from energy deprivation. Conversely, strategies to improve cardiac muscle integrity might benefit patients with mitochondrial disorders affecting the heart.\n\n---\n\n#### 9. mitochondrial complex IV deficiency, nuclear type 4  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** TAFAZZIN (HGNC:11576) —LEADS_TO→ Cardiomyopathy (MONDO:0004994); TAFAZZIN (HGNC:11576) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); COA5 (HGNC:28184) —DISRUPTS→ Mitochondrial respiratory chain complex IV assembly (GO:0005759); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —LEADS_TO→ Mitochondrial complex IV deficiency, nuclear type 4 (MONDO:0033636); Mitochondrial respiratory chain complex IV assembly (GO:0005759) —DECREASES→ ATP synthesis (GO:0006754); ATP synthesis (GO:0006754) —DECREASES→ Cardiomyopathy (MONDO:0004994). Mutations in TAFAZZIN (involved in cardiolipin biosynthesis, essential for mitochondrial function) can lead to cardiomyopathy. Similarly, mutations in COA5, a component of mitochondrial complex IV, directly impair complex IV assembly, leading to mitochondrial complex IV deficiency. Both disruptions converge on impaired mitochondrial respiratory chain function and reduced ATP synthesis, which can manifest as cardiomyopathy.\n\n**How to falsify it:** Demonstration that variants in TAFAZZIN (HGNC:11576) or COA5 (HGNC:28184) do not lead to reduced mitochondrial function or ATP production in cardiac tissue. _(variant: rs142202099 (TAFAZZIN))_\n\n**Why it matters:** Understanding this overlap could lead to therapeutic strategies targeting mitochondrial function or energy metabolism for patients with certain types of cardiomyopathy, or conversely, highlight cardiac monitoring for patients with mitochondrial complex IV deficiencies.\n\n---\n\n#### 10. Charcot-Marie-Tooth disease type 4K  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-9864848)\n\n**Proposed mechanism:** FLNC variant leading to cardiomyopathy (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Cardiac cytoskeletal integrity; Cardiac cytoskeletal integrity —LEADS_TO→ Cardiomyopathy (MONDO:0004994); FLNC variant leading to CMTD (HGNC:3717) —DISRUPTS→ Filamin C (HGNC:3717); Filamin C (HGNC:3717) —DISRUPTS→ Neuronal cytoskeletal integrity; Neuronal cytoskeletal integrity —LEADS_TO→ Charcot-Marie-Tooth disease type 4K (MONDO:0014733). Mutations in the FLNC gene disrupt the integrity of the cytoskeleton in both cardiac and neuronal cells, leading to distinct but mechanistically related pathologies.\n\n**How to falsify it:** Identification of pathogenic FLNC variants with a gain-of-function mechanism in either disease would falsify this hypothesis of shared loss-of-function. _(variant: rs751740)_\n\n**Why it matters:** Understanding the shared role of FLNC in cytoskeletal integrity could reveal common therapeutic targets for both cardiac and neurological degenerative disorders.\n\n---"
+}

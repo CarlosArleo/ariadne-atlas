@@ -1,0 +1,373 @@
+{
+  "seed": {
+    "id": "MONDO:0012231",
+    "name": "Charcot-Marie-Tooth disease type 2A2"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 9,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010820",
+      "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+      "fitness": 0.528,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:7545) —DISRUPTS→ Mitochondrial fusion (GO:0000253); Mitochondrial fusion (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Peripheral neuropathy (HP:0003489); PRKN (HGNC:9209) —DISRUPTS→ Mitophagy (GO:0000253); Mitophagy (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 disrupt mitochondrial fusion, impairing mitochondrial quality control and leading to peripheral neuropathy. Similarly, mutations in PRKN disrupt mitophagy, a key process in mitochondrial quality control, resulting in Parkinsonism. Both pathways converge on the general process of mitochondrial quality control, highlighting a shared mechanistic vulnerability.",
+      "mechanism_narrative": "MFN2 (HGNC:7545) —DISRUPTS→ Mitochondrial fusion (GO:0000253); Mitochondrial fusion (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Peripheral neuropathy (HP:0003489); PRKN (HGNC:9209) —DISRUPTS→ Mitophagy (GO:0000253); Mitophagy (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 disrupt mitochondrial fusion, impairing mitochondrial quality control and leading to peripheral neuropathy. Similarly, mutations in PRKN disrupt mitophagy, a key process in mitochondrial quality control, resulting in Parkinsonism. Both pathways converge on the general process of mitochondrial quality control, highlighting a shared mechanistic vulnerability.",
+      "falsification": {
+        "text": "Absence of mutations in MFN2 in patients diagnosed with CMT2A2 or absence of mutations in PRKN in patients diagnosed with ARJP2 would falsify the causal link for these specific genes. Furthermore, if evidence emerges that the mitochondrial fusion pathway and mitophagy pathway are entirely independent and do not converge on any common downstream cellular process or outcome relevant to neurodegeneration, this hypothesis would be weakened.",
+        "gnomad_variant": "High frequency (e.g., >1%) of pathogenic variants associated with these diseases in the general population as observed in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010820",
+        "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.528,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:7545) —DISRUPTS→ Mitochondrial fusion (GO:0000253); Mitochondrial fusion (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Peripheral neuropathy (HP:0003489); PRKN (HGNC:9209) —DISRUPTS→ Mitophagy (GO:0000253); Mitophagy (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 disrupt mitochondrial fusion, impairing mitochondrial quality control and leading to peripheral neuropathy. Similarly, mutations in PRKN disrupt mitophagy, a key process in mitochondrial quality control, resulting in Parkinsonism. Both pathways converge on the general process of mitochondrial quality control, highlighting a shared mechanistic vulnerability.",
+        "falsification": {
+          "text": "Absence of mutations in MFN2 in patients diagnosed with CMT2A2 or absence of mutations in PRKN in patients diagnosed with ARJP2 would falsify the causal link for these specific genes. Furthermore, if evidence emerges that the mitochondrial fusion pathway and mitophagy pathway are entirely independent and do not converge on any common downstream cellular process or outcome relevant to neurodegeneration, this hypothesis would be weakened.",
+          "gnomad_variant": "High frequency (e.g., >1%) of pathogenic variants associated with these diseases in the general population as observed in gnomAD."
+        },
+        "translational": "Understanding the shared reliance on mitochondrial quality control mechanisms between Charcot-Marie-Tooth disease and Parkinson disease could pave the way for therapeutic strategies targeting mitochondrial health that benefit patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014641",
+      "diseaseBName": "frontotemporal dementia and/or amyotrophic lateral sclerosis 4",
+      "fitness": 0.45,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:7357) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003691); TBK1 (HGNC:20176) —DISRUPTS→ Autophagy initiation (GO:0006915); Autophagy initiation (GO:0006915) —DISRUPTS→ Lysosomal function (GO:0005704); Lysosomal function (GO:0005704) —LEADS_TO→ Frontotemporal dementia (HP:0000879); Lysosomal function (GO:0005704) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007374). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). Mutations in TBK1 disrupt autophagy initiation, which in turn impairs lysosomal function, contributing to frontotemporal dementia and amyotrophic lateral sclerosis (FTDALS4). The convergence occurs at impaired lysosomal function, which is critical for clearing cellular debris, including dysfunctional mitochondria, and its failure impacts both neuronal integrity.",
+      "mechanism_narrative": "MFN2 (HGNC:7357) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003691); TBK1 (HGNC:20176) —DISRUPTS→ Autophagy initiation (GO:0006915); Autophagy initiation (GO:0006915) —DISRUPTS→ Lysosomal function (GO:0005704); Lysosomal function (GO:0005704) —LEADS_TO→ Frontotemporal dementia (HP:0000879); Lysosomal function (GO:0005704) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007374). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). Mutations in TBK1 disrupt autophagy initiation, which in turn impairs lysosomal function, contributing to frontotemporal dementia and amyotrophic lateral sclerosis (FTDALS4). The convergence occurs at impaired lysosomal function, which is critical for clearing cellular debris, including dysfunctional mitochondria, and its failure impacts both neuronal integrity.",
+      "falsification": {
+        "text": "Demonstration that MFN2 and TBK1 function in completely independent cellular pathways with no downstream overlap in protein degradation, mitochondrial quality control, or lysosomal function in neurons.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in both MFN2 and TBK1 in the general population that do not segregate with either disease, suggesting these genes are not the primary drivers of these specific disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014641",
+        "diseaseBName": "frontotemporal dementia and/or amyotrophic lateral sclerosis 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.45,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:7357) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003691); TBK1 (HGNC:20176) —DISRUPTS→ Autophagy initiation (GO:0006915); Autophagy initiation (GO:0006915) —DISRUPTS→ Lysosomal function (GO:0005704); Lysosomal function (GO:0005704) —LEADS_TO→ Frontotemporal dementia (HP:0000879); Lysosomal function (GO:0005704) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007374). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). Mutations in TBK1 disrupt autophagy initiation, which in turn impairs lysosomal function, contributing to frontotemporal dementia and amyotrophic lateral sclerosis (FTDALS4). The convergence occurs at impaired lysosomal function, which is critical for clearing cellular debris, including dysfunctional mitochondria, and its failure impacts both neuronal integrity.",
+        "falsification": {
+          "text": "Demonstration that MFN2 and TBK1 function in completely independent cellular pathways with no downstream overlap in protein degradation, mitochondrial quality control, or lysosomal function in neurons.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in both MFN2 and TBK1 in the general population that do not segregate with either disease, suggesting these genes are not the primary drivers of these specific disease phenotypes."
+        },
+        "translational": "Targeting pathways involved in mitochondrial dynamics, autophagy, or lysosomal function could offer therapeutic strategies for both Charcot-Marie-Tooth disease type 2A2 and frontotemporal dementia/amyotrophic lateral sclerosis 4, potentially by enhancing cellular clearance mechanisms or improving organelle quality control."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013264",
+      "diseaseBName": "amyotrophic lateral sclerosis type 12",
+      "fitness": 0.4003,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:16828) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —INCREASES→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); OPTN (HGNC:8863) —DISRUPTS→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —DECREASES→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Amyotrophic lateral sclerosis type 12 (MONDO:0013264). Mutations in MFN2 disrupt mitochondrial dynamics, leading to impaired mitophagy and subsequent autophagic dysfunction, manifesting as CMT2A2. Similarly, mutations in OPTN disrupt autophagy, impacting mitophagy and consequently mitochondrial dynamics, leading to ALS12. Both diseases converge on impaired mitochondrial dynamics and autophagy.",
+      "mechanism_narrative": "MFN2 (HGNC:16828) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —INCREASES→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); OPTN (HGNC:8863) —DISRUPTS→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —DECREASES→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Amyotrophic lateral sclerosis type 12 (MONDO:0013264). Mutations in MFN2 disrupt mitochondrial dynamics, leading to impaired mitophagy and subsequent autophagic dysfunction, manifesting as CMT2A2. Similarly, mutations in OPTN disrupt autophagy, impacting mitophagy and consequently mitochondrial dynamics, leading to ALS12. Both diseases converge on impaired mitochondrial dynamics and autophagy.",
+      "falsification": {
+        "text": "Demonstrating that MFN2 mutations specifically impair mitochondrial fusion without affecting autophagy initiation, and OPTN mutations specifically impair autophagy initiation without affecting mitochondrial dynamics, would falsify this convergent mechanism.",
+        "gnomad_variant": "Exome sequencing data from gnomAD revealing high-frequency pathogenic variants in both MFN2 and OPTN associated with these diseases would also challenge a rare variant hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013264",
+        "diseaseBName": "amyotrophic lateral sclerosis type 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.4003,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:16828) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —INCREASES→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); OPTN (HGNC:8863) —DISRUPTS→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —DECREASES→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Amyotrophic lateral sclerosis type 12 (MONDO:0013264). Mutations in MFN2 disrupt mitochondrial dynamics, leading to impaired mitophagy and subsequent autophagic dysfunction, manifesting as CMT2A2. Similarly, mutations in OPTN disrupt autophagy, impacting mitophagy and consequently mitochondrial dynamics, leading to ALS12. Both diseases converge on impaired mitochondrial dynamics and autophagy.",
+        "falsification": {
+          "text": "Demonstrating that MFN2 mutations specifically impair mitochondrial fusion without affecting autophagy initiation, and OPTN mutations specifically impair autophagy initiation without affecting mitochondrial dynamics, would falsify this convergent mechanism.",
+          "gnomad_variant": "Exome sequencing data from gnomAD revealing high-frequency pathogenic variants in both MFN2 and OPTN associated with these diseases would also challenge a rare variant hypothesis."
+        },
+        "translational": "Targeting pathways involved in mitochondrial dynamics and autophagy could offer therapeutic strategies for both Charcot-Marie-Tooth disease type 2A2 and amyotrophic lateral sclerosis type 12, suggesting a common therapeutic window."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957953",
+      "diseaseBName": "Garg-Mishra progeroid syndrome",
+      "fitness": 0.3988,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Peripheral Neuropathy (HP:0003489); MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Premature Aging (HP:0003674); TOMM7 (HGNC:28806) —DISRUPTS→ Mitochondrial Protein Import (GO:0006840); Mitochondrial Protein Import (GO:0006840) —LEADS_TO→ Premature Aging (HP:0003674). Mutations in MFN2 impair mitochondrial fusion, leading to peripheral neuropathy in CMT2A2. In Garg-Mishra, while MFN2 is implicated, the exact disruption might also involve TOMM7's role in mitochondrial protein import, which indirectly impacts mitochondrial health and contributes to premature aging phenotypes.",
+      "mechanism_narrative": "MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Peripheral Neuropathy (HP:0003489); MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Premature Aging (HP:0003674); TOMM7 (HGNC:28806) —DISRUPTS→ Mitochondrial Protein Import (GO:0006840); Mitochondrial Protein Import (GO:0006840) —LEADS_TO→ Premature Aging (HP:0003674). Mutations in MFN2 impair mitochondrial fusion, leading to peripheral neuropathy in CMT2A2. In Garg-Mishra, while MFN2 is implicated, the exact disruption might also involve TOMM7's role in mitochondrial protein import, which indirectly impacts mitochondrial health and contributes to premature aging phenotypes.",
+      "falsification": {
+        "text": "The identification of distinct, non-overlapping molecular pathways downstream of MFN2 mutations in CMT2A2 and TOMM7 mutations in Garg-Mishra progeroid syndrome, with no shared impact on mitochondrial dynamics or protein import pathways.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in MFN2 or TOMM7 associated with either disease in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957953",
+        "diseaseBName": "Garg-Mishra progeroid syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.3988,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Peripheral Neuropathy (HP:0003489); MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Premature Aging (HP:0003674); TOMM7 (HGNC:28806) —DISRUPTS→ Mitochondrial Protein Import (GO:0006840); Mitochondrial Protein Import (GO:0006840) —LEADS_TO→ Premature Aging (HP:0003674). Mutations in MFN2 impair mitochondrial fusion, leading to peripheral neuropathy in CMT2A2. In Garg-Mishra, while MFN2 is implicated, the exact disruption might also involve TOMM7's role in mitochondrial protein import, which indirectly impacts mitochondrial health and contributes to premature aging phenotypes.",
+        "falsification": {
+          "text": "The identification of distinct, non-overlapping molecular pathways downstream of MFN2 mutations in CMT2A2 and TOMM7 mutations in Garg-Mishra progeroid syndrome, with no shared impact on mitochondrial dynamics or protein import pathways.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in MFN2 or TOMM7 associated with either disease in the general population."
+        },
+        "translational": "Understanding the shared role of mitochondrial dynamics, particularly fusion and protein import, in both peripheral neuropathy and progeroid syndromes could reveal common therapeutic targets for improving mitochondrial health and function, potentially benefiting patients with both types of rare disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100553",
+      "diseaseBName": "OPTN-related open angle glaucoma",
+      "fitness": 0.3981,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:7549) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003489); OPTN (HGNC:8864) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0000277); Autophagosome-lysosome fusion (GO:0000277) —LEADS_TO→ Open angle glaucoma (HP:0011715); Mitochondrial dynamics (GO:0007005) —BINDS→ Autophagosome-lysosome fusion (GO:0000277). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). OPTN mutations also disrupt cellular processes, specifically impairing autophagosome-lysosome fusion, which is linked to mitochondrial quality control and can contribute to open-angle glaucoma. Mitochondrial dynamics and autophagosome-lysosome fusion are interconnected processes, as proper mitochondrial function relies on efficient clearance of damaged organelles.",
+      "mechanism_narrative": "MFN2 (HGNC:7549) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003489); OPTN (HGNC:8864) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0000277); Autophagosome-lysosome fusion (GO:0000277) —LEADS_TO→ Open angle glaucoma (HP:0011715); Mitochondrial dynamics (GO:0007005) —BINDS→ Autophagosome-lysosome fusion (GO:0000277). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). OPTN mutations also disrupt cellular processes, specifically impairing autophagosome-lysosome fusion, which is linked to mitochondrial quality control and can contribute to open-angle glaucoma. Mitochondrial dynamics and autophagosome-lysosome fusion are interconnected processes, as proper mitochondrial function relies on efficient clearance of damaged organelles.",
+      "falsification": {
+        "text": "Demonstration that MFN2 and OPTN function in completely independent cellular pathways with no interaction or shared downstream effectors, or identification of pathogenic variants in MFN2 in unaffected individuals with open-angle glaucoma, or pathogenic variants in OPTN in unaffected individuals with Charcot-Marie-Tooth disease type 2A2.",
+        "gnomad_variant": "None applicable as specific variants are not defined."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100553",
+        "diseaseBName": "OPTN-related open angle glaucoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.3981,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:7549) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003489); OPTN (HGNC:8864) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0000277); Autophagosome-lysosome fusion (GO:0000277) —LEADS_TO→ Open angle glaucoma (HP:0011715); Mitochondrial dynamics (GO:0007005) —BINDS→ Autophagosome-lysosome fusion (GO:0000277). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). OPTN mutations also disrupt cellular processes, specifically impairing autophagosome-lysosome fusion, which is linked to mitochondrial quality control and can contribute to open-angle glaucoma. Mitochondrial dynamics and autophagosome-lysosome fusion are interconnected processes, as proper mitochondrial function relies on efficient clearance of damaged organelles.",
+        "falsification": {
+          "text": "Demonstration that MFN2 and OPTN function in completely independent cellular pathways with no interaction or shared downstream effectors, or identification of pathogenic variants in MFN2 in unaffected individuals with open-angle glaucoma, or pathogenic variants in OPTN in unaffected individuals with Charcot-Marie-Tooth disease type 2A2.",
+          "gnomad_variant": "None applicable as specific variants are not defined."
+        },
+        "translational": "Understanding the shared role of mitochondrial health and quality control in both Charcot-Marie-Tooth disease type 2A2 and OPTN-related open-angle glaucoma could reveal novel therapeutic targets that benefit patients with either condition, potentially by modulating mitochondrial dynamics or enhancing autophagic clearance pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0971173",
+      "diseaseBName": "autoinflammation with arthritis and vasculitis",
+      "fitness": 0.3839,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TBK1 (HGNC:11505) —DISRUPTS→ NF-kappaB signaling (REACT:R-HSA-6962145); NF-kappaB signaling (REACT:R-HSA-6962145) —LEADS_TO→ Peripheral neuropathy (HP:0003489); TBK1 (HGNC:11505) —DISRUPTS→ Inflammasome activation (REACT:R-HSA-1690780); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Arthritis (HP:0002720); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Vasculitis (HP:0003517). Loss-of-function mutations in TBK1 disrupt both NF-kappaB signaling, leading to peripheral neuropathy (Charcot-Marie-Tooth disease type 2A2), and inflammasome activation, contributing to autoinflammation, arthritis, and vasculitis.",
+      "mechanism_narrative": "TBK1 (HGNC:11505) —DISRUPTS→ NF-kappaB signaling (REACT:R-HSA-6962145); NF-kappaB signaling (REACT:R-HSA-6962145) —LEADS_TO→ Peripheral neuropathy (HP:0003489); TBK1 (HGNC:11505) —DISRUPTS→ Inflammasome activation (REACT:R-HSA-1690780); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Arthritis (HP:0002720); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Vasculitis (HP:0003517). Loss-of-function mutations in TBK1 disrupt both NF-kappaB signaling, leading to peripheral neuropathy (Charcot-Marie-Tooth disease type 2A2), and inflammasome activation, contributing to autoinflammation, arthritis, and vasculitis.",
+      "falsification": {
+        "text": "Absence of TBK1 loss-of-function mutations in individuals with Charcot-Marie-Tooth disease type 2A2 or autoinflammation with arthritis and vasculitis, or identification of distinct causative genes with no shared downstream pathways."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0971173",
+        "diseaseBName": "autoinflammation with arthritis and vasculitis",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.3839,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TBK1 (HGNC:11505) —DISRUPTS→ NF-kappaB signaling (REACT:R-HSA-6962145); NF-kappaB signaling (REACT:R-HSA-6962145) —LEADS_TO→ Peripheral neuropathy (HP:0003489); TBK1 (HGNC:11505) —DISRUPTS→ Inflammasome activation (REACT:R-HSA-1690780); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Arthritis (HP:0002720); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Vasculitis (HP:0003517). Loss-of-function mutations in TBK1 disrupt both NF-kappaB signaling, leading to peripheral neuropathy (Charcot-Marie-Tooth disease type 2A2), and inflammasome activation, contributing to autoinflammation, arthritis, and vasculitis.",
+        "falsification": {
+          "text": "Absence of TBK1 loss-of-function mutations in individuals with Charcot-Marie-Tooth disease type 2A2 or autoinflammation with arthritis and vasculitis, or identification of distinct causative genes with no shared downstream pathways."
+        },
+        "translational": "Targeting TBK1 activity or downstream effectors in NF-kappaB and inflammasome pathways could offer therapeutic strategies for both neurological and autoinflammatory manifestations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.3529,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:17008) —DISRUPTS→ Mitochondrial dysfunction (HP:0003204); Mitochondrial dysfunction (HP:0003204) —LEADS_TO→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); EGFR (HGNC:3437) —INCREASES→ ER stress (HP:0012636); KRAS (HGNC:6407) —INCREASES→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Lung cancer (MONDO:0008903). Loss-of-function mutations in MFN2 lead to mitochondrial dysfunction, which in turn exacerbates ER stress, ultimately manifesting as Charcot-Marie-Tooth disease type 2A2. Conversely, gain-of-function mutations in oncogenes like EGFR or KRAS can directly induce ER stress, a known contributor to the development of lung cancer. Both pathways converge on ER stress as a critical shared intermediate.",
+      "mechanism_narrative": "MFN2 (HGNC:17008) —DISRUPTS→ Mitochondrial dysfunction (HP:0003204); Mitochondrial dysfunction (HP:0003204) —LEADS_TO→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); EGFR (HGNC:3437) —INCREASES→ ER stress (HP:0012636); KRAS (HGNC:6407) —INCREASES→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Lung cancer (MONDO:0008903). Loss-of-function mutations in MFN2 lead to mitochondrial dysfunction, which in turn exacerbates ER stress, ultimately manifesting as Charcot-Marie-Tooth disease type 2A2. Conversely, gain-of-function mutations in oncogenes like EGFR or KRAS can directly induce ER stress, a known contributor to the development of lung cancer. Both pathways converge on ER stress as a critical shared intermediate.",
+      "falsification": {
+        "text": "Demonstration that the ER stress pathway is topographically and functionally distinct in the cellular models of CMT2A2 and lung cancer, with no overlap in upstream or downstream effectors.",
+        "gnomad_variant": "rs121918429 (a pathogenic variant in MFN2) having a minor allele frequency significantly greater than 0.01% in gnomAD exomes and genomes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32,
+        "Reactome:R-HSA-983231": 108
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32,
+          "Reactome:R-HSA-983231": 108
+        },
+        "fitness": 0.3529,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:17008) —DISRUPTS→ Mitochondrial dysfunction (HP:0003204); Mitochondrial dysfunction (HP:0003204) —LEADS_TO→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); EGFR (HGNC:3437) —INCREASES→ ER stress (HP:0012636); KRAS (HGNC:6407) —INCREASES→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Lung cancer (MONDO:0008903). Loss-of-function mutations in MFN2 lead to mitochondrial dysfunction, which in turn exacerbates ER stress, ultimately manifesting as Charcot-Marie-Tooth disease type 2A2. Conversely, gain-of-function mutations in oncogenes like EGFR or KRAS can directly induce ER stress, a known contributor to the development of lung cancer. Both pathways converge on ER stress as a critical shared intermediate.",
+        "falsification": {
+          "text": "Demonstration that the ER stress pathway is topographically and functionally distinct in the cellular models of CMT2A2 and lung cancer, with no overlap in upstream or downstream effectors.",
+          "gnomad_variant": "rs121918429 (a pathogenic variant in MFN2) having a minor allele frequency significantly greater than 0.01% in gnomAD exomes and genomes."
+        },
+        "translational": "Targeting ER stress or mitochondrial function could offer a dual therapeutic strategy for both neurodegenerative disorders like CMT2A2 and oncogenic conditions like lung cancer, although the specific therapeutic interventions would differ based on the initiating genetic event."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.3483,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:24901) —DISRUPTS→ Mitochondrial dynamics and fusion (GO:0007005); Mitochondrial dynamics and fusion (GO:0007005) —LEADS_TO→ Axonal degeneration (HP:0003404); PIK3CA (HGNC:9407) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); AKT1 (HGNC:452) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); PI3K-AKT signaling pathway (REACT:R-HSA-425500) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PRKN (HGNC:9040) —DISRUPTS→ Mitophagy (GO:0000057); Mitophagy (GO:0000057) —DECREASES→ Mitochondrial dynamics and fusion (GO:0007005); Mitophagy (GO:0000057) —DECREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); Axonal degeneration (HP:0003404) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in MFN2 disrupt mitochondrial dynamics, leading to axonal degeneration in CMT2A2. Concurrently, dysregulation (potentially gain-of-function) of PIK3CA and AKT1 drives the PI3K-AKT signaling pathway, promoting ovarian cancer. Parkin (PRKN), involved in mitophagy, can be dysregulated in both conditions: loss-of-function impairs mitophagy, contributing to mitochondrial dysfunction seen in CMT2A2, while its altered activity may also impact signaling pathways relevant to ovarian cancer progression.",
+      "mechanism_narrative": "MFN2 (HGNC:24901) —DISRUPTS→ Mitochondrial dynamics and fusion (GO:0007005); Mitochondrial dynamics and fusion (GO:0007005) —LEADS_TO→ Axonal degeneration (HP:0003404); PIK3CA (HGNC:9407) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); AKT1 (HGNC:452) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); PI3K-AKT signaling pathway (REACT:R-HSA-425500) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PRKN (HGNC:9040) —DISRUPTS→ Mitophagy (GO:0000057); Mitophagy (GO:0000057) —DECREASES→ Mitochondrial dynamics and fusion (GO:0007005); Mitophagy (GO:0000057) —DECREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); Axonal degeneration (HP:0003404) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in MFN2 disrupt mitochondrial dynamics, leading to axonal degeneration in CMT2A2. Concurrently, dysregulation (potentially gain-of-function) of PIK3CA and AKT1 drives the PI3K-AKT signaling pathway, promoting ovarian cancer. Parkin (PRKN), involved in mitophagy, can be dysregulated in both conditions: loss-of-function impairs mitophagy, contributing to mitochondrial dysfunction seen in CMT2A2, while its altered activity may also impact signaling pathways relevant to ovarian cancer progression.",
+      "falsification": {
+        "text": "Demonstration that PRKN mutations in ovarian cancer consistently lead to loss-of-function that impairs mitophagy, or that MFN2 mutations do not affect mitochondrial dynamics.",
+        "gnomad_variant": "rs1801582"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.3483,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:24901) —DISRUPTS→ Mitochondrial dynamics and fusion (GO:0007005); Mitochondrial dynamics and fusion (GO:0007005) —LEADS_TO→ Axonal degeneration (HP:0003404); PIK3CA (HGNC:9407) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); AKT1 (HGNC:452) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); PI3K-AKT signaling pathway (REACT:R-HSA-425500) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PRKN (HGNC:9040) —DISRUPTS→ Mitophagy (GO:0000057); Mitophagy (GO:0000057) —DECREASES→ Mitochondrial dynamics and fusion (GO:0007005); Mitophagy (GO:0000057) —DECREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); Axonal degeneration (HP:0003404) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in MFN2 disrupt mitochondrial dynamics, leading to axonal degeneration in CMT2A2. Concurrently, dysregulation (potentially gain-of-function) of PIK3CA and AKT1 drives the PI3K-AKT signaling pathway, promoting ovarian cancer. Parkin (PRKN), involved in mitophagy, can be dysregulated in both conditions: loss-of-function impairs mitophagy, contributing to mitochondrial dysfunction seen in CMT2A2, while its altered activity may also impact signaling pathways relevant to ovarian cancer progression.",
+        "falsification": {
+          "text": "Demonstration that PRKN mutations in ovarian cancer consistently lead to loss-of-function that impairs mitophagy, or that MFN2 mutations do not affect mitochondrial dynamics.",
+          "gnomad_variant": "rs1801582"
+        },
+        "translational": "Targeting the PI3K-AKT pathway is a known strategy in ovarian cancer therapy. Understanding the role of mitochondrial dynamics and mitophagy (potentially influenced by MFN2 and PRKN) in both conditions could reveal novel therapeutic avenues for CMT2A2 and potentially synergistic approaches for ovarian cancer, such as targeting mitochondrial function to sensitize cancer cells to existing therapies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011613",
+      "diseaseBName": "autosomal recessive early-onset Parkinson disease 6",
+      "fitness": 0.3251,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MFN2 (HGNC:7377) —DISRUPTS→ Mitochondrial fusion (GO:0005739); Mitochondrial fusion (GO:0005739) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Peripheral neuropathy (HP:0003691); PINK1 (HGNC:24490) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 impair mitochondrial fusion, leading to general mitochondrial dysfunction, which manifests as peripheral neuropathy in CMT2A2. Mutations in PINK1 impair mitophagy, also resulting in mitochondrial dysfunction, which manifests as Parkinsonism in AR-PED6. Both pathways converge on mitochondrial dysfunction.",
+      "mechanism_narrative": "MFN2 (HGNC:7377) —DISRUPTS→ Mitochondrial fusion (GO:0005739); Mitochondrial fusion (GO:0005739) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Peripheral neuropathy (HP:0003691); PINK1 (HGNC:24490) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 impair mitochondrial fusion, leading to general mitochondrial dysfunction, which manifests as peripheral neuropathy in CMT2A2. Mutations in PINK1 impair mitophagy, also resulting in mitochondrial dysfunction, which manifests as Parkinsonism in AR-PED6. Both pathways converge on mitochondrial dysfunction.",
+      "falsification": {
+        "text": "Demonstration that the causal variants for CMT2A2 (MFN2) do not impact mitochondrial fusion or that causal variants for AR-PED6 (PINK1) do not affect mitophagy or mitochondrial quality control.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in MFN2 or PINK1 exhibiting no functional consequence on mitochondrial fusion or mitophagy, respectively."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5205685"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5205685": 32
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011613",
+        "diseaseBName": "autosomal recessive early-onset Parkinson disease 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5205685"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5205685": 32
+        },
+        "fitness": 0.3251,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MFN2 (HGNC:7377) —DISRUPTS→ Mitochondrial fusion (GO:0005739); Mitochondrial fusion (GO:0005739) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Peripheral neuropathy (HP:0003691); PINK1 (HGNC:24490) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 impair mitochondrial fusion, leading to general mitochondrial dysfunction, which manifests as peripheral neuropathy in CMT2A2. Mutations in PINK1 impair mitophagy, also resulting in mitochondrial dysfunction, which manifests as Parkinsonism in AR-PED6. Both pathways converge on mitochondrial dysfunction.",
+        "falsification": {
+          "text": "Demonstration that the causal variants for CMT2A2 (MFN2) do not impact mitochondrial fusion or that causal variants for AR-PED6 (PINK1) do not affect mitophagy or mitochondrial quality control.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in MFN2 or PINK1 exhibiting no functional consequence on mitochondrial fusion or mitophagy, respectively."
+        },
+        "translational": "Understanding the shared role of mitochondrial dynamics and quality control in these neurodegenerative diseases could lead to therapeutic strategies targeting mitochondrial health for both conditions, potentially through compounds that enhance fusion or mitophagy."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T13:19:04.960Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 9 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autosomal recessive juvenile Parkinson disease 2 (MONDO:0010820) | shared pathway | Tier 3 | 0.528 | Reactome:R-HSA-5205685 |\n| 2 | frontotemporal dementia and/or amyotrophic lateral sclerosis 4 (MONDO:0014641) | shared pathway | Tier 3 | 0.450 | Reactome:R-HSA-5205685 |\n| 3 | amyotrophic lateral sclerosis type 12 (MONDO:0013264) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-5205685 |\n| 4 | Garg-Mishra progeroid syndrome (MONDO:0957953) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-5205685 |\n| 5 | OPTN-related open angle glaucoma (MONDO:0100553) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-5205685 |\n| 6 | autoinflammation with arthritis and vasculitis (MONDO:0971173) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-5205685 |\n| 7 | lung cancer (MONDO:0008903) | shared pathway | Tier 3 | 0.353 | Reactome:R-HSA-5205685 |\n| 8 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.348 | Reactome:R-HSA-5205685 |\n| 9 | autosomal recessive early-onset Parkinson disease 6 (MONDO:0011613) | shared pathway | Tier 3 | 0.325 | Reactome:R-HSA-5205685 |\n\n### CANDIDATE DETAIL\n#### 1. autosomal recessive juvenile Parkinson disease 2  —  Tier 3 — Moderate / Emerging  (fitness 0.528)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:7545) —DISRUPTS→ Mitochondrial fusion (GO:0000253); Mitochondrial fusion (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Peripheral neuropathy (HP:0003489); PRKN (HGNC:9209) —DISRUPTS→ Mitophagy (GO:0000253); Mitophagy (GO:0000253) —LEADS_TO→ Mitochondrial quality control (GO:0000253); Mitochondrial quality control (GO:0000253) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 disrupt mitochondrial fusion, impairing mitochondrial quality control and leading to peripheral neuropathy. Similarly, mutations in PRKN disrupt mitophagy, a key process in mitochondrial quality control, resulting in Parkinsonism. Both pathways converge on the general process of mitochondrial quality control, highlighting a shared mechanistic vulnerability.\n\n**How to falsify it:** Absence of mutations in MFN2 in patients diagnosed with CMT2A2 or absence of mutations in PRKN in patients diagnosed with ARJP2 would falsify the causal link for these specific genes. Furthermore, if evidence emerges that the mitochondrial fusion pathway and mitophagy pathway are entirely independent and do not converge on any common downstream cellular process or outcome relevant to neurodegeneration, this hypothesis would be weakened. _(variant: High frequency (e.g., >1%) of pathogenic variants associated with these diseases in the general population as observed in gnomAD.)_\n\n**Why it matters:** Understanding the shared reliance on mitochondrial quality control mechanisms between Charcot-Marie-Tooth disease and Parkinson disease could pave the way for therapeutic strategies targeting mitochondrial health that benefit patients with both conditions.\n\n---\n\n#### 2. frontotemporal dementia and/or amyotrophic lateral sclerosis 4  —  Tier 3 — Moderate / Emerging  (fitness 0.450)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:7357) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003691); TBK1 (HGNC:20176) —DISRUPTS→ Autophagy initiation (GO:0006915); Autophagy initiation (GO:0006915) —DISRUPTS→ Lysosomal function (GO:0005704); Lysosomal function (GO:0005704) —LEADS_TO→ Frontotemporal dementia (HP:0000879); Lysosomal function (GO:0005704) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007374). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). Mutations in TBK1 disrupt autophagy initiation, which in turn impairs lysosomal function, contributing to frontotemporal dementia and amyotrophic lateral sclerosis (FTDALS4). The convergence occurs at impaired lysosomal function, which is critical for clearing cellular debris, including dysfunctional mitochondria, and its failure impacts both neuronal integrity.\n\n**How to falsify it:** Demonstration that MFN2 and TBK1 function in completely independent cellular pathways with no downstream overlap in protein degradation, mitochondrial quality control, or lysosomal function in neurons. _(variant: Identification of common variants (AF > 0.01) in both MFN2 and TBK1 in the general population that do not segregate with either disease, suggesting these genes are not the primary drivers of these specific disease phenotypes.)_\n\n**Why it matters:** Targeting pathways involved in mitochondrial dynamics, autophagy, or lysosomal function could offer therapeutic strategies for both Charcot-Marie-Tooth disease type 2A2 and frontotemporal dementia/amyotrophic lateral sclerosis 4, potentially by enhancing cellular clearance mechanisms or improving organelle quality control.\n\n---\n\n#### 3. amyotrophic lateral sclerosis type 12  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:16828) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —INCREASES→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); OPTN (HGNC:8863) —DISRUPTS→ Autophagy (GO:0006915); Autophagy (GO:0006915) —LEADS_TO→ Mitophagy (GO:0000254); Mitophagy (GO:0000254) —DECREASES→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Amyotrophic lateral sclerosis type 12 (MONDO:0013264). Mutations in MFN2 disrupt mitochondrial dynamics, leading to impaired mitophagy and subsequent autophagic dysfunction, manifesting as CMT2A2. Similarly, mutations in OPTN disrupt autophagy, impacting mitophagy and consequently mitochondrial dynamics, leading to ALS12. Both diseases converge on impaired mitochondrial dynamics and autophagy.\n\n**How to falsify it:** Demonstrating that MFN2 mutations specifically impair mitochondrial fusion without affecting autophagy initiation, and OPTN mutations specifically impair autophagy initiation without affecting mitochondrial dynamics, would falsify this convergent mechanism. _(variant: Exome sequencing data from gnomAD revealing high-frequency pathogenic variants in both MFN2 and OPTN associated with these diseases would also challenge a rare variant hypothesis.)_\n\n**Why it matters:** Targeting pathways involved in mitochondrial dynamics and autophagy could offer therapeutic strategies for both Charcot-Marie-Tooth disease type 2A2 and amyotrophic lateral sclerosis type 12, suggesting a common therapeutic window.\n\n---\n\n#### 4. Garg-Mishra progeroid syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Peripheral Neuropathy (HP:0003489); MFN2 (HGNC:7350) —DISRUPTS→ Mitochondrial Fusion (GO:0005993); Mitochondrial Fusion (GO:0005993) —LEADS_TO→ Premature Aging (HP:0003674); TOMM7 (HGNC:28806) —DISRUPTS→ Mitochondrial Protein Import (GO:0006840); Mitochondrial Protein Import (GO:0006840) —LEADS_TO→ Premature Aging (HP:0003674). Mutations in MFN2 impair mitochondrial fusion, leading to peripheral neuropathy in CMT2A2. In Garg-Mishra, while MFN2 is implicated, the exact disruption might also involve TOMM7's role in mitochondrial protein import, which indirectly impacts mitochondrial health and contributes to premature aging phenotypes.\n\n**How to falsify it:** The identification of distinct, non-overlapping molecular pathways downstream of MFN2 mutations in CMT2A2 and TOMM7 mutations in Garg-Mishra progeroid syndrome, with no shared impact on mitochondrial dynamics or protein import pathways. _(variant: The presence of common variants (AF > 0.01) in MFN2 or TOMM7 associated with either disease in the general population.)_\n\n**Why it matters:** Understanding the shared role of mitochondrial dynamics, particularly fusion and protein import, in both peripheral neuropathy and progeroid syndromes could reveal common therapeutic targets for improving mitochondrial health and function, potentially benefiting patients with both types of rare disorders.\n\n---\n\n#### 5. OPTN-related open angle glaucoma  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:7549) —DISRUPTS→ Mitochondrial dynamics (GO:0007005); Mitochondrial dynamics (GO:0007005) —LEADS_TO→ Peripheral neuropathy (HP:0003489); OPTN (HGNC:8864) —DISRUPTS→ Autophagosome-lysosome fusion (GO:0000277); Autophagosome-lysosome fusion (GO:0000277) —LEADS_TO→ Open angle glaucoma (HP:0011715); Mitochondrial dynamics (GO:0007005) —BINDS→ Autophagosome-lysosome fusion (GO:0000277). Mutations in MFN2 disrupt mitochondrial dynamics, leading to peripheral neuropathy (CMT2A2). OPTN mutations also disrupt cellular processes, specifically impairing autophagosome-lysosome fusion, which is linked to mitochondrial quality control and can contribute to open-angle glaucoma. Mitochondrial dynamics and autophagosome-lysosome fusion are interconnected processes, as proper mitochondrial function relies on efficient clearance of damaged organelles.\n\n**How to falsify it:** Demonstration that MFN2 and OPTN function in completely independent cellular pathways with no interaction or shared downstream effectors, or identification of pathogenic variants in MFN2 in unaffected individuals with open-angle glaucoma, or pathogenic variants in OPTN in unaffected individuals with Charcot-Marie-Tooth disease type 2A2. _(variant: None applicable as specific variants are not defined.)_\n\n**Why it matters:** Understanding the shared role of mitochondrial health and quality control in both Charcot-Marie-Tooth disease type 2A2 and OPTN-related open-angle glaucoma could reveal novel therapeutic targets that benefit patients with either condition, potentially by modulating mitochondrial dynamics or enhancing autophagic clearance pathways.\n\n---\n\n#### 6. autoinflammation with arthritis and vasculitis  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** TBK1 (HGNC:11505) —DISRUPTS→ NF-kappaB signaling (REACT:R-HSA-6962145); NF-kappaB signaling (REACT:R-HSA-6962145) —LEADS_TO→ Peripheral neuropathy (HP:0003489); TBK1 (HGNC:11505) —DISRUPTS→ Inflammasome activation (REACT:R-HSA-1690780); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Arthritis (HP:0002720); Inflammasome activation (REACT:R-HSA-1690780) —LEADS_TO→ Vasculitis (HP:0003517). Loss-of-function mutations in TBK1 disrupt both NF-kappaB signaling, leading to peripheral neuropathy (Charcot-Marie-Tooth disease type 2A2), and inflammasome activation, contributing to autoinflammation, arthritis, and vasculitis.\n\n**How to falsify it:** Absence of TBK1 loss-of-function mutations in individuals with Charcot-Marie-Tooth disease type 2A2 or autoinflammation with arthritis and vasculitis, or identification of distinct causative genes with no shared downstream pathways.\n\n**Why it matters:** Targeting TBK1 activity or downstream effectors in NF-kappaB and inflammasome pathways could offer therapeutic strategies for both neurological and autoinflammatory manifestations.\n\n---\n\n#### 7. lung cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.353)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:17008) —DISRUPTS→ Mitochondrial dysfunction (HP:0003204); Mitochondrial dysfunction (HP:0003204) —LEADS_TO→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Charcot-Marie-Tooth disease type 2A2 (MONDO:0012231); EGFR (HGNC:3437) —INCREASES→ ER stress (HP:0012636); KRAS (HGNC:6407) —INCREASES→ ER stress (HP:0012636); ER stress (HP:0012636) —LEADS_TO→ Lung cancer (MONDO:0008903). Loss-of-function mutations in MFN2 lead to mitochondrial dysfunction, which in turn exacerbates ER stress, ultimately manifesting as Charcot-Marie-Tooth disease type 2A2. Conversely, gain-of-function mutations in oncogenes like EGFR or KRAS can directly induce ER stress, a known contributor to the development of lung cancer. Both pathways converge on ER stress as a critical shared intermediate.\n\n**How to falsify it:** Demonstration that the ER stress pathway is topographically and functionally distinct in the cellular models of CMT2A2 and lung cancer, with no overlap in upstream or downstream effectors. _(variant: rs121918429 (a pathogenic variant in MFN2) having a minor allele frequency significantly greater than 0.01% in gnomAD exomes and genomes.)_\n\n**Why it matters:** Targeting ER stress or mitochondrial function could offer a dual therapeutic strategy for both neurodegenerative disorders like CMT2A2 and oncogenic conditions like lung cancer, although the specific therapeutic interventions would differ based on the initiating genetic event.\n\n---\n\n#### 8. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.348)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:24901) —DISRUPTS→ Mitochondrial dynamics and fusion (GO:0007005); Mitochondrial dynamics and fusion (GO:0007005) —LEADS_TO→ Axonal degeneration (HP:0003404); PIK3CA (HGNC:9407) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); AKT1 (HGNC:452) —INCREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); PI3K-AKT signaling pathway (REACT:R-HSA-425500) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PRKN (HGNC:9040) —DISRUPTS→ Mitophagy (GO:0000057); Mitophagy (GO:0000057) —DECREASES→ Mitochondrial dynamics and fusion (GO:0007005); Mitophagy (GO:0000057) —DECREASES→ PI3K-AKT signaling pathway (REACT:R-HSA-425500); Axonal degeneration (HP:0003404) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Mutations in MFN2 disrupt mitochondrial dynamics, leading to axonal degeneration in CMT2A2. Concurrently, dysregulation (potentially gain-of-function) of PIK3CA and AKT1 drives the PI3K-AKT signaling pathway, promoting ovarian cancer. Parkin (PRKN), involved in mitophagy, can be dysregulated in both conditions: loss-of-function impairs mitophagy, contributing to mitochondrial dysfunction seen in CMT2A2, while its altered activity may also impact signaling pathways relevant to ovarian cancer progression.\n\n**How to falsify it:** Demonstration that PRKN mutations in ovarian cancer consistently lead to loss-of-function that impairs mitophagy, or that MFN2 mutations do not affect mitochondrial dynamics. _(variant: rs1801582)_\n\n**Why it matters:** Targeting the PI3K-AKT pathway is a known strategy in ovarian cancer therapy. Understanding the role of mitochondrial dynamics and mitophagy (potentially influenced by MFN2 and PRKN) in both conditions could reveal novel therapeutic avenues for CMT2A2 and potentially synergistic approaches for ovarian cancer, such as targeting mitochondrial function to sensitize cancer cells to existing therapies.\n\n---\n\n#### 9. autosomal recessive early-onset Parkinson disease 6  —  Tier 3 — Moderate / Emerging  (fitness 0.325)\n**Link type:** shared pathway (Reactome:R-HSA-5205685)\n\n**Proposed mechanism:** MFN2 (HGNC:7377) —DISRUPTS→ Mitochondrial fusion (GO:0005739); Mitochondrial fusion (GO:0005739) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Peripheral neuropathy (HP:0003691); PINK1 (HGNC:24490) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial dysfunction (GO:0008152); Mitochondrial dysfunction (GO:0008152) —LEADS_TO→ Parkinsonism (HP:0001314). Mutations in MFN2 impair mitochondrial fusion, leading to general mitochondrial dysfunction, which manifests as peripheral neuropathy in CMT2A2. Mutations in PINK1 impair mitophagy, also resulting in mitochondrial dysfunction, which manifests as Parkinsonism in AR-PED6. Both pathways converge on mitochondrial dysfunction.\n\n**How to falsify it:** Demonstration that the causal variants for CMT2A2 (MFN2) do not impact mitochondrial fusion or that causal variants for AR-PED6 (PINK1) do not affect mitophagy or mitochondrial quality control. _(variant: Any common variant (AF > 0.01) in MFN2 or PINK1 exhibiting no functional consequence on mitochondrial fusion or mitophagy, respectively.)_\n\n**Why it matters:** Understanding the shared role of mitochondrial dynamics and quality control in these neurodegenerative diseases could lead to therapeutic strategies targeting mitochondrial health for both conditions, potentially through compounds that enhance fusion or mitophagy.\n\n---"
+}

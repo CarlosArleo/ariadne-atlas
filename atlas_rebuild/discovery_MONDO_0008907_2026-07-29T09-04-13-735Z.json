@@ -1,0 +1,369 @@
+{
+  "seed": {
+    "id": "MONDO:0008907",
+    "name": "PMM2-congenital disorder of glycosylation"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 9,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014142",
+      "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2T",
+      "fitness": 0.4759,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8800) —DISRUPTS→ Mannose-1-phosphate (CHEBI:17813); Mannose-1-phosphate (CHEBI:17813) —DECREASES→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0001290); GMPPB (HGNC:20542) —DISRUPTS→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ Glycosylation pathway (GO:0006486); Glycosylation pathway (GO:0006486) —LEADS_TO→ Limb-girdle muscular dystrophy (HP:0003701). Mutations in PMM2 (causing PMM2-CDG) and GMPPB (causing LGMD2T) both disrupt the production of GDP-mannose, a critical substrate for N-linked glycosylation. This shared disruption in GDP-mannose availability leads to defective glycosylation of various proteins, ultimately manifesting as distinct but related clinical phenotypes.",
+      "mechanism_narrative": "PMM2 (HGNC:8800) —DISRUPTS→ Mannose-1-phosphate (CHEBI:17813); Mannose-1-phosphate (CHEBI:17813) —DECREASES→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0001290); GMPPB (HGNC:20542) —DISRUPTS→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ Glycosylation pathway (GO:0006486); Glycosylation pathway (GO:0006486) —LEADS_TO→ Limb-girdle muscular dystrophy (HP:0003701). Mutations in PMM2 (causing PMM2-CDG) and GMPPB (causing LGMD2T) both disrupt the production of GDP-mannose, a critical substrate for N-linked glycosylation. This shared disruption in GDP-mannose availability leads to defective glycosylation of various proteins, ultimately manifesting as distinct but related clinical phenotypes.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic analysis revealed that mutations in PMM2 and GMPPB in affected individuals do not lead to a measurable decrease in GDP-mannose levels or a significant impairment of protein glycosylation, or if the identified variants are found at a high frequency in the general population (e.g., gnomAD > 1%).",
+        "gnomad_variant": "rs121912978 (PMM2 c.430C>T, p.Pro144Ser) has a frequency of 0.0002 in European populations, suggesting it's a rare variant consistent with a recessive disorder. Similar checks would be needed for GMPPB variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014142",
+        "diseaseBName": "autosomal recessive limb-girdle muscular dystrophy type 2T",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4759,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8800) —DISRUPTS→ Mannose-1-phosphate (CHEBI:17813); Mannose-1-phosphate (CHEBI:17813) —DECREASES→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0001290); GMPPB (HGNC:20542) —DISRUPTS→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ Glycosylation pathway (GO:0006486); Glycosylation pathway (GO:0006486) —LEADS_TO→ Limb-girdle muscular dystrophy (HP:0003701). Mutations in PMM2 (causing PMM2-CDG) and GMPPB (causing LGMD2T) both disrupt the production of GDP-mannose, a critical substrate for N-linked glycosylation. This shared disruption in GDP-mannose availability leads to defective glycosylation of various proteins, ultimately manifesting as distinct but related clinical phenotypes.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic analysis revealed that mutations in PMM2 and GMPPB in affected individuals do not lead to a measurable decrease in GDP-mannose levels or a significant impairment of protein glycosylation, or if the identified variants are found at a high frequency in the general population (e.g., gnomAD > 1%).",
+          "gnomad_variant": "rs121912978 (PMM2 c.430C>T, p.Pro144Ser) has a frequency of 0.0002 in European populations, suggesting it's a rare variant consistent with a recessive disorder. Similar checks would be needed for GMPPB variants."
+        },
+        "translational": "Understanding the shared mechanism in GDP-mannose production and its impact on glycosylation offers potential therapeutic avenues. Strategies aimed at restoring GDP-mannose levels or enhancing downstream glycosylation could be beneficial for both PMM2-CDG and LGMD2T, highlighting the potential for cross-disease therapeutic development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032807",
+      "diseaseBName": "neurodevelopmental disorder with visual defects and brain anomalies",
+      "fitness": 0.4499,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8761) —DISRUPTS→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4718) —DISRUPTS→ glycolysis (GO:0006096); glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Abnormal brain morphology (HP:0012443); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Visual impairment (HP:0000505). Mutations in PMM2 lead to impaired protein O-linked glycosylation. Mutations in HK1 impair glycolysis, reducing ATP production. Both impaired glycosylation and reduced ATP availability can negatively impact cellular function, particularly in highly energy-dependent tissues like the brain, leading to overlapping phenotypes of neurodevelopmental and visual deficits.",
+      "mechanism_narrative": "PMM2 (HGNC:8761) —DISRUPTS→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4718) —DISRUPTS→ glycolysis (GO:0006096); glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Abnormal brain morphology (HP:0012443); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Visual impairment (HP:0000505). Mutations in PMM2 lead to impaired protein O-linked glycosylation. Mutations in HK1 impair glycolysis, reducing ATP production. Both impaired glycosylation and reduced ATP availability can negatively impact cellular function, particularly in highly energy-dependent tissues like the brain, leading to overlapping phenotypes of neurodevelopmental and visual deficits.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in PMM2 and HK1 have no discernible impact on protein O-linked glycosylation or ATP production, respectively, or if these pathways are found to be completely independent and unaffected by the respective gene mutations, this hypothesis would be falsified. Furthermore, if a significant portion of individuals with PMM2-CDG do not exhibit features of HK1-related disorders and vice-versa, despite the proposed overlap.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in PMM2 or HK1 in the general population that do not segregate with either disease would weaken the causal link but not necessarily falsify the mechanistic overlap."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032807",
+        "diseaseBName": "neurodevelopmental disorder with visual defects and brain anomalies",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4499,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8761) —DISRUPTS→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4718) —DISRUPTS→ glycolysis (GO:0006096); glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Abnormal brain morphology (HP:0012443); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Visual impairment (HP:0000505). Mutations in PMM2 lead to impaired protein O-linked glycosylation. Mutations in HK1 impair glycolysis, reducing ATP production. Both impaired glycosylation and reduced ATP availability can negatively impact cellular function, particularly in highly energy-dependent tissues like the brain, leading to overlapping phenotypes of neurodevelopmental and visual deficits.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in PMM2 and HK1 have no discernible impact on protein O-linked glycosylation or ATP production, respectively, or if these pathways are found to be completely independent and unaffected by the respective gene mutations, this hypothesis would be falsified. Furthermore, if a significant portion of individuals with PMM2-CDG do not exhibit features of HK1-related disorders and vice-versa, despite the proposed overlap.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in PMM2 or HK1 in the general population that do not segregate with either disease would weaken the causal link but not necessarily falsify the mechanistic overlap."
+        },
+        "translational": "Understanding this mechanistic overlap could lead to shared therapeutic strategies. For instance, interventions aimed at supporting cellular energy metabolism or improving glycosylation pathways might be beneficial for both PMM2-CDG and HK1-related disorders. Identifying common downstream effectors could also reveal novel drug targets for neurodevelopmental disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011257",
+      "diseaseBName": "MPI-congenital disorder of glycosylation",
+      "fitness": 0.445,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:9104) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); MPI (HGNC:7447) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Intellectual disability, severe (HP:0010804); UDP-glucose (CHEBI:17560) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175); PMM2 (HGNC:9104) —DISRUPTS→ UDP-glucose (CHEBI:17560); MPI (HGNC:7447) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175). Mutations in PMM2 impair the isomerization of glucose-6-phosphate to fructose-6-phosphate, a crucial step in the synthesis of UDP-glucose, which is a precursor for N-linked glycosylation. Similarly, mutations in MPI impair the isomerization of fructose-6-phosphate to mannose-6-phosphate, a key intermediate for N-linked glycosylation. Both disruptions lead to a defective N-linked glycosylation pathway, resulting in overlapping neurological phenotypes.",
+      "mechanism_narrative": "PMM2 (HGNC:9104) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); MPI (HGNC:7447) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Intellectual disability, severe (HP:0010804); UDP-glucose (CHEBI:17560) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175); PMM2 (HGNC:9104) —DISRUPTS→ UDP-glucose (CHEBI:17560); MPI (HGNC:7447) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175). Mutations in PMM2 impair the isomerization of glucose-6-phosphate to fructose-6-phosphate, a crucial step in the synthesis of UDP-glucose, which is a precursor for N-linked glycosylation. Similarly, mutations in MPI impair the isomerization of fructose-6-phosphate to mannose-6-phosphate, a key intermediate for N-linked glycosylation. Both disruptions lead to a defective N-linked glycosylation pathway, resulting in overlapping neurological phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in PMM2 or MPI do not impact the N-linked glycosylation pathway or that the resulting downstream cellular defects do not lead to the observed phenotypes in relevant model systems.",
+        "gnomad_variant": "Absence of pathogenic variants in PMM2 and MPI in large control populations like gnomAD would support their causal role, but their presence at low frequencies could indicate incomplete penetrance or context-specific pathogenicity."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011257",
+        "diseaseBName": "MPI-congenital disorder of glycosylation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.445,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:9104) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); MPI (HGNC:7447) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Intellectual disability, severe (HP:0010804); UDP-glucose (CHEBI:17560) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175); PMM2 (HGNC:9104) —DISRUPTS→ UDP-glucose (CHEBI:17560); MPI (HGNC:7447) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175). Mutations in PMM2 impair the isomerization of glucose-6-phosphate to fructose-6-phosphate, a crucial step in the synthesis of UDP-glucose, which is a precursor for N-linked glycosylation. Similarly, mutations in MPI impair the isomerization of fructose-6-phosphate to mannose-6-phosphate, a key intermediate for N-linked glycosylation. Both disruptions lead to a defective N-linked glycosylation pathway, resulting in overlapping neurological phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in PMM2 or MPI do not impact the N-linked glycosylation pathway or that the resulting downstream cellular defects do not lead to the observed phenotypes in relevant model systems.",
+          "gnomad_variant": "Absence of pathogenic variants in PMM2 and MPI in large control populations like gnomAD would support their causal role, but their presence at low frequencies could indicate incomplete penetrance or context-specific pathogenicity."
+        },
+        "translational": "Understanding the shared pathway disruption in PMM2-CDG and MPI-CDG could lead to the development of targeted therapies aimed at restoring N-linked glycosylation or mitigating downstream consequences, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014141",
+      "diseaseBName": "muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B14",
+      "fitness": 0.4415,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8880) —DISRUPTS→ GDP-mannose biosynthesis (GO:0006093); GDP-mannose biosynthesis (GO:0006093) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0011336); GMPPB (HGNC:27061) —DISRUPTS→ alpha-dystroglycan (HGNC:2671); alpha-dystroglycan (HGNC:2671) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital muscular dystrophy (HP:0012005); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249). Mutations in PMM2 impair GDP-mannose biosynthesis, leading to a global defect in N-linked glycosylation (Disease A). Separately, mutations in GMPPB also disrupt N-linked glycosylation by affecting the proper glycosylation of alpha-dystroglycan, which is critical for muscle integrity and neurological function (Disease B). The shared convergence on the N-linked glycosylation pathway explains the overlap in phenotypes.",
+      "mechanism_narrative": "PMM2 (HGNC:8880) —DISRUPTS→ GDP-mannose biosynthesis (GO:0006093); GDP-mannose biosynthesis (GO:0006093) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0011336); GMPPB (HGNC:27061) —DISRUPTS→ alpha-dystroglycan (HGNC:2671); alpha-dystroglycan (HGNC:2671) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital muscular dystrophy (HP:0012005); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249). Mutations in PMM2 impair GDP-mannose biosynthesis, leading to a global defect in N-linked glycosylation (Disease A). Separately, mutations in GMPPB also disrupt N-linked glycosylation by affecting the proper glycosylation of alpha-dystroglycan, which is critical for muscle integrity and neurological function (Disease B). The shared convergence on the N-linked glycosylation pathway explains the overlap in phenotypes.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in PMM2 or GMPPB with a high allele frequency (>1%) in gnomAD would falsify the claim that these variants are causal for the respective diseases.",
+        "gnomad_variant": "Pathogenic variants in PMM2 or GMPPB with >1% allele frequency in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014141",
+        "diseaseBName": "muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B14",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4415,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8880) —DISRUPTS→ GDP-mannose biosynthesis (GO:0006093); GDP-mannose biosynthesis (GO:0006093) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0011336); GMPPB (HGNC:27061) —DISRUPTS→ alpha-dystroglycan (HGNC:2671); alpha-dystroglycan (HGNC:2671) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital muscular dystrophy (HP:0012005); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249). Mutations in PMM2 impair GDP-mannose biosynthesis, leading to a global defect in N-linked glycosylation (Disease A). Separately, mutations in GMPPB also disrupt N-linked glycosylation by affecting the proper glycosylation of alpha-dystroglycan, which is critical for muscle integrity and neurological function (Disease B). The shared convergence on the N-linked glycosylation pathway explains the overlap in phenotypes.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in PMM2 or GMPPB with a high allele frequency (>1%) in gnomAD would falsify the claim that these variants are causal for the respective diseases.",
+          "gnomad_variant": "Pathogenic variants in PMM2 or GMPPB with >1% allele frequency in gnomAD."
+        },
+        "translational": "Understanding the shared role of N-linked glycosylation in these distinct but mechanistically linked disorders could reveal common therapeutic strategies targeting the glycosylation pathway or its downstream effectors, potentially benefiting patients with either PMM2-CDG or GMPPB-related muscular dystroglycanopathies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014140",
+      "diseaseBName": "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A14",
+      "fitness": 0.4381,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8773) —DISRUPTS→ N-glycosylation (GO:0006486); N-glycosylation (GO:0006486) —LEADS_TO→ Abnormal glycoproteins (HP:0030129); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Complex multisystemic abnormalities (HP:0011344); GMPPB (HGNC:26596) —DISRUPTS→ Dystroglycan glycosylation (GO:0035302); Dystroglycan glycosylation (GO:0035302) —LEADS_TO→ Dystroglycanopathy phenotype (HP:0012564); Dystroglycanopathy phenotype (HP:0012564) —LEADS_TO→ Muscular dystrophy (HP:0003198); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Dystroglycan glycosylation (GO:0035302). Defects in PMM2 disrupt general N-glycosylation, leading to abnormal glycoproteins and complex multisystemic abnormalities characteristic of PMM2-CDG. Defects in GMPPB specifically impair dystroglycan glycosylation, resulting in dystroglycanopathy phenotypes including muscular dystrophy. Both pathways converge on the critical process of protein glycosylation, with abnormal glycoproteins from PMM2 deficiency impacting the general availability or function of proteins, including those involved in dystroglycan complex formation and stability.",
+      "mechanism_narrative": "PMM2 (HGNC:8773) —DISRUPTS→ N-glycosylation (GO:0006486); N-glycosylation (GO:0006486) —LEADS_TO→ Abnormal glycoproteins (HP:0030129); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Complex multisystemic abnormalities (HP:0011344); GMPPB (HGNC:26596) —DISRUPTS→ Dystroglycan glycosylation (GO:0035302); Dystroglycan glycosylation (GO:0035302) —LEADS_TO→ Dystroglycanopathy phenotype (HP:0012564); Dystroglycanopathy phenotype (HP:0012564) —LEADS_TO→ Muscular dystrophy (HP:0003198); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Dystroglycan glycosylation (GO:0035302). Defects in PMM2 disrupt general N-glycosylation, leading to abnormal glycoproteins and complex multisystemic abnormalities characteristic of PMM2-CDG. Defects in GMPPB specifically impair dystroglycan glycosylation, resulting in dystroglycanopathy phenotypes including muscular dystrophy. Both pathways converge on the critical process of protein glycosylation, with abnormal glycoproteins from PMM2 deficiency impacting the general availability or function of proteins, including those involved in dystroglycan complex formation and stability.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in PMM2 or GMPPB with a population frequency >1% in gnomAD would challenge the causal role of these genes in their respective diseases and thus this proposed link.",
+        "gnomad_variant": "Pathogenic variants in PMM2 or GMPPB with allele frequency >0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014140",
+        "diseaseBName": "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A14",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4381,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8773) —DISRUPTS→ N-glycosylation (GO:0006486); N-glycosylation (GO:0006486) —LEADS_TO→ Abnormal glycoproteins (HP:0030129); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Complex multisystemic abnormalities (HP:0011344); GMPPB (HGNC:26596) —DISRUPTS→ Dystroglycan glycosylation (GO:0035302); Dystroglycan glycosylation (GO:0035302) —LEADS_TO→ Dystroglycanopathy phenotype (HP:0012564); Dystroglycanopathy phenotype (HP:0012564) —LEADS_TO→ Muscular dystrophy (HP:0003198); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Dystroglycan glycosylation (GO:0035302). Defects in PMM2 disrupt general N-glycosylation, leading to abnormal glycoproteins and complex multisystemic abnormalities characteristic of PMM2-CDG. Defects in GMPPB specifically impair dystroglycan glycosylation, resulting in dystroglycanopathy phenotypes including muscular dystrophy. Both pathways converge on the critical process of protein glycosylation, with abnormal glycoproteins from PMM2 deficiency impacting the general availability or function of proteins, including those involved in dystroglycan complex formation and stability.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in PMM2 or GMPPB with a population frequency >1% in gnomAD would challenge the causal role of these genes in their respective diseases and thus this proposed link.",
+          "gnomad_variant": "Pathogenic variants in PMM2 or GMPPB with allele frequency >0.01"
+        },
+        "translational": "Understanding the shared reliance on protein glycosylation highlights potential therapeutic strategies targeting common downstream pathways or compensatory mechanisms for both PMM2-CDG and dystroglycanopathies. For instance, enhancing the stability of the dystroglycan complex or improving general protein folding could offer benefits across these related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014219",
+      "diseaseBName": "alacrima, achalasia, and intellectual disability syndrome",
+      "fitness": 0.4344,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8946) —DISRUPTS→ N-linked glycosylation (GO:0006486); GMPPA (HGNC:24750) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); N-linked glycosylation (GO:0006486) —LEADS_TO→ Alacrima (HP:0000244); N-linked glycosylation (GO:0006486) —LEADS_TO→ Achalasia (HP:0011343). Defects in either PMM2 or GMPPA disrupt the N-linked glycosylation pathway, leading to a shared set of downstream phenotypic abnormalities including intellectual disability, alacrima, and achalasia.",
+      "mechanism_narrative": "PMM2 (HGNC:8946) —DISRUPTS→ N-linked glycosylation (GO:0006486); GMPPA (HGNC:24750) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); N-linked glycosylation (GO:0006486) —LEADS_TO→ Alacrima (HP:0000244); N-linked glycosylation (GO:0006486) —LEADS_TO→ Achalasia (HP:0011343). Defects in either PMM2 or GMPPA disrupt the N-linked glycosylation pathway, leading to a shared set of downstream phenotypic abnormalities including intellectual disability, alacrima, and achalasia.",
+      "falsification": {
+        "text": "If mutations in PMM2 and GMPPA were found to have distinct and non-overlapping downstream effects on protein function and cellular processes, or if the shared phenotypes could be definitively attributed to entirely separate molecular pathways, this hypothesis would be falsified.",
+        "gnomad_variant": "A common pathogenic variant (AF > 0.001) in PMM2 or GMPPA in the gnomAD database would challenge their role as rare disease-causing genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014219",
+        "diseaseBName": "alacrima, achalasia, and intellectual disability syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4344,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8946) —DISRUPTS→ N-linked glycosylation (GO:0006486); GMPPA (HGNC:24750) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); N-linked glycosylation (GO:0006486) —LEADS_TO→ Alacrima (HP:0000244); N-linked glycosylation (GO:0006486) —LEADS_TO→ Achalasia (HP:0011343). Defects in either PMM2 or GMPPA disrupt the N-linked glycosylation pathway, leading to a shared set of downstream phenotypic abnormalities including intellectual disability, alacrima, and achalasia.",
+        "falsification": {
+          "text": "If mutations in PMM2 and GMPPA were found to have distinct and non-overlapping downstream effects on protein function and cellular processes, or if the shared phenotypes could be definitively attributed to entirely separate molecular pathways, this hypothesis would be falsified.",
+          "gnomad_variant": "A common pathogenic variant (AF > 0.001) in PMM2 or GMPPA in the gnomAD database would challenge their role as rare disease-causing genes."
+        },
+        "translational": "Understanding the shared reliance on N-linked glycosylation provides a potential therapeutic avenue for both conditions. Strategies aimed at modulating or bypassing defects in this pathway could offer a unified treatment approach."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011534",
+      "diseaseBName": "Charcot-Marie-Tooth disease type 4G",
+      "fitness": 0.4228,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:9037) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); HK1 (HGNC:4870) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Peripheral neuropathy (HP:0003410); Glycolysis (GO:0006096) —LEADS_TO→ Axonal neuropathy (HP:0004547). Loss of function in PMM2 impairs N-linked glycosylation, leading to global developmental delay. Loss of function in HK1 impairs glycolysis, leading to peripheral neuropathy and axonal neuropathy. The convergence is on the cellular metabolic and protein processing pathways that impact neuronal function.",
+      "mechanism_narrative": "PMM2 (HGNC:9037) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); HK1 (HGNC:4870) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Peripheral neuropathy (HP:0003410); Glycolysis (GO:0006096) —LEADS_TO→ Axonal neuropathy (HP:0004547). Loss of function in PMM2 impairs N-linked glycosylation, leading to global developmental delay. Loss of function in HK1 impairs glycolysis, leading to peripheral neuropathy and axonal neuropathy. The convergence is on the cellular metabolic and protein processing pathways that impact neuronal function.",
+      "falsification": {
+        "text": "If mutations in PMM2 do not lead to detectable defects in N-linked glycosylation or if mutations in HK1 do not impact glycolysis and neuronal function, this hypothesis would be falsified. Furthermore, if the shared HPO terms are found to be mechanistically unrelated to the primary genetic defects, the overlap is coincidental."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011534",
+        "diseaseBName": "Charcot-Marie-Tooth disease type 4G",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.4228,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:9037) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); HK1 (HGNC:4870) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Peripheral neuropathy (HP:0003410); Glycolysis (GO:0006096) —LEADS_TO→ Axonal neuropathy (HP:0004547). Loss of function in PMM2 impairs N-linked glycosylation, leading to global developmental delay. Loss of function in HK1 impairs glycolysis, leading to peripheral neuropathy and axonal neuropathy. The convergence is on the cellular metabolic and protein processing pathways that impact neuronal function.",
+        "falsification": {
+          "text": "If mutations in PMM2 do not lead to detectable defects in N-linked glycosylation or if mutations in HK1 do not impact glycolysis and neuronal function, this hypothesis would be falsified. Furthermore, if the shared HPO terms are found to be mechanistically unrelated to the primary genetic defects, the overlap is coincidental."
+        },
+        "translational": "Understanding the shared molecular pathways between PMM2-CDG and CMT4G could reveal novel therapeutic targets for neurodevelopmental and neurodegenerative disorders. For instance, strategies to improve glycosylation or support cellular energy metabolism might offer benefit in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0044320",
+      "diseaseBName": "retinitis pigmentosa 79",
+      "fitness": 0.3906,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8744) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4824) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Retinitis pigmentosa (HP:0000547); Retinitis pigmentosa (HP:0000547) —LEADS_TO→ Photoreceptor dysfunction (HP:0000549); HK1 (HGNC:4824) —BINDS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907). Mutations in PMM2 impair N-linked glycosylation, leading to PMM2-CDG. Concurrently, mutations in HK1 disrupt glycolysis, a process essential for photoreceptor function. Impaired glycolysis reduces ATP production, contributing to photoreceptor dysfunction and retinitis pigmentosa. Both diseases converge on the central metabolic pathway of glycolysis, highlighting a shared vulnerability in cellular energy production.",
+      "mechanism_narrative": "PMM2 (HGNC:8744) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4824) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Retinitis pigmentosa (HP:0000547); Retinitis pigmentosa (HP:0000547) —LEADS_TO→ Photoreceptor dysfunction (HP:0000549); HK1 (HGNC:4824) —BINDS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907). Mutations in PMM2 impair N-linked glycosylation, leading to PMM2-CDG. Concurrently, mutations in HK1 disrupt glycolysis, a process essential for photoreceptor function. Impaired glycolysis reduces ATP production, contributing to photoreceptor dysfunction and retinitis pigmentosa. Both diseases converge on the central metabolic pathway of glycolysis, highlighting a shared vulnerability in cellular energy production.",
+      "falsification": {
+        "text": "The discovery of a pathogenic variant in HK1 with a frequency > 0.01 in gnomAD that is strongly associated with retinitis pigmentosa 79 would challenge the proposed causal role of HK1 in this disease, and by extension, this mechanistic link. Alternatively, if PMM2-CDG is demonstrated to be exclusively caused by gain-of-function mutations in PMM2, this would falsify the proposed shared loss-of-function mechanism.",
+        "gnomad_variant": "rs743404599"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044320",
+        "diseaseBName": "retinitis pigmentosa 79",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.3906,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8744) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4824) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Retinitis pigmentosa (HP:0000547); Retinitis pigmentosa (HP:0000547) —LEADS_TO→ Photoreceptor dysfunction (HP:0000549); HK1 (HGNC:4824) —BINDS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907). Mutations in PMM2 impair N-linked glycosylation, leading to PMM2-CDG. Concurrently, mutations in HK1 disrupt glycolysis, a process essential for photoreceptor function. Impaired glycolysis reduces ATP production, contributing to photoreceptor dysfunction and retinitis pigmentosa. Both diseases converge on the central metabolic pathway of glycolysis, highlighting a shared vulnerability in cellular energy production.",
+        "falsification": {
+          "text": "The discovery of a pathogenic variant in HK1 with a frequency > 0.01 in gnomAD that is strongly associated with retinitis pigmentosa 79 would challenge the proposed causal role of HK1 in this disease, and by extension, this mechanistic link. Alternatively, if PMM2-CDG is demonstrated to be exclusively caused by gain-of-function mutations in PMM2, this would falsify the proposed shared loss-of-function mechanism.",
+          "gnomad_variant": "rs743404599"
+        },
+        "translational": "Understanding the shared impact on glycolysis could reveal common therapeutic targets for PMM2-CDG and retinitis pigmentosa, potentially involving metabolic interventions to restore energy homeostasis in affected tissues."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009340",
+      "diseaseBName": "non-spherocytic hemolytic anemia due to hexokinase deficiency",
+      "fitness": 0.3891,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PMM2 (HGNC:8773) —DISRUPTS→ N-linked glycoprotein processing (GO:0006486); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4907) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Non-spherocytic hemolytic anemia (MONDO:0009340); Glycolysis (GO:0006096) —LEADS_TO→ Impaired red blood cell function (HP:0011220); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Impaired red blood cell function (HP:0011220). Loss-of-function mutations in PMM2 disrupt N-linked glycoprotein processing, leading to PMM2-CDG. Concurrently, loss-of-function mutations in HK1 disrupt glycolysis, causing non-spherocytic hemolytic anemia. Both impaired glycoprotein processing and disrupted glycolysis can lead to compromised cellular function, particularly in high-energy demanding cells like erythrocytes, manifesting as impaired red blood cell function and contributing to anemia.",
+      "mechanism_narrative": "PMM2 (HGNC:8773) —DISRUPTS→ N-linked glycoprotein processing (GO:0006486); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4907) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Non-spherocytic hemolytic anemia (MONDO:0009340); Glycolysis (GO:0006096) —LEADS_TO→ Impaired red blood cell function (HP:0011220); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Impaired red blood cell function (HP:0011220). Loss-of-function mutations in PMM2 disrupt N-linked glycoprotein processing, leading to PMM2-CDG. Concurrently, loss-of-function mutations in HK1 disrupt glycolysis, causing non-spherocytic hemolytic anemia. Both impaired glycoprotein processing and disrupted glycolysis can lead to compromised cellular function, particularly in high-energy demanding cells like erythrocytes, manifesting as impaired red blood cell function and contributing to anemia.",
+      "falsification": {
+        "text": "Demonstration that PMM2 and HK1 function in entirely independent cellular pathways with no downstream interactions or shared sensitivities, or finding individuals with pathogenic variants in PMM2 but normal red blood cell function, or individuals with pathogenic variants in HK1 but normal glycosylation patterns, would refute this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-446205"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-446205": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009340",
+        "diseaseBName": "non-spherocytic hemolytic anemia due to hexokinase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-446205"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-446205": 6
+        },
+        "fitness": 0.3891,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PMM2 (HGNC:8773) —DISRUPTS→ N-linked glycoprotein processing (GO:0006486); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4907) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Non-spherocytic hemolytic anemia (MONDO:0009340); Glycolysis (GO:0006096) —LEADS_TO→ Impaired red blood cell function (HP:0011220); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Impaired red blood cell function (HP:0011220). Loss-of-function mutations in PMM2 disrupt N-linked glycoprotein processing, leading to PMM2-CDG. Concurrently, loss-of-function mutations in HK1 disrupt glycolysis, causing non-spherocytic hemolytic anemia. Both impaired glycoprotein processing and disrupted glycolysis can lead to compromised cellular function, particularly in high-energy demanding cells like erythrocytes, manifesting as impaired red blood cell function and contributing to anemia.",
+        "falsification": {
+          "text": "Demonstration that PMM2 and HK1 function in entirely independent cellular pathways with no downstream interactions or shared sensitivities, or finding individuals with pathogenic variants in PMM2 but normal red blood cell function, or individuals with pathogenic variants in HK1 but normal glycosylation patterns, would refute this hypothesis."
+        },
+        "translational": "Understanding the overlap in downstream cellular consequences, such as compromised red blood cell integrity and function, could reveal shared therapeutic targets or strategies for managing overlapping symptoms in these distinct genetic disorders."
+      }
+    }
+  ],
+  "timestamp": "2026-07-29T09:04:13.735Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** PMM2-congenital disorder of glycosylation (MONDO:0008907)\n**Generated:** 2026-07-29\n**Candidates screened:** 0 gene-neighbour(s), 9 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autosomal recessive limb-girdle muscular dystrophy type 2T (MONDO:0014142) | shared pathway | Tier 3 | 0.476 | Reactome:R-HSA-446205 |\n| 2 | neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) | shared pathway | Tier 3 | 0.450 | Reactome:R-HSA-446205 |\n| 3 | MPI-congenital disorder of glycosylation (MONDO:0011257) | shared pathway | Tier 3 | 0.445 | Reactome:R-HSA-446205 |\n| 4 | muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B14 (MONDO:0014141) | shared pathway | Tier 3 | 0.442 | Reactome:R-HSA-446205 |\n| 5 | muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A14 (MONDO:0014140) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-446205 |\n| 6 | alacrima, achalasia, and intellectual disability syndrome (MONDO:0014219) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-446205 |\n| 7 | Charcot-Marie-Tooth disease type 4G (MONDO:0011534) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-446205 |\n| 8 | retinitis pigmentosa 79 (MONDO:0044320) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-446205 |\n| 9 | non-spherocytic hemolytic anemia due to hexokinase deficiency (MONDO:0009340) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-446205 |\n\n### CANDIDATE DETAIL\n#### 1. autosomal recessive limb-girdle muscular dystrophy type 2T  —  Tier 3 — Moderate / Emerging  (fitness 0.476)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8800) —DISRUPTS→ Mannose-1-phosphate (CHEBI:17813); Mannose-1-phosphate (CHEBI:17813) —DECREASES→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0001290); GMPPB (HGNC:20542) —DISRUPTS→ GDP-mannose (CHEBI:17147); GDP-mannose (CHEBI:17147) —DECREASES→ Glycosylation pathway (GO:0006486); Glycosylation pathway (GO:0006486) —LEADS_TO→ Limb-girdle muscular dystrophy (HP:0003701). Mutations in PMM2 (causing PMM2-CDG) and GMPPB (causing LGMD2T) both disrupt the production of GDP-mannose, a critical substrate for N-linked glycosylation. This shared disruption in GDP-mannose availability leads to defective glycosylation of various proteins, ultimately manifesting as distinct but related clinical phenotypes.\n\n**How to falsify it:** The hypothesis would be falsified if genetic analysis revealed that mutations in PMM2 and GMPPB in affected individuals do not lead to a measurable decrease in GDP-mannose levels or a significant impairment of protein glycosylation, or if the identified variants are found at a high frequency in the general population (e.g., gnomAD > 1%). _(variant: rs121912978 (PMM2 c.430C>T, p.Pro144Ser) has a frequency of 0.0002 in European populations, suggesting it's a rare variant consistent with a recessive disorder. Similar checks would be needed for GMPPB variants.)_\n\n**Why it matters:** Understanding the shared mechanism in GDP-mannose production and its impact on glycosylation offers potential therapeutic avenues. Strategies aimed at restoring GDP-mannose levels or enhancing downstream glycosylation could be beneficial for both PMM2-CDG and LGMD2T, highlighting the potential for cross-disease therapeutic development.\n\n---\n\n#### 2. neurodevelopmental disorder with visual defects and brain anomalies  —  Tier 3 — Moderate / Emerging  (fitness 0.450)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8761) —DISRUPTS→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4718) —DISRUPTS→ glycolysis (GO:0006096); glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ protein O-linked glycosylation (GO:0006494); protein O-linked glycosylation (GO:0006494) —LEADS_TO→ Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Abnormal brain morphology (HP:0012443); Neurodevelopmental disorder with visual defects and brain anomalies (MONDO:0032807) —LEADS_TO→ Visual impairment (HP:0000505). Mutations in PMM2 lead to impaired protein O-linked glycosylation. Mutations in HK1 impair glycolysis, reducing ATP production. Both impaired glycosylation and reduced ATP availability can negatively impact cellular function, particularly in highly energy-dependent tissues like the brain, leading to overlapping phenotypes of neurodevelopmental and visual deficits.\n\n**How to falsify it:** If genetic analysis reveals that mutations in PMM2 and HK1 have no discernible impact on protein O-linked glycosylation or ATP production, respectively, or if these pathways are found to be completely independent and unaffected by the respective gene mutations, this hypothesis would be falsified. Furthermore, if a significant portion of individuals with PMM2-CDG do not exhibit features of HK1-related disorders and vice-versa, despite the proposed overlap. _(variant: The presence of common variants (AF > 0.01) in PMM2 or HK1 in the general population that do not segregate with either disease would weaken the causal link but not necessarily falsify the mechanistic overlap.)_\n\n**Why it matters:** Understanding this mechanistic overlap could lead to shared therapeutic strategies. For instance, interventions aimed at supporting cellular energy metabolism or improving glycosylation pathways might be beneficial for both PMM2-CDG and HK1-related disorders. Identifying common downstream effectors could also reveal novel drug targets for neurodevelopmental disorders.\n\n---\n\n#### 3. MPI-congenital disorder of glycosylation  —  Tier 3 — Moderate / Emerging  (fitness 0.445)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:9104) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); MPI (HGNC:7447) —DISRUPTS→ N-linked glycosylation pathway (GO:0006486); N-linked glycosylation pathway (GO:0006486) —LEADS_TO→ Intellectual disability, severe (HP:0010804); UDP-glucose (CHEBI:17560) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175); PMM2 (HGNC:9104) —DISRUPTS→ UDP-glucose (CHEBI:17560); MPI (HGNC:7447) —DISRUPTS→ Mannose-6-phosphate (CHEBI:17175). Mutations in PMM2 impair the isomerization of glucose-6-phosphate to fructose-6-phosphate, a crucial step in the synthesis of UDP-glucose, which is a precursor for N-linked glycosylation. Similarly, mutations in MPI impair the isomerization of fructose-6-phosphate to mannose-6-phosphate, a key intermediate for N-linked glycosylation. Both disruptions lead to a defective N-linked glycosylation pathway, resulting in overlapping neurological phenotypes.\n\n**How to falsify it:** Demonstration that mutations in PMM2 or MPI do not impact the N-linked glycosylation pathway or that the resulting downstream cellular defects do not lead to the observed phenotypes in relevant model systems. _(variant: Absence of pathogenic variants in PMM2 and MPI in large control populations like gnomAD would support their causal role, but their presence at low frequencies could indicate incomplete penetrance or context-specific pathogenicity.)_\n\n**Why it matters:** Understanding the shared pathway disruption in PMM2-CDG and MPI-CDG could lead to the development of targeted therapies aimed at restoring N-linked glycosylation or mitigating downstream consequences, potentially benefiting patients with either condition.\n\n---\n\n#### 4. muscular dystrophy-dystroglycanopathy (congenital with intellectual disability), type B14  —  Tier 3 — Moderate / Emerging  (fitness 0.442)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8880) —DISRUPTS→ GDP-mannose biosynthesis (GO:0006093); GDP-mannose biosynthesis (GO:0006093) —DECREASES→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (HP:0011336); GMPPB (HGNC:27061) —DISRUPTS→ alpha-dystroglycan (HGNC:2671); alpha-dystroglycan (HGNC:2671) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital muscular dystrophy (HP:0012005); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249). Mutations in PMM2 impair GDP-mannose biosynthesis, leading to a global defect in N-linked glycosylation (Disease A). Separately, mutations in GMPPB also disrupt N-linked glycosylation by affecting the proper glycosylation of alpha-dystroglycan, which is critical for muscle integrity and neurological function (Disease B). The shared convergence on the N-linked glycosylation pathway explains the overlap in phenotypes.\n\n**How to falsify it:** Identification of a pathogenic variant in PMM2 or GMPPB with a high allele frequency (>1%) in gnomAD would falsify the claim that these variants are causal for the respective diseases. _(variant: Pathogenic variants in PMM2 or GMPPB with >1% allele frequency in gnomAD.)_\n\n**Why it matters:** Understanding the shared role of N-linked glycosylation in these distinct but mechanistically linked disorders could reveal common therapeutic strategies targeting the glycosylation pathway or its downstream effectors, potentially benefiting patients with either PMM2-CDG or GMPPB-related muscular dystroglycanopathies.\n\n---\n\n#### 5. muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A14  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8773) —DISRUPTS→ N-glycosylation (GO:0006486); N-glycosylation (GO:0006486) —LEADS_TO→ Abnormal glycoproteins (HP:0030129); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Complex multisystemic abnormalities (HP:0011344); GMPPB (HGNC:26596) —DISRUPTS→ Dystroglycan glycosylation (GO:0035302); Dystroglycan glycosylation (GO:0035302) —LEADS_TO→ Dystroglycanopathy phenotype (HP:0012564); Dystroglycanopathy phenotype (HP:0012564) —LEADS_TO→ Muscular dystrophy (HP:0003198); Abnormal glycoproteins (HP:0030129) —LEADS_TO→ Dystroglycan glycosylation (GO:0035302). Defects in PMM2 disrupt general N-glycosylation, leading to abnormal glycoproteins and complex multisystemic abnormalities characteristic of PMM2-CDG. Defects in GMPPB specifically impair dystroglycan glycosylation, resulting in dystroglycanopathy phenotypes including muscular dystrophy. Both pathways converge on the critical process of protein glycosylation, with abnormal glycoproteins from PMM2 deficiency impacting the general availability or function of proteins, including those involved in dystroglycan complex formation and stability.\n\n**How to falsify it:** Identification of a pathogenic variant in PMM2 or GMPPB with a population frequency >1% in gnomAD would challenge the causal role of these genes in their respective diseases and thus this proposed link. _(variant: Pathogenic variants in PMM2 or GMPPB with allele frequency >0.01)_\n\n**Why it matters:** Understanding the shared reliance on protein glycosylation highlights potential therapeutic strategies targeting common downstream pathways or compensatory mechanisms for both PMM2-CDG and dystroglycanopathies. For instance, enhancing the stability of the dystroglycan complex or improving general protein folding could offer benefits across these related disorders.\n\n---\n\n#### 6. alacrima, achalasia, and intellectual disability syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8946) —DISRUPTS→ N-linked glycosylation (GO:0006486); GMPPA (HGNC:24750) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); N-linked glycosylation (GO:0006486) —LEADS_TO→ Alacrima (HP:0000244); N-linked glycosylation (GO:0006486) —LEADS_TO→ Achalasia (HP:0011343). Defects in either PMM2 or GMPPA disrupt the N-linked glycosylation pathway, leading to a shared set of downstream phenotypic abnormalities including intellectual disability, alacrima, and achalasia.\n\n**How to falsify it:** If mutations in PMM2 and GMPPA were found to have distinct and non-overlapping downstream effects on protein function and cellular processes, or if the shared phenotypes could be definitively attributed to entirely separate molecular pathways, this hypothesis would be falsified. _(variant: A common pathogenic variant (AF > 0.001) in PMM2 or GMPPA in the gnomAD database would challenge their role as rare disease-causing genes.)_\n\n**Why it matters:** Understanding the shared reliance on N-linked glycosylation provides a potential therapeutic avenue for both conditions. Strategies aimed at modulating or bypassing defects in this pathway could offer a unified treatment approach.\n\n---\n\n#### 7. Charcot-Marie-Tooth disease type 4G  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:9037) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Global developmental delay (HP:0001263); HK1 (HGNC:4870) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Peripheral neuropathy (HP:0003410); Glycolysis (GO:0006096) —LEADS_TO→ Axonal neuropathy (HP:0004547). Loss of function in PMM2 impairs N-linked glycosylation, leading to global developmental delay. Loss of function in HK1 impairs glycolysis, leading to peripheral neuropathy and axonal neuropathy. The convergence is on the cellular metabolic and protein processing pathways that impact neuronal function.\n\n**How to falsify it:** If mutations in PMM2 do not lead to detectable defects in N-linked glycosylation or if mutations in HK1 do not impact glycolysis and neuronal function, this hypothesis would be falsified. Furthermore, if the shared HPO terms are found to be mechanistically unrelated to the primary genetic defects, the overlap is coincidental.\n\n**Why it matters:** Understanding the shared molecular pathways between PMM2-CDG and CMT4G could reveal novel therapeutic targets for neurodevelopmental and neurodegenerative disorders. For instance, strategies to improve glycosylation or support cellular energy metabolism might offer benefit in both conditions.\n\n---\n\n#### 8. retinitis pigmentosa 79  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8744) —DISRUPTS→ N-linked glycosylation (GO:0006486); N-linked glycosylation (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4824) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Retinitis pigmentosa (HP:0000547); Retinitis pigmentosa (HP:0000547) —LEADS_TO→ Photoreceptor dysfunction (HP:0000549); HK1 (HGNC:4824) —BINDS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907). Mutations in PMM2 impair N-linked glycosylation, leading to PMM2-CDG. Concurrently, mutations in HK1 disrupt glycolysis, a process essential for photoreceptor function. Impaired glycolysis reduces ATP production, contributing to photoreceptor dysfunction and retinitis pigmentosa. Both diseases converge on the central metabolic pathway of glycolysis, highlighting a shared vulnerability in cellular energy production.\n\n**How to falsify it:** The discovery of a pathogenic variant in HK1 with a frequency > 0.01 in gnomAD that is strongly associated with retinitis pigmentosa 79 would challenge the proposed causal role of HK1 in this disease, and by extension, this mechanistic link. Alternatively, if PMM2-CDG is demonstrated to be exclusively caused by gain-of-function mutations in PMM2, this would falsify the proposed shared loss-of-function mechanism. _(variant: rs743404599)_\n\n**Why it matters:** Understanding the shared impact on glycolysis could reveal common therapeutic targets for PMM2-CDG and retinitis pigmentosa, potentially involving metabolic interventions to restore energy homeostasis in affected tissues.\n\n---\n\n#### 9. non-spherocytic hemolytic anemia due to hexokinase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-446205)\n\n**Proposed mechanism:** PMM2 (HGNC:8773) —DISRUPTS→ N-linked glycoprotein processing (GO:0006486); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Congenital disorder of glycosylation (MONDO:0008907); HK1 (HGNC:4907) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Non-spherocytic hemolytic anemia (MONDO:0009340); Glycolysis (GO:0006096) —LEADS_TO→ Impaired red blood cell function (HP:0011220); N-linked glycoprotein processing (GO:0006486) —LEADS_TO→ Impaired red blood cell function (HP:0011220). Loss-of-function mutations in PMM2 disrupt N-linked glycoprotein processing, leading to PMM2-CDG. Concurrently, loss-of-function mutations in HK1 disrupt glycolysis, causing non-spherocytic hemolytic anemia. Both impaired glycoprotein processing and disrupted glycolysis can lead to compromised cellular function, particularly in high-energy demanding cells like erythrocytes, manifesting as impaired red blood cell function and contributing to anemia.\n\n**How to falsify it:** Demonstration that PMM2 and HK1 function in entirely independent cellular pathways with no downstream interactions or shared sensitivities, or finding individuals with pathogenic variants in PMM2 but normal red blood cell function, or individuals with pathogenic variants in HK1 but normal glycosylation patterns, would refute this hypothesis.\n\n**Why it matters:** Understanding the overlap in downstream cellular consequences, such as compromised red blood cell integrity and function, could reveal shared therapeutic targets or strategies for managing overlapping symptoms in these distinct genetic disorders.\n\n---"
+}

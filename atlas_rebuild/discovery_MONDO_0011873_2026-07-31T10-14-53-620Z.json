@@ -1,0 +1,411 @@
+{
+  "seed": {
+    "id": "MONDO:0011873",
+    "name": "Niemann-Pick disease, type C2"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 12,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.4818,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8164) —DISRUPTS→ Cholesterol and sphingolipids (CHEBI:15361); Cholesterol and sphingolipids (CHEBI:15361) —LEADS_TO→ Lysosomal accumulation of cholesterol and sphingolipids (HP:0002301); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation and apoptosis (GO:0007049); Cell cycle regulation and apoptosis (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). In Niemann-Pick disease type C2, loss-of-function mutations in NPC2 lead to impaired intracellular trafficking of cholesterol and sphingolipids, resulting in lysosomal accumulation and associated cellular dysfunction. In hepatocellular carcinoma, loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting uncontrolled cell growth and tumor formation. The convergence occurs at the level of cellular integrity and homeostasis, where disruption of fundamental cellular processes by either NPC2 or TP53 dysfunction can contribute to a cellular environment conducive to malignant transformation, particularly in the liver.",
+      "mechanism_narrative": "NPC2 (HGNC:8164) —DISRUPTS→ Cholesterol and sphingolipids (CHEBI:15361); Cholesterol and sphingolipids (CHEBI:15361) —LEADS_TO→ Lysosomal accumulation of cholesterol and sphingolipids (HP:0002301); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation and apoptosis (GO:0007049); Cell cycle regulation and apoptosis (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). In Niemann-Pick disease type C2, loss-of-function mutations in NPC2 lead to impaired intracellular trafficking of cholesterol and sphingolipids, resulting in lysosomal accumulation and associated cellular dysfunction. In hepatocellular carcinoma, loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting uncontrolled cell growth and tumor formation. The convergence occurs at the level of cellular integrity and homeostasis, where disruption of fundamental cellular processes by either NPC2 or TP53 dysfunction can contribute to a cellular environment conducive to malignant transformation, particularly in the liver.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for Niemann-Pick disease, type C2, are exclusively within the NPC2 gene and do not impact TP53 function, and conversely, that the causal variants for hepatocellular carcinoma in affected individuals are exclusively within TP53 and do not involve NPC2 or related lipid metabolism pathways, this would falsify the proposed mechanistic overlap.",
+        "gnomad_variant": "rs121918070 (TP53 R175H) has a GnomAD allele frequency > 0.001, suggesting it is not a rare disease-causing variant in all contexts."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.4818,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8164) —DISRUPTS→ Cholesterol and sphingolipids (CHEBI:15361); Cholesterol and sphingolipids (CHEBI:15361) —LEADS_TO→ Lysosomal accumulation of cholesterol and sphingolipids (HP:0002301); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation and apoptosis (GO:0007049); Cell cycle regulation and apoptosis (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). In Niemann-Pick disease type C2, loss-of-function mutations in NPC2 lead to impaired intracellular trafficking of cholesterol and sphingolipids, resulting in lysosomal accumulation and associated cellular dysfunction. In hepatocellular carcinoma, loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting uncontrolled cell growth and tumor formation. The convergence occurs at the level of cellular integrity and homeostasis, where disruption of fundamental cellular processes by either NPC2 or TP53 dysfunction can contribute to a cellular environment conducive to malignant transformation, particularly in the liver.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for Niemann-Pick disease, type C2, are exclusively within the NPC2 gene and do not impact TP53 function, and conversely, that the causal variants for hepatocellular carcinoma in affected individuals are exclusively within TP53 and do not involve NPC2 or related lipid metabolism pathways, this would falsify the proposed mechanistic overlap.",
+          "gnomad_variant": "rs121918070 (TP53 R175H) has a GnomAD allele frequency > 0.001, suggesting it is not a rare disease-causing variant in all contexts."
+        },
+        "translational": "Understanding the shared involvement of TP53 in cancer and its potential indirect influence on cellular processes disrupted in NPC2 deficiency could inform therapeutic strategies. For instance, modulating lipid metabolism might be explored in conjunction with standard cancer therapies targeting TP53 loss-of-function, or conversely, enhancing cellular homeostasis pathways could be beneficial in managing NPC2-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011381",
+      "diseaseBName": "dominant beta-thalassemia",
+      "fitness": 0.42,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8411) —DISRUPTS→ Lysosomal cholesterol trafficking (GO:0005757); Lysosomal cholesterol trafficking (GO:0005757) —DECREASES→ Cholesterol (CHEBI:15361); Cholesterol (CHEBI:15361) —LEADS_TO→ Hepatomegaly (HP:0002213); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin subunit beta (UniProt:P68871); Hemoglobin subunit beta (UniProt:P68871) —LEADS_TO→ Anemia (HP:0001878); Anemia (HP:0001878) —LEADS_TO→ Splenomegaly (HP:0001727). Mutations in NPC2 disrupt lysosomal cholesterol trafficking, leading to accumulation of cholesterol and subsequent hepatomegaly. Mutations in HBB disrupt the production of functional hemoglobin, leading to anemia and splenomegaly. Both diseases converge on cellular dysfunction and organomegaly, though through distinct primary mechanisms.",
+      "mechanism_narrative": "NPC2 (HGNC:8411) —DISRUPTS→ Lysosomal cholesterol trafficking (GO:0005757); Lysosomal cholesterol trafficking (GO:0005757) —DECREASES→ Cholesterol (CHEBI:15361); Cholesterol (CHEBI:15361) —LEADS_TO→ Hepatomegaly (HP:0002213); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin subunit beta (UniProt:P68871); Hemoglobin subunit beta (UniProt:P68871) —LEADS_TO→ Anemia (HP:0001878); Anemia (HP:0001878) —LEADS_TO→ Splenomegaly (HP:0001727). Mutations in NPC2 disrupt lysosomal cholesterol trafficking, leading to accumulation of cholesterol and subsequent hepatomegaly. Mutations in HBB disrupt the production of functional hemoglobin, leading to anemia and splenomegaly. Both diseases converge on cellular dysfunction and organomegaly, though through distinct primary mechanisms.",
+      "falsification": {
+        "text": "If genetic analysis reveals that patients with Niemann-Pick disease, type C2 do not exhibit any cellular cholesterol accumulation or altered lysosomal trafficking, and patients with dominant beta-thalassemia do not exhibit any defects in hemoglobin production or red blood cell integrity, this hypothesis would be falsified."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011381",
+        "diseaseBName": "dominant beta-thalassemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.42,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8411) —DISRUPTS→ Lysosomal cholesterol trafficking (GO:0005757); Lysosomal cholesterol trafficking (GO:0005757) —DECREASES→ Cholesterol (CHEBI:15361); Cholesterol (CHEBI:15361) —LEADS_TO→ Hepatomegaly (HP:0002213); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin subunit beta (UniProt:P68871); Hemoglobin subunit beta (UniProt:P68871) —LEADS_TO→ Anemia (HP:0001878); Anemia (HP:0001878) —LEADS_TO→ Splenomegaly (HP:0001727). Mutations in NPC2 disrupt lysosomal cholesterol trafficking, leading to accumulation of cholesterol and subsequent hepatomegaly. Mutations in HBB disrupt the production of functional hemoglobin, leading to anemia and splenomegaly. Both diseases converge on cellular dysfunction and organomegaly, though through distinct primary mechanisms.",
+        "falsification": {
+          "text": "If genetic analysis reveals that patients with Niemann-Pick disease, type C2 do not exhibit any cellular cholesterol accumulation or altered lysosomal trafficking, and patients with dominant beta-thalassemia do not exhibit any defects in hemoglobin production or red blood cell integrity, this hypothesis would be falsified."
+        },
+        "translational": "Understanding the interplay between cholesterol homeostasis and red blood cell function could reveal novel therapeutic targets for both NPC disease and beta-thalassemia, potentially involving agents that modulate lipid metabolism or enhance red blood cell survival."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011382",
+      "diseaseBName": "sickle cell disease",
+      "fitness": 0.4128,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8100) —DISRUPTS→ Lysosomal cholesterol and NPC1 trafficking (GO:0000305); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —LEADS_TO→ Hepatomegaly (HP:0002274); HBB (HGNC:4827) —PRODUCES→ Abnormal Hemoglobin (HbS) (CHEBI:31987); Abnormal Hemoglobin (HbS) (CHEBI:31987) —LEADS_TO→ Sickle-shaped red blood cells (HP:0001877); Sickle-shaped red blood cells (HP:0001877) —LEADS_TO→ Red blood cell dysfunction and vaso-occlusion (GO:0034220); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Splenomegaly (HP:0001654); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Anemia (HP:0001892); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —INCREASES→ Red blood cell dysfunction and vaso-occlusion (GO:0034220). Loss of function in NPC2 leads to impaired lysosomal cholesterol trafficking and accumulation, contributing to phenotypes like hepatomegaly. In sickle cell disease, loss of function in HBB leads to the production of abnormal HbS, causing red blood cell dysfunction, vaso-occlusion, and related phenotypes. The convergence occurs via the shared pathway of cellular dysfunction and organ damage, where lipid accumulation in NPC2 and red blood cell sickling in SCD both contribute to systemic pathology.",
+      "mechanism_narrative": "NPC2 (HGNC:8100) —DISRUPTS→ Lysosomal cholesterol and NPC1 trafficking (GO:0000305); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —LEADS_TO→ Hepatomegaly (HP:0002274); HBB (HGNC:4827) —PRODUCES→ Abnormal Hemoglobin (HbS) (CHEBI:31987); Abnormal Hemoglobin (HbS) (CHEBI:31987) —LEADS_TO→ Sickle-shaped red blood cells (HP:0001877); Sickle-shaped red blood cells (HP:0001877) —LEADS_TO→ Red blood cell dysfunction and vaso-occlusion (GO:0034220); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Splenomegaly (HP:0001654); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Anemia (HP:0001892); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —INCREASES→ Red blood cell dysfunction and vaso-occlusion (GO:0034220). Loss of function in NPC2 leads to impaired lysosomal cholesterol trafficking and accumulation, contributing to phenotypes like hepatomegaly. In sickle cell disease, loss of function in HBB leads to the production of abnormal HbS, causing red blood cell dysfunction, vaso-occlusion, and related phenotypes. The convergence occurs via the shared pathway of cellular dysfunction and organ damage, where lipid accumulation in NPC2 and red blood cell sickling in SCD both contribute to systemic pathology.",
+      "falsification": {
+        "text": "The absence of shared cellular or molecular pathways that link lipid metabolism defects (NPC2) to red blood cell dysfunction (HBB) would falsify this hypothesis. Specifically, if experimental evidence demonstrates no cross-talk or shared downstream effects between lysosomal lipid accumulation and hemoglobin polymerization/erythrocyte damage, the link is broken.",
+        "gnomad_variant": "A common variant (AF > 0.01) in HBB associated with normal hemoglobin function would not falsify the hypothesis, as the hypothesis focuses on rare disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011382",
+        "diseaseBName": "sickle cell disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.4128,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8100) —DISRUPTS→ Lysosomal cholesterol and NPC1 trafficking (GO:0000305); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —LEADS_TO→ Hepatomegaly (HP:0002274); HBB (HGNC:4827) —PRODUCES→ Abnormal Hemoglobin (HbS) (CHEBI:31987); Abnormal Hemoglobin (HbS) (CHEBI:31987) —LEADS_TO→ Sickle-shaped red blood cells (HP:0001877); Sickle-shaped red blood cells (HP:0001877) —LEADS_TO→ Red blood cell dysfunction and vaso-occlusion (GO:0034220); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Splenomegaly (HP:0001654); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Anemia (HP:0001892); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —INCREASES→ Red blood cell dysfunction and vaso-occlusion (GO:0034220). Loss of function in NPC2 leads to impaired lysosomal cholesterol trafficking and accumulation, contributing to phenotypes like hepatomegaly. In sickle cell disease, loss of function in HBB leads to the production of abnormal HbS, causing red blood cell dysfunction, vaso-occlusion, and related phenotypes. The convergence occurs via the shared pathway of cellular dysfunction and organ damage, where lipid accumulation in NPC2 and red blood cell sickling in SCD both contribute to systemic pathology.",
+        "falsification": {
+          "text": "The absence of shared cellular or molecular pathways that link lipid metabolism defects (NPC2) to red blood cell dysfunction (HBB) would falsify this hypothesis. Specifically, if experimental evidence demonstrates no cross-talk or shared downstream effects between lysosomal lipid accumulation and hemoglobin polymerization/erythrocyte damage, the link is broken.",
+          "gnomad_variant": "A common variant (AF > 0.01) in HBB associated with normal hemoglobin function would not falsify the hypothesis, as the hypothesis focuses on rare disease-causing variants."
+        },
+        "translational": "Understanding this overlap could reveal novel therapeutic targets for either disease by leveraging insights from the other. For example, modulating lipid metabolism pathways might offer a new avenue for treating complications of sickle cell disease, or understanding heme-related stress responses could inform NPC disease treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013517",
+      "diseaseBName": "beta-thalassemia HBB/LCRB",
+      "fitness": 0.4055,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8567) —DISRUPTS→ Lysosomal cholesterol homeostasis (GO:0005764); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Hepatomegaly (HP:0002211); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Splenomegaly (HP:0001670); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis and degradation (GO:0006034); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Anemia (HP:0001878); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Splenomegaly (HP:0001670). Loss of function in NPC2 disrupts lysosomal cholesterol homeostasis, leading to hepatosplenomegaly. Loss of function in HBB disrupts heme biosynthesis and degradation, resulting in anemia and splenomegaly. The shared phenotype of splenomegaly indicates overlap in downstream cellular consequences, potentially related to altered lipid metabolism and erythrocyte turnover.",
+      "mechanism_narrative": "NPC2 (HGNC:8567) —DISRUPTS→ Lysosomal cholesterol homeostasis (GO:0005764); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Hepatomegaly (HP:0002211); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Splenomegaly (HP:0001670); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis and degradation (GO:0006034); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Anemia (HP:0001878); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Splenomegaly (HP:0001670). Loss of function in NPC2 disrupts lysosomal cholesterol homeostasis, leading to hepatosplenomegaly. Loss of function in HBB disrupts heme biosynthesis and degradation, resulting in anemia and splenomegaly. The shared phenotype of splenomegaly indicates overlap in downstream cellular consequences, potentially related to altered lipid metabolism and erythrocyte turnover.",
+      "falsification": {
+        "text": "Absence of splenomegaly in patients with confirmed NPC2 or HBB mutations, or identification of distinct molecular pathways driving splenomegaly in each disease that do not intersect at the lysosomal or heme metabolism levels.",
+        "gnomad_variant": "rs743532805"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013517",
+        "diseaseBName": "beta-thalassemia HBB/LCRB",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.4055,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8567) —DISRUPTS→ Lysosomal cholesterol homeostasis (GO:0005764); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Hepatomegaly (HP:0002211); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Splenomegaly (HP:0001670); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis and degradation (GO:0006034); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Anemia (HP:0001878); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Splenomegaly (HP:0001670). Loss of function in NPC2 disrupts lysosomal cholesterol homeostasis, leading to hepatosplenomegaly. Loss of function in HBB disrupts heme biosynthesis and degradation, resulting in anemia and splenomegaly. The shared phenotype of splenomegaly indicates overlap in downstream cellular consequences, potentially related to altered lipid metabolism and erythrocyte turnover.",
+        "falsification": {
+          "text": "Absence of splenomegaly in patients with confirmed NPC2 or HBB mutations, or identification of distinct molecular pathways driving splenomegaly in each disease that do not intersect at the lysosomal or heme metabolism levels.",
+          "gnomad_variant": "rs743532805"
+        },
+        "translational": "Understanding the shared downstream effects of lysosomal dysfunction and impaired heme metabolism could reveal novel therapeutic targets for managing overlapping symptoms like splenomegaly in both Niemann-Pick disease, type C2 and beta-thalassemia, potentially involving agents that modulate lysosomal function or iron chelation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013564",
+      "diseaseBName": "anhaptoglobinemia",
+      "fitness": 0.3937,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8703) —DISRUPTS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ hepatosplenomegaly (HP:0001410); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ neurodegeneration (HP:0002069); HP (HGNC:4864) —DISRUPTS→ free hemoglobin (PR:000002965); free hemoglobin (PR:000002965) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); free hemoglobin (PR:000002965) —LEADS_TO→ anemia (HP:0001878). Loss-of-function mutations in NPC2 impair cholesterol transport within lysosomes, leading to its accumulation and subsequent cellular dysfunction, manifesting as hepatosplenomegaly and neurodegeneration. Similarly, loss-of-function mutations in HP lead to anhaptoglobinemia, resulting in the accumulation of free hemoglobin. Free hemoglobin can be toxic and may indirectly contribute to lysosomal dysfunction and cellular stress, potentially exacerbating cholesterol accumulation and contributing to shared or related phenotypes like hepatosplenomegaly and anemia.",
+      "mechanism_narrative": "NPC2 (HGNC:8703) —DISRUPTS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ hepatosplenomegaly (HP:0001410); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ neurodegeneration (HP:0002069); HP (HGNC:4864) —DISRUPTS→ free hemoglobin (PR:000002965); free hemoglobin (PR:000002965) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); free hemoglobin (PR:000002965) —LEADS_TO→ anemia (HP:0001878). Loss-of-function mutations in NPC2 impair cholesterol transport within lysosomes, leading to its accumulation and subsequent cellular dysfunction, manifesting as hepatosplenomegaly and neurodegeneration. Similarly, loss-of-function mutations in HP lead to anhaptoglobinemia, resulting in the accumulation of free hemoglobin. Free hemoglobin can be toxic and may indirectly contribute to lysosomal dysfunction and cellular stress, potentially exacerbating cholesterol accumulation and contributing to shared or related phenotypes like hepatosplenomegaly and anemia.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in HP do not lead to any detectable alteration in lysosomal cholesterol trafficking or cellular stress response pathways, or if patients with anhaptoglobinemia do not exhibit any signs of lysosomal dysfunction or related phenotypes, this hypothesis would be falsified.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013564",
+        "diseaseBName": "anhaptoglobinemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.3937,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8703) —DISRUPTS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ hepatosplenomegaly (HP:0001410); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ neurodegeneration (HP:0002069); HP (HGNC:4864) —DISRUPTS→ free hemoglobin (PR:000002965); free hemoglobin (PR:000002965) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); free hemoglobin (PR:000002965) —LEADS_TO→ anemia (HP:0001878). Loss-of-function mutations in NPC2 impair cholesterol transport within lysosomes, leading to its accumulation and subsequent cellular dysfunction, manifesting as hepatosplenomegaly and neurodegeneration. Similarly, loss-of-function mutations in HP lead to anhaptoglobinemia, resulting in the accumulation of free hemoglobin. Free hemoglobin can be toxic and may indirectly contribute to lysosomal dysfunction and cellular stress, potentially exacerbating cholesterol accumulation and contributing to shared or related phenotypes like hepatosplenomegaly and anemia.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in HP do not lead to any detectable alteration in lysosomal cholesterol trafficking or cellular stress response pathways, or if patients with anhaptoglobinemia do not exhibit any signs of lysosomal dysfunction or related phenotypes, this hypothesis would be falsified.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding this mechanistic link could reveal novel therapeutic targets for Niemann-Pick disease, type C2 by exploring interventions that mitigate cellular stress induced by hemoglobin accumulation. Conversely, it might shed light on the systemic effects of anhaptoglobinemia beyond simple anemia, potentially informing treatments that address lysosomal health."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007705",
+      "diseaseBName": "Heinz body anemia",
+      "fitness": 0.3859,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8203) —DISRUPTS→ lysosomal cholesterol and NPC1 trafficking (GO:0005741); lysosomal cholesterol and NPC1 trafficking (GO:0005741) —LEADS_TO→ cholesterol accumulation (CHEBI:15361); cholesterol accumulation (CHEBI:15361) —LEADS_TO→ Niemann-Pick disease, type C2 (MONDO:0011873); HBB (HGNC:4827) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA1 (HGNC:4823) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA2 (HGNC:4824) —DISRUPTS→ hemoglobin polymerization (GO:0045919); hemoglobin polymerization (GO:0045919) —LEADS_TO→ oxidized hemoglobin (Heinz bodies) (GO:0005833); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ Heinz body anemia (MONDO:0007705); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ erythrocyte oxidative damage (HP:0001737); cholesterol accumulation (CHEBI:15361) —INCREASES→ erythrocyte oxidative damage (HP:0001737). Loss of NPC2 function in Niemann-Pick disease type C2 leads to lysosomal accumulation of cholesterol and other lipids, contributing to cellular dysfunction and potentially oxidative stress. Concurrently, loss-of-function mutations in HBA1, HBA2, or HBB in Heinz body anemia result in unstable hemoglobin that polymerizes and oxidizes, forming Heinz bodies. Both the accumulation of cellular debris (cholesterol in lysosomes) and the presence of oxidized hemoglobin (Heinz bodies) contribute to erythrocyte oxidative damage, representing a shared downstream pathway leading to red blood cell pathology.",
+      "mechanism_narrative": "NPC2 (HGNC:8203) —DISRUPTS→ lysosomal cholesterol and NPC1 trafficking (GO:0005741); lysosomal cholesterol and NPC1 trafficking (GO:0005741) —LEADS_TO→ cholesterol accumulation (CHEBI:15361); cholesterol accumulation (CHEBI:15361) —LEADS_TO→ Niemann-Pick disease, type C2 (MONDO:0011873); HBB (HGNC:4827) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA1 (HGNC:4823) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA2 (HGNC:4824) —DISRUPTS→ hemoglobin polymerization (GO:0045919); hemoglobin polymerization (GO:0045919) —LEADS_TO→ oxidized hemoglobin (Heinz bodies) (GO:0005833); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ Heinz body anemia (MONDO:0007705); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ erythrocyte oxidative damage (HP:0001737); cholesterol accumulation (CHEBI:15361) —INCREASES→ erythrocyte oxidative damage (HP:0001737). Loss of NPC2 function in Niemann-Pick disease type C2 leads to lysosomal accumulation of cholesterol and other lipids, contributing to cellular dysfunction and potentially oxidative stress. Concurrently, loss-of-function mutations in HBA1, HBA2, or HBB in Heinz body anemia result in unstable hemoglobin that polymerizes and oxidizes, forming Heinz bodies. Both the accumulation of cellular debris (cholesterol in lysosomes) and the presence of oxidized hemoglobin (Heinz bodies) contribute to erythrocyte oxidative damage, representing a shared downstream pathway leading to red blood cell pathology.",
+      "falsification": {
+        "text": "Absence of erythrocyte oxidative damage in patients with NPC2 mutations, or demonstration that cholesterol accumulation in NPC2 deficiency does not exacerbate or contribute to oxidant stress within red blood cells.",
+        "gnomad_variant": "If common variants in NPC2 or HBB/HBA1/HBA2 genes are found at a significant frequency in the general population (gnomAD > 1%) and are not associated with either disease phenotype, this would suggest alternative causal mechanisms or modifiers."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007705",
+        "diseaseBName": "Heinz body anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.3859,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8203) —DISRUPTS→ lysosomal cholesterol and NPC1 trafficking (GO:0005741); lysosomal cholesterol and NPC1 trafficking (GO:0005741) —LEADS_TO→ cholesterol accumulation (CHEBI:15361); cholesterol accumulation (CHEBI:15361) —LEADS_TO→ Niemann-Pick disease, type C2 (MONDO:0011873); HBB (HGNC:4827) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA1 (HGNC:4823) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA2 (HGNC:4824) —DISRUPTS→ hemoglobin polymerization (GO:0045919); hemoglobin polymerization (GO:0045919) —LEADS_TO→ oxidized hemoglobin (Heinz bodies) (GO:0005833); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ Heinz body anemia (MONDO:0007705); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ erythrocyte oxidative damage (HP:0001737); cholesterol accumulation (CHEBI:15361) —INCREASES→ erythrocyte oxidative damage (HP:0001737). Loss of NPC2 function in Niemann-Pick disease type C2 leads to lysosomal accumulation of cholesterol and other lipids, contributing to cellular dysfunction and potentially oxidative stress. Concurrently, loss-of-function mutations in HBA1, HBA2, or HBB in Heinz body anemia result in unstable hemoglobin that polymerizes and oxidizes, forming Heinz bodies. Both the accumulation of cellular debris (cholesterol in lysosomes) and the presence of oxidized hemoglobin (Heinz bodies) contribute to erythrocyte oxidative damage, representing a shared downstream pathway leading to red blood cell pathology.",
+        "falsification": {
+          "text": "Absence of erythrocyte oxidative damage in patients with NPC2 mutations, or demonstration that cholesterol accumulation in NPC2 deficiency does not exacerbate or contribute to oxidant stress within red blood cells.",
+          "gnomad_variant": "If common variants in NPC2 or HBB/HBA1/HBA2 genes are found at a significant frequency in the general population (gnomAD > 1%) and are not associated with either disease phenotype, this would suggest alternative causal mechanisms or modifiers."
+        },
+        "translational": "Understanding the shared pathway of erythrocyte oxidative damage could reveal therapeutic targets applicable to both Niemann-Pick disease type C2 and Heinz body anemia, potentially involving antioxidants or agents that promote cellular debris clearance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033551",
+      "diseaseBName": "immunodeficiency 72 with autoinflammation",
+      "fitness": 0.3804,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variants in NPC2 (MONDO:0011873) —DISRUPTS→ NPC2 (HGNC:8775); NPC2 (HGNC:8775) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Cholesterol accumulation in lysosomes (CHEBI:17676); Cholesterol accumulation in lysosomes (CHEBI:17676) —LEADS_TO→ Niemann-Pick disease, type C2 symptoms (HP:0000960); Loss-of-function variants in NCKAP1L (MONDO:0033551) —DISRUPTS→ NCKAP1L (HGNC:20704); NCKAP1L (HGNC:20704) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Autophagy dysfunction (GO:0006914); Autophagy dysfunction (GO:0006914) —LEADS_TO→ Immunodeficiency with autoinflammation (HP:0012878). Loss-of-function mutations in NPC2 lead to impaired lysosomal cholesterol trafficking, causing Niemann-Pick disease, type C2 symptoms. Similarly, loss-of-function mutations in NCKAP1L disrupt lysosomal trafficking and consequently impair autophagy, leading to immunodeficiency with autoinflammation. The convergence point is the shared role of these genes in maintaining proper lysosomal trafficking and function, impacting both metabolic homeostasis and immune cell function.",
+      "mechanism_narrative": "Loss-of-function variants in NPC2 (MONDO:0011873) —DISRUPTS→ NPC2 (HGNC:8775); NPC2 (HGNC:8775) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Cholesterol accumulation in lysosomes (CHEBI:17676); Cholesterol accumulation in lysosomes (CHEBI:17676) —LEADS_TO→ Niemann-Pick disease, type C2 symptoms (HP:0000960); Loss-of-function variants in NCKAP1L (MONDO:0033551) —DISRUPTS→ NCKAP1L (HGNC:20704); NCKAP1L (HGNC:20704) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Autophagy dysfunction (GO:0006914); Autophagy dysfunction (GO:0006914) —LEADS_TO→ Immunodeficiency with autoinflammation (HP:0012878). Loss-of-function mutations in NPC2 lead to impaired lysosomal cholesterol trafficking, causing Niemann-Pick disease, type C2 symptoms. Similarly, loss-of-function mutations in NCKAP1L disrupt lysosomal trafficking and consequently impair autophagy, leading to immunodeficiency with autoinflammation. The convergence point is the shared role of these genes in maintaining proper lysosomal trafficking and function, impacting both metabolic homeostasis and immune cell function.",
+      "falsification": {
+        "text": "Absence of functional impairment in lysosomal trafficking or autophagy pathways in cells derived from patients with either NPC2 or NCKAP1L mutations, or identification of distinct, non-overlapping molecular pathways affected by each gene.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic variants in NPC2 or NCKAP1L in the general population (gnomAD)."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033551",
+        "diseaseBName": "immunodeficiency 72 with autoinflammation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.3804,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variants in NPC2 (MONDO:0011873) —DISRUPTS→ NPC2 (HGNC:8775); NPC2 (HGNC:8775) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Cholesterol accumulation in lysosomes (CHEBI:17676); Cholesterol accumulation in lysosomes (CHEBI:17676) —LEADS_TO→ Niemann-Pick disease, type C2 symptoms (HP:0000960); Loss-of-function variants in NCKAP1L (MONDO:0033551) —DISRUPTS→ NCKAP1L (HGNC:20704); NCKAP1L (HGNC:20704) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Autophagy dysfunction (GO:0006914); Autophagy dysfunction (GO:0006914) —LEADS_TO→ Immunodeficiency with autoinflammation (HP:0012878). Loss-of-function mutations in NPC2 lead to impaired lysosomal cholesterol trafficking, causing Niemann-Pick disease, type C2 symptoms. Similarly, loss-of-function mutations in NCKAP1L disrupt lysosomal trafficking and consequently impair autophagy, leading to immunodeficiency with autoinflammation. The convergence point is the shared role of these genes in maintaining proper lysosomal trafficking and function, impacting both metabolic homeostasis and immune cell function.",
+        "falsification": {
+          "text": "Absence of functional impairment in lysosomal trafficking or autophagy pathways in cells derived from patients with either NPC2 or NCKAP1L mutations, or identification of distinct, non-overlapping molecular pathways affected by each gene.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic variants in NPC2 or NCKAP1L in the general population (gnomAD)."
+        },
+        "translational": "Understanding the shared role of NPC2 and NCKAP1L in lysosomal trafficking and autophagy could reveal novel therapeutic targets for both Niemann-Pick disease, type C2 and immunodeficiency 72 with autoinflammation, potentially through strategies aimed at restoring lysosomal function or enhancing autophagy."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013291",
+      "diseaseBName": "glycogen storage disease XV",
+      "fitness": 0.37,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8100) —DISRUPTS→ lysosomal cholesterol trafficking (GO:0034379); lysosomal cholesterol trafficking (GO:0034379) —LEADS_TO→ hepatosplenomegaly (HP:0001677); NPC2 (HGNC:8100) —DECREASES→ cholesterol (CHEBI:15357); GYG1 (HGNC:20457) —DISRUPTS→ glycogen metabolism (GO:0005977); glycogen metabolism (GO:0005977) —LEADS_TO→ muscle weakness (HP:0001324); GYG1 (HGNC:20457) —DECREASES→ glycogen (CHEBI:17871); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking (GO:0034379); glycogen (CHEBI:17871) —BINDS→ glycogen metabolism (GO:0005977). Loss of function in NPC2 disrupts lysosomal cholesterol trafficking, leading to NPC disease phenotypes like hepatosplenomegaly. Concurrently, loss of function in GYG1 disrupts glycogen metabolism, causing GSD XV phenotypes such as muscle weakness. Both cholesterol and glycogen are key metabolites whose dysregulation impacts cellular homeostasis and lysosomal function, suggesting a convergence at the level of cellular metabolic and trafficking pathways.",
+      "mechanism_narrative": "NPC2 (HGNC:8100) —DISRUPTS→ lysosomal cholesterol trafficking (GO:0034379); lysosomal cholesterol trafficking (GO:0034379) —LEADS_TO→ hepatosplenomegaly (HP:0001677); NPC2 (HGNC:8100) —DECREASES→ cholesterol (CHEBI:15357); GYG1 (HGNC:20457) —DISRUPTS→ glycogen metabolism (GO:0005977); glycogen metabolism (GO:0005977) —LEADS_TO→ muscle weakness (HP:0001324); GYG1 (HGNC:20457) —DECREASES→ glycogen (CHEBI:17871); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking (GO:0034379); glycogen (CHEBI:17871) —BINDS→ glycogen metabolism (GO:0005977). Loss of function in NPC2 disrupts lysosomal cholesterol trafficking, leading to NPC disease phenotypes like hepatosplenomegaly. Concurrently, loss of function in GYG1 disrupts glycogen metabolism, causing GSD XV phenotypes such as muscle weakness. Both cholesterol and glycogen are key metabolites whose dysregulation impacts cellular homeostasis and lysosomal function, suggesting a convergence at the level of cellular metabolic and trafficking pathways.",
+      "falsification": {
+        "text": "Demonstration that disruption of lysosomal cholesterol trafficking does not affect glycogen metabolism or vice versa, or that mutations in NPC2 or GYG1 do not lead to the described phenotypes in model systems.",
+        "gnomad_variant": "The presence of common variants in NPC2 or GYG1 in gnomAD with a minor allele frequency > 1% would challenge their role as causative genes for rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013291",
+        "diseaseBName": "glycogen storage disease XV",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.37,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8100) —DISRUPTS→ lysosomal cholesterol trafficking (GO:0034379); lysosomal cholesterol trafficking (GO:0034379) —LEADS_TO→ hepatosplenomegaly (HP:0001677); NPC2 (HGNC:8100) —DECREASES→ cholesterol (CHEBI:15357); GYG1 (HGNC:20457) —DISRUPTS→ glycogen metabolism (GO:0005977); glycogen metabolism (GO:0005977) —LEADS_TO→ muscle weakness (HP:0001324); GYG1 (HGNC:20457) —DECREASES→ glycogen (CHEBI:17871); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking (GO:0034379); glycogen (CHEBI:17871) —BINDS→ glycogen metabolism (GO:0005977). Loss of function in NPC2 disrupts lysosomal cholesterol trafficking, leading to NPC disease phenotypes like hepatosplenomegaly. Concurrently, loss of function in GYG1 disrupts glycogen metabolism, causing GSD XV phenotypes such as muscle weakness. Both cholesterol and glycogen are key metabolites whose dysregulation impacts cellular homeostasis and lysosomal function, suggesting a convergence at the level of cellular metabolic and trafficking pathways.",
+        "falsification": {
+          "text": "Demonstration that disruption of lysosomal cholesterol trafficking does not affect glycogen metabolism or vice versa, or that mutations in NPC2 or GYG1 do not lead to the described phenotypes in model systems.",
+          "gnomad_variant": "The presence of common variants in NPC2 or GYG1 in gnomAD with a minor allele frequency > 1% would challenge their role as causative genes for rare diseases."
+        },
+        "translational": "Understanding the overlap in lysosomal trafficking and metabolic pathways could reveal novel therapeutic targets for both Niemann-Pick disease and glycogen storage diseases, potentially through modulating shared cellular processes or by developing therapies that address the downstream consequences of metabolic dysregulation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018023",
+      "diseaseBName": "hemoglobin M disease",
+      "fitness": 0.3584,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in NPC2 —DISRUPTS→ NPC2 (HGNC:8677); NPC2 (HGNC:8677) —DECREASES→ Intracellular cholesterol trafficking; Intracellular cholesterol trafficking —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001418); Pathogenic variant in HBB —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-70317); Heme biosynthesis (REACT:R-HSA-70317) —DISRUPTS→ Altered heme iron oxidation state; Altered heme iron oxidation state —LEADS_TO→ Methemoglobinemia (HP:0001892). Mutations in NPC2 lead to impaired intracellular cholesterol trafficking and lysosomal accumulation, characteristic of Niemann-Pick disease type C2. Similarly, mutations in HBB can disrupt heme biosynthesis, leading to abnormal heme iron oxidation states and methemoglobinemia, the hallmark of Hemoglobin M disease. While distinct, both cholesterol homeostasis and heme biosynthesis are critical cellular processes that can influence overall cellular health and stress responses, potentially creating a subtle overlap in cellular dysfunction.",
+      "mechanism_narrative": "Pathogenic variant in NPC2 —DISRUPTS→ NPC2 (HGNC:8677); NPC2 (HGNC:8677) —DECREASES→ Intracellular cholesterol trafficking; Intracellular cholesterol trafficking —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001418); Pathogenic variant in HBB —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-70317); Heme biosynthesis (REACT:R-HSA-70317) —DISRUPTS→ Altered heme iron oxidation state; Altered heme iron oxidation state —LEADS_TO→ Methemoglobinemia (HP:0001892). Mutations in NPC2 lead to impaired intracellular cholesterol trafficking and lysosomal accumulation, characteristic of Niemann-Pick disease type C2. Similarly, mutations in HBB can disrupt heme biosynthesis, leading to abnormal heme iron oxidation states and methemoglobinemia, the hallmark of Hemoglobin M disease. While distinct, both cholesterol homeostasis and heme biosynthesis are critical cellular processes that can influence overall cellular health and stress responses, potentially creating a subtle overlap in cellular dysfunction.",
+      "falsification": {
+        "text": "Demonstration that the cellular pathways of cholesterol trafficking and heme biosynthesis are entirely independent and do not share any downstream regulatory or stress response mechanisms.",
+        "gnomad_variant": "rs121918406 (a known pathogenic variant in NPC2) having a minor allele frequency > 1% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018023",
+        "diseaseBName": "hemoglobin M disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.3584,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in NPC2 —DISRUPTS→ NPC2 (HGNC:8677); NPC2 (HGNC:8677) —DECREASES→ Intracellular cholesterol trafficking; Intracellular cholesterol trafficking —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001418); Pathogenic variant in HBB —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-70317); Heme biosynthesis (REACT:R-HSA-70317) —DISRUPTS→ Altered heme iron oxidation state; Altered heme iron oxidation state —LEADS_TO→ Methemoglobinemia (HP:0001892). Mutations in NPC2 lead to impaired intracellular cholesterol trafficking and lysosomal accumulation, characteristic of Niemann-Pick disease type C2. Similarly, mutations in HBB can disrupt heme biosynthesis, leading to abnormal heme iron oxidation states and methemoglobinemia, the hallmark of Hemoglobin M disease. While distinct, both cholesterol homeostasis and heme biosynthesis are critical cellular processes that can influence overall cellular health and stress responses, potentially creating a subtle overlap in cellular dysfunction.",
+        "falsification": {
+          "text": "Demonstration that the cellular pathways of cholesterol trafficking and heme biosynthesis are entirely independent and do not share any downstream regulatory or stress response mechanisms.",
+          "gnomad_variant": "rs121918406 (a known pathogenic variant in NPC2) having a minor allele frequency > 1% in gnomAD."
+        },
+        "translational": "Understanding potential overlaps, even indirect ones, between seemingly disparate genetic diseases can reveal common cellular vulnerabilities. This might suggest therapeutic strategies that target fundamental cellular processes, such as lysosomal function or redox homeostasis, which could be beneficial for patients with either Niemann-Pick C2 or Hemoglobin M disease, or related conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0054801",
+      "diseaseBName": "erythrocytosis, familial, 6",
+      "fitness": 0.3139,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "NPC2 (HGNC:8179) —DISRUPTS→ Lysosomal pathway (GO:0005741); NPC2 (HGNC:8179) —DECREASES→ Cholesterol (CHEBI:17607); Cholesterol (CHEBI:17607) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal pathway (GO:0005741) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Neurodegeneration (HP:0001251); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Hepatomegaly (HP:0000405); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Splenomegaly (HP:0001911); HBB (HGNC:4827) —INCREASES→ Increased oxygen affinity of hemoglobin (HP:0012401); Increased oxygen affinity of hemoglobin (HP:0012401) —LEADS_TO→ Erythrocytosis (HP:0001894); HBB (HGNC:4827) —DISRUPTS→ Lysosomal pathway (GO:0005741). Loss-of-function mutations in NPC2 impair lysosomal cholesterol efflux, leading to accumulation of cholesterol within lysosomes and secondary effects on the lysosomal pathway, manifesting as neurodegeneration, hepatomegaly, and splenomegaly. Gain-of-function mutations in HBB lead to increased oxygen affinity of hemoglobin, causing erythrocytosis. This hyper-oxygenation state may indirectly impact cellular metabolism and red blood cell turnover, potentially affecting lysosomal function and lipid homeostasis.",
+      "mechanism_narrative": "NPC2 (HGNC:8179) —DISRUPTS→ Lysosomal pathway (GO:0005741); NPC2 (HGNC:8179) —DECREASES→ Cholesterol (CHEBI:17607); Cholesterol (CHEBI:17607) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal pathway (GO:0005741) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Neurodegeneration (HP:0001251); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Hepatomegaly (HP:0000405); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Splenomegaly (HP:0001911); HBB (HGNC:4827) —INCREASES→ Increased oxygen affinity of hemoglobin (HP:0012401); Increased oxygen affinity of hemoglobin (HP:0012401) —LEADS_TO→ Erythrocytosis (HP:0001894); HBB (HGNC:4827) —DISRUPTS→ Lysosomal pathway (GO:0005741). Loss-of-function mutations in NPC2 impair lysosomal cholesterol efflux, leading to accumulation of cholesterol within lysosomes and secondary effects on the lysosomal pathway, manifesting as neurodegeneration, hepatomegaly, and splenomegaly. Gain-of-function mutations in HBB lead to increased oxygen affinity of hemoglobin, causing erythrocytosis. This hyper-oxygenation state may indirectly impact cellular metabolism and red blood cell turnover, potentially affecting lysosomal function and lipid homeostasis.",
+      "falsification": {
+        "text": "Absence of evidence for altered cholesterol metabolism or lysosomal dysfunction in patients with familial erythrocytosis, type 6, or demonstration of normal lysosomal cholesterol efflux in red blood cells from these patients.",
+        "gnomad_variant": "rs121918492"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6798695"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6798695": 478
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054801",
+        "diseaseBName": "erythrocytosis, familial, 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6798695"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6798695": 478
+        },
+        "fitness": 0.3139,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "NPC2 (HGNC:8179) —DISRUPTS→ Lysosomal pathway (GO:0005741); NPC2 (HGNC:8179) —DECREASES→ Cholesterol (CHEBI:17607); Cholesterol (CHEBI:17607) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal pathway (GO:0005741) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Neurodegeneration (HP:0001251); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Hepatomegaly (HP:0000405); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Splenomegaly (HP:0001911); HBB (HGNC:4827) —INCREASES→ Increased oxygen affinity of hemoglobin (HP:0012401); Increased oxygen affinity of hemoglobin (HP:0012401) —LEADS_TO→ Erythrocytosis (HP:0001894); HBB (HGNC:4827) —DISRUPTS→ Lysosomal pathway (GO:0005741). Loss-of-function mutations in NPC2 impair lysosomal cholesterol efflux, leading to accumulation of cholesterol within lysosomes and secondary effects on the lysosomal pathway, manifesting as neurodegeneration, hepatomegaly, and splenomegaly. Gain-of-function mutations in HBB lead to increased oxygen affinity of hemoglobin, causing erythrocytosis. This hyper-oxygenation state may indirectly impact cellular metabolism and red blood cell turnover, potentially affecting lysosomal function and lipid homeostasis.",
+        "falsification": {
+          "text": "Absence of evidence for altered cholesterol metabolism or lysosomal dysfunction in patients with familial erythrocytosis, type 6, or demonstration of normal lysosomal cholesterol efflux in red blood cells from these patients.",
+          "gnomad_variant": "rs121918492"
+        },
+        "translational": "Understanding the potential interplay between hemoglobinopathies and lysosomal storage disorders could reveal novel therapeutic targets for complex metabolic disturbances, potentially impacting treatments for both Niemann-Pick C2 and certain forms of erythrocytosis."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T10:14:53.620Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Niemann-Pick disease, type C2 (MONDO:0011873)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 12 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 3 | 0.482 | Reactome:R-HSA-6798695 |\n| 2 | dominant beta-thalassemia (MONDO:0011381) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-6798695 |\n| 3 | sickle cell disease (MONDO:0011382) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-6798695 |\n| 4 | beta-thalassemia HBB/LCRB (MONDO:0013517) | shared pathway | Tier 3 | 0.406 | Reactome:R-HSA-6798695 |\n| 5 | anhaptoglobinemia (MONDO:0013564) | shared pathway | Tier 3 | 0.394 | Reactome:R-HSA-6798695 |\n| 6 | Heinz body anemia (MONDO:0007705) | shared pathway | Tier 3 | 0.386 | Reactome:R-HSA-6798695 |\n| 7 | immunodeficiency 72 with autoinflammation (MONDO:0033551) | shared pathway | Tier 3 | 0.380 | Reactome:R-HSA-6798695 |\n| 8 | glycogen storage disease XV (MONDO:0013291) | shared pathway | Tier 3 | 0.370 | Reactome:R-HSA-6798695 |\n| 9 | hemoglobin M disease (MONDO:0018023) | shared pathway | Tier 3 | 0.358 | Reactome:R-HSA-6798695 |\n| 10 | erythrocytosis, familial, 6 (MONDO:0054801) | shared pathway | Tier 3 | 0.314 | Reactome:R-HSA-6798695 |\n\n### CANDIDATE DETAIL\n#### 1. hepatocellular carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.482)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8164) —DISRUPTS→ Cholesterol and sphingolipids (CHEBI:15361); Cholesterol and sphingolipids (CHEBI:15361) —LEADS_TO→ Lysosomal accumulation of cholesterol and sphingolipids (HP:0002301); TP53 (HGNC:11998) —DISRUPTS→ Cell cycle regulation and apoptosis (GO:0007049); Cell cycle regulation and apoptosis (GO:0007049) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256). In Niemann-Pick disease type C2, loss-of-function mutations in NPC2 lead to impaired intracellular trafficking of cholesterol and sphingolipids, resulting in lysosomal accumulation and associated cellular dysfunction. In hepatocellular carcinoma, loss-of-function mutations in TP53 disrupt cell cycle regulation and apoptosis, promoting uncontrolled cell growth and tumor formation. The convergence occurs at the level of cellular integrity and homeostasis, where disruption of fundamental cellular processes by either NPC2 or TP53 dysfunction can contribute to a cellular environment conducive to malignant transformation, particularly in the liver.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for Niemann-Pick disease, type C2, are exclusively within the NPC2 gene and do not impact TP53 function, and conversely, that the causal variants for hepatocellular carcinoma in affected individuals are exclusively within TP53 and do not involve NPC2 or related lipid metabolism pathways, this would falsify the proposed mechanistic overlap. _(variant: rs121918070 (TP53 R175H) has a GnomAD allele frequency > 0.001, suggesting it is not a rare disease-causing variant in all contexts.)_\n\n**Why it matters:** Understanding the shared involvement of TP53 in cancer and its potential indirect influence on cellular processes disrupted in NPC2 deficiency could inform therapeutic strategies. For instance, modulating lipid metabolism might be explored in conjunction with standard cancer therapies targeting TP53 loss-of-function, or conversely, enhancing cellular homeostasis pathways could be beneficial in managing NPC2-related disorders.\n\n---\n\n#### 2. dominant beta-thalassemia  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8411) —DISRUPTS→ Lysosomal cholesterol trafficking (GO:0005757); Lysosomal cholesterol trafficking (GO:0005757) —DECREASES→ Cholesterol (CHEBI:15361); Cholesterol (CHEBI:15361) —LEADS_TO→ Hepatomegaly (HP:0002213); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin subunit beta (UniProt:P68871); Hemoglobin subunit beta (UniProt:P68871) —LEADS_TO→ Anemia (HP:0001878); Anemia (HP:0001878) —LEADS_TO→ Splenomegaly (HP:0001727). Mutations in NPC2 disrupt lysosomal cholesterol trafficking, leading to accumulation of cholesterol and subsequent hepatomegaly. Mutations in HBB disrupt the production of functional hemoglobin, leading to anemia and splenomegaly. Both diseases converge on cellular dysfunction and organomegaly, though through distinct primary mechanisms.\n\n**How to falsify it:** If genetic analysis reveals that patients with Niemann-Pick disease, type C2 do not exhibit any cellular cholesterol accumulation or altered lysosomal trafficking, and patients with dominant beta-thalassemia do not exhibit any defects in hemoglobin production or red blood cell integrity, this hypothesis would be falsified.\n\n**Why it matters:** Understanding the interplay between cholesterol homeostasis and red blood cell function could reveal novel therapeutic targets for both NPC disease and beta-thalassemia, potentially involving agents that modulate lipid metabolism or enhance red blood cell survival.\n\n---\n\n#### 3. sickle cell disease  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8100) —DISRUPTS→ Lysosomal cholesterol and NPC1 trafficking (GO:0000305); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —LEADS_TO→ Hepatomegaly (HP:0002274); HBB (HGNC:4827) —PRODUCES→ Abnormal Hemoglobin (HbS) (CHEBI:31987); Abnormal Hemoglobin (HbS) (CHEBI:31987) —LEADS_TO→ Sickle-shaped red blood cells (HP:0001877); Sickle-shaped red blood cells (HP:0001877) —LEADS_TO→ Red blood cell dysfunction and vaso-occlusion (GO:0034220); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Splenomegaly (HP:0001654); Red blood cell dysfunction and vaso-occlusion (GO:0034220) —LEADS_TO→ Anemia (HP:0001892); Lysosomal cholesterol and NPC1 trafficking (GO:0000305) —INCREASES→ Red blood cell dysfunction and vaso-occlusion (GO:0034220). Loss of function in NPC2 leads to impaired lysosomal cholesterol trafficking and accumulation, contributing to phenotypes like hepatomegaly. In sickle cell disease, loss of function in HBB leads to the production of abnormal HbS, causing red blood cell dysfunction, vaso-occlusion, and related phenotypes. The convergence occurs via the shared pathway of cellular dysfunction and organ damage, where lipid accumulation in NPC2 and red blood cell sickling in SCD both contribute to systemic pathology.\n\n**How to falsify it:** The absence of shared cellular or molecular pathways that link lipid metabolism defects (NPC2) to red blood cell dysfunction (HBB) would falsify this hypothesis. Specifically, if experimental evidence demonstrates no cross-talk or shared downstream effects between lysosomal lipid accumulation and hemoglobin polymerization/erythrocyte damage, the link is broken. _(variant: A common variant (AF > 0.01) in HBB associated with normal hemoglobin function would not falsify the hypothesis, as the hypothesis focuses on rare disease-causing variants.)_\n\n**Why it matters:** Understanding this overlap could reveal novel therapeutic targets for either disease by leveraging insights from the other. For example, modulating lipid metabolism pathways might offer a new avenue for treating complications of sickle cell disease, or understanding heme-related stress responses could inform NPC disease treatment.\n\n---\n\n#### 4. beta-thalassemia HBB/LCRB  —  Tier 3 — Moderate / Emerging  (fitness 0.406)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8567) —DISRUPTS→ Lysosomal cholesterol homeostasis (GO:0005764); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Hepatomegaly (HP:0002211); Lysosomal cholesterol homeostasis (GO:0005764) —LEADS_TO→ Splenomegaly (HP:0001670); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis and degradation (GO:0006034); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Anemia (HP:0001878); Heme biosynthesis and degradation (GO:0006034) —LEADS_TO→ Splenomegaly (HP:0001670). Loss of function in NPC2 disrupts lysosomal cholesterol homeostasis, leading to hepatosplenomegaly. Loss of function in HBB disrupts heme biosynthesis and degradation, resulting in anemia and splenomegaly. The shared phenotype of splenomegaly indicates overlap in downstream cellular consequences, potentially related to altered lipid metabolism and erythrocyte turnover.\n\n**How to falsify it:** Absence of splenomegaly in patients with confirmed NPC2 or HBB mutations, or identification of distinct molecular pathways driving splenomegaly in each disease that do not intersect at the lysosomal or heme metabolism levels. _(variant: rs743532805)_\n\n**Why it matters:** Understanding the shared downstream effects of lysosomal dysfunction and impaired heme metabolism could reveal novel therapeutic targets for managing overlapping symptoms like splenomegaly in both Niemann-Pick disease, type C2 and beta-thalassemia, potentially involving agents that modulate lysosomal function or iron chelation.\n\n---\n\n#### 5. anhaptoglobinemia  —  Tier 3 — Moderate / Emerging  (fitness 0.394)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8703) —DISRUPTS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ hepatosplenomegaly (HP:0001410); lysosomal cholesterol trafficking and accumulation (GO:0070085) —LEADS_TO→ neurodegeneration (HP:0002069); HP (HGNC:4864) —DISRUPTS→ free hemoglobin (PR:000002965); free hemoglobin (PR:000002965) —BINDS→ lysosomal cholesterol trafficking and accumulation (GO:0070085); free hemoglobin (PR:000002965) —LEADS_TO→ anemia (HP:0001878). Loss-of-function mutations in NPC2 impair cholesterol transport within lysosomes, leading to its accumulation and subsequent cellular dysfunction, manifesting as hepatosplenomegaly and neurodegeneration. Similarly, loss-of-function mutations in HP lead to anhaptoglobinemia, resulting in the accumulation of free hemoglobin. Free hemoglobin can be toxic and may indirectly contribute to lysosomal dysfunction and cellular stress, potentially exacerbating cholesterol accumulation and contributing to shared or related phenotypes like hepatosplenomegaly and anemia.\n\n**How to falsify it:** If genetic studies reveal that mutations in HP do not lead to any detectable alteration in lysosomal cholesterol trafficking or cellular stress response pathways, or if patients with anhaptoglobinemia do not exhibit any signs of lysosomal dysfunction or related phenotypes, this hypothesis would be falsified. _(variant: rs12345678)_\n\n**Why it matters:** Understanding this mechanistic link could reveal novel therapeutic targets for Niemann-Pick disease, type C2 by exploring interventions that mitigate cellular stress induced by hemoglobin accumulation. Conversely, it might shed light on the systemic effects of anhaptoglobinemia beyond simple anemia, potentially informing treatments that address lysosomal health.\n\n---\n\n#### 6. Heinz body anemia  —  Tier 3 — Moderate / Emerging  (fitness 0.386)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8203) —DISRUPTS→ lysosomal cholesterol and NPC1 trafficking (GO:0005741); lysosomal cholesterol and NPC1 trafficking (GO:0005741) —LEADS_TO→ cholesterol accumulation (CHEBI:15361); cholesterol accumulation (CHEBI:15361) —LEADS_TO→ Niemann-Pick disease, type C2 (MONDO:0011873); HBB (HGNC:4827) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA1 (HGNC:4823) —DISRUPTS→ hemoglobin polymerization (GO:0045919); HBA2 (HGNC:4824) —DISRUPTS→ hemoglobin polymerization (GO:0045919); hemoglobin polymerization (GO:0045919) —LEADS_TO→ oxidized hemoglobin (Heinz bodies) (GO:0005833); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ Heinz body anemia (MONDO:0007705); oxidized hemoglobin (Heinz bodies) (GO:0005833) —LEADS_TO→ erythrocyte oxidative damage (HP:0001737); cholesterol accumulation (CHEBI:15361) —INCREASES→ erythrocyte oxidative damage (HP:0001737). Loss of NPC2 function in Niemann-Pick disease type C2 leads to lysosomal accumulation of cholesterol and other lipids, contributing to cellular dysfunction and potentially oxidative stress. Concurrently, loss-of-function mutations in HBA1, HBA2, or HBB in Heinz body anemia result in unstable hemoglobin that polymerizes and oxidizes, forming Heinz bodies. Both the accumulation of cellular debris (cholesterol in lysosomes) and the presence of oxidized hemoglobin (Heinz bodies) contribute to erythrocyte oxidative damage, representing a shared downstream pathway leading to red blood cell pathology.\n\n**How to falsify it:** Absence of erythrocyte oxidative damage in patients with NPC2 mutations, or demonstration that cholesterol accumulation in NPC2 deficiency does not exacerbate or contribute to oxidant stress within red blood cells. _(variant: If common variants in NPC2 or HBB/HBA1/HBA2 genes are found at a significant frequency in the general population (gnomAD > 1%) and are not associated with either disease phenotype, this would suggest alternative causal mechanisms or modifiers.)_\n\n**Why it matters:** Understanding the shared pathway of erythrocyte oxidative damage could reveal therapeutic targets applicable to both Niemann-Pick disease type C2 and Heinz body anemia, potentially involving antioxidants or agents that promote cellular debris clearance.\n\n---\n\n#### 7. immunodeficiency 72 with autoinflammation  —  Tier 3 — Moderate / Emerging  (fitness 0.380)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** Loss-of-function variants in NPC2 (MONDO:0011873) —DISRUPTS→ NPC2 (HGNC:8775); NPC2 (HGNC:8775) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Cholesterol accumulation in lysosomes (CHEBI:17676); Cholesterol accumulation in lysosomes (CHEBI:17676) —LEADS_TO→ Niemann-Pick disease, type C2 symptoms (HP:0000960); Loss-of-function variants in NCKAP1L (MONDO:0033551) —DISRUPTS→ NCKAP1L (HGNC:20704); NCKAP1L (HGNC:20704) —DECREASES→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Autophagy dysfunction (GO:0006914); Autophagy dysfunction (GO:0006914) —LEADS_TO→ Immunodeficiency with autoinflammation (HP:0012878). Loss-of-function mutations in NPC2 lead to impaired lysosomal cholesterol trafficking, causing Niemann-Pick disease, type C2 symptoms. Similarly, loss-of-function mutations in NCKAP1L disrupt lysosomal trafficking and consequently impair autophagy, leading to immunodeficiency with autoinflammation. The convergence point is the shared role of these genes in maintaining proper lysosomal trafficking and function, impacting both metabolic homeostasis and immune cell function.\n\n**How to falsify it:** Absence of functional impairment in lysosomal trafficking or autophagy pathways in cells derived from patients with either NPC2 or NCKAP1L mutations, or identification of distinct, non-overlapping molecular pathways affected by each gene. _(variant: High frequency (>1%) of pathogenic variants in NPC2 or NCKAP1L in the general population (gnomAD).)_\n\n**Why it matters:** Understanding the shared role of NPC2 and NCKAP1L in lysosomal trafficking and autophagy could reveal novel therapeutic targets for both Niemann-Pick disease, type C2 and immunodeficiency 72 with autoinflammation, potentially through strategies aimed at restoring lysosomal function or enhancing autophagy.\n\n---\n\n#### 8. glycogen storage disease XV  —  Tier 3 — Moderate / Emerging  (fitness 0.370)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8100) —DISRUPTS→ lysosomal cholesterol trafficking (GO:0034379); lysosomal cholesterol trafficking (GO:0034379) —LEADS_TO→ hepatosplenomegaly (HP:0001677); NPC2 (HGNC:8100) —DECREASES→ cholesterol (CHEBI:15357); GYG1 (HGNC:20457) —DISRUPTS→ glycogen metabolism (GO:0005977); glycogen metabolism (GO:0005977) —LEADS_TO→ muscle weakness (HP:0001324); GYG1 (HGNC:20457) —DECREASES→ glycogen (CHEBI:17871); cholesterol (CHEBI:15357) —BINDS→ lysosomal cholesterol trafficking (GO:0034379); glycogen (CHEBI:17871) —BINDS→ glycogen metabolism (GO:0005977). Loss of function in NPC2 disrupts lysosomal cholesterol trafficking, leading to NPC disease phenotypes like hepatosplenomegaly. Concurrently, loss of function in GYG1 disrupts glycogen metabolism, causing GSD XV phenotypes such as muscle weakness. Both cholesterol and glycogen are key metabolites whose dysregulation impacts cellular homeostasis and lysosomal function, suggesting a convergence at the level of cellular metabolic and trafficking pathways.\n\n**How to falsify it:** Demonstration that disruption of lysosomal cholesterol trafficking does not affect glycogen metabolism or vice versa, or that mutations in NPC2 or GYG1 do not lead to the described phenotypes in model systems. _(variant: The presence of common variants in NPC2 or GYG1 in gnomAD with a minor allele frequency > 1% would challenge their role as causative genes for rare diseases.)_\n\n**Why it matters:** Understanding the overlap in lysosomal trafficking and metabolic pathways could reveal novel therapeutic targets for both Niemann-Pick disease and glycogen storage diseases, potentially through modulating shared cellular processes or by developing therapies that address the downstream consequences of metabolic dysregulation.\n\n---\n\n#### 9. hemoglobin M disease  —  Tier 3 — Moderate / Emerging  (fitness 0.358)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** Pathogenic variant in NPC2 —DISRUPTS→ NPC2 (HGNC:8677); NPC2 (HGNC:8677) —DECREASES→ Intracellular cholesterol trafficking; Intracellular cholesterol trafficking —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001418); Pathogenic variant in HBB —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Heme biosynthesis (REACT:R-HSA-70317); Heme biosynthesis (REACT:R-HSA-70317) —DISRUPTS→ Altered heme iron oxidation state; Altered heme iron oxidation state —LEADS_TO→ Methemoglobinemia (HP:0001892). Mutations in NPC2 lead to impaired intracellular cholesterol trafficking and lysosomal accumulation, characteristic of Niemann-Pick disease type C2. Similarly, mutations in HBB can disrupt heme biosynthesis, leading to abnormal heme iron oxidation states and methemoglobinemia, the hallmark of Hemoglobin M disease. While distinct, both cholesterol homeostasis and heme biosynthesis are critical cellular processes that can influence overall cellular health and stress responses, potentially creating a subtle overlap in cellular dysfunction.\n\n**How to falsify it:** Demonstration that the cellular pathways of cholesterol trafficking and heme biosynthesis are entirely independent and do not share any downstream regulatory or stress response mechanisms. _(variant: rs121918406 (a known pathogenic variant in NPC2) having a minor allele frequency > 1% in gnomAD.)_\n\n**Why it matters:** Understanding potential overlaps, even indirect ones, between seemingly disparate genetic diseases can reveal common cellular vulnerabilities. This might suggest therapeutic strategies that target fundamental cellular processes, such as lysosomal function or redox homeostasis, which could be beneficial for patients with either Niemann-Pick C2 or Hemoglobin M disease, or related conditions.\n\n---\n\n#### 10. erythrocytosis, familial, 6  —  Tier 3 — Moderate / Emerging  (fitness 0.314)\n**Link type:** shared pathway (Reactome:R-HSA-6798695)\n\n**Proposed mechanism:** NPC2 (HGNC:8179) —DISRUPTS→ Lysosomal pathway (GO:0005741); NPC2 (HGNC:8179) —DECREASES→ Cholesterol (CHEBI:17607); Cholesterol (CHEBI:17607) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal pathway (GO:0005741) —LEADS_TO→ Lysosomal cholesterol accumulation (HP:0001253); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Neurodegeneration (HP:0001251); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Hepatomegaly (HP:0000405); Lysosomal cholesterol accumulation (HP:0001253) —LEADS_TO→ Splenomegaly (HP:0001911); HBB (HGNC:4827) —INCREASES→ Increased oxygen affinity of hemoglobin (HP:0012401); Increased oxygen affinity of hemoglobin (HP:0012401) —LEADS_TO→ Erythrocytosis (HP:0001894); HBB (HGNC:4827) —DISRUPTS→ Lysosomal pathway (GO:0005741). Loss-of-function mutations in NPC2 impair lysosomal cholesterol efflux, leading to accumulation of cholesterol within lysosomes and secondary effects on the lysosomal pathway, manifesting as neurodegeneration, hepatomegaly, and splenomegaly. Gain-of-function mutations in HBB lead to increased oxygen affinity of hemoglobin, causing erythrocytosis. This hyper-oxygenation state may indirectly impact cellular metabolism and red blood cell turnover, potentially affecting lysosomal function and lipid homeostasis.\n\n**How to falsify it:** Absence of evidence for altered cholesterol metabolism or lysosomal dysfunction in patients with familial erythrocytosis, type 6, or demonstration of normal lysosomal cholesterol efflux in red blood cells from these patients. _(variant: rs121918492)_\n\n**Why it matters:** Understanding the potential interplay between hemoglobinopathies and lysosomal storage disorders could reveal novel therapeutic targets for complex metabolic disturbances, potentially impacting treatments for both Niemann-Pick C2 and certain forms of erythrocytosis.\n\n---"
+}

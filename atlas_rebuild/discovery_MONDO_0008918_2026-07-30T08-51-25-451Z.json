@@ -1,0 +1,373 @@
+{
+  "seed": {
+    "id": "MONDO:0008918",
+    "name": "carnitine-acylcarnitine translocase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 9,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010914",
+      "diseaseBName": "carnitine palmitoyl transferase II deficiency, severe infantile form",
+      "fitness": 0.4376,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10646) —DISRUPTS→ carnitine transport into mitochondria (GO:0006634); carnitine transport into mitochondria (GO:0006634) —DECREASES→ carnitine (CHEBI:17570); carnitine (CHEBI:17570) —DECREASES→ mitochondrial fatty acid beta-oxidation (GO:0006635); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypoglycemia (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Seizures (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypotonia (HP:0001252); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Cardiomyopathy (HP:0001638); CPT2 (HGNC:2521) —DISRUPTS→ mitochondrial fatty acid beta-oxidation (GO:0006635). Mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid oxidation and leading to hypoglycemia, seizures, hypotonia, and cardiomyopathy. Similarly, mutations in CPT2 disrupt the subsequent step of fatty acid oxidation, leading to the same phenotypes.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10646) —DISRUPTS→ carnitine transport into mitochondria (GO:0006634); carnitine transport into mitochondria (GO:0006634) —DECREASES→ carnitine (CHEBI:17570); carnitine (CHEBI:17570) —DECREASES→ mitochondrial fatty acid beta-oxidation (GO:0006635); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypoglycemia (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Seizures (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypotonia (HP:0001252); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Cardiomyopathy (HP:0001638); CPT2 (HGNC:2521) —DISRUPTS→ mitochondrial fatty acid beta-oxidation (GO:0006635). Mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid oxidation and leading to hypoglycemia, seizures, hypotonia, and cardiomyopathy. Similarly, mutations in CPT2 disrupt the subsequent step of fatty acid oxidation, leading to the same phenotypes.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in SLC25A20 with a very low allele frequency (< 0.01%) in gnomAD that is not associated with any clinical phenotype would falsify the causal link for disease A. Similarly, finding a common variant in CPT2 with high gnomAD frequency that does not segregate with disease B would falsify the causal link for disease B. Furthermore, if distinct metabolic profiles (e.g., specific acylcarnitine accumulation patterns) were consistently observed that clearly separated the two diseases, it would challenge the proposed mechanistic overlap.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010914",
+        "diseaseBName": "carnitine palmitoyl transferase II deficiency, severe infantile form",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.4376,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10646) —DISRUPTS→ carnitine transport into mitochondria (GO:0006634); carnitine transport into mitochondria (GO:0006634) —DECREASES→ carnitine (CHEBI:17570); carnitine (CHEBI:17570) —DECREASES→ mitochondrial fatty acid beta-oxidation (GO:0006635); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypoglycemia (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Seizures (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypotonia (HP:0001252); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Cardiomyopathy (HP:0001638); CPT2 (HGNC:2521) —DISRUPTS→ mitochondrial fatty acid beta-oxidation (GO:0006635). Mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid oxidation and leading to hypoglycemia, seizures, hypotonia, and cardiomyopathy. Similarly, mutations in CPT2 disrupt the subsequent step of fatty acid oxidation, leading to the same phenotypes.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in SLC25A20 with a very low allele frequency (< 0.01%) in gnomAD that is not associated with any clinical phenotype would falsify the causal link for disease A. Similarly, finding a common variant in CPT2 with high gnomAD frequency that does not segregate with disease B would falsify the causal link for disease B. Furthermore, if distinct metabolic profiles (e.g., specific acylcarnitine accumulation patterns) were consistently observed that clearly separated the two diseases, it would challenge the proposed mechanistic overlap.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared disruption in mitochondrial fatty acid oxidation provides a rationale for exploring common therapeutic strategies, such as ketogenic diets or carnitine supplementation (where appropriate for the specific enzyme defect), to mitigate the metabolic consequences and improve patient outcomes in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012136",
+      "diseaseBName": "carnitine palmitoyl transferase II deficiency, neonatal form",
+      "fitness": 0.4362,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10771) —DISRUPTS→ carnitine shuttle (GO:0015724); carnitine shuttle (GO:0015724) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003110); CPT2 (HGNC:2595) —DISRUPTS→ fatty acid oxidation (METABOLIC:fatty acid oxidation); fatty acid oxidation (METABOLIC:fatty acid oxidation) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ lethargy (HP:0011425). Mutations in SLC25A20 impair the carnitine shuttle, leading to reduced transfer of acylcarnitines into the mitochondria for oxidation. Similarly, mutations in CPT2 impair the final step of mitochondrial fatty acid beta-oxidation. Both disruptions lead to a deficiency in the products of fatty acid oxidation, including ketone bodies, and accumulation of acylcarnitines, ultimately causing hypoketotic hypoglycemia and lethargy.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10771) —DISRUPTS→ carnitine shuttle (GO:0015724); carnitine shuttle (GO:0015724) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003110); CPT2 (HGNC:2595) —DISRUPTS→ fatty acid oxidation (METABOLIC:fatty acid oxidation); fatty acid oxidation (METABOLIC:fatty acid oxidation) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ lethargy (HP:0011425). Mutations in SLC25A20 impair the carnitine shuttle, leading to reduced transfer of acylcarnitines into the mitochondria for oxidation. Similarly, mutations in CPT2 impair the final step of mitochondrial fatty acid beta-oxidation. Both disruptions lead to a deficiency in the products of fatty acid oxidation, including ketone bodies, and accumulation of acylcarnitines, ultimately causing hypoketotic hypoglycemia and lethargy.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in SLC25A20 or CPT2 in individuals presenting with phenotypes solely attributable to defects in other metabolic pathways, with no identifiable disruption to fatty acid oxidation or carnitine metabolism.",
+        "gnomad_variant": "A common (AF > 0.01) pathogenic variant in either SLC25A20 or CPT2 in gnomAD populations would cast doubt on their role in these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012136",
+        "diseaseBName": "carnitine palmitoyl transferase II deficiency, neonatal form",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.4362,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10771) —DISRUPTS→ carnitine shuttle (GO:0015724); carnitine shuttle (GO:0015724) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003110); CPT2 (HGNC:2595) —DISRUPTS→ fatty acid oxidation (METABOLIC:fatty acid oxidation); fatty acid oxidation (METABOLIC:fatty acid oxidation) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ lethargy (HP:0011425). Mutations in SLC25A20 impair the carnitine shuttle, leading to reduced transfer of acylcarnitines into the mitochondria for oxidation. Similarly, mutations in CPT2 impair the final step of mitochondrial fatty acid beta-oxidation. Both disruptions lead to a deficiency in the products of fatty acid oxidation, including ketone bodies, and accumulation of acylcarnitines, ultimately causing hypoketotic hypoglycemia and lethargy.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in SLC25A20 or CPT2 in individuals presenting with phenotypes solely attributable to defects in other metabolic pathways, with no identifiable disruption to fatty acid oxidation or carnitine metabolism.",
+          "gnomad_variant": "A common (AF > 0.01) pathogenic variant in either SLC25A20 or CPT2 in gnomAD populations would cast doubt on their role in these rare diseases."
+        },
+        "translational": "Understanding the shared reliance on fatty acid oxidation and the carnitine shuttle highlights potential therapeutic targets. Strategies aimed at bypassing or supplementing the defective steps in this pathway, or enhancing alternative energy substrates, could be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009704",
+      "diseaseBName": "carnitine palmitoyl transferase II deficiency, myopathic form",
+      "fitness": 0.4343,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in SLC25A20 (null) —DISRUPTS→ SLC25A20 (HGNC:10453); SLC25A20 (HGNC:10453) —DISRUPTS→ Carnitine shuttle function (REACT:R-HSA-70272); Carnitine shuttle function (REACT:R-HSA-70272) —DECREASES→ Long-chain fatty acylcarnitines (CHEBI:63905); Long-chain fatty acylcarnitines (CHEBI:63905) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0002111); Loss-of-function variant in CPT2 (null) —DISRUPTS→ CPT2 (HGNC:2577); CPT2 (HGNC:2577) —DISRUPTS→ Fatty acid oxidation (GO:0015986); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Muscle weakness (HP:0001324); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Myopathy (HP:0003198); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Exercise intolerance (HP:0009124); Carnitine shuttle function (REACT:R-HSA-70272) —BINDS→ Fatty acid oxidation (GO:0015986). Loss-of-function mutations in SLC25A20 disrupt the carnitine shuttle, impairing the transport of fatty acids into mitochondria, leading to accumulation of long-chain fatty acylcarnitines and downstream metabolic dysfunction such as hypoketotic hypoglycemia. Similarly, loss-of-function mutations in CPT2 disrupt fatty acid oxidation, a key process dependent on the carnitine shuttle, resulting in myopathic symptoms like muscle weakness, myopathy, and exercise intolerance. The convergence occurs at the level of the carnitine shuttle and overall fatty acid oxidation pathway, which are impaired in both diseases.",
+      "mechanism_narrative": "Loss-of-function variant in SLC25A20 (null) —DISRUPTS→ SLC25A20 (HGNC:10453); SLC25A20 (HGNC:10453) —DISRUPTS→ Carnitine shuttle function (REACT:R-HSA-70272); Carnitine shuttle function (REACT:R-HSA-70272) —DECREASES→ Long-chain fatty acylcarnitines (CHEBI:63905); Long-chain fatty acylcarnitines (CHEBI:63905) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0002111); Loss-of-function variant in CPT2 (null) —DISRUPTS→ CPT2 (HGNC:2577); CPT2 (HGNC:2577) —DISRUPTS→ Fatty acid oxidation (GO:0015986); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Muscle weakness (HP:0001324); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Myopathy (HP:0003198); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Exercise intolerance (HP:0009124); Carnitine shuttle function (REACT:R-HSA-70272) —BINDS→ Fatty acid oxidation (GO:0015986). Loss-of-function mutations in SLC25A20 disrupt the carnitine shuttle, impairing the transport of fatty acids into mitochondria, leading to accumulation of long-chain fatty acylcarnitines and downstream metabolic dysfunction such as hypoketotic hypoglycemia. Similarly, loss-of-function mutations in CPT2 disrupt fatty acid oxidation, a key process dependent on the carnitine shuttle, resulting in myopathic symptoms like muscle weakness, myopathy, and exercise intolerance. The convergence occurs at the level of the carnitine shuttle and overall fatty acid oxidation pathway, which are impaired in both diseases.",
+      "falsification": {
+        "text": "Demonstration that mutations in SLC25A20 and CPT2 do not converge on a shared metabolic pathway (e.g., carnitine shuttle or fatty acid oxidation) or that the observed phenotypes arise from entirely distinct molecular mechanisms.",
+        "gnomad_variant": "Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or CPT2 that are associated with a protective effect against either disease, suggesting a non-essential role for these genes in the disease pathogenesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009704",
+        "diseaseBName": "carnitine palmitoyl transferase II deficiency, myopathic form",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.4343,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in SLC25A20 (null) —DISRUPTS→ SLC25A20 (HGNC:10453); SLC25A20 (HGNC:10453) —DISRUPTS→ Carnitine shuttle function (REACT:R-HSA-70272); Carnitine shuttle function (REACT:R-HSA-70272) —DECREASES→ Long-chain fatty acylcarnitines (CHEBI:63905); Long-chain fatty acylcarnitines (CHEBI:63905) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0002111); Loss-of-function variant in CPT2 (null) —DISRUPTS→ CPT2 (HGNC:2577); CPT2 (HGNC:2577) —DISRUPTS→ Fatty acid oxidation (GO:0015986); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Muscle weakness (HP:0001324); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Myopathy (HP:0003198); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Exercise intolerance (HP:0009124); Carnitine shuttle function (REACT:R-HSA-70272) —BINDS→ Fatty acid oxidation (GO:0015986). Loss-of-function mutations in SLC25A20 disrupt the carnitine shuttle, impairing the transport of fatty acids into mitochondria, leading to accumulation of long-chain fatty acylcarnitines and downstream metabolic dysfunction such as hypoketotic hypoglycemia. Similarly, loss-of-function mutations in CPT2 disrupt fatty acid oxidation, a key process dependent on the carnitine shuttle, resulting in myopathic symptoms like muscle weakness, myopathy, and exercise intolerance. The convergence occurs at the level of the carnitine shuttle and overall fatty acid oxidation pathway, which are impaired in both diseases.",
+        "falsification": {
+          "text": "Demonstration that mutations in SLC25A20 and CPT2 do not converge on a shared metabolic pathway (e.g., carnitine shuttle or fatty acid oxidation) or that the observed phenotypes arise from entirely distinct molecular mechanisms.",
+          "gnomad_variant": "Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or CPT2 that are associated with a protective effect against either disease, suggesting a non-essential role for these genes in the disease pathogenesis."
+        },
+        "translational": "Understanding the shared reliance on the carnitine shuttle and fatty acid oxidation provides a potential therapeutic avenue. Strategies aimed at supporting mitochondrial fatty acid metabolism or bypassing the defective steps in the carnitine shuttle could offer benefit for patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010946",
+      "diseaseBName": "hypertrophic cardiomyopathy 6",
+      "fitness": 0.4304,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10576) —DISRUPTS→ Acylcarnitines (CHEBI:17674); Acylcarnitines (CHEBI:17674) —DECREASES→ Fatty acid oxidation for ATP production (REACT:R-HSA-71187); Fatty acid oxidation for ATP production (REACT:R-HSA-71187) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); PRKAG2 (HGNC:9332) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Cardiomyopathy (HP:0001638); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Hypoglycemia (HP:0002147). Loss of function in SLC25A20 impairs carnitine-mediated transport of long-chain acylcarnitines into the mitochondria, disrupting fatty acid oxidation and subsequently reducing ATP production. Similarly, loss of function in PRKAG2 impairs the regulation of mitochondrial ATP synthesis, potentially through altered AMPK signaling, leading to cardiac dysfunction. Both pathways converge on compromised mitochondrial ATP synthesis, impacting cardiac and systemic energy homeostasis.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10576) —DISRUPTS→ Acylcarnitines (CHEBI:17674); Acylcarnitines (CHEBI:17674) —DECREASES→ Fatty acid oxidation for ATP production (REACT:R-HSA-71187); Fatty acid oxidation for ATP production (REACT:R-HSA-71187) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); PRKAG2 (HGNC:9332) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Cardiomyopathy (HP:0001638); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Hypoglycemia (HP:0002147). Loss of function in SLC25A20 impairs carnitine-mediated transport of long-chain acylcarnitines into the mitochondria, disrupting fatty acid oxidation and subsequently reducing ATP production. Similarly, loss of function in PRKAG2 impairs the regulation of mitochondrial ATP synthesis, potentially through altered AMPK signaling, leading to cardiac dysfunction. Both pathways converge on compromised mitochondrial ATP synthesis, impacting cardiac and systemic energy homeostasis.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the PRKAG2 variants causing hypertrophic cardiomyopathy 6 are exclusively gain-of-function or dominant-negative, and not loss-of-function, this hypothesis would be falsified.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010946",
+        "diseaseBName": "hypertrophic cardiomyopathy 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.4304,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10576) —DISRUPTS→ Acylcarnitines (CHEBI:17674); Acylcarnitines (CHEBI:17674) —DECREASES→ Fatty acid oxidation for ATP production (REACT:R-HSA-71187); Fatty acid oxidation for ATP production (REACT:R-HSA-71187) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); PRKAG2 (HGNC:9332) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Cardiomyopathy (HP:0001638); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Hypoglycemia (HP:0002147). Loss of function in SLC25A20 impairs carnitine-mediated transport of long-chain acylcarnitines into the mitochondria, disrupting fatty acid oxidation and subsequently reducing ATP production. Similarly, loss of function in PRKAG2 impairs the regulation of mitochondrial ATP synthesis, potentially through altered AMPK signaling, leading to cardiac dysfunction. Both pathways converge on compromised mitochondrial ATP synthesis, impacting cardiac and systemic energy homeostasis.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the PRKAG2 variants causing hypertrophic cardiomyopathy 6 are exclusively gain-of-function or dominant-negative, and not loss-of-function, this hypothesis would be falsified.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared impact on mitochondrial ATP synthesis could reveal synergistic therapeutic strategies targeting energy metabolism in both conditions, potentially through interventions that enhance mitochondrial efficiency or substrate availability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008919",
+      "diseaseBName": "systemic primary carnitine deficiency disease",
+      "fitness": 0.4111,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10904) —DISRUPTS→ carnitine transport (GO:0015714); SLC22A5 (HGNC:10620) —DISRUPTS→ carnitine transport (GO:0015714); carnitine transport (GO:0015714) —DECREASES→ carnitine (CHEBI:17700); carnitine (CHEBI:17700) —DECREASES→ fatty acid oxidation (GO:0015986); fatty acid oxidation (GO:0015986) —LEADS_TO→ Hypoglycemia (HP:0001277); fatty acid oxidation (GO:0015986) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 (carnitine-acylcarnitine translocase) or SLC22A5 (carnitine transporter 1) impair carnitine transport, leading to reduced intracellular carnitine levels. This deficiency disrupts fatty acid oxidation, a primary energy source, resulting in hypoglycemia and cardiomyopathy.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10904) —DISRUPTS→ carnitine transport (GO:0015714); SLC22A5 (HGNC:10620) —DISRUPTS→ carnitine transport (GO:0015714); carnitine transport (GO:0015714) —DECREASES→ carnitine (CHEBI:17700); carnitine (CHEBI:17700) —DECREASES→ fatty acid oxidation (GO:0015986); fatty acid oxidation (GO:0015986) —LEADS_TO→ Hypoglycemia (HP:0001277); fatty acid oxidation (GO:0015986) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 (carnitine-acylcarnitine translocase) or SLC22A5 (carnitine transporter 1) impair carnitine transport, leading to reduced intracellular carnitine levels. This deficiency disrupts fatty acid oxidation, a primary energy source, resulting in hypoglycemia and cardiomyopathy.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in SLC25A20 or SLC22A5 who do not exhibit impaired carnitine transport or fatty acid oxidation, or who lack the shared clinical phenotypes.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008919",
+        "diseaseBName": "systemic primary carnitine deficiency disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.4111,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10904) —DISRUPTS→ carnitine transport (GO:0015714); SLC22A5 (HGNC:10620) —DISRUPTS→ carnitine transport (GO:0015714); carnitine transport (GO:0015714) —DECREASES→ carnitine (CHEBI:17700); carnitine (CHEBI:17700) —DECREASES→ fatty acid oxidation (GO:0015986); fatty acid oxidation (GO:0015986) —LEADS_TO→ Hypoglycemia (HP:0001277); fatty acid oxidation (GO:0015986) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 (carnitine-acylcarnitine translocase) or SLC22A5 (carnitine transporter 1) impair carnitine transport, leading to reduced intracellular carnitine levels. This deficiency disrupts fatty acid oxidation, a primary energy source, resulting in hypoglycemia and cardiomyopathy.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in SLC25A20 or SLC22A5 who do not exhibit impaired carnitine transport or fatty acid oxidation, or who lack the shared clinical phenotypes.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding this mechanistic link highlights the critical role of carnitine transport in maintaining cellular energy homeostasis and suggests that therapeutic strategies aimed at restoring carnitine levels or supporting alternative energy pathways could be beneficial for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009867",
+      "diseaseBName": "lethal congenital glycogen storage disease of heart",
+      "fitness": 0.3766,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10938) —DISRUPTS→ Mitochondrial fatty acid beta-oxidation (GO:0006635); SLC25A20 (HGNC:10938) —DECREASES→ Carnitine (CHEBI:17487); Mitochondrial fatty acid beta-oxidation (GO:0006635) —DECREASES→ Mitochondrial ATP synthesis (GO:0006618); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiomyopathy (HP:0001637); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiac dysfunction (HP:0011674); PRKAG2 (HGNC:9575) —INCREASES→ Mitochondrial ATP synthesis (GO:0006618); Cardiomyopathy (HP:0001637) —LEADS_TO→ Cardiac dysfunction (HP:0011674). Loss-of-function mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid beta-oxidation and subsequently reducing mitochondrial ATP synthesis. Gain-of-function mutations in PRKAG2, encoding a subunit of AMP-activated protein kinase (AMPK), lead to aberrant activation of AMPK, which paradoxically can disrupt mitochondrial ATP synthesis regulation and promote glycogen accumulation in the heart. Both pathways converge on impaired mitochondrial ATP synthesis and lead to cardiac dysfunction and cardiomyopathy.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10938) —DISRUPTS→ Mitochondrial fatty acid beta-oxidation (GO:0006635); SLC25A20 (HGNC:10938) —DECREASES→ Carnitine (CHEBI:17487); Mitochondrial fatty acid beta-oxidation (GO:0006635) —DECREASES→ Mitochondrial ATP synthesis (GO:0006618); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiomyopathy (HP:0001637); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiac dysfunction (HP:0011674); PRKAG2 (HGNC:9575) —INCREASES→ Mitochondrial ATP synthesis (GO:0006618); Cardiomyopathy (HP:0001637) —LEADS_TO→ Cardiac dysfunction (HP:0011674). Loss-of-function mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid beta-oxidation and subsequently reducing mitochondrial ATP synthesis. Gain-of-function mutations in PRKAG2, encoding a subunit of AMP-activated protein kinase (AMPK), lead to aberrant activation of AMPK, which paradoxically can disrupt mitochondrial ATP synthesis regulation and promote glycogen accumulation in the heart. Both pathways converge on impaired mitochondrial ATP synthesis and lead to cardiac dysfunction and cardiomyopathy.",
+      "falsification": {
+        "text": "If genetic analysis reveals that disease A is caused by a gain-of-function mutation in SLC25A20, or disease B is caused by a loss-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if studies show no significant impact of SLC25A20 deficiency on mitochondrial ATP synthesis or no impact of PRKAG2 gain-of-function on cardiac energy metabolism, the hypothesis would be weakened.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009867",
+        "diseaseBName": "lethal congenital glycogen storage disease of heart",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.3766,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10938) —DISRUPTS→ Mitochondrial fatty acid beta-oxidation (GO:0006635); SLC25A20 (HGNC:10938) —DECREASES→ Carnitine (CHEBI:17487); Mitochondrial fatty acid beta-oxidation (GO:0006635) —DECREASES→ Mitochondrial ATP synthesis (GO:0006618); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiomyopathy (HP:0001637); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiac dysfunction (HP:0011674); PRKAG2 (HGNC:9575) —INCREASES→ Mitochondrial ATP synthesis (GO:0006618); Cardiomyopathy (HP:0001637) —LEADS_TO→ Cardiac dysfunction (HP:0011674). Loss-of-function mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid beta-oxidation and subsequently reducing mitochondrial ATP synthesis. Gain-of-function mutations in PRKAG2, encoding a subunit of AMP-activated protein kinase (AMPK), lead to aberrant activation of AMPK, which paradoxically can disrupt mitochondrial ATP synthesis regulation and promote glycogen accumulation in the heart. Both pathways converge on impaired mitochondrial ATP synthesis and lead to cardiac dysfunction and cardiomyopathy.",
+        "falsification": {
+          "text": "If genetic analysis reveals that disease A is caused by a gain-of-function mutation in SLC25A20, or disease B is caused by a loss-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if studies show no significant impact of SLC25A20 deficiency on mitochondrial ATP synthesis or no impact of PRKAG2 gain-of-function on cardiac energy metabolism, the hypothesis would be weakened.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding this overlap could inform therapeutic strategies for cardiac dysfunction in metabolic disorders, potentially by targeting shared pathways in mitochondrial energy production or glycogen metabolism, even when the primary genetic defects differ."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008685",
+      "diseaseBName": "Wolff-Parkinson-White syndrome",
+      "fitness": 0.3262,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC25A20 (HGNC:10976) —DISRUPTS→ Mitochondrial beta-oxidation (GO:0006075); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ Long-chain fatty acids (CHEBI:37447); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Carnitine-acylcarnitine translocase deficiency (MONDO:0008918); PRKAG2 (HGNC:9701) —DISRUPTS→ AMPK signaling pathway (GO:0000178); AMPK signaling pathway (GO:0000178) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Wolff-Parkinson-White syndrome (MONDO:0008685). Mutations in SLC25A20 impair mitochondrial beta-oxidation of fatty acids, leading to reduced ATP production and impacting cardiac myocyte energy homeostasis, manifesting as carnitine-acylcarnitine translocase deficiency. Conversely, PRKAG2 mutations can lead to aberrant AMPK signaling, also disrupting cardiac myocyte energy homeostasis and causing Wolff-Parkinson-White syndrome. Thus, both disease pathways converge on the disruption of cardiac energy metabolism.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10976) —DISRUPTS→ Mitochondrial beta-oxidation (GO:0006075); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ Long-chain fatty acids (CHEBI:37447); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Carnitine-acylcarnitine translocase deficiency (MONDO:0008918); PRKAG2 (HGNC:9701) —DISRUPTS→ AMPK signaling pathway (GO:0000178); AMPK signaling pathway (GO:0000178) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Wolff-Parkinson-White syndrome (MONDO:0008685). Mutations in SLC25A20 impair mitochondrial beta-oxidation of fatty acids, leading to reduced ATP production and impacting cardiac myocyte energy homeostasis, manifesting as carnitine-acylcarnitine translocase deficiency. Conversely, PRKAG2 mutations can lead to aberrant AMPK signaling, also disrupting cardiac myocyte energy homeostasis and causing Wolff-Parkinson-White syndrome. Thus, both disease pathways converge on the disruption of cardiac energy metabolism.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in SLC25A20 in patients with carnitine-acylcarnitine translocase deficiency do not lead to impaired mitochondrial beta-oxidation or reduced ATP production, or if PRKAG2 mutations in Wolff-Parkinson-White syndrome patients do not impact AMPK signaling or cardiac energy metabolism, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or PRKAG2 that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008685",
+        "diseaseBName": "Wolff-Parkinson-White syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.3262,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10976) —DISRUPTS→ Mitochondrial beta-oxidation (GO:0006075); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ Long-chain fatty acids (CHEBI:37447); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Carnitine-acylcarnitine translocase deficiency (MONDO:0008918); PRKAG2 (HGNC:9701) —DISRUPTS→ AMPK signaling pathway (GO:0000178); AMPK signaling pathway (GO:0000178) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Wolff-Parkinson-White syndrome (MONDO:0008685). Mutations in SLC25A20 impair mitochondrial beta-oxidation of fatty acids, leading to reduced ATP production and impacting cardiac myocyte energy homeostasis, manifesting as carnitine-acylcarnitine translocase deficiency. Conversely, PRKAG2 mutations can lead to aberrant AMPK signaling, also disrupting cardiac myocyte energy homeostasis and causing Wolff-Parkinson-White syndrome. Thus, both disease pathways converge on the disruption of cardiac energy metabolism.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in SLC25A20 in patients with carnitine-acylcarnitine translocase deficiency do not lead to impaired mitochondrial beta-oxidation or reduced ATP production, or if PRKAG2 mutations in Wolff-Parkinson-White syndrome patients do not impact AMPK signaling or cardiac energy metabolism, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or PRKAG2 that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared impact on cardiac energy metabolism could reveal potential therapeutic targets for both conditions. For instance, interventions aimed at optimizing mitochondrial function or energy substrate utilization might offer benefits, although the specific genetic causes (LoF vs GoF) would require tailored approaches."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013493",
+      "diseaseBName": "acetyl-coa carboxylase deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "SLC25A20 (HGNC:10708) —DISRUPTS→ Carnitine shuttle (R-HSA-1907486); Carnitine (CHEBI:16760) —BINDS→ Carnitine shuttle (R-HSA-1907486); Carnitine shuttle (R-HSA-1907486) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —DECREASES→ Acetyl-CoA (CHEBI:15366); ACACA (HGNC:30) —DISRUPTS→ Malonyl-CoA (CHEBI:17682); Malonyl-CoA (CHEBI:17682) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0012240); Acetyl-CoA (CHEBI:15366) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 impair the carnitine shuttle, reducing the transport of long-chain fatty acids into mitochondria for beta-oxidation, thereby decreasing acetyl-CoA production. Simultaneously, loss-of-function mutations in ACACA prevent the synthesis of malonyl-CoA, which is a key inhibitor of carnitine palmitoyltransferase I (CPT1), an enzyme essential for initiating fatty acid oxidation. The combined effect of impaired carnitine transport and disrupted malonyl-CoA regulation leads to reduced flux through fatty acid oxidation, impacting acetyl-CoA levels and contributing to shared phenotypes like hypoketotic hypoglycemia and cardiomyopathy.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10708) —DISRUPTS→ Carnitine shuttle (R-HSA-1907486); Carnitine (CHEBI:16760) —BINDS→ Carnitine shuttle (R-HSA-1907486); Carnitine shuttle (R-HSA-1907486) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —DECREASES→ Acetyl-CoA (CHEBI:15366); ACACA (HGNC:30) —DISRUPTS→ Malonyl-CoA (CHEBI:17682); Malonyl-CoA (CHEBI:17682) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0012240); Acetyl-CoA (CHEBI:15366) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 impair the carnitine shuttle, reducing the transport of long-chain fatty acids into mitochondria for beta-oxidation, thereby decreasing acetyl-CoA production. Simultaneously, loss-of-function mutations in ACACA prevent the synthesis of malonyl-CoA, which is a key inhibitor of carnitine palmitoyltransferase I (CPT1), an enzyme essential for initiating fatty acid oxidation. The combined effect of impaired carnitine transport and disrupted malonyl-CoA regulation leads to reduced flux through fatty acid oxidation, impacting acetyl-CoA levels and contributing to shared phenotypes like hypoketotic hypoglycemia and cardiomyopathy.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in SLC25A20 or ACACA with a minor allele frequency greater than 1% in gnomAD populations would challenge their role as primary causal genes for these rare diseases.",
+        "gnomad_variant": "gnomAD frequency > 0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013493",
+        "diseaseBName": "acetyl-coa carboxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10708) —DISRUPTS→ Carnitine shuttle (R-HSA-1907486); Carnitine (CHEBI:16760) —BINDS→ Carnitine shuttle (R-HSA-1907486); Carnitine shuttle (R-HSA-1907486) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —DECREASES→ Acetyl-CoA (CHEBI:15366); ACACA (HGNC:30) —DISRUPTS→ Malonyl-CoA (CHEBI:17682); Malonyl-CoA (CHEBI:17682) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0012240); Acetyl-CoA (CHEBI:15366) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 impair the carnitine shuttle, reducing the transport of long-chain fatty acids into mitochondria for beta-oxidation, thereby decreasing acetyl-CoA production. Simultaneously, loss-of-function mutations in ACACA prevent the synthesis of malonyl-CoA, which is a key inhibitor of carnitine palmitoyltransferase I (CPT1), an enzyme essential for initiating fatty acid oxidation. The combined effect of impaired carnitine transport and disrupted malonyl-CoA regulation leads to reduced flux through fatty acid oxidation, impacting acetyl-CoA levels and contributing to shared phenotypes like hypoketotic hypoglycemia and cardiomyopathy.",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in SLC25A20 or ACACA with a minor allele frequency greater than 1% in gnomAD populations would challenge their role as primary causal genes for these rare diseases.",
+          "gnomad_variant": "gnomAD frequency > 0.01"
+        },
+        "translational": "Understanding this mechanistic link highlights shared metabolic vulnerabilities in these distinct genetic disorders. Therapeutic strategies aimed at restoring fatty acid oxidation flux or providing alternative energy substrates could potentially benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009705",
+      "diseaseBName": "carnitine palmitoyl transferase 1A deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "SLC25A20 (HGNC:10487) —DISRUPTS→ carnitine shuttle (REACT:R-HSA-74895); carnitine shuttle (REACT:R-HSA-74895) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); CPT1A (HGNC:2580) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoglycemia (HP:0001250); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003472); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ cardiomyopathy (HP:0001638). Variants in SLC25A20 impair the carnitine shuttle, which is essential for transporting long-chain fatty acids into the mitochondria for oxidation. Variants in CPT1A directly impair the first committed step of long-chain fatty acid oxidation within the mitochondria. Both defects lead to a deficiency in energy production from fatty acids, resulting in overlapping phenotypes like hypoglycemia and cardiomyopathy.",
+      "mechanism_narrative": "SLC25A20 (HGNC:10487) —DISRUPTS→ carnitine shuttle (REACT:R-HSA-74895); carnitine shuttle (REACT:R-HSA-74895) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); CPT1A (HGNC:2580) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoglycemia (HP:0001250); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003472); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ cardiomyopathy (HP:0001638). Variants in SLC25A20 impair the carnitine shuttle, which is essential for transporting long-chain fatty acids into the mitochondria for oxidation. Variants in CPT1A directly impair the first committed step of long-chain fatty acid oxidation within the mitochondria. Both defects lead to a deficiency in energy production from fatty acids, resulting in overlapping phenotypes like hypoglycemia and cardiomyopathy.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in SLC25A20 in a patient diagnosed with carnitine palmitoyltransferase 1A deficiency, or vice versa, without evidence of a shared underlying mechanism, would falsify this hypothesis. Furthermore, demonstration that the specific variants do not lead to loss-of-function of the respective proteins would also be falsifying.",
+        "gnomad_variant": "Pathogenic variants in SLC25A20 or CPT1A with a gnomAD allele frequency greater than 0.01% would suggest they are not solely responsible for rare disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-200425"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-200425": 14
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009705",
+        "diseaseBName": "carnitine palmitoyl transferase 1A deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-200425"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-200425": 14
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC25A20 (HGNC:10487) —DISRUPTS→ carnitine shuttle (REACT:R-HSA-74895); carnitine shuttle (REACT:R-HSA-74895) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); CPT1A (HGNC:2580) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoglycemia (HP:0001250); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003472); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ cardiomyopathy (HP:0001638). Variants in SLC25A20 impair the carnitine shuttle, which is essential for transporting long-chain fatty acids into the mitochondria for oxidation. Variants in CPT1A directly impair the first committed step of long-chain fatty acid oxidation within the mitochondria. Both defects lead to a deficiency in energy production from fatty acids, resulting in overlapping phenotypes like hypoglycemia and cardiomyopathy.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in SLC25A20 in a patient diagnosed with carnitine palmitoyltransferase 1A deficiency, or vice versa, without evidence of a shared underlying mechanism, would falsify this hypothesis. Furthermore, demonstration that the specific variants do not lead to loss-of-function of the respective proteins would also be falsifying.",
+          "gnomad_variant": "Pathogenic variants in SLC25A20 or CPT1A with a gnomAD allele frequency greater than 0.01% would suggest they are not solely responsible for rare disease phenotypes."
+        },
+        "translational": "Understanding the shared reliance on the long-chain fatty acid oxidation pathway for both carnitine-acylcarnitine translocase deficiency and carnitine palmitoyltransferase 1A deficiency highlights potential therapeutic targets. Strategies aimed at supporting alternative energy substrates or improving mitochondrial function could be beneficial for patients with either condition."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T08:51:25.451Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** carnitine-acylcarnitine translocase deficiency (MONDO:0008918)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 9 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | carnitine palmitoyl transferase II deficiency, severe infantile form (MONDO:0010914) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-200425 |\n| 2 | carnitine palmitoyl transferase II deficiency, neonatal form (MONDO:0012136) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-200425 |\n| 3 | carnitine palmitoyl transferase II deficiency, myopathic form (MONDO:0009704) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-200425 |\n| 4 | hypertrophic cardiomyopathy 6 (MONDO:0010946) | shared pathway | Tier 3 | 0.430 | Reactome:R-HSA-200425 |\n| 5 | systemic primary carnitine deficiency disease (MONDO:0008919) | shared pathway | Tier 3 | 0.411 | Reactome:R-HSA-200425 |\n| 6 | lethal congenital glycogen storage disease of heart (MONDO:0009867) | shared pathway | Tier 3 | 0.377 | Reactome:R-HSA-200425 |\n| 7 | Wolff-Parkinson-White syndrome (MONDO:0008685) | shared pathway | Tier 3 | 0.326 | Reactome:R-HSA-200425 |\n| 8 | acetyl-coa carboxylase deficiency (MONDO:0013493) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-200425 |\n| 9 | carnitine palmitoyl transferase 1A deficiency (MONDO:0009705) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-200425 |\n\n### CANDIDATE DETAIL\n#### 1. carnitine palmitoyl transferase II deficiency, severe infantile form  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10646) —DISRUPTS→ carnitine transport into mitochondria (GO:0006634); carnitine transport into mitochondria (GO:0006634) —DECREASES→ carnitine (CHEBI:17570); carnitine (CHEBI:17570) —DECREASES→ mitochondrial fatty acid beta-oxidation (GO:0006635); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypoglycemia (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Seizures (HP:0001250); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Hypotonia (HP:0001252); mitochondrial fatty acid beta-oxidation (GO:0006635) —LEADS_TO→ Cardiomyopathy (HP:0001638); CPT2 (HGNC:2521) —DISRUPTS→ mitochondrial fatty acid beta-oxidation (GO:0006635). Mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid oxidation and leading to hypoglycemia, seizures, hypotonia, and cardiomyopathy. Similarly, mutations in CPT2 disrupt the subsequent step of fatty acid oxidation, leading to the same phenotypes.\n\n**How to falsify it:** Discovery of a pathogenic variant in SLC25A20 with a very low allele frequency (< 0.01%) in gnomAD that is not associated with any clinical phenotype would falsify the causal link for disease A. Similarly, finding a common variant in CPT2 with high gnomAD frequency that does not segregate with disease B would falsify the causal link for disease B. Furthermore, if distinct metabolic profiles (e.g., specific acylcarnitine accumulation patterns) were consistently observed that clearly separated the two diseases, it would challenge the proposed mechanistic overlap. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared disruption in mitochondrial fatty acid oxidation provides a rationale for exploring common therapeutic strategies, such as ketogenic diets or carnitine supplementation (where appropriate for the specific enzyme defect), to mitigate the metabolic consequences and improve patient outcomes in both conditions.\n\n---\n\n#### 2. carnitine palmitoyl transferase II deficiency, neonatal form  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10771) —DISRUPTS→ carnitine shuttle (GO:0015724); carnitine shuttle (GO:0015724) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003110); CPT2 (HGNC:2595) —DISRUPTS→ fatty acid oxidation (METABOLIC:fatty acid oxidation); fatty acid oxidation (METABOLIC:fatty acid oxidation) —DECREASES→ acylcarnitines (CHEBI:16777); acylcarnitines (CHEBI:16777) —LEADS_TO→ lethargy (HP:0011425). Mutations in SLC25A20 impair the carnitine shuttle, leading to reduced transfer of acylcarnitines into the mitochondria for oxidation. Similarly, mutations in CPT2 impair the final step of mitochondrial fatty acid beta-oxidation. Both disruptions lead to a deficiency in the products of fatty acid oxidation, including ketone bodies, and accumulation of acylcarnitines, ultimately causing hypoketotic hypoglycemia and lethargy.\n\n**How to falsify it:** Identification of a pathogenic variant in SLC25A20 or CPT2 in individuals presenting with phenotypes solely attributable to defects in other metabolic pathways, with no identifiable disruption to fatty acid oxidation or carnitine metabolism. _(variant: A common (AF > 0.01) pathogenic variant in either SLC25A20 or CPT2 in gnomAD populations would cast doubt on their role in these rare diseases.)_\n\n**Why it matters:** Understanding the shared reliance on fatty acid oxidation and the carnitine shuttle highlights potential therapeutic targets. Strategies aimed at bypassing or supplementing the defective steps in this pathway, or enhancing alternative energy substrates, could be beneficial for both conditions.\n\n---\n\n#### 3. carnitine palmitoyl transferase II deficiency, myopathic form  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** Loss-of-function variant in SLC25A20 (null) —DISRUPTS→ SLC25A20 (HGNC:10453); SLC25A20 (HGNC:10453) —DISRUPTS→ Carnitine shuttle function (REACT:R-HSA-70272); Carnitine shuttle function (REACT:R-HSA-70272) —DECREASES→ Long-chain fatty acylcarnitines (CHEBI:63905); Long-chain fatty acylcarnitines (CHEBI:63905) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0002111); Loss-of-function variant in CPT2 (null) —DISRUPTS→ CPT2 (HGNC:2577); CPT2 (HGNC:2577) —DISRUPTS→ Fatty acid oxidation (GO:0015986); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Muscle weakness (HP:0001324); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Myopathy (HP:0003198); Fatty acid oxidation (GO:0015986) —LEADS_TO→ Exercise intolerance (HP:0009124); Carnitine shuttle function (REACT:R-HSA-70272) —BINDS→ Fatty acid oxidation (GO:0015986). Loss-of-function mutations in SLC25A20 disrupt the carnitine shuttle, impairing the transport of fatty acids into mitochondria, leading to accumulation of long-chain fatty acylcarnitines and downstream metabolic dysfunction such as hypoketotic hypoglycemia. Similarly, loss-of-function mutations in CPT2 disrupt fatty acid oxidation, a key process dependent on the carnitine shuttle, resulting in myopathic symptoms like muscle weakness, myopathy, and exercise intolerance. The convergence occurs at the level of the carnitine shuttle and overall fatty acid oxidation pathway, which are impaired in both diseases.\n\n**How to falsify it:** Demonstration that mutations in SLC25A20 and CPT2 do not converge on a shared metabolic pathway (e.g., carnitine shuttle or fatty acid oxidation) or that the observed phenotypes arise from entirely distinct molecular mechanisms. _(variant: Discovery of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or CPT2 that are associated with a protective effect against either disease, suggesting a non-essential role for these genes in the disease pathogenesis.)_\n\n**Why it matters:** Understanding the shared reliance on the carnitine shuttle and fatty acid oxidation provides a potential therapeutic avenue. Strategies aimed at supporting mitochondrial fatty acid metabolism or bypassing the defective steps in the carnitine shuttle could offer benefit for patients with either condition.\n\n---\n\n#### 4. hypertrophic cardiomyopathy 6  —  Tier 3 — Moderate / Emerging  (fitness 0.430)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10576) —DISRUPTS→ Acylcarnitines (CHEBI:17674); Acylcarnitines (CHEBI:17674) —DECREASES→ Fatty acid oxidation for ATP production (REACT:R-HSA-71187); Fatty acid oxidation for ATP production (REACT:R-HSA-71187) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); PRKAG2 (HGNC:9332) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70290); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Cardiomyopathy (HP:0001638); Mitochondrial ATP synthesis (REACT:R-HSA-70290) —LEADS_TO→ Hypoglycemia (HP:0002147). Loss of function in SLC25A20 impairs carnitine-mediated transport of long-chain acylcarnitines into the mitochondria, disrupting fatty acid oxidation and subsequently reducing ATP production. Similarly, loss of function in PRKAG2 impairs the regulation of mitochondrial ATP synthesis, potentially through altered AMPK signaling, leading to cardiac dysfunction. Both pathways converge on compromised mitochondrial ATP synthesis, impacting cardiac and systemic energy homeostasis.\n\n**How to falsify it:** If genetic analysis reveals that the PRKAG2 variants causing hypertrophic cardiomyopathy 6 are exclusively gain-of-function or dominant-negative, and not loss-of-function, this hypothesis would be falsified. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared impact on mitochondrial ATP synthesis could reveal synergistic therapeutic strategies targeting energy metabolism in both conditions, potentially through interventions that enhance mitochondrial efficiency or substrate availability.\n\n---\n\n#### 5. systemic primary carnitine deficiency disease  —  Tier 3 — Moderate / Emerging  (fitness 0.411)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10904) —DISRUPTS→ carnitine transport (GO:0015714); SLC22A5 (HGNC:10620) —DISRUPTS→ carnitine transport (GO:0015714); carnitine transport (GO:0015714) —DECREASES→ carnitine (CHEBI:17700); carnitine (CHEBI:17700) —DECREASES→ fatty acid oxidation (GO:0015986); fatty acid oxidation (GO:0015986) —LEADS_TO→ Hypoglycemia (HP:0001277); fatty acid oxidation (GO:0015986) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 (carnitine-acylcarnitine translocase) or SLC22A5 (carnitine transporter 1) impair carnitine transport, leading to reduced intracellular carnitine levels. This deficiency disrupts fatty acid oxidation, a primary energy source, resulting in hypoglycemia and cardiomyopathy.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in SLC25A20 or SLC22A5 who do not exhibit impaired carnitine transport or fatty acid oxidation, or who lack the shared clinical phenotypes. _(variant: N/A)_\n\n**Why it matters:** Understanding this mechanistic link highlights the critical role of carnitine transport in maintaining cellular energy homeostasis and suggests that therapeutic strategies aimed at restoring carnitine levels or supporting alternative energy pathways could be beneficial for both conditions.\n\n---\n\n#### 6. lethal congenital glycogen storage disease of heart  —  Tier 3 — Moderate / Emerging  (fitness 0.377)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10938) —DISRUPTS→ Mitochondrial fatty acid beta-oxidation (GO:0006635); SLC25A20 (HGNC:10938) —DECREASES→ Carnitine (CHEBI:17487); Mitochondrial fatty acid beta-oxidation (GO:0006635) —DECREASES→ Mitochondrial ATP synthesis (GO:0006618); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiomyopathy (HP:0001637); Mitochondrial ATP synthesis (GO:0006618) —LEADS_TO→ Cardiac dysfunction (HP:0011674); PRKAG2 (HGNC:9575) —INCREASES→ Mitochondrial ATP synthesis (GO:0006618); Cardiomyopathy (HP:0001637) —LEADS_TO→ Cardiac dysfunction (HP:0011674). Loss-of-function mutations in SLC25A20 impair carnitine transport into mitochondria, disrupting fatty acid beta-oxidation and subsequently reducing mitochondrial ATP synthesis. Gain-of-function mutations in PRKAG2, encoding a subunit of AMP-activated protein kinase (AMPK), lead to aberrant activation of AMPK, which paradoxically can disrupt mitochondrial ATP synthesis regulation and promote glycogen accumulation in the heart. Both pathways converge on impaired mitochondrial ATP synthesis and lead to cardiac dysfunction and cardiomyopathy.\n\n**How to falsify it:** If genetic analysis reveals that disease A is caused by a gain-of-function mutation in SLC25A20, or disease B is caused by a loss-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if studies show no significant impact of SLC25A20 deficiency on mitochondrial ATP synthesis or no impact of PRKAG2 gain-of-function on cardiac energy metabolism, the hypothesis would be weakened. _(variant: N/A)_\n\n**Why it matters:** Understanding this overlap could inform therapeutic strategies for cardiac dysfunction in metabolic disorders, potentially by targeting shared pathways in mitochondrial energy production or glycogen metabolism, even when the primary genetic defects differ.\n\n---\n\n#### 7. Wolff-Parkinson-White syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.326)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10976) —DISRUPTS→ Mitochondrial beta-oxidation (GO:0006075); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ Long-chain fatty acids (CHEBI:37447); Mitochondrial beta-oxidation (GO:0006075) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Carnitine-acylcarnitine translocase deficiency (MONDO:0008918); PRKAG2 (HGNC:9701) —DISRUPTS→ AMPK signaling pathway (GO:0000178); AMPK signaling pathway (GO:0000178) —DECREASES→ Cardiac myocyte energy homeostasis (HP:0030141); Cardiac myocyte energy homeostasis (HP:0030141) —LEADS_TO→ Wolff-Parkinson-White syndrome (MONDO:0008685). Mutations in SLC25A20 impair mitochondrial beta-oxidation of fatty acids, leading to reduced ATP production and impacting cardiac myocyte energy homeostasis, manifesting as carnitine-acylcarnitine translocase deficiency. Conversely, PRKAG2 mutations can lead to aberrant AMPK signaling, also disrupting cardiac myocyte energy homeostasis and causing Wolff-Parkinson-White syndrome. Thus, both disease pathways converge on the disruption of cardiac energy metabolism.\n\n**How to falsify it:** If genetic analysis reveals that mutations in SLC25A20 in patients with carnitine-acylcarnitine translocase deficiency do not lead to impaired mitochondrial beta-oxidation or reduced ATP production, or if PRKAG2 mutations in Wolff-Parkinson-White syndrome patients do not impact AMPK signaling or cardiac energy metabolism, this hypothesis would be falsified. _(variant: Presence of common variants (AF > 0.01) in gnomAD within the coding regions of SLC25A20 or PRKAG2 that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared impact on cardiac energy metabolism could reveal potential therapeutic targets for both conditions. For instance, interventions aimed at optimizing mitochondrial function or energy substrate utilization might offer benefits, although the specific genetic causes (LoF vs GoF) would require tailored approaches.\n\n---\n\n#### 8. acetyl-coa carboxylase deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10708) —DISRUPTS→ Carnitine shuttle (R-HSA-1907486); Carnitine (CHEBI:16760) —BINDS→ Carnitine shuttle (R-HSA-1907486); Carnitine shuttle (R-HSA-1907486) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —DECREASES→ Acetyl-CoA (CHEBI:15366); ACACA (HGNC:30) —DISRUPTS→ Malonyl-CoA (CHEBI:17682); Malonyl-CoA (CHEBI:17682) —DECREASES→ Fatty acid oxidation (GO:0006635); Fatty acid oxidation (GO:0006635) —LEADS_TO→ Hypoketotic hypoglycemia (HP:0012240); Acetyl-CoA (CHEBI:15366) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in SLC25A20 impair the carnitine shuttle, reducing the transport of long-chain fatty acids into mitochondria for beta-oxidation, thereby decreasing acetyl-CoA production. Simultaneously, loss-of-function mutations in ACACA prevent the synthesis of malonyl-CoA, which is a key inhibitor of carnitine palmitoyltransferase I (CPT1), an enzyme essential for initiating fatty acid oxidation. The combined effect of impaired carnitine transport and disrupted malonyl-CoA regulation leads to reduced flux through fatty acid oxidation, impacting acetyl-CoA levels and contributing to shared phenotypes like hypoketotic hypoglycemia and cardiomyopathy.\n\n**How to falsify it:** Discovery of pathogenic variants in SLC25A20 or ACACA with a minor allele frequency greater than 1% in gnomAD populations would challenge their role as primary causal genes for these rare diseases. _(variant: gnomAD frequency > 0.01)_\n\n**Why it matters:** Understanding this mechanistic link highlights shared metabolic vulnerabilities in these distinct genetic disorders. Therapeutic strategies aimed at restoring fatty acid oxidation flux or providing alternative energy substrates could potentially benefit patients with either condition.\n\n---\n\n#### 9. carnitine palmitoyl transferase 1A deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-200425)\n\n**Proposed mechanism:** SLC25A20 (HGNC:10487) —DISRUPTS→ carnitine shuttle (REACT:R-HSA-74895); carnitine shuttle (REACT:R-HSA-74895) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); CPT1A (HGNC:2580) —DISRUPTS→ long-chain fatty acid oxidation (REACT:R-HSA-1435095); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoglycemia (HP:0001250); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ hypoketotic hypoglycemia (HP:0003472); long-chain fatty acid oxidation (REACT:R-HSA-1435095) —LEADS_TO→ cardiomyopathy (HP:0001638). Variants in SLC25A20 impair the carnitine shuttle, which is essential for transporting long-chain fatty acids into the mitochondria for oxidation. Variants in CPT1A directly impair the first committed step of long-chain fatty acid oxidation within the mitochondria. Both defects lead to a deficiency in energy production from fatty acids, resulting in overlapping phenotypes like hypoglycemia and cardiomyopathy.\n\n**How to falsify it:** Identification of a pathogenic variant in SLC25A20 in a patient diagnosed with carnitine palmitoyltransferase 1A deficiency, or vice versa, without evidence of a shared underlying mechanism, would falsify this hypothesis. Furthermore, demonstration that the specific variants do not lead to loss-of-function of the respective proteins would also be falsifying. _(variant: Pathogenic variants in SLC25A20 or CPT1A with a gnomAD allele frequency greater than 0.01% would suggest they are not solely responsible for rare disease phenotypes.)_\n\n**Why it matters:** Understanding the shared reliance on the long-chain fatty acid oxidation pathway for both carnitine-acylcarnitine translocase deficiency and carnitine palmitoyltransferase 1A deficiency highlights potential therapeutic targets. Strategies aimed at supporting alternative energy substrates or improving mitochondrial function could be beneficial for patients with either condition.\n\n---"
+}

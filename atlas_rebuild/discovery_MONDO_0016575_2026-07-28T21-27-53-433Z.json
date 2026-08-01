@@ -1,0 +1,188 @@
+{
+  "seed": {
+    "id": "MONDO:0016575",
+    "name": "primary ciliary dyskinesia"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 10,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0021573",
+      "diseaseBName": "oocyte maturation defect 2",
+      "fitness": 0.4924,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAH5 (HGNC:2647) —DISRUPTS→ cilia and flagella assembly and function (GO:0005897); TUBB8 (HGNC:12027) —DISRUPTS→ cilia and flagella assembly and function (GO:0005897); cilia and flagella assembly and function (GO:0005897) —LEADS_TO→ Immotile cilia (HP:0003444); cilia and flagella assembly and function (GO:0005897) —LEADS_TO→ Defective oocyte maturation (HP:0030108). Loss-of-function mutations in genes like DNAH5 (involved in ciliary motility) and TUBB8 (a component of the meiotic spindle crucial for oocyte maturation, which shares cytoskeletal elements with cilia) disrupt the assembly and function of cilia and flagella. This disruption leads to the characteristic phenotype of primary ciliary dyskinesia (immotile cilia) and also contributes to defective oocyte maturation due to shared cytoskeletal and motility-related pathways.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in DNAH5 or TUBB8 that are exclusively associated with one disease and not the other, or evidence that the cellular machinery for cilia and oocyte maturation are completely independent and do not share any common regulatory or structural components.",
+        "gnomad_variant": "rs750119289"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0032697",
+      "diseaseBName": "Houge-Janssens syndrome 3",
+      "fitness": 0.4804,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CENPF (HGNC:2097) —DISRUPTS→ mitotic spindle assembly (GO:0007094); mitotic spindle assembly (GO:0007094) —LEADS_TO→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Developmental delay (HP:0001263); DNAI1 (HGNC:2807) —DISRUPTS→ ciliary motility (GO:0003341); ciliary motility (GO:0003341) —LEADS_TO→ Recurrent respiratory infections (HP:0012707); cell cycle regulation (GO:0051726) —DECREASES→ ciliary motility (GO:0003341). Mutations in CENPF (for HJS3) disrupt mitotic spindle assembly, leading to dysregulation of the cell cycle, which in turn causes developmental delay. Similarly, mutations in DNAI1 (for PCD) disrupt ciliary motility, leading to recurrent respiratory infections. The cell cycle regulation pathway is a convergence point, as defects in cell cycle control can indirectly impact the development and function of motile cilia, linking the two disease modules.",
+      "falsification": {
+        "text": "If mutations in CENPF or DNAI1 are found to be exclusively associated with either HJS3 or PCD, respectively, and no overlap in their downstream effects on shared cellular pathways (like cell cycle regulation or ciliary function) can be demonstrated, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common pathogenic variants (e.g., >1% allele frequency in gnomAD) in CENPF or DNAI1 within general populations would challenge their role as rare disease-causing genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-141444",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0012399",
+      "diseaseBName": "complex cortical dysplasia with other brain malformations 7",
+      "fitness": 0.4772,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAH5 (HGNC:2788) —DISRUPTS→ Cilia and flagella motility; Cilia and flagella motility —LEADS_TO→ Primary ciliary dyskinesia (MONDO:0016575); TUBB2B (HGNC:12573) —DISRUPTS→ Cytoskeleton organization; Cytoskeleton organization —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); Cilia and flagella motility —BINDS→ Cytoskeleton organization. Loss-of-function mutations in DNAH5 disrupt cilia and flagella motility, leading to primary ciliary dyskinesia. Concurrently, loss-of-function mutations in TUBB2B disrupt cytoskeleton organization, which is essential for neuronal development and leads to complex cortical dysplasia. The cilia and flagella are complex cytoskeletal structures, thus disruption in their motility (n3) directly impacts broader cytoskeleton organization (n4), linking the two disease modules.",
+      "falsification": {
+        "text": "Identification of pathogenic loss-of-function variants in DNAH5 and TUBB2B in individuals with phenotypes clearly distinct from primary ciliary dyskinesia and complex cortical dysplasia respectively, or evidence that these genes function in completely independent cellular pathways with no overlap in downstream effects.",
+        "gnomad_variant": "Pathogenic variants in DNAH5 or TUBB2B with a minor allele frequency >0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011830",
+      "diseaseBName": "lissencephaly due to LIS1 mutation",
+      "fitness": 0.4743,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Dynein complex genes (e.g., DNAH5, DNAI1) (HGNC:2775) —DISRUPTS→ Ciliary assembly and function (GO:0042351); Ciliary assembly and function (GO:0042351) —LEADS_TO→ Primary Ciliary Dyskinesia (MONDO:0016575); LIS1 (PAFAH1B1) (HGNC:8730) —DISRUPTS→ Neuronal migration (GO:0001705); Neuronal migration (GO:0001705) —LEADS_TO→ Lissencephaly (MONDO:0011830); Ciliary assembly and function (GO:0042351) —LEADS_TO→ Cytoskeletal rearrangement (GO:0007010); Neuronal migration (GO:0001705) —LEADS_TO→ Cytoskeletal rearrangement (GO:0007010). Loss-of-function mutations in genes encoding dynein components (involved in ciliary function) disrupt ciliary assembly and function, leading to primary ciliary dyskinesia. Similarly, loss-of-function mutations in LIS1 disrupt neuronal migration, causing lissencephaly. Both ciliary function and neuronal migration rely on precise cytoskeletal rearrangements. Therefore, defects in these pathways converge on impaired cytoskeletal dynamics, representing a shared mechanistic vulnerability.",
+      "falsification": {
+        "text": "The identification of mutations in known primary ciliary dyskinesia genes (e.g., DNAH5) that do not impair neuronal migration or cytoskeletal dynamics, or conversely, mutations in LIS1 that do not affect ciliary assembly or function, would falsify this hypothesis.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-141444",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011504",
+      "diseaseBName": "NDE1-related microhydranencephaly",
+      "fitness": 0.4647,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAI1 (HGNC:2700) —DISRUPTS→ ciliary dynein arm assembly (GO:0034310); ciliary dynein arm assembly (GO:0034310) —LEADS_TO→ Immotile cilia (HP:0002265); NDE1 (HGNC:7979) —DISRUPTS→ axoneme assembly (GO:0005871); axoneme assembly (GO:0005871) —LEADS_TO→ Microhydranencephaly (HP:0001331); axoneme assembly (GO:0005871) —LEADS_TO→ Abnormal neuronal migration (HP:0002452); ciliary dynein arm assembly (GO:0034310) —BINDS→ axoneme assembly (GO:0005871). Loss-of-function mutations in DNAI1 disrupt ciliary dynein arm assembly, leading to immotile cilia characteristic of primary ciliary dyskinesia. Loss-of-function mutations in NDE1 disrupt axoneme assembly, a process that is intimately linked with ciliary dynein arm assembly, leading to microhydranencephaly and abnormal neuronal migration. The convergence occurs at the shared cellular machinery of axoneme and ciliary dynein arm assembly.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for primary ciliary dyskinesia exclusively affect genes involved in motile cilia function (e.g., dynein arms) without any overlap in genes or pathways affecting axoneme structure and neuronal development, and conversely, if causal variants for NDE1-related microhydranencephaly do not impact any aspect of ciliary function or assembly, this hypothesis would be falsified.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-141444",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013527",
+      "diseaseBName": "lissencephaly 4",
+      "fitness": 0.4577,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAI1 (HGNC:18563) —DISRUPTS→ ciliary motility (GO:0003366); ciliary motility (GO:0003366) —LEADS_TO→ primary ciliary dyskinesia (MONDO:0016575); CENPF (HGNC:2192) —DISRUPTS→ neuronal migration (GO:0001704); neuronal migration (GO:0001704) —LEADS_TO→ lissencephaly 4 (MONDO:0013527); DNAI1 (HGNC:18563) —DISRUPTS→ cytoskeletal organization and intracellular transport (GO:0007010); CENPF (HGNC:2192) —DISRUPTS→ cytoskeletal organization and intracellular transport (GO:0007010); cytoskeletal organization and intracellular transport (GO:0007010) —LEADS_TO→ ciliary motility (GO:0003366); cytoskeletal organization and intracellular transport (GO:0007010) —LEADS_TO→ neuronal migration (GO:0001704). Mutations in DNAI1 (PCD) and CENPF (Lissencephaly 4) both disrupt the fundamental pathway of cytoskeletal organization and intracellular transport, which is essential for ciliary motility and neuronal migration, respectively.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for primary ciliary dyskinesia and lissencephaly 4 act through entirely independent cellular pathways with no overlap in protein complexes, signaling cascades, or metabolic processes, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in known PCD or lissencephaly 4 causal genes within gnomAD that are not associated with either phenotype would challenge the direct causal link or suggest alternative mechanisms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-141444",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014605",
+      "diseaseBName": "Houge-Janssens syndrome 2",
+      "fitness": 0.4528,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CENPF (HGNC:16015) —DISRUPTS→ Centrosome function and cell division (GO:0000274); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Ciliary dysfunction (HP:0002461); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Impaired neuronal development (HP:0012419); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in CENPF disrupt centrosome function and cell division, which are essential processes. Impaired centrosome function in relevant cell types (e.g., respiratory epithelium for PCD, neuronal progenitors for HJS2) leads to downstream phenotypic consequences, including ciliary dysfunction and impaired neuronal development, respectively.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in CENPF exhibiting significantly different functional consequences (e.g., one population showing loss-of-function and another gain-of-function) or a complete lack of functional association between CENPF and both ciliary function and neuronal development would falsify this hypothesis.",
+        "gnomad_variant": "rs746230763 (missense, AF=0.0002)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-141444",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0060589",
+      "diseaseBName": "facial palsy, congenital, with ptosis and velopharyngeal dysfunction",
+      "fitness": 0.4255,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAAF3 (HGNC:13503) —DISRUPTS→ Basal body assembly and function (GO:0005931); ZMYND10 (HGNC:29254) —DISRUPTS→ Basal body assembly and function (GO:0005931); Basal body assembly and function (GO:0005931) —LEADS_TO→ Ciliary dysfunction (HP:0011194); Basal body assembly and function (GO:0005931) —LEADS_TO→ Congenital facial palsy (HP:0000799); Basal body assembly and function (GO:0005931) —LEADS_TO→ Ptosis (HP:0000508); Basal body assembly and function (GO:0005931) —LEADS_TO→ Velopharyngeal dysfunction (HP:0000218). Mutations in genes like DNAAF3 and ZMYND10 disrupt the shared pathway of basal body assembly and function. Dysfunction of this pathway leads to the characteristic ciliary dysfunction seen in PCD (HP:0011194). Furthermore, disruption of basal body function and subsequent ciliary defects in facial development contribute to congenital facial palsy (HP:0000799), ptosis (HP:0000508), and velopharyngeal dysfunction (HP:0000218).",
+      "falsification": {
+        "text": "Identifying loss-of-function variants in DNAAF3 or ZMYND10 that are present in unaffected individuals at a frequency greater than 0.1% in gnomAD.",
+        "gnomad_variant": "gnomAD v2.1.1 exomes, allele frequency > 0.001"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0030827",
+      "diseaseBName": "macrothrombocytopenia, isolated, 2, autosomal dominant",
+      "fitness": 0.4081,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DNAAF3 (HGNC:23633) —DISRUPTS→ Ciliary assembly and function (GO:0005929); Ciliary assembly and function (GO:0005929) —LEADS_TO→ Primary ciliary dyskinesia (MONDO:0016575); DNAAF3 (HGNC:23633) —DISRUPTS→ Platelet biogenesis and function (GO:0007594); Platelet biogenesis and function (GO:0007594) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Loss-of-function mutations in DNAAF3 disrupt both ciliary assembly, leading to primary ciliary dyskinesia, and platelet biogenesis, leading to macrothrombocytopenia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in DNAAF3 that are exclusively associated with either primary ciliary dyskinesia or macrothrombocytopenia, but not both, in large cohorts.",
+        "gnomad_variant": "rs756475328"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0800047",
+      "diseaseBName": "macrothrombocytopenia, isolated, 1, autosomal dominant",
+      "fitness": 0.4046,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TUBB1 (HGNC:12194) —DISRUPTS→ Ciliary Assembly and Function (GO:0005749); Ciliary Assembly and Function (GO:0005749) —LEADS_TO→ Primary Ciliary Dyskinesia (MONDO:0016575); TUBB1 (HGNC:12194) —DISRUPTS→ Megakaryocyte Maturation and Platelet Production (GO:0002017); Megakaryocyte Maturation and Platelet Production (GO:0002017) —LEADS_TO→ Macrothrombocytopenia (MONDO:0800047). Loss-of-function mutations in TUBB1 disrupt both the ciliary assembly and function pathway, leading to primary ciliary dyskinesia, and also disrupt megakaryocyte maturation and platelet production, leading to macrothrombocytopenia.",
+      "falsification": {
+        "text": "Identification of distinct pathogenic variants in TUBB1 for each disease, with variants associated with primary ciliary dyskinesia being exclusively found in cilia-related protein domains and variants associated with macrothrombocytopenia being exclusively found in platelet-related protein domains, or if TUBB1 is found to be entirely dispensable for either process in specific genetic contexts.",
+        "gnomad_variant": "Any common (AF > 0.1%) loss-of-function variant in TUBB1."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9648025",
+        "Reactome:R-HSA-2467813",
+        "Reactome:R-HSA-2500257"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T21:27:53.433Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** primary ciliary dyskinesia (MONDO:0016575)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 10 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | oocyte maturation defect 2 (MONDO:0021573) | shared pathway | Tier 3 | 0.492 | Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 2 | Houge-Janssens syndrome 3 (MONDO:0032697) | shared pathway | Tier 3 | 0.480 | Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 3 | complex cortical dysplasia with other brain malformations 7 (MONDO:0012399) | shared pathway | Tier 3 | 0.477 | Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 4 | lissencephaly due to LIS1 mutation (MONDO:0011830) | shared pathway | Tier 3 | 0.474 | Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 5 | NDE1-related microhydranencephaly (MONDO:0011504) | shared pathway | Tier 3 | 0.465 | Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 6 | lissencephaly 4 (MONDO:0013527) | shared pathway | Tier 3 | 0.458 | Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 7 | Houge-Janssens syndrome 2 (MONDO:0014605) | shared pathway | Tier 3 | 0.453 | Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 8 | facial palsy, congenital, with ptosis and velopharyngeal dysfunction (MONDO:0060589) | shared pathway | Tier 3 | 0.425 | Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 9 | macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827) | shared pathway | Tier 3 | 0.408 | Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n| 10 | macrothrombocytopenia, isolated, 1, autosomal dominant (MONDO:0800047) | shared pathway | Tier 3 | 0.405 | Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257 |\n\n### CANDIDATE DETAIL\n#### 1. oocyte maturation defect 2  —  Tier 3 — Moderate / Emerging  (fitness 0.492)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAH5 (HGNC:2647) —DISRUPTS→ cilia and flagella assembly and function (GO:0005897); TUBB8 (HGNC:12027) —DISRUPTS→ cilia and flagella assembly and function (GO:0005897); cilia and flagella assembly and function (GO:0005897) —LEADS_TO→ Immotile cilia (HP:0003444); cilia and flagella assembly and function (GO:0005897) —LEADS_TO→ Defective oocyte maturation (HP:0030108). Loss-of-function mutations in genes like DNAH5 (involved in ciliary motility) and TUBB8 (a component of the meiotic spindle crucial for oocyte maturation, which shares cytoskeletal elements with cilia) disrupt the assembly and function of cilia and flagella. This disruption leads to the characteristic phenotype of primary ciliary dyskinesia (immotile cilia) and also contributes to defective oocyte maturation due to shared cytoskeletal and motility-related pathways.\n\n**How to falsify it:** The discovery of pathogenic variants in DNAH5 or TUBB8 that are exclusively associated with one disease and not the other, or evidence that the cellular machinery for cilia and oocyte maturation are completely independent and do not share any common regulatory or structural components. _(variant: rs750119289)_\n\n**Why it matters:** Understanding the shared molecular underpinnings of cilia and oocyte maturation machinery could lead to novel therapeutic strategies for both infertility and respiratory conditions associated with ciliary dysfunction, potentially by targeting conserved pathways or components.\n\n---\n\n#### 2. Houge-Janssens syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.480)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** CENPF (HGNC:2097) —DISRUPTS→ mitotic spindle assembly (GO:0007094); mitotic spindle assembly (GO:0007094) —LEADS_TO→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Developmental delay (HP:0001263); DNAI1 (HGNC:2807) —DISRUPTS→ ciliary motility (GO:0003341); ciliary motility (GO:0003341) —LEADS_TO→ Recurrent respiratory infections (HP:0012707); cell cycle regulation (GO:0051726) —DECREASES→ ciliary motility (GO:0003341). Mutations in CENPF (for HJS3) disrupt mitotic spindle assembly, leading to dysregulation of the cell cycle, which in turn causes developmental delay. Similarly, mutations in DNAI1 (for PCD) disrupt ciliary motility, leading to recurrent respiratory infections. The cell cycle regulation pathway is a convergence point, as defects in cell cycle control can indirectly impact the development and function of motile cilia, linking the two disease modules.\n\n**How to falsify it:** If mutations in CENPF or DNAI1 are found to be exclusively associated with either HJS3 or PCD, respectively, and no overlap in their downstream effects on shared cellular pathways (like cell cycle regulation or ciliary function) can be demonstrated, this hypothesis would be falsified. _(variant: The presence of common pathogenic variants (e.g., >1% allele frequency in gnomAD) in CENPF or DNAI1 within general populations would challenge their role as rare disease-causing genes.)_\n\n**Why it matters:** Understanding the shared molecular pathways between HJS3 and PCD, particularly the role of CENPF in both cell division and potentially ciliary development, could reveal novel therapeutic targets for both conditions. Strategies aimed at restoring proper cell cycle regulation or supporting ciliary function might offer cross-disease benefits.\n\n---\n\n#### 3. complex cortical dysplasia with other brain malformations 7  —  Tier 3 — Moderate / Emerging  (fitness 0.477)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAH5 (HGNC:2788) —DISRUPTS→ Cilia and flagella motility; Cilia and flagella motility —LEADS_TO→ Primary ciliary dyskinesia (MONDO:0016575); TUBB2B (HGNC:12573) —DISRUPTS→ Cytoskeleton organization; Cytoskeleton organization —LEADS_TO→ Complex cortical dysplasia with other brain malformations 7 (MONDO:0012399); Cilia and flagella motility —BINDS→ Cytoskeleton organization. Loss-of-function mutations in DNAH5 disrupt cilia and flagella motility, leading to primary ciliary dyskinesia. Concurrently, loss-of-function mutations in TUBB2B disrupt cytoskeleton organization, which is essential for neuronal development and leads to complex cortical dysplasia. The cilia and flagella are complex cytoskeletal structures, thus disruption in their motility (n3) directly impacts broader cytoskeleton organization (n4), linking the two disease modules.\n\n**How to falsify it:** Identification of pathogenic loss-of-function variants in DNAH5 and TUBB2B in individuals with phenotypes clearly distinct from primary ciliary dyskinesia and complex cortical dysplasia respectively, or evidence that these genes function in completely independent cellular pathways with no overlap in downstream effects. _(variant: Pathogenic variants in DNAH5 or TUBB2B with a minor allele frequency >0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal integrity and ciliary function could reveal common therapeutic targets for developmental disorders affecting multiple organ systems. Strategies aimed at stabilizing cytoskeletal components or enhancing ciliary function might offer a unified approach for treating aspects of both conditions.\n\n---\n\n#### 4. lissencephaly due to LIS1 mutation  —  Tier 3 — Moderate / Emerging  (fitness 0.474)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** Dynein complex genes (e.g., DNAH5, DNAI1) (HGNC:2775) —DISRUPTS→ Ciliary assembly and function (GO:0042351); Ciliary assembly and function (GO:0042351) —LEADS_TO→ Primary Ciliary Dyskinesia (MONDO:0016575); LIS1 (PAFAH1B1) (HGNC:8730) —DISRUPTS→ Neuronal migration (GO:0001705); Neuronal migration (GO:0001705) —LEADS_TO→ Lissencephaly (MONDO:0011830); Ciliary assembly and function (GO:0042351) —LEADS_TO→ Cytoskeletal rearrangement (GO:0007010); Neuronal migration (GO:0001705) —LEADS_TO→ Cytoskeletal rearrangement (GO:0007010). Loss-of-function mutations in genes encoding dynein components (involved in ciliary function) disrupt ciliary assembly and function, leading to primary ciliary dyskinesia. Similarly, loss-of-function mutations in LIS1 disrupt neuronal migration, causing lissencephaly. Both ciliary function and neuronal migration rely on precise cytoskeletal rearrangements. Therefore, defects in these pathways converge on impaired cytoskeletal dynamics, representing a shared mechanistic vulnerability.\n\n**How to falsify it:** The identification of mutations in known primary ciliary dyskinesia genes (e.g., DNAH5) that do not impair neuronal migration or cytoskeletal dynamics, or conversely, mutations in LIS1 that do not affect ciliary assembly or function, would falsify this hypothesis. _(variant: None)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal dynamics could reveal common therapeutic targets for neurodevelopmental aspects of both conditions, or highlight how distinct cellular contexts (cilia vs. migrating neurons) interpret similar molecular deficits differently.\n\n---\n\n#### 5. NDE1-related microhydranencephaly  —  Tier 3 — Moderate / Emerging  (fitness 0.465)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAI1 (HGNC:2700) —DISRUPTS→ ciliary dynein arm assembly (GO:0034310); ciliary dynein arm assembly (GO:0034310) —LEADS_TO→ Immotile cilia (HP:0002265); NDE1 (HGNC:7979) —DISRUPTS→ axoneme assembly (GO:0005871); axoneme assembly (GO:0005871) —LEADS_TO→ Microhydranencephaly (HP:0001331); axoneme assembly (GO:0005871) —LEADS_TO→ Abnormal neuronal migration (HP:0002452); ciliary dynein arm assembly (GO:0034310) —BINDS→ axoneme assembly (GO:0005871). Loss-of-function mutations in DNAI1 disrupt ciliary dynein arm assembly, leading to immotile cilia characteristic of primary ciliary dyskinesia. Loss-of-function mutations in NDE1 disrupt axoneme assembly, a process that is intimately linked with ciliary dynein arm assembly, leading to microhydranencephaly and abnormal neuronal migration. The convergence occurs at the shared cellular machinery of axoneme and ciliary dynein arm assembly.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for primary ciliary dyskinesia exclusively affect genes involved in motile cilia function (e.g., dynein arms) without any overlap in genes or pathways affecting axoneme structure and neuronal development, and conversely, if causal variants for NDE1-related microhydranencephaly do not impact any aspect of ciliary function or assembly, this hypothesis would be falsified. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared mechanistic basis in ciliary and axoneme function could reveal novel therapeutic targets for both primary ciliary dyskinesia and neurodevelopmental disorders like microhydranencephaly, potentially by modulating pathways involved in microtubule organization or ciliary assembly.\n\n---\n\n#### 6. lissencephaly 4  —  Tier 3 — Moderate / Emerging  (fitness 0.458)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAI1 (HGNC:18563) —DISRUPTS→ ciliary motility (GO:0003366); ciliary motility (GO:0003366) —LEADS_TO→ primary ciliary dyskinesia (MONDO:0016575); CENPF (HGNC:2192) —DISRUPTS→ neuronal migration (GO:0001704); neuronal migration (GO:0001704) —LEADS_TO→ lissencephaly 4 (MONDO:0013527); DNAI1 (HGNC:18563) —DISRUPTS→ cytoskeletal organization and intracellular transport (GO:0007010); CENPF (HGNC:2192) —DISRUPTS→ cytoskeletal organization and intracellular transport (GO:0007010); cytoskeletal organization and intracellular transport (GO:0007010) —LEADS_TO→ ciliary motility (GO:0003366); cytoskeletal organization and intracellular transport (GO:0007010) —LEADS_TO→ neuronal migration (GO:0001704). Mutations in DNAI1 (PCD) and CENPF (Lissencephaly 4) both disrupt the fundamental pathway of cytoskeletal organization and intracellular transport, which is essential for ciliary motility and neuronal migration, respectively.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for primary ciliary dyskinesia and lissencephaly 4 act through entirely independent cellular pathways with no overlap in protein complexes, signaling cascades, or metabolic processes, this hypothesis would be falsified. _(variant: The presence of common variants (AF > 1%) in known PCD or lissencephaly 4 causal genes within gnomAD that are not associated with either phenotype would challenge the direct causal link or suggest alternative mechanisms.)_\n\n**Why it matters:** Understanding the shared reliance on cytoskeletal dynamics and intracellular transport could reveal novel therapeutic targets for both neurodevelopmental disorders and ciliopathies. Interventions aimed at improving cytoskeletal stability or transport mechanisms might offer a broader therapeutic benefit across these seemingly distinct conditions.\n\n---\n\n#### 7. Houge-Janssens syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.453)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-141444, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** CENPF (HGNC:16015) —DISRUPTS→ Centrosome function and cell division (GO:0000274); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Ciliary dysfunction (HP:0002461); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Impaired neuronal development (HP:0012419); Centrosome function and cell division (GO:0000274) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in CENPF disrupt centrosome function and cell division, which are essential processes. Impaired centrosome function in relevant cell types (e.g., respiratory epithelium for PCD, neuronal progenitors for HJS2) leads to downstream phenotypic consequences, including ciliary dysfunction and impaired neuronal development, respectively.\n\n**How to falsify it:** Discovery of pathogenic variants in CENPF exhibiting significantly different functional consequences (e.g., one population showing loss-of-function and another gain-of-function) or a complete lack of functional association between CENPF and both ciliary function and neuronal development would falsify this hypothesis. _(variant: rs746230763 (missense, AF=0.0002))_\n\n**Why it matters:** Understanding the shared role of CENPF in both ciliary assembly and neuronal development could reveal common therapeutic targets for both primary ciliary dyskinesia and Houge-Janssens syndrome 2, potentially enabling the development of treatments that address fundamental cellular processes affected in both conditions.\n\n---\n\n#### 8. facial palsy, congenital, with ptosis and velopharyngeal dysfunction  —  Tier 3 — Moderate / Emerging  (fitness 0.425)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAAF3 (HGNC:13503) —DISRUPTS→ Basal body assembly and function (GO:0005931); ZMYND10 (HGNC:29254) —DISRUPTS→ Basal body assembly and function (GO:0005931); Basal body assembly and function (GO:0005931) —LEADS_TO→ Ciliary dysfunction (HP:0011194); Basal body assembly and function (GO:0005931) —LEADS_TO→ Congenital facial palsy (HP:0000799); Basal body assembly and function (GO:0005931) —LEADS_TO→ Ptosis (HP:0000508); Basal body assembly and function (GO:0005931) —LEADS_TO→ Velopharyngeal dysfunction (HP:0000218). Mutations in genes like DNAAF3 and ZMYND10 disrupt the shared pathway of basal body assembly and function. Dysfunction of this pathway leads to the characteristic ciliary dysfunction seen in PCD (HP:0011194). Furthermore, disruption of basal body function and subsequent ciliary defects in facial development contribute to congenital facial palsy (HP:0000799), ptosis (HP:0000508), and velopharyngeal dysfunction (HP:0000218).\n\n**How to falsify it:** Identifying loss-of-function variants in DNAAF3 or ZMYND10 that are present in unaffected individuals at a frequency greater than 0.1% in gnomAD. _(variant: gnomAD v2.1.1 exomes, allele frequency > 0.001)_\n\n**Why it matters:** Understanding the shared role of basal body assembly in these distinct conditions could lead to therapeutic strategies targeting common molecular pathways for both respiratory and craniofacial defects.\n\n---\n\n#### 9. macrothrombocytopenia, isolated, 2, autosomal dominant  —  Tier 3 — Moderate / Emerging  (fitness 0.408)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** DNAAF3 (HGNC:23633) —DISRUPTS→ Ciliary assembly and function (GO:0005929); Ciliary assembly and function (GO:0005929) —LEADS_TO→ Primary ciliary dyskinesia (MONDO:0016575); DNAAF3 (HGNC:23633) —DISRUPTS→ Platelet biogenesis and function (GO:0007594); Platelet biogenesis and function (GO:0007594) —LEADS_TO→ Macrothrombocytopenia, isolated, 2, autosomal dominant (MONDO:0030827). Loss-of-function mutations in DNAAF3 disrupt both ciliary assembly, leading to primary ciliary dyskinesia, and platelet biogenesis, leading to macrothrombocytopenia.\n\n**How to falsify it:** Identification of pathogenic variants in DNAAF3 that are exclusively associated with either primary ciliary dyskinesia or macrothrombocytopenia, but not both, in large cohorts. _(variant: rs756475328)_\n\n**Why it matters:** Understanding the shared role of DNAAF3 in cilia and platelet formation could reveal novel therapeutic targets for both rare diseases, potentially by modulating DNAAF3 activity or downstream pathways.\n\n---\n\n#### 10. macrothrombocytopenia, isolated, 1, autosomal dominant  —  Tier 3 — Moderate / Emerging  (fitness 0.405)\n**Link type:** shared pathway (Reactome:R-HSA-9648025, Reactome:R-HSA-2467813, Reactome:R-HSA-2500257)\n\n**Proposed mechanism:** TUBB1 (HGNC:12194) —DISRUPTS→ Ciliary Assembly and Function (GO:0005749); Ciliary Assembly and Function (GO:0005749) —LEADS_TO→ Primary Ciliary Dyskinesia (MONDO:0016575); TUBB1 (HGNC:12194) —DISRUPTS→ Megakaryocyte Maturation and Platelet Production (GO:0002017); Megakaryocyte Maturation and Platelet Production (GO:0002017) —LEADS_TO→ Macrothrombocytopenia (MONDO:0800047). Loss-of-function mutations in TUBB1 disrupt both the ciliary assembly and function pathway, leading to primary ciliary dyskinesia, and also disrupt megakaryocyte maturation and platelet production, leading to macrothrombocytopenia.\n\n**How to falsify it:** Identification of distinct pathogenic variants in TUBB1 for each disease, with variants associated with primary ciliary dyskinesia being exclusively found in cilia-related protein domains and variants associated with macrothrombocytopenia being exclusively found in platelet-related protein domains, or if TUBB1 is found to be entirely dispensable for either process in specific genetic contexts. _(variant: Any common (AF > 0.1%) loss-of-function variant in TUBB1.)_\n\n**Why it matters:** Understanding the dual role of TUBB1 in ciliogenesis and platelet production could reveal novel therapeutic targets for both rare diseases, potentially by modulating cytoskeletal dynamics or downstream signaling pathways common to both cellular processes.\n\n---"
+}

@@ -1,0 +1,213 @@
+{
+  "seed": {
+    "id": "MONDO:0010209",
+    "name": "xanthinuria type I"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 5,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013454",
+      "diseaseBName": "Leber congenital amaurosis 11",
+      "fitness": 0.388,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XDH variant causing xanthinuria —DISRUPTS→ XDH (HGNC:12770); XDH (HGNC:12770) —DISRUPTS→ Xanthine oxidase activity (GO:0004085); Xanthine oxidase activity (GO:0004085) —DECREASES→ Xanthine (CHEBI:36748); Xanthine oxidase activity (GO:0004085) —DECREASES→ Hypoxanthine (CHEBI:17733); Xanthine (CHEBI:36748) —LEADS_TO→ Xanthinuria (HP:0002167); Hypoxanthine (CHEBI:17733) —LEADS_TO→ Xanthinuria (HP:0002167); IMPDH1 variant causing LCA11 —DISRUPTS→ IMPDH1 (HGNC:5434); IMPDH1 (HGNC:5434) —DISRUPTS→ Purine metabolism (REACT:R-HSA-180927); Purine metabolism (REACT:R-HSA-180927) —LEADS_TO→ Leber congenital amaurosis (HP:0000547); Xanthine oxidase activity (GO:0004085) —BINDS→ Purine metabolism (REACT:R-HSA-180927). Loss-of-function variants in XDH lead to impaired xanthine oxidase activity, causing xanthinuria. IMPDH1, involved in purine biosynthesis, is also essential for purine metabolism. While XDH directly affects xanthine oxidase activity, IMPDH1's role in de novo purine synthesis is critical. The convergence is proposed at the level of purine metabolism (Pathway: R-HSA-180927) where the downstream effects of both XDH dysfunction (leading to accumulation of xanthine and hypoxanthine) and IMPDH1 dysfunction (impacting overall purine availability) converge to cause distinct but potentially related cellular dysfunctions leading to their respective phenotypes.",
+      "mechanism_narrative": "XDH variant causing xanthinuria —DISRUPTS→ XDH (HGNC:12770); XDH (HGNC:12770) —DISRUPTS→ Xanthine oxidase activity (GO:0004085); Xanthine oxidase activity (GO:0004085) —DECREASES→ Xanthine (CHEBI:36748); Xanthine oxidase activity (GO:0004085) —DECREASES→ Hypoxanthine (CHEBI:17733); Xanthine (CHEBI:36748) —LEADS_TO→ Xanthinuria (HP:0002167); Hypoxanthine (CHEBI:17733) —LEADS_TO→ Xanthinuria (HP:0002167); IMPDH1 variant causing LCA11 —DISRUPTS→ IMPDH1 (HGNC:5434); IMPDH1 (HGNC:5434) —DISRUPTS→ Purine metabolism (REACT:R-HSA-180927); Purine metabolism (REACT:R-HSA-180927) —LEADS_TO→ Leber congenital amaurosis (HP:0000547); Xanthine oxidase activity (GO:0004085) —BINDS→ Purine metabolism (REACT:R-HSA-180927). Loss-of-function variants in XDH lead to impaired xanthine oxidase activity, causing xanthinuria. IMPDH1, involved in purine biosynthesis, is also essential for purine metabolism. While XDH directly affects xanthine oxidase activity, IMPDH1's role in de novo purine synthesis is critical. The convergence is proposed at the level of purine metabolism (Pathway: R-HSA-180927) where the downstream effects of both XDH dysfunction (leading to accumulation of xanthine and hypoxanthine) and IMPDH1 dysfunction (impacting overall purine availability) converge to cause distinct but potentially related cellular dysfunctions leading to their respective phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the causal variants for xanthinuria type I in XDH and Leber congenital amaurosis 11 in IMPDH1 do not converge on shared downstream metabolic pathways or processes within purine metabolism, this hypothesis would be falsified. Specifically, if IMPDH1 mutations primarily impact nucleotide synthesis without significantly affecting the xanthine oxidase pathway or its substrates, and XDH mutations primarily impact purine catabolism without significantly impacting IMPDH1 function, the proposed overlap would be weak.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the critical functional domains of both XDH and IMPDH1 that are not associated with either phenotype would challenge the specificity of these genes as causal."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9748787"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9748787": 23
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013454",
+        "diseaseBName": "Leber congenital amaurosis 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9748787"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9748787": 23
+        },
+        "fitness": 0.388,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XDH variant causing xanthinuria —DISRUPTS→ XDH (HGNC:12770); XDH (HGNC:12770) —DISRUPTS→ Xanthine oxidase activity (GO:0004085); Xanthine oxidase activity (GO:0004085) —DECREASES→ Xanthine (CHEBI:36748); Xanthine oxidase activity (GO:0004085) —DECREASES→ Hypoxanthine (CHEBI:17733); Xanthine (CHEBI:36748) —LEADS_TO→ Xanthinuria (HP:0002167); Hypoxanthine (CHEBI:17733) —LEADS_TO→ Xanthinuria (HP:0002167); IMPDH1 variant causing LCA11 —DISRUPTS→ IMPDH1 (HGNC:5434); IMPDH1 (HGNC:5434) —DISRUPTS→ Purine metabolism (REACT:R-HSA-180927); Purine metabolism (REACT:R-HSA-180927) —LEADS_TO→ Leber congenital amaurosis (HP:0000547); Xanthine oxidase activity (GO:0004085) —BINDS→ Purine metabolism (REACT:R-HSA-180927). Loss-of-function variants in XDH lead to impaired xanthine oxidase activity, causing xanthinuria. IMPDH1, involved in purine biosynthesis, is also essential for purine metabolism. While XDH directly affects xanthine oxidase activity, IMPDH1's role in de novo purine synthesis is critical. The convergence is proposed at the level of purine metabolism (Pathway: R-HSA-180927) where the downstream effects of both XDH dysfunction (leading to accumulation of xanthine and hypoxanthine) and IMPDH1 dysfunction (impacting overall purine availability) converge to cause distinct but potentially related cellular dysfunctions leading to their respective phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the causal variants for xanthinuria type I in XDH and Leber congenital amaurosis 11 in IMPDH1 do not converge on shared downstream metabolic pathways or processes within purine metabolism, this hypothesis would be falsified. Specifically, if IMPDH1 mutations primarily impact nucleotide synthesis without significantly affecting the xanthine oxidase pathway or its substrates, and XDH mutations primarily impact purine catabolism without significantly impacting IMPDH1 function, the proposed overlap would be weak.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the critical functional domains of both XDH and IMPDH1 that are not associated with either phenotype would challenge the specificity of these genes as causal."
+        },
+        "translational": "Understanding the shared reliance on purine metabolism pathways could reveal novel therapeutic targets for both xanthinuria and Leber congenital amaurosis 11, potentially through metabolic interventions or by targeting pathways that are sensitive to purine homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008379",
+      "diseaseBName": "retinitis pigmentosa 10",
+      "fitness": 0.3867,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XDH (HGNC:12704) —DISRUPTS→ Xanthine (CHEBI:17970); Xanthine (CHEBI:17970) —DISRUPTS→ Purine metabolism (REACT:R-HSA-69833); Purine metabolism (REACT:R-HSA-69833) —LEADS_TO→ Xanthinuria (MONDO:0010209); IMPDH1 (HGNC:5374) —DISRUPTS→ Guanosine monophosphate (GMP) (CHEBI:16879); Guanosine monophosphate (GMP) (CHEBI:16879) —DISRUPTS→ Nucleotide biosynthesis (REACT:R-HSA-70072); Nucleotide biosynthesis (REACT:R-HSA-70072) —LEADS_TO→ Retinitis Pigmentosa (MONDO:0008379); Purine metabolism (REACT:R-HSA-69833) —INCREASES→ Nucleotide biosynthesis (REACT:R-HSA-70072). Loss-of-function mutations in XDH lead to the accumulation of xanthine (n2), disrupting purine metabolism (n3) and causing xanthinuria (n5). Concurrently, loss-of-function mutations in IMPDH1 lead to reduced production of GMP (n7), disrupting nucleotide biosynthesis (n8) and contributing to retinitis pigmentosa (n6). The hypothesis posits that severe disruption of purine metabolism (n3) by XDH dysfunction can indirectly impact nucleotide biosynthesis pathways (n8), thus converging on a shared functional module affecting retinal health.",
+      "mechanism_narrative": "XDH (HGNC:12704) —DISRUPTS→ Xanthine (CHEBI:17970); Xanthine (CHEBI:17970) —DISRUPTS→ Purine metabolism (REACT:R-HSA-69833); Purine metabolism (REACT:R-HSA-69833) —LEADS_TO→ Xanthinuria (MONDO:0010209); IMPDH1 (HGNC:5374) —DISRUPTS→ Guanosine monophosphate (GMP) (CHEBI:16879); Guanosine monophosphate (GMP) (CHEBI:16879) —DISRUPTS→ Nucleotide biosynthesis (REACT:R-HSA-70072); Nucleotide biosynthesis (REACT:R-HSA-70072) —LEADS_TO→ Retinitis Pigmentosa (MONDO:0008379); Purine metabolism (REACT:R-HSA-69833) —INCREASES→ Nucleotide biosynthesis (REACT:R-HSA-70072). Loss-of-function mutations in XDH lead to the accumulation of xanthine (n2), disrupting purine metabolism (n3) and causing xanthinuria (n5). Concurrently, loss-of-function mutations in IMPDH1 lead to reduced production of GMP (n7), disrupting nucleotide biosynthesis (n8) and contributing to retinitis pigmentosa (n6). The hypothesis posits that severe disruption of purine metabolism (n3) by XDH dysfunction can indirectly impact nucleotide biosynthesis pathways (n8), thus converging on a shared functional module affecting retinal health.",
+      "falsification": {
+        "text": "If genetic studies reveal that mutations in XDH do not significantly affect purine metabolism flux or downstream nucleotide pools in retinal cells, or if IMPDH1 function is demonstrably independent of XDH activity in this context, this hypothesis would be falsified. Additionally, if a significant proportion of RP10 patients do not carry variants in IMPDH1 but instead have variants in genes known to be downstream of XDH activity or its metabolites, this would also weaken the proposed link.",
+        "gnomad_variant": "Presence of common variants (e.g., allele frequency > 1% in gnomAD) in XDH or IMPDH1 that do not segregate with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9748787"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9748787": 23
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008379",
+        "diseaseBName": "retinitis pigmentosa 10",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9748787"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9748787": 23
+        },
+        "fitness": 0.3867,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XDH (HGNC:12704) —DISRUPTS→ Xanthine (CHEBI:17970); Xanthine (CHEBI:17970) —DISRUPTS→ Purine metabolism (REACT:R-HSA-69833); Purine metabolism (REACT:R-HSA-69833) —LEADS_TO→ Xanthinuria (MONDO:0010209); IMPDH1 (HGNC:5374) —DISRUPTS→ Guanosine monophosphate (GMP) (CHEBI:16879); Guanosine monophosphate (GMP) (CHEBI:16879) —DISRUPTS→ Nucleotide biosynthesis (REACT:R-HSA-70072); Nucleotide biosynthesis (REACT:R-HSA-70072) —LEADS_TO→ Retinitis Pigmentosa (MONDO:0008379); Purine metabolism (REACT:R-HSA-69833) —INCREASES→ Nucleotide biosynthesis (REACT:R-HSA-70072). Loss-of-function mutations in XDH lead to the accumulation of xanthine (n2), disrupting purine metabolism (n3) and causing xanthinuria (n5). Concurrently, loss-of-function mutations in IMPDH1 lead to reduced production of GMP (n7), disrupting nucleotide biosynthesis (n8) and contributing to retinitis pigmentosa (n6). The hypothesis posits that severe disruption of purine metabolism (n3) by XDH dysfunction can indirectly impact nucleotide biosynthesis pathways (n8), thus converging on a shared functional module affecting retinal health.",
+        "falsification": {
+          "text": "If genetic studies reveal that mutations in XDH do not significantly affect purine metabolism flux or downstream nucleotide pools in retinal cells, or if IMPDH1 function is demonstrably independent of XDH activity in this context, this hypothesis would be falsified. Additionally, if a significant proportion of RP10 patients do not carry variants in IMPDH1 but instead have variants in genes known to be downstream of XDH activity or its metabolites, this would also weaken the proposed link.",
+          "gnomad_variant": "Presence of common variants (e.g., allele frequency > 1% in gnomAD) in XDH or IMPDH1 that do not segregate with either disease phenotype."
+        },
+        "translational": "Understanding the potential overlap in metabolic pathways between xanthinuria and retinitis pigmentosa could open avenues for novel therapeutic strategies. Targeting shared metabolic intermediates or compensatory pathways might offer a unified approach to ameliorate aspects of both conditions, particularly if a common downstream effector pathway in the retina is identified."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010299",
+      "diseaseBName": "hypoxanthine guanine phosphoribosyltransferase partial deficiency",
+      "fitness": 0.3866,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XDH (HGNC:12730) —DISRUPTS→ Xanthine (CHEBI:35721); Xanthine (CHEBI:35721) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Kidney stones (HP:0000120); HPRT1 (HGNC:4854) —DISRUPTS→ Hypoxanthine (CHEBI:17745); Hypoxanthine (CHEBI:17745) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Gout (HP:0004424). Loss-of-function mutations in XDH (causing xanthinuria type I) lead to the accumulation of xanthine, a purine metabolite. Similarly, loss-of-function mutations in HPRT1 (causing HPRT partial deficiency) lead to the accumulation of hypoxanthine. Both xanthine and hypoxanthine are intermediates or products within the broader purine metabolic pathway. The accumulation of these metabolites, or their downstream consequences within purine metabolism, ultimately leads to distinct but related phenotypes such as kidney stones (due to xanthine deposition) and gout (due to uric acid overproduction from hypoxanthine accumulation).",
+      "mechanism_narrative": "XDH (HGNC:12730) —DISRUPTS→ Xanthine (CHEBI:35721); Xanthine (CHEBI:35721) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Kidney stones (HP:0000120); HPRT1 (HGNC:4854) —DISRUPTS→ Hypoxanthine (CHEBI:17745); Hypoxanthine (CHEBI:17745) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Gout (HP:0004424). Loss-of-function mutations in XDH (causing xanthinuria type I) lead to the accumulation of xanthine, a purine metabolite. Similarly, loss-of-function mutations in HPRT1 (causing HPRT partial deficiency) lead to the accumulation of hypoxanthine. Both xanthine and hypoxanthine are intermediates or products within the broader purine metabolic pathway. The accumulation of these metabolites, or their downstream consequences within purine metabolism, ultimately leads to distinct but related phenotypes such as kidney stones (due to xanthine deposition) and gout (due to uric acid overproduction from hypoxanthine accumulation).",
+      "falsification": {
+        "text": "The presence of pathogenic variants in genes other than XDH and HPRT1 that directly cause significant xanthine or hypoxanthine accumulation, or the absence of kidney stones and gout in patients with confirmed loss-of-function variants in XDH or HPRT1 respectively.",
+        "gnomad_variant": "Exome or genome sequencing data showing a high frequency (>1%) of loss-of-function variants in XDH or HPRT1 in the general population, which would suggest these variants are not solely responsible for the observed rare disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9748787"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9748787": 23
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010299",
+        "diseaseBName": "hypoxanthine guanine phosphoribosyltransferase partial deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9748787"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9748787": 23
+        },
+        "fitness": 0.3866,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XDH (HGNC:12730) —DISRUPTS→ Xanthine (CHEBI:35721); Xanthine (CHEBI:35721) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Kidney stones (HP:0000120); HPRT1 (HGNC:4854) —DISRUPTS→ Hypoxanthine (CHEBI:17745); Hypoxanthine (CHEBI:17745) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Gout (HP:0004424). Loss-of-function mutations in XDH (causing xanthinuria type I) lead to the accumulation of xanthine, a purine metabolite. Similarly, loss-of-function mutations in HPRT1 (causing HPRT partial deficiency) lead to the accumulation of hypoxanthine. Both xanthine and hypoxanthine are intermediates or products within the broader purine metabolic pathway. The accumulation of these metabolites, or their downstream consequences within purine metabolism, ultimately leads to distinct but related phenotypes such as kidney stones (due to xanthine deposition) and gout (due to uric acid overproduction from hypoxanthine accumulation).",
+        "falsification": {
+          "text": "The presence of pathogenic variants in genes other than XDH and HPRT1 that directly cause significant xanthine or hypoxanthine accumulation, or the absence of kidney stones and gout in patients with confirmed loss-of-function variants in XDH or HPRT1 respectively.",
+          "gnomad_variant": "Exome or genome sequencing data showing a high frequency (>1%) of loss-of-function variants in XDH or HPRT1 in the general population, which would suggest these variants are not solely responsible for the observed rare disease phenotypes."
+        },
+        "translational": "Understanding the shared disruption in purine metabolism can inform therapeutic strategies. For xanthinuria, focusing on reducing xanthine formation or promoting its excretion is key. For HPRT deficiency, strategies might involve purine salvage pathway modulation or managing hyperuricemia. Identifying commonalities could lead to broader treatment approaches for metabolic disorders affecting purine breakdown."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010298",
+      "diseaseBName": "Lesch-Nyhan syndrome",
+      "fitness": 0.3808,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XDH (HGNC:12700) —DISRUPTS→ Xanthine (CHEBI:17564); XDH (HGNC:12700) —DISRUPTS→ Hypoxanthine (CHEBI:17905); Xanthine (CHEBI:17564) —LEADS_TO→ Purine Catabolism (GO:0006194); Hypoxanthine (CHEBI:17905) —LEADS_TO→ Purine Catabolism (GO:0006194); Purine Catabolism (GO:0006194) —LEADS_TO→ Uric Acid (CHEBI:17558); XDH (HGNC:12700) —LEADS_TO→ Xanthinuria (HP:0003139); HPRT1 (HGNC:4879) —DISRUPTS→ PRPP (CHEBI:17387); PRPP (CHEBI:17387) —DISRUPTS→ IMP (CHEBI:16104); IMP (CHEBI:16104) —LEADS_TO→ Purine Catabolism (GO:0006194); HPRT1 (HGNC:4879) —LEADS_TO→ Lesch-Nyhan syndrome (HP:0001291). Mutations in XDH lead to loss of xanthine oxidase activity, impairing the conversion of xanthine to uric acid, resulting in xanthinuria. Mutations in HPRT1, a key enzyme in the purine salvage pathway, disrupt the conversion of hypoxanthine to IMP and PRPP to AMP, leading to a buildup of purine precursors and downstream effects characteristic of Lesch-Nyhan syndrome. Both diseases converge on the broader pathway of purine catabolism, with XDH directly acting downstream of HPRT1's salvage function, and both ultimately impacting uric acid production and purine homeostasis.",
+      "mechanism_narrative": "XDH (HGNC:12700) —DISRUPTS→ Xanthine (CHEBI:17564); XDH (HGNC:12700) —DISRUPTS→ Hypoxanthine (CHEBI:17905); Xanthine (CHEBI:17564) —LEADS_TO→ Purine Catabolism (GO:0006194); Hypoxanthine (CHEBI:17905) —LEADS_TO→ Purine Catabolism (GO:0006194); Purine Catabolism (GO:0006194) —LEADS_TO→ Uric Acid (CHEBI:17558); XDH (HGNC:12700) —LEADS_TO→ Xanthinuria (HP:0003139); HPRT1 (HGNC:4879) —DISRUPTS→ PRPP (CHEBI:17387); PRPP (CHEBI:17387) —DISRUPTS→ IMP (CHEBI:16104); IMP (CHEBI:16104) —LEADS_TO→ Purine Catabolism (GO:0006194); HPRT1 (HGNC:4879) —LEADS_TO→ Lesch-Nyhan syndrome (HP:0001291). Mutations in XDH lead to loss of xanthine oxidase activity, impairing the conversion of xanthine to uric acid, resulting in xanthinuria. Mutations in HPRT1, a key enzyme in the purine salvage pathway, disrupt the conversion of hypoxanthine to IMP and PRPP to AMP, leading to a buildup of purine precursors and downstream effects characteristic of Lesch-Nyhan syndrome. Both diseases converge on the broader pathway of purine catabolism, with XDH directly acting downstream of HPRT1's salvage function, and both ultimately impacting uric acid production and purine homeostasis.",
+      "falsification": {
+        "text": "Demonstration of functional complementation between XDH and HPRT1 in patient-derived cells, or identification of individuals with pathogenic variants in both genes exhibiting a combined or distinct phenotype not predicted by either single disease.",
+        "gnomad_variant": "gnomAD analysis showing high allele frequencies (>1%) for variants predicted to cause loss-of-function in both XDH and HPRT1 in the absence of disease symptoms."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9748787"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9748787": 23
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010298",
+        "diseaseBName": "Lesch-Nyhan syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9748787"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9748787": 23
+        },
+        "fitness": 0.3808,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XDH (HGNC:12700) —DISRUPTS→ Xanthine (CHEBI:17564); XDH (HGNC:12700) —DISRUPTS→ Hypoxanthine (CHEBI:17905); Xanthine (CHEBI:17564) —LEADS_TO→ Purine Catabolism (GO:0006194); Hypoxanthine (CHEBI:17905) —LEADS_TO→ Purine Catabolism (GO:0006194); Purine Catabolism (GO:0006194) —LEADS_TO→ Uric Acid (CHEBI:17558); XDH (HGNC:12700) —LEADS_TO→ Xanthinuria (HP:0003139); HPRT1 (HGNC:4879) —DISRUPTS→ PRPP (CHEBI:17387); PRPP (CHEBI:17387) —DISRUPTS→ IMP (CHEBI:16104); IMP (CHEBI:16104) —LEADS_TO→ Purine Catabolism (GO:0006194); HPRT1 (HGNC:4879) —LEADS_TO→ Lesch-Nyhan syndrome (HP:0001291). Mutations in XDH lead to loss of xanthine oxidase activity, impairing the conversion of xanthine to uric acid, resulting in xanthinuria. Mutations in HPRT1, a key enzyme in the purine salvage pathway, disrupt the conversion of hypoxanthine to IMP and PRPP to AMP, leading to a buildup of purine precursors and downstream effects characteristic of Lesch-Nyhan syndrome. Both diseases converge on the broader pathway of purine catabolism, with XDH directly acting downstream of HPRT1's salvage function, and both ultimately impacting uric acid production and purine homeostasis.",
+        "falsification": {
+          "text": "Demonstration of functional complementation between XDH and HPRT1 in patient-derived cells, or identification of individuals with pathogenic variants in both genes exhibiting a combined or distinct phenotype not predicted by either single disease.",
+          "gnomad_variant": "gnomAD analysis showing high allele frequencies (>1%) for variants predicted to cause loss-of-function in both XDH and HPRT1 in the absence of disease symptoms."
+        },
+        "translational": "Understanding the shared pathway of purine metabolism disrupted in both xanthinuria type I and Lesch-Nyhan syndrome can inform therapeutic strategies. While xanthinuria management focuses on dietary modifications and hydration to prevent xanthine crystalluria, Lesch-Nyhan syndrome treatment is largely symptomatic. However, insights into purine metabolism may reveal novel targets for managing the downstream consequences of both conditions, potentially including neurological aspects or metabolic complications."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030913",
+      "diseaseBName": "intellectual disability, autosomal dominant 48",
+      "fitness": 0.2887,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XDH (HGNC:12726) —DISRUPTS→ Xanthine oxidase activity (GO:0004003); Xanthine oxidase activity (GO:0004003) —DECREASES→ Xanthine (CHEBI:17604); Xanthine oxidase activity (GO:0004003) —DECREASES→ Hypoxanthine (CHEBI:17519); Xanthine (CHEBI:17604) —LEADS_TO→ Xanthinuria (HP:0002163); Hypoxanthine (CHEBI:17519) —LEADS_TO→ Xanthinuria (HP:0002163); RAC1 (HGNC:9810) —LEADS_TO→ Intellectual disability (HP:0001249); RAC1 (HGNC:9810) —BINDS→ Xanthine oxidase activity (GO:0004003). Loss-of-function mutations in XDH disrupt xanthine oxidase activity, leading to the accumulation of xanthine and hypoxanthine, causing xanthinuria. RAC1 is implicated in intellectual disability and may interact with or modulate xanthine oxidase activity, potentially contributing to the phenotype in a different manner.",
+      "mechanism_narrative": "XDH (HGNC:12726) —DISRUPTS→ Xanthine oxidase activity (GO:0004003); Xanthine oxidase activity (GO:0004003) —DECREASES→ Xanthine (CHEBI:17604); Xanthine oxidase activity (GO:0004003) —DECREASES→ Hypoxanthine (CHEBI:17519); Xanthine (CHEBI:17604) —LEADS_TO→ Xanthinuria (HP:0002163); Hypoxanthine (CHEBI:17519) —LEADS_TO→ Xanthinuria (HP:0002163); RAC1 (HGNC:9810) —LEADS_TO→ Intellectual disability (HP:0001249); RAC1 (HGNC:9810) —BINDS→ Xanthine oxidase activity (GO:0004003). Loss-of-function mutations in XDH disrupt xanthine oxidase activity, leading to the accumulation of xanthine and hypoxanthine, causing xanthinuria. RAC1 is implicated in intellectual disability and may interact with or modulate xanthine oxidase activity, potentially contributing to the phenotype in a different manner.",
+      "falsification": {
+        "text": "Discovery of variants in XDH that are associated with intellectual disability, autosomal dominant 48, without affecting xanthine oxidase activity, or evidence that RAC1 plays no role in modulating xanthine oxidase activity.",
+        "gnomad_variant": "rs74315041 (a common variant in XDH)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9748787"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9748787": 23
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030913",
+        "diseaseBName": "intellectual disability, autosomal dominant 48",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9748787"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9748787": 23
+        },
+        "fitness": 0.2887,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XDH (HGNC:12726) —DISRUPTS→ Xanthine oxidase activity (GO:0004003); Xanthine oxidase activity (GO:0004003) —DECREASES→ Xanthine (CHEBI:17604); Xanthine oxidase activity (GO:0004003) —DECREASES→ Hypoxanthine (CHEBI:17519); Xanthine (CHEBI:17604) —LEADS_TO→ Xanthinuria (HP:0002163); Hypoxanthine (CHEBI:17519) —LEADS_TO→ Xanthinuria (HP:0002163); RAC1 (HGNC:9810) —LEADS_TO→ Intellectual disability (HP:0001249); RAC1 (HGNC:9810) —BINDS→ Xanthine oxidase activity (GO:0004003). Loss-of-function mutations in XDH disrupt xanthine oxidase activity, leading to the accumulation of xanthine and hypoxanthine, causing xanthinuria. RAC1 is implicated in intellectual disability and may interact with or modulate xanthine oxidase activity, potentially contributing to the phenotype in a different manner.",
+        "falsification": {
+          "text": "Discovery of variants in XDH that are associated with intellectual disability, autosomal dominant 48, without affecting xanthine oxidase activity, or evidence that RAC1 plays no role in modulating xanthine oxidase activity.",
+          "gnomad_variant": "rs74315041 (a common variant in XDH)"
+        },
+        "translational": "Understanding the interplay between XDH and RAC1 in neurological function could lead to novel therapeutic targets for intellectual disability and potentially for managing secondary neurological complications in xanthinuria patients."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T18:54:00.466Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** xanthinuria type I (MONDO:0010209)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 5 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Leber congenital amaurosis 11 (MONDO:0013454) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-9748787 |\n| 2 | retinitis pigmentosa 10 (MONDO:0008379) | shared pathway | Tier 3 | 0.387 | Reactome:R-HSA-9748787 |\n| 3 | hypoxanthine guanine phosphoribosyltransferase partial deficiency (MONDO:0010299) | shared pathway | Tier 3 | 0.387 | Reactome:R-HSA-9748787 |\n| 4 | Lesch-Nyhan syndrome (MONDO:0010298) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-9748787 |\n| 5 | intellectual disability, autosomal dominant 48 (MONDO:0030913) | shared pathway | Tier 3 | 0.289 | Reactome:R-HSA-9748787 |\n\n### CANDIDATE DETAIL\n#### 1. Leber congenital amaurosis 11  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-9748787)\n\n**Proposed mechanism:** XDH variant causing xanthinuria —DISRUPTS→ XDH (HGNC:12770); XDH (HGNC:12770) —DISRUPTS→ Xanthine oxidase activity (GO:0004085); Xanthine oxidase activity (GO:0004085) —DECREASES→ Xanthine (CHEBI:36748); Xanthine oxidase activity (GO:0004085) —DECREASES→ Hypoxanthine (CHEBI:17733); Xanthine (CHEBI:36748) —LEADS_TO→ Xanthinuria (HP:0002167); Hypoxanthine (CHEBI:17733) —LEADS_TO→ Xanthinuria (HP:0002167); IMPDH1 variant causing LCA11 —DISRUPTS→ IMPDH1 (HGNC:5434); IMPDH1 (HGNC:5434) —DISRUPTS→ Purine metabolism (REACT:R-HSA-180927); Purine metabolism (REACT:R-HSA-180927) —LEADS_TO→ Leber congenital amaurosis (HP:0000547); Xanthine oxidase activity (GO:0004085) —BINDS→ Purine metabolism (REACT:R-HSA-180927). Loss-of-function variants in XDH lead to impaired xanthine oxidase activity, causing xanthinuria. IMPDH1, involved in purine biosynthesis, is also essential for purine metabolism. While XDH directly affects xanthine oxidase activity, IMPDH1's role in de novo purine synthesis is critical. The convergence is proposed at the level of purine metabolism (Pathway: R-HSA-180927) where the downstream effects of both XDH dysfunction (leading to accumulation of xanthine and hypoxanthine) and IMPDH1 dysfunction (impacting overall purine availability) converge to cause distinct but potentially related cellular dysfunctions leading to their respective phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that the causal variants for xanthinuria type I in XDH and Leber congenital amaurosis 11 in IMPDH1 do not converge on shared downstream metabolic pathways or processes within purine metabolism, this hypothesis would be falsified. Specifically, if IMPDH1 mutations primarily impact nucleotide synthesis without significantly affecting the xanthine oxidase pathway or its substrates, and XDH mutations primarily impact purine catabolism without significantly impacting IMPDH1 function, the proposed overlap would be weak. _(variant: The presence of common variants (AF > 0.01) in gnomAD within the critical functional domains of both XDH and IMPDH1 that are not associated with either phenotype would challenge the specificity of these genes as causal.)_\n\n**Why it matters:** Understanding the shared reliance on purine metabolism pathways could reveal novel therapeutic targets for both xanthinuria and Leber congenital amaurosis 11, potentially through metabolic interventions or by targeting pathways that are sensitive to purine homeostasis.\n\n---\n\n#### 2. retinitis pigmentosa 10  —  Tier 3 — Moderate / Emerging  (fitness 0.387)\n**Link type:** shared pathway (Reactome:R-HSA-9748787)\n\n**Proposed mechanism:** XDH (HGNC:12704) —DISRUPTS→ Xanthine (CHEBI:17970); Xanthine (CHEBI:17970) —DISRUPTS→ Purine metabolism (REACT:R-HSA-69833); Purine metabolism (REACT:R-HSA-69833) —LEADS_TO→ Xanthinuria (MONDO:0010209); IMPDH1 (HGNC:5374) —DISRUPTS→ Guanosine monophosphate (GMP) (CHEBI:16879); Guanosine monophosphate (GMP) (CHEBI:16879) —DISRUPTS→ Nucleotide biosynthesis (REACT:R-HSA-70072); Nucleotide biosynthesis (REACT:R-HSA-70072) —LEADS_TO→ Retinitis Pigmentosa (MONDO:0008379); Purine metabolism (REACT:R-HSA-69833) —INCREASES→ Nucleotide biosynthesis (REACT:R-HSA-70072). Loss-of-function mutations in XDH lead to the accumulation of xanthine (n2), disrupting purine metabolism (n3) and causing xanthinuria (n5). Concurrently, loss-of-function mutations in IMPDH1 lead to reduced production of GMP (n7), disrupting nucleotide biosynthesis (n8) and contributing to retinitis pigmentosa (n6). The hypothesis posits that severe disruption of purine metabolism (n3) by XDH dysfunction can indirectly impact nucleotide biosynthesis pathways (n8), thus converging on a shared functional module affecting retinal health.\n\n**How to falsify it:** If genetic studies reveal that mutations in XDH do not significantly affect purine metabolism flux or downstream nucleotide pools in retinal cells, or if IMPDH1 function is demonstrably independent of XDH activity in this context, this hypothesis would be falsified. Additionally, if a significant proportion of RP10 patients do not carry variants in IMPDH1 but instead have variants in genes known to be downstream of XDH activity or its metabolites, this would also weaken the proposed link. _(variant: Presence of common variants (e.g., allele frequency > 1% in gnomAD) in XDH or IMPDH1 that do not segregate with either disease phenotype.)_\n\n**Why it matters:** Understanding the potential overlap in metabolic pathways between xanthinuria and retinitis pigmentosa could open avenues for novel therapeutic strategies. Targeting shared metabolic intermediates or compensatory pathways might offer a unified approach to ameliorate aspects of both conditions, particularly if a common downstream effector pathway in the retina is identified.\n\n---\n\n#### 3. hypoxanthine guanine phosphoribosyltransferase partial deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.387)\n**Link type:** shared pathway (Reactome:R-HSA-9748787)\n\n**Proposed mechanism:** XDH (HGNC:12730) —DISRUPTS→ Xanthine (CHEBI:35721); Xanthine (CHEBI:35721) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Kidney stones (HP:0000120); HPRT1 (HGNC:4854) —DISRUPTS→ Hypoxanthine (CHEBI:17745); Hypoxanthine (CHEBI:17745) —LEADS_TO→ Purine Metabolism (REACT:R-HSA-168750); Purine Metabolism (REACT:R-HSA-168750) —LEADS_TO→ Gout (HP:0004424). Loss-of-function mutations in XDH (causing xanthinuria type I) lead to the accumulation of xanthine, a purine metabolite. Similarly, loss-of-function mutations in HPRT1 (causing HPRT partial deficiency) lead to the accumulation of hypoxanthine. Both xanthine and hypoxanthine are intermediates or products within the broader purine metabolic pathway. The accumulation of these metabolites, or their downstream consequences within purine metabolism, ultimately leads to distinct but related phenotypes such as kidney stones (due to xanthine deposition) and gout (due to uric acid overproduction from hypoxanthine accumulation).\n\n**How to falsify it:** The presence of pathogenic variants in genes other than XDH and HPRT1 that directly cause significant xanthine or hypoxanthine accumulation, or the absence of kidney stones and gout in patients with confirmed loss-of-function variants in XDH or HPRT1 respectively. _(variant: Exome or genome sequencing data showing a high frequency (>1%) of loss-of-function variants in XDH or HPRT1 in the general population, which would suggest these variants are not solely responsible for the observed rare disease phenotypes.)_\n\n**Why it matters:** Understanding the shared disruption in purine metabolism can inform therapeutic strategies. For xanthinuria, focusing on reducing xanthine formation or promoting its excretion is key. For HPRT deficiency, strategies might involve purine salvage pathway modulation or managing hyperuricemia. Identifying commonalities could lead to broader treatment approaches for metabolic disorders affecting purine breakdown.\n\n---\n\n#### 4. Lesch-Nyhan syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-9748787)\n\n**Proposed mechanism:** XDH (HGNC:12700) —DISRUPTS→ Xanthine (CHEBI:17564); XDH (HGNC:12700) —DISRUPTS→ Hypoxanthine (CHEBI:17905); Xanthine (CHEBI:17564) —LEADS_TO→ Purine Catabolism (GO:0006194); Hypoxanthine (CHEBI:17905) —LEADS_TO→ Purine Catabolism (GO:0006194); Purine Catabolism (GO:0006194) —LEADS_TO→ Uric Acid (CHEBI:17558); XDH (HGNC:12700) —LEADS_TO→ Xanthinuria (HP:0003139); HPRT1 (HGNC:4879) —DISRUPTS→ PRPP (CHEBI:17387); PRPP (CHEBI:17387) —DISRUPTS→ IMP (CHEBI:16104); IMP (CHEBI:16104) —LEADS_TO→ Purine Catabolism (GO:0006194); HPRT1 (HGNC:4879) —LEADS_TO→ Lesch-Nyhan syndrome (HP:0001291). Mutations in XDH lead to loss of xanthine oxidase activity, impairing the conversion of xanthine to uric acid, resulting in xanthinuria. Mutations in HPRT1, a key enzyme in the purine salvage pathway, disrupt the conversion of hypoxanthine to IMP and PRPP to AMP, leading to a buildup of purine precursors and downstream effects characteristic of Lesch-Nyhan syndrome. Both diseases converge on the broader pathway of purine catabolism, with XDH directly acting downstream of HPRT1's salvage function, and both ultimately impacting uric acid production and purine homeostasis.\n\n**How to falsify it:** Demonstration of functional complementation between XDH and HPRT1 in patient-derived cells, or identification of individuals with pathogenic variants in both genes exhibiting a combined or distinct phenotype not predicted by either single disease. _(variant: gnomAD analysis showing high allele frequencies (>1%) for variants predicted to cause loss-of-function in both XDH and HPRT1 in the absence of disease symptoms.)_\n\n**Why it matters:** Understanding the shared pathway of purine metabolism disrupted in both xanthinuria type I and Lesch-Nyhan syndrome can inform therapeutic strategies. While xanthinuria management focuses on dietary modifications and hydration to prevent xanthine crystalluria, Lesch-Nyhan syndrome treatment is largely symptomatic. However, insights into purine metabolism may reveal novel targets for managing the downstream consequences of both conditions, potentially including neurological aspects or metabolic complications.\n\n---\n\n#### 5. intellectual disability, autosomal dominant 48  —  Tier 3 — Moderate / Emerging  (fitness 0.289)\n**Link type:** shared pathway (Reactome:R-HSA-9748787)\n\n**Proposed mechanism:** XDH (HGNC:12726) —DISRUPTS→ Xanthine oxidase activity (GO:0004003); Xanthine oxidase activity (GO:0004003) —DECREASES→ Xanthine (CHEBI:17604); Xanthine oxidase activity (GO:0004003) —DECREASES→ Hypoxanthine (CHEBI:17519); Xanthine (CHEBI:17604) —LEADS_TO→ Xanthinuria (HP:0002163); Hypoxanthine (CHEBI:17519) —LEADS_TO→ Xanthinuria (HP:0002163); RAC1 (HGNC:9810) —LEADS_TO→ Intellectual disability (HP:0001249); RAC1 (HGNC:9810) —BINDS→ Xanthine oxidase activity (GO:0004003). Loss-of-function mutations in XDH disrupt xanthine oxidase activity, leading to the accumulation of xanthine and hypoxanthine, causing xanthinuria. RAC1 is implicated in intellectual disability and may interact with or modulate xanthine oxidase activity, potentially contributing to the phenotype in a different manner.\n\n**How to falsify it:** Discovery of variants in XDH that are associated with intellectual disability, autosomal dominant 48, without affecting xanthine oxidase activity, or evidence that RAC1 plays no role in modulating xanthine oxidase activity. _(variant: rs74315041 (a common variant in XDH))_\n\n**Why it matters:** Understanding the interplay between XDH and RAC1 in neurological function could lead to novel therapeutic targets for intellectual disability and potentially for managing secondary neurological complications in xanthinuria patients.\n\n---"
+}

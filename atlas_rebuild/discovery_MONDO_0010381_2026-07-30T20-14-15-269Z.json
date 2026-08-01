@@ -1,0 +1,57 @@
+{
+  "seed": {
+    "id": "MONDO:0010381",
+    "name": "Tn polyagglutination syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0020726",
+      "diseaseBName": "tubulointerstitial kidney disease, autosomal dominant, 2",
+      "fitness": 0.3325,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "C1GALT1C1 (HGNC:27031) —DISRUPTS→ O-glycosylation of mucins (GO:0007412); O-glycosylation of mucins (GO:0007412) —LEADS_TO→ Tn polyagglutination (HP:0011097); MUC1 (HGNC:7544) —DISRUPTS→ Epithelial barrier function in kidney tubules (GO:0007037); Epithelial barrier function in kidney tubules (GO:0007037) —LEADS_TO→ Tubulointerstitial kidney disease (HP:0000067). Loss-of-function mutations in C1GALT1C1 impair mucin O-glycosylation, leading to Tn polyagglutination. While MUC1 is not directly shared, its role in maintaining epithelial barrier function in kidney tubules, which can be disrupted by mutations leading to tubulointerstitial kidney disease, represents a convergence point at the cellular and tissue level, as aberrant glycosylation can impact epithelial integrity.",
+      "mechanism_narrative": "C1GALT1C1 (HGNC:27031) —DISRUPTS→ O-glycosylation of mucins (GO:0007412); O-glycosylation of mucins (GO:0007412) —LEADS_TO→ Tn polyagglutination (HP:0011097); MUC1 (HGNC:7544) —DISRUPTS→ Epithelial barrier function in kidney tubules (GO:0007037); Epithelial barrier function in kidney tubules (GO:0007037) —LEADS_TO→ Tubulointerstitial kidney disease (HP:0000067). Loss-of-function mutations in C1GALT1C1 impair mucin O-glycosylation, leading to Tn polyagglutination. While MUC1 is not directly shared, its role in maintaining epithelial barrier function in kidney tubules, which can be disrupted by mutations leading to tubulointerstitial kidney disease, represents a convergence point at the cellular and tissue level, as aberrant glycosylation can impact epithelial integrity.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in C1GALT1C1 or MUC1 are not present in affected individuals of either disease, or if functional studies demonstrate independent molecular pathways with no overlap in cellular consequences, this hypothesis would be falsified.",
+        "gnomad_variant": "The presence of common variants (allele frequency >1% in gnomAD) in the coding regions of C1GALT1C1 or MUC1 that are associated with either disease would weaken the hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-913709",
+        "Reactome:R-HSA-5083632"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-913709": 57,
+        "Reactome:R-HSA-5083632": 19
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020726",
+        "diseaseBName": "tubulointerstitial kidney disease, autosomal dominant, 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-913709",
+          "Reactome:R-HSA-5083632"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-913709": 57,
+          "Reactome:R-HSA-5083632": 19
+        },
+        "fitness": 0.3325,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "C1GALT1C1 (HGNC:27031) —DISRUPTS→ O-glycosylation of mucins (GO:0007412); O-glycosylation of mucins (GO:0007412) —LEADS_TO→ Tn polyagglutination (HP:0011097); MUC1 (HGNC:7544) —DISRUPTS→ Epithelial barrier function in kidney tubules (GO:0007037); Epithelial barrier function in kidney tubules (GO:0007037) —LEADS_TO→ Tubulointerstitial kidney disease (HP:0000067). Loss-of-function mutations in C1GALT1C1 impair mucin O-glycosylation, leading to Tn polyagglutination. While MUC1 is not directly shared, its role in maintaining epithelial barrier function in kidney tubules, which can be disrupted by mutations leading to tubulointerstitial kidney disease, represents a convergence point at the cellular and tissue level, as aberrant glycosylation can impact epithelial integrity.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in C1GALT1C1 or MUC1 are not present in affected individuals of either disease, or if functional studies demonstrate independent molecular pathways with no overlap in cellular consequences, this hypothesis would be falsified.",
+          "gnomad_variant": "The presence of common variants (allele frequency >1% in gnomAD) in the coding regions of C1GALT1C1 or MUC1 that are associated with either disease would weaken the hypothesis."
+        },
+        "translational": "Understanding the shared or convergent roles of mucin glycosylation and MUC1 in epithelial health could lead to novel therapeutic strategies for both hematological and renal disorders. Targeting aberrant glycosylation pathways or MUC1 function may offer a common therapeutic angle."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T20:14:15.269Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Tn polyagglutination syndrome (MONDO:0010381)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | tubulointerstitial kidney disease, autosomal dominant, 2 (MONDO:0020726) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-913709, Reactome:R-HSA-5083632 |\n\n### CANDIDATE DETAIL\n#### 1. tubulointerstitial kidney disease, autosomal dominant, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-913709, Reactome:R-HSA-5083632)\n\n**Proposed mechanism:** C1GALT1C1 (HGNC:27031) —DISRUPTS→ O-glycosylation of mucins (GO:0007412); O-glycosylation of mucins (GO:0007412) —LEADS_TO→ Tn polyagglutination (HP:0011097); MUC1 (HGNC:7544) —DISRUPTS→ Epithelial barrier function in kidney tubules (GO:0007037); Epithelial barrier function in kidney tubules (GO:0007037) —LEADS_TO→ Tubulointerstitial kidney disease (HP:0000067). Loss-of-function mutations in C1GALT1C1 impair mucin O-glycosylation, leading to Tn polyagglutination. While MUC1 is not directly shared, its role in maintaining epithelial barrier function in kidney tubules, which can be disrupted by mutations leading to tubulointerstitial kidney disease, represents a convergence point at the cellular and tissue level, as aberrant glycosylation can impact epithelial integrity.\n\n**How to falsify it:** If genetic analysis reveals that mutations in C1GALT1C1 or MUC1 are not present in affected individuals of either disease, or if functional studies demonstrate independent molecular pathways with no overlap in cellular consequences, this hypothesis would be falsified. _(variant: The presence of common variants (allele frequency >1% in gnomAD) in the coding regions of C1GALT1C1 or MUC1 that are associated with either disease would weaken the hypothesis.)_\n\n**Why it matters:** Understanding the shared or convergent roles of mucin glycosylation and MUC1 in epithelial health could lead to novel therapeutic strategies for both hematological and renal disorders. Targeting aberrant glycosylation pathways or MUC1 function may offer a common therapeutic angle.\n\n---"
+}

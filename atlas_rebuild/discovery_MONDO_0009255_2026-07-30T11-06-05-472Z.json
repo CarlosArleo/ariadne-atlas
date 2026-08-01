@@ -1,0 +1,207 @@
+{
+  "seed": {
+    "id": "MONDO:0009255",
+    "name": "galactokinase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 6,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0018116",
+      "diseaseBName": "galactosemia",
+      "fitness": 0.7778,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "GALK1 (HGNC:4117) —DISRUPTS→ galactose (CHEBI:17792); galactose (CHEBI:17792) —LEADS_TO→ Cataracts (HP:0000505); GALT (HGNC:4118) —DISRUPTS→ galactose-1-phosphate (CHEBI:17945); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Failure to thrive (HP:0011344); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Jaundice (HP:0000952); galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729). Loss-of-function mutations in GALK1 lead to the accumulation of galactose, causing cataracts. Loss-of-function mutations in GALT lead to the accumulation of galactose-1-phosphate, causing failure to thrive and jaundice. Both galactose and galactose-1-phosphate are key metabolites in the galactose metabolism pathway, representing a shared functional module.",
+      "mechanism_narrative": "GALK1 (HGNC:4117) —DISRUPTS→ galactose (CHEBI:17792); galactose (CHEBI:17792) —LEADS_TO→ Cataracts (HP:0000505); GALT (HGNC:4118) —DISRUPTS→ galactose-1-phosphate (CHEBI:17945); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Failure to thrive (HP:0011344); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Jaundice (HP:0000952); galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729). Loss-of-function mutations in GALK1 lead to the accumulation of galactose, causing cataracts. Loss-of-function mutations in GALT lead to the accumulation of galactose-1-phosphate, causing failure to thrive and jaundice. Both galactose and galactose-1-phosphate are key metabolites in the galactose metabolism pathway, representing a shared functional module.",
+      "falsification": {
+        "text": "The discovery of a patient with a pathogenic GALK1 mutation who does not develop cataracts, or a patient with a pathogenic GALT mutation who does not exhibit signs of galactosemia, would falsify this hypothesis. Additionally, if evidence suggests that the accumulation of galactose in galactokinase deficiency does not directly lead to cataracts, this would also weaken the hypothesis.",
+        "gnomad_variant": "rs75612142 (a common variant in GALK1)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70370"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018116",
+        "diseaseBName": "galactosemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70370"
+        ],
+        "fitness": 0.7778,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GALK1 (HGNC:4117) —DISRUPTS→ galactose (CHEBI:17792); galactose (CHEBI:17792) —LEADS_TO→ Cataracts (HP:0000505); GALT (HGNC:4118) —DISRUPTS→ galactose-1-phosphate (CHEBI:17945); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Failure to thrive (HP:0011344); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Jaundice (HP:0000952); galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729). Loss-of-function mutations in GALK1 lead to the accumulation of galactose, causing cataracts. Loss-of-function mutations in GALT lead to the accumulation of galactose-1-phosphate, causing failure to thrive and jaundice. Both galactose and galactose-1-phosphate are key metabolites in the galactose metabolism pathway, representing a shared functional module.",
+        "falsification": {
+          "text": "The discovery of a patient with a pathogenic GALK1 mutation who does not develop cataracts, or a patient with a pathogenic GALT mutation who does not exhibit signs of galactosemia, would falsify this hypothesis. Additionally, if evidence suggests that the accumulation of galactose in galactokinase deficiency does not directly lead to cataracts, this would also weaken the hypothesis.",
+          "gnomad_variant": "rs75612142 (a common variant in GALK1)"
+        },
+        "translational": "Understanding the shared pathway of galactose metabolism and the distinct downstream effects of metabolite accumulation can inform therapeutic strategies. For instance, dietary restriction of galactose is a common treatment for galactosemia, and understanding the specific toxic effects of accumulated galactose in galactokinase deficiency could lead to targeted therapies beyond dietary management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009257",
+      "diseaseBName": "galactose epimerase deficiency",
+      "fitness": 0.4553,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GALK1 (HGNC:4046) —DISRUPTS→ alpha-D-galactose-1-phosphate (CHEBI:17606); alpha-D-galactose-1-phosphate (CHEBI:17606) —LEADS_TO→ Galactose metabolism (KEGG:00050); GALE (HGNC:4047) —DISRUPTS→ Galactose metabolism (KEGG:00050); Galactose metabolism (KEGG:00050) —LEADS_TO→ Cataract (HP:0000515); Galactose metabolism (KEGG:00050) —LEADS_TO→ Intellectual disability (HP:0001249); Galactose metabolism (KEGG:00050) —LEADS_TO→ Failure to thrive (HP:0011344). Mutations in GALK1 (galactokinase) lead to the accumulation of alpha-D-galactose-1-phosphate, disrupting galactose metabolism and causing phenotypes like cataracts. Similarly, mutations in GALE (galactose epimerase) also disrupt galactose metabolism, leading to overlapping phenotypes such as intellectual disability and failure to thrive, because both genes are critical components of the same metabolic pathway.",
+      "mechanism_narrative": "GALK1 (HGNC:4046) —DISRUPTS→ alpha-D-galactose-1-phosphate (CHEBI:17606); alpha-D-galactose-1-phosphate (CHEBI:17606) —LEADS_TO→ Galactose metabolism (KEGG:00050); GALE (HGNC:4047) —DISRUPTS→ Galactose metabolism (KEGG:00050); Galactose metabolism (KEGG:00050) —LEADS_TO→ Cataract (HP:0000515); Galactose metabolism (KEGG:00050) —LEADS_TO→ Intellectual disability (HP:0001249); Galactose metabolism (KEGG:00050) —LEADS_TO→ Failure to thrive (HP:0011344). Mutations in GALK1 (galactokinase) lead to the accumulation of alpha-D-galactose-1-phosphate, disrupting galactose metabolism and causing phenotypes like cataracts. Similarly, mutations in GALE (galactose epimerase) also disrupt galactose metabolism, leading to overlapping phenotypes such as intellectual disability and failure to thrive, because both genes are critical components of the same metabolic pathway.",
+      "falsification": {
+        "text": "The discovery of a common genetic variant in a gene other than GALK1 or GALE that is causative for either disease, or evidence that the downstream effects of GALK1 deficiency do not converge with those of GALE deficiency at a metabolic or cellular level.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70370"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70370": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009257",
+        "diseaseBName": "galactose epimerase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70370"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70370": 6
+        },
+        "fitness": 0.4553,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GALK1 (HGNC:4046) —DISRUPTS→ alpha-D-galactose-1-phosphate (CHEBI:17606); alpha-D-galactose-1-phosphate (CHEBI:17606) —LEADS_TO→ Galactose metabolism (KEGG:00050); GALE (HGNC:4047) —DISRUPTS→ Galactose metabolism (KEGG:00050); Galactose metabolism (KEGG:00050) —LEADS_TO→ Cataract (HP:0000515); Galactose metabolism (KEGG:00050) —LEADS_TO→ Intellectual disability (HP:0001249); Galactose metabolism (KEGG:00050) —LEADS_TO→ Failure to thrive (HP:0011344). Mutations in GALK1 (galactokinase) lead to the accumulation of alpha-D-galactose-1-phosphate, disrupting galactose metabolism and causing phenotypes like cataracts. Similarly, mutations in GALE (galactose epimerase) also disrupt galactose metabolism, leading to overlapping phenotypes such as intellectual disability and failure to thrive, because both genes are critical components of the same metabolic pathway.",
+        "falsification": {
+          "text": "The discovery of a common genetic variant in a gene other than GALK1 or GALE that is causative for either disease, or evidence that the downstream effects of GALK1 deficiency do not converge with those of GALE deficiency at a metabolic or cellular level.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared pathway disruption in galactose metabolism between galactokinase deficiency and galactose epimerase deficiency can inform therapeutic strategies aimed at mitigating the toxic buildup of galactose metabolites or enhancing alternative metabolic routes, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013968",
+      "diseaseBName": "PGM1-congenital disorder of glycosylation",
+      "fitness": 0.4425,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GALK1 (HGNC:4143) —DISRUPTS→ Galactose (CHEBI:17027); Galactose (CHEBI:17027) —DECREASES→ Galactose-1-phosphate (CHEBI:15993); Galactose-1-phosphate (CHEBI:15993) —DECREASES→ UDP-galactose (CHEBI:17674); UDP-galactose (CHEBI:17674) —DECREASES→ UDP-glucose (CHEBI:17940); UDP-glucose (CHEBI:17940) —DECREASES→ Glycosylation Pathway (GO:0006486); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Cataracts (HP:0000539); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); PGM1 (HGNC:9130) —DISRUPTS→ UDP-glucose (CHEBI:17940); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Hepatopathy (HP:0011331). Loss-of-function mutations in GALK1 lead to galactose accumulation, which is then phosphorylated to galactose-1-phosphate. This intermediate can be converted to UDP-galactose, which then competes with UDP-glucose for incorporation into glycoproteins and glycolipids, impacting the glycosylation pathway. Similarly, loss-of-function mutations in PGM1 directly impair the interconversion of UDP-glucose and UDP-galactose, thereby disrupting the glycosylation pathway. Both disruptions converge on the central glycosylation pathway, leading to shared and distinct phenotypic consequences.",
+      "mechanism_narrative": "GALK1 (HGNC:4143) —DISRUPTS→ Galactose (CHEBI:17027); Galactose (CHEBI:17027) —DECREASES→ Galactose-1-phosphate (CHEBI:15993); Galactose-1-phosphate (CHEBI:15993) —DECREASES→ UDP-galactose (CHEBI:17674); UDP-galactose (CHEBI:17674) —DECREASES→ UDP-glucose (CHEBI:17940); UDP-glucose (CHEBI:17940) —DECREASES→ Glycosylation Pathway (GO:0006486); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Cataracts (HP:0000539); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); PGM1 (HGNC:9130) —DISRUPTS→ UDP-glucose (CHEBI:17940); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Hepatopathy (HP:0011331). Loss-of-function mutations in GALK1 lead to galactose accumulation, which is then phosphorylated to galactose-1-phosphate. This intermediate can be converted to UDP-galactose, which then competes with UDP-glucose for incorporation into glycoproteins and glycolipids, impacting the glycosylation pathway. Similarly, loss-of-function mutations in PGM1 directly impair the interconversion of UDP-glucose and UDP-galactose, thereby disrupting the glycosylation pathway. Both disruptions converge on the central glycosylation pathway, leading to shared and distinct phenotypic consequences.",
+      "falsification": {
+        "text": "Demonstration that genetic variants in GALK1 or PGM1 do not lead to loss-of-function phenotypes, or that perturbations in the UDP-glucose/UDP-galactose interconversion do not impact downstream glycosylation, would falsify this hypothesis. Specifically, if a significant fraction of individuals with pathogenic GALK1 variants do not present with cataracts, or individuals with pathogenic PGM1 variants do not show signs of hepatopathy, this would challenge the proposed link.",
+        "gnomad_variant": "Identification of a common, recurrent pathogenic variant in either GALK1 or PGM1 with a high allele frequency (>1%) in gnomAD, indicating it is not rare and likely not causal for these rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70370"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70370": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013968",
+        "diseaseBName": "PGM1-congenital disorder of glycosylation",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70370"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70370": 6
+        },
+        "fitness": 0.4425,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GALK1 (HGNC:4143) —DISRUPTS→ Galactose (CHEBI:17027); Galactose (CHEBI:17027) —DECREASES→ Galactose-1-phosphate (CHEBI:15993); Galactose-1-phosphate (CHEBI:15993) —DECREASES→ UDP-galactose (CHEBI:17674); UDP-galactose (CHEBI:17674) —DECREASES→ UDP-glucose (CHEBI:17940); UDP-glucose (CHEBI:17940) —DECREASES→ Glycosylation Pathway (GO:0006486); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Cataracts (HP:0000539); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); PGM1 (HGNC:9130) —DISRUPTS→ UDP-glucose (CHEBI:17940); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Hepatopathy (HP:0011331). Loss-of-function mutations in GALK1 lead to galactose accumulation, which is then phosphorylated to galactose-1-phosphate. This intermediate can be converted to UDP-galactose, which then competes with UDP-glucose for incorporation into glycoproteins and glycolipids, impacting the glycosylation pathway. Similarly, loss-of-function mutations in PGM1 directly impair the interconversion of UDP-glucose and UDP-galactose, thereby disrupting the glycosylation pathway. Both disruptions converge on the central glycosylation pathway, leading to shared and distinct phenotypic consequences.",
+        "falsification": {
+          "text": "Demonstration that genetic variants in GALK1 or PGM1 do not lead to loss-of-function phenotypes, or that perturbations in the UDP-glucose/UDP-galactose interconversion do not impact downstream glycosylation, would falsify this hypothesis. Specifically, if a significant fraction of individuals with pathogenic GALK1 variants do not present with cataracts, or individuals with pathogenic PGM1 variants do not show signs of hepatopathy, this would challenge the proposed link.",
+          "gnomad_variant": "Identification of a common, recurrent pathogenic variant in either GALK1 or PGM1 with a high allele frequency (>1%) in gnomAD, indicating it is not rare and likely not causal for these rare diseases."
+        },
+        "translational": "Understanding the shared impact on glycosylation pathways could reveal therapeutic strategies that target common downstream effects of both GALK1 and PGM1 deficiencies. For example, interventions aimed at supporting general glycosylation processes or managing metabolic byproducts of galactose metabolism might offer benefits for patients with PGM1-CDG, and vice-versa."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009258",
+      "diseaseBName": "classic galactosemia",
+      "fitness": 0.4232,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GALK1 (HGNC:4078) —DISRUPTS→ Galactose (CHEBI:17792); Galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-1920677); Galactose metabolism (REACT:R-HSA-1920677) —DECREASES→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Cataracts (HP:0000519); GALT (HGNC:4080) —DISRUPTS→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —DECREASES→ Glucose-1-phosphate (CHEBI:17688); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Failure to thrive (HP:0001558); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Hepatomegaly (HP:0002295); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Jaundice (HP:0000952). Mutations in GALK1 lead to a loss-of-function, impairing the phosphorylation of galactose to galactose-1-phosphate, causing galactose accumulation and subsequent cataracts. Mutations in GALT also lead to a loss-of-function, preventing the conversion of galactose-1-phosphate to glucose-1-phosphate, leading to the accumulation of galactose-1-phosphate and a cascade of downstream toxic effects including failure to thrive, hepatomegaly, and jaundice.",
+      "mechanism_narrative": "GALK1 (HGNC:4078) —DISRUPTS→ Galactose (CHEBI:17792); Galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-1920677); Galactose metabolism (REACT:R-HSA-1920677) —DECREASES→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Cataracts (HP:0000519); GALT (HGNC:4080) —DISRUPTS→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —DECREASES→ Glucose-1-phosphate (CHEBI:17688); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Failure to thrive (HP:0001558); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Hepatomegaly (HP:0002295); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Jaundice (HP:0000952). Mutations in GALK1 lead to a loss-of-function, impairing the phosphorylation of galactose to galactose-1-phosphate, causing galactose accumulation and subsequent cataracts. Mutations in GALT also lead to a loss-of-function, preventing the conversion of galactose-1-phosphate to glucose-1-phosphate, leading to the accumulation of galactose-1-phosphate and a cascade of downstream toxic effects including failure to thrive, hepatomegaly, and jaundice.",
+      "falsification": {
+        "text": "If mutations in GALK1 or GALT were found to be gain-of-function mutations, or if there were no significant accumulation of galactose or galactose-1-phosphate in affected individuals, this hypothesis would be falsified.",
+        "gnomad_variant": "High frequency of pathogenic variants in GALK1 or GALT in the gnomAD database."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70370"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70370": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009258",
+        "diseaseBName": "classic galactosemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70370"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70370": 6
+        },
+        "fitness": 0.4232,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GALK1 (HGNC:4078) —DISRUPTS→ Galactose (CHEBI:17792); Galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-1920677); Galactose metabolism (REACT:R-HSA-1920677) —DECREASES→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Cataracts (HP:0000519); GALT (HGNC:4080) —DISRUPTS→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —DECREASES→ Glucose-1-phosphate (CHEBI:17688); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Failure to thrive (HP:0001558); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Hepatomegaly (HP:0002295); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Jaundice (HP:0000952). Mutations in GALK1 lead to a loss-of-function, impairing the phosphorylation of galactose to galactose-1-phosphate, causing galactose accumulation and subsequent cataracts. Mutations in GALT also lead to a loss-of-function, preventing the conversion of galactose-1-phosphate to glucose-1-phosphate, leading to the accumulation of galactose-1-phosphate and a cascade of downstream toxic effects including failure to thrive, hepatomegaly, and jaundice.",
+        "falsification": {
+          "text": "If mutations in GALK1 or GALT were found to be gain-of-function mutations, or if there were no significant accumulation of galactose or galactose-1-phosphate in affected individuals, this hypothesis would be falsified.",
+          "gnomad_variant": "High frequency of pathogenic variants in GALK1 or GALT in the gnomAD database."
+        },
+        "translational": "Understanding the shared pathway disruption in galactose metabolism can inform therapeutic strategies for both conditions, potentially focusing on reducing galactose intake or developing enzyme replacement therapies. The overlapping phenotypes highlight the importance of early diagnosis and intervention."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030105",
+      "diseaseBName": "galactosemia 4",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Galactokinase 1 (HGNC:4002) —DISRUPTS→ Galactose (CHEBI:17141); Galactose (CHEBI:17141) —PRODUCES→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Cataracts (HP:0000560); Galactose-1-phosphate uridylyltransferase (HGNC:4001) —DISRUPTS→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —PRODUCES→ UDP-Galactose (CHEBI:15706); UDP-Galactose (CHEBI:15706) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Galactosemia 4 phenotype (MONDO:0030105). Loss-of-function mutations in GALK1 (causing galactokinase deficiency) lead to galactose accumulation and subsequent conversion to galactitol, causing cataracts. Loss-of-function mutations in GALM (causing galactosemia 4) lead to the accumulation of galactose-1-phosphate, which disrupts downstream pathways and contributes to the galactosemia phenotype. Both diseases converge on the disruption of the galactose metabolism pathway, albeit at different steps, leading to distinct but related clinical manifestations.",
+      "mechanism_narrative": "Galactokinase 1 (HGNC:4002) —DISRUPTS→ Galactose (CHEBI:17141); Galactose (CHEBI:17141) —PRODUCES→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Cataracts (HP:0000560); Galactose-1-phosphate uridylyltransferase (HGNC:4001) —DISRUPTS→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —PRODUCES→ UDP-Galactose (CHEBI:15706); UDP-Galactose (CHEBI:15706) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Galactosemia 4 phenotype (MONDO:0030105). Loss-of-function mutations in GALK1 (causing galactokinase deficiency) lead to galactose accumulation and subsequent conversion to galactitol, causing cataracts. Loss-of-function mutations in GALM (causing galactosemia 4) lead to the accumulation of galactose-1-phosphate, which disrupts downstream pathways and contributes to the galactosemia phenotype. Both diseases converge on the disruption of the galactose metabolism pathway, albeit at different steps, leading to distinct but related clinical manifestations.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in GALK1 or GALM in individuals presenting with phenotypes unrelated to galactose metabolism, or the absence of cataracts in patients with confirmed GALK1 deficiency, would falsify this hypothesis.",
+        "gnomad_variant": "Pathogenic variants in GALK1 or GALM with a gnomAD allele frequency > 0.01%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-70370"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-70370": 6
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030105",
+        "diseaseBName": "galactosemia 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-70370"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-70370": 6
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Galactokinase 1 (HGNC:4002) —DISRUPTS→ Galactose (CHEBI:17141); Galactose (CHEBI:17141) —PRODUCES→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Cataracts (HP:0000560); Galactose-1-phosphate uridylyltransferase (HGNC:4001) —DISRUPTS→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —PRODUCES→ UDP-Galactose (CHEBI:15706); UDP-Galactose (CHEBI:15706) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Galactosemia 4 phenotype (MONDO:0030105). Loss-of-function mutations in GALK1 (causing galactokinase deficiency) lead to galactose accumulation and subsequent conversion to galactitol, causing cataracts. Loss-of-function mutations in GALM (causing galactosemia 4) lead to the accumulation of galactose-1-phosphate, which disrupts downstream pathways and contributes to the galactosemia phenotype. Both diseases converge on the disruption of the galactose metabolism pathway, albeit at different steps, leading to distinct but related clinical manifestations.",
+        "falsification": {
+          "text": "The discovery of pathogenic variants in GALK1 or GALM in individuals presenting with phenotypes unrelated to galactose metabolism, or the absence of cataracts in patients with confirmed GALK1 deficiency, would falsify this hypothesis.",
+          "gnomad_variant": "Pathogenic variants in GALK1 or GALM with a gnomAD allele frequency > 0.01%"
+        },
+        "translational": "Understanding the shared pathway disruption in galactose metabolism can inform therapeutic strategies. For galactokinase deficiency, reducing galactose intake is key to preventing galactitol accumulation and cataracts. For galactosemia 4, dietary restriction of galactose is also crucial to prevent the buildup of toxic intermediates and associated morbidities."
+      }
+    }
+  ],
+  "timestamp": "2026-07-30T11:06:05.472Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** galactokinase deficiency (MONDO:0009255)\n**Generated:** 2026-07-30\n**Candidates screened:** 0 gene-neighbour(s), 6 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | galactosemia (MONDO:0018116) | shared pathway | Tier 1 | 0.778 | Reactome:R-HSA-70370 |\n| 2 | galactose epimerase deficiency (MONDO:0009257) | shared pathway | Tier 3 | 0.455 | Reactome:R-HSA-70370 |\n| 3 | PGM1-congenital disorder of glycosylation (MONDO:0013968) | shared pathway | Tier 3 | 0.443 | Reactome:R-HSA-70370 |\n| 4 | classic galactosemia (MONDO:0009258) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-70370 |\n| 5 | galactosemia 4 (MONDO:0030105) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-70370 |\n| 6 | thrombocytopenia 13, syndromic (MONDO:0958333) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-70370 |\n\n### CANDIDATE DETAIL\n#### 1. galactosemia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.778)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** GALK1 (HGNC:4117) —DISRUPTS→ galactose (CHEBI:17792); galactose (CHEBI:17792) —LEADS_TO→ Cataracts (HP:0000505); GALT (HGNC:4118) —DISRUPTS→ galactose-1-phosphate (CHEBI:17945); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Failure to thrive (HP:0011344); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Jaundice (HP:0000952); galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729); galactose-1-phosphate (CHEBI:17945) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-167729). Loss-of-function mutations in GALK1 lead to the accumulation of galactose, causing cataracts. Loss-of-function mutations in GALT lead to the accumulation of galactose-1-phosphate, causing failure to thrive and jaundice. Both galactose and galactose-1-phosphate are key metabolites in the galactose metabolism pathway, representing a shared functional module.\n\n**How to falsify it:** The discovery of a patient with a pathogenic GALK1 mutation who does not develop cataracts, or a patient with a pathogenic GALT mutation who does not exhibit signs of galactosemia, would falsify this hypothesis. Additionally, if evidence suggests that the accumulation of galactose in galactokinase deficiency does not directly lead to cataracts, this would also weaken the hypothesis. _(variant: rs75612142 (a common variant in GALK1))_\n\n**Why it matters:** Understanding the shared pathway of galactose metabolism and the distinct downstream effects of metabolite accumulation can inform therapeutic strategies. For instance, dietary restriction of galactose is a common treatment for galactosemia, and understanding the specific toxic effects of accumulated galactose in galactokinase deficiency could lead to targeted therapies beyond dietary management.\n\n---\n\n#### 2. galactose epimerase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.455)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** GALK1 (HGNC:4046) —DISRUPTS→ alpha-D-galactose-1-phosphate (CHEBI:17606); alpha-D-galactose-1-phosphate (CHEBI:17606) —LEADS_TO→ Galactose metabolism (KEGG:00050); GALE (HGNC:4047) —DISRUPTS→ Galactose metabolism (KEGG:00050); Galactose metabolism (KEGG:00050) —LEADS_TO→ Cataract (HP:0000515); Galactose metabolism (KEGG:00050) —LEADS_TO→ Intellectual disability (HP:0001249); Galactose metabolism (KEGG:00050) —LEADS_TO→ Failure to thrive (HP:0011344). Mutations in GALK1 (galactokinase) lead to the accumulation of alpha-D-galactose-1-phosphate, disrupting galactose metabolism and causing phenotypes like cataracts. Similarly, mutations in GALE (galactose epimerase) also disrupt galactose metabolism, leading to overlapping phenotypes such as intellectual disability and failure to thrive, because both genes are critical components of the same metabolic pathway.\n\n**How to falsify it:** The discovery of a common genetic variant in a gene other than GALK1 or GALE that is causative for either disease, or evidence that the downstream effects of GALK1 deficiency do not converge with those of GALE deficiency at a metabolic or cellular level. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared pathway disruption in galactose metabolism between galactokinase deficiency and galactose epimerase deficiency can inform therapeutic strategies aimed at mitigating the toxic buildup of galactose metabolites or enhancing alternative metabolic routes, potentially benefiting patients with either condition.\n\n---\n\n#### 3. PGM1-congenital disorder of glycosylation  —  Tier 3 — Moderate / Emerging  (fitness 0.443)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** GALK1 (HGNC:4143) —DISRUPTS→ Galactose (CHEBI:17027); Galactose (CHEBI:17027) —DECREASES→ Galactose-1-phosphate (CHEBI:15993); Galactose-1-phosphate (CHEBI:15993) —DECREASES→ UDP-galactose (CHEBI:17674); UDP-galactose (CHEBI:17674) —DECREASES→ UDP-glucose (CHEBI:17940); UDP-glucose (CHEBI:17940) —DECREASES→ Glycosylation Pathway (GO:0006486); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Cataracts (HP:0000539); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Intellectual disability (HP:0001249); PGM1 (HGNC:9130) —DISRUPTS→ UDP-glucose (CHEBI:17940); Glycosylation Pathway (GO:0006486) —LEADS_TO→ Hepatopathy (HP:0011331). Loss-of-function mutations in GALK1 lead to galactose accumulation, which is then phosphorylated to galactose-1-phosphate. This intermediate can be converted to UDP-galactose, which then competes with UDP-glucose for incorporation into glycoproteins and glycolipids, impacting the glycosylation pathway. Similarly, loss-of-function mutations in PGM1 directly impair the interconversion of UDP-glucose and UDP-galactose, thereby disrupting the glycosylation pathway. Both disruptions converge on the central glycosylation pathway, leading to shared and distinct phenotypic consequences.\n\n**How to falsify it:** Demonstration that genetic variants in GALK1 or PGM1 do not lead to loss-of-function phenotypes, or that perturbations in the UDP-glucose/UDP-galactose interconversion do not impact downstream glycosylation, would falsify this hypothesis. Specifically, if a significant fraction of individuals with pathogenic GALK1 variants do not present with cataracts, or individuals with pathogenic PGM1 variants do not show signs of hepatopathy, this would challenge the proposed link. _(variant: Identification of a common, recurrent pathogenic variant in either GALK1 or PGM1 with a high allele frequency (>1%) in gnomAD, indicating it is not rare and likely not causal for these rare diseases.)_\n\n**Why it matters:** Understanding the shared impact on glycosylation pathways could reveal therapeutic strategies that target common downstream effects of both GALK1 and PGM1 deficiencies. For example, interventions aimed at supporting general glycosylation processes or managing metabolic byproducts of galactose metabolism might offer benefits for patients with PGM1-CDG, and vice-versa.\n\n---\n\n#### 4. classic galactosemia  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** GALK1 (HGNC:4078) —DISRUPTS→ Galactose (CHEBI:17792); Galactose (CHEBI:17792) —LEADS_TO→ Galactose metabolism (REACT:R-HSA-1920677); Galactose metabolism (REACT:R-HSA-1920677) —DECREASES→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Cataracts (HP:0000519); GALT (HGNC:4080) —DISRUPTS→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —DECREASES→ Glucose-1-phosphate (CHEBI:17688); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Failure to thrive (HP:0001558); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Hepatomegaly (HP:0002295); Galactose-1-phosphate (CHEBI:17947) —LEADS_TO→ Jaundice (HP:0000952). Mutations in GALK1 lead to a loss-of-function, impairing the phosphorylation of galactose to galactose-1-phosphate, causing galactose accumulation and subsequent cataracts. Mutations in GALT also lead to a loss-of-function, preventing the conversion of galactose-1-phosphate to glucose-1-phosphate, leading to the accumulation of galactose-1-phosphate and a cascade of downstream toxic effects including failure to thrive, hepatomegaly, and jaundice.\n\n**How to falsify it:** If mutations in GALK1 or GALT were found to be gain-of-function mutations, or if there were no significant accumulation of galactose or galactose-1-phosphate in affected individuals, this hypothesis would be falsified. _(variant: High frequency of pathogenic variants in GALK1 or GALT in the gnomAD database.)_\n\n**Why it matters:** Understanding the shared pathway disruption in galactose metabolism can inform therapeutic strategies for both conditions, potentially focusing on reducing galactose intake or developing enzyme replacement therapies. The overlapping phenotypes highlight the importance of early diagnosis and intervention.\n\n---\n\n#### 5. galactosemia 4  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** Galactokinase 1 (HGNC:4002) —DISRUPTS→ Galactose (CHEBI:17141); Galactose (CHEBI:17141) —PRODUCES→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Cataracts (HP:0000560); Galactose-1-phosphate uridylyltransferase (HGNC:4001) —DISRUPTS→ Galactose-1-phosphate (CHEBI:18144); Galactose-1-phosphate (CHEBI:18144) —PRODUCES→ UDP-Galactose (CHEBI:15706); UDP-Galactose (CHEBI:15706) —INCREASES→ Galactose metabolism pathway (REACT:R-HSA-168761); Galactose metabolism pathway (REACT:R-HSA-168761) —LEADS_TO→ Galactosemia 4 phenotype (MONDO:0030105). Loss-of-function mutations in GALK1 (causing galactokinase deficiency) lead to galactose accumulation and subsequent conversion to galactitol, causing cataracts. Loss-of-function mutations in GALM (causing galactosemia 4) lead to the accumulation of galactose-1-phosphate, which disrupts downstream pathways and contributes to the galactosemia phenotype. Both diseases converge on the disruption of the galactose metabolism pathway, albeit at different steps, leading to distinct but related clinical manifestations.\n\n**How to falsify it:** The discovery of pathogenic variants in GALK1 or GALM in individuals presenting with phenotypes unrelated to galactose metabolism, or the absence of cataracts in patients with confirmed GALK1 deficiency, would falsify this hypothesis. _(variant: Pathogenic variants in GALK1 or GALM with a gnomAD allele frequency > 0.01%)_\n\n**Why it matters:** Understanding the shared pathway disruption in galactose metabolism can inform therapeutic strategies. For galactokinase deficiency, reducing galactose intake is key to preventing galactitol accumulation and cataracts. For galactosemia 4, dietary restriction of galactose is also crucial to prevent the buildup of toxic intermediates and associated morbidities.\n\n---\n\n#### 6. thrombocytopenia 13, syndromic  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-70370)\n\n**Proposed mechanism:** GALK1 (HGNC:4058) —DISRUPTS→ Galactose-1-phosphate (CHEBI:17947); Galactose-1-phosphate (CHEBI:17947) —DECREASES→ UDP-galactose metabolism (R-HSA-109590); UDP-galactose metabolism (R-HSA-109590) —LEADS_TO→ Cataracts (HP:0000508); GALNT14 (HGNC:33534) —DISRUPTS→ UDP-galactose metabolism (R-HSA-109590); UDP-galactose metabolism (R-HSA-109590) —LEADS_TO→ Thrombocytopenia (HP:0001884). Loss of function in GALK1 leads to the accumulation of Galactose-1-phosphate, disrupting UDP-galactose metabolism and causing cataracts. Concurrently, loss of function in GALNT14, which is involved in glycosylation and potentially UDP-galactose utilization, leads to thrombocytopenia. The convergence is on the shared pathway of UDP-galactose metabolism, impacting different downstream effectors.\n\n**How to falsify it:** Absence of mutations in GALK1 in individuals with galactokinase deficiency, or absence of mutations in GALNT14 (or other genes in the UDP-galactose metabolism pathway) in individuals with thrombocytopenia 13, syndromic. _(variant: Identification of common variants (>1% allele frequency) in gnomAD associated with either GALK1 or GALNT14 that are not linked to the respective disease phenotypes.)_\n\n**Why it matters:** Understanding the shared pathway in UDP-galactose metabolism could reveal common therapeutic targets or diagnostic biomarkers for both galactokinase deficiency and syndromic thrombocytopenia 13, potentially leading to novel treatment strategies for hematological and ocular disorders.\n\n---"
+}

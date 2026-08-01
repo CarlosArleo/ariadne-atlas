@@ -1,0 +1,415 @@
+{
+  "seed": {
+    "id": "MONDO:0013842",
+    "name": "MONDO:0013842"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 14,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012335",
+      "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+      "fitness": 0.444,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HSD11B1 (HGNC:4996) —DECREASES→ Cortisol (CHEBI:17700); Cortisol (CHEBI:17700) —DISRUPTS→ Glucocorticoid signaling (GO:0032129); Glucocorticoid signaling (GO:0032129) —LEADS_TO→ Adrenal insufficiency (HP:0000706); POMC (HGNC:9198) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994) —DISRUPTS→ POMC processing pathway (GO:0007220); POMC processing pathway (GO:0007220) —LEADS_TO→ Obesity (HP:0005101); POMC (HGNC:9198) —DISRUPTS→ POMC processing pathway (GO:0007220). Mutations in HSD11B1 lead to decreased cortisol production, impacting glucocorticoid signaling and causing adrenal insufficiency. Mutations in POMC lead to impaired processing of POMC, resulting in reduced levels of melanocortins like alpha-MSH, which disrupts appetite regulation and leads to obesity. Both pathways converge on the central POMC processing pathway, highlighting a shared mechanistic basis in the regulation of hormonal signaling.",
+      "mechanism_narrative": "HSD11B1 (HGNC:4996) —DECREASES→ Cortisol (CHEBI:17700); Cortisol (CHEBI:17700) —DISRUPTS→ Glucocorticoid signaling (GO:0032129); Glucocorticoid signaling (GO:0032129) —LEADS_TO→ Adrenal insufficiency (HP:0000706); POMC (HGNC:9198) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994) —DISRUPTS→ POMC processing pathway (GO:0007220); POMC processing pathway (GO:0007220) —LEADS_TO→ Obesity (HP:0005101); POMC (HGNC:9198) —DISRUPTS→ POMC processing pathway (GO:0007220). Mutations in HSD11B1 lead to decreased cortisol production, impacting glucocorticoid signaling and causing adrenal insufficiency. Mutations in POMC lead to impaired processing of POMC, resulting in reduced levels of melanocortins like alpha-MSH, which disrupts appetite regulation and leads to obesity. Both pathways converge on the central POMC processing pathway, highlighting a shared mechanistic basis in the regulation of hormonal signaling.",
+      "falsification": {
+        "text": "Identification of a common pathogenic variant in HSD11B1 or POMC that is present in individuals with the other disease, or evidence that the POMC processing pathway is not a shared convergence point for these conditions.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012335",
+        "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.444,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HSD11B1 (HGNC:4996) —DECREASES→ Cortisol (CHEBI:17700); Cortisol (CHEBI:17700) —DISRUPTS→ Glucocorticoid signaling (GO:0032129); Glucocorticoid signaling (GO:0032129) —LEADS_TO→ Adrenal insufficiency (HP:0000706); POMC (HGNC:9198) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994) —DISRUPTS→ POMC processing pathway (GO:0007220); POMC processing pathway (GO:0007220) —LEADS_TO→ Obesity (HP:0005101); POMC (HGNC:9198) —DISRUPTS→ POMC processing pathway (GO:0007220). Mutations in HSD11B1 lead to decreased cortisol production, impacting glucocorticoid signaling and causing adrenal insufficiency. Mutations in POMC lead to impaired processing of POMC, resulting in reduced levels of melanocortins like alpha-MSH, which disrupts appetite regulation and leads to obesity. Both pathways converge on the central POMC processing pathway, highlighting a shared mechanistic basis in the regulation of hormonal signaling.",
+        "falsification": {
+          "text": "Identification of a common pathogenic variant in HSD11B1 or POMC that is present in individuals with the other disease, or evidence that the POMC processing pathway is not a shared convergence point for these conditions.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of the POMC processing pathway in both diseases could lead to novel therapeutic strategies targeting hormonal imbalances in both adrenal insufficiency and obesity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008728",
+      "diseaseBName": "classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency",
+      "fitness": 0.4172,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HSD11B1 (HGNC:4986) —DISRUPTS→ Cortisol synthesis and inactivation (P00050); Cortisol synthesis and inactivation (P00050) —LEADS_TO→ Adrenal hypoplasia (HP:0000749); CYP21A2 (HGNC:2410) —DISRUPTS→ Steroidogenesis (P00050); Steroidogenesis (P00050) —LEADS_TO→ Virilization (HP:0004749); Steroidogenesis (P00050) —LEADS_TO→ Ambiguous genitalia (HP:0000065). Loss-of-function mutations in HSD11B1 (Disease A) disrupt cortisol synthesis/inactivation, potentially leading to adrenal hypoplasia. Loss-of-function mutations in CYP21A2 (Disease B) disrupt steroidogenesis, leading to virilization and ambiguous genitalia due to precursor accumulation and shunting towards androgen production. The convergence is on the broader pathway of steroidogenesis, where defects in different key enzymes (HSD11B1 and CYP21A2) lead to distinct but related endocrine phenotypes.",
+      "mechanism_narrative": "HSD11B1 (HGNC:4986) —DISRUPTS→ Cortisol synthesis and inactivation (P00050); Cortisol synthesis and inactivation (P00050) —LEADS_TO→ Adrenal hypoplasia (HP:0000749); CYP21A2 (HGNC:2410) —DISRUPTS→ Steroidogenesis (P00050); Steroidogenesis (P00050) —LEADS_TO→ Virilization (HP:0004749); Steroidogenesis (P00050) —LEADS_TO→ Ambiguous genitalia (HP:0000065). Loss-of-function mutations in HSD11B1 (Disease A) disrupt cortisol synthesis/inactivation, potentially leading to adrenal hypoplasia. Loss-of-function mutations in CYP21A2 (Disease B) disrupt steroidogenesis, leading to virilization and ambiguous genitalia due to precursor accumulation and shunting towards androgen production. The convergence is on the broader pathway of steroidogenesis, where defects in different key enzymes (HSD11B1 and CYP21A2) lead to distinct but related endocrine phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in HSD11B1 do not affect cortisol metabolism or adrenal development, or that mutations in CYP21A2 do not impact steroidogenesis and lead to virilization.",
+        "gnomad_variant": "Absence of pathogenic variants in HSD11B1 and CYP21A2 in relevant human populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008728",
+        "diseaseBName": "classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.4172,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HSD11B1 (HGNC:4986) —DISRUPTS→ Cortisol synthesis and inactivation (P00050); Cortisol synthesis and inactivation (P00050) —LEADS_TO→ Adrenal hypoplasia (HP:0000749); CYP21A2 (HGNC:2410) —DISRUPTS→ Steroidogenesis (P00050); Steroidogenesis (P00050) —LEADS_TO→ Virilization (HP:0004749); Steroidogenesis (P00050) —LEADS_TO→ Ambiguous genitalia (HP:0000065). Loss-of-function mutations in HSD11B1 (Disease A) disrupt cortisol synthesis/inactivation, potentially leading to adrenal hypoplasia. Loss-of-function mutations in CYP21A2 (Disease B) disrupt steroidogenesis, leading to virilization and ambiguous genitalia due to precursor accumulation and shunting towards androgen production. The convergence is on the broader pathway of steroidogenesis, where defects in different key enzymes (HSD11B1 and CYP21A2) lead to distinct but related endocrine phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in HSD11B1 do not affect cortisol metabolism or adrenal development, or that mutations in CYP21A2 do not impact steroidogenesis and lead to virilization.",
+          "gnomad_variant": "Absence of pathogenic variants in HSD11B1 and CYP21A2 in relevant human populations."
+        },
+        "translational": "Understanding the shared pathway of steroidogenesis and the distinct roles of HSD11B1 and CYP21A2 provides targets for potential therapeutic interventions aimed at hormone replacement or modulation in these conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008729",
+      "diseaseBName": "congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency",
+      "fitness": 0.4126,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP11B1 (HGNC:2404) —DECREASES→ 11-deoxycortisol (CHEBI:16726); 11-deoxycortisol (CHEBI:16726) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-109601); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Adrenal hyperplasia (HP:0000719); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Glucocorticoid deficiency (HP:0000818). Loss-of-function mutations in CYP11B1 impair the conversion of 11-deoxycortisol to cortisol, leading to adrenal hyperplasia due to precursor accumulation and glucocorticoid deficiency. Both diseases share these downstream consequences.",
+      "mechanism_narrative": "CYP11B1 (HGNC:2404) —DECREASES→ 11-deoxycortisol (CHEBI:16726); 11-deoxycortisol (CHEBI:16726) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-109601); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Adrenal hyperplasia (HP:0000719); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Glucocorticoid deficiency (HP:0000818). Loss-of-function mutations in CYP11B1 impair the conversion of 11-deoxycortisol to cortisol, leading to adrenal hyperplasia due to precursor accumulation and glucocorticoid deficiency. Both diseases share these downstream consequences.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in CYP11B1 who do not exhibit either adrenal hyperplasia or glucocorticoid deficiency, or conversely, identifying patients with these phenotypes but lacking CYP11B1 variants.",
+        "gnomad_variant": "High frequency of pathogenic variants in CYP11B1 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008729",
+        "diseaseBName": "congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.4126,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP11B1 (HGNC:2404) —DECREASES→ 11-deoxycortisol (CHEBI:16726); 11-deoxycortisol (CHEBI:16726) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-109601); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Adrenal hyperplasia (HP:0000719); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Glucocorticoid deficiency (HP:0000818). Loss-of-function mutations in CYP11B1 impair the conversion of 11-deoxycortisol to cortisol, leading to adrenal hyperplasia due to precursor accumulation and glucocorticoid deficiency. Both diseases share these downstream consequences.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in CYP11B1 who do not exhibit either adrenal hyperplasia or glucocorticoid deficiency, or conversely, identifying patients with these phenotypes but lacking CYP11B1 variants.",
+          "gnomad_variant": "High frequency of pathogenic variants in CYP11B1 in gnomAD."
+        },
+        "translational": "Understanding this overlap can inform diagnostic strategies and the development of targeted therapies for conditions affecting steroid hormone synthesis, potentially leveraging insights from one disease to treat the other."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012524",
+      "diseaseBName": "corticosterone methyloxidase type 2 deficiency",
+      "fitness": 0.3589,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP11B2 (HGNC:2403) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Aldosterone (CHEBI:16726); Aldosterone (CHEBI:16726) —LEADS_TO→ Adrenal insufficiency (HP:0000766); HSD11B1 (HGNC:4979) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Cortisol (CHEBI:17822); Cortisol (CHEBI:17822) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374). Loss-of-function mutations in CYP11B2 cause corticosterone methyloxidase type 2 deficiency, leading to impaired aldosterone synthesis and adrenal insufficiency. While HSD11B1 is primarily involved in cortisol metabolism, it also plays a role in the broader steroidogenic pathway. Disruptions in this pathway, potentially through altered HSD11B1 activity or feedback mechanisms, could contribute to mineralocorticoid deficiency, linking the two diseases through a shared disruption in the aldosterone synthesis pathway.",
+      "mechanism_narrative": "CYP11B2 (HGNC:2403) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Aldosterone (CHEBI:16726); Aldosterone (CHEBI:16726) —LEADS_TO→ Adrenal insufficiency (HP:0000766); HSD11B1 (HGNC:4979) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Cortisol (CHEBI:17822); Cortisol (CHEBI:17822) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374). Loss-of-function mutations in CYP11B2 cause corticosterone methyloxidase type 2 deficiency, leading to impaired aldosterone synthesis and adrenal insufficiency. While HSD11B1 is primarily involved in cortisol metabolism, it also plays a role in the broader steroidogenic pathway. Disruptions in this pathway, potentially through altered HSD11B1 activity or feedback mechanisms, could contribute to mineralocorticoid deficiency, linking the two diseases through a shared disruption in the aldosterone synthesis pathway.",
+      "falsification": {
+        "text": "Absence of mutations in CYP11B2 or HSD11B1 in patients diagnosed with either disease would falsify this hypothesis. Furthermore, identification of distinct molecular pathways that do not converge at the aldosterone synthesis level would also refute this proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012524",
+        "diseaseBName": "corticosterone methyloxidase type 2 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.3589,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP11B2 (HGNC:2403) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Aldosterone (CHEBI:16726); Aldosterone (CHEBI:16726) —LEADS_TO→ Adrenal insufficiency (HP:0000766); HSD11B1 (HGNC:4979) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Cortisol (CHEBI:17822); Cortisol (CHEBI:17822) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374). Loss-of-function mutations in CYP11B2 cause corticosterone methyloxidase type 2 deficiency, leading to impaired aldosterone synthesis and adrenal insufficiency. While HSD11B1 is primarily involved in cortisol metabolism, it also plays a role in the broader steroidogenic pathway. Disruptions in this pathway, potentially through altered HSD11B1 activity or feedback mechanisms, could contribute to mineralocorticoid deficiency, linking the two diseases through a shared disruption in the aldosterone synthesis pathway.",
+        "falsification": {
+          "text": "Absence of mutations in CYP11B2 or HSD11B1 in patients diagnosed with either disease would falsify this hypothesis. Furthermore, identification of distinct molecular pathways that do not converge at the aldosterone synthesis level would also refute this proposed link."
+        },
+        "translational": "Understanding the shared mechanistic basis in steroidogenesis could lead to novel therapeutic targets for managing adrenal insufficiency and related electrolyte imbalances, potentially through pathway modulation or enzyme replacement strategies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009025",
+      "diseaseBName": "apparent mineralocorticoid excess",
+      "fitness": 0.3192,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Hydroxysteroid 11-beta dehydrogenase 2 (HGNC:4940) —DISRUPTS→ Cortisol (CHEBI:17790); Hydroxysteroid 11-beta dehydrogenase 1 (HGNC:4939) —DISRUPTS→ Corticosterone (CHEBI:17791); Cortisol (CHEBI:17790) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Corticosterone (CHEBI:17791) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypertension (HP:0000822); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypokalemia (HP:0002174); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Metabolic Syndrome (HP:0004301). Loss-of-function mutations in HSD11B2 (Disease B, apparent mineralocorticoid excess) prevent the inactivation of cortisol to cortisone, leading to excessive binding of cortisol to the mineralocorticoid receptor and subsequent hypertension and hypokalemia. Dysregulation of HSD11B1 (Disease A, e.g., metabolic syndrome) can lead to increased local conversion of cortisone to cortisol or altered corticosterone metabolism, also resulting in increased mineralocorticoid receptor activation and related phenotypes.",
+      "mechanism_narrative": "Hydroxysteroid 11-beta dehydrogenase 2 (HGNC:4940) —DISRUPTS→ Cortisol (CHEBI:17790); Hydroxysteroid 11-beta dehydrogenase 1 (HGNC:4939) —DISRUPTS→ Corticosterone (CHEBI:17791); Cortisol (CHEBI:17790) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Corticosterone (CHEBI:17791) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypertension (HP:0000822); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypokalemia (HP:0002174); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Metabolic Syndrome (HP:0004301). Loss-of-function mutations in HSD11B2 (Disease B, apparent mineralocorticoid excess) prevent the inactivation of cortisol to cortisone, leading to excessive binding of cortisol to the mineralocorticoid receptor and subsequent hypertension and hypokalemia. Dysregulation of HSD11B1 (Disease A, e.g., metabolic syndrome) can lead to increased local conversion of cortisone to cortisol or altered corticosterone metabolism, also resulting in increased mineralocorticoid receptor activation and related phenotypes.",
+      "falsification": {
+        "text": "Identification of individuals with mutations in HSD11B1 or HSD11B2 that do not lead to altered cortisol/corticosterone levels or mineralocorticoid receptor activity, or the absence of hypertension and hypokalemia in such individuals.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in HSD11B1 or HSD11B2 associated with these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002",
+        "Reactome:R-HSA-9757110"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10,
+        "Reactome:R-HSA-9757110": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009025",
+        "diseaseBName": "apparent mineralocorticoid excess",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002",
+          "Reactome:R-HSA-9757110"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10,
+          "Reactome:R-HSA-9757110": 10
+        },
+        "fitness": 0.3192,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Hydroxysteroid 11-beta dehydrogenase 2 (HGNC:4940) —DISRUPTS→ Cortisol (CHEBI:17790); Hydroxysteroid 11-beta dehydrogenase 1 (HGNC:4939) —DISRUPTS→ Corticosterone (CHEBI:17791); Cortisol (CHEBI:17790) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Corticosterone (CHEBI:17791) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypertension (HP:0000822); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypokalemia (HP:0002174); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Metabolic Syndrome (HP:0004301). Loss-of-function mutations in HSD11B2 (Disease B, apparent mineralocorticoid excess) prevent the inactivation of cortisol to cortisone, leading to excessive binding of cortisol to the mineralocorticoid receptor and subsequent hypertension and hypokalemia. Dysregulation of HSD11B1 (Disease A, e.g., metabolic syndrome) can lead to increased local conversion of cortisone to cortisol or altered corticosterone metabolism, also resulting in increased mineralocorticoid receptor activation and related phenotypes.",
+        "falsification": {
+          "text": "Identification of individuals with mutations in HSD11B1 or HSD11B2 that do not lead to altered cortisol/corticosterone levels or mineralocorticoid receptor activity, or the absence of hypertension and hypokalemia in such individuals.",
+          "gnomad_variant": "Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in HSD11B1 or HSD11B2 associated with these diseases."
+        },
+        "translational": "Understanding the shared role of HSD11B1 and HSD11B2 in regulating mineralocorticoid receptor activity offers potential therapeutic targets for both apparent mineralocorticoid excess and related metabolic disorders like hypertension and metabolic syndrome, possibly through pharmacological modulation of these enzymes or their downstream effects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008730",
+      "diseaseBName": "congenital adrenal hyperplasia due to 17-alpha-hydroxylase deficiency",
+      "fitness": 0.3134,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP17A1 loss-of-function variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 haploinsufficiency variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-109643); CYP17A1 (HGNC:2410) —DECREASES→ 17-alpha-hydroxyprogesterone (CHEBI:78595); CYP17A1 (HGNC:2410) —DECREASES→ Androgens (CHEBI:23445); 17-alpha-hydroxyprogesterone (CHEBI:78595) —LEADS_TO→ Mineralocorticoid deficiency (HP:0003133); Androgens (CHEBI:23445) —LEADS_TO→ Female pseudohermaphroditism (HP:0000078). Loss-of-function or haploinsufficiency variants in CYP17A1 disrupt steroidogenesis. This leads to decreased production of androgens and 17-alpha-hydroxyprogesterone, resulting in phenotypes such as mineralocorticoid deficiency and female pseudohermaphroditism.",
+      "mechanism_narrative": "CYP17A1 loss-of-function variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 haploinsufficiency variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-109643); CYP17A1 (HGNC:2410) —DECREASES→ 17-alpha-hydroxyprogesterone (CHEBI:78595); CYP17A1 (HGNC:2410) —DECREASES→ Androgens (CHEBI:23445); 17-alpha-hydroxyprogesterone (CHEBI:78595) —LEADS_TO→ Mineralocorticoid deficiency (HP:0003133); Androgens (CHEBI:23445) —LEADS_TO→ Female pseudohermaphroditism (HP:0000078). Loss-of-function or haploinsufficiency variants in CYP17A1 disrupt steroidogenesis. This leads to decreased production of androgens and 17-alpha-hydroxyprogesterone, resulting in phenotypes such as mineralocorticoid deficiency and female pseudohermaphroditism.",
+      "falsification": {
+        "text": "Identification of a common, highly penetrant CYP17A1 variant with a significantly different functional consequence (e.g., gain-of-function) in individuals with MONDO:0013842 compared to those with MONDO:0008730, or evidence that the two diseases arise from distinct, non-overlapping molecular pathways despite the shared gene.",
+        "gnomad_variant": "rs743507285 (a known pathogenic variant in CYP17A1, if found at high frequency in gnomAD without associated phenotype)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008730",
+        "diseaseBName": "congenital adrenal hyperplasia due to 17-alpha-hydroxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.3134,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP17A1 loss-of-function variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 haploinsufficiency variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-109643); CYP17A1 (HGNC:2410) —DECREASES→ 17-alpha-hydroxyprogesterone (CHEBI:78595); CYP17A1 (HGNC:2410) —DECREASES→ Androgens (CHEBI:23445); 17-alpha-hydroxyprogesterone (CHEBI:78595) —LEADS_TO→ Mineralocorticoid deficiency (HP:0003133); Androgens (CHEBI:23445) —LEADS_TO→ Female pseudohermaphroditism (HP:0000078). Loss-of-function or haploinsufficiency variants in CYP17A1 disrupt steroidogenesis. This leads to decreased production of androgens and 17-alpha-hydroxyprogesterone, resulting in phenotypes such as mineralocorticoid deficiency and female pseudohermaphroditism.",
+        "falsification": {
+          "text": "Identification of a common, highly penetrant CYP17A1 variant with a significantly different functional consequence (e.g., gain-of-function) in individuals with MONDO:0013842 compared to those with MONDO:0008730, or evidence that the two diseases arise from distinct, non-overlapping molecular pathways despite the shared gene.",
+          "gnomad_variant": "rs743507285 (a known pathogenic variant in CYP17A1, if found at high frequency in gnomAD without associated phenotype)"
+        },
+        "translational": "Understanding the shared role of CYP17A1 in steroidogenesis and the spectrum of its functional consequences can inform the development of targeted therapies for hormonal and developmental abnormalities in both conditions. For example, strategies to restore partial enzyme activity or manage downstream hormonal imbalances could be beneficial."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007080",
+      "diseaseBName": "glucocorticoid-remediable aldosteronism",
+      "fitness": 0.3102,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP11B1 (HGNC:2406) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-2405718); Cortisol biosynthesis (REACT:R-HSA-2405718) —LEADS_TO→ Adrenal insufficiency (HP:0001942); CYP11B1-CYP11B2 fusion gene (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); CYP11B2 (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); Aldosterone biosynthesis (REACT:R-HSA-2405719) —LEADS_TO→ Hypertension (HP:0000822). Haploinsufficiency of CYP11B1 (Disease A) disrupts cortisol biosynthesis, leading to adrenal insufficiency. A fusion gene involving CYP11B1 and CYP11B2 (Disease B) causes a gain-of-function in CYP11B2's role in aldosterone biosynthesis, resulting in hypertension.",
+      "mechanism_narrative": "CYP11B1 (HGNC:2406) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-2405718); Cortisol biosynthesis (REACT:R-HSA-2405718) —LEADS_TO→ Adrenal insufficiency (HP:0001942); CYP11B1-CYP11B2 fusion gene (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); CYP11B2 (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); Aldosterone biosynthesis (REACT:R-HSA-2405719) —LEADS_TO→ Hypertension (HP:0000822). Haploinsufficiency of CYP11B1 (Disease A) disrupts cortisol biosynthesis, leading to adrenal insufficiency. A fusion gene involving CYP11B1 and CYP11B2 (Disease B) causes a gain-of-function in CYP11B2's role in aldosterone biosynthesis, resulting in hypertension.",
+      "falsification": {
+        "text": "Absence of mutations in CYP11B1 for Disease A or the characteristic CYP11B1-CYP11B2 fusion gene in affected individuals of Disease B, or identification of distinct molecular pathways not involving steroidogenesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007080",
+        "diseaseBName": "glucocorticoid-remediable aldosteronism",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.3102,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP11B1 (HGNC:2406) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-2405718); Cortisol biosynthesis (REACT:R-HSA-2405718) —LEADS_TO→ Adrenal insufficiency (HP:0001942); CYP11B1-CYP11B2 fusion gene (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); CYP11B2 (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); Aldosterone biosynthesis (REACT:R-HSA-2405719) —LEADS_TO→ Hypertension (HP:0000822). Haploinsufficiency of CYP11B1 (Disease A) disrupts cortisol biosynthesis, leading to adrenal insufficiency. A fusion gene involving CYP11B1 and CYP11B2 (Disease B) causes a gain-of-function in CYP11B2's role in aldosterone biosynthesis, resulting in hypertension.",
+        "falsification": {
+          "text": "Absence of mutations in CYP11B1 for Disease A or the characteristic CYP11B1-CYP11B2 fusion gene in affected individuals of Disease B, or identification of distinct molecular pathways not involving steroidogenesis."
+        },
+        "translational": "Understanding the shared pathway of steroidogenesis, despite different genetic origins and functional consequences, can inform therapeutic strategies. For Disease A, hormone replacement therapy is standard. For Disease B, targeting mineralocorticoid receptor antagonists is common, but understanding the upstream genetic defect highlights the specific pathway dysregulation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012675",
+      "diseaseBName": "corticosteroid-binding globulin deficiency",
+      "fitness": 0.3094,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SERPINA6 (HGNC:10570) —DECREASES→ Abnormal corticosteroid levels (HP:0030198); SERPINA6 (HGNC:10570) —DISRUPTS→ Glucocorticoid signaling pathway (GO:0043149); Glucocorticoid signaling pathway (GO:0043149) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in SERPINA6 lead to corticosteroid-binding globulin deficiency, resulting in altered corticosteroid levels (HP:0030198). Dysregulation of the glucocorticoid signaling pathway (GO:0043149) due to SERPINA6 dysfunction can contribute to hypertension (HP:0000822) as seen in MONDO:0013842.",
+      "mechanism_narrative": "SERPINA6 (HGNC:10570) —DECREASES→ Abnormal corticosteroid levels (HP:0030198); SERPINA6 (HGNC:10570) —DISRUPTS→ Glucocorticoid signaling pathway (GO:0043149); Glucocorticoid signaling pathway (GO:0043149) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in SERPINA6 lead to corticosteroid-binding globulin deficiency, resulting in altered corticosteroid levels (HP:0030198). Dysregulation of the glucocorticoid signaling pathway (GO:0043149) due to SERPINA6 dysfunction can contribute to hypertension (HP:0000822) as seen in MONDO:0013842.",
+      "falsification": {
+        "text": "Demonstration that the causal variants for MONDO:0013842 do not affect SERPINA6 or its downstream signaling, or that the identified variants in SERPINA6 for MONDO:0013842 do not lead to a loss-of-function or haploinsufficiency phenotype consistent with altered corticosteroid metabolism and hypertension."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002",
+        "Reactome:R-HSA-9757110"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10,
+        "Reactome:R-HSA-9757110": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012675",
+        "diseaseBName": "corticosteroid-binding globulin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002",
+          "Reactome:R-HSA-9757110"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10,
+          "Reactome:R-HSA-9757110": 10
+        },
+        "fitness": 0.3094,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SERPINA6 (HGNC:10570) —DECREASES→ Abnormal corticosteroid levels (HP:0030198); SERPINA6 (HGNC:10570) —DISRUPTS→ Glucocorticoid signaling pathway (GO:0043149); Glucocorticoid signaling pathway (GO:0043149) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in SERPINA6 lead to corticosteroid-binding globulin deficiency, resulting in altered corticosteroid levels (HP:0030198). Dysregulation of the glucocorticoid signaling pathway (GO:0043149) due to SERPINA6 dysfunction can contribute to hypertension (HP:0000822) as seen in MONDO:0013842.",
+        "falsification": {
+          "text": "Demonstration that the causal variants for MONDO:0013842 do not affect SERPINA6 or its downstream signaling, or that the identified variants in SERPINA6 for MONDO:0013842 do not lead to a loss-of-function or haploinsufficiency phenotype consistent with altered corticosteroid metabolism and hypertension."
+        },
+        "translational": "Understanding the shared role of SERPINA6 in both diseases could lead to novel therapeutic strategies targeting the glucocorticoid signaling pathway for the treatment of corticosteroid-binding globulin deficiency and related hypertensive disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008727",
+      "diseaseBName": "congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Loss-of-function variant in HSD3B2 (MONDO:0008727) —DISRUPTS→ HSD3B2 (HGNC:4877); HSD3B2 (HGNC:4877) —DECREASES→ Pregnenolone (CHEBI:17750); Pregnenolone (CHEBI:17750) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Adrenal insufficiency (HP:0000753); Loss-of-function variant in CYP17A1 (MONDO:0013842) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DECREASES→ Progesterone (CHEBI:17748); Progesterone (CHEBI:17748) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Ambiguous genitalia (HP:0000069). Loss-of-function mutations in HSD3B2 (causing MONDO:0008727) impair the conversion of pregnenolone to progesterone. Similarly, loss-of-function mutations in CYP17A1 (causing MONDO:0013842) impair the conversion of progesterone to 17-alpha-hydroxyprogesterone. Both these enzymatic steps are critical within the broader steroidogenesis pathway, and their disruption leads to distinct but related phenotypes involving adrenal insufficiency and ambiguous genitalia, respectively.",
+      "mechanism_narrative": "Loss-of-function variant in HSD3B2 (MONDO:0008727) —DISRUPTS→ HSD3B2 (HGNC:4877); HSD3B2 (HGNC:4877) —DECREASES→ Pregnenolone (CHEBI:17750); Pregnenolone (CHEBI:17750) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Adrenal insufficiency (HP:0000753); Loss-of-function variant in CYP17A1 (MONDO:0013842) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DECREASES→ Progesterone (CHEBI:17748); Progesterone (CHEBI:17748) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Ambiguous genitalia (HP:0000069). Loss-of-function mutations in HSD3B2 (causing MONDO:0008727) impair the conversion of pregnenolone to progesterone. Similarly, loss-of-function mutations in CYP17A1 (causing MONDO:0013842) impair the conversion of progesterone to 17-alpha-hydroxyprogesterone. Both these enzymatic steps are critical within the broader steroidogenesis pathway, and their disruption leads to distinct but related phenotypes involving adrenal insufficiency and ambiguous genitalia, respectively.",
+      "falsification": {
+        "text": "If genetic sequencing reveals that the causal variants for MONDO:0013842 are not in CYP17A1, or the causal variants for MONDO:0008727 are not in HSD3B2, this hypothesis would be falsified. Additionally, if a significant proportion (e.g., >1%) of individuals with mutations in HSD3B2 do not exhibit adrenal insufficiency, or individuals with mutations in CYP17A1 do not exhibit features consistent with impaired steroidogenesis, the link would be weakened.",
+        "gnomad_variant": "gnomAD analysis showing high frequency of variants in HSD3B2 or CYP17A1 associated with these conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008727",
+        "diseaseBName": "congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in HSD3B2 (MONDO:0008727) —DISRUPTS→ HSD3B2 (HGNC:4877); HSD3B2 (HGNC:4877) —DECREASES→ Pregnenolone (CHEBI:17750); Pregnenolone (CHEBI:17750) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Adrenal insufficiency (HP:0000753); Loss-of-function variant in CYP17A1 (MONDO:0013842) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DECREASES→ Progesterone (CHEBI:17748); Progesterone (CHEBI:17748) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Ambiguous genitalia (HP:0000069). Loss-of-function mutations in HSD3B2 (causing MONDO:0008727) impair the conversion of pregnenolone to progesterone. Similarly, loss-of-function mutations in CYP17A1 (causing MONDO:0013842) impair the conversion of progesterone to 17-alpha-hydroxyprogesterone. Both these enzymatic steps are critical within the broader steroidogenesis pathway, and their disruption leads to distinct but related phenotypes involving adrenal insufficiency and ambiguous genitalia, respectively.",
+        "falsification": {
+          "text": "If genetic sequencing reveals that the causal variants for MONDO:0013842 are not in CYP17A1, or the causal variants for MONDO:0008727 are not in HSD3B2, this hypothesis would be falsified. Additionally, if a significant proportion (e.g., >1%) of individuals with mutations in HSD3B2 do not exhibit adrenal insufficiency, or individuals with mutations in CYP17A1 do not exhibit features consistent with impaired steroidogenesis, the link would be weakened.",
+          "gnomad_variant": "gnomAD analysis showing high frequency of variants in HSD3B2 or CYP17A1 associated with these conditions."
+        },
+        "translational": "Understanding the shared disruption of the steroidogenesis pathway in these two conditions can inform therapeutic strategies. For example, hormone replacement therapy is a cornerstone for both, and insights into the specific enzymatic blocks can help tailor treatment to restore hormonal balance and mitigate developmental consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008751",
+      "diseaseBName": "corticosterone methyloxidase type 1 deficiency",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "POR (HGNC:9187) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Cortisol (CHEBI:17794); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Aldosterone (CHEBI:17575); CYP11B2 (HGNC:2414) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); POR (HGNC:9187) —LEADS_TO→ Adrenal hyperplasia (HP:0000710); CYP11B2 (HGNC:2414) —LEADS_TO→ Corticosterone methyloxidase type 1 deficiency (MONDO:0008751). Loss-of-function mutations in POR (Disease A) and CYP11B2 (Disease B) both disrupt the shared pathway of steroidogenesis, leading to a decrease in downstream products including aldosterone. While POR deficiency has broader effects on multiple steroidogenic enzymes, CYP11B2 is specifically critical for the final step in aldosterone synthesis. The convergence is on the aldosterone biosynthesis pathway and its downstream phenotypic consequences.",
+      "mechanism_narrative": "POR (HGNC:9187) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Cortisol (CHEBI:17794); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Aldosterone (CHEBI:17575); CYP11B2 (HGNC:2414) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); POR (HGNC:9187) —LEADS_TO→ Adrenal hyperplasia (HP:0000710); CYP11B2 (HGNC:2414) —LEADS_TO→ Corticosterone methyloxidase type 1 deficiency (MONDO:0008751). Loss-of-function mutations in POR (Disease A) and CYP11B2 (Disease B) both disrupt the shared pathway of steroidogenesis, leading to a decrease in downstream products including aldosterone. While POR deficiency has broader effects on multiple steroidogenic enzymes, CYP11B2 is specifically critical for the final step in aldosterone synthesis. The convergence is on the aldosterone biosynthesis pathway and its downstream phenotypic consequences.",
+      "falsification": {
+        "text": "If genetic variants in POR are found to cause a phenotype entirely distinct from adrenal hyperplasia and not related to steroidogenesis, or if CYP11B2 variants are identified that do not impact aldosterone synthesis, this hypothesis would be falsified.",
+        "gnomad_variant": "rs758859330 (a known pathogenic variant in POR) has a gnomAD allele frequency > 0.01"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-194002"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-194002": 10
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008751",
+        "diseaseBName": "corticosterone methyloxidase type 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-194002"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-194002": 10
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "POR (HGNC:9187) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Cortisol (CHEBI:17794); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Aldosterone (CHEBI:17575); CYP11B2 (HGNC:2414) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); POR (HGNC:9187) —LEADS_TO→ Adrenal hyperplasia (HP:0000710); CYP11B2 (HGNC:2414) —LEADS_TO→ Corticosterone methyloxidase type 1 deficiency (MONDO:0008751). Loss-of-function mutations in POR (Disease A) and CYP11B2 (Disease B) both disrupt the shared pathway of steroidogenesis, leading to a decrease in downstream products including aldosterone. While POR deficiency has broader effects on multiple steroidogenic enzymes, CYP11B2 is specifically critical for the final step in aldosterone synthesis. The convergence is on the aldosterone biosynthesis pathway and its downstream phenotypic consequences.",
+        "falsification": {
+          "text": "If genetic variants in POR are found to cause a phenotype entirely distinct from adrenal hyperplasia and not related to steroidogenesis, or if CYP11B2 variants are identified that do not impact aldosterone synthesis, this hypothesis would be falsified.",
+          "gnomad_variant": "rs758859330 (a known pathogenic variant in POR) has a gnomAD allele frequency > 0.01"
+        },
+        "translational": "Understanding the shared pathway of aldosterone biosynthesis disruption in these two distinct genetic disorders can inform therapeutic strategies aimed at hormone replacement or modulation, potentially leading to improved management of adrenal insufficiency and related complications."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T08:27:39.719Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013842 (MONDO:0013842)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 14 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | obesity due to pro-opiomelanocortin deficiency (MONDO:0012335) | shared pathway | Tier 3 | 0.444 | Reactome:R-HSA-194002 |\n| 2 | classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency (MONDO:0008728) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-194002 |\n| 3 | congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency (MONDO:0008729) | shared pathway | Tier 3 | 0.413 | Reactome:R-HSA-194002 |\n| 4 | corticosterone methyloxidase type 2 deficiency (MONDO:0012524) | shared pathway | Tier 3 | 0.359 | Reactome:R-HSA-194002 |\n| 5 | apparent mineralocorticoid excess (MONDO:0009025) | shared pathway | Tier 3 | 0.319 | Reactome:R-HSA-194002, Reactome:R-HSA-9757110 |\n| 6 | congenital adrenal hyperplasia due to 17-alpha-hydroxylase deficiency (MONDO:0008730) | shared pathway | Tier 3 | 0.313 | Reactome:R-HSA-194002 |\n| 7 | glucocorticoid-remediable aldosteronism (MONDO:0007080) | shared pathway | Tier 3 | 0.310 | Reactome:R-HSA-194002 |\n| 8 | corticosteroid-binding globulin deficiency (MONDO:0012675) | shared pathway | Tier 3 | 0.309 | Reactome:R-HSA-194002, Reactome:R-HSA-9757110 |\n| 9 | congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency (MONDO:0008727) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-194002 |\n| 10 | corticosterone methyloxidase type 1 deficiency (MONDO:0008751) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-194002 |\n\n### CANDIDATE DETAIL\n#### 1. obesity due to pro-opiomelanocortin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.444)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** HSD11B1 (HGNC:4996) —DECREASES→ Cortisol (CHEBI:17700); Cortisol (CHEBI:17700) —DISRUPTS→ Glucocorticoid signaling (GO:0032129); Glucocorticoid signaling (GO:0032129) —LEADS_TO→ Adrenal insufficiency (HP:0000706); POMC (HGNC:9198) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17994) —DISRUPTS→ POMC processing pathway (GO:0007220); POMC processing pathway (GO:0007220) —LEADS_TO→ Obesity (HP:0005101); POMC (HGNC:9198) —DISRUPTS→ POMC processing pathway (GO:0007220). Mutations in HSD11B1 lead to decreased cortisol production, impacting glucocorticoid signaling and causing adrenal insufficiency. Mutations in POMC lead to impaired processing of POMC, resulting in reduced levels of melanocortins like alpha-MSH, which disrupts appetite regulation and leads to obesity. Both pathways converge on the central POMC processing pathway, highlighting a shared mechanistic basis in the regulation of hormonal signaling.\n\n**How to falsify it:** Identification of a common pathogenic variant in HSD11B1 or POMC that is present in individuals with the other disease, or evidence that the POMC processing pathway is not a shared convergence point for these conditions. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of the POMC processing pathway in both diseases could lead to novel therapeutic strategies targeting hormonal imbalances in both adrenal insufficiency and obesity.\n\n---\n\n#### 2. classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** HSD11B1 (HGNC:4986) —DISRUPTS→ Cortisol synthesis and inactivation (P00050); Cortisol synthesis and inactivation (P00050) —LEADS_TO→ Adrenal hypoplasia (HP:0000749); CYP21A2 (HGNC:2410) —DISRUPTS→ Steroidogenesis (P00050); Steroidogenesis (P00050) —LEADS_TO→ Virilization (HP:0004749); Steroidogenesis (P00050) —LEADS_TO→ Ambiguous genitalia (HP:0000065). Loss-of-function mutations in HSD11B1 (Disease A) disrupt cortisol synthesis/inactivation, potentially leading to adrenal hypoplasia. Loss-of-function mutations in CYP21A2 (Disease B) disrupt steroidogenesis, leading to virilization and ambiguous genitalia due to precursor accumulation and shunting towards androgen production. The convergence is on the broader pathway of steroidogenesis, where defects in different key enzymes (HSD11B1 and CYP21A2) lead to distinct but related endocrine phenotypes.\n\n**How to falsify it:** Demonstration that mutations in HSD11B1 do not affect cortisol metabolism or adrenal development, or that mutations in CYP21A2 do not impact steroidogenesis and lead to virilization. _(variant: Absence of pathogenic variants in HSD11B1 and CYP21A2 in relevant human populations.)_\n\n**Why it matters:** Understanding the shared pathway of steroidogenesis and the distinct roles of HSD11B1 and CYP21A2 provides targets for potential therapeutic interventions aimed at hormone replacement or modulation in these conditions.\n\n---\n\n#### 3. congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.413)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** CYP11B1 (HGNC:2404) —DECREASES→ 11-deoxycortisol (CHEBI:16726); 11-deoxycortisol (CHEBI:16726) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-109601); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Adrenal hyperplasia (HP:0000719); Cortisol biosynthesis (REACT:R-HSA-109601) —LEADS_TO→ Glucocorticoid deficiency (HP:0000818). Loss-of-function mutations in CYP11B1 impair the conversion of 11-deoxycortisol to cortisol, leading to adrenal hyperplasia due to precursor accumulation and glucocorticoid deficiency. Both diseases share these downstream consequences.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in CYP11B1 who do not exhibit either adrenal hyperplasia or glucocorticoid deficiency, or conversely, identifying patients with these phenotypes but lacking CYP11B1 variants. _(variant: High frequency of pathogenic variants in CYP11B1 in gnomAD.)_\n\n**Why it matters:** Understanding this overlap can inform diagnostic strategies and the development of targeted therapies for conditions affecting steroid hormone synthesis, potentially leveraging insights from one disease to treat the other.\n\n---\n\n#### 4. corticosterone methyloxidase type 2 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.359)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** CYP11B2 (HGNC:2403) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Aldosterone (CHEBI:16726); Aldosterone (CHEBI:16726) —LEADS_TO→ Adrenal insufficiency (HP:0000766); HSD11B1 (HGNC:4979) —DISRUPTS→ Aldosterone synthesis pathway (REACT:R-HSA-70315); Aldosterone synthesis pathway (REACT:R-HSA-70315) —PRODUCES→ Cortisol (CHEBI:17822); Cortisol (CHEBI:17822) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374). Loss-of-function mutations in CYP11B2 cause corticosterone methyloxidase type 2 deficiency, leading to impaired aldosterone synthesis and adrenal insufficiency. While HSD11B1 is primarily involved in cortisol metabolism, it also plays a role in the broader steroidogenic pathway. Disruptions in this pathway, potentially through altered HSD11B1 activity or feedback mechanisms, could contribute to mineralocorticoid deficiency, linking the two diseases through a shared disruption in the aldosterone synthesis pathway.\n\n**How to falsify it:** Absence of mutations in CYP11B2 or HSD11B1 in patients diagnosed with either disease would falsify this hypothesis. Furthermore, identification of distinct molecular pathways that do not converge at the aldosterone synthesis level would also refute this proposed link.\n\n**Why it matters:** Understanding the shared mechanistic basis in steroidogenesis could lead to novel therapeutic targets for managing adrenal insufficiency and related electrolyte imbalances, potentially through pathway modulation or enzyme replacement strategies.\n\n---\n\n#### 5. apparent mineralocorticoid excess  —  Tier 3 — Moderate / Emerging  (fitness 0.319)\n**Link type:** shared pathway (Reactome:R-HSA-194002, Reactome:R-HSA-9757110)\n\n**Proposed mechanism:** Hydroxysteroid 11-beta dehydrogenase 2 (HGNC:4940) —DISRUPTS→ Cortisol (CHEBI:17790); Hydroxysteroid 11-beta dehydrogenase 1 (HGNC:4939) —DISRUPTS→ Corticosterone (CHEBI:17791); Cortisol (CHEBI:17790) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Corticosterone (CHEBI:17791) —BINDS→ Mineralocorticoid receptor activation (GO:0035556); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypertension (HP:0000822); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Hypokalemia (HP:0002174); Mineralocorticoid receptor activation (GO:0035556) —LEADS_TO→ Metabolic Syndrome (HP:0004301). Loss-of-function mutations in HSD11B2 (Disease B, apparent mineralocorticoid excess) prevent the inactivation of cortisol to cortisone, leading to excessive binding of cortisol to the mineralocorticoid receptor and subsequent hypertension and hypokalemia. Dysregulation of HSD11B1 (Disease A, e.g., metabolic syndrome) can lead to increased local conversion of cortisone to cortisol or altered corticosterone metabolism, also resulting in increased mineralocorticoid receptor activation and related phenotypes.\n\n**How to falsify it:** Identification of individuals with mutations in HSD11B1 or HSD11B2 that do not lead to altered cortisol/corticosterone levels or mineralocorticoid receptor activity, or the absence of hypertension and hypokalemia in such individuals. _(variant: Exome sequencing data from gnomAD showing common variants (AF > 0.1%) in HSD11B1 or HSD11B2 associated with these diseases.)_\n\n**Why it matters:** Understanding the shared role of HSD11B1 and HSD11B2 in regulating mineralocorticoid receptor activity offers potential therapeutic targets for both apparent mineralocorticoid excess and related metabolic disorders like hypertension and metabolic syndrome, possibly through pharmacological modulation of these enzymes or their downstream effects.\n\n---\n\n#### 6. congenital adrenal hyperplasia due to 17-alpha-hydroxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.313)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** CYP17A1 loss-of-function variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 haploinsufficiency variant (null) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-109643); CYP17A1 (HGNC:2410) —DECREASES→ 17-alpha-hydroxyprogesterone (CHEBI:78595); CYP17A1 (HGNC:2410) —DECREASES→ Androgens (CHEBI:23445); 17-alpha-hydroxyprogesterone (CHEBI:78595) —LEADS_TO→ Mineralocorticoid deficiency (HP:0003133); Androgens (CHEBI:23445) —LEADS_TO→ Female pseudohermaphroditism (HP:0000078). Loss-of-function or haploinsufficiency variants in CYP17A1 disrupt steroidogenesis. This leads to decreased production of androgens and 17-alpha-hydroxyprogesterone, resulting in phenotypes such as mineralocorticoid deficiency and female pseudohermaphroditism.\n\n**How to falsify it:** Identification of a common, highly penetrant CYP17A1 variant with a significantly different functional consequence (e.g., gain-of-function) in individuals with MONDO:0013842 compared to those with MONDO:0008730, or evidence that the two diseases arise from distinct, non-overlapping molecular pathways despite the shared gene. _(variant: rs743507285 (a known pathogenic variant in CYP17A1, if found at high frequency in gnomAD without associated phenotype))_\n\n**Why it matters:** Understanding the shared role of CYP17A1 in steroidogenesis and the spectrum of its functional consequences can inform the development of targeted therapies for hormonal and developmental abnormalities in both conditions. For example, strategies to restore partial enzyme activity or manage downstream hormonal imbalances could be beneficial.\n\n---\n\n#### 7. glucocorticoid-remediable aldosteronism  —  Tier 3 — Moderate / Emerging  (fitness 0.310)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** CYP11B1 (HGNC:2406) —DISRUPTS→ Cortisol biosynthesis (REACT:R-HSA-2405718); Cortisol biosynthesis (REACT:R-HSA-2405718) —LEADS_TO→ Adrenal insufficiency (HP:0001942); CYP11B1-CYP11B2 fusion gene (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); CYP11B2 (HGNC:2407) —INCREASES→ Aldosterone biosynthesis (REACT:R-HSA-2405719); Aldosterone biosynthesis (REACT:R-HSA-2405719) —LEADS_TO→ Hypertension (HP:0000822). Haploinsufficiency of CYP11B1 (Disease A) disrupts cortisol biosynthesis, leading to adrenal insufficiency. A fusion gene involving CYP11B1 and CYP11B2 (Disease B) causes a gain-of-function in CYP11B2's role in aldosterone biosynthesis, resulting in hypertension.\n\n**How to falsify it:** Absence of mutations in CYP11B1 for Disease A or the characteristic CYP11B1-CYP11B2 fusion gene in affected individuals of Disease B, or identification of distinct molecular pathways not involving steroidogenesis.\n\n**Why it matters:** Understanding the shared pathway of steroidogenesis, despite different genetic origins and functional consequences, can inform therapeutic strategies. For Disease A, hormone replacement therapy is standard. For Disease B, targeting mineralocorticoid receptor antagonists is common, but understanding the upstream genetic defect highlights the specific pathway dysregulation.\n\n---\n\n#### 8. corticosteroid-binding globulin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.309)\n**Link type:** shared pathway (Reactome:R-HSA-194002, Reactome:R-HSA-9757110)\n\n**Proposed mechanism:** SERPINA6 (HGNC:10570) —DECREASES→ Abnormal corticosteroid levels (HP:0030198); SERPINA6 (HGNC:10570) —DISRUPTS→ Glucocorticoid signaling pathway (GO:0043149); Glucocorticoid signaling pathway (GO:0043149) —LEADS_TO→ Hypertension (HP:0000822). Loss-of-function mutations in SERPINA6 lead to corticosteroid-binding globulin deficiency, resulting in altered corticosteroid levels (HP:0030198). Dysregulation of the glucocorticoid signaling pathway (GO:0043149) due to SERPINA6 dysfunction can contribute to hypertension (HP:0000822) as seen in MONDO:0013842.\n\n**How to falsify it:** Demonstration that the causal variants for MONDO:0013842 do not affect SERPINA6 or its downstream signaling, or that the identified variants in SERPINA6 for MONDO:0013842 do not lead to a loss-of-function or haploinsufficiency phenotype consistent with altered corticosteroid metabolism and hypertension.\n\n**Why it matters:** Understanding the shared role of SERPINA6 in both diseases could lead to novel therapeutic strategies targeting the glucocorticoid signaling pathway for the treatment of corticosteroid-binding globulin deficiency and related hypertensive disorders.\n\n---\n\n#### 9. congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** Loss-of-function variant in HSD3B2 (MONDO:0008727) —DISRUPTS→ HSD3B2 (HGNC:4877); HSD3B2 (HGNC:4877) —DECREASES→ Pregnenolone (CHEBI:17750); Pregnenolone (CHEBI:17750) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Adrenal insufficiency (HP:0000753); Loss-of-function variant in CYP17A1 (MONDO:0013842) —DISRUPTS→ CYP17A1 (HGNC:2410); CYP17A1 (HGNC:2410) —DECREASES→ Progesterone (CHEBI:17748); Progesterone (CHEBI:17748) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-109629); Steroidogenesis (REACT:R-HSA-109629) —LEADS_TO→ Ambiguous genitalia (HP:0000069). Loss-of-function mutations in HSD3B2 (causing MONDO:0008727) impair the conversion of pregnenolone to progesterone. Similarly, loss-of-function mutations in CYP17A1 (causing MONDO:0013842) impair the conversion of progesterone to 17-alpha-hydroxyprogesterone. Both these enzymatic steps are critical within the broader steroidogenesis pathway, and their disruption leads to distinct but related phenotypes involving adrenal insufficiency and ambiguous genitalia, respectively.\n\n**How to falsify it:** If genetic sequencing reveals that the causal variants for MONDO:0013842 are not in CYP17A1, or the causal variants for MONDO:0008727 are not in HSD3B2, this hypothesis would be falsified. Additionally, if a significant proportion (e.g., >1%) of individuals with mutations in HSD3B2 do not exhibit adrenal insufficiency, or individuals with mutations in CYP17A1 do not exhibit features consistent with impaired steroidogenesis, the link would be weakened. _(variant: gnomAD analysis showing high frequency of variants in HSD3B2 or CYP17A1 associated with these conditions.)_\n\n**Why it matters:** Understanding the shared disruption of the steroidogenesis pathway in these two conditions can inform therapeutic strategies. For example, hormone replacement therapy is a cornerstone for both, and insights into the specific enzymatic blocks can help tailor treatment to restore hormonal balance and mitigate developmental consequences.\n\n---\n\n#### 10. corticosterone methyloxidase type 1 deficiency  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-194002)\n\n**Proposed mechanism:** POR (HGNC:9187) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Cortisol (CHEBI:17794); Steroidogenesis (REACT:R-HSA-399975) —DECREASES→ Aldosterone (CHEBI:17575); CYP11B2 (HGNC:2414) —DISRUPTS→ Steroidogenesis (REACT:R-HSA-399975); POR (HGNC:9187) —LEADS_TO→ Adrenal hyperplasia (HP:0000710); CYP11B2 (HGNC:2414) —LEADS_TO→ Corticosterone methyloxidase type 1 deficiency (MONDO:0008751). Loss-of-function mutations in POR (Disease A) and CYP11B2 (Disease B) both disrupt the shared pathway of steroidogenesis, leading to a decrease in downstream products including aldosterone. While POR deficiency has broader effects on multiple steroidogenic enzymes, CYP11B2 is specifically critical for the final step in aldosterone synthesis. The convergence is on the aldosterone biosynthesis pathway and its downstream phenotypic consequences.\n\n**How to falsify it:** If genetic variants in POR are found to cause a phenotype entirely distinct from adrenal hyperplasia and not related to steroidogenesis, or if CYP11B2 variants are identified that do not impact aldosterone synthesis, this hypothesis would be falsified. _(variant: rs758859330 (a known pathogenic variant in POR) has a gnomAD allele frequency > 0.01)_\n\n**Why it matters:** Understanding the shared pathway of aldosterone biosynthesis disruption in these two distinct genetic disorders can inform therapeutic strategies aimed at hormone replacement or modulation, potentially leading to improved management of adrenal insufficiency and related complications.\n\n---"
+}

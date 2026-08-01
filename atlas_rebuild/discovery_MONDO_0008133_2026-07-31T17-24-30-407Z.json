@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0008133",
+    "name": "optic atrophy 3"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0009787",
+      "diseaseBName": "3-methylglutaconic aciduria type 3",
+      "fitness": 0.7312,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial inner membrane organization (GO:0005751); Mitochondrial inner membrane organization (GO:0005751) —LEADS_TO→ Optic atrophy (HP:0000691); OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0043500); Mitochondrial protein homeostasis (GO:0043500) —LEADS_TO→ 3-methylglutaconic aciduria (HP:0010871). Loss-of-function mutations in OPA3 disrupt mitochondrial inner membrane organization, leading to optic atrophy. The same OPA3 dysfunction also impairs mitochondrial protein homeostasis, resulting in 3-methylglutaconic aciduria.",
+      "mechanism_narrative": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial inner membrane organization (GO:0005751); Mitochondrial inner membrane organization (GO:0005751) —LEADS_TO→ Optic atrophy (HP:0000691); OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0043500); Mitochondrial protein homeostasis (GO:0043500) —LEADS_TO→ 3-methylglutaconic aciduria (HP:0010871). Loss-of-function mutations in OPA3 disrupt mitochondrial inner membrane organization, leading to optic atrophy. The same OPA3 dysfunction also impairs mitochondrial protein homeostasis, resulting in 3-methylglutaconic aciduria.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in OPA3 that are exclusively associated with one disease phenotype and not the other, or discovery of distinct pathogenic mechanisms for each disease not involving OPA3.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:8142"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0009787",
+        "diseaseBName": "3-methylglutaconic aciduria type 3",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:8142"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7312,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial inner membrane organization (GO:0005751); Mitochondrial inner membrane organization (GO:0005751) —LEADS_TO→ Optic atrophy (HP:0000691); OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0043500); Mitochondrial protein homeostasis (GO:0043500) —LEADS_TO→ 3-methylglutaconic aciduria (HP:0010871). Loss-of-function mutations in OPA3 disrupt mitochondrial inner membrane organization, leading to optic atrophy. The same OPA3 dysfunction also impairs mitochondrial protein homeostasis, resulting in 3-methylglutaconic aciduria.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in OPA3 that are exclusively associated with one disease phenotype and not the other, or discovery of distinct pathogenic mechanisms for each disease not involving OPA3.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of OPA3 in mitochondrial function could lead to therapeutic strategies targeting mitochondrial health for both optic atrophy and metabolic disorders like 3-methylglutaconic aciduria."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:24:30.407Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** optic atrophy 3 (MONDO:0008133)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | 3-methylglutaconic aciduria type 3 (MONDO:0009787) | shared gene | Tier 1 | 0.731 | HGNC:8142 |\n\n### CANDIDATE DETAIL\n#### 1. 3-methylglutaconic aciduria type 3  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.731)\n**Link type:** shared causal gene (HGNC:8142)\n\n**Proposed mechanism:** OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial inner membrane organization (GO:0005751); Mitochondrial inner membrane organization (GO:0005751) —LEADS_TO→ Optic atrophy (HP:0000691); OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0043500); Mitochondrial protein homeostasis (GO:0043500) —LEADS_TO→ 3-methylglutaconic aciduria (HP:0010871). Loss-of-function mutations in OPA3 disrupt mitochondrial inner membrane organization, leading to optic atrophy. The same OPA3 dysfunction also impairs mitochondrial protein homeostasis, resulting in 3-methylglutaconic aciduria.\n\n**How to falsify it:** Identification of pathogenic variants in OPA3 that are exclusively associated with one disease phenotype and not the other, or discovery of distinct pathogenic mechanisms for each disease not involving OPA3. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of OPA3 in mitochondrial function could lead to therapeutic strategies targeting mitochondrial health for both optic atrophy and metabolic disorders like 3-methylglutaconic aciduria.\n\n---"
+}
