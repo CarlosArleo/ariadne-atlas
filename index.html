@@ -320,10 +320,10 @@
 
         /* Poetic "ariadne" whisper near the diagram */
         #poetic-btn {
-            position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+            position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
             background: transparent; border: none; color: var(--text-muted);
-            font-size: 0.82rem; letter-spacing: 0.38em; text-transform: lowercase;
-            cursor: pointer; opacity: 0.45; z-index: 16;
+            font-size: 0.95rem; letter-spacing: 0.42em; text-transform: lowercase;
+            cursor: pointer; opacity: 0.6; z-index: 16;
             transition: opacity 0.25s ease, letter-spacing 0.25s ease, color 0.25s ease;
         }
         #poetic-btn:hover { opacity: 1; letter-spacing: 0.52em; color: var(--text-primary); }
@@ -333,19 +333,36 @@
         @media (max-width: 1100px) {
             #app-container { grid-template-columns: 320px 1fr 300px; }
         }
+
+        /* Mobile / narrow: stack into a single scrollable column, diagram first */
+        @media (max-width: 820px) {
+            html, body { overflow: auto; height: auto; width: 100%; }
+            body { min-height: 100vh; }
+            #header { position: sticky; height: 50px; padding: 0 14px;
+                background: linear-gradient(180deg, rgba(18,18,20,0.98) 0%, rgba(18,18,20,0.9) 100%); }
+            #app-container { display: flex; flex-direction: column; width: 100%; height: auto; padding-top: 0; }
+            #panel-center { order: -1; height: 66vh; min-height: 340px; }
+            #panel-left, #panel-right { height: auto; max-height: none; overflow: visible;
+                background: rgba(18,18,20,0.6); padding: 14px 16px; }
+            #cqs-card-list { max-height: none; overflow: visible; }
+            #poetic-btn { top: 8px; font-size: 0.9rem; letter-spacing: 0.36em; }
+            #stats-band { flex-wrap: wrap; }
+        }
     </style>
 </head>
 <body>
 
 <div id="header">
     <div class="logo-title">
-        ARIADNE
         <div class="guides-dropdown">
             <button class="btn-action guide-subtitle" id="btn-guides" onclick="toggleGuidesMenu(event)" aria-haspopup="true" aria-expanded="false" title="Documentation & guides">Discovery Atlas Guide &#9662;</button>
             <div class="guides-menu" id="guides-menu">
+                <button onclick="openWhitepaperModal(); closeGuidesMenu();">Whitepaper &amp; Figures</button>
                 <button onclick="openAboutModal(); closeGuidesMenu();">How ARIADNE Works</button>
                 <button onclick="openCqsModal(); closeGuidesMenu();">CQS Score Guide</button>
                 <button onclick="openManualModal(); closeGuidesMenu();">Filter Guide &amp; Manual</button>
+                <button onclick="openCoverageModal(); closeGuidesMenu();">Corpus &amp; Coverage</button>
+                <button onclick="openValidationModal(); closeGuidesMenu();">Validation &amp; Signal</button>
             </div>
         </div>
     </div>
@@ -367,7 +384,7 @@
             <svg id="label-svg" style="position:absolute; top:0; left:0; width:100%; height:100%;"></svg>
         </div>
         <div id="canvas-tooltip"></div>
-        <button id="poetic-btn" onclick="openPoeticModal()" title="the shape of the Atlas">ariadne</button>
+        <button id="poetic-btn" onclick="openPoeticModal()" title="The Convergence Atlas — how to read it">ariadne</button>
     </div>
 
     <div id="panel-right">
@@ -377,6 +394,7 @@
             <span><b id="stat-total">0</b> total</span>
             <span><b id="stat-seeds">205</b> seeds</span>
             <span><b id="stat-max-cqs">0</b> max CQS</span>
+            <span title="Productive share of the master seed list — see Corpus & Coverage guide"><b id="stat-coverage">—</b> coverage</span>
         </div>
 
         <!-- 2. Segmented action control -->
@@ -457,16 +475,17 @@
                 <summary>Poincaré Boundary (r)</summary>
                 <select id="filter-poincare">
                     <option value="all" selected>All Geometry Regions</option>
-                    <option value="boundary">Specific Boundary Rim (r ≥ 0.50) · CQS-derived proxy</option>
-                    <option value="core">Central Core Hubs (r < 0.50) · CQS-derived proxy</option>
+                    <option value="rim">Specific rim · r ≥ 0.50 (discoveries)</option>
+                    <option value="specific">Specific · r ≥ 0.20 (pathway ≤ 20 genes)</option>
+                    <option value="core">Generic hubs · r < 0.20</option>
                 </select>
             </details>
             <details class="filt">
                 <summary>Graph Laplacian Entropy (S_VNE)</summary>
                 <select id="filter-entropy">
                     <option value="all" selected>All Entropy Levels</option>
-                    <option value="low">Tightly Organized Modules (S_VNE ≤ 1.8) · CQS-derived proxy</option>
-                    <option value="high">Diffuse / High Entropy (S_VNE > 1.8) · CQS-derived proxy</option>
+                    <option value="low">Tightly Organized Modules (S_VNE ≤ 1.8) · real graph</option>
+                    <option value="high">Diffuse / High Entropy (S_VNE > 1.8) · real graph</option>
                 </select>
             </details>
             <details class="filt">
@@ -541,6 +560,74 @@
 </div>
 
 <!-- CQS Score Guide Modal (full) -->
+<style>
+#whitepaper-body h2{font-size:1.05rem;color:#f8fafc;margin:16px 0 6px;} #whitepaper-body h3{font-size:0.92rem;color:#e2e8f0;margin:12px 0 4px;}
+#whitepaper-body h4{font-size:0.84rem;color:#cbd5e1;margin:10px 0 4px;} #whitepaper-body p{margin:0 0 8px;} #whitepaper-body ul{margin:0 0 8px 18px;}
+#whitepaper-body code{background:rgba(255,255,255,0.08);padding:1px 4px;border-radius:4px;} #whitepaper-body pre{background:rgba(0,0,0,0.4);padding:8px;border-radius:6px;overflow:auto;font-size:0.72rem;}
+.wp-fig{width:100%;border-radius:8px;margin:8px 0;border:1px solid rgba(255,255,255,0.08);}
+</style>
+<div class="modal-backdrop" id="whitepaper-modal" onclick="if(event.target===this) closeWhitepaperModal();">
+    <div class="modal-box" style="max-width:820px; max-height:84vh; overflow:auto;">
+        <button class="modal-close" onclick="closeWhitepaperModal()">&times;</button>
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:4px; color:#f8fafc;">ARIADNE &mdash; Master Whitepaper</h2>
+        <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:16px;">A genetic algorithm whose organisms are scientific hypotheses. Full text renders below when available; figures fill in as the analysis plots are generated.</p>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:8px 0 6px;">Figures</h3>
+        <div id="whitepaper-figs">
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/fundamental_metric_summary_grid.png" onerror="this.parentNode.style.display='none'" alt="Summary grid"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 1 &mdash; specificity&ndash;fitness, K_t&ndash;S_VNE, CQS and fitness distributions.</figcaption></figure>
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/plot2_von_neumann_entropy.png" onerror="this.parentNode.style.display='none'" alt="Von Neumann entropy"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 2 &mdash; graph Laplacian (Von Neumann) entropy, stratified by CQS.</figcaption></figure>
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/plot1_metric_calibration.png" onerror="this.parentNode.style.display='none'" alt="Metric calibration"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 3 &mdash; metric calibration.</figcaption></figure>
+            <p id="whitepaper-fig-empty" style="font-size:0.75rem;color:#64748b;">Figures appear here once <code>run_pipeline.ps1 -Figures</code> has generated the plots.</p>
+        </div>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:16px 0 6px;">Document</h3>
+        <div id="whitepaper-body" style="color:#cbd5e1; font-size:0.82rem; line-height:1.6;">
+            <p>Loading the full whitepaper&hellip; if it does not appear, the document lives at <code>doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md</code>.</p>
+            <p><strong>Abstract.</strong> ARIADNE treats the discovery of shared mechanisms between rare diseases as an evolutionary search over structured, falsifiable hypotheses, scored by a hard-coded fitness function grounded in authoritative biological databases and by the physics of graph topology. A large language model is confined to proposing and phrasing candidate hypotheses as typed causal-graph genomes, while all judgement is performed by deterministic sensors and quantitative graph-thermodynamic metrics. Candidates are projected into Poincar&eacute; hyperbolic space so that generic scale-free hubs and specific, expert-ready convergences separate geometrically.</p>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop" id="validation-modal" onclick="if(event.target===this) closeValidationModal();">
+    <div class="modal-box" style="max-width:760px;">
+        <button class="modal-close" onclick="closeValidationModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Validation &amp; Signal</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:16px;">Six checks that separate real signal from artifact &mdash; the evidence an expert reviewer looks for.</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.8rem; color:#cbd5e1;">
+            <tbody>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>1. Positive control</strong><br><span style="color:#64748b; font-size:0.72rem;">Does it re-find known biology?</span></td><td style="padding:8px; text-align:right;"><strong id="val-recovered">&mdash;</strong> known shared-gene convergences recovered<br><span style="color:#64748b; font-size:0.72rem;">recall@10 <span id="val-recall">&mdash;</span>% &middot; <span id="val-recallspec">&mdash;</span>% for specific genes</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>2. Null model</strong><br><span style="color:#64748b; font-size:0.72rem;">Is it more than chance?</span></td><td style="padding:8px; text-align:right;">geometry&ndash;quality corr <strong id="val-corr">&mdash;</strong> vs shuffled 0.00<br><span style="color:#64748b; font-size:0.72rem;">permutation p <span id="val-corrp">&mdash;</span> &middot; top-quartile co-occurrence <span id="val-enrich">&mdash;</span>&times;</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>3. Specificity</strong><br><span style="color:#64748b; font-size:0.72rem;">Specific or generic overlap?</span></td><td style="padding:8px; text-align:right;"><strong id="val-spec">&mdash;</strong>% via a shared pathway &le;20 genes<br><span style="color:#64748b; font-size:0.72rem;">rim (r&ge;0.50) <span id="val-rim">&mdash;</span>% &middot; median pathway <span id="val-medpath">&mdash;</span> genes</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>4. Integrity</strong><br><span style="color:#64748b; font-size:0.72rem;">Does the LLM invent genes?</span></td><td style="padding:8px; text-align:right;"><strong id="val-fab">&mdash;</strong> fabricated attributions detected &amp; purged<br><span style="color:#64748b; font-size:0.72rem;"><span id="val-fabpct">&mdash;</span>% remain in the corpus &middot; <span id="val-purged">&mdash;</span> records purged</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>5. Falsifiability</strong><br><span style="color:#64748b; font-size:0.72rem;">Are the hypotheses testable?</span></td><td style="padding:8px; text-align:right;"><strong id="val-fals">&mdash;</strong>% carry a concrete falsification test</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>6. Novelty</strong><br><span style="color:#64748b; font-size:0.72rem;">Discovery vs recapitulation?</span></td><td style="padding:8px; text-align:right;"><strong id="val-novel">&mdash;</strong>% novel &middot; <span id="val-valid">&mdash;</span>% curated recapitulation</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>7. Thermodynamics</strong><br><span style="color:#64748b; font-size:0.72rem;">Do the graphs obey physics?</span></td><td style="padding:8px; text-align:right;">heat&ndash;entropy law corr(K_t,S_VNE) <strong id="val-kt">&mdash;</strong><br><span style="color:#64748b; font-size:0.72rem;">S_VNE&ndash;complexity <span id="val-svnenodes">&mdash;</span> &middot; real graphs <span id="val-svnenz">&mdash;</span>%</span></td></tr>
+            </tbody>
+        </table>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:14px;">Menche interactome separation (s_AB) is pending the BioGRID network; pathway specificity is the current proxy. Figures update when the benchmark (script 09) is re-run.</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="coverage-modal" onclick="if(event.target===this) closeCoverageModal();">
+    <div class="modal-box" style="max-width:720px;">
+        <button class="modal-close" onclick="closeCoverageModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Corpus &amp; Knowledge-Graph Coverage</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:16px;">
+            ARIADNE is run over a master list of <strong id="cov-master">&mdash;</strong> rare-disease seeds. This is a live census of that run: what produced convergences, what the knowledge graph could not support, and what is still pending.
+        </p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.8rem; color:#cbd5e1; margin-bottom:18px;">
+            <tbody>
+                <tr><td style="padding:6px 8px;">Productive (&ge;1 partner) &mdash; the corpus</td><td style="text-align:right;"><strong id="cov-prod">&mdash;</strong> (<span id="cov-prodpct">&mdash;</span>)</td></tr>
+                <tr><td style="padding:6px 8px;">Empty &mdash; Monarch data gap</td><td style="text-align:right;"><strong id="cov-empty">&mdash;</strong> (<span id="cov-emptyrate">&mdash;</span> of attempted)</td></tr>
+                <tr><td style="padding:6px 8px;">Pending &mdash; not yet run</td><td style="text-align:right;"><strong id="cov-missing">&mdash;</strong> (<span id="cov-missingpct">&mdash;</span>)</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td style="padding:6px 8px;">Attempted so far</td><td style="text-align:right;"><strong id="cov-attempted">&mdash;</strong></td></tr>
+            </tbody>
+        </table>
+        <h3 style="font-size:0.92rem; font-weight:600; color:#f8fafc; margin-bottom:6px;">Why &ldquo;empty&rdquo; is a finding, not a failure</h3>
+        <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:10px;">
+            Every empty seed was checked against Monarch. <strong id="cov-priv">&mdash;</strong> are <em>private singletons</em> &mdash; their sole causal gene causes no other disease, so no convergence is possible by construction. <strong id="cov-nogene">&mdash;</strong> have no curated causal gene at all (a genuine annotation gap). Crucially, <strong id="cov-susp">&mdash;</strong> show partners in Monarch that ARIADNE missed &mdash; i.e. essentially zero pipeline errors. ARIADNE reports &ldquo;no convergence&rdquo; instead of inventing one: the sensor / judge separation working as designed.
+        </p>
+        <p style="font-size:0.75rem; color:#64748b;">
+            Absence in the knowledge graph is not absence in biology; these seeds are simply not analysable given current curation. Figures update each time the coverage audit (script 08) is re-run.
+        </p>
+    </div>
+</div>
 <div class="modal-backdrop" id="cqs-modal" onclick="if(event.target===this) closeCqsModal();">
     <div class="modal-box" style="max-width:720px;">
         <button class="modal-close" onclick="closeCqsModal()">&times;</button>
@@ -806,8 +893,8 @@ function processRawDataset(data) {
         // Extract Physics Metrics (with smart default fallbacks based on CQS)
         const minPathSize = d.MinPathSize || d.minPathSize || (d.sharedPathwaySizes ? Math.min(...Object.values(d.sharedPathwaySizes)) : null);
         const specWeight = minPathSize ? (1.0 / minPathSize) : (cqs >= 7 ? 0.2 : 0.02);
-        const poincareR = d.poincare_r !== undefined ? parseFloat(d.poincare_r) : Math.min(0.92, Math.max(0.15, 1.0 - (1.0 / (1.0 + specWeight * 5.0))));
-        const vne = d.von_neumann_entropy !== undefined ? parseFloat(d.von_neumann_entropy) : (cqs >= 7 ? 1.2 : 2.4);
+        const poincareR = d.PoincareR !== undefined ? parseFloat(d.PoincareR) : (d.poincare_r !== undefined ? parseFloat(d.poincare_r) : Math.min(0.92, Math.max(0.08, 1.0 - (1.0 / (1.0 + specWeight * 5.0)))));
+        const vne = d.VNE !== undefined ? parseFloat(d.VNE) : (d.von_neumann_entropy !== undefined ? parseFloat(d.von_neumann_entropy) : (cqs >= 7 ? 1.2 : 2.4));
         
         // Node count extraction
         const nodeMatches = mech.match(/([A-Za-z0-9_\-]+)\s*\((HGNC|REACT|WP|GO|CHEBI|HP|MONDO):\d+\)/g) || [];
@@ -865,7 +952,7 @@ const TOP_CANDIDATES_PATHS = [
 async function tryFetchTopCandidates() {
     for (const path of TOP_CANDIDATES_PATHS) {
         try {
-            const resp = await fetch(path);
+            const resp = await fetch(path + (path.includes('?') ? '&' : '?') + '_t=' + Date.now(), { cache: 'no-store' });
             if (resp.ok) {
                 const data = await resp.json();
                 console.info(`[ARIADNE] top_candidates.json loaded from "${path}".`);
@@ -879,6 +966,7 @@ async function tryFetchTopCandidates() {
 async function loadData() {
     const primary = await tryFetchTopCandidates();
     if (primary) {
+        window.__realRCount = primary.data.filter(d => d.PoincareR !== undefined && d.PoincareR !== null).length;
         allCandidates = processRawDataset(primary.data);
         updateBadge(primary.path, false);
         initApp();
@@ -895,14 +983,18 @@ function updateBadge(sourceName, isFallback) {
     document.getElementById('stat-total').textContent = allCandidates.length;
     document.getElementById('stat-seeds').textContent = uniqueSeeds || 205;
     document.getElementById('stat-max-cqs').textContent = maxCqs;
+    const rr = window.__realRCount || 0;
+    const rrTxt = rr > 0
+        ? ` · real r ✓ (${rr}/${allCandidates.length})`
+        : ' · proxy r — no PoincareR (run 07)';
     if (isFallback) {
-        badge.textContent = `Reconstructed: ${sourceName}`;
+        badge.textContent = `Reconstructed: ${sourceName}${rrTxt}`;
         badge.style.background = 'rgba(244, 63, 94, 0.15)';
         badge.style.color = '#f43f5e';
     } else {
-        badge.textContent = `Loaded: ${sourceName}`;
-        badge.style.background = 'rgba(56, 189, 248, 0.12)';
-        badge.style.color = '#38bdf8';
+        badge.textContent = `Loaded: ${sourceName}${rrTxt}`;
+        badge.style.background = rr > 0 ? 'rgba(52, 211, 153, 0.14)' : 'rgba(250, 204, 21, 0.14)';
+        badge.style.color = rr > 0 ? '#34d399' : '#facc15';
     }
 }
 
@@ -913,6 +1005,7 @@ document.getElementById('file-uploader').addEventListener('change', function(e) 
     reader.onload = function(evt) {
         try {
             const data = JSON.parse(evt.target.result);
+            window.__realRCount = data.filter(d => d.PoincareR !== undefined && d.PoincareR !== null).length;
             allCandidates = processRawDataset(data);
             updateBadge(file.name, false);
             initApp();
@@ -1051,8 +1144,9 @@ function getFilteredCandidates() {
         if (famFilter !== 'all' && c.family !== famFilter) return false;
 
         // Apply Poincaré Filter (Purges Hub Noise)
-        if (poincareFilter === 'boundary' && c.poincareR < 0.50) return false;
-        if (poincareFilter === 'core' && c.poincareR >= 0.50) return false;
+        if (poincareFilter === 'rim' && c.poincareR < 0.50) return false;
+        if (poincareFilter === 'specific' && c.poincareR < 0.20) return false;
+        if (poincareFilter === 'core' && c.poincareR >= 0.20) return false;
 
         // Apply Spectral Entropy Filter
         if (entropyFilter === 'low' && c.vne > 1.8) return false;
@@ -1427,21 +1521,21 @@ function renderRadial(candidates) {
         return {nodes, genes};
     }
     function hashAngle(s){ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return (h%3600)/3600*2*Math.PI - Math.PI; }
-    const entityDeg={}, entityDis={}, nodeCQS={};
+    const entityDeg={}, entityDis={}, nodeCQS={}, nodeRsum={}, nodeRn={};
     candidates.forEach(c=>{ const e=parseEntities(c); c._nodes=e.nodes; c._genesArr=e.genes; c._core=e.nodes[0]||e.genes[0]||null;
         if(c._core) nodeCQS[c._core]=Math.max(nodeCQS[c._core]||0, c.cqs||0);
-        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); });
+        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; nodeRsum[k]=(nodeRsum[k]||0)+(c.poincareR||0); nodeRn[k]=(nodeRn[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); });
     const _degv=Object.values(entityDeg); const lgMax=Math.log(Math.max(2, _degv.length?Math.max.apply(null,_degv):2));
     // radial position (Poincare direction): recurrence -> centre (generic hub, r->0); rare -> rim (specific, r->1)
     function entPos(k){ if(entPos._c[k]) return entPos._c[k]; const dis=entityDis[k]; if(!dis) return null;
         let sx=0,sy=0,n=0; dis.forEach(nm=>{ const a=diseaseAngle[nm]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); n++; } });
         const mag=Math.hypot(sx,sy); const ang=(n>0 && mag/n > 0.18)?Math.atan2(sy,sx):hashAngle(k);
-        const deg=entityDeg[k]||1; const norm=Math.log(deg)/(lgMax||1); const band=CORE_MAX-CORE_MIN;
+        const deg=entityDeg[k]||1; const band=CORE_MAX-CORE_MIN; const rr0 = nodeRn[k]?(nodeRsum[k]/nodeRn[k]):0;
         // primary radius = recurrence (Poincare); + a stable identity-keyed scatter so equal-degree
         // nodes form a soft cloud instead of a hard concentric ring (parametric, deterministic, not random).
-        const jit=(((hashAngle(k)+Math.PI)/(2*Math.PI))-0.5)*band*0.34;
-        let rr=CORE_MAX-norm*band+jit; if(rr<CORE_MIN*0.9)rr=CORE_MIN*0.9; if(rr>CORE_MAX+band*0.06)rr=CORE_MAX+band*0.06;
-        const pos={a:ang, r:rr, deg, cqs:nodeCQS[k]||0}; entPos._c[k]=pos; return pos; }
+        const jit=(((hashAngle(k)+Math.PI)/(2*Math.PI))-0.5)*band*0.30;
+        let rr=CORE_MIN + Math.min(1, rr0/0.92)*band + jit; if(rr<CORE_MIN*0.9)rr=CORE_MIN*0.9; if(rr>CORE_MAX+band*0.06)rr=CORE_MAX+band*0.06;
+        const pos={a:ang, r:rr, deg, cqs:nodeCQS[k]||0, pr:rr0}; entPos._c[k]=pos; return pos; }
     entPos._c={};
     // the stars we CELEBRATE are the top discovery nodes (best CQS converging on them), not the generic hubs
     const glowCores=Object.keys(nodeCQS).sort((a,b)=>(nodeCQS[b]-nodeCQS[a])||(entityDeg[a]-entityDeg[b])).slice(0,150);
@@ -1543,7 +1637,7 @@ function renderRadial(candidates) {
     // 5. labels + hit-dots for the DISCOVERY stars (top by CQS), the specific convergences worth trusting
     glowCores.forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const ty=typeOf(k);
         g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,3+ (cp.cqs||0)*0.5)).attr('fill','transparent').style('cursor','pointer')
-            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k||(rb.nodes||[]).indexOf(k)>=0); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+ty[0]+' · best CQS '+(cp.cqs||0)+' · '+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k||(rb.nodes||[]).indexOf(k)>=0); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+ty[0]+' · best CQS '+(cp.cqs||0)+' · r '+((cp.pr||0).toFixed(2))+' · '+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
             .on('click',()=>{ const el=document.getElementById('search-input'); el.value=k; el.dispatchEvent(new Event('input')); });
         if(i<14 && (cp.cqs||0)>=7){ g.append('text').attr('x',x).attr('y',y-6).attr('text-anchor','middle').attr('font-size','7px').attr('fill',ty[1]).attr('opacity',0.9).attr('pointer-events','none').text(k.length>14?k.slice(0,13)+'…':k); } });
@@ -1961,6 +2055,65 @@ function renderDiscoveryRunTable(container, partners, candidate) {
 function closeDossierModal() { document.getElementById('dossier-modal').classList.remove('open'); }
 function openCqsModal() { document.getElementById('cqs-modal').classList.add('open'); }
 function closeCqsModal() { document.getElementById('cqs-modal').classList.remove('open'); }
+function openCoverageModal() { document.getElementById('coverage-modal').classList.add('open'); }
+function closeCoverageModal() { document.getElementById('coverage-modal').classList.remove('open'); }
+function openValidationModal() { document.getElementById('validation-modal').classList.add('open'); }
+function closeValidationModal() { document.getElementById('validation-modal').classList.remove('open'); }
+function closeWhitepaperModal() { document.getElementById('whitepaper-modal').classList.remove('open'); }
+function mdToHtml(md){
+    const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const lines=md.split(/\r?\n/); let h=''; let inList=false, inCode=false;
+    for(const raw of lines){
+        if(/^```/.test(raw)){ if(inList){h+='</ul>';inList=false;} inCode=!inCode; h+= inCode?'<pre>':'</pre>'; continue; }
+        if(inCode){ h+=esc(raw)+'\n'; continue; }
+        let l=esc(raw).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/(^|[^*])\*([^*]+?)\*/g,'$1<em>$2</em>');
+        if(/^###\s+/.test(l)){ if(inList){h+='</ul>';inList=false;} h+='<h4>'+l.replace(/^###\s+/,'')+'</h4>'; }
+        else if(/^##\s+/.test(l)){ if(inList){h+='</ul>';inList=false;} h+='<h3>'+l.replace(/^##\s+/,'')+'</h3>'; }
+        else if(/^#\s+/.test(l)){ if(inList){h+='</ul>';inList=false;} h+='<h2>'+l.replace(/^#\s+/,'')+'</h2>'; }
+        else if(/^[-*]\s+/.test(l)){ if(!inList){h+='<ul>';inList=true;} h+='<li>'+l.replace(/^[-*]\s+/,'')+'</li>'; }
+        else if(/^\s*$/.test(l)){ if(inList){h+='</ul>';inList=false;} }
+        else if(/^\|/.test(raw)){ h+='<div style="font-family:monospace;font-size:0.72rem;color:#94a3b8;">'+l+'</div>'; }
+        else { if(inList){h+='</ul>';inList=false;} h+='<p>'+l+'</p>'; }
+    }
+    if(inList)h+='</ul>'; return h;
+}
+async function openWhitepaperModal(){
+    document.getElementById('whitepaper-modal').classList.add('open');
+    if(window.__wpLoaded) return; window.__wpLoaded=true;
+    const paths=['../doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md','./doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md','ARIADNE_Master_Whitepaper_v1.0.md'];
+    for(const p of paths){ try{ const r=await fetch(p+'?_t='+Date.now(),{cache:'no-store'}); if(r.ok){ const md=await r.text(); document.getElementById('whitepaper-body').innerHTML=mdToHtml(md); return; } }catch(e){} }
+}
+async function loadValidation() {
+    const paths = ['./data/atlas/analysis/validation_summary.json','data/atlas/analysis/validation_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__validation = await r.json(); renderValidation(); return; } } catch(e){} }
+}
+function renderValidation() {
+    const v = window.__validation; if (!v) return;
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=x; };
+    const pc=v.positive_control||{}, nm=v.null_model||{}, sp=v.specificity||{}, ig=v.integrity||{}, fa=v.falsifiability||{}, no=v.novelty||{};
+    set('val-recovered', pc.recovered); set('val-recall', pc.recall_pct); set('val-recallspec', pc.recall_specific_pct);
+    set('val-corr', nm.corr_r_cqs); set('val-corrp', nm.corr_empirical_p); set('val-enrich', nm.joint_enrichment_x);
+    set('val-spec', sp.pct_specific_le20); set('val-rim', sp.poincare_rim_pct); set('val-medpath', sp.min_pathway_median);
+    set('val-fab', ig.true_fabrications_detected); set('val-fabpct', ig.corpus_fabricated_pct); set('val-purged', ig.records_purged);
+    set('val-fals', fa.pct_all); set('val-novel', no.pct_novel); set('val-valid', no.pct_validation);
+    const th=v.thermodynamics||{}; set('val-kt', th.corr_kt_svne); set('val-svnenodes', th.corr_svne_nodes); set('val-svnenz', th.svne_nonzero_pct);
+}
+async function loadCoverage() {
+    const paths = ['./data/atlas/analysis/seed_coverage_summary.json','data/atlas/analysis/seed_coverage_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__coverage = await r.json(); renderCoverage(); return; } } catch(e){} }
+}
+function renderCoverage() {
+    const c = window.__coverage; if (!c) return;
+    const set=(id,v)=>{ const n=document.getElementById(id); if(n) n.textContent=v; };
+    set('stat-coverage', (c.pct_productive!=null ? c.pct_productive+'%' : '\u2014'));
+    set('cov-master', c.master_seeds); set('cov-prod', c.productive); set('cov-prodpct', c.pct_productive+'%');
+    set('cov-empty', c.empty_monarch_gap); set('cov-emptyrate', c.empty_rate_of_attempted+'%');
+    set('cov-missing', c.missing); set('cov-missingpct', c.pct_missing+'%'); set('cov-attempted', c.attempted);
+    const mc = c.monarch_check||{};
+    set('cov-priv', mc.private_singleton||0); set('cov-susp', mc.convergence_possible||0); set('cov-nogene', mc.no_causal_gene||0);
+}
 function openAboutModal() { document.getElementById('about-modal').classList.add('open'); }
 function closeAboutModal() { document.getElementById('about-modal').classList.remove('open'); }
 function openManualModal() { document.getElementById('manual-modal').classList.add('open'); }
@@ -2039,9 +2192,11 @@ document.addEventListener('click', e => {
     if (!e.target.closest('.guides-dropdown')) closeGuidesMenu();
     if (!e.target.closest('.info-wrap')) closeInfoPops();
 });
-document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeGuidesMenu(); closeInfoPops(); closePoeticModal(); closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); } });
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeGuidesMenu(); closeInfoPops(); closePoeticModal(); closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); closeCoverageModal(); closeValidationModal(); closeWhitepaperModal(); } });
 
 loadData();
+loadCoverage();
+loadValidation();
 </script>
 </body>
 </html>

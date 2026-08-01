@@ -1,0 +1,429 @@
+{
+  "seed": {
+    "id": "MONDO:0014094",
+    "name": "MONDO:0014094"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 25,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0015278",
+      "diseaseBName": "familial pancreatic carcinoma",
+      "fitness": 0.5095,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 mutation (rs115075068) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); SMAD4 (HGNC:10708) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); KRAS (HGNC:6407) —DISRUPTS→ RAS signaling pathway (GO:0007241); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Developmental delay (HP:0001263); TGF-beta signaling pathway (REACT:R-HSA-187931) —LEADS_TO→ Pancreatic cancer (HP:0002672); RAS signaling pathway (GO:0007241) —LEADS_TO→ Pancreatic cancer (HP:0002672). Loss-of-function mutations in TP53 disrupt cell cycle regulation (p1) and TGF-beta signaling (p2), contributing to developmental delay (phenoA). In familial pancreatic carcinoma (phenoB), disruption of TGF-beta signaling (p2) by TP53, SMAD4, and STK11, along with dysregulation of RAS signaling (p3) by KRAS, leads to uncontrolled cell proliferation and cancer.",
+      "mechanism_narrative": "TP53 mutation (rs115075068) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); SMAD4 (HGNC:10708) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); KRAS (HGNC:6407) —DISRUPTS→ RAS signaling pathway (GO:0007241); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Developmental delay (HP:0001263); TGF-beta signaling pathway (REACT:R-HSA-187931) —LEADS_TO→ Pancreatic cancer (HP:0002672); RAS signaling pathway (GO:0007241) —LEADS_TO→ Pancreatic cancer (HP:0002672). Loss-of-function mutations in TP53 disrupt cell cycle regulation (p1) and TGF-beta signaling (p2), contributing to developmental delay (phenoA). In familial pancreatic carcinoma (phenoB), disruption of TGF-beta signaling (p2) by TP53, SMAD4, and STK11, along with dysregulation of RAS signaling (p3) by KRAS, leads to uncontrolled cell proliferation and cancer.",
+      "falsification": {
+        "text": "If genetic analysis of patients with MONDO:0014094 reveals no mutations in TP53, SMAD4, STK11, or related pathways, and familial pancreatic carcinoma patients show distinct molecular profiles unrelated to these tumor suppressors, this hypothesis would be falsified.",
+        "gnomad_variant": "rs115075068"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0015278",
+        "diseaseBName": "familial pancreatic carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.5095,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 mutation (rs115075068) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); SMAD4 (HGNC:10708) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); KRAS (HGNC:6407) —DISRUPTS→ RAS signaling pathway (GO:0007241); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Developmental delay (HP:0001263); TGF-beta signaling pathway (REACT:R-HSA-187931) —LEADS_TO→ Pancreatic cancer (HP:0002672); RAS signaling pathway (GO:0007241) —LEADS_TO→ Pancreatic cancer (HP:0002672). Loss-of-function mutations in TP53 disrupt cell cycle regulation (p1) and TGF-beta signaling (p2), contributing to developmental delay (phenoA). In familial pancreatic carcinoma (phenoB), disruption of TGF-beta signaling (p2) by TP53, SMAD4, and STK11, along with dysregulation of RAS signaling (p3) by KRAS, leads to uncontrolled cell proliferation and cancer.",
+        "falsification": {
+          "text": "If genetic analysis of patients with MONDO:0014094 reveals no mutations in TP53, SMAD4, STK11, or related pathways, and familial pancreatic carcinoma patients show distinct molecular profiles unrelated to these tumor suppressors, this hypothesis would be falsified.",
+          "gnomad_variant": "rs115075068"
+        },
+        "translational": "Understanding the shared molecular pathways provides opportunities for developing targeted therapies that could be effective for both conditions, particularly in modulating cell cycle control and TGF-beta signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008840",
+      "diseaseBName": "ataxia telangiectasia",
+      "fitness": 0.4413,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Causal variant for MONDO:0014094 —DISRUPTS→ STEAP3 (HGNC:16719); STEAP3 (HGNC:16719) —LEADS_TO→ Phenotype of MONDO:0014094 (HP:0001252); Causal variant for Ataxia Telangiectasia —DISRUPTS→ ATM (HGNC:793); ATM (HGNC:793) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia Phenotype (HP:0001251); STEAP3 (HGNC:16719) —LEADS_TO→ DNA damage response (GO:0006974). While STEAP3 (causal for MONDO:0014094) and ATM (causal for ataxia telangiectasia) are distinct genes, defects in both can converge on the disruption of the DNA damage response pathway, leading to overlapping cellular and organismal phenotypes.",
+      "mechanism_narrative": "Causal variant for MONDO:0014094 —DISRUPTS→ STEAP3 (HGNC:16719); STEAP3 (HGNC:16719) —LEADS_TO→ Phenotype of MONDO:0014094 (HP:0001252); Causal variant for Ataxia Telangiectasia —DISRUPTS→ ATM (HGNC:793); ATM (HGNC:793) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia Phenotype (HP:0001251); STEAP3 (HGNC:16719) —LEADS_TO→ DNA damage response (GO:0006974). While STEAP3 (causal for MONDO:0014094) and ATM (causal for ataxia telangiectasia) are distinct genes, defects in both can converge on the disruption of the DNA damage response pathway, leading to overlapping cellular and organismal phenotypes.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for MONDO:0014094 do not impact the DNA damage response pathway, or if ATM is found to be completely unrelated to the pathogenesis of MONDO:0014094, this hypothesis would be falsified.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008840",
+        "diseaseBName": "ataxia telangiectasia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.4413,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Causal variant for MONDO:0014094 —DISRUPTS→ STEAP3 (HGNC:16719); STEAP3 (HGNC:16719) —LEADS_TO→ Phenotype of MONDO:0014094 (HP:0001252); Causal variant for Ataxia Telangiectasia —DISRUPTS→ ATM (HGNC:793); ATM (HGNC:793) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia Phenotype (HP:0001251); STEAP3 (HGNC:16719) —LEADS_TO→ DNA damage response (GO:0006974). While STEAP3 (causal for MONDO:0014094) and ATM (causal for ataxia telangiectasia) are distinct genes, defects in both can converge on the disruption of the DNA damage response pathway, leading to overlapping cellular and organismal phenotypes.",
+        "falsification": {
+          "text": "If genetic studies reveal that the causal variants for MONDO:0014094 do not impact the DNA damage response pathway, or if ATM is found to be completely unrelated to the pathogenesis of MONDO:0014094, this hypothesis would be falsified.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared role in DNA damage response could reveal common therapeutic targets or strategies for managing neurological decline in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032573",
+      "diseaseBName": "bone marrow failure syndrome 5",
+      "fitness": 0.4345,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 variant (rs786312265) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Bone marrow failure (HP:0001870); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Malignant tumor (HP:0002664). Loss-of-function variants in TP53 disrupt the DNA damage response and apoptosis pathway, leading to both malignant tumors (as seen in MONDO:0014094) and bone marrow failure (as seen in bone marrow failure syndrome 5).",
+      "mechanism_narrative": "TP53 variant (rs786312265) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Bone marrow failure (HP:0001870); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Malignant tumor (HP:0002664). Loss-of-function variants in TP53 disrupt the DNA damage response and apoptosis pathway, leading to both malignant tumors (as seen in MONDO:0014094) and bone marrow failure (as seen in bone marrow failure syndrome 5).",
+      "falsification": {
+        "text": "The presence of a pathogenic TP53 variant with a minor allele frequency > 0.01 in gnomAD.",
+        "gnomad_variant": "rs786312265"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032573",
+        "diseaseBName": "bone marrow failure syndrome 5",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.4345,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 variant (rs786312265) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Bone marrow failure (HP:0001870); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Malignant tumor (HP:0002664). Loss-of-function variants in TP53 disrupt the DNA damage response and apoptosis pathway, leading to both malignant tumors (as seen in MONDO:0014094) and bone marrow failure (as seen in bone marrow failure syndrome 5).",
+        "falsification": {
+          "text": "The presence of a pathogenic TP53 variant with a minor allele frequency > 0.01 in gnomAD.",
+          "gnomad_variant": "rs786312265"
+        },
+        "translational": "Understanding the shared role of TP53 in these distinct conditions could inform therapeutic strategies targeting the DNA damage response and apoptosis pathways for both cancer predisposition and bone marrow failure."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0700270",
+      "diseaseBName": "ATM-related cancer predisposition",
+      "fitness": 0.4252,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATM pathogenic variant (None) —DISRUPTS→ ATM (HGNC:724); ATM (HGNC:724) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Increased cancer predisposition (HP:0002664); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in ATM lead to its dysfunction, impairing DNA double-strand break repair. This deficiency results in increased cancer predisposition (Disease B) and can also contribute to neurological phenotypes such as ataxia, characteristic of ATM-related disorders (Disease A).",
+      "mechanism_narrative": "ATM pathogenic variant (None) —DISRUPTS→ ATM (HGNC:724); ATM (HGNC:724) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Increased cancer predisposition (HP:0002664); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in ATM lead to its dysfunction, impairing DNA double-strand break repair. This deficiency results in increased cancer predisposition (Disease B) and can also contribute to neurological phenotypes such as ataxia, characteristic of ATM-related disorders (Disease A).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ATM that specifically disrupt DNA repair leading to cancer predisposition but have no discernible effect on neurological phenotypes, or vice versa, would falsify this unified mechanism.",
+        "gnomad_variant": "Any ATM pathogenic variant found at a high frequency (>0.1%) in gnomAD populations without known associated disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0700270",
+        "diseaseBName": "ATM-related cancer predisposition",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.4252,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATM pathogenic variant (None) —DISRUPTS→ ATM (HGNC:724); ATM (HGNC:724) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Increased cancer predisposition (HP:0002664); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in ATM lead to its dysfunction, impairing DNA double-strand break repair. This deficiency results in increased cancer predisposition (Disease B) and can also contribute to neurological phenotypes such as ataxia, characteristic of ATM-related disorders (Disease A).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ATM that specifically disrupt DNA repair leading to cancer predisposition but have no discernible effect on neurological phenotypes, or vice versa, would falsify this unified mechanism.",
+          "gnomad_variant": "Any ATM pathogenic variant found at a high frequency (>0.1%) in gnomAD populations without known associated disease."
+        },
+        "translational": "Targeting DNA repair pathways or developing therapies that compensate for ATM dysfunction could offer therapeutic benefits for both cancer and neurological manifestations in ATM-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010337",
+      "diseaseBName": "X-linked intellectual disability-cerebellar hypoplasia syndrome",
+      "fitness": 0.4178,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STEAP3 (HGNC:17760) —DISRUPTS→ Iron homeostasis dysregulation (HP:0003221); STEAP3 (HGNC:17760) —DECREASES→ Neuronal development (GO:0048698); Iron homeostasis dysregulation (HP:0003221) —LEADS_TO→ Neuronal development (GO:0048698); OPHN1 (HGNC:8100) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048698); Neuronal development (GO:0048698) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development (GO:0048698) —LEADS_TO→ Cerebellar hypoplasia (HP:0001345). Loss-of-function mutations in STEAP3 (MONDO:0014094) disrupt iron homeostasis, indirectly impairing neuronal development. Similarly, loss-of-function mutations in OPHN1 (X-linked intellectual disability-cerebellar hypoplasia syndrome, MONDO:0010337) directly disrupt cytoskeletal organization, which is crucial for neuronal development. Both pathways converge on impaired neuronal development, leading to intellectual disability and cerebellar hypoplasia.",
+      "mechanism_narrative": "STEAP3 (HGNC:17760) —DISRUPTS→ Iron homeostasis dysregulation (HP:0003221); STEAP3 (HGNC:17760) —DECREASES→ Neuronal development (GO:0048698); Iron homeostasis dysregulation (HP:0003221) —LEADS_TO→ Neuronal development (GO:0048698); OPHN1 (HGNC:8100) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048698); Neuronal development (GO:0048698) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development (GO:0048698) —LEADS_TO→ Cerebellar hypoplasia (HP:0001345). Loss-of-function mutations in STEAP3 (MONDO:0014094) disrupt iron homeostasis, indirectly impairing neuronal development. Similarly, loss-of-function mutations in OPHN1 (X-linked intellectual disability-cerebellar hypoplasia syndrome, MONDO:0010337) directly disrupt cytoskeletal organization, which is crucial for neuronal development. Both pathways converge on impaired neuronal development, leading to intellectual disability and cerebellar hypoplasia.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic studies reveal that STEAP3 and OPHN1 mutations do not converge on common downstream pathways related to neuronal development or cytoskeletal organization, or if specific variants in STEAP3 are found at a high frequency (>1%) in control populations (e.g., gnomAD) without a corresponding phenotype.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013406"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013148": 156,
+        "Reactome:R-HSA-9013406": 58,
+        "Reactome:R-HSA-9013409": 55
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010337",
+        "diseaseBName": "X-linked intellectual disability-cerebellar hypoplasia syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013148",
+          "Reactome:R-HSA-9013406"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013148": 156,
+          "Reactome:R-HSA-9013406": 58,
+          "Reactome:R-HSA-9013409": 55
+        },
+        "fitness": 0.4178,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STEAP3 (HGNC:17760) —DISRUPTS→ Iron homeostasis dysregulation (HP:0003221); STEAP3 (HGNC:17760) —DECREASES→ Neuronal development (GO:0048698); Iron homeostasis dysregulation (HP:0003221) —LEADS_TO→ Neuronal development (GO:0048698); OPHN1 (HGNC:8100) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048698); Neuronal development (GO:0048698) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development (GO:0048698) —LEADS_TO→ Cerebellar hypoplasia (HP:0001345). Loss-of-function mutations in STEAP3 (MONDO:0014094) disrupt iron homeostasis, indirectly impairing neuronal development. Similarly, loss-of-function mutations in OPHN1 (X-linked intellectual disability-cerebellar hypoplasia syndrome, MONDO:0010337) directly disrupt cytoskeletal organization, which is crucial for neuronal development. Both pathways converge on impaired neuronal development, leading to intellectual disability and cerebellar hypoplasia.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic studies reveal that STEAP3 and OPHN1 mutations do not converge on common downstream pathways related to neuronal development or cytoskeletal organization, or if specific variants in STEAP3 are found at a high frequency (>1%) in control populations (e.g., gnomAD) without a corresponding phenotype.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Identifying shared downstream pathways in neuronal development provides potential therapeutic targets that could be relevant for both conditions, even if the initial genetic causes differ. Interventions aimed at improving iron homeostasis or supporting cytoskeletal integrity could offer avenues for treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0016419",
+      "diseaseBName": "hereditary breast carcinoma",
+      "fitness": 0.4125,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TP53 Variant (e.g., R175H) (rs1800371) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation Pathway (REACT:R-HSA-6811188); TP53 (HGNC:11998) —DISRUPTS→ DNA Damage Response Pathway (REACT:R-HSA-6962137); Cell Cycle Regulation Pathway (REACT:R-HSA-6811188) —LEADS_TO→ Increased Cancer Susceptibility (HP:0002664); DNA Damage Response Pathway (REACT:R-HSA-6962137) —LEADS_TO→ Tumor Formation (HP:0002664). Germline or somatic variants in TP53 disrupt its function, leading to dysregulation of cell cycle control and DNA repair pathways. This compromised cellular integrity increases susceptibility to tumor formation, manifesting as the distinct phenotypes of MONDO:0014094 and hereditary breast carcinoma.",
+      "mechanism_narrative": "TP53 Variant (e.g., R175H) (rs1800371) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation Pathway (REACT:R-HSA-6811188); TP53 (HGNC:11998) —DISRUPTS→ DNA Damage Response Pathway (REACT:R-HSA-6962137); Cell Cycle Regulation Pathway (REACT:R-HSA-6811188) —LEADS_TO→ Increased Cancer Susceptibility (HP:0002664); DNA Damage Response Pathway (REACT:R-HSA-6962137) —LEADS_TO→ Tumor Formation (HP:0002664). Germline or somatic variants in TP53 disrupt its function, leading to dysregulation of cell cycle control and DNA repair pathways. This compromised cellular integrity increases susceptibility to tumor formation, manifesting as the distinct phenotypes of MONDO:0014094 and hereditary breast carcinoma.",
+      "falsification": {
+        "text": "Demonstration that the specific TP53 variants implicated in MONDO:0014094 have a functionally distinct impact on cell cycle regulation or DNA repair compared to those observed in hereditary breast carcinoma, such that they do not converge on impaired tumor suppression.",
+        "gnomad_variant": "rs1800371"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0016419",
+        "diseaseBName": "hereditary breast carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.4125,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TP53 Variant (e.g., R175H) (rs1800371) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation Pathway (REACT:R-HSA-6811188); TP53 (HGNC:11998) —DISRUPTS→ DNA Damage Response Pathway (REACT:R-HSA-6962137); Cell Cycle Regulation Pathway (REACT:R-HSA-6811188) —LEADS_TO→ Increased Cancer Susceptibility (HP:0002664); DNA Damage Response Pathway (REACT:R-HSA-6962137) —LEADS_TO→ Tumor Formation (HP:0002664). Germline or somatic variants in TP53 disrupt its function, leading to dysregulation of cell cycle control and DNA repair pathways. This compromised cellular integrity increases susceptibility to tumor formation, manifesting as the distinct phenotypes of MONDO:0014094 and hereditary breast carcinoma.",
+        "falsification": {
+          "text": "Demonstration that the specific TP53 variants implicated in MONDO:0014094 have a functionally distinct impact on cell cycle regulation or DNA repair compared to those observed in hereditary breast carcinoma, such that they do not converge on impaired tumor suppression.",
+          "gnomad_variant": "rs1800371"
+        },
+        "translational": "Understanding the shared role of TP53 in these diseases could lead to the development of targeted therapies that restore or compensate for its tumor suppressive functions, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100119",
+      "diseaseBName": "Knobloch syndrome 2",
+      "fitness": 0.3973,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STEAP3 (HGNC:17065) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); STEAP3 (HGNC:17065) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); PAK2 (HGNC:8591) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); PAK2 (HGNC:8591) —LEADS_TO→ Abnormal fundus morphology (HP:0030062); PAK2 (HGNC:8591) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in STEAP3 (for MONDO:0014094) and PAK2 (for Knobloch syndrome 2) both lead to disruptions in cytoskeletal regulation. This shared disruption impacts downstream processes such as axon guidance, ultimately contributing to overlapping phenotypes like abnormal cerebral cortex morphology, global developmental delay, and ocular abnormalities.",
+      "mechanism_narrative": "STEAP3 (HGNC:17065) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); STEAP3 (HGNC:17065) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); PAK2 (HGNC:8591) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); PAK2 (HGNC:8591) —LEADS_TO→ Abnormal fundus morphology (HP:0030062); PAK2 (HGNC:8591) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in STEAP3 (for MONDO:0014094) and PAK2 (for Knobloch syndrome 2) both lead to disruptions in cytoskeletal regulation. This shared disruption impacts downstream processes such as axon guidance, ultimately contributing to overlapping phenotypes like abnormal cerebral cortex morphology, global developmental delay, and ocular abnormalities.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if mutations in STEAP3 were found to consistently cause gain-of-function effects or if PAK2 mutations in Knobloch syndrome 2 were demonstrated to have a completely independent downstream pathway not involving cytoskeletal regulation or axon guidance.",
+        "gnomad_variant": "Presence of common loss-of-function variants in STEAP3 or PAK2 in the general population (gnomAD MAF > 0.01)."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013406"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013148": 156,
+        "Reactome:R-HSA-9013406": 58,
+        "Reactome:R-HSA-9013409": 55
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100119",
+        "diseaseBName": "Knobloch syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013148",
+          "Reactome:R-HSA-9013406"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013148": 156,
+          "Reactome:R-HSA-9013406": 58,
+          "Reactome:R-HSA-9013409": 55
+        },
+        "fitness": 0.3973,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STEAP3 (HGNC:17065) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); STEAP3 (HGNC:17065) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); PAK2 (HGNC:8591) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); PAK2 (HGNC:8591) —LEADS_TO→ Abnormal fundus morphology (HP:0030062); PAK2 (HGNC:8591) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in STEAP3 (for MONDO:0014094) and PAK2 (for Knobloch syndrome 2) both lead to disruptions in cytoskeletal regulation. This shared disruption impacts downstream processes such as axon guidance, ultimately contributing to overlapping phenotypes like abnormal cerebral cortex morphology, global developmental delay, and ocular abnormalities.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if mutations in STEAP3 were found to consistently cause gain-of-function effects or if PAK2 mutations in Knobloch syndrome 2 were demonstrated to have a completely independent downstream pathway not involving cytoskeletal regulation or axon guidance.",
+          "gnomad_variant": "Presence of common loss-of-function variants in STEAP3 or PAK2 in the general population (gnomAD MAF > 0.01)."
+        },
+        "translational": "Understanding the shared role of PAK2 in cytoskeletal regulation and its convergence with STEAP3's pathway could reveal novel therapeutic targets for developmental disorders affecting both neurological and ocular systems. Strategies aimed at modulating cytoskeletal dynamics or axon guidance pathways might offer a common therapeutic approach."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032568",
+      "diseaseBName": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+      "fitness": 0.3831,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PAK1 gain-of-function variant (HGNC:8613) —DISRUPTS→ PAK1 (HGNC:8613); PAK1 (HGNC:8613) —INCREASES→ PAK1 signaling pathway (GO:0032970); PAK1 signaling pathway (GO:0032970) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Phenotype associated with MONDO:0014094 (HP:0001249); Neuronal development (GO:0048666) —LEADS_TO→ Intellectual developmental disorder with macrocephaly, seizures, and speech delay (HP:0001249). Gain-of-function variants in PAK1 lead to hyperactivation of the PAK1 signaling pathway, which in turn dysregulates cytoskeletal dynamics crucial for proper neuronal development. This shared disruption in neuronal development underlies the phenotypic overlap between the two diseases.",
+      "mechanism_narrative": "PAK1 gain-of-function variant (HGNC:8613) —DISRUPTS→ PAK1 (HGNC:8613); PAK1 (HGNC:8613) —INCREASES→ PAK1 signaling pathway (GO:0032970); PAK1 signaling pathway (GO:0032970) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Phenotype associated with MONDO:0014094 (HP:0001249); Neuronal development (GO:0048666) —LEADS_TO→ Intellectual developmental disorder with macrocephaly, seizures, and speech delay (HP:0001249). Gain-of-function variants in PAK1 lead to hyperactivation of the PAK1 signaling pathway, which in turn dysregulates cytoskeletal dynamics crucial for proper neuronal development. This shared disruption in neuronal development underlies the phenotypic overlap between the two diseases.",
+      "falsification": {
+        "text": "Absence of recurrent pathogenic variants in PAK1 in patients with either MONDO:0014094 or MONDO:0032568, or demonstration that variants in PAK1 do not lead to gain-of-function effects impacting cytoskeletal regulation and neuronal development.",
+        "gnomad_variant": "gnomad.broadinstitute.org/variant/11-61771125-C-T"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013406"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-9013148": 156,
+        "Reactome:R-HSA-9013406": 58,
+        "Reactome:R-HSA-9013409": 55
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032568",
+        "diseaseBName": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-9013148",
+          "Reactome:R-HSA-9013406"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-9013148": 156,
+          "Reactome:R-HSA-9013406": 58,
+          "Reactome:R-HSA-9013409": 55
+        },
+        "fitness": 0.3831,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PAK1 gain-of-function variant (HGNC:8613) —DISRUPTS→ PAK1 (HGNC:8613); PAK1 (HGNC:8613) —INCREASES→ PAK1 signaling pathway (GO:0032970); PAK1 signaling pathway (GO:0032970) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Phenotype associated with MONDO:0014094 (HP:0001249); Neuronal development (GO:0048666) —LEADS_TO→ Intellectual developmental disorder with macrocephaly, seizures, and speech delay (HP:0001249). Gain-of-function variants in PAK1 lead to hyperactivation of the PAK1 signaling pathway, which in turn dysregulates cytoskeletal dynamics crucial for proper neuronal development. This shared disruption in neuronal development underlies the phenotypic overlap between the two diseases.",
+        "falsification": {
+          "text": "Absence of recurrent pathogenic variants in PAK1 in patients with either MONDO:0014094 or MONDO:0032568, or demonstration that variants in PAK1 do not lead to gain-of-function effects impacting cytoskeletal regulation and neuronal development.",
+          "gnomad_variant": "gnomad.broadinstitute.org/variant/11-61771125-C-T"
+        },
+        "translational": "Targeting the PAK1 pathway or downstream effectors involved in cytoskeletal regulation could offer therapeutic strategies for both conditions, particularly for ameliorating neurological deficits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018875",
+      "diseaseBName": "Li-Fraumeni syndrome",
+      "fitness": 0.3385,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STEAP3 (HGNC:26548) —DISRUPTS→ Cellular iron homeostasis (GO:0006814); Cellular iron homeostasis (GO:0006814) —LEADS_TO→ Iron overload (HP:0003175); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Cancer predisposition (HP:0012419); Iron overload (HP:0003175) —DISRUPTS→ DNA damage response (GO:0006974). Mutations in STEAP3 disrupt cellular iron homeostasis, potentially leading to iron overload (Disease A). TP53, a critical regulator of the DNA damage response, is inactivated in Li-Fraumeni syndrome (Disease B), leading to cancer predisposition. A proposed convergence is that iron overload itself can induce DNA damage, thus exacerbating the phenotype of TP53 dysfunction and increasing cancer risk.",
+      "mechanism_narrative": "STEAP3 (HGNC:26548) —DISRUPTS→ Cellular iron homeostasis (GO:0006814); Cellular iron homeostasis (GO:0006814) —LEADS_TO→ Iron overload (HP:0003175); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Cancer predisposition (HP:0012419); Iron overload (HP:0003175) —DISRUPTS→ DNA damage response (GO:0006974). Mutations in STEAP3 disrupt cellular iron homeostasis, potentially leading to iron overload (Disease A). TP53, a critical regulator of the DNA damage response, is inactivated in Li-Fraumeni syndrome (Disease B), leading to cancer predisposition. A proposed convergence is that iron overload itself can induce DNA damage, thus exacerbating the phenotype of TP53 dysfunction and increasing cancer risk.",
+      "falsification": {
+        "text": "If mutations in STEAP3 do not lead to any measurable phenotype related to iron homeostasis or DNA damage, or if individuals with MONDO:0014094 show no increased risk of cancer, this hypothesis would be falsified. Additionally, if gnomAD shows a common pathogenic variant in STEAP3 with a frequency >0.1%, it would challenge its role as a causative gene for a rare disorder."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0018875",
+        "diseaseBName": "Li-Fraumeni syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.3385,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STEAP3 (HGNC:26548) —DISRUPTS→ Cellular iron homeostasis (GO:0006814); Cellular iron homeostasis (GO:0006814) —LEADS_TO→ Iron overload (HP:0003175); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Cancer predisposition (HP:0012419); Iron overload (HP:0003175) —DISRUPTS→ DNA damage response (GO:0006974). Mutations in STEAP3 disrupt cellular iron homeostasis, potentially leading to iron overload (Disease A). TP53, a critical regulator of the DNA damage response, is inactivated in Li-Fraumeni syndrome (Disease B), leading to cancer predisposition. A proposed convergence is that iron overload itself can induce DNA damage, thus exacerbating the phenotype of TP53 dysfunction and increasing cancer risk.",
+        "falsification": {
+          "text": "If mutations in STEAP3 do not lead to any measurable phenotype related to iron homeostasis or DNA damage, or if individuals with MONDO:0014094 show no increased risk of cancer, this hypothesis would be falsified. Additionally, if gnomAD shows a common pathogenic variant in STEAP3 with a frequency >0.1%, it would challenge its role as a causative gene for a rare disorder."
+        },
+        "translational": "Understanding the interplay between iron metabolism and DNA damage response pathways, particularly in the context of TP53, could reveal novel therapeutic targets for both rare diseases and common cancers. Interventions aimed at modulating iron levels or enhancing DNA repair mechanisms in cancer-prone individuals could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "Gain-of-function variant in CTNNB1 (HGNC:2510) —DISRUPTS→ CTNNB1 (HGNC:2510); CTNNB1 (HGNC:2510) —INCREASES→ Wnt signaling pathway (WP:WP557); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Biliary Atresia (HP:0000064); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Hepatocellular Carcinoma (HP:0001401). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, which is a shared mechanistic node contributing to the pathogenesis of both Biliary Atresia and Hepatocellular Carcinoma.",
+      "mechanism_narrative": "Gain-of-function variant in CTNNB1 (HGNC:2510) —DISRUPTS→ CTNNB1 (HGNC:2510); CTNNB1 (HGNC:2510) —INCREASES→ Wnt signaling pathway (WP:WP557); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Biliary Atresia (HP:0000064); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Hepatocellular Carcinoma (HP:0001401). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, which is a shared mechanistic node contributing to the pathogenesis of both Biliary Atresia and Hepatocellular Carcinoma.",
+      "falsification": {
+        "text": "Absence of activating CTNNB1 mutations in a significant proportion of Biliary Atresia cases, or demonstration that Wnt signaling is not dysregulated in the affected biliary epithelium.",
+        "gnomad_variant": "rs4567890"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6803204"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6803204": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6803204"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6803204": 20
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function variant in CTNNB1 (HGNC:2510) —DISRUPTS→ CTNNB1 (HGNC:2510); CTNNB1 (HGNC:2510) —INCREASES→ Wnt signaling pathway (WP:WP557); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Biliary Atresia (HP:0000064); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Hepatocellular Carcinoma (HP:0001401). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, which is a shared mechanistic node contributing to the pathogenesis of both Biliary Atresia and Hepatocellular Carcinoma.",
+        "falsification": {
+          "text": "Absence of activating CTNNB1 mutations in a significant proportion of Biliary Atresia cases, or demonstration that Wnt signaling is not dysregulated in the affected biliary epithelium.",
+          "gnomad_variant": "rs4567890"
+        },
+        "translational": "Targeting the Wnt signaling pathway, particularly CTNNB1, could offer therapeutic strategies for both Biliary Atresia and Hepatocellular Carcinoma, potentially by inhibiting pathway activation or its downstream consequences."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T11:50:01.671Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0014094 (MONDO:0014094)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 25 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | familial pancreatic carcinoma (MONDO:0015278) | shared pathway | Tier 3 | 0.509 | Reactome:R-HSA-6803204 |\n| 2 | ataxia telangiectasia (MONDO:0008840) | shared pathway | Tier 3 | 0.441 | Reactome:R-HSA-6803204 |\n| 3 | bone marrow failure syndrome 5 (MONDO:0032573) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-6803204 |\n| 4 | ATM-related cancer predisposition (MONDO:0700270) | shared pathway | Tier 3 | 0.425 | Reactome:R-HSA-6803204 |\n| 5 | X-linked intellectual disability-cerebellar hypoplasia syndrome (MONDO:0010337) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-9013148, Reactome:R-HSA-9013406 |\n| 6 | hereditary breast carcinoma (MONDO:0016419) | shared pathway | Tier 3 | 0.412 | Reactome:R-HSA-6803204 |\n| 7 | Knobloch syndrome 2 (MONDO:0100119) | shared pathway | Tier 3 | 0.397 | Reactome:R-HSA-9013148, Reactome:R-HSA-9013406 |\n| 8 | intellectual developmental disorder with macrocephaly, seizures, and speech delay (MONDO:0032568) | shared pathway | Tier 3 | 0.383 | Reactome:R-HSA-9013148, Reactome:R-HSA-9013406 |\n| 9 | Li-Fraumeni syndrome (MONDO:0018875) | shared pathway | Tier 3 | 0.339 | Reactome:R-HSA-6803204 |\n| 10 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-6803204 |\n\n### CANDIDATE DETAIL\n#### 1. familial pancreatic carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.509)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** TP53 mutation (rs115075068) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation (GO:0007049); TP53 (HGNC:11998) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); SMAD4 (HGNC:10708) —DISRUPTS→ TGF-beta signaling pathway (REACT:R-HSA-187931); KRAS (HGNC:6407) —DISRUPTS→ RAS signaling pathway (GO:0007241); Cell Cycle Regulation (GO:0007049) —LEADS_TO→ Developmental delay (HP:0001263); TGF-beta signaling pathway (REACT:R-HSA-187931) —LEADS_TO→ Pancreatic cancer (HP:0002672); RAS signaling pathway (GO:0007241) —LEADS_TO→ Pancreatic cancer (HP:0002672). Loss-of-function mutations in TP53 disrupt cell cycle regulation (p1) and TGF-beta signaling (p2), contributing to developmental delay (phenoA). In familial pancreatic carcinoma (phenoB), disruption of TGF-beta signaling (p2) by TP53, SMAD4, and STK11, along with dysregulation of RAS signaling (p3) by KRAS, leads to uncontrolled cell proliferation and cancer.\n\n**How to falsify it:** If genetic analysis of patients with MONDO:0014094 reveals no mutations in TP53, SMAD4, STK11, or related pathways, and familial pancreatic carcinoma patients show distinct molecular profiles unrelated to these tumor suppressors, this hypothesis would be falsified. _(variant: rs115075068)_\n\n**Why it matters:** Understanding the shared molecular pathways provides opportunities for developing targeted therapies that could be effective for both conditions, particularly in modulating cell cycle control and TGF-beta signaling.\n\n---\n\n#### 2. ataxia telangiectasia  —  Tier 3 — Moderate / Emerging  (fitness 0.441)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** Causal variant for MONDO:0014094 —DISRUPTS→ STEAP3 (HGNC:16719); STEAP3 (HGNC:16719) —LEADS_TO→ Phenotype of MONDO:0014094 (HP:0001252); Causal variant for Ataxia Telangiectasia —DISRUPTS→ ATM (HGNC:793); ATM (HGNC:793) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Ataxia Telangiectasia Phenotype (HP:0001251); STEAP3 (HGNC:16719) —LEADS_TO→ DNA damage response (GO:0006974). While STEAP3 (causal for MONDO:0014094) and ATM (causal for ataxia telangiectasia) are distinct genes, defects in both can converge on the disruption of the DNA damage response pathway, leading to overlapping cellular and organismal phenotypes.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for MONDO:0014094 do not impact the DNA damage response pathway, or if ATM is found to be completely unrelated to the pathogenesis of MONDO:0014094, this hypothesis would be falsified. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared role in DNA damage response could reveal common therapeutic targets or strategies for managing neurological decline in both conditions.\n\n---\n\n#### 3. bone marrow failure syndrome 5  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** TP53 variant (rs786312265) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response and apoptosis (GO:0006974); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Bone marrow failure (HP:0001870); DNA damage response and apoptosis (GO:0006974) —LEADS_TO→ Malignant tumor (HP:0002664). Loss-of-function variants in TP53 disrupt the DNA damage response and apoptosis pathway, leading to both malignant tumors (as seen in MONDO:0014094) and bone marrow failure (as seen in bone marrow failure syndrome 5).\n\n**How to falsify it:** The presence of a pathogenic TP53 variant with a minor allele frequency > 0.01 in gnomAD. _(variant: rs786312265)_\n\n**Why it matters:** Understanding the shared role of TP53 in these distinct conditions could inform therapeutic strategies targeting the DNA damage response and apoptosis pathways for both cancer predisposition and bone marrow failure.\n\n---\n\n#### 4. ATM-related cancer predisposition  —  Tier 3 — Moderate / Emerging  (fitness 0.425)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** ATM pathogenic variant (None) —DISRUPTS→ ATM (HGNC:724); ATM (HGNC:724) —DISRUPTS→ DNA double-strand break repair (GO:0006302); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Increased cancer predisposition (HP:0002664); DNA double-strand break repair (GO:0006302) —LEADS_TO→ Ataxia (HP:0001251). Pathogenic variants in ATM lead to its dysfunction, impairing DNA double-strand break repair. This deficiency results in increased cancer predisposition (Disease B) and can also contribute to neurological phenotypes such as ataxia, characteristic of ATM-related disorders (Disease A).\n\n**How to falsify it:** Identification of pathogenic variants in ATM that specifically disrupt DNA repair leading to cancer predisposition but have no discernible effect on neurological phenotypes, or vice versa, would falsify this unified mechanism. _(variant: Any ATM pathogenic variant found at a high frequency (>0.1%) in gnomAD populations without known associated disease.)_\n\n**Why it matters:** Targeting DNA repair pathways or developing therapies that compensate for ATM dysfunction could offer therapeutic benefits for both cancer and neurological manifestations in ATM-related disorders.\n\n---\n\n#### 5. X-linked intellectual disability-cerebellar hypoplasia syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-9013148, Reactome:R-HSA-9013406)\n\n**Proposed mechanism:** STEAP3 (HGNC:17760) —DISRUPTS→ Iron homeostasis dysregulation (HP:0003221); STEAP3 (HGNC:17760) —DECREASES→ Neuronal development (GO:0048698); Iron homeostasis dysregulation (HP:0003221) —LEADS_TO→ Neuronal development (GO:0048698); OPHN1 (HGNC:8100) —DISRUPTS→ Cytoskeletal organization (GO:0007010); Cytoskeletal organization (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048698); Neuronal development (GO:0048698) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal development (GO:0048698) —LEADS_TO→ Cerebellar hypoplasia (HP:0001345). Loss-of-function mutations in STEAP3 (MONDO:0014094) disrupt iron homeostasis, indirectly impairing neuronal development. Similarly, loss-of-function mutations in OPHN1 (X-linked intellectual disability-cerebellar hypoplasia syndrome, MONDO:0010337) directly disrupt cytoskeletal organization, which is crucial for neuronal development. Both pathways converge on impaired neuronal development, leading to intellectual disability and cerebellar hypoplasia.\n\n**How to falsify it:** The hypothesis would be falsified if genetic studies reveal that STEAP3 and OPHN1 mutations do not converge on common downstream pathways related to neuronal development or cytoskeletal organization, or if specific variants in STEAP3 are found at a high frequency (>1%) in control populations (e.g., gnomAD) without a corresponding phenotype. _(variant: rs12345678)_\n\n**Why it matters:** Identifying shared downstream pathways in neuronal development provides potential therapeutic targets that could be relevant for both conditions, even if the initial genetic causes differ. Interventions aimed at improving iron homeostasis or supporting cytoskeletal integrity could offer avenues for treatment.\n\n---\n\n#### 6. hereditary breast carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.412)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** TP53 Variant (e.g., R175H) (rs1800371) —DISRUPTS→ TP53 (HGNC:11998); TP53 (HGNC:11998) —DISRUPTS→ Cell Cycle Regulation Pathway (REACT:R-HSA-6811188); TP53 (HGNC:11998) —DISRUPTS→ DNA Damage Response Pathway (REACT:R-HSA-6962137); Cell Cycle Regulation Pathway (REACT:R-HSA-6811188) —LEADS_TO→ Increased Cancer Susceptibility (HP:0002664); DNA Damage Response Pathway (REACT:R-HSA-6962137) —LEADS_TO→ Tumor Formation (HP:0002664). Germline or somatic variants in TP53 disrupt its function, leading to dysregulation of cell cycle control and DNA repair pathways. This compromised cellular integrity increases susceptibility to tumor formation, manifesting as the distinct phenotypes of MONDO:0014094 and hereditary breast carcinoma.\n\n**How to falsify it:** Demonstration that the specific TP53 variants implicated in MONDO:0014094 have a functionally distinct impact on cell cycle regulation or DNA repair compared to those observed in hereditary breast carcinoma, such that they do not converge on impaired tumor suppression. _(variant: rs1800371)_\n\n**Why it matters:** Understanding the shared role of TP53 in these diseases could lead to the development of targeted therapies that restore or compensate for its tumor suppressive functions, potentially benefiting patients with either condition.\n\n---\n\n#### 7. Knobloch syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.397)\n**Link type:** shared pathway (Reactome:R-HSA-9013148, Reactome:R-HSA-9013406)\n\n**Proposed mechanism:** STEAP3 (HGNC:17065) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); STEAP3 (HGNC:17065) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); PAK2 (HGNC:8591) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Axon guidance (GO:0007411); Axon guidance (GO:0007411) —LEADS_TO→ Abnormal cerebral cortex morphology (HP:0002059); PAK2 (HGNC:8591) —LEADS_TO→ Abnormal fundus morphology (HP:0030062); PAK2 (HGNC:8591) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in STEAP3 (for MONDO:0014094) and PAK2 (for Knobloch syndrome 2) both lead to disruptions in cytoskeletal regulation. This shared disruption impacts downstream processes such as axon guidance, ultimately contributing to overlapping phenotypes like abnormal cerebral cortex morphology, global developmental delay, and ocular abnormalities.\n\n**How to falsify it:** The hypothesis would be falsified if mutations in STEAP3 were found to consistently cause gain-of-function effects or if PAK2 mutations in Knobloch syndrome 2 were demonstrated to have a completely independent downstream pathway not involving cytoskeletal regulation or axon guidance. _(variant: Presence of common loss-of-function variants in STEAP3 or PAK2 in the general population (gnomAD MAF > 0.01).)_\n\n**Why it matters:** Understanding the shared role of PAK2 in cytoskeletal regulation and its convergence with STEAP3's pathway could reveal novel therapeutic targets for developmental disorders affecting both neurological and ocular systems. Strategies aimed at modulating cytoskeletal dynamics or axon guidance pathways might offer a common therapeutic approach.\n\n---\n\n#### 8. intellectual developmental disorder with macrocephaly, seizures, and speech delay  —  Tier 3 — Moderate / Emerging  (fitness 0.383)\n**Link type:** shared pathway (Reactome:R-HSA-9013148, Reactome:R-HSA-9013406)\n\n**Proposed mechanism:** PAK1 gain-of-function variant (HGNC:8613) —DISRUPTS→ PAK1 (HGNC:8613); PAK1 (HGNC:8613) —INCREASES→ PAK1 signaling pathway (GO:0032970); PAK1 signaling pathway (GO:0032970) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Neuronal development (GO:0048666); Neuronal development (GO:0048666) —LEADS_TO→ Phenotype associated with MONDO:0014094 (HP:0001249); Neuronal development (GO:0048666) —LEADS_TO→ Intellectual developmental disorder with macrocephaly, seizures, and speech delay (HP:0001249). Gain-of-function variants in PAK1 lead to hyperactivation of the PAK1 signaling pathway, which in turn dysregulates cytoskeletal dynamics crucial for proper neuronal development. This shared disruption in neuronal development underlies the phenotypic overlap between the two diseases.\n\n**How to falsify it:** Absence of recurrent pathogenic variants in PAK1 in patients with either MONDO:0014094 or MONDO:0032568, or demonstration that variants in PAK1 do not lead to gain-of-function effects impacting cytoskeletal regulation and neuronal development. _(variant: gnomad.broadinstitute.org/variant/11-61771125-C-T)_\n\n**Why it matters:** Targeting the PAK1 pathway or downstream effectors involved in cytoskeletal regulation could offer therapeutic strategies for both conditions, particularly for ameliorating neurological deficits.\n\n---\n\n#### 9. Li-Fraumeni syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.339)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** STEAP3 (HGNC:26548) —DISRUPTS→ Cellular iron homeostasis (GO:0006814); Cellular iron homeostasis (GO:0006814) —LEADS_TO→ Iron overload (HP:0003175); TP53 (HGNC:11998) —DISRUPTS→ DNA damage response (GO:0006974); DNA damage response (GO:0006974) —LEADS_TO→ Cancer predisposition (HP:0012419); Iron overload (HP:0003175) —DISRUPTS→ DNA damage response (GO:0006974). Mutations in STEAP3 disrupt cellular iron homeostasis, potentially leading to iron overload (Disease A). TP53, a critical regulator of the DNA damage response, is inactivated in Li-Fraumeni syndrome (Disease B), leading to cancer predisposition. A proposed convergence is that iron overload itself can induce DNA damage, thus exacerbating the phenotype of TP53 dysfunction and increasing cancer risk.\n\n**How to falsify it:** If mutations in STEAP3 do not lead to any measurable phenotype related to iron homeostasis or DNA damage, or if individuals with MONDO:0014094 show no increased risk of cancer, this hypothesis would be falsified. Additionally, if gnomAD shows a common pathogenic variant in STEAP3 with a frequency >0.1%, it would challenge its role as a causative gene for a rare disorder.\n\n**Why it matters:** Understanding the interplay between iron metabolism and DNA damage response pathways, particularly in the context of TP53, could reveal novel therapeutic targets for both rare diseases and common cancers. Interventions aimed at modulating iron levels or enhancing DNA repair mechanisms in cancer-prone individuals could be explored.\n\n---\n\n#### 10. hepatocellular carcinoma  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-6803204)\n\n**Proposed mechanism:** Gain-of-function variant in CTNNB1 (HGNC:2510) —DISRUPTS→ CTNNB1 (HGNC:2510); CTNNB1 (HGNC:2510) —INCREASES→ Wnt signaling pathway (WP:WP557); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Biliary Atresia (HP:0000064); Wnt signaling pathway (WP:WP557) —LEADS_TO→ Hepatocellular Carcinoma (HP:0001401). Gain-of-function variants in CTNNB1 lead to aberrant activation of the Wnt signaling pathway, which is a shared mechanistic node contributing to the pathogenesis of both Biliary Atresia and Hepatocellular Carcinoma.\n\n**How to falsify it:** Absence of activating CTNNB1 mutations in a significant proportion of Biliary Atresia cases, or demonstration that Wnt signaling is not dysregulated in the affected biliary epithelium. _(variant: rs4567890)_\n\n**Why it matters:** Targeting the Wnt signaling pathway, particularly CTNNB1, could offer therapeutic strategies for both Biliary Atresia and Hepatocellular Carcinoma, potentially by inhibiting pathway activation or its downstream consequences.\n\n---"
+}

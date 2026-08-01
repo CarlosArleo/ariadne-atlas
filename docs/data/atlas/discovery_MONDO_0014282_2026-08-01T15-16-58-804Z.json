@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0014282",
+    "name": "MONDO:0014282"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0957958",
+      "diseaseBName": "spastic paraplegia 72b, autosomal recessive",
+      "fitness": 0.7329,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "REEP2 (HGNC:17975) —DISRUPTS→ Endoplasmic Reticulum organization (GO:0005789); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Spasticity (HP:0001257); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Intellectual disability (HP:0001249); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Abnormal vocalization (HP:0011255). Loss-of-function mutations in REEP2 disrupt endoplasmic reticulum organization, leading to a shared set of neurological and developmental phenotypes, including spasticity, intellectual disability, and abnormal vocalizations, which manifest as distinct disease entities.",
+      "mechanism_narrative": "REEP2 (HGNC:17975) —DISRUPTS→ Endoplasmic Reticulum organization (GO:0005789); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Spasticity (HP:0001257); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Intellectual disability (HP:0001249); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Abnormal vocalization (HP:0011255). Loss-of-function mutations in REEP2 disrupt endoplasmic reticulum organization, leading to a shared set of neurological and developmental phenotypes, including spasticity, intellectual disability, and abnormal vocalizations, which manifest as distinct disease entities.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in REEP2 who do not exhibit any of the core phenotypes associated with either disease, or if the two diseases were found to be caused by mutations with opposite functional consequences in REEP2.",
+        "gnomad_variant": "gnomAD frequency > 0.01% for pathogenic variants in REEP2."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:17975"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0957958",
+        "diseaseBName": "spastic paraplegia 72b, autosomal recessive",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:17975"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7329,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "REEP2 (HGNC:17975) —DISRUPTS→ Endoplasmic Reticulum organization (GO:0005789); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Spasticity (HP:0001257); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Intellectual disability (HP:0001249); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Abnormal vocalization (HP:0011255). Loss-of-function mutations in REEP2 disrupt endoplasmic reticulum organization, leading to a shared set of neurological and developmental phenotypes, including spasticity, intellectual disability, and abnormal vocalizations, which manifest as distinct disease entities.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in REEP2 who do not exhibit any of the core phenotypes associated with either disease, or if the two diseases were found to be caused by mutations with opposite functional consequences in REEP2.",
+          "gnomad_variant": "gnomAD frequency > 0.01% for pathogenic variants in REEP2."
+        },
+        "translational": "Understanding the shared role of REEP2 in ER organization and its impact on neuronal function could lead to targeted therapies for overlapping phenotypes in both diseases, potentially by modulating ER homeostasis or protein trafficking pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T15:16:58.804Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0014282 (MONDO:0014282)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | spastic paraplegia 72b, autosomal recessive (MONDO:0957958) | shared gene | Tier 1 | 0.733 | HGNC:17975 |\n\n### CANDIDATE DETAIL\n#### 1. spastic paraplegia 72b, autosomal recessive  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.733)\n**Link type:** shared causal gene (HGNC:17975)\n\n**Proposed mechanism:** REEP2 (HGNC:17975) —DISRUPTS→ Endoplasmic Reticulum organization (GO:0005789); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Spasticity (HP:0001257); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Intellectual disability (HP:0001249); Endoplasmic Reticulum organization (GO:0005789) —LEADS_TO→ Abnormal vocalization (HP:0011255). Loss-of-function mutations in REEP2 disrupt endoplasmic reticulum organization, leading to a shared set of neurological and developmental phenotypes, including spasticity, intellectual disability, and abnormal vocalizations, which manifest as distinct disease entities.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in REEP2 who do not exhibit any of the core phenotypes associated with either disease, or if the two diseases were found to be caused by mutations with opposite functional consequences in REEP2. _(variant: gnomAD frequency > 0.01% for pathogenic variants in REEP2.)_\n\n**Why it matters:** Understanding the shared role of REEP2 in ER organization and its impact on neuronal function could lead to targeted therapies for overlapping phenotypes in both diseases, potentially by modulating ER homeostasis or protein trafficking pathways.\n\n---"
+}

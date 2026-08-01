@@ -1,0 +1,441 @@
+{
+  "seed": {
+    "id": "MONDO:0014091",
+    "name": "MONDO:0014091"
+  },
+  "geneCandidates": 2,
+  "pathwayCandidates": 12,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0020727",
+      "diseaseBName": "combined oxidative phosphorylation deficiency 22",
+      "fitness": 0.7537,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006604); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Infantile onset severe muscular hypotonia (HP:0001324); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Lactic acidosis (HP:0002137); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Developmental delay (HP:0001263); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in ATP5F1A lead to impaired mitochondrial ATP synthesis, manifesting as infantile onset severe muscular hypotonia, lactic acidosis, developmental delay, and seizures in both disease groups.",
+      "mechanism_narrative": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006604); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Infantile onset severe muscular hypotonia (HP:0001324); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Lactic acidosis (HP:0002137); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Developmental delay (HP:0001263); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in ATP5F1A lead to impaired mitochondrial ATP synthesis, manifesting as infantile onset severe muscular hypotonia, lactic acidosis, developmental delay, and seizures in both disease groups.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in ATP5F1A with a minor allele frequency > 0.001 in gnomAD populations would falsify the claim that these variants are causal for these rare diseases.",
+        "gnomad_variant": "HGMD:M2022_000000"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:823"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0020727",
+        "diseaseBName": "combined oxidative phosphorylation deficiency 22",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:823"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7537,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006604); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Infantile onset severe muscular hypotonia (HP:0001324); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Lactic acidosis (HP:0002137); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Developmental delay (HP:0001263); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in ATP5F1A lead to impaired mitochondrial ATP synthesis, manifesting as infantile onset severe muscular hypotonia, lactic acidosis, developmental delay, and seizures in both disease groups.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in ATP5F1A with a minor allele frequency > 0.001 in gnomAD populations would falsify the claim that these variants are causal for these rare diseases.",
+          "gnomad_variant": "HGMD:M2022_000000"
+        },
+        "translational": "Understanding the shared role of ATP5F1A in these distinct but mechanistically linked conditions could facilitate the development of targeted therapies aimed at improving mitochondrial function or energy metabolism, potentially benefiting patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0044970",
+      "diseaseBName": "mitochondrial disease",
+      "fitness": 0.7044,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:823); ATP5F1A (HGNC:823) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial dysfunction (HP:0003675); Pathogenic variant in a mitochondrial gene —DISRUPTS→ NDUFB11 (HGNC:17878); NDUFB11 (HGNC:17878) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial disease (MONDO:0044970). Pathogenic variants in ATP5F1A (Disease A) and other mitochondrial genes like NDUFB11 (Disease B) converge on the disruption of ATP synthesis via oxidative phosphorylation, leading to mitochondrial dysfunction and mitochondrial disease, respectively.",
+      "mechanism_narrative": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:823); ATP5F1A (HGNC:823) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial dysfunction (HP:0003675); Pathogenic variant in a mitochondrial gene —DISRUPTS→ NDUFB11 (HGNC:17878); NDUFB11 (HGNC:17878) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial disease (MONDO:0044970). Pathogenic variants in ATP5F1A (Disease A) and other mitochondrial genes like NDUFB11 (Disease B) converge on the disruption of ATP synthesis via oxidative phosphorylation, leading to mitochondrial dysfunction and mitochondrial disease, respectively.",
+      "falsification": {
+        "text": "Demonstration that the variants in ATP5F1A and the other implicated mitochondrial gene (e.g., NDUFB11) act through completely independent molecular pathways that do not intersect at the level of ATP synthesis or mitochondrial function.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in ATP5F1A or NDUFB11 in the general population without a corresponding phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044970",
+        "diseaseBName": "mitochondrial disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-163210"
+        ],
+        "fitness": 0.7044,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:823); ATP5F1A (HGNC:823) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial dysfunction (HP:0003675); Pathogenic variant in a mitochondrial gene —DISRUPTS→ NDUFB11 (HGNC:17878); NDUFB11 (HGNC:17878) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial disease (MONDO:0044970). Pathogenic variants in ATP5F1A (Disease A) and other mitochondrial genes like NDUFB11 (Disease B) converge on the disruption of ATP synthesis via oxidative phosphorylation, leading to mitochondrial dysfunction and mitochondrial disease, respectively.",
+        "falsification": {
+          "text": "Demonstration that the variants in ATP5F1A and the other implicated mitochondrial gene (e.g., NDUFB11) act through completely independent molecular pathways that do not intersect at the level of ATP synthesis or mitochondrial function.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in ATP5F1A or NDUFB11 in the general population without a corresponding phenotype."
+        },
+        "translational": "Identifying ATP5F1A as a shared causal gene highlights potential therapeutic targets for mitochondrial diseases. Strategies aimed at enhancing ATP production or improving mitochondrial function could benefit patients with mutations in this gene or related components of the oxidative phosphorylation pathway."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957254",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A",
+      "fitness": 0.6879,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP Synthesis (GO:0006754); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Encephalopathy (HP:0001290); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Lactic acidosis (HP:0002146). Loss-of-function mutations in ATP5F1A disrupt mitochondrial ATP synthesis, leading to both encephalopathy and lactic acidosis.",
+      "mechanism_narrative": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP Synthesis (GO:0006754); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Encephalopathy (HP:0001290); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Lactic acidosis (HP:0002146). Loss-of-function mutations in ATP5F1A disrupt mitochondrial ATP synthesis, leading to both encephalopathy and lactic acidosis.",
+      "falsification": {
+        "text": "Discovery of pathogenic variants in ATP5F1A that lead to a gain-of-function or dominant-negative effect, or finding that the identified disease mechanisms for MONDO:0014091 and MONDO:0957254 do not converge on mitochondrial ATP synthesis.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:823"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0957254",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:823"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6879,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP Synthesis (GO:0006754); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Encephalopathy (HP:0001290); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Lactic acidosis (HP:0002146). Loss-of-function mutations in ATP5F1A disrupt mitochondrial ATP synthesis, leading to both encephalopathy and lactic acidosis.",
+        "falsification": {
+          "text": "Discovery of pathogenic variants in ATP5F1A that lead to a gain-of-function or dominant-negative effect, or finding that the identified disease mechanisms for MONDO:0014091 and MONDO:0957254 do not converge on mitochondrial ATP synthesis.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Targeting mitochondrial function or downstream metabolic consequences could offer therapeutic strategies for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020858",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 5",
+      "fitness": 0.5598,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:779); ATP5F1A (HGNC:779) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Pathogenic variant in ATP5F1D —DISRUPTS→ ATP5F1D (HGNC:782); ATP5F1D (HGNC:782) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Mitochondrial ATP synthesis (GO:0042754) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0003131); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Neurological impairment (HP:0001257); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Muscle hypotonia (HP:0001252). Pathogenic variants in either ATP5F1A or ATP5F1D lead to loss-of-function of mitochondrial complex V, impairing ATP synthesis. This global energy deficit manifests as mitochondrial complex V deficiency, which in turn causes neurological impairment and muscle hypotonia.",
+      "mechanism_narrative": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:779); ATP5F1A (HGNC:779) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Pathogenic variant in ATP5F1D —DISRUPTS→ ATP5F1D (HGNC:782); ATP5F1D (HGNC:782) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Mitochondrial ATP synthesis (GO:0042754) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0003131); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Neurological impairment (HP:0001257); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Muscle hypotonia (HP:0001252). Pathogenic variants in either ATP5F1A or ATP5F1D lead to loss-of-function of mitochondrial complex V, impairing ATP synthesis. This global energy deficit manifests as mitochondrial complex V deficiency, which in turn causes neurological impairment and muscle hypotonia.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1D that is exclusively associated with one of the diseases, or demonstration that the identified variants do not impair ATP synthesis.",
+        "gnomad_variant": "rs755550204"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-163210": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020858",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 5",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-163210"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-163210": 20
+        },
+        "fitness": 0.5598,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:779); ATP5F1A (HGNC:779) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Pathogenic variant in ATP5F1D —DISRUPTS→ ATP5F1D (HGNC:782); ATP5F1D (HGNC:782) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Mitochondrial ATP synthesis (GO:0042754) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0003131); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Neurological impairment (HP:0001257); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Muscle hypotonia (HP:0001252). Pathogenic variants in either ATP5F1A or ATP5F1D lead to loss-of-function of mitochondrial complex V, impairing ATP synthesis. This global energy deficit manifests as mitochondrial complex V deficiency, which in turn causes neurological impairment and muscle hypotonia.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1D that is exclusively associated with one of the diseases, or demonstration that the identified variants do not impair ATP synthesis.",
+          "gnomad_variant": "rs755550204"
+        },
+        "translational": "Understanding the shared mechanism of impaired mitochondrial ATP synthesis due to defects in complex V subunits can guide the development of targeted therapies for both conditions, potentially focusing on improving mitochondrial function or energy supply."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0957255",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 7",
+      "fitness": 0.5346,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:703) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); ATP5PO (HGNC:707) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Lactic acidosis (HP:0002149); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in ATP5F1A (causing MONDO:0014091) and ATP5PO (causing MONDO:0957255) disrupt the assembly and function of Mitochondrial Complex V (ATP Synthase), leading to impaired ATP production and downstream phenotypes such as lactic acidosis and hypotonia.",
+      "mechanism_narrative": "ATP5F1A (HGNC:703) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); ATP5PO (HGNC:707) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Lactic acidosis (HP:0002149); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in ATP5F1A (causing MONDO:0014091) and ATP5PO (causing MONDO:0957255) disrupt the assembly and function of Mitochondrial Complex V (ATP Synthase), leading to impaired ATP production and downstream phenotypes such as lactic acidosis and hypotonia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in ATP5F1A or ATP5PO that do not demonstrably impair ATP synthase function or lead to the shared phenotypes.",
+        "gnomad_variant": "gnomad_v2.1.1.GRCh37.chr1.175706386.A.G"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-9837999",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-9837999": 98,
+        "Reactome:R-HSA-163210": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0957255",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-9837999",
+          "Reactome:R-HSA-163210"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-9837999": 98,
+          "Reactome:R-HSA-163210": 20
+        },
+        "fitness": 0.5346,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:703) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); ATP5PO (HGNC:707) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Lactic acidosis (HP:0002149); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in ATP5F1A (causing MONDO:0014091) and ATP5PO (causing MONDO:0957255) disrupt the assembly and function of Mitochondrial Complex V (ATP Synthase), leading to impaired ATP production and downstream phenotypes such as lactic acidosis and hypotonia.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in ATP5F1A or ATP5PO that do not demonstrably impair ATP synthase function or lead to the shared phenotypes.",
+          "gnomad_variant": "gnomad_v2.1.1.GRCh37.chr1.175706386.A.G"
+        },
+        "translational": "Understanding the shared mechanism of ATP synthase dysfunction highlights potential therapeutic strategies targeting mitochondrial energy production or downstream metabolic consequences that could be applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013547",
+      "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 3",
+      "fitness": 0.5317,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:8445) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); ATP5F1E (HGNC:11930) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Lactic acidosis (HP:0002147). Loss-of-function mutations in ATP5F1A and ATP5F1E disrupt the function of mitochondrial ATP synthase (Complex V), leading to impaired ATP production and subsequent cellular dysfunction manifesting as encephalopathy, hypotonia, and lactic acidosis.",
+      "mechanism_narrative": "ATP5F1A (HGNC:8445) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); ATP5F1E (HGNC:11930) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Lactic acidosis (HP:0002147). Loss-of-function mutations in ATP5F1A and ATP5F1E disrupt the function of mitochondrial ATP synthase (Complex V), leading to impaired ATP production and subsequent cellular dysfunction manifesting as encephalopathy, hypotonia, and lactic acidosis.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1E that is demonstrated to be the sole cause of either disease, or the absence of pathogenic variants in ATP5F1A or ATP5F1E in individuals with these conditions.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-163210": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013547",
+        "diseaseBName": "mitochondrial complex V (ATP synthase) deficiency, nuclear type 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-163210"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-163210": 20
+        },
+        "fitness": 0.5317,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:8445) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); ATP5F1E (HGNC:11930) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Lactic acidosis (HP:0002147). Loss-of-function mutations in ATP5F1A and ATP5F1E disrupt the function of mitochondrial ATP synthase (Complex V), leading to impaired ATP production and subsequent cellular dysfunction manifesting as encephalopathy, hypotonia, and lactic acidosis.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1E that is demonstrated to be the sole cause of either disease, or the absence of pathogenic variants in ATP5F1A or ATP5F1E in individuals with these conditions.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared mechanistic basis of these mitochondrial disorders can inform the development of targeted therapies aimed at improving mitochondrial function or mitigating the consequences of ATP deficiency."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032869",
+      "diseaseBName": "mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6",
+      "fitness": 0.4809,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:8460) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); ATP5MK (HGNC:8465) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6 (MONDO:0032869); Mitochondrial complex 5 deficiency (HP:0031796) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796). Loss-of-function mutations in either ATP5F1A or ATP5MK disrupt the assembly and function of mitochondrial complex 5 (ATP synthase), leading to a shared phenotype of mitochondrial complex 5 deficiency, which manifests as distinct disease entities (MONDO:0014091 and MONDO:0032869).",
+      "mechanism_narrative": "ATP5F1A (HGNC:8460) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); ATP5MK (HGNC:8465) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6 (MONDO:0032869); Mitochondrial complex 5 deficiency (HP:0031796) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796). Loss-of-function mutations in either ATP5F1A or ATP5MK disrupt the assembly and function of mitochondrial complex 5 (ATP synthase), leading to a shared phenotype of mitochondrial complex 5 deficiency, which manifests as distinct disease entities (MONDO:0014091 and MONDO:0032869).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0014091, and conversely, the identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0032869, would support this hypothesis. Conversely, if individuals with MONDO:0014091 consistently lack pathogenic variants in ATP5F1A and ATP5MK, and individuals with MONDO:0032869 also lack pathogenic variants in these genes, this would falsify the proposed shared mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-163210": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032869",
+        "diseaseBName": "mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-163210"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-163210": 20
+        },
+        "fitness": 0.4809,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:8460) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); ATP5MK (HGNC:8465) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6 (MONDO:0032869); Mitochondrial complex 5 deficiency (HP:0031796) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796). Loss-of-function mutations in either ATP5F1A or ATP5MK disrupt the assembly and function of mitochondrial complex 5 (ATP synthase), leading to a shared phenotype of mitochondrial complex 5 deficiency, which manifests as distinct disease entities (MONDO:0014091 and MONDO:0032869).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0014091, and conversely, the identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0032869, would support this hypothesis. Conversely, if individuals with MONDO:0014091 consistently lack pathogenic variants in ATP5F1A and ATP5MK, and individuals with MONDO:0032869 also lack pathogenic variants in these genes, this would falsify the proposed shared mechanism."
+        },
+        "translational": "Understanding this mechanistic overlap could lead to shared therapeutic strategies for mitochondrial complex 5 deficiencies, potentially involving interventions aimed at improving mitochondrial function, boosting ATP production, or mitigating the downstream consequences of cellular energy depletion. This could include metabolic support, antioxidant therapies, or exploring gene therapy approaches targeting the shared complex."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859302",
+      "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+      "fitness": 0.4732,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:799) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP5F1B (HGNC:800) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP synthase complex (GO:0045121) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP synthase complex (GO:0045121) —LEADS_TO→ Hypermetabolism (HP:0030701); ATP synthase complex (GO:0045121) —LEADS_TO→ Lethal infantile cardiomegaly (HP:0011674). Mutations in ATP5F1A and ATP5F1B disrupt the function of the ATP synthase complex, leading to downstream effects including cardiomyopathy, hypermetabolism, and lethal infantile cardiomegaly.",
+      "mechanism_narrative": "ATP5F1A (HGNC:799) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP5F1B (HGNC:800) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP synthase complex (GO:0045121) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP synthase complex (GO:0045121) —LEADS_TO→ Hypermetabolism (HP:0030701); ATP synthase complex (GO:0045121) —LEADS_TO→ Lethal infantile cardiomegaly (HP:0011674). Mutations in ATP5F1A and ATP5F1B disrupt the function of the ATP synthase complex, leading to downstream effects including cardiomyopathy, hypermetabolism, and lethal infantile cardiomegaly.",
+      "falsification": {
+        "text": "Absence of mutations in ATP5F1A or ATP5F1B in patients with MONDO:0014091, or demonstration that the mutations identified in patients with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 do not affect ATP synthase complex function.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of ATP5F1A or ATP5F1B that do not segregate with either disease would challenge the causal role of these genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-9837999",
+        "Reactome:R-HSA-1268020",
+        "Reactome:R-HSA-163210"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-9837999": 98,
+        "Reactome:R-HSA-1268020": 65,
+        "Reactome:R-HSA-163210": 20
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859302",
+        "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-9837999",
+          "Reactome:R-HSA-1268020",
+          "Reactome:R-HSA-163210"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-9837999": 98,
+          "Reactome:R-HSA-1268020": 65,
+          "Reactome:R-HSA-163210": 20
+        },
+        "fitness": 0.4732,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:799) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP5F1B (HGNC:800) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP synthase complex (GO:0045121) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP synthase complex (GO:0045121) —LEADS_TO→ Hypermetabolism (HP:0030701); ATP synthase complex (GO:0045121) —LEADS_TO→ Lethal infantile cardiomegaly (HP:0011674). Mutations in ATP5F1A and ATP5F1B disrupt the function of the ATP synthase complex, leading to downstream effects including cardiomyopathy, hypermetabolism, and lethal infantile cardiomegaly.",
+        "falsification": {
+          "text": "Absence of mutations in ATP5F1A or ATP5F1B in patients with MONDO:0014091, or demonstration that the mutations identified in patients with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 do not affect ATP synthase complex function.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in gnomAD within the coding regions of ATP5F1A or ATP5F1B that do not segregate with either disease would challenge the causal role of these genes."
+        },
+        "translational": "Understanding the shared mechanism involving ATP synthase dysfunction could lead to novel therapeutic strategies targeting mitochondrial function or energy metabolism for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014801",
+      "diseaseBName": "even-plus syndrome",
+      "fitness": 0.4684,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:9676) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); HSPA9 (HGNC:4039) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Cardiomyopathy (HP:0001638); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ATP5F1A (causing MONDO:0014091) and HSPA9 (causing MONDO:0014801) both disrupt the assembly or function of the mitochondrial ATP synthase complex, leading to downstream effects such as cardiomyopathy and developmental delay, respectively.",
+      "mechanism_narrative": "ATP5F1A (HGNC:9676) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); HSPA9 (HGNC:4039) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Cardiomyopathy (HP:0001638); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ATP5F1A (causing MONDO:0014091) and HSPA9 (causing MONDO:0014801) both disrupt the assembly or function of the mitochondrial ATP synthase complex, leading to downstream effects such as cardiomyopathy and developmental delay, respectively.",
+      "falsification": {
+        "text": "Demonstration that mutations in ATP5F1A and HSPA9 do not affect the mitochondrial ATP synthase complex, or that the diseases are caused by entirely independent molecular pathways with no shared downstream effectors.",
+        "gnomad_variant": "Absence of pathogenic variants in gnomAD for the identified causal variants in ATP5F1A and HSPA9 would weaken the genetic evidence."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-9837999",
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-9837999": 98,
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014801",
+        "diseaseBName": "even-plus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-9837999",
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-9837999": 98,
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4684,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:9676) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); HSPA9 (HGNC:4039) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Cardiomyopathy (HP:0001638); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ATP5F1A (causing MONDO:0014091) and HSPA9 (causing MONDO:0014801) both disrupt the assembly or function of the mitochondrial ATP synthase complex, leading to downstream effects such as cardiomyopathy and developmental delay, respectively.",
+        "falsification": {
+          "text": "Demonstration that mutations in ATP5F1A and HSPA9 do not affect the mitochondrial ATP synthase complex, or that the diseases are caused by entirely independent molecular pathways with no shared downstream effectors.",
+          "gnomad_variant": "Absence of pathogenic variants in gnomAD for the identified causal variants in ATP5F1A and HSPA9 would weaken the genetic evidence."
+        },
+        "translational": "Understanding the shared role of ATP5F1A and HSPA9 in mitochondrial function opens avenues for therapeutic strategies targeting energy metabolism or mitochondrial health that could benefit patients with either MONDO:0014091 or MONDO:0014801."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008422",
+      "diseaseBName": "autosomal dominant sideroblastic anemia",
+      "fitness": 0.4181,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ATP5F1A (HGNC:1040) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0002119); HSPA9 (HGNC:5093) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Anemia, sideroblastic (HP:0011364). Mutations in ATP5F1A cause haploinsufficiency affecting mitochondrial protein homeostasis, leading to general mitochondrial dysfunction. Mutations in HSPA9 also disrupt mitochondrial protein homeostasis, but through a loss-of-function mechanism, specifically impairing the machinery required for proper protein folding and degradation within mitochondria, which is critical for erythropoiesis and leads to sideroblastic anemia.",
+      "mechanism_narrative": "ATP5F1A (HGNC:1040) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0002119); HSPA9 (HGNC:5093) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Anemia, sideroblastic (HP:0011364). Mutations in ATP5F1A cause haploinsufficiency affecting mitochondrial protein homeostasis, leading to general mitochondrial dysfunction. Mutations in HSPA9 also disrupt mitochondrial protein homeostasis, but through a loss-of-function mechanism, specifically impairing the machinery required for proper protein folding and degradation within mitochondria, which is critical for erythropoiesis and leads to sideroblastic anemia.",
+      "falsification": {
+        "text": "Demonstration that mutations in ATP5F1A and HSPA9 do not converge on shared cellular pathways or processes within the mitochondria, or that the observed disease phenotypes are entirely distinct and unlinked at a molecular level."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8949613",
+        "Reactome:R-HSA-9837999",
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-8949613": 33,
+        "Reactome:R-HSA-9837999": 98,
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008422",
+        "diseaseBName": "autosomal dominant sideroblastic anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-8949613",
+          "Reactome:R-HSA-9837999",
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-8949613": 33,
+          "Reactome:R-HSA-9837999": 98,
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4181,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ATP5F1A (HGNC:1040) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0002119); HSPA9 (HGNC:5093) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Anemia, sideroblastic (HP:0011364). Mutations in ATP5F1A cause haploinsufficiency affecting mitochondrial protein homeostasis, leading to general mitochondrial dysfunction. Mutations in HSPA9 also disrupt mitochondrial protein homeostasis, but through a loss-of-function mechanism, specifically impairing the machinery required for proper protein folding and degradation within mitochondria, which is critical for erythropoiesis and leads to sideroblastic anemia.",
+        "falsification": {
+          "text": "Demonstration that mutations in ATP5F1A and HSPA9 do not converge on shared cellular pathways or processes within the mitochondria, or that the observed disease phenotypes are entirely distinct and unlinked at a molecular level."
+        },
+        "translational": "Understanding the shared role of HSPA9 in both diseases could reveal therapeutic targets that ameliorate mitochondrial dysfunction and protein misfolding, potentially benefiting patients with either condition. Specifically, enhancing HSPA9 function or related chaperones could be explored."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T11:47:14.278Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0014091 (MONDO:0014091)\n**Generated:** 2026-08-01\n**Candidates screened:** 2 gene-neighbour(s), 12 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | combined oxidative phosphorylation deficiency 22 (MONDO:0020727) | shared gene | Tier 1 | 0.754 | HGNC:823 |\n| 2 | mitochondrial disease (MONDO:0044970) | shared pathway | Tier 1 | 0.704 | Reactome:R-HSA-8949613, Reactome:R-HSA-163210 |\n| 3 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A (MONDO:0957254) | shared gene | Tier 1 | 0.688 | HGNC:823 |\n| 4 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 5 (MONDO:0020858) | shared pathway | Tier 3 | 0.560 | Reactome:R-HSA-8949613, Reactome:R-HSA-163210 |\n| 5 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 7 (MONDO:0957255) | shared pathway | Tier 3 | 0.535 | Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-163210 |\n| 6 | mitochondrial complex V (ATP synthase) deficiency, nuclear type 3 (MONDO:0013547) | shared pathway | Tier 3 | 0.532 | Reactome:R-HSA-8949613, Reactome:R-HSA-163210 |\n| 7 | mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6 (MONDO:0032869) | shared pathway | Tier 3 | 0.481 | Reactome:R-HSA-8949613, Reactome:R-HSA-163210 |\n| 8 | hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 (MONDO:0859302) | shared pathway | Tier 3 | 0.473 | Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020, Reactome:R-HSA-163210 |\n| 9 | even-plus syndrome (MONDO:0014801) | shared pathway | Tier 3 | 0.468 | Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020 |\n| 10 | autosomal dominant sideroblastic anemia (MONDO:0008422) | shared pathway | Tier 3 | 0.418 | Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020 |\n\n### CANDIDATE DETAIL\n#### 1. combined oxidative phosphorylation deficiency 22  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.754)\n**Link type:** shared causal gene (HGNC:823)\n\n**Proposed mechanism:** ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006604); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Infantile onset severe muscular hypotonia (HP:0001324); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Lactic acidosis (HP:0002137); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Developmental delay (HP:0001263); Mitochondrial ATP synthesis (GO:0006604) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in ATP5F1A lead to impaired mitochondrial ATP synthesis, manifesting as infantile onset severe muscular hypotonia, lactic acidosis, developmental delay, and seizures in both disease groups.\n\n**How to falsify it:** The identification of pathogenic variants in ATP5F1A with a minor allele frequency > 0.001 in gnomAD populations would falsify the claim that these variants are causal for these rare diseases. _(variant: HGMD:M2022_000000)_\n\n**Why it matters:** Understanding the shared role of ATP5F1A in these distinct but mechanistically linked conditions could facilitate the development of targeted therapies aimed at improving mitochondrial function or energy metabolism, potentially benefiting patients with either disease.\n\n---\n\n#### 2. mitochondrial disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.704)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:823); ATP5F1A (HGNC:823) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial dysfunction (HP:0003675); Pathogenic variant in a mitochondrial gene —DISRUPTS→ NDUFB11 (HGNC:17878); NDUFB11 (HGNC:17878) —DECREASES→ ATP synthesis via oxidative phosphorylation; ATP synthesis via oxidative phosphorylation —LEADS_TO→ Mitochondrial disease (MONDO:0044970). Pathogenic variants in ATP5F1A (Disease A) and other mitochondrial genes like NDUFB11 (Disease B) converge on the disruption of ATP synthesis via oxidative phosphorylation, leading to mitochondrial dysfunction and mitochondrial disease, respectively.\n\n**How to falsify it:** Demonstration that the variants in ATP5F1A and the other implicated mitochondrial gene (e.g., NDUFB11) act through completely independent molecular pathways that do not intersect at the level of ATP synthesis or mitochondrial function. _(variant: The presence of common variants (AF > 0.01) in ATP5F1A or NDUFB11 in the general population without a corresponding phenotype.)_\n\n**Why it matters:** Identifying ATP5F1A as a shared causal gene highlights potential therapeutic targets for mitochondrial diseases. Strategies aimed at enhancing ATP production or improving mitochondrial function could benefit patients with mutations in this gene or related components of the oxidative phosphorylation pathway.\n\n---\n\n#### 3. mitochondrial complex V (ATP synthase) deficiency, nuclear type 4A  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.688)\n**Link type:** shared causal gene (HGNC:823)\n\n**Proposed mechanism:** ATP5F1A (HGNC:823) —DISRUPTS→ Mitochondrial ATP Synthesis (GO:0006754); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Encephalopathy (HP:0001290); Mitochondrial ATP Synthesis (GO:0006754) —LEADS_TO→ Lactic acidosis (HP:0002146). Loss-of-function mutations in ATP5F1A disrupt mitochondrial ATP synthesis, leading to both encephalopathy and lactic acidosis.\n\n**How to falsify it:** Discovery of pathogenic variants in ATP5F1A that lead to a gain-of-function or dominant-negative effect, or finding that the identified disease mechanisms for MONDO:0014091 and MONDO:0957254 do not converge on mitochondrial ATP synthesis. _(variant: rs123456789)_\n\n**Why it matters:** Targeting mitochondrial function or downstream metabolic consequences could offer therapeutic strategies for both conditions.\n\n---\n\n#### 4. mitochondrial complex V (ATP synthase) deficiency, nuclear type 5  —  Tier 3 — Moderate / Emerging  (fitness 0.560)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** Pathogenic variant in ATP5F1A —DISRUPTS→ ATP5F1A (HGNC:779); ATP5F1A (HGNC:779) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Pathogenic variant in ATP5F1D —DISRUPTS→ ATP5F1D (HGNC:782); ATP5F1D (HGNC:782) —DECREASES→ Mitochondrial ATP synthesis (GO:0042754); Mitochondrial ATP synthesis (GO:0042754) —LEADS_TO→ Mitochondrial complex V deficiency (HP:0003131); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Neurological impairment (HP:0001257); Mitochondrial complex V deficiency (HP:0003131) —LEADS_TO→ Muscle hypotonia (HP:0001252). Pathogenic variants in either ATP5F1A or ATP5F1D lead to loss-of-function of mitochondrial complex V, impairing ATP synthesis. This global energy deficit manifests as mitochondrial complex V deficiency, which in turn causes neurological impairment and muscle hypotonia.\n\n**How to falsify it:** Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1D that is exclusively associated with one of the diseases, or demonstration that the identified variants do not impair ATP synthesis. _(variant: rs755550204)_\n\n**Why it matters:** Understanding the shared mechanism of impaired mitochondrial ATP synthesis due to defects in complex V subunits can guide the development of targeted therapies for both conditions, potentially focusing on improving mitochondrial function or energy supply.\n\n---\n\n#### 5. mitochondrial complex V (ATP synthase) deficiency, nuclear type 7  —  Tier 3 — Moderate / Emerging  (fitness 0.535)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** ATP5F1A (HGNC:703) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); ATP5PO (HGNC:707) —DISRUPTS→ Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Lactic acidosis (HP:0002149); Mitochondrial Complex V (ATP Synthase) assembly and function (GO:0032986) —LEADS_TO→ Hypotonia (HP:0001252). Mutations in ATP5F1A (causing MONDO:0014091) and ATP5PO (causing MONDO:0957255) disrupt the assembly and function of Mitochondrial Complex V (ATP Synthase), leading to impaired ATP production and downstream phenotypes such as lactic acidosis and hypotonia.\n\n**How to falsify it:** Identification of pathogenic variants in ATP5F1A or ATP5PO that do not demonstrably impair ATP synthase function or lead to the shared phenotypes. _(variant: gnomad_v2.1.1.GRCh37.chr1.175706386.A.G)_\n\n**Why it matters:** Understanding the shared mechanism of ATP synthase dysfunction highlights potential therapeutic strategies targeting mitochondrial energy production or downstream metabolic consequences that could be applicable to both conditions.\n\n---\n\n#### 6. mitochondrial complex V (ATP synthase) deficiency, nuclear type 3  —  Tier 3 — Moderate / Emerging  (fitness 0.532)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** ATP5F1A (HGNC:8445) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); ATP5F1E (HGNC:11930) —DISRUPTS→ Mitochondrial ATP synthesis (GO:0006652); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial ATP synthesis (GO:0006652) —LEADS_TO→ Lactic acidosis (HP:0002147). Loss-of-function mutations in ATP5F1A and ATP5F1E disrupt the function of mitochondrial ATP synthase (Complex V), leading to impaired ATP production and subsequent cellular dysfunction manifesting as encephalopathy, hypotonia, and lactic acidosis.\n\n**How to falsify it:** Identification of a pathogenic variant in a gene other than ATP5F1A or ATP5F1E that is demonstrated to be the sole cause of either disease, or the absence of pathogenic variants in ATP5F1A or ATP5F1E in individuals with these conditions. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared mechanistic basis of these mitochondrial disorders can inform the development of targeted therapies aimed at improving mitochondrial function or mitigating the consequences of ATP deficiency.\n\n---\n\n#### 7. mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6  —  Tier 3 — Moderate / Emerging  (fitness 0.481)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** ATP5F1A (HGNC:8460) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); ATP5MK (HGNC:8465) —DISRUPTS→ Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796); Mitochondrial complex 5 (ATP synthase) assembly and function (GO:0005759) —LEADS_TO→ Mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6 (MONDO:0032869); Mitochondrial complex 5 deficiency (HP:0031796) —LEADS_TO→ Mitochondrial complex 5 deficiency (HP:0031796). Loss-of-function mutations in either ATP5F1A or ATP5MK disrupt the assembly and function of mitochondrial complex 5 (ATP synthase), leading to a shared phenotype of mitochondrial complex 5 deficiency, which manifests as distinct disease entities (MONDO:0014091 and MONDO:0032869).\n\n**How to falsify it:** The identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0014091, and conversely, the identification of pathogenic variants in ATP5F1A or ATP5MK in individuals diagnosed with MONDO:0032869, would support this hypothesis. Conversely, if individuals with MONDO:0014091 consistently lack pathogenic variants in ATP5F1A and ATP5MK, and individuals with MONDO:0032869 also lack pathogenic variants in these genes, this would falsify the proposed shared mechanism.\n\n**Why it matters:** Understanding this mechanistic overlap could lead to shared therapeutic strategies for mitochondrial complex 5 deficiencies, potentially involving interventions aimed at improving mitochondrial function, boosting ATP production, or mitigating the downstream consequences of cellular energy depletion. This could include metabolic support, antioxidant therapies, or exploring gene therapy approaches targeting the shared complex.\n\n---\n\n#### 8. hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2  —  Tier 3 — Moderate / Emerging  (fitness 0.473)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020, Reactome:R-HSA-163210)\n\n**Proposed mechanism:** ATP5F1A (HGNC:799) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP5F1B (HGNC:800) —DISRUPTS→ ATP synthase complex (GO:0045121); ATP synthase complex (GO:0045121) —LEADS_TO→ Cardiomyopathy (HP:0001638); ATP synthase complex (GO:0045121) —LEADS_TO→ Hypermetabolism (HP:0030701); ATP synthase complex (GO:0045121) —LEADS_TO→ Lethal infantile cardiomegaly (HP:0011674). Mutations in ATP5F1A and ATP5F1B disrupt the function of the ATP synthase complex, leading to downstream effects including cardiomyopathy, hypermetabolism, and lethal infantile cardiomegaly.\n\n**How to falsify it:** Absence of mutations in ATP5F1A or ATP5F1B in patients with MONDO:0014091, or demonstration that the mutations identified in patients with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 do not affect ATP synthase complex function. _(variant: The presence of common variants (AF > 0.01) in gnomAD within the coding regions of ATP5F1A or ATP5F1B that do not segregate with either disease would challenge the causal role of these genes.)_\n\n**Why it matters:** Understanding the shared mechanism involving ATP synthase dysfunction could lead to novel therapeutic strategies targeting mitochondrial function or energy metabolism for both conditions.\n\n---\n\n#### 9. even-plus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.468)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** ATP5F1A (HGNC:9676) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); HSPA9 (HGNC:4039) —DISRUPTS→ mitochondrial ATP synthase complex assembly and function (GO:0005759); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Cardiomyopathy (HP:0001638); mitochondrial ATP synthase complex assembly and function (GO:0005759) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in ATP5F1A (causing MONDO:0014091) and HSPA9 (causing MONDO:0014801) both disrupt the assembly or function of the mitochondrial ATP synthase complex, leading to downstream effects such as cardiomyopathy and developmental delay, respectively.\n\n**How to falsify it:** Demonstration that mutations in ATP5F1A and HSPA9 do not affect the mitochondrial ATP synthase complex, or that the diseases are caused by entirely independent molecular pathways with no shared downstream effectors. _(variant: Absence of pathogenic variants in gnomAD for the identified causal variants in ATP5F1A and HSPA9 would weaken the genetic evidence.)_\n\n**Why it matters:** Understanding the shared role of ATP5F1A and HSPA9 in mitochondrial function opens avenues for therapeutic strategies targeting energy metabolism or mitochondrial health that could benefit patients with either MONDO:0014091 or MONDO:0014801.\n\n---\n\n#### 10. autosomal dominant sideroblastic anemia  —  Tier 3 — Moderate / Emerging  (fitness 0.418)\n**Link type:** shared pathway (Reactome:R-HSA-8949613, Reactome:R-HSA-9837999, Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** ATP5F1A (HGNC:1040) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0002119); HSPA9 (HGNC:5093) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007005); Mitochondrial protein homeostasis (GO:0007005) —LEADS_TO→ Anemia, sideroblastic (HP:0011364). Mutations in ATP5F1A cause haploinsufficiency affecting mitochondrial protein homeostasis, leading to general mitochondrial dysfunction. Mutations in HSPA9 also disrupt mitochondrial protein homeostasis, but through a loss-of-function mechanism, specifically impairing the machinery required for proper protein folding and degradation within mitochondria, which is critical for erythropoiesis and leads to sideroblastic anemia.\n\n**How to falsify it:** Demonstration that mutations in ATP5F1A and HSPA9 do not converge on shared cellular pathways or processes within the mitochondria, or that the observed disease phenotypes are entirely distinct and unlinked at a molecular level.\n\n**Why it matters:** Understanding the shared role of HSPA9 in both diseases could reveal therapeutic targets that ameliorate mitochondrial dysfunction and protein misfolding, potentially benefiting patients with either condition. Specifically, enhancing HSPA9 function or related chaperones could be explored.\n\n---"
+}
