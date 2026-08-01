@@ -1,0 +1,251 @@
+{
+  "seed": {
+    "id": "MONDO:0013753",
+    "name": "MONDO:0013753"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 6,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010820",
+      "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+      "fitness": 0.4781,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LRSAM1 (HGNC:27651) —DISRUPTS→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Neuropathy (HP:0000746); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in LRSAM1 disrupt general mitochondrial quality control, leading to neuropathy. Similarly, loss-of-function mutations in PRKN disrupt mitophagy, a specific process within mitochondrial quality control, ultimately leading to Parkinsonism.",
+      "mechanism_narrative": "LRSAM1 (HGNC:27651) —DISRUPTS→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Neuropathy (HP:0000746); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in LRSAM1 disrupt general mitochondrial quality control, leading to neuropathy. Similarly, loss-of-function mutations in PRKN disrupt mitophagy, a specific process within mitochondrial quality control, ultimately leading to Parkinsonism.",
+      "falsification": {
+        "text": "Demonstration that LRSAM1 and PRKN act in completely independent cellular pathways with no shared downstream effectors or cellular processes related to mitochondrial homeostasis.",
+        "gnomad_variant": "Identification of common loss-of-function variants in LRSAM1 or PRKN in large control populations (e.g., gnomAD > 1%) that do not exhibit the respective disease phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010820",
+        "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.4781,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LRSAM1 (HGNC:27651) —DISRUPTS→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Neuropathy (HP:0000746); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in LRSAM1 disrupt general mitochondrial quality control, leading to neuropathy. Similarly, loss-of-function mutations in PRKN disrupt mitophagy, a specific process within mitochondrial quality control, ultimately leading to Parkinsonism.",
+        "falsification": {
+          "text": "Demonstration that LRSAM1 and PRKN act in completely independent cellular pathways with no shared downstream effectors or cellular processes related to mitochondrial homeostasis.",
+          "gnomad_variant": "Identification of common loss-of-function variants in LRSAM1 or PRKN in large control populations (e.g., gnomAD > 1%) that do not exhibit the respective disease phenotypes."
+        },
+        "translational": "Understanding the shared role of mitochondrial quality control in these distinct neurological disorders could reveal common therapeutic targets for neuroprotection, potentially leveraging strategies aimed at enhancing mitophagy or overall mitochondrial function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859325",
+      "diseaseBName": "developmental and epileptic encephalopathy 109",
+      "fitness": 0.4523,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LRSAM1 (HGNC:17457) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); FZR1 (HGNC:29019) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ MONDO:0013753 phenotype (HP:0001250); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ Developmental and epileptic encephalopathy 109 phenotype (HP:0011223). Loss-of-function mutations in both LRSAM1 and FZR1 disrupt cellular homeostasis and protein turnover, leading to the distinct but overlapping phenotypes of MONDO:0013753 and developmental and epileptic encephalopathy 109.",
+      "mechanism_narrative": "LRSAM1 (HGNC:17457) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); FZR1 (HGNC:29019) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ MONDO:0013753 phenotype (HP:0001250); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ Developmental and epileptic encephalopathy 109 phenotype (HP:0011223). Loss-of-function mutations in both LRSAM1 and FZR1 disrupt cellular homeostasis and protein turnover, leading to the distinct but overlapping phenotypes of MONDO:0013753 and developmental and epileptic encephalopathy 109.",
+      "falsification": {
+        "text": "If pathogenic variants in LRSAM1 or FZR1 are found to be exclusively associated with one disease but not the other, or if the functional consequences of mutations in these genes differ drastically between the two diseases (e.g., LoF for one and GoF for the other), this proposed overlap would be falsified.",
+        "gnomad_variant": "rs12345678 (hypothetical common variant in LRSAM1 or FZR1)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859325",
+        "diseaseBName": "developmental and epileptic encephalopathy 109",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.4523,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LRSAM1 (HGNC:17457) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); FZR1 (HGNC:29019) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ MONDO:0013753 phenotype (HP:0001250); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ Developmental and epileptic encephalopathy 109 phenotype (HP:0011223). Loss-of-function mutations in both LRSAM1 and FZR1 disrupt cellular homeostasis and protein turnover, leading to the distinct but overlapping phenotypes of MONDO:0013753 and developmental and epileptic encephalopathy 109.",
+        "falsification": {
+          "text": "If pathogenic variants in LRSAM1 or FZR1 are found to be exclusively associated with one disease but not the other, or if the functional consequences of mutations in these genes differ drastically between the two diseases (e.g., LoF for one and GoF for the other), this proposed overlap would be falsified.",
+          "gnomad_variant": "rs12345678 (hypothetical common variant in LRSAM1 or FZR1)"
+        },
+        "translational": "Understanding the shared disruption of cellular homeostasis by LRSAM1 and FZR1 mutations could reveal common therapeutic targets for these distinct rare neurological disorders, potentially through pathways that restore protein turnover or mitigate cellular stress."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.4289,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KRAS (HGNC:6407) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); MAP3K8 (HGNC:7146) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); BRAF (HGNC:1087) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); EGFR (HGNC:3236) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); ERBB2 (HGNC:3428) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); PIK3CA (HGNC:9535) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); EGFR (HGNC:3236) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); RAS-MAPK signaling pathway (WP:WP540) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); PI3K-AKT signaling pathway (WP:WP490) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Lung cancer (MONDO:0008903); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Laron syndrome (MONDO:0013753). Gain-of-function mutations in KRAS, MAP3K8, BRAF, EGFR, ERBB2, and PIK3CA lead to dysregulation of the RAS-MAPK and PI3K-AKT signaling pathways. This aberrant signaling drives uncontrolled cell growth and proliferation, contributing to the phenotypes of both Laron syndrome and lung cancer.",
+      "mechanism_narrative": "KRAS (HGNC:6407) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); MAP3K8 (HGNC:7146) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); BRAF (HGNC:1087) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); EGFR (HGNC:3236) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); ERBB2 (HGNC:3428) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); PIK3CA (HGNC:9535) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); EGFR (HGNC:3236) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); RAS-MAPK signaling pathway (WP:WP540) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); PI3K-AKT signaling pathway (WP:WP490) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Lung cancer (MONDO:0008903); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Laron syndrome (MONDO:0013753). Gain-of-function mutations in KRAS, MAP3K8, BRAF, EGFR, ERBB2, and PIK3CA lead to dysregulation of the RAS-MAPK and PI3K-AKT signaling pathways. This aberrant signaling drives uncontrolled cell growth and proliferation, contributing to the phenotypes of both Laron syndrome and lung cancer.",
+      "falsification": {
+        "text": "Absence of activating mutations in KRAS, MAP3K8, PIK3CA, BRAF, ERBB2, or EGFR in individuals diagnosed with both Laron syndrome and lung cancer, or demonstration that these pathways are not dysregulated in Laron syndrome.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.4289,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KRAS (HGNC:6407) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); MAP3K8 (HGNC:7146) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); BRAF (HGNC:1087) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); EGFR (HGNC:3236) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); ERBB2 (HGNC:3428) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); PIK3CA (HGNC:9535) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); EGFR (HGNC:3236) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); RAS-MAPK signaling pathway (WP:WP540) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); PI3K-AKT signaling pathway (WP:WP490) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Lung cancer (MONDO:0008903); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Laron syndrome (MONDO:0013753). Gain-of-function mutations in KRAS, MAP3K8, BRAF, EGFR, ERBB2, and PIK3CA lead to dysregulation of the RAS-MAPK and PI3K-AKT signaling pathways. This aberrant signaling drives uncontrolled cell growth and proliferation, contributing to the phenotypes of both Laron syndrome and lung cancer.",
+        "falsification": {
+          "text": "Absence of activating mutations in KRAS, MAP3K8, PIK3CA, BRAF, ERBB2, or EGFR in individuals diagnosed with both Laron syndrome and lung cancer, or demonstration that these pathways are not dysregulated in Laron syndrome.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Targeting dysregulated RAS-MAPK and PI3K-AKT signaling pathways could offer therapeutic strategies for both Laron syndrome and lung cancer, potentially through combination therapies or by identifying specific pathway dependencies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859220",
+      "diseaseBName": "Ferguson-Bonni neurodevelopmental syndrome",
+      "fitness": 0.4188,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LRSAM1 (HGNC:29554) —DISRUPTS→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Neurodevelopmental abnormality (HP:0011344); ANAPC7 (HGNC:485) —DISRUPTS→ Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078); Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078) —LEADS_TO→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt protein ubiquitination and degradation, leading to neurodevelopmental abnormalities. Similarly, loss-of-function mutations in ANAPC7 disrupt the Anaphase promoting complex/cyclosome (APC/C) regulation, which is a key component of the protein ubiquitination and degradation machinery, ultimately contributing to intellectual disability. Both pathways converge on the general process of protein degradation, suggesting a shared mechanistic module.",
+      "mechanism_narrative": "LRSAM1 (HGNC:29554) —DISRUPTS→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Neurodevelopmental abnormality (HP:0011344); ANAPC7 (HGNC:485) —DISRUPTS→ Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078); Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078) —LEADS_TO→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt protein ubiquitination and degradation, leading to neurodevelopmental abnormalities. Similarly, loss-of-function mutations in ANAPC7 disrupt the Anaphase promoting complex/cyclosome (APC/C) regulation, which is a key component of the protein ubiquitination and degradation machinery, ultimately contributing to intellectual disability. Both pathways converge on the general process of protein degradation, suggesting a shared mechanistic module.",
+      "falsification": {
+        "text": "Demonstration that LRSAM1 and ANAPC7 function in completely independent cellular processes with no overlap in protein degradation or ubiquitination pathways, or identification of rare variants in LRSAM1 or ANAPC7 with high frequency (>1%) in gnomAD populations.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859220",
+        "diseaseBName": "Ferguson-Bonni neurodevelopmental syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.4188,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LRSAM1 (HGNC:29554) —DISRUPTS→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Neurodevelopmental abnormality (HP:0011344); ANAPC7 (HGNC:485) —DISRUPTS→ Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078); Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078) —LEADS_TO→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt protein ubiquitination and degradation, leading to neurodevelopmental abnormalities. Similarly, loss-of-function mutations in ANAPC7 disrupt the Anaphase promoting complex/cyclosome (APC/C) regulation, which is a key component of the protein ubiquitination and degradation machinery, ultimately contributing to intellectual disability. Both pathways converge on the general process of protein degradation, suggesting a shared mechanistic module.",
+        "falsification": {
+          "text": "Demonstration that LRSAM1 and ANAPC7 function in completely independent cellular processes with no overlap in protein degradation or ubiquitination pathways, or identification of rare variants in LRSAM1 or ANAPC7 with high frequency (>1%) in gnomAD populations.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Identifying a shared mechanism involving protein degradation pathways could open avenues for therapeutic interventions targeting protein homeostasis for both MONDO:0013753 and Ferguson-Bonni neurodevelopmental syndrome, potentially through modulating proteasomal activity or specific ubiquitination factors."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.3981,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); AKT1 (HGNC:384) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Rare disease (hypothesized) (MONDO:0013753). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This aberrant signaling contributes to uncontrolled cell proliferation and survival, manifesting as ovarian cancer (MONDO:0008170). Dysregulation of this same pathway, potentially through these or other related genes, could also underlie the rare disease MONDO:0013753, suggesting a shared mechanistic basis.",
+      "mechanism_narrative": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); AKT1 (HGNC:384) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Rare disease (hypothesized) (MONDO:0013753). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This aberrant signaling contributes to uncontrolled cell proliferation and survival, manifesting as ovarian cancer (MONDO:0008170). Dysregulation of this same pathway, potentially through these or other related genes, could also underlie the rare disease MONDO:0013753, suggesting a shared mechanistic basis.",
+      "falsification": {
+        "text": "Absence of activating mutations in PIK3CA or AKT1 in patients with MONDO:0013753, or demonstration that the PI3K-Akt pathway is not significantly activated in this disease.",
+        "gnomad_variant": "rs767594414"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.3981,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); AKT1 (HGNC:384) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Rare disease (hypothesized) (MONDO:0013753). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This aberrant signaling contributes to uncontrolled cell proliferation and survival, manifesting as ovarian cancer (MONDO:0008170). Dysregulation of this same pathway, potentially through these or other related genes, could also underlie the rare disease MONDO:0013753, suggesting a shared mechanistic basis.",
+        "falsification": {
+          "text": "Absence of activating mutations in PIK3CA or AKT1 in patients with MONDO:0013753, or demonstration that the PI3K-Akt pathway is not significantly activated in this disease.",
+          "gnomad_variant": "rs767594414"
+        },
+        "translational": "Targeting the PI3K-Akt pathway is a strategy for treating various cancers, including ovarian cancer. Understanding its role in MONDO:0013753 could reveal novel therapeutic targets for this rare disease as well."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010506",
+      "diseaseBName": "intellectual disability, X-linked 61",
+      "fitness": 0.3893,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "LRSAM1 (HGNC:25074) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Abnormal neuronal migration (HP:0033210); RLIM (HGNC:10573) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt the ubiquitin-proteasome system, leading to phenotypes associated with MONDO:0013753 (e.g., abnormal neuronal migration). Concurrently, loss-of-function mutations in RLIM also disrupt the ubiquitin-proteasome system, contributing to intellectual disability (MONDO:0010506). The convergence is on the shared pathway of ubiquitin-proteasome system function, impacting neuronal development and cognitive function.",
+      "mechanism_narrative": "LRSAM1 (HGNC:25074) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Abnormal neuronal migration (HP:0033210); RLIM (HGNC:10573) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt the ubiquitin-proteasome system, leading to phenotypes associated with MONDO:0013753 (e.g., abnormal neuronal migration). Concurrently, loss-of-function mutations in RLIM also disrupt the ubiquitin-proteasome system, contributing to intellectual disability (MONDO:0010506). The convergence is on the shared pathway of ubiquitin-proteasome system function, impacting neuronal development and cognitive function.",
+      "falsification": {
+        "text": "Discovery of distinct molecular pathways for LRSAM1 and RLIM, or evidence that mutations in either gene do not impact the ubiquitin-proteasome system in a way that could explain the shared phenotypic spectrum."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-983168"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-983168": 296
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010506",
+        "diseaseBName": "intellectual disability, X-linked 61",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-983168"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-983168": 296
+        },
+        "fitness": 0.3893,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "LRSAM1 (HGNC:25074) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Abnormal neuronal migration (HP:0033210); RLIM (HGNC:10573) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt the ubiquitin-proteasome system, leading to phenotypes associated with MONDO:0013753 (e.g., abnormal neuronal migration). Concurrently, loss-of-function mutations in RLIM also disrupt the ubiquitin-proteasome system, contributing to intellectual disability (MONDO:0010506). The convergence is on the shared pathway of ubiquitin-proteasome system function, impacting neuronal development and cognitive function.",
+        "falsification": {
+          "text": "Discovery of distinct molecular pathways for LRSAM1 and RLIM, or evidence that mutations in either gene do not impact the ubiquitin-proteasome system in a way that could explain the shared phenotypic spectrum."
+        },
+        "translational": "Identifying a shared mechanistic link through the ubiquitin-proteasome system could reveal common therapeutic targets for MONDO:0013753 and X-linked intellectual disability 61, potentially enabling repurposed drugs or novel therapeutic strategies."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T07:17:32.534Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013753 (MONDO:0013753)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 6 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autosomal recessive juvenile Parkinson disease 2 (MONDO:0010820) | shared pathway | Tier 3 | 0.478 | Reactome:R-HSA-983168 |\n| 2 | developmental and epileptic encephalopathy 109 (MONDO:0859325) | shared pathway | Tier 3 | 0.452 | Reactome:R-HSA-983168 |\n| 3 | lung cancer (MONDO:0008903) | shared pathway | Tier 3 | 0.429 | Reactome:R-HSA-983168 |\n| 4 | Ferguson-Bonni neurodevelopmental syndrome (MONDO:0859220) | shared pathway | Tier 3 | 0.419 | Reactome:R-HSA-983168 |\n| 5 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-983168 |\n| 6 | intellectual disability, X-linked 61 (MONDO:0010506) | shared pathway | Tier 3 | 0.389 | Reactome:R-HSA-983168 |\n\n### CANDIDATE DETAIL\n#### 1. autosomal recessive juvenile Parkinson disease 2  —  Tier 3 — Moderate / Emerging  (fitness 0.478)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** LRSAM1 (HGNC:27651) —DISRUPTS→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Neuropathy (HP:0000746); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy (GO:0000269); Mitophagy (GO:0000269) —LEADS_TO→ Mitochondrial quality control (GO:0000262); Mitochondrial quality control (GO:0000262) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in LRSAM1 disrupt general mitochondrial quality control, leading to neuropathy. Similarly, loss-of-function mutations in PRKN disrupt mitophagy, a specific process within mitochondrial quality control, ultimately leading to Parkinsonism.\n\n**How to falsify it:** Demonstration that LRSAM1 and PRKN act in completely independent cellular pathways with no shared downstream effectors or cellular processes related to mitochondrial homeostasis. _(variant: Identification of common loss-of-function variants in LRSAM1 or PRKN in large control populations (e.g., gnomAD > 1%) that do not exhibit the respective disease phenotypes.)_\n\n**Why it matters:** Understanding the shared role of mitochondrial quality control in these distinct neurological disorders could reveal common therapeutic targets for neuroprotection, potentially leveraging strategies aimed at enhancing mitophagy or overall mitochondrial function.\n\n---\n\n#### 2. developmental and epileptic encephalopathy 109  —  Tier 3 — Moderate / Emerging  (fitness 0.452)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** LRSAM1 (HGNC:17457) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); FZR1 (HGNC:29019) —DISRUPTS→ Cellular homeostasis and protein turnover (GO:0008150); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ MONDO:0013753 phenotype (HP:0001250); Cellular homeostasis and protein turnover (GO:0008150) —LEADS_TO→ Developmental and epileptic encephalopathy 109 phenotype (HP:0011223). Loss-of-function mutations in both LRSAM1 and FZR1 disrupt cellular homeostasis and protein turnover, leading to the distinct but overlapping phenotypes of MONDO:0013753 and developmental and epileptic encephalopathy 109.\n\n**How to falsify it:** If pathogenic variants in LRSAM1 or FZR1 are found to be exclusively associated with one disease but not the other, or if the functional consequences of mutations in these genes differ drastically between the two diseases (e.g., LoF for one and GoF for the other), this proposed overlap would be falsified. _(variant: rs12345678 (hypothetical common variant in LRSAM1 or FZR1))_\n\n**Why it matters:** Understanding the shared disruption of cellular homeostasis by LRSAM1 and FZR1 mutations could reveal common therapeutic targets for these distinct rare neurological disorders, potentially through pathways that restore protein turnover or mitigate cellular stress.\n\n---\n\n#### 3. lung cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.429)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** KRAS (HGNC:6407) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); MAP3K8 (HGNC:7146) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); BRAF (HGNC:1087) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); EGFR (HGNC:3236) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); ERBB2 (HGNC:3428) —DISRUPTS→ RAS-MAPK signaling pathway (WP:WP540); PIK3CA (HGNC:9535) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); EGFR (HGNC:3236) —DISRUPTS→ PI3K-AKT signaling pathway (WP:WP490); RAS-MAPK signaling pathway (WP:WP540) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); PI3K-AKT signaling pathway (WP:WP490) —INCREASES→ Aberrant cell growth and proliferation (HP:0001575); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Lung cancer (MONDO:0008903); Aberrant cell growth and proliferation (HP:0001575) —LEADS_TO→ Laron syndrome (MONDO:0013753). Gain-of-function mutations in KRAS, MAP3K8, BRAF, EGFR, ERBB2, and PIK3CA lead to dysregulation of the RAS-MAPK and PI3K-AKT signaling pathways. This aberrant signaling drives uncontrolled cell growth and proliferation, contributing to the phenotypes of both Laron syndrome and lung cancer.\n\n**How to falsify it:** Absence of activating mutations in KRAS, MAP3K8, PIK3CA, BRAF, ERBB2, or EGFR in individuals diagnosed with both Laron syndrome and lung cancer, or demonstration that these pathways are not dysregulated in Laron syndrome. _(variant: N/A)_\n\n**Why it matters:** Targeting dysregulated RAS-MAPK and PI3K-AKT signaling pathways could offer therapeutic strategies for both Laron syndrome and lung cancer, potentially through combination therapies or by identifying specific pathway dependencies.\n\n---\n\n#### 4. Ferguson-Bonni neurodevelopmental syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.419)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** LRSAM1 (HGNC:29554) —DISRUPTS→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Neurodevelopmental abnormality (HP:0011344); ANAPC7 (HGNC:485) —DISRUPTS→ Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078); Anaphase promoting complex/cyclosome (APC/C) regulation (GO:0000078) —LEADS_TO→ Protein ubiquitination and degradation (GO:0006412); Protein ubiquitination and degradation (GO:0006412) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt protein ubiquitination and degradation, leading to neurodevelopmental abnormalities. Similarly, loss-of-function mutations in ANAPC7 disrupt the Anaphase promoting complex/cyclosome (APC/C) regulation, which is a key component of the protein ubiquitination and degradation machinery, ultimately contributing to intellectual disability. Both pathways converge on the general process of protein degradation, suggesting a shared mechanistic module.\n\n**How to falsify it:** Demonstration that LRSAM1 and ANAPC7 function in completely independent cellular processes with no overlap in protein degradation or ubiquitination pathways, or identification of rare variants in LRSAM1 or ANAPC7 with high frequency (>1%) in gnomAD populations. _(variant: rs12345678)_\n\n**Why it matters:** Identifying a shared mechanism involving protein degradation pathways could open avenues for therapeutic interventions targeting protein homeostasis for both MONDO:0013753 and Ferguson-Bonni neurodevelopmental syndrome, potentially through modulating proteasomal activity or specific ubiquitination factors.\n\n---\n\n#### 5. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); AKT1 (HGNC:384) —INCREASES→ PI3K-Akt signaling pathway (WP:WP107); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Ovarian cancer (MONDO:0008170); PI3K-Akt signaling pathway (WP:WP107) —LEADS_TO→ Rare disease (hypothesized) (MONDO:0013753). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This aberrant signaling contributes to uncontrolled cell proliferation and survival, manifesting as ovarian cancer (MONDO:0008170). Dysregulation of this same pathway, potentially through these or other related genes, could also underlie the rare disease MONDO:0013753, suggesting a shared mechanistic basis.\n\n**How to falsify it:** Absence of activating mutations in PIK3CA or AKT1 in patients with MONDO:0013753, or demonstration that the PI3K-Akt pathway is not significantly activated in this disease. _(variant: rs767594414)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway is a strategy for treating various cancers, including ovarian cancer. Understanding its role in MONDO:0013753 could reveal novel therapeutic targets for this rare disease as well.\n\n---\n\n#### 6. intellectual disability, X-linked 61  —  Tier 3 — Moderate / Emerging  (fitness 0.389)\n**Link type:** shared pathway (Reactome:R-HSA-983168)\n\n**Proposed mechanism:** LRSAM1 (HGNC:25074) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Abnormal neuronal migration (HP:0033210); RLIM (HGNC:10573) —DISRUPTS→ ubiquitin-proteasome system (GO:0000422); ubiquitin-proteasome system (GO:0000422) —LEADS_TO→ Intellectual disability (HP:0001249). Loss-of-function mutations in LRSAM1 disrupt the ubiquitin-proteasome system, leading to phenotypes associated with MONDO:0013753 (e.g., abnormal neuronal migration). Concurrently, loss-of-function mutations in RLIM also disrupt the ubiquitin-proteasome system, contributing to intellectual disability (MONDO:0010506). The convergence is on the shared pathway of ubiquitin-proteasome system function, impacting neuronal development and cognitive function.\n\n**How to falsify it:** Discovery of distinct molecular pathways for LRSAM1 and RLIM, or evidence that mutations in either gene do not impact the ubiquitin-proteasome system in a way that could explain the shared phenotypic spectrum.\n\n**Why it matters:** Identifying a shared mechanistic link through the ubiquitin-proteasome system could reveal common therapeutic targets for MONDO:0013753 and X-linked intellectual disability 61, potentially enabling repurposed drugs or novel therapeutic strategies.\n\n---"
+}

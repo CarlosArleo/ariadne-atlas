@@ -536,10 +536,10 @@
 <div class="modal-backdrop" id="cqs-modal" onclick="if(event.target===this) closeCqsModal();">
     <div class="modal-box" style="max-width:720px;">
         <button class="modal-close" onclick="closeCqsModal()">&times;</button>
-        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v2)</h2>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v3)</h2>
         <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
-            A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
-            Higher scores indicate stronger, more specific, and better‑corroborated hypotheses.
+            A composite, additive metric (max <strong>13</strong>) that ranks ARIADNE's discovery candidates by expert‑readiness.
+            Higher scores indicate stronger, more specific, cross‑domain and better‑corroborated hypotheses.
         </p>
         <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:#cbd5e1; margin-bottom:20px;">
             <thead>
@@ -554,11 +554,10 @@
                 <tr><td>2. Specific convergence</td><td>Mechanism names a specific node (not "oxidative stress")</td><td style="text-align:center;">0–2</td></tr>
                 <tr><td>3. Multiple pathways</td><td>How many distinct Reactome pathways are shared</td><td style="text-align:center;">0–2</td></tr>
                 <tr><td>4. Pathway specificity</td><td>Smallest shared pathway size (≤20 genes = 2, ≤50 = 1)</td><td style="text-align:center;">0–2</td></tr>
-                <tr><td>5. Phenotype overlap</td><td>HPO semantic similarity (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>6. Literature verification</td><td>RANA cross‑reference (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>7. Cross‑domain</td><td>Diseases in different organ systems (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>8. Falsifiability</td><td>Has a concrete, measurable falsification test</td><td style="text-align:center;">0–1</td></tr>
-                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td><strong>Hub bonus</strong></td><td>Independent corroboration across multiple seed runs (≥3 seeds = 2)</td><td style="text-align:center;">0–2</td></tr>
+                <tr><td>5. Falsifiability</td><td>Has a concrete, measurable falsification test</td><td style="text-align:center;">0–1</td></tr>
+                <tr style="color:#7dd3fc;"><td>6. Cross‑domain surprise <span style="font-size:0.7rem;">NEW</span></td><td>Seed &amp; partner in different clinical families (a non‑obvious bridge)</td><td style="text-align:center;">0–1</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td><strong>Hub corroboration</strong></td><td>Independent recurrence across multiple seed runs (≥3 seeds = 2)</td><td style="text-align:center;">0–2</td></tr>
+                <tr style="color:#fca5a5;"><td><strong>Gene‑attribution gate</strong> <span style="font-size:0.7rem;">NEW</span></td><td>Fabricated causal gene (absent from Monarch) → hard‑caps the score at Weak</td><td style="text-align:center;">cap 2</td></tr>
             </tbody>
         </table>
         <h3 style="font-size:0.9rem; font-weight:600; color:#f8fafc; margin-bottom:6px;">Interpretation bands</h3>
@@ -569,15 +568,18 @@
                 <th style="text-align:left; padding:4px 8px; color:#94a3b8;">What to do</th>
             </tr></thead>
             <tbody>
-                <tr><td>9–11</td><td><span style="color:#38bdf8; font-weight:600;">Exceptional</span></td><td>Lead with these in expert sessions</td></tr>
-                <tr><td>7–8</td><td><span style="color:#10b981; font-weight:600;">Strong</span></td><td>Include in review panels</td></tr>
+                <tr><td>10–13</td><td><span style="color:#38bdf8; font-weight:600;">Exceptional</span></td><td>Lead with these in expert sessions</td></tr>
+                <tr><td>7–9</td><td><span style="color:#10b981; font-weight:600;">Strong</span></td><td>Include in review panels</td></tr>
                 <tr><td>4–6</td><td><span style="color:#f59e0b; font-weight:600;">Moderate</span></td><td>Background candidates; may need refinement</td></tr>
-                <tr><td>0–3</td><td><span style="color:#f43f5e; font-weight:600;">Weak</span></td><td>Likely generic convergences or artefacts</td></tr>
+                <tr><td>0–3</td><td><span style="color:#f43f5e; font-weight:600;">Weak</span></td><td>Generic convergences, artefacts, or fabricated attributions</td></tr>
             </tbody>
         </table>
         <p style="font-size:0.72rem; color:#64748b; margin-top:14px;">
-            Components 5–7 are placeholders (not yet logged in discovery JSONs). The practical maximum CQS is 11.
-            Hub bonus rewards candidates that appear across multiple independent seed runs — the strongest corroboration signal in the Atlas.
+            <strong>v3 changes:</strong> the two dead placeholders (phenotype‑overlap, cross‑domain) are replaced —
+            <em>Cross‑domain surprise</em> is now live (rewards bridges between different clinical families), and a
+            <em>Gene‑Attribution Integrity gate</em> caps any hypothesis whose causal gene was flagged as fabricated at
+            Weak, so a fluent‑but‑fabricated mechanism can never read as expert‑ready. Literature (RANA) verification and
+            physical protein‑interaction (BioGRID) remain pending until those signals are logged into the discovery JSONs.
         </p>
     </div>
 </div>
@@ -776,6 +778,8 @@ let focusDiseaseNode = null;
 let focusPartnerNode = null;
 let showAllRibbons = false;
 let showEliteOnly = false; // Elite Champions mode flag
+let atlasPaint = null; // set by renderRadial -> lets the sidebar spotlight a pair on the map
+let atlasRibbons = [];
 const MAX_DEFAULT_RIBBONS = 500;
 let currentFiltered = [];
 
@@ -911,18 +915,11 @@ document.getElementById('file-uploader').addEventListener('change', function(e) 
 
 function populateCqsDropdown() {
     const sel = document.getElementById('filter-cqs');
-    const cqsScores = [...new Set(allCandidates.map(c => c.cqs))].sort((a,b) => b-a);
-    sel.innerHTML = `<option value="all">All CQS Scores (${allCandidates.length})</option>`;
-    cqsScores.forEach(score => {
-        const count = allCandidates.filter(c => c.cqs === score).length;
-        sel.innerHTML += `<option value="eq_${score}">CQS = ${score} (${count})</option>`;
-    });
-    [10, 8, 6, 4, 3].forEach(thresh => {
-        const count = allCandidates.filter(c => c.cqs >= thresh).length;
-        if (count > 0 && count < allCandidates.length) {
-            sel.innerHTML += `<option value="ge_${thresh}">CQS ≥ ${thresh} (${count})</option>`;
-        }
-    });
+    const bands = [ ['Exceptional',10,13], ['Strong',7,9], ['Moderate',4,6], ['Weak',0,3] ];
+    sel.innerHTML = `<option value="all">All CQS scores (${allCandidates.length})</option>`;
+    bands.forEach(b => { const label=b[0],lo=b[1],hi=b[2];
+        const count = allCandidates.filter(c => c.cqs>=lo && c.cqs<=hi).length;
+        if (count>0) sel.innerHTML += `<option value="rng_${lo}_${hi}">${label} · CQS ${lo}–${hi} (${count})</option>`; });
 }
 
 function populateFamilyDropdown() {
@@ -1031,8 +1028,9 @@ function getFilteredCandidates() {
         if (tierFilter !== 'all' && c.tier !== tierFilter) return false;
 
         if (cqsVal !== 'all') {
-            if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
-            if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
+            if (cqsVal.startsWith('rng_')) { const pp=cqsVal.split('_'); if (c.cqs < +pp[1] || c.cqs > +pp[2]) return false; }
+            else if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
+            else if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
         }
         if (fitnessFilter !== 'all' && c.fitness < parseFloat(fitnessFilter)) return false;
         if (falsifFilter === 'has' && !(c.falsification && String(c.falsification).trim())) return false;
@@ -1164,9 +1162,7 @@ function resetFilters() {
     document.getElementById('btn-focus-mode').classList.remove('active');
     document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
     document.getElementById('filter-tier').value = 'Tier 3';
-    const cqsSel = document.getElementById('filter-cqs');
-    if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) cqsSel.value = 'ge_3';
-    else cqsSel.value = 'all';
+    document.getElementById('filter-cqs').value = 'all';
     document.getElementById('filter-fitness').value = 'all';
     document.getElementById('filter-falsif').value = 'all';
     document.getElementById('filter-novel').value = 'all';
@@ -1235,10 +1231,7 @@ function initApp() {
     renderLegend();
     renderTierLegend();
     document.getElementById('filter-tier').value = 'Tier 3';
-    const cqsSel = document.getElementById('filter-cqs');
-    if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) {
-        cqsSel.value = 'ge_3';
-    }
+    document.getElementById('filter-cqs').value = 'all';
     buildAllOptLists();
     renderApp();
 }
@@ -1400,7 +1393,7 @@ function renderRadial(candidates) {
     const famOrder = FAMILIES.map(f=>f.key).filter(k => Object.values(diseaseFam).indexOf(k) !== -1);
     const diseasesByFam = {}; famOrder.forEach(f => diseasesByFam[f]=[]);
     Object.keys(diseaseFam).forEach(n => diseasesByFam[diseaseFam[n]].push(n));
-    famOrder.forEach(f => diseasesByFam[f].sort((a,b)=> (diseaseDeg[b]-diseaseDeg[a]) || a.localeCompare(b)));
+    famOrder.forEach(f => diseasesByFam[f].sort((a,b)=> a.localeCompare(b)));
 
     const diseaseAngle = {}, diseaseArc = {}, famRange = {};
     (function(){
@@ -1415,82 +1408,126 @@ function renderRadial(candidates) {
         });
     })();
 
-    // 2. cores: primary convergence node (GO/REACT/CHEBI) or gene per hypothesis
-    function primaryCore(c){
-        const mech = c.mechanism || '';
-        const conv = {}; const cre = /\((GO:\d+|REACT:[A-Za-z0-9\-]+|R-HSA-[0-9]+|CHEBI:\d+)\)/g; let m;
-        while((m=cre.exec(mech))) conv[m[1]] = (conv[m[1]]||0)+1;
-        const best = Object.entries(conv).sort((a,b)=>b[1]-a[1])[0];
-        if (best) return best[0];
-        const gm = /([A-Z][A-Z0-9]{1,9})\s*\(HGNC:\d+\)/.exec(mech);
-        return gm ? gm[1] : null;
+    // 2. entities: parse every convergence node + gene; carry recurrence AND best-CQS (discovery quality)
+    function parseEntities(c){
+        const mech=c.mechanism||''; const nfreq={}; const genes=[]; let m;
+        const cre=/\((GO:\d+|REACT:[A-Za-z0-9\-]+|R-HSA-[0-9]+|CHEBI:\d+)\)/g;
+        while((m=cre.exec(mech))){ nfreq[m[1]]=(nfreq[m[1]]||0)+1; }
+        const nodes=Object.keys(nfreq).sort((a,b)=>nfreq[b]-nfreq[a]);
+        const gre=/([A-Z][A-Z0-9]{1,9})\s*\(HGNC:\d+\)/g;
+        while((m=gre.exec(mech))){ if(genes.indexOf(m[1])<0) genes.push(m[1]); }
+        return {nodes, genes};
     }
-    const coreDeg = {}, coreDis = {};
-    candidates.forEach(c => { const k = primaryCore(c); c._core = k; if(!k) return;
-        coreDeg[k]=(coreDeg[k]||0)+1; (coreDis[k]=coreDis[k]||new Set()).add(c.seedName); coreDis[k].add(c.partnerName); });
-    const degVals = Object.values(coreDeg);
-    const lgMax = Math.log(Math.max(2, degVals.length ? Math.max.apply(null, degVals) : 2));
-    const corePos = {};
-    Object.keys(coreDeg).forEach(k => {
-        let sx=0, sy=0; coreDis[k].forEach(n => { const a=diseaseAngle[n]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); } });
-        const ang = (sx===0&&sy===0) ? 0 : Math.atan2(sy,sx);
-        const norm = Math.log(coreDeg[k]) / (lgMax || 1);
-        corePos[k] = { a: ang, r: CORE_MAX - norm*(CORE_MAX-CORE_MIN), deg: coreDeg[k] };
-    });
-    const glowCores = Object.keys(corePos).sort((a,b)=>corePos[b].deg-corePos[a].deg).slice(0,120);
+    function hashAngle(s){ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return (h%3600)/3600*2*Math.PI - Math.PI; }
+    const entityDeg={}, entityDis={}, nodeCQS={};
+    candidates.forEach(c=>{ const e=parseEntities(c); c._nodes=e.nodes; c._genesArr=e.genes; c._core=e.nodes[0]||e.genes[0]||null;
+        if(c._core) nodeCQS[c._core]=Math.max(nodeCQS[c._core]||0, c.cqs||0);
+        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); });
+    const _degv=Object.values(entityDeg); const lgMax=Math.log(Math.max(2, _degv.length?Math.max.apply(null,_degv):2));
+    // radial position (Poincare direction): recurrence -> centre (generic hub, r->0); rare -> rim (specific, r->1)
+    function entPos(k){ if(entPos._c[k]) return entPos._c[k]; const dis=entityDis[k]; if(!dis) return null;
+        let sx=0,sy=0,n=0; dis.forEach(nm=>{ const a=diseaseAngle[nm]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); n++; } });
+        const mag=Math.hypot(sx,sy); const ang=(n>0 && mag/n > 0.18)?Math.atan2(sy,sx):hashAngle(k);
+        const deg=entityDeg[k]||1; const norm=Math.log(deg)/(lgMax||1);
+        const pos={a:ang, r:CORE_MAX-norm*(CORE_MAX-CORE_MIN), deg, cqs:nodeCQS[k]||0}; entPos._c[k]=pos; return pos; }
+    entPos._c={};
+    // the stars we CELEBRATE are the top discovery nodes (best CQS converging on them), not the generic hubs
+    const glowCores=Object.keys(nodeCQS).sort((a,b)=>(nodeCQS[b]-nodeCQS[a])||(entityDeg[a]-entityDeg[b])).slice(0,150);
+    const corePos={}; glowCores.forEach(k=>{ corePos[k]=entPos(k); });
 
-    // 3. ribbons: seed -> shared core -> partner (bundled at the core)
-    const ordered = candidates.slice().sort((a,b)=> (b.cqs-a.cqs)||(b.fitness-a.fitness)).slice(0, RIBBON_CAP);
-    const ribbons = [];
-    ordered.forEach(c => {
-        const core = corePos[c._core]; if(!core) return;
-        const aS = diseaseAngle[c.seedName], aP = diseaseAngle[c.partnerName];
-        if (aS===undefined || aP===undefined) return;
-        // monotonic-radius descent to the shared core then back out — the core is the
-        // innermost point, so the central void is never crossed (HEB-correct bundling).
-        let dA1=core.a-aS, dA2=aP-core.a;
-        while(dA1<-Math.PI)dA1+=2*Math.PI; while(dA1>Math.PI)dA1-=2*Math.PI;
-        while(dA2<-Math.PI)dA2+=2*Math.PI; while(dA2>Math.PI)dA2-=2*Math.PI;
-        const p=new Path2D(); const NS=18;
-        for(let i=0;i<=NS;i++){ const t=i/NS, e=t*t*(3-2*t), r=R_out+(core.r-R_out)*e, a=aS+dA1*e; i?p.lineTo(r*Math.cos(a),r*Math.sin(a)):p.moveTo(r*Math.cos(a),r*Math.sin(a)); }
-        for(let i=1;i<=NS;i++){ const t=i/NS, e=t*t*(3-2*t), r=core.r+(R_out-core.r)*e, a=core.a+dA2*e; p.lineTo(r*Math.cos(a),r*Math.sin(a)); }
-        ribbons.push({ path:p, col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName });
-    });
+    // smooth braid (Catmull-Rom): monotonic radius in -> node -> back out; the void is never crossed
+    function braid(aS,aP,nr,na){ let d1=na-aS,d2=aP-na;
+        while(d1<-Math.PI)d1+=2*Math.PI; while(d1>Math.PI)d1-=2*Math.PI; while(d2<-Math.PI)d2+=2*Math.PI; while(d2>Math.PI)d2-=2*Math.PI;
+        const NS=14, pts=[];
+        for(let i=0;i<=NS;i++){ const t=i/NS,e=t*t*(3-2*t),r=R_out+(nr-R_out)*e,a=aS+d1*e; pts.push([r*Math.cos(a),r*Math.sin(a)]); }
+        for(let i=1;i<=NS;i++){ const t=i/NS,e=t*t*(3-2*t),r=nr+(R_out-nr)*e,a=na+d2*e; pts.push([r*Math.cos(a),r*Math.sin(a)]); }
+        const p=new Path2D(); p.moveTo(pts[0][0],pts[0][1]);
+        for(let i=0;i<pts.length-1;i++){ const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||pts[i+1];
+            const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;
+            p.bezierCurveTo(c1x,c1y,c2x,c2y,p2[0],p2[1]); }
+        return p; }
 
-    function paintRibbons(pred){
+    // 3. ribbons: one braid per hypothesis through its primary shared node
+    const ordered=candidates.slice().sort((a,b)=>(b.cqs-a.cqs)||(b.fitness-a.fitness)).slice(0,RIBBON_CAP);
+    const ribbons=[];
+    ordered.forEach(c=>{ const core=c._core&&entPos(c._core); if(!core) return;
+        const aS=diseaseAngle[c.seedName], aP=diseaseAngle[c.partnerName]; if(aS===undefined||aP===undefined) return;
+        ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6) }); });
+
+    const typeOf = k => k.indexOf('GO:')===0?['process','#10b981'] : (k.indexOf('CHEBI:')===0?['metabolite','#f59e0b'] : ((k.indexOf('REACT')===0||k.indexOf('R-HSA')===0)?['pathway','#10b981'] : (k.indexOf('HP:')===0?['phenotype','#f43f5e']:['gene','#38bdf8'])));
+
+    function paintRibbons(primary, secondary){
+        const anyHi=!!(primary||secondary);
         ctx.save(); ctx.translate(cx,cy); ctx.clearRect(-cx,-cy,width,height); ctx.lineCap='round';
-        ribbons.forEach(rb=>{ const on = pred ? pred(rb) : true;
-            ctx.globalAlpha = pred ? (on?0.65:0.025) : 0.16;
-            ctx.lineWidth = (pred&&on)?1.4:0.7; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
+        ribbons.forEach(rb=>{ let al,w;
+            if(!anyHi){ al=0.16; w=0.7; }
+            else if(primary&&primary(rb)){ al=0.78; w=1.7; }
+            else if(secondary&&secondary(rb)){ al=0.30; w=1.0; }
+            else { al=0.02; w=0.6; }
+            ctx.globalAlpha=al; ctx.lineWidth=w; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
         ctx.globalAlpha=1;
-        glowCores.forEach(k=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const rad=Math.max(1.3, Math.sqrt(cp.deg)*0.7);
-            const hot = pred && ribbons.some(rb=>rb.core===k && pred(rb));
-            const gr=ctx.createRadialGradient(x,y,0,x,y,rad*4); gr.addColorStop(0, hot?'rgba(255,255,255,0.95)':'rgba(226,232,240,0.6)'); gr.addColorStop(1,'rgba(226,232,240,0)');
-            ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(x,y,rad*4,0,6.2832); ctx.fill();
-            ctx.fillStyle= hot?'#ffffff':'#cbd5e1'; ctx.beginPath(); ctx.arc(x,y,rad,0,6.2832); ctx.fill(); });
+        // brightness + size by DISCOVERY QUALITY (best CQS): specific rim convergences shine, generic hubs hush
+        glowCores.forEach(k=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0],y=xy[1];
+            const q=Math.max(0,Math.min(1,(cp.cqs||0)/10)); const rad=0.7+q*1.9;
+            const hot=primary&&ribbons.some(rb=>rb.core===k&&primary(rb)); const warm=!hot&&secondary&&ribbons.some(rb=>rb.core===k&&secondary(rb));
+            const a0=hot?0.85:(warm?0.5:0.05+q*0.28);
+            const gr=ctx.createRadialGradient(x,y,0,x,y,rad*2.2); gr.addColorStop(0,'rgba(226,232,240,'+a0.toFixed(3)+')'); gr.addColorStop(1,'rgba(200,210,224,0)');
+            ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(x,y,rad*2.2,0,6.2832); ctx.fill();
+            ctx.fillStyle= hot?'#ffffff':'rgba(226,232,240,'+(0.18+q*0.38).toFixed(3)+')'; ctx.beginPath(); ctx.arc(x,y,rad,0,6.2832); ctx.fill(); });
+        if(primary){ const hl=ribbons.filter(primary);
+            if(hl.length<=8){ ctx.textAlign='center'; const seenN={}, seenD={};
+                hl.forEach(rb=>{ const aS=diseaseAngle[rb.seed], aP=diseaseAngle[rb.partner];
+                    const nlist=(rb.nodes&&rb.nodes.length)?rb.nodes:[rb.core];
+                    nlist.forEach(nk=>{ const np=entPos(nk); if(!np) return;
+                        if(nk!==rb.core && aS!==undefined && aP!==undefined){ ctx.globalAlpha=0.72; ctx.lineWidth=1.3; ctx.strokeStyle=rb.col; ctx.stroke(braid(aS,aP,np.r,np.a)); ctx.globalAlpha=1; }
+                        if(!seenN[nk]){ seenN[nk]=1; const q=polar(np.r,np.a); const ty=typeOf(nk);
+                            const g2=ctx.createRadialGradient(q[0],q[1],0,q[0],q[1],16); g2.addColorStop(0,'rgba(255,255,255,0.92)'); g2.addColorStop(1,'rgba(255,255,255,0)');
+                            ctx.fillStyle=g2; ctx.beginPath(); ctx.arc(q[0],q[1],16,0,6.2832); ctx.fill();
+                            ctx.fillStyle=ty[1]; ctx.beginPath(); ctx.arc(q[0],q[1],3.6,0,6.2832); ctx.fill();
+                            ctx.font='9px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle='#fff'; ctx.fillText(nk, q[0], q[1]-8);
+                            ctx.font='7px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle=ty[1]; ctx.fillText(ty[0]+((nk===rb.core&&rb.genes&&rb.genes.length)?' · '+rb.genes.join(' + '):''), q[0], q[1]+13); }
+                    });
+                    [rb.seed,rb.partner].forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined||seenD[n])return; seenD[n]=1;
+                        const d0=polar(R_out,a); ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(d0[0],d0[1],3.2,0,6.2832); ctx.fill();
+                        const d1=polar(R_out+12,a); const left=Math.cos(a)<0; ctx.save(); ctx.translate(d1[0],d1[1]); ctx.rotate(a+(left?Math.PI:0));
+                        ctx.textAlign=left?'right':'left'; ctx.font='9px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle='#e2e8f0'; ctx.fillText(n.length>28?n.slice(0,27)+'…':n, left?-5:5, 3); ctx.restore(); ctx.textAlign='center'; });
+                });
+            }
+        }
         ctx.restore();
     }
-    paintRibbons(null);
+    atlasPaint=paintRibbons; atlasRibbons=ribbons; paintRibbons(null);
 
-    // 4. disease rim: one band per clinical family + label
-    const arcRim = d3.arc().innerRadius(R_out).outerRadius(R_out+6);
+    // 3b. Poincare zone guide — the boundary between generic hubs (centre) and specific discoveries (rim)
+    g.append('circle').attr('cx',0).attr('cy',0).attr('r',(CORE_MIN+CORE_MAX)/2).attr('fill','none').attr('stroke','rgba(255,255,255,0.05)').attr('stroke-dasharray','2 6');
+    g.append('text').attr('x',0).attr('y',-((CORE_MIN+CORE_MAX)/2)-4).attr('text-anchor','middle').attr('font-size','7').attr('letter-spacing','0.5').attr('fill','#64748b').attr('pointer-events','none').text('· specific convergences outward · generic hubs inward ·');
+
+    // 4. disease rim: family bands + labels
+    const arcRim=d3.arc().innerRadius(R_out).outerRadius(R_out+6);
     famOrder.forEach(f=>{ const fr=famRange[f]; if(!fr) return;
         g.append('path').attr('d', arcRim({startAngle:fr[0]+Math.PI/2, endAngle:fr[1]+Math.PI/2})).attr('fill',famColor(f)).attr('opacity',0.92).style('cursor','pointer')
-            .on('mouseover',(ev)=>{ paintRibbons(rb=> diseaseFam[rb.seed]===f || diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>diseaseFam[rb.seed]===f||diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
             .on('click',()=>{ const el=document.getElementById('filter-family'); if(el){ el.value=f; el.dispatchEvent(new Event('change')); } });
         const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+64, mid);
-        g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f));
-    });
+        g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f)); });
 
-    // 5. core hit-dots + labels for the top hubs (the shared origins the filters reveal)
-    glowCores.slice(0,24).forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1];
-        g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,Math.sqrt(cp.deg)*0.8)).attr('fill','transparent').style('cursor','pointer')
-            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
+    // 4b. HUB diseases: crossroads on the rim, sized by how many pairs touch them (positive corroboration)
+    const hubList=Object.keys(diseaseDeg).sort((a,b)=>diseaseDeg[b]-diseaseDeg[a]).slice(0,44);
+    const hubMax=diseaseDeg[hubList[0]]||1;
+    hubList.forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined) return; const q=polar(R_out+3.5,a); const rr=Math.max(2, Math.sqrt(diseaseDeg[n]/hubMax)*6.5);
+        g.append('circle').attr('cx',q[0]).attr('cy',q[1]).attr('r',rr).attr('fill',famColor(diseaseFam[n])).attr('stroke','#0f0f11').attr('stroke-width',0.6).style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.seed===n||rb.partner===n); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+n+'</strong><br/>hub · '+diseaseDeg[n]+' links across the Atlas'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ focusDiseaseNode=n; focusPartnerNode=null; const b=document.getElementById('btn-focus-mode'); if(b){ b.classList.add('active'); b.textContent='Focus: '+n+' (Exit)'; } renderApp(); }); });
+
+    // 5. labels + hit-dots for the DISCOVERY stars (top by CQS), the specific convergences worth trusting
+    glowCores.forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const ty=typeOf(k);
+        g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,3+ (cp.cqs||0)*0.5)).attr('fill','transparent').style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k||(rb.nodes||[]).indexOf(k)>=0); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+ty[0]+' · best CQS '+(cp.cqs||0)+' · '+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
             .on('click',()=>{ const el=document.getElementById('search-input'); el.value=k; el.dispatchEvent(new Event('input')); });
-        if(i<12){ g.append('text').attr('x',x).attr('y',y-6).attr('text-anchor','middle').attr('font-size','7px').attr('fill','#94a3b8').attr('pointer-events','none').text(k.length>14?k.slice(0,13)+'…':k); }
-    });
+        if(i<14 && (cp.cqs||0)>=7){ g.append('text').attr('x',x).attr('y',y-6).attr('text-anchor','middle').attr('font-size','7px').attr('fill',ty[1]).attr('opacity',0.9).attr('pointer-events','none').text(k.length>14?k.slice(0,13)+'…':k); } });
 }
 
 function showTooltip(event, c) {
@@ -1551,13 +1588,18 @@ function redrawCanvasWithPartnerHighlight(partnerName) {
 // sidebar cards only toggle their own active state; no canvas redraw here, or a
 // card mouseout would wipe the alluvial.
 function highlightRel(id) {
+    const tid = parseInt(id);
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
-    document.getElementById(`card-${parseInt(id)}`)?.classList.add('active');
+    document.getElementById(`card-${tid}`)?.classList.add('active');
+    if (atlasPaint) { const rb0 = atlasRibbons.find(r=>r.id===tid);
+        const ns = rb0 ? new Set((rb0.nodes&&rb0.nodes.length)?rb0.nodes:[rb0.core]) : null;
+        atlasPaint(r=>r.id===tid, ns?(r=> r.id!==tid && (r.nodes||[]).some(n=>ns.has(n))):null); }
 }
-function highlightBySeed(name) {}
-function highlightByPartner(name) {}
+function highlightBySeed(name) { if (atlasPaint) atlasPaint(rb => rb.seed === name || rb.partner === name); }
+function highlightByPartner(name) { if (atlasPaint) atlasPaint(rb => rb.seed === name || rb.partner === name); }
 function clearHighlight() {
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
+    if (atlasPaint) atlasPaint(null);
 }
 
 function getSeedsProposingPartner(partnerName) {
