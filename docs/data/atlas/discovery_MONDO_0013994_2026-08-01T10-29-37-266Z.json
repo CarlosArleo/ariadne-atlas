@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013994",
+    "name": "MONDO:0013994"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014164",
+      "diseaseBName": "Meckel syndrome, type 11",
+      "fitness": 0.7163,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TMEM231 (HGNC:37234) —DISRUPTS→ Ciliary protein trafficking and function (GO:0005972); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Holoprosencephaly (HP:0001292); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Renal agenesis (HP:0000115). Loss-of-function mutations in TMEM231 (HGNC:37234) disrupt ciliary protein trafficking and function, leading to the shared phenotypes of holoprosencephaly (MONDO:0013994) and renal agenesis (MONDO:0014164).",
+      "mechanism_narrative": "TMEM231 (HGNC:37234) —DISRUPTS→ Ciliary protein trafficking and function (GO:0005972); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Holoprosencephaly (HP:0001292); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Renal agenesis (HP:0000115). Loss-of-function mutations in TMEM231 (HGNC:37234) disrupt ciliary protein trafficking and function, leading to the shared phenotypes of holoprosencephaly (MONDO:0013994) and renal agenesis (MONDO:0014164).",
+      "falsification": {
+        "text": "Identification of TMEM231 variants with a clear dominant-negative or gain-of-function effect in either disease would falsify the proposed loss-of-function mechanism.",
+        "gnomad_variant": "rs74315404"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:37234"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0014164",
+        "diseaseBName": "Meckel syndrome, type 11",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:37234"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7163,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "TMEM231 (HGNC:37234) —DISRUPTS→ Ciliary protein trafficking and function (GO:0005972); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Holoprosencephaly (HP:0001292); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Renal agenesis (HP:0000115). Loss-of-function mutations in TMEM231 (HGNC:37234) disrupt ciliary protein trafficking and function, leading to the shared phenotypes of holoprosencephaly (MONDO:0013994) and renal agenesis (MONDO:0014164).",
+        "falsification": {
+          "text": "Identification of TMEM231 variants with a clear dominant-negative or gain-of-function effect in either disease would falsify the proposed loss-of-function mechanism.",
+          "gnomad_variant": "rs74315404"
+        },
+        "translational": "Understanding the role of TMEM231 in ciliary function and development could lead to improved diagnostic approaches and potential therapeutic targets for these severe developmental disorders."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T10:29:37.266Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013994 (MONDO:0013994)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Meckel syndrome, type 11 (MONDO:0014164) | shared gene | Tier 1 | 0.716 | HGNC:37234 |\n\n### CANDIDATE DETAIL\n#### 1. Meckel syndrome, type 11  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.716)\n**Link type:** shared causal gene (HGNC:37234)\n\n**Proposed mechanism:** TMEM231 (HGNC:37234) —DISRUPTS→ Ciliary protein trafficking and function (GO:0005972); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Holoprosencephaly (HP:0001292); Ciliary protein trafficking and function (GO:0005972) —LEADS_TO→ Renal agenesis (HP:0000115). Loss-of-function mutations in TMEM231 (HGNC:37234) disrupt ciliary protein trafficking and function, leading to the shared phenotypes of holoprosencephaly (MONDO:0013994) and renal agenesis (MONDO:0014164).\n\n**How to falsify it:** Identification of TMEM231 variants with a clear dominant-negative or gain-of-function effect in either disease would falsify the proposed loss-of-function mechanism. _(variant: rs74315404)_\n\n**Why it matters:** Understanding the role of TMEM231 in ciliary function and development could lead to improved diagnostic approaches and potential therapeutic targets for these severe developmental disorders.\n\n---"
+}

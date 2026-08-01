@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013989",
+    "name": "MONDO:0013989"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014002",
+      "diseaseBName": "autosomal dominant nocturnal frontal lobe epilepsy 5",
+      "fitness": 0.7991,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Gain-of-function mutation in KCNT1 (HGVS:c.1709G>A) —DISRUPTS→ KCNT1 (HGNC:18865); KCNT1 (HGNC:18865) —INCREASES→ Neuronal excitability (GO:0007274); Neuronal excitability (GO:0007274) —LEADS_TO→ Seizures (HP:0001250); Neuronal excitability (GO:0007274) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal excitability (GO:0007274) —LEADS_TO→ Epilepsy, nocturnal frontal lobe (HP:0011351). Gain-of-function mutations in KCNT1 lead to increased neuronal excitability, manifesting as seizures, intellectual disability, and nocturnal frontal lobe epilepsy.",
+      "mechanism_narrative": "Gain-of-function mutation in KCNT1 (HGVS:c.1709G>A) —DISRUPTS→ KCNT1 (HGNC:18865); KCNT1 (HGNC:18865) —INCREASES→ Neuronal excitability (GO:0007274); Neuronal excitability (GO:0007274) —LEADS_TO→ Seizures (HP:0001250); Neuronal excitability (GO:0007274) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal excitability (GO:0007274) —LEADS_TO→ Epilepsy, nocturnal frontal lobe (HP:0011351). Gain-of-function mutations in KCNT1 lead to increased neuronal excitability, manifesting as seizures, intellectual disability, and nocturnal frontal lobe epilepsy.",
+      "falsification": {
+        "text": "The presence of a common, well-established loss-of-function variant in KCNT1 with a high allele frequency (>1%) in gnomAD that is associated with either disease would refute the proposed gain-of-function mechanism.",
+        "gnomad_variant": "rs749301538"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:18865"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0014002",
+        "diseaseBName": "autosomal dominant nocturnal frontal lobe epilepsy 5",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:18865"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7991,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "Gain-of-function mutation in KCNT1 (HGVS:c.1709G>A) —DISRUPTS→ KCNT1 (HGNC:18865); KCNT1 (HGNC:18865) —INCREASES→ Neuronal excitability (GO:0007274); Neuronal excitability (GO:0007274) —LEADS_TO→ Seizures (HP:0001250); Neuronal excitability (GO:0007274) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal excitability (GO:0007274) —LEADS_TO→ Epilepsy, nocturnal frontal lobe (HP:0011351). Gain-of-function mutations in KCNT1 lead to increased neuronal excitability, manifesting as seizures, intellectual disability, and nocturnal frontal lobe epilepsy.",
+        "falsification": {
+          "text": "The presence of a common, well-established loss-of-function variant in KCNT1 with a high allele frequency (>1%) in gnomAD that is associated with either disease would refute the proposed gain-of-function mechanism.",
+          "gnomad_variant": "rs749301538"
+        },
+        "translational": "Targeting KCNT1 channel activity could offer a unified therapeutic strategy for both Mala--Plumley-Pingault syndrome and autosomal dominant nocturnal frontal lobe epilepsy 5, potentially through channel blockers or modulators."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T10:25:49.794Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013989 (MONDO:0013989)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autosomal dominant nocturnal frontal lobe epilepsy 5 (MONDO:0014002) | shared gene | Tier 1 | 0.799 | HGNC:18865 |\n\n### CANDIDATE DETAIL\n#### 1. autosomal dominant nocturnal frontal lobe epilepsy 5  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.799)\n**Link type:** shared causal gene (HGNC:18865)\n\n**Proposed mechanism:** Gain-of-function mutation in KCNT1 (HGVS:c.1709G>A) —DISRUPTS→ KCNT1 (HGNC:18865); KCNT1 (HGNC:18865) —INCREASES→ Neuronal excitability (GO:0007274); Neuronal excitability (GO:0007274) —LEADS_TO→ Seizures (HP:0001250); Neuronal excitability (GO:0007274) —LEADS_TO→ Intellectual disability (HP:0001249); Neuronal excitability (GO:0007274) —LEADS_TO→ Epilepsy, nocturnal frontal lobe (HP:0011351). Gain-of-function mutations in KCNT1 lead to increased neuronal excitability, manifesting as seizures, intellectual disability, and nocturnal frontal lobe epilepsy.\n\n**How to falsify it:** The presence of a common, well-established loss-of-function variant in KCNT1 with a high allele frequency (>1%) in gnomAD that is associated with either disease would refute the proposed gain-of-function mechanism. _(variant: rs749301538)_\n\n**Why it matters:** Targeting KCNT1 channel activity could offer a unified therapeutic strategy for both Mala--Plumley-Pingault syndrome and autosomal dominant nocturnal frontal lobe epilepsy 5, potentially through channel blockers or modulators.\n\n---"
+}
