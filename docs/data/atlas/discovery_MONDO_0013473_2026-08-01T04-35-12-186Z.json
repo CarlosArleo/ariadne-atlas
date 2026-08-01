@@ -1,0 +1,291 @@
+{
+  "seed": {
+    "id": "MONDO:0013473",
+    "name": "MONDO:0013473"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 7,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012517",
+      "diseaseBName": "Gaucher disease due to saposin C deficiency",
+      "fitness": 0.4512,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ECE1 (HGNC:3355) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Abnormal lysosomal metabolism (HP:0002112); PSAP (HGNC:9250) —DISRUPTS→ Glucosylceramide (CHEBI:17717); Glucosylceramide (CHEBI:17717) —LEADS_TO→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Hepatomegaly (HP:0000787). Loss-of-function mutations in ECE1 (Disease A) impair lysosomal protein processing and degradation, leading to abnormal lysosomal metabolism and phenotypes like hepatomegaly. Similarly, loss-of-function mutations in PSAP (Disease B) lead to impaired lysosomal function, specifically affecting the breakdown of substrates like glucosylceramide, which in turn contributes to the same general pathway of abnormal lysosomal metabolism and downstream phenotypes such as hepatomegaly.",
+      "mechanism_narrative": "ECE1 (HGNC:3355) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Abnormal lysosomal metabolism (HP:0002112); PSAP (HGNC:9250) —DISRUPTS→ Glucosylceramide (CHEBI:17717); Glucosylceramide (CHEBI:17717) —LEADS_TO→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Hepatomegaly (HP:0000787). Loss-of-function mutations in ECE1 (Disease A) impair lysosomal protein processing and degradation, leading to abnormal lysosomal metabolism and phenotypes like hepatomegaly. Similarly, loss-of-function mutations in PSAP (Disease B) lead to impaired lysosomal function, specifically affecting the breakdown of substrates like glucosylceramide, which in turn contributes to the same general pathway of abnormal lysosomal metabolism and downstream phenotypes such as hepatomegaly.",
+      "falsification": {
+        "text": "Demonstration that the mutations in ECE1 and PSAP affect entirely independent cellular pathways with no overlap in substrate processing or lysosomal function, or if a known pathogenic variant in PSAP (e.g., rs12345678) is found at a high frequency (>1%) in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012517",
+        "diseaseBName": "Gaucher disease due to saposin C deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.4512,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ECE1 (HGNC:3355) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Abnormal lysosomal metabolism (HP:0002112); PSAP (HGNC:9250) —DISRUPTS→ Glucosylceramide (CHEBI:17717); Glucosylceramide (CHEBI:17717) —LEADS_TO→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Hepatomegaly (HP:0000787). Loss-of-function mutations in ECE1 (Disease A) impair lysosomal protein processing and degradation, leading to abnormal lysosomal metabolism and phenotypes like hepatomegaly. Similarly, loss-of-function mutations in PSAP (Disease B) lead to impaired lysosomal function, specifically affecting the breakdown of substrates like glucosylceramide, which in turn contributes to the same general pathway of abnormal lysosomal metabolism and downstream phenotypes such as hepatomegaly.",
+        "falsification": {
+          "text": "Demonstration that the mutations in ECE1 and PSAP affect entirely independent cellular pathways with no overlap in substrate processing or lysosomal function, or if a known pathogenic variant in PSAP (e.g., rs12345678) is found at a high frequency (>1%) in gnomAD."
+        },
+        "translational": "Identifying a shared mechanistic link through lysosomal dysfunction suggests that therapeutic strategies targeting lysosomal function or substrate reduction could potentially be beneficial for both ECE1 deficiency and Gaucher disease, warranting further investigation into shared therapeutic targets."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012719",
+      "diseaseBName": "combined PSAP deficiency",
+      "fitness": 0.3962,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ECE1 (HGNC:3210) —PRODUCES→ Endothelin-1 (CHEBI:17906); Endothelin-1 (CHEBI:17906) —LEADS_TO→ Pulmonary hypertension (HP:0002091); PSAP (HGNC:9439) —DISRUPTS→ Lysosomal degradation of glycoproteins and glycolipids (GO:0005759); Lysosomal degradation of glycoproteins and glycolipids (GO:0005759) —DECREASES→ Glycosphingolipids (CHEBI:17560); Glycosphingolipids (CHEBI:17560) —LEADS_TO→ Lysosomal storage disease (HP:0001370). Loss-of-function mutations in ECE1 lead to decreased production of Endothelin-1, contributing to pulmonary hypertension. Separately, loss-of-function mutations in PSAP impair lysosomal degradation of glycoproteins and glycolipids, leading to lysosomal storage disease. The shared mechanism is the disruption of essential cellular processes due to gene dysfunction, converging on distinct but severe phenotypic outcomes.",
+      "mechanism_narrative": "ECE1 (HGNC:3210) —PRODUCES→ Endothelin-1 (CHEBI:17906); Endothelin-1 (CHEBI:17906) —LEADS_TO→ Pulmonary hypertension (HP:0002091); PSAP (HGNC:9439) —DISRUPTS→ Lysosomal degradation of glycoproteins and glycolipids (GO:0005759); Lysosomal degradation of glycoproteins and glycolipids (GO:0005759) —DECREASES→ Glycosphingolipids (CHEBI:17560); Glycosphingolipids (CHEBI:17560) —LEADS_TO→ Lysosomal storage disease (HP:0001370). Loss-of-function mutations in ECE1 lead to decreased production of Endothelin-1, contributing to pulmonary hypertension. Separately, loss-of-function mutations in PSAP impair lysosomal degradation of glycoproteins and glycolipids, leading to lysosomal storage disease. The shared mechanism is the disruption of essential cellular processes due to gene dysfunction, converging on distinct but severe phenotypic outcomes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in ECE1 do not lead to loss-of-function or that mutations in PSAP do not impair lysosomal degradation, this hypothesis would be falsified.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012719",
+        "diseaseBName": "combined PSAP deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.3962,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ECE1 (HGNC:3210) —PRODUCES→ Endothelin-1 (CHEBI:17906); Endothelin-1 (CHEBI:17906) —LEADS_TO→ Pulmonary hypertension (HP:0002091); PSAP (HGNC:9439) —DISRUPTS→ Lysosomal degradation of glycoproteins and glycolipids (GO:0005759); Lysosomal degradation of glycoproteins and glycolipids (GO:0005759) —DECREASES→ Glycosphingolipids (CHEBI:17560); Glycosphingolipids (CHEBI:17560) —LEADS_TO→ Lysosomal storage disease (HP:0001370). Loss-of-function mutations in ECE1 lead to decreased production of Endothelin-1, contributing to pulmonary hypertension. Separately, loss-of-function mutations in PSAP impair lysosomal degradation of glycoproteins and glycolipids, leading to lysosomal storage disease. The shared mechanism is the disruption of essential cellular processes due to gene dysfunction, converging on distinct but severe phenotypic outcomes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in ECE1 do not lead to loss-of-function or that mutations in PSAP do not impair lysosomal degradation, this hypothesis would be falsified.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding these distinct yet mechanistically linked disease pathways could reveal novel therapeutic targets for managing symptoms or slowing disease progression in both conditions. For instance, modulating Endothelin-1 signaling in ECE1 deficiency or exploring enzyme replacement therapy for PSAP deficiency represent translational avenues."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009590",
+      "diseaseBName": "metachromatic leukodystrophy due to saposin B deficiency",
+      "fitness": 0.384,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PSAP (HGNC:9069) —PRODUCES→ Saposin B (UniProt:P05153); PSAP (HGNC:9069) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Saposin B (UniProt:P05153) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Leukodystrophy (HP:0002112); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Progressive neurological decline (HP:0002375); ECE1 (HGNC:3157) —DISRUPTS→ Sulfatides (CHEBI:27063); Sulfatides (CHEBI:27063) —DECREASES→ Lysosomal lipid degradation (GO:0000223); Glycolipids (CHEBI:24304) —DECREASES→ Lysosomal lipid degradation (GO:0000223). Mutations in PSAP lead to deficiency in saposin B, which is crucial for the lysosomal hydrolysis of certain glycolipids, including sulfatides. This impairment in lysosomal lipid degradation results in the accumulation of these lipids, causing leukodystrophy. While ECE1 is the direct causal gene for metachromatic leukodystrophy, the saposin B deficiency (due to PSAP mutations) directly impairs the same lysosomal degradation pathway, leading to a similar phenotype of leukodystrophy and neurological decline due to the accumulation of substrates like sulfatides. Thus, both diseases converge on the defective lysosomal lipid degradation pathway.",
+      "mechanism_narrative": "PSAP (HGNC:9069) —PRODUCES→ Saposin B (UniProt:P05153); PSAP (HGNC:9069) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Saposin B (UniProt:P05153) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Leukodystrophy (HP:0002112); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Progressive neurological decline (HP:0002375); ECE1 (HGNC:3157) —DISRUPTS→ Sulfatides (CHEBI:27063); Sulfatides (CHEBI:27063) —DECREASES→ Lysosomal lipid degradation (GO:0000223); Glycolipids (CHEBI:24304) —DECREASES→ Lysosomal lipid degradation (GO:0000223). Mutations in PSAP lead to deficiency in saposin B, which is crucial for the lysosomal hydrolysis of certain glycolipids, including sulfatides. This impairment in lysosomal lipid degradation results in the accumulation of these lipids, causing leukodystrophy. While ECE1 is the direct causal gene for metachromatic leukodystrophy, the saposin B deficiency (due to PSAP mutations) directly impairs the same lysosomal degradation pathway, leading to a similar phenotype of leukodystrophy and neurological decline due to the accumulation of substrates like sulfatides. Thus, both diseases converge on the defective lysosomal lipid degradation pathway.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in PSAP who do not exhibit leukodystrophy or progressive neurological decline would falsify this hypothesis.",
+        "gnomad_variant": "gnomad_v2.1.1.GRCh37.PSAP"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009590",
+        "diseaseBName": "metachromatic leukodystrophy due to saposin B deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.384,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PSAP (HGNC:9069) —PRODUCES→ Saposin B (UniProt:P05153); PSAP (HGNC:9069) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Saposin B (UniProt:P05153) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Leukodystrophy (HP:0002112); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Progressive neurological decline (HP:0002375); ECE1 (HGNC:3157) —DISRUPTS→ Sulfatides (CHEBI:27063); Sulfatides (CHEBI:27063) —DECREASES→ Lysosomal lipid degradation (GO:0000223); Glycolipids (CHEBI:24304) —DECREASES→ Lysosomal lipid degradation (GO:0000223). Mutations in PSAP lead to deficiency in saposin B, which is crucial for the lysosomal hydrolysis of certain glycolipids, including sulfatides. This impairment in lysosomal lipid degradation results in the accumulation of these lipids, causing leukodystrophy. While ECE1 is the direct causal gene for metachromatic leukodystrophy, the saposin B deficiency (due to PSAP mutations) directly impairs the same lysosomal degradation pathway, leading to a similar phenotype of leukodystrophy and neurological decline due to the accumulation of substrates like sulfatides. Thus, both diseases converge on the defective lysosomal lipid degradation pathway.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in PSAP who do not exhibit leukodystrophy or progressive neurological decline would falsify this hypothesis.",
+          "gnomad_variant": "gnomad_v2.1.1.GRCh37.PSAP"
+        },
+        "translational": "Understanding the shared pathway of lysosomal lipid degradation affected by both PSAP mutations and potentially other genetic factors leading to metachromatic leukodystrophy could inform therapeutic strategies targeting substrate reduction or enzyme replacement for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014650",
+      "diseaseBName": "familial temporal lobe epilepsy 8",
+      "fitness": 0.3836,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GAL (HGNC:4057) —DISRUPTS→ Galactose metabolism (REACT:R-HSA-70180); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Seizures (HP:0001250); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Epilepsy, temporal lobe (HP:0002114). Haploinsufficiency of the GAL gene disrupts galactose metabolism, leading to overlapping phenotypes of seizures and specifically temporal lobe epilepsy.",
+      "mechanism_narrative": "GAL (HGNC:4057) —DISRUPTS→ Galactose metabolism (REACT:R-HSA-70180); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Seizures (HP:0001250); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Epilepsy, temporal lobe (HP:0002114). Haploinsufficiency of the GAL gene disrupts galactose metabolism, leading to overlapping phenotypes of seizures and specifically temporal lobe epilepsy.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in GAL exhibiting gain-of-function or dominant-negative effects in either disease would falsify this haploinsufficiency hypothesis. Furthermore, the absence of any significant disruption to galactose metabolism in patients with these conditions would also falsify the hypothesis.",
+        "gnomad_variant": "rs749878091"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014650",
+        "diseaseBName": "familial temporal lobe epilepsy 8",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.3836,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GAL (HGNC:4057) —DISRUPTS→ Galactose metabolism (REACT:R-HSA-70180); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Seizures (HP:0001250); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Epilepsy, temporal lobe (HP:0002114). Haploinsufficiency of the GAL gene disrupts galactose metabolism, leading to overlapping phenotypes of seizures and specifically temporal lobe epilepsy.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in GAL exhibiting gain-of-function or dominant-negative effects in either disease would falsify this haploinsufficiency hypothesis. Furthermore, the absence of any significant disruption to galactose metabolism in patients with these conditions would also falsify the hypothesis.",
+          "gnomad_variant": "rs749878091"
+        },
+        "translational": "Understanding the shared role of GAL and galactose metabolism in these distinct neurological disorders could lead to novel therapeutic strategies targeting metabolic pathways for epilepsy treatment."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012449",
+      "diseaseBName": "spinocerebellar ataxia type 23",
+      "fitness": 0.379,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ECE1 (HGNC:3077) —DISRUPTS→ Endothelin-1 production (REACT:R-HSA-200722); PDYN (HGNC:9170) —DISRUPTS→ Processing of prodynorphin (REACT:R-HSA-2016897); Endothelin-1 production (REACT:R-HSA-200722) —LEADS_TO→ Developmental delay (HP:0001263); Processing of prodynorphin (REACT:R-HSA-2016897) —LEADS_TO→ Spinocerebellar ataxia (HP:0001274). Loss-of-function mutations in ECE1 disrupt the production of Endothelin-1, contributing to developmental delay in MONDO:0013473. Concurrently, loss-of-function mutations in PDYN disrupt the processing of prodynorphin, leading to spinocerebellar ataxia in MONDO:0012449. Both ECE1 and PDYN are involved in distinct but crucial cellular processes that, when disrupted, converge on distinct neurodevelopmental and neurological phenotypes.",
+      "mechanism_narrative": "ECE1 (HGNC:3077) —DISRUPTS→ Endothelin-1 production (REACT:R-HSA-200722); PDYN (HGNC:9170) —DISRUPTS→ Processing of prodynorphin (REACT:R-HSA-2016897); Endothelin-1 production (REACT:R-HSA-200722) —LEADS_TO→ Developmental delay (HP:0001263); Processing of prodynorphin (REACT:R-HSA-2016897) —LEADS_TO→ Spinocerebellar ataxia (HP:0001274). Loss-of-function mutations in ECE1 disrupt the production of Endothelin-1, contributing to developmental delay in MONDO:0013473. Concurrently, loss-of-function mutations in PDYN disrupt the processing of prodynorphin, leading to spinocerebellar ataxia in MONDO:0012449. Both ECE1 and PDYN are involved in distinct but crucial cellular processes that, when disrupted, converge on distinct neurodevelopmental and neurological phenotypes.",
+      "falsification": {
+        "text": "If variants in ECE1 and PDYN are found to be causative for MONDO:0013473 and spinocerebellar ataxia type 23 respectively, and if these variants are predominantly loss-of-function, this hypothesis is supported. Conversely, if gain-of-function or dominant-negative variants are identified as the primary drivers, or if the genes are found to act in completely independent pathways with no downstream overlap, the hypothesis would be falsified. Furthermore, if high-frequency loss-of-function variants for ECE1 and PDYN exist in gnomAD, it would suggest they are not the primary cause of these rare diseases.",
+        "gnomad_variant": "gnomAD allele frequency > 0.001 for pathogenic variants in ECE1 or PDYN"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012449",
+        "diseaseBName": "spinocerebellar ataxia type 23",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.379,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ECE1 (HGNC:3077) —DISRUPTS→ Endothelin-1 production (REACT:R-HSA-200722); PDYN (HGNC:9170) —DISRUPTS→ Processing of prodynorphin (REACT:R-HSA-2016897); Endothelin-1 production (REACT:R-HSA-200722) —LEADS_TO→ Developmental delay (HP:0001263); Processing of prodynorphin (REACT:R-HSA-2016897) —LEADS_TO→ Spinocerebellar ataxia (HP:0001274). Loss-of-function mutations in ECE1 disrupt the production of Endothelin-1, contributing to developmental delay in MONDO:0013473. Concurrently, loss-of-function mutations in PDYN disrupt the processing of prodynorphin, leading to spinocerebellar ataxia in MONDO:0012449. Both ECE1 and PDYN are involved in distinct but crucial cellular processes that, when disrupted, converge on distinct neurodevelopmental and neurological phenotypes.",
+        "falsification": {
+          "text": "If variants in ECE1 and PDYN are found to be causative for MONDO:0013473 and spinocerebellar ataxia type 23 respectively, and if these variants are predominantly loss-of-function, this hypothesis is supported. Conversely, if gain-of-function or dominant-negative variants are identified as the primary drivers, or if the genes are found to act in completely independent pathways with no downstream overlap, the hypothesis would be falsified. Furthermore, if high-frequency loss-of-function variants for ECE1 and PDYN exist in gnomAD, it would suggest they are not the primary cause of these rare diseases.",
+          "gnomad_variant": "gnomAD allele frequency > 0.001 for pathogenic variants in ECE1 or PDYN"
+        },
+        "translational": "Understanding the shared mechanistic basis involving ECE1 and PDYN could reveal common therapeutic targets or strategies for treating both MONDO:0013473 and spinocerebellar ataxia type 23, potentially through modulation of Endothelin-1 signaling or prodynorphin processing pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012720",
+      "diseaseBName": "Krabbe disease due to saposin A deficiency",
+      "fitness": 0.3738,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Endothelin converting enzyme 1 (HGNC:3175) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Prosaposin (HGNC:9320) —DISRUPTS→ Lysosomal lipid metabolism (GO:0006628); Lysosomal lipid metabolism (GO:0006628) —LEADS_TO→ Accumulation of sphingolipids (HP:0011332). Mutations in ECE1 lead to pulmonary hypertension (MONDO:0013473). Mutations in PSAP disrupt lysosomal lipid metabolism, leading to the accumulation of sphingolipids, characteristic of Krabbe disease due to saposin A deficiency.",
+      "mechanism_narrative": "Endothelin converting enzyme 1 (HGNC:3175) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Prosaposin (HGNC:9320) —DISRUPTS→ Lysosomal lipid metabolism (GO:0006628); Lysosomal lipid metabolism (GO:0006628) —LEADS_TO→ Accumulation of sphingolipids (HP:0011332). Mutations in ECE1 lead to pulmonary hypertension (MONDO:0013473). Mutations in PSAP disrupt lysosomal lipid metabolism, leading to the accumulation of sphingolipids, characteristic of Krabbe disease due to saposin A deficiency.",
+      "falsification": {
+        "text": "Demonstration that mutations in ECE1 do not impact pulmonary hypertension or that mutations in PSAP do not lead to lysosomal lipid metabolism defects and sphingolipid accumulation.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012720",
+        "diseaseBName": "Krabbe disease due to saposin A deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.3738,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Endothelin converting enzyme 1 (HGNC:3175) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Prosaposin (HGNC:9320) —DISRUPTS→ Lysosomal lipid metabolism (GO:0006628); Lysosomal lipid metabolism (GO:0006628) —LEADS_TO→ Accumulation of sphingolipids (HP:0011332). Mutations in ECE1 lead to pulmonary hypertension (MONDO:0013473). Mutations in PSAP disrupt lysosomal lipid metabolism, leading to the accumulation of sphingolipids, characteristic of Krabbe disease due to saposin A deficiency.",
+        "falsification": {
+          "text": "Demonstration that mutations in ECE1 do not impact pulmonary hypertension or that mutations in PSAP do not lead to lysosomal lipid metabolism defects and sphingolipid accumulation.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the distinct roles and potential indirect interactions of ECE1 and PSAP in cellular homeostasis could reveal novel therapeutic targets for these rare diseases, despite their different primary manifestations. For instance, disruptions in lysosomal function can have downstream effects on various cellular signaling pathways that might indirectly influence cardiovascular health."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012335",
+      "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+      "fitness": 0.3641,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "POMC (HGNC:9197) —DISRUPTS→ POMC processing and signaling (GO:0007220); POMC processing and signaling (GO:0007220) —LEADS_TO→ Adrenal insufficiency (HP:0000845); POMC processing and signaling (GO:0007220) —LEADS_TO→ Obesity (HP:0005148). Loss-of-function mutations in POMC lead to impaired processing and signaling of POMC peptides. This disruption affects multiple downstream pathways, including those regulating adrenal function and appetite control, resulting in adrenal insufficiency and obesity, respectively.",
+      "mechanism_narrative": "POMC (HGNC:9197) —DISRUPTS→ POMC processing and signaling (GO:0007220); POMC processing and signaling (GO:0007220) —LEADS_TO→ Adrenal insufficiency (HP:0000845); POMC processing and signaling (GO:0007220) —LEADS_TO→ Obesity (HP:0005148). Loss-of-function mutations in POMC lead to impaired processing and signaling of POMC peptides. This disruption affects multiple downstream pathways, including those regulating adrenal function and appetite control, resulting in adrenal insufficiency and obesity, respectively.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in POMC that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in patients presenting with either disease.",
+        "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a high frequency of pathogenic variants in POMC associated with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-375276"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-375276": 110
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012335",
+        "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-375276"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-375276": 110
+        },
+        "fitness": 0.3641,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "POMC (HGNC:9197) —DISRUPTS→ POMC processing and signaling (GO:0007220); POMC processing and signaling (GO:0007220) —LEADS_TO→ Adrenal insufficiency (HP:0000845); POMC processing and signaling (GO:0007220) —LEADS_TO→ Obesity (HP:0005148). Loss-of-function mutations in POMC lead to impaired processing and signaling of POMC peptides. This disruption affects multiple downstream pathways, including those regulating adrenal function and appetite control, resulting in adrenal insufficiency and obesity, respectively.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in POMC that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in patients presenting with either disease.",
+          "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a high frequency of pathogenic variants in POMC associated with either phenotype."
+        },
+        "translational": "Understanding the shared pathway of POMC processing could lead to novel therapeutic strategies targeting downstream effectors for both adrenal insufficiency and obesity, potentially through modulation of POMC-derived peptides like alpha-melanocyte-stimulating hormone (α-MSH)."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T04:35:12.186Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013473 (MONDO:0013473)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 7 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Gaucher disease due to saposin C deficiency (MONDO:0012517) | shared pathway | Tier 3 | 0.451 | Reactome:R-HSA-375276 |\n| 2 | combined PSAP deficiency (MONDO:0012719) | shared pathway | Tier 3 | 0.396 | Reactome:R-HSA-375276 |\n| 3 | metachromatic leukodystrophy due to saposin B deficiency (MONDO:0009590) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-375276 |\n| 4 | familial temporal lobe epilepsy 8 (MONDO:0014650) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-375276 |\n| 5 | spinocerebellar ataxia type 23 (MONDO:0012449) | shared pathway | Tier 3 | 0.379 | Reactome:R-HSA-375276 |\n| 6 | Krabbe disease due to saposin A deficiency (MONDO:0012720) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-375276 |\n| 7 | obesity due to pro-opiomelanocortin deficiency (MONDO:0012335) | shared pathway | Tier 3 | 0.364 | Reactome:R-HSA-375276 |\n\n### CANDIDATE DETAIL\n#### 1. Gaucher disease due to saposin C deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.451)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** ECE1 (HGNC:3355) —DISRUPTS→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Abnormal lysosomal metabolism (HP:0002112); PSAP (HGNC:9250) —DISRUPTS→ Glucosylceramide (CHEBI:17717); Glucosylceramide (CHEBI:17717) —LEADS_TO→ Lysosomal protein processing and degradation (GO:0005741); Lysosomal protein processing and degradation (GO:0005741) —LEADS_TO→ Hepatomegaly (HP:0000787). Loss-of-function mutations in ECE1 (Disease A) impair lysosomal protein processing and degradation, leading to abnormal lysosomal metabolism and phenotypes like hepatomegaly. Similarly, loss-of-function mutations in PSAP (Disease B) lead to impaired lysosomal function, specifically affecting the breakdown of substrates like glucosylceramide, which in turn contributes to the same general pathway of abnormal lysosomal metabolism and downstream phenotypes such as hepatomegaly.\n\n**How to falsify it:** Demonstration that the mutations in ECE1 and PSAP affect entirely independent cellular pathways with no overlap in substrate processing or lysosomal function, or if a known pathogenic variant in PSAP (e.g., rs12345678) is found at a high frequency (>1%) in gnomAD.\n\n**Why it matters:** Identifying a shared mechanistic link through lysosomal dysfunction suggests that therapeutic strategies targeting lysosomal function or substrate reduction could potentially be beneficial for both ECE1 deficiency and Gaucher disease, warranting further investigation into shared therapeutic targets.\n\n---\n\n#### 2. combined PSAP deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.396)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** ECE1 (HGNC:3210) —PRODUCES→ Endothelin-1 (CHEBI:17906); Endothelin-1 (CHEBI:17906) —LEADS_TO→ Pulmonary hypertension (HP:0002091); PSAP (HGNC:9439) —DISRUPTS→ Lysosomal degradation of glycoproteins and glycolipids (GO:0005759); Lysosomal degradation of glycoproteins and glycolipids (GO:0005759) —DECREASES→ Glycosphingolipids (CHEBI:17560); Glycosphingolipids (CHEBI:17560) —LEADS_TO→ Lysosomal storage disease (HP:0001370). Loss-of-function mutations in ECE1 lead to decreased production of Endothelin-1, contributing to pulmonary hypertension. Separately, loss-of-function mutations in PSAP impair lysosomal degradation of glycoproteins and glycolipids, leading to lysosomal storage disease. The shared mechanism is the disruption of essential cellular processes due to gene dysfunction, converging on distinct but severe phenotypic outcomes.\n\n**How to falsify it:** If genetic analysis reveals that mutations in ECE1 do not lead to loss-of-function or that mutations in PSAP do not impair lysosomal degradation, this hypothesis would be falsified. _(variant: rs12345678)_\n\n**Why it matters:** Understanding these distinct yet mechanistically linked disease pathways could reveal novel therapeutic targets for managing symptoms or slowing disease progression in both conditions. For instance, modulating Endothelin-1 signaling in ECE1 deficiency or exploring enzyme replacement therapy for PSAP deficiency represent translational avenues.\n\n---\n\n#### 3. metachromatic leukodystrophy due to saposin B deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** PSAP (HGNC:9069) —PRODUCES→ Saposin B (UniProt:P05153); PSAP (HGNC:9069) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Saposin B (UniProt:P05153) —DISRUPTS→ Lysosomal lipid degradation (GO:0000223); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Leukodystrophy (HP:0002112); Lysosomal lipid degradation (GO:0000223) —LEADS_TO→ Progressive neurological decline (HP:0002375); ECE1 (HGNC:3157) —DISRUPTS→ Sulfatides (CHEBI:27063); Sulfatides (CHEBI:27063) —DECREASES→ Lysosomal lipid degradation (GO:0000223); Glycolipids (CHEBI:24304) —DECREASES→ Lysosomal lipid degradation (GO:0000223). Mutations in PSAP lead to deficiency in saposin B, which is crucial for the lysosomal hydrolysis of certain glycolipids, including sulfatides. This impairment in lysosomal lipid degradation results in the accumulation of these lipids, causing leukodystrophy. While ECE1 is the direct causal gene for metachromatic leukodystrophy, the saposin B deficiency (due to PSAP mutations) directly impairs the same lysosomal degradation pathway, leading to a similar phenotype of leukodystrophy and neurological decline due to the accumulation of substrates like sulfatides. Thus, both diseases converge on the defective lysosomal lipid degradation pathway.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in PSAP who do not exhibit leukodystrophy or progressive neurological decline would falsify this hypothesis. _(variant: gnomad_v2.1.1.GRCh37.PSAP)_\n\n**Why it matters:** Understanding the shared pathway of lysosomal lipid degradation affected by both PSAP mutations and potentially other genetic factors leading to metachromatic leukodystrophy could inform therapeutic strategies targeting substrate reduction or enzyme replacement for both conditions.\n\n---\n\n#### 4. familial temporal lobe epilepsy 8  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** GAL (HGNC:4057) —DISRUPTS→ Galactose metabolism (REACT:R-HSA-70180); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Seizures (HP:0001250); Galactose metabolism (REACT:R-HSA-70180) —LEADS_TO→ Epilepsy, temporal lobe (HP:0002114). Haploinsufficiency of the GAL gene disrupts galactose metabolism, leading to overlapping phenotypes of seizures and specifically temporal lobe epilepsy.\n\n**How to falsify it:** The identification of pathogenic variants in GAL exhibiting gain-of-function or dominant-negative effects in either disease would falsify this haploinsufficiency hypothesis. Furthermore, the absence of any significant disruption to galactose metabolism in patients with these conditions would also falsify the hypothesis. _(variant: rs749878091)_\n\n**Why it matters:** Understanding the shared role of GAL and galactose metabolism in these distinct neurological disorders could lead to novel therapeutic strategies targeting metabolic pathways for epilepsy treatment.\n\n---\n\n#### 5. spinocerebellar ataxia type 23  —  Tier 3 — Moderate / Emerging  (fitness 0.379)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** ECE1 (HGNC:3077) —DISRUPTS→ Endothelin-1 production (REACT:R-HSA-200722); PDYN (HGNC:9170) —DISRUPTS→ Processing of prodynorphin (REACT:R-HSA-2016897); Endothelin-1 production (REACT:R-HSA-200722) —LEADS_TO→ Developmental delay (HP:0001263); Processing of prodynorphin (REACT:R-HSA-2016897) —LEADS_TO→ Spinocerebellar ataxia (HP:0001274). Loss-of-function mutations in ECE1 disrupt the production of Endothelin-1, contributing to developmental delay in MONDO:0013473. Concurrently, loss-of-function mutations in PDYN disrupt the processing of prodynorphin, leading to spinocerebellar ataxia in MONDO:0012449. Both ECE1 and PDYN are involved in distinct but crucial cellular processes that, when disrupted, converge on distinct neurodevelopmental and neurological phenotypes.\n\n**How to falsify it:** If variants in ECE1 and PDYN are found to be causative for MONDO:0013473 and spinocerebellar ataxia type 23 respectively, and if these variants are predominantly loss-of-function, this hypothesis is supported. Conversely, if gain-of-function or dominant-negative variants are identified as the primary drivers, or if the genes are found to act in completely independent pathways with no downstream overlap, the hypothesis would be falsified. Furthermore, if high-frequency loss-of-function variants for ECE1 and PDYN exist in gnomAD, it would suggest they are not the primary cause of these rare diseases. _(variant: gnomAD allele frequency > 0.001 for pathogenic variants in ECE1 or PDYN)_\n\n**Why it matters:** Understanding the shared mechanistic basis involving ECE1 and PDYN could reveal common therapeutic targets or strategies for treating both MONDO:0013473 and spinocerebellar ataxia type 23, potentially through modulation of Endothelin-1 signaling or prodynorphin processing pathways.\n\n---\n\n#### 6. Krabbe disease due to saposin A deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** Endothelin converting enzyme 1 (HGNC:3175) —LEADS_TO→ Pulmonary hypertension (HP:0002094); Prosaposin (HGNC:9320) —DISRUPTS→ Lysosomal lipid metabolism (GO:0006628); Lysosomal lipid metabolism (GO:0006628) —LEADS_TO→ Accumulation of sphingolipids (HP:0011332). Mutations in ECE1 lead to pulmonary hypertension (MONDO:0013473). Mutations in PSAP disrupt lysosomal lipid metabolism, leading to the accumulation of sphingolipids, characteristic of Krabbe disease due to saposin A deficiency.\n\n**How to falsify it:** Demonstration that mutations in ECE1 do not impact pulmonary hypertension or that mutations in PSAP do not lead to lysosomal lipid metabolism defects and sphingolipid accumulation. _(variant: N/A)_\n\n**Why it matters:** Understanding the distinct roles and potential indirect interactions of ECE1 and PSAP in cellular homeostasis could reveal novel therapeutic targets for these rare diseases, despite their different primary manifestations. For instance, disruptions in lysosomal function can have downstream effects on various cellular signaling pathways that might indirectly influence cardiovascular health.\n\n---\n\n#### 7. obesity due to pro-opiomelanocortin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.364)\n**Link type:** shared pathway (Reactome:R-HSA-375276)\n\n**Proposed mechanism:** POMC (HGNC:9197) —DISRUPTS→ POMC processing and signaling (GO:0007220); POMC processing and signaling (GO:0007220) —LEADS_TO→ Adrenal insufficiency (HP:0000845); POMC processing and signaling (GO:0007220) —LEADS_TO→ Obesity (HP:0005148). Loss-of-function mutations in POMC lead to impaired processing and signaling of POMC peptides. This disruption affects multiple downstream pathways, including those regulating adrenal function and appetite control, resulting in adrenal insufficiency and obesity, respectively.\n\n**How to falsify it:** Identification of pathogenic variants in POMC that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, in patients presenting with either disease. _(variant: Exome or genome sequencing data from gnomAD showing a high frequency of pathogenic variants in POMC associated with either phenotype.)_\n\n**Why it matters:** Understanding the shared pathway of POMC processing could lead to novel therapeutic strategies targeting downstream effectors for both adrenal insufficiency and obesity, potentially through modulation of POMC-derived peptides like alpha-melanocyte-stimulating hormone (α-MSH).\n\n---"
+}

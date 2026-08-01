@@ -1,0 +1,365 @@
+{
+  "seed": {
+    "id": "MONDO:0013521",
+    "name": "MONDO:0013521"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 8,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013878",
+      "diseaseBName": "pulmonary fibrosis and/or bone marrow failure, Telomere-related, 1",
+      "fitness": 0.7922,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "TERT (HGNC:11730) —DISRUPTS→ Telomere maintenance (REACT:R-HSA-69622); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Pulmonary fibrosis (HP:0002070); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Bone marrow failure (HP:0001874). Loss-of-function mutations in TERT disrupt telomere maintenance, leading to cellular senescence and genomic instability. This ultimately manifests as pulmonary fibrosis and bone marrow failure in the respective disease contexts.",
+      "mechanism_narrative": "TERT (HGNC:11730) —DISRUPTS→ Telomere maintenance (REACT:R-HSA-69622); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Pulmonary fibrosis (HP:0002070); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Bone marrow failure (HP:0001874). Loss-of-function mutations in TERT disrupt telomere maintenance, leading to cellular senescence and genomic instability. This ultimately manifests as pulmonary fibrosis and bone marrow failure in the respective disease contexts.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in TERT with a gain-of-function or dominant-negative effect, or variants in completely distinct genes strongly associated with each disease independently, would falsify this hypothesis.",
+        "gnomad_variant": "rs757487274 (if found to be pathogenic and common)"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:11730"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013878",
+        "diseaseBName": "pulmonary fibrosis and/or bone marrow failure, Telomere-related, 1",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:11730"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7922,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "TERT (HGNC:11730) —DISRUPTS→ Telomere maintenance (REACT:R-HSA-69622); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Pulmonary fibrosis (HP:0002070); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Bone marrow failure (HP:0001874). Loss-of-function mutations in TERT disrupt telomere maintenance, leading to cellular senescence and genomic instability. This ultimately manifests as pulmonary fibrosis and bone marrow failure in the respective disease contexts.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in TERT with a gain-of-function or dominant-negative effect, or variants in completely distinct genes strongly associated with each disease independently, would falsify this hypothesis.",
+          "gnomad_variant": "rs757487274 (if found to be pathogenic and common)"
+        },
+        "translational": "Understanding the shared role of TERT in telomere maintenance provides a potential therapeutic target for both pulmonary fibrosis and bone marrow failure syndromes, possibly through strategies aimed at telomere elongation or stabilization."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030607",
+      "diseaseBName": "Bryant-Li-Bhoj neurodevelopmental syndrome 2",
+      "fitness": 0.531,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TERT (HGNC:11526) —DISRUPTS→ telomere maintenance (GO:0000001); telomere maintenance (GO:0000001) —LEADS_TO→ Short telomeres (HP:0030114); Short telomeres (HP:0030114) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); H3-3B (HGNC:4876) —DISRUPTS→ histone modification (GO:0016567); histone modification (GO:0016567) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); histone modification (GO:0016567) —LEADS_TO→ Abnormal vocalization (HP:0011254); histone modification (GO:0016567) —LEADS_TO→ Global developmental delay (HP:0001263). Disruption of TERT function leads to impaired telomere maintenance, resulting in short telomeres and contributing to cellular dysfunction and phenotypes associated with MONDO:0013521. Concurrently, disruption of H3-3B function impairs histone modification, leading to aberrant gene regulation and contributing to the neurodevelopmental abnormalities seen in Bryant-Li-Bhoj neurodevelopmental syndrome 2 (MONDO:0030607). Both pathways converge on cellular processes critical for normal development and function, manifesting in overlapping phenotypic features.",
+      "mechanism_narrative": "TERT (HGNC:11526) —DISRUPTS→ telomere maintenance (GO:0000001); telomere maintenance (GO:0000001) —LEADS_TO→ Short telomeres (HP:0030114); Short telomeres (HP:0030114) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); H3-3B (HGNC:4876) —DISRUPTS→ histone modification (GO:0016567); histone modification (GO:0016567) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); histone modification (GO:0016567) —LEADS_TO→ Abnormal vocalization (HP:0011254); histone modification (GO:0016567) —LEADS_TO→ Global developmental delay (HP:0001263). Disruption of TERT function leads to impaired telomere maintenance, resulting in short telomeres and contributing to cellular dysfunction and phenotypes associated with MONDO:0013521. Concurrently, disruption of H3-3B function impairs histone modification, leading to aberrant gene regulation and contributing to the neurodevelopmental abnormalities seen in Bryant-Li-Bhoj neurodevelopmental syndrome 2 (MONDO:0030607). Both pathways converge on cellular processes critical for normal development and function, manifesting in overlapping phenotypic features.",
+      "falsification": {
+        "text": "If genetic studies reveal distinct, non-overlapping molecular pathways downstream of TERT and H3-3B that do not intersect at any common cellular process or downstream effect, this hypothesis would be falsified. Specifically, if mutations in TERT primarily affect somatic cell aging and non-neuronal tissues, while mutations in H3-3B exclusively impact neuronal gene expression without any shared downstream consequences, the link would be weakened.",
+        "gnomad_variant": "The presence of common, benign variants in TERT or H3-3B in the general population (gnomAD frequency > 1%) that do not segregate with either disease would challenge the pathogenicity of these genes in their respective disease contexts, and by extension, the proposed link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030607",
+        "diseaseBName": "Bryant-Li-Bhoj neurodevelopmental syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.531,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TERT (HGNC:11526) —DISRUPTS→ telomere maintenance (GO:0000001); telomere maintenance (GO:0000001) —LEADS_TO→ Short telomeres (HP:0030114); Short telomeres (HP:0030114) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); H3-3B (HGNC:4876) —DISRUPTS→ histone modification (GO:0016567); histone modification (GO:0016567) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); histone modification (GO:0016567) —LEADS_TO→ Abnormal vocalization (HP:0011254); histone modification (GO:0016567) —LEADS_TO→ Global developmental delay (HP:0001263). Disruption of TERT function leads to impaired telomere maintenance, resulting in short telomeres and contributing to cellular dysfunction and phenotypes associated with MONDO:0013521. Concurrently, disruption of H3-3B function impairs histone modification, leading to aberrant gene regulation and contributing to the neurodevelopmental abnormalities seen in Bryant-Li-Bhoj neurodevelopmental syndrome 2 (MONDO:0030607). Both pathways converge on cellular processes critical for normal development and function, manifesting in overlapping phenotypic features.",
+        "falsification": {
+          "text": "If genetic studies reveal distinct, non-overlapping molecular pathways downstream of TERT and H3-3B that do not intersect at any common cellular process or downstream effect, this hypothesis would be falsified. Specifically, if mutations in TERT primarily affect somatic cell aging and non-neuronal tissues, while mutations in H3-3B exclusively impact neuronal gene expression without any shared downstream consequences, the link would be weakened.",
+          "gnomad_variant": "The presence of common, benign variants in TERT or H3-3B in the general population (gnomAD frequency > 1%) that do not segregate with either disease would challenge the pathogenicity of these genes in their respective disease contexts, and by extension, the proposed link."
+        },
+        "translational": "Understanding the overlap in cellular processes affected by TERT and H3-3B mutations could reveal common therapeutic targets for neurodevelopmental disorders. For instance, interventions aimed at improving general cellular health or epigenetic regulation might offer benefits for both conditions, despite their distinct primary genetic causes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030993",
+      "diseaseBName": "Tessadori-Van Haaften neurodevelopmental syndrome 3",
+      "fitness": 0.5306,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TERT (HGNC:11771) —DISRUPTS→ telomere maintenance (GO:0008298); H4C5 (HGNC:4764) —DISRUPTS→ telomere maintenance (GO:0008298); telomere maintenance (GO:0008298) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0008298) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0008298) —LEADS_TO→ Hypotonia (HP:0001252); telomere maintenance (GO:0008298) —LEADS_TO→ Seizures (HP:0001250). Disruption of telomere maintenance by mutations in TERT (for MONDO:0013521) and H4C5 (for MONDO:0030993) leads to shared downstream phenotypes including microcephaly, global developmental delay, hypotonia, and seizures.",
+      "mechanism_narrative": "TERT (HGNC:11771) —DISRUPTS→ telomere maintenance (GO:0008298); H4C5 (HGNC:4764) —DISRUPTS→ telomere maintenance (GO:0008298); telomere maintenance (GO:0008298) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0008298) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0008298) —LEADS_TO→ Hypotonia (HP:0001252); telomere maintenance (GO:0008298) —LEADS_TO→ Seizures (HP:0001250). Disruption of telomere maintenance by mutations in TERT (for MONDO:0013521) and H4C5 (for MONDO:0030993) leads to shared downstream phenotypes including microcephaly, global developmental delay, hypotonia, and seizures.",
+      "falsification": {
+        "text": "Absence of mutations in TERT or H4C5 in individuals with MONDO:0013521 and MONDO:0030993 respectively, or demonstration that these genes do not impact telomere maintenance in a shared manner.",
+        "gnomad_variant": "Exclusion of pathogenic variants in TERT and H4C5 from gnomAD populations relevant to the disease prevalence."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030993",
+        "diseaseBName": "Tessadori-Van Haaften neurodevelopmental syndrome 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.5306,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TERT (HGNC:11771) —DISRUPTS→ telomere maintenance (GO:0008298); H4C5 (HGNC:4764) —DISRUPTS→ telomere maintenance (GO:0008298); telomere maintenance (GO:0008298) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0008298) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0008298) —LEADS_TO→ Hypotonia (HP:0001252); telomere maintenance (GO:0008298) —LEADS_TO→ Seizures (HP:0001250). Disruption of telomere maintenance by mutations in TERT (for MONDO:0013521) and H4C5 (for MONDO:0030993) leads to shared downstream phenotypes including microcephaly, global developmental delay, hypotonia, and seizures.",
+        "falsification": {
+          "text": "Absence of mutations in TERT or H4C5 in individuals with MONDO:0013521 and MONDO:0030993 respectively, or demonstration that these genes do not impact telomere maintenance in a shared manner.",
+          "gnomad_variant": "Exclusion of pathogenic variants in TERT and H4C5 from gnomAD populations relevant to the disease prevalence."
+        },
+        "translational": "Understanding the shared role of telomere maintenance in these distinct neurodevelopmental disorders could reveal common therapeutic targets for interventions aimed at improving telomere length and stability, potentially ameliorating neurological deficits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030606",
+      "diseaseBName": "Bryant-Li-Bhoj neurodevelopmental syndrome 1",
+      "fitness": 0.5302,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TERT (HGNC:11758) —DISRUPTS→ telomere maintenance (GO:0000790); H3-3A (HGNC:28900) —DISRUPTS→ telomere maintenance (GO:0000790); telomere maintenance (GO:0000790) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in TERT (causative for MONDO:0013521) and H3-3A (causative for MONDO:0030606) both disrupt the critical cellular process of telomere maintenance, leading to overlapping phenotypes such as microcephaly, global developmental delay, and seizures.",
+      "mechanism_narrative": "TERT (HGNC:11758) —DISRUPTS→ telomere maintenance (GO:0000790); H3-3A (HGNC:28900) —DISRUPTS→ telomere maintenance (GO:0000790); telomere maintenance (GO:0000790) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in TERT (causative for MONDO:0013521) and H3-3A (causative for MONDO:0030606) both disrupt the critical cellular process of telomere maintenance, leading to overlapping phenotypes such as microcephaly, global developmental delay, and seizures.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in TERT or H3-3A with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would falsify the hypothesis that these genes are the primary causal agents for these rare diseases.",
+        "gnomad_variant": "TERT or H3-3A pathogenic variants with >1% allele frequency"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030606",
+        "diseaseBName": "Bryant-Li-Bhoj neurodevelopmental syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.5302,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TERT (HGNC:11758) —DISRUPTS→ telomere maintenance (GO:0000790); H3-3A (HGNC:28900) —DISRUPTS→ telomere maintenance (GO:0000790); telomere maintenance (GO:0000790) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in TERT (causative for MONDO:0013521) and H3-3A (causative for MONDO:0030606) both disrupt the critical cellular process of telomere maintenance, leading to overlapping phenotypes such as microcephaly, global developmental delay, and seizures.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in TERT or H3-3A with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would falsify the hypothesis that these genes are the primary causal agents for these rare diseases.",
+          "gnomad_variant": "TERT or H3-3A pathogenic variants with >1% allele frequency"
+        },
+        "translational": "Understanding the shared mechanism of disrupted telomere maintenance in these distinct neurodevelopmental disorders could reveal common therapeutic targets for interventions aimed at improving telomere stability or mitigating downstream cellular consequences."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0031000",
+      "diseaseBName": "Tessadori-Van Haaften neurodevelopmental syndrome 4",
+      "fitness": 0.5157,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Hypomorphic TERT variants (None) —DISRUPTS→ TERT (HGNC:11767); TERT (HGNC:11767) —DISRUPTS→ Telomere maintenance (GO:0008283); Telomere maintenance (GO:0008283) —LEADS_TO→ Microcephaly (HP:0000252); Telomere maintenance (GO:0008283) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in TERT lead to impaired telomere maintenance, which in turn causes microcephaly and global developmental delay, manifesting as both MONDO:0013521 and MONDO:0031000.",
+      "mechanism_narrative": "Hypomorphic TERT variants (None) —DISRUPTS→ TERT (HGNC:11767); TERT (HGNC:11767) —DISRUPTS→ Telomere maintenance (GO:0008283); Telomere maintenance (GO:0008283) —LEADS_TO→ Microcephaly (HP:0000252); Telomere maintenance (GO:0008283) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in TERT lead to impaired telomere maintenance, which in turn causes microcephaly and global developmental delay, manifesting as both MONDO:0013521 and MONDO:0031000.",
+      "falsification": {
+        "text": "The discovery of distinct causal genes for each disease that do not converge on telomere maintenance, or the identification of gain-of-function mutations in TERT associated with one of the diseases, would falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0031000",
+        "diseaseBName": "Tessadori-Van Haaften neurodevelopmental syndrome 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.5157,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Hypomorphic TERT variants (None) —DISRUPTS→ TERT (HGNC:11767); TERT (HGNC:11767) —DISRUPTS→ Telomere maintenance (GO:0008283); Telomere maintenance (GO:0008283) —LEADS_TO→ Microcephaly (HP:0000252); Telomere maintenance (GO:0008283) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in TERT lead to impaired telomere maintenance, which in turn causes microcephaly and global developmental delay, manifesting as both MONDO:0013521 and MONDO:0031000.",
+        "falsification": {
+          "text": "The discovery of distinct causal genes for each disease that do not converge on telomere maintenance, or the identification of gain-of-function mutations in TERT associated with one of the diseases, would falsify this hypothesis."
+        },
+        "translational": "Understanding the shared role of TERT and telomere maintenance in these neurodevelopmental disorders could pave the way for targeted therapies aimed at restoring telomere length or function, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007768",
+      "diseaseBName": "hyperparathyroidism 2 with jaw tumors",
+      "fitness": 0.4475,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDC73 (HGNC:2180) —DISRUPTS→ Parafollicular Cell Differentiation and Proliferation (GO:0035987); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —LEADS_TO→ Jaw Tumors (HP:0000175); TERT (HGNC:11524) —DISRUPTS→ Telomere Maintenance (GO:0000704); Telomere Maintenance (GO:0000704) —LEADS_TO→ Cellular Senescence (GO:0090398); Cellular Senescence (GO:0090398) —LEADS_TO→ Dyskeratosis Congenita (HP:0001322); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —BINDS→ Cellular Senescence (GO:0090398). Loss-of-function mutations in CDC73 disrupt parafollicular cell differentiation and proliferation, leading to jaw tumors. Simultaneously, mutations in TERT disrupt telomere maintenance, impacting cellular senescence and contributing to Dyskeratosis Congenita. The dysregulation of parafollicular cell differentiation and proliferation can indirectly influence cellular senescence pathways, creating a convergence point in the disease modules.",
+      "mechanism_narrative": "CDC73 (HGNC:2180) —DISRUPTS→ Parafollicular Cell Differentiation and Proliferation (GO:0035987); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —LEADS_TO→ Jaw Tumors (HP:0000175); TERT (HGNC:11524) —DISRUPTS→ Telomere Maintenance (GO:0000704); Telomere Maintenance (GO:0000704) —LEADS_TO→ Cellular Senescence (GO:0090398); Cellular Senescence (GO:0090398) —LEADS_TO→ Dyskeratosis Congenita (HP:0001322); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —BINDS→ Cellular Senescence (GO:0090398). Loss-of-function mutations in CDC73 disrupt parafollicular cell differentiation and proliferation, leading to jaw tumors. Simultaneously, mutations in TERT disrupt telomere maintenance, impacting cellular senescence and contributing to Dyskeratosis Congenita. The dysregulation of parafollicular cell differentiation and proliferation can indirectly influence cellular senescence pathways, creating a convergence point in the disease modules.",
+      "falsification": {
+        "text": "Demonstration that mutations in CDC73 do not affect pathways related to cellular senescence or telomere maintenance, or that mutations in TERT do not impact cellular differentiation pathways, would falsify this hypothesis.",
+        "gnomad_variant": "Identification of common variants (>1% allele frequency) in the critical functional regions of both CDC73 and TERT in healthy populations would challenge their role as primary causal genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007768",
+        "diseaseBName": "hyperparathyroidism 2 with jaw tumors",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.4475,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDC73 (HGNC:2180) —DISRUPTS→ Parafollicular Cell Differentiation and Proliferation (GO:0035987); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —LEADS_TO→ Jaw Tumors (HP:0000175); TERT (HGNC:11524) —DISRUPTS→ Telomere Maintenance (GO:0000704); Telomere Maintenance (GO:0000704) —LEADS_TO→ Cellular Senescence (GO:0090398); Cellular Senescence (GO:0090398) —LEADS_TO→ Dyskeratosis Congenita (HP:0001322); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —BINDS→ Cellular Senescence (GO:0090398). Loss-of-function mutations in CDC73 disrupt parafollicular cell differentiation and proliferation, leading to jaw tumors. Simultaneously, mutations in TERT disrupt telomere maintenance, impacting cellular senescence and contributing to Dyskeratosis Congenita. The dysregulation of parafollicular cell differentiation and proliferation can indirectly influence cellular senescence pathways, creating a convergence point in the disease modules.",
+        "falsification": {
+          "text": "Demonstration that mutations in CDC73 do not affect pathways related to cellular senescence or telomere maintenance, or that mutations in TERT do not impact cellular differentiation pathways, would falsify this hypothesis.",
+          "gnomad_variant": "Identification of common variants (>1% allele frequency) in the critical functional regions of both CDC73 and TERT in healthy populations would challenge their role as primary causal genes."
+        },
+        "translational": "Understanding this overlap could lead to novel therapeutic strategies targeting shared pathways, such as senescence or telomere maintenance, for both hyperparathyroidism 2 with jaw tumors and conditions like Dyskeratosis Congenita, potentially improving treatment outcomes."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0979228",
+      "diseaseBName": "ectodermal dysplasia 17 with or without limb malformations",
+      "fitness": 0.3845,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TERT (HGNC:11558) —DISRUPTS→ Telomere maintenance (GO:0000798); Telomere maintenance (GO:0000798) —LEADS_TO→ Premature aging (HP:0003674); LEF1 (HGNC:6568) —DISRUPTS→ Wnt signaling pathway (WP:WP47); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Ectodermal dysplasia (HP:0001052); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Limb malformations (HP:0001198). While TERT primarily affects telomere maintenance and premature aging, and LEF1 affects Wnt signaling leading to ectodermal dysplasia, there is a potential indirect link. Dysregulation of telomere length and cellular senescence (mediated by TERT) can impact developmental pathways, including Wnt signaling, especially during critical developmental windows. However, the direct convergence is on the Wnt signaling pathway as the primary driver for ectodermal dysplasia 17, with LEF1 being a key transcription factor within this pathway. The proposed overlap is thus through the shared pathway, even if the primary causal genes and initial molecular events differ.",
+      "mechanism_narrative": "TERT (HGNC:11558) —DISRUPTS→ Telomere maintenance (GO:0000798); Telomere maintenance (GO:0000798) —LEADS_TO→ Premature aging (HP:0003674); LEF1 (HGNC:6568) —DISRUPTS→ Wnt signaling pathway (WP:WP47); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Ectodermal dysplasia (HP:0001052); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Limb malformations (HP:0001198). While TERT primarily affects telomere maintenance and premature aging, and LEF1 affects Wnt signaling leading to ectodermal dysplasia, there is a potential indirect link. Dysregulation of telomere length and cellular senescence (mediated by TERT) can impact developmental pathways, including Wnt signaling, especially during critical developmental windows. However, the direct convergence is on the Wnt signaling pathway as the primary driver for ectodermal dysplasia 17, with LEF1 being a key transcription factor within this pathway. The proposed overlap is thus through the shared pathway, even if the primary causal genes and initial molecular events differ.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in TERT do not indirectly influence LEF1's function or the Wnt signaling pathway in relevant developmental contexts, or if patients with TERT mutations do not exhibit any overlapping ectodermal or limb developmental phenotypes, this hypothesis would be falsified. Furthermore, the absence of LEF1 mutations in Disease A patients would weaken the proposed direct link.",
+        "gnomad_variant": "The presence of common variants (AF > 0.01) in the coding regions of TERT or LEF1 in gnomAD that are associated with either disease would challenge the rare variant hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0979228",
+        "diseaseBName": "ectodermal dysplasia 17 with or without limb malformations",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.3845,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TERT (HGNC:11558) —DISRUPTS→ Telomere maintenance (GO:0000798); Telomere maintenance (GO:0000798) —LEADS_TO→ Premature aging (HP:0003674); LEF1 (HGNC:6568) —DISRUPTS→ Wnt signaling pathway (WP:WP47); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Ectodermal dysplasia (HP:0001052); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Limb malformations (HP:0001198). While TERT primarily affects telomere maintenance and premature aging, and LEF1 affects Wnt signaling leading to ectodermal dysplasia, there is a potential indirect link. Dysregulation of telomere length and cellular senescence (mediated by TERT) can impact developmental pathways, including Wnt signaling, especially during critical developmental windows. However, the direct convergence is on the Wnt signaling pathway as the primary driver for ectodermal dysplasia 17, with LEF1 being a key transcription factor within this pathway. The proposed overlap is thus through the shared pathway, even if the primary causal genes and initial molecular events differ.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in TERT do not indirectly influence LEF1's function or the Wnt signaling pathway in relevant developmental contexts, or if patients with TERT mutations do not exhibit any overlapping ectodermal or limb developmental phenotypes, this hypothesis would be falsified. Furthermore, the absence of LEF1 mutations in Disease A patients would weaken the proposed direct link.",
+          "gnomad_variant": "The presence of common variants (AF > 0.01) in the coding regions of TERT or LEF1 in gnomAD that are associated with either disease would challenge the rare variant hypothesis."
+        },
+        "translational": "Understanding the overlap in the Wnt signaling pathway, even with different primary genetic origins, could reveal therapeutic targets. Modulating Wnt signaling might offer a strategy for treating aspects of both premature aging syndromes and developmental disorders affecting ectodermal and limb development, though the specificity of such interventions would be critical."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012004",
+      "diseaseBName": "parathyroid gland carcinoma",
+      "fitness": 0.3783,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDC73 (HGNC:25570) —DISRUPTS→ para fibromin (HGNC:25570); para fibromin (HGNC:25570) —DECREASES→ Regulation of Wnt signaling pathway (GO:0043067); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Parathyroid adenoma (HP:0002700); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Leiomyoma (HP:0003471); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Renal cell carcinoma (HP:0030130). Loss of function of CDC73 (para fibromin) leads to dysregulation of the Wnt signaling pathway, which in turn contributes to the development of parathyroid adenoma (a precursor to parathyroid carcinoma), leiomyoma, and renal cell carcinoma.",
+      "mechanism_narrative": "CDC73 (HGNC:25570) —DISRUPTS→ para fibromin (HGNC:25570); para fibromin (HGNC:25570) —DECREASES→ Regulation of Wnt signaling pathway (GO:0043067); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Parathyroid adenoma (HP:0002700); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Leiomyoma (HP:0003471); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Renal cell carcinoma (HP:0030130). Loss of function of CDC73 (para fibromin) leads to dysregulation of the Wnt signaling pathway, which in turn contributes to the development of parathyroid adenoma (a precursor to parathyroid carcinoma), leiomyoma, and renal cell carcinoma.",
+      "falsification": {
+        "text": "Demonstration that mutations in CDC73 do not impact the Wnt signaling pathway or that other genes unrelated to CDC73 are the primary drivers of tumor formation in either disease.",
+        "gnomad_variant": "Any common pathogenic variant in CDC73 in gnomAD with an allele frequency > 1%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012004",
+        "diseaseBName": "parathyroid gland carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.3783,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDC73 (HGNC:25570) —DISRUPTS→ para fibromin (HGNC:25570); para fibromin (HGNC:25570) —DECREASES→ Regulation of Wnt signaling pathway (GO:0043067); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Parathyroid adenoma (HP:0002700); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Leiomyoma (HP:0003471); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Renal cell carcinoma (HP:0030130). Loss of function of CDC73 (para fibromin) leads to dysregulation of the Wnt signaling pathway, which in turn contributes to the development of parathyroid adenoma (a precursor to parathyroid carcinoma), leiomyoma, and renal cell carcinoma.",
+        "falsification": {
+          "text": "Demonstration that mutations in CDC73 do not impact the Wnt signaling pathway or that other genes unrelated to CDC73 are the primary drivers of tumor formation in either disease.",
+          "gnomad_variant": "Any common pathogenic variant in CDC73 in gnomAD with an allele frequency > 1%"
+        },
+        "translational": "Understanding the shared role of CDC73 in these distinct tumor types could lead to the development of targeted therapies that modulate Wnt signaling for both parathyroid and kidney cancers, as well as leiomyomas."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007767",
+      "diseaseBName": "hyperparathyroidism 1",
+      "fitness": 0.3573,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CDC73 (HGNC:2370) —DISRUPTS→ parathyroid hormone secretion regulation (GO:0030064); parathyroid hormone secretion regulation (GO:0030064) —LEADS_TO→ hyperparathyroidism (HP:0000096); TERT (HGNC:11525) —DISRUPTS→ telomere maintenance (GO:0000798); telomere maintenance (GO:0000798) —INCREASES→ cell proliferation (GO:0008283); cell proliferation (GO:0008283) —LEADS_TO→ premature aging (HP:0003842); parathyroid hormone secretion regulation (GO:0030064) —INCREASES→ cell proliferation (GO:0008283). Mutations in CDC73 disrupt the regulation of parathyroid hormone secretion, leading to hyperparathyroidism. Gain-of-function mutations in TERT enhance telomere maintenance, which can lead to increased cell proliferation. Both dysregulated parathyroid hormone secretion and increased cell proliferation can contribute to aspects of these disease phenotypes, suggesting an overlap in downstream cellular processes.",
+      "mechanism_narrative": "CDC73 (HGNC:2370) —DISRUPTS→ parathyroid hormone secretion regulation (GO:0030064); parathyroid hormone secretion regulation (GO:0030064) —LEADS_TO→ hyperparathyroidism (HP:0000096); TERT (HGNC:11525) —DISRUPTS→ telomere maintenance (GO:0000798); telomere maintenance (GO:0000798) —INCREASES→ cell proliferation (GO:0008283); cell proliferation (GO:0008283) —LEADS_TO→ premature aging (HP:0003842); parathyroid hormone secretion regulation (GO:0030064) —INCREASES→ cell proliferation (GO:0008283). Mutations in CDC73 disrupt the regulation of parathyroid hormone secretion, leading to hyperparathyroidism. Gain-of-function mutations in TERT enhance telomere maintenance, which can lead to increased cell proliferation. Both dysregulated parathyroid hormone secretion and increased cell proliferation can contribute to aspects of these disease phenotypes, suggesting an overlap in downstream cellular processes.",
+      "falsification": {
+        "text": "If genetic studies demonstrate that mutations in TERT do not lead to altered telomere maintenance or cell proliferation, or if CDC73 mutations are definitively shown to have no impact on parathyroid hormone secretion pathways, this hypothesis would be falsified. Additionally, if the identified causal variants for each disease are found at a high frequency (>1%) in the general population via gnomAD, it would challenge their role as rare disease drivers.",
+        "gnomad_variant": "rs112610493 (example variant in TERT)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-201722"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-201722": 89
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007767",
+        "diseaseBName": "hyperparathyroidism 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-201722"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-201722": 89
+        },
+        "fitness": 0.3573,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CDC73 (HGNC:2370) —DISRUPTS→ parathyroid hormone secretion regulation (GO:0030064); parathyroid hormone secretion regulation (GO:0030064) —LEADS_TO→ hyperparathyroidism (HP:0000096); TERT (HGNC:11525) —DISRUPTS→ telomere maintenance (GO:0000798); telomere maintenance (GO:0000798) —INCREASES→ cell proliferation (GO:0008283); cell proliferation (GO:0008283) —LEADS_TO→ premature aging (HP:0003842); parathyroid hormone secretion regulation (GO:0030064) —INCREASES→ cell proliferation (GO:0008283). Mutations in CDC73 disrupt the regulation of parathyroid hormone secretion, leading to hyperparathyroidism. Gain-of-function mutations in TERT enhance telomere maintenance, which can lead to increased cell proliferation. Both dysregulated parathyroid hormone secretion and increased cell proliferation can contribute to aspects of these disease phenotypes, suggesting an overlap in downstream cellular processes.",
+        "falsification": {
+          "text": "If genetic studies demonstrate that mutations in TERT do not lead to altered telomere maintenance or cell proliferation, or if CDC73 mutations are definitively shown to have no impact on parathyroid hormone secretion pathways, this hypothesis would be falsified. Additionally, if the identified causal variants for each disease are found at a high frequency (>1%) in the general population via gnomAD, it would challenge their role as rare disease drivers.",
+          "gnomad_variant": "rs112610493 (example variant in TERT)"
+        },
+        "translational": "Understanding the shared mechanistic links between TERT and CDC73 in regulating cell proliferation and hormone secretion could inform novel therapeutic strategies for both rare diseases. Targeting common downstream pathways might offer a unified approach to managing these distinct conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T05:06:11.527Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013521 (MONDO:0013521)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 8 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | pulmonary fibrosis and/or bone marrow failure, Telomere-related, 1 (MONDO:0013878) | shared gene | Tier 1 | 0.792 | HGNC:11730 |\n| 2 | Bryant-Li-Bhoj neurodevelopmental syndrome 2 (MONDO:0030607) | shared pathway | Tier 3 | 0.531 | Reactome:R-HSA-201722 |\n| 3 | Tessadori-Van Haaften neurodevelopmental syndrome 3 (MONDO:0030993) | shared pathway | Tier 3 | 0.531 | Reactome:R-HSA-201722 |\n| 4 | Bryant-Li-Bhoj neurodevelopmental syndrome 1 (MONDO:0030606) | shared pathway | Tier 3 | 0.530 | Reactome:R-HSA-201722 |\n| 5 | Tessadori-Van Haaften neurodevelopmental syndrome 4 (MONDO:0031000) | shared pathway | Tier 3 | 0.516 | Reactome:R-HSA-201722 |\n| 6 | hyperparathyroidism 2 with jaw tumors (MONDO:0007768) | shared pathway | Tier 3 | 0.448 | Reactome:R-HSA-201722 |\n| 7 | ectodermal dysplasia 17 with or without limb malformations (MONDO:0979228) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-201722 |\n| 8 | parathyroid gland carcinoma (MONDO:0012004) | shared pathway | Tier 3 | 0.378 | Reactome:R-HSA-201722 |\n| 9 | hyperparathyroidism 1 (MONDO:0007767) | shared pathway | Tier 3 | 0.357 | Reactome:R-HSA-201722 |\n\n### CANDIDATE DETAIL\n#### 1. pulmonary fibrosis and/or bone marrow failure, Telomere-related, 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.792)\n**Link type:** shared causal gene (HGNC:11730)\n\n**Proposed mechanism:** TERT (HGNC:11730) —DISRUPTS→ Telomere maintenance (REACT:R-HSA-69622); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Pulmonary fibrosis (HP:0002070); Telomere maintenance (REACT:R-HSA-69622) —LEADS_TO→ Bone marrow failure (HP:0001874). Loss-of-function mutations in TERT disrupt telomere maintenance, leading to cellular senescence and genomic instability. This ultimately manifests as pulmonary fibrosis and bone marrow failure in the respective disease contexts.\n\n**How to falsify it:** The identification of pathogenic variants in TERT with a gain-of-function or dominant-negative effect, or variants in completely distinct genes strongly associated with each disease independently, would falsify this hypothesis. _(variant: rs757487274 (if found to be pathogenic and common))_\n\n**Why it matters:** Understanding the shared role of TERT in telomere maintenance provides a potential therapeutic target for both pulmonary fibrosis and bone marrow failure syndromes, possibly through strategies aimed at telomere elongation or stabilization.\n\n---\n\n#### 2. Bryant-Li-Bhoj neurodevelopmental syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.531)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** TERT (HGNC:11526) —DISRUPTS→ telomere maintenance (GO:0000001); telomere maintenance (GO:0000001) —LEADS_TO→ Short telomeres (HP:0030114); Short telomeres (HP:0030114) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); H3-3B (HGNC:4876) —DISRUPTS→ histone modification (GO:0016567); histone modification (GO:0016567) —LEADS_TO→ Neurodevelopmental disorder (HP:0001263); histone modification (GO:0016567) —LEADS_TO→ Abnormal vocalization (HP:0011254); histone modification (GO:0016567) —LEADS_TO→ Global developmental delay (HP:0001263). Disruption of TERT function leads to impaired telomere maintenance, resulting in short telomeres and contributing to cellular dysfunction and phenotypes associated with MONDO:0013521. Concurrently, disruption of H3-3B function impairs histone modification, leading to aberrant gene regulation and contributing to the neurodevelopmental abnormalities seen in Bryant-Li-Bhoj neurodevelopmental syndrome 2 (MONDO:0030607). Both pathways converge on cellular processes critical for normal development and function, manifesting in overlapping phenotypic features.\n\n**How to falsify it:** If genetic studies reveal distinct, non-overlapping molecular pathways downstream of TERT and H3-3B that do not intersect at any common cellular process or downstream effect, this hypothesis would be falsified. Specifically, if mutations in TERT primarily affect somatic cell aging and non-neuronal tissues, while mutations in H3-3B exclusively impact neuronal gene expression without any shared downstream consequences, the link would be weakened. _(variant: The presence of common, benign variants in TERT or H3-3B in the general population (gnomAD frequency > 1%) that do not segregate with either disease would challenge the pathogenicity of these genes in their respective disease contexts, and by extension, the proposed link.)_\n\n**Why it matters:** Understanding the overlap in cellular processes affected by TERT and H3-3B mutations could reveal common therapeutic targets for neurodevelopmental disorders. For instance, interventions aimed at improving general cellular health or epigenetic regulation might offer benefits for both conditions, despite their distinct primary genetic causes.\n\n---\n\n#### 3. Tessadori-Van Haaften neurodevelopmental syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.531)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** TERT (HGNC:11771) —DISRUPTS→ telomere maintenance (GO:0008298); H4C5 (HGNC:4764) —DISRUPTS→ telomere maintenance (GO:0008298); telomere maintenance (GO:0008298) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0008298) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0008298) —LEADS_TO→ Hypotonia (HP:0001252); telomere maintenance (GO:0008298) —LEADS_TO→ Seizures (HP:0001250). Disruption of telomere maintenance by mutations in TERT (for MONDO:0013521) and H4C5 (for MONDO:0030993) leads to shared downstream phenotypes including microcephaly, global developmental delay, hypotonia, and seizures.\n\n**How to falsify it:** Absence of mutations in TERT or H4C5 in individuals with MONDO:0013521 and MONDO:0030993 respectively, or demonstration that these genes do not impact telomere maintenance in a shared manner. _(variant: Exclusion of pathogenic variants in TERT and H4C5 from gnomAD populations relevant to the disease prevalence.)_\n\n**Why it matters:** Understanding the shared role of telomere maintenance in these distinct neurodevelopmental disorders could reveal common therapeutic targets for interventions aimed at improving telomere length and stability, potentially ameliorating neurological deficits.\n\n---\n\n#### 4. Bryant-Li-Bhoj neurodevelopmental syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.530)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** TERT (HGNC:11758) —DISRUPTS→ telomere maintenance (GO:0000790); H3-3A (HGNC:28900) —DISRUPTS→ telomere maintenance (GO:0000790); telomere maintenance (GO:0000790) —LEADS_TO→ Microcephaly (HP:0000252); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250); telomere maintenance (GO:0000790) —LEADS_TO→ Global developmental delay (HP:0001263); telomere maintenance (GO:0000790) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in TERT (causative for MONDO:0013521) and H3-3A (causative for MONDO:0030606) both disrupt the critical cellular process of telomere maintenance, leading to overlapping phenotypes such as microcephaly, global developmental delay, and seizures.\n\n**How to falsify it:** Identification of pathogenic variants in TERT or H3-3A with a significantly high allele frequency (>1%) in the general population (e.g., gnomAD) would falsify the hypothesis that these genes are the primary causal agents for these rare diseases. _(variant: TERT or H3-3A pathogenic variants with >1% allele frequency)_\n\n**Why it matters:** Understanding the shared mechanism of disrupted telomere maintenance in these distinct neurodevelopmental disorders could reveal common therapeutic targets for interventions aimed at improving telomere stability or mitigating downstream cellular consequences.\n\n---\n\n#### 5. Tessadori-Van Haaften neurodevelopmental syndrome 4  —  Tier 3 — Moderate / Emerging  (fitness 0.516)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** Hypomorphic TERT variants (None) —DISRUPTS→ TERT (HGNC:11767); TERT (HGNC:11767) —DISRUPTS→ Telomere maintenance (GO:0008283); Telomere maintenance (GO:0008283) —LEADS_TO→ Microcephaly (HP:0000252); Telomere maintenance (GO:0008283) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function variants in TERT lead to impaired telomere maintenance, which in turn causes microcephaly and global developmental delay, manifesting as both MONDO:0013521 and MONDO:0031000.\n\n**How to falsify it:** The discovery of distinct causal genes for each disease that do not converge on telomere maintenance, or the identification of gain-of-function mutations in TERT associated with one of the diseases, would falsify this hypothesis.\n\n**Why it matters:** Understanding the shared role of TERT and telomere maintenance in these neurodevelopmental disorders could pave the way for targeted therapies aimed at restoring telomere length or function, potentially benefiting patients with either condition.\n\n---\n\n#### 6. hyperparathyroidism 2 with jaw tumors  —  Tier 3 — Moderate / Emerging  (fitness 0.448)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** CDC73 (HGNC:2180) —DISRUPTS→ Parafollicular Cell Differentiation and Proliferation (GO:0035987); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —LEADS_TO→ Jaw Tumors (HP:0000175); TERT (HGNC:11524) —DISRUPTS→ Telomere Maintenance (GO:0000704); Telomere Maintenance (GO:0000704) —LEADS_TO→ Cellular Senescence (GO:0090398); Cellular Senescence (GO:0090398) —LEADS_TO→ Dyskeratosis Congenita (HP:0001322); Parafollicular Cell Differentiation and Proliferation (GO:0035987) —BINDS→ Cellular Senescence (GO:0090398). Loss-of-function mutations in CDC73 disrupt parafollicular cell differentiation and proliferation, leading to jaw tumors. Simultaneously, mutations in TERT disrupt telomere maintenance, impacting cellular senescence and contributing to Dyskeratosis Congenita. The dysregulation of parafollicular cell differentiation and proliferation can indirectly influence cellular senescence pathways, creating a convergence point in the disease modules.\n\n**How to falsify it:** Demonstration that mutations in CDC73 do not affect pathways related to cellular senescence or telomere maintenance, or that mutations in TERT do not impact cellular differentiation pathways, would falsify this hypothesis. _(variant: Identification of common variants (>1% allele frequency) in the critical functional regions of both CDC73 and TERT in healthy populations would challenge their role as primary causal genes.)_\n\n**Why it matters:** Understanding this overlap could lead to novel therapeutic strategies targeting shared pathways, such as senescence or telomere maintenance, for both hyperparathyroidism 2 with jaw tumors and conditions like Dyskeratosis Congenita, potentially improving treatment outcomes.\n\n---\n\n#### 7. ectodermal dysplasia 17 with or without limb malformations  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** TERT (HGNC:11558) —DISRUPTS→ Telomere maintenance (GO:0000798); Telomere maintenance (GO:0000798) —LEADS_TO→ Premature aging (HP:0003674); LEF1 (HGNC:6568) —DISRUPTS→ Wnt signaling pathway (WP:WP47); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Ectodermal dysplasia (HP:0001052); Wnt signaling pathway (WP:WP47) —LEADS_TO→ Limb malformations (HP:0001198). While TERT primarily affects telomere maintenance and premature aging, and LEF1 affects Wnt signaling leading to ectodermal dysplasia, there is a potential indirect link. Dysregulation of telomere length and cellular senescence (mediated by TERT) can impact developmental pathways, including Wnt signaling, especially during critical developmental windows. However, the direct convergence is on the Wnt signaling pathway as the primary driver for ectodermal dysplasia 17, with LEF1 being a key transcription factor within this pathway. The proposed overlap is thus through the shared pathway, even if the primary causal genes and initial molecular events differ.\n\n**How to falsify it:** If genetic analysis reveals that mutations in TERT do not indirectly influence LEF1's function or the Wnt signaling pathway in relevant developmental contexts, or if patients with TERT mutations do not exhibit any overlapping ectodermal or limb developmental phenotypes, this hypothesis would be falsified. Furthermore, the absence of LEF1 mutations in Disease A patients would weaken the proposed direct link. _(variant: The presence of common variants (AF > 0.01) in the coding regions of TERT or LEF1 in gnomAD that are associated with either disease would challenge the rare variant hypothesis.)_\n\n**Why it matters:** Understanding the overlap in the Wnt signaling pathway, even with different primary genetic origins, could reveal therapeutic targets. Modulating Wnt signaling might offer a strategy for treating aspects of both premature aging syndromes and developmental disorders affecting ectodermal and limb development, though the specificity of such interventions would be critical.\n\n---\n\n#### 8. parathyroid gland carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.378)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** CDC73 (HGNC:25570) —DISRUPTS→ para fibromin (HGNC:25570); para fibromin (HGNC:25570) —DECREASES→ Regulation of Wnt signaling pathway (GO:0043067); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Parathyroid adenoma (HP:0002700); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Leiomyoma (HP:0003471); Regulation of Wnt signaling pathway (GO:0043067) —LEADS_TO→ Renal cell carcinoma (HP:0030130). Loss of function of CDC73 (para fibromin) leads to dysregulation of the Wnt signaling pathway, which in turn contributes to the development of parathyroid adenoma (a precursor to parathyroid carcinoma), leiomyoma, and renal cell carcinoma.\n\n**How to falsify it:** Demonstration that mutations in CDC73 do not impact the Wnt signaling pathway or that other genes unrelated to CDC73 are the primary drivers of tumor formation in either disease. _(variant: Any common pathogenic variant in CDC73 in gnomAD with an allele frequency > 1%)_\n\n**Why it matters:** Understanding the shared role of CDC73 in these distinct tumor types could lead to the development of targeted therapies that modulate Wnt signaling for both parathyroid and kidney cancers, as well as leiomyomas.\n\n---\n\n#### 9. hyperparathyroidism 1  —  Tier 3 — Moderate / Emerging  (fitness 0.357)\n**Link type:** shared pathway (Reactome:R-HSA-201722)\n\n**Proposed mechanism:** CDC73 (HGNC:2370) —DISRUPTS→ parathyroid hormone secretion regulation (GO:0030064); parathyroid hormone secretion regulation (GO:0030064) —LEADS_TO→ hyperparathyroidism (HP:0000096); TERT (HGNC:11525) —DISRUPTS→ telomere maintenance (GO:0000798); telomere maintenance (GO:0000798) —INCREASES→ cell proliferation (GO:0008283); cell proliferation (GO:0008283) —LEADS_TO→ premature aging (HP:0003842); parathyroid hormone secretion regulation (GO:0030064) —INCREASES→ cell proliferation (GO:0008283). Mutations in CDC73 disrupt the regulation of parathyroid hormone secretion, leading to hyperparathyroidism. Gain-of-function mutations in TERT enhance telomere maintenance, which can lead to increased cell proliferation. Both dysregulated parathyroid hormone secretion and increased cell proliferation can contribute to aspects of these disease phenotypes, suggesting an overlap in downstream cellular processes.\n\n**How to falsify it:** If genetic studies demonstrate that mutations in TERT do not lead to altered telomere maintenance or cell proliferation, or if CDC73 mutations are definitively shown to have no impact on parathyroid hormone secretion pathways, this hypothesis would be falsified. Additionally, if the identified causal variants for each disease are found at a high frequency (>1%) in the general population via gnomAD, it would challenge their role as rare disease drivers. _(variant: rs112610493 (example variant in TERT))_\n\n**Why it matters:** Understanding the shared mechanistic links between TERT and CDC73 in regulating cell proliferation and hormone secretion could inform novel therapeutic strategies for both rare diseases. Targeting common downstream pathways might offer a unified approach to managing these distinct conditions.\n\n---"
+}

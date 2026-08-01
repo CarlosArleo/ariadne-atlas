@@ -55,12 +55,12 @@
         #header {
             position: absolute; top: 0; left: 0; width: 100%; height: 68px;
             padding: 0 28px; display: flex; align-items: center; justify-content: space-between;
-            z-index: 20;
+            z-index: 60;
             background: linear-gradient(180deg, rgba(18,18,20,0.95) 0%, rgba(18,18,20,0) 100%);
             pointer-events: none;
         }
         #header * { pointer-events: auto; }
-        .logo-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; }
+        .logo-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
         .logo-title span { color: var(--fam-rasopathy); font-weight: 400; font-size: 0.82rem; letter-spacing: 0; }
         .source-badge {
             font-size: 0.72rem; padding: 3px 10px; border-radius: 12px;
@@ -76,6 +76,24 @@
         .btn-action:hover { border-color: var(--border-highlight); background: rgba(39, 39, 42, 0.9); }
         .btn-action.active { background: #0284c7; color: #fff; border-color: #38bdf8; }
 
+        /* Guides dropdown (consolidates the three documentation modals) */
+        .guides-dropdown { position: relative; display: inline-block; }
+        .guides-menu {
+            display: none; position: absolute; left: 0; top: calc(100% + 6px);
+            background: var(--surface-solid); border: 1px solid var(--border-highlight);
+            border-radius: 10px; padding: 6px; min-width: 210px; z-index: 200;
+            box-shadow: 0 18px 40px -12px rgba(0,0,0,0.9); flex-direction: column; gap: 2px;
+        }
+        .guides-menu.open { display: flex; }
+        .guides-menu button {
+            background: none; border: none; color: var(--text-primary); text-align: left;
+            padding: 8px 12px; border-radius: 7px; font-size: 0.8rem; cursor: pointer; width: 100%;
+        }
+        .guides-menu button:hover { background: rgba(56, 189, 248, 0.14); color: #38bdf8; }
+        /* Panel action row (Elite / Focus / Reset live with the filters they drive) */
+        .panel-action-row { display: flex; gap: 8px; }
+        .panel-action-row .btn-action { flex: 1; text-align: center; padding: 7px 10px; }
+
         #app-container {
             display: grid;
             grid-template-columns: 380px 1fr 320px;
@@ -88,8 +106,10 @@
             display: flex; flex-direction: column; gap: 10px;
             z-index: 20; overflow: hidden;
         }
-        .panel-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted); text-transform: uppercase; }
-        #sidebar-meta { font-size: 0.76rem; color: var(--text-muted); margin-bottom: 2px; }
+        .panel-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+        .panel-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); text-transform: uppercase; }
+        #sidebar-meta { font-size: 0.72rem; color: var(--text-muted); }
+        .panel-head #sidebar-meta::before { content: '· '; }
         #cqs-card-list {
             display: flex; flex-direction: column; gap: 8px;
             overflow-y: auto; padding-right: 6px; flex: 1;
@@ -104,7 +124,7 @@
         .cqs-card.active { background: rgba(39, 39, 42, 0.95); border-color: rgba(255,255,255,0.4); box-shadow: 0 0 15px rgba(56, 189, 248, 0.25); }
         .cqs-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; gap: 8px; }
         .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; }
-        .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(255,255,255,0.08); color: var(--text-muted); }
         .tier-badge { font-size: 0.7rem; padding: 1px 7px; border-radius: 8px; font-weight: 700; white-space: nowrap; }
         .fitness-score { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
         .cqs-card-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 3px; }
@@ -218,8 +238,100 @@
         .about-regime-card p { font-size: 0.76rem; color: #94a3b8; line-height: 1.45; }
         .about-footer { font-size: 0.72rem; color: #64748b; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08); line-height: 1.5; }
 
+        /* ============================================================
+           COMPACT FLOATING REDESIGN
+           ============================================================ */
+        /* Header: guide as a distinct-coloured secondary subtitle next to the title */
+        .guide-subtitle {
+            background: rgba(255,255,255,0.05); color: var(--text-muted);
+            border: none; font-weight: 500; letter-spacing: 0.02em;
+            padding: 5px 12px; border-radius: 8px; font-size: 0.78rem;
+        }
+        .guide-subtitle:hover { background: rgba(255,255,255,0.12); color: var(--text-primary); }
+
+        /* Right panel — floating, borderless, tight */
+        #panel-right { gap: 9px; padding: 12px 16px 16px 12px; }
+
+        /* Stats — thin small grey line (Claude-Code "18 of 18" style) */
+        #stats-band { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 2px 2px 6px; font-size: 0.66rem; font-weight: 400; color: var(--text-muted); }
+        #stats-band > span { white-space: nowrap; }
+        #stats-band b { font-weight: 500; color: #d4d4d8; }
+
+        /* Segmented action control (Claude-Code HOME/CODE style) — no separate button boxes */
+        .seg-control { display: flex; background: rgba(255,255,255,0.05); border-radius: 9px; padding: 3px; gap: 2px; }
+        .seg { flex: 1; background: transparent; border: none; color: var(--text-muted); font-size: 0.73rem; padding: 6px 6px; border-radius: 6px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .seg:hover { color: var(--text-primary); }
+        .seg.active { background: rgba(255,255,255,0.12); color: var(--text-primary); }
+
+        /* Floating single-line filters — the title IS the toggle (Claude-Code style) */
+        #filter-cloud { display: flex; flex-direction: column; gap: 0; }
+        .filt > summary {
+            cursor: pointer; list-style: none; display: flex; align-items: center; gap: 7px;
+            font-size: 0.72rem; color: var(--text-muted); padding: 6px 2px; user-select: none;
+            text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .filt > summary::-webkit-details-marker { display: none; }
+        .filt > summary::before { content: '\203A'; font-size: 1.3rem; line-height: 1; color: var(--text-muted); display: inline-block; width: 13px; text-align: center; transition: transform 0.15s ease; }
+        .filt[open] > summary::before { transform: rotate(90deg); }
+        .filt > summary:hover { color: var(--text-primary); }
+        .filt[open] > summary { color: var(--text-primary); }
+        /* The native <select> is hidden and only holds state; the .opt-list below is the single dropdown. */
+        .filt select { display: none; }
+        .opt-list { display: flex; flex-direction: column; padding: 1px 0 8px 20px; }
+        .opt { font-size: 0.77rem; color: var(--text-muted); padding: 3px 8px; cursor: pointer; border-radius: 5px; }
+        .opt:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+        .opt.selected { color: var(--text-primary); font-weight: 600; }
+        .filt-search {
+            background: transparent; border: none; border-bottom: 1px solid var(--border);
+            color: var(--text-primary); width: 100%; padding: 6px 2px; font-size: 0.78rem; outline: none; margin: 3px 0;
+        }
+        .filt-search::placeholder { color: var(--text-muted); }
+        .filt-search:focus { border-bottom-color: var(--text-muted); }
+
+        /* "?" info button + popover (replaces the Family Legend / Tier Rubric cards) */
+        .info-wrap { position: relative; }
+        .info-btn { display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; border-radius: 50%; font-size: 0.62rem; line-height: 1; cursor: pointer; background: rgba(255,255,255,0.10); color: var(--text-muted); border: none; padding: 0; }
+        .info-btn:hover { background: var(--fam-rasopathy); color: #05121c; }
+        .info-pop { display: none; position: absolute; z-index: 40; right: 0; top: calc(100% + 6px); background: var(--surface-solid); border: 1px solid var(--border-highlight); border-radius: 10px; padding: 12px 14px; width: 290px; box-shadow: 0 18px 40px -12px rgba(0,0,0,0.85); }
+        .info-pop.open { display: block; }
+        .info-pop h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 8px; }
+
+        /* Insight lists — collapsible */
+        #insight-cloud { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+        .insight-block { }
+        .insight-block > summary {
+            cursor: pointer; list-style: none; font-size: 0.67rem; text-transform: uppercase;
+            letter-spacing: 0.04em; color: var(--text-muted); padding: 3px 0; display: flex; align-items: center; gap: 6px;
+        }
+        .insight-block > summary::-webkit-details-marker { display: none; }
+        .insight-block > summary::before { content: '\203A'; font-size: 1.2rem; line-height: 1; color: var(--text-muted); display: inline-block; width: 13px; text-align: center; transition: transform 0.15s ease; }
+        .insight-block[open] > summary::before { transform: rotate(90deg); }
+        .insight-block > summary:hover { color: var(--text-primary); }
+
+        /* Source foot */
+        #source-foot { margin-top: auto; padding-top: 9px; display: flex; flex-direction: column; gap: 7px; }
+        #source-foot .source-badge { margin: 0; align-self: flex-start; }
+
+        /* Left panel — floating flat cards: straight corners, coloured left bar only */
+        #panel-left { padding: 14px 10px 24px 20px; }
+        .cqs-card { border-radius: 0; border: none; border-left: 3px solid var(--fam-other); background: rgba(24,24,27,0.30); backdrop-filter: none; }
+        .cqs-card:hover { background: rgba(39,39,42,0.55); transform: translateX(2px); }
+        .cqs-card.active { background: rgba(39,39,42,0.85); box-shadow: none; border-left-width: 5px; }
+
+        /* Poetic "ariadne" whisper near the diagram */
+        #poetic-btn {
+            position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+            background: transparent; border: none; color: var(--text-muted);
+            font-size: 0.82rem; letter-spacing: 0.38em; text-transform: lowercase;
+            cursor: pointer; opacity: 0.45; z-index: 16;
+            transition: opacity 0.25s ease, letter-spacing 0.25s ease, color 0.25s ease;
+        }
+        #poetic-btn:hover { opacity: 1; letter-spacing: 0.52em; color: var(--text-primary); }
+        .poetic-prose p { font-size: 0.9rem; line-height: 1.72; color: #cbd5e1; margin-bottom: 14px; }
+        .poetic-prose .math-note { font-size: 0.78rem; color: var(--text-muted); border-left: 2px solid rgba(255,255,255,0.12); padding-left: 12px; margin-top: 4px; }
+
         @media (max-width: 1100px) {
-            #app-container { grid-template-columns: 320px 1fr 280px; }
+            #app-container { grid-template-columns: 320px 1fr 300px; }
         }
     </style>
 </head>
@@ -227,23 +339,25 @@
 
 <div id="header">
     <div class="logo-title">
-        ARIADNE <span>Concentric Radial Discovery Atlas</span>
-        <span class="source-badge" id="source-badge">Loading...</span>
+        ARIADNE
+        <div class="guides-dropdown">
+            <button class="btn-action guide-subtitle" id="btn-guides" onclick="toggleGuidesMenu(event)" aria-haspopup="true" aria-expanded="false" title="Documentation & guides">Discovery Atlas Guide &#9662;</button>
+            <div class="guides-menu" id="guides-menu">
+                <button onclick="openAboutModal(); closeGuidesMenu();">How ARIADNE Works</button>
+                <button onclick="openCqsModal(); closeGuidesMenu();">CQS Score Guide</button>
+                <button onclick="openManualModal(); closeGuidesMenu();">Filter Guide &amp; Manual</button>
+            </div>
+        </div>
     </div>
-    <div style="display:flex; gap:10px; align-items:center;">
-        <button class="btn-action" id="btn-elite-mode" onclick="toggleEliteMode()" title="Filter to Tier 1 & CQS >= 7 Champions">Elite Champions</button>
-        <button class="btn-action" onclick="openManualModal()" title="Filter & Navigation User Manual">Filter Guide & Manual</button>
-        <button class="btn-action" onclick="openAboutModal()" title="What is ARIADNE and how does it work?">How ARIADNE Works</button>
-        <button class="btn-action" onclick="openCqsModal()" title="How is CQS calculated?">CQS Score Guide</button>
-        <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
-        <button class="btn-action" onclick="resetFilters()">Reset All Filters</button>
-    </div>
+    <div style="display:flex; gap:10px; align-items:center;"></div>
 </div>
 
 <div id="app-container">
     <div id="panel-left">
-        <div class="panel-title">Priority Candidates</div>
-        <div id="sidebar-meta">Scored discoveries</div>
+        <div class="panel-head">
+            <span class="panel-title">Priority Candidates</span>
+            <span id="sidebar-meta">Scored discoveries</span>
+        </div>
         <div id="cqs-card-list"></div>
     </div>
 
@@ -253,13 +367,32 @@
             <svg id="label-svg" style="position:absolute; top:0; left:0; width:100%; height:100%;"></svg>
         </div>
         <div id="canvas-tooltip"></div>
+        <button id="poetic-btn" onclick="openPoeticModal()" title="the shape of the Atlas">ariadne</button>
     </div>
 
     <div id="panel-right">
-        <div class="inspector-card">
-            <h3>Discovery Controls</h3>
-            <div class="control-row">
-                <label for="filter-tier">Confidence Tier:</label>
+        <!-- 1. Compact horizontal stats band, on top of the filters -->
+        <div id="stats-band">
+            <span><b id="stat-visible">0</b> visible</span>
+            <span><b id="stat-total">0</b> total</span>
+            <span><b id="stat-seeds">205</b> seeds</span>
+            <span><b id="stat-max-cqs">0</b> max CQS</span>
+        </div>
+
+        <!-- 2. Segmented action control -->
+        <div class="seg-control">
+            <button class="seg" id="btn-elite-mode" onclick="toggleEliteMode()" title="Filter to fitness&ge;0.65, CQS&ge;7, Hub&ge;3 champions">Elite Champions</button>
+            <button class="seg" onclick="resetFilters()" title="Clear all filters and focus">Reset</button>
+            <button class="seg" id="btn-focus-mode" onclick="toggleFocusMode()">Focus Mode</button>
+        </div>
+
+        <!-- 3. Search at the top, just below the actions -->
+        <input type="text" id="search-input" class="filt-search" placeholder="Search disease or gene…">
+
+        <!-- 4. Floating single-line filters (title = the single dropdown) -->
+        <div id="filter-cloud">
+            <details class="filt info-wrap">
+                <summary>Confidence Tier <button class="info-btn" onclick="toggleInfo('tier-info', event)" title="Tier rubric">?</button></summary>
                 <select id="filter-tier">
                     <option value="all">All Tiers</option>
                     <option value="Tier 1">Tier 1 – Definitive</option>
@@ -268,116 +401,125 @@
                     <option value="Tier 4">Tier 4 – Weak</option>
                     <option value="Tier 5">Tier 5 – Refuted</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-cqs">CQS Quality Score:</label>
-                <select id="filter-cqs">
-                    <option value="all">All CQS Scores</option>
+                <div class="info-pop" id="tier-info"><h4>Tier Rubric</h4><div id="tier-legend-list" style="display:flex; flex-direction:column; gap:9px;"></div></div>
+            </details>
+            <details class="filt">
+                <summary>CQS Quality Score</summary>
+                <select id="filter-cqs"><option value="all">All CQS Scores</option></select>
+            </details>
+            <details class="filt">
+                <summary>Genotype Fitness</summary>
+                <select id="filter-fitness">
+                    <option value="all" selected>All Fitness Scores</option>
+                    <option value="0.5">Fitness &ge; 0.50</option>
+                    <option value="0.6">Fitness &ge; 0.60</option>
+                    <option value="0.7">Fitness &ge; 0.70</option>
+                    <option value="0.8">Fitness &ge; 0.80 (top champions)</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-hub">Global Cross-Seed Recurrence:</label>
+            </details>
+            <details class="filt">
+                <summary>Global Cross-Seed Recurrence</summary>
                 <select id="filter-hub">
                     <option value="all" selected>All Hub Levels</option>
                     <option value="h3">Global Hubs (Hub ≥ 3 seeds)</option>
                     <option value="h1">Niche Pairs (Hub ≤ 2 seeds)</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-family">Clinical Pathway Family:</label>
-                <select id="filter-family">
-                    <option value="all">All clinical families</option>
+            </details>
+            <details class="filt info-wrap">
+                <summary>Clinical Pathway Family <button class="info-btn" onclick="toggleInfo('family-info', event)" title="Family legend">?</button></summary>
+                <select id="filter-family"><option value="all">All clinical families</option></select>
+                <div class="info-pop" id="family-info"><h4>Clinical Family Legend</h4><div id="legend-list"></div></div>
+            </details>
+            <details class="filt">
+                <summary>Novelty (Neighbour Type)</summary>
+                <select id="filter-novel">
+                    <option value="all" selected>All Links</option>
+                    <option value="novel">Novel Pathway Links (no shared gene)</option>
+                    <option value="shared">Shared-Gene Links Only</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="search-input">Disease or Gene Search:</label>
-                <input type="text" id="search-input" placeholder="Search disease or gene…">
-            </div>
-
-            <!-- ADVANCED PHYSICS & RANA FILTERS -->
-            <div class="control-row">
-                <label for="filter-poincare">Poincaré Hyperbolic Boundary (r):</label>
+            </details>
+            <details class="filt">
+                <summary>Gene Attribution Integrity</summary>
+                <select id="filter-geneint">
+                    <option value="all" selected>All Candidates</option>
+                    <option value="grounded">Monarch-Grounded Only (hide fabricated)</option>
+                    <option value="fabricated">Show Fabricated Only</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Falsifiability</summary>
+                <select id="filter-falsif">
+                    <option value="all" selected>All Candidates</option>
+                    <option value="has">Has a Falsification Test Only</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Poincaré Boundary (r)</summary>
                 <select id="filter-poincare">
                     <option value="all" selected>All Geometry Regions</option>
-                    <option value="boundary">Specific Boundary Rim (r ≥ 0.50) [No Hub Noise]</option>
-                    <option value="core">Central Core Hubs (r < 0.50)</option>
+                    <option value="boundary">Specific Boundary Rim (r ≥ 0.50) · CQS-derived proxy</option>
+                    <option value="core">Central Core Hubs (r < 0.50) · CQS-derived proxy</option>
                 </select>
-            </div>
-
-            <div class="control-row">
-                <label for="filter-entropy">Graph Laplacian Entropy (S_VNE):</label>
+            </details>
+            <details class="filt">
+                <summary>Graph Laplacian Entropy (S_VNE)</summary>
                 <select id="filter-entropy">
                     <option value="all" selected>All Entropy Levels</option>
-                    <option value="low">Tightly Organized Modules (S_VNE ≤ 1.8)</option>
-                    <option value="high">Diffuse / High Entropy (S_VNE > 1.8)</option>
+                    <option value="low">Tightly Organized Modules (S_VNE ≤ 1.8) · CQS-derived proxy</option>
+                    <option value="high">Diffuse / High Entropy (S_VNE > 1.8) · CQS-derived proxy</option>
                 </select>
-            </div>
-
-            <div class="control-row">
-                <label for="filter-rana">RANA Literature Verification:</label>
+            </details>
+            <details class="filt">
+                <summary>RANA Literature Verification</summary>
                 <select id="filter-rana">
                     <option value="all" selected>All Verification States</option>
-                    <option value="supported">Literature Supported Only (RANA ✓)</option>
-                    <option value="clean">Zero Literature Contradictions</option>
+                    <option value="supported">Literature Supported Only (RANA ✓) · pending data</option>
+                    <option value="clean">Zero Literature Contradictions · pending data</option>
                 </select>
-            </div>
-
-            <div class="control-row">
-                <label for="filter-depth">Causal Chain Depth:</label>
+            </details>
+            <details class="filt">
+                <summary>Causal Chain Depth</summary>
                 <select id="filter-depth">
                     <option value="all" selected>All Chain Depths</option>
                     <option value="deep">Deep Multi-Step Chains (≥ 4 Nodes)</option>
                 </select>
-            </div>
-
-            <div class="control-row" style="margin-top: 6px;">
-                <button class="btn-action" id="btn-show-all" onclick="toggleShowAll()" style="display:none; width:100%;">Show All Ribbons</button>
-            </div>
-            <div class="control-row" style="margin-top: 6px;">
-                <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%;">Exit Reverse Partner View</button>
-            </div>
+            </details>
+            <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%; margin-top:4px;">Exit Reverse Partner View</button>
         </div>
 
-        <div class="inspector-card">
-            <h3>Dataset Statistics</h3>
-            <div class="stats-grid">
-                <div class="stat-box"><div class="stat-val" id="stat-visible">0</div><div class="stat-lbl">Active Visible</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-total">0</div><div class="stat-lbl">Total Candidates</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-seeds">205</div><div class="stat-lbl">Seeds Executed</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-max-cqs">0</div><div class="stat-lbl">Max CQS Score</div></div>
-            </div>
+        <!-- 4. Insight lists -->
+        <div id="insight-cloud">
+            <details class="insight-block" open>
+                <summary>Top Convergence Nodes</summary>
+                <div id="convergence-node-list" style="font-size:0.74rem; color:var(--text-muted); max-height:180px; overflow-y:auto; margin-top:6px;"><span>Loading...</span></div>
+            </details>
+            <details class="insight-block" open>
+                <summary>Top Connected Genes</summary>
+                <div id="top-genes-list" style="font-size:0.74rem; color:var(--text-muted); max-height:180px; overflow-y:auto; margin-top:6px;"><span>Loading...</span></div>
+            </details>
         </div>
 
-        <div class="inspector-card">
-            <h3>Clinical Family Legend</h3>
-            <div id="legend-list"></div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Tier Rubric</h3>
-            <div id="tier-legend-list" style="display:flex; flex-direction:column; gap:9px;"></div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Top Convergence Nodes</h3>
-            <div id="convergence-node-list" style="font-size:0.74rem; color:var(--text-muted); max-height:200px; overflow-y:auto;">
-                <span>Loading...</span>
-            </div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Top Connected Genes</h3>
-            <div id="top-genes-list" style="font-size:0.74rem; color:var(--text-muted); max-height:200px; overflow-y:auto;">
-                <span>Loading...</span>
-            </div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Dataset Source</h3>
+        <!-- 5. Source badge + loader, at the very bottom -->
+        <div id="source-foot">
+            <span class="source-badge" id="source-badge">Loading...</span>
             <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
                 Load top_candidates.json
                 <input type="file" id="file-uploader" accept=".json" style="display:none;">
             </label>
+        </div>
+    </div>
+</div>
+
+<!-- Poetic "shape of hope" Modal -->
+<div class="modal-backdrop" id="poetic-modal" onclick="if(event.target===this) closePoeticModal();">
+    <div class="modal-box" style="max-width:660px;">
+        <button class="modal-close" onclick="closePoeticModal()">&times;</button>
+        <h2 style="font-size:1.05rem; font-weight:600; letter-spacing:0.32em; text-transform:lowercase; color:#e2e8f0; margin-bottom:18px;">ariadne — the shape of hope</h2>
+        <div class="poetic-prose">
+            <p>The two rings are the starting point and the destination of every hypothesis. The inner ring holds the <strong style="color:#e2e8f0;">seed diseases</strong> — the rare, often overlooked conditions that each begin a journey through the interactome. The outer ring holds the <strong style="color:#e2e8f0;">partner diseases</strong> — the wider network of related biology that ARIADNE discovers. The centre is intentionally empty: a quiet void that represents the shared molecular origin of all these connections — the gene, the protein, the pathway. The rings do not touch that void; they orbit it, acknowledging that the fundamental truths of biology remain a mystery we can only approach, never possess.</p>
+            <p>The ribbons are not straight lines, because hope is not linear. Each connection is a fractal curve — a geometry inspired by tree roots, neural dendrites, lightning, and the DNA helix. Nature does not join two points with a sterile straight line; it branches, meanders, and finds its way through recursive, self-similar growth. Each ribbon arcs outward from the inner ring, never crossing the central void — each one unique, yet all following the same deep structural rules. The effect is a delicate web of living threads, each a hypothesis that could one day become a treatment, a diagnosis, a child's future.</p>
+            <p>The whole composition is meant to feel like a living organism — a flower, a mandala, a cosmic web. It measures the geometry of life itself, and its image should reflect that. When you look at the Atlas, you are not just seeing data — you are seeing the shape of the connections that bind all living things together.</p>
+            <p class="math-note">The geometry is the mathematics made visible. Radius grows monotonically outward — ARIADNE's Poincaré hyperbolic model, where the hub-origin (r → 0) is the generic singularity at the centre and real convergences reach the specific boundary rim (r → 1). The meander is a self-similar 1/f<sup>β</sup> fractal; the phases are spaced by the golden angle (137.5°, the same phyllotaxis that arranges a sunflower's seeds) — so the web is dense yet never repeats or tangles. Stronger, lower-entropy hypotheses flow cleanly; weaker, more diffuse ones wander further — still never touching the void.</p>
         </div>
     </div>
 </div>
@@ -675,6 +817,10 @@ function processRawDataset(data) {
             cqs,
             pathwaysCount: d.Pathways || d.pathwaysCount || (d.SharedPathways ? d.SharedPathways.length : 1),
             sharedPathways: d.SharedPathways || d.sharedPathways || [],
+            sharedGenes: d.SharedGenes || d.sharedGenes || [],
+            neighbourType: d.NeighbourType || d.neighbour_type || null,
+            novel: (d.Novel !== undefined ? !!d.Novel : ((d.SharedGenes || d.sharedGenes || []).length === 0)),
+            geneFabricated: !!(d.GeneFabricated || d.geneFabricated),
             minPathSize,
             specWeight,
             poincareR,
@@ -831,6 +977,10 @@ function toggleEliteMode() {
         btn.textContent = 'Elite Champions (On)';
         document.getElementById('filter-tier').value = 'all';
         document.getElementById('filter-cqs').value = 'all';
+        document.getElementById('filter-fitness').value = 'all';
+        document.getElementById('filter-falsif').value = 'all';
+        document.getElementById('filter-novel').value = 'all';
+        document.getElementById('filter-geneint').value = 'all';
         document.getElementById('filter-hub').value = 'all';
         document.getElementById('filter-family').value = 'all';
         document.getElementById('filter-poincare').value = 'all';
@@ -852,11 +1002,24 @@ function getFilteredCandidates() {
     const search = document.getElementById('search-input').value.toLowerCase().trim();
     const tierFilter = document.getElementById('filter-tier')?.value || 'all';
     
+    // Primary genotype filters (real logged data)
+    const fitnessFilter = document.getElementById('filter-fitness')?.value || 'all';
+    const falsifFilter = document.getElementById('filter-falsif')?.value || 'all';
+    const novelFilter = document.getElementById('filter-novel')?.value || 'all';
+    const geneIntFilter = document.getElementById('filter-geneint')?.value || 'all';
+    // Novelty (shared-gene vs pathway-only) only becomes meaningful once analyze_atlas.ps1
+    // emits NeighbourType/SharedGenes. Until then, no-op so "Shared-Gene Only" can't blank the view.
+    const noveltyDataPresent = allCandidates.some(x => x.neighbourType);
+
     // Advanced Physics Filters
     const poincareFilter = document.getElementById('filter-poincare')?.value || 'all';
     const entropyFilter = document.getElementById('filter-entropy')?.value || 'all';
     const ranaFilter = document.getElementById('filter-rana')?.value || 'all';
     const depthFilter = document.getElementById('filter-depth')?.value || 'all';
+    // RANA verdicts aren't logged into top_candidates.json yet; without this guard the
+    // "supported" option would exclude EVERY candidate (all supportsCount === 0). Only
+    // let it filter once real literature data exists in the dataset.
+    const ranaDataPresent = allCandidates.some(x => x.supportsCount > 0 || x.contradictsCount > 0);
 
     return allCandidates.filter(c => {
         if (showEliteOnly) {
@@ -866,11 +1029,17 @@ function getFilteredCandidates() {
         if (focusDiseaseNode && c.seedName !== focusDiseaseNode && c.partnerName !== focusDiseaseNode) return false;
         if (focusPartnerNode && c.partnerName !== focusPartnerNode) return false;
         if (tierFilter !== 'all' && c.tier !== tierFilter) return false;
-        
+
         if (cqsVal !== 'all') {
             if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
             if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
         }
+        if (fitnessFilter !== 'all' && c.fitness < parseFloat(fitnessFilter)) return false;
+        if (falsifFilter === 'has' && !(c.falsification && String(c.falsification).trim())) return false;
+        if (noveltyDataPresent && novelFilter === 'novel' && !c.novel) return false;
+        if (noveltyDataPresent && novelFilter === 'shared' && c.novel) return false;
+        if (geneIntFilter === 'grounded' && c.geneFabricated) return false;
+        if (geneIntFilter === 'fabricated' && !c.geneFabricated) return false;
         if (hubVal === 'h3' && c.hub < 3) return false;
         if (hubVal === 'h1' && c.hub > 2) return false;
         if (famFilter !== 'all' && c.family !== famFilter) return false;
@@ -883,8 +1052,8 @@ function getFilteredCandidates() {
         if (entropyFilter === 'low' && c.vne > 1.8) return false;
         if (entropyFilter === 'high' && c.vne <= 1.8) return false;
 
-        // Apply RANA Filter
-        if (ranaFilter === 'supported' && c.supportsCount === 0) return false;
+        // Apply RANA Filter (no-op until real literature verdicts are logged)
+        if (ranaDataPresent && ranaFilter === 'supported' && c.supportsCount === 0) return false;
         if (ranaFilter === 'clean' && c.contradictsCount > 0) return false;
 
         // Apply Depth Filter
@@ -964,19 +1133,13 @@ function updateTopGenes(candidates) {
 }
 
 function renderApp() {
+    syncOptSelection();
     currentFiltered = getFilteredCandidates();
     document.getElementById('stat-visible').textContent = currentFiltered.length;
     renderSidebar(currentFiltered);
     renderRadial(currentFiltered);
     updateConvergenceNodes(currentFiltered);
     updateTopGenes(currentFiltered);
-    const btn = document.getElementById('btn-show-all');
-    if (currentFiltered.length > MAX_DEFAULT_RIBBONS) {
-        btn.style.display = 'inline-block';
-        btn.textContent = showAllRibbons ? `Showing All (${currentFiltered.length})` : `Show All (${currentFiltered.length})`;
-    } else {
-        btn.style.display = 'none';
-    }
     const exitBtn = document.getElementById('btn-exit-reverse');
     if (focusPartnerNode) {
         exitBtn.style.display = 'inline-block';
@@ -1004,6 +1167,10 @@ function resetFilters() {
     const cqsSel = document.getElementById('filter-cqs');
     if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) cqsSel.value = 'ge_3';
     else cqsSel.value = 'all';
+    document.getElementById('filter-fitness').value = 'all';
+    document.getElementById('filter-falsif').value = 'all';
+    document.getElementById('filter-novel').value = 'all';
+    document.getElementById('filter-geneint').value = 'all';
     document.getElementById('filter-hub').value = 'all';
     document.getElementById('filter-family').value = 'all';
     document.getElementById('filter-poincare').value = 'all';
@@ -1032,6 +1199,36 @@ function toggleFocusMode() {
 
 function exitReverseView() { focusPartnerNode = null; renderApp(); }
 
+// --- Custom single-dropdown option lists (replace the native <select> UI) ---
+// The native <select> stays in the DOM (hidden) as the value holder + change-event
+// source, so all existing filter logic is untouched; we render a grey clickable list.
+function buildOptList(sel) {
+    const old = sel.parentElement.querySelector('.opt-list');
+    if (old) old.remove();
+    const list = document.createElement('div');
+    list.className = 'opt-list';
+    [...sel.options].forEach(o => {
+        const item = document.createElement('div');
+        item.className = 'opt' + (o.value === sel.value ? ' selected' : '');
+        item.textContent = o.textContent;
+        item.dataset.value = o.value;
+        item.addEventListener('click', () => {
+            sel.value = o.value;
+            syncOptSelection();
+            sel.dispatchEvent(new Event('change'));
+        });
+        list.appendChild(item);
+    });
+    sel.insertAdjacentElement('afterend', list);
+}
+function buildAllOptLists() { document.querySelectorAll('#filter-cloud select').forEach(buildOptList); }
+function syncOptSelection() {
+    document.querySelectorAll('#filter-cloud select').forEach(sel => {
+        const list = sel.parentElement.querySelector('.opt-list');
+        if (list) [...list.children].forEach(it => it.classList.toggle('selected', it.dataset.value === sel.value));
+    });
+}
+
 function initApp() {
     populateCqsDropdown();
     populateFamilyDropdown();
@@ -1042,6 +1239,7 @@ function initApp() {
     if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) {
         cqsSel.value = 'ge_3';
     }
+    buildAllOptLists();
     renderApp();
 }
 
@@ -1057,7 +1255,7 @@ function renderSidebar(candidates) {
         return `<div class="cqs-card" id="card-${c.id}" style="border-left-color:${c.familyColor}" onclick="openDossierModal(${c.id})" onmouseover="highlightRel(${c.id})" onmouseout="clearHighlight()">
             <div class="cqs-card-header">
                 <span class="cqs-badge" style="background:${c.familyColor}22; color:${c.familyColor}">CQS ${c.cqs}</span>
-                <span class="tier-badge" style="background:${tm.color}22; color:${tm.color}" title="${tm.meaning}">${tm.short}</span>
+                <span class="tier-badge" style="background:rgba(255,255,255,0.07); color:var(--text-muted)" title="${tm.short} — ${tm.meaning}">${tm.short}</span>
                 ${c.hub >= 3 ? `<span class="hub-tag" title="Discovered across ${c.hub} different seeds">Hub · ${c.hub}</span>` : ''}
                 <span class="fitness-score">Fit ${c.fitness.toFixed(3)}</span>
             </div>
@@ -1071,23 +1269,83 @@ function renderSidebar(candidates) {
 let allLinksData = [];
 let canvas, ctx, svg, g;
 
-function drawAnnularRibbon(sAngle, rInner, tAngle, rOuter) {
-    const x1 = rInner * Math.sin(sAngle);
-    const y1 = -rInner * Math.cos(sAngle);
-    const x2 = rOuter * Math.sin(tAngle);
-    const y2 = -rOuter * Math.cos(tAngle);
-    const rMid = rInner + (rOuter - rInner) * 0.5;
-    let diff = tAngle - sAngle;
-    while (diff < -Math.PI) diff += 2 * Math.PI;
-    while (diff > Math.PI) diff -= 2 * Math.PI;
-    const sidewayOffset = (Math.abs(diff) > Math.PI * 0.7) ? (diff > 0 ? 0.35 : -0.35) : 0;
-    const cp1Angle = sAngle + sidewayOffset;
-    const cp2Angle = tAngle - sidewayOffset;
-    const cx1 = rMid * Math.sin(cp1Angle);
-    const cy1 = -rMid * Math.cos(cp1Angle);
-    const cx2 = rMid * Math.sin(cp2Angle);
-    const cy2 = -rMid * Math.cos(cp2Angle);
-    return `M ${x1},${y1} C ${cx1},${cy1} ${cx2},${cy2} ${x2},${y2}`;
+// ============================================================================
+//  FRACTAL RIBBON GEOMETRY — "the shape of hope"
+//  ------------------------------------------------------------------------
+//  Every ribbon is a journey from a SEED disease (inner ring) to a PARTNER
+//  disease (outer ring). Grounded in ARIADNE's own mathematics (whitepaper §8,
+//  Poincaré hyperbolic mapping): the centre is the hub-origin r->0 — the generic
+//  scale-free singularity, the unknowable shared origin — and real convergences
+//  live at the boundary rim r->1. So a ribbon's radius grows MONOTONICALLY
+//  outward: it can never fall back into the void. On top of that outward journey
+//  we add a self-similar 1/f^beta ("pink"/fractal) angular perturbation — the same
+//  branching logic found in roots, dendrites, rivers and DNA — and distribute the
+//  phases by the GOLDEN ANGLE (phyllotaxis), so the ensemble is dense yet never
+//  repeats or tangles: random, but harmonic. Strong, low-entropy hypotheses flow
+//  cleanly; weak, diffuse ones wander more, still never crossing the centre.
+// ============================================================================
+const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.5°, phyllotactic
+
+function hashStr(s) {
+    let h = 2166136261 >>> 0;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+}
+function mulberry32(a) {
+    return function () {
+        a |= 0; a = a + 0x6D2B79F5 | 0;
+        let t = Math.imul(a ^ a >>> 15, 1 | a);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+}
+// Catmull-Rom through points -> smooth cubic-Bezier path string (canvas + SVG share it).
+function catmullRom2path(pts) {
+    if (pts.length < 2) return '';
+    let d = `M ${pts[0][0].toFixed(2)},${pts[0][1].toFixed(2)}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || pts[i + 1];
+        const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+        const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+        d += ` C ${c1x.toFixed(2)},${c1y.toFixed(2)} ${c2x.toFixed(2)},${c2y.toFixed(2)} ${p2[0].toFixed(2)},${p2[1].toFixed(2)}`;
+    }
+    return d;
+}
+
+function fractalRibbonPath(a0, r0, a1, r1, index, seedKey, fitness, entropy) {
+    let dA = a1 - a0;
+    while (dA < -Math.PI) dA += 2 * Math.PI;
+    while (dA > Math.PI) dA -= 2 * Math.PI;
+
+    const OCT = 4, beta = 1.9;                 // 1/f^beta ~ fractal (self-similar, smooth)
+    const rng = mulberry32(hashStr(seedKey) ^ Math.imul(index + 1, 2654435761));
+    const amps = [], phis = [];
+    const seedPhase = (hashStr(seedKey) % 4096) / 4096 * 2 * Math.PI; // shared by a seed's ribbons -> gentle bundling
+    for (let k = 1; k <= OCT; k++) {
+        amps.push(1 / Math.pow(k, beta));
+        phis.push(k === 1 ? seedPhase : index * GOLDEN_ANGLE * k + rng() * 0.5);
+    }
+    const ampNorm = amps.reduce((s, x) => s + x, 0);
+
+    const f = (typeof fitness === 'number') ? fitness : 0.5;
+    const ent = (typeof entropy === 'number') ? Math.max(0, Math.min(1, (entropy - 1) / 1.6)) : 0.4;
+    // meander grows with weakness/diffuseness and with how far the two ports are apart
+    const meander = (0.05 + 0.12 * (1 - f) + 0.06 * ent) * (0.55 + Math.min(1, Math.abs(dA) / Math.PI));
+
+    const N = 46, pts = [];
+    for (let i = 0; i <= N; i++) {
+        const t = i / N;
+        const e = t * t * (3 - 2 * t);          // smoothstep — monotonic
+        const r = r0 + (r1 - r0) * e;           // radius always grows outward -> never enters the void
+        const ab = a0 + dA * e;                 // base sweep, short way round
+        const env = Math.sin(Math.PI * t);      // 0 at both ports, 1 mid-journey
+        let p = 0;
+        for (let k = 0; k < OCT; k++) p += amps[k] * Math.sin(2 * Math.PI * (k + 1) * t + phis[k]);
+        p /= ampNorm;                           // normalise ~[-1,1]
+        const ang = ab + meander * env * p;
+        pts.push([r * Math.sin(ang), -r * Math.cos(ang)]);
+    }
+    return catmullRom2path(pts);
 }
 
 function renderRadial(candidates) {
@@ -1109,155 +1367,129 @@ function renderRadial(candidates) {
         return;
     }
 
-    const ribbonsToDraw = showAllRibbons ? candidates : candidates.slice(0, MAX_DEFAULT_RIBBONS);
+    // ========================================================================
+    //  THE CONVERGENCE — edge bundling through shared biology.
+    //  Diseases live on the rim, grouped by clinical family. The genes and
+    //  convergence nodes the Atlas computes (Top Connected Genes / Top Convergence
+    //  Nodes) become luminous CORES in the interior — the shared molecular origins.
+    //  Every hypothesis dives inward and BRAIDS through the core it shares, so
+    //  density becomes meaning. Filter, and the cores + braids recompute — the
+    //  instrument revealing what is shared. Big hubs sink toward the centre
+    //  (Poincare logic); the void itself is never crossed.
+    // ========================================================================
+    allLinksData = [];
     const cx = width/2, cy = height/2;
-    const R_inner = Math.min(width, height) * 0.18;
-    const R_outer = Math.min(width, height) * 0.38;
+    const minDim = Math.min(width, height);
+    const R_out = minDim * 0.46;
+    const CORE_MIN = minDim * 0.12, CORE_MAX = minDim * 0.40;
+    const RIBBON_CAP = 3500;
+    const polar = (r,a) => [r*Math.cos(a), r*Math.sin(a)];
+    const famColor = key => (FAMILIES.find(f => f.key === key) || FAMILIES[9]).color;
+    const famLabel = key => (FAMILIES.find(f => f.key === key) || FAMILIES[9]).label;
 
-    const seedNames = [...new Set(ribbonsToDraw.map(c => c.seedName))].sort();
-    const familyOrder = FAMILIES.map(f => f.key).filter(k => ribbonsToDraw.some(c => c.family === k));
-    const nodePad = 0.6 * Math.PI/180, famGap = 4 * Math.PI/180;
-
-    const seedLayout = {};
+    // 1. diseases (seed + partner unified) -> dominant family + degree
+    const diseaseFam = {}, diseaseDeg = {};
     (function(){
-        const total = seedNames.reduce((sum, name) => sum + ribbonsToDraw.filter(c => c.seedName === name).length, 0);
-        const usable = 2*Math.PI - nodePad * Math.max(0, seedNames.length-1);
-        let a = 0;
-        seedNames.forEach(name => {
-            const weight = total>0 ? (ribbonsToDraw.filter(c => c.seedName === name).length / total) * usable : 0;
-            seedLayout[name] = { start: a, end: a+weight };
-            a += weight + nodePad;
+        const acc = {};
+        candidates.forEach(c => { [c.seedName, c.partnerName].forEach(n => {
+            diseaseDeg[n] = (diseaseDeg[n]||0)+1;
+            (acc[n] = acc[n]||{})[c.family] = (acc[n][c.family]||0)+1;
+        }); });
+        Object.keys(acc).forEach(n => { diseaseFam[n] = Object.entries(acc[n]).sort((a,b)=>b[1]-a[1])[0][0]; });
+    })();
+    const famOrder = FAMILIES.map(f=>f.key).filter(k => Object.values(diseaseFam).indexOf(k) !== -1);
+    const diseasesByFam = {}; famOrder.forEach(f => diseasesByFam[f]=[]);
+    Object.keys(diseaseFam).forEach(n => diseasesByFam[diseaseFam[n]].push(n));
+    famOrder.forEach(f => diseasesByFam[f].sort((a,b)=> (diseaseDeg[b]-diseaseDeg[a]) || a.localeCompare(b)));
+
+    const diseaseAngle = {}, diseaseArc = {}, famRange = {};
+    (function(){
+        const totalDeg = Object.values(diseaseDeg).reduce((s,x)=>s+x,0) || 1;
+        const FAMGAP = 5*Math.PI/180;
+        const usable = 2*Math.PI - FAMGAP*famOrder.length;
+        let a = -Math.PI/2;
+        famOrder.forEach(f => {
+            const start = a;
+            diseasesByFam[f].forEach(n => { const w = diseaseDeg[n]/totalDeg*usable; diseaseAngle[n]=a+w/2; diseaseArc[n]=[a,a+w]; a+=w; });
+            famRange[f] = [start, a]; a += FAMGAP;
         });
     })();
 
-    const partnersByFamily = {};
-    familyOrder.forEach(f => { partnersByFamily[f] = [...new Set(ribbonsToDraw.filter(c => c.family===f).map(c => c.partnerName))].sort(); });
-    const allPartners = familyOrder.flatMap(f => partnersByFamily[f]);
-    const partnerLayout = {};
-    (function(){
-        const partnerValue = n => ribbonsToDraw.filter(c => c.partnerName === n).length;
-        const total = allPartners.reduce((sum, n) => sum + partnerValue(n), 0);
-        const usable = 2*Math.PI - nodePad*(allPartners.length - familyOrder.length) - famGap*familyOrder.length;
-        let a=0;
-        familyOrder.forEach(f => {
-            const famStart = a;
-            partnersByFamily[f].forEach(n => {
-                const w = total>0 ? (partnerValue(n)/total)*usable : 0;
-                partnerLayout[n] = { start: a, end: a+w, family: f };
-                a += w + nodePad;
-            });
-            a += famGap - nodePad;
-            partnerLayout['__famRange_'+f] = { start: famStart, end: a-famGap };
-        });
-    })();
-
-    function allocatePorts(layout, groupKey){
-        const ports = {};
-        Object.keys(layout).filter(k => !k.startsWith('__famRange_')).forEach(name => {
-            const list = ribbonsToDraw.filter(c => c[groupKey] === name);
-            const slot = layout[name];
-            if(slot && typeof slot.start === 'number'){
-                const step = list.length ? (slot.end - slot.start)/list.length : 0;
-                list.forEach((c,i)=>{ ports[c.id] = { start: slot.start + i*step, end: slot.start + (i+1)*step }; });
-            }
-        });
-        return ports;
+    // 2. cores: primary convergence node (GO/REACT/CHEBI) or gene per hypothesis
+    function primaryCore(c){
+        const mech = c.mechanism || '';
+        const conv = {}; const cre = /\((GO:\d+|REACT:[A-Za-z0-9\-]+|R-HSA-[0-9]+|CHEBI:\d+)\)/g; let m;
+        while((m=cre.exec(mech))) conv[m[1]] = (conv[m[1]]||0)+1;
+        const best = Object.entries(conv).sort((a,b)=>b[1]-a[1])[0];
+        if (best) return best[0];
+        const gm = /([A-Z][A-Z0-9]{1,9})\s*\(HGNC:\d+\)/.exec(mech);
+        return gm ? gm[1] : null;
     }
-    const seedPorts = allocatePorts(seedLayout, 'seedName');
-    const partnerPorts = allocatePorts(partnerLayout, 'partnerName');
+    const coreDeg = {}, coreDis = {};
+    candidates.forEach(c => { const k = primaryCore(c); c._core = k; if(!k) return;
+        coreDeg[k]=(coreDeg[k]||0)+1; (coreDis[k]=coreDis[k]||new Set()).add(c.seedName); coreDis[k].add(c.partnerName); });
+    const degVals = Object.values(coreDeg);
+    const lgMax = Math.log(Math.max(2, degVals.length ? Math.max.apply(null, degVals) : 2));
+    const corePos = {};
+    Object.keys(coreDeg).forEach(k => {
+        let sx=0, sy=0; coreDis[k].forEach(n => { const a=diseaseAngle[n]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); } });
+        const ang = (sx===0&&sy===0) ? 0 : Math.atan2(sy,sx);
+        const norm = Math.log(coreDeg[k]) / (lgMax || 1);
+        corePos[k] = { a: ang, r: CORE_MAX - norm*(CORE_MAX-CORE_MIN), deg: coreDeg[k] };
+    });
+    const glowCores = Object.keys(corePos).sort((a,b)=>corePos[b].deg-corePos[a].deg).slice(0,120);
 
-    allLinksData = ribbonsToDraw.map(c => {
-        const s = seedPorts[c.id] || {start:0, end:0};
-        const t = partnerPorts[c.id] || {start:0, end:0};
-        const seedAngle = (s.start+s.end)/2;
-        const partnerAngle = (t.start+t.end)/2;
-        const path = drawAnnularRibbon(seedAngle, R_inner, partnerAngle, R_outer);
-        return { cand: c, seedAngle, partnerAngle, path };
+    // 3. ribbons: seed -> shared core -> partner (bundled at the core)
+    const ordered = candidates.slice().sort((a,b)=> (b.cqs-a.cqs)||(b.fitness-a.fitness)).slice(0, RIBBON_CAP);
+    const ribbons = [];
+    ordered.forEach(c => {
+        const core = corePos[c._core]; if(!core) return;
+        const aS = diseaseAngle[c.seedName], aP = diseaseAngle[c.partnerName];
+        if (aS===undefined || aP===undefined) return;
+        // monotonic-radius descent to the shared core then back out — the core is the
+        // innermost point, so the central void is never crossed (HEB-correct bundling).
+        let dA1=core.a-aS, dA2=aP-core.a;
+        while(dA1<-Math.PI)dA1+=2*Math.PI; while(dA1>Math.PI)dA1-=2*Math.PI;
+        while(dA2<-Math.PI)dA2+=2*Math.PI; while(dA2>Math.PI)dA2-=2*Math.PI;
+        const p=new Path2D(); const NS=18;
+        for(let i=0;i<=NS;i++){ const t=i/NS, e=t*t*(3-2*t), r=R_out+(core.r-R_out)*e, a=aS+dA1*e; i?p.lineTo(r*Math.cos(a),r*Math.sin(a)):p.moveTo(r*Math.cos(a),r*Math.sin(a)); }
+        for(let i=1;i<=NS;i++){ const t=i/NS, e=t*t*(3-2*t), r=core.r+(R_out-core.r)*e, a=core.a+dA2*e; p.lineTo(r*Math.cos(a),r*Math.sin(a)); }
+        ribbons.push({ path:p, col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName });
     });
 
-    ctx.save();
-    ctx.translate(cx, cy);
-    ctx.clearRect(-cx, -cy, width, height);
-    allLinksData.forEach(l => {
-        const hub = l.cand.hub || 1;
-        const alpha = Math.min(0.8, 0.2 + hub * 0.04);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = Math.max(1.2, l.cand.fitness * 3.5);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
+    function paintRibbons(pred){
+        ctx.save(); ctx.translate(cx,cy); ctx.clearRect(-cx,-cy,width,height); ctx.lineCap='round';
+        ribbons.forEach(rb=>{ const on = pred ? pred(rb) : true;
+            ctx.globalAlpha = pred ? (on?0.65:0.025) : 0.16;
+            ctx.lineWidth = (pred&&on)?1.4:0.7; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
+        ctx.globalAlpha=1;
+        glowCores.forEach(k=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const rad=Math.max(1.3, Math.sqrt(cp.deg)*0.7);
+            const hot = pred && ribbons.some(rb=>rb.core===k && pred(rb));
+            const gr=ctx.createRadialGradient(x,y,0,x,y,rad*4); gr.addColorStop(0, hot?'rgba(255,255,255,0.95)':'rgba(226,232,240,0.6)'); gr.addColorStop(1,'rgba(226,232,240,0)');
+            ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(x,y,rad*4,0,6.2832); ctx.fill();
+            ctx.fillStyle= hot?'#ffffff':'#cbd5e1'; ctx.beginPath(); ctx.arc(x,y,rad,0,6.2832); ctx.fill(); });
+        ctx.restore();
+    }
+    paintRibbons(null);
+
+    // 4. disease rim: one band per clinical family + label
+    const arcRim = d3.arc().innerRadius(R_out).outerRadius(R_out+6);
+    famOrder.forEach(f=>{ const fr=famRange[f]; if(!fr) return;
+        g.append('path').attr('d', arcRim({startAngle:fr[0]+Math.PI/2, endAngle:fr[1]+Math.PI/2})).attr('fill',famColor(f)).attr('opacity',0.92).style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=> diseaseFam[rb.seed]===f || diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ const el=document.getElementById('filter-family'); if(el){ el.value=f; el.dispatchEvent(new Event('change')); } });
+        const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+64, mid);
+        g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f));
     });
-    ctx.globalAlpha = 1.0;
-    ctx.restore();
 
-    const tooltip = d3.select('#canvas-tooltip');
-    g.append('g').attr('class', 'ribbon-overlay')
-        .selectAll('path')
-        .data(allLinksData)
-        .join('path')
-        .attr('d', l => l.path)
-        .attr('fill', 'none')
-        .attr('stroke', 'transparent')
-        .attr('stroke-width', 12)
-        .style('pointer-events', 'stroke')
-        .style('cursor', 'pointer')
-        .on('mouseover', (event, l) => { highlightRel(l.cand.id); showTooltip(event, l.cand); })
-        .on('mousemove', (event) => moveTooltip(event))
-        .on('mouseout', () => { clearHighlight(); hideTooltip(); })
-        .on('click', (event, l) => openDossierModal(l.cand.id));
-
-    const arcInner = d3.arc().innerRadius(R_inner-10).outerRadius(R_inner);
-    const arcOuter = d3.arc().innerRadius(R_outer).outerRadius(R_outer+10);
-
-    g.selectAll('g.seed-node').data(Object.entries(seedLayout)).join('g')
-        .attr('class', 'seed-node').attr('data-name', ([name])=>name).style('cursor','pointer')
-        .each(function([name, a]){
-            d3.select(this).append('path').attr('d', arcInner({startAngle:a.start, endAngle:a.end})).attr('fill','#f8fafc');
-            const mid = (a.start+a.end)/2, flip = mid>Math.PI;
-            const r = R_inner-18;
-            const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
-            const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text').attr('class','seed-label')
-                .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'start':'end').attr('dy','0.32em').attr('font-size','3.0px').attr('font-weight',600).attr('fill','#f8fafc')
-                .text(name.length>20?name.slice(0,18)+'…':name);
-        })
-        .on('mouseover', (event,[name])=>highlightBySeed(name)).on('mouseout', clearHighlight)
-        .on('click', (event,[name])=>{
-            focusDiseaseNode = name; focusPartnerNode = null;
-            document.getElementById('btn-focus-mode').classList.add('active');
-            document.getElementById('btn-focus-mode').textContent = `Focus: ${name} (Exit)`;
-            renderApp();
-        });
-
-    g.selectAll('g.partner-node').data(Object.entries(partnerLayout).filter(([k])=>!k.startsWith('__famRange_')))
-        .join('g').attr('class','partner-node').attr('data-name', ([name])=>name).style('cursor','pointer')
-        .each(function([name, a]){
-            const col = (FAMILIES.find(f=>f.key===a.family)||FAMILIES[9]).color;
-            d3.select(this).append('path').attr('d', arcOuter({startAngle:a.start, endAngle:a.end})).attr('fill',col);
-            const mid = (a.start+a.end)/2, flip = mid>Math.PI;
-            const r = R_outer+16;
-            const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
-            const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text').attr('class','partner-label')
-                .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'end':'start').attr('dy','0.32em').attr('font-size','3.0px').attr('fill','#94a3b8')
-                .text(name.length>22?name.slice(0,20)+'…':name);
-        })
-        .on('mouseover', (event,[name])=>highlightByPartner(name)).on('mouseout', clearHighlight)
-        .on('click', (event,[name])=>{
-            if (focusPartnerNode === name) { focusPartnerNode = null; }
-            else { focusPartnerNode = name; focusDiseaseNode = null; document.getElementById('btn-focus-mode').classList.remove('active'); document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode'; }
-            renderApp();
-        });
-
-    const famLabelR = R_outer+80;
-    familyOrder.forEach(f => {
-        const range = partnerLayout['__famRange_'+f];
-        if(!range) return;
-        const mid = (range.start+range.end)/2;
-        const x = Math.sin(mid)*famLabelR, y = -Math.cos(mid)*famLabelR;
-        const famObj = FAMILIES.find(ff=>ff.key===f)||{};
-        g.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famObj.color).text(famObj.label||f);
+    // 5. core hit-dots + labels for the top hubs (the shared origins the filters reveal)
+    glowCores.slice(0,24).forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1];
+        g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,Math.sqrt(cp.deg)*0.8)).attr('fill','transparent').style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ const el=document.getElementById('search-input'); el.value=k; el.dispatchEvent(new Event('input')); });
+        if(i<12){ g.append('text').attr('x',x).attr('y',y-6).attr('text-anchor','middle').attr('font-size','7px').attr('fill','#94a3b8').attr('pointer-events','none').text(k.length>14?k.slice(0,13)+'…':k); }
     });
 }
 
@@ -1315,51 +1547,16 @@ function redrawCanvasWithPartnerHighlight(partnerName) {
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 
+// The aggregated alluvial handles its own hover (segment -> lights its flows). The
+// sidebar cards only toggle their own active state; no canvas redraw here, or a
+// card mouseout would wipe the alluvial.
 function highlightRel(id) {
-    const targetId = parseInt(id);
-    const link = allLinksData.find(l => l.cand.id === targetId);
-    if(!link) return;
-    redrawCanvasWithHighlight(targetId);
-    const seedName = link.cand.seedName, partnerName = link.cand.partnerName;
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '13px' : '3.0px'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '#38bdf8' : '#334155'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '900' : '400'; });
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '13px' : '3.0px'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '#ffffff' : '#334155'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '900' : '400'; });
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
-    document.getElementById(`card-${targetId}`)?.classList.add('active');
+    document.getElementById(`card-${parseInt(id)}`)?.classList.add('active');
 }
-function highlightBySeed(name) {
-    const connectedPartners = new Set(allLinksData.filter(l => l.cand.seedName === name).map(l => l.cand.partnerName));
-    redrawCanvasWithSeedHighlight(name);
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '13px' : '3.0px'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '900' : '400'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '#38bdf8' : '#334155'; });
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '11px' : '3.0px'; })
-        .attr('font-weight', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '800' : '400'; })
-        .attr('fill', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '#ffffff' : '#334155'; });
-}
-function highlightByPartner(name) {
-    const connectedSeeds = new Set(allLinksData.filter(l => l.cand.partnerName === name).map(l => l.cand.seedName));
-    redrawCanvasWithPartnerHighlight(name);
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '13px' : '3.0px'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '900' : '400'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '#ffffff' : '#334155'; });
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '11px' : '3.0px'; })
-        .attr('font-weight', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '800' : '400'; })
-        .attr('fill', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '#38bdf8' : '#334155'; });
-}
+function highlightBySeed(name) {}
+function highlightByPartner(name) {}
 function clearHighlight() {
-    redrawCanvasDefault();
-    g.selectAll('g.seed-node text').attr('font-size','3.0px').attr('fill','#f8fafc').attr('font-weight','600');
-    g.selectAll('g.partner-node text').attr('font-size','3.0px').attr('fill','#94a3b8').attr('font-weight','400');
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
 }
 
@@ -1739,12 +1936,49 @@ document.getElementById('filter-poincare')?.addEventListener('change', debounceR
 document.getElementById('filter-entropy')?.addEventListener('change', debounceRender);
 document.getElementById('filter-rana')?.addEventListener('change', debounceRender);
 document.getElementById('filter-depth')?.addEventListener('change', debounceRender);
+document.getElementById('filter-cqs').addEventListener('change', debounceRender);
+document.getElementById('filter-fitness')?.addEventListener('change', debounceRender);
+document.getElementById('filter-falsif')?.addEventListener('change', debounceRender);
+document.getElementById('filter-novel')?.addEventListener('change', debounceRender);
+document.getElementById('filter-geneint')?.addEventListener('change', debounceRender);
 document.getElementById('filter-hub').addEventListener('change', debounceRender);
 document.getElementById('filter-family').addEventListener('change', debounceRender);
 document.getElementById('filter-tier').addEventListener('change', debounceRender);
 document.getElementById('search-input').addEventListener('input', debounceRender);
 window.addEventListener('resize', debounceRender);
-document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); } });
+// --- Guides dropdown (consolidated documentation menu) ---
+function toggleGuidesMenu(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById('guides-menu');
+    const btn = document.getElementById('btn-guides');
+    const open = menu.classList.toggle('open');
+    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function closeGuidesMenu() {
+    const menu = document.getElementById('guides-menu');
+    const btn = document.getElementById('btn-guides');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+// --- Info popovers ("?" on Tier / Family filters, replacing the legend cards) ---
+function toggleInfo(id, e) {
+    if (e) { e.stopPropagation(); e.preventDefault(); } // don't toggle the parent <details>
+    const pop = document.getElementById(id);
+    if (!pop) return;
+    const isOpen = pop.classList.contains('open');
+    document.querySelectorAll('.info-pop.open').forEach(p => p.classList.remove('open'));
+    if (!isOpen) pop.classList.add('open');
+}
+function closeInfoPops() { document.querySelectorAll('.info-pop.open').forEach(p => p.classList.remove('open')); }
+
+function openPoeticModal() { document.getElementById('poetic-modal').classList.add('open'); }
+function closePoeticModal() { document.getElementById('poetic-modal').classList.remove('open'); }
+
+document.addEventListener('click', e => {
+    if (!e.target.closest('.guides-dropdown')) closeGuidesMenu();
+    if (!e.target.closest('.info-wrap')) closeInfoPops();
+});
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeGuidesMenu(); closeInfoPops(); closePoeticModal(); closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); } });
 
 loadData();
 </script>

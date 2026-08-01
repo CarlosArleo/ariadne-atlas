@@ -1,0 +1,441 @@
+{
+  "seed": {
+    "id": "MONDO:0013517",
+    "name": "MONDO:0013517"
+  },
+  "geneCandidates": 5,
+  "pathwayCandidates": 24,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011382",
+      "diseaseBName": "sickle cell disease",
+      "fitness": 0.7778,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HBB variants causing beta-thalassemia (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB variants causing sickle cell disease (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing beta-thalassemia (HP:0001910); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing sickle cell disease (HP:0001910); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Anemia (HP:0001943); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Hemolytic anemia (HP:0001893). Mutations in the HBB gene lead to impaired hemoglobin synthesis and function, resulting in reduced oxygen carrying capacity and hemolytic anemia, common to both beta-thalassemia and sickle cell disease.",
+      "mechanism_narrative": "HBB variants causing beta-thalassemia (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB variants causing sickle cell disease (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing beta-thalassemia (HP:0001910); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing sickle cell disease (HP:0001910); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Anemia (HP:0001943); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Hemolytic anemia (HP:0001893). Mutations in the HBB gene lead to impaired hemoglobin synthesis and function, resulting in reduced oxygen carrying capacity and hemolytic anemia, common to both beta-thalassemia and sickle cell disease.",
+      "falsification": {
+        "text": "Identification of individuals with documented beta-thalassemia or sickle cell disease who do not carry any pathogenic variants in the HBB gene.",
+        "gnomad_variant": "rs33950530"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:4827"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0011382",
+        "diseaseBName": "sickle cell disease",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:4827"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7778,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "HBB variants causing beta-thalassemia (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB variants causing sickle cell disease (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing beta-thalassemia (HP:0001910); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing sickle cell disease (HP:0001910); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Anemia (HP:0001943); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Hemolytic anemia (HP:0001893). Mutations in the HBB gene lead to impaired hemoglobin synthesis and function, resulting in reduced oxygen carrying capacity and hemolytic anemia, common to both beta-thalassemia and sickle cell disease.",
+        "falsification": {
+          "text": "Identification of individuals with documented beta-thalassemia or sickle cell disease who do not carry any pathogenic variants in the HBB gene.",
+          "gnomad_variant": "rs33950530"
+        },
+        "translational": "Understanding the shared genetic basis in HBB allows for the exploration of gene therapy and other molecular interventions that could address the underlying cause of both diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011381",
+      "diseaseBName": "dominant beta-thalassemia",
+      "fitness": 0.7703,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Heme biosynthesis (REACT:R-HSA-1900756); Heme biosynthesis (REACT:R-HSA-1900756) —LEADS_TO→ Anemia (HP:0001892); HBB (HGNC:4827) —LEADS_TO→ Microcytic anemia (HP:0001920); HBB (HGNC:4827) —LEADS_TO→ Hemolytic anemia (HP:0001878). Pathogenic variants in the HBB gene lead to reduced beta-globin production, impacting heme biosynthesis and resulting in various forms of anemia, including microcytic and hemolytic anemia, which are central to both MONDO:0013517 and dominant beta-thalassemia.",
+      "mechanism_narrative": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Heme biosynthesis (REACT:R-HSA-1900756); Heme biosynthesis (REACT:R-HSA-1900756) —LEADS_TO→ Anemia (HP:0001892); HBB (HGNC:4827) —LEADS_TO→ Microcytic anemia (HP:0001920); HBB (HGNC:4827) —LEADS_TO→ Hemolytic anemia (HP:0001878). Pathogenic variants in the HBB gene lead to reduced beta-globin production, impacting heme biosynthesis and resulting in various forms of anemia, including microcytic and hemolytic anemia, which are central to both MONDO:0013517 and dominant beta-thalassemia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in HBB that lead to a gain-of-function or dominant-negative effect, rather than loss-of-function, in both disease contexts would falsify this hypothesis.",
+        "gnomad_variant": "rs74305468 (a known pathogenic variant in HBB, if its frequency is higher than expected for a rare disease allele in relevant populations)"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:4827"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0011381",
+        "diseaseBName": "dominant beta-thalassemia",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:4827"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7703,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Heme biosynthesis (REACT:R-HSA-1900756); Heme biosynthesis (REACT:R-HSA-1900756) —LEADS_TO→ Anemia (HP:0001892); HBB (HGNC:4827) —LEADS_TO→ Microcytic anemia (HP:0001920); HBB (HGNC:4827) —LEADS_TO→ Hemolytic anemia (HP:0001878). Pathogenic variants in the HBB gene lead to reduced beta-globin production, impacting heme biosynthesis and resulting in various forms of anemia, including microcytic and hemolytic anemia, which are central to both MONDO:0013517 and dominant beta-thalassemia.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in HBB that lead to a gain-of-function or dominant-negative effect, rather than loss-of-function, in both disease contexts would falsify this hypothesis.",
+          "gnomad_variant": "rs74305468 (a known pathogenic variant in HBB, if its frequency is higher than expected for a rare disease allele in relevant populations)"
+        },
+        "translational": "Understanding the shared HBB genetic basis and functional consequences is crucial for developing targeted gene therapies, gene editing strategies, or novel therapeutic approaches aimed at restoring functional hemoglobin production for both MONDO:0013517 and dominant beta-thalassemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0018023",
+      "diseaseBName": "hemoglobin M disease",
+      "fitness": 0.7114,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic HBB variant (rsXXXXXXX) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Anemia (HP:0001878); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Methemoglobinemia (HP:0011374). Pathogenic variants in the HBB gene disrupt normal hemoglobin synthesis and oxygen transport, leading to phenotypes of anemia (Disease A, e.g., Beta-thalassemia) and methemoglobinemia (Disease B, e.g., Hemoglobin M disease).",
+      "mechanism_narrative": "Pathogenic HBB variant (rsXXXXXXX) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Anemia (HP:0001878); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Methemoglobinemia (HP:0011374). Pathogenic variants in the HBB gene disrupt normal hemoglobin synthesis and oxygen transport, leading to phenotypes of anemia (Disease A, e.g., Beta-thalassemia) and methemoglobinemia (Disease B, e.g., Hemoglobin M disease).",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in HBB associated with MONDO:0013517 (e.g., beta-thalassemia) do not affect the stability or function of the alpha-globin chain, which is critical for methemoglobinemia (MONDO:0018023)."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:4827"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0018023",
+        "diseaseBName": "hemoglobin M disease",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:4827"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7114,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "Pathogenic HBB variant (rsXXXXXXX) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Anemia (HP:0001878); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Methemoglobinemia (HP:0011374). Pathogenic variants in the HBB gene disrupt normal hemoglobin synthesis and oxygen transport, leading to phenotypes of anemia (Disease A, e.g., Beta-thalassemia) and methemoglobinemia (Disease B, e.g., Hemoglobin M disease).",
+        "falsification": {
+          "text": "Demonstration that pathogenic variants in HBB associated with MONDO:0013517 (e.g., beta-thalassemia) do not affect the stability or function of the alpha-globin chain, which is critical for methemoglobinemia (MONDO:0018023)."
+        },
+        "translational": "Understanding the shared genetic basis in HBB allows for potential therapeutic strategies that target hemoglobin production or function, applicable to both anemia and methemoglobinemia, although specific interventions would need to address the distinct functional consequences of the mutations."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007705",
+      "diseaseBName": "Heinz body anemia",
+      "fitness": 0.6688,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and stability (GO:0001071); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Reduced functional hemoglobin (HP:0001983); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Heinz bodies (HP:0001890). Mutations in the HBB gene disrupt the normal process of hemoglobin synthesis and stability, leading to reduced functional hemoglobin (MONDO:0013517) and the formation of unstable, aggregated hemoglobin bodies (Heinz bodies in MONDO:0007705).",
+      "mechanism_narrative": "HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and stability (GO:0001071); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Reduced functional hemoglobin (HP:0001983); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Heinz bodies (HP:0001890). Mutations in the HBB gene disrupt the normal process of hemoglobin synthesis and stability, leading to reduced functional hemoglobin (MONDO:0013517) and the formation of unstable, aggregated hemoglobin bodies (Heinz bodies in MONDO:0007705).",
+      "falsification": {
+        "text": "Identification of pathogenic variants exclusively in genes other than HBB, HBA1, or HBA2 as the sole cause for either disease, or demonstration that the HBB variants associated with one disease have no effect on the other phenotype.",
+        "gnomad_variant": "rs121912976"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:4827"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0007705",
+        "diseaseBName": "Heinz body anemia",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:4827"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6688,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and stability (GO:0001071); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Reduced functional hemoglobin (HP:0001983); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Heinz bodies (HP:0001890). Mutations in the HBB gene disrupt the normal process of hemoglobin synthesis and stability, leading to reduced functional hemoglobin (MONDO:0013517) and the formation of unstable, aggregated hemoglobin bodies (Heinz bodies in MONDO:0007705).",
+        "falsification": {
+          "text": "Identification of pathogenic variants exclusively in genes other than HBB, HBA1, or HBA2 as the sole cause for either disease, or demonstration that the HBB variants associated with one disease have no effect on the other phenotype.",
+          "gnomad_variant": "rs121912976"
+        },
+        "translational": "Understanding the shared genetic basis in HBB allows for potential development of therapies that target the underlying molecular defect in hemoglobin production or stability, applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0054801",
+      "diseaseBName": "erythrocytosis, familial, 6",
+      "fitness": 0.6684,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HBB Loss-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Beta-globin synthesis (null); Beta-globin synthesis (null) —LEADS_TO→ Anemia (HP:0001427); HBB Gain-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —INCREASES→ Hemoglobin-oxygen binding (null); Hemoglobin-oxygen binding (null) —LEADS_TO→ Erythrocytosis (HP:0001904). Both Beta-thalassemia (Disease A) and Familial erythrocytosis, 6 (Disease B) are caused by mutations in the HBB gene (HGNC:4827). In Beta-thalassemia, loss-of-function or haploinsufficient variants lead to reduced production of beta-globin chains, disrupting beta-globin synthesis and causing anemia. In contrast, gain-of-function variants in HBB cause Familial erythrocytosis, 6 by altering hemoglobin's oxygen binding properties, leading to increased red blood cell production (erythrocytosis).",
+      "mechanism_narrative": "HBB Loss-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Beta-globin synthesis (null); Beta-globin synthesis (null) —LEADS_TO→ Anemia (HP:0001427); HBB Gain-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —INCREASES→ Hemoglobin-oxygen binding (null); Hemoglobin-oxygen binding (null) —LEADS_TO→ Erythrocytosis (HP:0001904). Both Beta-thalassemia (Disease A) and Familial erythrocytosis, 6 (Disease B) are caused by mutations in the HBB gene (HGNC:4827). In Beta-thalassemia, loss-of-function or haploinsufficient variants lead to reduced production of beta-globin chains, disrupting beta-globin synthesis and causing anemia. In contrast, gain-of-function variants in HBB cause Familial erythrocytosis, 6 by altering hemoglobin's oxygen binding properties, leading to increased red blood cell production (erythrocytosis).",
+      "falsification": {
+        "text": "Discovery of mutations in distinct, unrelated genes that are solely responsible for each respective disease phenotype, with no overlap in the HBB gene.",
+        "gnomad_variant": "null"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:4827"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0054801",
+        "diseaseBName": "erythrocytosis, familial, 6",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:4827"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6684,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "HBB Loss-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Beta-globin synthesis (null); Beta-globin synthesis (null) —LEADS_TO→ Anemia (HP:0001427); HBB Gain-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —INCREASES→ Hemoglobin-oxygen binding (null); Hemoglobin-oxygen binding (null) —LEADS_TO→ Erythrocytosis (HP:0001904). Both Beta-thalassemia (Disease A) and Familial erythrocytosis, 6 (Disease B) are caused by mutations in the HBB gene (HGNC:4827). In Beta-thalassemia, loss-of-function or haploinsufficient variants lead to reduced production of beta-globin chains, disrupting beta-globin synthesis and causing anemia. In contrast, gain-of-function variants in HBB cause Familial erythrocytosis, 6 by altering hemoglobin's oxygen binding properties, leading to increased red blood cell production (erythrocytosis).",
+        "falsification": {
+          "text": "Discovery of mutations in distinct, unrelated genes that are solely responsible for each respective disease phenotype, with no overlap in the HBB gene.",
+          "gnomad_variant": "null"
+        },
+        "translational": "Understanding the opposing functional consequences of HBB mutations (haploinsufficiency leading to anemia vs. gain-of-function leading to erythrocytosis) can inform targeted therapeutic strategies for both conditions, potentially involving gene therapy or small molecule modulators aimed at restoring normal beta-globin function or hemoglobin-oxygen affinity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013512",
+      "diseaseBName": "hemoglobin H disease",
+      "fitness": 0.553,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ Globin chain synthesis; HBA1 (HGNC:4820) —DISRUPTS→ Globin chain synthesis; HBA2 (HGNC:4821) —DISRUPTS→ Globin chain synthesis; Globin chain synthesis —DECREASES→ Hemoglobin assembly; Hemoglobin assembly —LEADS_TO→ Anemia (HP:0001878); Hemoglobin assembly —LEADS_TO→ Splenomegaly (HP:0001653). Mutations in HBB, HBA1, or HBA2 disrupt globin chain synthesis, leading to impaired hemoglobin assembly, which in turn causes anemia and splenomegaly.",
+      "mechanism_narrative": "HBB (HGNC:4827) —DISRUPTS→ Globin chain synthesis; HBA1 (HGNC:4820) —DISRUPTS→ Globin chain synthesis; HBA2 (HGNC:4821) —DISRUPTS→ Globin chain synthesis; Globin chain synthesis —DECREASES→ Hemoglobin assembly; Hemoglobin assembly —LEADS_TO→ Anemia (HP:0001878); Hemoglobin assembly —LEADS_TO→ Splenomegaly (HP:0001653). Mutations in HBB, HBA1, or HBA2 disrupt globin chain synthesis, leading to impaired hemoglobin assembly, which in turn causes anemia and splenomegaly.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic variants in HBB, HBA1, or HBA2 that result in normal hemoglobin levels and do not manifest anemia or splenomegaly would falsify this hypothesis.",
+        "gnomad_variant": "rs748175744 (common variant in HBB associated with alpha-thalassemia trait, but not typically causing severe disease)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1237044",
+        "Reactome:R-HSA-9707564"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1237044": 13,
+        "Reactome:R-HSA-9707564": 56,
+        "Reactome:R-HSA-9707616": 48,
+        "Reactome:R-HSA-1247673": 9,
+        "Reactome:R-HSA-2168880": 13,
+        "Reactome:R-HSA-9927020": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013512",
+        "diseaseBName": "hemoglobin H disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1237044",
+          "Reactome:R-HSA-9707564"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1237044": 13,
+          "Reactome:R-HSA-9707564": 56,
+          "Reactome:R-HSA-9707616": 48,
+          "Reactome:R-HSA-1247673": 9,
+          "Reactome:R-HSA-2168880": 13,
+          "Reactome:R-HSA-9927020": 3
+        },
+        "fitness": 0.553,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ Globin chain synthesis; HBA1 (HGNC:4820) —DISRUPTS→ Globin chain synthesis; HBA2 (HGNC:4821) —DISRUPTS→ Globin chain synthesis; Globin chain synthesis —DECREASES→ Hemoglobin assembly; Hemoglobin assembly —LEADS_TO→ Anemia (HP:0001878); Hemoglobin assembly —LEADS_TO→ Splenomegaly (HP:0001653). Mutations in HBB, HBA1, or HBA2 disrupt globin chain synthesis, leading to impaired hemoglobin assembly, which in turn causes anemia and splenomegaly.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic variants in HBB, HBA1, or HBA2 that result in normal hemoglobin levels and do not manifest anemia or splenomegaly would falsify this hypothesis.",
+          "gnomad_variant": "rs748175744 (common variant in HBB associated with alpha-thalassemia trait, but not typically causing severe disease)"
+        },
+        "translational": "Understanding the shared molecular basis of these hemoglobinopathies can inform the development of targeted therapies for anemia and related complications, potentially leveraging gene therapy or precision medicine approaches for hemoglobin disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011399",
+      "diseaseBName": "alpha thalassemia spectrum",
+      "fitness": 0.5389,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA1 (HGNC:4824) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA2 (HGNC:4825) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); alpha-globin synthesis (REACT:R-HSA-194400) —LEADS_TO→ hemoglobin synthesis (REACT:R-HSA-194400); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Anemia (HP:0001258); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Microcytic anemia (HP:0001904); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hemolytic anemia (HP:0001874); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hydrops fetalis (HP:00114953). Mutations in HBB, HBA1, or HBA2 disrupt alpha-globin synthesis, which is a critical step in the overall hemoglobin synthesis pathway. This disruption leads to various forms of anemia, including microcytic, hemolytic anemia, and in severe cases, hydrops fetalis.",
+      "mechanism_narrative": "HBB (HGNC:4827) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA1 (HGNC:4824) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA2 (HGNC:4825) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); alpha-globin synthesis (REACT:R-HSA-194400) —LEADS_TO→ hemoglobin synthesis (REACT:R-HSA-194400); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Anemia (HP:0001258); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Microcytic anemia (HP:0001904); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hemolytic anemia (HP:0001874); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hydrops fetalis (HP:00114953). Mutations in HBB, HBA1, or HBA2 disrupt alpha-globin synthesis, which is a critical step in the overall hemoglobin synthesis pathway. This disruption leads to various forms of anemia, including microcytic, hemolytic anemia, and in severe cases, hydrops fetalis.",
+      "falsification": {
+        "text": "Discovery of a pathogenic variant in HBB, HBA1, or HBA2 with a consistent loss-of-function effect in both diseases, but with significantly different downstream phenotypic consequences that cannot be explained by allelic heterogeneity.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1237044",
+        "Reactome:R-HSA-9707564"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1237044": 13,
+        "Reactome:R-HSA-9707564": 56,
+        "Reactome:R-HSA-9707616": 48,
+        "Reactome:R-HSA-1247673": 9,
+        "Reactome:R-HSA-2168880": 13,
+        "Reactome:R-HSA-9927020": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011399",
+        "diseaseBName": "alpha thalassemia spectrum",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1237044",
+          "Reactome:R-HSA-9707564"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1237044": 13,
+          "Reactome:R-HSA-9707564": 56,
+          "Reactome:R-HSA-9707616": 48,
+          "Reactome:R-HSA-1247673": 9,
+          "Reactome:R-HSA-2168880": 13,
+          "Reactome:R-HSA-9927020": 3
+        },
+        "fitness": 0.5389,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA1 (HGNC:4824) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA2 (HGNC:4825) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); alpha-globin synthesis (REACT:R-HSA-194400) —LEADS_TO→ hemoglobin synthesis (REACT:R-HSA-194400); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Anemia (HP:0001258); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Microcytic anemia (HP:0001904); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hemolytic anemia (HP:0001874); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hydrops fetalis (HP:00114953). Mutations in HBB, HBA1, or HBA2 disrupt alpha-globin synthesis, which is a critical step in the overall hemoglobin synthesis pathway. This disruption leads to various forms of anemia, including microcytic, hemolytic anemia, and in severe cases, hydrops fetalis.",
+        "falsification": {
+          "text": "Discovery of a pathogenic variant in HBB, HBA1, or HBA2 with a consistent loss-of-function effect in both diseases, but with significantly different downstream phenotypic consequences that cannot be explained by allelic heterogeneity.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared mechanism of alpha-globin chain deficiency and its impact on hemoglobin synthesis can inform therapeutic strategies for both diseases, potentially including gene therapy or strategies to upregulate fetal hemoglobin (HbF) which can compensate for defective adult hemoglobin."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0054802",
+      "diseaseBName": "erythrocytosis, familial, 7",
+      "fitness": 0.4321,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HBB pathogenic variant causing haploinsufficiency (None) —DISRUPTS→ HBB (HGNC:1003); HBB (HGNC:1003) —DECREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ anemia (HP:0001903); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBB (HGNC:1003); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA1 (HGNC:1000); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA2 (HGNC:1001); HBB (HGNC:1003) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA1 (HGNC:1000) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA2 (HGNC:1001) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ erythrocytosis (HP:0001894). Pathogenic variants in HBB, HBA1, or HBA2 can lead to two distinct disease phenotypes. Haploinsufficiency (e.g., in beta-thalassemia) reduces functional hemoglobin production, causing anemia. Conversely, gain-of-function variants in these same genes can increase hemoglobin production or stability, leading to erythrocytosis.",
+      "mechanism_narrative": "HBB pathogenic variant causing haploinsufficiency (None) —DISRUPTS→ HBB (HGNC:1003); HBB (HGNC:1003) —DECREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ anemia (HP:0001903); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBB (HGNC:1003); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA1 (HGNC:1000); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA2 (HGNC:1001); HBB (HGNC:1003) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA1 (HGNC:1000) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA2 (HGNC:1001) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ erythrocytosis (HP:0001894). Pathogenic variants in HBB, HBA1, or HBA2 can lead to two distinct disease phenotypes. Haploinsufficiency (e.g., in beta-thalassemia) reduces functional hemoglobin production, causing anemia. Conversely, gain-of-function variants in these same genes can increase hemoglobin production or stability, leading to erythrocytosis.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in HBB, HBA1, or HBA2 that cause haploinsufficiency in patients with familial erythrocytosis, or gain-of-function variants in patients with anemia. Alternatively, if the causal genes for the two diseases are found to be entirely distinct and non-interacting pathways.",
+        "gnomad_variant": "Presence of a common (AF > 0.01) pathogenic variant in HBB, HBA1, or HBA2 in gnomAD that is associated with one disease phenotype but not the other."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1237044",
+        "Reactome:R-HSA-9707564"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1237044": 13,
+        "Reactome:R-HSA-9707564": 56,
+        "Reactome:R-HSA-9707616": 48,
+        "Reactome:R-HSA-1247673": 9,
+        "Reactome:R-HSA-2168880": 13,
+        "Reactome:R-HSA-9927020": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054802",
+        "diseaseBName": "erythrocytosis, familial, 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1237044",
+          "Reactome:R-HSA-9707564"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1237044": 13,
+          "Reactome:R-HSA-9707564": 56,
+          "Reactome:R-HSA-9707616": 48,
+          "Reactome:R-HSA-1247673": 9,
+          "Reactome:R-HSA-2168880": 13,
+          "Reactome:R-HSA-9927020": 3
+        },
+        "fitness": 0.4321,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HBB pathogenic variant causing haploinsufficiency (None) —DISRUPTS→ HBB (HGNC:1003); HBB (HGNC:1003) —DECREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ anemia (HP:0001903); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBB (HGNC:1003); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA1 (HGNC:1000); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA2 (HGNC:1001); HBB (HGNC:1003) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA1 (HGNC:1000) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA2 (HGNC:1001) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ erythrocytosis (HP:0001894). Pathogenic variants in HBB, HBA1, or HBA2 can lead to two distinct disease phenotypes. Haploinsufficiency (e.g., in beta-thalassemia) reduces functional hemoglobin production, causing anemia. Conversely, gain-of-function variants in these same genes can increase hemoglobin production or stability, leading to erythrocytosis.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in HBB, HBA1, or HBA2 that cause haploinsufficiency in patients with familial erythrocytosis, or gain-of-function variants in patients with anemia. Alternatively, if the causal genes for the two diseases are found to be entirely distinct and non-interacting pathways.",
+          "gnomad_variant": "Presence of a common (AF > 0.01) pathogenic variant in HBB, HBA1, or HBA2 in gnomAD that is associated with one disease phenotype but not the other."
+        },
+        "translational": "Understanding the opposing functional consequences of mutations in the same set of globin genes can inform targeted therapeutic strategies, such as gene therapy or small molecule modulators, for both anemia and erythrocytosis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0020835",
+      "diseaseBName": "methemoglobinemia, alpha type",
+      "fitness": 0.4267,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); hemoglobin production (REACT:R-HSA-192751) —DECREASES→ abnormal hemoglobin (CHEBI:57722); abnormal hemoglobin (CHEBI:57722) —LEADS_TO→ beta-thalassemia (MONDO:0013517); HBA1 (HGNC:4813) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); HBA1 (HGNC:4813) —INCREASES→ oxidized heme iron (CHEBI:57722); oxidized heme iron (CHEBI:57722) —LEADS_TO→ methemoglobinemia, alpha type (MONDO:0020835). Mutations in HBB disrupt normal hemoglobin production, leading to beta-thalassemia. Specific mutations in HBA1 can either disrupt overall hemoglobin production or lead to a dysfunctional alpha-globin chain that promotes the oxidation of heme iron, causing alpha-type methemoglobinemia. Both pathways converge on the process of hemoglobin production and its downstream consequences on oxygen transport and red blood cell function.",
+      "mechanism_narrative": "HBB (HGNC:4827) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); hemoglobin production (REACT:R-HSA-192751) —DECREASES→ abnormal hemoglobin (CHEBI:57722); abnormal hemoglobin (CHEBI:57722) —LEADS_TO→ beta-thalassemia (MONDO:0013517); HBA1 (HGNC:4813) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); HBA1 (HGNC:4813) —INCREASES→ oxidized heme iron (CHEBI:57722); oxidized heme iron (CHEBI:57722) —LEADS_TO→ methemoglobinemia, alpha type (MONDO:0020835). Mutations in HBB disrupt normal hemoglobin production, leading to beta-thalassemia. Specific mutations in HBA1 can either disrupt overall hemoglobin production or lead to a dysfunctional alpha-globin chain that promotes the oxidation of heme iron, causing alpha-type methemoglobinemia. Both pathways converge on the process of hemoglobin production and its downstream consequences on oxygen transport and red blood cell function.",
+      "falsification": {
+        "text": "Identification of a common pathogenic variant in HBB and HBA1 with consistent functional consequences (e.g., both causing reduced protein stability or function) that explains both phenotypes would strengthen this hypothesis. Conversely, finding that the mutations in HBB and HBA1 have completely distinct and unrelated molecular effects, or that variants in HBA1 associated with methemoglobinemia do not impact overall hemoglobin assembly, would weaken this hypothesis.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1237044",
+        "Reactome:R-HSA-9707564"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1237044": 13,
+        "Reactome:R-HSA-9707564": 56,
+        "Reactome:R-HSA-9707616": 48,
+        "Reactome:R-HSA-1247673": 9,
+        "Reactome:R-HSA-2168880": 13,
+        "Reactome:R-HSA-9927020": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0020835",
+        "diseaseBName": "methemoglobinemia, alpha type",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1237044",
+          "Reactome:R-HSA-9707564"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1237044": 13,
+          "Reactome:R-HSA-9707564": 56,
+          "Reactome:R-HSA-9707616": 48,
+          "Reactome:R-HSA-1247673": 9,
+          "Reactome:R-HSA-2168880": 13,
+          "Reactome:R-HSA-9927020": 3
+        },
+        "fitness": 0.4267,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HBB (HGNC:4827) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); hemoglobin production (REACT:R-HSA-192751) —DECREASES→ abnormal hemoglobin (CHEBI:57722); abnormal hemoglobin (CHEBI:57722) —LEADS_TO→ beta-thalassemia (MONDO:0013517); HBA1 (HGNC:4813) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); HBA1 (HGNC:4813) —INCREASES→ oxidized heme iron (CHEBI:57722); oxidized heme iron (CHEBI:57722) —LEADS_TO→ methemoglobinemia, alpha type (MONDO:0020835). Mutations in HBB disrupt normal hemoglobin production, leading to beta-thalassemia. Specific mutations in HBA1 can either disrupt overall hemoglobin production or lead to a dysfunctional alpha-globin chain that promotes the oxidation of heme iron, causing alpha-type methemoglobinemia. Both pathways converge on the process of hemoglobin production and its downstream consequences on oxygen transport and red blood cell function.",
+        "falsification": {
+          "text": "Identification of a common pathogenic variant in HBB and HBA1 with consistent functional consequences (e.g., both causing reduced protein stability or function) that explains both phenotypes would strengthen this hypothesis. Conversely, finding that the mutations in HBB and HBA1 have completely distinct and unrelated molecular effects, or that variants in HBA1 associated with methemoglobinemia do not impact overall hemoglobin assembly, would weaken this hypothesis.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared pathway of hemoglobin production allows for potential therapeutic strategies that target common downstream effects, such as strategies to enhance fetal hemoglobin production or improve oxygen delivery, which could be beneficial for both beta-thalassemia and methemoglobinemia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100562",
+      "diseaseBName": "HBA2-related alpha thalassemia spectrum",
+      "fitness": 0.3612,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ alpha thalassemia (MONDO:0100562); HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ Hemoglobinopathy (HP:0001900). Pathogenic variants in HBB can lead to alpha thalassemia (MONDO:0100562) by disrupting hemoglobin synthesis. While HBA2 is the primary gene for alpha thalassemia, mutations in HBB can also result in similar phenotypes by affecting the overall balance of globin chains and thus hemoglobin function, leading to a broader hemoglobinopathy (HP:0001900).",
+      "mechanism_narrative": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ alpha thalassemia (MONDO:0100562); HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ Hemoglobinopathy (HP:0001900). Pathogenic variants in HBB can lead to alpha thalassemia (MONDO:0100562) by disrupting hemoglobin synthesis. While HBA2 is the primary gene for alpha thalassemia, mutations in HBB can also result in similar phenotypes by affecting the overall balance of globin chains and thus hemoglobin function, leading to a broader hemoglobinopathy (HP:0001900).",
+      "falsification": {
+        "text": "If a significant number of individuals with MONDO:0013517 (Hemoglobinopathy) are found to have pathogenic variants exclusively in genes other than HBB or HBA2, and these variants do not impact hemoglobin synthesis or red blood cell function, this hypothesis would be falsified.",
+        "gnomad_variant": "rs71750133 (a known pathogenic variant in HBB associated with beta-thalassemia, if found at high frequency in a population without the phenotype of MONDO:0013517, it could suggest a different mechanism or incomplete penetrance)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1237044",
+        "Reactome:R-HSA-9707564"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1237044": 13,
+        "Reactome:R-HSA-9707564": 56,
+        "Reactome:R-HSA-9707616": 48,
+        "Reactome:R-HSA-1247673": 9,
+        "Reactome:R-HSA-2168880": 13,
+        "Reactome:R-HSA-9927020": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100562",
+        "diseaseBName": "HBA2-related alpha thalassemia spectrum",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1237044",
+          "Reactome:R-HSA-9707564"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1237044": 13,
+          "Reactome:R-HSA-9707564": 56,
+          "Reactome:R-HSA-9707616": 48,
+          "Reactome:R-HSA-1247673": 9,
+          "Reactome:R-HSA-2168880": 13,
+          "Reactome:R-HSA-9927020": 3
+        },
+        "fitness": 0.3612,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ alpha thalassemia (MONDO:0100562); HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ Hemoglobinopathy (HP:0001900). Pathogenic variants in HBB can lead to alpha thalassemia (MONDO:0100562) by disrupting hemoglobin synthesis. While HBA2 is the primary gene for alpha thalassemia, mutations in HBB can also result in similar phenotypes by affecting the overall balance of globin chains and thus hemoglobin function, leading to a broader hemoglobinopathy (HP:0001900).",
+        "falsification": {
+          "text": "If a significant number of individuals with MONDO:0013517 (Hemoglobinopathy) are found to have pathogenic variants exclusively in genes other than HBB or HBA2, and these variants do not impact hemoglobin synthesis or red blood cell function, this hypothesis would be falsified.",
+          "gnomad_variant": "rs71750133 (a known pathogenic variant in HBB associated with beta-thalassemia, if found at high frequency in a population without the phenotype of MONDO:0013517, it could suggest a different mechanism or incomplete penetrance)"
+        },
+        "translational": "Understanding the overlap in the hemoglobin synthesis pathway between HBB and HBA2-related disorders could lead to more targeted therapeutic strategies for various hemoglobinopathies, potentially involving gene therapy or small molecule modulators that restore globin chain balance."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T05:01:32.025Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013517 (MONDO:0013517)\n**Generated:** 2026-08-01\n**Candidates screened:** 5 gene-neighbour(s), 24 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | sickle cell disease (MONDO:0011382) | shared gene | Tier 1 | 0.778 | HGNC:4827 |\n| 2 | dominant beta-thalassemia (MONDO:0011381) | shared gene | Tier 1 | 0.770 | HGNC:4827 |\n| 3 | hemoglobin M disease (MONDO:0018023) | shared gene | Tier 1 | 0.711 | HGNC:4827 |\n| 4 | Heinz body anemia (MONDO:0007705) | shared gene | Tier 1 | 0.669 | HGNC:4827 |\n| 5 | erythrocytosis, familial, 6 (MONDO:0054801) | shared gene | Tier 1 | 0.668 | HGNC:4827 |\n| 6 | hemoglobin H disease (MONDO:0013512) | shared pathway | Tier 3 | 0.553 | Reactome:R-HSA-1237044, Reactome:R-HSA-9707564 |\n| 7 | alpha thalassemia spectrum (MONDO:0011399) | shared pathway | Tier 3 | 0.539 | Reactome:R-HSA-1237044, Reactome:R-HSA-9707564 |\n| 8 | erythrocytosis, familial, 7 (MONDO:0054802) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-1237044, Reactome:R-HSA-9707564 |\n| 9 | methemoglobinemia, alpha type (MONDO:0020835) | shared pathway | Tier 3 | 0.427 | Reactome:R-HSA-1237044, Reactome:R-HSA-9707564 |\n| 10 | HBA2-related alpha thalassemia spectrum (MONDO:0100562) | shared pathway | Tier 3 | 0.361 | Reactome:R-HSA-1237044, Reactome:R-HSA-9707564 |\n\n### CANDIDATE DETAIL\n#### 1. sickle cell disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.778)\n**Link type:** shared causal gene (HGNC:4827)\n\n**Proposed mechanism:** HBB variants causing beta-thalassemia (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB variants causing sickle cell disease (HP:0001910) —DISRUPTS→ Hemoglobin synthesis and function (R-HSA-6804049); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing beta-thalassemia (HP:0001910); HBB (HGNC:4827) —LEADS_TO→ HBB variants causing sickle cell disease (HP:0001910); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Anemia (HP:0001943); Hemoglobin synthesis and function (R-HSA-6804049) —LEADS_TO→ Hemolytic anemia (HP:0001893). Mutations in the HBB gene lead to impaired hemoglobin synthesis and function, resulting in reduced oxygen carrying capacity and hemolytic anemia, common to both beta-thalassemia and sickle cell disease.\n\n**How to falsify it:** Identification of individuals with documented beta-thalassemia or sickle cell disease who do not carry any pathogenic variants in the HBB gene. _(variant: rs33950530)_\n\n**Why it matters:** Understanding the shared genetic basis in HBB allows for the exploration of gene therapy and other molecular interventions that could address the underlying cause of both diseases.\n\n---\n\n#### 2. dominant beta-thalassemia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.770)\n**Link type:** shared causal gene (HGNC:4827)\n\n**Proposed mechanism:** HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Heme biosynthesis (REACT:R-HSA-1900756); Heme biosynthesis (REACT:R-HSA-1900756) —LEADS_TO→ Anemia (HP:0001892); HBB (HGNC:4827) —LEADS_TO→ Microcytic anemia (HP:0001920); HBB (HGNC:4827) —LEADS_TO→ Hemolytic anemia (HP:0001878). Pathogenic variants in the HBB gene lead to reduced beta-globin production, impacting heme biosynthesis and resulting in various forms of anemia, including microcytic and hemolytic anemia, which are central to both MONDO:0013517 and dominant beta-thalassemia.\n\n**How to falsify it:** Identification of pathogenic variants in HBB that lead to a gain-of-function or dominant-negative effect, rather than loss-of-function, in both disease contexts would falsify this hypothesis. _(variant: rs74305468 (a known pathogenic variant in HBB, if its frequency is higher than expected for a rare disease allele in relevant populations))_\n\n**Why it matters:** Understanding the shared HBB genetic basis and functional consequences is crucial for developing targeted gene therapies, gene editing strategies, or novel therapeutic approaches aimed at restoring functional hemoglobin production for both MONDO:0013517 and dominant beta-thalassemia.\n\n---\n\n#### 3. hemoglobin M disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.711)\n**Link type:** shared causal gene (HGNC:4827)\n\n**Proposed mechanism:** Pathogenic HBB variant (rsXXXXXXX) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Anemia (HP:0001878); Hemoglobin synthesis and oxygen transport (REACT:R-HSA-1937037) —LEADS_TO→ Methemoglobinemia (HP:0011374). Pathogenic variants in the HBB gene disrupt normal hemoglobin synthesis and oxygen transport, leading to phenotypes of anemia (Disease A, e.g., Beta-thalassemia) and methemoglobinemia (Disease B, e.g., Hemoglobin M disease).\n\n**How to falsify it:** Demonstration that pathogenic variants in HBB associated with MONDO:0013517 (e.g., beta-thalassemia) do not affect the stability or function of the alpha-globin chain, which is critical for methemoglobinemia (MONDO:0018023).\n\n**Why it matters:** Understanding the shared genetic basis in HBB allows for potential therapeutic strategies that target hemoglobin production or function, applicable to both anemia and methemoglobinemia, although specific interventions would need to address the distinct functional consequences of the mutations.\n\n---\n\n#### 4. Heinz body anemia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.669)\n**Link type:** shared causal gene (HGNC:4827)\n\n**Proposed mechanism:** HBB (HGNC:4827) —DISRUPTS→ Hemoglobin synthesis and stability (GO:0001071); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Reduced functional hemoglobin (HP:0001983); Hemoglobin synthesis and stability (GO:0001071) —LEADS_TO→ Heinz bodies (HP:0001890). Mutations in the HBB gene disrupt the normal process of hemoglobin synthesis and stability, leading to reduced functional hemoglobin (MONDO:0013517) and the formation of unstable, aggregated hemoglobin bodies (Heinz bodies in MONDO:0007705).\n\n**How to falsify it:** Identification of pathogenic variants exclusively in genes other than HBB, HBA1, or HBA2 as the sole cause for either disease, or demonstration that the HBB variants associated with one disease have no effect on the other phenotype. _(variant: rs121912976)_\n\n**Why it matters:** Understanding the shared genetic basis in HBB allows for potential development of therapies that target the underlying molecular defect in hemoglobin production or stability, applicable to both conditions.\n\n---\n\n#### 5. erythrocytosis, familial, 6  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.668)\n**Link type:** shared causal gene (HGNC:4827)\n\n**Proposed mechanism:** HBB Loss-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —DECREASES→ Beta-globin synthesis (null); Beta-globin synthesis (null) —LEADS_TO→ Anemia (HP:0001427); HBB Gain-of-function variant (null) —DISRUPTS→ HBB (HGNC:4827); HBB (HGNC:4827) —INCREASES→ Hemoglobin-oxygen binding (null); Hemoglobin-oxygen binding (null) —LEADS_TO→ Erythrocytosis (HP:0001904). Both Beta-thalassemia (Disease A) and Familial erythrocytosis, 6 (Disease B) are caused by mutations in the HBB gene (HGNC:4827). In Beta-thalassemia, loss-of-function or haploinsufficient variants lead to reduced production of beta-globin chains, disrupting beta-globin synthesis and causing anemia. In contrast, gain-of-function variants in HBB cause Familial erythrocytosis, 6 by altering hemoglobin's oxygen binding properties, leading to increased red blood cell production (erythrocytosis).\n\n**How to falsify it:** Discovery of mutations in distinct, unrelated genes that are solely responsible for each respective disease phenotype, with no overlap in the HBB gene. _(variant: null)_\n\n**Why it matters:** Understanding the opposing functional consequences of HBB mutations (haploinsufficiency leading to anemia vs. gain-of-function leading to erythrocytosis) can inform targeted therapeutic strategies for both conditions, potentially involving gene therapy or small molecule modulators aimed at restoring normal beta-globin function or hemoglobin-oxygen affinity.\n\n---\n\n#### 6. hemoglobin H disease  —  Tier 3 — Moderate / Emerging  (fitness 0.553)\n**Link type:** shared pathway (Reactome:R-HSA-1237044, Reactome:R-HSA-9707564)\n\n**Proposed mechanism:** HBB (HGNC:4827) —DISRUPTS→ Globin chain synthesis; HBA1 (HGNC:4820) —DISRUPTS→ Globin chain synthesis; HBA2 (HGNC:4821) —DISRUPTS→ Globin chain synthesis; Globin chain synthesis —DECREASES→ Hemoglobin assembly; Hemoglobin assembly —LEADS_TO→ Anemia (HP:0001878); Hemoglobin assembly —LEADS_TO→ Splenomegaly (HP:0001653). Mutations in HBB, HBA1, or HBA2 disrupt globin chain synthesis, leading to impaired hemoglobin assembly, which in turn causes anemia and splenomegaly.\n\n**How to falsify it:** Identification of individuals with pathogenic variants in HBB, HBA1, or HBA2 that result in normal hemoglobin levels and do not manifest anemia or splenomegaly would falsify this hypothesis. _(variant: rs748175744 (common variant in HBB associated with alpha-thalassemia trait, but not typically causing severe disease))_\n\n**Why it matters:** Understanding the shared molecular basis of these hemoglobinopathies can inform the development of targeted therapies for anemia and related complications, potentially leveraging gene therapy or precision medicine approaches for hemoglobin disorders.\n\n---\n\n#### 7. alpha thalassemia spectrum  —  Tier 3 — Moderate / Emerging  (fitness 0.539)\n**Link type:** shared pathway (Reactome:R-HSA-1237044, Reactome:R-HSA-9707564)\n\n**Proposed mechanism:** HBB (HGNC:4827) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA1 (HGNC:4824) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); HBA2 (HGNC:4825) —DISRUPTS→ alpha-globin synthesis (REACT:R-HSA-194400); alpha-globin synthesis (REACT:R-HSA-194400) —LEADS_TO→ hemoglobin synthesis (REACT:R-HSA-194400); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Anemia (HP:0001258); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Microcytic anemia (HP:0001904); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hemolytic anemia (HP:0001874); hemoglobin synthesis (REACT:R-HSA-194400) —LEADS_TO→ Hydrops fetalis (HP:00114953). Mutations in HBB, HBA1, or HBA2 disrupt alpha-globin synthesis, which is a critical step in the overall hemoglobin synthesis pathway. This disruption leads to various forms of anemia, including microcytic, hemolytic anemia, and in severe cases, hydrops fetalis.\n\n**How to falsify it:** Discovery of a pathogenic variant in HBB, HBA1, or HBA2 with a consistent loss-of-function effect in both diseases, but with significantly different downstream phenotypic consequences that cannot be explained by allelic heterogeneity. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared mechanism of alpha-globin chain deficiency and its impact on hemoglobin synthesis can inform therapeutic strategies for both diseases, potentially including gene therapy or strategies to upregulate fetal hemoglobin (HbF) which can compensate for defective adult hemoglobin.\n\n---\n\n#### 8. erythrocytosis, familial, 7  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-1237044, Reactome:R-HSA-9707564)\n\n**Proposed mechanism:** HBB pathogenic variant causing haploinsufficiency (None) —DISRUPTS→ HBB (HGNC:1003); HBB (HGNC:1003) —DECREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ anemia (HP:0001903); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBB (HGNC:1003); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA1 (HGNC:1000); HBB, HBA1, or HBA2 pathogenic variant causing gain-of-function (None) —DISRUPTS→ HBA2 (HGNC:1001); HBB (HGNC:1003) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA1 (HGNC:1000) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); HBA2 (HGNC:1001) —INCREASES→ hemoglobin production (REACT:R-HSA-70319); hemoglobin production (REACT:R-HSA-70319) —LEADS_TO→ erythrocytosis (HP:0001894). Pathogenic variants in HBB, HBA1, or HBA2 can lead to two distinct disease phenotypes. Haploinsufficiency (e.g., in beta-thalassemia) reduces functional hemoglobin production, causing anemia. Conversely, gain-of-function variants in these same genes can increase hemoglobin production or stability, leading to erythrocytosis.\n\n**How to falsify it:** Identification of pathogenic variants in HBB, HBA1, or HBA2 that cause haploinsufficiency in patients with familial erythrocytosis, or gain-of-function variants in patients with anemia. Alternatively, if the causal genes for the two diseases are found to be entirely distinct and non-interacting pathways. _(variant: Presence of a common (AF > 0.01) pathogenic variant in HBB, HBA1, or HBA2 in gnomAD that is associated with one disease phenotype but not the other.)_\n\n**Why it matters:** Understanding the opposing functional consequences of mutations in the same set of globin genes can inform targeted therapeutic strategies, such as gene therapy or small molecule modulators, for both anemia and erythrocytosis.\n\n---\n\n#### 9. methemoglobinemia, alpha type  —  Tier 3 — Moderate / Emerging  (fitness 0.427)\n**Link type:** shared pathway (Reactome:R-HSA-1237044, Reactome:R-HSA-9707564)\n\n**Proposed mechanism:** HBB (HGNC:4827) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); hemoglobin production (REACT:R-HSA-192751) —DECREASES→ abnormal hemoglobin (CHEBI:57722); abnormal hemoglobin (CHEBI:57722) —LEADS_TO→ beta-thalassemia (MONDO:0013517); HBA1 (HGNC:4813) —DISRUPTS→ hemoglobin production (REACT:R-HSA-192751); HBA1 (HGNC:4813) —INCREASES→ oxidized heme iron (CHEBI:57722); oxidized heme iron (CHEBI:57722) —LEADS_TO→ methemoglobinemia, alpha type (MONDO:0020835). Mutations in HBB disrupt normal hemoglobin production, leading to beta-thalassemia. Specific mutations in HBA1 can either disrupt overall hemoglobin production or lead to a dysfunctional alpha-globin chain that promotes the oxidation of heme iron, causing alpha-type methemoglobinemia. Both pathways converge on the process of hemoglobin production and its downstream consequences on oxygen transport and red blood cell function.\n\n**How to falsify it:** Identification of a common pathogenic variant in HBB and HBA1 with consistent functional consequences (e.g., both causing reduced protein stability or function) that explains both phenotypes would strengthen this hypothesis. Conversely, finding that the mutations in HBB and HBA1 have completely distinct and unrelated molecular effects, or that variants in HBA1 associated with methemoglobinemia do not impact overall hemoglobin assembly, would weaken this hypothesis. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared pathway of hemoglobin production allows for potential therapeutic strategies that target common downstream effects, such as strategies to enhance fetal hemoglobin production or improve oxygen delivery, which could be beneficial for both beta-thalassemia and methemoglobinemia.\n\n---\n\n#### 10. HBA2-related alpha thalassemia spectrum  —  Tier 3 — Moderate / Emerging  (fitness 0.361)\n**Link type:** shared pathway (Reactome:R-HSA-1237044, Reactome:R-HSA-9707564)\n\n**Proposed mechanism:** HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ alpha thalassemia (MONDO:0100562); HBB pathogenic variant (null) —DISRUPTS→ HBB (HGNC:4809); HBB (HGNC:4809) —DISRUPTS→ Hemoglobin synthesis (GO:0001001); Hemoglobin synthesis (GO:0001001) —LEADS_TO→ Hemoglobinopathy (HP:0001900). Pathogenic variants in HBB can lead to alpha thalassemia (MONDO:0100562) by disrupting hemoglobin synthesis. While HBA2 is the primary gene for alpha thalassemia, mutations in HBB can also result in similar phenotypes by affecting the overall balance of globin chains and thus hemoglobin function, leading to a broader hemoglobinopathy (HP:0001900).\n\n**How to falsify it:** If a significant number of individuals with MONDO:0013517 (Hemoglobinopathy) are found to have pathogenic variants exclusively in genes other than HBB or HBA2, and these variants do not impact hemoglobin synthesis or red blood cell function, this hypothesis would be falsified. _(variant: rs71750133 (a known pathogenic variant in HBB associated with beta-thalassemia, if found at high frequency in a population without the phenotype of MONDO:0013517, it could suggest a different mechanism or incomplete penetrance))_\n\n**Why it matters:** Understanding the overlap in the hemoglobin synthesis pathway between HBB and HBA2-related disorders could lead to more targeted therapeutic strategies for various hemoglobinopathies, potentially involving gene therapy or small molecule modulators that restore globin chain balance.\n\n---"
+}

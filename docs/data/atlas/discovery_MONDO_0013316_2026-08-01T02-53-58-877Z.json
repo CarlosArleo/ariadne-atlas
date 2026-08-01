@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0013316",
+    "name": "MONDO:0013316"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0032940",
+      "diseaseBName": "retinitis pigmentosa 88",
+      "fitness": 0.7884,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "RP1L1 (HGNC:15946) —LEADS_TO→ Retinal degeneration (HP:0000541); Retinal degeneration (HP:0000541) —LEADS_TO→ Photoreceptor dysfunction (HP:0011670). Loss-of-function mutations in RP1L1 lead to photoreceptor dysfunction and subsequent retinal degeneration, manifesting as both diseases.",
+      "mechanism_narrative": "RP1L1 (HGNC:15946) —LEADS_TO→ Retinal degeneration (HP:0000541); Retinal degeneration (HP:0000541) —LEADS_TO→ Photoreceptor dysfunction (HP:0011670). Loss-of-function mutations in RP1L1 lead to photoreceptor dysfunction and subsequent retinal degeneration, manifesting as both diseases.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in RP1L1 with a gain-of-function mechanism or a variant with a population frequency > 1% in gnomAD.",
+        "gnomad_variant": "rs74315372"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:15946"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0032940",
+        "diseaseBName": "retinitis pigmentosa 88",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:15946"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7884,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "RP1L1 (HGNC:15946) —LEADS_TO→ Retinal degeneration (HP:0000541); Retinal degeneration (HP:0000541) —LEADS_TO→ Photoreceptor dysfunction (HP:0011670). Loss-of-function mutations in RP1L1 lead to photoreceptor dysfunction and subsequent retinal degeneration, manifesting as both diseases.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in RP1L1 with a gain-of-function mechanism or a variant with a population frequency > 1% in gnomAD.",
+          "gnomad_variant": "rs74315372"
+        },
+        "translational": "Understanding the shared role of RP1L1 in these retinal dystrophies may enable the development of targeted therapies for both conditions."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T02:53:58.877Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013316 (MONDO:0013316)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | retinitis pigmentosa 88 (MONDO:0032940) | shared gene | Tier 1 | 0.788 | HGNC:15946 |\n\n### CANDIDATE DETAIL\n#### 1. retinitis pigmentosa 88  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.788)\n**Link type:** shared causal gene (HGNC:15946)\n\n**Proposed mechanism:** RP1L1 (HGNC:15946) —LEADS_TO→ Retinal degeneration (HP:0000541); Retinal degeneration (HP:0000541) —LEADS_TO→ Photoreceptor dysfunction (HP:0011670). Loss-of-function mutations in RP1L1 lead to photoreceptor dysfunction and subsequent retinal degeneration, manifesting as both diseases.\n\n**How to falsify it:** Identification of a pathogenic variant in RP1L1 with a gain-of-function mechanism or a variant with a population frequency > 1% in gnomAD. _(variant: rs74315372)_\n\n**Why it matters:** Understanding the shared role of RP1L1 in these retinal dystrophies may enable the development of targeted therapies for both conditions.\n\n---"
+}

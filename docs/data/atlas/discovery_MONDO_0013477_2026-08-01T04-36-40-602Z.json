@@ -1,0 +1,81 @@
+{
+  "seed": {
+    "id": "MONDO:0013477",
+    "name": "MONDO:0013477"
+  },
+  "geneCandidates": 2,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013147",
+      "diseaseBName": "dilated cardiomyopathy 1CC",
+      "fitness": 0.7652,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "NEXN (HGNC:29557) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0007010); Actin cytoskeleton organization and dynamics (GO:0007010) —LEADS_TO→ Regulation of cardiac muscle contraction (GO:0060048); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Dilated cardiomyopathy (HP:0001643); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Cardiomyopathy, dilated, 1CC (MONDO:0013147). Loss-of-function mutations in NEXN disrupt actin cytoskeleton organization and dynamics, which in turn impairs the regulation of cardiac muscle contraction, leading to both dilated cardiomyopathy and the specific phenotype of cardiomyopathy, dilated, 1CC.",
+      "mechanism_narrative": "NEXN (HGNC:29557) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0007010); Actin cytoskeleton organization and dynamics (GO:0007010) —LEADS_TO→ Regulation of cardiac muscle contraction (GO:0060048); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Dilated cardiomyopathy (HP:0001643); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Cardiomyopathy, dilated, 1CC (MONDO:0013147). Loss-of-function mutations in NEXN disrupt actin cytoskeleton organization and dynamics, which in turn impairs the regulation of cardiac muscle contraction, leading to both dilated cardiomyopathy and the specific phenotype of cardiomyopathy, dilated, 1CC.",
+      "falsification": {
+        "text": "The identification of a pathogenic gain-of-function mutation in NEXN that causes one disease while loss-of-function causes the other would falsify this hypothesis. Alternatively, if pathogenic variants in NEXN are found at a significantly high frequency in gnomAD for either disease, it would suggest a non-causal role or incomplete penetrance.",
+        "gnomad_variant": "ExAC:rs113879537"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29557"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013147",
+        "diseaseBName": "dilated cardiomyopathy 1CC",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29557"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7652,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "NEXN (HGNC:29557) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0007010); Actin cytoskeleton organization and dynamics (GO:0007010) —LEADS_TO→ Regulation of cardiac muscle contraction (GO:0060048); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Dilated cardiomyopathy (HP:0001643); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Cardiomyopathy, dilated, 1CC (MONDO:0013147). Loss-of-function mutations in NEXN disrupt actin cytoskeleton organization and dynamics, which in turn impairs the regulation of cardiac muscle contraction, leading to both dilated cardiomyopathy and the specific phenotype of cardiomyopathy, dilated, 1CC.",
+        "falsification": {
+          "text": "The identification of a pathogenic gain-of-function mutation in NEXN that causes one disease while loss-of-function causes the other would falsify this hypothesis. Alternatively, if pathogenic variants in NEXN are found at a significantly high frequency in gnomAD for either disease, it would suggest a non-causal role or incomplete penetrance.",
+          "gnomad_variant": "ExAC:rs113879537"
+        },
+        "translational": "Understanding the shared mechanism involving NEXN in actin dynamics and cardiac contractility could lead to therapeutic strategies targeting cytoskeletal integrity or contractility regulation for both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0979243",
+      "diseaseBName": "cardiomyopathy, dilated, 2M",
+      "fitness": 0.6999,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "NEXN (HGNC:29557) —DISRUPTS→ Regulation of actin cytoskeleton organization (GO:0030029); Regulation of actin cytoskeleton organization (GO:0030029) —LEADS_TO→ Cardiomyocyte differentiation (GO:0048738); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Abnormal left ventricular morphology (HP:0011675); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in NEXN disrupt the regulation of actin cytoskeleton organization, which in turn impairs cardiomyocyte differentiation, leading to both abnormal left ventricular morphology (characteristic of MONDO:0013477) and general cardiomyopathy (characteristic of MONDO:0979243).",
+      "mechanism_narrative": "NEXN (HGNC:29557) —DISRUPTS→ Regulation of actin cytoskeleton organization (GO:0030029); Regulation of actin cytoskeleton organization (GO:0030029) —LEADS_TO→ Cardiomyocyte differentiation (GO:0048738); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Abnormal left ventricular morphology (HP:0011675); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in NEXN disrupt the regulation of actin cytoskeleton organization, which in turn impairs cardiomyocyte differentiation, leading to both abnormal left ventricular morphology (characteristic of MONDO:0013477) and general cardiomyopathy (characteristic of MONDO:0979243).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in NEXN associated with loss-of-function effects in both MONDO:0013477 and MONDO:0979243 would support this hypothesis. Conversely, if MONDO:0013477 is found to be caused by variants in a completely distinct gene with no overlap in downstream pathways or if the functional consequence of NEXN variants differs between the two diseases, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome or genome sequencing studies showing a lack of common loss-of-function variants in NEXN in the general population, or conversely, identifying specific pathogenic variants in affected individuals."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29557"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0979243",
+        "diseaseBName": "cardiomyopathy, dilated, 2M",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29557"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6999,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "NEXN (HGNC:29557) —DISRUPTS→ Regulation of actin cytoskeleton organization (GO:0030029); Regulation of actin cytoskeleton organization (GO:0030029) —LEADS_TO→ Cardiomyocyte differentiation (GO:0048738); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Abnormal left ventricular morphology (HP:0011675); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in NEXN disrupt the regulation of actin cytoskeleton organization, which in turn impairs cardiomyocyte differentiation, leading to both abnormal left ventricular morphology (characteristic of MONDO:0013477) and general cardiomyopathy (characteristic of MONDO:0979243).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in NEXN associated with loss-of-function effects in both MONDO:0013477 and MONDO:0979243 would support this hypothesis. Conversely, if MONDO:0013477 is found to be caused by variants in a completely distinct gene with no overlap in downstream pathways or if the functional consequence of NEXN variants differs between the two diseases, this hypothesis would be falsified.",
+          "gnomad_variant": "Exome or genome sequencing studies showing a lack of common loss-of-function variants in NEXN in the general population, or conversely, identifying specific pathogenic variants in affected individuals."
+        },
+        "translational": "Understanding the shared role of NEXN in these two distinct cardiac conditions could enable the development of targeted therapies that address the underlying defect in actin cytoskeleton regulation and cardiomyocyte differentiation, potentially benefiting patients with both diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T04:36:40.602Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013477 (MONDO:0013477)\n**Generated:** 2026-08-01\n**Candidates screened:** 2 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | dilated cardiomyopathy 1CC (MONDO:0013147) | shared gene | Tier 1 | 0.765 | HGNC:29557 |\n| 2 | cardiomyopathy, dilated, 2M (MONDO:0979243) | shared gene | Tier 1 | 0.700 | HGNC:29557 |\n\n### CANDIDATE DETAIL\n#### 1. dilated cardiomyopathy 1CC  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.765)\n**Link type:** shared causal gene (HGNC:29557)\n\n**Proposed mechanism:** NEXN (HGNC:29557) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0007010); Actin cytoskeleton organization and dynamics (GO:0007010) —LEADS_TO→ Regulation of cardiac muscle contraction (GO:0060048); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Dilated cardiomyopathy (HP:0001643); Regulation of cardiac muscle contraction (GO:0060048) —LEADS_TO→ Cardiomyopathy, dilated, 1CC (MONDO:0013147). Loss-of-function mutations in NEXN disrupt actin cytoskeleton organization and dynamics, which in turn impairs the regulation of cardiac muscle contraction, leading to both dilated cardiomyopathy and the specific phenotype of cardiomyopathy, dilated, 1CC.\n\n**How to falsify it:** The identification of a pathogenic gain-of-function mutation in NEXN that causes one disease while loss-of-function causes the other would falsify this hypothesis. Alternatively, if pathogenic variants in NEXN are found at a significantly high frequency in gnomAD for either disease, it would suggest a non-causal role or incomplete penetrance. _(variant: ExAC:rs113879537)_\n\n**Why it matters:** Understanding the shared mechanism involving NEXN in actin dynamics and cardiac contractility could lead to therapeutic strategies targeting cytoskeletal integrity or contractility regulation for both conditions.\n\n---\n\n#### 2. cardiomyopathy, dilated, 2M  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.700)\n**Link type:** shared causal gene (HGNC:29557)\n\n**Proposed mechanism:** NEXN (HGNC:29557) —DISRUPTS→ Regulation of actin cytoskeleton organization (GO:0030029); Regulation of actin cytoskeleton organization (GO:0030029) —LEADS_TO→ Cardiomyocyte differentiation (GO:0048738); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Abnormal left ventricular morphology (HP:0011675); Cardiomyocyte differentiation (GO:0048738) —LEADS_TO→ Cardiomyopathy (HP:0001638). Loss-of-function mutations in NEXN disrupt the regulation of actin cytoskeleton organization, which in turn impairs cardiomyocyte differentiation, leading to both abnormal left ventricular morphology (characteristic of MONDO:0013477) and general cardiomyopathy (characteristic of MONDO:0979243).\n\n**How to falsify it:** The identification of pathogenic variants in NEXN associated with loss-of-function effects in both MONDO:0013477 and MONDO:0979243 would support this hypothesis. Conversely, if MONDO:0013477 is found to be caused by variants in a completely distinct gene with no overlap in downstream pathways or if the functional consequence of NEXN variants differs between the two diseases, this hypothesis would be falsified. _(variant: Exome or genome sequencing studies showing a lack of common loss-of-function variants in NEXN in the general population, or conversely, identifying specific pathogenic variants in affected individuals.)_\n\n**Why it matters:** Understanding the shared role of NEXN in these two distinct cardiac conditions could enable the development of targeted therapies that address the underlying defect in actin cytoskeleton regulation and cardiomyocyte differentiation, potentially benefiting patients with both diseases.\n\n---"
+}

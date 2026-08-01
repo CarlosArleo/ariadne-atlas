@@ -1,0 +1,495 @@
+{
+  "seed": {
+    "id": "MONDO:0013408",
+    "name": "MONDO:0013408"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 11,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010820",
+      "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+      "fitness": 0.5427,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Apoptotic Signaling Pathway (GO:0006915); Apoptotic Signaling Pathway (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0012531); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy and Protein Degradation (GO:0000017); Mitophagy and Protein Degradation (GO:0000017) —LEADS_TO→ Dopaminergic Neuron Loss (HP:0001247); Neuroinflammation (HP:0012531) —INCREASES→ Dopaminergic Neuron Loss (HP:0001247); Dopaminergic Neuron Loss (HP:0001247) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in FADD disrupt the apoptotic signaling pathway, leading to neuroinflammation. Concurrently, loss-of-function mutations in PRKN disrupt mitophagy and protein degradation processes. The resulting neuroinflammation and impaired protein/organelle clearance contribute to dopaminergic neuron loss, ultimately manifesting as Parkinsonism.",
+      "mechanism_narrative": "FADD (HGNC:3794) —DISRUPTS→ Apoptotic Signaling Pathway (GO:0006915); Apoptotic Signaling Pathway (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0012531); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy and Protein Degradation (GO:0000017); Mitophagy and Protein Degradation (GO:0000017) —LEADS_TO→ Dopaminergic Neuron Loss (HP:0001247); Neuroinflammation (HP:0012531) —INCREASES→ Dopaminergic Neuron Loss (HP:0001247); Dopaminergic Neuron Loss (HP:0001247) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in FADD disrupt the apoptotic signaling pathway, leading to neuroinflammation. Concurrently, loss-of-function mutations in PRKN disrupt mitophagy and protein degradation processes. The resulting neuroinflammation and impaired protein/organelle clearance contribute to dopaminergic neuron loss, ultimately manifesting as Parkinsonism.",
+      "falsification": {
+        "text": "If genetic analysis reveals that patients with MONDO:0013408 (FADD-related) do not exhibit elevated markers of neuroinflammation, or if patients with autosomal recessive juvenile Parkinson disease 2 (PRKN-related) do not show impaired mitophagy or protein degradation, this hypothesis would be falsified.",
+        "gnomad_variant": "If common variants (AF > 0.01) in FADD or PRKN are found to be associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010820",
+        "diseaseBName": "autosomal recessive juvenile Parkinson disease 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26
+        },
+        "fitness": 0.5427,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Apoptotic Signaling Pathway (GO:0006915); Apoptotic Signaling Pathway (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0012531); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy and Protein Degradation (GO:0000017); Mitophagy and Protein Degradation (GO:0000017) —LEADS_TO→ Dopaminergic Neuron Loss (HP:0001247); Neuroinflammation (HP:0012531) —INCREASES→ Dopaminergic Neuron Loss (HP:0001247); Dopaminergic Neuron Loss (HP:0001247) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in FADD disrupt the apoptotic signaling pathway, leading to neuroinflammation. Concurrently, loss-of-function mutations in PRKN disrupt mitophagy and protein degradation processes. The resulting neuroinflammation and impaired protein/organelle clearance contribute to dopaminergic neuron loss, ultimately manifesting as Parkinsonism.",
+        "falsification": {
+          "text": "If genetic analysis reveals that patients with MONDO:0013408 (FADD-related) do not exhibit elevated markers of neuroinflammation, or if patients with autosomal recessive juvenile Parkinson disease 2 (PRKN-related) do not show impaired mitophagy or protein degradation, this hypothesis would be falsified.",
+          "gnomad_variant": "If common variants (AF > 0.01) in FADD or PRKN are found to be associated with either disease phenotype."
+        },
+        "translational": "Understanding this mechanistic overlap could lead to therapeutic strategies targeting common downstream pathways, such as neuroinflammation or protein clearance mechanisms, to treat both FADD-related disorders and PRKN-related Parkinsonism."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0007256",
+      "diseaseBName": "hepatocellular carcinoma",
+      "fitness": 0.498,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP41); Wnt signaling pathway (WP:WP41) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP41); AXIN1 (HGNC:1305) —DISRUPTS→ Wnt signaling pathway (WP:WP41); TP53 (HGNC:11998) —DISRUPTS→ Wnt signaling pathway (WP:WP41); FADD (HGNC:3794) —DISRUPTS→ Wnt signaling pathway (WP:WP41); CASP8 (HGNC:1499) —DISRUPTS→ Wnt signaling pathway (WP:WP41); MET (HGNC:7419) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PIK3CA (HGNC:9034) —DISRUPTS→ Wnt signaling pathway (WP:WP41); IGF2R (HGNC:5418) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PDGFRL (HGNC:8777) —DISRUPTS→ Wnt signaling pathway (WP:WP41). Gain-of-function mutations in CTNNB1, a central component of the Wnt signaling pathway, lead to its aberrant activation. This dysregulation promotes abnormal cell proliferation, a hallmark of MONDO:0013408. Similarly, hepatocellular carcinoma (MONDO:0007256) can arise from mutations in CTNNB1 and other genes (APC, AXIN1, TP53, FADD, CASP8, MET, PIK3CA, IGF2R, PDGFRL) that converge on the dysregulation of the Wnt signaling pathway, ultimately leading to uncontrolled cell growth and tumor formation.",
+      "mechanism_narrative": "CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP41); Wnt signaling pathway (WP:WP41) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP41); AXIN1 (HGNC:1305) —DISRUPTS→ Wnt signaling pathway (WP:WP41); TP53 (HGNC:11998) —DISRUPTS→ Wnt signaling pathway (WP:WP41); FADD (HGNC:3794) —DISRUPTS→ Wnt signaling pathway (WP:WP41); CASP8 (HGNC:1499) —DISRUPTS→ Wnt signaling pathway (WP:WP41); MET (HGNC:7419) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PIK3CA (HGNC:9034) —DISRUPTS→ Wnt signaling pathway (WP:WP41); IGF2R (HGNC:5418) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PDGFRL (HGNC:8777) —DISRUPTS→ Wnt signaling pathway (WP:WP41). Gain-of-function mutations in CTNNB1, a central component of the Wnt signaling pathway, lead to its aberrant activation. This dysregulation promotes abnormal cell proliferation, a hallmark of MONDO:0013408. Similarly, hepatocellular carcinoma (MONDO:0007256) can arise from mutations in CTNNB1 and other genes (APC, AXIN1, TP53, FADD, CASP8, MET, PIK3CA, IGF2R, PDGFRL) that converge on the dysregulation of the Wnt signaling pathway, ultimately leading to uncontrolled cell growth and tumor formation.",
+      "falsification": {
+        "text": "Demonstration that mutations in CTNNB1 or other listed genes do not lead to activation of the Wnt signaling pathway in the context of either disease, or that the Wnt pathway is not implicated in the pathogenesis of MONDO:0013408.",
+        "gnomad_variant": "rs137852685"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482",
+        "Reactome:R-HSA-69416",
+        "Reactome:R-HSA-140534",
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-3371378"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-69416": 11,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-2562578": 10,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5357905": 48,
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-9013957": 6,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-9693928": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0007256",
+        "diseaseBName": "hepatocellular carcinoma",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482",
+          "Reactome:R-HSA-69416",
+          "Reactome:R-HSA-140534",
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-3371378"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-69416": 11,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-2562578": 10,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5357905": 48,
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-9013957": 6,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-9693928": 5
+        },
+        "fitness": 0.498,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP41); Wnt signaling pathway (WP:WP41) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP41); AXIN1 (HGNC:1305) —DISRUPTS→ Wnt signaling pathway (WP:WP41); TP53 (HGNC:11998) —DISRUPTS→ Wnt signaling pathway (WP:WP41); FADD (HGNC:3794) —DISRUPTS→ Wnt signaling pathway (WP:WP41); CASP8 (HGNC:1499) —DISRUPTS→ Wnt signaling pathway (WP:WP41); MET (HGNC:7419) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PIK3CA (HGNC:9034) —DISRUPTS→ Wnt signaling pathway (WP:WP41); IGF2R (HGNC:5418) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PDGFRL (HGNC:8777) —DISRUPTS→ Wnt signaling pathway (WP:WP41). Gain-of-function mutations in CTNNB1, a central component of the Wnt signaling pathway, lead to its aberrant activation. This dysregulation promotes abnormal cell proliferation, a hallmark of MONDO:0013408. Similarly, hepatocellular carcinoma (MONDO:0007256) can arise from mutations in CTNNB1 and other genes (APC, AXIN1, TP53, FADD, CASP8, MET, PIK3CA, IGF2R, PDGFRL) that converge on the dysregulation of the Wnt signaling pathway, ultimately leading to uncontrolled cell growth and tumor formation.",
+        "falsification": {
+          "text": "Demonstration that mutations in CTNNB1 or other listed genes do not lead to activation of the Wnt signaling pathway in the context of either disease, or that the Wnt pathway is not implicated in the pathogenesis of MONDO:0013408.",
+          "gnomad_variant": "rs137852685"
+        },
+        "translational": "Targeting the Wnt signaling pathway, particularly CTNNB1, holds therapeutic potential for both MONDO:0013408 and hepatocellular carcinoma."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011804",
+      "diseaseBName": "autoimmune lymphoproliferative syndrome type 2B",
+      "fitness": 0.4394,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FADD (HGNC:3794) —BINDS→ Apoptosome formation and activation (GO:0006915); CASP8 (HGNC:1509) —BINDS→ Apoptosome formation and activation (GO:0006915); FADD (HGNC:3794) —LEADS_TO→ Lymphoproliferation (HP:0002711); FADD (HGNC:3794) —LEADS_TO→ Autoimmunity (HP:0002664); CASP8 (HGNC:1509) —LEADS_TO→ Lymphoproliferation (HP:0002711); CASP8 (HGNC:1509) —LEADS_TO→ Autoimmunity (HP:0002664); Apoptosome formation and activation (GO:0006915) —DISRUPTS→ Immune dysregulation (HP:0002705). Disruption of FADD and CASP8 function impairs apoptosome formation and subsequent apoptotic signaling, leading to the accumulation of self-reactive lymphocytes and immune dysregulation characteristic of both diseases.",
+      "mechanism_narrative": "FADD (HGNC:3794) —BINDS→ Apoptosome formation and activation (GO:0006915); CASP8 (HGNC:1509) —BINDS→ Apoptosome formation and activation (GO:0006915); FADD (HGNC:3794) —LEADS_TO→ Lymphoproliferation (HP:0002711); FADD (HGNC:3794) —LEADS_TO→ Autoimmunity (HP:0002664); CASP8 (HGNC:1509) —LEADS_TO→ Lymphoproliferation (HP:0002711); CASP8 (HGNC:1509) —LEADS_TO→ Autoimmunity (HP:0002664); Apoptosome formation and activation (GO:0006915) —DISRUPTS→ Immune dysregulation (HP:0002705). Disruption of FADD and CASP8 function impairs apoptosome formation and subsequent apoptotic signaling, leading to the accumulation of self-reactive lymphocytes and immune dysregulation characteristic of both diseases.",
+      "falsification": {
+        "text": "The absence of mutations in FADD or CASP8 in individuals with MONDO:0013408, or the identification of a distinct, non-apoptotic pathway as the primary driver of the phenotype in MONDO:0013408, would falsify this hypothesis. Furthermore, if genetic studies show that FADD/CASP8 mutations in MONDO:0013408 lead to gain-of-function or dominant-negative effects on apoptosis, contrary to the proposed haploinsufficiency model, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in FADD or CASP8 associated with these phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482",
+        "Reactome:R-HSA-69416",
+        "Reactome:R-HSA-140534",
+        "Reactome:R-HSA-2562578",
+        "Reactome:R-HSA-3371378"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-69416": 11,
+        "Reactome:R-HSA-140534": 16,
+        "Reactome:R-HSA-2562578": 10,
+        "Reactome:R-HSA-3371378": 11,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5218900": 11,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5357905": 48,
+        "Reactome:R-HSA-75157": 5,
+        "Reactome:R-HSA-75158": 8,
+        "Reactome:R-HSA-9013957": 6,
+        "Reactome:R-HSA-933543": 13,
+        "Reactome:R-HSA-9693928": 5
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011804",
+        "diseaseBName": "autoimmune lymphoproliferative syndrome type 2B",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482",
+          "Reactome:R-HSA-69416",
+          "Reactome:R-HSA-140534",
+          "Reactome:R-HSA-2562578",
+          "Reactome:R-HSA-3371378"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-69416": 11,
+          "Reactome:R-HSA-140534": 16,
+          "Reactome:R-HSA-2562578": 10,
+          "Reactome:R-HSA-3371378": 11,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5218900": 11,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5357905": 48,
+          "Reactome:R-HSA-75157": 5,
+          "Reactome:R-HSA-75158": 8,
+          "Reactome:R-HSA-9013957": 6,
+          "Reactome:R-HSA-933543": 13,
+          "Reactome:R-HSA-9693928": 5
+        },
+        "fitness": 0.4394,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FADD (HGNC:3794) —BINDS→ Apoptosome formation and activation (GO:0006915); CASP8 (HGNC:1509) —BINDS→ Apoptosome formation and activation (GO:0006915); FADD (HGNC:3794) —LEADS_TO→ Lymphoproliferation (HP:0002711); FADD (HGNC:3794) —LEADS_TO→ Autoimmunity (HP:0002664); CASP8 (HGNC:1509) —LEADS_TO→ Lymphoproliferation (HP:0002711); CASP8 (HGNC:1509) —LEADS_TO→ Autoimmunity (HP:0002664); Apoptosome formation and activation (GO:0006915) —DISRUPTS→ Immune dysregulation (HP:0002705). Disruption of FADD and CASP8 function impairs apoptosome formation and subsequent apoptotic signaling, leading to the accumulation of self-reactive lymphocytes and immune dysregulation characteristic of both diseases.",
+        "falsification": {
+          "text": "The absence of mutations in FADD or CASP8 in individuals with MONDO:0013408, or the identification of a distinct, non-apoptotic pathway as the primary driver of the phenotype in MONDO:0013408, would falsify this hypothesis. Furthermore, if genetic studies show that FADD/CASP8 mutations in MONDO:0013408 lead to gain-of-function or dominant-negative effects on apoptosis, contrary to the proposed haploinsufficiency model, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in FADD or CASP8 associated with these phenotypes."
+        },
+        "translational": "Understanding the shared apoptotic defect could lead to therapeutic strategies targeting apoptosis regulators or downstream consequences of impaired cell death, potentially benefiting patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010385",
+      "diseaseBName": "X-linked lymphoproliferative disease due to XIAP deficiency",
+      "fitness": 0.4341,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "XIAP (HGNC:12706) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormal B cell apoptosis (HP:0011070); FADD (HGNC:3799) —BINDS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002746). Loss-of-function mutations in XIAP (XLP2) directly impair the apoptotic signaling pathway. While FADD (causative for XLP1) is a critical component of this same pathway, its disruption also leads to aberrant apoptosis, thus converging on the shared pathway and resulting in overlapping phenotypes such as abnormal B cell apoptosis and lymphadenopathy.",
+      "mechanism_narrative": "XIAP (HGNC:12706) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormal B cell apoptosis (HP:0011070); FADD (HGNC:3799) —BINDS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002746). Loss-of-function mutations in XIAP (XLP2) directly impair the apoptotic signaling pathway. While FADD (causative for XLP1) is a critical component of this same pathway, its disruption also leads to aberrant apoptosis, thus converging on the shared pathway and resulting in overlapping phenotypes such as abnormal B cell apoptosis and lymphadenopathy.",
+      "falsification": {
+        "text": "Demonstration that XIAP and FADD mutations lead to completely independent and non-overlapping downstream cellular pathways that do not converge on apoptosis regulation.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5357786": 25,
+        "Reactome:R-HSA-5357905": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010385",
+        "diseaseBName": "X-linked lymphoproliferative disease due to XIAP deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5357786": 25,
+          "Reactome:R-HSA-5357905": 48
+        },
+        "fitness": 0.4341,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "XIAP (HGNC:12706) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormal B cell apoptosis (HP:0011070); FADD (HGNC:3799) —BINDS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002746). Loss-of-function mutations in XIAP (XLP2) directly impair the apoptotic signaling pathway. While FADD (causative for XLP1) is a critical component of this same pathway, its disruption also leads to aberrant apoptosis, thus converging on the shared pathway and resulting in overlapping phenotypes such as abnormal B cell apoptosis and lymphadenopathy.",
+        "falsification": {
+          "text": "Demonstration that XIAP and FADD mutations lead to completely independent and non-overlapping downstream cellular pathways that do not converge on apoptosis regulation.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Understanding the shared role of XIAP and FADD in regulating apoptosis offers potential therapeutic targets for both XLP1 and XLP2, possibly through strategies aimed at restoring apoptotic function in immune cells."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008903",
+      "diseaseBName": "lung cancer",
+      "fitness": 0.4078,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Activating KRAS variant (COSM310830) —DISRUPTS→ KRAS (HGNC:6407); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569068); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Aberrant cell proliferation (HP:0002104); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Malignant neoplasm (HP:0002664). Activating variants in KRAS lead to constitutive activation of the MAPK signaling pathway, promoting aberrant cell proliferation characteristic of MONDO:0013408, and also contributing to the development of malignant neoplasms in lung cancer.",
+      "mechanism_narrative": "Activating KRAS variant (COSM310830) —DISRUPTS→ KRAS (HGNC:6407); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569068); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Aberrant cell proliferation (HP:0002104); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Malignant neoplasm (HP:0002664). Activating variants in KRAS lead to constitutive activation of the MAPK signaling pathway, promoting aberrant cell proliferation characteristic of MONDO:0013408, and also contributing to the development of malignant neoplasms in lung cancer.",
+      "falsification": {
+        "text": "If activating mutations in KRAS are found to be mutually exclusive with the development of MONDO:0013408, or if the MAPK pathway is demonstrably not involved in the pathogenesis of MONDO:0013408, this hypothesis would be falsified.",
+        "gnomad_variant": "rs112403595 (G12C variant in KRAS) with a population frequency > 1% in relevant populations."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008903",
+        "diseaseBName": "lung cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26
+        },
+        "fitness": 0.4078,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Activating KRAS variant (COSM310830) —DISRUPTS→ KRAS (HGNC:6407); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569068); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Aberrant cell proliferation (HP:0002104); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Malignant neoplasm (HP:0002664). Activating variants in KRAS lead to constitutive activation of the MAPK signaling pathway, promoting aberrant cell proliferation characteristic of MONDO:0013408, and also contributing to the development of malignant neoplasms in lung cancer.",
+        "falsification": {
+          "text": "If activating mutations in KRAS are found to be mutually exclusive with the development of MONDO:0013408, or if the MAPK pathway is demonstrably not involved in the pathogenesis of MONDO:0013408, this hypothesis would be falsified.",
+          "gnomad_variant": "rs112403595 (G12C variant in KRAS) with a population frequency > 1% in relevant populations."
+        },
+        "translational": "Targeting the KRAS-MAPK signaling axis could offer therapeutic strategies for both MONDO:0013408 and lung cancer, potentially through pathway inhibitors or drugs that modulate KRAS activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008170",
+      "diseaseBName": "ovarian cancer",
+      "fitness": 0.4,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); AKT1 (HGNC:385) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Cellular proliferation (HP:0004297); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Tumorigenesis (HP:0002660); Cellular proliferation (HP:0004297) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Tumorigenesis (HP:0002660) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This dysregulation promotes uncontrolled cellular proliferation and tumorigenesis, contributing to both MONDO:0013408 and ovarian cancer.",
+      "mechanism_narrative": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); AKT1 (HGNC:385) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Cellular proliferation (HP:0004297); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Tumorigenesis (HP:0002660); Cellular proliferation (HP:0004297) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Tumorigenesis (HP:0002660) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This dysregulation promotes uncontrolled cellular proliferation and tumorigenesis, contributing to both MONDO:0013408 and ovarian cancer.",
+      "falsification": {
+        "text": "The absence of activating mutations in PIK3CA or AKT1 in patients diagnosed with MONDO:0013408 or ovarian cancer, or if these mutations are found to have no significant impact on the PI3K-Akt signaling pathway in either condition.",
+        "gnomad_variant": "rs2229099"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008170",
+        "diseaseBName": "ovarian cancer",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26
+        },
+        "fitness": 0.4,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); AKT1 (HGNC:385) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Cellular proliferation (HP:0004297); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Tumorigenesis (HP:0002660); Cellular proliferation (HP:0004297) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Tumorigenesis (HP:0002660) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This dysregulation promotes uncontrolled cellular proliferation and tumorigenesis, contributing to both MONDO:0013408 and ovarian cancer.",
+        "falsification": {
+          "text": "The absence of activating mutations in PIK3CA or AKT1 in patients diagnosed with MONDO:0013408 or ovarian cancer, or if these mutations are found to have no significant impact on the PI3K-Akt signaling pathway in either condition.",
+          "gnomad_variant": "rs2229099"
+        },
+        "translational": "Targeting the PI3K-Akt pathway, for example with PI3K inhibitors, could offer a therapeutic strategy for both MONDO:0013408 and ovarian cancer, given the shared mechanistic underpinnings."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013245",
+      "diseaseBName": "syndromic multisystem autoimmune disease due to ITCH deficiency",
+      "fitness": 0.394,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Caspase activation and inflammatory signaling (REACT:R-HSA-300103); Caspase activation and inflammatory signaling (REACT:R-HSA-300103) —LEADS_TO→ Autoimmune disease (HP:0000708); ITCH (HGNC:18196) —DISRUPTS→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); ITCH (HGNC:18196) —DISRUPTS→ Ubiquitin-mediated protein degradation (GO:0006511); Ubiquitin-mediated protein degradation (GO:0006511) —LEADS_TO→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); NF-kappaB signaling pathway (REACT:R-HSA-5691612) —LEADS_TO→ Multisystem autoimmune disease (HP:0033742). FADD (involved in Disease A) is a key adaptor protein in death receptor signaling and can influence inflammatory pathways. Haploinsufficiency of FADD may lead to dysregulation of apoptotic and inflammatory cascades, contributing to autoimmune phenotypes. ITCH (causal in Disease B) is an E3 ubiquitin ligase that negatively regulates the NF-kappaB pathway by targeting key signaling proteins for degradation. Loss-of-function mutations in ITCH lead to accumulation of these targets, resulting in hyperactivation of NF-kappaB and promoting multisystem autoimmune disease. Both FADD and ITCH, through distinct mechanisms affecting the processing and signaling of inflammatory mediators, converge on the dysregulation of NF-kappaB signaling and related inflammatory pathways, ultimately leading to autoimmune manifestations.",
+      "mechanism_narrative": "FADD (HGNC:3794) —DISRUPTS→ Caspase activation and inflammatory signaling (REACT:R-HSA-300103); Caspase activation and inflammatory signaling (REACT:R-HSA-300103) —LEADS_TO→ Autoimmune disease (HP:0000708); ITCH (HGNC:18196) —DISRUPTS→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); ITCH (HGNC:18196) —DISRUPTS→ Ubiquitin-mediated protein degradation (GO:0006511); Ubiquitin-mediated protein degradation (GO:0006511) —LEADS_TO→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); NF-kappaB signaling pathway (REACT:R-HSA-5691612) —LEADS_TO→ Multisystem autoimmune disease (HP:0033742). FADD (involved in Disease A) is a key adaptor protein in death receptor signaling and can influence inflammatory pathways. Haploinsufficiency of FADD may lead to dysregulation of apoptotic and inflammatory cascades, contributing to autoimmune phenotypes. ITCH (causal in Disease B) is an E3 ubiquitin ligase that negatively regulates the NF-kappaB pathway by targeting key signaling proteins for degradation. Loss-of-function mutations in ITCH lead to accumulation of these targets, resulting in hyperactivation of NF-kappaB and promoting multisystem autoimmune disease. Both FADD and ITCH, through distinct mechanisms affecting the processing and signaling of inflammatory mediators, converge on the dysregulation of NF-kappaB signaling and related inflammatory pathways, ultimately leading to autoimmune manifestations.",
+      "falsification": {
+        "text": "If genetic studies reveal that the causal variants for MONDO:0013408 do not impact FADD function or its downstream signaling pathways, or if ITCH deficiency does not lead to aberrant NF-kappaB activation, this hypothesis would be falsified.",
+        "gnomad_variant": "rs76938826"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013245",
+        "diseaseBName": "syndromic multisystem autoimmune disease due to ITCH deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26
+        },
+        "fitness": 0.394,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Caspase activation and inflammatory signaling (REACT:R-HSA-300103); Caspase activation and inflammatory signaling (REACT:R-HSA-300103) —LEADS_TO→ Autoimmune disease (HP:0000708); ITCH (HGNC:18196) —DISRUPTS→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); ITCH (HGNC:18196) —DISRUPTS→ Ubiquitin-mediated protein degradation (GO:0006511); Ubiquitin-mediated protein degradation (GO:0006511) —LEADS_TO→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); NF-kappaB signaling pathway (REACT:R-HSA-5691612) —LEADS_TO→ Multisystem autoimmune disease (HP:0033742). FADD (involved in Disease A) is a key adaptor protein in death receptor signaling and can influence inflammatory pathways. Haploinsufficiency of FADD may lead to dysregulation of apoptotic and inflammatory cascades, contributing to autoimmune phenotypes. ITCH (causal in Disease B) is an E3 ubiquitin ligase that negatively regulates the NF-kappaB pathway by targeting key signaling proteins for degradation. Loss-of-function mutations in ITCH lead to accumulation of these targets, resulting in hyperactivation of NF-kappaB and promoting multisystem autoimmune disease. Both FADD and ITCH, through distinct mechanisms affecting the processing and signaling of inflammatory mediators, converge on the dysregulation of NF-kappaB signaling and related inflammatory pathways, ultimately leading to autoimmune manifestations.",
+        "falsification": {
+          "text": "If genetic studies reveal that the causal variants for MONDO:0013408 do not impact FADD function or its downstream signaling pathways, or if ITCH deficiency does not lead to aberrant NF-kappaB activation, this hypothesis would be falsified.",
+          "gnomad_variant": "rs76938826"
+        },
+        "translational": "Understanding the shared convergence on NF-kappaB signaling despite different upstream genetic causes (FADD vs. ITCH) could reveal novel therapeutic targets for autoimmune diseases. Modulating the NF-kappaB pathway or its regulators might offer a common therapeutic strategy for both conditions, potentially by restoring the balance of immune activation and tolerance."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030907",
+      "diseaseBName": "intellectual disability, X-linked 106",
+      "fitness": 0.3805,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FADD (HGNC:3304) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormality of cell proliferation (HP:0011424); OGT (HGNC:8004) —DISRUPTS→ O-GlcNAcylation (GO:0006470); O-GlcNAcylation (GO:0006470) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of FADD function (MONDO:0013408) impairs apoptotic signaling, potentially leading to cellular abnormalities including abnormal proliferation. Disruption of OGT function (MONDO:0030907) affects O-GlcNAcylation, a critical post-translational modification involved in numerous cellular processes, including neuronal development and function, leading to intellectual disability. The overlap in disease modules may arise from the interconnectedness of cell survival, proliferation, and neuronal function pathways.",
+      "mechanism_narrative": "FADD (HGNC:3304) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormality of cell proliferation (HP:0011424); OGT (HGNC:8004) —DISRUPTS→ O-GlcNAcylation (GO:0006470); O-GlcNAcylation (GO:0006470) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of FADD function (MONDO:0013408) impairs apoptotic signaling, potentially leading to cellular abnormalities including abnormal proliferation. Disruption of OGT function (MONDO:0030907) affects O-GlcNAcylation, a critical post-translational modification involved in numerous cellular processes, including neuronal development and function, leading to intellectual disability. The overlap in disease modules may arise from the interconnectedness of cell survival, proliferation, and neuronal function pathways.",
+      "falsification": {
+        "text": "If genetic studies demonstrate that mutations in FADD and OGT in patients with MONDO:0013408 and MONDO:0030907, respectively, do not lead to haploinsufficiency or if functional studies show distinct and non-overlapping downstream pathways that do not converge at any level, this hypothesis would be falsified.",
+        "gnomad_variant": "Identification of a common pathogenic variant (AF > 0.001) in FADD or OGT in gnomAD that is not associated with either disease would challenge the causal link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-5213460": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030907",
+        "diseaseBName": "intellectual disability, X-linked 106",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-5213460": 22
+        },
+        "fitness": 0.3805,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FADD (HGNC:3304) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormality of cell proliferation (HP:0011424); OGT (HGNC:8004) —DISRUPTS→ O-GlcNAcylation (GO:0006470); O-GlcNAcylation (GO:0006470) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of FADD function (MONDO:0013408) impairs apoptotic signaling, potentially leading to cellular abnormalities including abnormal proliferation. Disruption of OGT function (MONDO:0030907) affects O-GlcNAcylation, a critical post-translational modification involved in numerous cellular processes, including neuronal development and function, leading to intellectual disability. The overlap in disease modules may arise from the interconnectedness of cell survival, proliferation, and neuronal function pathways.",
+        "falsification": {
+          "text": "If genetic studies demonstrate that mutations in FADD and OGT in patients with MONDO:0013408 and MONDO:0030907, respectively, do not lead to haploinsufficiency or if functional studies show distinct and non-overlapping downstream pathways that do not converge at any level, this hypothesis would be falsified.",
+          "gnomad_variant": "Identification of a common pathogenic variant (AF > 0.001) in FADD or OGT in gnomAD that is not associated with either disease would challenge the causal link."
+        },
+        "translational": "Understanding the potential overlap in cellular processes affected by FADD and OGT could reveal common therapeutic targets or strategies for diseases with distinct genetic origins but shared downstream molecular pathologies. For instance, interventions aimed at modulating apoptotic pathways or O-GlcNAcylation could have broader applications than initially anticipated."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014339",
+      "diseaseBName": "autosomal recessive spinocerebellar ataxia 16",
+      "fitness": 0.3329,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STUB1 loss-of-function variant (HGNC:11149) —DISRUPTS→ STUB1 (HGNC:11149); STUB1 (HGNC:11149) —LEADS_TO→ Impaired protein degradation (GO:0043161); Impaired protein degradation (GO:0043161) —LEADS_TO→ Protein aggregate formation (GO:0030193); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuronal dysfunction (HP:0007169); Neuronal dysfunction (HP:0007169) —LEADS_TO→ Ataxia (HP:0001251); FADD loss-of-function variant (HGNC:3797) —DISRUPTS→ FADD (HGNC:3797); FADD (HGNC:3797) —LEADS_TO→ Impaired apoptosis (GO:0006915); Impaired apoptosis (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0011009); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuroinflammation (HP:0011009). Loss-of-function mutations in STUB1 impair protein degradation, leading to protein aggregate formation and subsequent neuronal dysfunction and ataxia in ARSC16. In FADD-associated neurodevelopmental disorder, mutations in FADD impair apoptosis, contributing to neuroinflammation. Protein aggregates can also trigger inflammatory responses, creating a convergence point for neuronal dysfunction in both diseases.",
+      "mechanism_narrative": "STUB1 loss-of-function variant (HGNC:11149) —DISRUPTS→ STUB1 (HGNC:11149); STUB1 (HGNC:11149) —LEADS_TO→ Impaired protein degradation (GO:0043161); Impaired protein degradation (GO:0043161) —LEADS_TO→ Protein aggregate formation (GO:0030193); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuronal dysfunction (HP:0007169); Neuronal dysfunction (HP:0007169) —LEADS_TO→ Ataxia (HP:0001251); FADD loss-of-function variant (HGNC:3797) —DISRUPTS→ FADD (HGNC:3797); FADD (HGNC:3797) —LEADS_TO→ Impaired apoptosis (GO:0006915); Impaired apoptosis (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0011009); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuroinflammation (HP:0011009). Loss-of-function mutations in STUB1 impair protein degradation, leading to protein aggregate formation and subsequent neuronal dysfunction and ataxia in ARSC16. In FADD-associated neurodevelopmental disorder, mutations in FADD impair apoptosis, contributing to neuroinflammation. Protein aggregates can also trigger inflammatory responses, creating a convergence point for neuronal dysfunction in both diseases.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if genetic analysis reveals that the STUB1 mutations in ARSC16 are gain-of-function or dominant-negative, or if the FADD mutations in the neurodevelopmental disorder are not loss-of-function, or if there is a complete lack of evidence for protein aggregation or impaired apoptosis in affected individuals.",
+        "gnomad_variant": "Presence of common loss-of-function variants in STUB1 or FADD in the general population (gnomAD frequency > 0.1%) without a corresponding phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-5213460": 22,
+        "Reactome:R-HSA-5357905": 48
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014339",
+        "diseaseBName": "autosomal recessive spinocerebellar ataxia 16",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-5213460": 22,
+          "Reactome:R-HSA-5357905": 48
+        },
+        "fitness": 0.3329,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STUB1 loss-of-function variant (HGNC:11149) —DISRUPTS→ STUB1 (HGNC:11149); STUB1 (HGNC:11149) —LEADS_TO→ Impaired protein degradation (GO:0043161); Impaired protein degradation (GO:0043161) —LEADS_TO→ Protein aggregate formation (GO:0030193); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuronal dysfunction (HP:0007169); Neuronal dysfunction (HP:0007169) —LEADS_TO→ Ataxia (HP:0001251); FADD loss-of-function variant (HGNC:3797) —DISRUPTS→ FADD (HGNC:3797); FADD (HGNC:3797) —LEADS_TO→ Impaired apoptosis (GO:0006915); Impaired apoptosis (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0011009); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuroinflammation (HP:0011009). Loss-of-function mutations in STUB1 impair protein degradation, leading to protein aggregate formation and subsequent neuronal dysfunction and ataxia in ARSC16. In FADD-associated neurodevelopmental disorder, mutations in FADD impair apoptosis, contributing to neuroinflammation. Protein aggregates can also trigger inflammatory responses, creating a convergence point for neuronal dysfunction in both diseases.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if genetic analysis reveals that the STUB1 mutations in ARSC16 are gain-of-function or dominant-negative, or if the FADD mutations in the neurodevelopmental disorder are not loss-of-function, or if there is a complete lack of evidence for protein aggregation or impaired apoptosis in affected individuals.",
+          "gnomad_variant": "Presence of common loss-of-function variants in STUB1 or FADD in the general population (gnomAD frequency > 0.1%) without a corresponding phenotype."
+        },
+        "translational": "Targeting protein degradation pathways or mitigating neuroinflammation could offer therapeutic strategies for both conditions, despite their distinct primary genetic origins."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0031060",
+      "diseaseBName": "microcephaly 29, primary, autosomal recessive",
+      "fitness": 0.3001,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Apoptosis (GO:0006915); PDCD6IP (HGNC:28958) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Abnormality of brain size (HP:0000252); Apoptosis (GO:0006915) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in FADD and PDCD6IP disrupt the canonical apoptotic pathway. This dysregulation in apoptosis leads to the shared phenotype of abnormal brain size, manifesting as microcephaly in both diseases.",
+      "mechanism_narrative": "FADD (HGNC:3794) —DISRUPTS→ Apoptosis (GO:0006915); PDCD6IP (HGNC:28958) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Abnormality of brain size (HP:0000252); Apoptosis (GO:0006915) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in FADD and PDCD6IP disrupt the canonical apoptotic pathway. This dysregulation in apoptosis leads to the shared phenotype of abnormal brain size, manifesting as microcephaly in both diseases.",
+      "falsification": {
+        "text": "Absence of FADD or PDCD6IP mutations in patients diagnosed with either MONDO:0013408 or MONDO:0031060, or identification of distinct molecular pathways disrupted in each disease.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5675482"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5675482": 26,
+        "Reactome:R-HSA-5213460": 22
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0031060",
+        "diseaseBName": "microcephaly 29, primary, autosomal recessive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5675482"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5675482": 26,
+          "Reactome:R-HSA-5213460": 22
+        },
+        "fitness": 0.3001,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FADD (HGNC:3794) —DISRUPTS→ Apoptosis (GO:0006915); PDCD6IP (HGNC:28958) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Abnormality of brain size (HP:0000252); Apoptosis (GO:0006915) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in FADD and PDCD6IP disrupt the canonical apoptotic pathway. This dysregulation in apoptosis leads to the shared phenotype of abnormal brain size, manifesting as microcephaly in both diseases.",
+        "falsification": {
+          "text": "Absence of FADD or PDCD6IP mutations in patients diagnosed with either MONDO:0013408 or MONDO:0031060, or identification of distinct molecular pathways disrupted in each disease.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Understanding the shared role of FADD and PDCD6IP in apoptosis could reveal common therapeutic targets for both MONDO:0013408 and microcephaly 29, potentially leading to treatments that address the underlying neurodevelopmental defects."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T03:49:29.239Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013408 (MONDO:0013408)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 11 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | autosomal recessive juvenile Parkinson disease 2 (MONDO:0010820) | shared pathway | Tier 3 | 0.543 | Reactome:R-HSA-5675482 |\n| 2 | hepatocellular carcinoma (MONDO:0007256) | shared pathway | Tier 3 | 0.498 | Reactome:R-HSA-5675482, Reactome:R-HSA-69416, Reactome:R-HSA-140534, Reactome:R-HSA-2562578, Reactome:R-HSA-3371378 |\n| 3 | autoimmune lymphoproliferative syndrome type 2B (MONDO:0011804) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-5675482, Reactome:R-HSA-69416, Reactome:R-HSA-140534, Reactome:R-HSA-2562578, Reactome:R-HSA-3371378 |\n| 4 | X-linked lymphoproliferative disease due to XIAP deficiency (MONDO:0010385) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-5675482 |\n| 5 | lung cancer (MONDO:0008903) | shared pathway | Tier 3 | 0.408 | Reactome:R-HSA-5675482 |\n| 6 | ovarian cancer (MONDO:0008170) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-5675482 |\n| 7 | syndromic multisystem autoimmune disease due to ITCH deficiency (MONDO:0013245) | shared pathway | Tier 3 | 0.394 | Reactome:R-HSA-5675482 |\n| 8 | intellectual disability, X-linked 106 (MONDO:0030907) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-5675482 |\n| 9 | autosomal recessive spinocerebellar ataxia 16 (MONDO:0014339) | shared pathway | Tier 3 | 0.333 | Reactome:R-HSA-5675482 |\n| 10 | microcephaly 29, primary, autosomal recessive (MONDO:0031060) | shared pathway | Tier 3 | 0.300 | Reactome:R-HSA-5675482 |\n\n### CANDIDATE DETAIL\n#### 1. autosomal recessive juvenile Parkinson disease 2  —  Tier 3 — Moderate / Emerging  (fitness 0.543)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** FADD (HGNC:3794) —DISRUPTS→ Apoptotic Signaling Pathway (GO:0006915); Apoptotic Signaling Pathway (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0012531); PRKN (HGNC:9200) —DISRUPTS→ Mitophagy and Protein Degradation (GO:0000017); Mitophagy and Protein Degradation (GO:0000017) —LEADS_TO→ Dopaminergic Neuron Loss (HP:0001247); Neuroinflammation (HP:0012531) —INCREASES→ Dopaminergic Neuron Loss (HP:0001247); Dopaminergic Neuron Loss (HP:0001247) —LEADS_TO→ Parkinsonism (HP:0001311). Loss-of-function mutations in FADD disrupt the apoptotic signaling pathway, leading to neuroinflammation. Concurrently, loss-of-function mutations in PRKN disrupt mitophagy and protein degradation processes. The resulting neuroinflammation and impaired protein/organelle clearance contribute to dopaminergic neuron loss, ultimately manifesting as Parkinsonism.\n\n**How to falsify it:** If genetic analysis reveals that patients with MONDO:0013408 (FADD-related) do not exhibit elevated markers of neuroinflammation, or if patients with autosomal recessive juvenile Parkinson disease 2 (PRKN-related) do not show impaired mitophagy or protein degradation, this hypothesis would be falsified. _(variant: If common variants (AF > 0.01) in FADD or PRKN are found to be associated with either disease phenotype.)_\n\n**Why it matters:** Understanding this mechanistic overlap could lead to therapeutic strategies targeting common downstream pathways, such as neuroinflammation or protein clearance mechanisms, to treat both FADD-related disorders and PRKN-related Parkinsonism.\n\n---\n\n#### 2. hepatocellular carcinoma  —  Tier 3 — Moderate / Emerging  (fitness 0.498)\n**Link type:** shared pathway (Reactome:R-HSA-5675482, Reactome:R-HSA-69416, Reactome:R-HSA-140534, Reactome:R-HSA-2562578, Reactome:R-HSA-3371378)\n\n**Proposed mechanism:** CTNNB1 (HGNC:2515) —DISRUPTS→ Wnt signaling pathway (WP:WP41); Wnt signaling pathway (WP:WP41) —LEADS_TO→ Abnormal cell proliferation (HP:0002104); Abnormal cell proliferation (HP:0002104) —LEADS_TO→ Hepatocellular carcinoma (MONDO:0007256); APC (HGNC:549) —DISRUPTS→ Wnt signaling pathway (WP:WP41); AXIN1 (HGNC:1305) —DISRUPTS→ Wnt signaling pathway (WP:WP41); TP53 (HGNC:11998) —DISRUPTS→ Wnt signaling pathway (WP:WP41); FADD (HGNC:3794) —DISRUPTS→ Wnt signaling pathway (WP:WP41); CASP8 (HGNC:1499) —DISRUPTS→ Wnt signaling pathway (WP:WP41); MET (HGNC:7419) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PIK3CA (HGNC:9034) —DISRUPTS→ Wnt signaling pathway (WP:WP41); IGF2R (HGNC:5418) —DISRUPTS→ Wnt signaling pathway (WP:WP41); PDGFRL (HGNC:8777) —DISRUPTS→ Wnt signaling pathway (WP:WP41). Gain-of-function mutations in CTNNB1, a central component of the Wnt signaling pathway, lead to its aberrant activation. This dysregulation promotes abnormal cell proliferation, a hallmark of MONDO:0013408. Similarly, hepatocellular carcinoma (MONDO:0007256) can arise from mutations in CTNNB1 and other genes (APC, AXIN1, TP53, FADD, CASP8, MET, PIK3CA, IGF2R, PDGFRL) that converge on the dysregulation of the Wnt signaling pathway, ultimately leading to uncontrolled cell growth and tumor formation.\n\n**How to falsify it:** Demonstration that mutations in CTNNB1 or other listed genes do not lead to activation of the Wnt signaling pathway in the context of either disease, or that the Wnt pathway is not implicated in the pathogenesis of MONDO:0013408. _(variant: rs137852685)_\n\n**Why it matters:** Targeting the Wnt signaling pathway, particularly CTNNB1, holds therapeutic potential for both MONDO:0013408 and hepatocellular carcinoma.\n\n---\n\n#### 3. autoimmune lymphoproliferative syndrome type 2B  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-5675482, Reactome:R-HSA-69416, Reactome:R-HSA-140534, Reactome:R-HSA-2562578, Reactome:R-HSA-3371378)\n\n**Proposed mechanism:** FADD (HGNC:3794) —BINDS→ Apoptosome formation and activation (GO:0006915); CASP8 (HGNC:1509) —BINDS→ Apoptosome formation and activation (GO:0006915); FADD (HGNC:3794) —LEADS_TO→ Lymphoproliferation (HP:0002711); FADD (HGNC:3794) —LEADS_TO→ Autoimmunity (HP:0002664); CASP8 (HGNC:1509) —LEADS_TO→ Lymphoproliferation (HP:0002711); CASP8 (HGNC:1509) —LEADS_TO→ Autoimmunity (HP:0002664); Apoptosome formation and activation (GO:0006915) —DISRUPTS→ Immune dysregulation (HP:0002705). Disruption of FADD and CASP8 function impairs apoptosome formation and subsequent apoptotic signaling, leading to the accumulation of self-reactive lymphocytes and immune dysregulation characteristic of both diseases.\n\n**How to falsify it:** The absence of mutations in FADD or CASP8 in individuals with MONDO:0013408, or the identification of a distinct, non-apoptotic pathway as the primary driver of the phenotype in MONDO:0013408, would falsify this hypothesis. Furthermore, if genetic studies show that FADD/CASP8 mutations in MONDO:0013408 lead to gain-of-function or dominant-negative effects on apoptosis, contrary to the proposed haploinsufficiency model, this hypothesis would be falsified. _(variant: Presence of common variants (AF > 0.01) in FADD or CASP8 associated with these phenotypes.)_\n\n**Why it matters:** Understanding the shared apoptotic defect could lead to therapeutic strategies targeting apoptosis regulators or downstream consequences of impaired cell death, potentially benefiting patients with both conditions.\n\n---\n\n#### 4. X-linked lymphoproliferative disease due to XIAP deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** XIAP (HGNC:12706) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormal B cell apoptosis (HP:0011070); FADD (HGNC:3799) —BINDS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Lymphadenopathy (HP:0002746). Loss-of-function mutations in XIAP (XLP2) directly impair the apoptotic signaling pathway. While FADD (causative for XLP1) is a critical component of this same pathway, its disruption also leads to aberrant apoptosis, thus converging on the shared pathway and resulting in overlapping phenotypes such as abnormal B cell apoptosis and lymphadenopathy.\n\n**How to falsify it:** Demonstration that XIAP and FADD mutations lead to completely independent and non-overlapping downstream cellular pathways that do not converge on apoptosis regulation. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of XIAP and FADD in regulating apoptosis offers potential therapeutic targets for both XLP1 and XLP2, possibly through strategies aimed at restoring apoptotic function in immune cells.\n\n---\n\n#### 5. lung cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.408)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** Activating KRAS variant (COSM310830) —DISRUPTS→ KRAS (HGNC:6407); KRAS (HGNC:6407) —INCREASES→ MAPK signaling pathway (REACT:R-HSA-569068); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Aberrant cell proliferation (HP:0002104); MAPK signaling pathway (REACT:R-HSA-569068) —LEADS_TO→ Malignant neoplasm (HP:0002664). Activating variants in KRAS lead to constitutive activation of the MAPK signaling pathway, promoting aberrant cell proliferation characteristic of MONDO:0013408, and also contributing to the development of malignant neoplasms in lung cancer.\n\n**How to falsify it:** If activating mutations in KRAS are found to be mutually exclusive with the development of MONDO:0013408, or if the MAPK pathway is demonstrably not involved in the pathogenesis of MONDO:0013408, this hypothesis would be falsified. _(variant: rs112403595 (G12C variant in KRAS) with a population frequency > 1% in relevant populations.)_\n\n**Why it matters:** Targeting the KRAS-MAPK signaling axis could offer therapeutic strategies for both MONDO:0013408 and lung cancer, potentially through pathway inhibitors or drugs that modulate KRAS activity.\n\n---\n\n#### 6. ovarian cancer  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** PIK3CA (HGNC:9535) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); AKT1 (HGNC:385) —INCREASES→ PI3K-Akt signaling pathway (WP:WP261); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Cellular proliferation (HP:0004297); PI3K-Akt signaling pathway (WP:WP261) —LEADS_TO→ Tumorigenesis (HP:0002660); Cellular proliferation (HP:0004297) —LEADS_TO→ Ovarian cancer (MONDO:0008170); Tumorigenesis (HP:0002660) —LEADS_TO→ Ovarian cancer (MONDO:0008170). Gain-of-function mutations in PIK3CA and AKT1 lead to hyperactivation of the PI3K-Akt signaling pathway. This dysregulation promotes uncontrolled cellular proliferation and tumorigenesis, contributing to both MONDO:0013408 and ovarian cancer.\n\n**How to falsify it:** The absence of activating mutations in PIK3CA or AKT1 in patients diagnosed with MONDO:0013408 or ovarian cancer, or if these mutations are found to have no significant impact on the PI3K-Akt signaling pathway in either condition. _(variant: rs2229099)_\n\n**Why it matters:** Targeting the PI3K-Akt pathway, for example with PI3K inhibitors, could offer a therapeutic strategy for both MONDO:0013408 and ovarian cancer, given the shared mechanistic underpinnings.\n\n---\n\n#### 7. syndromic multisystem autoimmune disease due to ITCH deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.394)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** FADD (HGNC:3794) —DISRUPTS→ Caspase activation and inflammatory signaling (REACT:R-HSA-300103); Caspase activation and inflammatory signaling (REACT:R-HSA-300103) —LEADS_TO→ Autoimmune disease (HP:0000708); ITCH (HGNC:18196) —DISRUPTS→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); ITCH (HGNC:18196) —DISRUPTS→ Ubiquitin-mediated protein degradation (GO:0006511); Ubiquitin-mediated protein degradation (GO:0006511) —LEADS_TO→ NF-kappaB signaling pathway (REACT:R-HSA-5691612); NF-kappaB signaling pathway (REACT:R-HSA-5691612) —LEADS_TO→ Multisystem autoimmune disease (HP:0033742). FADD (involved in Disease A) is a key adaptor protein in death receptor signaling and can influence inflammatory pathways. Haploinsufficiency of FADD may lead to dysregulation of apoptotic and inflammatory cascades, contributing to autoimmune phenotypes. ITCH (causal in Disease B) is an E3 ubiquitin ligase that negatively regulates the NF-kappaB pathway by targeting key signaling proteins for degradation. Loss-of-function mutations in ITCH lead to accumulation of these targets, resulting in hyperactivation of NF-kappaB and promoting multisystem autoimmune disease. Both FADD and ITCH, through distinct mechanisms affecting the processing and signaling of inflammatory mediators, converge on the dysregulation of NF-kappaB signaling and related inflammatory pathways, ultimately leading to autoimmune manifestations.\n\n**How to falsify it:** If genetic studies reveal that the causal variants for MONDO:0013408 do not impact FADD function or its downstream signaling pathways, or if ITCH deficiency does not lead to aberrant NF-kappaB activation, this hypothesis would be falsified. _(variant: rs76938826)_\n\n**Why it matters:** Understanding the shared convergence on NF-kappaB signaling despite different upstream genetic causes (FADD vs. ITCH) could reveal novel therapeutic targets for autoimmune diseases. Modulating the NF-kappaB pathway or its regulators might offer a common therapeutic strategy for both conditions, potentially by restoring the balance of immune activation and tolerance.\n\n---\n\n#### 8. intellectual disability, X-linked 106  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** FADD (HGNC:3304) —DISRUPTS→ Apoptotic signaling pathway (GO:0006915); Apoptotic signaling pathway (GO:0006915) —LEADS_TO→ Abnormality of cell proliferation (HP:0011424); OGT (HGNC:8004) —DISRUPTS→ O-GlcNAcylation (GO:0006470); O-GlcNAcylation (GO:0006470) —LEADS_TO→ Intellectual disability (HP:0001249). Disruption of FADD function (MONDO:0013408) impairs apoptotic signaling, potentially leading to cellular abnormalities including abnormal proliferation. Disruption of OGT function (MONDO:0030907) affects O-GlcNAcylation, a critical post-translational modification involved in numerous cellular processes, including neuronal development and function, leading to intellectual disability. The overlap in disease modules may arise from the interconnectedness of cell survival, proliferation, and neuronal function pathways.\n\n**How to falsify it:** If genetic studies demonstrate that mutations in FADD and OGT in patients with MONDO:0013408 and MONDO:0030907, respectively, do not lead to haploinsufficiency or if functional studies show distinct and non-overlapping downstream pathways that do not converge at any level, this hypothesis would be falsified. _(variant: Identification of a common pathogenic variant (AF > 0.001) in FADD or OGT in gnomAD that is not associated with either disease would challenge the causal link.)_\n\n**Why it matters:** Understanding the potential overlap in cellular processes affected by FADD and OGT could reveal common therapeutic targets or strategies for diseases with distinct genetic origins but shared downstream molecular pathologies. For instance, interventions aimed at modulating apoptotic pathways or O-GlcNAcylation could have broader applications than initially anticipated.\n\n---\n\n#### 9. autosomal recessive spinocerebellar ataxia 16  —  Tier 3 — Moderate / Emerging  (fitness 0.333)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** STUB1 loss-of-function variant (HGNC:11149) —DISRUPTS→ STUB1 (HGNC:11149); STUB1 (HGNC:11149) —LEADS_TO→ Impaired protein degradation (GO:0043161); Impaired protein degradation (GO:0043161) —LEADS_TO→ Protein aggregate formation (GO:0030193); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuronal dysfunction (HP:0007169); Neuronal dysfunction (HP:0007169) —LEADS_TO→ Ataxia (HP:0001251); FADD loss-of-function variant (HGNC:3797) —DISRUPTS→ FADD (HGNC:3797); FADD (HGNC:3797) —LEADS_TO→ Impaired apoptosis (GO:0006915); Impaired apoptosis (GO:0006915) —LEADS_TO→ Neuroinflammation (HP:0011009); Protein aggregate formation (GO:0030193) —LEADS_TO→ Neuroinflammation (HP:0011009). Loss-of-function mutations in STUB1 impair protein degradation, leading to protein aggregate formation and subsequent neuronal dysfunction and ataxia in ARSC16. In FADD-associated neurodevelopmental disorder, mutations in FADD impair apoptosis, contributing to neuroinflammation. Protein aggregates can also trigger inflammatory responses, creating a convergence point for neuronal dysfunction in both diseases.\n\n**How to falsify it:** The hypothesis would be falsified if genetic analysis reveals that the STUB1 mutations in ARSC16 are gain-of-function or dominant-negative, or if the FADD mutations in the neurodevelopmental disorder are not loss-of-function, or if there is a complete lack of evidence for protein aggregation or impaired apoptosis in affected individuals. _(variant: Presence of common loss-of-function variants in STUB1 or FADD in the general population (gnomAD frequency > 0.1%) without a corresponding phenotype.)_\n\n**Why it matters:** Targeting protein degradation pathways or mitigating neuroinflammation could offer therapeutic strategies for both conditions, despite their distinct primary genetic origins.\n\n---\n\n#### 10. microcephaly 29, primary, autosomal recessive  —  Tier 3 — Moderate / Emerging  (fitness 0.300)\n**Link type:** shared pathway (Reactome:R-HSA-5675482)\n\n**Proposed mechanism:** FADD (HGNC:3794) —DISRUPTS→ Apoptosis (GO:0006915); PDCD6IP (HGNC:28958) —DISRUPTS→ Apoptosis (GO:0006915); Apoptosis (GO:0006915) —LEADS_TO→ Abnormality of brain size (HP:0000252); Apoptosis (GO:0006915) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in FADD and PDCD6IP disrupt the canonical apoptotic pathway. This dysregulation in apoptosis leads to the shared phenotype of abnormal brain size, manifesting as microcephaly in both diseases.\n\n**How to falsify it:** Absence of FADD or PDCD6IP mutations in patients diagnosed with either MONDO:0013408 or MONDO:0031060, or identification of distinct molecular pathways disrupted in each disease. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of FADD and PDCD6IP in apoptosis could reveal common therapeutic targets for both MONDO:0013408 and microcephaly 29, potentially leading to treatments that address the underlying neurodevelopmental defects.\n\n---"
+}

@@ -1,0 +1,435 @@
+{
+  "seed": {
+    "id": "MONDO:0013372",
+    "name": "MONDO:0013372"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 18,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012871",
+      "diseaseBName": "Jervell and Lange-Nielsen syndrome 2",
+      "fitness": 0.7062,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "KCNE1 (HGNC:6240) —DISRUPTS→ Potassium ion transport (GO:0006811); Potassium ion transport (GO:0006811) —LEADS_TO→ Cardiac action potential (GO:0003011); Cardiac action potential (GO:0003011) —LEADS_TO→ QT interval prolongation (HP:0011674); Cardiac action potential (GO:0003011) —LEADS_TO→ Congenital long QT syndrome (HP:0001641); KCNE1 (HGNC:6240) —DISRUPTS→ Deafness (HP:0000365). Loss-of-function variants in KCNE1 disrupt potassium ion transport, leading to altered cardiac action potentials and QT interval prolongation (MONDO:0013372). In Jervell and Lange-Nielsen syndrome 2 (MONDO:0012871), these KCNE1 variants also disrupt potassium ion transport, causing congenital long QT syndrome and deafness.",
+      "mechanism_narrative": "KCNE1 (HGNC:6240) —DISRUPTS→ Potassium ion transport (GO:0006811); Potassium ion transport (GO:0006811) —LEADS_TO→ Cardiac action potential (GO:0003011); Cardiac action potential (GO:0003011) —LEADS_TO→ QT interval prolongation (HP:0011674); Cardiac action potential (GO:0003011) —LEADS_TO→ Congenital long QT syndrome (HP:0001641); KCNE1 (HGNC:6240) —DISRUPTS→ Deafness (HP:0000365). Loss-of-function variants in KCNE1 disrupt potassium ion transport, leading to altered cardiac action potentials and QT interval prolongation (MONDO:0013372). In Jervell and Lange-Nielsen syndrome 2 (MONDO:0012871), these KCNE1 variants also disrupt potassium ion transport, causing congenital long QT syndrome and deafness.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function variants in KCNE1 who do not exhibit QT interval prolongation or deafness would falsify this hypothesis.",
+        "gnomad_variant": "rs1805125"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:6240"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012871",
+        "diseaseBName": "Jervell and Lange-Nielsen syndrome 2",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:6240"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7062,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "KCNE1 (HGNC:6240) —DISRUPTS→ Potassium ion transport (GO:0006811); Potassium ion transport (GO:0006811) —LEADS_TO→ Cardiac action potential (GO:0003011); Cardiac action potential (GO:0003011) —LEADS_TO→ QT interval prolongation (HP:0011674); Cardiac action potential (GO:0003011) —LEADS_TO→ Congenital long QT syndrome (HP:0001641); KCNE1 (HGNC:6240) —DISRUPTS→ Deafness (HP:0000365). Loss-of-function variants in KCNE1 disrupt potassium ion transport, leading to altered cardiac action potentials and QT interval prolongation (MONDO:0013372). In Jervell and Lange-Nielsen syndrome 2 (MONDO:0012871), these KCNE1 variants also disrupt potassium ion transport, causing congenital long QT syndrome and deafness.",
+        "falsification": {
+          "text": "Identification of individuals with loss-of-function variants in KCNE1 who do not exhibit QT interval prolongation or deafness would falsify this hypothesis.",
+          "gnomad_variant": "rs1805125"
+        },
+        "translational": "Understanding the shared mechanism of KCNE1 dysfunction in these two distinct but related conditions can inform therapeutic strategies targeting ion channel function for both cardiac and auditory systems."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011857",
+      "diseaseBName": "atrial fibrillation, familial, 3",
+      "fitness": 0.5107,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNQ1 (HGNC:6403) —DISRUPTS→ potassium channel activity (GO:0005405); KCNE1 (HGNC:6389) —DISRUPTS→ potassium channel activity (GO:0005405); potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome (HP:0001655); potassium channel activity (GO:0005405) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function mutations in KCNQ1 and KCNE1 disrupt the function of the IKs potassium channel, leading to both Long QT syndrome and familial atrial fibrillation.",
+      "mechanism_narrative": "KCNQ1 (HGNC:6403) —DISRUPTS→ potassium channel activity (GO:0005405); KCNE1 (HGNC:6389) —DISRUPTS→ potassium channel activity (GO:0005405); potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome (HP:0001655); potassium channel activity (GO:0005405) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function mutations in KCNQ1 and KCNE1 disrupt the function of the IKs potassium channel, leading to both Long QT syndrome and familial atrial fibrillation.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in KCNQ1 or KCNE1 that causes a gain-of-function effect and is exclusively associated with one of the diseases, but not the other, would falsify this hypothesis.",
+        "gnomad_variant": "rs121908480"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011857",
+        "diseaseBName": "atrial fibrillation, familial, 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.5107,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNQ1 (HGNC:6403) —DISRUPTS→ potassium channel activity (GO:0005405); KCNE1 (HGNC:6389) —DISRUPTS→ potassium channel activity (GO:0005405); potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome (HP:0001655); potassium channel activity (GO:0005405) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function mutations in KCNQ1 and KCNE1 disrupt the function of the IKs potassium channel, leading to both Long QT syndrome and familial atrial fibrillation.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in KCNQ1 or KCNE1 that causes a gain-of-function effect and is exclusively associated with one of the diseases, but not the other, would falsify this hypothesis.",
+          "gnomad_variant": "rs121908480"
+        },
+        "translational": "Understanding the shared molecular basis of these cardiac channelopathies can inform the development of targeted therapies for arrhythmias, potentially leading to improved management strategies for both Long QT syndrome and familial atrial fibrillation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012313",
+      "diseaseBName": "short QT syndrome type 2",
+      "fitness": 0.4759,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNQ1 (HGNC:6306) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNQ1 (HGNC:6306) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Shortened QT interval (HP:0030675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Cardiac arrhythmia (HP:0011675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Congenital heart block (HP:0001665). Mutations in KCNQ1 and KCNE1 lead to haploinsufficiency, impairing the function of the IKs potassium channel. This dysfunction directly results in a shortened QT interval, increased susceptibility to cardiac arrhythmias, and in some cases, congenital heart block.",
+      "mechanism_narrative": "KCNQ1 (HGNC:6306) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNQ1 (HGNC:6306) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Shortened QT interval (HP:0030675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Cardiac arrhythmia (HP:0011675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Congenital heart block (HP:0001665). Mutations in KCNQ1 and KCNE1 lead to haploinsufficiency, impairing the function of the IKs potassium channel. This dysfunction directly results in a shortened QT interval, increased susceptibility to cardiac arrhythmias, and in some cases, congenital heart block.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in KCNQ1 or KCNE1 with a gain-of-function effect in patients with MONDO:0013372, or conversely, loss-of-function variants in short QT syndrome type 2, would falsify the proposed shared mechanism of haploinsufficiency."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012313",
+        "diseaseBName": "short QT syndrome type 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4759,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNQ1 (HGNC:6306) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNQ1 (HGNC:6306) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Shortened QT interval (HP:0030675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Cardiac arrhythmia (HP:0011675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Congenital heart block (HP:0001665). Mutations in KCNQ1 and KCNE1 lead to haploinsufficiency, impairing the function of the IKs potassium channel. This dysfunction directly results in a shortened QT interval, increased susceptibility to cardiac arrhythmias, and in some cases, congenital heart block.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in KCNQ1 or KCNE1 with a gain-of-function effect in patients with MONDO:0013372, or conversely, loss-of-function variants in short QT syndrome type 2, would falsify the proposed shared mechanism of haploinsufficiency."
+        },
+        "translational": "Understanding the shared mechanistic basis of these conditions, stemming from the same ion channel complex, offers opportunities for developing targeted therapies that could address common underlying pathophysiology for both conditions, potentially improving cardiac repolarization and reducing arrhythmia risk."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0100316",
+      "diseaseBName": "long QT syndrome 1",
+      "fitness": 0.4717,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNQ1 (HGNC:6364) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNE1 (HGNC:6361) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNQ1 (HGNC:6364) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNE1 (HGNC:6361) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNQ1/KCNE1 potassium channel complex formation and function —LEADS_TO→ Familial Hypercholesterolemia (MONDO:0013372). Mutations in KCNQ1 and KCNE1 lead to impaired function of the KCNQ1/KCNE1 potassium channel, causing Long QT Syndrome 1. While Familial Hypercholesterolemia is primarily associated with LDLR, a shared downstream consequence of dysregulated ion channel function in certain contexts can contribute to cellular stress pathways that may indirectly influence lipid metabolism or cardiovascular risk factors, leading to a phenotypic overlap with hypercholesterolemia.",
+      "mechanism_narrative": "KCNQ1 (HGNC:6364) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNE1 (HGNC:6361) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNQ1 (HGNC:6364) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNE1 (HGNC:6361) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNQ1/KCNE1 potassium channel complex formation and function —LEADS_TO→ Familial Hypercholesterolemia (MONDO:0013372). Mutations in KCNQ1 and KCNE1 lead to impaired function of the KCNQ1/KCNE1 potassium channel, causing Long QT Syndrome 1. While Familial Hypercholesterolemia is primarily associated with LDLR, a shared downstream consequence of dysregulated ion channel function in certain contexts can contribute to cellular stress pathways that may indirectly influence lipid metabolism or cardiovascular risk factors, leading to a phenotypic overlap with hypercholesterolemia.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in KCNQ1 or KCNE1 do not lead to a reduction in potassium channel function or that there is no discernible link between KCNQ1/KCNE1 dysfunction and pathways implicated in lipid metabolism or cardiovascular risk factors beyond their direct role in cardiac electrophysiology, this hypothesis would be falsified.",
+        "gnomad_variant": "gnomAD analysis showing high-frequency variants in KCNQ1 or KCNE1 associated with Familial Hypercholesterolemia phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0100316",
+        "diseaseBName": "long QT syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4717,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNQ1 (HGNC:6364) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNE1 (HGNC:6361) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNQ1 (HGNC:6364) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNE1 (HGNC:6361) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNQ1/KCNE1 potassium channel complex formation and function —LEADS_TO→ Familial Hypercholesterolemia (MONDO:0013372). Mutations in KCNQ1 and KCNE1 lead to impaired function of the KCNQ1/KCNE1 potassium channel, causing Long QT Syndrome 1. While Familial Hypercholesterolemia is primarily associated with LDLR, a shared downstream consequence of dysregulated ion channel function in certain contexts can contribute to cellular stress pathways that may indirectly influence lipid metabolism or cardiovascular risk factors, leading to a phenotypic overlap with hypercholesterolemia.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in KCNQ1 or KCNE1 do not lead to a reduction in potassium channel function or that there is no discernible link between KCNQ1/KCNE1 dysfunction and pathways implicated in lipid metabolism or cardiovascular risk factors beyond their direct role in cardiac electrophysiology, this hypothesis would be falsified.",
+          "gnomad_variant": "gnomAD analysis showing high-frequency variants in KCNQ1 or KCNE1 associated with Familial Hypercholesterolemia phenotype."
+        },
+        "translational": "Understanding this mechanistic link could inform therapeutic strategies for patients with Long QT Syndrome 1 who may also have dyslipidemia, potentially allowing for combined treatment approaches targeting both ion channel function and lipid management."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013370",
+      "diseaseBName": "long QT syndrome 6",
+      "fitness": 0.4413,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNE1 (HGNC:6279) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNE2 (HGNC:6280) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ QT interval prolongation (HP:0011679); Potassium channel activity (GO:0005405) —LEADS_TO→ Ventricular arrhythmias (HP:0001669); Ventricular arrhythmias (HP:0001669) —LEADS_TO→ Syncope (HP:0001257); Syncope (HP:0001257) —LEADS_TO→ Sudden cardiac death (HP:0001644). Loss-of-function variants in either KCNE1 or KCNE2 disrupt the function of potassium channels, leading to QT interval prolongation, which can precipitate ventricular arrhythmias, syncope, and sudden cardiac death.",
+      "mechanism_narrative": "KCNE1 (HGNC:6279) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNE2 (HGNC:6280) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ QT interval prolongation (HP:0011679); Potassium channel activity (GO:0005405) —LEADS_TO→ Ventricular arrhythmias (HP:0001669); Ventricular arrhythmias (HP:0001669) —LEADS_TO→ Syncope (HP:0001257); Syncope (HP:0001257) —LEADS_TO→ Sudden cardiac death (HP:0001644). Loss-of-function variants in either KCNE1 or KCNE2 disrupt the function of potassium channels, leading to QT interval prolongation, which can precipitate ventricular arrhythmias, syncope, and sudden cardiac death.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in KCNE1 or KCNE2 with a demonstrably gain-of-function effect, or variants in these genes that do not lead to any observable QT prolongation or arrhythmia in affected individuals.",
+        "gnomad_variant": "rs1800959 (KCNE1)"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013370",
+        "diseaseBName": "long QT syndrome 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4413,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNE1 (HGNC:6279) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNE2 (HGNC:6280) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ QT interval prolongation (HP:0011679); Potassium channel activity (GO:0005405) —LEADS_TO→ Ventricular arrhythmias (HP:0001669); Ventricular arrhythmias (HP:0001669) —LEADS_TO→ Syncope (HP:0001257); Syncope (HP:0001257) —LEADS_TO→ Sudden cardiac death (HP:0001644). Loss-of-function variants in either KCNE1 or KCNE2 disrupt the function of potassium channels, leading to QT interval prolongation, which can precipitate ventricular arrhythmias, syncope, and sudden cardiac death.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in KCNE1 or KCNE2 with a demonstrably gain-of-function effect, or variants in these genes that do not lead to any observable QT prolongation or arrhythmia in affected individuals.",
+          "gnomad_variant": "rs1800959 (KCNE1)"
+        },
+        "translational": "Understanding the shared role of KCNE1 and KCNE2 in potassium channel function provides a unified therapeutic target for long QT syndromes, potentially allowing for the development of treatments that address the common downstream consequences of channel dysfunction."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012738",
+      "diseaseBName": "long QT syndrome 11",
+      "fitness": 0.4396,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNE1 (HGNC:6288) —DISRUPTS→ KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537); AKAP9 (HGNC:345) —DISRUPTS→ Regulation of cardiac myocyte calcium homeostasis (GO:0010674); KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537) —LEADS_TO→ QT interval prolongation (HP:0011688); Regulation of cardiac myocyte calcium homeostasis (GO:0010674) —LEADS_TO→ Long QT syndrome (HP:0011688). Loss-of-function mutations in KCNE1 disrupt the assembly and function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation. Similarly, loss-of-function mutations in AKAP9 disrupt the regulation of cardiac myocyte calcium homeostasis, which is a known contributor to long QT syndrome phenotypes.",
+      "mechanism_narrative": "KCNE1 (HGNC:6288) —DISRUPTS→ KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537); AKAP9 (HGNC:345) —DISRUPTS→ Regulation of cardiac myocyte calcium homeostasis (GO:0010674); KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537) —LEADS_TO→ QT interval prolongation (HP:0011688); Regulation of cardiac myocyte calcium homeostasis (GO:0010674) —LEADS_TO→ Long QT syndrome (HP:0011688). Loss-of-function mutations in KCNE1 disrupt the assembly and function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation. Similarly, loss-of-function mutations in AKAP9 disrupt the regulation of cardiac myocyte calcium homeostasis, which is a known contributor to long QT syndrome phenotypes.",
+      "falsification": {
+        "text": "Demonstration that mutations in KCNE1 do not affect the KCNQ1/KCNE1 channel complex or that mutations in AKAP9 do not impact cardiac myocyte calcium handling.",
+        "gnomad_variant": "rs28359178"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012738",
+        "diseaseBName": "long QT syndrome 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4396,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNE1 (HGNC:6288) —DISRUPTS→ KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537); AKAP9 (HGNC:345) —DISRUPTS→ Regulation of cardiac myocyte calcium homeostasis (GO:0010674); KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537) —LEADS_TO→ QT interval prolongation (HP:0011688); Regulation of cardiac myocyte calcium homeostasis (GO:0010674) —LEADS_TO→ Long QT syndrome (HP:0011688). Loss-of-function mutations in KCNE1 disrupt the assembly and function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation. Similarly, loss-of-function mutations in AKAP9 disrupt the regulation of cardiac myocyte calcium homeostasis, which is a known contributor to long QT syndrome phenotypes.",
+        "falsification": {
+          "text": "Demonstration that mutations in KCNE1 do not affect the KCNQ1/KCNE1 channel complex or that mutations in AKAP9 do not impact cardiac myocyte calcium handling.",
+          "gnomad_variant": "rs28359178"
+        },
+        "translational": "Understanding the shared impact on cardiac ion channel function and calcium homeostasis provides a basis for exploring common therapeutic strategies for these related cardiac channelopathies."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013145",
+      "diseaseBName": "Brugada syndrome 6",
+      "fitness": 0.4392,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNE1 (HGNC:6301) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); KCNE3 (HGNC:6302) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ QT prolongation (HP:0030709); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ Ventricular arrhythmias (HP:0011344); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ ST segment elevation (HP:0012378). Mutations in KCNE1 and KCNE3 disrupt the regulation of potassium channel activity, which is a shared pathway leading to both QT prolongation and ventricular arrhythmias (associated with Brugada syndrome 6) and ST segment elevation (associated with Brugada syndrome 6).",
+      "mechanism_narrative": "KCNE1 (HGNC:6301) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); KCNE3 (HGNC:6302) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ QT prolongation (HP:0030709); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ Ventricular arrhythmias (HP:0011344); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ ST segment elevation (HP:0012378). Mutations in KCNE1 and KCNE3 disrupt the regulation of potassium channel activity, which is a shared pathway leading to both QT prolongation and ventricular arrhythmias (associated with Brugada syndrome 6) and ST segment elevation (associated with Brugada syndrome 6).",
+      "falsification": {
+        "text": "The identification of disease-causing variants in KCNE1 or KCNE3 that exclusively affect different ion channel subunits or signaling pathways not related to cardiac action potential duration, or the absence of shared phenotypic features in individuals with mutations in these genes, would falsify this hypothesis."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013145",
+        "diseaseBName": "Brugada syndrome 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4392,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNE1 (HGNC:6301) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); KCNE3 (HGNC:6302) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ QT prolongation (HP:0030709); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ Ventricular arrhythmias (HP:0011344); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ ST segment elevation (HP:0012378). Mutations in KCNE1 and KCNE3 disrupt the regulation of potassium channel activity, which is a shared pathway leading to both QT prolongation and ventricular arrhythmias (associated with Brugada syndrome 6) and ST segment elevation (associated with Brugada syndrome 6).",
+        "falsification": {
+          "text": "The identification of disease-causing variants in KCNE1 or KCNE3 that exclusively affect different ion channel subunits or signaling pathways not related to cardiac action potential duration, or the absence of shared phenotypic features in individuals with mutations in these genes, would falsify this hypothesis."
+        },
+        "translational": "Understanding the shared mechanistic link through KCNE1 and KCNE3 dysfunction in ion channel regulation could enable the development of targeted therapies for both conditions, potentially by modulating potassium channel activity or downstream signaling pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012677",
+      "diseaseBName": "atrial fibrillation, familial, 4",
+      "fitness": 0.426,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNE1 (HGNC:6275) —DISRUPTS→ Potassium channel function (GO:0005267); KCNE2 (HGNC:6276) —DISRUPTS→ Potassium channel function (GO:0005267); Potassium channel function (GO:0005267) —LEADS_TO→ Congenital long QT syndrome (HP:0011673); Potassium channel function (GO:0005267) —LEADS_TO→ Atrial fibrillation (HP:0011344). Loss-of-function mutations in KCNE1 and KCNE2 disrupt potassium channel function, leading to QT prolongation in congenital long QT syndrome and impaired atrial repolarization in familial atrial fibrillation.",
+      "mechanism_narrative": "KCNE1 (HGNC:6275) —DISRUPTS→ Potassium channel function (GO:0005267); KCNE2 (HGNC:6276) —DISRUPTS→ Potassium channel function (GO:0005267); Potassium channel function (GO:0005267) —LEADS_TO→ Congenital long QT syndrome (HP:0011673); Potassium channel function (GO:0005267) —LEADS_TO→ Atrial fibrillation (HP:0011344). Loss-of-function mutations in KCNE1 and KCNE2 disrupt potassium channel function, leading to QT prolongation in congenital long QT syndrome and impaired atrial repolarization in familial atrial fibrillation.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in KCNE1 or KCNE2 with a significant minor allele frequency (>0.1%) in gnomAD populations would cast doubt on its exclusive causality for these rare diseases.",
+        "gnomad_variant": "rs121909057"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012677",
+        "diseaseBName": "atrial fibrillation, familial, 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.426,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNE1 (HGNC:6275) —DISRUPTS→ Potassium channel function (GO:0005267); KCNE2 (HGNC:6276) —DISRUPTS→ Potassium channel function (GO:0005267); Potassium channel function (GO:0005267) —LEADS_TO→ Congenital long QT syndrome (HP:0011673); Potassium channel function (GO:0005267) —LEADS_TO→ Atrial fibrillation (HP:0011344). Loss-of-function mutations in KCNE1 and KCNE2 disrupt potassium channel function, leading to QT prolongation in congenital long QT syndrome and impaired atrial repolarization in familial atrial fibrillation.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in KCNE1 or KCNE2 with a significant minor allele frequency (>0.1%) in gnomAD populations would cast doubt on its exclusive causality for these rare diseases.",
+          "gnomad_variant": "rs121909057"
+        },
+        "translational": "Understanding the shared role of KCNE1 and KCNE2 in cardiac ion channel function provides a basis for developing targeted therapies for both congenital long QT syndrome and familial atrial fibrillation, potentially through modulating potassium channel activity."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0024540",
+      "diseaseBName": "Jervell and Lange-Nielsen syndrome 1",
+      "fitness": 0.4197,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNQ1 (HGNC:6047) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNE1 (HGNC:6394) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ QT interval prolongation (HP:0011684); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Cardiac arrhythmia (HP:0011681); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Congenital sensorineural deafness (HP:0000365). Mutations in KCNQ1 and KCNE1 impair the function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation and cardiac arrhythmias in both diseases. In Jervell and Lange-Nielsen syndrome, this channel dysfunction also affects potassium transport in the inner ear, leading to congenital deafness.",
+      "mechanism_narrative": "KCNQ1 (HGNC:6047) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNE1 (HGNC:6394) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ QT interval prolongation (HP:0011684); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Cardiac arrhythmia (HP:0011681); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Congenital sensorineural deafness (HP:0000365). Mutations in KCNQ1 and KCNE1 impair the function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation and cardiac arrhythmias in both diseases. In Jervell and Lange-Nielsen syndrome, this channel dysfunction also affects potassium transport in the inner ear, leading to congenital deafness.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in KCNQ1 or KCNE1 that lead to a gain-of-function effect in the potassium channel, or variants that do not impact cardiac repolarization or inner ear function, would falsify this hypothesis.",
+        "gnomad_variant": "Presence of common benign variants in KCNQ1 or KCNE1 in gnomAD with allele frequency > 1% that are associated with these phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890",
+        "Reactome:R-HSA-5576893"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9,
+        "Reactome:R-HSA-5576893": 15
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0024540",
+        "diseaseBName": "Jervell and Lange-Nielsen syndrome 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890",
+          "Reactome:R-HSA-5576893"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9,
+          "Reactome:R-HSA-5576893": 15
+        },
+        "fitness": 0.4197,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNQ1 (HGNC:6047) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNE1 (HGNC:6394) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ QT interval prolongation (HP:0011684); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Cardiac arrhythmia (HP:0011681); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Congenital sensorineural deafness (HP:0000365). Mutations in KCNQ1 and KCNE1 impair the function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation and cardiac arrhythmias in both diseases. In Jervell and Lange-Nielsen syndrome, this channel dysfunction also affects potassium transport in the inner ear, leading to congenital deafness.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in KCNQ1 or KCNE1 that lead to a gain-of-function effect in the potassium channel, or variants that do not impact cardiac repolarization or inner ear function, would falsify this hypothesis.",
+          "gnomad_variant": "Presence of common benign variants in KCNQ1 or KCNE1 in gnomAD with allele frequency > 1% that are associated with these phenotypes."
+        },
+        "translational": "Understanding the shared mechanistic basis of these conditions can inform the development of targeted therapies for cardiac channelopathies and potentially address the auditory manifestations in Jervell and Lange-Nielsen syndrome."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012828",
+      "diseaseBName": "atrial fibrillation, familial, 7",
+      "fitness": 0.4191,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "KCNE1 (HGNC:6266) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNA5 (HGNC:6251) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome 5 (HP:0011670); Potassium channel activity (GO:0005405) —LEADS_TO→ Familial atrial fibrillation, 7 (HP:0033755). Loss-of-function variants in KCNE1 and KCNA5 disrupt potassium channel activity, leading to distinct but related cardiac electrophysiological phenotypes: Long QT syndrome 5 (MONDO:0013372) and familial atrial fibrillation, 7 (MONDO:0012828).",
+      "mechanism_narrative": "KCNE1 (HGNC:6266) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNA5 (HGNC:6251) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome 5 (HP:0011670); Potassium channel activity (GO:0005405) —LEADS_TO→ Familial atrial fibrillation, 7 (HP:0033755). Loss-of-function variants in KCNE1 and KCNA5 disrupt potassium channel activity, leading to distinct but related cardiac electrophysiological phenotypes: Long QT syndrome 5 (MONDO:0013372) and familial atrial fibrillation, 7 (MONDO:0012828).",
+      "falsification": {
+        "text": "If functional studies demonstrate that mutations in KCNE1 and KCNA5 lead to opposing functional effects (e.g., gain-of-function for one disease and loss-of-function for the other) on the same potassium channel complex, or if the identified variants for these diseases do not segregate with the respective phenotypes.",
+        "gnomad_variant": "gnomAD allele frequency > 1% for variants in KCNE1 and KCNA5 associated with these conditions."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5576890"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5576890": 9
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012828",
+        "diseaseBName": "atrial fibrillation, familial, 7",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5576890"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5576890": 9
+        },
+        "fitness": 0.4191,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "KCNE1 (HGNC:6266) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNA5 (HGNC:6251) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome 5 (HP:0011670); Potassium channel activity (GO:0005405) —LEADS_TO→ Familial atrial fibrillation, 7 (HP:0033755). Loss-of-function variants in KCNE1 and KCNA5 disrupt potassium channel activity, leading to distinct but related cardiac electrophysiological phenotypes: Long QT syndrome 5 (MONDO:0013372) and familial atrial fibrillation, 7 (MONDO:0012828).",
+        "falsification": {
+          "text": "If functional studies demonstrate that mutations in KCNE1 and KCNA5 lead to opposing functional effects (e.g., gain-of-function for one disease and loss-of-function for the other) on the same potassium channel complex, or if the identified variants for these diseases do not segregate with the respective phenotypes.",
+          "gnomad_variant": "gnomAD allele frequency > 1% for variants in KCNE1 and KCNA5 associated with these conditions."
+        },
+        "translational": "Understanding the shared disruption of potassium channel function by mutations in KCNE1 and KCNA5 could inform therapeutic strategies targeting ion channel modulation for both Long QT syndrome and familial atrial fibrillation."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T03:24:35.224Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013372 (MONDO:0013372)\n**Generated:** 2026-08-01\n**Candidates screened:** 1 gene-neighbour(s), 18 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Jervell and Lange-Nielsen syndrome 2 (MONDO:0012871) | shared gene | Tier 2 | 0.706 | HGNC:6240 |\n| 2 | atrial fibrillation, familial, 3 (MONDO:0011857) | shared pathway | Tier 3 | 0.511 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 3 | short QT syndrome type 2 (MONDO:0012313) | shared pathway | Tier 3 | 0.476 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 4 | long QT syndrome 1 (MONDO:0100316) | shared pathway | Tier 3 | 0.472 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 5 | long QT syndrome 6 (MONDO:0013370) | shared pathway | Tier 3 | 0.441 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 6 | long QT syndrome 11 (MONDO:0012738) | shared pathway | Tier 3 | 0.440 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 7 | Brugada syndrome 6 (MONDO:0013145) | shared pathway | Tier 3 | 0.439 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 8 | atrial fibrillation, familial, 4 (MONDO:0012677) | shared pathway | Tier 3 | 0.426 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 9 | Jervell and Lange-Nielsen syndrome 1 (MONDO:0024540) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-5576890, Reactome:R-HSA-5576893 |\n| 10 | atrial fibrillation, familial, 7 (MONDO:0012828) | shared pathway | Tier 3 | 0.419 | Reactome:R-HSA-5576890 |\n\n### CANDIDATE DETAIL\n#### 1. Jervell and Lange-Nielsen syndrome 2  —  Tier 2 — Strong / Probable  (fitness 0.706)\n**Link type:** shared causal gene (HGNC:6240)\n\n**Proposed mechanism:** KCNE1 (HGNC:6240) —DISRUPTS→ Potassium ion transport (GO:0006811); Potassium ion transport (GO:0006811) —LEADS_TO→ Cardiac action potential (GO:0003011); Cardiac action potential (GO:0003011) —LEADS_TO→ QT interval prolongation (HP:0011674); Cardiac action potential (GO:0003011) —LEADS_TO→ Congenital long QT syndrome (HP:0001641); KCNE1 (HGNC:6240) —DISRUPTS→ Deafness (HP:0000365). Loss-of-function variants in KCNE1 disrupt potassium ion transport, leading to altered cardiac action potentials and QT interval prolongation (MONDO:0013372). In Jervell and Lange-Nielsen syndrome 2 (MONDO:0012871), these KCNE1 variants also disrupt potassium ion transport, causing congenital long QT syndrome and deafness.\n\n**How to falsify it:** Identification of individuals with loss-of-function variants in KCNE1 who do not exhibit QT interval prolongation or deafness would falsify this hypothesis. _(variant: rs1805125)_\n\n**Why it matters:** Understanding the shared mechanism of KCNE1 dysfunction in these two distinct but related conditions can inform therapeutic strategies targeting ion channel function for both cardiac and auditory systems.\n\n---\n\n#### 2. atrial fibrillation, familial, 3  —  Tier 3 — Moderate / Emerging  (fitness 0.511)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNQ1 (HGNC:6403) —DISRUPTS→ potassium channel activity (GO:0005405); KCNE1 (HGNC:6389) —DISRUPTS→ potassium channel activity (GO:0005405); potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome (HP:0001655); potassium channel activity (GO:0005405) —LEADS_TO→ Atrial fibrillation (HP:0011674). Loss-of-function mutations in KCNQ1 and KCNE1 disrupt the function of the IKs potassium channel, leading to both Long QT syndrome and familial atrial fibrillation.\n\n**How to falsify it:** Identification of a pathogenic variant in KCNQ1 or KCNE1 that causes a gain-of-function effect and is exclusively associated with one of the diseases, but not the other, would falsify this hypothesis. _(variant: rs121908480)_\n\n**Why it matters:** Understanding the shared molecular basis of these cardiac channelopathies can inform the development of targeted therapies for arrhythmias, potentially leading to improved management strategies for both Long QT syndrome and familial atrial fibrillation.\n\n---\n\n#### 3. short QT syndrome type 2  —  Tier 3 — Moderate / Emerging  (fitness 0.476)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNQ1 (HGNC:6306) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —BINDS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNQ1 (HGNC:6306) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); KCNE1 (HGNC:6300) —DISRUPTS→ Cardiac potassium channel (IKs) function (GO:0005400); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Shortened QT interval (HP:0030675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Cardiac arrhythmia (HP:0011675); Cardiac potassium channel (IKs) function (GO:0005400) —LEADS_TO→ Congenital heart block (HP:0001665). Mutations in KCNQ1 and KCNE1 lead to haploinsufficiency, impairing the function of the IKs potassium channel. This dysfunction directly results in a shortened QT interval, increased susceptibility to cardiac arrhythmias, and in some cases, congenital heart block.\n\n**How to falsify it:** Identification of pathogenic variants in KCNQ1 or KCNE1 with a gain-of-function effect in patients with MONDO:0013372, or conversely, loss-of-function variants in short QT syndrome type 2, would falsify the proposed shared mechanism of haploinsufficiency.\n\n**Why it matters:** Understanding the shared mechanistic basis of these conditions, stemming from the same ion channel complex, offers opportunities for developing targeted therapies that could address common underlying pathophysiology for both conditions, potentially improving cardiac repolarization and reducing arrhythmia risk.\n\n---\n\n#### 4. long QT syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.472)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNQ1 (HGNC:6364) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNE1 (HGNC:6361) —BINDS→ KCNQ1/KCNE1 potassium channel complex formation and function; KCNQ1 (HGNC:6364) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNE1 (HGNC:6361) —LEADS_TO→ Long QT syndrome 1 (MONDO:0100316); KCNQ1/KCNE1 potassium channel complex formation and function —LEADS_TO→ Familial Hypercholesterolemia (MONDO:0013372). Mutations in KCNQ1 and KCNE1 lead to impaired function of the KCNQ1/KCNE1 potassium channel, causing Long QT Syndrome 1. While Familial Hypercholesterolemia is primarily associated with LDLR, a shared downstream consequence of dysregulated ion channel function in certain contexts can contribute to cellular stress pathways that may indirectly influence lipid metabolism or cardiovascular risk factors, leading to a phenotypic overlap with hypercholesterolemia.\n\n**How to falsify it:** If genetic analysis reveals that mutations in KCNQ1 or KCNE1 do not lead to a reduction in potassium channel function or that there is no discernible link between KCNQ1/KCNE1 dysfunction and pathways implicated in lipid metabolism or cardiovascular risk factors beyond their direct role in cardiac electrophysiology, this hypothesis would be falsified. _(variant: gnomAD analysis showing high-frequency variants in KCNQ1 or KCNE1 associated with Familial Hypercholesterolemia phenotype.)_\n\n**Why it matters:** Understanding this mechanistic link could inform therapeutic strategies for patients with Long QT Syndrome 1 who may also have dyslipidemia, potentially allowing for combined treatment approaches targeting both ion channel function and lipid management.\n\n---\n\n#### 5. long QT syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.441)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNE1 (HGNC:6279) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNE2 (HGNC:6280) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ QT interval prolongation (HP:0011679); Potassium channel activity (GO:0005405) —LEADS_TO→ Ventricular arrhythmias (HP:0001669); Ventricular arrhythmias (HP:0001669) —LEADS_TO→ Syncope (HP:0001257); Syncope (HP:0001257) —LEADS_TO→ Sudden cardiac death (HP:0001644). Loss-of-function variants in either KCNE1 or KCNE2 disrupt the function of potassium channels, leading to QT interval prolongation, which can precipitate ventricular arrhythmias, syncope, and sudden cardiac death.\n\n**How to falsify it:** Identification of a pathogenic variant in KCNE1 or KCNE2 with a demonstrably gain-of-function effect, or variants in these genes that do not lead to any observable QT prolongation or arrhythmia in affected individuals. _(variant: rs1800959 (KCNE1))_\n\n**Why it matters:** Understanding the shared role of KCNE1 and KCNE2 in potassium channel function provides a unified therapeutic target for long QT syndromes, potentially allowing for the development of treatments that address the common downstream consequences of channel dysfunction.\n\n---\n\n#### 6. long QT syndrome 11  —  Tier 3 — Moderate / Emerging  (fitness 0.440)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNE1 (HGNC:6288) —DISRUPTS→ KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537); AKAP9 (HGNC:345) —DISRUPTS→ Regulation of cardiac myocyte calcium homeostasis (GO:0010674); KCNQ1/KCNE1 potassium channel complex assembly and function (GO:0008537) —LEADS_TO→ QT interval prolongation (HP:0011688); Regulation of cardiac myocyte calcium homeostasis (GO:0010674) —LEADS_TO→ Long QT syndrome (HP:0011688). Loss-of-function mutations in KCNE1 disrupt the assembly and function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation. Similarly, loss-of-function mutations in AKAP9 disrupt the regulation of cardiac myocyte calcium homeostasis, which is a known contributor to long QT syndrome phenotypes.\n\n**How to falsify it:** Demonstration that mutations in KCNE1 do not affect the KCNQ1/KCNE1 channel complex or that mutations in AKAP9 do not impact cardiac myocyte calcium handling. _(variant: rs28359178)_\n\n**Why it matters:** Understanding the shared impact on cardiac ion channel function and calcium homeostasis provides a basis for exploring common therapeutic strategies for these related cardiac channelopathies.\n\n---\n\n#### 7. Brugada syndrome 6  —  Tier 3 — Moderate / Emerging  (fitness 0.439)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNE1 (HGNC:6301) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); KCNE3 (HGNC:6302) —DISRUPTS→ Potassium channel activity regulation (GO:0005267); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ QT prolongation (HP:0030709); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ Ventricular arrhythmias (HP:0011344); Potassium channel activity regulation (GO:0005267) —LEADS_TO→ ST segment elevation (HP:0012378). Mutations in KCNE1 and KCNE3 disrupt the regulation of potassium channel activity, which is a shared pathway leading to both QT prolongation and ventricular arrhythmias (associated with Brugada syndrome 6) and ST segment elevation (associated with Brugada syndrome 6).\n\n**How to falsify it:** The identification of disease-causing variants in KCNE1 or KCNE3 that exclusively affect different ion channel subunits or signaling pathways not related to cardiac action potential duration, or the absence of shared phenotypic features in individuals with mutations in these genes, would falsify this hypothesis.\n\n**Why it matters:** Understanding the shared mechanistic link through KCNE1 and KCNE3 dysfunction in ion channel regulation could enable the development of targeted therapies for both conditions, potentially by modulating potassium channel activity or downstream signaling pathways.\n\n---\n\n#### 8. atrial fibrillation, familial, 4  —  Tier 3 — Moderate / Emerging  (fitness 0.426)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNE1 (HGNC:6275) —DISRUPTS→ Potassium channel function (GO:0005267); KCNE2 (HGNC:6276) —DISRUPTS→ Potassium channel function (GO:0005267); Potassium channel function (GO:0005267) —LEADS_TO→ Congenital long QT syndrome (HP:0011673); Potassium channel function (GO:0005267) —LEADS_TO→ Atrial fibrillation (HP:0011344). Loss-of-function mutations in KCNE1 and KCNE2 disrupt potassium channel function, leading to QT prolongation in congenital long QT syndrome and impaired atrial repolarization in familial atrial fibrillation.\n\n**How to falsify it:** Identification of a pathogenic variant in KCNE1 or KCNE2 with a significant minor allele frequency (>0.1%) in gnomAD populations would cast doubt on its exclusive causality for these rare diseases. _(variant: rs121909057)_\n\n**Why it matters:** Understanding the shared role of KCNE1 and KCNE2 in cardiac ion channel function provides a basis for developing targeted therapies for both congenital long QT syndrome and familial atrial fibrillation, potentially through modulating potassium channel activity.\n\n---\n\n#### 9. Jervell and Lange-Nielsen syndrome 1  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-5576890, Reactome:R-HSA-5576893)\n\n**Proposed mechanism:** KCNQ1 (HGNC:6047) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNE1 (HGNC:6394) —BINDS→ KCNQ1/KCNE1 potassium channel complex (GO:0005370); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ QT interval prolongation (HP:0011684); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Cardiac arrhythmia (HP:0011681); KCNQ1/KCNE1 potassium channel complex (GO:0005370) —LEADS_TO→ Congenital sensorineural deafness (HP:0000365). Mutations in KCNQ1 and KCNE1 impair the function of the KCNQ1/KCNE1 potassium channel complex, leading to QT interval prolongation and cardiac arrhythmias in both diseases. In Jervell and Lange-Nielsen syndrome, this channel dysfunction also affects potassium transport in the inner ear, leading to congenital deafness.\n\n**How to falsify it:** Identification of pathogenic variants in KCNQ1 or KCNE1 that lead to a gain-of-function effect in the potassium channel, or variants that do not impact cardiac repolarization or inner ear function, would falsify this hypothesis. _(variant: Presence of common benign variants in KCNQ1 or KCNE1 in gnomAD with allele frequency > 1% that are associated with these phenotypes.)_\n\n**Why it matters:** Understanding the shared mechanistic basis of these conditions can inform the development of targeted therapies for cardiac channelopathies and potentially address the auditory manifestations in Jervell and Lange-Nielsen syndrome.\n\n---\n\n#### 10. atrial fibrillation, familial, 7  —  Tier 3 — Moderate / Emerging  (fitness 0.419)\n**Link type:** shared pathway (Reactome:R-HSA-5576890)\n\n**Proposed mechanism:** KCNE1 (HGNC:6266) —DISRUPTS→ Potassium channel activity (GO:0005405); KCNA5 (HGNC:6251) —DISRUPTS→ Potassium channel activity (GO:0005405); Potassium channel activity (GO:0005405) —LEADS_TO→ Long QT syndrome 5 (HP:0011670); Potassium channel activity (GO:0005405) —LEADS_TO→ Familial atrial fibrillation, 7 (HP:0033755). Loss-of-function variants in KCNE1 and KCNA5 disrupt potassium channel activity, leading to distinct but related cardiac electrophysiological phenotypes: Long QT syndrome 5 (MONDO:0013372) and familial atrial fibrillation, 7 (MONDO:0012828).\n\n**How to falsify it:** If functional studies demonstrate that mutations in KCNE1 and KCNA5 lead to opposing functional effects (e.g., gain-of-function for one disease and loss-of-function for the other) on the same potassium channel complex, or if the identified variants for these diseases do not segregate with the respective phenotypes. _(variant: gnomAD allele frequency > 1% for variants in KCNE1 and KCNA5 associated with these conditions.)_\n\n**Why it matters:** Understanding the shared disruption of potassium channel function by mutations in KCNE1 and KCNA5 could inform therapeutic strategies targeting ion channel modulation for both Long QT syndrome and familial atrial fibrillation.\n\n---"
+}

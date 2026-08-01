@@ -1,0 +1,413 @@
+{
+  "seed": {
+    "id": "MONDO:0013301",
+    "name": "MONDO:0013301"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 17,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0971174",
+      "diseaseBName": "multiple mitochondrial dysfunctions syndrome 9b",
+      "fitness": 0.4175,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2405) —DISRUPTS→ Steroid biosynthesis (REACT:R-HSA-3889003); Steroid biosynthesis (REACT:R-HSA-3889003) —LEADS_TO→ Abnormal circulating estradiol level (HP:0030193); FDXR (HGNC:3737) —DISRUPTS→ Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100); Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100) —LEADS_TO→ Mitochondrial respiratory chain deficiency (HP:0003204). Loss-of-function mutations in CYP19A1 disrupt steroid biosynthesis, leading to abnormal circulating estradiol levels (Disease A). Loss-of-function mutations in FDXR disrupt the mitochondrial electron transport chain and ATP synthesis, resulting in mitochondrial respiratory chain deficiency (Disease B). While the direct genes are distinct, both pathways are crucial for cellular homeostasis and their disruption can lead to overlapping cellular stress responses that manifest as distinct but related phenotypes.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2405) —DISRUPTS→ Steroid biosynthesis (REACT:R-HSA-3889003); Steroid biosynthesis (REACT:R-HSA-3889003) —LEADS_TO→ Abnormal circulating estradiol level (HP:0030193); FDXR (HGNC:3737) —DISRUPTS→ Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100); Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100) —LEADS_TO→ Mitochondrial respiratory chain deficiency (HP:0003204). Loss-of-function mutations in CYP19A1 disrupt steroid biosynthesis, leading to abnormal circulating estradiol levels (Disease A). Loss-of-function mutations in FDXR disrupt the mitochondrial electron transport chain and ATP synthesis, resulting in mitochondrial respiratory chain deficiency (Disease B). While the direct genes are distinct, both pathways are crucial for cellular homeostasis and their disruption can lead to overlapping cellular stress responses that manifest as distinct but related phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that mutations in CYP19A1 do not lead to altered steroid biosynthesis or that mutations in FDXR do not impair mitochondrial electron transport, this hypothesis would be falsified. Additionally, if distinct and unrelated molecular pathways are definitively identified for each disease with no downstream interaction, the proposed overlap would be invalidated.",
+        "gnomad_variant": "The presence of common variants in CYP19A1 or FDXR with a frequency >1% in gnomAD would cast doubt on their role as causative genes for rare diseases, though not necessarily falsify the mechanistic link."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0971174",
+        "diseaseBName": "multiple mitochondrial dysfunctions syndrome 9b",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.4175,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2405) —DISRUPTS→ Steroid biosynthesis (REACT:R-HSA-3889003); Steroid biosynthesis (REACT:R-HSA-3889003) —LEADS_TO→ Abnormal circulating estradiol level (HP:0030193); FDXR (HGNC:3737) —DISRUPTS→ Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100); Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100) —LEADS_TO→ Mitochondrial respiratory chain deficiency (HP:0003204). Loss-of-function mutations in CYP19A1 disrupt steroid biosynthesis, leading to abnormal circulating estradiol levels (Disease A). Loss-of-function mutations in FDXR disrupt the mitochondrial electron transport chain and ATP synthesis, resulting in mitochondrial respiratory chain deficiency (Disease B). While the direct genes are distinct, both pathways are crucial for cellular homeostasis and their disruption can lead to overlapping cellular stress responses that manifest as distinct but related phenotypes.",
+        "falsification": {
+          "text": "If genetic analysis reveals that mutations in CYP19A1 do not lead to altered steroid biosynthesis or that mutations in FDXR do not impair mitochondrial electron transport, this hypothesis would be falsified. Additionally, if distinct and unrelated molecular pathways are definitively identified for each disease with no downstream interaction, the proposed overlap would be invalidated.",
+          "gnomad_variant": "The presence of common variants in CYP19A1 or FDXR with a frequency >1% in gnomAD would cast doubt on their role as causative genes for rare diseases, though not necessarily falsify the mechanistic link."
+        },
+        "translational": "Understanding the distinct yet potentially interconnected roles of CYP19A1 and FDXR in cellular and systemic health can inform therapeutic strategies. For Disease A, hormonal therapies might be considered, while for Disease B, interventions aimed at supporting mitochondrial function could be explored. Identifying any shared downstream pathways or compensatory mechanisms could reveal novel therapeutic targets applicable to both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008728",
+      "diseaseBName": "classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency",
+      "fitness": 0.4174,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP21A2 (HGNC:2408) —DISRUPTS→ steroidogenesis (P00000); CYP21A2 (HGNC:2408) —DECREASES→ 17-hydroxyprogesterone (CHEBI:17540); 17-hydroxyprogesterone (CHEBI:17540) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000147); CYP19A1 (HGNC:2411) —DISRUPTS→ steroidogenesis (P00000); CYP19A1 (HGNC:2411) —LEADS_TO→ Aromatase deficiency (HP:0004771). Mutations in CYP21A2 lead to loss-of-function, impairing steroidogenesis and causing congenital adrenal hyperplasia. While CYP19A1 is not directly implicated in CAH, its role in aromatization, a downstream process in steroidogenesis, means that disruptions in the broader steroidogenic pathway can indirectly impact phenotypes related to aromatase function. Aromatase deficiency (caused by CYP19A1 mutations) also disrupts steroidogenesis, leading to distinct phenotypes. The shared disruption of the broader steroidogenesis pathway constitutes the overlap.",
+      "mechanism_narrative": "CYP21A2 (HGNC:2408) —DISRUPTS→ steroidogenesis (P00000); CYP21A2 (HGNC:2408) —DECREASES→ 17-hydroxyprogesterone (CHEBI:17540); 17-hydroxyprogesterone (CHEBI:17540) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000147); CYP19A1 (HGNC:2411) —DISRUPTS→ steroidogenesis (P00000); CYP19A1 (HGNC:2411) —LEADS_TO→ Aromatase deficiency (HP:0004771). Mutations in CYP21A2 lead to loss-of-function, impairing steroidogenesis and causing congenital adrenal hyperplasia. While CYP19A1 is not directly implicated in CAH, its role in aromatization, a downstream process in steroidogenesis, means that disruptions in the broader steroidogenic pathway can indirectly impact phenotypes related to aromatase function. Aromatase deficiency (caused by CYP19A1 mutations) also disrupts steroidogenesis, leading to distinct phenotypes. The shared disruption of the broader steroidogenesis pathway constitutes the overlap.",
+      "falsification": {
+        "text": "Demonstration that mutations in CYP21A2 do not lead to a loss-of-function effect on steroidogenesis, or that CYP19A1 mutations do not impair steroidogenesis, would falsify this hypothesis.",
+        "gnomad_variant": "A common variant (>1% allele frequency) in CYP21A2 or CYP19A1 associated with these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008728",
+        "diseaseBName": "classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.4174,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP21A2 (HGNC:2408) —DISRUPTS→ steroidogenesis (P00000); CYP21A2 (HGNC:2408) —DECREASES→ 17-hydroxyprogesterone (CHEBI:17540); 17-hydroxyprogesterone (CHEBI:17540) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000147); CYP19A1 (HGNC:2411) —DISRUPTS→ steroidogenesis (P00000); CYP19A1 (HGNC:2411) —LEADS_TO→ Aromatase deficiency (HP:0004771). Mutations in CYP21A2 lead to loss-of-function, impairing steroidogenesis and causing congenital adrenal hyperplasia. While CYP19A1 is not directly implicated in CAH, its role in aromatization, a downstream process in steroidogenesis, means that disruptions in the broader steroidogenic pathway can indirectly impact phenotypes related to aromatase function. Aromatase deficiency (caused by CYP19A1 mutations) also disrupts steroidogenesis, leading to distinct phenotypes. The shared disruption of the broader steroidogenesis pathway constitutes the overlap.",
+        "falsification": {
+          "text": "Demonstration that mutations in CYP21A2 do not lead to a loss-of-function effect on steroidogenesis, or that CYP19A1 mutations do not impair steroidogenesis, would falsify this hypothesis.",
+          "gnomad_variant": "A common variant (>1% allele frequency) in CYP21A2 or CYP19A1 associated with these diseases."
+        },
+        "translational": "Understanding the shared pathway of steroidogenesis in these distinct diseases could reveal novel therapeutic targets or diagnostic markers that bridge the gap between congenital adrenal hyperplasia and conditions like aromatase deficiency, potentially leading to improved management strategies for hormonal imbalances."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013400",
+      "diseaseBName": "Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency",
+      "fitness": 0.4166,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP11A1 (HGNC:2404) —DISRUPTS→ Cholesterol (CHEBI:6775); Cholesterol (CHEBI:6775) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-170995); Steroidogenesis (REACT:R-HSA-170995) —DECREASES→ Pregnenolone (CHEBI:27762); Pregnenolone (CHEBI:27762) —LEADS_TO→ Congenital adrenal insufficiency (HP:0003063); Pregnenolone (CHEBI:27762) —LEADS_TO→ 46,XY sex reversal (HP:0011197). Loss-of-function mutations in CYP11A1 impair the initial step of steroidogenesis, the conversion of cholesterol to pregnenolone. This deficiency leads to insufficient production of all steroid hormones, manifesting as congenital adrenal insufficiency. Furthermore, the critical role of androgens in male sex development means that impaired steroidogenesis results in 46,XY sex reversal.",
+      "mechanism_narrative": "CYP11A1 (HGNC:2404) —DISRUPTS→ Cholesterol (CHEBI:6775); Cholesterol (CHEBI:6775) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-170995); Steroidogenesis (REACT:R-HSA-170995) —DECREASES→ Pregnenolone (CHEBI:27762); Pregnenolone (CHEBI:27762) —LEADS_TO→ Congenital adrenal insufficiency (HP:0003063); Pregnenolone (CHEBI:27762) —LEADS_TO→ 46,XY sex reversal (HP:0011197). Loss-of-function mutations in CYP11A1 impair the initial step of steroidogenesis, the conversion of cholesterol to pregnenolone. This deficiency leads to insufficient production of all steroid hormones, manifesting as congenital adrenal insufficiency. Furthermore, the critical role of androgens in male sex development means that impaired steroidogenesis results in 46,XY sex reversal.",
+      "falsification": {
+        "text": "Discovery of pathogenic loss-of-function variants in CYP11A1 associated with MONDO:0013301 but not with the phenotypes defining MONDO:0013400, or vice-versa, would falsify the direct mechanistic link proposed.",
+        "gnomad_variant": "gnomad v3.1.2 frequency > 0.001 for pathogenic LoF variants in CYP11A1"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013400",
+        "diseaseBName": "Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.4166,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP11A1 (HGNC:2404) —DISRUPTS→ Cholesterol (CHEBI:6775); Cholesterol (CHEBI:6775) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-170995); Steroidogenesis (REACT:R-HSA-170995) —DECREASES→ Pregnenolone (CHEBI:27762); Pregnenolone (CHEBI:27762) —LEADS_TO→ Congenital adrenal insufficiency (HP:0003063); Pregnenolone (CHEBI:27762) —LEADS_TO→ 46,XY sex reversal (HP:0011197). Loss-of-function mutations in CYP11A1 impair the initial step of steroidogenesis, the conversion of cholesterol to pregnenolone. This deficiency leads to insufficient production of all steroid hormones, manifesting as congenital adrenal insufficiency. Furthermore, the critical role of androgens in male sex development means that impaired steroidogenesis results in 46,XY sex reversal.",
+        "falsification": {
+          "text": "Discovery of pathogenic loss-of-function variants in CYP11A1 associated with MONDO:0013301 but not with the phenotypes defining MONDO:0013400, or vice-versa, would falsify the direct mechanistic link proposed.",
+          "gnomad_variant": "gnomad v3.1.2 frequency > 0.001 for pathogenic LoF variants in CYP11A1"
+        },
+        "translational": "Understanding the shared role of CYP11A1 in these conditions could lead to unified diagnostic approaches and potential therapeutic strategies targeting steroid hormone replacement or precursor supplementation."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012524",
+      "diseaseBName": "corticosterone methyloxidase type 2 deficiency",
+      "fitness": 0.4149,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2409) —DISRUPTS→ Steroid hormone biosynthesis; CYP11B2 (HGNC:2413) —DISRUPTS→ Steroid hormone biosynthesis; Steroid hormone biosynthesis —PRODUCES→ Estrogen; Steroid hormone biosynthesis —PRODUCES→ Aldosterone; CYP19A1 (HGNC:2409) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000820); CYP11B2 (HGNC:2413) —LEADS_TO→ Corticosterone methyloxidase type 2 deficiency (MONDO:0012524). Loss-of-function mutations in CYP19A1 lead to impaired estrogen synthesis, contributing to congenital adrenal hyperplasia. Concurrently, loss-of-function mutations in CYP11B2 impair aldosterone synthesis, causing corticosterone methyloxidase type 2 deficiency. Both genes are involved in the shared pathway of steroid hormone biosynthesis, representing a disease module overlap.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2409) —DISRUPTS→ Steroid hormone biosynthesis; CYP11B2 (HGNC:2413) —DISRUPTS→ Steroid hormone biosynthesis; Steroid hormone biosynthesis —PRODUCES→ Estrogen; Steroid hormone biosynthesis —PRODUCES→ Aldosterone; CYP19A1 (HGNC:2409) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000820); CYP11B2 (HGNC:2413) —LEADS_TO→ Corticosterone methyloxidase type 2 deficiency (MONDO:0012524). Loss-of-function mutations in CYP19A1 lead to impaired estrogen synthesis, contributing to congenital adrenal hyperplasia. Concurrently, loss-of-function mutations in CYP11B2 impair aldosterone synthesis, causing corticosterone methyloxidase type 2 deficiency. Both genes are involved in the shared pathway of steroid hormone biosynthesis, representing a disease module overlap.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CYP11B2 associated with gain-of-function mechanisms in corticosterone methyloxidase type 2 deficiency, or a complete lack of overlap in the steroid hormone biosynthesis pathway between the two conditions.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012524",
+        "diseaseBName": "corticosterone methyloxidase type 2 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.4149,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2409) —DISRUPTS→ Steroid hormone biosynthesis; CYP11B2 (HGNC:2413) —DISRUPTS→ Steroid hormone biosynthesis; Steroid hormone biosynthesis —PRODUCES→ Estrogen; Steroid hormone biosynthesis —PRODUCES→ Aldosterone; CYP19A1 (HGNC:2409) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000820); CYP11B2 (HGNC:2413) —LEADS_TO→ Corticosterone methyloxidase type 2 deficiency (MONDO:0012524). Loss-of-function mutations in CYP19A1 lead to impaired estrogen synthesis, contributing to congenital adrenal hyperplasia. Concurrently, loss-of-function mutations in CYP11B2 impair aldosterone synthesis, causing corticosterone methyloxidase type 2 deficiency. Both genes are involved in the shared pathway of steroid hormone biosynthesis, representing a disease module overlap.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CYP11B2 associated with gain-of-function mechanisms in corticosterone methyloxidase type 2 deficiency, or a complete lack of overlap in the steroid hormone biosynthesis pathway between the two conditions.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared pathway of steroid hormone biosynthesis affected by both CYP19A1 and CYP11B2 mutations could lead to novel therapeutic strategies targeting specific steroid hormone deficiencies or excesses, potentially applicable to both conditions or related endocrine disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008751",
+      "diseaseBName": "corticosterone methyloxidase type 1 deficiency",
+      "fitness": 0.3954,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2420) —DECREASES→ Estrogen Synthesis (REACT:R-HSA-190888); CYP19A1 (HGNC:2420) —DECREASES→ Androgens (CHEBI:17777); Estrogen Synthesis (REACT:R-HSA-190888) —LEADS_TO→ Disorders of sex development (HP:0000058); CYP11B2 (HGNC:2414) —DECREASES→ Aldosterone (CHEBI:15350); CYP11B2 (HGNC:2414) —DECREASES→ Corticosterone (CHEBI:17180); Aldosterone (CHEBI:15350) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374); Androgens (CHEBI:17777) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Corticosterone (CHEBI:17180) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Estrogen Synthesis (REACT:R-HSA-190888); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Aldosterone (CHEBI:15350). Mutations in CYP19A1 lead to reduced estrogen synthesis (Disease A), impacting sex development. Mutations in CYP11B2 lead to reduced aldosterone synthesis (Disease B), causing mineralocorticoid deficiency. Both genes are involved in the broader pathway of steroid hormone synthesis, representing a shared module.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2420) —DECREASES→ Estrogen Synthesis (REACT:R-HSA-190888); CYP19A1 (HGNC:2420) —DECREASES→ Androgens (CHEBI:17777); Estrogen Synthesis (REACT:R-HSA-190888) —LEADS_TO→ Disorders of sex development (HP:0000058); CYP11B2 (HGNC:2414) —DECREASES→ Aldosterone (CHEBI:15350); CYP11B2 (HGNC:2414) —DECREASES→ Corticosterone (CHEBI:17180); Aldosterone (CHEBI:15350) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374); Androgens (CHEBI:17777) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Corticosterone (CHEBI:17180) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Estrogen Synthesis (REACT:R-HSA-190888); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Aldosterone (CHEBI:15350). Mutations in CYP19A1 lead to reduced estrogen synthesis (Disease A), impacting sex development. Mutations in CYP11B2 lead to reduced aldosterone synthesis (Disease B), causing mineralocorticoid deficiency. Both genes are involved in the broader pathway of steroid hormone synthesis, representing a shared module.",
+      "falsification": {
+        "text": "Absence of pathogenic variants in CYP11B2 in patients with corticosterone methyloxidase type 1 deficiency, or absence of pathogenic variants in CYP19A1 in patients with disorders of sex development linked to aromatase deficiency.",
+        "gnomad_variant": "rs777522508"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008751",
+        "diseaseBName": "corticosterone methyloxidase type 1 deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3954,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2420) —DECREASES→ Estrogen Synthesis (REACT:R-HSA-190888); CYP19A1 (HGNC:2420) —DECREASES→ Androgens (CHEBI:17777); Estrogen Synthesis (REACT:R-HSA-190888) —LEADS_TO→ Disorders of sex development (HP:0000058); CYP11B2 (HGNC:2414) —DECREASES→ Aldosterone (CHEBI:15350); CYP11B2 (HGNC:2414) —DECREASES→ Corticosterone (CHEBI:17180); Aldosterone (CHEBI:15350) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374); Androgens (CHEBI:17777) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Corticosterone (CHEBI:17180) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Estrogen Synthesis (REACT:R-HSA-190888); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Aldosterone (CHEBI:15350). Mutations in CYP19A1 lead to reduced estrogen synthesis (Disease A), impacting sex development. Mutations in CYP11B2 lead to reduced aldosterone synthesis (Disease B), causing mineralocorticoid deficiency. Both genes are involved in the broader pathway of steroid hormone synthesis, representing a shared module.",
+        "falsification": {
+          "text": "Absence of pathogenic variants in CYP11B2 in patients with corticosterone methyloxidase type 1 deficiency, or absence of pathogenic variants in CYP19A1 in patients with disorders of sex development linked to aromatase deficiency.",
+          "gnomad_variant": "rs777522508"
+        },
+        "translational": "Understanding the shared pathway of steroid hormone synthesis provides opportunities for targeted therapies that could potentially address aspects of both conditions, or inform differential diagnosis based on overlapping endocrine disruptions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008865",
+      "diseaseBName": "Bietti crystalline corneoretinal dystrophy",
+      "fitness": 0.3818,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Bietti crystalline corneoretinal dystrophy (MONDO:0008865); CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Aromatase deficiency (MONDO:0013301); cholesterol ester metabolism (GO:0008709) —DECREASES→ cholesterol esters (CHEBI:57543); cholesterol esters (CHEBI:57543) —LEADS_TO→ accumulation of lipid-rich deposits in the RPE (HP:0030033); cholesterol ester metabolism (GO:0008709) —DECREASES→ abnormal circulating estrogen levels (HP:0011375). Loss-of-function mutations in CYP4V2 impair cholesterol ester metabolism. In Bietti crystalline corneoretinal dystrophy, this leads to accumulation of lipid deposits in the retinal pigment epithelium. In Aromatase deficiency (though CYP19A1 is the primary gene, CYP4V2's role in steroid metabolism may contribute to hormonal imbalances), disruption of cholesterol ester metabolism can indirectly affect steroidogenesis, leading to abnormal estrogen levels.",
+      "mechanism_narrative": "CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Bietti crystalline corneoretinal dystrophy (MONDO:0008865); CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Aromatase deficiency (MONDO:0013301); cholesterol ester metabolism (GO:0008709) —DECREASES→ cholesterol esters (CHEBI:57543); cholesterol esters (CHEBI:57543) —LEADS_TO→ accumulation of lipid-rich deposits in the RPE (HP:0030033); cholesterol ester metabolism (GO:0008709) —DECREASES→ abnormal circulating estrogen levels (HP:0011375). Loss-of-function mutations in CYP4V2 impair cholesterol ester metabolism. In Bietti crystalline corneoretinal dystrophy, this leads to accumulation of lipid deposits in the retinal pigment epithelium. In Aromatase deficiency (though CYP19A1 is the primary gene, CYP4V2's role in steroid metabolism may contribute to hormonal imbalances), disruption of cholesterol ester metabolism can indirectly affect steroidogenesis, leading to abnormal estrogen levels.",
+      "falsification": {
+        "text": "Identification of a common pathogenic variant in CYP4V2 with a minor allele frequency >1% in gnomAD, or demonstration that CYP4V2 mutations do not impact cholesterol ester metabolism in relevant tissues.",
+        "gnomad_variant": "rs137853744"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008865",
+        "diseaseBName": "Bietti crystalline corneoretinal dystrophy",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3818,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Bietti crystalline corneoretinal dystrophy (MONDO:0008865); CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Aromatase deficiency (MONDO:0013301); cholesterol ester metabolism (GO:0008709) —DECREASES→ cholesterol esters (CHEBI:57543); cholesterol esters (CHEBI:57543) —LEADS_TO→ accumulation of lipid-rich deposits in the RPE (HP:0030033); cholesterol ester metabolism (GO:0008709) —DECREASES→ abnormal circulating estrogen levels (HP:0011375). Loss-of-function mutations in CYP4V2 impair cholesterol ester metabolism. In Bietti crystalline corneoretinal dystrophy, this leads to accumulation of lipid deposits in the retinal pigment epithelium. In Aromatase deficiency (though CYP19A1 is the primary gene, CYP4V2's role in steroid metabolism may contribute to hormonal imbalances), disruption of cholesterol ester metabolism can indirectly affect steroidogenesis, leading to abnormal estrogen levels.",
+        "falsification": {
+          "text": "Identification of a common pathogenic variant in CYP4V2 with a minor allele frequency >1% in gnomAD, or demonstration that CYP4V2 mutations do not impact cholesterol ester metabolism in relevant tissues.",
+          "gnomad_variant": "rs137853744"
+        },
+        "translational": "Understanding the shared role of CYP4V2 in cholesterol ester metabolism offers potential for developing therapeutic strategies that target lipid accumulation or hormonal imbalances in both Bietti crystalline corneoretinal dystrophy and conditions associated with aromatase deficiency or related steroidogenic defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0060582",
+      "diseaseBName": "auditory neuropathy-optic atrophy syndrome",
+      "fitness": 0.3772,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2411) —DISRUPTS→ heme biosynthesis (REACT:R-HSA-5693373); heme biosynthesis (REACT:R-HSA-5693373) —DECREASES→ protoporphyrin IX (CHEBI:17813); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ optic atrophy (HP:0000649); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ auditory neuropathy (HP:0001304); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ hypogonadotropic hypogonadism (HP:0000877); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function mutations in CYP19A1 impair heme biosynthesis, leading to the accumulation of protoporphyrin IX. This accumulation is hypothesized to disrupt mitochondrial function and cellular respiration, contributing to the optic atrophy and auditory neuropathy seen in MONDO:0013301 and MONDO:0060582, respectively, as well as other associated phenotypes like hypogonadotropic hypogonadism and intellectual disability.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2411) —DISRUPTS→ heme biosynthesis (REACT:R-HSA-5693373); heme biosynthesis (REACT:R-HSA-5693373) —DECREASES→ protoporphyrin IX (CHEBI:17813); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ optic atrophy (HP:0000649); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ auditory neuropathy (HP:0001304); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ hypogonadotropic hypogonadism (HP:0000877); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function mutations in CYP19A1 impair heme biosynthesis, leading to the accumulation of protoporphyrin IX. This accumulation is hypothesized to disrupt mitochondrial function and cellular respiration, contributing to the optic atrophy and auditory neuropathy seen in MONDO:0013301 and MONDO:0060582, respectively, as well as other associated phenotypes like hypogonadotropic hypogonadism and intellectual disability.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in CYP19A1 in patients with MONDO:0013301 or MONDO:0060582 that do not lead to a decrease in heme biosynthesis or accumulation of protoporphyrin IX, or conversely, demonstrate a clear loss-of-function for CYP19A1 in these diseases without any overlap in heme pathway disruption.",
+        "gnomad_variant": "Common variants in CYP19A1 (e.g., allele frequency > 1% in gnomAD) that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0060582",
+        "diseaseBName": "auditory neuropathy-optic atrophy syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3772,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2411) —DISRUPTS→ heme biosynthesis (REACT:R-HSA-5693373); heme biosynthesis (REACT:R-HSA-5693373) —DECREASES→ protoporphyrin IX (CHEBI:17813); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ optic atrophy (HP:0000649); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ auditory neuropathy (HP:0001304); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ hypogonadotropic hypogonadism (HP:0000877); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function mutations in CYP19A1 impair heme biosynthesis, leading to the accumulation of protoporphyrin IX. This accumulation is hypothesized to disrupt mitochondrial function and cellular respiration, contributing to the optic atrophy and auditory neuropathy seen in MONDO:0013301 and MONDO:0060582, respectively, as well as other associated phenotypes like hypogonadotropic hypogonadism and intellectual disability.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in CYP19A1 in patients with MONDO:0013301 or MONDO:0060582 that do not lead to a decrease in heme biosynthesis or accumulation of protoporphyrin IX, or conversely, demonstrate a clear loss-of-function for CYP19A1 in these diseases without any overlap in heme pathway disruption.",
+          "gnomad_variant": "Common variants in CYP19A1 (e.g., allele frequency > 1% in gnomAD) that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the role of CYP19A1 in heme biosynthesis and its link to these neurological and sensory disorders could open avenues for therapeutic interventions targeting heme homeostasis or downstream metabolic pathways to ameliorate disease progression."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012335",
+      "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+      "fitness": 0.3762,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2409) —DISRUPTS→ Androgen biosynthesis (GO:0008216); Androgen biosynthesis (GO:0008216) —LEADS_TO→ Disorders of sex development (HP:0000048); POMC (HGNC:9126) —DISRUPTS→ Pro-opiomelanocortin (POMC) processing (GO:0007155); Pro-opiomelanocortin (POMC) processing (GO:0007155) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880) —LEADS_TO→ Obesity (HP:0000435). Loss-of-function mutations in CYP19A1 disrupt androgen biosynthesis, leading to disorders of sex development (Disease A). Loss-of-function mutations in POMC disrupt its processing, leading to decreased production of alpha-melanocyte-stimulating hormone (α-MSH), which in turn contributes to obesity (Disease B). While distinct, both pathways are critical hormonal regulators. The convergence lies in the disruption of specific hormonal signaling pathways impacting complex physiological processes.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2409) —DISRUPTS→ Androgen biosynthesis (GO:0008216); Androgen biosynthesis (GO:0008216) —LEADS_TO→ Disorders of sex development (HP:0000048); POMC (HGNC:9126) —DISRUPTS→ Pro-opiomelanocortin (POMC) processing (GO:0007155); Pro-opiomelanocortin (POMC) processing (GO:0007155) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880) —LEADS_TO→ Obesity (HP:0000435). Loss-of-function mutations in CYP19A1 disrupt androgen biosynthesis, leading to disorders of sex development (Disease A). Loss-of-function mutations in POMC disrupt its processing, leading to decreased production of alpha-melanocyte-stimulating hormone (α-MSH), which in turn contributes to obesity (Disease B). While distinct, both pathways are critical hormonal regulators. The convergence lies in the disruption of specific hormonal signaling pathways impacting complex physiological processes.",
+      "falsification": {
+        "text": "Demonstration that CYP19A1 and POMC mutations do not lead to the respective disease phenotypes, or identification of a common upstream regulator or downstream effector that is not affected in both conditions.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012335",
+        "diseaseBName": "obesity due to pro-opiomelanocortin deficiency",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3762,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2409) —DISRUPTS→ Androgen biosynthesis (GO:0008216); Androgen biosynthesis (GO:0008216) —LEADS_TO→ Disorders of sex development (HP:0000048); POMC (HGNC:9126) —DISRUPTS→ Pro-opiomelanocortin (POMC) processing (GO:0007155); Pro-opiomelanocortin (POMC) processing (GO:0007155) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880) —LEADS_TO→ Obesity (HP:0000435). Loss-of-function mutations in CYP19A1 disrupt androgen biosynthesis, leading to disorders of sex development (Disease A). Loss-of-function mutations in POMC disrupt its processing, leading to decreased production of alpha-melanocyte-stimulating hormone (α-MSH), which in turn contributes to obesity (Disease B). While distinct, both pathways are critical hormonal regulators. The convergence lies in the disruption of specific hormonal signaling pathways impacting complex physiological processes.",
+        "falsification": {
+          "text": "Demonstration that CYP19A1 and POMC mutations do not lead to the respective disease phenotypes, or identification of a common upstream regulator or downstream effector that is not affected in both conditions.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the interplay between hormonal pathways, even when disrupted by distinct genes, can inform therapeutic strategies targeting common downstream effectors or provide insights into the pleiotropic effects of hormonal signaling."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032689",
+      "diseaseBName": "retinitis pigmentosa 85",
+      "fitness": 0.3676,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "CYP19A1 (HGNC:2409) —DECREASES→ Estrogen (CHEBI:17970); Estrogen (CHEBI:17970) —DISRUPTS→ Steroid hormone signaling (GO:0043434); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Endocrine dysfunction (HP:0000819); AHR (HGNC:208) —DISRUPTS→ Xenobiotic metabolism and signaling (GO:0044265); Xenobiotic metabolism and signaling (GO:0044265) —LEADS_TO→ Retinal degeneration (HP:0000547); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in CYP19A1 lead to decreased estrogen production, disrupting steroid hormone signaling and potentially causing endocrine dysfunction. Concurrently, loss-of-function mutations in AHR disrupt xenobiotic metabolism and signaling pathways. Both disrupted pathways can converge to impact retinal homeostasis, leading to retinal degeneration. The convergence is hypothesized through shared downstream effects on cellular signaling and metabolic processes essential for photoreceptor health.",
+      "mechanism_narrative": "CYP19A1 (HGNC:2409) —DECREASES→ Estrogen (CHEBI:17970); Estrogen (CHEBI:17970) —DISRUPTS→ Steroid hormone signaling (GO:0043434); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Endocrine dysfunction (HP:0000819); AHR (HGNC:208) —DISRUPTS→ Xenobiotic metabolism and signaling (GO:0044265); Xenobiotic metabolism and signaling (GO:0044265) —LEADS_TO→ Retinal degeneration (HP:0000547); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in CYP19A1 lead to decreased estrogen production, disrupting steroid hormone signaling and potentially causing endocrine dysfunction. Concurrently, loss-of-function mutations in AHR disrupt xenobiotic metabolism and signaling pathways. Both disrupted pathways can converge to impact retinal homeostasis, leading to retinal degeneration. The convergence is hypothesized through shared downstream effects on cellular signaling and metabolic processes essential for photoreceptor health.",
+      "falsification": {
+        "text": "Discovery of a common pathogenic variant in CYP19A1 or AHR in patients diagnosed with both diseases, or demonstration that mutations in one gene do not affect the pathway regulated by the other gene.",
+        "gnomad_variant": "rs121918073 (a pathogenic variant in CYP19A1) with a gnomAD allele frequency > 0.01%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032689",
+        "diseaseBName": "retinitis pigmentosa 85",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3676,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "CYP19A1 (HGNC:2409) —DECREASES→ Estrogen (CHEBI:17970); Estrogen (CHEBI:17970) —DISRUPTS→ Steroid hormone signaling (GO:0043434); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Endocrine dysfunction (HP:0000819); AHR (HGNC:208) —DISRUPTS→ Xenobiotic metabolism and signaling (GO:0044265); Xenobiotic metabolism and signaling (GO:0044265) —LEADS_TO→ Retinal degeneration (HP:0000547); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in CYP19A1 lead to decreased estrogen production, disrupting steroid hormone signaling and potentially causing endocrine dysfunction. Concurrently, loss-of-function mutations in AHR disrupt xenobiotic metabolism and signaling pathways. Both disrupted pathways can converge to impact retinal homeostasis, leading to retinal degeneration. The convergence is hypothesized through shared downstream effects on cellular signaling and metabolic processes essential for photoreceptor health.",
+        "falsification": {
+          "text": "Discovery of a common pathogenic variant in CYP19A1 or AHR in patients diagnosed with both diseases, or demonstration that mutations in one gene do not affect the pathway regulated by the other gene.",
+          "gnomad_variant": "rs121918073 (a pathogenic variant in CYP19A1) with a gnomAD allele frequency > 0.01%"
+        },
+        "translational": "Understanding this potential mechanistic link could reveal novel therapeutic targets for retinitis pigmentosa by modulating steroid hormone signaling or xenobiotic response pathways, or vice versa for endocrine disorders linked to retinal pathology."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0975805",
+      "diseaseBName": "foveal hypoplasia 3",
+      "fitness": 0.3627,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Cytochrome P450 19A1 (HGNC:2421) —DISRUPTS→ Estrogen Synthesis Pathway (REACT:R-HSA-390318); Estrogen Synthesis Pathway (REACT:R-HSA-390318) —LEADS_TO→ Disruption of Steroidogenesis (HP:0003490); Disruption of Steroidogenesis (HP:0003490) —LEADS_TO→ Developmental Hormonal Regulation (HP:0011443); Aryl Hydrocarbon Receptor (HGNC:24) —DISRUPTS→ Xenobiotic Metabolism Pathway (REACT:R-HSA-70373); Xenobiotic Metabolism Pathway (REACT:R-HSA-70373) —LEADS_TO→ Developmental Signaling Disruption (HP:0012422); Developmental Hormonal Regulation (HP:0011443) —LEADS_TO→ Abnormal Foveal Development (HP:0011699); Developmental Signaling Disruption (HP:0012422) —LEADS_TO→ Abnormal Foveal Development (HP:0011699). Loss-of-function mutations in CYP19A1 disrupt estrogen synthesis, leading to abnormal steroidogenesis and developmental hormonal regulation, which can manifest as foveal hypoplasia. Similarly, loss-of-function mutations in AHR disrupt xenobiotic metabolism and downstream developmental signaling pathways, also contributing to abnormal foveal development.",
+      "mechanism_narrative": "Cytochrome P450 19A1 (HGNC:2421) —DISRUPTS→ Estrogen Synthesis Pathway (REACT:R-HSA-390318); Estrogen Synthesis Pathway (REACT:R-HSA-390318) —LEADS_TO→ Disruption of Steroidogenesis (HP:0003490); Disruption of Steroidogenesis (HP:0003490) —LEADS_TO→ Developmental Hormonal Regulation (HP:0011443); Aryl Hydrocarbon Receptor (HGNC:24) —DISRUPTS→ Xenobiotic Metabolism Pathway (REACT:R-HSA-70373); Xenobiotic Metabolism Pathway (REACT:R-HSA-70373) —LEADS_TO→ Developmental Signaling Disruption (HP:0012422); Developmental Hormonal Regulation (HP:0011443) —LEADS_TO→ Abnormal Foveal Development (HP:0011699); Developmental Signaling Disruption (HP:0012422) —LEADS_TO→ Abnormal Foveal Development (HP:0011699). Loss-of-function mutations in CYP19A1 disrupt estrogen synthesis, leading to abnormal steroidogenesis and developmental hormonal regulation, which can manifest as foveal hypoplasia. Similarly, loss-of-function mutations in AHR disrupt xenobiotic metabolism and downstream developmental signaling pathways, also contributing to abnormal foveal development.",
+      "falsification": {
+        "text": "Identification of distinct, non-overlapping molecular pathways directly downstream of CYP19A1 and AHR that do not intersect at any point leading to foveal development, or demonstration of conserved function in AHR-deficient models that do not recapitulate foveal abnormalities.",
+        "gnomad_variant": "Common variants (AF > 0.01) in CYP19A1 or AHR that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-211976"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-211976": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0975805",
+        "diseaseBName": "foveal hypoplasia 3",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-211976"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-211976": 25
+        },
+        "fitness": 0.3627,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Cytochrome P450 19A1 (HGNC:2421) —DISRUPTS→ Estrogen Synthesis Pathway (REACT:R-HSA-390318); Estrogen Synthesis Pathway (REACT:R-HSA-390318) —LEADS_TO→ Disruption of Steroidogenesis (HP:0003490); Disruption of Steroidogenesis (HP:0003490) —LEADS_TO→ Developmental Hormonal Regulation (HP:0011443); Aryl Hydrocarbon Receptor (HGNC:24) —DISRUPTS→ Xenobiotic Metabolism Pathway (REACT:R-HSA-70373); Xenobiotic Metabolism Pathway (REACT:R-HSA-70373) —LEADS_TO→ Developmental Signaling Disruption (HP:0012422); Developmental Hormonal Regulation (HP:0011443) —LEADS_TO→ Abnormal Foveal Development (HP:0011699); Developmental Signaling Disruption (HP:0012422) —LEADS_TO→ Abnormal Foveal Development (HP:0011699). Loss-of-function mutations in CYP19A1 disrupt estrogen synthesis, leading to abnormal steroidogenesis and developmental hormonal regulation, which can manifest as foveal hypoplasia. Similarly, loss-of-function mutations in AHR disrupt xenobiotic metabolism and downstream developmental signaling pathways, also contributing to abnormal foveal development.",
+        "falsification": {
+          "text": "Identification of distinct, non-overlapping molecular pathways directly downstream of CYP19A1 and AHR that do not intersect at any point leading to foveal development, or demonstration of conserved function in AHR-deficient models that do not recapitulate foveal abnormalities.",
+          "gnomad_variant": "Common variants (AF > 0.01) in CYP19A1 or AHR that are not associated with either disease phenotype."
+        },
+        "translational": "Understanding the shared genetic basis and overlapping developmental pathways between these conditions could inform therapeutic strategies targeting hormonal balance and developmental signaling for both rare diseases, potentially leading to novel treatments for ocular developmental defects."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T02:47:51.199Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013301 (MONDO:0013301)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 17 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | multiple mitochondrial dysfunctions syndrome 9b (MONDO:0971174) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-211976 |\n| 2 | classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency (MONDO:0008728) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-211976 |\n| 3 | Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency (MONDO:0013400) | shared pathway | Tier 3 | 0.417 | Reactome:R-HSA-211976 |\n| 4 | corticosterone methyloxidase type 2 deficiency (MONDO:0012524) | shared pathway | Tier 3 | 0.415 | Reactome:R-HSA-211976 |\n| 5 | corticosterone methyloxidase type 1 deficiency (MONDO:0008751) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-211976 |\n| 6 | Bietti crystalline corneoretinal dystrophy (MONDO:0008865) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-211976 |\n| 7 | auditory neuropathy-optic atrophy syndrome (MONDO:0060582) | shared pathway | Tier 3 | 0.377 | Reactome:R-HSA-211976 |\n| 8 | obesity due to pro-opiomelanocortin deficiency (MONDO:0012335) | shared pathway | Tier 3 | 0.376 | Reactome:R-HSA-211976 |\n| 9 | retinitis pigmentosa 85 (MONDO:0032689) | shared pathway | Tier 3 | 0.368 | Reactome:R-HSA-211976 |\n| 10 | foveal hypoplasia 3 (MONDO:0975805) | shared pathway | Tier 3 | 0.363 | Reactome:R-HSA-211976 |\n\n### CANDIDATE DETAIL\n#### 1. multiple mitochondrial dysfunctions syndrome 9b  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2405) —DISRUPTS→ Steroid biosynthesis (REACT:R-HSA-3889003); Steroid biosynthesis (REACT:R-HSA-3889003) —LEADS_TO→ Abnormal circulating estradiol level (HP:0030193); FDXR (HGNC:3737) —DISRUPTS→ Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100); Mitochondrial electron transport, ATP synthesis by chemiosmosis (REACT:R-MTN-7100) —LEADS_TO→ Mitochondrial respiratory chain deficiency (HP:0003204). Loss-of-function mutations in CYP19A1 disrupt steroid biosynthesis, leading to abnormal circulating estradiol levels (Disease A). Loss-of-function mutations in FDXR disrupt the mitochondrial electron transport chain and ATP synthesis, resulting in mitochondrial respiratory chain deficiency (Disease B). While the direct genes are distinct, both pathways are crucial for cellular homeostasis and their disruption can lead to overlapping cellular stress responses that manifest as distinct but related phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that mutations in CYP19A1 do not lead to altered steroid biosynthesis or that mutations in FDXR do not impair mitochondrial electron transport, this hypothesis would be falsified. Additionally, if distinct and unrelated molecular pathways are definitively identified for each disease with no downstream interaction, the proposed overlap would be invalidated. _(variant: The presence of common variants in CYP19A1 or FDXR with a frequency >1% in gnomAD would cast doubt on their role as causative genes for rare diseases, though not necessarily falsify the mechanistic link.)_\n\n**Why it matters:** Understanding the distinct yet potentially interconnected roles of CYP19A1 and FDXR in cellular and systemic health can inform therapeutic strategies. For Disease A, hormonal therapies might be considered, while for Disease B, interventions aimed at supporting mitochondrial function could be explored. Identifying any shared downstream pathways or compensatory mechanisms could reveal novel therapeutic targets applicable to both conditions.\n\n---\n\n#### 2. classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP21A2 (HGNC:2408) —DISRUPTS→ steroidogenesis (P00000); CYP21A2 (HGNC:2408) —DECREASES→ 17-hydroxyprogesterone (CHEBI:17540); 17-hydroxyprogesterone (CHEBI:17540) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000147); CYP19A1 (HGNC:2411) —DISRUPTS→ steroidogenesis (P00000); CYP19A1 (HGNC:2411) —LEADS_TO→ Aromatase deficiency (HP:0004771). Mutations in CYP21A2 lead to loss-of-function, impairing steroidogenesis and causing congenital adrenal hyperplasia. While CYP19A1 is not directly implicated in CAH, its role in aromatization, a downstream process in steroidogenesis, means that disruptions in the broader steroidogenic pathway can indirectly impact phenotypes related to aromatase function. Aromatase deficiency (caused by CYP19A1 mutations) also disrupts steroidogenesis, leading to distinct phenotypes. The shared disruption of the broader steroidogenesis pathway constitutes the overlap.\n\n**How to falsify it:** Demonstration that mutations in CYP21A2 do not lead to a loss-of-function effect on steroidogenesis, or that CYP19A1 mutations do not impair steroidogenesis, would falsify this hypothesis. _(variant: A common variant (>1% allele frequency) in CYP21A2 or CYP19A1 associated with these diseases.)_\n\n**Why it matters:** Understanding the shared pathway of steroidogenesis in these distinct diseases could reveal novel therapeutic targets or diagnostic markers that bridge the gap between congenital adrenal hyperplasia and conditions like aromatase deficiency, potentially leading to improved management strategies for hormonal imbalances.\n\n---\n\n#### 3. Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.417)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP11A1 (HGNC:2404) —DISRUPTS→ Cholesterol (CHEBI:6775); Cholesterol (CHEBI:6775) —LEADS_TO→ Steroidogenesis (REACT:R-HSA-170995); Steroidogenesis (REACT:R-HSA-170995) —DECREASES→ Pregnenolone (CHEBI:27762); Pregnenolone (CHEBI:27762) —LEADS_TO→ Congenital adrenal insufficiency (HP:0003063); Pregnenolone (CHEBI:27762) —LEADS_TO→ 46,XY sex reversal (HP:0011197). Loss-of-function mutations in CYP11A1 impair the initial step of steroidogenesis, the conversion of cholesterol to pregnenolone. This deficiency leads to insufficient production of all steroid hormones, manifesting as congenital adrenal insufficiency. Furthermore, the critical role of androgens in male sex development means that impaired steroidogenesis results in 46,XY sex reversal.\n\n**How to falsify it:** Discovery of pathogenic loss-of-function variants in CYP11A1 associated with MONDO:0013301 but not with the phenotypes defining MONDO:0013400, or vice-versa, would falsify the direct mechanistic link proposed. _(variant: gnomad v3.1.2 frequency > 0.001 for pathogenic LoF variants in CYP11A1)_\n\n**Why it matters:** Understanding the shared role of CYP11A1 in these conditions could lead to unified diagnostic approaches and potential therapeutic strategies targeting steroid hormone replacement or precursor supplementation.\n\n---\n\n#### 4. corticosterone methyloxidase type 2 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.415)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2409) —DISRUPTS→ Steroid hormone biosynthesis; CYP11B2 (HGNC:2413) —DISRUPTS→ Steroid hormone biosynthesis; Steroid hormone biosynthesis —PRODUCES→ Estrogen; Steroid hormone biosynthesis —PRODUCES→ Aldosterone; CYP19A1 (HGNC:2409) —LEADS_TO→ Congenital adrenal hyperplasia (HP:0000820); CYP11B2 (HGNC:2413) —LEADS_TO→ Corticosterone methyloxidase type 2 deficiency (MONDO:0012524). Loss-of-function mutations in CYP19A1 lead to impaired estrogen synthesis, contributing to congenital adrenal hyperplasia. Concurrently, loss-of-function mutations in CYP11B2 impair aldosterone synthesis, causing corticosterone methyloxidase type 2 deficiency. Both genes are involved in the shared pathway of steroid hormone biosynthesis, representing a disease module overlap.\n\n**How to falsify it:** Identification of pathogenic variants in CYP11B2 associated with gain-of-function mechanisms in corticosterone methyloxidase type 2 deficiency, or a complete lack of overlap in the steroid hormone biosynthesis pathway between the two conditions. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared pathway of steroid hormone biosynthesis affected by both CYP19A1 and CYP11B2 mutations could lead to novel therapeutic strategies targeting specific steroid hormone deficiencies or excesses, potentially applicable to both conditions or related endocrine disorders.\n\n---\n\n#### 5. corticosterone methyloxidase type 1 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2420) —DECREASES→ Estrogen Synthesis (REACT:R-HSA-190888); CYP19A1 (HGNC:2420) —DECREASES→ Androgens (CHEBI:17777); Estrogen Synthesis (REACT:R-HSA-190888) —LEADS_TO→ Disorders of sex development (HP:0000058); CYP11B2 (HGNC:2414) —DECREASES→ Aldosterone (CHEBI:15350); CYP11B2 (HGNC:2414) —DECREASES→ Corticosterone (CHEBI:17180); Aldosterone (CHEBI:15350) —LEADS_TO→ Mineralocorticoid deficiency (HP:0011374); Androgens (CHEBI:17777) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Corticosterone (CHEBI:17180) —LEADS_TO→ Steroid Hormone Synthesis (REACT:R-HSA-181570); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Estrogen Synthesis (REACT:R-HSA-190888); Steroid Hormone Synthesis (REACT:R-HSA-181570) —INCREASES→ Aldosterone (CHEBI:15350). Mutations in CYP19A1 lead to reduced estrogen synthesis (Disease A), impacting sex development. Mutations in CYP11B2 lead to reduced aldosterone synthesis (Disease B), causing mineralocorticoid deficiency. Both genes are involved in the broader pathway of steroid hormone synthesis, representing a shared module.\n\n**How to falsify it:** Absence of pathogenic variants in CYP11B2 in patients with corticosterone methyloxidase type 1 deficiency, or absence of pathogenic variants in CYP19A1 in patients with disorders of sex development linked to aromatase deficiency. _(variant: rs777522508)_\n\n**Why it matters:** Understanding the shared pathway of steroid hormone synthesis provides opportunities for targeted therapies that could potentially address aspects of both conditions, or inform differential diagnosis based on overlapping endocrine disruptions.\n\n---\n\n#### 6. Bietti crystalline corneoretinal dystrophy  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Bietti crystalline corneoretinal dystrophy (MONDO:0008865); CYP4V2 (HGNC:24824) —DISRUPTS→ cholesterol ester metabolism (GO:0008709); cholesterol ester metabolism (GO:0008709) —LEADS_TO→ Aromatase deficiency (MONDO:0013301); cholesterol ester metabolism (GO:0008709) —DECREASES→ cholesterol esters (CHEBI:57543); cholesterol esters (CHEBI:57543) —LEADS_TO→ accumulation of lipid-rich deposits in the RPE (HP:0030033); cholesterol ester metabolism (GO:0008709) —DECREASES→ abnormal circulating estrogen levels (HP:0011375). Loss-of-function mutations in CYP4V2 impair cholesterol ester metabolism. In Bietti crystalline corneoretinal dystrophy, this leads to accumulation of lipid deposits in the retinal pigment epithelium. In Aromatase deficiency (though CYP19A1 is the primary gene, CYP4V2's role in steroid metabolism may contribute to hormonal imbalances), disruption of cholesterol ester metabolism can indirectly affect steroidogenesis, leading to abnormal estrogen levels.\n\n**How to falsify it:** Identification of a common pathogenic variant in CYP4V2 with a minor allele frequency >1% in gnomAD, or demonstration that CYP4V2 mutations do not impact cholesterol ester metabolism in relevant tissues. _(variant: rs137853744)_\n\n**Why it matters:** Understanding the shared role of CYP4V2 in cholesterol ester metabolism offers potential for developing therapeutic strategies that target lipid accumulation or hormonal imbalances in both Bietti crystalline corneoretinal dystrophy and conditions associated with aromatase deficiency or related steroidogenic defects.\n\n---\n\n#### 7. auditory neuropathy-optic atrophy syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.377)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2411) —DISRUPTS→ heme biosynthesis (REACT:R-HSA-5693373); heme biosynthesis (REACT:R-HSA-5693373) —DECREASES→ protoporphyrin IX (CHEBI:17813); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ optic atrophy (HP:0000649); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ auditory neuropathy (HP:0001304); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ hypogonadotropic hypogonadism (HP:0000877); protoporphyrin IX (CHEBI:17813) —LEADS_TO→ intellectual disability (HP:0001249). Loss-of-function mutations in CYP19A1 impair heme biosynthesis, leading to the accumulation of protoporphyrin IX. This accumulation is hypothesized to disrupt mitochondrial function and cellular respiration, contributing to the optic atrophy and auditory neuropathy seen in MONDO:0013301 and MONDO:0060582, respectively, as well as other associated phenotypes like hypogonadotropic hypogonadism and intellectual disability.\n\n**How to falsify it:** Identification of pathogenic variants in CYP19A1 in patients with MONDO:0013301 or MONDO:0060582 that do not lead to a decrease in heme biosynthesis or accumulation of protoporphyrin IX, or conversely, demonstrate a clear loss-of-function for CYP19A1 in these diseases without any overlap in heme pathway disruption. _(variant: Common variants in CYP19A1 (e.g., allele frequency > 1% in gnomAD) that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the role of CYP19A1 in heme biosynthesis and its link to these neurological and sensory disorders could open avenues for therapeutic interventions targeting heme homeostasis or downstream metabolic pathways to ameliorate disease progression.\n\n---\n\n#### 8. obesity due to pro-opiomelanocortin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.376)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2409) —DISRUPTS→ Androgen biosynthesis (GO:0008216); Androgen biosynthesis (GO:0008216) —LEADS_TO→ Disorders of sex development (HP:0000048); POMC (HGNC:9126) —DISRUPTS→ Pro-opiomelanocortin (POMC) processing (GO:0007155); Pro-opiomelanocortin (POMC) processing (GO:0007155) —DECREASES→ Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880); Alpha-melanocyte-stimulating hormone (α-MSH) (CHEBI:17880) —LEADS_TO→ Obesity (HP:0000435). Loss-of-function mutations in CYP19A1 disrupt androgen biosynthesis, leading to disorders of sex development (Disease A). Loss-of-function mutations in POMC disrupt its processing, leading to decreased production of alpha-melanocyte-stimulating hormone (α-MSH), which in turn contributes to obesity (Disease B). While distinct, both pathways are critical hormonal regulators. The convergence lies in the disruption of specific hormonal signaling pathways impacting complex physiological processes.\n\n**How to falsify it:** Demonstration that CYP19A1 and POMC mutations do not lead to the respective disease phenotypes, or identification of a common upstream regulator or downstream effector that is not affected in both conditions. _(variant: N/A)_\n\n**Why it matters:** Understanding the interplay between hormonal pathways, even when disrupted by distinct genes, can inform therapeutic strategies targeting common downstream effectors or provide insights into the pleiotropic effects of hormonal signaling.\n\n---\n\n#### 9. retinitis pigmentosa 85  —  Tier 3 — Moderate / Emerging  (fitness 0.368)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** CYP19A1 (HGNC:2409) —DECREASES→ Estrogen (CHEBI:17970); Estrogen (CHEBI:17970) —DISRUPTS→ Steroid hormone signaling (GO:0043434); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Endocrine dysfunction (HP:0000819); AHR (HGNC:208) —DISRUPTS→ Xenobiotic metabolism and signaling (GO:0044265); Xenobiotic metabolism and signaling (GO:0044265) —LEADS_TO→ Retinal degeneration (HP:0000547); Steroid hormone signaling (GO:0043434) —LEADS_TO→ Retinal degeneration (HP:0000547). Loss-of-function mutations in CYP19A1 lead to decreased estrogen production, disrupting steroid hormone signaling and potentially causing endocrine dysfunction. Concurrently, loss-of-function mutations in AHR disrupt xenobiotic metabolism and signaling pathways. Both disrupted pathways can converge to impact retinal homeostasis, leading to retinal degeneration. The convergence is hypothesized through shared downstream effects on cellular signaling and metabolic processes essential for photoreceptor health.\n\n**How to falsify it:** Discovery of a common pathogenic variant in CYP19A1 or AHR in patients diagnosed with both diseases, or demonstration that mutations in one gene do not affect the pathway regulated by the other gene. _(variant: rs121918073 (a pathogenic variant in CYP19A1) with a gnomAD allele frequency > 0.01%)_\n\n**Why it matters:** Understanding this potential mechanistic link could reveal novel therapeutic targets for retinitis pigmentosa by modulating steroid hormone signaling or xenobiotic response pathways, or vice versa for endocrine disorders linked to retinal pathology.\n\n---\n\n#### 10. foveal hypoplasia 3  —  Tier 3 — Moderate / Emerging  (fitness 0.363)\n**Link type:** shared pathway (Reactome:R-HSA-211976)\n\n**Proposed mechanism:** Cytochrome P450 19A1 (HGNC:2421) —DISRUPTS→ Estrogen Synthesis Pathway (REACT:R-HSA-390318); Estrogen Synthesis Pathway (REACT:R-HSA-390318) —LEADS_TO→ Disruption of Steroidogenesis (HP:0003490); Disruption of Steroidogenesis (HP:0003490) —LEADS_TO→ Developmental Hormonal Regulation (HP:0011443); Aryl Hydrocarbon Receptor (HGNC:24) —DISRUPTS→ Xenobiotic Metabolism Pathway (REACT:R-HSA-70373); Xenobiotic Metabolism Pathway (REACT:R-HSA-70373) —LEADS_TO→ Developmental Signaling Disruption (HP:0012422); Developmental Hormonal Regulation (HP:0011443) —LEADS_TO→ Abnormal Foveal Development (HP:0011699); Developmental Signaling Disruption (HP:0012422) —LEADS_TO→ Abnormal Foveal Development (HP:0011699). Loss-of-function mutations in CYP19A1 disrupt estrogen synthesis, leading to abnormal steroidogenesis and developmental hormonal regulation, which can manifest as foveal hypoplasia. Similarly, loss-of-function mutations in AHR disrupt xenobiotic metabolism and downstream developmental signaling pathways, also contributing to abnormal foveal development.\n\n**How to falsify it:** Identification of distinct, non-overlapping molecular pathways directly downstream of CYP19A1 and AHR that do not intersect at any point leading to foveal development, or demonstration of conserved function in AHR-deficient models that do not recapitulate foveal abnormalities. _(variant: Common variants (AF > 0.01) in CYP19A1 or AHR that are not associated with either disease phenotype.)_\n\n**Why it matters:** Understanding the shared genetic basis and overlapping developmental pathways between these conditions could inform therapeutic strategies targeting hormonal balance and developmental signaling for both rare diseases, potentially leading to novel treatments for ocular developmental defects.\n\n---"
+}

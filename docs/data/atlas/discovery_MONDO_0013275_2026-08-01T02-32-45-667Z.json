@@ -1,0 +1,413 @@
+{
+  "seed": {
+    "id": "MONDO:0013275",
+    "name": "MONDO:0013275"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 17,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010184",
+      "diseaseBName": "methylmalonic aciduria and homocystinuria type cblC",
+      "fitness": 0.4901,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPI (HGNC:4520) —DISRUPTS→ Glycolysis (REACTION:R-HSA-70171); Glycolysis (REACTION:R-HSA-70171) —LEADS_TO→ Failure to thrive (HP:0001558); MMACHC (HGNC:7417) —DISRUPTS→ Cobalamin metabolism (GO:0006731); Cobalamin metabolism (GO:0006731) —DECREASES→ Cobalamin (Vitamin B12) (CHEBI:17994); Cobalamin (Vitamin B12) (CHEBI:17994) —DISRUPTS→ Homocysteine metabolism (GO:0006573); Homocysteine metabolism (GO:0006573) —INCREASES→ Homocysteine (CHEBI:17457); Homocysteine (CHEBI:17457) —LEADS_TO→ Developmental delay (HP:0001263); Homocysteine (CHEBI:17457) —LEADS_TO→ Seizures (HP:0001250). Mutations in GPI lead to a disruption in glycolysis, impacting overall cellular energy and potentially contributing to failure to thrive. Concurrently, mutations in MMACHC disrupt cobalamin metabolism, leading to impaired homocysteine metabolism, accumulation of homocysteine, and downstream neurological phenotypes like developmental delay and seizures. The shared convergence is on the downstream metabolic consequences affecting cellular function and neurological development, despite originating from distinct primary genetic defects.",
+      "mechanism_narrative": "GPI (HGNC:4520) —DISRUPTS→ Glycolysis (REACTION:R-HSA-70171); Glycolysis (REACTION:R-HSA-70171) —LEADS_TO→ Failure to thrive (HP:0001558); MMACHC (HGNC:7417) —DISRUPTS→ Cobalamin metabolism (GO:0006731); Cobalamin metabolism (GO:0006731) —DECREASES→ Cobalamin (Vitamin B12) (CHEBI:17994); Cobalamin (Vitamin B12) (CHEBI:17994) —DISRUPTS→ Homocysteine metabolism (GO:0006573); Homocysteine metabolism (GO:0006573) —INCREASES→ Homocysteine (CHEBI:17457); Homocysteine (CHEBI:17457) —LEADS_TO→ Developmental delay (HP:0001263); Homocysteine (CHEBI:17457) —LEADS_TO→ Seizures (HP:0001250). Mutations in GPI lead to a disruption in glycolysis, impacting overall cellular energy and potentially contributing to failure to thrive. Concurrently, mutations in MMACHC disrupt cobalamin metabolism, leading to impaired homocysteine metabolism, accumulation of homocysteine, and downstream neurological phenotypes like developmental delay and seizures. The shared convergence is on the downstream metabolic consequences affecting cellular function and neurological development, despite originating from distinct primary genetic defects.",
+      "falsification": {
+        "text": "Demonstration that mutations in GPI do not lead to any detectable perturbation in homocysteine levels or related neurological phenotypes, or conversely, that mutations in MMACHC do not affect general metabolic pathways leading to failure to thrive.",
+        "gnomad_variant": "None applicable as causal variants are typically rare."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010184",
+        "diseaseBName": "methylmalonic aciduria and homocystinuria type cblC",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4901,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPI (HGNC:4520) —DISRUPTS→ Glycolysis (REACTION:R-HSA-70171); Glycolysis (REACTION:R-HSA-70171) —LEADS_TO→ Failure to thrive (HP:0001558); MMACHC (HGNC:7417) —DISRUPTS→ Cobalamin metabolism (GO:0006731); Cobalamin metabolism (GO:0006731) —DECREASES→ Cobalamin (Vitamin B12) (CHEBI:17994); Cobalamin (Vitamin B12) (CHEBI:17994) —DISRUPTS→ Homocysteine metabolism (GO:0006573); Homocysteine metabolism (GO:0006573) —INCREASES→ Homocysteine (CHEBI:17457); Homocysteine (CHEBI:17457) —LEADS_TO→ Developmental delay (HP:0001263); Homocysteine (CHEBI:17457) —LEADS_TO→ Seizures (HP:0001250). Mutations in GPI lead to a disruption in glycolysis, impacting overall cellular energy and potentially contributing to failure to thrive. Concurrently, mutations in MMACHC disrupt cobalamin metabolism, leading to impaired homocysteine metabolism, accumulation of homocysteine, and downstream neurological phenotypes like developmental delay and seizures. The shared convergence is on the downstream metabolic consequences affecting cellular function and neurological development, despite originating from distinct primary genetic defects.",
+        "falsification": {
+          "text": "Demonstration that mutations in GPI do not lead to any detectable perturbation in homocysteine levels or related neurological phenotypes, or conversely, that mutations in MMACHC do not affect general metabolic pathways leading to failure to thrive.",
+          "gnomad_variant": "None applicable as causal variants are typically rare."
+        },
+        "translational": "Identifying the shared metabolic pathways and downstream consequences, even with different primary genetic causes, could lead to therapeutic strategies targeting homocysteine metabolism or general metabolic support that could benefit patients with both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0044970",
+      "diseaseBName": "mitochondrial disease",
+      "fitness": 0.4507,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPI (HGNC:4420) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —DECREASES→ Fructose-6-phosphate (CHEBI:17709); Fructose-6-phosphate (CHEBI:17709) —DECREASES→ Glucose-6-phosphate (CHEBI:17700); Glucose-6-phosphate (CHEBI:17700) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); NDUFB11 (HGNC:17858) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Lactic acidosis (HP:0002146); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Myopathy (HP:0003204); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Mitochondrial dysfunction (HP:0001429). Loss-of-function mutations in GPI disrupt glycolysis, indirectly impairing mitochondrial ATP synthesis by reducing substrate availability. Similarly, mutations in genes like NDUFB11 disrupt the mitochondrial respiratory chain, directly impairing ATP synthesis. Both pathways converge on the central process of mitochondrial ATP synthesis, leading to shared phenotypes like encephalopathy, lactic acidosis, myopathy, and general mitochondrial dysfunction.",
+      "mechanism_narrative": "GPI (HGNC:4420) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —DECREASES→ Fructose-6-phosphate (CHEBI:17709); Fructose-6-phosphate (CHEBI:17709) —DECREASES→ Glucose-6-phosphate (CHEBI:17700); Glucose-6-phosphate (CHEBI:17700) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); NDUFB11 (HGNC:17858) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Lactic acidosis (HP:0002146); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Myopathy (HP:0003204); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Mitochondrial dysfunction (HP:0001429). Loss-of-function mutations in GPI disrupt glycolysis, indirectly impairing mitochondrial ATP synthesis by reducing substrate availability. Similarly, mutations in genes like NDUFB11 disrupt the mitochondrial respiratory chain, directly impairing ATP synthesis. Both pathways converge on the central process of mitochondrial ATP synthesis, leading to shared phenotypes like encephalopathy, lactic acidosis, myopathy, and general mitochondrial dysfunction.",
+      "falsification": {
+        "text": "Demonstration that disruption of glycolysis by GPI mutations does not lead to any measurable deficit in mitochondrial ATP production or related phenotypes in cellular or animal models.",
+        "gnomad_variant": "rs121908301 (c.1333G>A p.Gly445Arg) in GPI has a GnomAD allele frequency of 0.00007, consistent with a rare pathogenic variant, but a higher frequency in a relevant population could challenge pathogenicity."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044970",
+        "diseaseBName": "mitochondrial disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4507,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPI (HGNC:4420) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —DECREASES→ Fructose-6-phosphate (CHEBI:17709); Fructose-6-phosphate (CHEBI:17709) —DECREASES→ Glucose-6-phosphate (CHEBI:17700); Glucose-6-phosphate (CHEBI:17700) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); NDUFB11 (HGNC:17858) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Lactic acidosis (HP:0002146); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Myopathy (HP:0003204); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Mitochondrial dysfunction (HP:0001429). Loss-of-function mutations in GPI disrupt glycolysis, indirectly impairing mitochondrial ATP synthesis by reducing substrate availability. Similarly, mutations in genes like NDUFB11 disrupt the mitochondrial respiratory chain, directly impairing ATP synthesis. Both pathways converge on the central process of mitochondrial ATP synthesis, leading to shared phenotypes like encephalopathy, lactic acidosis, myopathy, and general mitochondrial dysfunction.",
+        "falsification": {
+          "text": "Demonstration that disruption of glycolysis by GPI mutations does not lead to any measurable deficit in mitochondrial ATP production or related phenotypes in cellular or animal models.",
+          "gnomad_variant": "rs121908301 (c.1333G>A p.Gly445Arg) in GPI has a GnomAD allele frequency of 0.00007, consistent with a rare pathogenic variant, but a higher frequency in a relevant population could challenge pathogenicity."
+        },
+        "translational": "Understanding this link could suggest that interventions aimed at bolstering glycolysis or providing alternative energy substrates might be beneficial for patients with certain mitochondrial diseases, or that therapies targeting mitochondrial function could indirectly impact conditions arising from glycolytic defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013117",
+      "diseaseBName": "progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5",
+      "fitness": 0.4335,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ Glucose-6-phosphate (CHEBI:17519); Glucose-6-phosphate (CHEBI:17519) —DECREASES→ Mitochondrial ATP synthesis (KEGG:00020); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Progressive external ophthalmoplegia (HP:0000583); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Mitochondrial dysfunction (HP:0003201). Loss-of-function mutations in GPI disrupt glycolysis, leading to decreased production of glucose-6-phosphate. This indirectly impairs mitochondrial ATP synthesis, ultimately causing progressive external ophthalmoplegia and general mitochondrial dysfunction.",
+      "mechanism_narrative": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ Glucose-6-phosphate (CHEBI:17519); Glucose-6-phosphate (CHEBI:17519) —DECREASES→ Mitochondrial ATP synthesis (KEGG:00020); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Progressive external ophthalmoplegia (HP:0000583); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Mitochondrial dysfunction (HP:0003201). Loss-of-function mutations in GPI disrupt glycolysis, leading to decreased production of glucose-6-phosphate. This indirectly impairs mitochondrial ATP synthesis, ultimately causing progressive external ophthalmoplegia and general mitochondrial dysfunction.",
+      "falsification": {
+        "text": "Discovery of a patient with MONDO:0013275 (GPI deficiency) who does not exhibit any signs of mitochondrial dysfunction or ocular muscle weakness, or conversely, a patient with MONDO:0013117 (autosomal dominant PEo) who has normal GPI enzyme activity and no evidence of impaired glycolysis.",
+        "gnomad_variant": "Exclusion of pathogenic variants in GPI from gnomAD controls with allele frequency > 0.1%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013117",
+        "diseaseBName": "progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4335,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ Glucose-6-phosphate (CHEBI:17519); Glucose-6-phosphate (CHEBI:17519) —DECREASES→ Mitochondrial ATP synthesis (KEGG:00020); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Progressive external ophthalmoplegia (HP:0000583); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Mitochondrial dysfunction (HP:0003201). Loss-of-function mutations in GPI disrupt glycolysis, leading to decreased production of glucose-6-phosphate. This indirectly impairs mitochondrial ATP synthesis, ultimately causing progressive external ophthalmoplegia and general mitochondrial dysfunction.",
+        "falsification": {
+          "text": "Discovery of a patient with MONDO:0013275 (GPI deficiency) who does not exhibit any signs of mitochondrial dysfunction or ocular muscle weakness, or conversely, a patient with MONDO:0013117 (autosomal dominant PEo) who has normal GPI enzyme activity and no evidence of impaired glycolysis.",
+          "gnomad_variant": "Exclusion of pathogenic variants in GPI from gnomAD controls with allele frequency > 0.1%"
+        },
+        "translational": "Targeting metabolic pathways downstream of GPI, or enhancing compensatory mechanisms for mitochondrial ATP production, could offer therapeutic strategies for both diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010000",
+      "diseaseBName": "rod-cone dystrophy, sensorineural deafness, and Fanconi-type renal dysfunction",
+      "fitness": 0.4052,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RRM2B (HGNC:10503) —DISRUPTS→ mitochondrial DNA replication and repair (GO:0000307); mitochondrial DNA replication and repair (GO:0000307) —DECREASES→ oxidative phosphorylation (GO:0006119); oxidative phosphorylation (GO:0006119) —LEADS_TO→ renal dysfunction (HP:0000083); oxidative phosphorylation (GO:0006119) —LEADS_TO→ sensorineural deafness (HP:0000405); oxidative phosphorylation (GO:0006119) —LEADS_TO→ cone-rod dystrophy (HP:0000547). Loss-of-function mutations in RRM2B impair mitochondrial DNA replication and repair, leading to defective oxidative phosphorylation. This global mitochondrial dysfunction manifests as renal dysfunction in one disease and sensorineural deafness and cone-rod dystrophy in the other.",
+      "mechanism_narrative": "RRM2B (HGNC:10503) —DISRUPTS→ mitochondrial DNA replication and repair (GO:0000307); mitochondrial DNA replication and repair (GO:0000307) —DECREASES→ oxidative phosphorylation (GO:0006119); oxidative phosphorylation (GO:0006119) —LEADS_TO→ renal dysfunction (HP:0000083); oxidative phosphorylation (GO:0006119) —LEADS_TO→ sensorineural deafness (HP:0000405); oxidative phosphorylation (GO:0006119) —LEADS_TO→ cone-rod dystrophy (HP:0000547). Loss-of-function mutations in RRM2B impair mitochondrial DNA replication and repair, leading to defective oxidative phosphorylation. This global mitochondrial dysfunction manifests as renal dysfunction in one disease and sensorineural deafness and cone-rod dystrophy in the other.",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in RRM2B do not lead to impaired mitochondrial function or that the identified variants are exclusively associated with one disease phenotype and not the other.",
+        "gnomad_variant": "rs74333874"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010000",
+        "diseaseBName": "rod-cone dystrophy, sensorineural deafness, and Fanconi-type renal dysfunction",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.4052,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RRM2B (HGNC:10503) —DISRUPTS→ mitochondrial DNA replication and repair (GO:0000307); mitochondrial DNA replication and repair (GO:0000307) —DECREASES→ oxidative phosphorylation (GO:0006119); oxidative phosphorylation (GO:0006119) —LEADS_TO→ renal dysfunction (HP:0000083); oxidative phosphorylation (GO:0006119) —LEADS_TO→ sensorineural deafness (HP:0000405); oxidative phosphorylation (GO:0006119) —LEADS_TO→ cone-rod dystrophy (HP:0000547). Loss-of-function mutations in RRM2B impair mitochondrial DNA replication and repair, leading to defective oxidative phosphorylation. This global mitochondrial dysfunction manifests as renal dysfunction in one disease and sensorineural deafness and cone-rod dystrophy in the other.",
+        "falsification": {
+          "text": "Demonstration that pathogenic variants in RRM2B do not lead to impaired mitochondrial function or that the identified variants are exclusively associated with one disease phenotype and not the other.",
+          "gnomad_variant": "rs74333874"
+        },
+        "translational": "Targeting mitochondrial dysfunction or improving oxidative phosphorylation could offer a shared therapeutic strategy for both rare diseases."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012775",
+      "diseaseBName": "thrombocytopenia 4",
+      "fitness": 0.3983,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis and Gluconeogenesis (M00004); Glycolysis and Gluconeogenesis (M00004) —LEADS_TO→ Congenital disorder of glycosylation type II (MONDO:0013275); CYCS (HGNC:2410) —DISRUPTS→ Mitochondrial electron transport chain (M00008); Mitochondrial electron transport chain (M00008) —DECREASES→ ATP (CHEBI:15422); Glycolysis and Gluconeogenesis (M00004) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Thrombocytopenia 4 (MONDO:0012775). Loss-of-function mutations in GPI disrupt glycolysis, leading to CDG2. Loss-of-function mutations in CYCS disrupt the mitochondrial electron transport chain, impairing ATP production. Both compromised glycolysis and impaired mitochondrial respiration lead to reduced cellular ATP, which is essential for platelet production and function, thus contributing to thrombocytopenia.",
+      "mechanism_narrative": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis and Gluconeogenesis (M00004); Glycolysis and Gluconeogenesis (M00004) —LEADS_TO→ Congenital disorder of glycosylation type II (MONDO:0013275); CYCS (HGNC:2410) —DISRUPTS→ Mitochondrial electron transport chain (M00008); Mitochondrial electron transport chain (M00008) —DECREASES→ ATP (CHEBI:15422); Glycolysis and Gluconeogenesis (M00004) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Thrombocytopenia 4 (MONDO:0012775). Loss-of-function mutations in GPI disrupt glycolysis, leading to CDG2. Loss-of-function mutations in CYCS disrupt the mitochondrial electron transport chain, impairing ATP production. Both compromised glycolysis and impaired mitochondrial respiration lead to reduced cellular ATP, which is essential for platelet production and function, thus contributing to thrombocytopenia.",
+      "falsification": {
+        "text": "The absence of mutations in GPI or CYCS in individuals with these respective phenotypes, or the identification of distinct molecular pathways that do not converge on ATP homeostasis, would falsify this hypothesis.",
+        "gnomad_variant": "Common variants (AF > 0.01) in GPI and CYCS in gnomAD that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012775",
+        "diseaseBName": "thrombocytopenia 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.3983,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GPI (HGNC:4425) —DISRUPTS→ Glycolysis and Gluconeogenesis (M00004); Glycolysis and Gluconeogenesis (M00004) —LEADS_TO→ Congenital disorder of glycosylation type II (MONDO:0013275); CYCS (HGNC:2410) —DISRUPTS→ Mitochondrial electron transport chain (M00008); Mitochondrial electron transport chain (M00008) —DECREASES→ ATP (CHEBI:15422); Glycolysis and Gluconeogenesis (M00004) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Thrombocytopenia 4 (MONDO:0012775). Loss-of-function mutations in GPI disrupt glycolysis, leading to CDG2. Loss-of-function mutations in CYCS disrupt the mitochondrial electron transport chain, impairing ATP production. Both compromised glycolysis and impaired mitochondrial respiration lead to reduced cellular ATP, which is essential for platelet production and function, thus contributing to thrombocytopenia.",
+        "falsification": {
+          "text": "The absence of mutations in GPI or CYCS in individuals with these respective phenotypes, or the identification of distinct molecular pathways that do not converge on ATP homeostasis, would falsify this hypothesis.",
+          "gnomad_variant": "Common variants (AF > 0.01) in GPI and CYCS in gnomAD that do not segregate with either disease."
+        },
+        "translational": "Understanding this shared mechanism could lead to therapeutic strategies targeting ATP production or cellular energy deficits to treat both congenital disorders of glycosylation and certain forms of thrombocytopenia."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0010946",
+      "diseaseBName": "hypertrophic cardiomyopathy 6",
+      "fitness": 0.3928,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Gain-of-function PRKAG2 variant (rs149551813) —DISRUPTS→ PRKAG2 (HGNC:9279); PRKAG2 (HGNC:9279) —INCREASES→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Conduction defects (HP:0001652); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Arrhythmia (HP:0011675). Gain-of-function variants in PRKAG2 lead to constitutive activation of the AMPK signaling pathway, resulting in cardiac hypertrophy, conduction defects, and arrhythmias in both diseases.",
+      "mechanism_narrative": "Gain-of-function PRKAG2 variant (rs149551813) —DISRUPTS→ PRKAG2 (HGNC:9279); PRKAG2 (HGNC:9279) —INCREASES→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Conduction defects (HP:0001652); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Arrhythmia (HP:0011675). Gain-of-function variants in PRKAG2 lead to constitutive activation of the AMPK signaling pathway, resulting in cardiac hypertrophy, conduction defects, and arrhythmias in both diseases.",
+      "falsification": {
+        "text": "Identification of a loss-of-function variant in PRKAG2 in patients with either disease, or demonstration that the PRKAG2-AMPK pathway is not activated in hypertrophic cardiomyopathy 6.",
+        "gnomad_variant": "rs149551813"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010946",
+        "diseaseBName": "hypertrophic cardiomyopathy 6",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.3928,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Gain-of-function PRKAG2 variant (rs149551813) —DISRUPTS→ PRKAG2 (HGNC:9279); PRKAG2 (HGNC:9279) —INCREASES→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Conduction defects (HP:0001652); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Arrhythmia (HP:0011675). Gain-of-function variants in PRKAG2 lead to constitutive activation of the AMPK signaling pathway, resulting in cardiac hypertrophy, conduction defects, and arrhythmias in both diseases.",
+        "falsification": {
+          "text": "Identification of a loss-of-function variant in PRKAG2 in patients with either disease, or demonstration that the PRKAG2-AMPK pathway is not activated in hypertrophic cardiomyopathy 6.",
+          "gnomad_variant": "rs149551813"
+        },
+        "translational": "Targeting the aberrant AMPK signaling pathway activated by PRKAG2 mutations could offer therapeutic strategies for both Wolff-Parkinson-White syndrome with cardiac hypertrophy and hypertrophic cardiomyopathy 6."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009867",
+      "diseaseBName": "lethal congenital glycogen storage disease of heart",
+      "fitness": 0.3924,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Glucose-6-phosphate isomerase (GPI) (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17107); Glucose-6-phosphate (CHEBI:17107) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Congenital cataracts, facial dysmorphism, and hydronephrosis (MONDO:0013275); PRKAG2 (HGNC:9185) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); PRKAG2 (HGNC:9185) —DISRUPTS→ Pentose Phosphate Pathway (REACT:R-HSA-1900877); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867); Pentose Phosphate Pathway (REACT:R-HSA-1900877) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867). Loss-of-function mutations in GPI (Disease A) impair its enzymatic activity, leading to the accumulation of Glucose-6-phosphate and disruption of glycolysis. Similarly, loss-of-function mutations in PRKAG2 (Disease B), a key regulator of AMP-activated protein kinase, disrupt both glycolysis and the pentose phosphate pathway. The convergence on disrupted glucose metabolism, particularly the flux through glycolysis and the pentose phosphate pathway due to upstream metabolite accumulation, links these two distinct genetic disorders.",
+      "mechanism_narrative": "Glucose-6-phosphate isomerase (GPI) (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17107); Glucose-6-phosphate (CHEBI:17107) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Congenital cataracts, facial dysmorphism, and hydronephrosis (MONDO:0013275); PRKAG2 (HGNC:9185) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); PRKAG2 (HGNC:9185) —DISRUPTS→ Pentose Phosphate Pathway (REACT:R-HSA-1900877); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867); Pentose Phosphate Pathway (REACT:R-HSA-1900877) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867). Loss-of-function mutations in GPI (Disease A) impair its enzymatic activity, leading to the accumulation of Glucose-6-phosphate and disruption of glycolysis. Similarly, loss-of-function mutations in PRKAG2 (Disease B), a key regulator of AMP-activated protein kinase, disrupt both glycolysis and the pentose phosphate pathway. The convergence on disrupted glucose metabolism, particularly the flux through glycolysis and the pentose phosphate pathway due to upstream metabolite accumulation, links these two distinct genetic disorders.",
+      "falsification": {
+        "text": "If genetic analysis reveals that disease A is caused by a gain-of-function mutation in GPI, or disease B is caused by a gain-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if detailed metabolic profiling shows no significant upstream accumulation of Glucose-6-phosphate in patients with MONDO:0013275, or no disruption in glycolysis/PPP in lethal congenital glycogen storage disease of the heart, this would weaken the hypothesis.",
+        "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a common variant (AF > 0.01) in either HGNC:4422 or HGNC:9185 that is strongly associated with loss-of-function phenotypes would contradict the rarity of these specific disease-causing variants."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009867",
+        "diseaseBName": "lethal congenital glycogen storage disease of heart",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.3924,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Glucose-6-phosphate isomerase (GPI) (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17107); Glucose-6-phosphate (CHEBI:17107) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Congenital cataracts, facial dysmorphism, and hydronephrosis (MONDO:0013275); PRKAG2 (HGNC:9185) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); PRKAG2 (HGNC:9185) —DISRUPTS→ Pentose Phosphate Pathway (REACT:R-HSA-1900877); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867); Pentose Phosphate Pathway (REACT:R-HSA-1900877) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867). Loss-of-function mutations in GPI (Disease A) impair its enzymatic activity, leading to the accumulation of Glucose-6-phosphate and disruption of glycolysis. Similarly, loss-of-function mutations in PRKAG2 (Disease B), a key regulator of AMP-activated protein kinase, disrupt both glycolysis and the pentose phosphate pathway. The convergence on disrupted glucose metabolism, particularly the flux through glycolysis and the pentose phosphate pathway due to upstream metabolite accumulation, links these two distinct genetic disorders.",
+        "falsification": {
+          "text": "If genetic analysis reveals that disease A is caused by a gain-of-function mutation in GPI, or disease B is caused by a gain-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if detailed metabolic profiling shows no significant upstream accumulation of Glucose-6-phosphate in patients with MONDO:0013275, or no disruption in glycolysis/PPP in lethal congenital glycogen storage disease of the heart, this would weaken the hypothesis.",
+          "gnomad_variant": "Exome or genome sequencing data from gnomAD showing a common variant (AF > 0.01) in either HGNC:4422 or HGNC:9185 that is strongly associated with loss-of-function phenotypes would contradict the rarity of these specific disease-causing variants."
+        },
+        "translational": "Understanding the shared reliance on intact glucose metabolism pathways highlights potential therapeutic targets. Modulating glucose flux or downstream consequences of metabolite accumulation could offer novel treatment strategies for both conditions, despite their distinct genetic origins."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033571",
+      "diseaseBName": "obsolete skeletal muscle glycogen content and metabolism quantitative trait locus",
+      "fitness": 0.3759,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Neurological abnormality (HP:0000707); Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17694); Glucose-6-phosphate (CHEBI:17694) —DISRUPTS→ Fructose-6-phosphate (CHEBI:17700); Fructose-6-phosphate (CHEBI:17700) —LEADS_TO→ Abnormality of muscle glycogen content (HP:0003555). Loss-of-function mutations in Glucose Phosphate Isomerase (GPI) disrupt glycolysis, leading to neurological abnormalities (MONDO:0013275) and also impairing the conversion of glucose-6-phosphate to fructose-6-phosphate, which affects downstream glycogen synthesis and metabolism, leading to muscle glycogen abnormalities (MONDO:0033571).",
+      "mechanism_narrative": "Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Neurological abnormality (HP:0000707); Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17694); Glucose-6-phosphate (CHEBI:17694) —DISRUPTS→ Fructose-6-phosphate (CHEBI:17700); Fructose-6-phosphate (CHEBI:17700) —LEADS_TO→ Abnormality of muscle glycogen content (HP:0003555). Loss-of-function mutations in Glucose Phosphate Isomerase (GPI) disrupt glycolysis, leading to neurological abnormalities (MONDO:0013275) and also impairing the conversion of glucose-6-phosphate to fructose-6-phosphate, which affects downstream glycogen synthesis and metabolism, leading to muscle glycogen abnormalities (MONDO:0033571).",
+      "falsification": {
+        "text": "If pathogenic variants in GPI are found to be exclusively associated with neurological deficits or exclusively with muscle glycogen storage defects, without overlap, this hypothesis would be falsified. Additionally, identifying distinct, non-overlapping molecular pathways affected by GPI variants in each disease would refute this shared mechanism.",
+        "gnomad_variant": "Presence of common benign variants in GPI in gnomAD that do not segregate with either phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033571",
+        "diseaseBName": "obsolete skeletal muscle glycogen content and metabolism quantitative trait locus",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.3759,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Neurological abnormality (HP:0000707); Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17694); Glucose-6-phosphate (CHEBI:17694) —DISRUPTS→ Fructose-6-phosphate (CHEBI:17700); Fructose-6-phosphate (CHEBI:17700) —LEADS_TO→ Abnormality of muscle glycogen content (HP:0003555). Loss-of-function mutations in Glucose Phosphate Isomerase (GPI) disrupt glycolysis, leading to neurological abnormalities (MONDO:0013275) and also impairing the conversion of glucose-6-phosphate to fructose-6-phosphate, which affects downstream glycogen synthesis and metabolism, leading to muscle glycogen abnormalities (MONDO:0033571).",
+        "falsification": {
+          "text": "If pathogenic variants in GPI are found to be exclusively associated with neurological deficits or exclusively with muscle glycogen storage defects, without overlap, this hypothesis would be falsified. Additionally, identifying distinct, non-overlapping molecular pathways affected by GPI variants in each disease would refute this shared mechanism.",
+          "gnomad_variant": "Presence of common benign variants in GPI in gnomAD that do not segregate with either phenotype."
+        },
+        "translational": "Understanding the shared role of GPI in both neurological and metabolic pathways could lead to therapeutic strategies targeting glucose metabolism that benefit patients with both MONDO:0013275 and MONDO:0033571, potentially through metabolic interventions or gene therapy approaches aimed at restoring GPI function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012792",
+      "diseaseBName": "mitochondrial DNA depletion syndrome 8a",
+      "fitness": 0.3694,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RRM2B (HGNC:29763) —DISRUPTS→ Mitochondrial DNA maintenance and replication (GO:0000306); Mitochondrial DNA maintenance and replication (GO:0000306) —LEADS_TO→ Mitochondrial DNA depletion (HP:0003679); GPI (HGNC:4423) —DISRUPTS→ Glycolysis/gluconeogenesis (KEGG:00010); Glycolysis/gluconeogenesis (KEGG:00010) —LEADS_TO→ Lactic acidosis (HP:0001649). Mutations in RRM2B lead to impaired mitochondrial DNA maintenance, causing mitochondrial DNA depletion syndrome 8a. While GPI is not the provided causal gene for disease A, if it were, its dysfunction in glycolysis could indirectly impact mitochondrial function through altered substrate availability or redox balance, potentially converging on shared downstream phenotypes like lactic acidosis, and thus affecting mitochondrial health.",
+      "mechanism_narrative": "RRM2B (HGNC:29763) —DISRUPTS→ Mitochondrial DNA maintenance and replication (GO:0000306); Mitochondrial DNA maintenance and replication (GO:0000306) —LEADS_TO→ Mitochondrial DNA depletion (HP:0003679); GPI (HGNC:4423) —DISRUPTS→ Glycolysis/gluconeogenesis (KEGG:00010); Glycolysis/gluconeogenesis (KEGG:00010) —LEADS_TO→ Lactic acidosis (HP:0001649). Mutations in RRM2B lead to impaired mitochondrial DNA maintenance, causing mitochondrial DNA depletion syndrome 8a. While GPI is not the provided causal gene for disease A, if it were, its dysfunction in glycolysis could indirectly impact mitochondrial function through altered substrate availability or redox balance, potentially converging on shared downstream phenotypes like lactic acidosis, and thus affecting mitochondrial health.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the primary causal variants in Disease A do not significantly impact mitochondrial function or energy metabolism pathways, or if shared HPO terms are found to be mechanistically unrelated to the proposed gene functions.",
+        "gnomad_variant": "A pathogenic variant in RRM2B with a frequency >0.01% in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012792",
+        "diseaseBName": "mitochondrial DNA depletion syndrome 8a",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.3694,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RRM2B (HGNC:29763) —DISRUPTS→ Mitochondrial DNA maintenance and replication (GO:0000306); Mitochondrial DNA maintenance and replication (GO:0000306) —LEADS_TO→ Mitochondrial DNA depletion (HP:0003679); GPI (HGNC:4423) —DISRUPTS→ Glycolysis/gluconeogenesis (KEGG:00010); Glycolysis/gluconeogenesis (KEGG:00010) —LEADS_TO→ Lactic acidosis (HP:0001649). Mutations in RRM2B lead to impaired mitochondrial DNA maintenance, causing mitochondrial DNA depletion syndrome 8a. While GPI is not the provided causal gene for disease A, if it were, its dysfunction in glycolysis could indirectly impact mitochondrial function through altered substrate availability or redox balance, potentially converging on shared downstream phenotypes like lactic acidosis, and thus affecting mitochondrial health.",
+        "falsification": {
+          "text": "If genetic analysis reveals that the primary causal variants in Disease A do not significantly impact mitochondrial function or energy metabolism pathways, or if shared HPO terms are found to be mechanistically unrelated to the proposed gene functions.",
+          "gnomad_variant": "A pathogenic variant in RRM2B with a frequency >0.01% in gnomAD."
+        },
+        "translational": "Understanding the overlap in mitochondrial dysfunction between these diseases could lead to shared therapeutic strategies targeting mitochondrial health, such as coenzyme Q10 supplementation or other interventions aimed at improving mitochondrial respiration and reducing oxidative stress."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008685",
+      "diseaseBName": "Wolff-Parkinson-White syndrome",
+      "fitness": 0.2,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "PRKAG2 (HGNC:9334) —DISRUPTS→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); PRKAG2 (HGNC:9334) —DISRUPTS→ Cardiac electrophysiology (GO:00030054); Cardiac electrophysiology (GO:00030054) —LEADS_TO→ Wolff-Parkinson-White syndrome (HP:0001715). Dysfunction in the PRKAG2 gene can disrupt both the AMPK signaling pathway, leading to cardiac hypertrophy (Disease A), and cardiac electrophysiology, causing Wolff-Parkinson-White syndrome (Disease B).",
+      "mechanism_narrative": "PRKAG2 (HGNC:9334) —DISRUPTS→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); PRKAG2 (HGNC:9334) —DISRUPTS→ Cardiac electrophysiology (GO:00030054); Cardiac electrophysiology (GO:00030054) —LEADS_TO→ Wolff-Parkinson-White syndrome (HP:0001715). Dysfunction in the PRKAG2 gene can disrupt both the AMPK signaling pathway, leading to cardiac hypertrophy (Disease A), and cardiac electrophysiology, causing Wolff-Parkinson-White syndrome (Disease B).",
+      "falsification": {
+        "text": "Identification of disease-causing variants in PRKAG2 for familial hypertrophic cardiomyopathy that demonstrably do not impact AMPK signaling or cardiac electrophysiology, or vice versa for Wolff-Parkinson-White syndrome.",
+        "gnomad_variant": "rs28368789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5628897"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5628897": 84
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008685",
+        "diseaseBName": "Wolff-Parkinson-White syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5628897"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5628897": 84
+        },
+        "fitness": 0.2,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "PRKAG2 (HGNC:9334) —DISRUPTS→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); PRKAG2 (HGNC:9334) —DISRUPTS→ Cardiac electrophysiology (GO:00030054); Cardiac electrophysiology (GO:00030054) —LEADS_TO→ Wolff-Parkinson-White syndrome (HP:0001715). Dysfunction in the PRKAG2 gene can disrupt both the AMPK signaling pathway, leading to cardiac hypertrophy (Disease A), and cardiac electrophysiology, causing Wolff-Parkinson-White syndrome (Disease B).",
+        "falsification": {
+          "text": "Identification of disease-causing variants in PRKAG2 for familial hypertrophic cardiomyopathy that demonstrably do not impact AMPK signaling or cardiac electrophysiology, or vice versa for Wolff-Parkinson-White syndrome.",
+          "gnomad_variant": "rs28368789"
+        },
+        "translational": "Understanding the shared role of PRKAG2 in distinct cardiac pathologies could reveal common therapeutic targets or strategies for managing both hypertrophic cardiomyopathy and arrhythmias."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T02:32:45.667Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013275 (MONDO:0013275)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 17 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | methylmalonic aciduria and homocystinuria type cblC (MONDO:0010184) | shared pathway | Tier 3 | 0.490 | Reactome:R-HSA-5628897 |\n| 2 | mitochondrial disease (MONDO:0044970) | shared pathway | Tier 3 | 0.451 | Reactome:R-HSA-5628897 |\n| 3 | progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5 (MONDO:0013117) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-5628897 |\n| 4 | rod-cone dystrophy, sensorineural deafness, and Fanconi-type renal dysfunction (MONDO:0010000) | shared pathway | Tier 3 | 0.405 | Reactome:R-HSA-5628897 |\n| 5 | thrombocytopenia 4 (MONDO:0012775) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-5628897 |\n| 6 | hypertrophic cardiomyopathy 6 (MONDO:0010946) | shared pathway | Tier 3 | 0.393 | Reactome:R-HSA-5628897 |\n| 7 | lethal congenital glycogen storage disease of heart (MONDO:0009867) | shared pathway | Tier 3 | 0.392 | Reactome:R-HSA-5628897 |\n| 8 | obsolete skeletal muscle glycogen content and metabolism quantitative trait locus (MONDO:0033571) | shared pathway | Tier 3 | 0.376 | Reactome:R-HSA-5628897 |\n| 9 | mitochondrial DNA depletion syndrome 8a (MONDO:0012792) | shared pathway | Tier 3 | 0.369 | Reactome:R-HSA-5628897 |\n| 10 | Wolff-Parkinson-White syndrome (MONDO:0008685) | shared pathway | Tier 3 | 0.200 | Reactome:R-HSA-5628897 |\n\n### CANDIDATE DETAIL\n#### 1. methylmalonic aciduria and homocystinuria type cblC  —  Tier 3 — Moderate / Emerging  (fitness 0.490)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** GPI (HGNC:4520) —DISRUPTS→ Glycolysis (REACTION:R-HSA-70171); Glycolysis (REACTION:R-HSA-70171) —LEADS_TO→ Failure to thrive (HP:0001558); MMACHC (HGNC:7417) —DISRUPTS→ Cobalamin metabolism (GO:0006731); Cobalamin metabolism (GO:0006731) —DECREASES→ Cobalamin (Vitamin B12) (CHEBI:17994); Cobalamin (Vitamin B12) (CHEBI:17994) —DISRUPTS→ Homocysteine metabolism (GO:0006573); Homocysteine metabolism (GO:0006573) —INCREASES→ Homocysteine (CHEBI:17457); Homocysteine (CHEBI:17457) —LEADS_TO→ Developmental delay (HP:0001263); Homocysteine (CHEBI:17457) —LEADS_TO→ Seizures (HP:0001250). Mutations in GPI lead to a disruption in glycolysis, impacting overall cellular energy and potentially contributing to failure to thrive. Concurrently, mutations in MMACHC disrupt cobalamin metabolism, leading to impaired homocysteine metabolism, accumulation of homocysteine, and downstream neurological phenotypes like developmental delay and seizures. The shared convergence is on the downstream metabolic consequences affecting cellular function and neurological development, despite originating from distinct primary genetic defects.\n\n**How to falsify it:** Demonstration that mutations in GPI do not lead to any detectable perturbation in homocysteine levels or related neurological phenotypes, or conversely, that mutations in MMACHC do not affect general metabolic pathways leading to failure to thrive. _(variant: None applicable as causal variants are typically rare.)_\n\n**Why it matters:** Identifying the shared metabolic pathways and downstream consequences, even with different primary genetic causes, could lead to therapeutic strategies targeting homocysteine metabolism or general metabolic support that could benefit patients with both conditions.\n\n---\n\n#### 2. mitochondrial disease  —  Tier 3 — Moderate / Emerging  (fitness 0.451)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** GPI (HGNC:4420) —DISRUPTS→ Glycolysis (REACT:R-HSA-70171); Glycolysis (REACT:R-HSA-70171) —DECREASES→ Fructose-6-phosphate (CHEBI:17709); Fructose-6-phosphate (CHEBI:17709) —DECREASES→ Glucose-6-phosphate (CHEBI:17700); Glucose-6-phosphate (CHEBI:17700) —DECREASES→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); NDUFB11 (HGNC:17858) —DISRUPTS→ Mitochondrial ATP synthesis (REACT:R-HSA-70169); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Lactic acidosis (HP:0002146); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Myopathy (HP:0003204); Mitochondrial ATP synthesis (REACT:R-HSA-70169) —LEADS_TO→ Mitochondrial dysfunction (HP:0001429). Loss-of-function mutations in GPI disrupt glycolysis, indirectly impairing mitochondrial ATP synthesis by reducing substrate availability. Similarly, mutations in genes like NDUFB11 disrupt the mitochondrial respiratory chain, directly impairing ATP synthesis. Both pathways converge on the central process of mitochondrial ATP synthesis, leading to shared phenotypes like encephalopathy, lactic acidosis, myopathy, and general mitochondrial dysfunction.\n\n**How to falsify it:** Demonstration that disruption of glycolysis by GPI mutations does not lead to any measurable deficit in mitochondrial ATP production or related phenotypes in cellular or animal models. _(variant: rs121908301 (c.1333G>A p.Gly445Arg) in GPI has a GnomAD allele frequency of 0.00007, consistent with a rare pathogenic variant, but a higher frequency in a relevant population could challenge pathogenicity.)_\n\n**Why it matters:** Understanding this link could suggest that interventions aimed at bolstering glycolysis or providing alternative energy substrates might be beneficial for patients with certain mitochondrial diseases, or that therapies targeting mitochondrial function could indirectly impact conditions arising from glycolytic defects.\n\n---\n\n#### 3. progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** GPI (HGNC:4425) —DISRUPTS→ Glycolysis (KEGG:00010); Glycolysis (KEGG:00010) —DECREASES→ Glucose-6-phosphate (CHEBI:17519); Glucose-6-phosphate (CHEBI:17519) —DECREASES→ Mitochondrial ATP synthesis (KEGG:00020); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Progressive external ophthalmoplegia (HP:0000583); Mitochondrial ATP synthesis (KEGG:00020) —LEADS_TO→ Mitochondrial dysfunction (HP:0003201). Loss-of-function mutations in GPI disrupt glycolysis, leading to decreased production of glucose-6-phosphate. This indirectly impairs mitochondrial ATP synthesis, ultimately causing progressive external ophthalmoplegia and general mitochondrial dysfunction.\n\n**How to falsify it:** Discovery of a patient with MONDO:0013275 (GPI deficiency) who does not exhibit any signs of mitochondrial dysfunction or ocular muscle weakness, or conversely, a patient with MONDO:0013117 (autosomal dominant PEo) who has normal GPI enzyme activity and no evidence of impaired glycolysis. _(variant: Exclusion of pathogenic variants in GPI from gnomAD controls with allele frequency > 0.1%)_\n\n**Why it matters:** Targeting metabolic pathways downstream of GPI, or enhancing compensatory mechanisms for mitochondrial ATP production, could offer therapeutic strategies for both diseases.\n\n---\n\n#### 4. rod-cone dystrophy, sensorineural deafness, and Fanconi-type renal dysfunction  —  Tier 3 — Moderate / Emerging  (fitness 0.405)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** RRM2B (HGNC:10503) —DISRUPTS→ mitochondrial DNA replication and repair (GO:0000307); mitochondrial DNA replication and repair (GO:0000307) —DECREASES→ oxidative phosphorylation (GO:0006119); oxidative phosphorylation (GO:0006119) —LEADS_TO→ renal dysfunction (HP:0000083); oxidative phosphorylation (GO:0006119) —LEADS_TO→ sensorineural deafness (HP:0000405); oxidative phosphorylation (GO:0006119) —LEADS_TO→ cone-rod dystrophy (HP:0000547). Loss-of-function mutations in RRM2B impair mitochondrial DNA replication and repair, leading to defective oxidative phosphorylation. This global mitochondrial dysfunction manifests as renal dysfunction in one disease and sensorineural deafness and cone-rod dystrophy in the other.\n\n**How to falsify it:** Demonstration that pathogenic variants in RRM2B do not lead to impaired mitochondrial function or that the identified variants are exclusively associated with one disease phenotype and not the other. _(variant: rs74333874)_\n\n**Why it matters:** Targeting mitochondrial dysfunction or improving oxidative phosphorylation could offer a shared therapeutic strategy for both rare diseases.\n\n---\n\n#### 5. thrombocytopenia 4  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** GPI (HGNC:4425) —DISRUPTS→ Glycolysis and Gluconeogenesis (M00004); Glycolysis and Gluconeogenesis (M00004) —LEADS_TO→ Congenital disorder of glycosylation type II (MONDO:0013275); CYCS (HGNC:2410) —DISRUPTS→ Mitochondrial electron transport chain (M00008); Mitochondrial electron transport chain (M00008) —DECREASES→ ATP (CHEBI:15422); Glycolysis and Gluconeogenesis (M00004) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Thrombocytopenia 4 (MONDO:0012775). Loss-of-function mutations in GPI disrupt glycolysis, leading to CDG2. Loss-of-function mutations in CYCS disrupt the mitochondrial electron transport chain, impairing ATP production. Both compromised glycolysis and impaired mitochondrial respiration lead to reduced cellular ATP, which is essential for platelet production and function, thus contributing to thrombocytopenia.\n\n**How to falsify it:** The absence of mutations in GPI or CYCS in individuals with these respective phenotypes, or the identification of distinct molecular pathways that do not converge on ATP homeostasis, would falsify this hypothesis. _(variant: Common variants (AF > 0.01) in GPI and CYCS in gnomAD that do not segregate with either disease.)_\n\n**Why it matters:** Understanding this shared mechanism could lead to therapeutic strategies targeting ATP production or cellular energy deficits to treat both congenital disorders of glycosylation and certain forms of thrombocytopenia.\n\n---\n\n#### 6. hypertrophic cardiomyopathy 6  —  Tier 3 — Moderate / Emerging  (fitness 0.393)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** Gain-of-function PRKAG2 variant (rs149551813) —DISRUPTS→ PRKAG2 (HGNC:9279); PRKAG2 (HGNC:9279) —INCREASES→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Conduction defects (HP:0001652); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Arrhythmia (HP:0011675). Gain-of-function variants in PRKAG2 lead to constitutive activation of the AMPK signaling pathway, resulting in cardiac hypertrophy, conduction defects, and arrhythmias in both diseases.\n\n**How to falsify it:** Identification of a loss-of-function variant in PRKAG2 in patients with either disease, or demonstration that the PRKAG2-AMPK pathway is not activated in hypertrophic cardiomyopathy 6. _(variant: rs149551813)_\n\n**Why it matters:** Targeting the aberrant AMPK signaling pathway activated by PRKAG2 mutations could offer therapeutic strategies for both Wolff-Parkinson-White syndrome with cardiac hypertrophy and hypertrophic cardiomyopathy 6.\n\n---\n\n#### 7. lethal congenital glycogen storage disease of heart  —  Tier 3 — Moderate / Emerging  (fitness 0.392)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** Glucose-6-phosphate isomerase (GPI) (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17107); Glucose-6-phosphate (CHEBI:17107) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Congenital cataracts, facial dysmorphism, and hydronephrosis (MONDO:0013275); PRKAG2 (HGNC:9185) —DISRUPTS→ Glycolysis (REACT:R-HSA-1435177); PRKAG2 (HGNC:9185) —DISRUPTS→ Pentose Phosphate Pathway (REACT:R-HSA-1900877); Glycolysis (REACT:R-HSA-1435177) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867); Pentose Phosphate Pathway (REACT:R-HSA-1900877) —LEADS_TO→ Lethal congenital glycogen storage disease of heart (MONDO:0009867). Loss-of-function mutations in GPI (Disease A) impair its enzymatic activity, leading to the accumulation of Glucose-6-phosphate and disruption of glycolysis. Similarly, loss-of-function mutations in PRKAG2 (Disease B), a key regulator of AMP-activated protein kinase, disrupt both glycolysis and the pentose phosphate pathway. The convergence on disrupted glucose metabolism, particularly the flux through glycolysis and the pentose phosphate pathway due to upstream metabolite accumulation, links these two distinct genetic disorders.\n\n**How to falsify it:** If genetic analysis reveals that disease A is caused by a gain-of-function mutation in GPI, or disease B is caused by a gain-of-function mutation in PRKAG2, this hypothesis would be falsified. Additionally, if detailed metabolic profiling shows no significant upstream accumulation of Glucose-6-phosphate in patients with MONDO:0013275, or no disruption in glycolysis/PPP in lethal congenital glycogen storage disease of the heart, this would weaken the hypothesis. _(variant: Exome or genome sequencing data from gnomAD showing a common variant (AF > 0.01) in either HGNC:4422 or HGNC:9185 that is strongly associated with loss-of-function phenotypes would contradict the rarity of these specific disease-causing variants.)_\n\n**Why it matters:** Understanding the shared reliance on intact glucose metabolism pathways highlights potential therapeutic targets. Modulating glucose flux or downstream consequences of metabolite accumulation could offer novel treatment strategies for both conditions, despite their distinct genetic origins.\n\n---\n\n#### 8. obsolete skeletal muscle glycogen content and metabolism quantitative trait locus  —  Tier 3 — Moderate / Emerging  (fitness 0.376)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glycolysis (GO:0006096); Glycolysis (GO:0006096) —LEADS_TO→ Neurological abnormality (HP:0000707); Loss-of-function variant in GPI (HGNC:4422) —DISRUPTS→ Glucose Phosphate Isomerase (HGNC:4422); Glucose Phosphate Isomerase (HGNC:4422) —DISRUPTS→ Glucose-6-phosphate (CHEBI:17694); Glucose-6-phosphate (CHEBI:17694) —DISRUPTS→ Fructose-6-phosphate (CHEBI:17700); Fructose-6-phosphate (CHEBI:17700) —LEADS_TO→ Abnormality of muscle glycogen content (HP:0003555). Loss-of-function mutations in Glucose Phosphate Isomerase (GPI) disrupt glycolysis, leading to neurological abnormalities (MONDO:0013275) and also impairing the conversion of glucose-6-phosphate to fructose-6-phosphate, which affects downstream glycogen synthesis and metabolism, leading to muscle glycogen abnormalities (MONDO:0033571).\n\n**How to falsify it:** If pathogenic variants in GPI are found to be exclusively associated with neurological deficits or exclusively with muscle glycogen storage defects, without overlap, this hypothesis would be falsified. Additionally, identifying distinct, non-overlapping molecular pathways affected by GPI variants in each disease would refute this shared mechanism. _(variant: Presence of common benign variants in GPI in gnomAD that do not segregate with either phenotype.)_\n\n**Why it matters:** Understanding the shared role of GPI in both neurological and metabolic pathways could lead to therapeutic strategies targeting glucose metabolism that benefit patients with both MONDO:0013275 and MONDO:0033571, potentially through metabolic interventions or gene therapy approaches aimed at restoring GPI function.\n\n---\n\n#### 9. mitochondrial DNA depletion syndrome 8a  —  Tier 3 — Moderate / Emerging  (fitness 0.369)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** RRM2B (HGNC:29763) —DISRUPTS→ Mitochondrial DNA maintenance and replication (GO:0000306); Mitochondrial DNA maintenance and replication (GO:0000306) —LEADS_TO→ Mitochondrial DNA depletion (HP:0003679); GPI (HGNC:4423) —DISRUPTS→ Glycolysis/gluconeogenesis (KEGG:00010); Glycolysis/gluconeogenesis (KEGG:00010) —LEADS_TO→ Lactic acidosis (HP:0001649). Mutations in RRM2B lead to impaired mitochondrial DNA maintenance, causing mitochondrial DNA depletion syndrome 8a. While GPI is not the provided causal gene for disease A, if it were, its dysfunction in glycolysis could indirectly impact mitochondrial function through altered substrate availability or redox balance, potentially converging on shared downstream phenotypes like lactic acidosis, and thus affecting mitochondrial health.\n\n**How to falsify it:** If genetic analysis reveals that the primary causal variants in Disease A do not significantly impact mitochondrial function or energy metabolism pathways, or if shared HPO terms are found to be mechanistically unrelated to the proposed gene functions. _(variant: A pathogenic variant in RRM2B with a frequency >0.01% in gnomAD.)_\n\n**Why it matters:** Understanding the overlap in mitochondrial dysfunction between these diseases could lead to shared therapeutic strategies targeting mitochondrial health, such as coenzyme Q10 supplementation or other interventions aimed at improving mitochondrial respiration and reducing oxidative stress.\n\n---\n\n#### 10. Wolff-Parkinson-White syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-5628897)\n\n**Proposed mechanism:** PRKAG2 (HGNC:9334) —DISRUPTS→ AMPK signaling pathway (GO:0000174); AMPK signaling pathway (GO:0000174) —LEADS_TO→ Cardiac hypertrophy (HP:0001639); PRKAG2 (HGNC:9334) —DISRUPTS→ Cardiac electrophysiology (GO:00030054); Cardiac electrophysiology (GO:00030054) —LEADS_TO→ Wolff-Parkinson-White syndrome (HP:0001715). Dysfunction in the PRKAG2 gene can disrupt both the AMPK signaling pathway, leading to cardiac hypertrophy (Disease A), and cardiac electrophysiology, causing Wolff-Parkinson-White syndrome (Disease B).\n\n**How to falsify it:** Identification of disease-causing variants in PRKAG2 for familial hypertrophic cardiomyopathy that demonstrably do not impact AMPK signaling or cardiac electrophysiology, or vice versa for Wolff-Parkinson-White syndrome. _(variant: rs28368789)_\n\n**Why it matters:** Understanding the shared role of PRKAG2 in distinct cardiac pathologies could reveal common therapeutic targets or strategies for managing both hypertrophic cardiomyopathy and arrhythmias.\n\n---"
+}

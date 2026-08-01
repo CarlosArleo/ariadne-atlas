@@ -1,0 +1,43 @@
+{
+  "seed": {
+    "id": "MONDO:0012084",
+    "name": "aromatic L-amino acid decarboxylase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 2,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0011551",
+      "diseaseBName": "TH-deficient dopa-responsive dystonia",
+      "fitness": 0.4378,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DDC (HGNC:2775) —DISRUPTS→ 5-hydroxytryptophan (CHEBI:17900); 5-hydroxytryptophan (CHEBI:17900) —DISRUPTS→ dopamine (CHEBI:18206); dopamine (CHEBI:18206) —LEADS_TO→ dopamine biosynthesis (P000000000); dopamine biosynthesis (P000000000) —LEADS_TO→ Dystonia (HP:0001314); TH (HGNC:11640) —DISRUPTS→ L-DOPA (CHEBI:40930); L-DOPA (CHEBI:40930) —DISRUPTS→ dopamine (CHEBI:18206); dopamine (CHEBI:18206) —LEADS_TO→ Neurotransmitter deficiency (HP:0012744). Loss-of-function mutations in DDC lead to reduced conversion of 5-hydroxytryptophan to serotonin and dopamine, impacting dopamine levels. Similarly, loss-of-function mutations in TH lead to reduced conversion of L-DOPA to dopamine. Both defects converge on the critical dopamine biosynthesis pathway, resulting in insufficient dopamine, which manifests as neurological phenotypes like dystonia and general neurotransmitter deficiency.",
+      "falsification": {
+        "text": "The identification of a pathogenic variant in DDC with a significantly high allele frequency (>1%) in gnomAD for aromatic L-amino acid decarboxylase deficiency, or a pathogenic variant in TH with a high allele frequency (>1%) in gnomAD for TH-deficient dopa-responsive dystonia, would falsify the primary causal role of these genes in the respective diseases as presented.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0009123",
+      "diseaseBName": "orthostatic hypotension 1",
+      "fitness": 0.424,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "DDC (HGNC:2784) —PRODUCES→ dopamine (CHEBI:18177); DDC (HGNC:2784) —DISRUPTS→ Catecholamine synthesis and signaling (GO:0007222); dopamine (CHEBI:18177) —LEADS_TO→ Neurotransmitter deficiency (HP:0001322); DBH (HGNC:2544) —PRODUCES→ norepinephrine (CHEBI:17716); DBH (HGNC:2544) —DISRUPTS→ Catecholamine synthesis and signaling (GO:0007222); norepinephrine (CHEBI:17716) —LEADS_TO→ Orthostatic hypotension (HP:0001295); dopamine (CHEBI:18177) —LEADS_TO→ Catecholamine synthesis and signaling (GO:0007222). Loss-of-function mutations in DDC disrupt catecholamine synthesis, specifically dopamine production, contributing to neurotransmitter deficiency. Similarly, loss-of-function mutations in DBH disrupt catecholamine synthesis, specifically norepinephrine production, leading to orthostatic hypotension. Both genes act within the broader pathway of catecholamine synthesis and signaling, representing a shared mechanistic module.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function variants in DDC who do not present with symptoms of aromatic L-amino acid decarboxylase deficiency, or individuals with loss-of-function variants in DBH who do not exhibit orthostatic hypotension, would challenge this hypothesis. Furthermore, if genetic studies reveal that the specific variants in DDC and DBH associated with these diseases do not lead to reduced enzyme activity or downstream metabolite levels, this would also serve as a falsification condition.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-209905"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:39:28.075Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** aromatic L-amino acid decarboxylase deficiency (MONDO:0012084)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 2 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | TH-deficient dopa-responsive dystonia (MONDO:0011551) | shared pathway | Tier 3 | 0.438 | Reactome:R-HSA-209905 |\n| 2 | orthostatic hypotension 1 (MONDO:0009123) | shared pathway | Tier 3 | 0.424 | Reactome:R-HSA-209905 |\n\n### CANDIDATE DETAIL\n#### 1. TH-deficient dopa-responsive dystonia  —  Tier 3 — Moderate / Emerging  (fitness 0.438)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** DDC (HGNC:2775) —DISRUPTS→ 5-hydroxytryptophan (CHEBI:17900); 5-hydroxytryptophan (CHEBI:17900) —DISRUPTS→ dopamine (CHEBI:18206); dopamine (CHEBI:18206) —LEADS_TO→ dopamine biosynthesis (P000000000); dopamine biosynthesis (P000000000) —LEADS_TO→ Dystonia (HP:0001314); TH (HGNC:11640) —DISRUPTS→ L-DOPA (CHEBI:40930); L-DOPA (CHEBI:40930) —DISRUPTS→ dopamine (CHEBI:18206); dopamine (CHEBI:18206) —LEADS_TO→ Neurotransmitter deficiency (HP:0012744). Loss-of-function mutations in DDC lead to reduced conversion of 5-hydroxytryptophan to serotonin and dopamine, impacting dopamine levels. Similarly, loss-of-function mutations in TH lead to reduced conversion of L-DOPA to dopamine. Both defects converge on the critical dopamine biosynthesis pathway, resulting in insufficient dopamine, which manifests as neurological phenotypes like dystonia and general neurotransmitter deficiency.\n\n**How to falsify it:** The identification of a pathogenic variant in DDC with a significantly high allele frequency (>1%) in gnomAD for aromatic L-amino acid decarboxylase deficiency, or a pathogenic variant in TH with a high allele frequency (>1%) in gnomAD for TH-deficient dopa-responsive dystonia, would falsify the primary causal role of these genes in the respective diseases as presented. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared pathway of dopamine biosynthesis in both diseases suggests that therapeutic strategies aimed at boosting dopamine levels, such as L-DOPA supplementation (which is effective in TH-deficient DRD and sometimes used in AADC deficiency), could be broadly applicable or require nuanced adjustments based on the specific enzyme defect. This points towards potential for repurposing or refining existing treatments.\n\n---\n\n#### 2. orthostatic hypotension 1  —  Tier 3 — Moderate / Emerging  (fitness 0.424)\n**Link type:** shared pathway (Reactome:R-HSA-209905)\n\n**Proposed mechanism:** DDC (HGNC:2784) —PRODUCES→ dopamine (CHEBI:18177); DDC (HGNC:2784) —DISRUPTS→ Catecholamine synthesis and signaling (GO:0007222); dopamine (CHEBI:18177) —LEADS_TO→ Neurotransmitter deficiency (HP:0001322); DBH (HGNC:2544) —PRODUCES→ norepinephrine (CHEBI:17716); DBH (HGNC:2544) —DISRUPTS→ Catecholamine synthesis and signaling (GO:0007222); norepinephrine (CHEBI:17716) —LEADS_TO→ Orthostatic hypotension (HP:0001295); dopamine (CHEBI:18177) —LEADS_TO→ Catecholamine synthesis and signaling (GO:0007222). Loss-of-function mutations in DDC disrupt catecholamine synthesis, specifically dopamine production, contributing to neurotransmitter deficiency. Similarly, loss-of-function mutations in DBH disrupt catecholamine synthesis, specifically norepinephrine production, leading to orthostatic hypotension. Both genes act within the broader pathway of catecholamine synthesis and signaling, representing a shared mechanistic module.\n\n**How to falsify it:** Identification of individuals with loss-of-function variants in DDC who do not present with symptoms of aromatic L-amino acid decarboxylase deficiency, or individuals with loss-of-function variants in DBH who do not exhibit orthostatic hypotension, would challenge this hypothesis. Furthermore, if genetic studies reveal that the specific variants in DDC and DBH associated with these diseases do not lead to reduced enzyme activity or downstream metabolite levels, this would also serve as a falsification condition. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared pathway of catecholamine synthesis offers potential for novel therapeutic strategies. For AADC deficiency, substrate replacement therapy with precursors like L-DOPA and 5-HTP is already explored. For DBH deficiency, direct administration of catecholamines or their precursors could be investigated. Identifying common regulatory mechanisms or downstream effectors could reveal targets for dual-acting therapies for both conditions or related autonomic dysfunctions.\n\n---"
+}

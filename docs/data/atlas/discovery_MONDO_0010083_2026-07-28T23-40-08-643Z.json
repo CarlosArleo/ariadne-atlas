@@ -1,0 +1,28 @@
+{
+  "seed": {
+    "id": "MONDO:0010083",
+    "name": "succinic semialdehyde dehydrogenase deficiency"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013166",
+      "diseaseBName": "GABA aminotransaminase deficiency",
+      "fitness": 0.4362,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ALDH5A1 (HGNC:404) —DISRUPTS→ Succinic semialdehyde (CHEBI:15948); Succinic semialdehyde (CHEBI:15948) —LEADS_TO→ Succinate metabolism (GO:0006074); Succinate metabolism (GO:0006074) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); ABAT (HGNC:2) —DISRUPTS→ GABA (CHEBI:15427); GABA (CHEBI:15427) —LEADS_TO→ GABA metabolism and GABAergic signaling (GO:0000142); GABA metabolism and GABAergic signaling (GO:0000142) —LEADS_TO→ Seizures (HP:0001250); Succinic semialdehyde (CHEBI:15948) —LEADS_TO→ GABA metabolism and GABAergic signaling (GO:0000142). Loss-of-function mutations in ALDH5A1 lead to the accumulation of succinic semialdehyde, disrupting succinate metabolism and causing neurodevelopmental delay. Concurrently, loss-of-function mutations in ABAT lead to the accumulation of GABA, disrupting GABA metabolism and signaling, and causing seizures. Both accumulated metabolites can contribute to broader disruptions in neuronal function and potentially converge on shared downstream pathogenic processes within GABAergic and succinate metabolic pathways, ultimately leading to overlapping neurological phenotypes.",
+      "falsification": {
+        "text": "If genetic analysis reveals that the variants in ALDH5A1 in SSADHD patients and ABAT in GATD patients do not lead to loss-of-function, or if biochemical assays show normal levels of succinic semialdehyde and GABA in affected individuals, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a common variant (AF > 0.01) in either ALDH5A1 or ABAT associated with the respective disease would challenge the rarity and specific causality of these genes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-916853"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:40:08.643Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** succinic semialdehyde dehydrogenase deficiency (MONDO:0010083)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | GABA aminotransaminase deficiency (MONDO:0013166) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-916853 |\n\n### CANDIDATE DETAIL\n#### 1. GABA aminotransaminase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-916853)\n\n**Proposed mechanism:** ALDH5A1 (HGNC:404) —DISRUPTS→ Succinic semialdehyde (CHEBI:15948); Succinic semialdehyde (CHEBI:15948) —LEADS_TO→ Succinate metabolism (GO:0006074); Succinate metabolism (GO:0006074) —LEADS_TO→ Neurodevelopmental delay (HP:0001263); ABAT (HGNC:2) —DISRUPTS→ GABA (CHEBI:15427); GABA (CHEBI:15427) —LEADS_TO→ GABA metabolism and GABAergic signaling (GO:0000142); GABA metabolism and GABAergic signaling (GO:0000142) —LEADS_TO→ Seizures (HP:0001250); Succinic semialdehyde (CHEBI:15948) —LEADS_TO→ GABA metabolism and GABAergic signaling (GO:0000142). Loss-of-function mutations in ALDH5A1 lead to the accumulation of succinic semialdehyde, disrupting succinate metabolism and causing neurodevelopmental delay. Concurrently, loss-of-function mutations in ABAT lead to the accumulation of GABA, disrupting GABA metabolism and signaling, and causing seizures. Both accumulated metabolites can contribute to broader disruptions in neuronal function and potentially converge on shared downstream pathogenic processes within GABAergic and succinate metabolic pathways, ultimately leading to overlapping neurological phenotypes.\n\n**How to falsify it:** If genetic analysis reveals that the variants in ALDH5A1 in SSADHD patients and ABAT in GATD patients do not lead to loss-of-function, or if biochemical assays show normal levels of succinic semialdehyde and GABA in affected individuals, this hypothesis would be falsified. _(variant: Exome sequencing data from gnomAD showing a common variant (AF > 0.01) in either ALDH5A1 or ABAT associated with the respective disease would challenge the rarity and specific causality of these genes.)_\n\n**Why it matters:** Understanding the shared metabolic disruption in SSADHD and GATD could lead to the development of unified therapeutic strategies targeting the downstream consequences of succinic semialdehyde and GABA accumulation, potentially benefiting patients with either condition.\n\n---"
+}

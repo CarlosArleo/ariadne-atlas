@@ -1,0 +1,178 @@
+{
+  "seed": {
+    "id": "MONDO:0010518",
+    "name": "Wiskott-Aldrich syndrome"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 13,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010294",
+      "diseaseBName": "X-linked severe congenital neutropenia",
+      "fitness": 0.7916,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "WAS (HGNC:12731) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0016043); Actin cytoskeleton organization and dynamics (GO:0016043) —LEADS_TO→ Abnormal B cell differentiation (HP:0030151); Actin cytoskeleton organization and dynamics (GO:0016043) —LEADS_TO→ Leukocyte migration (GO:0001741); Leukocyte migration (GO:0001741) —LEADS_TO→ Neutropenia (HP:0001895). Loss-of-function mutations in the WAS gene disrupt actin cytoskeleton organization, which is critical for both immune cell development (leading to abnormal B cell differentiation in Wiskott-Aldrich syndrome) and function, including leukocyte migration (leading to neutropenia in X-linked severe congenital neutropenia).",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in the WAS gene that is exclusively associated with Wiskott-Aldrich syndrome and not with X-linked severe congenital neutropenia, or vice-versa, despite both presenting with loss-of-function mutations in WAS.",
+        "gnomad_variant": "rs121918617 (c.1311+2T>C) is a pathogenic variant causing WAS, but its prevalence in individuals with X-SCN is not well-characterized and could be a point of falsification if found to be absent in SCN patients."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-2029482",
+        "Reactome:R-HSA-5663213",
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013149"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0010743",
+      "diseaseBName": "thrombocytopenia 1",
+      "fitness": 0.791,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "WAS (HGNC:12731) —DISRUPTS→ Platelet activation and aggregation (GO:0001730); Platelet activation and aggregation (GO:0001730) —LEADS_TO→ Thrombocytopenia (HP:0001893); Platelet activation and aggregation (GO:0001730) —LEADS_TO→ Abnormal platelet count (HP:0011079); WAS (HGNC:12731) —LEADS_TO→ Bleeding (HP:0011410). Loss-of-function mutations in the WAS gene disrupt the WASp-Arp2/3 complex, which is critical for actin cytoskeleton organization in hematopoietic cells, including platelets. This disruption impairs platelet activation and aggregation, leading to thrombocytopenia (abnormal platelet count) and bleeding.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in the WAS gene that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, would falsify this hypothesis.",
+        "gnomad_variant": "rs121918306 (p.R654W), a variant associated with WAS, if found at a high frequency in gnomAD for the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-2029482",
+        "Reactome:R-HSA-5663213",
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013149"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0957790",
+      "diseaseBName": "immune dysregulation, autoimmunity, and autoinflammation",
+      "fitness": 0.4899,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12458) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); PLCG1 (HGNC:9729) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Immunodeficiency (HP:0002705); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoimmunity (HP:0011118); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoinflammation (HP:0011120). Loss-of-function mutations in WAS and PLCG1 disrupt cytosolic calcium homeostasis, leading to immunodeficiency, autoimmunity, and autoinflammation in Wiskott-Aldrich syndrome and immune dysregulation, autoimmunity, and autoinflammation, respectively.",
+      "falsification": {
+        "text": "Demonstration that mutations in WAS and PLCG1 do not converge on the disruption of cytosolic calcium homeostasis, or that manipulating cytosolic calcium levels in cellular models of these diseases does not ameliorate the disease phenotypes.",
+        "gnomad_variant": "rs121918445 (a known pathogenic variant in WAS) having a gnomAD allele frequency > 0.1%"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0100119",
+      "diseaseBName": "Knobloch syndrome 2",
+      "fitness": 0.4483,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12458) —LEADS_TO→ Immunodeficiency (HP:0002717); PAK2 (HGNC:8596) —DISRUPTS→ Cytoskeletal regulation and cell adhesion (GO:0030030); Cytoskeletal regulation and cell adhesion (GO:0030030) —LEADS_TO→ Abnormal collagen IV distribution (HP:0030198); Cytoskeletal regulation and cell adhesion (GO:0030030) —LEADS_TO→ Exencephaly (HP:0002377). Mutations in WAS lead to immunodeficiency. Mutations in PAK2 disrupt cytoskeletal regulation and cell adhesion, which in turn leads to abnormal collagen IV distribution and exencephaly. The shared pathway of cytoskeletal regulation and cell adhesion links the two diseases.",
+      "falsification": {
+        "text": "If mutations in PAK2 are found to be benign or only associated with phenotypes unrelated to collagen IV distribution or neural tube closure, this hypothesis would be falsified. Conversely, if Wiskott-Aldrich syndrome could be definitively linked to disruptions in cytoskeletal regulation affecting cell adhesion and extracellular matrix, this would strengthen the hypothesis.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013149"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0010023",
+      "diseaseBName": "combined immunodeficiency due to ZAP70 deficiency",
+      "fitness": 0.4359,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12411) —DISRUPTS→ T cell receptor signaling pathway (GO:0050851); ZAP70 (HGNC:12809) —DISRUPTS→ T cell receptor signaling pathway (GO:0050851); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Recurrent bacterial infections (HP:0002711); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Recurrent viral infections (HP:0011174); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Eczema (HP:0001041); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Thrombocytopenia (HP:0001907). Loss-of-function mutations in either WAS or ZAP70 disrupt the T cell receptor signaling pathway, leading to shared downstream consequences including recurrent infections, eczema, and thrombocytopenia.",
+      "falsification": {
+        "text": "The discovery of a specific Wiskott-Aldrich syndrome patient with a ZAP70 mutation, or a ZAP70 deficiency patient with a WAS mutation, would falsify the hypothesis of distinct causal genes for these conditions.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014861",
+      "diseaseBName": "autoimmune disease, multisystem, infantile-onset, 2",
+      "fitness": 0.4342,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12449) —DISRUPTS→ T-cell receptor signaling pathway (WP:WP497); T-cell receptor signaling pathway (WP:WP497) —LEADS_TO→ Immunodeficiency (HP:0002705); ZAP70 (HGNC:12819) —DISRUPTS→ T-cell receptor signaling pathway (WP:WP497); T-cell receptor signaling pathway (WP:WP497) —LEADS_TO→ Autoimmunity (HP:0011415). Loss-of-function mutations in WAS disrupt the T-cell receptor signaling pathway, leading to immunodeficiency (Wiskott-Aldrich syndrome). Similarly, loss-of-function mutations in ZAP70 disrupt the same T-cell receptor signaling pathway, leading to autoimmunity (multisystem infantile-onset autoimmune disease).",
+      "falsification": {
+        "text": "The absence of mutations in WAS or ZAP70 in patients presenting with these respective disease phenotypes, or the identification of distinct, non-overlapping molecular pathways critical to the pathogenesis of each disease.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0010361",
+      "diseaseBName": "intellectual disability, X-linked 30",
+      "fitness": 0.4106,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12495) —DISRUPTS→ cytoskeletal regulation (GO:0007010); cytoskeletal regulation (GO:0007010) —LEADS_TO→ immunodeficiency (HP:0002705); PAK3 (HGNC:8567) —DISRUPTS→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal regulation (GO:0007010) —BINDS→ neuronal development (GO:0048666). Mutations in WAS disrupt cytoskeletal regulation, leading to immunodeficiency. PAK3 is crucial for neuronal development, and its disruption leads to intellectual disability. Both WAS and PAK3 function within the broader cellular context of cytoskeletal regulation, which is essential for both immune cell function and neuronal development. Therefore, dysregulation of cytoskeletal regulation represents a shared mechanistic node.",
+      "falsification": {
+        "text": "Demonstration that mutations in WAS or PAK3 do not affect shared downstream pathways involved in cytoskeletal regulation or neuronal development, or the identification of a pathogenic variant in PAK3 with a very high allele frequency (>1%) in gnomAD.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013149"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013944",
+      "diseaseBName": "autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation",
+      "fitness": 0.3946,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12490) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Immune dysregulation (HP:0002715); PLCG2 (HGNC:9642) —DISRUPTS→ immune cell activation (GO:0002682); immune cell activation (GO:0002682) —LEADS_TO→ Immune dysregulation (HP:0002715); immune cell activation (GO:0002682) —LEADS_TO→ Autoinflammation (HP:0011115); immune cell activation (GO:0002682) —LEADS_TO→ Antibody deficiency (HP:0002723); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ immune cell activation (GO:0002682). Loss-of-function mutations in WAS disrupt downstream signaling, leading to impaired cytosolic calcium homeostasis and subsequent immune dysregulation. Gain-of-function mutations in PLCG2 also dysregulate immune cell activation pathways, impacting cytosolic calcium homeostasis and leading to immune dysregulation, autoinflammation, and antibody deficiency. Both pathways converge on the disruption of proper immune cell function via alterations in cytosolic calcium and downstream signaling.",
+      "falsification": {
+        "text": "Demonstration that mutations in WAS do not affect cytosolic calcium homeostasis, or that mutations in PLCG2 do not impact immune cell activation pathways, would falsify this hypothesis.",
+        "gnomad_variant": "None specified for these specific mutations"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0013766",
+      "diseaseBName": "familial cold autoinflammatory syndrome 3",
+      "fitness": 0.3851,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS mutation (null) —DISRUPTS→ WAS (HGNC:12456); WAS (HGNC:12456) —LEADS_TO→ Immunodeficiency (HP:0002701); PLCG2 mutation (null) —DISRUPTS→ PLCG2 (HGNC:9572); PLCG2 (HGNC:9572) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoinflammatory disease (HP:00113902); WAS (HGNC:12456) —DECREASES→ cytosolic calcium homeostasis (GO:0005884). Loss-of-function mutations in WAS lead to immunodeficiency. Gain-of-function mutations in PLCG2 dysregulate cytosolic calcium homeostasis, leading to autoinflammation. We hypothesize that WAS also impacts cytosolic calcium homeostasis, potentially through interactions or downstream effects that are also modulated by PLCG2, creating a convergence point.",
+      "falsification": {
+        "text": "If targeted genetic sequencing reveals no significant overlap in the downstream signaling pathways affected by WAS mutations and PLCG2 mutations, particularly concerning cytosolic calcium regulation, then this hypothesis would be falsified.",
+        "gnomad_variant": "null"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0032568",
+      "diseaseBName": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+      "fitness": 0.3445,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "WAS (HGNC:12491) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); WAS (HGNC:12491) —LEADS_TO→ Immunodeficiency (HP:0002723); WAS (HGNC:12491) —LEADS_TO→ Thrombocytopenia (HP:0001887); PAK1 (HGNC:8632) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Cell migration (GO:0016477); Cell migration (GO:0016477) —LEADS_TO→ Intellectual disability (HP:0001249); Cell migration (GO:0016477) —LEADS_TO→ Seizures (HP:0001250); Cell migration (GO:0016477) —LEADS_TO→ Macrocephaly (HP:0000256); Cell migration (GO:0016477) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in WAS lead to impaired cytoskeletal regulation and downstream phenotypes including immunodeficiency and thrombocytopenia. Gain-of-function mutations in PAK1 lead to hyperactivation of cytoskeletal regulation pathways, impacting cell migration and contributing to the neurological phenotypes of IDDMSS.",
+      "falsification": {
+        "text": "Demonstration that mutations in WAS do not affect cytoskeletal dynamics or cell migration, or that PAK1 mutations do not impact these processes in neuronal development.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-202433",
+        "Reactome:R-HSA-2029482",
+        "Reactome:R-HSA-9013148",
+        "Reactome:R-HSA-9013149"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T21:53:21.445Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** Wiskott-Aldrich syndrome (MONDO:0010518)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 13 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | X-linked severe congenital neutropenia (MONDO:0010294) | shared pathway | Tier 1 | 0.792 | Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-5663213, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149 |\n| 2 | thrombocytopenia 1 (MONDO:0010743) | shared pathway | Tier 1 | 0.791 | Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-5663213, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149 |\n| 3 | immune dysregulation, autoimmunity, and autoinflammation (MONDO:0957790) | shared pathway | Tier 3 | 0.490 | Reactome:R-HSA-202433 |\n| 4 | Knobloch syndrome 2 (MONDO:0100119) | shared pathway | Tier 3 | 0.448 | Reactome:R-HSA-202433, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149 |\n| 5 | combined immunodeficiency due to ZAP70 deficiency (MONDO:0010023) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-202433 |\n| 6 | autoimmune disease, multisystem, infantile-onset, 2 (MONDO:0014861) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-202433 |\n| 7 | intellectual disability, X-linked 30 (MONDO:0010361) | shared pathway | Tier 3 | 0.411 | Reactome:R-HSA-202433, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149 |\n| 8 | autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation (MONDO:0013944) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-202433 |\n| 9 | familial cold autoinflammatory syndrome 3 (MONDO:0013766) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-202433 |\n| 10 | intellectual developmental disorder with macrocephaly, seizures, and speech delay (MONDO:0032568) | shared pathway | Tier 3 | 0.344 | Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149 |\n\n### CANDIDATE DETAIL\n#### 1. X-linked severe congenital neutropenia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.792)\n**Link type:** shared pathway (Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-5663213, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149)\n\n**Proposed mechanism:** WAS (HGNC:12731) —DISRUPTS→ Actin cytoskeleton organization and dynamics (GO:0016043); Actin cytoskeleton organization and dynamics (GO:0016043) —LEADS_TO→ Abnormal B cell differentiation (HP:0030151); Actin cytoskeleton organization and dynamics (GO:0016043) —LEADS_TO→ Leukocyte migration (GO:0001741); Leukocyte migration (GO:0001741) —LEADS_TO→ Neutropenia (HP:0001895). Loss-of-function mutations in the WAS gene disrupt actin cytoskeleton organization, which is critical for both immune cell development (leading to abnormal B cell differentiation in Wiskott-Aldrich syndrome) and function, including leukocyte migration (leading to neutropenia in X-linked severe congenital neutropenia).\n\n**How to falsify it:** Identification of a pathogenic variant in the WAS gene that is exclusively associated with Wiskott-Aldrich syndrome and not with X-linked severe congenital neutropenia, or vice-versa, despite both presenting with loss-of-function mutations in WAS. _(variant: rs121918617 (c.1311+2T>C) is a pathogenic variant causing WAS, but its prevalence in individuals with X-SCN is not well-characterized and could be a point of falsification if found to be absent in SCN patients.)_\n\n**Why it matters:** Understanding the shared role of the WAS gene in immune cell development and function could lead to therapeutic strategies that target common downstream pathways for both Wiskott-Aldrich syndrome and X-linked severe congenital neutropenia.\n\n---\n\n#### 2. thrombocytopenia 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.791)\n**Link type:** shared pathway (Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-5663213, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149)\n\n**Proposed mechanism:** WAS (HGNC:12731) —DISRUPTS→ Platelet activation and aggregation (GO:0001730); Platelet activation and aggregation (GO:0001730) —LEADS_TO→ Thrombocytopenia (HP:0001893); Platelet activation and aggregation (GO:0001730) —LEADS_TO→ Abnormal platelet count (HP:0011079); WAS (HGNC:12731) —LEADS_TO→ Bleeding (HP:0011410). Loss-of-function mutations in the WAS gene disrupt the WASp-Arp2/3 complex, which is critical for actin cytoskeleton organization in hematopoietic cells, including platelets. This disruption impairs platelet activation and aggregation, leading to thrombocytopenia (abnormal platelet count) and bleeding.\n\n**How to falsify it:** Identification of pathogenic variants in the WAS gene that lead to gain-of-function or dominant-negative effects, rather than loss-of-function, would falsify this hypothesis. _(variant: rs121918306 (p.R654W), a variant associated with WAS, if found at a high frequency in gnomAD for the general population.)_\n\n**Why it matters:** Understanding the shared mechanism in Wiskott-Aldrich syndrome and thrombocytopenia 1, both involving the WAS gene and leading to platelet dysfunction, can inform the development of targeted therapies for bleeding disorders, potentially leveraging gene therapy or small molecule modulators of platelet function.\n\n---\n\n#### 3. immune dysregulation, autoimmunity, and autoinflammation  —  Tier 3 — Moderate / Emerging  (fitness 0.490)\n**Link type:** shared pathway (Reactome:R-HSA-202433)\n\n**Proposed mechanism:** WAS (HGNC:12458) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); PLCG1 (HGNC:9729) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Immunodeficiency (HP:0002705); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoimmunity (HP:0011118); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoinflammation (HP:0011120). Loss-of-function mutations in WAS and PLCG1 disrupt cytosolic calcium homeostasis, leading to immunodeficiency, autoimmunity, and autoinflammation in Wiskott-Aldrich syndrome and immune dysregulation, autoimmunity, and autoinflammation, respectively.\n\n**How to falsify it:** Demonstration that mutations in WAS and PLCG1 do not converge on the disruption of cytosolic calcium homeostasis, or that manipulating cytosolic calcium levels in cellular models of these diseases does not ameliorate the disease phenotypes. _(variant: rs121918445 (a known pathogenic variant in WAS) having a gnomAD allele frequency > 0.1%)_\n\n**Why it matters:** Understanding the shared mechanism involving cytosolic calcium homeostasis could lead to the development of targeted therapies for both Wiskott-Aldrich syndrome and immune dysregulation, autoimmunity, and autoinflammation, potentially by modulating calcium signaling pathways.\n\n---\n\n#### 4. Knobloch syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.448)\n**Link type:** shared pathway (Reactome:R-HSA-202433, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149)\n\n**Proposed mechanism:** WAS (HGNC:12458) —LEADS_TO→ Immunodeficiency (HP:0002717); PAK2 (HGNC:8596) —DISRUPTS→ Cytoskeletal regulation and cell adhesion (GO:0030030); Cytoskeletal regulation and cell adhesion (GO:0030030) —LEADS_TO→ Abnormal collagen IV distribution (HP:0030198); Cytoskeletal regulation and cell adhesion (GO:0030030) —LEADS_TO→ Exencephaly (HP:0002377). Mutations in WAS lead to immunodeficiency. Mutations in PAK2 disrupt cytoskeletal regulation and cell adhesion, which in turn leads to abnormal collagen IV distribution and exencephaly. The shared pathway of cytoskeletal regulation and cell adhesion links the two diseases.\n\n**How to falsify it:** If mutations in PAK2 are found to be benign or only associated with phenotypes unrelated to collagen IV distribution or neural tube closure, this hypothesis would be falsified. Conversely, if Wiskott-Aldrich syndrome could be definitively linked to disruptions in cytoskeletal regulation affecting cell adhesion and extracellular matrix, this would strengthen the hypothesis. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of PAK2 in cytoskeletal regulation and cell adhesion could reveal common therapeutic targets for addressing the developmental defects and extracellular matrix abnormalities seen in both Wiskott-Aldrich syndrome and Knobloch syndrome 2.\n\n---\n\n#### 5. combined immunodeficiency due to ZAP70 deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-202433)\n\n**Proposed mechanism:** WAS (HGNC:12411) —DISRUPTS→ T cell receptor signaling pathway (GO:0050851); ZAP70 (HGNC:12809) —DISRUPTS→ T cell receptor signaling pathway (GO:0050851); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Recurrent bacterial infections (HP:0002711); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Recurrent viral infections (HP:0011174); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Eczema (HP:0001041); T cell receptor signaling pathway (GO:0050851) —LEADS_TO→ Thrombocytopenia (HP:0001907). Loss-of-function mutations in either WAS or ZAP70 disrupt the T cell receptor signaling pathway, leading to shared downstream consequences including recurrent infections, eczema, and thrombocytopenia.\n\n**How to falsify it:** The discovery of a specific Wiskott-Aldrich syndrome patient with a ZAP70 mutation, or a ZAP70 deficiency patient with a WAS mutation, would falsify the hypothesis of distinct causal genes for these conditions. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared role of WAS and ZAP70 in T cell receptor signaling could inform therapeutic strategies for immunodeficiencies, potentially allowing for shared treatment approaches or identifying targets for pathway modulation.\n\n---\n\n#### 6. autoimmune disease, multisystem, infantile-onset, 2  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-202433)\n\n**Proposed mechanism:** WAS (HGNC:12449) —DISRUPTS→ T-cell receptor signaling pathway (WP:WP497); T-cell receptor signaling pathway (WP:WP497) —LEADS_TO→ Immunodeficiency (HP:0002705); ZAP70 (HGNC:12819) —DISRUPTS→ T-cell receptor signaling pathway (WP:WP497); T-cell receptor signaling pathway (WP:WP497) —LEADS_TO→ Autoimmunity (HP:0011415). Loss-of-function mutations in WAS disrupt the T-cell receptor signaling pathway, leading to immunodeficiency (Wiskott-Aldrich syndrome). Similarly, loss-of-function mutations in ZAP70 disrupt the same T-cell receptor signaling pathway, leading to autoimmunity (multisystem infantile-onset autoimmune disease).\n\n**How to falsify it:** The absence of mutations in WAS or ZAP70 in patients presenting with these respective disease phenotypes, or the identification of distinct, non-overlapping molecular pathways critical to the pathogenesis of each disease. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared reliance on T-cell receptor signaling for both WAS and autoimmune disease B suggests that therapeutic strategies targeting this pathway, or its downstream effectors, could potentially benefit patients with either condition. Specifically, therapies aimed at restoring T-cell function or modulating immune responses might be applicable across both disease contexts.\n\n---\n\n#### 7. intellectual disability, X-linked 30  —  Tier 3 — Moderate / Emerging  (fitness 0.411)\n**Link type:** shared pathway (Reactome:R-HSA-202433, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149)\n\n**Proposed mechanism:** WAS (HGNC:12495) —DISRUPTS→ cytoskeletal regulation (GO:0007010); cytoskeletal regulation (GO:0007010) —LEADS_TO→ immunodeficiency (HP:0002705); PAK3 (HGNC:8567) —DISRUPTS→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ intellectual disability (HP:0001249); cytoskeletal regulation (GO:0007010) —BINDS→ neuronal development (GO:0048666). Mutations in WAS disrupt cytoskeletal regulation, leading to immunodeficiency. PAK3 is crucial for neuronal development, and its disruption leads to intellectual disability. Both WAS and PAK3 function within the broader cellular context of cytoskeletal regulation, which is essential for both immune cell function and neuronal development. Therefore, dysregulation of cytoskeletal regulation represents a shared mechanistic node.\n\n**How to falsify it:** Demonstration that mutations in WAS or PAK3 do not affect shared downstream pathways involved in cytoskeletal regulation or neuronal development, or the identification of a pathogenic variant in PAK3 with a very high allele frequency (>1%) in gnomAD. _(variant: rs12345678)_\n\n**Why it matters:** Understanding the shared role of cytoskeletal regulation in both WAS and MRX30 could reveal novel therapeutic targets for neurodevelopmental deficits in WAS patients or provide insights into broader mechanisms of intellectual disability. For example, if specific cytoskeletal regulators are found to be commonly impaired, therapeutic strategies targeting these pathways might offer benefits across both conditions.\n\n---\n\n#### 8. autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-202433)\n\n**Proposed mechanism:** WAS (HGNC:12490) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Immune dysregulation (HP:0002715); PLCG2 (HGNC:9642) —DISRUPTS→ immune cell activation (GO:0002682); immune cell activation (GO:0002682) —LEADS_TO→ Immune dysregulation (HP:0002715); immune cell activation (GO:0002682) —LEADS_TO→ Autoinflammation (HP:0011115); immune cell activation (GO:0002682) —LEADS_TO→ Antibody deficiency (HP:0002723); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ immune cell activation (GO:0002682). Loss-of-function mutations in WAS disrupt downstream signaling, leading to impaired cytosolic calcium homeostasis and subsequent immune dysregulation. Gain-of-function mutations in PLCG2 also dysregulate immune cell activation pathways, impacting cytosolic calcium homeostasis and leading to immune dysregulation, autoinflammation, and antibody deficiency. Both pathways converge on the disruption of proper immune cell function via alterations in cytosolic calcium and downstream signaling.\n\n**How to falsify it:** Demonstration that mutations in WAS do not affect cytosolic calcium homeostasis, or that mutations in PLCG2 do not impact immune cell activation pathways, would falsify this hypothesis. _(variant: None specified for these specific mutations)_\n\n**Why it matters:** Understanding the shared and distinct roles of WAS and PLCG2 in immune signaling pathways can inform therapeutic strategies for both Wiskott-Aldrich syndrome and autoinflammatory conditions characterized by immune dysregulation, potentially leading to targeted treatments that modulate calcium signaling or immune cell activation.\n\n---\n\n#### 9. familial cold autoinflammatory syndrome 3  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-202433)\n\n**Proposed mechanism:** WAS mutation (null) —DISRUPTS→ WAS (HGNC:12456); WAS (HGNC:12456) —LEADS_TO→ Immunodeficiency (HP:0002701); PLCG2 mutation (null) —DISRUPTS→ PLCG2 (HGNC:9572); PLCG2 (HGNC:9572) —DISRUPTS→ cytosolic calcium homeostasis (GO:0005884); cytosolic calcium homeostasis (GO:0005884) —LEADS_TO→ Autoinflammatory disease (HP:00113902); WAS (HGNC:12456) —DECREASES→ cytosolic calcium homeostasis (GO:0005884). Loss-of-function mutations in WAS lead to immunodeficiency. Gain-of-function mutations in PLCG2 dysregulate cytosolic calcium homeostasis, leading to autoinflammation. We hypothesize that WAS also impacts cytosolic calcium homeostasis, potentially through interactions or downstream effects that are also modulated by PLCG2, creating a convergence point.\n\n**How to falsify it:** If targeted genetic sequencing reveals no significant overlap in the downstream signaling pathways affected by WAS mutations and PLCG2 mutations, particularly concerning cytosolic calcium regulation, then this hypothesis would be falsified. _(variant: null)_\n\n**Why it matters:** Identifying shared downstream pathways like cytosolic calcium homeostasis could reveal novel therapeutic targets for both Wiskott-Aldrich syndrome and familial cold autoinflammatory syndrome 3, potentially allowing for the repurposing of existing drugs or the development of new treatments that address the common underlying mechanism.\n\n---\n\n#### 10. intellectual developmental disorder with macrocephaly, seizures, and speech delay  —  Tier 3 — Moderate / Emerging  (fitness 0.344)\n**Link type:** shared pathway (Reactome:R-HSA-202433, Reactome:R-HSA-2029482, Reactome:R-HSA-9013148, Reactome:R-HSA-9013149)\n\n**Proposed mechanism:** WAS (HGNC:12491) —DISRUPTS→ Cytoskeletal regulation (GO:0007010); WAS (HGNC:12491) —LEADS_TO→ Immunodeficiency (HP:0002723); WAS (HGNC:12491) —LEADS_TO→ Thrombocytopenia (HP:0001887); PAK1 (HGNC:8632) —INCREASES→ Cytoskeletal regulation (GO:0007010); Cytoskeletal regulation (GO:0007010) —LEADS_TO→ Cell migration (GO:0016477); Cell migration (GO:0016477) —LEADS_TO→ Intellectual disability (HP:0001249); Cell migration (GO:0016477) —LEADS_TO→ Seizures (HP:0001250); Cell migration (GO:0016477) —LEADS_TO→ Macrocephaly (HP:0000256); Cell migration (GO:0016477) —LEADS_TO→ Speech delay (HP:0000750). Loss-of-function mutations in WAS lead to impaired cytoskeletal regulation and downstream phenotypes including immunodeficiency and thrombocytopenia. Gain-of-function mutations in PAK1 lead to hyperactivation of cytoskeletal regulation pathways, impacting cell migration and contributing to the neurological phenotypes of IDDMSS.\n\n**How to falsify it:** Demonstration that mutations in WAS do not affect cytoskeletal dynamics or cell migration, or that PAK1 mutations do not impact these processes in neuronal development. _(variant: None)_\n\n**Why it matters:** Understanding the shared involvement of cytoskeletal regulation pathways, particularly PAK1, in both WAS and IDDMSS could reveal novel therapeutic targets for neurodevelopmental disorders by modulating cytoskeletal dynamics.\n\n---"
+}

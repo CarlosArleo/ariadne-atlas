@@ -1,0 +1,165 @@
+{
+  "seed": {
+    "id": "MONDO:0007103",
+    "name": "amyotrophic lateral sclerosis type 1"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 14,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0032828",
+      "diseaseBName": "spastic tetraplegia and axial hypotonia, progressive",
+      "fitness": 0.7822,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SOD1 mutation (HP:0001338) —DISRUPTS→ SOD1 (HGNC:11179); SOD1 (HGNC:11179) —LEADS_TO→ Protein aggregation and oxidative stress (GO:0006950); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Spasticity (HP:0001257); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Axial hypotonia (HP:0001252); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Motor neuron degeneration (HP:0002104). Mutations in SOD1 lead to a gain-of-function that results in protein aggregation and oxidative stress, which in turn causes motor neuron degeneration, spasticity, and axial hypotonia.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in SOD1 with a clear loss-of-function effect in both diseases, or the absence of any conserved pathway linking SOD1 dysfunction to both spasticity and hypotonia.",
+        "gnomad_variant": "rs121918304 (D90A substitution in SOD1) with a high allele frequency (>1%) in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505",
+        "Reactome:R-HSA-114608",
+        "Reactome:R-HSA-3299685"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014178",
+      "diseaseBName": "inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2",
+      "fitness": 0.434,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HNRNPA2B1 (HGNC:4914) —DISRUPTS→ RNA binding and processing (GO:0003723); HNRNPA2B1 (HGNC:4914) —DISRUPTS→ DNA repair (GO:0006289); RNA binding and processing (GO:0003723) —LEADS_TO→ Motor neuron degeneration (HP:0007331); RNA binding and processing (GO:0003723) —LEADS_TO→ Frontotemporal dementia (HP:0000719); DNA repair (GO:0006289) —LEADS_TO→ Motor neuron degeneration (HP:0007331); DNA repair (GO:0006289) —LEADS_TO→ Paget's disease of bone (HP:0003477). Gain-of-function mutations in HNRNPA2B1 disrupt normal RNA binding and processing, and also impair DNA repair pathways. These disruptions consequently lead to motor neuron degeneration (ALS1), frontotemporal dementia (IBMPFD2), and Paget's disease of bone (IBMPFD2).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in HNRNPA2B1 that are exclusively associated with one disease but not the other, or evidence that the specific mutations causing ALS1 and IBMPFD2 have completely distinct molecular mechanisms unrelated to RNA processing or DNA repair, would falsify this hypothesis.",
+        "gnomad_variant": "The presence of common variants (AF > 1%) in HNRNPA2B1 associated with either ALS1 or IBMPFD2 in the gnomAD database."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0011624",
+      "diseaseBName": "transaldolase deficiency",
+      "fitness": 0.4265,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOD1 pathogenic variant (rs121918374) —DISRUPTS→ SOD1 (HGNC:11030); SOD1 (HGNC:11030) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103); TALDO1 pathogenic variant (rs75637898) —DISRUPTS→ TALDO1 (HGNC:11478); TALDO1 (HGNC:11478) —DISRUPTS→ Pentose Phosphate Pathway (KEGG:hsa00010); Pentose Phosphate Pathway (KEGG:hsa00010) —DECREASES→ Ribulose-5-phosphate (CHEBI:17827); Ribulose-5-phosphate (CHEBI:17827) —LEADS_TO→ Transaldolase deficiency (MONDO:0011624); Pentose Phosphate Pathway (KEGG:hsa00010) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103). Mutations in SOD1 lead to ALS1, potentially through disruption of cellular processes that intersect with the pentose phosphate pathway. Mutations in TALDO1 directly impair the pentose phosphate pathway, leading to transaldolase deficiency. Both diseases converge on dysregulation of the pentose phosphate pathway and its downstream effects.",
+      "falsification": {
+        "text": "The discovery of a pathogenic variant in SOD1 or TALDO1 with a minor allele frequency >0.1% in gnomAD would cast doubt on their causal roles in these rare diseases.",
+        "gnomad_variant": "rs121918374, rs75637898"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0014801",
+      "diseaseBName": "even-plus syndrome",
+      "fitness": 0.4235,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HSPA9 (HGNC:27001) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007007); HSPA9 (HGNC:27001) —DISRUPTS→ Regulation of protein folding (GO:0045783); Mitochondrial protein homeostasis (GO:0007007) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Regulation of protein folding (GO:0045783) —LEADS_TO→ Intellectual disability, severe (HP:0010851). Haploinsufficiency of HSPA9 disrupts mitochondrial protein homeostasis and the regulation of protein folding, leading to the phenotypes of Amyotrophic lateral sclerosis (ALS1) and severe intellectual disability (Even-plus syndrome), respectively.",
+      "falsification": {
+        "text": "The discovery of pathogenic variants in HSPA9 with a minor allele frequency >1% in gnomAD populations would falsify the hypothesis that haploinsufficiency of this gene causes these rare diseases.",
+        "gnomad_variant": "HG002675"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0007205",
+      "diseaseBName": "diaphyseal medullary stenosis-bone malignancy syndrome",
+      "fitness": 0.4234,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in SOD1 (None) —DISRUPTS→ SOD1 (HGNC:11242); SOD1 (HGNC:11242) —LEADS_TO→ Motor neuron degeneration (HP:0007341); Pathogenic variant in MTAP (None) —DISRUPTS→ MTAP (HGNC:7537); MTAP (HGNC:7537) —LEADS_TO→ Purine metabolism (REACT:R-HSA-2404302); Purine metabolism (REACT:R-HSA-2404302) —LEADS_TO→ Bone malignancy (HP:0002670). Loss-of-function variants in SOD1 lead to motor neuron degeneration in ALS1. Concurrently, loss-of-function variants in MTAP disrupt purine metabolism, which has downstream effects contributing to bone malignancy in diaphyseal medullary stenosis-bone malignancy syndrome. The convergence is on the shared pathway of purine metabolism, which is essential for cellular function and can impact bone health and neuronal integrity.",
+      "falsification": {
+        "text": "If genetic analysis reveals that MTAP variants do not segregate with diaphyseal medullary stenosis-bone malignancy syndrome, or if SOD1 variants do not segregate with amyotrophic lateral sclerosis type 1, the proposed link would be falsified.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0100119",
+      "diseaseBName": "Knobloch syndrome 2",
+      "fitness": 0.3985,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOD1 (HGNC:11036) —DISRUPTS→ motor neuron degeneration (HP:0007274); PAK2 (HGNC:8570) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ encephalocele (HP:0002127); neuronal development (GO:0048666) —LEADS_TO→ ocular abnormalities (HP:0000477); cytoskeletal organization (GO:0007010) —LEADS_TO→ motor neuron degeneration (HP:0007274). Mutations in SOD1 disrupt motor neuron function leading to degeneration. Mutations in PAK2 disrupt cytoskeletal organization, which is critical for neuronal development, ultimately leading to developmental defects like encephalocele and ocular abnormalities. Both SOD1 and PAK2 dysfunction converge on the disruption of proper cytoskeletal organization and neuronal development pathways, albeit with different downstream phenotypic consequences.",
+      "falsification": {
+        "text": "Demonstration that SOD1 and PAK2 operate in entirely independent cellular pathways with no functional overlap in cytoskeletal regulation or neuronal development, or identification of a specific genetic variant in SOD1 or PAK2 with a very high allele frequency (>1%) in gnomAD for the relevant population, suggesting it is a benign polymorphism.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0958195",
+      "diseaseBName": "oculopharyngeal muscular dystrophy 2",
+      "fitness": 0.395,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HNRNPA2B1 (HGNC:27027) —DISRUPTS→ HNRNPA2B1 pathogenic variant (PMID:24795047); HNRNPA2B1 pathogenic variant (PMID:24795047) —DISRUPTS→ RNA binding and processing (GO:0000953); RNA binding and processing (GO:0000953) —LEADS_TO→ Motor neuron degeneration (HP:0007290); HNRNPA2B1 pathogenic variant (PMID:24795047) —DISRUPTS→ RNA binding and processing (GO:0000953); RNA binding and processing (GO:0000953) —LEADS_TO→ Ptosis (HP:0000521); RNA binding and processing (GO:0000953) —LEADS_TO→ Dysphagia (HP:0002015). Pathogenic variants in HNRNPA2B1 disrupt its normal function in RNA binding and processing. This disruption leads to motor neuron degeneration in ALS1, and also contributes to ptosis and dysphagia in OPMD2 through aberrant RNA metabolism.",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in HNRNPA2B1 do not affect RNA binding and processing pathways, or that these pathways are entirely unrelated to the pathogenesis of either ALS1 or OPMD2.",
+        "gnomad_variant": "Exome Aggregation Consortium (gnomAD) data showing a common pathogenic variant (e.g., p.Gly317Val) in HNRNPA2B1 with a frequency > 1% in the general population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0033541",
+      "diseaseBName": "immunodeficiency 69",
+      "fitness": 0.3875,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SOD1 (HGNC:11000) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103); IFNG (HGNC:5478) —DISRUPTS→ IFNG signaling pathway (GO:0007242); IFNG signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (MONDO:0033541). Loss-of-function mutations in SOD1 lead to impaired oxidative stress response, contributing to ALS. Concurrently, loss-of-function mutations in IFNG disrupt the IFNG signaling pathway, resulting in immunodeficiency. The convergence is proposed through the shared role of these pathways in cellular homeostasis and immune surveillance, where dysregulation in either can exacerbate the other.",
+      "falsification": {
+        "text": "Demonstration that mutations in SOD1 do not impact inflammatory pathways relevant to IFNG signaling, or that mutations in IFNG do not affect neuronal integrity or function in a manner consistent with ALS.",
+        "gnomad_variant": "Exclusion of pathogenic variants in IFNG (associated with immunodeficiency) from individuals with ALS, and vice-versa for SOD1 variants in individuals with immunodeficiency, at a frequency that would rule out a shared mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0010514",
+      "diseaseBName": "combined immunodeficiency due to moesin deficiency",
+      "fitness": 0.3724,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MSN (HGNC:7471) —DISRUPTS→ Cytoskeletal organization and dynamics (GO:0007010); Cytoskeletal organization and dynamics (GO:0007010) —LEADS_TO→ Motor neuron degeneration (HP:0007271); MSN (HGNC:7471) —LEADS_TO→ Combined immunodeficiency (HP:0002714); SOD1 (HGNC:11000) —DISRUPTS→ Protein aggregation and clearance (GO:0000422); Protein aggregation and clearance (GO:0000422) —LEADS_TO→ Motor neuron degeneration (HP:0007271). Loss-of-function mutations in MSN disrupt cytoskeletal organization and dynamics, leading to combined immunodeficiency. Aberrant protein aggregation and clearance, potentially influenced by a dysfunctional cytoskeleton or other factors related to ALS1, contribute to motor neuron degeneration.",
+      "falsification": {
+        "text": "If genetic studies fail to identify loss-of-function variants in MSN in patients with combined immunodeficiency, or if studies show no significant overlap in cellular pathways affected by SOD1 mutations and MSN mutations that could lead to motor neuron degeneration, this hypothesis would be falsified.",
+        "gnomad_variant": "Exome sequencing data from gnomAD showing a high-frequency loss-of-function variant (e.g., allele frequency > 0.01) in MSN in the general population would also challenge the causality of LoF variants in moesin deficiency."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    },
+    {
+      "diseaseB": "MONDO:0008422",
+      "diseaseBName": "autosomal dominant sideroblastic anemia",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "ALS1-associated SOD1 variant (MONDO:0007103) —DISRUPTS→ SOD1 (HGNC:11232); SOD1 (HGNC:11232) —DECREASES→ Mitochondrial protein homeostasis (GO:0007026); Amyotrophic Lateral Sclerosis (HP:0007344) —LEADS_TO→ SOD1 (HGNC:11232); ADSA-associated HSPA9 variant (MONDO:0008422) —DISRUPTS→ HSPA9 (HGNC:5170); HSPA9 (HGNC:5170) —DECREASES→ Mitochondrial protein homeostasis (GO:0007026); Sideroblastic Anemia (HP:0001879) —LEADS_TO→ HSPA9 (HGNC:5170). Mutations in SOD1 in ALS1 and mutations in HSPA9 in ADSA both lead to compromised mitochondrial protein homeostasis, suggesting a shared downstream pathway disruption.",
+      "falsification": {
+        "text": "If genetic studies reveal that ALS1 variants primarily impact protein aggregation independently of HSPA9 function, or if ADSA variants do not affect mitochondrial protein homeostasis, this hypothesis would be falsified.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-8950505"
+      ],
+      "sharedGenes": []
+    }
+  ],
+  "timestamp": "2026-07-28T23:15:10.075Z",
+  "mode": "pathway",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** amyotrophic lateral sclerosis type 1 (MONDO:0007103)\n**Generated:** 2026-07-28\n**Candidates screened:** 0 gene-neighbour(s), 14 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | spastic tetraplegia and axial hypotonia, progressive (MONDO:0032828) | shared pathway | Tier 1 | 0.782 | Reactome:R-HSA-8950505, Reactome:R-HSA-114608, Reactome:R-HSA-3299685 |\n| 2 | inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2 (MONDO:0014178) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-8950505 |\n| 3 | transaldolase deficiency (MONDO:0011624) | shared pathway | Tier 3 | 0.426 | Reactome:R-HSA-8950505 |\n| 4 | even-plus syndrome (MONDO:0014801) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-8950505 |\n| 5 | diaphyseal medullary stenosis-bone malignancy syndrome (MONDO:0007205) | shared pathway | Tier 3 | 0.423 | Reactome:R-HSA-8950505 |\n| 6 | Knobloch syndrome 2 (MONDO:0100119) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-8950505 |\n| 7 | oculopharyngeal muscular dystrophy 2 (MONDO:0958195) | shared pathway | Tier 3 | 0.395 | Reactome:R-HSA-8950505 |\n| 8 | immunodeficiency 69 (MONDO:0033541) | shared pathway | Tier 3 | 0.388 | Reactome:R-HSA-8950505 |\n| 9 | combined immunodeficiency due to moesin deficiency (MONDO:0010514) | shared pathway | Tier 3 | 0.372 | Reactome:R-HSA-8950505 |\n| 10 | autosomal dominant sideroblastic anemia (MONDO:0008422) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-8950505 |\n\n### CANDIDATE DETAIL\n#### 1. spastic tetraplegia and axial hypotonia, progressive  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared pathway (Reactome:R-HSA-8950505, Reactome:R-HSA-114608, Reactome:R-HSA-3299685)\n\n**Proposed mechanism:** SOD1 mutation (HP:0001338) —DISRUPTS→ SOD1 (HGNC:11179); SOD1 (HGNC:11179) —LEADS_TO→ Protein aggregation and oxidative stress (GO:0006950); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Spasticity (HP:0001257); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Axial hypotonia (HP:0001252); Protein aggregation and oxidative stress (GO:0006950) —LEADS_TO→ Motor neuron degeneration (HP:0002104). Mutations in SOD1 lead to a gain-of-function that results in protein aggregation and oxidative stress, which in turn causes motor neuron degeneration, spasticity, and axial hypotonia.\n\n**How to falsify it:** Identification of pathogenic variants in SOD1 with a clear loss-of-function effect in both diseases, or the absence of any conserved pathway linking SOD1 dysfunction to both spasticity and hypotonia. _(variant: rs121918304 (D90A substitution in SOD1) with a high allele frequency (>1%) in gnomAD.)_\n\n**Why it matters:** Understanding the shared gain-of-function mechanism of SOD1 in both ALS1 and spastic tetraplegia and axial hypotonia, progressive, opens avenues for therapeutic strategies targeting protein aggregation, oxidative stress, or downstream neuroinflammatory pathways. Therapies aimed at stabilizing SOD1 or enhancing its clearance could potentially benefit patients with both conditions.\n\n---\n\n#### 2. inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** HNRNPA2B1 (HGNC:4914) —DISRUPTS→ RNA binding and processing (GO:0003723); HNRNPA2B1 (HGNC:4914) —DISRUPTS→ DNA repair (GO:0006289); RNA binding and processing (GO:0003723) —LEADS_TO→ Motor neuron degeneration (HP:0007331); RNA binding and processing (GO:0003723) —LEADS_TO→ Frontotemporal dementia (HP:0000719); DNA repair (GO:0006289) —LEADS_TO→ Motor neuron degeneration (HP:0007331); DNA repair (GO:0006289) —LEADS_TO→ Paget's disease of bone (HP:0003477). Gain-of-function mutations in HNRNPA2B1 disrupt normal RNA binding and processing, and also impair DNA repair pathways. These disruptions consequently lead to motor neuron degeneration (ALS1), frontotemporal dementia (IBMPFD2), and Paget's disease of bone (IBMPFD2).\n\n**How to falsify it:** The identification of pathogenic variants in HNRNPA2B1 that are exclusively associated with one disease but not the other, or evidence that the specific mutations causing ALS1 and IBMPFD2 have completely distinct molecular mechanisms unrelated to RNA processing or DNA repair, would falsify this hypothesis. _(variant: The presence of common variants (AF > 1%) in HNRNPA2B1 associated with either ALS1 or IBMPFD2 in the gnomAD database.)_\n\n**Why it matters:** Understanding the shared role of HNRNPA2B1 in ALS1 and IBMPFD2 could lead to therapeutic strategies targeting RNA processing or DNA repair mechanisms that benefit patients with both conditions.\n\n---\n\n#### 3. transaldolase deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.426)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** SOD1 pathogenic variant (rs121918374) —DISRUPTS→ SOD1 (HGNC:11030); SOD1 (HGNC:11030) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103); TALDO1 pathogenic variant (rs75637898) —DISRUPTS→ TALDO1 (HGNC:11478); TALDO1 (HGNC:11478) —DISRUPTS→ Pentose Phosphate Pathway (KEGG:hsa00010); Pentose Phosphate Pathway (KEGG:hsa00010) —DECREASES→ Ribulose-5-phosphate (CHEBI:17827); Ribulose-5-phosphate (CHEBI:17827) —LEADS_TO→ Transaldolase deficiency (MONDO:0011624); Pentose Phosphate Pathway (KEGG:hsa00010) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103). Mutations in SOD1 lead to ALS1, potentially through disruption of cellular processes that intersect with the pentose phosphate pathway. Mutations in TALDO1 directly impair the pentose phosphate pathway, leading to transaldolase deficiency. Both diseases converge on dysregulation of the pentose phosphate pathway and its downstream effects.\n\n**How to falsify it:** The discovery of a pathogenic variant in SOD1 or TALDO1 with a minor allele frequency >0.1% in gnomAD would cast doubt on their causal roles in these rare diseases. _(variant: rs121918374, rs75637898)_\n\n**Why it matters:** Understanding the shared mechanistic links through the pentose phosphate pathway could reveal novel therapeutic targets for both ALS and metabolic disorders.\n\n---\n\n#### 4. even-plus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** HSPA9 (HGNC:27001) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0007007); HSPA9 (HGNC:27001) —DISRUPTS→ Regulation of protein folding (GO:0045783); Mitochondrial protein homeostasis (GO:0007007) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Regulation of protein folding (GO:0045783) —LEADS_TO→ Intellectual disability, severe (HP:0010851). Haploinsufficiency of HSPA9 disrupts mitochondrial protein homeostasis and the regulation of protein folding, leading to the phenotypes of Amyotrophic lateral sclerosis (ALS1) and severe intellectual disability (Even-plus syndrome), respectively.\n\n**How to falsify it:** The discovery of pathogenic variants in HSPA9 with a minor allele frequency >1% in gnomAD populations would falsify the hypothesis that haploinsufficiency of this gene causes these rare diseases. _(variant: HG002675)_\n\n**Why it matters:** Understanding the shared role of HSPA9 in ALS1 and Even-plus syndrome could reveal common therapeutic targets for neurodegenerative and developmental disorders, potentially leading to treatments that address protein misfolding and mitochondrial dysfunction.\n\n---\n\n#### 5. diaphyseal medullary stenosis-bone malignancy syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.423)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** Pathogenic variant in SOD1 (None) —DISRUPTS→ SOD1 (HGNC:11242); SOD1 (HGNC:11242) —LEADS_TO→ Motor neuron degeneration (HP:0007341); Pathogenic variant in MTAP (None) —DISRUPTS→ MTAP (HGNC:7537); MTAP (HGNC:7537) —LEADS_TO→ Purine metabolism (REACT:R-HSA-2404302); Purine metabolism (REACT:R-HSA-2404302) —LEADS_TO→ Bone malignancy (HP:0002670). Loss-of-function variants in SOD1 lead to motor neuron degeneration in ALS1. Concurrently, loss-of-function variants in MTAP disrupt purine metabolism, which has downstream effects contributing to bone malignancy in diaphyseal medullary stenosis-bone malignancy syndrome. The convergence is on the shared pathway of purine metabolism, which is essential for cellular function and can impact bone health and neuronal integrity.\n\n**How to falsify it:** If genetic analysis reveals that MTAP variants do not segregate with diaphyseal medullary stenosis-bone malignancy syndrome, or if SOD1 variants do not segregate with amyotrophic lateral sclerosis type 1, the proposed link would be falsified. _(variant: None)_\n\n**Why it matters:** Understanding the shared role of MTAP in purine metabolism could reveal therapeutic targets for both neurological and skeletal disorders, potentially by modulating purine levels or related downstream pathways.\n\n---\n\n#### 6. Knobloch syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** SOD1 (HGNC:11036) —DISRUPTS→ motor neuron degeneration (HP:0007274); PAK2 (HGNC:8570) —DISRUPTS→ cytoskeletal organization (GO:0007010); cytoskeletal organization (GO:0007010) —LEADS_TO→ neuronal development (GO:0048666); neuronal development (GO:0048666) —LEADS_TO→ encephalocele (HP:0002127); neuronal development (GO:0048666) —LEADS_TO→ ocular abnormalities (HP:0000477); cytoskeletal organization (GO:0007010) —LEADS_TO→ motor neuron degeneration (HP:0007274). Mutations in SOD1 disrupt motor neuron function leading to degeneration. Mutations in PAK2 disrupt cytoskeletal organization, which is critical for neuronal development, ultimately leading to developmental defects like encephalocele and ocular abnormalities. Both SOD1 and PAK2 dysfunction converge on the disruption of proper cytoskeletal organization and neuronal development pathways, albeit with different downstream phenotypic consequences.\n\n**How to falsify it:** Demonstration that SOD1 and PAK2 operate in entirely independent cellular pathways with no functional overlap in cytoskeletal regulation or neuronal development, or identification of a specific genetic variant in SOD1 or PAK2 with a very high allele frequency (>1%) in gnomAD for the relevant population, suggesting it is a benign polymorphism. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared mechanistic underpinnings related to cytoskeletal integrity and neuronal development could reveal novel therapeutic targets for both neurodegenerative and neurodevelopmental disorders, potentially enabling repurposing of drugs or development of new treatment strategies that address common pathways.\n\n---\n\n#### 7. oculopharyngeal muscular dystrophy 2  —  Tier 3 — Moderate / Emerging  (fitness 0.395)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** HNRNPA2B1 (HGNC:27027) —DISRUPTS→ HNRNPA2B1 pathogenic variant (PMID:24795047); HNRNPA2B1 pathogenic variant (PMID:24795047) —DISRUPTS→ RNA binding and processing (GO:0000953); RNA binding and processing (GO:0000953) —LEADS_TO→ Motor neuron degeneration (HP:0007290); HNRNPA2B1 pathogenic variant (PMID:24795047) —DISRUPTS→ RNA binding and processing (GO:0000953); RNA binding and processing (GO:0000953) —LEADS_TO→ Ptosis (HP:0000521); RNA binding and processing (GO:0000953) —LEADS_TO→ Dysphagia (HP:0002015). Pathogenic variants in HNRNPA2B1 disrupt its normal function in RNA binding and processing. This disruption leads to motor neuron degeneration in ALS1, and also contributes to ptosis and dysphagia in OPMD2 through aberrant RNA metabolism.\n\n**How to falsify it:** Demonstration that pathogenic variants in HNRNPA2B1 do not affect RNA binding and processing pathways, or that these pathways are entirely unrelated to the pathogenesis of either ALS1 or OPMD2. _(variant: Exome Aggregation Consortium (gnomAD) data showing a common pathogenic variant (e.g., p.Gly317Val) in HNRNPA2B1 with a frequency > 1% in the general population.)_\n\n**Why it matters:** Understanding the shared role of HNRNPA2B1 in RNA processing for both ALS1 and OPMD2 could reveal therapeutic strategies targeting RNA metabolism that may benefit patients with both conditions.\n\n---\n\n#### 8. immunodeficiency 69  —  Tier 3 — Moderate / Emerging  (fitness 0.388)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** SOD1 (HGNC:11000) —DISRUPTS→ Oxidative stress response (GO:0006974); Oxidative stress response (GO:0006974) —LEADS_TO→ Amyotrophic lateral sclerosis (MONDO:0007103); IFNG (HGNC:5478) —DISRUPTS→ IFNG signaling pathway (GO:0007242); IFNG signaling pathway (GO:0007242) —LEADS_TO→ Immunodeficiency (MONDO:0033541). Loss-of-function mutations in SOD1 lead to impaired oxidative stress response, contributing to ALS. Concurrently, loss-of-function mutations in IFNG disrupt the IFNG signaling pathway, resulting in immunodeficiency. The convergence is proposed through the shared role of these pathways in cellular homeostasis and immune surveillance, where dysregulation in either can exacerbate the other.\n\n**How to falsify it:** Demonstration that mutations in SOD1 do not impact inflammatory pathways relevant to IFNG signaling, or that mutations in IFNG do not affect neuronal integrity or function in a manner consistent with ALS. _(variant: Exclusion of pathogenic variants in IFNG (associated with immunodeficiency) from individuals with ALS, and vice-versa for SOD1 variants in individuals with immunodeficiency, at a frequency that would rule out a shared mechanism.)_\n\n**Why it matters:** Targeting the IFNG pathway or its downstream effectors could offer a therapeutic strategy for both ALS and certain immunodeficiencies, particularly those with a neuroinflammatory component. Conversely, modulating oxidative stress response might ameliorate some aspects of immune dysregulation.\n\n---\n\n#### 9. combined immunodeficiency due to moesin deficiency  —  Tier 3 — Moderate / Emerging  (fitness 0.372)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** MSN (HGNC:7471) —DISRUPTS→ Cytoskeletal organization and dynamics (GO:0007010); Cytoskeletal organization and dynamics (GO:0007010) —LEADS_TO→ Motor neuron degeneration (HP:0007271); MSN (HGNC:7471) —LEADS_TO→ Combined immunodeficiency (HP:0002714); SOD1 (HGNC:11000) —DISRUPTS→ Protein aggregation and clearance (GO:0000422); Protein aggregation and clearance (GO:0000422) —LEADS_TO→ Motor neuron degeneration (HP:0007271). Loss-of-function mutations in MSN disrupt cytoskeletal organization and dynamics, leading to combined immunodeficiency. Aberrant protein aggregation and clearance, potentially influenced by a dysfunctional cytoskeleton or other factors related to ALS1, contribute to motor neuron degeneration.\n\n**How to falsify it:** If genetic studies fail to identify loss-of-function variants in MSN in patients with combined immunodeficiency, or if studies show no significant overlap in cellular pathways affected by SOD1 mutations and MSN mutations that could lead to motor neuron degeneration, this hypothesis would be falsified. _(variant: Exome sequencing data from gnomAD showing a high-frequency loss-of-function variant (e.g., allele frequency > 0.01) in MSN in the general population would also challenge the causality of LoF variants in moesin deficiency.)_\n\n**Why it matters:** Identifying a shared mechanistic link via MSN could open avenues for therapeutic strategies that target cytoskeletal dynamics or protein clearance pathways, potentially benefiting patients with both ALS1 and moesin deficiency, or related disorders.\n\n---\n\n#### 10. autosomal dominant sideroblastic anemia  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-8950505)\n\n**Proposed mechanism:** ALS1-associated SOD1 variant (MONDO:0007103) —DISRUPTS→ SOD1 (HGNC:11232); SOD1 (HGNC:11232) —DECREASES→ Mitochondrial protein homeostasis (GO:0007026); Amyotrophic Lateral Sclerosis (HP:0007344) —LEADS_TO→ SOD1 (HGNC:11232); ADSA-associated HSPA9 variant (MONDO:0008422) —DISRUPTS→ HSPA9 (HGNC:5170); HSPA9 (HGNC:5170) —DECREASES→ Mitochondrial protein homeostasis (GO:0007026); Sideroblastic Anemia (HP:0001879) —LEADS_TO→ HSPA9 (HGNC:5170). Mutations in SOD1 in ALS1 and mutations in HSPA9 in ADSA both lead to compromised mitochondrial protein homeostasis, suggesting a shared downstream pathway disruption.\n\n**How to falsify it:** If genetic studies reveal that ALS1 variants primarily impact protein aggregation independently of HSPA9 function, or if ADSA variants do not affect mitochondrial protein homeostasis, this hypothesis would be falsified. _(variant: rs12345678)_\n\n**Why it matters:** Targeting mitochondrial protein homeostasis pathways, particularly those involving chaperones like HSPA9, could offer therapeutic strategies for both ALS and sideroblastic anemia.\n\n---"
+}

@@ -1,0 +1,133 @@
+{
+  "seed": {
+    "id": "MONDO:0013659",
+    "name": "MONDO:0013659"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0054748",
+      "diseaseBName": "Fanconi anemia, complementation group S",
+      "fitness": 0.4356,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAMBP (HGNC:21765) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Developmental delay (HP:0001263); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001909); DNA repair (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in STAMBP disrupt DNA repair, leading to developmental delay in MONDO:0013659. Similarly, loss-of-function mutations in BRCA1 disrupt DNA repair, contributing to anemia and microcephaly observed in Fanconi anemia, complementation group S. The convergence is the shared disruption of DNA repair pathways.",
+      "mechanism_narrative": "STAMBP (HGNC:21765) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Developmental delay (HP:0001263); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001909); DNA repair (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in STAMBP disrupt DNA repair, leading to developmental delay in MONDO:0013659. Similarly, loss-of-function mutations in BRCA1 disrupt DNA repair, contributing to anemia and microcephaly observed in Fanconi anemia, complementation group S. The convergence is the shared disruption of DNA repair pathways.",
+      "falsification": {
+        "text": "Demonstration that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, or that mutations in STAMBP do not impair DNA repair fidelity, would falsify this hypothesis.",
+        "gnomad_variant": "Presence of pathogenic variants in STAMBP with a minor allele frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5689901"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5689901": 37
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0054748",
+        "diseaseBName": "Fanconi anemia, complementation group S",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5689901"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5689901": 37
+        },
+        "fitness": 0.4356,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAMBP (HGNC:21765) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Developmental delay (HP:0001263); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001909); DNA repair (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in STAMBP disrupt DNA repair, leading to developmental delay in MONDO:0013659. Similarly, loss-of-function mutations in BRCA1 disrupt DNA repair, contributing to anemia and microcephaly observed in Fanconi anemia, complementation group S. The convergence is the shared disruption of DNA repair pathways.",
+        "falsification": {
+          "text": "Demonstration that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, or that mutations in STAMBP do not impair DNA repair fidelity, would falsify this hypothesis.",
+          "gnomad_variant": "Presence of pathogenic variants in STAMBP with a minor allele frequency > 0.01 in gnomAD."
+        },
+        "translational": "Identifying the shared reliance on functional DNA repair pathways highlights potential therapeutic strategies targeting these pathways for both conditions, such as PARP inhibitors or other DNA damage response modulators."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0700268",
+      "diseaseBName": "BRCA1-related cancer predisposition",
+      "fitness": 0.396,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "STAMBP (HGNC:24240) —DISRUPTS→ DNA repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of cancer (HP:0012419); DNA repair (GO:0006281) —LEADS_TO→ Developmental abnormality (HP:0000118). Loss-of-function mutations in STAMBP (causative for MONDO:0013659) and BRCA1 (causative for BRCA1-related cancer predisposition) both converge on disrupting the DNA repair pathway. Defective DNA repair in turn leads to increased cancer risk and developmental abnormalities.",
+      "mechanism_narrative": "STAMBP (HGNC:24240) —DISRUPTS→ DNA repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of cancer (HP:0012419); DNA repair (GO:0006281) —LEADS_TO→ Developmental abnormality (HP:0000118). Loss-of-function mutations in STAMBP (causative for MONDO:0013659) and BRCA1 (causative for BRCA1-related cancer predisposition) both converge on disrupting the DNA repair pathway. Defective DNA repair in turn leads to increased cancer risk and developmental abnormalities.",
+      "falsification": {
+        "text": "If studies demonstrate that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, and that mutations in STAMBP do not affect BRCA1 function or localization, and vice-versa, this hypothesis would be falsified.",
+        "gnomad_variant": "A common (AF > 0.01) loss-of-function variant in STAMBP found in gnomAD would weaken the hypothesis for MONDO:0013659 if it's not significantly enriched in any disease population."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5689901"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5689901": 37
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0700268",
+        "diseaseBName": "BRCA1-related cancer predisposition",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5689901"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5689901": 37
+        },
+        "fitness": 0.396,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "STAMBP (HGNC:24240) —DISRUPTS→ DNA repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of cancer (HP:0012419); DNA repair (GO:0006281) —LEADS_TO→ Developmental abnormality (HP:0000118). Loss-of-function mutations in STAMBP (causative for MONDO:0013659) and BRCA1 (causative for BRCA1-related cancer predisposition) both converge on disrupting the DNA repair pathway. Defective DNA repair in turn leads to increased cancer risk and developmental abnormalities.",
+        "falsification": {
+          "text": "If studies demonstrate that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, and that mutations in STAMBP do not affect BRCA1 function or localization, and vice-versa, this hypothesis would be falsified.",
+          "gnomad_variant": "A common (AF > 0.01) loss-of-function variant in STAMBP found in gnomAD would weaken the hypothesis for MONDO:0013659 if it's not significantly enriched in any disease population."
+        },
+        "translational": "Understanding the convergence of STAMBP and BRCA1 in DNA repair could lead to novel therapeutic strategies targeting shared vulnerabilities in cancer treatment or understanding developmental defects."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011450",
+      "diseaseBName": "breast-ovarian cancer, familial, susceptibility to, 1",
+      "fitness": 0.3814,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BRCA1 pathogenic variant (HGVS:NG_005905.2:g.52296257G>A) —DISRUPTS→ BRCA1 (HGNC:1101); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:0002850). Pathogenic variants in BRCA1 lead to its haploinsufficiency, disrupting DNA repair pathways. This disruption results in genomic instability, increasing the susceptibility to both breast and ovarian cancers.",
+      "mechanism_narrative": "BRCA1 pathogenic variant (HGVS:NG_005905.2:g.52296257G>A) —DISRUPTS→ BRCA1 (HGNC:1101); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:0002850). Pathogenic variants in BRCA1 lead to its haploinsufficiency, disrupting DNA repair pathways. This disruption results in genomic instability, increasing the susceptibility to both breast and ovarian cancers.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in BRCA1 that are found at a frequency >1% in gnomAD, or demonstration that the disease-causing variants for MONDO:0013659 do not affect BRCA1 function.",
+        "gnomad_variant": "HGVS:NG_005905.2:g.52296257G>A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5689901"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5689901": 37
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011450",
+        "diseaseBName": "breast-ovarian cancer, familial, susceptibility to, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5689901"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5689901": 37
+        },
+        "fitness": 0.3814,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BRCA1 pathogenic variant (HGVS:NG_005905.2:g.52296257G>A) —DISRUPTS→ BRCA1 (HGNC:1101); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:0002850). Pathogenic variants in BRCA1 lead to its haploinsufficiency, disrupting DNA repair pathways. This disruption results in genomic instability, increasing the susceptibility to both breast and ovarian cancers.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in BRCA1 that are found at a frequency >1% in gnomAD, or demonstration that the disease-causing variants for MONDO:0013659 do not affect BRCA1 function.",
+          "gnomad_variant": "HGVS:NG_005905.2:g.52296257G>A"
+        },
+        "translational": "Targeting DNA repair pathways or exploiting synthetic lethality in BRCA1-deficient cancers represents a significant therapeutic strategy for both diseases."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T06:27:17.921Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013659 (MONDO:0013659)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Fanconi anemia, complementation group S (MONDO:0054748) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-5689901 |\n| 2 | BRCA1-related cancer predisposition (MONDO:0700268) | shared pathway | Tier 3 | 0.396 | Reactome:R-HSA-5689901 |\n| 3 | breast-ovarian cancer, familial, susceptibility to, 1 (MONDO:0011450) | shared pathway | Tier 3 | 0.381 | Reactome:R-HSA-5689901 |\n\n### CANDIDATE DETAIL\n#### 1. Fanconi anemia, complementation group S  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-5689901)\n\n**Proposed mechanism:** STAMBP (HGNC:21765) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Developmental delay (HP:0001263); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Anemia (HP:0001909); DNA repair (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252). Loss-of-function mutations in STAMBP disrupt DNA repair, leading to developmental delay in MONDO:0013659. Similarly, loss-of-function mutations in BRCA1 disrupt DNA repair, contributing to anemia and microcephaly observed in Fanconi anemia, complementation group S. The convergence is the shared disruption of DNA repair pathways.\n\n**How to falsify it:** Demonstration that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, or that mutations in STAMBP do not impair DNA repair fidelity, would falsify this hypothesis. _(variant: Presence of pathogenic variants in STAMBP with a minor allele frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Identifying the shared reliance on functional DNA repair pathways highlights potential therapeutic strategies targeting these pathways for both conditions, such as PARP inhibitors or other DNA damage response modulators.\n\n---\n\n#### 2. BRCA1-related cancer predisposition  —  Tier 3 — Moderate / Emerging  (fitness 0.396)\n**Link type:** shared pathway (Reactome:R-HSA-5689901)\n\n**Proposed mechanism:** STAMBP (HGNC:24240) —DISRUPTS→ DNA repair (GO:0006281); BRCA1 (HGNC:1100) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased risk of cancer (HP:0012419); DNA repair (GO:0006281) —LEADS_TO→ Developmental abnormality (HP:0000118). Loss-of-function mutations in STAMBP (causative for MONDO:0013659) and BRCA1 (causative for BRCA1-related cancer predisposition) both converge on disrupting the DNA repair pathway. Defective DNA repair in turn leads to increased cancer risk and developmental abnormalities.\n\n**How to falsify it:** If studies demonstrate that STAMBP and BRCA1 function in completely independent and non-interacting DNA repair sub-pathways, and that mutations in STAMBP do not affect BRCA1 function or localization, and vice-versa, this hypothesis would be falsified. _(variant: A common (AF > 0.01) loss-of-function variant in STAMBP found in gnomAD would weaken the hypothesis for MONDO:0013659 if it's not significantly enriched in any disease population.)_\n\n**Why it matters:** Understanding the convergence of STAMBP and BRCA1 in DNA repair could lead to novel therapeutic strategies targeting shared vulnerabilities in cancer treatment or understanding developmental defects.\n\n---\n\n#### 3. breast-ovarian cancer, familial, susceptibility to, 1  —  Tier 3 — Moderate / Emerging  (fitness 0.381)\n**Link type:** shared pathway (Reactome:R-HSA-5689901)\n\n**Proposed mechanism:** BRCA1 pathogenic variant (HGVS:NG_005905.2:g.52296257G>A) —DISRUPTS→ BRCA1 (HGNC:1101); BRCA1 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006281); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to breast cancer (HP:0002664); DNA repair (GO:0006281) —LEADS_TO→ Increased susceptibility to ovarian cancer (HP:0002850). Pathogenic variants in BRCA1 lead to its haploinsufficiency, disrupting DNA repair pathways. This disruption results in genomic instability, increasing the susceptibility to both breast and ovarian cancers.\n\n**How to falsify it:** Identification of pathogenic variants in BRCA1 that are found at a frequency >1% in gnomAD, or demonstration that the disease-causing variants for MONDO:0013659 do not affect BRCA1 function. _(variant: HGVS:NG_005905.2:g.52296257G>A)_\n\n**Why it matters:** Targeting DNA repair pathways or exploiting synthetic lethality in BRCA1-deficient cancers represents a significant therapeutic strategy for both diseases.\n\n---"
+}
