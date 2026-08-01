@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0007921",
+    "name": "yellow nail syndrome"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0030270",
+      "diseaseBName": "lymphatic malformation 9",
+      "fitness": 0.7269,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "CELSR1 (HGNC:1850) —DISRUPTS→ Cell adhesion and planar cell polarity pathway; Cell adhesion and planar cell polarity pathway —LEADS_TO→ Yellow Nail Syndrome features (MONDO:0007921); Cell adhesion and planar cell polarity pathway —LEADS_TO→ Lymphatic Malformation 9 features (MONDO:0030270). Loss-of-function mutations in CELSR1 disrupt cell adhesion and planar cell polarity signaling, leading to the distinct but overlapping phenotypes of Yellow Nail Syndrome and Lymphatic Malformation 9.",
+      "mechanism_narrative": "CELSR1 (HGNC:1850) —DISRUPTS→ Cell adhesion and planar cell polarity pathway; Cell adhesion and planar cell polarity pathway —LEADS_TO→ Yellow Nail Syndrome features (MONDO:0007921); Cell adhesion and planar cell polarity pathway —LEADS_TO→ Lymphatic Malformation 9 features (MONDO:0030270). Loss-of-function mutations in CELSR1 disrupt cell adhesion and planar cell polarity signaling, leading to the distinct but overlapping phenotypes of Yellow Nail Syndrome and Lymphatic Malformation 9.",
+      "falsification": {
+        "text": "The presence of causative variants in CELSR1 with a minor allele frequency greater than 0.1% in gnomAD for both diseases would falsify this hypothesis.",
+        "gnomad_variant": "HGNC:1850"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:1850"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0030270",
+        "diseaseBName": "lymphatic malformation 9",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:1850"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7269,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "CELSR1 (HGNC:1850) —DISRUPTS→ Cell adhesion and planar cell polarity pathway; Cell adhesion and planar cell polarity pathway —LEADS_TO→ Yellow Nail Syndrome features (MONDO:0007921); Cell adhesion and planar cell polarity pathway —LEADS_TO→ Lymphatic Malformation 9 features (MONDO:0030270). Loss-of-function mutations in CELSR1 disrupt cell adhesion and planar cell polarity signaling, leading to the distinct but overlapping phenotypes of Yellow Nail Syndrome and Lymphatic Malformation 9.",
+        "falsification": {
+          "text": "The presence of causative variants in CELSR1 with a minor allele frequency greater than 0.1% in gnomAD for both diseases would falsify this hypothesis.",
+          "gnomad_variant": "HGNC:1850"
+        },
+        "translational": "Understanding the shared role of CELSR1 in these distinct conditions could lead to novel therapeutic strategies targeting cell adhesion pathways for both Yellow Nail Syndrome and Lymphatic Malformation 9, potentially improving developmental outcomes and addressing key features like nail dystrophy and lymphatic abnormalities."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:22:46.779Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** yellow nail syndrome (MONDO:0007921)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | lymphatic malformation 9 (MONDO:0030270) | shared gene | Tier 1 | 0.727 | HGNC:1850 |\n\n### CANDIDATE DETAIL\n#### 1. lymphatic malformation 9  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.727)\n**Link type:** shared causal gene (HGNC:1850)\n\n**Proposed mechanism:** CELSR1 (HGNC:1850) —DISRUPTS→ Cell adhesion and planar cell polarity pathway; Cell adhesion and planar cell polarity pathway —LEADS_TO→ Yellow Nail Syndrome features (MONDO:0007921); Cell adhesion and planar cell polarity pathway —LEADS_TO→ Lymphatic Malformation 9 features (MONDO:0030270). Loss-of-function mutations in CELSR1 disrupt cell adhesion and planar cell polarity signaling, leading to the distinct but overlapping phenotypes of Yellow Nail Syndrome and Lymphatic Malformation 9.\n\n**How to falsify it:** The presence of causative variants in CELSR1 with a minor allele frequency greater than 0.1% in gnomAD for both diseases would falsify this hypothesis. _(variant: HGNC:1850)_\n\n**Why it matters:** Understanding the shared role of CELSR1 in these distinct conditions could lead to novel therapeutic strategies targeting cell adhesion pathways for both Yellow Nail Syndrome and Lymphatic Malformation 9, potentially improving developmental outcomes and addressing key features like nail dystrophy and lymphatic abnormalities.\n\n---"
+}

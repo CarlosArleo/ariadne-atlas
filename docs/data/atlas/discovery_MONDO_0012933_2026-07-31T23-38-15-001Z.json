@@ -1,0 +1,563 @@
+{
+  "seed": {
+    "id": "MONDO:0012933",
+    "name": "MONDO:0012933"
+  },
+  "geneCandidates": 3,
+  "pathwayCandidates": 27,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0700269",
+      "diseaseBName": "BRCA2-related cancer predisposition",
+      "fitness": 0.7818,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic BRCA2 Variant (null) —DISRUPTS→ BRCA2 (HGNC:1101); BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (REACT:R-HSA-200886); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Colorectal Cancer (HP:0002668); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Predisposition to Breast Cancer (HP:0012367). Pathogenic variants in BRCA2 lead to disruption of homologous recombination DNA repair, which contributes to genomic instability and increases the risk of various cancers, including colorectal cancer (associated with MYH-associated polyposis) and breast cancer (a hallmark of BRCA2-related cancer predisposition).",
+      "mechanism_narrative": "Pathogenic BRCA2 Variant (null) —DISRUPTS→ BRCA2 (HGNC:1101); BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (REACT:R-HSA-200886); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Colorectal Cancer (HP:0002668); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Predisposition to Breast Cancer (HP:0012367). Pathogenic variants in BRCA2 lead to disruption of homologous recombination DNA repair, which contributes to genomic instability and increases the risk of various cancers, including colorectal cancer (associated with MYH-associated polyposis) and breast cancer (a hallmark of BRCA2-related cancer predisposition).",
+      "falsification": {
+        "text": "The identification of pathogenic variants in BRCA2 that are exclusively associated with one disease but not the other, or variants with a significantly higher frequency in the general population (e.g., gnomAD > 1%) that are linked to either disease, would falsify this shared mechanism.",
+        "gnomad_variant": "ExAC:chr13:32937000:C:T"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:1101"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0700269",
+        "diseaseBName": "BRCA2-related cancer predisposition",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:1101"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7818,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "Pathogenic BRCA2 Variant (null) —DISRUPTS→ BRCA2 (HGNC:1101); BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (REACT:R-HSA-200886); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Colorectal Cancer (HP:0002668); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Predisposition to Breast Cancer (HP:0012367). Pathogenic variants in BRCA2 lead to disruption of homologous recombination DNA repair, which contributes to genomic instability and increases the risk of various cancers, including colorectal cancer (associated with MYH-associated polyposis) and breast cancer (a hallmark of BRCA2-related cancer predisposition).",
+        "falsification": {
+          "text": "The identification of pathogenic variants in BRCA2 that are exclusively associated with one disease but not the other, or variants with a significantly higher frequency in the general population (e.g., gnomAD > 1%) that are linked to either disease, would falsify this shared mechanism.",
+          "gnomad_variant": "ExAC:chr13:32937000:C:T"
+        },
+        "translational": "Understanding the shared mechanism in BRCA2 mutations highlights the potential for overlapping therapeutic strategies, such as PARP inhibitors, for both MYH-associated polyposis and BRCA2-related cancer predisposition, by targeting the synthetic lethality caused by impaired DNA repair pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0015909",
+      "diseaseBName": "aplastic anemia",
+      "fitness": 0.7148,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "FANCA (HGNC:3741) —DISRUPTS→ Fanconi Anemia Pathway (REACT:R-HSA-696100); Fanconi Anemia Pathway (REACT:R-HSA-696100) —LEADS_TO→ DNA Repair (GO:0006281); DNA Repair (GO:0006281) —LEADS_TO→ Fanconi Anemia (MONDO:0012933); JAK2 (HGNC:6084) —DISRUPTS→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Aplastic Anemia (MONDO:0015909); DNA Repair (GO:0006281) —LEADS_TO→ Hematopoiesis (GO:0030097). Loss-of-function mutations in FANCA disrupt the Fanconi Anemia pathway, which is integral to DNA repair. Impaired DNA repair leads to genomic instability and ultimately the phenotype of Fanconi Anemia. Similarly, mutations in genes like JAK2 (though not exclusively causal for aplastic anemia in all cases, it is a shared causal gene in Monarch for this pair) can disrupt normal hematopoiesis, leading to aplastic anemia. Crucially, both DNA repair and hematopoiesis are fundamentally dependent processes within the bone marrow microenvironment, and severe defects in DNA repair can compromise the stem cell populations essential for hematopoiesis, thus creating a convergence point.",
+      "mechanism_narrative": "FANCA (HGNC:3741) —DISRUPTS→ Fanconi Anemia Pathway (REACT:R-HSA-696100); Fanconi Anemia Pathway (REACT:R-HSA-696100) —LEADS_TO→ DNA Repair (GO:0006281); DNA Repair (GO:0006281) —LEADS_TO→ Fanconi Anemia (MONDO:0012933); JAK2 (HGNC:6084) —DISRUPTS→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Aplastic Anemia (MONDO:0015909); DNA Repair (GO:0006281) —LEADS_TO→ Hematopoiesis (GO:0030097). Loss-of-function mutations in FANCA disrupt the Fanconi Anemia pathway, which is integral to DNA repair. Impaired DNA repair leads to genomic instability and ultimately the phenotype of Fanconi Anemia. Similarly, mutations in genes like JAK2 (though not exclusively causal for aplastic anemia in all cases, it is a shared causal gene in Monarch for this pair) can disrupt normal hematopoiesis, leading to aplastic anemia. Crucially, both DNA repair and hematopoiesis are fundamentally dependent processes within the bone marrow microenvironment, and severe defects in DNA repair can compromise the stem cell populations essential for hematopoiesis, thus creating a convergence point.",
+      "falsification": {
+        "text": "Demonstration that the specific genetic defect causing Fanconi Anemia in a patient (e.g., a FANCA mutation) has no impact on hematopoietic stem cell function or viability, or that mutations implicated in aplastic anemia (e.g., JAK2 mutations) do not affect DNA repair fidelity in hematopoietic cells.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0015909",
+        "diseaseBName": "aplastic anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "fitness": 0.7148,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "FANCA (HGNC:3741) —DISRUPTS→ Fanconi Anemia Pathway (REACT:R-HSA-696100); Fanconi Anemia Pathway (REACT:R-HSA-696100) —LEADS_TO→ DNA Repair (GO:0006281); DNA Repair (GO:0006281) —LEADS_TO→ Fanconi Anemia (MONDO:0012933); JAK2 (HGNC:6084) —DISRUPTS→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Aplastic Anemia (MONDO:0015909); DNA Repair (GO:0006281) —LEADS_TO→ Hematopoiesis (GO:0030097). Loss-of-function mutations in FANCA disrupt the Fanconi Anemia pathway, which is integral to DNA repair. Impaired DNA repair leads to genomic instability and ultimately the phenotype of Fanconi Anemia. Similarly, mutations in genes like JAK2 (though not exclusively causal for aplastic anemia in all cases, it is a shared causal gene in Monarch for this pair) can disrupt normal hematopoiesis, leading to aplastic anemia. Crucially, both DNA repair and hematopoiesis are fundamentally dependent processes within the bone marrow microenvironment, and severe defects in DNA repair can compromise the stem cell populations essential for hematopoiesis, thus creating a convergence point.",
+        "falsification": {
+          "text": "Demonstration that the specific genetic defect causing Fanconi Anemia in a patient (e.g., a FANCA mutation) has no impact on hematopoietic stem cell function or viability, or that mutations implicated in aplastic anemia (e.g., JAK2 mutations) do not affect DNA repair fidelity in hematopoietic cells.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Identifying shared pathways like DNA repair and hematopoiesis in the pathogenesis of both Fanconi anemia and aplastic anemia could lead to the development of targeted therapies that address the common mechanism of bone marrow failure, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008679",
+      "diseaseBName": "Wilms tumor 1",
+      "fitness": 0.687,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "WT1 (HGNC:1101) —DISRUPTS→ Transcription regulation of kidney development (REACT:R-HSA-2162977); Transcription regulation of kidney development (REACT:R-HSA-2162977) —LEADS_TO→ Urogenital anomalies (HP:0000137); WT1 (HGNC:1101) —DISRUPTS→ Regulation of cell proliferation (REACT:R-HSA-162777); Regulation of cell proliferation (REACT:R-HSA-162777) —LEADS_TO→ Wilms tumor (HP:0002672). WT1 mutations disrupt its role in transcription regulation critical for kidney development (leading to urogenital anomalies in Denys-Drash syndrome) and also affect pathways regulating cell proliferation, contributing to Wilms tumor development.",
+      "mechanism_narrative": "WT1 (HGNC:1101) —DISRUPTS→ Transcription regulation of kidney development (REACT:R-HSA-2162977); Transcription regulation of kidney development (REACT:R-HSA-2162977) —LEADS_TO→ Urogenital anomalies (HP:0000137); WT1 (HGNC:1101) —DISRUPTS→ Regulation of cell proliferation (REACT:R-HSA-162777); Regulation of cell proliferation (REACT:R-HSA-162777) —LEADS_TO→ Wilms tumor (HP:0002672). WT1 mutations disrupt its role in transcription regulation critical for kidney development (leading to urogenital anomalies in Denys-Drash syndrome) and also affect pathways regulating cell proliferation, contributing to Wilms tumor development.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in WT1 in patients with either disease that show gain-of-function or dominant-negative effects, rather than loss-of-function or haploinsufficiency.",
+        "gnomad_variant": "rs121918002"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:1101"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008679",
+        "diseaseBName": "Wilms tumor 1",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:1101"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.687,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "WT1 (HGNC:1101) —DISRUPTS→ Transcription regulation of kidney development (REACT:R-HSA-2162977); Transcription regulation of kidney development (REACT:R-HSA-2162977) —LEADS_TO→ Urogenital anomalies (HP:0000137); WT1 (HGNC:1101) —DISRUPTS→ Regulation of cell proliferation (REACT:R-HSA-162777); Regulation of cell proliferation (REACT:R-HSA-162777) —LEADS_TO→ Wilms tumor (HP:0002672). WT1 mutations disrupt its role in transcription regulation critical for kidney development (leading to urogenital anomalies in Denys-Drash syndrome) and also affect pathways regulating cell proliferation, contributing to Wilms tumor development.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in WT1 in patients with either disease that show gain-of-function or dominant-negative effects, rather than loss-of-function or haploinsufficiency.",
+          "gnomad_variant": "rs121918002"
+        },
+        "translational": "Understanding the dual role of WT1 in both developmental anomalies and oncogenesis provides targets for therapeutic strategies aimed at correcting gene function or modulating downstream pathways in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011584",
+      "diseaseBName": "Fanconi anemia complementation group D1",
+      "fitness": 0.6669,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination Repair (GO:0006302); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Increased genomic instability (HP:0002370); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Bone marrow failure (HP:0001881). Mutations in BRCA2 disrupt homologous recombination repair, a critical pathway for maintaining genomic stability. Haploinsufficiency or loss-of-function of BRCA2 leads to increased genomic instability (Disease A) and can also manifest as bone marrow failure, a hallmark of Fanconi anemia complementation group D1 (Disease B).",
+      "mechanism_narrative": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination Repair (GO:0006302); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Increased genomic instability (HP:0002370); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Bone marrow failure (HP:0001881). Mutations in BRCA2 disrupt homologous recombination repair, a critical pathway for maintaining genomic stability. Haploinsufficiency or loss-of-function of BRCA2 leads to increased genomic instability (Disease A) and can also manifest as bone marrow failure, a hallmark of Fanconi anemia complementation group D1 (Disease B).",
+      "falsification": {
+        "text": "Demonstration that mutations in BRCA2 associated with MONDO:0012933 do not impair homologous recombination repair or lead to genomic instability, or that Fanconi anemia complementation group D1 arises from a distinct pathway not involving BRCA2's role in DNA repair.",
+        "gnomad_variant": "High frequency (>1%) of pathogenic variants in BRCA2 in the general population that are specifically linked to MONDO:0012933."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:1101"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0011584",
+        "diseaseBName": "Fanconi anemia complementation group D1",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:1101"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6669,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination Repair (GO:0006302); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Increased genomic instability (HP:0002370); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Bone marrow failure (HP:0001881). Mutations in BRCA2 disrupt homologous recombination repair, a critical pathway for maintaining genomic stability. Haploinsufficiency or loss-of-function of BRCA2 leads to increased genomic instability (Disease A) and can also manifest as bone marrow failure, a hallmark of Fanconi anemia complementation group D1 (Disease B).",
+        "falsification": {
+          "text": "Demonstration that mutations in BRCA2 associated with MONDO:0012933 do not impair homologous recombination repair or lead to genomic instability, or that Fanconi anemia complementation group D1 arises from a distinct pathway not involving BRCA2's role in DNA repair.",
+          "gnomad_variant": "High frequency (>1%) of pathogenic variants in BRCA2 in the general population that are specifically linked to MONDO:0012933."
+        },
+        "translational": "Targeting DNA repair pathways, particularly those involving BRCA2, could offer therapeutic strategies for both diseases. Understanding the specific functional consequences of different BRCA2 mutation types (haploinsufficiency vs. complete loss-of-function) may allow for genotype-specific treatments."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013118",
+      "diseaseBName": "Nijmegen breakage syndrome-like disorder",
+      "fitness": 0.4204,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair pathway (GO:0006281); RAD50 (HGNC:9916) —DISRUPTS→ DNA repair pathway (GO:0006281); DNA repair pathway (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased chromosomal instability (HP:0001068); DNA repair pathway (GO:0006281) —LEADS_TO→ Immunodeficiency (HP:0002705). Defects in BRCA2 (implicated in homologous recombination repair) and RAD50 (a component of the MRE11-RAD50-NBS1 complex involved in DNA double-strand break repair) both converge on the disruption of the DNA repair pathway. Impairment of this fundamental pathway leads to increased chromosomal instability, immunodeficiency, microcephaly, and an increased risk of malignancy, thus linking the two diseases through a shared mechanistic pathway.",
+      "mechanism_narrative": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair pathway (GO:0006281); RAD50 (HGNC:9916) —DISRUPTS→ DNA repair pathway (GO:0006281); DNA repair pathway (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased chromosomal instability (HP:0001068); DNA repair pathway (GO:0006281) —LEADS_TO→ Immunodeficiency (HP:0002705). Defects in BRCA2 (implicated in homologous recombination repair) and RAD50 (a component of the MRE11-RAD50-NBS1 complex involved in DNA double-strand break repair) both converge on the disruption of the DNA repair pathway. Impairment of this fundamental pathway leads to increased chromosomal instability, immunodeficiency, microcephaly, and an increased risk of malignancy, thus linking the two diseases through a shared mechanistic pathway.",
+      "falsification": {
+        "text": "Identification of distinct, non-overlapping molecular pathways that are exclusively perturbed in either disease A or disease B, without any shared components or downstream effects on DNA repair fidelity.",
+        "gnomad_variant": "Presence of pathogenic variants in BRCA2 or RAD50 in the general population at frequencies significantly higher than expected for rare disease-causing alleles."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013118",
+        "diseaseBName": "Nijmegen breakage syndrome-like disorder",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.4204,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair pathway (GO:0006281); RAD50 (HGNC:9916) —DISRUPTS→ DNA repair pathway (GO:0006281); DNA repair pathway (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased chromosomal instability (HP:0001068); DNA repair pathway (GO:0006281) —LEADS_TO→ Immunodeficiency (HP:0002705). Defects in BRCA2 (implicated in homologous recombination repair) and RAD50 (a component of the MRE11-RAD50-NBS1 complex involved in DNA double-strand break repair) both converge on the disruption of the DNA repair pathway. Impairment of this fundamental pathway leads to increased chromosomal instability, immunodeficiency, microcephaly, and an increased risk of malignancy, thus linking the two diseases through a shared mechanistic pathway.",
+        "falsification": {
+          "text": "Identification of distinct, non-overlapping molecular pathways that are exclusively perturbed in either disease A or disease B, without any shared components or downstream effects on DNA repair fidelity.",
+          "gnomad_variant": "Presence of pathogenic variants in BRCA2 or RAD50 in the general population at frequencies significantly higher than expected for rare disease-causing alleles."
+        },
+        "translational": "Understanding the shared reliance on DNA repair pathways highlights potential therapeutic strategies targeting DNA repair deficiencies. For instance, drugs that exploit the synthetic lethality of DNA repair defects (e.g., PARP inhibitors) could be investigated for efficacy in both conditions, provided the specific repair defects are compatible."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009623",
+      "diseaseBName": "Nijmegen breakage syndrome",
+      "fitness": 0.3976,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (GO:0000747); Homologous Recombination DNA Repair (GO:0000747) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ocular albinism (HP:0000540); NBN (HGNC:7770) —DISRUPTS→ Non-homologous end joining DNA repair (GO:0000724); Non-homologous end joining DNA repair (GO:0000724) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Microcephaly with pontocerebellar hypoplasia (HP:0001347). Loss-of-function mutations in BRCA2 disrupt homologous recombination DNA repair, contributing to the DNA Damage Response and leading to Ocular albinism. Similarly, loss-of-function mutations in NBN disrupt non-homologous end joining DNA repair, also contributing to the DNA Damage Response and leading to Microcephaly with pontocerebellar hypoplasia. The convergence point is the central DNA Damage Response pathway.",
+      "mechanism_narrative": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (GO:0000747); Homologous Recombination DNA Repair (GO:0000747) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ocular albinism (HP:0000540); NBN (HGNC:7770) —DISRUPTS→ Non-homologous end joining DNA repair (GO:0000724); Non-homologous end joining DNA repair (GO:0000724) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Microcephaly with pontocerebellar hypoplasia (HP:0001347). Loss-of-function mutations in BRCA2 disrupt homologous recombination DNA repair, contributing to the DNA Damage Response and leading to Ocular albinism. Similarly, loss-of-function mutations in NBN disrupt non-homologous end joining DNA repair, also contributing to the DNA Damage Response and leading to Microcephaly with pontocerebellar hypoplasia. The convergence point is the central DNA Damage Response pathway.",
+      "falsification": {
+        "text": "The absence of pathogenic variants in BRCA2 or NBN in individuals diagnosed with Oculo-dermal albinism or Nijmegen breakage syndrome, respectively, would falsify this hypothesis.",
+        "gnomad_variant": "gnomad v2.1.1 exomes, allele frequency > 0.001 for pathogenic variants in BRCA2 or NBN"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009623",
+        "diseaseBName": "Nijmegen breakage syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.3976,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (GO:0000747); Homologous Recombination DNA Repair (GO:0000747) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ocular albinism (HP:0000540); NBN (HGNC:7770) —DISRUPTS→ Non-homologous end joining DNA repair (GO:0000724); Non-homologous end joining DNA repair (GO:0000724) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Microcephaly with pontocerebellar hypoplasia (HP:0001347). Loss-of-function mutations in BRCA2 disrupt homologous recombination DNA repair, contributing to the DNA Damage Response and leading to Ocular albinism. Similarly, loss-of-function mutations in NBN disrupt non-homologous end joining DNA repair, also contributing to the DNA Damage Response and leading to Microcephaly with pontocerebellar hypoplasia. The convergence point is the central DNA Damage Response pathway.",
+        "falsification": {
+          "text": "The absence of pathogenic variants in BRCA2 or NBN in individuals diagnosed with Oculo-dermal albinism or Nijmegen breakage syndrome, respectively, would falsify this hypothesis.",
+          "gnomad_variant": "gnomad v2.1.1 exomes, allele frequency > 0.001 for pathogenic variants in BRCA2 or NBN"
+        },
+        "translational": "Understanding the shared reliance on DNA repair pathways for both Oculo-dermal albinism and Nijmegen breakage syndrome could reveal common therapeutic targets for enhancing DNA repair fidelity or managing genomic instability in these conditions. Investigating the downstream consequences of impaired homologous recombination versus non-homologous end joining in distinct cellular contexts could also provide insights into tissue-specific vulnerability."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011715",
+      "diseaseBName": "Seckel syndrome 2",
+      "fitness": 0.3821,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "RBBP8 (HGNC:10362) —DISRUPTS→ DNA damage response and repair (GO:0006974); BRCA2 (HGNC:1101) —DISRUPTS→ DNA damage response and repair (GO:0006974); DNA damage response and repair (GO:0006974) —LEADS_TO→ Microcephaly (HP:0000252); DNA damage response and repair (GO:0006974) —LEADS_TO→ Seckel syndrome phenotype (HP:0001343). Loss-of-function mutations in RBBP8 (causative for MONDO:0012933) and BRCA2 (causative for Seckel syndrome 2, MONDO:0011715) both disrupt the DNA damage response and repair pathway, leading to distinct but related phenotypic outcomes.",
+      "mechanism_narrative": "RBBP8 (HGNC:10362) —DISRUPTS→ DNA damage response and repair (GO:0006974); BRCA2 (HGNC:1101) —DISRUPTS→ DNA damage response and repair (GO:0006974); DNA damage response and repair (GO:0006974) —LEADS_TO→ Microcephaly (HP:0000252); DNA damage response and repair (GO:0006974) —LEADS_TO→ Seckel syndrome phenotype (HP:0001343). Loss-of-function mutations in RBBP8 (causative for MONDO:0012933) and BRCA2 (causative for Seckel syndrome 2, MONDO:0011715) both disrupt the DNA damage response and repair pathway, leading to distinct but related phenotypic outcomes.",
+      "falsification": {
+        "text": "Demonstration that RBBP8 and BRCA2 function in completely independent and non-interacting branches of the DNA damage response pathway, such that disruption of one has no downstream effect on the other, would falsify this hypothesis. Additionally, identification of pathogenic variants in RBBP8 associated with Seckel syndrome 2, or pathogenic variants in BRCA2 associated with MONDO:0012933, would suggest a shared causal gene rather than a shared pathway overlap.",
+        "gnomad_variant": "Presence of common pathogenic variants in either RBBP8 or BRCA2 in the gnomAD database at frequencies significantly higher than expected for rare Mendelian diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011715",
+        "diseaseBName": "Seckel syndrome 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.3821,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "RBBP8 (HGNC:10362) —DISRUPTS→ DNA damage response and repair (GO:0006974); BRCA2 (HGNC:1101) —DISRUPTS→ DNA damage response and repair (GO:0006974); DNA damage response and repair (GO:0006974) —LEADS_TO→ Microcephaly (HP:0000252); DNA damage response and repair (GO:0006974) —LEADS_TO→ Seckel syndrome phenotype (HP:0001343). Loss-of-function mutations in RBBP8 (causative for MONDO:0012933) and BRCA2 (causative for Seckel syndrome 2, MONDO:0011715) both disrupt the DNA damage response and repair pathway, leading to distinct but related phenotypic outcomes.",
+        "falsification": {
+          "text": "Demonstration that RBBP8 and BRCA2 function in completely independent and non-interacting branches of the DNA damage response pathway, such that disruption of one has no downstream effect on the other, would falsify this hypothesis. Additionally, identification of pathogenic variants in RBBP8 associated with Seckel syndrome 2, or pathogenic variants in BRCA2 associated with MONDO:0012933, would suggest a shared causal gene rather than a shared pathway overlap.",
+          "gnomad_variant": "Presence of common pathogenic variants in either RBBP8 or BRCA2 in the gnomAD database at frequencies significantly higher than expected for rare Mendelian diseases."
+        },
+        "translational": "Understanding the shared reliance on DNA damage response pathways for both diseases could reveal common therapeutic targets for improving cellular repair mechanisms or mitigating the downstream consequences of unrepaired DNA damage, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0024557",
+      "diseaseBName": "ataxia-telangiectasia-like disorder 1",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); MRE11 (HGNC:7016) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); DNA double-strand break repair pathway (GO:0000705) —LEADS_TO→ Genomic instability (HP:0001070); Genomic instability (HP:0001070) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0001070) —LEADS_TO→ Telangiectasia (HP:0002107). Disruption of the DNA double-strand break repair pathway by mutations in BRCA2 (causing MONDO:0012933) and MRE11 (causing MONDO:0024557) leads to genomic instability, which in turn manifests as characteristic phenotypes of ataxia and telangiectasia.",
+      "mechanism_narrative": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); MRE11 (HGNC:7016) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); DNA double-strand break repair pathway (GO:0000705) —LEADS_TO→ Genomic instability (HP:0001070); Genomic instability (HP:0001070) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0001070) —LEADS_TO→ Telangiectasia (HP:0002107). Disruption of the DNA double-strand break repair pathway by mutations in BRCA2 (causing MONDO:0012933) and MRE11 (causing MONDO:0024557) leads to genomic instability, which in turn manifests as characteristic phenotypes of ataxia and telangiectasia.",
+      "falsification": {
+        "text": "If mutations in BRCA2 and MRE11 were found to affect entirely separate and non-interacting cellular pathways, or if specific variants associated with each disease were found at high frequencies in the general population (e.g., gnomAD > 1%), this would falsify the proposed mechanistic link.",
+        "gnomad_variant": "rs11571842"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0024557",
+        "diseaseBName": "ataxia-telangiectasia-like disorder 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); MRE11 (HGNC:7016) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); DNA double-strand break repair pathway (GO:0000705) —LEADS_TO→ Genomic instability (HP:0001070); Genomic instability (HP:0001070) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0001070) —LEADS_TO→ Telangiectasia (HP:0002107). Disruption of the DNA double-strand break repair pathway by mutations in BRCA2 (causing MONDO:0012933) and MRE11 (causing MONDO:0024557) leads to genomic instability, which in turn manifests as characteristic phenotypes of ataxia and telangiectasia.",
+        "falsification": {
+          "text": "If mutations in BRCA2 and MRE11 were found to affect entirely separate and non-interacting cellular pathways, or if specific variants associated with each disease were found at high frequencies in the general population (e.g., gnomAD > 1%), this would falsify the proposed mechanistic link.",
+          "gnomad_variant": "rs11571842"
+        },
+        "translational": "Understanding the shared reliance on DNA double-strand break repair highlights potential therapeutic strategies targeting this pathway for both disorders. For instance, agents that exploit the synthetic lethality arising from unrepaired DNA damage could be explored."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0009622",
+      "diseaseBName": "Jawad syndrome",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006289); DNA repair (GO:0006289) —LEADS_TO→ Fanconi anemia (HP:0001910); RBBP8 (HGNC:9959) —DISRUPTS→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Jawad syndrome (HP:0000008); DNA repair (GO:0006289) —BINDS→ cell cycle regulation (GO:0051726). Loss-of-function mutations in BRCA2 disrupt DNA repair, leading to Fanconi anemia. Concurrently, loss-of-function mutations in RBBP8 disrupt cell cycle regulation, contributing to Jawad syndrome. Both DNA repair and cell cycle regulation are interconnected processes, suggesting a shared downstream impact on genomic stability and cellular homeostasis.",
+      "mechanism_narrative": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006289); DNA repair (GO:0006289) —LEADS_TO→ Fanconi anemia (HP:0001910); RBBP8 (HGNC:9959) —DISRUPTS→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Jawad syndrome (HP:0000008); DNA repair (GO:0006289) —BINDS→ cell cycle regulation (GO:0051726). Loss-of-function mutations in BRCA2 disrupt DNA repair, leading to Fanconi anemia. Concurrently, loss-of-function mutations in RBBP8 disrupt cell cycle regulation, contributing to Jawad syndrome. Both DNA repair and cell cycle regulation are interconnected processes, suggesting a shared downstream impact on genomic stability and cellular homeostasis.",
+      "falsification": {
+        "text": "Demonstration that mutations in BRCA2 and RBBP8 affect entirely distinct and non-interacting cellular pathways, or identification of a common, highly prevalent (e.g., gnomAD frequency > 0.1%) pathogenic variant in either BRCA2 or RBBP8 that is not associated with either disease phenotype.",
+        "gnomad_variant": "rs11571842"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0009622",
+        "diseaseBName": "Jawad syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006289); DNA repair (GO:0006289) —LEADS_TO→ Fanconi anemia (HP:0001910); RBBP8 (HGNC:9959) —DISRUPTS→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Jawad syndrome (HP:0000008); DNA repair (GO:0006289) —BINDS→ cell cycle regulation (GO:0051726). Loss-of-function mutations in BRCA2 disrupt DNA repair, leading to Fanconi anemia. Concurrently, loss-of-function mutations in RBBP8 disrupt cell cycle regulation, contributing to Jawad syndrome. Both DNA repair and cell cycle regulation are interconnected processes, suggesting a shared downstream impact on genomic stability and cellular homeostasis.",
+        "falsification": {
+          "text": "Demonstration that mutations in BRCA2 and RBBP8 affect entirely distinct and non-interacting cellular pathways, or identification of a common, highly prevalent (e.g., gnomAD frequency > 0.1%) pathogenic variant in either BRCA2 or RBBP8 that is not associated with either disease phenotype.",
+          "gnomad_variant": "rs11571842"
+        },
+        "translational": "Understanding the shared molecular underpinnings of DNA repair and cell cycle control defects in these distinct diseases could lead to novel therapeutic strategies targeting common pathways for cancer prevention or treatment in affected individuals."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013108",
+      "diseaseBName": "leukemia, acute lymphocytic, susceptibility to, 1",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "TAL1 (HGNC:11449) —DISRUPTS→ Hematopoietic stem cell differentiation (GO:0030097); Hematopoietic stem cell differentiation (GO:0030097) —LEADS_TO→ Acute Lymphocytic Leukemia susceptibility (HP:0005328); NBN (HGNC:8054) —DISRUPTS→ DNA repair pathway (GO:0006289); DNA repair pathway (GO:0006289) —DECREASES→ Hematopoietic stem cell differentiation (GO:0030097). Mutations in TAL1 can disrupt hematopoietic stem cell differentiation, leading to susceptibility to ALL. Deficiencies in NBN impair DNA repair, which in turn can indirectly affect the integrity of hematopoietic stem cells and their differentiation, contributing to both ataxia-telangiectasia and potentially increasing susceptibility to leukemia through genomic instability.",
+      "mechanism_narrative": "TAL1 (HGNC:11449) —DISRUPTS→ Hematopoietic stem cell differentiation (GO:0030097); Hematopoietic stem cell differentiation (GO:0030097) —LEADS_TO→ Acute Lymphocytic Leukemia susceptibility (HP:0005328); NBN (HGNC:8054) —DISRUPTS→ DNA repair pathway (GO:0006289); DNA repair pathway (GO:0006289) —DECREASES→ Hematopoietic stem cell differentiation (GO:0030097). Mutations in TAL1 can disrupt hematopoietic stem cell differentiation, leading to susceptibility to ALL. Deficiencies in NBN impair DNA repair, which in turn can indirectly affect the integrity of hematopoietic stem cells and their differentiation, contributing to both ataxia-telangiectasia and potentially increasing susceptibility to leukemia through genomic instability.",
+      "falsification": {
+        "text": "Absence of mutations in TAL1 in patients with Ataxia-telangiectasia, or demonstration that NBN mutations do not impact hematopoietic stem cell differentiation pathways.",
+        "gnomad_variant": "rs121912649"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-5685939",
+        "Reactome:R-HSA-5693579",
+        "Reactome:R-HSA-912446",
+        "Reactome:R-HSA-9709603"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-5685939": 12,
+        "Reactome:R-HSA-5693579": 26,
+        "Reactome:R-HSA-912446": 87,
+        "Reactome:R-HSA-9709603": 24,
+        "Reactome:R-HSA-5685942": 49,
+        "Reactome:R-HSA-5693554": 27,
+        "Reactome:R-HSA-9709570": 35,
+        "Reactome:R-HSA-5693568": 36,
+        "Reactome:R-HSA-9704331": 25,
+        "Reactome:R-HSA-9704646": 25,
+        "Reactome:R-HSA-5693616": 40,
+        "Reactome:R-HSA-9701192": 25
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013108",
+        "diseaseBName": "leukemia, acute lymphocytic, susceptibility to, 1",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-5685939",
+          "Reactome:R-HSA-5693579",
+          "Reactome:R-HSA-912446",
+          "Reactome:R-HSA-9709603"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-5685939": 12,
+          "Reactome:R-HSA-5693579": 26,
+          "Reactome:R-HSA-912446": 87,
+          "Reactome:R-HSA-9709603": 24,
+          "Reactome:R-HSA-5685942": 49,
+          "Reactome:R-HSA-5693554": 27,
+          "Reactome:R-HSA-9709570": 35,
+          "Reactome:R-HSA-5693568": 36,
+          "Reactome:R-HSA-9704331": 25,
+          "Reactome:R-HSA-9704646": 25,
+          "Reactome:R-HSA-5693616": 40,
+          "Reactome:R-HSA-9701192": 25
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TAL1 (HGNC:11449) —DISRUPTS→ Hematopoietic stem cell differentiation (GO:0030097); Hematopoietic stem cell differentiation (GO:0030097) —LEADS_TO→ Acute Lymphocytic Leukemia susceptibility (HP:0005328); NBN (HGNC:8054) —DISRUPTS→ DNA repair pathway (GO:0006289); DNA repair pathway (GO:0006289) —DECREASES→ Hematopoietic stem cell differentiation (GO:0030097). Mutations in TAL1 can disrupt hematopoietic stem cell differentiation, leading to susceptibility to ALL. Deficiencies in NBN impair DNA repair, which in turn can indirectly affect the integrity of hematopoietic stem cells and their differentiation, contributing to both ataxia-telangiectasia and potentially increasing susceptibility to leukemia through genomic instability.",
+        "falsification": {
+          "text": "Absence of mutations in TAL1 in patients with Ataxia-telangiectasia, or demonstration that NBN mutations do not impact hematopoietic stem cell differentiation pathways.",
+          "gnomad_variant": "rs121912649"
+        },
+        "translational": "Understanding the shared role of TAL1 and DNA repair pathways in both Ataxia-telangiectasia and ALL susceptibility could reveal novel therapeutic targets for managing hematologic malignancies in individuals with genetic predispositions to genomic instability."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T23:38:15.001Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012933 (MONDO:0012933)\n**Generated:** 2026-07-31\n**Candidates screened:** 3 gene-neighbour(s), 27 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | BRCA2-related cancer predisposition (MONDO:0700269) | shared gene | Tier 1 | 0.782 | HGNC:1101 |\n| 2 | aplastic anemia (MONDO:0015909) | shared pathway | Tier 1 | 0.715 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 3 | Wilms tumor 1 (MONDO:0008679) | shared gene | Tier 1 | 0.687 | HGNC:1101 |\n| 4 | Fanconi anemia complementation group D1 (MONDO:0011584) | shared gene | Tier 1 | 0.667 | HGNC:1101 |\n| 5 | Nijmegen breakage syndrome-like disorder (MONDO:0013118) | shared pathway | Tier 3 | 0.420 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 6 | Nijmegen breakage syndrome (MONDO:0009623) | shared pathway | Tier 3 | 0.398 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 7 | Seckel syndrome 2 (MONDO:0011715) | shared pathway | Tier 3 | 0.382 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 8 | ataxia-telangiectasia-like disorder 1 (MONDO:0024557) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 9 | Jawad syndrome (MONDO:0009622) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n| 10 | leukemia, acute lymphocytic, susceptibility to, 1 (MONDO:0013108) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603 |\n\n### CANDIDATE DETAIL\n#### 1. BRCA2-related cancer predisposition  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.782)\n**Link type:** shared causal gene (HGNC:1101)\n\n**Proposed mechanism:** Pathogenic BRCA2 Variant (null) —DISRUPTS→ BRCA2 (HGNC:1101); BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (REACT:R-HSA-200886); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Colorectal Cancer (HP:0002668); Homologous Recombination DNA Repair (REACT:R-HSA-200886) —LEADS_TO→ Predisposition to Breast Cancer (HP:0012367). Pathogenic variants in BRCA2 lead to disruption of homologous recombination DNA repair, which contributes to genomic instability and increases the risk of various cancers, including colorectal cancer (associated with MYH-associated polyposis) and breast cancer (a hallmark of BRCA2-related cancer predisposition).\n\n**How to falsify it:** The identification of pathogenic variants in BRCA2 that are exclusively associated with one disease but not the other, or variants with a significantly higher frequency in the general population (e.g., gnomAD > 1%) that are linked to either disease, would falsify this shared mechanism. _(variant: ExAC:chr13:32937000:C:T)_\n\n**Why it matters:** Understanding the shared mechanism in BRCA2 mutations highlights the potential for overlapping therapeutic strategies, such as PARP inhibitors, for both MYH-associated polyposis and BRCA2-related cancer predisposition, by targeting the synthetic lethality caused by impaired DNA repair pathways.\n\n---\n\n#### 2. aplastic anemia  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.715)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** FANCA (HGNC:3741) —DISRUPTS→ Fanconi Anemia Pathway (REACT:R-HSA-696100); Fanconi Anemia Pathway (REACT:R-HSA-696100) —LEADS_TO→ DNA Repair (GO:0006281); DNA Repair (GO:0006281) —LEADS_TO→ Fanconi Anemia (MONDO:0012933); JAK2 (HGNC:6084) —DISRUPTS→ Hematopoiesis (GO:0030097); Hematopoiesis (GO:0030097) —LEADS_TO→ Aplastic Anemia (MONDO:0015909); DNA Repair (GO:0006281) —LEADS_TO→ Hematopoiesis (GO:0030097). Loss-of-function mutations in FANCA disrupt the Fanconi Anemia pathway, which is integral to DNA repair. Impaired DNA repair leads to genomic instability and ultimately the phenotype of Fanconi Anemia. Similarly, mutations in genes like JAK2 (though not exclusively causal for aplastic anemia in all cases, it is a shared causal gene in Monarch for this pair) can disrupt normal hematopoiesis, leading to aplastic anemia. Crucially, both DNA repair and hematopoiesis are fundamentally dependent processes within the bone marrow microenvironment, and severe defects in DNA repair can compromise the stem cell populations essential for hematopoiesis, thus creating a convergence point.\n\n**How to falsify it:** Demonstration that the specific genetic defect causing Fanconi Anemia in a patient (e.g., a FANCA mutation) has no impact on hematopoietic stem cell function or viability, or that mutations implicated in aplastic anemia (e.g., JAK2 mutations) do not affect DNA repair fidelity in hematopoietic cells. _(variant: N/A)_\n\n**Why it matters:** Identifying shared pathways like DNA repair and hematopoiesis in the pathogenesis of both Fanconi anemia and aplastic anemia could lead to the development of targeted therapies that address the common mechanism of bone marrow failure, potentially benefiting patients with either condition.\n\n---\n\n#### 3. Wilms tumor 1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.687)\n**Link type:** shared causal gene (HGNC:1101)\n\n**Proposed mechanism:** WT1 (HGNC:1101) —DISRUPTS→ Transcription regulation of kidney development (REACT:R-HSA-2162977); Transcription regulation of kidney development (REACT:R-HSA-2162977) —LEADS_TO→ Urogenital anomalies (HP:0000137); WT1 (HGNC:1101) —DISRUPTS→ Regulation of cell proliferation (REACT:R-HSA-162777); Regulation of cell proliferation (REACT:R-HSA-162777) —LEADS_TO→ Wilms tumor (HP:0002672). WT1 mutations disrupt its role in transcription regulation critical for kidney development (leading to urogenital anomalies in Denys-Drash syndrome) and also affect pathways regulating cell proliferation, contributing to Wilms tumor development.\n\n**How to falsify it:** Identification of pathogenic variants in WT1 in patients with either disease that show gain-of-function or dominant-negative effects, rather than loss-of-function or haploinsufficiency. _(variant: rs121918002)_\n\n**Why it matters:** Understanding the dual role of WT1 in both developmental anomalies and oncogenesis provides targets for therapeutic strategies aimed at correcting gene function or modulating downstream pathways in both conditions.\n\n---\n\n#### 4. Fanconi anemia complementation group D1  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.667)\n**Link type:** shared causal gene (HGNC:1101)\n\n**Proposed mechanism:** BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination Repair (GO:0006302); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Increased genomic instability (HP:0002370); Homologous Recombination Repair (GO:0006302) —LEADS_TO→ Bone marrow failure (HP:0001881). Mutations in BRCA2 disrupt homologous recombination repair, a critical pathway for maintaining genomic stability. Haploinsufficiency or loss-of-function of BRCA2 leads to increased genomic instability (Disease A) and can also manifest as bone marrow failure, a hallmark of Fanconi anemia complementation group D1 (Disease B).\n\n**How to falsify it:** Demonstration that mutations in BRCA2 associated with MONDO:0012933 do not impair homologous recombination repair or lead to genomic instability, or that Fanconi anemia complementation group D1 arises from a distinct pathway not involving BRCA2's role in DNA repair. _(variant: High frequency (>1%) of pathogenic variants in BRCA2 in the general population that are specifically linked to MONDO:0012933.)_\n\n**Why it matters:** Targeting DNA repair pathways, particularly those involving BRCA2, could offer therapeutic strategies for both diseases. Understanding the specific functional consequences of different BRCA2 mutation types (haploinsufficiency vs. complete loss-of-function) may allow for genotype-specific treatments.\n\n---\n\n#### 5. Nijmegen breakage syndrome-like disorder  —  Tier 3 — Moderate / Emerging  (fitness 0.420)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair pathway (GO:0006281); RAD50 (HGNC:9916) —DISRUPTS→ DNA repair pathway (GO:0006281); DNA repair pathway (GO:0006281) —LEADS_TO→ Microcephaly (HP:0000252); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased risk of malignancy (HP:0002664); DNA repair pathway (GO:0006281) —LEADS_TO→ Increased chromosomal instability (HP:0001068); DNA repair pathway (GO:0006281) —LEADS_TO→ Immunodeficiency (HP:0002705). Defects in BRCA2 (implicated in homologous recombination repair) and RAD50 (a component of the MRE11-RAD50-NBS1 complex involved in DNA double-strand break repair) both converge on the disruption of the DNA repair pathway. Impairment of this fundamental pathway leads to increased chromosomal instability, immunodeficiency, microcephaly, and an increased risk of malignancy, thus linking the two diseases through a shared mechanistic pathway.\n\n**How to falsify it:** Identification of distinct, non-overlapping molecular pathways that are exclusively perturbed in either disease A or disease B, without any shared components or downstream effects on DNA repair fidelity. _(variant: Presence of pathogenic variants in BRCA2 or RAD50 in the general population at frequencies significantly higher than expected for rare disease-causing alleles.)_\n\n**Why it matters:** Understanding the shared reliance on DNA repair pathways highlights potential therapeutic strategies targeting DNA repair deficiencies. For instance, drugs that exploit the synthetic lethality of DNA repair defects (e.g., PARP inhibitors) could be investigated for efficacy in both conditions, provided the specific repair defects are compatible.\n\n---\n\n#### 6. Nijmegen breakage syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.398)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** BRCA2 (HGNC:1101) —DISRUPTS→ Homologous Recombination DNA Repair (GO:0000747); Homologous Recombination DNA Repair (GO:0000747) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Ocular albinism (HP:0000540); NBN (HGNC:7770) —DISRUPTS→ Non-homologous end joining DNA repair (GO:0000724); Non-homologous end joining DNA repair (GO:0000724) —LEADS_TO→ DNA Damage Response (GO:0006974); DNA Damage Response (GO:0006974) —LEADS_TO→ Microcephaly with pontocerebellar hypoplasia (HP:0001347). Loss-of-function mutations in BRCA2 disrupt homologous recombination DNA repair, contributing to the DNA Damage Response and leading to Ocular albinism. Similarly, loss-of-function mutations in NBN disrupt non-homologous end joining DNA repair, also contributing to the DNA Damage Response and leading to Microcephaly with pontocerebellar hypoplasia. The convergence point is the central DNA Damage Response pathway.\n\n**How to falsify it:** The absence of pathogenic variants in BRCA2 or NBN in individuals diagnosed with Oculo-dermal albinism or Nijmegen breakage syndrome, respectively, would falsify this hypothesis. _(variant: gnomad v2.1.1 exomes, allele frequency > 0.001 for pathogenic variants in BRCA2 or NBN)_\n\n**Why it matters:** Understanding the shared reliance on DNA repair pathways for both Oculo-dermal albinism and Nijmegen breakage syndrome could reveal common therapeutic targets for enhancing DNA repair fidelity or managing genomic instability in these conditions. Investigating the downstream consequences of impaired homologous recombination versus non-homologous end joining in distinct cellular contexts could also provide insights into tissue-specific vulnerability.\n\n---\n\n#### 7. Seckel syndrome 2  —  Tier 3 — Moderate / Emerging  (fitness 0.382)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** RBBP8 (HGNC:10362) —DISRUPTS→ DNA damage response and repair (GO:0006974); BRCA2 (HGNC:1101) —DISRUPTS→ DNA damage response and repair (GO:0006974); DNA damage response and repair (GO:0006974) —LEADS_TO→ Microcephaly (HP:0000252); DNA damage response and repair (GO:0006974) —LEADS_TO→ Seckel syndrome phenotype (HP:0001343). Loss-of-function mutations in RBBP8 (causative for MONDO:0012933) and BRCA2 (causative for Seckel syndrome 2, MONDO:0011715) both disrupt the DNA damage response and repair pathway, leading to distinct but related phenotypic outcomes.\n\n**How to falsify it:** Demonstration that RBBP8 and BRCA2 function in completely independent and non-interacting branches of the DNA damage response pathway, such that disruption of one has no downstream effect on the other, would falsify this hypothesis. Additionally, identification of pathogenic variants in RBBP8 associated with Seckel syndrome 2, or pathogenic variants in BRCA2 associated with MONDO:0012933, would suggest a shared causal gene rather than a shared pathway overlap. _(variant: Presence of common pathogenic variants in either RBBP8 or BRCA2 in the gnomAD database at frequencies significantly higher than expected for rare Mendelian diseases.)_\n\n**Why it matters:** Understanding the shared reliance on DNA damage response pathways for both diseases could reveal common therapeutic targets for improving cellular repair mechanisms or mitigating the downstream consequences of unrepaired DNA damage, potentially benefiting patients with either condition.\n\n---\n\n#### 8. ataxia-telangiectasia-like disorder 1  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** BRCA2 (HGNC:1101) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); MRE11 (HGNC:7016) —DISRUPTS→ DNA double-strand break repair pathway (GO:0000705); DNA double-strand break repair pathway (GO:0000705) —LEADS_TO→ Genomic instability (HP:0001070); Genomic instability (HP:0001070) —LEADS_TO→ Ataxia (HP:0001251); Genomic instability (HP:0001070) —LEADS_TO→ Telangiectasia (HP:0002107). Disruption of the DNA double-strand break repair pathway by mutations in BRCA2 (causing MONDO:0012933) and MRE11 (causing MONDO:0024557) leads to genomic instability, which in turn manifests as characteristic phenotypes of ataxia and telangiectasia.\n\n**How to falsify it:** If mutations in BRCA2 and MRE11 were found to affect entirely separate and non-interacting cellular pathways, or if specific variants associated with each disease were found at high frequencies in the general population (e.g., gnomAD > 1%), this would falsify the proposed mechanistic link. _(variant: rs11571842)_\n\n**Why it matters:** Understanding the shared reliance on DNA double-strand break repair highlights potential therapeutic strategies targeting this pathway for both disorders. For instance, agents that exploit the synthetic lethality arising from unrepaired DNA damage could be explored.\n\n---\n\n#### 9. Jawad syndrome  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** BRCA2 (HGNC:1101) —DISRUPTS→ DNA repair (GO:0006289); DNA repair (GO:0006289) —LEADS_TO→ Fanconi anemia (HP:0001910); RBBP8 (HGNC:9959) —DISRUPTS→ cell cycle regulation (GO:0051726); cell cycle regulation (GO:0051726) —LEADS_TO→ Jawad syndrome (HP:0000008); DNA repair (GO:0006289) —BINDS→ cell cycle regulation (GO:0051726). Loss-of-function mutations in BRCA2 disrupt DNA repair, leading to Fanconi anemia. Concurrently, loss-of-function mutations in RBBP8 disrupt cell cycle regulation, contributing to Jawad syndrome. Both DNA repair and cell cycle regulation are interconnected processes, suggesting a shared downstream impact on genomic stability and cellular homeostasis.\n\n**How to falsify it:** Demonstration that mutations in BRCA2 and RBBP8 affect entirely distinct and non-interacting cellular pathways, or identification of a common, highly prevalent (e.g., gnomAD frequency > 0.1%) pathogenic variant in either BRCA2 or RBBP8 that is not associated with either disease phenotype. _(variant: rs11571842)_\n\n**Why it matters:** Understanding the shared molecular underpinnings of DNA repair and cell cycle control defects in these distinct diseases could lead to novel therapeutic strategies targeting common pathways for cancer prevention or treatment in affected individuals.\n\n---\n\n#### 10. leukemia, acute lymphocytic, susceptibility to, 1  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-5685939, Reactome:R-HSA-5693579, Reactome:R-HSA-912446, Reactome:R-HSA-9709603)\n\n**Proposed mechanism:** TAL1 (HGNC:11449) —DISRUPTS→ Hematopoietic stem cell differentiation (GO:0030097); Hematopoietic stem cell differentiation (GO:0030097) —LEADS_TO→ Acute Lymphocytic Leukemia susceptibility (HP:0005328); NBN (HGNC:8054) —DISRUPTS→ DNA repair pathway (GO:0006289); DNA repair pathway (GO:0006289) —DECREASES→ Hematopoietic stem cell differentiation (GO:0030097). Mutations in TAL1 can disrupt hematopoietic stem cell differentiation, leading to susceptibility to ALL. Deficiencies in NBN impair DNA repair, which in turn can indirectly affect the integrity of hematopoietic stem cells and their differentiation, contributing to both ataxia-telangiectasia and potentially increasing susceptibility to leukemia through genomic instability.\n\n**How to falsify it:** Absence of mutations in TAL1 in patients with Ataxia-telangiectasia, or demonstration that NBN mutations do not impact hematopoietic stem cell differentiation pathways. _(variant: rs121912649)_\n\n**Why it matters:** Understanding the shared role of TAL1 and DNA repair pathways in both Ataxia-telangiectasia and ALL susceptibility could reveal novel therapeutic targets for managing hematologic malignancies in individuals with genetic predispositions to genomic instability.\n\n---"
+}

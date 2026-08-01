@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0009787",
+    "name": "MONDO:0009787"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008133",
+      "diseaseBName": "optic atrophy 3",
+      "fitness": 0.7443,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0005739); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Optic atrophy (HP:0000649); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Cerebellar hypoplasia (HP:0001321). Loss-of-function mutations in OPA3 disrupt mitochondrial protein homeostasis, leading to optic atrophy and cerebellar hypoplasia in both diseases.",
+      "mechanism_narrative": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0005739); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Optic atrophy (HP:0000649); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Cerebellar hypoplasia (HP:0001321). Loss-of-function mutations in OPA3 disrupt mitochondrial protein homeostasis, leading to optic atrophy and cerebellar hypoplasia in both diseases.",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic loss-of-function variants in OPA3 who do not exhibit optic atrophy or cerebellar hypoplasia.",
+        "gnomad_variant": "rs757747965"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:8142"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008133",
+        "diseaseBName": "optic atrophy 3",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:8142"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7443,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0005739); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Optic atrophy (HP:0000649); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Cerebellar hypoplasia (HP:0001321). Loss-of-function mutations in OPA3 disrupt mitochondrial protein homeostasis, leading to optic atrophy and cerebellar hypoplasia in both diseases.",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic loss-of-function variants in OPA3 who do not exhibit optic atrophy or cerebellar hypoplasia.",
+          "gnomad_variant": "rs757747965"
+        },
+        "translational": "Understanding the role of OPA3 in mitochondrial protein homeostasis may reveal therapeutic targets for neurodegenerative conditions characterized by optic atrophy and cerebellar dysfunction."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:48:09.347Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0009787 (MONDO:0009787)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | optic atrophy 3 (MONDO:0008133) | shared gene | Tier 1 | 0.744 | HGNC:8142 |\n\n### CANDIDATE DETAIL\n#### 1. optic atrophy 3  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.744)\n**Link type:** shared causal gene (HGNC:8142)\n\n**Proposed mechanism:** OPA3 (HGNC:8142) —DISRUPTS→ Mitochondrial protein homeostasis (GO:0005739); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Optic atrophy (HP:0000649); Mitochondrial protein homeostasis (GO:0005739) —LEADS_TO→ Cerebellar hypoplasia (HP:0001321). Loss-of-function mutations in OPA3 disrupt mitochondrial protein homeostasis, leading to optic atrophy and cerebellar hypoplasia in both diseases.\n\n**How to falsify it:** Identification of individuals with pathogenic loss-of-function variants in OPA3 who do not exhibit optic atrophy or cerebellar hypoplasia. _(variant: rs757747965)_\n\n**Why it matters:** Understanding the role of OPA3 in mitochondrial protein homeostasis may reveal therapeutic targets for neurodegenerative conditions characterized by optic atrophy and cerebellar dysfunction.\n\n---"
+}

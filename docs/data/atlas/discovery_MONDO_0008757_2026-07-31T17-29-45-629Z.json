@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0008757",
+    "name": "alopecia universalis congenita"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008847",
+      "diseaseBName": "atrichia with papular lesions",
+      "fitness": 0.6746,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Pathogenic variants in HR (null) —DISRUPTS→ HR (HGNC:5172); HR (HGNC:5172) —LEADS_TO→ DNA damage response and repair (REACT:R-HSA-69621); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847). Loss-of-function variants in the HR gene disrupt its function in DNA damage response and repair pathways, leading to both alopecia universalis congenita and atrichia with papular lesions.",
+      "mechanism_narrative": "Pathogenic variants in HR (null) —DISRUPTS→ HR (HGNC:5172); HR (HGNC:5172) —LEADS_TO→ DNA damage response and repair (REACT:R-HSA-69621); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847). Loss-of-function variants in the HR gene disrupt its function in DNA damage response and repair pathways, leading to both alopecia universalis congenita and atrichia with papular lesions.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in the HR gene in individuals with alopecia universalis congenita or atrichia with papular lesions would support this hypothesis. Conversely, the absence of such variants or the discovery of distinct causal genes with no overlap in functional pathways would refute it.",
+        "gnomad_variant": "Presence of common benign variants in HR in affected individuals would challenge the causality."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:5172"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008847",
+        "diseaseBName": "atrichia with papular lesions",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:5172"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6746,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "Pathogenic variants in HR (null) —DISRUPTS→ HR (HGNC:5172); HR (HGNC:5172) —LEADS_TO→ DNA damage response and repair (REACT:R-HSA-69621); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847). Loss-of-function variants in the HR gene disrupt its function in DNA damage response and repair pathways, leading to both alopecia universalis congenita and atrichia with papular lesions.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in the HR gene in individuals with alopecia universalis congenita or atrichia with papular lesions would support this hypothesis. Conversely, the absence of such variants or the discovery of distinct causal genes with no overlap in functional pathways would refute it.",
+          "gnomad_variant": "Presence of common benign variants in HR in affected individuals would challenge the causality."
+        },
+        "translational": "Understanding the role of HR in DNA repair and its link to hair development could open avenues for therapeutic strategies targeting hair regeneration or improving outcomes for individuals with these conditions, potentially through modulation of DNA repair pathways."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:29:45.629Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** alopecia universalis congenita (MONDO:0008757)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | atrichia with papular lesions (MONDO:0008847) | shared gene | Tier 1 | 0.675 | HGNC:5172 |\n\n### CANDIDATE DETAIL\n#### 1. atrichia with papular lesions  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.675)\n**Link type:** shared causal gene (HGNC:5172)\n\n**Proposed mechanism:** Pathogenic variants in HR (null) —DISRUPTS→ HR (HGNC:5172); HR (HGNC:5172) —LEADS_TO→ DNA damage response and repair (REACT:R-HSA-69621); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757); DNA damage response and repair (REACT:R-HSA-69621) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847). Loss-of-function variants in the HR gene disrupt its function in DNA damage response and repair pathways, leading to both alopecia universalis congenita and atrichia with papular lesions.\n\n**How to falsify it:** The identification of pathogenic variants in the HR gene in individuals with alopecia universalis congenita or atrichia with papular lesions would support this hypothesis. Conversely, the absence of such variants or the discovery of distinct causal genes with no overlap in functional pathways would refute it. _(variant: Presence of common benign variants in HR in affected individuals would challenge the causality.)_\n\n**Why it matters:** Understanding the role of HR in DNA repair and its link to hair development could open avenues for therapeutic strategies targeting hair regeneration or improving outcomes for individuals with these conditions, potentially through modulation of DNA repair pathways.\n\n---"
+}

@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0010238",
+    "name": "MONDO:0010238"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0024771",
+      "diseaseBName": "myopathy, distal, 7, adult-onset, X-linked",
+      "fitness": 0.7169,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SMPX (HGNC:11122) —DISRUPTS→ Muscle fiber maintenance and integrity (GO:0008039); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Muscle weakness (HP:0001324); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Distal muscle weakness (HP:0008967). Loss-of-function mutations in SMPX disrupt pathways essential for muscle fiber maintenance and integrity, leading to both general muscle weakness and more specifically, distal muscle weakness observed in both MONDO:0010238 and X-linked distal myopathy 7.",
+      "mechanism_narrative": "SMPX (HGNC:11122) —DISRUPTS→ Muscle fiber maintenance and integrity (GO:0008039); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Muscle weakness (HP:0001324); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Distal muscle weakness (HP:0008967). Loss-of-function mutations in SMPX disrupt pathways essential for muscle fiber maintenance and integrity, leading to both general muscle weakness and more specifically, distal muscle weakness observed in both MONDO:0010238 and X-linked distal myopathy 7.",
+      "falsification": {
+        "text": "Demonstration that SMPX variants leading to loss-of-function do not impair muscle fiber maintenance and integrity in cellular or animal models, or identification of distinct functional consequences of SMPX mutations in each disease that are not loss-of-function.",
+        "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic SMPX variants"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:11122"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0024771",
+        "diseaseBName": "myopathy, distal, 7, adult-onset, X-linked",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:11122"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7169,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "SMPX (HGNC:11122) —DISRUPTS→ Muscle fiber maintenance and integrity (GO:0008039); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Muscle weakness (HP:0001324); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Distal muscle weakness (HP:0008967). Loss-of-function mutations in SMPX disrupt pathways essential for muscle fiber maintenance and integrity, leading to both general muscle weakness and more specifically, distal muscle weakness observed in both MONDO:0010238 and X-linked distal myopathy 7.",
+        "falsification": {
+          "text": "Demonstration that SMPX variants leading to loss-of-function do not impair muscle fiber maintenance and integrity in cellular or animal models, or identification of distinct functional consequences of SMPX mutations in each disease that are not loss-of-function.",
+          "gnomad_variant": "gnomAD allele frequency > 0.01 for pathogenic SMPX variants"
+        },
+        "translational": "Understanding the role of SMPX in muscle integrity can inform therapeutic strategies for distal myopathies, potentially involving gene therapy or small molecule approaches to restore SMPX function or compensate for its loss."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:51:42.939Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0010238 (MONDO:0010238)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | myopathy, distal, 7, adult-onset, X-linked (MONDO:0024771) | shared gene | Tier 1 | 0.717 | HGNC:11122 |\n\n### CANDIDATE DETAIL\n#### 1. myopathy, distal, 7, adult-onset, X-linked  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared causal gene (HGNC:11122)\n\n**Proposed mechanism:** SMPX (HGNC:11122) —DISRUPTS→ Muscle fiber maintenance and integrity (GO:0008039); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Muscle weakness (HP:0001324); Muscle fiber maintenance and integrity (GO:0008039) —LEADS_TO→ Distal muscle weakness (HP:0008967). Loss-of-function mutations in SMPX disrupt pathways essential for muscle fiber maintenance and integrity, leading to both general muscle weakness and more specifically, distal muscle weakness observed in both MONDO:0010238 and X-linked distal myopathy 7.\n\n**How to falsify it:** Demonstration that SMPX variants leading to loss-of-function do not impair muscle fiber maintenance and integrity in cellular or animal models, or identification of distinct functional consequences of SMPX mutations in each disease that are not loss-of-function. _(variant: gnomAD allele frequency > 0.01 for pathogenic SMPX variants)_\n\n**Why it matters:** Understanding the role of SMPX in muscle integrity can inform therapeutic strategies for distal myopathies, potentially involving gene therapy or small molecule approaches to restore SMPX function or compensate for its loss.\n\n---"
+}

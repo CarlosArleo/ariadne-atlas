@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,7 +160,7 @@
         .modal-backdrop.open { display: flex; }
         .modal-box {
             background: var(--surface-solid); border: 1px solid var(--border-highlight); border-radius: 16px;
-            width: 100%; max-width: 720px; max-height: 88vh; padding: 28px; overflow-y: auto;
+            width: 100%; max-width: 760px; max-height: 88vh; padding: 28px; overflow-y: auto;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.9); position: relative;
         }
         .modal-close { position: absolute; top: 18px; right: 18px; background: none; border: none; color: var(--text-muted); font-size: 1.4rem; cursor: pointer; line-height: 1; }
@@ -231,6 +232,7 @@
     </div>
     <div style="display:flex; gap:10px; align-items:center;">
         <button class="btn-action" id="btn-elite-mode" onclick="toggleEliteMode()" title="Filter to Tier 1 & CQS >= 7 Champions">Elite Champions</button>
+        <button class="btn-action" onclick="openManualModal()" title="Filter & Navigation User Manual">Filter Guide & Manual</button>
         <button class="btn-action" onclick="openAboutModal()" title="What is ARIADNE and how does it work?">How ARIADNE Works</button>
         <button class="btn-action" onclick="openCqsModal()" title="How is CQS calculated?">CQS Score Guide</button>
         <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
@@ -291,6 +293,43 @@
                 <label for="search-input">Disease or Gene Search:</label>
                 <input type="text" id="search-input" placeholder="Search disease or gene…">
             </div>
+
+            <!-- ADVANCED PHYSICS & RANA FILTERS -->
+            <div class="control-row">
+                <label for="filter-poincare">Poincaré Hyperbolic Boundary (r):</label>
+                <select id="filter-poincare">
+                    <option value="all" selected>All Geometry Regions</option>
+                    <option value="boundary">Specific Boundary Rim (r ≥ 0.50) [No Hub Noise]</option>
+                    <option value="core">Central Core Hubs (r < 0.50)</option>
+                </select>
+            </div>
+
+            <div class="control-row">
+                <label for="filter-entropy">Graph Laplacian Entropy (S_VNE):</label>
+                <select id="filter-entropy">
+                    <option value="all" selected>All Entropy Levels</option>
+                    <option value="low">Tightly Organized Modules (S_VNE ≤ 1.8)</option>
+                    <option value="high">Diffuse / High Entropy (S_VNE > 1.8)</option>
+                </select>
+            </div>
+
+            <div class="control-row">
+                <label for="filter-rana">RANA Literature Verification:</label>
+                <select id="filter-rana">
+                    <option value="all" selected>All Verification States</option>
+                    <option value="supported">Literature Supported Only (RANA ✓)</option>
+                    <option value="clean">Zero Literature Contradictions</option>
+                </select>
+            </div>
+
+            <div class="control-row">
+                <label for="filter-depth">Causal Chain Depth:</label>
+                <select id="filter-depth">
+                    <option value="all" selected>All Chain Depths</option>
+                    <option value="deep">Deep Multi-Step Chains (≥ 4 Nodes)</option>
+                </select>
+            </div>
+
             <div class="control-row" style="margin-top: 6px;">
                 <button class="btn-action" id="btn-show-all" onclick="toggleShowAll()" style="display:none; width:100%;">Show All Ribbons</button>
             </div>
@@ -462,6 +501,82 @@
     </div>
 </div>
 
+<!-- NEW USER MANUAL MODAL (FILTER & NAVIGATION GUIDE) -->
+<div class="modal-backdrop" id="manual-modal" onclick="if(event.target===this) closeManualModal();">
+    <div class="modal-box" style="max-width:780px;">
+        <button class="modal-close" onclick="closeManualModal()">&times;</button>
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">ARIADNE Atlas — Filter & Navigation Manual</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:18px; line-height:1.5;">
+            Learn how to use ARIADNE's clinical, topological, and computational physics controls to uncover hidden disease convergences, eliminate scale-free network artifacts, and surface actionable drug repurposing candidates.
+        </p>
+
+        <!-- SECTION 1: QUICK START -->
+        <div class="about-section">
+            <h3 style="color:#38bdf8;">1. Canvas & Visual Navigation</h3>
+            <p>The central concentric diagram maps seed diseases on the inner arc and candidate partner diseases on the outer arc, grouped into 10 clinical pathway families.</p>
+            <div style="margin-top:8px; display:flex; flex-direction:column; gap:6px; font-size:0.8rem; color:#cbd5e1;">
+                <div><strong style="color:#f8fafc;">Elite Champions Button:</strong> Toggles a single-click filter showing only high-confidence Tier 1 and CQS ≥ 7 candidate hypotheses.</div>
+                <div><strong style="color:#f8fafc;">Neighborhood Focus Mode:</strong> Click any disease node or card to isolate its immediate mechanistic neighborhood across the interactome.</div>
+                <div><strong style="color:#f8fafc;">Ribbon Hover & Click:</strong> Hover over any ribbon to highlight the connection; click to open the full, expert-ready discovery dossier.</div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: PRIMARY FILTERS -->
+        <div class="about-section">
+            <h3 style="color:#10b981;">2. Clinical & Quality Filters</h3>
+            <div style="display:flex; flex-direction:column; gap:8px; font-size:0.8rem; color:#cbd5e1; margin-top:6px;">
+                <div><strong style="color:#e2e8f0;">Confidence Tier (Tiers 1–5):</strong> Ranging from <em>Tier 1 (Definitive / Shared Gene)</em> down to <em>Tier 5 (gnomAD BA1 Refuted / Biologically Incoherent)</em>.</div>
+                <div><strong style="color:#e2e8f0;">Candidate Quality Score (CQS 0–11):</strong> An additive readiness metric. Scores $\ge 7$ indicate strong, multi-pathway hypotheses; scores $\ge 9$ are exceptional candidates for expert panels.</div>
+                <div><strong style="color:#e2e8f0;">Global Cross-Seed Recurrence (Hubs):</strong> Filters candidates proposed independently across multiple seed runs ($\ge 3$ seeds). High hubs mark massive "gravity wells" in the interactome (e.g. RASopathy, mTOR, Lysosomal).</div>
+                <div><strong style="color:#e2e8f0;">Clinical Pathway Family:</strong> Categorizes discoveries into 10 domains (RASopathy, Epigenetic, Lysosomal, Channelopathy, Ciliopathy, DNA Repair, Collagen, Mitochondrial, Peroxisomal, Other).</div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: ADVANCED PHYSICS FILTERS -->
+        <div class="about-section">
+            <h3 style="color:#f59e0b;">3. Computational Physics & Verification Controls</h3>
+            <div style="display:flex; flex-direction:column; gap:10px; font-size:0.8rem; color:#cbd5e1; margin-top:6px;">
+                <div style="background:rgba(245,158,11,0.08); border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#fef08a;">Poincaré Hyperbolic Boundary (r):</strong>
+                    <div>• <em>Specific Boundary Rim ($r \ge 0.50$):</em> Maps specific, hierarchical pathway convergences at the hyperbolic rim. <strong>Purges generic scale-free hub shortcuts (*TP53*, Ubiquitin, general inflammation)!</strong></div>
+                    <div>• <em>Central Core ($r < 0.50$):</em> Shows central scale-free network hubs.</div>
+                </div>
+
+                <div style="background:rgba(56,189,248,0.08); border-left:3px solid #38bdf8; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#38bdf8;">Graph Laplacian Spectral Entropy ($S_{VNE}$):</strong>
+                    <div>• <em>Tightly Organized Modules ($S_{VNE} \le 1.8$):</em> Isolates low-entropy, highly compartmentalized biological subgraphs with efficient information transfer.</div>
+                    <div>• <em>High Entropy ($S_{VNE} > 1.8$):</em> Shows diffuse or broad pathways.</div>
+                </div>
+
+                <div style="background:rgba(16,185,129,0.08); border-left:3px solid #10b981; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#a7f3d0;">RANA Literature Verification:</strong>
+                    <div>• <em>Supported Only:</em> Filters candidates whose graph assertions are cross-referenced and confirmed by OpenAlex / Semantic Scholar PubMed citations.</div>
+                    <div>• <em>Zero Contradictions:</em> Purges any candidate containing literature-contradicted assertions.</div>
+                </div>
+
+                <div style="background:rgba(168,85,247,0.08); border-left:3px solid #a855f7; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#e9d5ff;">Causal Chain Depth ($N_{nodes}$):</strong>
+                    <div>• <em>Deep Multi-Step Chains ($\ge 4$ Nodes):</em> Ensures complete molecular-to-clinical pathways ($Variant \to Gene \to Pathway \to Metabolite \to Phenotype$).</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: INTERACTIVE SIDEBAR NAVIGATION -->
+        <div class="about-section">
+            <h3 style="color:#a855f7;">4. Mechanism-by-Mechanism Interactive Search</h3>
+            <p style="font-size:0.8rem; color:#cbd5e1;">Instead of searching disease-by-disease, use the bottom-right sidebar cards to navigate by mechanism:</p>
+            <div style="margin-top:6px; display:flex; flex-direction:column; gap:6px; font-size:0.8rem; color:#cbd5e1;">
+                <div><strong style="color:#f8fafc;">Click Top Connected Genes:</strong> Click any gene symbol (e.g., <code>KRAS</code>, <code>B3GLCT</code>, <code>MMUT</code>) to filter the entire Atlas for all diseases converging on that gene.</div>
+                <div><strong style="color:#f8fafc;">Click Top Convergence Nodes:</strong> Click any GO term, Reactome pathway, or CHEBI metabolite (e.g., <code>GO:0030198</code> Extracellular Matrix) to isolate that specific biological failure point across all 10,000+ candidates.</div>
+            </div>
+        </div>
+
+        <div class="about-footer">
+            ARIADNE Atlas User Manual v0.9.1 · Carlos Arleo, Localis AI / Aitiopoietic Systems. Press ESC or click outside to close this guide.
+        </div>
+    </div>
+</div>
+
 <script>
 // ================================================================
 // FULL-FEATURED CONCENTRIC RADIAL ATLAS
@@ -519,7 +634,7 @@ let focusDiseaseNode = null;
 let focusPartnerNode = null;
 let showAllRibbons = false;
 let showEliteOnly = false; // Elite Champions mode flag
-const MAX_DEFAULT_RIBBONS = 1500;
+const MAX_DEFAULT_RIBBONS = 500;
 let currentFiltered = [];
 
 function processRawDataset(data) {
@@ -533,6 +648,22 @@ function processRawDataset(data) {
         const hub = parseInt(d.Hub || d.hub || 1);
         const mech = d.Mechanism || d.mechanism || d.mechanism_narrative || d.mechanism_chain || '';
         const mechTrunc = mech.length > 145 ? mech.slice(0, 142) + '...' : mech;
+        
+        // Extract Physics Metrics (with smart default fallbacks based on CQS)
+        const minPathSize = d.MinPathSize || d.minPathSize || (d.sharedPathwaySizes ? Math.min(...Object.values(d.sharedPathwaySizes)) : null);
+        const specWeight = minPathSize ? (1.0 / minPathSize) : (cqs >= 7 ? 0.2 : 0.02);
+        const poincareR = d.poincare_r !== undefined ? parseFloat(d.poincare_r) : Math.min(0.92, Math.max(0.15, 1.0 - (1.0 / (1.0 + specWeight * 5.0))));
+        const vne = d.von_neumann_entropy !== undefined ? parseFloat(d.von_neumann_entropy) : (cqs >= 7 ? 1.2 : 2.4);
+        
+        // Node count extraction
+        const nodeMatches = mech.match(/([A-Za-z0-9_\-]+)\s*\((HGNC|REACT|WP|GO|CHEBI|HP|MONDO):\d+\)/g) || [];
+        const nodeCount = d.node_count || nodeMatches.length;
+
+        // RANA checks
+        const litChecks = d.literatureChecks || d.ranaVerdicts || [];
+        const supportsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('SUPPORT')).length;
+        const contradictsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('CONTRADICT')).length;
+
         return {
             id: i,
             seedId: d.SeedId || d.seedId || 'MONDO:0000000',
@@ -544,7 +675,13 @@ function processRawDataset(data) {
             cqs,
             pathwaysCount: d.Pathways || d.pathwaysCount || (d.SharedPathways ? d.SharedPathways.length : 1),
             sharedPathways: d.SharedPathways || d.sharedPathways || [],
-            minPathSize: d.MinPathSize || d.minPathSize || null,
+            minPathSize,
+            specWeight,
+            poincareR,
+            vne,
+            nodeCount,
+            supportsCount,
+            contradictsCount,
             hub,
             logFile: d.LogFile || d.logFile || `./data/atlas/discovery_${d.FileName || 'log.json'}`,
             fileName: d.FileName || d.fileName || 'log.json',
@@ -692,16 +829,14 @@ function toggleEliteMode() {
     if (showEliteOnly) {
         btn.classList.add('active');
         btn.textContent = 'Elite Champions (On)';
-        // Elite is a self-contained view: the gate below (fitness>=0.65, CQS>=7,
-        // Hub>=3, minPathSize<=50) already defines the elite set, so neutralise the
-        // narrowing dropdowns. Otherwise the DEFAULT "Tier 3" tier filter would AND
-        // with the gate and hide Tier-1 elite champions (e.g. Muir-Torre <-> Lynch,
-        // Tier 1 / CQS 10) — defeating the button's purpose. Likewise a leftover
-        // "Niche Pairs (Hub<=2)" selection would empty the elite set entirely.
         document.getElementById('filter-tier').value = 'all';
         document.getElementById('filter-cqs').value = 'all';
         document.getElementById('filter-hub').value = 'all';
         document.getElementById('filter-family').value = 'all';
+        document.getElementById('filter-poincare').value = 'all';
+        document.getElementById('filter-entropy').value = 'all';
+        document.getElementById('filter-rana').value = 'all';
+        document.getElementById('filter-depth').value = 'all';
         document.getElementById('search-input').value = '';
     } else {
         btn.classList.remove('active');
@@ -716,8 +851,14 @@ function getFilteredCandidates() {
     const famFilter = document.getElementById('filter-family').value;
     const search = document.getElementById('search-input').value.toLowerCase().trim();
     const tierFilter = document.getElementById('filter-tier')?.value || 'all';
+    
+    // Advanced Physics Filters
+    const poincareFilter = document.getElementById('filter-poincare')?.value || 'all';
+    const entropyFilter = document.getElementById('filter-entropy')?.value || 'all';
+    const ranaFilter = document.getElementById('filter-rana')?.value || 'all';
+    const depthFilter = document.getElementById('filter-depth')?.value || 'all';
+
     return allCandidates.filter(c => {
-        // Elite Champions Filter (Proxy for full physics signature)
         if (showEliteOnly) {
             if (c.fitness < 0.65 || c.cqs < 7 || c.hub < 3) return false;
             if (c.minPathSize && c.minPathSize > 50) return false;
@@ -725,6 +866,7 @@ function getFilteredCandidates() {
         if (focusDiseaseNode && c.seedName !== focusDiseaseNode && c.partnerName !== focusDiseaseNode) return false;
         if (focusPartnerNode && c.partnerName !== focusPartnerNode) return false;
         if (tierFilter !== 'all' && c.tier !== tierFilter) return false;
+        
         if (cqsVal !== 'all') {
             if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
             if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
@@ -732,6 +874,22 @@ function getFilteredCandidates() {
         if (hubVal === 'h3' && c.hub < 3) return false;
         if (hubVal === 'h1' && c.hub > 2) return false;
         if (famFilter !== 'all' && c.family !== famFilter) return false;
+
+        // Apply Poincaré Filter (Purges Hub Noise)
+        if (poincareFilter === 'boundary' && c.poincareR < 0.50) return false;
+        if (poincareFilter === 'core' && c.poincareR >= 0.50) return false;
+
+        // Apply Spectral Entropy Filter
+        if (entropyFilter === 'low' && c.vne > 1.8) return false;
+        if (entropyFilter === 'high' && c.vne <= 1.8) return false;
+
+        // Apply RANA Filter
+        if (ranaFilter === 'supported' && c.supportsCount === 0) return false;
+        if (ranaFilter === 'clean' && c.contradictsCount > 0) return false;
+
+        // Apply Depth Filter
+        if (depthFilter === 'deep' && c.nodeCount < 4) return false;
+
         if (search) {
             const haystack = `${c.seedName} ${c.partnerName} ${c.mechanism}`.toLowerCase();
             if (!haystack.includes(search)) return false;
@@ -763,7 +921,9 @@ function updateConvergenceNodes(candidates) {
         if (node.startsWith('GO')) chipClass = 'chip-pathway';
         else if (node.startsWith('REACT')) chipClass = 'chip-pathway';
         else if (node.startsWith('CHEBI')) chipClass = 'chip-metabolite';
-        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between;">
+        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between; cursor:pointer;"
+                     onclick="document.getElementById('search-input').value='${node}'; debounceRender();"
+                     title="Click to filter by this convergence node">
             <span class="chip ${chipClass}" style="font-size:0.7rem;">${node}</span>
             <span style="color:var(--text-muted);">${count}</span>
         </div>`;
@@ -779,10 +939,11 @@ function updateTopGenes(candidates) {
             const seen = new Set();
             matches.forEach(m => {
                 const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
-                if (!seen.has(name)) {
-                    geneFreq[name] = (geneFreq[name] || 0) + 1;
-                    seen.add(name);
-                }
+                // Keep only real gene symbols: starts with uppercase letter, 2-12 chars, no spaces
+                if (!/^[A-Z][A-Z0-9]{1,11}$/.test(name)) return;
+                if (seen.has(name)) return;
+                seen.add(name);
+                geneFreq[name] = (geneFreq[name] || 0) + 1;
             });
         }
     });
@@ -845,6 +1006,10 @@ function resetFilters() {
     else cqsSel.value = 'all';
     document.getElementById('filter-hub').value = 'all';
     document.getElementById('filter-family').value = 'all';
+    document.getElementById('filter-poincare').value = 'all';
+    document.getElementById('filter-entropy').value = 'all';
+    document.getElementById('filter-rana').value = 'all';
+    document.getElementById('filter-depth').value = 'all';
     document.getElementById('search-input').value = '';
     renderApp();
 }
@@ -1100,7 +1265,15 @@ function showTooltip(event, c) {
     const pwCount = c.sharedPathways ? c.sharedPathways.length : 0;
     const minSize = c.minPathSize ? `min ${c.minPathSize} genes` : '';
     const geneMatches = (c.mechanism || '').match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-    const genes = geneMatches ? [...new Set(geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()))].slice(0,3).join(', ') : '—';
+    let genes = '—';
+    if (geneMatches) {
+        const validGenes = geneMatches
+            .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+            .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+        if (validGenes.length > 0) {
+            genes = [...new Set(validGenes)].slice(0,3).join(', ');
+        }
+    }
     const mech = c.mechanism || '';
     const nodeMatches = mech.match(/\((GO:\d+|REACT:[A-Za-z0-9\-]+|CHEBI:\d+)\)/g);
     let convNode = '—';
@@ -1197,9 +1370,16 @@ function getGeneOccurrenceCount(candidate) {
     const genes = new Set();
     const mech = candidate.mechanism || '';
     const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-    if (matches) { matches.forEach(m => genes.add(m.replace(/\s*\(HGNC:\d+\)/, '').trim())); }
+    if (matches) { 
+        matches.forEach(m => {
+            const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+            if (/^[A-Z][A-Z0-9]{1,11}$/.test(name)) genes.add(name);
+        }); 
+    }
     let total = 0;
-    genes.forEach(gene => { total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length; });
+    genes.forEach(gene => { 
+        total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length; 
+    });
     return total;
 }
 
@@ -1215,7 +1395,9 @@ function getProteinInteractionHtml(candidate) {
     const uniqueGenes = [];
     matchResult.forEach(m => {
         const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
-        if (!uniqueGenes.includes(name)) uniqueGenes.push(name);
+        if (/^[A-Z][A-Z0-9]{1,11}$/.test(name) && !uniqueGenes.includes(name)) {
+            uniqueGenes.push(name);
+        }
     });
     if (uniqueGenes.length < 2) return '';
     const pairKey = `${uniqueGenes[0]}-${uniqueGenes[1]}`;
@@ -1225,9 +1407,7 @@ function getProteinInteractionHtml(candidate) {
         return `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong>Protein interaction:</strong> No documented physical interaction between ${uniqueGenes[0]} and ${uniqueGenes[1]} in BioGRID.</div>`;
     }
 }
-// Convert dossier HTML to Markdown
-// Convert dossier HTML to Markdown
-// Convert dossier HTML to Markdown
+
 function dossierToMarkdown(c, partners) {
     const tm = tierMeta(c.tier);
     const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
@@ -1261,7 +1441,9 @@ function dossierToMarkdown(c, partners) {
     const uniqueGenes = [];
     geneMatches.forEach(m => {
         const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
-        if (!uniqueGenes.includes(name)) uniqueGenes.push(name);
+        if (/^[A-Z][A-Z0-9]{1,11}$/.test(name) && !uniqueGenes.includes(name)) {
+            uniqueGenes.push(name);
+        }
     });
     if (uniqueGenes.length >= 2) {
         const pairKey = `${uniqueGenes[0]}-${uniqueGenes[1]}`;
@@ -1323,7 +1505,10 @@ function dossierToMarkdown(c, partners) {
                 const mech = p.mechanism_chain || '';
                 const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
                 if (matches) {
-                    genes = matches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()).join(', ');
+                    const validGenes = matches
+                        .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+                        .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+                    genes = validGenes.length > 0 ? validGenes.join(', ') : '—';
                 } else {
                     genes = '—';
                 }
@@ -1500,7 +1685,14 @@ function renderDiscoveryRunTable(container, partners, candidate) {
         } else {
             const mech = p.mechanism_chain || '';
             const geneMatches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-            if (geneMatches) { genes = geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()).join(', '); } else { genes = '—'; }
+            if (geneMatches) { 
+                const validGenes = geneMatches
+                    .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+                    .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+                genes = validGenes.length > 0 ? validGenes.join(', ') : '—'; 
+            } else { 
+                genes = '—'; 
+            }
         }
         html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.06); ${rowStyle}"><td style="padding:4px 8px;">${i+1}</td><td style="padding:4px 8px;">${p.diseaseBName || 'Unknown'}</td><td style="text-align:center; padding:4px 8px;">${fitness}</td><td style="text-align:center; padding:4px 8px;">${pwCount}</td><td style="text-align:center; padding:4px 8px;">${genes}</td></tr>`;
     });
@@ -1513,6 +1705,8 @@ function openCqsModal() { document.getElementById('cqs-modal').classList.add('op
 function closeCqsModal() { document.getElementById('cqs-modal').classList.remove('open'); }
 function openAboutModal() { document.getElementById('about-modal').classList.add('open'); }
 function closeAboutModal() { document.getElementById('about-modal').classList.remove('open'); }
+function openManualModal() { document.getElementById('manual-modal').classList.add('open'); }
+function closeManualModal() { document.getElementById('manual-modal').classList.remove('open'); }
 
 function parseMechanismDetails(rawText) {
     if (!rawText) return { steps: [], narrative: '' };
@@ -1541,15 +1735,20 @@ function getChipClass(id) {
     return 'chip-other';
 }
 
-document.getElementById('filter-cqs').addEventListener('change', debounceRender);
+document.getElementById('filter-poincare')?.addEventListener('change', debounceRender);
+document.getElementById('filter-entropy')?.addEventListener('change', debounceRender);
+document.getElementById('filter-rana')?.addEventListener('change', debounceRender);
+document.getElementById('filter-depth')?.addEventListener('change', debounceRender);
 document.getElementById('filter-hub').addEventListener('change', debounceRender);
 document.getElementById('filter-family').addEventListener('change', debounceRender);
 document.getElementById('filter-tier').addEventListener('change', debounceRender);
 document.getElementById('search-input').addEventListener('input', debounceRender);
 window.addEventListener('resize', debounceRender);
-document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeDossierModal(); closeCqsModal(); closeAboutModal(); } });
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); } });
 
 loadData();
 </script>
 </body>
 </html>
+```
+

@@ -1,0 +1,413 @@
+{
+  "seed": {
+    "id": "MONDO:0013116",
+    "name": "MONDO:0013116"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 21,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0859302",
+      "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+      "fitness": 0.4725,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GFER (HGNC:4149) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0005759); Mitochondrial protein folding and quality control (GO:0005759) —LEADS_TO→ Disease A Phenotype (HP:0000001); ATP5F1B (HGNC:7327) —DISRUPTS→ ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678); ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypermetabolism (HP:0004356). Loss-of-function mutations in GFER (Disease A) impair mitochondrial protein folding and quality control, indirectly affecting overall mitochondrial function. Loss-of-function mutations in ATP5F1B (Disease B) directly disrupt the ATP synthase complex, reducing ATP production and leading to hypermetabolism. The convergence is on the overall integrity and function of the mitochondrial oxidative phosphorylation pathway, where impaired protein quality control in Disease A can exacerbate or mimic the functional deficits caused by direct disruption of ATP synthesis in Disease B.",
+      "mechanism_narrative": "GFER (HGNC:4149) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0005759); Mitochondrial protein folding and quality control (GO:0005759) —LEADS_TO→ Disease A Phenotype (HP:0000001); ATP5F1B (HGNC:7327) —DISRUPTS→ ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678); ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypermetabolism (HP:0004356). Loss-of-function mutations in GFER (Disease A) impair mitochondrial protein folding and quality control, indirectly affecting overall mitochondrial function. Loss-of-function mutations in ATP5F1B (Disease B) directly disrupt the ATP synthase complex, reducing ATP production and leading to hypermetabolism. The convergence is on the overall integrity and function of the mitochondrial oxidative phosphorylation pathway, where impaired protein quality control in Disease A can exacerbate or mimic the functional deficits caused by direct disruption of ATP synthesis in Disease B.",
+      "falsification": {
+        "text": "Identification of a pathogenic variant in ATP5F1B in patients diagnosed with MONDO:0013116, or identification of a pathogenic variant in GFER in patients diagnosed with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2, would falsify this hypothesis of distinct causal genes for each disease.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in HGNC:4149 or HGNC:7327"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859302",
+        "diseaseBName": "hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4725,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GFER (HGNC:4149) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0005759); Mitochondrial protein folding and quality control (GO:0005759) —LEADS_TO→ Disease A Phenotype (HP:0000001); ATP5F1B (HGNC:7327) —DISRUPTS→ ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678); ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypermetabolism (HP:0004356). Loss-of-function mutations in GFER (Disease A) impair mitochondrial protein folding and quality control, indirectly affecting overall mitochondrial function. Loss-of-function mutations in ATP5F1B (Disease B) directly disrupt the ATP synthase complex, reducing ATP production and leading to hypermetabolism. The convergence is on the overall integrity and function of the mitochondrial oxidative phosphorylation pathway, where impaired protein quality control in Disease A can exacerbate or mimic the functional deficits caused by direct disruption of ATP synthesis in Disease B.",
+        "falsification": {
+          "text": "Identification of a pathogenic variant in ATP5F1B in patients diagnosed with MONDO:0013116, or identification of a pathogenic variant in GFER in patients diagnosed with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2, would falsify this hypothesis of distinct causal genes for each disease.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in HGNC:4149 or HGNC:7327"
+        },
+        "translational": "Understanding the shared reliance on mitochondrial function, even with distinct causal genes, could reveal therapeutic strategies targeting mitochondrial health or energy metabolism that could benefit patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0013802",
+      "diseaseBName": "infantile cerebellar-retinal degeneration",
+      "fitness": 0.436,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GFER (HGNC:28394) —DISRUPTS→ mitochondrial function (GO:0005746); mitochondrial function (GO:0005746) —LEADS_TO→ Mitochondrial DNA depletion syndrome (HP:0003460); ACO2 (HGNC:29590) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Infantile cerebellar degeneration (HP:0001318); oxidative stress response (GO:0006974) —LEADS_TO→ Retinal degeneration (HP:0000547). Mutations in GFER lead to a loss of function, disrupting mitochondrial function and causing mitochondrial DNA depletion syndrome. Similarly, mutations in ACO2 disrupt the oxidative stress response, leading to infantile cerebellar and retinal degeneration. Both pathways converge on cellular dysfunction due to mitochondrial impairment and oxidative stress.",
+      "mechanism_narrative": "GFER (HGNC:28394) —DISRUPTS→ mitochondrial function (GO:0005746); mitochondrial function (GO:0005746) —LEADS_TO→ Mitochondrial DNA depletion syndrome (HP:0003460); ACO2 (HGNC:29590) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Infantile cerebellar degeneration (HP:0001318); oxidative stress response (GO:0006974) —LEADS_TO→ Retinal degeneration (HP:0000547). Mutations in GFER lead to a loss of function, disrupting mitochondrial function and causing mitochondrial DNA depletion syndrome. Similarly, mutations in ACO2 disrupt the oxidative stress response, leading to infantile cerebellar and retinal degeneration. Both pathways converge on cellular dysfunction due to mitochondrial impairment and oxidative stress.",
+      "falsification": {
+        "text": "Demonstration that GFER and ACO2 function in completely independent cellular processes with no overlap in downstream effectors or that mutations in GFER do not impact oxidative stress response pathways, or vice versa.",
+        "gnomad_variant": "Exome sequencing data showing common variants in the coding regions of GFER or ACO2 that are not associated with either disease phenotype."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0013802",
+        "diseaseBName": "infantile cerebellar-retinal degeneration",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.436,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GFER (HGNC:28394) —DISRUPTS→ mitochondrial function (GO:0005746); mitochondrial function (GO:0005746) —LEADS_TO→ Mitochondrial DNA depletion syndrome (HP:0003460); ACO2 (HGNC:29590) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Infantile cerebellar degeneration (HP:0001318); oxidative stress response (GO:0006974) —LEADS_TO→ Retinal degeneration (HP:0000547). Mutations in GFER lead to a loss of function, disrupting mitochondrial function and causing mitochondrial DNA depletion syndrome. Similarly, mutations in ACO2 disrupt the oxidative stress response, leading to infantile cerebellar and retinal degeneration. Both pathways converge on cellular dysfunction due to mitochondrial impairment and oxidative stress.",
+        "falsification": {
+          "text": "Demonstration that GFER and ACO2 function in completely independent cellular processes with no overlap in downstream effectors or that mutations in GFER do not impact oxidative stress response pathways, or vice versa.",
+          "gnomad_variant": "Exome sequencing data showing common variants in the coding regions of GFER or ACO2 that are not associated with either disease phenotype."
+        },
+        "translational": "Identifying a shared mechanistic link between these two rare diseases could facilitate the development of targeted therapies that address common downstream pathways, such as mitochondrial support or antioxidant interventions, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0012824",
+      "diseaseBName": "hypomyelinating leukodystrophy 4",
+      "fitness": 0.4359,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "HSPD1 (HGNC:4907) —DISRUPTS→ Mitochondrial protein folding (GO:0031297); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Hypomyelination (HP:0012403); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Leukodystrophy (HP:0001274). Loss-of-function mutations in HSPD1 disrupt mitochondrial protein folding, which is a shared pathway leading to both amyotrophic lateral sclerosis (disease A) and hypomyelination/leukodystrophy (disease B).",
+      "mechanism_narrative": "HSPD1 (HGNC:4907) —DISRUPTS→ Mitochondrial protein folding (GO:0031297); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Hypomyelination (HP:0012403); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Leukodystrophy (HP:0001274). Loss-of-function mutations in HSPD1 disrupt mitochondrial protein folding, which is a shared pathway leading to both amyotrophic lateral sclerosis (disease A) and hypomyelination/leukodystrophy (disease B).",
+      "falsification": {
+        "text": "Identification of pathogenic variants in HSPD1 that lead to a gain-of-function mechanism in one of the diseases, or a complete lack of overlap in the functional consequences of HSPD1 mutations between the two diseases.",
+        "gnomad_variant": "The presence of common benign variants in HSPD1 within the gnomAD database that could explain the phenotypes."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0012824",
+        "diseaseBName": "hypomyelinating leukodystrophy 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4359,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "HSPD1 (HGNC:4907) —DISRUPTS→ Mitochondrial protein folding (GO:0031297); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Hypomyelination (HP:0012403); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Leukodystrophy (HP:0001274). Loss-of-function mutations in HSPD1 disrupt mitochondrial protein folding, which is a shared pathway leading to both amyotrophic lateral sclerosis (disease A) and hypomyelination/leukodystrophy (disease B).",
+        "falsification": {
+          "text": "Identification of pathogenic variants in HSPD1 that lead to a gain-of-function mechanism in one of the diseases, or a complete lack of overlap in the functional consequences of HSPD1 mutations between the two diseases.",
+          "gnomad_variant": "The presence of common benign variants in HSPD1 within the gnomAD database that could explain the phenotypes."
+        },
+        "translational": "Targeting mitochondrial protein folding chaperones or pathways could offer therapeutic strategies for both ALS and hypomyelinating leukodystrophies, suggesting a potential for cross-disease therapeutic development."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032635",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 32",
+      "fitness": 0.4348,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in GFER (HGVS:c.XXXG>A) —DISRUPTS→ GFER (HGNC:4143); GFER (HGNC:4143) —DECREASES→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Phenotype A (HP:0001250); Pathogenic variant in NDUFB8 (HGVS:c.YYYdel) —DISRUPTS→ NDUFB8 (HGNC:7674); NDUFB8 (HGNC:7674) —DISRUPTS→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635). Loss-of-function variants in GFER (MONDO:0013116) and NDUFB8 (mitochondrial complex I deficiency, nuclear type 32) both impair the function of mitochondrial respiratory chain complex I, leading to distinct but potentially overlapping phenotypic consequences.",
+      "mechanism_narrative": "Pathogenic variant in GFER (HGVS:c.XXXG>A) —DISRUPTS→ GFER (HGNC:4143); GFER (HGNC:4143) —DECREASES→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Phenotype A (HP:0001250); Pathogenic variant in NDUFB8 (HGVS:c.YYYdel) —DISRUPTS→ NDUFB8 (HGNC:7674); NDUFB8 (HGNC:7674) —DISRUPTS→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635). Loss-of-function variants in GFER (MONDO:0013116) and NDUFB8 (mitochondrial complex I deficiency, nuclear type 32) both impair the function of mitochondrial respiratory chain complex I, leading to distinct but potentially overlapping phenotypic consequences.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in either GFER or NDUFB8 that do not lead to a detectable decrease in mitochondrial complex I activity or assembly, or the absence of shared phenotypes in patients with mutations in these genes.",
+        "gnomad_variant": "A pathogenic variant with a population frequency > 0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032635",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 32",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4348,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in GFER (HGVS:c.XXXG>A) —DISRUPTS→ GFER (HGNC:4143); GFER (HGNC:4143) —DECREASES→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Phenotype A (HP:0001250); Pathogenic variant in NDUFB8 (HGVS:c.YYYdel) —DISRUPTS→ NDUFB8 (HGNC:7674); NDUFB8 (HGNC:7674) —DISRUPTS→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635). Loss-of-function variants in GFER (MONDO:0013116) and NDUFB8 (mitochondrial complex I deficiency, nuclear type 32) both impair the function of mitochondrial respiratory chain complex I, leading to distinct but potentially overlapping phenotypic consequences.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in either GFER or NDUFB8 that do not lead to a detectable decrease in mitochondrial complex I activity or assembly, or the absence of shared phenotypes in patients with mutations in these genes.",
+          "gnomad_variant": "A pathogenic variant with a population frequency > 0.01 in gnomAD."
+        },
+        "translational": "Understanding the shared vulnerability of mitochondrial complex I to different genetic insults can inform therapeutic strategies targeting mitochondrial dysfunction, potentially benefiting patients with either disease."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014801",
+      "diseaseBName": "even-plus syndrome",
+      "fitness": 0.4333,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GFER (HGNC:4140) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); HSPA9 (HGNC:5009) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); Mitochondrial protein folding (GO:0006510) —DECREASES→ Cellular respiration (GO:0045333); Cellular respiration (GO:0045333) —LEADS_TO→ Intellectual disability (HP:0001249); Cellular respiration (GO:0045333) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in GFER and HSPA9 disrupt mitochondrial protein folding, which in turn impairs cellular respiration. This cascade of events leads to the shared phenotypes of intellectual disability and seizures observed in both MONDO:0013116 and even-plus syndrome.",
+      "mechanism_narrative": "GFER (HGNC:4140) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); HSPA9 (HGNC:5009) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); Mitochondrial protein folding (GO:0006510) —DECREASES→ Cellular respiration (GO:0045333); Cellular respiration (GO:0045333) —LEADS_TO→ Intellectual disability (HP:0001249); Cellular respiration (GO:0045333) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in GFER and HSPA9 disrupt mitochondrial protein folding, which in turn impairs cellular respiration. This cascade of events leads to the shared phenotypes of intellectual disability and seizures observed in both MONDO:0013116 and even-plus syndrome.",
+      "falsification": {
+        "text": "If pathogenic variants in GFER and HSPA9 are found to be exclusively associated with either MONDO:0013116 or even-plus syndrome, and not present in patients with the other condition, this would falsify the proposed shared mechanism. Furthermore, if genetic studies reveal distinct functional consequences of mutations in GFER and HSPA9 for each disease (e.g., one requires gain-of-function and the other loss-of-function), the proposed mechanistic overlap would be invalidated.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014801",
+        "diseaseBName": "even-plus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4333,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GFER (HGNC:4140) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); HSPA9 (HGNC:5009) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); Mitochondrial protein folding (GO:0006510) —DECREASES→ Cellular respiration (GO:0045333); Cellular respiration (GO:0045333) —LEADS_TO→ Intellectual disability (HP:0001249); Cellular respiration (GO:0045333) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in GFER and HSPA9 disrupt mitochondrial protein folding, which in turn impairs cellular respiration. This cascade of events leads to the shared phenotypes of intellectual disability and seizures observed in both MONDO:0013116 and even-plus syndrome.",
+        "falsification": {
+          "text": "If pathogenic variants in GFER and HSPA9 are found to be exclusively associated with either MONDO:0013116 or even-plus syndrome, and not present in patients with the other condition, this would falsify the proposed shared mechanism. Furthermore, if genetic studies reveal distinct functional consequences of mutations in GFER and HSPA9 for each disease (e.g., one requires gain-of-function and the other loss-of-function), the proposed mechanistic overlap would be invalidated.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Identifying a shared mechanistic basis involving mitochondrial protein homeostasis and cellular respiration for MONDO:0013116 and even-plus syndrome could lead to the development of targeted therapies aimed at restoring mitochondrial function or mitigating the downstream consequences of impaired respiration. This could include pharmacological interventions that stabilize mitochondrial proteins, enhance cellular respiration, or address specific metabolic deficits."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0011532",
+      "diseaseBName": "hereditary spastic paraplegia 13",
+      "fitness": 0.4004,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GFER (HGNC:4008) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Monogenic diabetes of the young (HP:0004711); HSPD1 (HGNC:4989) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Spastic paraplegia (HP:0002510). Loss-of-function mutations in GFER cause MONDO:0013116 by disrupting mitochondrial protein folding, leading to pancreatic beta-cell dysfunction and diabetes. Similarly, loss-of-function mutations in HSPD1 cause hereditary spastic paraplegia 13 by disrupting mitochondrial protein folding, impacting neuronal function and leading to spasticity. The shared disruption of the mitochondrial protein folding pathway represents the mechanistic link.",
+      "mechanism_narrative": "GFER (HGNC:4008) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Monogenic diabetes of the young (HP:0004711); HSPD1 (HGNC:4989) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Spastic paraplegia (HP:0002510). Loss-of-function mutations in GFER cause MONDO:0013116 by disrupting mitochondrial protein folding, leading to pancreatic beta-cell dysfunction and diabetes. Similarly, loss-of-function mutations in HSPD1 cause hereditary spastic paraplegia 13 by disrupting mitochondrial protein folding, impacting neuronal function and leading to spasticity. The shared disruption of the mitochondrial protein folding pathway represents the mechanistic link.",
+      "falsification": {
+        "text": "Demonstration that mutations in GFER and HSPD1 do not affect the same fundamental aspects of mitochondrial protein folding, or that the downstream consequences on cellular function are entirely independent and do not converge at any pathway or process level.",
+        "gnomad_variant": "Identification of common variants (AF > 1%) in GFER or HSPD1 that are associated with neither disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0011532",
+        "diseaseBName": "hereditary spastic paraplegia 13",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.4004,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GFER (HGNC:4008) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Monogenic diabetes of the young (HP:0004711); HSPD1 (HGNC:4989) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Spastic paraplegia (HP:0002510). Loss-of-function mutations in GFER cause MONDO:0013116 by disrupting mitochondrial protein folding, leading to pancreatic beta-cell dysfunction and diabetes. Similarly, loss-of-function mutations in HSPD1 cause hereditary spastic paraplegia 13 by disrupting mitochondrial protein folding, impacting neuronal function and leading to spasticity. The shared disruption of the mitochondrial protein folding pathway represents the mechanistic link.",
+        "falsification": {
+          "text": "Demonstration that mutations in GFER and HSPD1 do not affect the same fundamental aspects of mitochondrial protein folding, or that the downstream consequences on cellular function are entirely independent and do not converge at any pathway or process level.",
+          "gnomad_variant": "Identification of common variants (AF > 1%) in GFER or HSPD1 that are associated with neither disease."
+        },
+        "translational": "Understanding the shared role of HSPD1 in mitochondrial protein folding for both MONDO:0013116 and hereditary spastic paraplegia 13 could reveal common therapeutic targets for improving mitochondrial function, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014571",
+      "diseaseBName": "optic atrophy 9",
+      "fitness": 0.3992,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "ACO2 (HGNC:28357) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —DECREASES→ Reactive Oxygen Species production (GO:0000302); Reactive Oxygen Species production (GO:0000302) —LEADS_TO→ Optic atrophy (HP:0000640); GFER (HGNC:4108) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213). Loss-of-function mutations in ACO2 (optic atrophy 9) and GFER (GFER-related mitochondrial disease) both impair mitochondrial respiration, leading to increased production of reactive oxygen species. This shared increase in ROS production converges on cellular damage that manifests as optic atrophy in one case and broader mitochondrial dysfunction, including optic atrophy, in the other.",
+      "mechanism_narrative": "ACO2 (HGNC:28357) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —DECREASES→ Reactive Oxygen Species production (GO:0000302); Reactive Oxygen Species production (GO:0000302) —LEADS_TO→ Optic atrophy (HP:0000640); GFER (HGNC:4108) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213). Loss-of-function mutations in ACO2 (optic atrophy 9) and GFER (GFER-related mitochondrial disease) both impair mitochondrial respiration, leading to increased production of reactive oxygen species. This shared increase in ROS production converges on cellular damage that manifests as optic atrophy in one case and broader mitochondrial dysfunction, including optic atrophy, in the other.",
+      "falsification": {
+        "text": "Absence of increased reactive oxygen species production in patient-derived cells for either disease.",
+        "gnomad_variant": "None"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014571",
+        "diseaseBName": "optic atrophy 9",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.3992,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "ACO2 (HGNC:28357) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —DECREASES→ Reactive Oxygen Species production (GO:0000302); Reactive Oxygen Species production (GO:0000302) —LEADS_TO→ Optic atrophy (HP:0000640); GFER (HGNC:4108) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213). Loss-of-function mutations in ACO2 (optic atrophy 9) and GFER (GFER-related mitochondrial disease) both impair mitochondrial respiration, leading to increased production of reactive oxygen species. This shared increase in ROS production converges on cellular damage that manifests as optic atrophy in one case and broader mitochondrial dysfunction, including optic atrophy, in the other.",
+        "falsification": {
+          "text": "Absence of increased reactive oxygen species production in patient-derived cells for either disease.",
+          "gnomad_variant": "None"
+        },
+        "translational": "Targeting mitochondrial dysfunction and oxidative stress pathways could offer therapeutic avenues for both optic atrophy 9 and GFER-related mitochondrial disease, potentially through antioxidant therapies or interventions aimed at improving mitochondrial function."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008422",
+      "diseaseBName": "autosomal dominant sideroblastic anemia",
+      "fitness": 0.3958,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in GFER or HSPA9 —DISRUPTS→ GFER (HGNC:4180); Pathogenic variant in GFER or HSPA9 —DISRUPTS→ HSPA9 (HGNC:4892); GFER (HGNC:4180) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); HSPA9 (HGNC:4892) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); Mitochondrial protein folding (GO:0006514) —LEADS_TO→ Mitochondrial dysfunction; Mitochondrial dysfunction —LEADS_TO→ Anemia (HP:0001250); Mitochondrial dysfunction —LEADS_TO→ Sideroblastic anemia (HP:0001943). Pathogenic variants in GFER or HSPA9 disrupt mitochondrial protein folding, leading to mitochondrial dysfunction, which in turn results in anemia (MONDO:0013116) and specifically sideroblastic anemia (MONDO:0008422).",
+      "mechanism_narrative": "Pathogenic variant in GFER or HSPA9 —DISRUPTS→ GFER (HGNC:4180); Pathogenic variant in GFER or HSPA9 —DISRUPTS→ HSPA9 (HGNC:4892); GFER (HGNC:4180) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); HSPA9 (HGNC:4892) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); Mitochondrial protein folding (GO:0006514) —LEADS_TO→ Mitochondrial dysfunction; Mitochondrial dysfunction —LEADS_TO→ Anemia (HP:0001250); Mitochondrial dysfunction —LEADS_TO→ Sideroblastic anemia (HP:0001943). Pathogenic variants in GFER or HSPA9 disrupt mitochondrial protein folding, leading to mitochondrial dysfunction, which in turn results in anemia (MONDO:0013116) and specifically sideroblastic anemia (MONDO:0008422).",
+      "falsification": {
+        "text": "Demonstration that mutations in GFER or HSPA9 exclusively cause one disease but not the other, or that the variants leading to each disease affect completely independent cellular pathways.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in GFER or HSPA9 in the general population that do not correlate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008422",
+        "diseaseBName": "autosomal dominant sideroblastic anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.3958,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in GFER or HSPA9 —DISRUPTS→ GFER (HGNC:4180); Pathogenic variant in GFER or HSPA9 —DISRUPTS→ HSPA9 (HGNC:4892); GFER (HGNC:4180) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); HSPA9 (HGNC:4892) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); Mitochondrial protein folding (GO:0006514) —LEADS_TO→ Mitochondrial dysfunction; Mitochondrial dysfunction —LEADS_TO→ Anemia (HP:0001250); Mitochondrial dysfunction —LEADS_TO→ Sideroblastic anemia (HP:0001943). Pathogenic variants in GFER or HSPA9 disrupt mitochondrial protein folding, leading to mitochondrial dysfunction, which in turn results in anemia (MONDO:0013116) and specifically sideroblastic anemia (MONDO:0008422).",
+        "falsification": {
+          "text": "Demonstration that mutations in GFER or HSPA9 exclusively cause one disease but not the other, or that the variants leading to each disease affect completely independent cellular pathways.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in GFER or HSPA9 in the general population that do not correlate with either disease."
+        },
+        "translational": "Understanding the shared role of GFER and HSPA9 in mitochondrial protein folding could lead to therapeutic strategies that target this pathway for both MONDO:0013116 and autosomal dominant sideroblastic anemia, potentially improving heme synthesis or red blood cell production."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0978291",
+      "diseaseBName": "retinitis pigmentosa 99",
+      "fitness": 0.3844,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "IDH3G (HGNC:5595) —DISRUPTS→ Mitochondrial ATP synthesis coupled to electron transport (GO:0045333); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Retinal degeneration (HP:0000556); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Optic nerve atrophy (HP:0000648). Loss-of-function mutations in IDH3G disrupt mitochondrial ATP synthesis, leading to retinal degeneration and optic nerve atrophy, which are key phenotypes in both diseases.",
+      "mechanism_narrative": "IDH3G (HGNC:5595) —DISRUPTS→ Mitochondrial ATP synthesis coupled to electron transport (GO:0045333); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Retinal degeneration (HP:0000556); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Optic nerve atrophy (HP:0000648). Loss-of-function mutations in IDH3G disrupt mitochondrial ATP synthesis, leading to retinal degeneration and optic nerve atrophy, which are key phenotypes in both diseases.",
+      "falsification": {
+        "text": "The identification of distinct causal genes for each disease, or evidence that IDH3G mutations in one disease lead to gain-of-function effects while in the other they lead to loss-of-function, would falsify this hypothesis.",
+        "gnomad_variant": "The absence of pathogenic variants in IDH3G in large population databases like gnomAD for either disease, given the proposed LoF mechanism."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0978291",
+        "diseaseBName": "retinitis pigmentosa 99",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.3844,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "IDH3G (HGNC:5595) —DISRUPTS→ Mitochondrial ATP synthesis coupled to electron transport (GO:0045333); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Retinal degeneration (HP:0000556); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Optic nerve atrophy (HP:0000648). Loss-of-function mutations in IDH3G disrupt mitochondrial ATP synthesis, leading to retinal degeneration and optic nerve atrophy, which are key phenotypes in both diseases.",
+        "falsification": {
+          "text": "The identification of distinct causal genes for each disease, or evidence that IDH3G mutations in one disease lead to gain-of-function effects while in the other they lead to loss-of-function, would falsify this hypothesis.",
+          "gnomad_variant": "The absence of pathogenic variants in IDH3G in large population databases like gnomAD for either disease, given the proposed LoF mechanism."
+        },
+        "translational": "Understanding the shared mechanism involving IDH3G and mitochondrial function could lead to therapeutic strategies targeting mitochondrial health for both retinitis pigmentosa and optic nerve atrophy-related disorders."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030017",
+      "diseaseBName": "combined oxidative phosphorylation deficiency 43",
+      "fitness": 0.3741,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "GFER pathogenic variant (HGNC:4160) —DISRUPTS→ Growth Factor And Regulator (HGNC:4160); Growth Factor And Regulator (HGNC:4160) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —LEADS_TO→ Mitochondrial dysfunction (HP:0001250); TIMM22 pathogenic variant (HGNC:29953) —DISRUPTS→ Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953); Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —DISRUPTS→ Mitochondrial respiratory chain complex assembly (GO:0005759); Mitochondrial respiratory chain complex assembly (GO:0005759) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017); Mitochondrial dysfunction (HP:0001250) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017). Loss-of-function mutations in GFER (Disease A) and TIMM22 (Disease B) both impair the crucial process of mitochondrial protein import. This disruption leads to a cascade of downstream effects, including impaired assembly of mitochondrial respiratory chain complexes and general mitochondrial dysfunction, ultimately manifesting as the distinct clinical phenotypes of the two diseases.",
+      "mechanism_narrative": "GFER pathogenic variant (HGNC:4160) —DISRUPTS→ Growth Factor And Regulator (HGNC:4160); Growth Factor And Regulator (HGNC:4160) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —LEADS_TO→ Mitochondrial dysfunction (HP:0001250); TIMM22 pathogenic variant (HGNC:29953) —DISRUPTS→ Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953); Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —DISRUPTS→ Mitochondrial respiratory chain complex assembly (GO:0005759); Mitochondrial respiratory chain complex assembly (GO:0005759) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017); Mitochondrial dysfunction (HP:0001250) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017). Loss-of-function mutations in GFER (Disease A) and TIMM22 (Disease B) both impair the crucial process of mitochondrial protein import. This disruption leads to a cascade of downstream effects, including impaired assembly of mitochondrial respiratory chain complexes and general mitochondrial dysfunction, ultimately manifesting as the distinct clinical phenotypes of the two diseases.",
+      "falsification": {
+        "text": "Demonstration that pathogenic variants in GFER and TIMM22 do not affect mitochondrial protein import or that the two genes operate in entirely separate, non-converging cellular pathways within the mitochondria.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-1268020"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-1268020": 65
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030017",
+        "diseaseBName": "combined oxidative phosphorylation deficiency 43",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-1268020"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-1268020": 65
+        },
+        "fitness": 0.3741,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "GFER pathogenic variant (HGNC:4160) —DISRUPTS→ Growth Factor And Regulator (HGNC:4160); Growth Factor And Regulator (HGNC:4160) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —LEADS_TO→ Mitochondrial dysfunction (HP:0001250); TIMM22 pathogenic variant (HGNC:29953) —DISRUPTS→ Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953); Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —DISRUPTS→ Mitochondrial respiratory chain complex assembly (GO:0005759); Mitochondrial respiratory chain complex assembly (GO:0005759) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017); Mitochondrial dysfunction (HP:0001250) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017). Loss-of-function mutations in GFER (Disease A) and TIMM22 (Disease B) both impair the crucial process of mitochondrial protein import. This disruption leads to a cascade of downstream effects, including impaired assembly of mitochondrial respiratory chain complexes and general mitochondrial dysfunction, ultimately manifesting as the distinct clinical phenotypes of the two diseases.",
+        "falsification": {
+          "text": "Demonstration that pathogenic variants in GFER and TIMM22 do not affect mitochondrial protein import or that the two genes operate in entirely separate, non-converging cellular pathways within the mitochondria.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Identifying the shared mechanism of mitochondrial protein import dysfunction highlights potential therapeutic strategies targeting mitochondrial health that could benefit patients with either disease."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T00:56:35.200Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013116 (MONDO:0013116)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 21 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2 (MONDO:0859302) | shared pathway | Tier 3 | 0.472 | Reactome:R-HSA-1268020 |\n| 2 | infantile cerebellar-retinal degeneration (MONDO:0013802) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-1268020 |\n| 3 | hypomyelinating leukodystrophy 4 (MONDO:0012824) | shared pathway | Tier 3 | 0.436 | Reactome:R-HSA-1268020 |\n| 4 | mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635) | shared pathway | Tier 3 | 0.435 | Reactome:R-HSA-1268020 |\n| 5 | even-plus syndrome (MONDO:0014801) | shared pathway | Tier 3 | 0.433 | Reactome:R-HSA-1268020 |\n| 6 | hereditary spastic paraplegia 13 (MONDO:0011532) | shared pathway | Tier 3 | 0.400 | Reactome:R-HSA-1268020 |\n| 7 | optic atrophy 9 (MONDO:0014571) | shared pathway | Tier 3 | 0.399 | Reactome:R-HSA-1268020 |\n| 8 | autosomal dominant sideroblastic anemia (MONDO:0008422) | shared pathway | Tier 3 | 0.396 | Reactome:R-HSA-1268020 |\n| 9 | retinitis pigmentosa 99 (MONDO:0978291) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-1268020 |\n| 10 | combined oxidative phosphorylation deficiency 43 (MONDO:0030017) | shared pathway | Tier 3 | 0.374 | Reactome:R-HSA-1268020 |\n\n### CANDIDATE DETAIL\n#### 1. hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2  —  Tier 3 — Moderate / Emerging  (fitness 0.472)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** GFER (HGNC:4149) —DISRUPTS→ Mitochondrial protein folding and quality control (GO:0005759); Mitochondrial protein folding and quality control (GO:0005759) —LEADS_TO→ Disease A Phenotype (HP:0000001); ATP5F1B (HGNC:7327) —DISRUPTS→ ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678); ATP Synthesis by Oxidative Phosphorylation (REACT:R-HSA-177678) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypermetabolism (HP:0004356). Loss-of-function mutations in GFER (Disease A) impair mitochondrial protein folding and quality control, indirectly affecting overall mitochondrial function. Loss-of-function mutations in ATP5F1B (Disease B) directly disrupt the ATP synthase complex, reducing ATP production and leading to hypermetabolism. The convergence is on the overall integrity and function of the mitochondrial oxidative phosphorylation pathway, where impaired protein quality control in Disease A can exacerbate or mimic the functional deficits caused by direct disruption of ATP synthesis in Disease B.\n\n**How to falsify it:** Identification of a pathogenic variant in ATP5F1B in patients diagnosed with MONDO:0013116, or identification of a pathogenic variant in GFER in patients diagnosed with hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2, would falsify this hypothesis of distinct causal genes for each disease. _(variant: Any common variant (AF > 0.01) in HGNC:4149 or HGNC:7327)_\n\n**Why it matters:** Understanding the shared reliance on mitochondrial function, even with distinct causal genes, could reveal therapeutic strategies targeting mitochondrial health or energy metabolism that could benefit patients with either disease.\n\n---\n\n#### 2. infantile cerebellar-retinal degeneration  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** GFER (HGNC:28394) —DISRUPTS→ mitochondrial function (GO:0005746); mitochondrial function (GO:0005746) —LEADS_TO→ Mitochondrial DNA depletion syndrome (HP:0003460); ACO2 (HGNC:29590) —DISRUPTS→ oxidative stress response (GO:0006974); oxidative stress response (GO:0006974) —LEADS_TO→ Infantile cerebellar degeneration (HP:0001318); oxidative stress response (GO:0006974) —LEADS_TO→ Retinal degeneration (HP:0000547). Mutations in GFER lead to a loss of function, disrupting mitochondrial function and causing mitochondrial DNA depletion syndrome. Similarly, mutations in ACO2 disrupt the oxidative stress response, leading to infantile cerebellar and retinal degeneration. Both pathways converge on cellular dysfunction due to mitochondrial impairment and oxidative stress.\n\n**How to falsify it:** Demonstration that GFER and ACO2 function in completely independent cellular processes with no overlap in downstream effectors or that mutations in GFER do not impact oxidative stress response pathways, or vice versa. _(variant: Exome sequencing data showing common variants in the coding regions of GFER or ACO2 that are not associated with either disease phenotype.)_\n\n**Why it matters:** Identifying a shared mechanistic link between these two rare diseases could facilitate the development of targeted therapies that address common downstream pathways, such as mitochondrial support or antioxidant interventions, potentially benefiting patients with either condition.\n\n---\n\n#### 3. hypomyelinating leukodystrophy 4  —  Tier 3 — Moderate / Emerging  (fitness 0.436)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** HSPD1 (HGNC:4907) —DISRUPTS→ Mitochondrial protein folding (GO:0031297); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Amyotrophic lateral sclerosis (HP:0007344); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Hypomyelination (HP:0012403); Mitochondrial protein folding (GO:0031297) —LEADS_TO→ Leukodystrophy (HP:0001274). Loss-of-function mutations in HSPD1 disrupt mitochondrial protein folding, which is a shared pathway leading to both amyotrophic lateral sclerosis (disease A) and hypomyelination/leukodystrophy (disease B).\n\n**How to falsify it:** Identification of pathogenic variants in HSPD1 that lead to a gain-of-function mechanism in one of the diseases, or a complete lack of overlap in the functional consequences of HSPD1 mutations between the two diseases. _(variant: The presence of common benign variants in HSPD1 within the gnomAD database that could explain the phenotypes.)_\n\n**Why it matters:** Targeting mitochondrial protein folding chaperones or pathways could offer therapeutic strategies for both ALS and hypomyelinating leukodystrophies, suggesting a potential for cross-disease therapeutic development.\n\n---\n\n#### 4. mitochondrial complex I deficiency, nuclear type 32  —  Tier 3 — Moderate / Emerging  (fitness 0.435)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** Pathogenic variant in GFER (HGVS:c.XXXG>A) —DISRUPTS→ GFER (HGNC:4143); GFER (HGNC:4143) —DECREASES→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Phenotype A (HP:0001250); Pathogenic variant in NDUFB8 (HGVS:c.YYYdel) —DISRUPTS→ NDUFB8 (HGNC:7674); NDUFB8 (HGNC:7674) —DISRUPTS→ Mitochondrial respiratory chain complex I (GO:0005746); Mitochondrial respiratory chain complex I (GO:0005746) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 32 (MONDO:0032635). Loss-of-function variants in GFER (MONDO:0013116) and NDUFB8 (mitochondrial complex I deficiency, nuclear type 32) both impair the function of mitochondrial respiratory chain complex I, leading to distinct but potentially overlapping phenotypic consequences.\n\n**How to falsify it:** Identification of pathogenic variants in either GFER or NDUFB8 that do not lead to a detectable decrease in mitochondrial complex I activity or assembly, or the absence of shared phenotypes in patients with mutations in these genes. _(variant: A pathogenic variant with a population frequency > 0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared vulnerability of mitochondrial complex I to different genetic insults can inform therapeutic strategies targeting mitochondrial dysfunction, potentially benefiting patients with either disease.\n\n---\n\n#### 5. even-plus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.433)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** GFER (HGNC:4140) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); HSPA9 (HGNC:5009) —DISRUPTS→ Mitochondrial protein folding (GO:0006510); Mitochondrial protein folding (GO:0006510) —DECREASES→ Cellular respiration (GO:0045333); Cellular respiration (GO:0045333) —LEADS_TO→ Intellectual disability (HP:0001249); Cellular respiration (GO:0045333) —LEADS_TO→ Seizures (HP:0001250). Loss-of-function mutations in GFER and HSPA9 disrupt mitochondrial protein folding, which in turn impairs cellular respiration. This cascade of events leads to the shared phenotypes of intellectual disability and seizures observed in both MONDO:0013116 and even-plus syndrome.\n\n**How to falsify it:** If pathogenic variants in GFER and HSPA9 are found to be exclusively associated with either MONDO:0013116 or even-plus syndrome, and not present in patients with the other condition, this would falsify the proposed shared mechanism. Furthermore, if genetic studies reveal distinct functional consequences of mutations in GFER and HSPA9 for each disease (e.g., one requires gain-of-function and the other loss-of-function), the proposed mechanistic overlap would be invalidated. _(variant: rs123456789)_\n\n**Why it matters:** Identifying a shared mechanistic basis involving mitochondrial protein homeostasis and cellular respiration for MONDO:0013116 and even-plus syndrome could lead to the development of targeted therapies aimed at restoring mitochondrial function or mitigating the downstream consequences of impaired respiration. This could include pharmacological interventions that stabilize mitochondrial proteins, enhance cellular respiration, or address specific metabolic deficits.\n\n---\n\n#### 6. hereditary spastic paraplegia 13  —  Tier 3 — Moderate / Emerging  (fitness 0.400)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** GFER (HGNC:4008) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Monogenic diabetes of the young (HP:0004711); HSPD1 (HGNC:4989) —DISRUPTS→ mitochondrial protein folding (GO:0006510); mitochondrial protein folding (GO:0006510) —LEADS_TO→ Spastic paraplegia (HP:0002510). Loss-of-function mutations in GFER cause MONDO:0013116 by disrupting mitochondrial protein folding, leading to pancreatic beta-cell dysfunction and diabetes. Similarly, loss-of-function mutations in HSPD1 cause hereditary spastic paraplegia 13 by disrupting mitochondrial protein folding, impacting neuronal function and leading to spasticity. The shared disruption of the mitochondrial protein folding pathway represents the mechanistic link.\n\n**How to falsify it:** Demonstration that mutations in GFER and HSPD1 do not affect the same fundamental aspects of mitochondrial protein folding, or that the downstream consequences on cellular function are entirely independent and do not converge at any pathway or process level. _(variant: Identification of common variants (AF > 1%) in GFER or HSPD1 that are associated with neither disease.)_\n\n**Why it matters:** Understanding the shared role of HSPD1 in mitochondrial protein folding for both MONDO:0013116 and hereditary spastic paraplegia 13 could reveal common therapeutic targets for improving mitochondrial function, potentially benefiting patients with either condition.\n\n---\n\n#### 7. optic atrophy 9  —  Tier 3 — Moderate / Emerging  (fitness 0.399)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** ACO2 (HGNC:28357) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —DECREASES→ Reactive Oxygen Species production (GO:0000302); Reactive Oxygen Species production (GO:0000302) —LEADS_TO→ Optic atrophy (HP:0000640); GFER (HGNC:4108) —DISRUPTS→ Mitochondrial respiration (GO:0007005); Mitochondrial respiration (GO:0007005) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213). Loss-of-function mutations in ACO2 (optic atrophy 9) and GFER (GFER-related mitochondrial disease) both impair mitochondrial respiration, leading to increased production of reactive oxygen species. This shared increase in ROS production converges on cellular damage that manifests as optic atrophy in one case and broader mitochondrial dysfunction, including optic atrophy, in the other.\n\n**How to falsify it:** Absence of increased reactive oxygen species production in patient-derived cells for either disease. _(variant: None)_\n\n**Why it matters:** Targeting mitochondrial dysfunction and oxidative stress pathways could offer therapeutic avenues for both optic atrophy 9 and GFER-related mitochondrial disease, potentially through antioxidant therapies or interventions aimed at improving mitochondrial function.\n\n---\n\n#### 8. autosomal dominant sideroblastic anemia  —  Tier 3 — Moderate / Emerging  (fitness 0.396)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** Pathogenic variant in GFER or HSPA9 —DISRUPTS→ GFER (HGNC:4180); Pathogenic variant in GFER or HSPA9 —DISRUPTS→ HSPA9 (HGNC:4892); GFER (HGNC:4180) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); HSPA9 (HGNC:4892) —DISRUPTS→ Mitochondrial protein folding (GO:0006514); Mitochondrial protein folding (GO:0006514) —LEADS_TO→ Mitochondrial dysfunction; Mitochondrial dysfunction —LEADS_TO→ Anemia (HP:0001250); Mitochondrial dysfunction —LEADS_TO→ Sideroblastic anemia (HP:0001943). Pathogenic variants in GFER or HSPA9 disrupt mitochondrial protein folding, leading to mitochondrial dysfunction, which in turn results in anemia (MONDO:0013116) and specifically sideroblastic anemia (MONDO:0008422).\n\n**How to falsify it:** Demonstration that mutations in GFER or HSPA9 exclusively cause one disease but not the other, or that the variants leading to each disease affect completely independent cellular pathways. _(variant: Presence of common variants (AF > 0.01) in GFER or HSPA9 in the general population that do not correlate with either disease.)_\n\n**Why it matters:** Understanding the shared role of GFER and HSPA9 in mitochondrial protein folding could lead to therapeutic strategies that target this pathway for both MONDO:0013116 and autosomal dominant sideroblastic anemia, potentially improving heme synthesis or red blood cell production.\n\n---\n\n#### 9. retinitis pigmentosa 99  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** IDH3G (HGNC:5595) —DISRUPTS→ Mitochondrial ATP synthesis coupled to electron transport (GO:0045333); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Retinal degeneration (HP:0000556); Mitochondrial ATP synthesis coupled to electron transport (GO:0045333) —LEADS_TO→ Optic nerve atrophy (HP:0000648). Loss-of-function mutations in IDH3G disrupt mitochondrial ATP synthesis, leading to retinal degeneration and optic nerve atrophy, which are key phenotypes in both diseases.\n\n**How to falsify it:** The identification of distinct causal genes for each disease, or evidence that IDH3G mutations in one disease lead to gain-of-function effects while in the other they lead to loss-of-function, would falsify this hypothesis. _(variant: The absence of pathogenic variants in IDH3G in large population databases like gnomAD for either disease, given the proposed LoF mechanism.)_\n\n**Why it matters:** Understanding the shared mechanism involving IDH3G and mitochondrial function could lead to therapeutic strategies targeting mitochondrial health for both retinitis pigmentosa and optic nerve atrophy-related disorders.\n\n---\n\n#### 10. combined oxidative phosphorylation deficiency 43  —  Tier 3 — Moderate / Emerging  (fitness 0.374)\n**Link type:** shared pathway (Reactome:R-HSA-1268020)\n\n**Proposed mechanism:** GFER pathogenic variant (HGNC:4160) —DISRUPTS→ Growth Factor And Regulator (HGNC:4160); Growth Factor And Regulator (HGNC:4160) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —LEADS_TO→ Mitochondrial dysfunction (HP:0001250); TIMM22 pathogenic variant (HGNC:29953) —DISRUPTS→ Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953); Translocase Of Inner Mitochondrial Membrane 22 (HGNC:29953) —DISRUPTS→ Mitochondrial protein import (GO:0006627); Mitochondrial protein import (GO:0006627) —DISRUPTS→ Mitochondrial respiratory chain complex assembly (GO:0005759); Mitochondrial respiratory chain complex assembly (GO:0005759) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017); Mitochondrial dysfunction (HP:0001250) —LEADS_TO→ Combined oxidative phosphorylation deficiency (MONDO:0030017). Loss-of-function mutations in GFER (Disease A) and TIMM22 (Disease B) both impair the crucial process of mitochondrial protein import. This disruption leads to a cascade of downstream effects, including impaired assembly of mitochondrial respiratory chain complexes and general mitochondrial dysfunction, ultimately manifesting as the distinct clinical phenotypes of the two diseases.\n\n**How to falsify it:** Demonstration that pathogenic variants in GFER and TIMM22 do not affect mitochondrial protein import or that the two genes operate in entirely separate, non-converging cellular pathways within the mitochondria. _(variant: N/A)_\n\n**Why it matters:** Identifying the shared mechanism of mitochondrial protein import dysfunction highlights potential therapeutic strategies targeting mitochondrial health that could benefit patients with either disease.\n\n---"
+}

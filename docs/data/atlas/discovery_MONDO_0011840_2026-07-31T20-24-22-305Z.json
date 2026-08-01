@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0011840",
+    "name": "MONDO:0011840"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012804",
+      "diseaseBName": "hypertrophic cardiomyopathy 12",
+      "fitness": 0.6359,
+      "tier": "Tier 2 — Strong / Probable",
+      "mechanism_chain": "CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Pulmonary hypertension (HP:0002090); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638). Loss-of-function mutations in CSRP3 disrupt sarcomere organization and maintenance, leading to distinct but related phenotypes of pulmonary hypertension (MONDO:0011840) and hypertrophic cardiomyopathy (MONDO:0012804).",
+      "mechanism_narrative": "CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Pulmonary hypertension (HP:0002090); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638). Loss-of-function mutations in CSRP3 disrupt sarcomere organization and maintenance, leading to distinct but related phenotypes of pulmonary hypertension (MONDO:0011840) and hypertrophic cardiomyopathy (MONDO:0012804).",
+      "falsification": {
+        "text": "Identification of distinct pathogenic variants in CSRP3 for each disease, with one set leading to pulmonary hypertension and the other to hypertrophic cardiomyopathy, without overlap. Alternatively, if different genes were found to be causal for each disease.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:2472"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012804",
+        "diseaseBName": "hypertrophic cardiomyopathy 12",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:2472"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6359,
+        "tier": "Tier 2 — Strong / Probable",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Pulmonary hypertension (HP:0002090); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638). Loss-of-function mutations in CSRP3 disrupt sarcomere organization and maintenance, leading to distinct but related phenotypes of pulmonary hypertension (MONDO:0011840) and hypertrophic cardiomyopathy (MONDO:0012804).",
+        "falsification": {
+          "text": "Identification of distinct pathogenic variants in CSRP3 for each disease, with one set leading to pulmonary hypertension and the other to hypertrophic cardiomyopathy, without overlap. Alternatively, if different genes were found to be causal for each disease.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of CSRP3 in sarcomere function could lead to therapeutic strategies targeting common pathways for both pulmonary hypertension and hypertrophic cardiomyopathy."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:24:22.305Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0011840 (MONDO:0011840)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hypertrophic cardiomyopathy 12 (MONDO:0012804) | shared gene | Tier 2 | 0.636 | HGNC:2472 |\n\n### CANDIDATE DETAIL\n#### 1. hypertrophic cardiomyopathy 12  —  Tier 2 — Strong / Probable  (fitness 0.636)\n**Link type:** shared causal gene (HGNC:2472)\n\n**Proposed mechanism:** CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); CSRP3 (HGNC:2472) —DISRUPTS→ Sarcomere organization and maintenance (GO:0031012); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Pulmonary hypertension (HP:0002090); Sarcomere organization and maintenance (GO:0031012) —LEADS_TO→ Hypertrophic cardiomyopathy (HP:0001638). Loss-of-function mutations in CSRP3 disrupt sarcomere organization and maintenance, leading to distinct but related phenotypes of pulmonary hypertension (MONDO:0011840) and hypertrophic cardiomyopathy (MONDO:0012804).\n\n**How to falsify it:** Identification of distinct pathogenic variants in CSRP3 for each disease, with one set leading to pulmonary hypertension and the other to hypertrophic cardiomyopathy, without overlap. Alternatively, if different genes were found to be causal for each disease. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of CSRP3 in sarcomere function could lead to therapeutic strategies targeting common pathways for both pulmonary hypertension and hypertrophic cardiomyopathy.\n\n---"
+}

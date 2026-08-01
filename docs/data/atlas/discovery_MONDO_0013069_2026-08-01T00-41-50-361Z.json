@@ -1,0 +1,407 @@
+{
+  "seed": {
+    "id": "MONDO:0013069",
+    "name": "MONDO:0013069"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 20,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0044970",
+      "diseaseBName": "mitochondrial disease",
+      "fitness": 0.7813,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "Causal variant for Disease A (e.g., in TMEM126A) (HGNC:25382) —DISRUPTS→ TMEM126A (HGNC:25382); TMEM126A (HGNC:25382) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Mitochondrial protein complex assembly (GO:0005759) —LEADS_TO→ Oxidative phosphorylation (GO:0006119); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Disease A phenotype (HP:0001910); Causal variant for Disease B (e.g., in NDUFB11) (HGNC:11062) —DISRUPTS→ NDUFB11 (HGNC:11062); NDUFB11 (HGNC:11062) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Mitochondrial disease phenotype (HP:0003198). Mutations in genes such as TMEM126A (Disease A) and NDUFB11 (Disease B), both part of the shared genetic basis, lead to defects in the assembly of mitochondrial protein complexes. This disruption impairs the oxidative phosphorylation pathway, ultimately causing the distinct phenotypes of each disease.",
+      "mechanism_narrative": "Causal variant for Disease A (e.g., in TMEM126A) (HGNC:25382) —DISRUPTS→ TMEM126A (HGNC:25382); TMEM126A (HGNC:25382) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Mitochondrial protein complex assembly (GO:0005759) —LEADS_TO→ Oxidative phosphorylation (GO:0006119); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Disease A phenotype (HP:0001910); Causal variant for Disease B (e.g., in NDUFB11) (HGNC:11062) —DISRUPTS→ NDUFB11 (HGNC:11062); NDUFB11 (HGNC:11062) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Mitochondrial disease phenotype (HP:0003198). Mutations in genes such as TMEM126A (Disease A) and NDUFB11 (Disease B), both part of the shared genetic basis, lead to defects in the assembly of mitochondrial protein complexes. This disruption impairs the oxidative phosphorylation pathway, ultimately causing the distinct phenotypes of each disease.",
+      "falsification": {
+        "text": "If pathogenic variants in HGNC:25382 (TMEM126A) or HGNC:11062 (NDUFB11) are found to be common in gnomAD (e.g., allele frequency > 1%) and are not associated with either disease, it would suggest alternative or additional causal mechanisms.",
+        "gnomad_variant": "HGNC:25382"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0044970",
+        "diseaseBName": "mitochondrial disease",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "fitness": 0.7813,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Causal variant for Disease A (e.g., in TMEM126A) (HGNC:25382) —DISRUPTS→ TMEM126A (HGNC:25382); TMEM126A (HGNC:25382) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Mitochondrial protein complex assembly (GO:0005759) —LEADS_TO→ Oxidative phosphorylation (GO:0006119); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Disease A phenotype (HP:0001910); Causal variant for Disease B (e.g., in NDUFB11) (HGNC:11062) —DISRUPTS→ NDUFB11 (HGNC:11062); NDUFB11 (HGNC:11062) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Mitochondrial disease phenotype (HP:0003198). Mutations in genes such as TMEM126A (Disease A) and NDUFB11 (Disease B), both part of the shared genetic basis, lead to defects in the assembly of mitochondrial protein complexes. This disruption impairs the oxidative phosphorylation pathway, ultimately causing the distinct phenotypes of each disease.",
+        "falsification": {
+          "text": "If pathogenic variants in HGNC:25382 (TMEM126A) or HGNC:11062 (NDUFB11) are found to be common in gnomAD (e.g., allele frequency > 1%) and are not associated with either disease, it would suggest alternative or additional causal mechanisms.",
+          "gnomad_variant": "HGNC:25382"
+        },
+        "translational": "Understanding the shared role of mitochondrial protein complex assembly and oxidative phosphorylation in both diseases could lead to the development of therapies that target these common pathways, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032609",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 4",
+      "fitness": 0.4338,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:28348) —DISRUPTS→ Mitochondrial complex I assembly (GO:0006770); Mitochondrial complex I assembly (GO:0006770) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A disrupt the proper assembly of mitochondrial complex I, leading to reduced ATP production and subsequent hypotonia and developmental delay, common phenotypes in both MONDO:0013069 and MONDO:0032609.",
+      "mechanism_narrative": "TMEM126A (HGNC:28348) —DISRUPTS→ Mitochondrial complex I assembly (GO:0006770); Mitochondrial complex I assembly (GO:0006770) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A disrupt the proper assembly of mitochondrial complex I, leading to reduced ATP production and subsequent hypotonia and developmental delay, common phenotypes in both MONDO:0013069 and MONDO:0032609.",
+      "falsification": {
+        "text": "The hypothesis would be falsified if pathogenic variants in TMEM126A were found to be absent or extremely rare in individuals diagnosed with MONDO:0013069, or if a distinct, non-overlapping molecular mechanism were identified for MONDO:0013069.",
+        "gnomad_variant": "Presence of a common benign variant in TMEM126A in gnomAD with a frequency > 1% that is implicated in either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032609",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 4",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.4338,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:28348) —DISRUPTS→ Mitochondrial complex I assembly (GO:0006770); Mitochondrial complex I assembly (GO:0006770) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A disrupt the proper assembly of mitochondrial complex I, leading to reduced ATP production and subsequent hypotonia and developmental delay, common phenotypes in both MONDO:0013069 and MONDO:0032609.",
+        "falsification": {
+          "text": "The hypothesis would be falsified if pathogenic variants in TMEM126A were found to be absent or extremely rare in individuals diagnosed with MONDO:0013069, or if a distinct, non-overlapping molecular mechanism were identified for MONDO:0013069.",
+          "gnomad_variant": "Presence of a common benign variant in TMEM126A in gnomAD with a frequency > 1% that is implicated in either disease."
+        },
+        "translational": "Understanding the shared role of TMEM126A in mitochondrial complex I assembly provides a potential therapeutic target for both disorders. Interventions aimed at improving mitochondrial function or complex I assembly could benefit patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859320",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 39",
+      "fitness": 0.4323,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:24463) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); NDUFB7 (HGNC:7931) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A (causative for MONDO:0013069) and NDUFB7 (causative for mitochondrial complex I deficiency, nuclear type 39) both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to shared phenotypes like hypotonia and global developmental delay.",
+      "mechanism_narrative": "TMEM126A (HGNC:24463) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); NDUFB7 (HGNC:7931) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A (causative for MONDO:0013069) and NDUFB7 (causative for mitochondrial complex I deficiency, nuclear type 39) both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to shared phenotypes like hypotonia and global developmental delay.",
+      "falsification": {
+        "text": "Demonstration that TMEM126A and NDUFB7 function in entirely distinct and non-interacting pathways within the cell, or that mutations in one gene do not affect the function or assembly of mitochondrial complex I.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of TMEM126A or NDUFB7 that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859320",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 39",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.4323,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:24463) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); NDUFB7 (HGNC:7931) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A (causative for MONDO:0013069) and NDUFB7 (causative for mitochondrial complex I deficiency, nuclear type 39) both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to shared phenotypes like hypotonia and global developmental delay.",
+        "falsification": {
+          "text": "Demonstration that TMEM126A and NDUFB7 function in entirely distinct and non-interacting pathways within the cell, or that mutations in one gene do not affect the function or assembly of mitochondrial complex I.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in the coding regions of TMEM126A or NDUFB7 that do not segregate with either disease."
+        },
+        "translational": "Identifying the shared mechanistic link through mitochondrial complex I dysfunction could enable the development of targeted therapies that address the core defect in both diseases, potentially improving outcomes for patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0030997",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 37",
+      "fitness": 0.391,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "Pathogenic variant in TMEM126A (HGNC:29313) —DISRUPTS→ TMEM126A (HGNC:29313); TMEM126A (HGNC:29313) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I assembly (GO:0033108) —LEADS_TO→ Mitochondrial complex I function (GO:0005957); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ MONDO:0013069 phenotype (MONDO:0013069); Pathogenic variant in NDUFA8 (HGNC:7896) —DISRUPTS→ NDUFA8 (HGNC:7896); NDUFA8 (HGNC:7896) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 37 phenotype (MONDO:0030997). Pathogenic variants in TMEM126A or NDUFA8 disrupt the mitochondrial complex I assembly pathway, leading to impaired mitochondrial complex I function and consequently the respective disease phenotypes.",
+      "mechanism_narrative": "Pathogenic variant in TMEM126A (HGNC:29313) —DISRUPTS→ TMEM126A (HGNC:29313); TMEM126A (HGNC:29313) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I assembly (GO:0033108) —LEADS_TO→ Mitochondrial complex I function (GO:0005957); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ MONDO:0013069 phenotype (MONDO:0013069); Pathogenic variant in NDUFA8 (HGNC:7896) —DISRUPTS→ NDUFA8 (HGNC:7896); NDUFA8 (HGNC:7896) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 37 phenotype (MONDO:0030997). Pathogenic variants in TMEM126A or NDUFA8 disrupt the mitochondrial complex I assembly pathway, leading to impaired mitochondrial complex I function and consequently the respective disease phenotypes.",
+      "falsification": {
+        "text": "If a patient with MONDO:0013069 carries a pathogenic variant in NDUFA8, or a patient with MONDO:0030997 carries a pathogenic variant in TMEM126A, and these variants are directly causal for the respective phenotypes, then the hypothesis of distinct causal genes would be supported, weakening the proposed shared pathway mechanism.",
+        "gnomad_variant": "N/A"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0030997",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 37",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.391,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "Pathogenic variant in TMEM126A (HGNC:29313) —DISRUPTS→ TMEM126A (HGNC:29313); TMEM126A (HGNC:29313) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I assembly (GO:0033108) —LEADS_TO→ Mitochondrial complex I function (GO:0005957); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ MONDO:0013069 phenotype (MONDO:0013069); Pathogenic variant in NDUFA8 (HGNC:7896) —DISRUPTS→ NDUFA8 (HGNC:7896); NDUFA8 (HGNC:7896) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 37 phenotype (MONDO:0030997). Pathogenic variants in TMEM126A or NDUFA8 disrupt the mitochondrial complex I assembly pathway, leading to impaired mitochondrial complex I function and consequently the respective disease phenotypes.",
+        "falsification": {
+          "text": "If a patient with MONDO:0013069 carries a pathogenic variant in NDUFA8, or a patient with MONDO:0030997 carries a pathogenic variant in TMEM126A, and these variants are directly causal for the respective phenotypes, then the hypothesis of distinct causal genes would be supported, weakening the proposed shared pathway mechanism.",
+          "gnomad_variant": "N/A"
+        },
+        "translational": "Understanding the shared role of mitochondrial complex I assembly in both diseases could pave the way for therapeutic strategies targeting mitochondrial function or assembly factors, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0026720",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 12",
+      "fitness": 0.3848,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:24207) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); NDUFA1 (HGNC:7671) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Leukodystrophy (HP:0002492). Mutations in TMEM126A and NDUFA1 both impair the assembly of mitochondrial complex I, leading to mitochondrial dysfunction and potentially leukodystrophy.",
+      "mechanism_narrative": "TMEM126A (HGNC:24207) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); NDUFA1 (HGNC:7671) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Leukodystrophy (HP:0002492). Mutations in TMEM126A and NDUFA1 both impair the assembly of mitochondrial complex I, leading to mitochondrial dysfunction and potentially leukodystrophy.",
+      "falsification": {
+        "text": "The discovery of a pathogenic variant in either TMEM126A or NDUFA1 that demonstrably does not impair mitochondrial complex I assembly or function, or the identification of distinct, non-overlapping molecular pathways for each disease.",
+        "gnomad_variant": "A pathogenic variant in TMEM126A or NDUFA1 with a minor allele frequency >0.01 in gnomAD."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0026720",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 12",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.3848,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:24207) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); NDUFA1 (HGNC:7671) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Leukodystrophy (HP:0002492). Mutations in TMEM126A and NDUFA1 both impair the assembly of mitochondrial complex I, leading to mitochondrial dysfunction and potentially leukodystrophy.",
+        "falsification": {
+          "text": "The discovery of a pathogenic variant in either TMEM126A or NDUFA1 that demonstrably does not impair mitochondrial complex I assembly or function, or the identification of distinct, non-overlapping molecular pathways for each disease.",
+          "gnomad_variant": "A pathogenic variant in TMEM126A or NDUFA1 with a minor allele frequency >0.01 in gnomAD."
+        },
+        "translational": "Understanding the shared role of mitochondrial complex I assembly in these distinct disease entities could reveal common therapeutic targets for improving mitochondrial function, potentially benefiting patients with either condition."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032630",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 26",
+      "fitness": 0.3847,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:26457) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); NDUFA9 (HGNC:7729) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); Mitochondrial electron transport chain complex I assembly and function (GO:0005746) —LEADS_TO→ Mitochondrial dysfunction (HP:0003211); Mitochondrial dysfunction (HP:0003211) —LEADS_TO→ Encephalopathy (HP:0001290). Loss-of-function mutations in TMEM126A and NDUFA9 both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to mitochondrial dysfunction and subsequent encephalopathy.",
+      "mechanism_narrative": "TMEM126A (HGNC:26457) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); NDUFA9 (HGNC:7729) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); Mitochondrial electron transport chain complex I assembly and function (GO:0005746) —LEADS_TO→ Mitochondrial dysfunction (HP:0003211); Mitochondrial dysfunction (HP:0003211) —LEADS_TO→ Encephalopathy (HP:0001290). Loss-of-function mutations in TMEM126A and NDUFA9 both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to mitochondrial dysfunction and subsequent encephalopathy.",
+      "falsification": {
+        "text": "If mutations in TMEM126A and NDUFA9 are found to affect entirely independent cellular processes unrelated to mitochondrial complex I assembly or function, or if patients with mutations in one gene do not exhibit phenotypes consistent with mitochondrial dysfunction.",
+        "gnomad_variant": "gnomAD analysis showing pathogenic variants in TMEM126A or NDUFA9 with an allele frequency significantly higher than expected for rare diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032630",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 26",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.3847,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:26457) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); NDUFA9 (HGNC:7729) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); Mitochondrial electron transport chain complex I assembly and function (GO:0005746) —LEADS_TO→ Mitochondrial dysfunction (HP:0003211); Mitochondrial dysfunction (HP:0003211) —LEADS_TO→ Encephalopathy (HP:0001290). Loss-of-function mutations in TMEM126A and NDUFA9 both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to mitochondrial dysfunction and subsequent encephalopathy.",
+        "falsification": {
+          "text": "If mutations in TMEM126A and NDUFA9 are found to affect entirely independent cellular processes unrelated to mitochondrial complex I assembly or function, or if patients with mutations in one gene do not exhibit phenotypes consistent with mitochondrial dysfunction.",
+          "gnomad_variant": "gnomAD analysis showing pathogenic variants in TMEM126A or NDUFA9 with an allele frequency significantly higher than expected for rare diseases."
+        },
+        "translational": "Understanding the shared role of TMEM126A and NDUFA9 in mitochondrial complex I function could lead to shared therapeutic strategies targeting mitochondrial health or complex I activity for patients with either MONDO:0013069 or MONDO:0032630."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0014801",
+      "diseaseBName": "even-plus syndrome",
+      "fitness": 0.3838,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:26429) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); HSPA9 (HGNC:5303) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0013069 (HP:0001250); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0014801 (HP:0001398). Loss-of-function mutations in TMEM126A and HSPA9 both impair mitochondrial protein import and assembly, leading to the distinct but related phenotypes of MONDO:0013069 and even-plus syndrome (MONDO:0014801) respectively.",
+      "mechanism_narrative": "TMEM126A (HGNC:26429) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); HSPA9 (HGNC:5303) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0013069 (HP:0001250); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0014801 (HP:0001398). Loss-of-function mutations in TMEM126A and HSPA9 both impair mitochondrial protein import and assembly, leading to the distinct but related phenotypes of MONDO:0013069 and even-plus syndrome (MONDO:0014801) respectively.",
+      "falsification": {
+        "text": "Demonstration that TMEM126A and HSPA9 function in completely independent cellular pathways with no overlap in downstream effects relevant to neuronal development.",
+        "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the coding regions of TMEM126A and HSPA9 that are not associated with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0014801",
+        "diseaseBName": "even-plus syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.3838,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:26429) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); HSPA9 (HGNC:5303) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0013069 (HP:0001250); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0014801 (HP:0001398). Loss-of-function mutations in TMEM126A and HSPA9 both impair mitochondrial protein import and assembly, leading to the distinct but related phenotypes of MONDO:0013069 and even-plus syndrome (MONDO:0014801) respectively.",
+        "falsification": {
+          "text": "Demonstration that TMEM126A and HSPA9 function in completely independent cellular pathways with no overlap in downstream effects relevant to neuronal development.",
+          "gnomad_variant": "Identification of common variants (AF > 0.01) in gnomAD within the coding regions of TMEM126A and HSPA9 that are not associated with either disease."
+        },
+        "translational": "Understanding the shared role of TMEM126A and HSPA9 in mitochondrial protein import offers a potential therapeutic target for both diseases. Modulating mitochondrial function or protein import pathways could ameliorate symptoms in both conditions."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0008422",
+      "diseaseBName": "autosomal dominant sideroblastic anemia",
+      "fitness": 0.3156,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "TMEM126A (HGNC:23390) —DISRUPTS→ Mitochondrial protein import and processing (GO:0006994); Mitochondrial protein import and processing (GO:0006994) —LEADS_TO→ Anemia (HP:0001903); HSPA9 (HGNC:5003) —DECREASES→ Heme synthesis intermediates (null); Heme synthesis intermediates (null) —LEADS_TO→ Sideroblastic anemia (HP:0011314). Mutations in TMEM126A disrupt mitochondrial protein import and processing, leading to anemia. HSPA9 mutations impair heme synthesis, causing sideroblastic anemia. Both pathways converge on the general process of erythropoiesis, impacting red blood cell production and function.",
+      "mechanism_narrative": "TMEM126A (HGNC:23390) —DISRUPTS→ Mitochondrial protein import and processing (GO:0006994); Mitochondrial protein import and processing (GO:0006994) —LEADS_TO→ Anemia (HP:0001903); HSPA9 (HGNC:5003) —DECREASES→ Heme synthesis intermediates (null); Heme synthesis intermediates (null) —LEADS_TO→ Sideroblastic anemia (HP:0011314). Mutations in TMEM126A disrupt mitochondrial protein import and processing, leading to anemia. HSPA9 mutations impair heme synthesis, causing sideroblastic anemia. Both pathways converge on the general process of erythropoiesis, impacting red blood cell production and function.",
+      "falsification": {
+        "text": "If mutations in HSPA9 are found to be causative for MONDO:0013069, or if TMEM126A mutations are found to cause sideroblastic anemia, this hypothesis would be falsified.",
+        "gnomad_variant": "Common variants in HSPA9 (e.g., >1% allele frequency in gnomAD) that do not segregate with MONDO:0013069 would challenge the proposed mechanism for disease A."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0008422",
+        "diseaseBName": "autosomal dominant sideroblastic anemia",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.3156,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:23390) —DISRUPTS→ Mitochondrial protein import and processing (GO:0006994); Mitochondrial protein import and processing (GO:0006994) —LEADS_TO→ Anemia (HP:0001903); HSPA9 (HGNC:5003) —DECREASES→ Heme synthesis intermediates (null); Heme synthesis intermediates (null) —LEADS_TO→ Sideroblastic anemia (HP:0011314). Mutations in TMEM126A disrupt mitochondrial protein import and processing, leading to anemia. HSPA9 mutations impair heme synthesis, causing sideroblastic anemia. Both pathways converge on the general process of erythropoiesis, impacting red blood cell production and function.",
+        "falsification": {
+          "text": "If mutations in HSPA9 are found to be causative for MONDO:0013069, or if TMEM126A mutations are found to cause sideroblastic anemia, this hypothesis would be falsified.",
+          "gnomad_variant": "Common variants in HSPA9 (e.g., >1% allele frequency in gnomAD) that do not segregate with MONDO:0013069 would challenge the proposed mechanism for disease A."
+        },
+        "translational": "Identifying HSPA9 as a potential shared pathway could lead to therapeutic strategies that target heme synthesis defects in both MONDO:0013069 and sideroblastic anemia, or vice versa, if TMEM126A's role in heme metabolism is further elucidated."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032626",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 22",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "TMEM16A (HGNC:23658) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); NDUFA10 (HGNC:7656) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (associated with MONDO:0013069) and NDUFA10 (associated with MONDO:0032626) both disrupt the function or assembly of Mitochondrial Complex I, leading to shared phenotypes such as encephalopathy and hypotonia.",
+      "mechanism_narrative": "TMEM16A (HGNC:23658) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); NDUFA10 (HGNC:7656) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (associated with MONDO:0013069) and NDUFA10 (associated with MONDO:0032626) both disrupt the function or assembly of Mitochondrial Complex I, leading to shared phenotypes such as encephalopathy and hypotonia.",
+      "falsification": {
+        "text": "Demonstration that mutations in TMEM126A and NDUFA10 affect entirely separate cellular pathways that do not converge on mitochondrial complex I function, or that the identified mutations result in gain-of-function effects rather than loss-of-function.",
+        "gnomad_variant": "The presence of common, population-specific variants in gnomAD in either HGNC:23658 or HGNC:7656 that do not segregate with either disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032626",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 22",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM16A (HGNC:23658) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); NDUFA10 (HGNC:7656) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (associated with MONDO:0013069) and NDUFA10 (associated with MONDO:0032626) both disrupt the function or assembly of Mitochondrial Complex I, leading to shared phenotypes such as encephalopathy and hypotonia.",
+        "falsification": {
+          "text": "Demonstration that mutations in TMEM126A and NDUFA10 affect entirely separate cellular pathways that do not converge on mitochondrial complex I function, or that the identified mutations result in gain-of-function effects rather than loss-of-function.",
+          "gnomad_variant": "The presence of common, population-specific variants in gnomAD in either HGNC:23658 or HGNC:7656 that do not segregate with either disease."
+        },
+        "translational": "Understanding the shared mechanism of mitochondrial complex I dysfunction provides a common therapeutic target for both diseases, potentially involving interventions that support mitochondrial function or complex I assembly."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0032617",
+      "diseaseBName": "mitochondrial complex I deficiency, nuclear type 11",
+      "fitness": 0.2,
+      "tier": "Tier 5 — Refuted / Biologically Incoherent",
+      "mechanism_chain": "TMEM126A (HGNC:28791) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); NDUFAB1 (HGNC:7624) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Encephalopathy (HP:0001292); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (Disease A) and NDUFAF1 (Disease B), both crucial for mitochondrial complex I assembly, lead to impaired assembly and function of complex I. This dysfunction in the electron transport chain results in cellular energy deficits, manifesting as encephalopathy and hypotonia in both conditions.",
+      "mechanism_narrative": "TMEM126A (HGNC:28791) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); NDUFAB1 (HGNC:7624) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Encephalopathy (HP:0001292); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (Disease A) and NDUFAF1 (Disease B), both crucial for mitochondrial complex I assembly, lead to impaired assembly and function of complex I. This dysfunction in the electron transport chain results in cellular energy deficits, manifesting as encephalopathy and hypotonia in both conditions.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in TMEM126A or NDUFAF1 that do not impair mitochondrial complex I assembly or lead to the observed phenotypes would falsify this hypothesis. Furthermore, if Disease A and Disease B were found to be caused by entirely distinct pathways that do not converge on mitochondrial complex I assembly, this hypothesis would be falsified.",
+        "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD in the coding regions of TMEM126A and NDUFAF1 that are not associated with these diseases."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-6799198"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-6799198": 68
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0032617",
+        "diseaseBName": "mitochondrial complex I deficiency, nuclear type 11",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-6799198"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-6799198": 68
+        },
+        "fitness": 0.2,
+        "tier": "Tier 5 — Refuted / Biologically Incoherent",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "TMEM126A (HGNC:28791) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); NDUFAB1 (HGNC:7624) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Encephalopathy (HP:0001292); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (Disease A) and NDUFAF1 (Disease B), both crucial for mitochondrial complex I assembly, lead to impaired assembly and function of complex I. This dysfunction in the electron transport chain results in cellular energy deficits, manifesting as encephalopathy and hypotonia in both conditions.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in TMEM126A or NDUFAF1 that do not impair mitochondrial complex I assembly or lead to the observed phenotypes would falsify this hypothesis. Furthermore, if Disease A and Disease B were found to be caused by entirely distinct pathways that do not converge on mitochondrial complex I assembly, this hypothesis would be falsified.",
+          "gnomad_variant": "Presence of common variants (AF > 0.01) in gnomAD in the coding regions of TMEM126A and NDUFAF1 that are not associated with these diseases."
+        },
+        "translational": "Understanding the shared reliance on mitochondrial complex I assembly provides a therapeutic target. Strategies aimed at stabilizing or enhancing complex I function could be beneficial for patients with either disease."
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T00:41:50.361Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0013069 (MONDO:0013069)\n**Generated:** 2026-08-01\n**Candidates screened:** 0 gene-neighbour(s), 20 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | mitochondrial disease (MONDO:0044970) | shared pathway | Tier 1 | 0.781 | Reactome:R-HSA-6799198 |\n| 2 | mitochondrial complex I deficiency, nuclear type 4 (MONDO:0032609) | shared pathway | Tier 3 | 0.434 | Reactome:R-HSA-6799198 |\n| 3 | mitochondrial complex I deficiency, nuclear type 39 (MONDO:0859320) | shared pathway | Tier 3 | 0.432 | Reactome:R-HSA-6799198 |\n| 4 | mitochondrial complex I deficiency, nuclear type 37 (MONDO:0030997) | shared pathway | Tier 3 | 0.391 | Reactome:R-HSA-6799198 |\n| 5 | mitochondrial complex I deficiency, nuclear type 12 (MONDO:0026720) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-6799198 |\n| 6 | mitochondrial complex I deficiency, nuclear type 26 (MONDO:0032630) | shared pathway | Tier 3 | 0.385 | Reactome:R-HSA-6799198 |\n| 7 | even-plus syndrome (MONDO:0014801) | shared pathway | Tier 3 | 0.384 | Reactome:R-HSA-6799198 |\n| 8 | autosomal dominant sideroblastic anemia (MONDO:0008422) | shared pathway | Tier 3 | 0.316 | Reactome:R-HSA-6799198 |\n| 9 | mitochondrial complex I deficiency, nuclear type 22 (MONDO:0032626) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-6799198 |\n| 10 | mitochondrial complex I deficiency, nuclear type 11 (MONDO:0032617) | shared pathway | Tier 5 | 0.200 | Reactome:R-HSA-6799198 |\n\n### CANDIDATE DETAIL\n#### 1. mitochondrial disease  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.781)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** Causal variant for Disease A (e.g., in TMEM126A) (HGNC:25382) —DISRUPTS→ TMEM126A (HGNC:25382); TMEM126A (HGNC:25382) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Mitochondrial protein complex assembly (GO:0005759) —LEADS_TO→ Oxidative phosphorylation (GO:0006119); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Disease A phenotype (HP:0001910); Causal variant for Disease B (e.g., in NDUFB11) (HGNC:11062) —DISRUPTS→ NDUFB11 (HGNC:11062); NDUFB11 (HGNC:11062) —DISRUPTS→ Mitochondrial protein complex assembly (GO:0005759); Oxidative phosphorylation (GO:0006119) —LEADS_TO→ Mitochondrial disease phenotype (HP:0003198). Mutations in genes such as TMEM126A (Disease A) and NDUFB11 (Disease B), both part of the shared genetic basis, lead to defects in the assembly of mitochondrial protein complexes. This disruption impairs the oxidative phosphorylation pathway, ultimately causing the distinct phenotypes of each disease.\n\n**How to falsify it:** If pathogenic variants in HGNC:25382 (TMEM126A) or HGNC:11062 (NDUFB11) are found to be common in gnomAD (e.g., allele frequency > 1%) and are not associated with either disease, it would suggest alternative or additional causal mechanisms. _(variant: HGNC:25382)_\n\n**Why it matters:** Understanding the shared role of mitochondrial protein complex assembly and oxidative phosphorylation in both diseases could lead to the development of therapies that target these common pathways, potentially benefiting patients with either condition.\n\n---\n\n#### 2. mitochondrial complex I deficiency, nuclear type 4  —  Tier 3 — Moderate / Emerging  (fitness 0.434)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:28348) —DISRUPTS→ Mitochondrial complex I assembly (GO:0006770); Mitochondrial complex I assembly (GO:0006770) —DECREASES→ ATP (CHEBI:15422); ATP (CHEBI:15422) —LEADS_TO→ Hypotonia (HP:0001252); ATP (CHEBI:15422) —LEADS_TO→ Developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A disrupt the proper assembly of mitochondrial complex I, leading to reduced ATP production and subsequent hypotonia and developmental delay, common phenotypes in both MONDO:0013069 and MONDO:0032609.\n\n**How to falsify it:** The hypothesis would be falsified if pathogenic variants in TMEM126A were found to be absent or extremely rare in individuals diagnosed with MONDO:0013069, or if a distinct, non-overlapping molecular mechanism were identified for MONDO:0013069. _(variant: Presence of a common benign variant in TMEM126A in gnomAD with a frequency > 1% that is implicated in either disease.)_\n\n**Why it matters:** Understanding the shared role of TMEM126A in mitochondrial complex I assembly provides a potential therapeutic target for both disorders. Interventions aimed at improving mitochondrial function or complex I assembly could benefit patients with either condition.\n\n---\n\n#### 3. mitochondrial complex I deficiency, nuclear type 39  —  Tier 3 — Moderate / Emerging  (fitness 0.432)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:24463) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); NDUFB7 (HGNC:7931) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly (GO:0005746); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252); Mitochondrial electron transport chain complex I assembly (GO:0005746) —LEADS_TO→ Global developmental delay (HP:0001263). Loss-of-function mutations in TMEM126A (causative for MONDO:0013069) and NDUFB7 (causative for mitochondrial complex I deficiency, nuclear type 39) both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to shared phenotypes like hypotonia and global developmental delay.\n\n**How to falsify it:** Demonstration that TMEM126A and NDUFB7 function in entirely distinct and non-interacting pathways within the cell, or that mutations in one gene do not affect the function or assembly of mitochondrial complex I. _(variant: Presence of common variants (AF > 0.01) in the coding regions of TMEM126A or NDUFB7 that do not segregate with either disease.)_\n\n**Why it matters:** Identifying the shared mechanistic link through mitochondrial complex I dysfunction could enable the development of targeted therapies that address the core defect in both diseases, potentially improving outcomes for patients with either condition.\n\n---\n\n#### 4. mitochondrial complex I deficiency, nuclear type 37  —  Tier 3 — Moderate / Emerging  (fitness 0.391)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** Pathogenic variant in TMEM126A (HGNC:29313) —DISRUPTS→ TMEM126A (HGNC:29313); TMEM126A (HGNC:29313) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I assembly (GO:0033108) —LEADS_TO→ Mitochondrial complex I function (GO:0005957); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ MONDO:0013069 phenotype (MONDO:0013069); Pathogenic variant in NDUFA8 (HGNC:7896) —DISRUPTS→ NDUFA8 (HGNC:7896); NDUFA8 (HGNC:7896) —DISRUPTS→ Mitochondrial complex I assembly (GO:0033108); Mitochondrial complex I function (GO:0005957) —LEADS_TO→ Mitochondrial complex I deficiency, nuclear type 37 phenotype (MONDO:0030997). Pathogenic variants in TMEM126A or NDUFA8 disrupt the mitochondrial complex I assembly pathway, leading to impaired mitochondrial complex I function and consequently the respective disease phenotypes.\n\n**How to falsify it:** If a patient with MONDO:0013069 carries a pathogenic variant in NDUFA8, or a patient with MONDO:0030997 carries a pathogenic variant in TMEM126A, and these variants are directly causal for the respective phenotypes, then the hypothesis of distinct causal genes would be supported, weakening the proposed shared pathway mechanism. _(variant: N/A)_\n\n**Why it matters:** Understanding the shared role of mitochondrial complex I assembly in both diseases could pave the way for therapeutic strategies targeting mitochondrial function or assembly factors, potentially benefiting patients with either condition.\n\n---\n\n#### 5. mitochondrial complex I deficiency, nuclear type 12  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:24207) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); NDUFA1 (HGNC:7671) —DISRUPTS→ Mitochondrial Complex I Assembly (GO:0032547); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Mitochondrial dysfunction (HP:0003213); Mitochondrial Complex I Assembly (GO:0032547) —LEADS_TO→ Leukodystrophy (HP:0002492). Mutations in TMEM126A and NDUFA1 both impair the assembly of mitochondrial complex I, leading to mitochondrial dysfunction and potentially leukodystrophy.\n\n**How to falsify it:** The discovery of a pathogenic variant in either TMEM126A or NDUFA1 that demonstrably does not impair mitochondrial complex I assembly or function, or the identification of distinct, non-overlapping molecular pathways for each disease. _(variant: A pathogenic variant in TMEM126A or NDUFA1 with a minor allele frequency >0.01 in gnomAD.)_\n\n**Why it matters:** Understanding the shared role of mitochondrial complex I assembly in these distinct disease entities could reveal common therapeutic targets for improving mitochondrial function, potentially benefiting patients with either condition.\n\n---\n\n#### 6. mitochondrial complex I deficiency, nuclear type 26  —  Tier 3 — Moderate / Emerging  (fitness 0.385)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:26457) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); NDUFA9 (HGNC:7729) —DISRUPTS→ Mitochondrial electron transport chain complex I assembly and function (GO:0005746); Mitochondrial electron transport chain complex I assembly and function (GO:0005746) —LEADS_TO→ Mitochondrial dysfunction (HP:0003211); Mitochondrial dysfunction (HP:0003211) —LEADS_TO→ Encephalopathy (HP:0001290). Loss-of-function mutations in TMEM126A and NDUFA9 both disrupt the assembly or function of mitochondrial electron transport chain complex I, leading to mitochondrial dysfunction and subsequent encephalopathy.\n\n**How to falsify it:** If mutations in TMEM126A and NDUFA9 are found to affect entirely independent cellular processes unrelated to mitochondrial complex I assembly or function, or if patients with mutations in one gene do not exhibit phenotypes consistent with mitochondrial dysfunction. _(variant: gnomAD analysis showing pathogenic variants in TMEM126A or NDUFA9 with an allele frequency significantly higher than expected for rare diseases.)_\n\n**Why it matters:** Understanding the shared role of TMEM126A and NDUFA9 in mitochondrial complex I function could lead to shared therapeutic strategies targeting mitochondrial health or complex I activity for patients with either MONDO:0013069 or MONDO:0032630.\n\n---\n\n#### 7. even-plus syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.384)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:26429) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); HSPA9 (HGNC:5303) —DISRUPTS→ Mitochondrial protein import and assembly (GO:0005739); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0013069 (HP:0001250); Mitochondrial protein import and assembly (GO:0005739) —LEADS_TO→ Phenotype of MONDO:0014801 (HP:0001398). Loss-of-function mutations in TMEM126A and HSPA9 both impair mitochondrial protein import and assembly, leading to the distinct but related phenotypes of MONDO:0013069 and even-plus syndrome (MONDO:0014801) respectively.\n\n**How to falsify it:** Demonstration that TMEM126A and HSPA9 function in completely independent cellular pathways with no overlap in downstream effects relevant to neuronal development. _(variant: Identification of common variants (AF > 0.01) in gnomAD within the coding regions of TMEM126A and HSPA9 that are not associated with either disease.)_\n\n**Why it matters:** Understanding the shared role of TMEM126A and HSPA9 in mitochondrial protein import offers a potential therapeutic target for both diseases. Modulating mitochondrial function or protein import pathways could ameliorate symptoms in both conditions.\n\n---\n\n#### 8. autosomal dominant sideroblastic anemia  —  Tier 3 — Moderate / Emerging  (fitness 0.316)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:23390) —DISRUPTS→ Mitochondrial protein import and processing (GO:0006994); Mitochondrial protein import and processing (GO:0006994) —LEADS_TO→ Anemia (HP:0001903); HSPA9 (HGNC:5003) —DECREASES→ Heme synthesis intermediates (null); Heme synthesis intermediates (null) —LEADS_TO→ Sideroblastic anemia (HP:0011314). Mutations in TMEM126A disrupt mitochondrial protein import and processing, leading to anemia. HSPA9 mutations impair heme synthesis, causing sideroblastic anemia. Both pathways converge on the general process of erythropoiesis, impacting red blood cell production and function.\n\n**How to falsify it:** If mutations in HSPA9 are found to be causative for MONDO:0013069, or if TMEM126A mutations are found to cause sideroblastic anemia, this hypothesis would be falsified. _(variant: Common variants in HSPA9 (e.g., >1% allele frequency in gnomAD) that do not segregate with MONDO:0013069 would challenge the proposed mechanism for disease A.)_\n\n**Why it matters:** Identifying HSPA9 as a potential shared pathway could lead to therapeutic strategies that target heme synthesis defects in both MONDO:0013069 and sideroblastic anemia, or vice versa, if TMEM126A's role in heme metabolism is further elucidated.\n\n---\n\n#### 9. mitochondrial complex I deficiency, nuclear type 22  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM16A (HGNC:23658) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); NDUFA10 (HGNC:7656) —DISRUPTS→ Mitochondrial Complex I (GO:0005746); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Encephalopathy (HP:0001295); Mitochondrial Complex I (GO:0005746) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (associated with MONDO:0013069) and NDUFA10 (associated with MONDO:0032626) both disrupt the function or assembly of Mitochondrial Complex I, leading to shared phenotypes such as encephalopathy and hypotonia.\n\n**How to falsify it:** Demonstration that mutations in TMEM126A and NDUFA10 affect entirely separate cellular pathways that do not converge on mitochondrial complex I function, or that the identified mutations result in gain-of-function effects rather than loss-of-function. _(variant: The presence of common, population-specific variants in gnomAD in either HGNC:23658 or HGNC:7656 that do not segregate with either disease.)_\n\n**Why it matters:** Understanding the shared mechanism of mitochondrial complex I dysfunction provides a common therapeutic target for both diseases, potentially involving interventions that support mitochondrial function or complex I assembly.\n\n---\n\n#### 10. mitochondrial complex I deficiency, nuclear type 11  —  Tier 5 — Refuted / Biologically Incoherent  (fitness 0.200)\n**Link type:** shared pathway (Reactome:R-HSA-6799198)\n\n**Proposed mechanism:** TMEM126A (HGNC:28791) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); NDUFAB1 (HGNC:7624) —DISRUPTS→ Mitochondrial complex I assembly (GO:0005759); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Encephalopathy (HP:0001292); Mitochondrial complex I assembly (GO:0005759) —LEADS_TO→ Hypotonia (HP:0001252). Loss-of-function mutations in TMEM126A (Disease A) and NDUFAF1 (Disease B), both crucial for mitochondrial complex I assembly, lead to impaired assembly and function of complex I. This dysfunction in the electron transport chain results in cellular energy deficits, manifesting as encephalopathy and hypotonia in both conditions.\n\n**How to falsify it:** The identification of pathogenic variants in TMEM126A or NDUFAF1 that do not impair mitochondrial complex I assembly or lead to the observed phenotypes would falsify this hypothesis. Furthermore, if Disease A and Disease B were found to be caused by entirely distinct pathways that do not converge on mitochondrial complex I assembly, this hypothesis would be falsified. _(variant: Presence of common variants (AF > 0.01) in gnomAD in the coding regions of TMEM126A and NDUFAF1 that are not associated with these diseases.)_\n\n**Why it matters:** Understanding the shared reliance on mitochondrial complex I assembly provides a therapeutic target. Strategies aimed at stabilizing or enhancing complex I function could be beneficial for patients with either disease.\n\n---"
+}

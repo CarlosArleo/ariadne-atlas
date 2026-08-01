@@ -1,0 +1,127 @@
+{
+  "seed": {
+    "id": "MONDO:0012928",
+    "name": "MONDO:0012928"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 3,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0013772",
+      "diseaseBName": "Huppke-Brendel syndrome",
+      "fitness": 0.7319,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "SLC33A1 (HGNC:95) —DISRUPTS→ Cellular proteostasis (GO:0042127); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurodegeneration (HP:0002375); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurological abnormalities (HP:0000707). Loss-of-function mutations in SLC33A1 impair cellular proteostasis, leading to the shared phenotypes of neurodegeneration and neurological abnormalities in both diseases.",
+      "mechanism_narrative": "SLC33A1 (HGNC:95) —DISRUPTS→ Cellular proteostasis (GO:0042127); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurodegeneration (HP:0002375); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurological abnormalities (HP:0000707). Loss-of-function mutations in SLC33A1 impair cellular proteostasis, leading to the shared phenotypes of neurodegeneration and neurological abnormalities in both diseases.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in SLC33A1 with a gain-of-function mechanism for either disease would falsify this hypothesis. Additionally, the absence of neurodegeneration or neurological abnormalities in individuals with confirmed biallelic loss-of-function SLC33A1 variants would also be falsifying.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:95"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0013772",
+        "diseaseBName": "Huppke-Brendel syndrome",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:95"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7319,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "SLC33A1 (HGNC:95) —DISRUPTS→ Cellular proteostasis (GO:0042127); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurodegeneration (HP:0002375); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurological abnormalities (HP:0000707). Loss-of-function mutations in SLC33A1 impair cellular proteostasis, leading to the shared phenotypes of neurodegeneration and neurological abnormalities in both diseases.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in SLC33A1 with a gain-of-function mechanism for either disease would falsify this hypothesis. Additionally, the absence of neurodegeneration or neurological abnormalities in individuals with confirmed biallelic loss-of-function SLC33A1 variants would also be falsifying.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the role of SLC33A1 in proteostasis provides a potential therapeutic target for both rare diseases, aiming to restore proper protein homeostasis."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0033546",
+      "diseaseBName": "neurodegeneration, infantile-onset, biotin-responsive",
+      "fitness": 0.4493,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC33A1 (HGNC:11778) —DISRUPTS→ lysosomal transport of small molecules (GO:0005956); lysosomal transport of small molecules (GO:0005956) —LEADS_TO→ Intellectual disability (HP:0001249); SLC5A6 (HGNC:10963) —DISRUPTS→ biotin transport (GO:0015893); biotin transport (GO:0015893) —DECREASES→ biotin (CHEBI:17587); biotin (CHEBI:17587) —DISRUPTS→ biotinidase activity (GO:0004557); biotinidase activity (GO:0004557) —LEADS_TO→ Seizures (HP:0001250); biotinidase activity (GO:0004557) —LEADS_TO→ Neurodegeneration (HP:0002069). Loss-of-function mutations in SLC33A1 disrupt lysosomal transport, leading to intellectual disability (Disease A). Concurrently, loss-of-function mutations in SLC5A6 disrupt biotin transport and subsequently biotinidase activity, resulting in biotin deficiency, which causes seizures and neurodegeneration (Disease B). The convergence is on the biotin metabolic pathway and its downstream neurological consequences.",
+      "mechanism_narrative": "SLC33A1 (HGNC:11778) —DISRUPTS→ lysosomal transport of small molecules (GO:0005956); lysosomal transport of small molecules (GO:0005956) —LEADS_TO→ Intellectual disability (HP:0001249); SLC5A6 (HGNC:10963) —DISRUPTS→ biotin transport (GO:0015893); biotin transport (GO:0015893) —DECREASES→ biotin (CHEBI:17587); biotin (CHEBI:17587) —DISRUPTS→ biotinidase activity (GO:0004557); biotinidase activity (GO:0004557) —LEADS_TO→ Seizures (HP:0001250); biotinidase activity (GO:0004557) —LEADS_TO→ Neurodegeneration (HP:0002069). Loss-of-function mutations in SLC33A1 disrupt lysosomal transport, leading to intellectual disability (Disease A). Concurrently, loss-of-function mutations in SLC5A6 disrupt biotin transport and subsequently biotinidase activity, resulting in biotin deficiency, which causes seizures and neurodegeneration (Disease B). The convergence is on the biotin metabolic pathway and its downstream neurological consequences.",
+      "falsification": {
+        "text": "Demonstration of distinct molecular pathways or lack of phenotypic overlap in genetically stratified cohorts.",
+        "gnomad_variant": "Identification of common pathogenic variants in SLC5A6 (e.g., >1% allele frequency in gnomAD) that do not segregate with infantile-onset biotin-responsive neurodegeneration."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-425397"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-425397": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0033546",
+        "diseaseBName": "neurodegeneration, infantile-onset, biotin-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-425397"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-425397": 3
+        },
+        "fitness": 0.4493,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC33A1 (HGNC:11778) —DISRUPTS→ lysosomal transport of small molecules (GO:0005956); lysosomal transport of small molecules (GO:0005956) —LEADS_TO→ Intellectual disability (HP:0001249); SLC5A6 (HGNC:10963) —DISRUPTS→ biotin transport (GO:0015893); biotin transport (GO:0015893) —DECREASES→ biotin (CHEBI:17587); biotin (CHEBI:17587) —DISRUPTS→ biotinidase activity (GO:0004557); biotinidase activity (GO:0004557) —LEADS_TO→ Seizures (HP:0001250); biotinidase activity (GO:0004557) —LEADS_TO→ Neurodegeneration (HP:0002069). Loss-of-function mutations in SLC33A1 disrupt lysosomal transport, leading to intellectual disability (Disease A). Concurrently, loss-of-function mutations in SLC5A6 disrupt biotin transport and subsequently biotinidase activity, resulting in biotin deficiency, which causes seizures and neurodegeneration (Disease B). The convergence is on the biotin metabolic pathway and its downstream neurological consequences.",
+        "falsification": {
+          "text": "Demonstration of distinct molecular pathways or lack of phenotypic overlap in genetically stratified cohorts.",
+          "gnomad_variant": "Identification of common pathogenic variants in SLC5A6 (e.g., >1% allele frequency in gnomAD) that do not segregate with infantile-onset biotin-responsive neurodegeneration."
+        },
+        "translational": "Identifying the shared dependence on biotin metabolism and transport highlights potential therapeutic strategies for both conditions, such as biotin supplementation or interventions targeting related metabolic pathways."
+      }
+    },
+    {
+      "diseaseB": "MONDO:0859255",
+      "diseaseBName": "peripheral motor neuropathy, childhood-onset, biotin-responsive",
+      "fitness": 0.3939,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "SLC33A1 (HGNC:14439) —LEADS_TO→ Hereditary spastic paraplegia 31 (HP:0001725); SLC5A6 (HGNC:10931) —DISRUPTS→ Biotin transport and metabolism (GO:0006700); Biotin transport and metabolism (GO:0006700) —DECREASES→ Biotin (CHEBI:17587); Biotin (CHEBI:17587) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset, biotin-responsive (HP:0007027); SLC5A6 (HGNC:10931) —LEADS_TO→ Biotin transport and metabolism (GO:0006700). Loss-of-function mutations in SLC33A1 cause Hereditary spastic paraplegia 31. Separately, loss-of-function mutations in SLC5A6 disrupt the biotin transport pathway, leading to decreased biotin availability and consequently peripheral motor neuropathy, childhood-onset, biotin-responsive. The convergence occurs at the level of biotin metabolism, impacting cellular processes crucial for neurological function in both diseases.",
+      "mechanism_narrative": "SLC33A1 (HGNC:14439) —LEADS_TO→ Hereditary spastic paraplegia 31 (HP:0001725); SLC5A6 (HGNC:10931) —DISRUPTS→ Biotin transport and metabolism (GO:0006700); Biotin transport and metabolism (GO:0006700) —DECREASES→ Biotin (CHEBI:17587); Biotin (CHEBI:17587) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset, biotin-responsive (HP:0007027); SLC5A6 (HGNC:10931) —LEADS_TO→ Biotin transport and metabolism (GO:0006700). Loss-of-function mutations in SLC33A1 cause Hereditary spastic paraplegia 31. Separately, loss-of-function mutations in SLC5A6 disrupt the biotin transport pathway, leading to decreased biotin availability and consequently peripheral motor neuropathy, childhood-onset, biotin-responsive. The convergence occurs at the level of biotin metabolism, impacting cellular processes crucial for neurological function in both diseases.",
+      "falsification": {
+        "text": "The discovery of a patient with MONDO:0012928 who exhibits a clear gain-of-function mutation in SLC33A1, or a patient with MONDO:0859255 with a gain-of-function mutation in SLC5A6, would falsify this hypothesis. Additionally, if studies demonstrate that the biotin transport pathway is entirely unrelated to the pathogenesis of MONDO:0012928, this hypothesis would be falsified.",
+        "gnomad_variant": "Any common variant (AF > 0.01) in SLC5A6 associated with loss-of-function in gnomAD would weaken the hypothesis for MONDO:0859255 if it did not segregate with the disease."
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-425397"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-425397": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0859255",
+        "diseaseBName": "peripheral motor neuropathy, childhood-onset, biotin-responsive",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-425397"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-425397": 3
+        },
+        "fitness": 0.3939,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "SLC33A1 (HGNC:14439) —LEADS_TO→ Hereditary spastic paraplegia 31 (HP:0001725); SLC5A6 (HGNC:10931) —DISRUPTS→ Biotin transport and metabolism (GO:0006700); Biotin transport and metabolism (GO:0006700) —DECREASES→ Biotin (CHEBI:17587); Biotin (CHEBI:17587) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset, biotin-responsive (HP:0007027); SLC5A6 (HGNC:10931) —LEADS_TO→ Biotin transport and metabolism (GO:0006700). Loss-of-function mutations in SLC33A1 cause Hereditary spastic paraplegia 31. Separately, loss-of-function mutations in SLC5A6 disrupt the biotin transport pathway, leading to decreased biotin availability and consequently peripheral motor neuropathy, childhood-onset, biotin-responsive. The convergence occurs at the level of biotin metabolism, impacting cellular processes crucial for neurological function in both diseases.",
+        "falsification": {
+          "text": "The discovery of a patient with MONDO:0012928 who exhibits a clear gain-of-function mutation in SLC33A1, or a patient with MONDO:0859255 with a gain-of-function mutation in SLC5A6, would falsify this hypothesis. Additionally, if studies demonstrate that the biotin transport pathway is entirely unrelated to the pathogenesis of MONDO:0012928, this hypothesis would be falsified.",
+          "gnomad_variant": "Any common variant (AF > 0.01) in SLC5A6 associated with loss-of-function in gnomAD would weaken the hypothesis for MONDO:0859255 if it did not segregate with the disease."
+        },
+        "translational": "Identifying the shared role of biotin metabolism in these distinct neurological disorders opens avenues for therapeutic intervention. If MONDO:0012928 is found to be indirectly responsive to biotin supplementation, it could lead to novel treatment strategies for a previously untreatable condition. Conversely, understanding the broader cellular consequences of SLC33A1 dysfunction could inform treatments for other neurodegenerative disorders."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T23:34:23.970Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012928 (MONDO:0012928)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 3 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Huppke-Brendel syndrome (MONDO:0013772) | shared gene | Tier 1 | 0.732 | HGNC:95 |\n| 2 | neurodegeneration, infantile-onset, biotin-responsive (MONDO:0033546) | shared pathway | Tier 3 | 0.449 | Reactome:R-HSA-425397 |\n| 3 | peripheral motor neuropathy, childhood-onset, biotin-responsive (MONDO:0859255) | shared pathway | Tier 3 | 0.394 | Reactome:R-HSA-425397 |\n\n### CANDIDATE DETAIL\n#### 1. Huppke-Brendel syndrome  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.732)\n**Link type:** shared causal gene (HGNC:95)\n\n**Proposed mechanism:** SLC33A1 (HGNC:95) —DISRUPTS→ Cellular proteostasis (GO:0042127); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurodegeneration (HP:0002375); Cellular proteostasis (GO:0042127) —LEADS_TO→ Neurological abnormalities (HP:0000707). Loss-of-function mutations in SLC33A1 impair cellular proteostasis, leading to the shared phenotypes of neurodegeneration and neurological abnormalities in both diseases.\n\n**How to falsify it:** The identification of pathogenic variants in SLC33A1 with a gain-of-function mechanism for either disease would falsify this hypothesis. Additionally, the absence of neurodegeneration or neurological abnormalities in individuals with confirmed biallelic loss-of-function SLC33A1 variants would also be falsifying. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the role of SLC33A1 in proteostasis provides a potential therapeutic target for both rare diseases, aiming to restore proper protein homeostasis.\n\n---\n\n#### 2. neurodegeneration, infantile-onset, biotin-responsive  —  Tier 3 — Moderate / Emerging  (fitness 0.449)\n**Link type:** shared pathway (Reactome:R-HSA-425397)\n\n**Proposed mechanism:** SLC33A1 (HGNC:11778) —DISRUPTS→ lysosomal transport of small molecules (GO:0005956); lysosomal transport of small molecules (GO:0005956) —LEADS_TO→ Intellectual disability (HP:0001249); SLC5A6 (HGNC:10963) —DISRUPTS→ biotin transport (GO:0015893); biotin transport (GO:0015893) —DECREASES→ biotin (CHEBI:17587); biotin (CHEBI:17587) —DISRUPTS→ biotinidase activity (GO:0004557); biotinidase activity (GO:0004557) —LEADS_TO→ Seizures (HP:0001250); biotinidase activity (GO:0004557) —LEADS_TO→ Neurodegeneration (HP:0002069). Loss-of-function mutations in SLC33A1 disrupt lysosomal transport, leading to intellectual disability (Disease A). Concurrently, loss-of-function mutations in SLC5A6 disrupt biotin transport and subsequently biotinidase activity, resulting in biotin deficiency, which causes seizures and neurodegeneration (Disease B). The convergence is on the biotin metabolic pathway and its downstream neurological consequences.\n\n**How to falsify it:** Demonstration of distinct molecular pathways or lack of phenotypic overlap in genetically stratified cohorts. _(variant: Identification of common pathogenic variants in SLC5A6 (e.g., >1% allele frequency in gnomAD) that do not segregate with infantile-onset biotin-responsive neurodegeneration.)_\n\n**Why it matters:** Identifying the shared dependence on biotin metabolism and transport highlights potential therapeutic strategies for both conditions, such as biotin supplementation or interventions targeting related metabolic pathways.\n\n---\n\n#### 3. peripheral motor neuropathy, childhood-onset, biotin-responsive  —  Tier 3 — Moderate / Emerging  (fitness 0.394)\n**Link type:** shared pathway (Reactome:R-HSA-425397)\n\n**Proposed mechanism:** SLC33A1 (HGNC:14439) —LEADS_TO→ Hereditary spastic paraplegia 31 (HP:0001725); SLC5A6 (HGNC:10931) —DISRUPTS→ Biotin transport and metabolism (GO:0006700); Biotin transport and metabolism (GO:0006700) —DECREASES→ Biotin (CHEBI:17587); Biotin (CHEBI:17587) —LEADS_TO→ Peripheral motor neuropathy, childhood-onset, biotin-responsive (HP:0007027); SLC5A6 (HGNC:10931) —LEADS_TO→ Biotin transport and metabolism (GO:0006700). Loss-of-function mutations in SLC33A1 cause Hereditary spastic paraplegia 31. Separately, loss-of-function mutations in SLC5A6 disrupt the biotin transport pathway, leading to decreased biotin availability and consequently peripheral motor neuropathy, childhood-onset, biotin-responsive. The convergence occurs at the level of biotin metabolism, impacting cellular processes crucial for neurological function in both diseases.\n\n**How to falsify it:** The discovery of a patient with MONDO:0012928 who exhibits a clear gain-of-function mutation in SLC33A1, or a patient with MONDO:0859255 with a gain-of-function mutation in SLC5A6, would falsify this hypothesis. Additionally, if studies demonstrate that the biotin transport pathway is entirely unrelated to the pathogenesis of MONDO:0012928, this hypothesis would be falsified. _(variant: Any common variant (AF > 0.01) in SLC5A6 associated with loss-of-function in gnomAD would weaken the hypothesis for MONDO:0859255 if it did not segregate with the disease.)_\n\n**Why it matters:** Identifying the shared role of biotin metabolism in these distinct neurological disorders opens avenues for therapeutic intervention. If MONDO:0012928 is found to be indirectly responsive to biotin supplementation, it could lead to novel treatment strategies for a previously untreatable condition. Conversely, understanding the broader cellular consequences of SLC33A1 dysfunction could inform treatments for other neurodegenerative disorders.\n\n---"
+}

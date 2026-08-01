@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0012588",
+    "name": "MONDO:0012588"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0014515",
+      "diseaseBName": "macular dystrophy with central cone involvement",
+      "fitness": 0.7168,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "MFSD8 (HGNC:28486) —DISRUPTS→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Abnormal lysosomal morphology (HP:0030184); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Cone dysfunction (HP:0011244); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Macular dystrophy (HP:0000583). Loss-of-function mutations in MFSD8 disrupt lysosomal trafficking and function, leading to a shared underlying phenotype of abnormal lysosomal morphology. This disruption subsequently manifests as distinct but related retinal phenotypes, including cone dysfunction and macular dystrophy, thus linking the two diseases.",
+      "mechanism_narrative": "MFSD8 (HGNC:28486) —DISRUPTS→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Abnormal lysosomal morphology (HP:0030184); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Cone dysfunction (HP:0011244); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Macular dystrophy (HP:0000583). Loss-of-function mutations in MFSD8 disrupt lysosomal trafficking and function, leading to a shared underlying phenotype of abnormal lysosomal morphology. This disruption subsequently manifests as distinct but related retinal phenotypes, including cone dysfunction and macular dystrophy, thus linking the two diseases.",
+      "falsification": {
+        "text": "Identification of individuals with loss-of-function variants in MFSD8 who do not exhibit either MONDO:0012588 or macular dystrophy with central cone involvement (MONDO:0014515), or identification of a distinct causal gene for one of the diseases not related to lysosomal function.",
+        "gnomad_variant": "Exclusion of pathogenic variants in MFSD8 from gnomAD databases at a frequency that would preclude its role as a rare disease gene."
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:28486"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0014515",
+        "diseaseBName": "macular dystrophy with central cone involvement",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:28486"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7168,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "MFSD8 (HGNC:28486) —DISRUPTS→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Abnormal lysosomal morphology (HP:0030184); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Cone dysfunction (HP:0011244); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Macular dystrophy (HP:0000583). Loss-of-function mutations in MFSD8 disrupt lysosomal trafficking and function, leading to a shared underlying phenotype of abnormal lysosomal morphology. This disruption subsequently manifests as distinct but related retinal phenotypes, including cone dysfunction and macular dystrophy, thus linking the two diseases.",
+        "falsification": {
+          "text": "Identification of individuals with loss-of-function variants in MFSD8 who do not exhibit either MONDO:0012588 or macular dystrophy with central cone involvement (MONDO:0014515), or identification of a distinct causal gene for one of the diseases not related to lysosomal function.",
+          "gnomad_variant": "Exclusion of pathogenic variants in MFSD8 from gnomAD databases at a frequency that would preclude its role as a rare disease gene."
+        },
+        "translational": "Understanding the shared role of MFSD8 in lysosomal function and retinal health could lead to therapeutic strategies targeting lysosomal pathways for both diseases, potentially improving vision in affected individuals."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:52:20.857Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012588 (MONDO:0012588)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | macular dystrophy with central cone involvement (MONDO:0014515) | shared gene | Tier 1 | 0.717 | HGNC:28486 |\n\n### CANDIDATE DETAIL\n#### 1. macular dystrophy with central cone involvement  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.717)\n**Link type:** shared causal gene (HGNC:28486)\n\n**Proposed mechanism:** MFSD8 (HGNC:28486) —DISRUPTS→ Lysosomal trafficking and function (GO:0005741); Lysosomal trafficking and function (GO:0005741) —LEADS_TO→ Abnormal lysosomal morphology (HP:0030184); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Cone dysfunction (HP:0011244); Abnormal lysosomal morphology (HP:0030184) —LEADS_TO→ Macular dystrophy (HP:0000583). Loss-of-function mutations in MFSD8 disrupt lysosomal trafficking and function, leading to a shared underlying phenotype of abnormal lysosomal morphology. This disruption subsequently manifests as distinct but related retinal phenotypes, including cone dysfunction and macular dystrophy, thus linking the two diseases.\n\n**How to falsify it:** Identification of individuals with loss-of-function variants in MFSD8 who do not exhibit either MONDO:0012588 or macular dystrophy with central cone involvement (MONDO:0014515), or identification of a distinct causal gene for one of the diseases not related to lysosomal function. _(variant: Exclusion of pathogenic variants in MFSD8 from gnomAD databases at a frequency that would preclude its role as a rare disease gene.)_\n\n**Why it matters:** Understanding the shared role of MFSD8 in lysosomal function and retinal health could lead to therapeutic strategies targeting lysosomal pathways for both diseases, potentially improving vision in affected individuals.\n\n---"
+}

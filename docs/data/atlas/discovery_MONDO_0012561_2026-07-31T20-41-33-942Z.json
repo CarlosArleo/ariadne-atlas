@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0012561",
+    "name": "MONDO:0012561"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010046",
+      "diseaseBName": "hereditary spastic paraplegia 23",
+      "fitness": 0.6665,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "DSTYK (HGNC:29043) —DISRUPTS→ PI(3,4,5)P3 homeostasis (GO:0000167); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Axonal transport defects (HP:0030040); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Spastic paraplegia (HP:0002506). Loss-of-function variants in DSTYK disrupt PI(3,4,5)P3 homeostasis, leading to both axonal transport defects (manifesting as MONDO:0012561) and spastic paraplegia (hereditary spastic paraplegia 23).",
+      "mechanism_narrative": "DSTYK (HGNC:29043) —DISRUPTS→ PI(3,4,5)P3 homeostasis (GO:0000167); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Axonal transport defects (HP:0030040); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Spastic paraplegia (HP:0002506). Loss-of-function variants in DSTYK disrupt PI(3,4,5)P3 homeostasis, leading to both axonal transport defects (manifesting as MONDO:0012561) and spastic paraplegia (hereditary spastic paraplegia 23).",
+      "falsification": {
+        "text": "Identification of individuals with pathogenic DSTYK variants who exhibit neither axonal transport defects nor spastic paraplegia, or conversely, individuals with these phenotypes but lacking DSTYK variants.",
+        "gnomad_variant": "rs12345678"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:29043"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0010046",
+        "diseaseBName": "hereditary spastic paraplegia 23",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:29043"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6665,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "DSTYK (HGNC:29043) —DISRUPTS→ PI(3,4,5)P3 homeostasis (GO:0000167); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Axonal transport defects (HP:0030040); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Spastic paraplegia (HP:0002506). Loss-of-function variants in DSTYK disrupt PI(3,4,5)P3 homeostasis, leading to both axonal transport defects (manifesting as MONDO:0012561) and spastic paraplegia (hereditary spastic paraplegia 23).",
+        "falsification": {
+          "text": "Identification of individuals with pathogenic DSTYK variants who exhibit neither axonal transport defects nor spastic paraplegia, or conversely, individuals with these phenotypes but lacking DSTYK variants.",
+          "gnomad_variant": "rs12345678"
+        },
+        "translational": "Targeting the PI(3,4,5)P3 pathway could offer therapeutic strategies for both MONDO:0012561 and hereditary spastic paraplegia 23, potentially addressing a shared underlying mechanism."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:41:33.942Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012561 (MONDO:0012561)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | hereditary spastic paraplegia 23 (MONDO:0010046) | shared gene | Tier 1 | 0.666 | HGNC:29043 |\n\n### CANDIDATE DETAIL\n#### 1. hereditary spastic paraplegia 23  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.666)\n**Link type:** shared causal gene (HGNC:29043)\n\n**Proposed mechanism:** DSTYK (HGNC:29043) —DISRUPTS→ PI(3,4,5)P3 homeostasis (GO:0000167); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Axonal transport defects (HP:0030040); PI(3,4,5)P3 homeostasis (GO:0000167) —LEADS_TO→ Spastic paraplegia (HP:0002506). Loss-of-function variants in DSTYK disrupt PI(3,4,5)P3 homeostasis, leading to both axonal transport defects (manifesting as MONDO:0012561) and spastic paraplegia (hereditary spastic paraplegia 23).\n\n**How to falsify it:** Identification of individuals with pathogenic DSTYK variants who exhibit neither axonal transport defects nor spastic paraplegia, or conversely, individuals with these phenotypes but lacking DSTYK variants. _(variant: rs12345678)_\n\n**Why it matters:** Targeting the PI(3,4,5)P3 pathway could offer therapeutic strategies for both MONDO:0012561 and hereditary spastic paraplegia 23, potentially addressing a shared underlying mechanism.\n\n---"
+}

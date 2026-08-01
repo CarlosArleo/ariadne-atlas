@@ -1,0 +1,53 @@
+{
+  "seed": {
+    "id": "MONDO:0012670",
+    "name": "MONDO:0012670"
+  },
+  "geneCandidates": 0,
+  "pathwayCandidates": 1,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0010379",
+      "diseaseBName": "Brunner syndrome",
+      "fitness": 0.3629,
+      "tier": "Tier 3 — Moderate / Emerging",
+      "mechanism_chain": "MAOA (HGNC:6877) —DISRUPTS→ monoamine oxidase activity (GO:0004629); monoamine oxidase activity (GO:0004629) —DECREASES→ monoamine neurotransmitters (CHEBI:26512); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ intellectual disability (HP:0001249); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ behavioral abnormalities (HP:0000705). Loss-of-function mutations in MAOA disrupt monoamine oxidase activity, leading to altered levels of monoamine neurotransmitters. This dysregulation is hypothesized to contribute to intellectual disability and behavioral abnormalities observed in both diseases.",
+      "mechanism_narrative": "MAOA (HGNC:6877) —DISRUPTS→ monoamine oxidase activity (GO:0004629); monoamine oxidase activity (GO:0004629) —DECREASES→ monoamine neurotransmitters (CHEBI:26512); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ intellectual disability (HP:0001249); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ behavioral abnormalities (HP:0000705). Loss-of-function mutations in MAOA disrupt monoamine oxidase activity, leading to altered levels of monoamine neurotransmitters. This dysregulation is hypothesized to contribute to intellectual disability and behavioral abnormalities observed in both diseases.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in MAOA with a dominant-negative effect or variants with a minor allele frequency >1% in gnomAD for the specific population associated with disease A would falsify this hypothesis.",
+        "gnomad_variant": "rs1799835"
+      },
+      "sharedPathways": [
+        "Reactome:R-HSA-379397"
+      ],
+      "sharedPathwaySizes": {
+        "Reactome:R-HSA-379397": 3
+      },
+      "sharedGenes": [],
+      "raw": {
+        "diseaseB": "MONDO:0010379",
+        "diseaseBName": "Brunner syndrome",
+        "neighbour_type": "shared_pathway",
+        "sharedGenes": [],
+        "sharedPathways": [
+          "Reactome:R-HSA-379397"
+        ],
+        "sharedPathwaySizes": {
+          "Reactome:R-HSA-379397": 3
+        },
+        "fitness": 0.3629,
+        "tier": "Tier 3 — Moderate / Emerging",
+        "overlap_class": "DISEASE_MODULE_OVERLAP",
+        "mechanism_chain": "MAOA (HGNC:6877) —DISRUPTS→ monoamine oxidase activity (GO:0004629); monoamine oxidase activity (GO:0004629) —DECREASES→ monoamine neurotransmitters (CHEBI:26512); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ intellectual disability (HP:0001249); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ behavioral abnormalities (HP:0000705). Loss-of-function mutations in MAOA disrupt monoamine oxidase activity, leading to altered levels of monoamine neurotransmitters. This dysregulation is hypothesized to contribute to intellectual disability and behavioral abnormalities observed in both diseases.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in MAOA with a dominant-negative effect or variants with a minor allele frequency >1% in gnomAD for the specific population associated with disease A would falsify this hypothesis.",
+          "gnomad_variant": "rs1799835"
+        },
+        "translational": "Understanding the shared MAOA-mediated pathway could lead to novel therapeutic strategies targeting neurotransmitter imbalances for both Brunner syndrome and the other rare disease, potentially through monoamine oxidase inhibitors or other neuromodulatory approaches."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T21:31:26.004Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012670 (MONDO:0012670)\n**Generated:** 2026-07-31\n**Candidates screened:** 0 gene-neighbour(s), 1 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | Brunner syndrome (MONDO:0010379) | shared pathway | Tier 3 | 0.363 | Reactome:R-HSA-379397 |\n\n### CANDIDATE DETAIL\n#### 1. Brunner syndrome  —  Tier 3 — Moderate / Emerging  (fitness 0.363)\n**Link type:** shared pathway (Reactome:R-HSA-379397)\n\n**Proposed mechanism:** MAOA (HGNC:6877) —DISRUPTS→ monoamine oxidase activity (GO:0004629); monoamine oxidase activity (GO:0004629) —DECREASES→ monoamine neurotransmitters (CHEBI:26512); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ intellectual disability (HP:0001249); monoamine neurotransmitters (CHEBI:26512) —LEADS_TO→ behavioral abnormalities (HP:0000705). Loss-of-function mutations in MAOA disrupt monoamine oxidase activity, leading to altered levels of monoamine neurotransmitters. This dysregulation is hypothesized to contribute to intellectual disability and behavioral abnormalities observed in both diseases.\n\n**How to falsify it:** Identification of pathogenic variants in MAOA with a dominant-negative effect or variants with a minor allele frequency >1% in gnomAD for the specific population associated with disease A would falsify this hypothesis. _(variant: rs1799835)_\n\n**Why it matters:** Understanding the shared MAOA-mediated pathway could lead to novel therapeutic strategies targeting neurotransmitter imbalances for both Brunner syndrome and the other rare disease, potentially through monoamine oxidase inhibitors or other neuromodulatory approaches.\n\n---"
+}

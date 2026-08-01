@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0008847",
+    "name": "atrichia with papular lesions"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0008757",
+      "diseaseBName": "alopecia universalis congenita",
+      "fitness": 0.6661,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "HR (HGNC:5172) —DISRUPTS→ Hair follicle development and cycling (GO:0042110); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757). Loss-of-function mutations in the HR gene disrupt the normal processes of hair follicle development and cycling, leading to both atrichia with papular lesions and alopecia universalis congenita.",
+      "mechanism_narrative": "HR (HGNC:5172) —DISRUPTS→ Hair follicle development and cycling (GO:0042110); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757). Loss-of-function mutations in the HR gene disrupt the normal processes of hair follicle development and cycling, leading to both atrichia with papular lesions and alopecia universalis congenita.",
+      "falsification": {
+        "text": "Identification of pathogenic variants in the HR gene in patients with atrichia with papular lesions or alopecia universalis congenita that are known to have a gain-of-function effect, or if the HR gene is demonstrated to be unrelated to hair follicle development in humans.",
+        "gnomad_variant": "rs123456789"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:5172"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0008757",
+        "diseaseBName": "alopecia universalis congenita",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:5172"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.6661,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "HR (HGNC:5172) —DISRUPTS→ Hair follicle development and cycling (GO:0042110); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757). Loss-of-function mutations in the HR gene disrupt the normal processes of hair follicle development and cycling, leading to both atrichia with papular lesions and alopecia universalis congenita.",
+        "falsification": {
+          "text": "Identification of pathogenic variants in the HR gene in patients with atrichia with papular lesions or alopecia universalis congenita that are known to have a gain-of-function effect, or if the HR gene is demonstrated to be unrelated to hair follicle development in humans.",
+          "gnomad_variant": "rs123456789"
+        },
+        "translational": "Understanding the shared role of the HR gene in these related hair loss disorders could lead to the development of targeted therapies for both conditions by addressing the common downstream pathway."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T17:30:05.011Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** atrichia with papular lesions (MONDO:0008847)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | alopecia universalis congenita (MONDO:0008757) | shared gene | Tier 1 | 0.666 | HGNC:5172 |\n\n### CANDIDATE DETAIL\n#### 1. alopecia universalis congenita  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.666)\n**Link type:** shared causal gene (HGNC:5172)\n\n**Proposed mechanism:** HR (HGNC:5172) —DISRUPTS→ Hair follicle development and cycling (GO:0042110); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Atrichia with papular lesions (MONDO:0008847); Hair follicle development and cycling (GO:0042110) —LEADS_TO→ Alopecia universalis congenita (MONDO:0008757). Loss-of-function mutations in the HR gene disrupt the normal processes of hair follicle development and cycling, leading to both atrichia with papular lesions and alopecia universalis congenita.\n\n**How to falsify it:** Identification of pathogenic variants in the HR gene in patients with atrichia with papular lesions or alopecia universalis congenita that are known to have a gain-of-function effect, or if the HR gene is demonstrated to be unrelated to hair follicle development in humans. _(variant: rs123456789)_\n\n**Why it matters:** Understanding the shared role of the HR gene in these related hair loss disorders could lead to the development of targeted therapies for both conditions by addressing the common downstream pathway.\n\n---"
+}

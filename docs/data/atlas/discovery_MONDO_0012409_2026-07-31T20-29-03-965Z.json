@@ -1,0 +1,47 @@
+{
+  "seed": {
+    "id": "MONDO:0012409",
+    "name": "MONDO:0012409"
+  },
+  "geneCandidates": 1,
+  "pathwayCandidates": 0,
+  "partners": [
+    {
+      "diseaseB": "MONDO:0012408",
+      "diseaseBName": "microphthalmia, isolated, with coloboma 3",
+      "fitness": 0.7467,
+      "tier": "Tier 1 — Definitive / Highly Plausible",
+      "mechanism_chain": "VSX2 (HGNC:1975) —DISRUPTS→ Abnormal eye development (HP:0000507); Abnormal eye development (HP:0000507) —LEADS_TO→ Microphthalmia (HP:0000590); Abnormal eye development (HP:0000507) —LEADS_TO→ Coloboma (HP:0000478). Loss-of-function mutations in VSX2 disrupt normal eye development, leading to both microphthalmia and coloboma.",
+      "mechanism_narrative": "VSX2 (HGNC:1975) —DISRUPTS→ Abnormal eye development (HP:0000507); Abnormal eye development (HP:0000507) —LEADS_TO→ Microphthalmia (HP:0000590); Abnormal eye development (HP:0000507) —LEADS_TO→ Coloboma (HP:0000478). Loss-of-function mutations in VSX2 disrupt normal eye development, leading to both microphthalmia and coloboma.",
+      "falsification": {
+        "text": "The identification of pathogenic variants in VSX2 that lead to gain-of-function or dominant-negative effects in either disease would falsify the proposed loss-of-function mechanism.",
+        "gnomad_variant": "rs751675966"
+      },
+      "sharedPathways": [],
+      "sharedGenes": [
+        "HGNC:1975"
+      ],
+      "raw": {
+        "diseaseB": "MONDO:0012408",
+        "diseaseBName": "microphthalmia, isolated, with coloboma 3",
+        "neighbour_type": "shared_gene",
+        "sharedGenes": [
+          "HGNC:1975"
+        ],
+        "sharedPathways": [],
+        "fitness": 0.7467,
+        "tier": "Tier 1 — Definitive / Highly Plausible",
+        "overlap_class": "SHARED_CAUSAL_GENE",
+        "mechanism_chain": "VSX2 (HGNC:1975) —DISRUPTS→ Abnormal eye development (HP:0000507); Abnormal eye development (HP:0000507) —LEADS_TO→ Microphthalmia (HP:0000590); Abnormal eye development (HP:0000507) —LEADS_TO→ Coloboma (HP:0000478). Loss-of-function mutations in VSX2 disrupt normal eye development, leading to both microphthalmia and coloboma.",
+        "falsification": {
+          "text": "The identification of pathogenic variants in VSX2 that lead to gain-of-function or dominant-negative effects in either disease would falsify the proposed loss-of-function mechanism.",
+          "gnomad_variant": "rs751675966"
+        },
+        "translational": "Understanding the shared genetic basis of these two conditions in VSX2 can inform diagnostic strategies and potentially guide therapeutic interventions aimed at restoring normal eye development."
+      }
+    }
+  ],
+  "timestamp": "2026-07-31T20:29:03.965Z",
+  "mode": "both",
+  "markdownReport": "# ARIADNE — Mechanistic Partner Discovery\n====================================\n**Seed disease:** MONDO:0012409 (MONDO:0012409)\n**Generated:** 2026-07-31\n**Candidates screened:** 1 gene-neighbour(s), 0 pathway-neighbour(s)\n\n*ARIADNE proposes candidate mechanistic links for expert validation. It does not diagnose or recommend clinical action. Tiers reflect computational fitness against the Monarch Knowledge Graph, not established clinical validity.*\n\n### RANKED PARTNERS\n| # | Disease | Link | Tier | Fitness | Shared gene / pathway |\n|---|---|---|---|---|---|\n| 1 | microphthalmia, isolated, with coloboma 3 (MONDO:0012408) | shared gene | Tier 1 | 0.747 | HGNC:1975 |\n\n### CANDIDATE DETAIL\n#### 1. microphthalmia, isolated, with coloboma 3  —  Tier 1 — Definitive / Highly Plausible  (fitness 0.747)\n**Link type:** shared causal gene (HGNC:1975)\n\n**Proposed mechanism:** VSX2 (HGNC:1975) —DISRUPTS→ Abnormal eye development (HP:0000507); Abnormal eye development (HP:0000507) —LEADS_TO→ Microphthalmia (HP:0000590); Abnormal eye development (HP:0000507) —LEADS_TO→ Coloboma (HP:0000478). Loss-of-function mutations in VSX2 disrupt normal eye development, leading to both microphthalmia and coloboma.\n\n**How to falsify it:** The identification of pathogenic variants in VSX2 that lead to gain-of-function or dominant-negative effects in either disease would falsify the proposed loss-of-function mechanism. _(variant: rs751675966)_\n\n**Why it matters:** Understanding the shared genetic basis of these two conditions in VSX2 can inform diagnostic strategies and potentially guide therapeutic interventions aimed at restoring normal eye development.\n\n---"
+}
