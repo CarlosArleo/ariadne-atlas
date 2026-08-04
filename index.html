@@ -357,6 +357,7 @@
             <button class="btn-action guide-subtitle" id="btn-guides" onclick="toggleGuidesMenu(event)" aria-haspopup="true" aria-expanded="false" title="Documentation & guides">Discovery Atlas Guide &#9662;</button>
             <div class="guides-menu" id="guides-menu">
                 <button onclick="window.open('atlas_guide.html','_blank'); closeGuidesMenu();">Field Guide (how to read the Atlas)</button>
+                <button onclick="window.open('literature_validation.html','_blank'); closeGuidesMenu();">From Hypotheses to Experiments (validation funnel)</button>
                 <button onclick="openDashboardModal(); closeGuidesMenu();">Master Dashboard</button>
                 <button onclick="openWhitepaperModal(); closeGuidesMenu();">Whitepaper &amp; Figures</button>
                 <button onclick="openAboutModal(); closeGuidesMenu();">How ARIADNE Works</button>
@@ -527,6 +528,17 @@
                     <option value="all" selected>All Mechanism Depths</option>
                     <option value="deep">Complete Causal Chains (Variant → Disease)</option>
                 </select>
+            </details>
+            <details class="filt info-wrap">
+                <summary>Presets (physics recipes) <button class="info-btn" onclick="toggleInfo('preset-info', event)" title="What each preset does">?</button></summary>
+                <div class="opt-list" id="preset-list">
+                    <div class="opt" data-value="frontier" onclick="applyPreset('frontier')">Discovery Frontier</div>
+                    <div class="opt" data-value="metabolite" onclick="applyPreset('metabolite')">Metabolite Bridges</div>
+                    <div class="opt" data-value="couplings" onclick="applyPreset('couplings')">Tightest Couplings</div>
+                    <div class="opt" data-value="deep" onclick="applyPreset('deep')">Deep Mechanisms</div>
+                    <div class="opt" data-value="calibration" onclick="applyPreset('calibration')">Allelic Calibration</div>
+                </div>
+                <div class="info-pop" id="preset-info"><h4>Presets — one-click filter recipes</h4><div style="font-size:0.74rem; color:#94a3b8; line-height:1.5;"><b>Discovery Frontier</b>: sweet-spot bridge · multi-pathway · rim-specific · well-corroborated.<br/><b>Metabolite Bridges</b>: convergence on a shared metabolite (CHEBI) · recurrent.<br/><b>Tightest Couplings</b>: pathway-mediated (not shared-gene) · specific · recurrent.<br/><b>Deep Mechanisms</b>: long, low-entropy causal chains.<br/><b>Allelic Calibration</b>: known shared-gene baseline. Use <b>Reset</b> to clear.</div></div>
             </details>
             <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%; margin-top:4px;">Exit Reverse Partner View</button>
         </div>
@@ -1128,7 +1140,7 @@ function updateBadge(sourceName, isFallback) {
     const badge = document.getElementById('source-badge');
     if (!badge || !allCandidates.length) return;
     const maxCqs = Math.max(...allCandidates.map(c => c.cqs));
-    const uniqueSeeds = new Set(allCandidates.map(c => c.seedName)).size;
+    const uniqueSeeds = new Set(allCandidates.map(c => c.seedId)).size;   // canonical seed IDs (matches Corpus at a Glance; names can vary per ID)
     document.getElementById('stat-total').textContent = allCandidates.length;
     document.getElementById('stat-seeds').textContent = uniqueSeeds || 205;
     document.getElementById('stat-max-cqs').textContent = maxCqs;
@@ -1180,6 +1192,44 @@ function populateFamilyDropdown() {
         const opt = document.createElement('option');
         opt.value = f.key; opt.textContent = f.label;
         sel.appendChild(opt);
+    });
+}
+
+// --- Multi-select clinical family: the existing list toggles (adopts the family colour on select, click again to clear; "All clinical families" clears everything). ---
+window.__famSel = window.__famSel || new Set();
+// --- Presets: one-click physics filter recipes (set existing filters, then render). ---
+function applyPreset(key) {
+    const ids = ['filter-tier','filter-cqs','filter-fitness','filter-falsif','filter-novel','filter-geneint','filter-hub','filter-poincare','filter-pathways','filter-nodescope','filter-entropy','filter-rana','filter-depth'];
+    ids.forEach(id => { const e = document.getElementById(id); if (e) e.value = 'all'; });
+    if (window.__famSel) window.__famSel.clear();
+    const RECIPES = {
+        frontier:    { 'filter-nodescope':'sweet', 'filter-pathways':'multi', 'filter-poincare':'rim',      'filter-hub':'h3', 'filter-novel':'novel' },
+        metabolite:  { 'filter-pathways':'metabolite', 'filter-hub':'h3', 'filter-fitness':'0.5' },
+        couplings:   { 'filter-novel':'novel', 'filter-poincare':'specific', 'filter-hub':'h3' },
+        deep:        { 'filter-depth':'deep', 'filter-entropy':'low', 'filter-poincare':'specific' },
+        calibration: { 'filter-novel':'shared', 'filter-geneint':'grounded' },
+    };
+    const r = RECIPES[key] || {};
+    Object.entries(r).forEach(([id, v]) => { const e = document.getElementById(id); if (e) e.value = v; });
+    if (typeof syncOptSelection === 'function') syncOptSelection();
+    if (typeof syncFamilyList === 'function') syncFamilyList();
+    document.querySelectorAll('#preset-list .opt').forEach(it => it.classList.toggle('selected', it.dataset.value === key));
+    renderApp();
+}
+function syncFamilyList() {
+    const sel = document.getElementById('filter-family'); if (!sel) return;
+    const list = sel.parentElement.querySelector('.opt-list'); if (!list) return;
+    const any = window.__famSel.size;
+    [...list.children].forEach(it => {
+        const v = it.dataset.value;
+        if (v === 'all') { it.classList.toggle('selected', !any); it.style.color = ''; it.style.fontWeight = ''; }
+        else {
+            const on = window.__famSel.has(v);
+            const f = FAMILIES.find(x => x.key === v);
+            it.classList.toggle('selected', on);
+            it.style.color = on && f ? f.color : '';
+            it.style.fontWeight = on ? '700' : '';
+        }
     });
 }
 
@@ -1252,6 +1302,8 @@ function toggleEliteMode() {
         document.getElementById('filter-geneint').value = 'all';
         document.getElementById('filter-hub').value = 'all';
         document.getElementById('filter-family').value = 'all';
+        if (window.__famSel) window.__famSel.clear(); if (typeof syncFamilyList === 'function') syncFamilyList();
+        document.querySelectorAll('#preset-list .opt').forEach(it => it.classList.remove('selected'));
         document.getElementById('filter-poincare').value = 'all';
     document.getElementById('filter-pathways').value = 'all';
     document.getElementById('filter-nodescope').value = 'all';
@@ -1317,7 +1369,8 @@ function getFilteredCandidates() {
         if (geneIntFilter === 'fabricated' && !c.geneFabricated) return false;
         if (hubVal === 'h3' && c.hub < 3) return false;
         if (hubVal === 'h1' && c.hub > 2) return false;
-        if (famFilter !== 'all' && c.family !== famFilter) return false;
+        if (window.__famSel && window.__famSel.size) { if (!window.__famSel.has(c.family)) return false; }
+        else if (famFilter !== 'all' && c.family !== famFilter) return false;
 
         // Apply Poincaré Filter (Purges Hub Noise)
         if (poincareFilter === 'rim' && c.poincareR < 0.50) return false;
@@ -1455,6 +1508,7 @@ function resetFilters() {
     document.getElementById('filter-geneint').value = 'all';
     document.getElementById('filter-hub').value = 'all';
     document.getElementById('filter-family').value = 'all';
+    if (window.__famSel) window.__famSel.clear(); if (typeof syncFamilyList === 'function') syncFamilyList();
     document.getElementById('filter-poincare').value = 'all';
     document.getElementById('filter-pathways').value = 'all';
     document.getElementById('filter-nodescope').value = 'all';
@@ -1491,26 +1545,41 @@ function buildOptList(sel) {
     if (old) old.remove();
     const list = document.createElement('div');
     list.className = 'opt-list';
+    const isFam = sel.id === 'filter-family';
     [...sel.options].forEach(o => {
         const item = document.createElement('div');
-        item.className = 'opt' + (o.value === sel.value ? ' selected' : '');
+        item.className = 'opt' + (!isFam && o.value === sel.value ? ' selected' : '');
         item.textContent = o.textContent;
         item.dataset.value = o.value;
-        item.addEventListener('click', () => {
-            sel.value = o.value;
-            syncOptSelection();
-            sel.dispatchEvent(new Event('change'));
-        });
+        if (isFam) {
+            item.addEventListener('click', () => {
+                if (o.value === 'all') window.__famSel.clear();
+                else if (window.__famSel.has(o.value)) window.__famSel.delete(o.value);
+                else window.__famSel.add(o.value);
+                sel.value = 'all';                 // native select stays neutral; __famSel drives the filter
+                syncFamilyList();
+                debounceRender();
+            });
+        } else {
+            item.addEventListener('click', () => {
+                sel.value = o.value;
+                syncOptSelection();
+                sel.dispatchEvent(new Event('change'));
+            });
+        }
         list.appendChild(item);
     });
     sel.insertAdjacentElement('afterend', list);
+    if (isFam) syncFamilyList();
 }
 function buildAllOptLists() { document.querySelectorAll('#filter-cloud select').forEach(buildOptList); }
 function syncOptSelection() {
     document.querySelectorAll('#filter-cloud select').forEach(sel => {
+        if (sel.id === 'filter-family') return;   // multi-select, handled by syncFamilyList
         const list = sel.parentElement.querySelector('.opt-list');
         if (list) [...list.children].forEach(it => it.classList.toggle('selected', it.dataset.value === sel.value));
     });
+    if (typeof syncFamilyList === 'function') syncFamilyList();
 }
 
 function computeConvergenceTopology() {
@@ -1821,7 +1890,7 @@ function renderRadial(candidates) {
         g.append('path').attr('d', arcRim({startAngle:fr[0]+Math.PI/2, endAngle:fr[1]+Math.PI/2})).attr('fill',famColor(f)).attr('opacity',0.92).style('cursor','pointer')
             .on('mouseover',(ev)=>{ paintRibbons(rb=>diseaseFam[rb.seed]===f||diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
             .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
-            .on('click',()=>{ const el=document.getElementById('filter-family'); if(el){ el.value=f; el.dispatchEvent(new Event('change')); } });
+            .on('click',()=>{ window.__famSel.add(f); if(typeof syncFamilyList==='function') syncFamilyList(); debounceRender(); });
         const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+78, mid);
         g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f)); });
 
