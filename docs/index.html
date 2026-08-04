@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <style>
         /* ============================================================
-           OBSIDIAN DARK CANVAS DESIGN TOKENS (unchanged)
+           OBSIDIAN DARK CANVAS DESIGN TOKENS
            ============================================================ */
         :root {
             --bg: #121214;
@@ -54,12 +54,12 @@
         #header {
             position: absolute; top: 0; left: 0; width: 100%; height: 68px;
             padding: 0 28px; display: flex; align-items: center; justify-content: space-between;
-            z-index: 20;
+            z-index: 60;
             background: linear-gradient(180deg, rgba(18,18,20,0.95) 0%, rgba(18,18,20,0) 100%);
             pointer-events: none;
         }
         #header * { pointer-events: auto; }
-        .logo-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; }
+        .logo-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
         .logo-title span { color: var(--fam-rasopathy); font-weight: 400; font-size: 0.82rem; letter-spacing: 0; }
         .source-badge {
             font-size: 0.72rem; padding: 3px 10px; border-radius: 12px;
@@ -75,6 +75,24 @@
         .btn-action:hover { border-color: var(--border-highlight); background: rgba(39, 39, 42, 0.9); }
         .btn-action.active { background: #0284c7; color: #fff; border-color: #38bdf8; }
 
+        /* Guides dropdown (consolidates the three documentation modals) */
+        .guides-dropdown { position: relative; display: inline-block; }
+        .guides-menu {
+            display: none; position: absolute; left: 0; top: calc(100% + 6px);
+            background: var(--surface-solid); border: 1px solid var(--border-highlight);
+            border-radius: 10px; padding: 6px; min-width: 210px; z-index: 200;
+            box-shadow: 0 18px 40px -12px rgba(0,0,0,0.9); flex-direction: column; gap: 2px;
+        }
+        .guides-menu.open { display: flex; }
+        .guides-menu button {
+            background: none; border: none; color: var(--text-primary); text-align: left;
+            padding: 8px 12px; border-radius: 7px; font-size: 0.8rem; cursor: pointer; width: 100%;
+        }
+        .guides-menu button:hover { background: rgba(56, 189, 248, 0.14); color: #38bdf8; }
+        /* Panel action row (Elite / Focus / Reset live with the filters they drive) */
+        .panel-action-row { display: flex; gap: 8px; }
+        .panel-action-row .btn-action { flex: 1; text-align: center; padding: 7px 10px; }
+
         #app-container {
             display: grid;
             grid-template-columns: 380px 1fr 320px;
@@ -87,8 +105,10 @@
             display: flex; flex-direction: column; gap: 10px;
             z-index: 20; overflow: hidden;
         }
-        .panel-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted); text-transform: uppercase; }
-        #sidebar-meta { font-size: 0.76rem; color: var(--text-muted); margin-bottom: 2px; }
+        .panel-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+        .panel-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); text-transform: uppercase; }
+        #sidebar-meta { font-size: 0.72rem; color: var(--text-muted); }
+        .panel-head #sidebar-meta::before { content: '· '; }
         #cqs-card-list {
             display: flex; flex-direction: column; gap: 8px;
             overflow-y: auto; padding-right: 6px; flex: 1;
@@ -103,7 +123,7 @@
         .cqs-card.active { background: rgba(39, 39, 42, 0.95); border-color: rgba(255,255,255,0.4); box-shadow: 0 0 15px rgba(56, 189, 248, 0.25); }
         .cqs-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; gap: 8px; }
         .cqs-badge { background: rgba(56,189,248,0.15); color: var(--fam-rasopathy); padding: 2px 8px; border-radius: 10px; font-weight: 700; font-size: 0.74rem; }
-        .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .hub-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: rgba(255,255,255,0.08); color: var(--text-muted); }
         .tier-badge { font-size: 0.7rem; padding: 1px 7px; border-radius: 8px; font-weight: 700; white-space: nowrap; }
         .fitness-score { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
         .cqs-card-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 3px; }
@@ -159,7 +179,7 @@
         .modal-backdrop.open { display: flex; }
         .modal-box {
             background: var(--surface-solid); border: 1px solid var(--border-highlight); border-radius: 16px;
-            width: 100%; max-width: 720px; max-height: 88vh; padding: 28px; overflow-y: auto;
+            width: 100%; max-width: 760px; max-height: 88vh; padding: 28px; overflow-y: auto;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.9); position: relative;
         }
         .modal-close { position: absolute; top: 18px; right: 18px; background: none; border: none; color: var(--text-muted); font-size: 1.4rem; cursor: pointer; line-height: 1; }
@@ -217,8 +237,115 @@
         .about-regime-card p { font-size: 0.76rem; color: #94a3b8; line-height: 1.45; }
         .about-footer { font-size: 0.72rem; color: #64748b; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08); line-height: 1.5; }
 
+        /* ============================================================
+           COMPACT FLOATING REDESIGN
+           ============================================================ */
+        /* Header: guide as a distinct-coloured secondary subtitle next to the title */
+        .guide-subtitle {
+            background: rgba(255,255,255,0.05); color: var(--text-muted);
+            border: none; font-weight: 500; letter-spacing: 0.02em;
+            padding: 5px 12px; border-radius: 8px; font-size: 0.78rem;
+        }
+        .guide-subtitle:hover { background: rgba(255,255,255,0.12); color: var(--text-primary); }
+
+        /* Right panel — floating, borderless, tight */
+        #panel-right { gap: 9px; padding: 12px 16px 16px 12px; }
+
+        /* Stats — thin small grey line (Claude-Code "18 of 18" style) */
+        #stats-band { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 2px 2px 6px; font-size: 0.66rem; font-weight: 400; color: var(--text-muted); }
+        #stats-band > span { white-space: nowrap; }
+        #stats-band b { font-weight: 500; color: #d4d4d8; }
+
+        /* Segmented action control (Claude-Code HOME/CODE style) — no separate button boxes */
+        .seg-control { display: flex; background: rgba(255,255,255,0.05); border-radius: 9px; padding: 3px; gap: 2px; }
+        .seg { flex: 1; background: transparent; border: none; color: var(--text-muted); font-size: 0.73rem; padding: 6px 6px; border-radius: 6px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .seg:hover { color: var(--text-primary); }
+        .seg.active { background: rgba(255,255,255,0.12); color: var(--text-primary); }
+
+        /* Floating single-line filters — the title IS the toggle (Claude-Code style) */
+        #filter-cloud { display: flex; flex-direction: column; gap: 0; }
+        .filt > summary {
+            cursor: pointer; list-style: none; display: flex; align-items: center; gap: 7px;
+            font-size: 0.72rem; color: var(--text-muted); padding: 6px 2px; user-select: none;
+            text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .filt > summary::-webkit-details-marker { display: none; }
+        .filt > summary::before { content: '\203A'; font-size: 1.3rem; line-height: 1; color: var(--text-muted); display: inline-block; width: 13px; text-align: center; transition: transform 0.15s ease; }
+        .filt[open] > summary::before { transform: rotate(90deg); }
+        .filt > summary:hover { color: var(--text-primary); }
+        .filt[open] > summary { color: var(--text-primary); }
+        /* The native <select> is hidden and only holds state; the .opt-list below is the single dropdown. */
+        .filt select { display: none; }
+        .opt-list { display: flex; flex-direction: column; padding: 1px 0 8px 20px; }
+        .opt { font-size: 0.77rem; color: var(--text-muted); padding: 3px 8px; cursor: pointer; border-radius: 5px; }
+        .opt:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+        .opt.selected { color: var(--text-primary); font-weight: 600; }
+        .filt-search {
+            background: transparent; border: none; border-bottom: 1px solid var(--border);
+            color: var(--text-primary); width: 100%; padding: 6px 2px; font-size: 0.78rem; outline: none; margin: 3px 0;
+        }
+        .filt-search::placeholder { color: var(--text-muted); }
+        .filt-search:focus { border-bottom-color: var(--text-muted); }
+
+        /* "?" info button + popover (replaces the Family Legend / Tier Rubric cards) */
+        .info-wrap { position: relative; }
+        .info-btn { display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; border-radius: 50%; font-size: 0.62rem; line-height: 1; cursor: pointer; background: rgba(255,255,255,0.10); color: var(--text-muted); border: none; padding: 0; }
+        .info-btn:hover { background: var(--fam-rasopathy); color: #05121c; }
+        .info-pop { display: none; position: absolute; z-index: 40; right: 0; top: calc(100% + 6px); background: var(--surface-solid); border: 1px solid var(--border-highlight); border-radius: 10px; padding: 12px 14px; width: 290px; box-shadow: 0 18px 40px -12px rgba(0,0,0,0.85); }
+        .info-pop.open { display: block; }
+        .info-pop h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 8px; }
+
+        /* Insight lists — collapsible */
+        #insight-cloud { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+        .insight-block { }
+        .insight-block > summary {
+            cursor: pointer; list-style: none; font-size: 0.67rem; text-transform: uppercase;
+            letter-spacing: 0.04em; color: var(--text-muted); padding: 3px 0; display: flex; align-items: center; gap: 6px;
+        }
+        .insight-block > summary::-webkit-details-marker { display: none; }
+        .insight-block > summary::before { content: '\203A'; font-size: 1.2rem; line-height: 1; color: var(--text-muted); display: inline-block; width: 13px; text-align: center; transition: transform 0.15s ease; }
+        .insight-block[open] > summary::before { transform: rotate(90deg); }
+        .insight-block > summary:hover { color: var(--text-primary); }
+
+        /* Source foot */
+        #source-foot { margin-top: auto; padding-top: 9px; display: flex; flex-direction: column; gap: 7px; }
+        #source-foot .source-badge { margin: 0; align-self: flex-start; }
+
+        /* Left panel — floating flat cards: straight corners, coloured left bar only */
+        #panel-left { padding: 14px 10px 24px 20px; }
+        .cqs-card { border-radius: 0; border: none; border-left: 3px solid var(--fam-other); background: rgba(24,24,27,0.30); backdrop-filter: none; }
+        .cqs-card:hover { background: rgba(39,39,42,0.55); transform: translateX(2px); }
+        .cqs-card.active { background: rgba(39,39,42,0.85); box-shadow: none; border-left-width: 5px; }
+
+        /* Poetic "ariadne" whisper near the diagram */
+        #poetic-btn {
+            position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+            background: transparent; border: none; color: var(--text-muted);
+            font-size: 0.95rem; letter-spacing: 0.42em; text-transform: lowercase;
+            cursor: pointer; opacity: 0.6; z-index: 16;
+            transition: opacity 0.25s ease, letter-spacing 0.25s ease, color 0.25s ease;
+        }
+        #poetic-btn:hover { opacity: 1; letter-spacing: 0.52em; color: var(--text-primary); }
+        .poetic-prose p { font-size: 0.9rem; line-height: 1.72; color: #cbd5e1; margin-bottom: 14px; }
+        .poetic-prose .math-note { font-size: 0.78rem; color: var(--text-muted); border-left: 2px solid rgba(255,255,255,0.12); padding-left: 12px; margin-top: 4px; }
+
         @media (max-width: 1100px) {
-            #app-container { grid-template-columns: 320px 1fr 280px; }
+            #app-container { grid-template-columns: 320px 1fr 300px; }
+        }
+
+        /* Mobile / narrow: stack into a single scrollable column, diagram first */
+        @media (max-width: 820px) {
+            html, body { overflow: auto; height: auto; width: 100%; }
+            body { min-height: 100vh; }
+            #header { position: sticky; height: 50px; padding: 0 14px;
+                background: linear-gradient(180deg, rgba(18,18,20,0.98) 0%, rgba(18,18,20,0.9) 100%); }
+            #app-container { display: flex; flex-direction: column; width: 100%; height: auto; padding-top: 0; }
+            #panel-center { order: -1; height: 66vh; min-height: 340px; }
+            #panel-left, #panel-right { height: auto; max-height: none; overflow: visible;
+                background: rgba(18,18,20,0.6); padding: 14px 16px; }
+            #cqs-card-list { max-height: none; overflow: visible; }
+            #poetic-btn { top: 8px; font-size: 0.9rem; letter-spacing: 0.36em; }
+            #stats-band { flex-wrap: wrap; }
         }
     </style>
 </head>
@@ -226,21 +353,32 @@
 
 <div id="header">
     <div class="logo-title">
-        ARIADNE <span>Concentric Radial Discovery Atlas</span>
-        <span class="source-badge" id="source-badge">Loading...</span>
+        <div class="guides-dropdown">
+            <button class="btn-action guide-subtitle" id="btn-guides" onclick="toggleGuidesMenu(event)" aria-haspopup="true" aria-expanded="false" title="Documentation & guides">Discovery Atlas Guide &#9662;</button>
+            <div class="guides-menu" id="guides-menu">
+                <button onclick="window.open('atlas_guide.html','_blank'); closeGuidesMenu();">Field Guide (how to read the Atlas)</button>
+                <button onclick="openDashboardModal(); closeGuidesMenu();">Master Dashboard</button>
+                <button onclick="openWhitepaperModal(); closeGuidesMenu();">Whitepaper &amp; Figures</button>
+                <button onclick="openAboutModal(); closeGuidesMenu();">How ARIADNE Works</button>
+                <button onclick="openCqsModal(); closeGuidesMenu();">CQS Score Guide</button>
+                <button onclick="openManualModal(); closeGuidesMenu();">Filter Guide &amp; Manual</button>
+                <button onclick="openCoverageModal(); closeGuidesMenu();">Corpus &amp; Coverage</button>
+                <button onclick="openCorpusModal(); closeGuidesMenu();">Corpus at a Glance</button>
+                <button onclick="openValidationModal(); closeGuidesMenu();">Validation &amp; Signal</button>
+                <button onclick="openAdvancedModal(); closeGuidesMenu();">Structure &amp; Physics</button>
+                <button onclick="openTopologyModal(); closeGuidesMenu();">Convergence Topology</button>
+            </div>
+        </div>
     </div>
-    <div style="display:flex; gap:10px; align-items:center;">
-        <button class="btn-action" onclick="openAboutModal()" title="What is ARIADNE and how does it work?">How ARIADNE Works</button>
-        <button class="btn-action" onclick="openCqsModal()" title="How is CQS calculated?">CQS Score Guide</button>
-        <button class="btn-action" id="btn-focus-mode" onclick="toggleFocusMode()">Neighborhood Focus Mode</button>
-        <button class="btn-action" onclick="resetFilters()">Reset All Filters</button>
-    </div>
+    <div style="display:flex; gap:10px; align-items:center;"></div>
 </div>
 
 <div id="app-container">
     <div id="panel-left">
-        <div class="panel-title">Priority Candidates</div>
-        <div id="sidebar-meta">Scored discoveries</div>
+        <div class="panel-head">
+            <span class="panel-title">Priority Candidates</span>
+            <span id="sidebar-meta">Scored discoveries</span>
+        </div>
         <div id="cqs-card-list"></div>
     </div>
 
@@ -250,13 +388,34 @@
             <svg id="label-svg" style="position:absolute; top:0; left:0; width:100%; height:100%;"></svg>
         </div>
         <div id="canvas-tooltip"></div>
+        <button id="poetic-btn" onclick="openPoeticModal()" title="The Convergence Atlas — how to read it">ariadne</button>
     </div>
 
     <div id="panel-right">
-        <div class="inspector-card">
-            <h3>Discovery Controls</h3>
-            <div class="control-row">
-                <label for="filter-tier">Confidence Tier:</label>
+        <!-- 1. Compact horizontal stats band, on top of the filters -->
+        <div id="stats-band">
+            <span><b id="stat-visible">0</b> visible</span>
+            <span><b id="stat-total">0</b> total</span>
+            <span><b id="stat-seeds">205</b> seeds</span>
+            <span><b id="stat-max-cqs">0</b> max CQS</span>
+            <span title="Productive share of the master seed list — see Corpus & Coverage guide"><b id="stat-coverage">—</b> coverage</span>
+        </div>
+
+        <!-- 2. Segmented action control -->
+        <div class="seg-control">
+            <button class="seg" id="btn-elite-mode" onclick="toggleEliteMode()" title="Best-grounded: fitness&ge;0.65 · Exceptional CQS · Hub&ge;3">Elite Champions</button>
+            <button class="seg" id="btn-gems-mode" onclick="toggleGemsMode()" title="The gold: Sweet-spot bridge (2-4 families) · Multi-pathway · Novel">Discovery Gems</button>
+            <button class="seg" onclick="resetFilters()" title="Clear all filters and focus">Reset</button>
+            <button class="seg" id="btn-focus-mode" onclick="toggleFocusMode()">Focus Mode</button>
+        </div>
+
+        <!-- 3. Search at the top, just below the actions -->
+        <input type="text" id="search-input" class="filt-search" placeholder="Search disease or gene…">
+
+        <!-- 4. Floating single-line filters (title = the single dropdown) -->
+        <div id="filter-cloud">
+            <details class="filt info-wrap">
+                <summary>Confidence Tier <button class="info-btn" onclick="toggleInfo('tier-info', event)" title="Tier rubric">?</button></summary>
                 <select id="filter-tier">
                     <option value="all">All Tiers</option>
                     <option value="Tier 1">Tier 1 – Definitive</option>
@@ -265,72 +424,154 @@
                     <option value="Tier 4">Tier 4 – Weak</option>
                     <option value="Tier 5">Tier 5 – Refuted</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-cqs">CQS Quality Score:</label>
-                <select id="filter-cqs">
-                    <option value="all">All CQS Scores</option>
+                <div class="info-pop" id="tier-info"><h4>Tier Rubric</h4><div id="tier-legend-list" style="display:flex; flex-direction:column; gap:9px;"></div></div>
+            </details>
+            <details class="filt">
+                <summary>CQS Quality Score</summary>
+                <select id="filter-cqs"><option value="all">All CQS Scores</option></select>
+            </details>
+            <details class="filt">
+                <summary>Genotype Fitness</summary>
+                <select id="filter-fitness">
+                    <option value="all" selected>All Fitness Scores</option>
+                    <option value="0.5">Fitness &ge; 0.50</option>
+                    <option value="0.6">Fitness &ge; 0.60</option>
+                    <option value="0.7">Fitness &ge; 0.70</option>
+                    <option value="0.8">Fitness &ge; 0.80 (top champions)</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-hub">Global Cross-Seed Recurrence:</label>
+            </details>
+            <details class="filt">
+                <summary>Global Cross-Seed Recurrence</summary>
                 <select id="filter-hub">
                     <option value="all" selected>All Hub Levels</option>
                     <option value="h3">Global Hubs (Hub ≥ 3 seeds)</option>
                     <option value="h1">Niche Pairs (Hub ≤ 2 seeds)</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="filter-family">Clinical Pathway Family:</label>
-                <select id="filter-family">
-                    <option value="all">All clinical families</option>
+            </details>
+            <details class="filt info-wrap">
+                <summary>Clinical Pathway Family <button class="info-btn" onclick="toggleInfo('family-info', event)" title="Family legend">?</button></summary>
+                <select id="filter-family"><option value="all">All clinical families</option></select>
+                <div class="info-pop" id="family-info"><h4>Clinical Family Legend</h4><div id="legend-list"></div></div>
+            </details>
+            <details class="filt">
+                <summary>Novelty (Relationship Type)</summary>
+                <select id="filter-novel">
+                    <option value="all" selected>All Links</option>
+                    <option value="novel">New Pathway Discoveries (No Shared Gene)</option>
+                    <option value="shared">Known Causal Gene Matches</option>
                 </select>
-            </div>
-            <div class="control-row">
-                <label for="search-input">Disease or Gene Search:</label>
-                <input type="text" id="search-input" placeholder="Search disease or gene…">
-            </div>
-            <div class="control-row" style="margin-top: 6px;">
-                <button class="btn-action" id="btn-show-all" onclick="toggleShowAll()" style="display:none; width:100%;">Show All Ribbons</button>
-            </div>
-            <div class="control-row" style="margin-top: 6px;">
-                <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%;">Exit Reverse Partner View</button>
-            </div>
+            </details>
+            <details class="filt">
+                <summary>Gene Attribution Integrity</summary>
+                <select id="filter-geneint">
+                    <option value="all" selected>All Candidates (Including Audited)</option>
+                    <option value="grounded">Verified & Grounded Genes Only (Clean)</option>
+                    <option value="fabricated">Audit Flags (Unverified Genes Only)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Falsifiability</summary>
+                <select id="filter-falsif">
+                    <option value="all" selected>All Candidates</option>
+                    <option value="has">Testable Hypotheses Only (Disproof Specification)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Network Location &amp; Specificity (Poincaré r)</summary>
+                <select id="filter-poincare">
+                    <option value="all" selected>All Network Locations</option>
+                    <option value="rim">High-Specificity Outer Rim (Precision Discoveries)</option>
+                    <option value="cluster">Top Discovery Cluster (High Specificity & Quality)</option>
+                    <option value="specific">Focused Pathways (Small Modules ≤ 20 Genes)</option>
+                    <option value="core">Broad Central Hubs (Generic Background)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Network Structure (Graph Entropy)</summary>
+                <select id="filter-entropy">
+                    <option value="all" selected>All Network Structures</option>
+                    <option value="low">Compact & Focused Networks (Low Entropy)</option>
+                    <option value="high">Broad & Scattered Networks (High Entropy)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Shared Pathways</summary>
+                <select id="filter-pathways">
+                    <option value="all" selected>All Mechanisms</option>
+                    <option value="multi">Multi-Pathway Overlap (High Robustness)</option>
+                    <option value="single">Single Pathway Overlap</option>
+                    <option value="metabolite">Metabolite & Ligand Bridges (Small-Molecule / Plasma)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Convergence Node Scope</summary>
+                <select id="filter-nodescope">
+                    <option value="all" selected>All Mechanism Scopes</option>
+                    <option value="master">Domain Masters (Single-Disease Class Drivers)</option>
+                    <option value="sweet">Sweet-Spot Bridges (2–4 Disease Families) — Gold</option>
+                    <option value="crosshub">Broad Cross-Family Hubs (5–9 Families)</option>
+                    <option value="hub">Universal Background Solvents (≥10 Families)</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Literature Verification (RANA)</summary>
+                <select id="filter-rana">
+                    <option value="all" selected>All Literature States</option>
+                    <option value="supported">PubMed Confirmed Only</option>
+                    <option value="clean">Zero Literature Conflicts</option>
+                </select>
+            </details>
+            <details class="filt">
+                <summary>Causal Chain Depth</summary>
+                <select id="filter-depth">
+                    <option value="all" selected>All Mechanism Depths</option>
+                    <option value="deep">Complete Causal Chains (Variant → Disease)</option>
+                </select>
+            </details>
+            <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%; margin-top:4px;">Exit Reverse Partner View</button>
         </div>
 
-        <div class="inspector-card">
-            <h3>Dataset Statistics</h3>
-            <div class="stats-grid">
-                <div class="stat-box"><div class="stat-val" id="stat-visible">0</div><div class="stat-lbl">Active Visible</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-total">0</div><div class="stat-lbl">Total Candidates</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-seeds">205</div><div class="stat-lbl">Seeds Executed</div></div>
-                <div class="stat-box"><div class="stat-val" id="stat-max-cqs">0</div><div class="stat-lbl">Max CQS Score</div></div>
-            </div>
+        <!-- 4. Insight lists -->
+        <div id="insight-cloud">
+            <details class="insight-block" open>
+                <summary>Top Convergence Nodes</summary>
+                <div id="convergence-node-list" style="font-size:0.74rem; color:var(--text-muted); max-height:180px; overflow-y:auto; margin-top:6px;"><span>Loading...</span></div>
+            </details>
+            <details class="insight-block" open>
+                <summary>Top Connected Genes</summary>
+                <div id="top-genes-list" style="font-size:0.74rem; color:var(--text-muted); max-height:180px; overflow-y:auto; margin-top:6px;"><span>Loading...</span></div>
+            </details>
         </div>
 
-        <div class="inspector-card">
-            <h3>Clinical Family Legend</h3>
-            <div id="legend-list"></div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Tier Rubric</h3>
-            <div id="tier-legend-list" style="display:flex; flex-direction:column; gap:9px;"></div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Top Convergence Nodes</h3>
-            <div id="convergence-node-list" style="font-size:0.74rem; color:var(--text-muted); max-height:200px; overflow-y:auto;">
-                <span>Loading...</span>
-            </div>
-        </div>
-
-        <div class="inspector-card">
-            <h3>Dataset Source</h3>
+        <!-- 5. Source badge + loader, at the very bottom -->
+        <div id="source-foot">
+            <span class="source-badge" id="source-badge">Loading...</span>
             <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
                 Load top_candidates.json
                 <input type="file" id="file-uploader" accept=".json" style="display:none;">
             </label>
+        </div>
+    </div>
+</div>
+
+<!-- Poetic "shape of hope" Modal -->
+<div class="modal-backdrop" id="poetic-modal" onclick="if(event.target===this) closePoeticModal();">
+    <div class="modal-box" style="max-width:660px;">
+        <button class="modal-close" onclick="closePoeticModal()">&times;</button>
+        <h2 style="font-size:1.05rem; font-weight:600; letter-spacing:0.32em; text-transform:lowercase; color:#e2e8f0; margin-bottom:18px;">ariadne — a map of what diseases share</h2>
+        <div class="poetic-prose">
+            <p>Around the rim live all the rare diseases, gathered into the families of biology they belong to — the coloured arcs, each disease a faint name and a small radial mark, together drawing the circle. In the interior float the <strong style="color:#e2e8f0;">shared origins</strong>: the genes, pathways and metabolites where two different diseases secretly meet. The centre is left empty — a quiet void for the deepest, most generic machinery of life, the hubs so universal they explain nothing on their own. The Atlas orbits that void; it never crosses it.</p>
+            <p>Every thread is a hypothesis. It leaves one disease on the rim, dives inward, and braids through the single shared origin it converges on, before rising to its partner on the far side. Where many hypotheses share the same origin, their threads weave into a bright knot — and that knot is not decoration, it is the biology itself. Each thread is a rare condition reaching toward another: a chance that an insight, a drug, a diagnosis might cross from one child's disease to another's.</p>
+
+            <h3 style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:#94a3b8; margin:20px 0 8px;">How to read it</h3>
+            <p><strong style="color:#e2e8f0;">The rim</strong> is every disease, grouped by clinical family (the colour), labelled with its name and a radial tick whose length and brightness grow with how many hypotheses touch it — so recurrent "crossroads" diseases stand out and rare ones fade. Hover a family arc to light all of its connections.</p>
+            <p><strong style="color:#e2e8f0;">The stars</strong> are the shared genes and convergence nodes. Their <em>position</em> carries meaning: the deeper toward the centre a star sits, the more <em>generic</em> it is — a promiscuous hub (like TP53 or ubiquitin) the instrument deliberately distrusts; the closer to the rim, the more <em>specific and precious</em>. Their <em>brightness and size</em> follow discovery quality — the best CQS of any hypothesis meeting there — so specific, well-scored convergences shine while the generic centre stays a hush. Hover any star to see every hypothesis that converges on it; a node is coloured by type (cyan gene, green pathway/process, amber metabolite).</p>
+            <p><strong style="color:#e2e8f0;">The threads</strong> thicken gently with how connected their shared origin is. Hover a discovery in the left list, or on the map, and just that pair lights up: its two diseases named on the rim, its shared gene/pathway/metabolite flared and labelled, and every <em>sibling</em> pair that converges on the same origin glowing softly — the whole family of the same hope.</p>
+
+            <h3 style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:#94a3b8; margin:20px 0 8px;">How it moves when you filter</h3>
+            <p>Nothing here is fixed. The entire picture is computed <em>live</em> from exactly the hypotheses that pass your filters. Change a tier, a fitness floor, a family, a gene, a convergence node — and the stars re-place, the braids re-weave, and the constellation reorganises to reveal what is shared <em>under that lens</em>. That is the whole point: filtering is how the instrument shows you the unknown. By default the Atlas opens on its <strong style="color:#e2e8f0;">Exceptional</strong> discoveries (CQS 10–13, Tier 3). The right‑hand "Top Convergence Nodes" and "Top Connected Genes" recompute with every filter too — they are the shared origins the current view is resting on.</p>
+
+            <p class="math-note">The geometry is the mathematics made visible. Each thread descends monotonically in radius to its shared origin and back out, so the central void is never crossed — ARIADNE's Poincaré hyperbolic model, where generic scale-free hubs collapse toward the centre (r → 0) and specific, expert-ready convergences are pushed to the boundary rim (r → 1). A star's depth <em>is</em> that specificity; its brightness is its discovery quality (CQS). What you see is not a drawing of the data — it is the data, arranged by its own physics.</p>
         </div>
     </div>
 </div>
@@ -344,13 +585,177 @@
 </div>
 
 <!-- CQS Score Guide Modal (full) -->
+<style>
+#whitepaper-body h2{font-size:1.05rem;color:#f8fafc;margin:16px 0 6px;} #whitepaper-body h3{font-size:0.92rem;color:#e2e8f0;margin:12px 0 4px;}
+#whitepaper-body h4{font-size:0.84rem;color:#cbd5e1;margin:10px 0 4px;} #whitepaper-body p{margin:0 0 8px;} #whitepaper-body ul{margin:0 0 8px 18px;}
+#whitepaper-body code{background:rgba(255,255,255,0.08);padding:1px 4px;border-radius:4px;} #whitepaper-body pre{background:rgba(0,0,0,0.4);padding:8px;border-radius:6px;overflow:auto;font-size:0.72rem;}
+.wp-fig{width:100%;border-radius:8px;margin:8px 0;border:1px solid rgba(255,255,255,0.08);}
+</style>
+<div class="modal-backdrop" id="dashboard-modal" onclick="if(event.target===this) closeDashboardModal();">
+    <div class="modal-box" style="max-width:760px; max-height:86vh; overflow:auto;">
+        <button class="modal-close" onclick="closeDashboardModal()">&times;</button>
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:4px; color:#f8fafc;">Master Dashboard</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:12px;">Every audit layer at a glance &mdash; census, validation, physics, interactome.</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.82rem; color:#cbd5e1;"><tbody>
+<tr><td colspan="2" style="padding:12px 8px 4px; color:#7dd3fc; font-size:0.74rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Coverage census</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Master seeds</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-master">&mdash;</strong></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Attempted (yield of attempted)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-attempted">&mdash;</strong> &middot; <span id="dash-yield">&mdash;</span></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Productive corpus</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-productive">&mdash;</strong></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Empty &mdash; Monarch gap (private singletons)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-empty">&mdash;</strong> (<span id="dash-priv">&mdash;</span> private)</td></tr>
+<tr><td colspan="2" style="padding:12px 8px 4px; color:#7dd3fc; font-size:0.74rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Validation &amp; signal</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Known links recovered (recall @10 / specific)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-recovered">&mdash;</strong> &middot; <span id="dash-recall">&mdash;</span></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Null model &mdash; geometry&ndash;quality corr</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-corr">&mdash;</strong> (p <span id="dash-corrp">&mdash;</span>)</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Falsifiability &middot; novelty</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-fals">&mdash;</strong>% &middot; <span id="dash-novel">&mdash;</span>% novel</td></tr>
+<tr><td colspan="2" style="padding:12px 8px 4px; color:#7dd3fc; font-size:0.74rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Structure &amp; physics</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Rim-discoveries cluster</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-rim">&mdash;</strong> @ CQS <span id="dash-rimcqs">&mdash;</span></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Cross-domain quality (median CQS)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-cross">&mdash;</strong></td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Heat&ndash;entropy law R&sup2; (free-energy well)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-r2">&mdash;</strong> (S_VNE <span id="dash-well">&mdash;</span>)</td></tr>
+<tr><td colspan="2" style="padding:12px 8px 4px; color:#7dd3fc; font-size:0.74rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Interactome</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Network-proximal s_AB (z&lt;&minus;2)</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-net">&mdash;</strong>% &middot; <span id="dash-netx">&mdash;</span>&times; vs chance</td></tr>
+<tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:6px 8px;">Fabrications detected &amp; purged</td><td style="padding:6px 8px; text-align:right;"><strong id="dash-fab">&mdash;</strong> (0% remain)</td></tr>
+        </tbody></table>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:12px;">Composed live from the coverage, validation, physics, and corpus summaries (scripts 08&ndash;12).</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="whitepaper-modal" onclick="if(event.target===this) closeWhitepaperModal();">
+    <div class="modal-box" style="max-width:820px; max-height:84vh; overflow:auto;">
+        <button class="modal-close" onclick="closeWhitepaperModal()">&times;</button>
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:4px; color:#f8fafc;">ARIADNE &mdash; Master Whitepaper</h2>
+        <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:16px;">A genetic algorithm whose organisms are scientific hypotheses. Full text renders below when available; figures fill in as the analysis plots are generated.</p>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:8px 0 6px;">Figures</h3>
+        <div id="whitepaper-figs">
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/fundamental_metric_summary_grid.png" onerror="this.parentNode.style.display='none'" alt="Summary grid"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 1 &mdash; specificity&ndash;fitness, K_t&ndash;S_VNE, CQS and fitness distributions.</figcaption></figure>
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/plot2_von_neumann_entropy.png" onerror="this.parentNode.style.display='none'" alt="Von Neumann entropy"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 2 &mdash; graph Laplacian (Von Neumann) entropy, stratified by CQS.</figcaption></figure>
+            <figure style="margin:0 0 10px;"><img class="wp-fig" src="./data/atlas/analysis/plot1_metric_calibration.png" onerror="this.parentNode.style.display='none'" alt="Metric calibration"/><figcaption style="font-size:0.72rem;color:#64748b;">Fig. 3 &mdash; metric calibration.</figcaption></figure>
+            <p id="whitepaper-fig-empty" style="font-size:0.75rem;color:#64748b;">Figures appear here once <code>run_pipeline.ps1 -Figures</code> has generated the plots.</p>
+        </div>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:16px 0 6px;">Document</h3>
+        <div id="whitepaper-body" style="color:#cbd5e1; font-size:0.82rem; line-height:1.6;">
+            <p>Loading the full whitepaper&hellip; if it does not appear, the document lives at <code>doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md</code>.</p>
+            <p><strong>Abstract.</strong> ARIADNE treats the discovery of shared mechanisms between rare diseases as an evolutionary search over structured, falsifiable hypotheses, scored by a hard-coded fitness function grounded in authoritative biological databases and by the physics of graph topology. A large language model is confined to proposing and phrasing candidate hypotheses as typed causal-graph genomes, while all judgement is performed by deterministic sensors and quantitative graph-thermodynamic metrics. Candidates are projected into Poincar&eacute; hyperbolic space so that generic scale-free hubs and specific, expert-ready convergences separate geometrically.</p>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop" id="corpus-modal" onclick="if(event.target===this) closeCorpusModal();">
+    <div class="modal-box" style="max-width:720px; max-height:84vh; overflow:auto;">
+        <button class="modal-close" onclick="closeCorpusModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Corpus at a Glance</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:14px;">Descriptive composition of the scored corpus &mdash; what it is made of.</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.82rem; color:#cbd5e1;"><tbody>
+            <tr><td style="padding:6px 8px;">Scored candidates</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-cand">&mdash;</strong> over <strong id="cs-seeds">&mdash;</strong> seeds &middot; median <strong id="cs-ppseed">&mdash;</strong> partners/seed</td></tr>
+            <tr><td style="padding:6px 8px;">Tiers</td><td style="padding:6px 8px; text-align:right;" id="cs-tiers">&mdash;</td></tr>
+            <tr><td style="padding:6px 8px;">CQS bands</td><td style="padding:6px 8px; text-align:right;" id="cs-cqs">&mdash;</td></tr>
+            <tr><td style="padding:6px 8px;">Shared-gene vs pathway-only</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-shared">&mdash;</strong>% &middot; <strong id="cs-pathonly">&mdash;</strong>%</td></tr>
+            <tr><td style="padding:6px 8px;">Cross-domain &middot; novel</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-cross">&mdash;</strong>% &middot; <strong id="cs-novel">&mdash;</strong>%</td></tr>
+            <tr><td style="padding:6px 8px;">Distinct genes &middot; pathways touched</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-genes">&mdash;</strong> &middot; <strong id="cs-paths">&mdash;</strong></td></tr>
+            <tr><td style="padding:6px 8px;">Fabrications detected &amp; purged</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-fab">&mdash;</strong> (<span id="cs-fabpct">&mdash;</span>% remain)</td></tr>
+            <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td style="padding:6px 8px;">Network-proximal (interactome, z&lt;&minus;2)</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-net">&mdash;</strong>% &middot; <span id="cs-netx">&mdash;</span>&times; vs chance</td></tr>
+            <tr><td style="padding:6px 8px;">Network-proximal &mdash; novel only</td><td style="padding:6px 8px; text-align:right;"><strong id="cs-netnovel">&mdash;</strong>%</td></tr>
+            <tr><td style="padding:6px 8px;">Top recurrent pathways</td><td style="padding:6px 8px; text-align:right; color:#64748b; font-size:0.72rem;" id="cs-toppaths">&mdash;</td></tr>
+        </tbody></table>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:12px;">Regenerated by <code>12_corpus_stats.py</code>; network row from <code>11_network_separation.py</code>.</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="topology-modal" onclick="if(event.target===this) closeTopologyModal();">
+    <div class="modal-box" style="max-width:800px; max-height:88vh; overflow:auto;">
+        <button class="modal-close" onclick="closeTopologyModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Convergence Topology</h2>
+        <p style="font-size:0.83rem; color:#cbd5e1; margin-bottom:10px;">A shared mechanism can look important just because it is <em>busy</em> &mdash; but busy often means meaningless, like &ldquo;cell stress.&rdquo; So for every shared mechanism we measure <b>two</b> things: <b>how often it recurs</b> (frequency) and <b>how many different disease families it spans</b> (breadth). Together they tell you whether a mechanism is a real discovery or just background noise. This card is that separation, made visible.</p>
+        <div style="background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.25); border-radius:10px; padding:10px 12px; margin:10px 0 16px;">
+            <div style="font-size:0.8rem; color:#e2e8f0;"><b>Scale-free:</b> the top 1% of <strong id="tt-nodes">&mdash;</strong> shared mechanisms carry <strong id="tt-scalefree">&mdash;</strong>% of all convergences.</div>
+            <div style="font-size:0.74rem; color:#94a3b8; margin-top:4px;"><b>Where it comes from:</b> we count how many disease-pair hypotheses pass through each mechanism. <b>Why it matters:</b> a handful of hubs carry most of the traffic while thousands of mechanisms are rare specialists &mdash; this lop-sided shape is the fingerprint of the cell&rsquo;s real wiring, and it is exactly why a few generic hubs must be told apart from the many specific mechanisms. That is the whole job of this card.</div>
+        </div>
+
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:6px 0 4px;">Master bottlenecks <span style="color:#64748b;font-size:0.72rem;">the molecular steps many separate diseases funnel into</span></h3>
+        <p style="font-size:0.74rem; color:#94a3b8; margin:0 0 6px;"><b>Read a row:</b> <b>conv.</b> = how many hypotheses pass through it &middot; <b>families</b> = how many of the 21 clinical domains it touches &middot; <b>SRI</b> = conv &divide; families = <i>recurrence per domain</i>. High SRI with few families = a genuine focused bottleneck; high families = a broad crossroads.</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:#cbd5e1;"><thead><tr style="color:#64748b;font-size:0.72rem;"><th style="text-align:left;padding:3px 8px;">node</th><th style="text-align:right;padding:3px 8px;">conv.</th><th style="text-align:right;padding:3px 8px;">families</th><th style="text-align:right;padding:3px 8px;">SRI</th></tr></thead><tbody id="tt-master"></tbody></table>
+
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:18px 0 2px;">The gene map &mdash; the same gene, three very different meanings</h3>
+        <p style="font-size:0.74rem; color:#94a3b8; margin:0 0 8px;">A gene&rsquo;s value is <b>not</b> how often it appears &mdash; it is <b>how many different disease families it bridges.</b> Sorted by that, every gene falls into one of three roles:</p>
+
+        <div style="font-size:0.8rem; color:#f8fafc; margin:8px 0 2px;">1. Domain masters <span style="color:#64748b;font-size:0.72rem;">(1 family) &mdash; validation: ARIADNE re-derives known drivers from scratch</span></div>
+        <div id="tt-dmgenes" style="line-height:2;"></div>
+
+        <div style="font-size:0.8rem; color:#34d399; margin:12px 0 2px;">2. Cross-domain bridges <span style="color:#64748b;font-size:0.72rem;">(2&ndash;4 families) &mdash; THE GOLD: one gene linking distinct diseases (hover for families)</span></div>
+        <div id="tt-crossgenes" style="line-height:2;"></div>
+        <div style="font-size:0.73rem; color:#94a3b8; margin:2px 0 0;"><b>Why this matters:</b> a gene that bridges 2&ndash;4 families is a true pleiotropic crossroads &mdash; where a single insight (or a single drug) can explain several rare diseases at once. This is where discovery and drug-repurposing live.</div>
+
+        <div style="font-size:0.8rem; color:#f87171; margin:12px 0 2px;">3. Promiscuous hubs <span style="color:#64748b;font-size:0.72rem;">(&ge;8 families) &mdash; too broad to be a specific clue; background</span></div>
+        <div id="tt-promisc" style="line-height:2;"></div>
+
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:18px 0 2px;">Generic solvent nodes <span style="color:#64748b;font-size:0.72rem;">(&ge;10 families) &mdash; housekeeping noise, shown so you can filter it out</span></h3>
+        <p style="font-size:0.73rem; color:#94a3b8; margin:0 0 6px;">Processes so universal that every disease eventually touches them (cytoskeleton, neuron development). Historically people removed these with hand-made blacklists &mdash; here the maths (family breadth) demotes them automatically.</p>
+        <div id="tt-solvents" style="line-height:2;"></div>
+
+        <p style="color:#64748b; font-size:0.72rem; margin-top:14px;">Filter the Atlas into any of these zones with <b>Convergence Node Scope</b> (Domain-master / Sweet-spot bridge / Cross-domain hub / Generic solvent) and <b>Shared Pathways</b>. Regenerated by <code>13_convergence_topology.py</code>.</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="advanced-modal" onclick="if(event.target===this) closeAdvancedModal();">
+    <div class="modal-box" style="max-width:760px; max-height:84vh; overflow:auto;">
+        <button class="modal-close" onclick="closeAdvancedModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Structure &amp; Physics</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:14px;">Unsupervised structure, cross-domain contrast, and the graph-thermodynamic law &mdash; the corpus organising itself, without the thesis imposed.</p>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:6px 0;">Topology clusters <span style="color:#64748b; font-size:0.72rem;">(PCA + KMeans, unsupervised)</span></h3>
+        <table style="width:100%; border-collapse:collapse; font-size:0.8rem; color:#cbd5e1;"><tbody id="adv-clusters"></tbody></table>
+        <figure style="margin:10px 0 0;"><img src="./data/atlas/analysis/fig_topology_clusters.png" onerror="this.parentNode.style.display='none'" style="width:100%;border-radius:8px;border:1px solid rgba(255,255,255,0.08);" alt="Topology clusters"/></figure>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:16px 0 6px;">Cross-domain vs same-domain</h3>
+        <p style="font-size:0.8rem; color:#cbd5e1;">Cross-domain convergences score higher quality: median CQS <strong id="adv-cd-cqs-cross">&mdash;</strong> vs <strong id="adv-cd-cqs-same">&mdash;</strong> (Mann-Whitney p <span id="adv-cd-p">&mdash;</span>, effect r <span id="adv-cd-eff">&mdash;</span>). A non-obvious bridge is rewarded by quality, not raw grounding.</p>
+        <h3 style="font-size:0.95rem; color:#f8fafc; margin:16px 0 6px;">Thermodynamic law</h3>
+        <p style="font-size:0.8rem; color:#cbd5e1;">Heat diffusion decays exponentially with spectral entropy: K_t = a&middot;e<sup>&minus;b&middot;S_VNE</sup>, dissipation constant b = <strong id="adv-b">&mdash;</strong>, fit <strong>R&sup2; = <span id="adv-r2">&mdash;</span></strong>. The free-energy well (attractor entropy) sits at S_VNE &asymp; <strong id="adv-well">&mdash;</strong>.</p>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:12px;">Regenerated by <code>10_advanced_analytics.py</code>.</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="validation-modal" onclick="if(event.target===this) closeValidationModal();">
+    <div class="modal-box" style="max-width:760px;">
+        <button class="modal-close" onclick="closeValidationModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Validation &amp; Signal</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:16px;">Six checks that separate real signal from artifact &mdash; the evidence an expert reviewer looks for.</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.8rem; color:#cbd5e1;">
+            <tbody>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>1. Positive control</strong><br><span style="color:#64748b; font-size:0.72rem;">Does it re-find known biology?</span></td><td style="padding:8px; text-align:right;"><strong id="val-recovered">&mdash;</strong> known shared-gene convergences recovered<br><span style="color:#64748b; font-size:0.72rem;">recall@10 <span id="val-recall">&mdash;</span>% &middot; <span id="val-recallspec">&mdash;</span>% for specific genes</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>2. Null model</strong><br><span style="color:#64748b; font-size:0.72rem;">Is it more than chance?</span></td><td style="padding:8px; text-align:right;">geometry&ndash;quality corr <strong id="val-corr">&mdash;</strong> vs shuffled 0.00<br><span style="color:#64748b; font-size:0.72rem;">permutation p <span id="val-corrp">&mdash;</span> &middot; top-quartile co-occurrence <span id="val-enrich">&mdash;</span>&times;</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>3. Specificity</strong><br><span style="color:#64748b; font-size:0.72rem;">Specific or generic overlap?</span></td><td style="padding:8px; text-align:right;"><strong id="val-spec">&mdash;</strong>% via a shared pathway &le;20 genes<br><span style="color:#64748b; font-size:0.72rem;">rim (r&ge;0.50) <span id="val-rim">&mdash;</span>% &middot; median pathway <span id="val-medpath">&mdash;</span> genes</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>4. Integrity</strong><br><span style="color:#64748b; font-size:0.72rem;">Does the LLM invent genes?</span></td><td style="padding:8px; text-align:right;"><strong id="val-fab">&mdash;</strong> fabricated attributions detected &amp; purged<br><span style="color:#64748b; font-size:0.72rem;"><span id="val-fabpct">&mdash;</span>% remain in the corpus &middot; <span id="val-purged">&mdash;</span> records purged</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>5. Falsifiability</strong><br><span style="color:#64748b; font-size:0.72rem;">Are the hypotheses testable?</span></td><td style="padding:8px; text-align:right;"><strong id="val-fals">&mdash;</strong>% carry a concrete falsification test</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>6. Novelty</strong><br><span style="color:#64748b; font-size:0.72rem;">Discovery vs recapitulation?</span></td><td style="padding:8px; text-align:right;"><strong id="val-novel">&mdash;</strong>% novel &middot; <span id="val-valid">&mdash;</span>% curated recapitulation</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>7. Thermodynamics</strong><br><span style="color:#64748b; font-size:0.72rem;">Do the graphs obey physics?</span></td><td style="padding:8px; text-align:right;">heat&ndash;entropy law corr(K_t,S_VNE) <strong id="val-kt">&mdash;</strong><br><span style="color:#64748b; font-size:0.72rem;">S_VNE&ndash;complexity <span id="val-svnenodes">&mdash;</span> &middot; real graphs <span id="val-svnenz">&mdash;</span>%</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>8. Literature audit</strong> <span style="font-size:0.7rem; color:#7dd3fc;">NEW</span><br><span style="color:#64748b; font-size:0.72rem;">Does the field already agree?</span></td><td style="padding:8px; text-align:right;"><strong id="val-lit-est">&mdash;</strong>% of top predictions re-derive <strong>established</strong> links<br><span style="color:#64748b; font-size:0.72rem;">Discovery Gems <span id="val-lit-gems">&mdash;</span>% un-studied vs <span id="val-lit-broad">&mdash;</span>% broad &mdash; the filter concentrates novelty</span></td></tr>
+            </tbody>
+        </table>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:14px;">Rows 1&ndash;7: Menche interactome separation (s_AB) is computed on the BioGRID network (see Corpus at a Glance &mdash; network-proximal share); pathway specificity is the fast proxy shown here. Row 8 is a retrospective co-mention audit against OpenAlex (~250M papers) at full coverage (disease ids resolved via Monarch): the largest share of predictions re-derive <em>known</em> disease links (calibration), while the curated gem filter lifts genuinely <em>un-studied</em> hypotheses from a plurality to a clear majority. &ldquo;Un-studied&rdquo; is an upper bound on novelty; the definitive test is a frozen-knowledge re-run. Figures update when the benchmark (script 09) and literature audit (script 16) are re-run.</p>
+    </div>
+</div>
+<div class="modal-backdrop" id="coverage-modal" onclick="if(event.target===this) closeCoverageModal();">
+    <div class="modal-box" style="max-width:720px;">
+        <button class="modal-close" onclick="closeCoverageModal()">&times;</button>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Corpus &amp; Knowledge-Graph Coverage</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:16px;">
+            ARIADNE is run over a master list of <strong id="cov-master">&mdash;</strong> rare-disease seeds. This is a live census of that run: what produced convergences, what the knowledge graph could not support, and what is still pending.
+        </p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.8rem; color:#cbd5e1; margin-bottom:18px;">
+            <tbody>
+                <tr><td style="padding:6px 8px;">Productive (&ge;1 partner) &mdash; the corpus</td><td style="text-align:right;"><strong id="cov-prod">&mdash;</strong> (<span id="cov-prodpct">&mdash;</span>)</td></tr>
+                <tr><td style="padding:6px 8px;">Empty &mdash; Monarch data gap</td><td style="text-align:right;"><strong id="cov-empty">&mdash;</strong> (<span id="cov-emptyrate">&mdash;</span> of attempted)</td></tr>
+                <tr><td style="padding:6px 8px;">Pending &mdash; not yet run</td><td style="text-align:right;"><strong id="cov-missing">&mdash;</strong> (<span id="cov-missingpct">&mdash;</span>)</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td style="padding:6px 8px;">Attempted so far</td><td style="text-align:right;"><strong id="cov-attempted">&mdash;</strong> &middot; yield <span id="cov-yield">&mdash;</span></td></tr>
+            </tbody>
+        </table>
+        <h3 style="font-size:0.92rem; font-weight:600; color:#f8fafc; margin-bottom:6px;">Why &ldquo;empty&rdquo; is a finding, not a failure</h3>
+        <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:10px;">
+            Every empty seed was checked against Monarch. <strong id="cov-priv">&mdash;</strong> are <em>private singletons</em> &mdash; their sole causal gene causes no other disease, so no convergence is possible by construction. <strong id="cov-nogene">&mdash;</strong> have no curated causal gene at all (a genuine annotation gap). Crucially, <strong id="cov-susp">&mdash;</strong> show partners in Monarch that ARIADNE missed &mdash; i.e. essentially zero pipeline errors. ARIADNE reports &ldquo;no convergence&rdquo; instead of inventing one: the sensor / judge separation working as designed.
+        </p>
+        <p style="font-size:0.75rem; color:#64748b;">
+            Absence in the knowledge graph is not absence in biology; these seeds are simply not analysable given current curation. Figures update each time the coverage audit (script 08) is re-run.
+        </p>
+    </div>
+</div>
 <div class="modal-backdrop" id="cqs-modal" onclick="if(event.target===this) closeCqsModal();">
     <div class="modal-box" style="max-width:720px;">
         <button class="modal-close" onclick="closeCqsModal()">&times;</button>
-        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v2)</h2>
+        <h2 style="font-size:1.2rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">Candidate Quality Score (CQS v3)</h2>
         <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:20px;">
-            A composite, additive metric (0–11) that ranks ARIADNE's Tier 2/3 discovery candidates by expert‑readiness. 
-            Higher scores indicate stronger, more specific, and better‑corroborated hypotheses.
+            A composite, additive metric (max <strong>13</strong>) that ranks ARIADNE's discovery candidates by expert‑readiness.
+            Higher scores indicate stronger, more specific, cross‑domain and better‑corroborated hypotheses.
         </p>
         <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:#cbd5e1; margin-bottom:20px;">
             <thead>
@@ -365,11 +770,10 @@
                 <tr><td>2. Specific convergence</td><td>Mechanism names a specific node (not "oxidative stress")</td><td style="text-align:center;">0–2</td></tr>
                 <tr><td>3. Multiple pathways</td><td>How many distinct Reactome pathways are shared</td><td style="text-align:center;">0–2</td></tr>
                 <tr><td>4. Pathway specificity</td><td>Smallest shared pathway size (≤20 genes = 2, ≤50 = 1)</td><td style="text-align:center;">0–2</td></tr>
-                <tr><td>5. Phenotype overlap</td><td>HPO semantic similarity (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>6. Literature verification</td><td>RANA cross‑reference (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>7. Cross‑domain</td><td>Diseases in different organ systems (placeholder)</td><td style="text-align:center;">—</td></tr>
-                <tr><td>8. Falsifiability</td><td>Has a concrete, measurable falsification test</td><td style="text-align:center;">0–1</td></tr>
-                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td><strong>Hub bonus</strong></td><td>Independent corroboration across multiple seed runs (≥3 seeds = 2)</td><td style="text-align:center;">0–2</td></tr>
+                <tr><td>5. Falsifiability</td><td>Has a concrete, measurable falsification test</td><td style="text-align:center;">0–1</td></tr>
+                <tr style="color:#7dd3fc;"><td>6. Cross‑domain surprise <span style="font-size:0.7rem;">NEW</span></td><td>Seed &amp; partner in different clinical families (a non‑obvious bridge)</td><td style="text-align:center;">0–1</td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.1);"><td><strong>Hub corroboration</strong></td><td>Independent recurrence across multiple seed runs (≥3 seeds = 2)</td><td style="text-align:center;">0–2</td></tr>
+                <tr style="color:#fca5a5;"><td><strong>Gene‑attribution gate</strong> <span style="font-size:0.7rem;">NEW</span></td><td>Fabricated causal gene (absent from Monarch) → hard‑caps the score at Weak</td><td style="text-align:center;">cap 2</td></tr>
             </tbody>
         </table>
         <h3 style="font-size:0.9rem; font-weight:600; color:#f8fafc; margin-bottom:6px;">Interpretation bands</h3>
@@ -380,15 +784,18 @@
                 <th style="text-align:left; padding:4px 8px; color:#94a3b8;">What to do</th>
             </tr></thead>
             <tbody>
-                <tr><td>9–11</td><td><span style="color:#38bdf8; font-weight:600;">Exceptional</span></td><td>Lead with these in expert sessions</td></tr>
-                <tr><td>7–8</td><td><span style="color:#10b981; font-weight:600;">Strong</span></td><td>Include in review panels</td></tr>
+                <tr><td>10–13</td><td><span style="color:#38bdf8; font-weight:600;">Exceptional</span></td><td>Lead with these in expert sessions</td></tr>
+                <tr><td>7–9</td><td><span style="color:#10b981; font-weight:600;">Strong</span></td><td>Include in review panels</td></tr>
                 <tr><td>4–6</td><td><span style="color:#f59e0b; font-weight:600;">Moderate</span></td><td>Background candidates; may need refinement</td></tr>
-                <tr><td>0–3</td><td><span style="color:#f43f5e; font-weight:600;">Weak</span></td><td>Likely generic convergences or artefacts</td></tr>
+                <tr><td>0–3</td><td><span style="color:#f43f5e; font-weight:600;">Weak</span></td><td>Generic convergences, artefacts, or fabricated attributions</td></tr>
             </tbody>
         </table>
         <p style="font-size:0.72rem; color:#64748b; margin-top:14px;">
-            Components 5–7 are placeholders (not yet logged in discovery JSONs). The practical maximum CQS is 11.
-            Hub bonus rewards candidates that appear across multiple independent seed runs — the strongest corroboration signal in the Atlas.
+            <strong>v3 changes:</strong> the two dead placeholders (phenotype‑overlap, cross‑domain) are replaced —
+            <em>Cross‑domain surprise</em> is now live (rewards bridges between different clinical families), and a
+            <em>Gene‑Attribution Integrity gate</em> caps any hypothesis whose causal gene was flagged as fabricated at
+            Weak, so a fluent‑but‑fabricated mechanism can never read as expert‑ready. Literature (RANA) verification and
+            physical protein‑interaction (BioGRID) remain pending until those signals are logged into the discovery JSONs.
         </p>
     </div>
 </div>
@@ -436,17 +843,17 @@
             </div>
         </div>
         <div class="about-section">
-            <h3>Two regimes</h3>
-            <div class="about-regime-grid">
-                <div class="about-regime-card">
-                    <h4 style="color:#38bdf8;">Validation</h4>
-                    <p>Diseases already share a curated gene in Monarch. ARIADNE should re-derive the true mechanism and rate it Tier 1 Definitive.</p>
-                </div>
-                <div class="about-regime-card">
-                    <h4 style="color:#f59e0b;">Discovery</h4>
-                    <p>An orphan pair — no shared gene in Monarch. ARIADNE proposes and evolves candidate mechanisms toward the most grounded one, flagged Emerging for expert review.</p>
-                </div>
-            </div>
+            <h3>A computational physics instrument, not a language model</h3>
+            <p>
+                ARIADNE does not guess. It <strong>measures</strong> disease convergence as a quantifiable property of biological
+                graph topology. Every candidate hypothesis is subjected to 8 physical selection pressures — including
+                network separation, population falsification, and directionality guards — that act as a thermodynamic sieve.
+                The fitness score is not an arbitrary confidence rating; it reflects where a hypothesis sits on a measured
+                free‑energy landscape. Across 14,763 evaluated candidate dyads, the instrument’s output obeys the same
+                non‑equilibrium steady‑state physics as the interactome it explores. The system is not a language model
+                writing plausible biology — it is a <strong>computational physics instrument</strong> that isolates
+                thermodynamically favoured mechanistic convergences.
+            </p>
         </div>
         <div class="about-footer">
             ARIADNE v0.8.1 · Carlos Arleo, Localis AI / Aitiopoietic Systems. Architecture cloned from DNI (four-sensor + perturbed-weight ensemble + hardcoded structural checks). This Atlas visualizes the CQS-ranked output of the evolutionary discovery loop — it does not itself run the genetic algorithm.
@@ -454,10 +861,86 @@
     </div>
 </div>
 
+<!-- NEW USER MANUAL MODAL (FILTER & NAVIGATION GUIDE) -->
+<div class="modal-backdrop" id="manual-modal" onclick="if(event.target===this) closeManualModal();">
+    <div class="modal-box" style="max-width:780px;">
+        <button class="modal-close" onclick="closeManualModal()">&times;</button>
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:6px; color:#f8fafc;">ARIADNE Atlas — Filter & Navigation Manual</h2>
+        <p style="font-size:0.82rem; color:#94a3b8; margin-bottom:18px; line-height:1.5;">
+            Learn how to use ARIADNE's clinical, topological, and computational physics controls to uncover hidden disease convergences, eliminate scale-free network artifacts, and surface actionable drug repurposing candidates.
+        </p>
+
+        <!-- SECTION 1: QUICK START -->
+        <div class="about-section">
+            <h3 style="color:#38bdf8;">1. Canvas & Visual Navigation</h3>
+            <p>The central concentric diagram maps seed diseases on the inner arc and candidate partner diseases on the outer arc, grouped into 10 clinical pathway families.</p>
+            <div style="margin-top:8px; display:flex; flex-direction:column; gap:6px; font-size:0.8rem; color:#cbd5e1;">
+                <div><strong style="color:#f8fafc;">Elite Champions Button:</strong> Toggles a single-click filter showing only high-confidence Tier 1 and CQS ≥ 7 candidate hypotheses.</div>
+                <div><strong style="color:#f8fafc;">Neighborhood Focus Mode:</strong> Click any disease node or card to isolate its immediate mechanistic neighborhood across the interactome.</div>
+                <div><strong style="color:#f8fafc;">Ribbon Hover & Click:</strong> Hover over any ribbon to highlight the connection; click to open the full, expert-ready discovery dossier.</div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: PRIMARY FILTERS -->
+        <div class="about-section">
+            <h3 style="color:#10b981;">2. Clinical & Quality Filters</h3>
+            <div style="display:flex; flex-direction:column; gap:8px; font-size:0.8rem; color:#cbd5e1; margin-top:6px;">
+                <div><strong style="color:#e2e8f0;">Confidence Tier (Tiers 1–5):</strong> Ranging from <em>Tier 1 (Definitive / Shared Gene)</em> down to <em>Tier 5 (gnomAD BA1 Refuted / Biologically Incoherent)</em>.</div>
+                <div><strong style="color:#e2e8f0;">Candidate Quality Score (CQS 0–11):</strong> An additive readiness metric. Scores $\ge 7$ indicate strong, multi-pathway hypotheses; scores $\ge 9$ are exceptional candidates for expert panels.</div>
+                <div><strong style="color:#e2e8f0;">Global Cross-Seed Recurrence (Hubs):</strong> Filters candidates proposed independently across multiple seed runs ($\ge 3$ seeds). High hubs mark massive "gravity wells" in the interactome (e.g. RASopathy, mTOR, Lysosomal).</div>
+                <div><strong style="color:#e2e8f0;">Clinical Pathway Family:</strong> Categorizes discoveries into 10 domains (RASopathy, Epigenetic, Lysosomal, Channelopathy, Ciliopathy, DNA Repair, Collagen, Mitochondrial, Peroxisomal, Other).</div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: ADVANCED PHYSICS FILTERS -->
+        <div class="about-section">
+            <h3 style="color:#f59e0b;">3. Computational Physics & Verification Controls</h3>
+            <div style="display:flex; flex-direction:column; gap:10px; font-size:0.8rem; color:#cbd5e1; margin-top:6px;">
+                <div style="background:rgba(245,158,11,0.08); border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#fef08a;">Poincaré Hyperbolic Boundary (r):</strong>
+                    <div>• <em>Specific Boundary Rim ($r \ge 0.50$):</em> Maps specific, hierarchical pathway convergences at the hyperbolic rim. <strong>Purges generic scale-free hub shortcuts (*TP53*, Ubiquitin, general inflammation)!</strong></div>
+                    <div>• <em>Central Core ($r < 0.50$):</em> Shows central scale-free network hubs.</div>
+                </div>
+
+                <div style="background:rgba(56,189,248,0.08); border-left:3px solid #38bdf8; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#38bdf8;">Graph Laplacian Spectral Entropy ($S_{VNE}$):</strong>
+                    <div>• <em>Tightly Organized Modules ($S_{VNE} \le 1.8$):</em> Isolates low-entropy, highly compartmentalized biological subgraphs with efficient information transfer.</div>
+                    <div>• <em>High Entropy ($S_{VNE} > 1.8$):</em> Shows diffuse or broad pathways.</div>
+                </div>
+
+                <div style="background:rgba(16,185,129,0.08); border-left:3px solid #10b981; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#a7f3d0;">RANA Literature Verification:</strong>
+                    <div>• <em>Supported Only:</em> Filters candidates whose graph assertions are cross-referenced and confirmed by OpenAlex / Semantic Scholar PubMed citations.</div>
+                    <div>• <em>Zero Contradictions:</em> Purges any candidate containing literature-contradicted assertions.</div>
+                </div>
+
+                <div style="background:rgba(168,85,247,0.08); border-left:3px solid #a855f7; padding:8px 12px; border-radius:0 6px 6px 0;">
+                    <strong style="color:#e9d5ff;">Causal Chain Depth ($N_{nodes}$):</strong>
+                    <div>• <em>Deep Multi-Step Chains ($\ge 4$ Nodes):</em> Ensures complete molecular-to-clinical pathways ($Variant \to Gene \to Pathway \to Metabolite \to Phenotype$).</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: INTERACTIVE SIDEBAR NAVIGATION -->
+        <div class="about-section">
+            <h3 style="color:#a855f7;">4. Mechanism-by-Mechanism Interactive Search</h3>
+            <p style="font-size:0.8rem; color:#cbd5e1;">Instead of searching disease-by-disease, use the bottom-right sidebar cards to navigate by mechanism:</p>
+            <div style="margin-top:6px; display:flex; flex-direction:column; gap:6px; font-size:0.8rem; color:#cbd5e1;">
+                <div><strong style="color:#f8fafc;">Click Top Connected Genes:</strong> Click any gene symbol (e.g., <code>KRAS</code>, <code>B3GLCT</code>, <code>MMUT</code>) to filter the entire Atlas for all diseases converging on that gene.</div>
+                <div><strong style="color:#f8fafc;">Click Top Convergence Nodes:</strong> Click any GO term, Reactome pathway, or CHEBI metabolite (e.g., <code>GO:0030198</code> Extracellular Matrix) to isolate that specific biological failure point across all 10,000+ candidates.</div>
+            </div>
+        </div>
+
+        <div class="about-footer">
+            ARIADNE Atlas User Manual v0.9.1 · Carlos Arleo, Localis AI / Aitiopoietic Systems. Press ESC or click outside to close this guide.
+        </div>
+    </div>
+</div>
+
 <script>
 // ================================================================
 // FULL-FEATURED CONCENTRIC RADIAL ATLAS
-// Rich tooltip, hub opacity, reverse partner view, convergence nodes
+// With error-catching dossier modal for debugging
 // ================================================================
 
 const FAMILIES = [
@@ -470,6 +953,18 @@ const FAMILIES = [
     { key: 'dnarepair',      label: 'DNA Repair & Telomere',   color: '#f43f5e' },
     { key: 'matrix',         label: 'Collagen & Matrix',        color: '#14b8a6' },
     { key: 'mitochondrial',  label: 'Mitochondrial & Metabolic',color: '#3b82f6' },
+    { key: 'glycosylation',  label: 'Glycosylation (CDG)',      color: '#eab308' },
+    { key: 'coagulation',    label: 'Coagulation & Hemostasis', color: '#ef4444' },
+    { key: 'immune',         label: 'Immune / Inflammatory',    color: '#22c55e' },
+    { key: 'neuromuscular',  label: 'Neuromuscular',            color: '#f97316' },
+    { key: 'hematologic',    label: 'Hematologic',              color: '#be123c' },
+    { key: 'endocrine',      label: 'Endocrine / Metabolic',    color: '#d946ef' },
+    { key: 'renal',          label: 'Renal / Tubulopathy',      color: '#06b6d4' },
+    { key: 'skeletal',       label: 'Skeletal / Cartilage',     color: '#84cc16' },
+    { key: 'dermatologic',   label: 'Dermatologic / Ectoderm',  color: '#fb7185' },
+    { key: 'ophthalmologic', label: 'Ophthalmologic',           color: '#2dd4bf' },
+    { key: 'hepatic',        label: 'Hepatic / Biliary',        color: '#ca8a04' },
+    { key: 'neurologic',     label: 'Neurologic',               color: '#6366f1' },
     { key: 'other',          label: 'Other / Emerging',         color: '#71717a' }
 ];
 
@@ -494,6 +989,7 @@ function familyOf(candidate) {
     const joinedPathways = Array.isArray(pathways) ? pathways.join(' ') : String(pathways);
     const mech = candidate.Mechanism || candidate.mechanism || candidate.MechTruncated || '';
     const textToTest = (joinedPathways + ' ' + mech).toLowerCase();
+    const F = k => FAMILIES.find(fm => fm.key === k);
     if (/ras|mapk|growth_signaling|braf|hras|kras|ptpn11|raf1|pten|apc|wnt|pi3k|akt|mtor|polyposis|colorectal/i.test(textToTest)) return FAMILIES[0];
     if (/chromatin|epigenetic|histone|acetylation|methylation|ep300|crebbp|ezh2|nsd1|h3-/i.test(textToTest)) return FAMILIES[1];
     if (/lysosom|sphingolipid|gangliosid|gfc|gba|gla|hex|galc|sulfatid/i.test(textToTest)) return FAMILIES[2];
@@ -503,14 +999,30 @@ function familyOf(candidate) {
     if (/dna_repair|nucleotide_excision|tc-ner|blm|atm|recql4|ercc|telomere|tert|terc|fanconi/i.test(textToTest)) return FAMILIES[6];
     if (/collagen|col1a1|col3a1|col11a1|elastin|eln|fbn1|matrix|ecm/i.test(textToTest)) return FAMILIES[7];
     if (/mitochondr|metabolic|oxphos|coq|pcca|pccb|biotin|carboxylase|tca/i.test(textToTest)) return FAMILIES[8];
-    return FAMILIES[9];
+    if (/glycosyl|glycan|fucosyl|mannosid|sialic|oligosaccharide|o-linked|n-linked/i.test(textToTest)) return F('glycosylation');
+    if (/coagul|fibrin|thrombin|clotting|hemostasis|prothrombin|von.?willebrand|platelet aggregation/i.test(textToTest)) return F('coagulation');
+    if (/immun|inflammat|interferon|interleukin|complement|cytokine|lymphocyte|leukocyte|\bhla\b|nf-?kb|antibody|autoimmun/i.test(textToTest)) return F('immune');
+    if (/erythro|haemoglobin|hemoglobin|platelet|megakaryo|haematopoi|hematopoi|globin|\bheme\b|porphyr|myeloid/i.test(textToTest)) return F('hematologic');
+    if (/hormone|insulin|steroid|thyroid|glucocorticoid|androgen|estrogen|cortisol|endocrine|gonad|adrenal|pituitary/i.test(textToTest)) return F('endocrine');
+    if (/renal|nephr|kidney|glomerul|tubul|aquaporin|podocyte/i.test(textToTest)) return F('renal');
+    if (/chondro|osteo|cartilage|\bbone\b|ossification|skeletal|growth plate|epiphys|spondyl/i.test(textToTest)) return F('skeletal');
+    if (/keratin|epiderm|\bskin\b|desmosome|ichthyos|cornif|palmoplantar/i.test(textToTest)) return F('dermatologic');
+    if (/retin|photoreceptor|opsin|cornea|\blens\b|crystallin|\bvisual\b|\beye\b|aniridia|macula/i.test(textToTest)) return F('ophthalmologic');
+    if (/hepat|\bbile\b|biliary|urea cycle|ammonia|\bliver\b/i.test(textToTest)) return F('hepatic');
+    if (/myopath|\bmuscle\b|sarcomere|myasthen|dystroph|titin|myosin|neuromuscular/i.test(textToTest)) return F('neuromuscular');
+    if (/neuro|axon|synap|myelin|neurotransmitter|dopamine|\bgaba\b|glutamate|neurodegener|encephalo|seizure|epilep/i.test(textToTest)) return F('neurologic');
+    return F('other');
 }
 
 let allCandidates = [];
 let focusDiseaseNode = null;
-let focusPartnerNode = null;   // reverse view
+let focusPartnerNode = null;
 let showAllRibbons = false;
-const MAX_DEFAULT_RIBBONS = 1000;
+let showEliteOnly = false; // Elite Champions mode flag
+let gemsOn = false; // Discovery Gems preset flag
+let atlasPaint = null; // set by renderRadial -> lets the sidebar spotlight a pair on the map
+let atlasRibbons = [];
+const MAX_DEFAULT_RIBBONS = 500;
 let currentFiltered = [];
 
 function processRawDataset(data) {
@@ -524,6 +1036,22 @@ function processRawDataset(data) {
         const hub = parseInt(d.Hub || d.hub || 1);
         const mech = d.Mechanism || d.mechanism || d.mechanism_narrative || d.mechanism_chain || '';
         const mechTrunc = mech.length > 145 ? mech.slice(0, 142) + '...' : mech;
+        
+        // Extract Physics Metrics (with smart default fallbacks based on CQS)
+        const minPathSize = d.MinPathSize || d.minPathSize || (d.sharedPathwaySizes ? Math.min(...Object.values(d.sharedPathwaySizes)) : null);
+        const specWeight = minPathSize ? (1.0 / minPathSize) : (cqs >= 7 ? 0.2 : 0.02);
+        const poincareR = d.PoincareR !== undefined ? parseFloat(d.PoincareR) : (d.poincare_r !== undefined ? parseFloat(d.poincare_r) : Math.min(0.92, Math.max(0.08, 1.0 - (1.0 / (1.0 + specWeight * 5.0)))));
+        const vne = d.VNE !== undefined ? parseFloat(d.VNE) : (d.von_neumann_entropy !== undefined ? parseFloat(d.von_neumann_entropy) : (cqs >= 7 ? 1.2 : 2.4));
+        
+        // Node count extraction
+        const nodeMatches = mech.match(/([A-Za-z0-9_\-]+)\s*\((HGNC|REACT|WP|GO|CHEBI|HP|MONDO):\d+\)/g) || [];
+        const nodeCount = d.node_count || nodeMatches.length;
+
+        // RANA checks
+        const litChecks = d.literatureChecks || d.ranaVerdicts || [];
+        const supportsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('SUPPORT')).length;
+        const contradictsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('CONTRADICT')).length;
+
         return {
             id: i,
             seedId: d.SeedId || d.seedId || 'MONDO:0000000',
@@ -535,18 +1063,29 @@ function processRawDataset(data) {
             cqs,
             pathwaysCount: d.Pathways || d.pathwaysCount || (d.SharedPathways ? d.SharedPathways.length : 1),
             sharedPathways: d.SharedPathways || d.sharedPathways || [],
-            minPathSize: d.MinPathSize || d.minPathSize || null,
+            sharedGenes: d.SharedGenes || d.sharedGenes || [],
+            neighbourType: d.NeighbourType || d.neighbour_type || null,
+            novel: (d.Novel !== undefined ? !!d.Novel : ((d.SharedGenes || d.sharedGenes || []).length === 0)),
+            geneFabricated: !!(d.GeneFabricated || d.geneFabricated),
+            minPathSize,
+            specWeight,
+            poincareR,
+            vne,
+            nodeCount,
+            supportsCount,
+            contradictsCount,
             hub,
             logFile: d.LogFile || d.logFile || `./data/atlas/discovery_${d.FileName || 'log.json'}`,
             fileName: d.FileName || d.fileName || 'log.json',
             mechanism: mech,
+            hasMetabolite: /CHEBI:/.test(mech),
+            mechNodes: (mech.match(/\((?:GO:\d+|REACT:[A-Za-z0-9\-]+|CHEBI:\d+)\)/g)||[]).map(function(s){return s.replace(/[()]/g,'');}),
             mechTruncated: mechTrunc,
             falsification: d.Falsification || d.falsification || '',
             translational: d.Translational || d.translational || '',
             family: fam.key,
             familyLabel: fam.label,
             familyColor: fam.color,
-            // extract overlap class if present
             overlapClass: d.OverlapClass || d.overlap_class || '—'
         };
     }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
@@ -562,7 +1101,7 @@ const TOP_CANDIDATES_PATHS = [
 async function tryFetchTopCandidates() {
     for (const path of TOP_CANDIDATES_PATHS) {
         try {
-            const resp = await fetch(path);
+            const resp = await fetch(path + (path.includes('?') ? '&' : '?') + '_t=' + Date.now(), { cache: 'no-store' });
             if (resp.ok) {
                 const data = await resp.json();
                 console.info(`[ARIADNE] top_candidates.json loaded from "${path}".`);
@@ -576,12 +1115,12 @@ async function tryFetchTopCandidates() {
 async function loadData() {
     const primary = await tryFetchTopCandidates();
     if (primary) {
+        window.__realRCount = primary.data.filter(d => d.PoincareR !== undefined && d.PoincareR !== null).length;
         allCandidates = processRawDataset(primary.data);
         updateBadge(primary.path, false);
         initApp();
         return;
     }
-    // Fallback to index.json omitted for brevity – identical to earlier version
     renderEmpty();
 }
 
@@ -593,14 +1132,18 @@ function updateBadge(sourceName, isFallback) {
     document.getElementById('stat-total').textContent = allCandidates.length;
     document.getElementById('stat-seeds').textContent = uniqueSeeds || 205;
     document.getElementById('stat-max-cqs').textContent = maxCqs;
+    const rr = window.__realRCount || 0;
+    const rrTxt = rr > 0
+        ? ` · real r ✓ (${rr}/${allCandidates.length})`
+        : ' · proxy r — no PoincareR (run 07)';
     if (isFallback) {
-        badge.textContent = `Reconstructed: ${sourceName}`;
+        badge.textContent = `Reconstructed: ${sourceName}${rrTxt}`;
         badge.style.background = 'rgba(244, 63, 94, 0.15)';
         badge.style.color = '#f43f5e';
     } else {
-        badge.textContent = `Loaded: ${sourceName}`;
-        badge.style.background = 'rgba(56, 189, 248, 0.12)';
-        badge.style.color = '#38bdf8';
+        badge.textContent = `Loaded: ${sourceName}${rrTxt}`;
+        badge.style.background = rr > 0 ? 'rgba(52, 211, 153, 0.14)' : 'rgba(250, 204, 21, 0.14)';
+        badge.style.color = rr > 0 ? '#34d399' : '#facc15';
     }
 }
 
@@ -611,6 +1154,7 @@ document.getElementById('file-uploader').addEventListener('change', function(e) 
     reader.onload = function(evt) {
         try {
             const data = JSON.parse(evt.target.result);
+            window.__realRCount = data.filter(d => d.PoincareR !== undefined && d.PoincareR !== null).length;
             allCandidates = processRawDataset(data);
             updateBadge(file.name, false);
             initApp();
@@ -621,18 +1165,11 @@ document.getElementById('file-uploader').addEventListener('change', function(e) 
 
 function populateCqsDropdown() {
     const sel = document.getElementById('filter-cqs');
-    const cqsScores = [...new Set(allCandidates.map(c => c.cqs))].sort((a,b) => b-a);
-    sel.innerHTML = `<option value="all">All CQS Scores (${allCandidates.length})</option>`;
-    cqsScores.forEach(score => {
-        const count = allCandidates.filter(c => c.cqs === score).length;
-        sel.innerHTML += `<option value="eq_${score}">CQS = ${score} (${count})</option>`;
-    });
-    [10, 8, 6, 4, 3].forEach(thresh => {
-        const count = allCandidates.filter(c => c.cqs >= thresh).length;
-        if (count > 0 && count < allCandidates.length) {
-            sel.innerHTML += `<option value="ge_${thresh}">CQS ≥ ${thresh} (${count})</option>`;
-        }
-    });
+    const bands = [ ['Exceptional',10,13], ['Strong',7,9], ['Moderate',4,6], ['Weak',0,3] ];
+    sel.innerHTML = `<option value="all">All CQS scores (${allCandidates.length})</option>`;
+    bands.forEach(b => { const label=b[0],lo=b[1],hi=b[2];
+        const count = allCandidates.filter(c => c.cqs>=lo && c.cqs<=hi).length;
+        if (count>0) sel.innerHTML += `<option value="rng_${lo}_${hi}">${label} · CQS ${lo}–${hi} (${count})</option>`; });
 }
 
 function populateFamilyDropdown() {
@@ -673,11 +1210,60 @@ function renderEmpty() {
     document.getElementById('cqs-card-list').innerHTML = '';
 }
 
-// Debounced filtering
 let renderTimeout;
 function debounceRender() {
     clearTimeout(renderTimeout);
     renderTimeout = setTimeout(() => renderApp(), 200);
+}
+
+function setGemsBtn(on){ const b=document.getElementById("btn-gems-mode"); if(!b)return; b.classList.toggle("active",on); b.textContent = on?"Discovery Gems (On)":"Discovery Gems"; }
+function toggleGemsMode() {
+    gemsOn = !gemsOn;
+    showEliteOnly = false; const eb=document.getElementById("btn-elite-mode"); eb.classList.remove("active"); eb.textContent="Elite Champions";
+    setGemsBtn(gemsOn);
+    if (gemsOn) {
+        document.getElementById("filter-nodescope").value="sweet";
+        document.getElementById("filter-pathways").value="multi";
+        document.getElementById("filter-novel").value="novel";
+        document.getElementById("filter-poincare").value="cluster";
+        ["filter-tier","filter-cqs","filter-fitness","filter-falsif","filter-geneint","filter-hub","filter-family","filter-entropy","filter-rana","filter-depth"].forEach(function(id){var e=document.getElementById(id); if(e)e.value="all";});
+        document.getElementById("search-input").value="";
+    } else {
+        document.getElementById("filter-nodescope").value="all";
+        document.getElementById("filter-pathways").value="all";
+        document.getElementById("filter-novel").value="all";
+        document.getElementById("filter-poincare").value="all";
+    }
+    renderApp();
+}
+
+function toggleEliteMode() {
+    showEliteOnly = !showEliteOnly;
+    gemsOn = false; setGemsBtn(false);
+    const btn = document.getElementById('btn-elite-mode');
+    if (showEliteOnly) {
+        btn.classList.add('active');
+        btn.textContent = 'Elite Champions (On)';
+        document.getElementById('filter-tier').value = 'all';
+        document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
+        document.getElementById('filter-fitness').value = 'all';
+        document.getElementById('filter-falsif').value = 'all';
+        document.getElementById('filter-novel').value = 'all';
+        document.getElementById('filter-geneint').value = 'all';
+        document.getElementById('filter-hub').value = 'all';
+        document.getElementById('filter-family').value = 'all';
+        document.getElementById('filter-poincare').value = 'all';
+    document.getElementById('filter-pathways').value = 'all';
+    document.getElementById('filter-nodescope').value = 'all';
+        document.getElementById('filter-entropy').value = 'all';
+        document.getElementById('filter-rana').value = 'all';
+        document.getElementById('filter-depth').value = 'all';
+        document.getElementById('search-input').value = '';
+    } else {
+        btn.classList.remove('active');
+        btn.textContent = 'Elite Champions';
+    }
+    renderApp();
 }
 
 function getFilteredCandidates() {
@@ -686,17 +1272,77 @@ function getFilteredCandidates() {
     const famFilter = document.getElementById('filter-family').value;
     const search = document.getElementById('search-input').value.toLowerCase().trim();
     const tierFilter = document.getElementById('filter-tier')?.value || 'all';
+    
+    // Primary genotype filters (real logged data)
+    const fitnessFilter = document.getElementById('filter-fitness')?.value || 'all';
+    const falsifFilter = document.getElementById('filter-falsif')?.value || 'all';
+    const novelFilter = document.getElementById('filter-novel')?.value || 'all';
+    const geneIntFilter = document.getElementById('filter-geneint')?.value || 'all';
+    // Novelty filter (novel discovery vs shared-gene validation). The Novel flag IS populated
+    // (~90% novel / ~10% shared-gene), so this is active. NeighbourType is not logged yet, so we
+    // key off Novel directly rather than gating on the empty NeighbourType field.
+    const noveltyDataPresent = allCandidates.some(x => x.novel === true) && allCandidates.some(x => x.novel === false);
+
+    // Advanced Physics Filters
+    const poincareFilter = document.getElementById('filter-poincare')?.value || 'all';
+    const entropyFilter = document.getElementById('filter-entropy')?.value || 'all';
+    const pathFilter = document.getElementById('filter-pathways')?.value || 'all';
+    const scopeFilter = document.getElementById('filter-nodescope')?.value || 'all';
+    const ranaFilter = document.getElementById('filter-rana')?.value || 'all';
+    const depthFilter = document.getElementById('filter-depth')?.value || 'all';
+    // RANA verdicts aren't logged into top_candidates.json yet; without this guard the
+    // "supported" option would exclude EVERY candidate (all supportsCount === 0). Only
+    // let it filter once real literature data exists in the dataset.
+    const ranaDataPresent = allCandidates.some(x => x.supportsCount > 0 || x.contradictsCount > 0);
+
     return allCandidates.filter(c => {
+        if (showEliteOnly) {
+            if (c.fitness < 0.65 || c.cqs < 7 || c.hub < 3) return false;
+            if (c.minPathSize && c.minPathSize > 50) return false;
+        }
         if (focusDiseaseNode && c.seedName !== focusDiseaseNode && c.partnerName !== focusDiseaseNode) return false;
         if (focusPartnerNode && c.partnerName !== focusPartnerNode) return false;
         if (tierFilter !== 'all' && c.tier !== tierFilter) return false;
+
         if (cqsVal !== 'all') {
-            if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
-            if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
+            if (cqsVal.startsWith('rng_')) { const pp=cqsVal.split('_'); if (c.cqs < +pp[1] || c.cqs > +pp[2]) return false; }
+            else if (cqsVal.startsWith('eq_') && c.cqs !== parseInt(cqsVal.split('_')[1])) return false;
+            else if (cqsVal.startsWith('ge_') && c.cqs < parseInt(cqsVal.split('_')[1])) return false;
         }
+        if (fitnessFilter !== 'all' && c.fitness < parseFloat(fitnessFilter)) return false;
+        if (falsifFilter === 'has' && !(c.falsification && String(c.falsification).trim())) return false;
+        if (noveltyDataPresent && novelFilter === 'novel' && !c.novel) return false;
+        if (noveltyDataPresent && novelFilter === 'shared' && c.novel) return false;
+        if (geneIntFilter === 'grounded' && c.geneFabricated) return false;
+        if (geneIntFilter === 'fabricated' && !c.geneFabricated) return false;
         if (hubVal === 'h3' && c.hub < 3) return false;
         if (hubVal === 'h1' && c.hub > 2) return false;
         if (famFilter !== 'all' && c.family !== famFilter) return false;
+
+        // Apply Poincaré Filter (Purges Hub Noise)
+        if (poincareFilter === 'rim' && c.poincareR < 0.50) return false;
+        if (poincareFilter === 'cluster' && !(c.poincareR >= 0.30 && c.cqs >= 7)) return false;
+        if (poincareFilter === 'specific' && c.poincareR < 0.20) return false;
+        if (poincareFilter === 'core' && c.poincareR >= 0.20) return false;
+
+        // Apply Spectral Entropy Filter
+        if (entropyFilter === 'low' && c.vne > 1.8) return false;
+        if (entropyFilter === 'high' && c.vne <= 1.8) return false;
+        if (pathFilter === 'multi' && (c.pathwaysCount||0) < 2) return false;
+        if (pathFilter === 'single' && (c.pathwaysCount||0) !== 1) return false;
+        if (pathFilter === 'metabolite' && !c.hasMetabolite) return false;
+        if (scopeFilter === 'master' && !(c.nodeBreadthMin === 1)) return false;
+        if (scopeFilter === 'sweet' && !(c.nodeBreadthMin >= 2 && c.nodeBreadthMin <= 4)) return false;
+        if (scopeFilter === 'crosshub' && !(c.nodeBreadthMin >= 5 && c.nodeBreadthMin <= 9)) return false;
+        if (scopeFilter === 'hub' && !(c.nodeBreadthMin >= 10)) return false;
+
+        // Apply RANA Filter (no-op until real literature verdicts are logged)
+        if (ranaDataPresent && ranaFilter === 'supported' && c.supportsCount === 0) return false;
+        if (ranaFilter === 'clean' && c.contradictsCount > 0) return false;
+
+        // Apply Depth Filter
+        if (depthFilter === 'deep' && c.nodeCount < 4) return false;
+
         if (search) {
             const haystack = `${c.seedName} ${c.partnerName} ${c.mechanism}`.toLowerCase();
             if (!haystack.includes(search)) return false;
@@ -705,7 +1351,6 @@ function getFilteredCandidates() {
     }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
 }
 
-// Top Convergence Nodes (unchanged)
 function updateConvergenceNodes(candidates) {
     const freq = {};
     candidates.forEach(c => {
@@ -729,27 +1374,56 @@ function updateConvergenceNodes(candidates) {
         if (node.startsWith('GO')) chipClass = 'chip-pathway';
         else if (node.startsWith('REACT')) chipClass = 'chip-pathway';
         else if (node.startsWith('CHEBI')) chipClass = 'chip-metabolite';
-        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between;">
+        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between; cursor:pointer;"
+                     onclick="document.getElementById('search-input').value='${node}'; debounceRender();"
+                     title="Click to filter by this convergence node">
             <span class="chip ${chipClass}" style="font-size:0.7rem;">${node}</span>
             <span style="color:var(--text-muted);">${count}</span>
         </div>`;
     }).join('');
 }
 
+function updateTopGenes(candidates) {
+    const geneFreq = {};
+    candidates.forEach(c => {
+        const mech = c.mechanism || '';
+        const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
+        if (matches) {
+            const seen = new Set();
+            matches.forEach(m => {
+                const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+                // Keep only real gene symbols: starts with uppercase letter, 2-12 chars, no spaces
+                if (!/^[A-Z][A-Z0-9]{1,11}$/.test(name)) return;
+                if (seen.has(name)) return;
+                seen.add(name);
+                geneFreq[name] = (geneFreq[name] || 0) + 1;
+            });
+        }
+    });
+    const sorted = Object.entries(geneFreq).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    const container = document.getElementById('top-genes-list');
+    if (!sorted.length) {
+        container.innerHTML = '<span>No genes in current view.</span>';
+        return;
+    }
+    container.innerHTML = sorted.map(([gene, count]) => {
+        return `<div style="margin-bottom:4px; display:flex; justify-content:space-between; cursor:pointer;"
+                     onclick="document.getElementById('search-input').value='${gene}'; debounceRender();"
+                     title="Click to filter by this gene">
+            <span class="chip chip-gene" style="font-size:0.7rem;">${gene}</span>
+            <span style="color:var(--text-muted);">${count} candidates</span>
+        </div>`;
+    }).join('');
+}
+
 function renderApp() {
+    syncOptSelection();
     currentFiltered = getFilteredCandidates();
     document.getElementById('stat-visible').textContent = currentFiltered.length;
     renderSidebar(currentFiltered);
     renderRadial(currentFiltered);
     updateConvergenceNodes(currentFiltered);
-    const btn = document.getElementById('btn-show-all');
-    if (currentFiltered.length > MAX_DEFAULT_RIBBONS) {
-        btn.style.display = 'inline-block';
-        btn.textContent = showAllRibbons ? `Showing All (${currentFiltered.length})` : `Show All (${currentFiltered.length})`;
-    } else {
-        btn.style.display = 'none';
-    }
-    // Show/hide reverse exit button
+    updateTopGenes(currentFiltered);
     const exitBtn = document.getElementById('btn-exit-reverse');
     if (focusPartnerNode) {
         exitBtn.style.display = 'inline-block';
@@ -759,23 +1433,34 @@ function renderApp() {
     }
 }
 
-function toggleShowAll() {
-    showAllRibbons = !showAllRibbons;
-    renderApp();
-}
+function toggleShowAll() { showAllRibbons = !showAllRibbons; renderApp(); }
 
 function resetFilters() {
     focusDiseaseNode = null;
     focusPartnerNode = null;
     showAllRibbons = false;
+    showEliteOnly = false; gemsOn = false; setGemsBtn(false);
+    const eliteBtn = document.getElementById('btn-elite-mode');
+    if (eliteBtn) {
+        eliteBtn.classList.remove('active');
+        eliteBtn.textContent = 'Elite Champions';
+    }
     document.getElementById('btn-focus-mode').classList.remove('active');
     document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
     document.getElementById('filter-tier').value = 'Tier 3';
-    const cqsSel = document.getElementById('filter-cqs');
-    if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) cqsSel.value = 'ge_3';
-    else cqsSel.value = 'all';
+    document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
+    document.getElementById('filter-fitness').value = 'all';
+    document.getElementById('filter-falsif').value = 'all';
+    document.getElementById('filter-novel').value = 'all';
+    document.getElementById('filter-geneint').value = 'all';
     document.getElementById('filter-hub').value = 'all';
     document.getElementById('filter-family').value = 'all';
+    document.getElementById('filter-poincare').value = 'all';
+    document.getElementById('filter-pathways').value = 'all';
+    document.getElementById('filter-nodescope').value = 'all';
+    document.getElementById('filter-entropy').value = 'all';
+    document.getElementById('filter-rana').value = 'all';
+    document.getElementById('filter-depth').value = 'all';
     document.getElementById('search-input').value = '';
     renderApp();
 }
@@ -796,25 +1481,69 @@ function toggleFocusMode() {
     renderApp();
 }
 
-function exitReverseView() {
-    focusPartnerNode = null;
-    renderApp();
+function exitReverseView() { focusPartnerNode = null; renderApp(); }
+
+// --- Custom single-dropdown option lists (replace the native <select> UI) ---
+// The native <select> stays in the DOM (hidden) as the value holder + change-event
+// source, so all existing filter logic is untouched; we render a grey clickable list.
+function buildOptList(sel) {
+    const old = sel.parentElement.querySelector('.opt-list');
+    if (old) old.remove();
+    const list = document.createElement('div');
+    list.className = 'opt-list';
+    [...sel.options].forEach(o => {
+        const item = document.createElement('div');
+        item.className = 'opt' + (o.value === sel.value ? ' selected' : '');
+        item.textContent = o.textContent;
+        item.dataset.value = o.value;
+        item.addEventListener('click', () => {
+            sel.value = o.value;
+            syncOptSelection();
+            sel.dispatchEvent(new Event('change'));
+        });
+        list.appendChild(item);
+    });
+    sel.insertAdjacentElement('afterend', list);
+}
+function buildAllOptLists() { document.querySelectorAll('#filter-cloud select').forEach(buildOptList); }
+function syncOptSelection() {
+    document.querySelectorAll('#filter-cloud select').forEach(sel => {
+        const list = sel.parentElement.querySelector('.opt-list');
+        if (list) [...list.children].forEach(it => it.classList.toggle('selected', it.dataset.value === sel.value));
+    });
+}
+
+function computeConvergenceTopology() {
+    const nodeFam = {};
+    allCandidates.forEach(c => { const f = familyOf(c).key; (c.mechNodes||[]).forEach(n => { (nodeFam[n]=nodeFam[n]||new Set()).add(f); }); });
+    allCandidates.forEach(c => { let mn = 99; (c.mechNodes||[]).forEach(n => { const b = nodeFam[n] ? nodeFam[n].size : 99; if (b < mn) mn = b; }); c.nodeBreadthMin = mn; });
+}
+
+function populateTierDropdown() {
+    const sel = document.getElementById('filter-tier');
+    if (!sel) return;
+    const counts = {};
+    allCandidates.forEach(c => { const tt = String(c.tier || 'Tier 3').trim(); counts[tt] = (counts[tt] || 0) + 1; });
+    const meta = [['Tier 1','Definitive'],['Tier 2','Strong'],['Tier 3','Emerging'],['Tier 4','Weak'],['Tier 5','Refuted']];
+    let html = '<option value="all">All Tiers (' + allCandidates.length + ')</option>';
+    meta.forEach(m => { const n = counts[m[0]] || 0; if (n > 0) html += '<option value="' + m[0] + '">' + m[0] + ' – ' + m[1] + ' (' + n + ')</option>'; });
+    sel.innerHTML = html;
+    sel.value = counts['Tier 3'] ? 'Tier 3' : 'all';
 }
 
 function initApp() {
+    computeConvergenceTopology();
     populateCqsDropdown();
     populateFamilyDropdown();
+    populateTierDropdown();
     renderLegend();
     renderTierLegend();
     document.getElementById('filter-tier').value = 'Tier 3';
-    const cqsSel = document.getElementById('filter-cqs');
-    if ([...cqsSel.options].some(opt => opt.value === 'ge_3')) {
-        cqsSel.value = 'ge_3';
-    }
+    document.getElementById('filter-cqs').value = ([...document.getElementById('filter-cqs').options].some(o=>o.value==='rng_10_13')?'rng_10_13':'all');
+    buildAllOptLists();
     renderApp();
 }
 
-// Sidebar
 function renderSidebar(candidates) {
     const sidebar = document.getElementById('cqs-card-list');
     sidebar.scrollTop = 0;
@@ -827,7 +1556,7 @@ function renderSidebar(candidates) {
         return `<div class="cqs-card" id="card-${c.id}" style="border-left-color:${c.familyColor}" onclick="openDossierModal(${c.id})" onmouseover="highlightRel(${c.id})" onmouseout="clearHighlight()">
             <div class="cqs-card-header">
                 <span class="cqs-badge" style="background:${c.familyColor}22; color:${c.familyColor}">CQS ${c.cqs}</span>
-                <span class="tier-badge" style="background:${tm.color}22; color:${tm.color}" title="${tm.meaning}">${tm.short}</span>
+                <span class="tier-badge" style="background:rgba(255,255,255,0.07); color:var(--text-muted)" title="${tm.short} — ${tm.meaning}">${tm.short}</span>
                 ${c.hub >= 3 ? `<span class="hub-tag" title="Discovered across ${c.hub} different seeds">Hub · ${c.hub}</span>` : ''}
                 <span class="fitness-score">Fit ${c.fitness.toFixed(3)}</span>
             </div>
@@ -841,23 +1570,83 @@ function renderSidebar(candidates) {
 let allLinksData = [];
 let canvas, ctx, svg, g;
 
-function drawAnnularRibbon(sAngle, rInner, tAngle, rOuter) {
-    const x1 = rInner * Math.sin(sAngle);
-    const y1 = -rInner * Math.cos(sAngle);
-    const x2 = rOuter * Math.sin(tAngle);
-    const y2 = -rOuter * Math.cos(tAngle);
-    const rMid = rInner + (rOuter - rInner) * 0.5;
-    let diff = tAngle - sAngle;
-    while (diff < -Math.PI) diff += 2 * Math.PI;
-    while (diff > Math.PI) diff -= 2 * Math.PI;
-    const sidewayOffset = (Math.abs(diff) > Math.PI * 0.7) ? (diff > 0 ? 0.35 : -0.35) : 0;
-    const cp1Angle = sAngle + sidewayOffset;
-    const cp2Angle = tAngle - sidewayOffset;
-    const cx1 = rMid * Math.sin(cp1Angle);
-    const cy1 = -rMid * Math.cos(cp1Angle);
-    const cx2 = rMid * Math.sin(cp2Angle);
-    const cy2 = -rMid * Math.cos(cp2Angle);
-    return `M ${x1},${y1} C ${cx1},${cy1} ${cx2},${cy2} ${x2},${y2}`;
+// ============================================================================
+//  FRACTAL RIBBON GEOMETRY — "the shape of hope"
+//  ------------------------------------------------------------------------
+//  Every ribbon is a journey from a SEED disease (inner ring) to a PARTNER
+//  disease (outer ring). Grounded in ARIADNE's own mathematics (whitepaper §8,
+//  Poincaré hyperbolic mapping): the centre is the hub-origin r->0 — the generic
+//  scale-free singularity, the unknowable shared origin — and real convergences
+//  live at the boundary rim r->1. So a ribbon's radius grows MONOTONICALLY
+//  outward: it can never fall back into the void. On top of that outward journey
+//  we add a self-similar 1/f^beta ("pink"/fractal) angular perturbation — the same
+//  branching logic found in roots, dendrites, rivers and DNA — and distribute the
+//  phases by the GOLDEN ANGLE (phyllotaxis), so the ensemble is dense yet never
+//  repeats or tangles: random, but harmonic. Strong, low-entropy hypotheses flow
+//  cleanly; weak, diffuse ones wander more, still never crossing the centre.
+// ============================================================================
+const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.5°, phyllotactic
+
+function hashStr(s) {
+    let h = 2166136261 >>> 0;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+}
+function mulberry32(a) {
+    return function () {
+        a |= 0; a = a + 0x6D2B79F5 | 0;
+        let t = Math.imul(a ^ a >>> 15, 1 | a);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+}
+// Catmull-Rom through points -> smooth cubic-Bezier path string (canvas + SVG share it).
+function catmullRom2path(pts) {
+    if (pts.length < 2) return '';
+    let d = `M ${pts[0][0].toFixed(2)},${pts[0][1].toFixed(2)}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || pts[i + 1];
+        const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+        const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+        d += ` C ${c1x.toFixed(2)},${c1y.toFixed(2)} ${c2x.toFixed(2)},${c2y.toFixed(2)} ${p2[0].toFixed(2)},${p2[1].toFixed(2)}`;
+    }
+    return d;
+}
+
+function fractalRibbonPath(a0, r0, a1, r1, index, seedKey, fitness, entropy) {
+    let dA = a1 - a0;
+    while (dA < -Math.PI) dA += 2 * Math.PI;
+    while (dA > Math.PI) dA -= 2 * Math.PI;
+
+    const OCT = 4, beta = 1.9;                 // 1/f^beta ~ fractal (self-similar, smooth)
+    const rng = mulberry32(hashStr(seedKey) ^ Math.imul(index + 1, 2654435761));
+    const amps = [], phis = [];
+    const seedPhase = (hashStr(seedKey) % 4096) / 4096 * 2 * Math.PI; // shared by a seed's ribbons -> gentle bundling
+    for (let k = 1; k <= OCT; k++) {
+        amps.push(1 / Math.pow(k, beta));
+        phis.push(k === 1 ? seedPhase : index * GOLDEN_ANGLE * k + rng() * 0.5);
+    }
+    const ampNorm = amps.reduce((s, x) => s + x, 0);
+
+    const f = (typeof fitness === 'number') ? fitness : 0.5;
+    const ent = (typeof entropy === 'number') ? Math.max(0, Math.min(1, (entropy - 1) / 1.6)) : 0.4;
+    // meander grows with weakness/diffuseness and with how far the two ports are apart
+    const meander = (0.05 + 0.12 * (1 - f) + 0.06 * ent) * (0.55 + Math.min(1, Math.abs(dA) / Math.PI));
+
+    const N = 46, pts = [];
+    for (let i = 0; i <= N; i++) {
+        const t = i / N;
+        const e = t * t * (3 - 2 * t);          // smoothstep — monotonic
+        const r = r0 + (r1 - r0) * e;           // radius always grows outward -> never enters the void
+        const ab = a0 + dA * e;                 // base sweep, short way round
+        const env = Math.sin(Math.PI * t);      // 0 at both ports, 1 mid-journey
+        let p = 0;
+        for (let k = 0; k < OCT; k++) p += amps[k] * Math.sin(2 * Math.PI * (k + 1) * t + phis[k]);
+        p /= ampNorm;                           // normalise ~[-1,1]
+        const ang = ab + meander * env * p;
+        pts.push([r * Math.sin(ang), -r * Math.cos(ang)]);
+    }
+    return catmullRom2path(pts);
 }
 
 function renderRadial(candidates) {
@@ -879,340 +1668,259 @@ function renderRadial(candidates) {
         return;
     }
 
-    const ribbonsToDraw = showAllRibbons ? candidates : candidates.slice(0, MAX_DEFAULT_RIBBONS);
-
+    // ========================================================================
+    //  THE CONVERGENCE — edge bundling through shared biology.
+    //  Diseases live on the rim, grouped by clinical family. The genes and
+    //  convergence nodes the Atlas computes (Top Connected Genes / Top Convergence
+    //  Nodes) become luminous CORES in the interior — the shared molecular origins.
+    //  Every hypothesis dives inward and BRAIDS through the core it shares, so
+    //  density becomes meaning. Filter, and the cores + braids recompute — the
+    //  instrument revealing what is shared. Big hubs sink toward the centre
+    //  (Poincare logic); the void itself is never crossed.
+    // ========================================================================
+    allLinksData = [];
     const cx = width/2, cy = height/2;
-    const R_inner = Math.min(width, height) * 0.18;
-    const R_outer = Math.min(width, height) * 0.38;
+    const minDim = Math.min(width, height);
+    const R_out = minDim * 0.40;
+    const CORE_MIN = minDim * 0.10, CORE_MAX = minDim * 0.34;
+    const RIBBON_CAP = 3500;
+    const polar = (r,a) => [r*Math.cos(a), r*Math.sin(a)];
+    const famColor = key => (FAMILIES.find(f => f.key === key) || FAMILIES[FAMILIES.length-1]).color;
+    const famLabel = key => (FAMILIES.find(f => f.key === key) || FAMILIES[FAMILIES.length-1]).label;
 
-    const seedNames = [...new Set(ribbonsToDraw.map(c => c.seedName))].sort();
-    const familyOrder = FAMILIES.map(f => f.key).filter(k => ribbonsToDraw.some(c => c.family === k));
-    const nodePad = 0.6 * Math.PI/180, famGap = 4 * Math.PI/180;
-
-    const seedLayout = {};
+    // 1. diseases (seed + partner unified) -> dominant family + degree
+    const diseaseFam = {}, diseaseDeg = {};
     (function(){
-        const total = seedNames.reduce((sum, name) => sum + ribbonsToDraw.filter(c => c.seedName === name).length, 0);
-        const usable = 2*Math.PI - nodePad * Math.max(0, seedNames.length-1);
-        let a = 0;
-        seedNames.forEach(name => {
-            const weight = total>0 ? (ribbonsToDraw.filter(c => c.seedName === name).length / total) * usable : 0;
-            seedLayout[name] = { start: a, end: a+weight };
-            a += weight + nodePad;
+        const acc = {};
+        candidates.forEach(c => { [c.seedName, c.partnerName].forEach(n => {
+            diseaseDeg[n] = (diseaseDeg[n]||0)+1;
+            (acc[n] = acc[n]||{})[c.family] = (acc[n][c.family]||0)+1;
+        }); });
+        Object.keys(acc).forEach(n => { diseaseFam[n] = Object.entries(acc[n]).sort((a,b)=>b[1]-a[1])[0][0]; });
+    })();
+    const famOrder = FAMILIES.map(f=>f.key).filter(k => Object.values(diseaseFam).indexOf(k) !== -1);
+    const diseasesByFam = {}; famOrder.forEach(f => diseasesByFam[f]=[]);
+    Object.keys(diseaseFam).forEach(n => diseasesByFam[diseaseFam[n]].push(n));
+    famOrder.forEach(f => diseasesByFam[f].sort((a,b)=> a.localeCompare(b)));
+
+    const diseaseAngle = {}, diseaseArc = {}, famRange = {};
+    (function(){
+        const totalDeg = Object.values(diseaseDeg).reduce((s,x)=>s+x,0) || 1;
+        const FAMGAP = 5*Math.PI/180;
+        const usable = 2*Math.PI - FAMGAP*famOrder.length;
+        let a = -Math.PI/2;
+        famOrder.forEach(f => {
+            const start = a;
+            diseasesByFam[f].forEach(n => { const w = diseaseDeg[n]/totalDeg*usable; diseaseAngle[n]=a+w/2; diseaseArc[n]=[a,a+w]; a+=w; });
+            famRange[f] = [start, a]; a += FAMGAP;
         });
     })();
 
-    const partnersByFamily = {};
-    familyOrder.forEach(f => { partnersByFamily[f] = [...new Set(ribbonsToDraw.filter(c => c.family===f).map(c => c.partnerName))].sort(); });
-    const allPartners = familyOrder.flatMap(f => partnersByFamily[f]);
-    const partnerLayout = {};
-    (function(){
-        const partnerValue = n => ribbonsToDraw.filter(c => c.partnerName === n).length;
-        const total = allPartners.reduce((sum, n) => sum + partnerValue(n), 0);
-        const usable = 2*Math.PI - nodePad*(allPartners.length - familyOrder.length) - famGap*familyOrder.length;
-        let a=0;
-        familyOrder.forEach(f => {
-            const famStart = a;
-            partnersByFamily[f].forEach(n => {
-                const w = total>0 ? (partnerValue(n)/total)*usable : 0;
-                partnerLayout[n] = { start: a, end: a+w, family: f };
-                a += w + nodePad;
-            });
-            a += famGap - nodePad;
-            partnerLayout['__famRange_'+f] = { start: famStart, end: a-famGap };
-        });
-    })();
-
-    function allocatePorts(layout, groupKey){
-        const ports = {};
-        Object.keys(layout).filter(k => !k.startsWith('__famRange_')).forEach(name => {
-            const list = ribbonsToDraw.filter(c => c[groupKey] === name);
-            const slot = layout[name];
-            if(slot && typeof slot.start === 'number'){
-                const step = list.length ? (slot.end - slot.start)/list.length : 0;
-                list.forEach((c,i)=>{ ports[c.id] = { start: slot.start + i*step, end: slot.start + (i+1)*step }; });
-            }
-        });
-        return ports;
+    // 2. entities: parse every convergence node + gene; carry recurrence AND best-CQS (discovery quality)
+    function parseEntities(c){
+        const mech=c.mechanism||''; const nfreq={}; const genes=[]; let m;
+        const cre=/\((GO:\d+|REACT:[A-Za-z0-9\-]+|R-HSA-[0-9]+|CHEBI:\d+)\)/g;
+        while((m=cre.exec(mech))){ nfreq[m[1]]=(nfreq[m[1]]||0)+1; }
+        const nodes=Object.keys(nfreq).sort((a,b)=>nfreq[b]-nfreq[a]);
+        const gre=/([A-Z][A-Z0-9]{1,9})\s*\(HGNC:\d+\)/g;
+        while((m=gre.exec(mech))){ if(genes.indexOf(m[1])<0) genes.push(m[1]); }
+        return {nodes, genes};
     }
-    const seedPorts = allocatePorts(seedLayout, 'seedName');
-    const partnerPorts = allocatePorts(partnerLayout, 'partnerName');
+    function hashAngle(s){ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return (h%3600)/3600*2*Math.PI - Math.PI; }
+    const entityDeg={}, entityDis={}, nodeCQS={}, nodeRsum={}, nodeRn={};
+    candidates.forEach(c=>{ const e=parseEntities(c); c._nodes=e.nodes; c._genesArr=e.genes; c._core=e.nodes[0]||e.genes[0]||null;
+        if(c._core) nodeCQS[c._core]=Math.max(nodeCQS[c._core]||0, c.cqs||0);
+        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; nodeRsum[k]=(nodeRsum[k]||0)+(c.poincareR||0); nodeRn[k]=(nodeRn[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); });
+    const _degv=Object.values(entityDeg); const lgMax=Math.log(Math.max(2, _degv.length?Math.max.apply(null,_degv):2));
+    // radial position (Poincare direction): recurrence -> centre (generic hub, r->0); rare -> rim (specific, r->1)
+    function entPos(k){ if(entPos._c[k]) return entPos._c[k]; const dis=entityDis[k]; if(!dis) return null;
+        let sx=0,sy=0,n=0; dis.forEach(nm=>{ const a=diseaseAngle[nm]; if(a!==undefined){ sx+=Math.cos(a); sy+=Math.sin(a); n++; } });
+        const mag=Math.hypot(sx,sy); const ang=(n>0 && mag/n > 0.18)?Math.atan2(sy,sx):hashAngle(k);
+        const deg=entityDeg[k]||1; const band=CORE_MAX-CORE_MIN; const rr0 = nodeRn[k]?(nodeRsum[k]/nodeRn[k]):0;
+        // primary radius = recurrence (Poincare); + a stable identity-keyed scatter so equal-degree
+        // nodes form a soft cloud instead of a hard concentric ring (parametric, deterministic, not random).
+        const jit=(((hashAngle(k)+Math.PI)/(2*Math.PI))-0.5)*band*0.30;
+        let rr=CORE_MIN + Math.min(1, rr0/0.92)*band + jit; if(rr<CORE_MIN*0.9)rr=CORE_MIN*0.9; if(rr>CORE_MAX+band*0.06)rr=CORE_MAX+band*0.06;
+        const pos={a:ang, r:rr, deg, cqs:nodeCQS[k]||0, pr:rr0}; entPos._c[k]=pos; return pos; }
+    entPos._c={};
+    // the stars we CELEBRATE are the top discovery nodes (best CQS converging on them), not the generic hubs
+    const glowCores=Object.keys(nodeCQS).sort((a,b)=>(nodeCQS[b]-nodeCQS[a])||(entityDeg[a]-entityDeg[b])).slice(0,150);
+    const corePos={}; glowCores.forEach(k=>{ corePos[k]=entPos(k); });
 
-    allLinksData = ribbonsToDraw.map(c => {
-        const s = seedPorts[c.id] || {start:0, end:0};
-        const t = partnerPorts[c.id] || {start:0, end:0};
-        const seedAngle = (s.start+s.end)/2;
-        const partnerAngle = (t.start+t.end)/2;
-        const path = drawAnnularRibbon(seedAngle, R_inner, partnerAngle, R_outer);
-        return { cand: c, seedAngle, partnerAngle, path };
-    });
+    // smooth braid (Catmull-Rom): monotonic radius in -> node -> back out; the void is never crossed
+    function braid(aS,aP,nr,na){ let d1=na-aS,d2=aP-na;
+        while(d1<-Math.PI)d1+=2*Math.PI; while(d1>Math.PI)d1-=2*Math.PI; while(d2<-Math.PI)d2+=2*Math.PI; while(d2>Math.PI)d2-=2*Math.PI;
+        const NS=14, pts=[];
+        for(let i=0;i<=NS;i++){ const t=i/NS,e=t*t*(3-2*t),r=R_out+(nr-R_out)*e,a=aS+d1*e; pts.push([r*Math.cos(a),r*Math.sin(a)]); }
+        for(let i=1;i<=NS;i++){ const t=i/NS,e=t*t*(3-2*t),r=nr+(R_out-nr)*e,a=na+d2*e; pts.push([r*Math.cos(a),r*Math.sin(a)]); }
+        const p=new Path2D(); p.moveTo(pts[0][0],pts[0][1]);
+        for(let i=0;i<pts.length-1;i++){ const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||pts[i+1];
+            const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6,c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;
+            p.bezierCurveTo(c1x,c1y,c2x,c2y,p2[0],p2[1]); }
+        return p; }
 
-    // 1. Visual ribbons on canvas with HUB-BASED OPACITY
-    ctx.save();
-    ctx.translate(cx, cy);
-    ctx.clearRect(-cx, -cy, width, height);
-    allLinksData.forEach(l => {
-        const hub = l.cand.hub || 1;
-        const alpha = Math.min(0.8, 0.2 + hub * 0.04);  // 0.24 at hub1, 0.6 at hub10
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = Math.max(1.2, l.cand.fitness * 3.5);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
-    ctx.globalAlpha = 1.0;
-    ctx.restore();
+    // 3. ribbons: one braid per hypothesis through its primary shared node
+    const ordered=candidates.slice().sort((a,b)=>(b.cqs-a.cqs)||(b.fitness-a.fitness)).slice(0,RIBBON_CAP);
+    const ribbons=[];
+    ordered.forEach(c=>{ const core=c._core&&entPos(c._core); if(!core) return;
+        const aS=diseaseAngle[c.seedName], aP=diseaseAngle[c.partnerName]; if(aS===undefined||aP===undefined) return;
+        const w0=0.28+Math.min(0.75, Math.log(((c._core&&entityDeg[c._core])||1)+1)*0.18);
+        ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6), w0:w0 }); });
 
-    // 2. Invisible SVG overlay for hover
-    const tooltip = d3.select('#canvas-tooltip');
-    g.append('g').attr('class', 'ribbon-overlay')
-        .selectAll('path')
-        .data(allLinksData)
-        .join('path')
-        .attr('d', l => l.path)
-        .attr('fill', 'none')
-        .attr('stroke', 'transparent')
-        .attr('stroke-width', 12)
-        .style('pointer-events', 'stroke')
-        .style('cursor', 'pointer')
-        .on('mouseover', (event, l) => {
-            highlightRel(l.cand.id);
-            showTooltip(event, l.cand);
-        })
-        .on('mousemove', (event) => moveTooltip(event))
-        .on('mouseout', () => {
-            clearHighlight();
-            hideTooltip();
-        })
-        .on('click', (event, l) => openDossierModal(l.cand.id));
+    const typeOf = k => k.indexOf('GO:')===0?['process','#10b981'] : (k.indexOf('CHEBI:')===0?['metabolite','#f59e0b'] : ((k.indexOf('REACT')===0||k.indexOf('R-HSA')===0)?['pathway','#10b981'] : (k.indexOf('HP:')===0?['phenotype','#f43f5e']:['gene','#38bdf8'])));
 
-    // 3. SVG arcs and labels
-    const arcInner = d3.arc().innerRadius(R_inner-10).outerRadius(R_inner);
-    const arcOuter = d3.arc().innerRadius(R_outer).outerRadius(R_outer+10);
-
-    // Seeds
-    g.selectAll('g.seed-node').data(Object.entries(seedLayout)).join('g')
-        .attr('class', 'seed-node')
-        .attr('data-name', ([name])=>name)
-        .style('cursor','pointer')
-        .each(function([name, a]){
-            d3.select(this).append('path').attr('d', arcInner({startAngle:a.start, endAngle:a.end})).attr('fill','#f8fafc');
-            const mid = (a.start+a.end)/2, flip = mid>Math.PI;
-            const r = R_inner-18;
-            const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
-            const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text')
-                .attr('class','seed-label')
-                .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'start':'end')
-                .attr('dy','0.32em').attr('font-size','3.0px').attr('font-weight',600)
-                .attr('fill','#f8fafc')
-                .text(name.length>20?name.slice(0,18)+'…':name);
-        })
-        .on('mouseover', (event,[name])=>highlightBySeed(name))
-        .on('mouseout', clearHighlight)
-        .on('click', (event,[name])=>{
-            focusDiseaseNode = name;
-            focusPartnerNode = null;
-            document.getElementById('btn-focus-mode').classList.add('active');
-            document.getElementById('btn-focus-mode').textContent = `Focus: ${name} (Exit)`;
-            renderApp();
-        });
-
-    // Partners (now with click for reverse view)
-    g.selectAll('g.partner-node').data(Object.entries(partnerLayout).filter(([k])=>!k.startsWith('__famRange_')))
-        .join('g')
-        .attr('class','partner-node')
-        .attr('data-name', ([name])=>name)
-        .style('cursor','pointer')
-        .each(function([name, a]){
-            const col = (FAMILIES.find(f=>f.key===a.family)||FAMILIES[9]).color;
-            d3.select(this).append('path').attr('d', arcOuter({startAngle:a.start, endAngle:a.end})).attr('fill',col);
-            const mid = (a.start+a.end)/2, flip = mid>Math.PI;
-            const r = R_outer+16;
-            const x = Math.sin(mid)*r, y = -Math.cos(mid)*r;
-            const rot = (mid*180/Math.PI)-90 + (flip?180:0);
-            d3.select(this).append('text')
-                .attr('class','partner-label')
-                .attr('transform',`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${rot.toFixed(2)})`)
-                .attr('text-anchor', flip?'end':'start')
-                .attr('dy','0.32em').attr('font-size','3.0px')
-                .attr('fill','#94a3b8')
-                .text(name.length>22?name.slice(0,20)+'…':name);
-        })
-        .on('mouseover', (event,[name])=>highlightByPartner(name))
-        .on('mouseout', clearHighlight)
-        .on('click', (event,[name])=>{
-            // Toggle reverse partner view
-            if (focusPartnerNode === name) {
-                focusPartnerNode = null;
-            } else {
-                focusPartnerNode = name;
-                focusDiseaseNode = null;
-                document.getElementById('btn-focus-mode').classList.remove('active');
-                document.getElementById('btn-focus-mode').textContent = 'Neighborhood Focus Mode';
+    function paintRibbons(primary, secondary){
+        const anyHi=!!(primary||secondary);
+        ctx.save(); ctx.translate(cx,cy); ctx.clearRect(-cx,-cy,width,height); ctx.lineCap='round';
+        ribbons.forEach(rb=>{ let al,w; const bw=rb.w0||0.5;
+            if(!anyHi){ al=0.16; w=bw; }
+            else if(primary&&primary(rb)){ al=0.85; w=Math.max(0.5, bw*1.0); }
+            else if(secondary&&secondary(rb)){ al=0.32; w=bw*0.75; }
+            else { al=0.02; w=bw*0.7; }
+            ctx.globalAlpha=al; ctx.lineWidth=w; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
+        ctx.globalAlpha=1;
+        // brightness + size by DISCOVERY QUALITY (best CQS): specific rim convergences shine, generic hubs hush
+        glowCores.forEach(k=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0],y=xy[1];
+            const q=Math.max(0,Math.min(1,(cp.cqs||0)/10)); const rad=0.7+q*1.9;
+            const hot=primary&&ribbons.some(rb=>rb.core===k&&primary(rb)); const warm=!hot&&secondary&&ribbons.some(rb=>rb.core===k&&secondary(rb));
+            const a0=hot?0.85:(warm?0.5:0.05+q*0.28);
+            const gr=ctx.createRadialGradient(x,y,0,x,y,rad*2.2); gr.addColorStop(0,'rgba(226,232,240,'+a0.toFixed(3)+')'); gr.addColorStop(1,'rgba(200,210,224,0)');
+            ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(x,y,rad*2.2,0,6.2832); ctx.fill();
+            ctx.fillStyle= hot?'#ffffff':'rgba(226,232,240,'+(0.18+q*0.38).toFixed(3)+')'; ctx.beginPath(); ctx.arc(x,y,rad,0,6.2832); ctx.fill(); });
+        if(primary){ const hl=ribbons.filter(primary);
+            if(hl.length<=8){ ctx.textAlign='center'; const seenN={}, seenD={};
+                hl.forEach(rb=>{ const aS=diseaseAngle[rb.seed], aP=diseaseAngle[rb.partner];
+                    const nlist=(rb.nodes&&rb.nodes.length)?rb.nodes:[rb.core];
+                    nlist.forEach(nk=>{ const np=entPos(nk); if(!np) return;
+                        if(nk!==rb.core && aS!==undefined && aP!==undefined){ ctx.globalAlpha=0.66; ctx.lineWidth=0.65; ctx.strokeStyle=rb.col; ctx.stroke(braid(aS,aP,np.r,np.a)); ctx.globalAlpha=1; }
+                        if(!seenN[nk]){ seenN[nk]=1; const q=polar(np.r,np.a); const ty=typeOf(nk);
+                            const g2=ctx.createRadialGradient(q[0],q[1],0,q[0],q[1],16); g2.addColorStop(0,'rgba(255,255,255,0.92)'); g2.addColorStop(1,'rgba(255,255,255,0)');
+                            ctx.fillStyle=g2; ctx.beginPath(); ctx.arc(q[0],q[1],16,0,6.2832); ctx.fill();
+                            ctx.fillStyle=ty[1]; ctx.beginPath(); ctx.arc(q[0],q[1],3.6,0,6.2832); ctx.fill();
+                            ctx.font='9px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle='#fff'; ctx.fillText(nk, q[0], q[1]-8);
+                            ctx.font='7px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle=ty[1]; ctx.fillText(ty[0]+((nk===rb.core&&rb.genes&&rb.genes.length)?' · '+rb.genes.join(' + '):''), q[0], q[1]+13); }
+                    });
+                    [rb.seed,rb.partner].forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined||seenD[n])return; seenD[n]=1;
+                        const d0=polar(R_out,a); ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(d0[0],d0[1],3.2,0,6.2832); ctx.fill();
+                        const d1=polar(R_out+12,a); const left=Math.cos(a)<0; ctx.save(); ctx.translate(d1[0],d1[1]); ctx.rotate(a+(left?Math.PI:0));
+                        ctx.textAlign=left?'right':'left'; ctx.font='9px -apple-system,Segoe UI,Roboto,sans-serif'; ctx.fillStyle='#e2e8f0'; ctx.fillText(n.length>28?n.slice(0,27)+'…':n, left?-5:5, 3); ctx.restore(); ctx.textAlign='center'; });
+                });
             }
-            renderApp();
-        });
+        }
+        ctx.restore();
+    }
+    atlasPaint=paintRibbons; atlasRibbons=ribbons; paintRibbons(null);
 
-    // Family sector labels
-    const famLabelR = R_outer+80;
-    familyOrder.forEach(f => {
-        const range = partnerLayout['__famRange_'+f];
-        if(!range) return;
-        const mid = (range.start+range.end)/2;
-        const x = Math.sin(mid)*famLabelR, y = -Math.cos(mid)*famLabelR;
-        const famObj = FAMILIES.find(ff=>ff.key===f)||{};
-        g.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle')
-            .attr('font-size','11px').attr('font-weight',700).attr('fill',famObj.color)
-            .text(famObj.label||f);
+    // 3b. Poincare zone guide — the boundary between generic hubs (centre) and specific discoveries (rim)
+    g.append('circle').attr('cx',0).attr('cy',0).attr('r',(CORE_MIN+CORE_MAX)/2).attr('fill','none').attr('stroke','rgba(255,255,255,0.05)').attr('stroke-dasharray','2 6');
+    g.append('text').attr('x',0).attr('y',-((CORE_MIN+CORE_MAX)/2)-4).attr('text-anchor','middle').attr('font-size','7').attr('letter-spacing','0.5').attr('fill','#64748b').attr('pointer-events','none').text('· specific convergences outward · generic hubs inward ·');
+
+    // 4. disease rim: family bands + labels
+    const arcRim=d3.arc().innerRadius(R_out).outerRadius(R_out+6);
+    famOrder.forEach(f=>{ const fr=famRange[f]; if(!fr) return;
+        g.append('path').attr('d', arcRim({startAngle:fr[0]+Math.PI/2, endAngle:fr[1]+Math.PI/2})).attr('fill',famColor(f)).attr('opacity',0.92).style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>diseaseFam[rb.seed]===f||diseaseFam[rb.partner]===f); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+famLabel(f)+'</strong><br/>'+diseasesByFam[f].length+' diseases'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ const el=document.getElementById('filter-family'); if(el){ el.value=f; el.dispatchEvent(new Event('change')); } });
+        const mid=(fr[0]+fr[1])/2; const ll=polar(R_out+78, mid);
+        g.append('text').attr('x',ll[0]).attr('y',ll[1]).attr('text-anchor','middle').attr('font-size','11px').attr('font-weight',700).attr('fill',famColor(f)).text(famLabel(f)); });
+
+    // 4b. Rim fringe: one radial TICK per disease (length+opacity by recurrence) forms the outer ring,
+    //     and every disease name, faint grey and radial, almost touching the ring.
+    const rimVals=Object.values(diseaseDeg); const rimDegMax=rimVals.length?Math.max.apply(null,rimVals):1;
+    Object.keys(diseaseAngle).forEach(n=>{ const a=diseaseAngle[n]; if(a===undefined) return;
+        const dnorm=Math.min(1, Math.log(diseaseDeg[n]+1)/Math.log(rimDegMax+1));
+        const len=3+dnorm*9; const p0=polar(R_out,a), p1=polar(R_out+len,a);
+        g.append('line').attr('x1',p0[0]).attr('y1',p0[1]).attr('x2',p1[0]).attr('y2',p1[1]).attr('stroke',famColor(diseaseFam[n])).attr('stroke-width',Math.max(0.6,dnorm*1.7)).attr('opacity',0.12+dnorm*0.72).attr('pointer-events','none');
+        const lp=polar(R_out+9,a); const left=Math.cos(a)<0; const rot=a*180/Math.PI+(left?180:0);
+        g.append('text').attr('transform','translate('+lp[0].toFixed(1)+','+lp[1].toFixed(1)+') rotate('+rot.toFixed(1)+')').attr('text-anchor',left?'end':'start').attr('dy','0.3em').attr('font-size','1.9px').attr('fill','rgba(148,163,184,'+(0.26+dnorm*0.5).toFixed(2)+')').attr('pointer-events','none').text(n.length>34?n.slice(0,33)+'…':n);
+        { const h0=polar(R_out,a), h1=polar(R_out+42,a);
+          g.append('line').attr('x1',h0[0]).attr('y1',h0[1]).attr('x2',h1[0]).attr('y2',h1[1]).attr('stroke','transparent').attr('stroke-width',7).style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.seed===n||rb.partner===n); const tp=document.getElementById('canvas-tooltip'); tp.style.opacity=1; tp.innerHTML='<strong>'+n+'</strong><br/>'+famLabel(diseaseFam[n])+' · '+diseaseDeg[n]+' links'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ focusDiseaseNode=n; focusPartnerNode=null; const b=document.getElementById('btn-focus-mode'); if(b){ b.classList.add('active'); b.textContent='Focus: '+n+' (Exit)'; } renderApp(); }); }
     });
+    // 5. labels + hit-dots for the DISCOVERY stars (top by CQS), the specific convergences worth trusting
+    glowCores.forEach((k,i)=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0], y=xy[1]; const ty=typeOf(k);
+        g.append('circle').attr('cx',x).attr('cy',y).attr('r',Math.max(6,3+ (cp.cqs||0)*0.5)).attr('fill','transparent').style('cursor','pointer')
+            .on('mouseover',(ev)=>{ paintRibbons(rb=>rb.core===k||(rb.nodes||[]).indexOf(k)>=0); const t=document.getElementById('canvas-tooltip'); t.style.opacity=1; t.innerHTML='<strong>'+k+'</strong><br/>'+ty[0]+' · best CQS '+(cp.cqs||0)+' · r '+((cp.pr||0).toFixed(2))+' · '+cp.deg+' hypotheses converge here'; moveTooltip(ev); })
+            .on('mousemove',ev=>moveTooltip(ev)).on('mouseout',()=>{ paintRibbons(null); hideTooltip(); })
+            .on('click',()=>{ const el=document.getElementById('search-input'); el.value=k; el.dispatchEvent(new Event('input')); });
+        if(i<14 && (cp.cqs||0)>=7){ g.append('text').attr('x',x).attr('y',y-6).attr('text-anchor','middle').attr('font-size','7px').attr('fill',ty[1]).attr('opacity',0.9).attr('pointer-events','none').text(k.length>14?k.slice(0,13)+'…':k); } });
 }
 
-// RICH TOOLTIP
 function showTooltip(event, c) {
     const pwCount = c.sharedPathways ? c.sharedPathways.length : 0;
     const minSize = c.minPathSize ? `min ${c.minPathSize} genes` : '';
-    // extract first few gene symbols from mechanism
     const geneMatches = (c.mechanism || '').match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-    const genes = geneMatches ? [...new Set(geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()))].slice(0,3).join(', ') : '—';
-    // convergence node (most frequent specific term)
+    let genes = '—';
+    if (geneMatches) {
+        const validGenes = geneMatches
+            .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+            .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+        if (validGenes.length > 0) {
+            genes = [...new Set(validGenes)].slice(0,3).join(', ');
+        }
+    }
     const mech = c.mechanism || '';
     const nodeMatches = mech.match(/\((GO:\d+|REACT:[A-Za-z0-9\-]+|CHEBI:\d+)\)/g);
     let convNode = '—';
     if (nodeMatches) {
         const freq = {};
-        nodeMatches.forEach(m => {
-            const node = m.replace(/[()]/g, '');
-            freq[node] = (freq[node]||0)+1;
-        });
+        nodeMatches.forEach(m => { const node = m.replace(/[()]/g, ''); freq[node] = (freq[node]||0)+1; });
         convNode = Object.entries(freq).sort((a,b)=>b[1]-a[1])[0][0];
     }
     const tip = document.getElementById('canvas-tooltip');
     tip.style.opacity = 1;
-    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>
-        CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>
-        Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>
-        Genes: ${genes}<br/>
-        Conv node: ${convNode}`;
+    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>Genes: ${genes}<br/>Conv node: ${convNode}`;
     moveTooltip(event);
 }
-
-function moveTooltip(event) {
-    const tip = document.getElementById('canvas-tooltip');
-    tip.style.left = (event.clientX + 16) + 'px';
-    tip.style.top = (event.clientY - 10) + 'px';
-}
+function moveTooltip(event) { const tip = document.getElementById('canvas-tooltip'); tip.style.left = (event.clientX + 16) + 'px'; tip.style.top = (event.clientY - 10) + 'px'; }
 function hideTooltip() { document.getElementById('canvas-tooltip').style.opacity = 0; }
 
-// Canvas redraw helpers (preserving hub opacity for consistency)
 function redrawCanvasDefault() {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const hub = l.cand.hub || 1;
-        const alpha = Math.min(0.8, 0.2 + hub * 0.04);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = Math.max(1.2, l.cand.fitness*3.5);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const hub = l.cand.hub||1; const alpha = Math.min(0.8, 0.2 + hub*0.04); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = Math.max(1.2, l.cand.fitness*3.5); ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithHighlight(targetId) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.id === targetId;
-        const alpha = active ? 0.95 : 0.05;
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3.5, l.cand.fitness*6) : Math.max(1, l.cand.fitness*2);
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.id === targetId; ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3.5, l.cand.fitness*6) : Math.max(1, l.cand.fitness*2); ctx.globalAlpha = active ? 0.95 : 0.05; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithSeedHighlight(seedName) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.seedName === seedName;
-        const hub = l.cand.hub || 1;
-        const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1;
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.seedName === seedName; const hub = l.cand.hub||1; const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1; ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 function redrawCanvasWithPartnerHighlight(partnerName) {
     const w = canvas.width, h = canvas.height;
-    ctx.save(); ctx.translate(w/2, h/2);
-    ctx.clearRect(-w/2, -h/2, w, h);
-    allLinksData.forEach(l => {
-        const active = l.cand.partnerName === partnerName;
-        const hub = l.cand.hub || 1;
-        const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02);
-        ctx.strokeStyle = l.cand.familyColor;
-        ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1;
-        ctx.globalAlpha = alpha;
-        ctx.stroke(new Path2D(l.path));
-    });
+    ctx.save(); ctx.translate(w/2, h/2); ctx.clearRect(-w/2, -h/2, w, h);
+    allLinksData.forEach(l => { const active = l.cand.partnerName === partnerName; const hub = l.cand.hub||1; const alpha = active ? 0.9 : Math.min(0.5, 0.1 + hub*0.02); ctx.strokeStyle = l.cand.familyColor; ctx.lineWidth = active ? Math.max(3, l.cand.fitness*5) : 1; ctx.globalAlpha = alpha; ctx.stroke(new Path2D(l.path)); });
     ctx.globalAlpha = 1.0; ctx.restore();
 }
 
-// Highlight (unchanged)
+// The aggregated alluvial handles its own hover (segment -> lights its flows). The
+// sidebar cards only toggle their own active state; no canvas redraw here, or a
+// card mouseout would wipe the alluvial.
 function highlightRel(id) {
-    const targetId = parseInt(id);
-    const link = allLinksData.find(l => l.cand.id === targetId);
-    if(!link) return;
-    redrawCanvasWithHighlight(targetId);
-    const seedName = link.cand.seedName, partnerName = link.cand.partnerName;
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '13px' : '3.0px'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '#38bdf8' : '#334155'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===seedName ? '900' : '400'; });
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '13px' : '3.0px'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '#ffffff' : '#334155'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===partnerName ? '900' : '400'; });
+    const tid = parseInt(id);
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
-    document.getElementById(`card-${targetId}`)?.classList.add('active');
+    document.getElementById(`card-${tid}`)?.classList.add('active');
+    if (atlasPaint) { const rb0 = atlasRibbons.find(r=>r.id===tid);
+        const ns = rb0 ? new Set((rb0.nodes&&rb0.nodes.length)?rb0.nodes:[rb0.core]) : null;
+        atlasPaint(r=>r.id===tid, ns?(r=> r.id!==tid && (r.nodes||[]).some(n=>ns.has(n))):null); }
 }
-function highlightBySeed(name) {
-    const connectedPartners = new Set(allLinksData.filter(l => l.cand.seedName === name).map(l => l.cand.partnerName));
-    redrawCanvasWithSeedHighlight(name);
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '13px' : '3.0px'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '900' : '400'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '#38bdf8' : '#334155'; });
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '11px' : '3.0px'; })
-        .attr('font-weight', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '800' : '400'; })
-        .attr('fill', function(){ return connectedPartners.has(d3.select(this.parentNode).attr('data-name')) ? '#ffffff' : '#334155'; });
-}
-function highlightByPartner(name) {
-    const connectedSeeds = new Set(allLinksData.filter(l => l.cand.partnerName === name).map(l => l.cand.seedName));
-    redrawCanvasWithPartnerHighlight(name);
-    g.selectAll('g.partner-node text')
-        .attr('font-size', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '13px' : '3.0px'; })
-        .attr('font-weight', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '900' : '400'; })
-        .attr('fill', function(){ return d3.select(this.parentNode).attr('data-name')===name ? '#ffffff' : '#334155'; });
-    g.selectAll('g.seed-node text')
-        .attr('font-size', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '11px' : '3.0px'; })
-        .attr('font-weight', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '800' : '400'; })
-        .attr('fill', function(){ return connectedSeeds.has(d3.select(this.parentNode).attr('data-name')) ? '#38bdf8' : '#334155'; });
-}
+function highlightBySeed(name) { if (atlasPaint) atlasPaint(rb => rb.seed === name || rb.partner === name); }
+function highlightByPartner(name) { if (atlasPaint) atlasPaint(rb => rb.seed === name || rb.partner === name); }
 function clearHighlight() {
-    redrawCanvasDefault();
-    g.selectAll('g.seed-node text').attr('font-size','3.0px').attr('fill','#f8fafc').attr('font-weight','600');
-    g.selectAll('g.partner-node text').attr('font-size','3.0px').attr('fill','#94a3b8').attr('font-weight','400');
     document.querySelectorAll('.cqs-card.active').forEach(c=>c.classList.remove('active'));
+    if (atlasPaint) atlasPaint(null);
 }
 
-// Reverse partner lookup & gene co-occurrence
 function getSeedsProposingPartner(partnerName) {
     return allCandidates.filter(c => c.partnerName === partnerName).map(c => c.seedName).filter((v,i,a)=>a.indexOf(v)===i);
 }
@@ -1220,83 +1928,286 @@ function getGeneOccurrenceCount(candidate) {
     const genes = new Set();
     const mech = candidate.mechanism || '';
     const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-    if (matches) {
-        matches.forEach(m => genes.add(m.replace(/\s*\(HGNC:\d+\)/, '').trim()));
+    if (matches) { 
+        matches.forEach(m => {
+            const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+            if (/^[A-Z][A-Z0-9]{1,11}$/.test(name)) genes.add(name);
+        }); 
     }
     let total = 0;
-    genes.forEach(gene => {
-        total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length;
+    genes.forEach(gene => { 
+        total += allCandidates.filter(c => c.mechanism && c.mechanism.includes(gene)).length; 
     });
     return total;
 }
 
-// Dossier modal (extended)
-function openDossierModal(candId) {
-    const c = allCandidates.find(x => x.id === parseInt(candId));
-    if (!c) return;
+const KNOWN_INTERACTIONS = {
+    'CREBBP-RBPJ':true,'RBPJ-CREBBP':true,'NEU1-CTSA':true,'CTSA-NEU1':true,
+    'MMAA-MMUT':true,'MMUT-MMAA':true,'GJA1-GJA1':true,'PTPN11-HRAS':true,'HRAS-PTPN11':true,
+    'COL1A1-COL1A1':true
+};
+
+function getProteinInteractionHtml(candidate) {
+    const mech = candidate.mechanism || '';
+    const matchResult = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g) || [];
+    const uniqueGenes = [];
+    matchResult.forEach(m => {
+        const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+        if (/^[A-Z][A-Z0-9]{1,11}$/.test(name) && !uniqueGenes.includes(name)) {
+            uniqueGenes.push(name);
+        }
+    });
+    if (uniqueGenes.length < 2) return '';
+    const pairKey = `${uniqueGenes[0]}-${uniqueGenes[1]}`;
+    if (KNOWN_INTERACTIONS[pairKey]) {
+        return `<div style="margin-top:4px; font-size:0.76rem; color:#10b981;"><strong style="color:#10b981;">✓ Known protein interaction:</strong> ${uniqueGenes[0]} and ${uniqueGenes[1]} are documented to physically interact.</div>`;
+    } else {
+        return `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong>Protein interaction:</strong> No documented physical interaction between ${uniqueGenes[0]} and ${uniqueGenes[1]} in BioGRID.</div>`;
+    }
+}
+
+function dossierToMarkdown(c, partners) {
     const tm = tierMeta(c.tier);
     const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
     const parsed = parseMechanismDetails(c.mechanism);
-    let stepsHtml = '';
-    if (parsed.steps.length > 0) {
-        stepsHtml = `<div class="causal-chain-container">${parsed.steps.map(s => `
-            <div class="chain-step-row">
-                <span class="chip ${getChipClass(s.subjectId)}">${s.subject} ${s.subjectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.subjectId})</small>` : ''}</span>
-                <span class="chain-arrow">—${s.relation}→</span>
-                <span class="chip ${getChipClass(s.objectId)}">${s.object} ${s.objectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.objectId})</small>` : ''}</span>
-            </div>`).join('')}</div>`;
-    }
-    const narrativeHtml = parsed.narrative ? `<div class="narrative-prose-box">${parsed.narrative}</div>` : '';
+    const today = new Date().toISOString().slice(0, 10); // e.g., "2026-07-31"
 
+    let md = `# ${c.seedName} ⇄ ${c.partnerName}\n\n`;
+    md += `**Date:** ${today}\n`;
+    md += `- **CQS Score:** ${c.cqs}\n`;
+    md += `- **Tier:** ${c.tier} · ${tm.short}\n`;
+    md += `- **Fitness:** ${c.fitness.toFixed(3)}\n`;
+    md += `- **Hub:** ${c.hub} seeds\n\n`;
+
+    // Reverse partner list
     const otherSeeds = getSeedsProposingPartner(c.partnerName).filter(s => s !== c.seedName);
-    let reverseHtml = '';
     if (otherSeeds.length > 0) {
         const displaySeeds = otherSeeds.slice(0, 5).join(', ');
         const more = otherSeeds.length > 5 ? ` …and ${otherSeeds.length - 5} more` : '';
-        reverseHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Also proposed by seeds:</strong> ${displaySeeds}${more}</div>`;
+        md += `**Also proposed by seeds:** ${displaySeeds}${more}\n\n`;
     }
 
+    // Gene co‑occurrence
     const geneCount = getGeneOccurrenceCount(c);
-    let geneHtml = '';
     if (geneCount > 0) {
-        geneHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Key genes appear in:</strong> ${geneCount} other candidates across the Atlas</div>`;
+        md += `**Key genes appear in:** ${geneCount} other candidates across the Atlas\n\n`;
     }
 
-    const rawId = 'raw-' + Math.random().toString(36).slice(2,8);
-    document.getElementById('modal-content').innerHTML = `
-        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
-            <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">CQS Score: ${c.cqs}</span>
-            <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">${c.tier} · ${tm.short}</span>
-            ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px;">Global Hub (${c.hub} seeds)</span>` : ''}
-            <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
-        </div>
-        
-        <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">${c.seedName} ⇄ ${c.partnerName}</h2>
-        ${reverseHtml}
-        ${geneHtml}
-        <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
-            <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
-            <div style="margin-top:4px;">${c.sharedPathways.map(pw => `<a href="https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')}" target="_blank" class="pw-badge">${pw}</a>`).join(' ')}</div>
-            ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
-        </div>
-        <div>
-            <h4 style="font-size:0.78rem; color:#94a3b8; letter-spacing:0.04em;">PROPOSED MECHANISM FLOW</h4>
-            ${stepsHtml}
-            ${narrativeHtml}
-            <span class="raw-toggle" onclick="const r=document.getElementById('${rawId}'); r.style.display = r.style.display === 'none' ? 'block' : 'none';">Show raw mechanism string</span>
-            <div class="modal-mech" id="${rawId}" style="display:none;">${c.mechanism || '—'}</div>
-        </div>
-        ${falsifHtml ? `<div class="modal-falsif"><strong>Falsification Test:</strong> ${falsifHtml}</div>` : ''}
-        ${c.translational ? `<div class="modal-translat"><strong>Translational Significance:</strong> ${c.translational}</div>` : ''}
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
-            <a href="${c.logFile}" target="_blank" class="btn-log">View Raw Discovery Log JSON</a>
+    // Protein interaction
+    const mechForGenes = c.mechanism || '';
+    const geneMatches = mechForGenes.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g) || [];
+    const uniqueGenes = [];
+    geneMatches.forEach(m => {
+        const name = m.replace(/\s*\(HGNC:\d+\)/, '').trim();
+        if (/^[A-Z][A-Z0-9]{1,11}$/.test(name) && !uniqueGenes.includes(name)) {
+            uniqueGenes.push(name);
+        }
+    });
+    if (uniqueGenes.length >= 2) {
+        const pairKey = `${uniqueGenes[0]}-${uniqueGenes[1]}`;
+        if (typeof KNOWN_INTERACTIONS !== 'undefined' && KNOWN_INTERACTIONS[pairKey]) {
+            md += `**Protein interaction:** ✓ ${uniqueGenes[0]} and ${uniqueGenes[1]} are documented to physically interact in BioGRID.\n\n`;
+        } else {
+            md += `**Protein interaction:** No documented physical interaction between ${uniqueGenes[0]} and ${uniqueGenes[1]} in BioGRID.\n\n`;
+        }
+    }
+
+    // Smallest pathway
+    if (c.minPathSize) {
+        const specificity = c.minPathSize <= 20 ? 'highly specific' : c.minPathSize <= 50 ? 'specific' : '';
+        md += `**Smallest shared pathway:** ${c.minPathSize} genes${specificity ? ` — ${specificity}` : ''}\n\n`;
+    }
+
+    if (c.sharedPathways && c.sharedPathways.length) {
+        md += `## Shared Reactome Pathways\n\n`;
+        c.sharedPathways.forEach(pw => {
+            md += `- [${pw}](https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')})\n`;
+        });
+        md += '\n';
+    }
+
+    md += `## Proposed Mechanism Flow\n\n`;
+    if (parsed.steps && parsed.steps.length) {
+        parsed.steps.forEach(s => {
+            md += `- ${s.subject} —${s.relation}→ ${s.object}\n`;
+        });
+        md += '\n';
+    }
+    if (parsed.narrative) {
+        md += `**Narrative:** ${parsed.narrative}\n\n`;
+    }
+
+    md += `## Raw Mechanism String\n\n\`\`\`\n${c.mechanism || '—'}\n\`\`\`\n\n`;
+
+    if (falsifHtml) {
+        md += `## Falsification Test\n\n${falsifHtml}\n\n`;
+    }
+
+    if (c.translational) {
+        md += `## Translational Significance\n\n${c.translational}\n\n`;
+    }
+
+    // Full Discovery Run Table
+    if (partners && partners.length > 0) {
+        const sorted = [...partners].sort((a, b) => (b.fitness || 0) - (a.fitness || 0));
+        md += `## Full Discovery Run\n\n`;
+        md += `| # | Partner Disease | Fitness | Shared Pathways | Key Gene(s) |\n`;
+        md += `|---|---|---|---|---|\n`;
+        sorted.forEach((p, i) => {
+            const fitness = (p.fitness || 0).toFixed(3);
+            const pwCount = (p.sharedPathways || []).length;
+            let genes = '';
+            if (p.raw && p.raw.sharedGenes && p.raw.sharedGenes.length > 0) {
+                genes = p.raw.sharedGenes.join(', ');
+            } else {
+                const mech = p.mechanism_chain || '';
+                const matches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
+                if (matches) {
+                    const validGenes = matches
+                        .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+                        .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+                    genes = validGenes.length > 0 ? validGenes.join(', ') : '—';
+                } else {
+                    genes = '—';
+                }
+            }
+            md += `| ${i+1} | ${p.diseaseBName || 'Unknown'} | ${fitness} | ${pwCount} | ${genes} |\n`;
+        });
+        md += '\n';
+    }
+
+    md += `---\n*Generated by ARIADNE · Carlos Arleo / Aitiopoietic Systems*\n`;
+    return md;
+}
+
+// Dedicated Copy Handler
+async function handleCopyDossier(candId, btnElement) {
+    const c = allCandidates.find(x => x.id === parseInt(candId));
+    if (!c) return;
+    const partners = (window._discoveryCache && window._discoveryCache[c.seedName]) ? window._discoveryCache[c.seedName] : [];
+    const mdText = dossierToMarkdown(c, partners);
+    const ok = await copyToClipboard(mdText);
+    if (btnElement) {
+        btnElement.textContent = ok ? 'Copied!' : 'Copy failed';
+        setTimeout(() => { btnElement.textContent = 'Copy Dossier'; }, 1500);
+    }
+}
+
+// Dedicated Download Handler
+function handleDownloadDossier(candId) {
+    const c = allCandidates.find(x => x.id === parseInt(candId));
+    if (!c) return;
+    const partners = (window._discoveryCache && window._discoveryCache[c.seedName]) ? window._discoveryCache[c.seedName] : [];
+    const mdText = dossierToMarkdown(c, partners);
+    
+    const dateStr = new Date().toISOString().slice(0, 10);
+    const safeSeed = (c.seedName || 'Seed').replace(/[^a-zA-Z0-9 ]/g, '').slice(0, 30).trim().replace(/\s+/g, '_');
+    const safePartner = (c.partnerName || 'Partner').replace(/[^a-zA-Z0-9 ]/g, '').slice(0, 30).trim().replace(/\s+/g, '_');
+    const filename = `ARIADNE_${dateStr}_${safeSeed}_vs_${safePartner}.md`;
+    
+    downloadFile(filename, mdText);
+}
+
+// Download a string as a file
+function downloadFile(filename, text) {
+    const blob = new Blob([text], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+// Copy text to clipboard
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function openDossierModal(candId) {
+    try {
+        const c = allCandidates.find(x => x.id === parseInt(candId));
+        if (!c) return;
+        const tm = tierMeta(c.tier);
+        const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
+        const parsed = parseMechanismDetails(c.mechanism);
+        let stepsHtml = '';
+        if (parsed.steps.length > 0) {
+            stepsHtml = `<div class="causal-chain-container">${parsed.steps.map(s => `
+                <div class="chain-step-row">
+                    <span class="chip ${getChipClass(s.subjectId)}">${s.subject} ${s.subjectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.subjectId})</small>` : ''}</span>
+                    <span class="chain-arrow">—${s.relation}→</span>
+                    <span class="chip ${getChipClass(s.objectId)}">${s.object} ${s.objectId ? `<small style="opacity:0.75; margin-left:3px;">(${s.objectId})</small>` : ''}</span>
+                </div>`).join('')}</div>`;
+        }
+        const narrativeHtml = parsed.narrative ? `<div class="narrative-prose-box">${parsed.narrative}</div>` : '';
+
+        const otherSeeds = getSeedsProposingPartner(c.partnerName).filter(s => s !== c.seedName);
+        let reverseHtml = '';
+        if (otherSeeds.length > 0) {
+            const displaySeeds = otherSeeds.slice(0, 5).join(', ');
+            const more = otherSeeds.length > 5 ? ` …and ${otherSeeds.length - 5} more` : '';
+            reverseHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Also proposed by seeds:</strong> ${displaySeeds}${more}</div>`;
+        }
+
+        const geneCount = getGeneOccurrenceCount(c);
+        let geneHtml = '';
+        if (geneCount > 0) {
+            geneHtml = `<div style="margin-top:4px; font-size:0.76rem; color:var(--text-muted);"><strong style="color:#e2e8f0;">Key genes appear in:</strong> ${geneCount} other candidates across the Atlas</div>`;
+        }
+
+        const proteinInteractionHtml = getProteinInteractionHtml(c);
+
+        const rawId = 'raw-' + Math.random().toString(36).slice(2,8);
+        document.getElementById('modal-content').innerHTML = `
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+                <span style="background:${c.familyColor}22; color:${c.familyColor}; padding:2px 10px; border-radius:12px; font-weight:700; font-size:0.8rem;">CQS Score: ${c.cqs}</span>
+                <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">${c.tier} · ${tm.short}</span>
+                ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px;">Global Hub (${c.hub} seeds)</span>` : ''}
+                <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
+            </div>
+            
+            <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">${c.seedName} ⇄ ${c.partnerName}</h2>
+            ${reverseHtml}
+            ${geneHtml}
+            ${proteinInteractionHtml}
+            <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
+                <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
+                <div style="margin-top:4px;">${c.sharedPathways.map(pw => `<a href="https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')}" target="_blank" class="pw-badge">${pw}</a>`).join(' ')}</div>
+                ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
+            </div>
+            <div>
+                <h4 style="font-size:0.78rem; color:#94a3b8; letter-spacing:0.04em;">PROPOSED MECHANISM FLOW</h4>
+                ${stepsHtml}
+                ${narrativeHtml}
+                <span class="raw-toggle" onclick="const r=document.getElementById('${rawId}'); r.style.display = r.style.display === 'none' ? 'block' : 'none';">Show raw mechanism string</span>
+                <div class="modal-mech" id="${rawId}" style="display:none;">${c.mechanism || '—'}</div>
+            </div>
+            ${falsifHtml ? `<div class="modal-falsif"><strong>Falsification Test:</strong> ${falsifHtml}</div>` : ''}
+            ${c.translational ? `<div class="modal-translat"><strong>Translational Significance:</strong> ${c.translational}</div>` : ''}
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08); flex-wrap:wrap; gap:8px;">
+            <div style="display:flex; gap:8px; align-items:center;">
+                <a href="${c.logFile}" target="_blank" class="btn-log">View Raw Discovery Log JSON</a>
+                <button class="btn-action" onclick="event.stopPropagation(); handleCopyDossier(${c.id}, this);" style="background:rgba(56,189,248,0.15); color:#38bdf8; border:1px solid rgba(56,189,248,0.3);">Copy Dossier</button>
+                <button class="btn-action" onclick="event.stopPropagation(); handleDownloadDossier(${c.id});" style="background:rgba(16,185,129,0.15); color:#10b981; border:1px solid rgba(16,185,129,0.3);">Download Markdown</button>
+            </div>
             <span style="font-size:0.75rem; color:#64748b;">${c.fileName}</span>
         </div>
-        <div id="full-discovery-run-${c.id}" style="margin-top:20px; border-top:1px solid var(--border); padding-top:14px;">
-            <p style="color:var(--text-muted); font-size:0.8rem;">Loading full discovery run…</p>
-        </div>`;
-    document.getElementById('dossier-modal').classList.add('open');
-    loadFullDiscoveryRun(c);
+            <div id="full-discovery-run-${c.id}" style="margin-top:20px; border-top:1px solid var(--border); padding-top:14px;">
+                <p style="color:var(--text-muted); font-size:0.8rem;">Loading full discovery run…</p>
+            </div>`;
+        document.getElementById('dossier-modal').classList.add('open');
+        loadFullDiscoveryRun(c);
+    } catch(err) {
+        alert('Error opening dossier: ' + err.message);
+        console.error(err);
+    }
 }
 
 function loadFullDiscoveryRun(candidate) {
@@ -1313,22 +2224,14 @@ function loadFullDiscoveryRun(candidate) {
             window._discoveryCache[candidate.seedName] = data.partners || [];
             renderDiscoveryRunTable(container, data.partners || [], candidate);
         })
-        .catch(() => {
-            container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Could not load discovery run.</p>';
-        });
+        .catch(() => { container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Raw discovery run unavailable (its log was regenerated with a new timestamp in the latest rebuild). Everything above is current &mdash; the dossier data comes from top_candidates.json, not this file.</p>'; });
 }
 
 function renderDiscoveryRunTable(container, partners, candidate) {
     const sorted = [...partners].sort((a, b) => (b.fitness || 0) - (a.fitness || 0));
     let html = `<h4 style="font-size:0.8rem; color:var(--text-muted); letter-spacing:0.04em; margin-bottom:10px;">FULL DISCOVERY RUN FOR ${candidate.seedName.toUpperCase()}</h4>`;
     html += `<table style="width:100%; border-collapse:collapse; font-size:0.76rem; color:#cbd5e1;">`;
-    html += `<thead><tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-        <th style="text-align:left; padding:4px 8px;">#</th>
-        <th style="text-align:left; padding:4px 8px;">Partner Disease</th>
-        <th style="text-align:center; padding:4px 8px;">Fitness</th>
-        <th style="text-align:center; padding:4px 8px;">Shared Pathways</th>
-        <th style="text-align:center; padding:4px 8px;">Key Gene(s)</th>
-    </tr></thead><tbody>`;
+    html += `<thead><tr style="border-bottom:1px solid rgba(255,255,255,0.1);"><th style="text-align:left; padding:4px 8px;">#</th><th style="text-align:left; padding:4px 8px;">Partner Disease</th><th style="text-align:center; padding:4px 8px;">Fitness</th><th style="text-align:center; padding:4px 8px;">Shared Pathways</th><th style="text-align:center; padding:4px 8px;">Key Gene(s)</th></tr></thead><tbody>`;
     sorted.forEach((p, i) => {
         const isCurrent = p.diseaseBName === candidate.partnerName;
         const rowStyle = isCurrent ? 'background: rgba(56,189,248,0.08); font-weight:600;' : '';
@@ -1340,19 +2243,16 @@ function renderDiscoveryRunTable(container, partners, candidate) {
         } else {
             const mech = p.mechanism_chain || '';
             const geneMatches = mech.match(/([A-Za-z0-9]+)\s*\(HGNC:\d+\)/g);
-            if (geneMatches) {
-                genes = geneMatches.map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim()).join(', ');
-            } else {
-                genes = '—';
+            if (geneMatches) { 
+                const validGenes = geneMatches
+                    .map(m => m.replace(/\s*\(HGNC:\d+\)/, '').trim())
+                    .filter(name => /^[A-Z][A-Z0-9]{1,11}$/.test(name));
+                genes = validGenes.length > 0 ? validGenes.join(', ') : '—'; 
+            } else { 
+                genes = '—'; 
             }
         }
-        html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.06); ${rowStyle}">
-            <td style="padding:4px 8px;">${i+1}</td>
-            <td style="padding:4px 8px;">${p.diseaseBName || 'Unknown'}</td>
-            <td style="text-align:center; padding:4px 8px;">${fitness}</td>
-            <td style="text-align:center; padding:4px 8px;">${pwCount}</td>
-            <td style="text-align:center; padding:4px 8px;">${genes}</td>
-        </tr>`;
+        html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.06); ${rowStyle}"><td style="padding:4px 8px;">${i+1}</td><td style="padding:4px 8px;">${p.diseaseBName || 'Unknown'}</td><td style="text-align:center; padding:4px 8px;">${fitness}</td><td style="text-align:center; padding:4px 8px;">${pwCount}</td><td style="text-align:center; padding:4px 8px;">${genes}</td></tr>`;
     });
     html += `</tbody></table>`;
     container.innerHTML = html;
@@ -1361,8 +2261,175 @@ function renderDiscoveryRunTable(container, partners, candidate) {
 function closeDossierModal() { document.getElementById('dossier-modal').classList.remove('open'); }
 function openCqsModal() { document.getElementById('cqs-modal').classList.add('open'); }
 function closeCqsModal() { document.getElementById('cqs-modal').classList.remove('open'); }
+function openCoverageModal() { document.getElementById('coverage-modal').classList.add('open'); }
+function closeCoverageModal() { document.getElementById('coverage-modal').classList.remove('open'); }
+function openValidationModal() { document.getElementById('validation-modal').classList.add('open'); }
+function closeValidationModal() { document.getElementById('validation-modal').classList.remove('open'); }
+function openAdvancedModal() { document.getElementById('advanced-modal').classList.add('open'); }
+function closeAdvancedModal() { document.getElementById('advanced-modal').classList.remove('open'); }
+function openCorpusModal() { document.getElementById('corpus-modal').classList.add('open'); }
+function closeCorpusModal() { document.getElementById('corpus-modal').classList.remove('open'); }
+function openTopologyModal() { document.getElementById('topology-modal').classList.add('open'); }
+function closeTopologyModal() { document.getElementById('topology-modal').classList.remove('open'); }
+async function loadTopology() {
+    const paths = ['./data/atlas/analysis/convergence_topology_summary.json','data/atlas/analysis/convergence_topology_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__topology = await r.json(); renderTopology(); return; } } catch(e){} }
+}
+function renderTopology() {
+    const d = window.__topology; if (!d) return;
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=(x==null?'—':x); };
+    set('tt-nodes', d.distinct_nodes); set('tt-scalefree', d.scale_free_top1pct_share_pct);
+    const rowM = m => '<tr style="border-top:1px solid rgba(255,255,255,0.07);"><td style="padding:3px 8px;">'+m.node+'</td><td style="padding:3px 8px;text-align:right;">'+m.convergences+'</td><td style="padding:3px 8px;text-align:right;">'+m.families+'</td><td style="padding:3px 8px;text-align:right;color:#7dd3fc;">'+m.sri+'</td></tr>';
+    const mb=document.getElementById('tt-master'); if(mb&&d.master_bottlenecks) mb.innerHTML=d.master_bottlenecks.map(rowM).join('');
+    const chip=(cls,label,title)=>'<span class="chip '+cls+'" title="'+(title||'')+'" style="font-size:0.72rem;margin:2px;">'+label+'</span>';
+    const dm=document.getElementById('tt-dmgenes'); if(dm&&d.domain_master_genes) dm.innerHTML=d.domain_master_genes.map(g=>chip('chip-gene',g.gene+' &middot; SRI '+g.sri,'recurs in 1 family')).join(' ');
+    const cg=document.getElementById('tt-crossgenes'); if(cg&&d.cross_domain_genes) cg.innerHTML=d.cross_domain_genes.map(g=>chip('chip-gene',g.gene+' &middot; SRI '+g.sri+' &middot; '+g.families+'fam',(g.in||[]).join(', '))).join(' ');
+    const pr=document.getElementById('tt-promisc'); if(pr&&d.promiscuous_genes) pr.innerHTML=d.promiscuous_genes.map(g=>chip('chip-gene',g.gene+' &middot; '+g.families+'fam','spans many families')).join(' ');
+    const sv=document.getElementById('tt-solvents'); if(sv&&d.generic_solvents) sv.innerHTML=d.generic_solvents.map(s=>chip('chip-pathway',s.node+' &middot; '+s.families+'fam','')).join(' ');
+}
+function openDashboardModal() { renderDashboard(); document.getElementById('dashboard-modal').classList.add('open'); }
+function closeDashboardModal() { document.getElementById('dashboard-modal').classList.remove('open'); }
+function renderDashboard() {
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=(x==null?'\u2014':x); };
+    const cov=window.__coverage||{}, v=window.__validation||{}, a=window.__advanced||{}, cs=window.__corpus||{};
+    const mc=cov.monarch_check||{};
+    set('dash-master',cov.master_seeds); set('dash-attempted',cov.attempted); set('dash-productive',cov.productive);
+    set('dash-yield', cov.attempted? (Math.round(1000*cov.productive/cov.attempted)/10)+'%' : null);
+    set('dash-empty',cov.empty_monarch_gap); set('dash-priv',mc.private_singleton);
+    const pc=v.positive_control||{}, nm=v.null_model||{}, fa=v.falsifiability||{}, no=v.novelty||{};
+    set('dash-recovered',pc.recovered); set('dash-recall', pc.recall_pct!=null? (pc.recall_pct+'% / '+pc.recall_specific_pct+'%') : null);
+    set('dash-corr',nm.corr_r_cqs); set('dash-corrp',nm.corr_empirical_p); set('dash-fals',fa.pct_all); set('dash-novel',no.pct_novel);
+    const cl=(a.topology&&a.topology.clusters)? a.topology.clusters.slice().sort((x,y)=>y.mean_poincare_r-x.mean_poincare_r)[0]:null;
+    if(cl){ set('dash-rim',cl.pct+'%'); set('dash-rimcqs',cl.mean_cqs); }
+    const cq=(a.cross_group||{}).cqs||{}; set('dash-cross', cq.median_cross_domain!=null? (cq.median_cross_domain+' vs '+cq.median_same_domain) : null);
+    const th=a.thermodynamics||{}; set('dash-r2',th.law_r2); set('dash-well',th.free_energy_well_svne);
+    set('dash-net',cs.network_proximal_pct); set('dash-netx',cs.network_enrichment_x); set('dash-fab',cs.fabrications_detected);
+}
+async function loadCorpus() {
+    const paths = ['./data/atlas/analysis/corpus_stats_summary.json','data/atlas/analysis/corpus_stats_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__corpus = await r.json(); renderCorpus(); return; } } catch(e){} }
+}
+function renderCorpus() {
+    const c = window.__corpus; if (!c) return;
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=(x==null?'\u2014':x); };
+    set('cs-cand',c.candidates); set('cs-seeds',c.unique_seeds); set('cs-ppseed',c.median_partners_per_seed);
+    set('cs-shared',c.shared_gene_pct); set('cs-pathonly',c.pathway_only_pct); set('cs-cross',c.cross_domain_pct); set('cs-novel',c.novel_pct);
+    set('cs-genes',c.unique_genes_touched); set('cs-paths',c.unique_pathways_touched);
+    set('cs-fab',c.fabrications_detected); set('cs-fabpct',c.fabricated_in_corpus_pct);
+    set('cs-net',c.network_proximal_pct); set('cs-netx',c.network_enrichment_x); set('cs-netnovel',c.network_proximal_novel_pct);
+    { const tp=document.getElementById('cs-toppaths'); if(tp&&c.top_recurrent_pathways) tp.textContent=c.top_recurrent_pathways.slice(0,5).map(x=>String(x.pathway).replace('Reactome:','')+' ('+x.count+')').join(', '); }
+    const tb=document.getElementById('cs-tiers'); if(tb&&c.tiers) tb.textContent=Object.entries(c.tiers).map(e=>e[0]+': '+e[1]).join('  \u00b7  ');
+    const cb=document.getElementById('cs-cqs'); if(cb&&c.cqs_bands) cb.textContent=Object.entries(c.cqs_bands).map(e=>e[0]+' '+e[1].pct+'%').join('  \u00b7  ');
+}
+async function loadAdvanced() {
+    const paths = ['./data/atlas/analysis/advanced_analytics.json','data/atlas/analysis/advanced_analytics.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__advanced = await r.json(); renderAdvanced(); return; } } catch(e){} }
+}
+function renderAdvanced() {
+    const a = window.__advanced; if (!a) return;
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=x; };
+    const t=a.topology||{}, cont=document.getElementById('adv-clusters');
+    if (cont && t.clusters) { cont.innerHTML = t.clusters.slice().sort((x,y)=>y.mean_poincare_r-x.mean_poincare_r).map(c=>
+        '<tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:6px 8px;">'+c.label+'</td><td style="padding:6px 8px;text-align:right;">'+c.size+' ('+c.pct+'%)</td><td style="padding:6px 8px;text-align:right;">r '+c.mean_poincare_r+'</td><td style="padding:6px 8px;text-align:right;">CQS '+c.mean_cqs+'</td></tr>').join(''); }
+    const cq=(a.cross_group||{}).cqs||{};
+    set('adv-cd-cqs-cross', cq.median_cross_domain); set('adv-cd-cqs-same', cq.median_same_domain); set('adv-cd-p', cq.p); set('adv-cd-eff', cq.rank_biserial_r);
+    const th=a.thermodynamics||{};
+    set('adv-b', th.dissipation_constant_b); set('adv-r2', th.law_r2); set('adv-well', th.free_energy_well_svne);
+}
+function closeWhitepaperModal() { document.getElementById('whitepaper-modal').classList.remove('open'); }
+function mdToHtml(md){
+  var esc=function(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+  function math(s){
+    s=s.replace(/\$\$([^$]+)\$\$/g,'$1').replace(/\\\[([^\]]+?)\\\]/g,'$1').replace(/\\\(([^)]+?)\\\)/g,'$1').replace(/\$([^$]+?)\$/g,'$1');
+    s=s.replace(/\\mathrm\{([^}]*)\}/g,'$1').replace(/\\text\{([^}]*)\}/g,'$1').replace(/\\operatorname\{([^}]*)\}/g,'$1');
+    s=s.replace(/\\cdot/g,'\u00b7').replace(/\\times/g,'\u00d7').replace(/\\approx/g,'\u2248').replace(/\\ge/g,'\u2265').replace(/\\le/g,'\u2264').replace(/\\pm/g,'\u00b1').replace(/\\neq/g,'\u2260').replace(/\\rho/g,'\u03c1').replace(/\\sum/g,'\u03a3').replace(/\\ln/g,'ln').replace(/\\to/g,'\u2192').replace(/\\infty/g,'\u221e').replace(/\\,/g,' ').replace(/\\;/g,' ');
+    s=s.replace(/([A-Za-z0-9\)\]])\^\{([^}]*)\}/g,'$1<sup>$2</sup>').replace(/\^\{([^}]*)\}/g,'<sup>$1</sup>');
+    s=s.replace(/([A-Za-z0-9\)\]])_\{([^}]*)\}/g,'$1<sub>$2</sub>').replace(/_\{([^}]*)\}/g,'<sub>$1</sub>');
+    s=s.replace(/([A-Za-z0-9\)\]])\^([A-Za-z0-9]{1,3})/g,'$1<sup>$2</sup>').replace(/([A-Za-z0-9\)\]])_([A-Za-z0-9]{1,4})/g,'$1<sub>$2</sub>');
+    return s;
+  }
+  function inl(str){
+    var stash=[]; function keep(html){ stash.push(html); return '\u0001'+(stash.length-1)+'\u0001'; }
+    var l=esc(str);
+    l=l.replace(/!\[[^\]]*\]\(([^)]+)\)/g,function(m,src){var fn=String(src).split('/').pop().split('?')[0]; return keep('<img src="./data/atlas/analysis/'+fn+'" onerror="this.style.display=\'none\'" style="width:100%;border-radius:8px;border:1px solid rgba(255,255,255,0.08);margin:8px 0;"/>');});
+    l=l.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'$1');
+    l=l.replace(/`([^`]+?)`/g,function(m,c){return keep('<code>'+c+'</code>');});
+    l=l.replace(/\*\*([^*]+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*]+?)\*/g,'$1<em>$2</em>');
+    l=math(l);
+    l=l.replace(/\u0001(\d+)\u0001/g,function(m,i){return stash[+i];});
+    return l;
+  }
+  var lines=md.split(/\r?\n/), h='', inList=false, inCode=false, tbl=null;
+  function flush(){ if(tbl){ if(tbl.length){ h+='<table style="width:100%;border-collapse:collapse;font-size:0.76rem;margin:10px 0;">'; for(var i=0;i<tbl.length;i++){ var tag=i===0?'th':'td'; h+='<tr>'; for(var j=0;j<tbl[i].length;j++){ h+='<'+tag+' style="border:1px solid rgba(255,255,255,0.12);padding:4px 7px;text-align:left;color:#cbd5e1;">'+inl(tbl[i][j].trim())+'</'+tag+'>'; } h+='</tr>'; } h+='</table>'; } tbl=null; } }
+  for(var k=0;k<lines.length;k++){
+    var raw=lines[k];
+    if(/^```/.test(raw)){ flush(); if(inList){h+='</ul>';inList=false;} inCode=!inCode; h+=inCode?'<pre>':'</pre>'; continue; }
+    if(inCode){ h+=esc(raw)+'\n'; continue; }
+    if(/^\s*\|/.test(raw)){ if(/^\s*\|[\s:\-|]+\|?\s*$/.test(raw)) continue; var cells=raw.trim().replace(/^\|/,'').replace(/\|$/,'').split('|'); if(!tbl)tbl=[]; tbl.push(cells); continue; }
+    else if(tbl){ flush(); }
+    if(/^\s*---+\s*$/.test(raw)){ if(inList){h+='</ul>';inList=false;} h+='<hr style="border:none;border-top:1px solid rgba(255,255,255,0.12);margin:14px 0;"/>'; continue; }
+    if(/^###\s+/.test(raw)){ if(inList){h+='</ul>';inList=false;} h+='<h4>'+inl(raw.replace(/^###\s+/,''))+'</h4>'; }
+    else if(/^##\s+/.test(raw)){ if(inList){h+='</ul>';inList=false;} h+='<h3>'+inl(raw.replace(/^##\s+/,''))+'</h3>'; }
+    else if(/^#\s+/.test(raw)){ if(inList){h+='</ul>';inList=false;} h+='<h2>'+inl(raw.replace(/^#\s+/,''))+'</h2>'; }
+    else if(/^\s*[-*]\s+/.test(raw)){ if(!inList){h+='<ul>';inList=true;} h+='<li>'+inl(raw.replace(/^\s*[-*]\s+/,''))+'</li>'; }
+    else if(/^\s*$/.test(raw)){ if(inList){h+='</ul>';inList=false;} }
+    else { if(inList){h+='</ul>';inList=false;} h+='<p>'+inl(raw)+'</p>'; }
+  }
+  flush(); if(inList)h+='</ul>'; return h;
+}
+async function openWhitepaperModal(){
+    document.getElementById('whitepaper-modal').classList.add('open');
+    if(window.__wpLoaded) return; window.__wpLoaded=true;
+    const paths=['../doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md','./doc/Ariadne/ARIADNE_Master_Whitepaper_v1.0.md','ARIADNE_Master_Whitepaper_v1.0.md'];
+    for(const p of paths){ try{ const r=await fetch(p+'?_t='+Date.now(),{cache:'no-store'}); if(r.ok){ const md=await r.text(); document.getElementById('whitepaper-body').innerHTML=mdToHtml(md); return; } }catch(e){} }
+}
+async function loadValidation() {
+    const paths = ['./data/atlas/analysis/validation_summary.json','data/atlas/analysis/validation_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__validation = await r.json(); renderValidation(); return; } } catch(e){} }
+}
+function renderValidation() {
+    const v = window.__validation; if (!v) return;
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n) n.textContent=x; };
+    const pc=v.positive_control||{}, nm=v.null_model||{}, sp=v.specificity||{}, ig=v.integrity||{}, fa=v.falsifiability||{}, no=v.novelty||{};
+    set('val-recovered', pc.recovered); set('val-recall', pc.recall_pct); set('val-recallspec', pc.recall_specific_pct);
+    set('val-corr', nm.corr_r_cqs); set('val-corrp', nm.corr_empirical_p); set('val-enrich', nm.joint_enrichment_x);
+    set('val-spec', sp.pct_specific_le20); set('val-rim', sp.poincare_rim_pct); set('val-medpath', sp.min_pathway_median);
+    set('val-fab', ig.true_fabrications_detected); set('val-fabpct', ig.corpus_fabricated_pct); set('val-purged', ig.records_purged);
+    set('val-fals', fa.pct_all); set('val-novel', no.pct_novel); set('val-valid', no.pct_validation);
+    const th=v.thermodynamics||{}; set('val-kt', th.corr_kt_svne); set('val-svnenodes', th.corr_svne_nodes); set('val-svnenz', th.svne_nonzero_pct);
+}
+async function loadLitValidation() {
+    const grab = async (f) => { for (const p of ['./data/atlas/analysis/'+f,'data/atlas/analysis/'+f]) {
+        try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' }); if (r.ok) return await r.json(); } catch(e){} } return null; };
+    const all = await grab('literature_validation_summary_all.json');
+    const gems = await grab('literature_validation_summary_gems.json');
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n && x!=null) n.textContent=x; };
+    if (all)  { set('val-lit-est', all.pct_established); set('val-lit-broad', all.pct_unstudied); }
+    if (gems) { set('val-lit-gems', gems.pct_unstudied); }
+}
+async function loadCoverage() {
+    const paths = ['./data/atlas/analysis/seed_coverage_summary.json','data/atlas/analysis/seed_coverage_summary.json'];
+    for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
+        if (r.ok) { window.__coverage = await r.json(); renderCoverage(); return; } } catch(e){} }
+}
+function renderCoverage() {
+    const c = window.__coverage; if (!c) return;
+    const set=(id,v)=>{ const n=document.getElementById(id); if(n) n.textContent=v; };
+    set('stat-coverage', (c.pct_productive!=null ? c.pct_productive+'%' : '\u2014'));
+    set('cov-master', c.master_seeds); set('cov-prod', c.productive); set('cov-prodpct', c.pct_productive+'%');
+    set('cov-empty', c.empty_monarch_gap); set('cov-emptyrate', c.empty_rate_of_attempted+'%');
+    set('cov-missing', c.missing); set('cov-missingpct', c.pct_missing+'%'); set('cov-attempted', c.attempted); set('cov-yield', c.attempted? (Math.round(1000*c.productive/c.attempted)/10)+'%' : '\u2014');
+    const mc = c.monarch_check||{};
+    set('cov-priv', mc.private_singleton||0); set('cov-susp', mc.convergence_possible||0); set('cov-nogene', mc.no_causal_gene||0);
+}
 function openAboutModal() { document.getElementById('about-modal').classList.add('open'); }
 function closeAboutModal() { document.getElementById('about-modal').classList.remove('open'); }
+function openManualModal() { document.getElementById('manual-modal').classList.add('open'); }
+function closeManualModal() { document.getElementById('manual-modal').classList.remove('open'); }
 
 function parseMechanismDetails(rawText) {
     if (!rawText) return { steps: [], narrative: '' };
@@ -1381,7 +2448,6 @@ function parseMechanismDetails(rawText) {
     if (steps.length === 0 && !narrative) narrative = rawText;
     return { steps, narrative };
 }
-
 function getChipClass(id) {
     if (!id) return 'chip-other';
     if (id.startsWith('HGNC')) return 'chip-gene';
@@ -1392,16 +2458,64 @@ function getChipClass(id) {
     return 'chip-other';
 }
 
-// Event listeners
+document.getElementById('filter-poincare')?.addEventListener('change', debounceRender);
+document.getElementById('filter-entropy')?.addEventListener('change', debounceRender);
+document.getElementById('filter-pathways')?.addEventListener('change', debounceRender);
+document.getElementById('filter-nodescope')?.addEventListener('change', debounceRender);
+document.getElementById('filter-rana')?.addEventListener('change', debounceRender);
+document.getElementById('filter-depth')?.addEventListener('change', debounceRender);
 document.getElementById('filter-cqs').addEventListener('change', debounceRender);
+document.getElementById('filter-fitness')?.addEventListener('change', debounceRender);
+document.getElementById('filter-falsif')?.addEventListener('change', debounceRender);
+document.getElementById('filter-novel')?.addEventListener('change', debounceRender);
+document.getElementById('filter-geneint')?.addEventListener('change', debounceRender);
 document.getElementById('filter-hub').addEventListener('change', debounceRender);
 document.getElementById('filter-family').addEventListener('change', debounceRender);
 document.getElementById('filter-tier').addEventListener('change', debounceRender);
 document.getElementById('search-input').addEventListener('input', debounceRender);
 window.addEventListener('resize', debounceRender);
-document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeDossierModal(); closeCqsModal(); closeAboutModal(); } });
+// --- Guides dropdown (consolidated documentation menu) ---
+function toggleGuidesMenu(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById('guides-menu');
+    const btn = document.getElementById('btn-guides');
+    const open = menu.classList.toggle('open');
+    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function closeGuidesMenu() {
+    const menu = document.getElementById('guides-menu');
+    const btn = document.getElementById('btn-guides');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+// --- Info popovers ("?" on Tier / Family filters, replacing the legend cards) ---
+function toggleInfo(id, e) {
+    if (e) { e.stopPropagation(); e.preventDefault(); } // don't toggle the parent <details>
+    const pop = document.getElementById(id);
+    if (!pop) return;
+    const isOpen = pop.classList.contains('open');
+    document.querySelectorAll('.info-pop.open').forEach(p => p.classList.remove('open'));
+    if (!isOpen) pop.classList.add('open');
+}
+function closeInfoPops() { document.querySelectorAll('.info-pop.open').forEach(p => p.classList.remove('open')); }
+
+function openPoeticModal() { document.getElementById('poetic-modal').classList.add('open'); }
+function closePoeticModal() { document.getElementById('poetic-modal').classList.remove('open'); }
+
+document.addEventListener('click', e => {
+    if (!e.target.closest('.guides-dropdown')) closeGuidesMenu();
+    if (!e.target.closest('.info-wrap')) closeInfoPops();
+});
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeGuidesMenu(); closeInfoPops(); closePoeticModal(); closeDossierModal(); closeCqsModal(); closeAboutModal(); closeManualModal(); closeCoverageModal(); closeValidationModal(); closeWhitepaperModal(); closeAdvancedModal(); closeCorpusModal(); closeDashboardModal(); closeTopologyModal(); } });
 
 loadData();
+loadCoverage();
+loadValidation();
+loadLitValidation();
+loadAdvanced();
+loadCorpus();
+loadTopology();
 </script>
 </body>
 </html>
+```

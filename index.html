@@ -403,7 +403,8 @@
 
         <!-- 2. Segmented action control -->
         <div class="seg-control">
-            <button class="seg" id="btn-elite-mode" onclick="toggleEliteMode()" title="Filter to fitness&ge;0.65, CQS&ge;7, Hub&ge;3 champions">Elite Champions</button>
+            <button class="seg" id="btn-elite-mode" onclick="toggleEliteMode()" title="Best-grounded: fitness&ge;0.65 · Exceptional CQS · Hub&ge;3">Elite Champions</button>
+            <button class="seg" id="btn-gems-mode" onclick="toggleGemsMode()" title="The gold: Sweet-spot bridge (2-4 families) · Multi-pathway · Novel">Discovery Gems</button>
             <button class="seg" onclick="resetFilters()" title="Clear all filters and focus">Reset</button>
             <button class="seg" id="btn-focus-mode" onclick="toggleFocusMode()">Focus Mode</button>
         </div>
@@ -453,7 +454,7 @@
                 <div class="info-pop" id="family-info"><h4>Clinical Family Legend</h4><div id="legend-list"></div></div>
             </details>
             <details class="filt">
-                <summary>Novelty (Neighbour Type)</summary>
+                <summary>Novelty (Relationship Type)</summary>
                 <select id="filter-novel">
                     <option value="all" selected>All Links</option>
                     <option value="novel">New Pathway Discoveries (No Shared Gene)</option>
@@ -476,7 +477,7 @@
                 </select>
             </details>
             <details class="filt">
-                <summary>Poincaré Boundary (r)</summary>
+                <summary>Network Location &amp; Specificity (Poincaré r)</summary>
                 <select id="filter-poincare">
                     <option value="all" selected>All Network Locations</option>
                     <option value="rim">High-Specificity Outer Rim (Precision Discoveries)</option>
@@ -486,7 +487,7 @@
                 </select>
             </details>
             <details class="filt">
-                <summary>Graph Laplacian Entropy (S_VNE)</summary>
+                <summary>Network Structure (Graph Entropy)</summary>
                 <select id="filter-entropy">
                     <option value="all" selected>All Network Structures</option>
                     <option value="low">Compact & Focused Networks (Low Entropy)</option>
@@ -513,7 +514,7 @@
                 </select>
             </details>
             <details class="filt">
-                <summary>RANA Literature Verification</summary>
+                <summary>Literature Verification (RANA)</summary>
                 <select id="filter-rana">
                     <option value="all" selected>All Literature States</option>
                     <option value="supported">PubMed Confirmed Only</option>
@@ -718,9 +719,10 @@
                 <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>5. Falsifiability</strong><br><span style="color:#64748b; font-size:0.72rem;">Are the hypotheses testable?</span></td><td style="padding:8px; text-align:right;"><strong id="val-fals">&mdash;</strong>% carry a concrete falsification test</td></tr>
                 <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>6. Novelty</strong><br><span style="color:#64748b; font-size:0.72rem;">Discovery vs recapitulation?</span></td><td style="padding:8px; text-align:right;"><strong id="val-novel">&mdash;</strong>% novel &middot; <span id="val-valid">&mdash;</span>% curated recapitulation</td></tr>
                 <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>7. Thermodynamics</strong><br><span style="color:#64748b; font-size:0.72rem;">Do the graphs obey physics?</span></td><td style="padding:8px; text-align:right;">heat&ndash;entropy law corr(K_t,S_VNE) <strong id="val-kt">&mdash;</strong><br><span style="color:#64748b; font-size:0.72rem;">S_VNE&ndash;complexity <span id="val-svnenodes">&mdash;</span> &middot; real graphs <span id="val-svnenz">&mdash;</span>%</span></td></tr>
+                <tr style="border-top:1px solid rgba(255,255,255,0.08);"><td style="padding:8px;"><strong>8. Literature audit</strong> <span style="font-size:0.7rem; color:#7dd3fc;">NEW</span><br><span style="color:#64748b; font-size:0.72rem;">Does the field already agree?</span></td><td style="padding:8px; text-align:right;"><strong id="val-lit-est">&mdash;</strong>% of top predictions re-derive <strong>established</strong> links<br><span style="color:#64748b; font-size:0.72rem;">Discovery Gems <span id="val-lit-gems">&mdash;</span>% un-studied vs <span id="val-lit-broad">&mdash;</span>% broad &mdash; the filter concentrates novelty</span></td></tr>
             </tbody>
         </table>
-        <p style="color:#64748b; font-size:0.72rem; margin-top:14px;">Menche interactome separation (s_AB) is now computed on the BioGRID network (see Corpus at a Glance &mdash; network-proximal share); pathway specificity is the fast proxy shown here. Figures update when the benchmark (script 09) is re-run.</p>
+        <p style="color:#64748b; font-size:0.72rem; margin-top:14px;">Rows 1&ndash;7: Menche interactome separation (s_AB) is computed on the BioGRID network (see Corpus at a Glance &mdash; network-proximal share); pathway specificity is the fast proxy shown here. Row 8 is a retrospective co-mention audit against OpenAlex (~250M papers) at full coverage (disease ids resolved via Monarch): the largest share of predictions re-derive <em>known</em> disease links (calibration), while the curated gem filter lifts genuinely <em>un-studied</em> hypotheses from a plurality to a clear majority. &ldquo;Un-studied&rdquo; is an upper bound on novelty; the definitive test is a frozen-knowledge re-run. Figures update when the benchmark (script 09) and literature audit (script 16) are re-run.</p>
     </div>
 </div>
 <div class="modal-backdrop" id="coverage-modal" onclick="if(event.target===this) closeCoverageModal();">
@@ -1017,6 +1019,7 @@ let focusDiseaseNode = null;
 let focusPartnerNode = null;
 let showAllRibbons = false;
 let showEliteOnly = false; // Elite Champions mode flag
+let gemsOn = false; // Discovery Gems preset flag
 let atlasPaint = null; // set by renderRadial -> lets the sidebar spotlight a pair on the map
 let atlasRibbons = [];
 const MAX_DEFAULT_RIBBONS = 500;
@@ -1213,8 +1216,30 @@ function debounceRender() {
     renderTimeout = setTimeout(() => renderApp(), 200);
 }
 
+function setGemsBtn(on){ const b=document.getElementById("btn-gems-mode"); if(!b)return; b.classList.toggle("active",on); b.textContent = on?"Discovery Gems (On)":"Discovery Gems"; }
+function toggleGemsMode() {
+    gemsOn = !gemsOn;
+    showEliteOnly = false; const eb=document.getElementById("btn-elite-mode"); eb.classList.remove("active"); eb.textContent="Elite Champions";
+    setGemsBtn(gemsOn);
+    if (gemsOn) {
+        document.getElementById("filter-nodescope").value="sweet";
+        document.getElementById("filter-pathways").value="multi";
+        document.getElementById("filter-novel").value="novel";
+        document.getElementById("filter-poincare").value="cluster";
+        ["filter-tier","filter-cqs","filter-fitness","filter-falsif","filter-geneint","filter-hub","filter-family","filter-entropy","filter-rana","filter-depth"].forEach(function(id){var e=document.getElementById(id); if(e)e.value="all";});
+        document.getElementById("search-input").value="";
+    } else {
+        document.getElementById("filter-nodescope").value="all";
+        document.getElementById("filter-pathways").value="all";
+        document.getElementById("filter-novel").value="all";
+        document.getElementById("filter-poincare").value="all";
+    }
+    renderApp();
+}
+
 function toggleEliteMode() {
     showEliteOnly = !showEliteOnly;
+    gemsOn = false; setGemsBtn(false);
     const btn = document.getElementById('btn-elite-mode');
     if (showEliteOnly) {
         btn.classList.add('active');
@@ -1414,7 +1439,7 @@ function resetFilters() {
     focusDiseaseNode = null;
     focusPartnerNode = null;
     showAllRibbons = false;
-    showEliteOnly = false;
+    showEliteOnly = false; gemsOn = false; setGemsBtn(false);
     const eliteBtn = document.getElementById('btn-elite-mode');
     if (eliteBtn) {
         eliteBtn.classList.remove('active');
@@ -2199,7 +2224,7 @@ function loadFullDiscoveryRun(candidate) {
             window._discoveryCache[candidate.seedName] = data.partners || [];
             renderDiscoveryRunTable(container, data.partners || [], candidate);
         })
-        .catch(() => { container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Could not load discovery run.</p>'; });
+        .catch(() => { container.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem;">Raw discovery run unavailable (its log was regenerated with a new timestamp in the latest rebuild). Everything above is current &mdash; the dossier data comes from top_candidates.json, not this file.</p>'; });
 }
 
 function renderDiscoveryRunTable(container, partners, candidate) {
@@ -2377,6 +2402,15 @@ function renderValidation() {
     set('val-fals', fa.pct_all); set('val-novel', no.pct_novel); set('val-valid', no.pct_validation);
     const th=v.thermodynamics||{}; set('val-kt', th.corr_kt_svne); set('val-svnenodes', th.corr_svne_nodes); set('val-svnenz', th.svne_nonzero_pct);
 }
+async function loadLitValidation() {
+    const grab = async (f) => { for (const p of ['./data/atlas/analysis/'+f,'data/atlas/analysis/'+f]) {
+        try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' }); if (r.ok) return await r.json(); } catch(e){} } return null; };
+    const all = await grab('literature_validation_summary_all.json');
+    const gems = await grab('literature_validation_summary_gems.json');
+    const set=(id,x)=>{ const n=document.getElementById(id); if(n && x!=null) n.textContent=x; };
+    if (all)  { set('val-lit-est', all.pct_established); set('val-lit-broad', all.pct_unstudied); }
+    if (gems) { set('val-lit-gems', gems.pct_unstudied); }
+}
 async function loadCoverage() {
     const paths = ['./data/atlas/analysis/seed_coverage_summary.json','data/atlas/analysis/seed_coverage_summary.json'];
     for (const p of paths) { try { const r = await fetch(p + '?_t=' + Date.now(), { cache:'no-store' });
@@ -2477,6 +2511,7 @@ document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeGuidesMen
 loadData();
 loadCoverage();
 loadValidation();
+loadLitValidation();
 loadAdvanced();
 loadCorpus();
 loadTopology();
