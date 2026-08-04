@@ -1,0 +1,91 @@
+{
+  "candidates_analysed": 41106,
+  "topology": {
+    "n": 41106,
+    "features": [
+      "poincare_r",
+      "cqs_score",
+      "fitness",
+      "von_neumann_entropy",
+      "node_count",
+      "min_pathway_size",
+      "pathway_count"
+    ],
+    "pca_explained_var": [
+      0.393,
+      0.257
+    ],
+    "k": 3,
+    "clusters": [
+      {
+        "size": 13795,
+        "pct": 33.6,
+        "mean_poincare_r": 0.319,
+        "mean_cqs": 7.01,
+        "mean_fitness": 0.422,
+        "mean_svne": 1.315,
+        "mean_nodes": 6.22,
+        "label": "specific rim discoveries"
+      },
+      {
+        "size": 10502,
+        "pct": 25.5,
+        "mean_poincare_r": 0.124,
+        "mean_cqs": 5.35,
+        "mean_fitness": 0.394,
+        "mean_svne": 1.006,
+        "mean_nodes": 4.11,
+        "label": "intermediate"
+      },
+      {
+        "size": 16809,
+        "pct": 40.9,
+        "mean_poincare_r": 0.113,
+        "mean_cqs": 5.49,
+        "mean_fitness": 0.4,
+        "mean_svne": 1.443,
+        "mean_nodes": 7.01,
+        "label": "generic hub core"
+      }
+    ],
+    "figure": "fig_topology_clusters.png"
+  },
+  "cross_group": {
+    "specificity_r": {
+      "n1": 10460,
+      "n2": 17820,
+      "U": 96226471.5,
+      "z": 4.57,
+      "p": "<1e-4",
+      "rank_biserial_r": -0.032,
+      "median_cross_domain": 0.122,
+      "median_same_domain": 0.114
+    },
+    "cqs": {
+      "n1": 10780,
+      "n2": 18465,
+      "U": 130329366.5,
+      "z": 44.22,
+      "p": "<1e-4",
+      "rank_biserial_r": -0.309,
+      "median_cross_domain": 8.0,
+      "median_same_domain": 7.0
+    },
+    "fitness": {
+      "n1": 10780,
+      "n2": 18465,
+      "U": 85501473.5,
+      "z": -20.14,
+      "p": "<1e-4",
+      "rank_biserial_r": 0.141,
+      "median_cross_domain": 0.442,
+      "median_same_domain": 0.457
+    }
+  },
+  "thermodynamics": {
+    "dissipation_constant_b": 0.931,
+    "law_r2": 0.939,
+    "free_energy_well_svne": 1.072,
+    "note": "K_t = a*exp(-b*S_VNE): heat diffusion decays exponentially with spectral entropy (NESS dissipation). The free-energy well is the most-populated S_VNE (attractor)."
+  }
+}

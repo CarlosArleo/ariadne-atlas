@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The ARIADNE Convergence Atlas — Field Guide</title>
+<style>
+  :root{
+    --bg:#0d0d0f; --panel:#141417; --border:rgba(255,255,255,0.10);
+    --text:#e7e7ea; --muted:#8a8f98; --dim:#5f636b; --accent:#38bdf8; --gold:#f59e0b; --green:#34d399;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+  header.hero{text-align:center;margin-bottom:40px}
+  header.hero .kicker{letter-spacing:0.5em;text-transform:lowercase;color:var(--muted);font-size:0.9rem}
+  header.hero h1{font-size:2.1rem;font-weight:800;margin:10px 0 6px;background:linear-gradient(90deg,#38bdf8,#a855f7,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}
+  header.hero p{color:var(--muted);font-size:1.02rem;max-width:640px;margin:0 auto}
+  h2{font-size:1.35rem;margin:44px 0 4px;color:#f8fafc}
+  h2 .n{color:var(--accent);font-weight:700;margin-right:10px}
+  .lead{color:var(--muted);margin:0 0 14px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:16px 0}
+  .do{display:inline-block;background:rgba(56,189,248,0.14);color:#7dd3fc;border:1px solid rgba(56,189,248,0.3);
+      border-radius:20px;padding:3px 12px;font-size:0.8rem;font-weight:600;margin-bottom:10px}
+  .means{border-left:3px solid var(--gold);padding-left:14px;margin:12px 0;color:#cbd5e1}
+  .why{border-left:3px solid var(--green);padding-left:14px;margin:12px 0;color:#cbd5e1}
+  .means b,.why b{color:#f8fafc}
+  figure{margin:16px 0 4px}
+  figure img{width:100%;border-radius:10px;border:1px solid var(--border);display:block}
+  figure .ph{width:100%;aspect-ratio:16/9;border:1px dashed var(--dim);border-radius:10px;display:flex;
+             align-items:center;justify-content:center;color:var(--dim);font-size:0.85rem;background:#0a0a0c;text-align:center;padding:20px}
+  figcaption{color:var(--dim);font-size:0.78rem;margin-top:6px;text-align:center}
+  code{background:rgba(255,255,255,0.08);padding:1px 6px;border-radius:5px;font-size:0.86em}
+  .legend{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 20px;margin:14px 0}
+  .legend div{display:flex;gap:10px;align-items:baseline}
+  .swatch{width:12px;height:12px;border-radius:3px;flex:0 0 12px;margin-top:5px}
+  ul{margin:8px 0 8px 2px;padding-left:20px}
+  li{margin:5px 0}
+  .tag{font-size:0.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em}
+  hr{border:none;border-top:1px solid var(--border);margin:36px 0}
+  .foot{color:var(--dim);font-size:0.82rem;text-align:center;margin-top:30px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">a r i a d n e</div>
+  <h1>The Convergence Atlas — Field Guide</h1>
+  <p>Not just a beautiful diagram. Every point, colour, thread and number is data. This guide shows you how to read it, and how to make it reveal a hidden mechanistic link between two rare diseases.</p>
+</header>
+
+<h2><span class="n">01</span>The anatomy</h2>
+<p class="lead">Four elements, one idea: diseases on the outside, the mechanisms they share on the inside, and threads connecting them.</p>
+<figure>
+  <img src="guide_img/atlas_overview.png" alt="Atlas overview" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/atlas_overview.png (the full Atlas, default view)&lt;/div&gt;'"/>
+  <figcaption>The whole Atlas at a glance.</figcaption>
+</figure>
+<div class="card">
+  <div class="legend">
+    <div><span class="swatch" style="background:#38bdf8"></span><div><b>The ring</b> — every rare disease, grouped into <b>21 colour-coded clinical families</b> (RASopathy, Lysosomal, Neurologic…).</div></div>
+    <div><span class="swatch" style="background:#e7e7ea"></span><div><b>The interior stars</b> — the <b>shared mechanisms</b> (genes, pathways, metabolites) where diseases converge.</div></div>
+    <div><span class="swatch" style="background:#a855f7"></span><div><b>The braids</b> — the <b>hypotheses</b>, each running <i>disease → shared mechanism → partner disease</i>.</div></div>
+    <div><span class="swatch" style="background:#5f636b"></span><div><b>The empty centre</b> — the <b>void the engine never crosses</b>; a thread through the middle would be a generic shortcut.</div></div>
+  </div>
+  <div class="means"><b>Position = quality.</b> Specific, expert-ready discoveries sit near the bright <b>rim</b>; generic scale-free hubs collapse toward the <b>centre</b>. The geometry <i>is</i> the ranking.</div>
+</div>
+
+<h2><span class="n">02</span>Hover a disease on the ring</h2>
+<span class="do">Move the cursor over a disease name on the outer ring</span>
+<figure>
+  <img src="guide_img/hover_disease.png" alt="Hover a disease" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/hover_disease.png (hover a disease name; its threads light up; tooltip shows “family · N links”)&lt;/div&gt;'"/>
+  <figcaption>Hovering a disease lights every hypothesis it takes part in.</figcaption>
+</figure>
+<div class="means"><b>What it shows:</b> every hypothesis that disease participates in — the interior mechanism-nodes it routes through, and the partner diseases it links to. The tooltip reads its <b>clinical family</b> and <b>“N links”</b> — how many hypotheses involve it.</div>
+<div class="why"><b>Why it matters:</b> a disease with many links is a well-connected node in the convergence network; follow its brightest threads to the mechanisms it shares most strongly.</div>
+
+<h2><span class="n">03</span>Hover a star (interior node)</h2>
+<span class="do">Hover one of the glowing interior points (a GO / Reactome / CHEBI node)</span>
+<figure>
+  <img src="guide_img/hover_node.png" alt="Hover a node" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/hover_node.png (hover an interior star; tooltip: “process · best CQS 11 · r 0.31 · 7 hypotheses converge here”)&lt;/div&gt;'"/>
+  <figcaption>Every star is a shared biological mechanism; the tooltip carries its physics.</figcaption>
+</figure>
+<div class="means"><b>What it shows:</b> all hypotheses that converge on that mechanism light up, and the tooltip gives you the node's real numbers — <b>best CQS</b> (quality of the best hypothesis through it), <b>r</b> (its Poincaré radius: closer to 1 = specific, closer to 0 = generic), and <b>how many hypotheses converge here.</b></div>
+<div class="why"><b>Why it matters:</b> this is where the data lives. A node with a high count <i>and</i> a high <b>r</b> is a <b>specific shared bottleneck</b> — a genuine discovery. A high count with low <b>r</b> is a generic hub to treat with caution.</div>
+
+<h2><span class="n">04</span>Hover &amp; click a candidate</h2>
+<span class="do">Hover a card in “Priority Candidates” to highlight — click it to open the full dossier</span>
+<figure>
+  <img src="guide_img/candidate_click.png" alt="Hover a candidate" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/candidate_click.png (hover a sidebar card; its braid lights bright, sibling hypotheses sharing the node light softer)&lt;/div&gt;'"/>
+  <figcaption>One pair, plus its family of related hypotheses.</figcaption>
+</figure>
+<div class="means"><b>Hover</b> a card and its braid lights <b>brightest</b>, while every <b>sibling hypothesis that shares the same convergence node</b> lights more softly — so you see the pair <i>and</i> the mechanistic neighbourhood it belongs to.</div>
+<div class="why"><b>Click</b> the card to open the candidate's <b>full discovery dossier</b> — the complete, expert-ready report (see §11).</div>
+
+<h2><span class="n">05</span>Click a Top Convergence Node</h2>
+<span class="do">Open “Top Convergence Nodes” and click a <code>GO:…</code> / <code>REACT:…</code> / <code>CHEBI:…</code> chip</span>
+<figure>
+  <img src="guide_img/click_convergence_node.png" alt="Click a convergence node" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/click_convergence_node.png (click a GO node in the list; Atlas isolates every pair routing through it)&lt;/div&gt;'"/>
+  <figcaption>Isolating a single biological failure point across the whole corpus.</figcaption>
+</figure>
+<div class="means"><b>What the number means:</b> the value beside each node (e.g., <code>GO:0030198 — 193</code>) is <b>how many candidate hypotheses route their mechanism through that node.</b> Clicking it filters the Atlas to <b>every disease pair that converges on that exact biological point.</b></div>
+<div class="why"><b>Why it matters:</b> these are the <b>shared bottlenecks of rare disease</b> — the specific molecular steps where many separate conditions fail. A tight, specific node (small pathway, high r) that many diseases share is precisely what an expert wants to see.</div>
+
+<h2><span class="n">06</span>Click a Top Connected Gene</h2>
+<span class="do">Open “Top Connected Genes” and click a symbol (e.g., <code>COL2A1</code>, <code>PTPN11</code>, <code>KRAS</code>)</span>
+<figure>
+  <img src="guide_img/click_gene.png" alt="Click a gene" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/click_gene.png (click a gene; pairs across several families light up — pleiotropy)&lt;/div&gt;'"/>
+  <figcaption>A single gene bridging several clinical families.</figcaption>
+</figure>
+<div class="means"><b>What the number means:</b> “<code>COL2A1 — 109 candidates</code>” = the gene appears in the mechanism of <b>109 candidate hypotheses.</b> Clicking it lights every disease pair that converges on that gene.</div>
+<div class="why"><b>Why it matters — the key discovery signal:</b> if a gene lights pairs across <b>many different families</b> (its threads reach several coloured arcs), it is a <b>pleiotropic, cross-domain bridge</b> — one molecular root behind diseases that look clinically unrelated. That is one of the most valuable things ARIADNE can surface. <i>Caveat:</i> check where its stars sit — a bridge on the specific <b>rim</b> is a discovery; a promiscuous hub collapsed at the <b>centre</b> (a <code>TP53</code>/<code>KRAS</code>-type connector) is expected background.</div>
+
+<h2><span class="n">07</span>Neighbourhood Focus Mode</h2>
+<span class="do">Click “Neighborhood Focus Mode”</span>
+<figure>
+  <img src="guide_img/focus_mode.png" alt="Focus mode" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/focus_mode.png (Focus Mode active; only one disease’s neighbourhood shown)&lt;/div&gt;'"/>
+  <figcaption>Everything except one disease's neighbourhood falls away.</figcaption>
+</figure>
+<div class="means"><b>What it does:</b> isolates the top candidate's <b>seed disease</b> and shows only its neighbourhood — every mechanism and partner it connects to. The button becomes <code>Focus: &lt;disease&gt; (Exit)</code>; click again to leave.</div>
+<div class="why"><b>Why it matters:</b> use it to study one disease in depth — a clean, uncluttered view of everything ARIADNE thinks it shares mechanism with.</div>
+
+<h2><span class="n">08</span>Elite Champions</h2>
+<span class="do">Click “Elite Champions”</span>
+<figure>
+  <img src="guide_img/elite_champions.png" alt="Elite champions" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/elite_champions.png (Elite Champions on; the sidebar shows Definitive/high-CQS cards)&lt;/div&gt;'"/>
+  <figcaption>The strongest, most-corroborated candidates only.</figcaption>
+</figure>
+<div class="means"><b>What it does:</b> keeps only the highest-quality hypotheses — <b>fitness ≥ 0.65, CQS ≥ 7, and independent recurrence across ≥ 3 seed runs</b> (Hub ≥ 3), on a reasonably specific pathway. Everything weaker is hidden.</div>
+<div class="why"><b>Why it matters:</b> this is your “show me only what's worth an expert's time” switch — the shortlist you'd bring to a domain scientist.</div>
+
+<h2><span class="n">09</span>The physics filters — r and S_VNE</h2>
+<p class="lead">ARIADNE places every candidate in <b>hyperbolic space</b> and measures its <b>graph thermodynamics</b>. Two filters expose that directly.</p>
+<figure>
+  <img src="guide_img/poincare_rim.png" alt="Poincare filter" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/poincare_rim.png (Poincaré Boundary set to “Specific rim r ≥ 0.50”; the view thins to a small elite)&lt;/div&gt;'"/>
+  <figcaption>Poincaré filter set to the specific rim — the discoveries.</figcaption>
+</figure>
+<figure>
+  <img src="guide_img/laplacian_entropy.png" alt="Laplacian entropy filter" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/laplacian_entropy.png (the Graph Laplacian Entropy S_VNE filter — tightly organised vs diffuse mechanisms)&lt;/div&gt;'"/>
+  <figcaption>Graph Laplacian entropy (S<sub>VNE</sub>) — a mechanism's structural complexity.</figcaption>
+</figure>
+<div class="card">
+  <p><span class="tag">Poincaré boundary (r)</span><br/>
+  <b>r</b> is a candidate's distance from the centre in hyperbolic space, driven by how <i>specific</i> its shared pathway is. <code>r ≥ 0.50</code> = the <b>specific rim</b> (rare, expert-ready discoveries, ~4% of the corpus). <code>r &lt; 0.20</code> = <b>generic hubs</b> at the core. Use it to strip the diagram down to only the specific convergences.</p>
+  <p style="margin-bottom:0"><span class="tag">Graph Laplacian entropy (S<sub>VNE</sub>)</span><br/>
+  <b>S<sub>VNE</sub></b> is the spectral entropy of a hypothesis's causal graph — a measure of its structural complexity. Tightly organised, focused mechanisms have low entropy; sprawling, diffuse ones have high entropy. It's the thermodynamic fingerprint behind the <code>K_t = a·e<sup>−b·S_VNE</sup></code> law (fits at R² = 0.94 across the corpus).</p>
+</div>
+
+<h2><span class="n">10</span>The 21 clinical families</h2>
+<span class="do">Watch the coloured rim arcs — or filter to one family</span>
+<figure>
+  <img src="guide_img/family_highlight.png" alt="Family highlight" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/family_highlight.png (one family isolated, e.g. RASopathy, with its interior genes)&lt;/div&gt;'"/>
+  <figcaption>A single family and the mechanisms it converges on.</figcaption>
+</figure>
+<div class="means"><b>What it shows:</b> every disease is coloured by its <b>clinical family</b>, inferred from the <i>mechanism</i> it converges on (not just its name). Threads that jump between differently-coloured arcs are <b>cross-domain bridges</b> — the non-obvious links ARIADNE exists to find.</div>
+<div class="why"><b>Why it matters:</b> the more a hypothesis bridges <i>different</i> families, the more surprising — and the higher ARIADNE scores it (the cross-domain CQS bonus). Cross-family threads are where discovery lives; same-family threads are usually calibration.</div>
+
+<h2><span class="n">11</span>The discovery dossier</h2>
+<span class="do">Click any candidate card to open its full dossier</span>
+<figure>
+  <img src="guide_img/dossier_view.png" alt="Discovery dossier" onerror="this.outerHTML='&lt;div class=ph&gt;screenshot → guide_img/dossier_view.png (a candidate’s open dossier modal — mechanism, metrics, falsification test, Copy / Download buttons)&lt;/div&gt;'"/>
+  <figcaption>The complete, expert-ready report behind a single hypothesis.</figcaption>
+</figure>
+<div class="means"><b>What it shows:</b> the full case for the pair — the typed causal chain (<i>Variant → Gene → Pathway → Metabolite → Phenotype</i>), the shared genes and pathways, the metrics (CQS, fitness, tier, cross-seed recurrence), and the <b>falsification test</b>: the exact experiment that would disprove it.</div>
+<div class="why"><b>Why it matters:</b> this is what you hand an expert. <b>Copy Dossier</b> or <b>Download Markdown</b> to share it. Every claim traces back to an authoritative database, and every hypothesis states how it could be proven wrong — science, not storytelling.</div>
+
+<h2><span class="n">12</span>Does it actually discover? (literature validation)</h2>
+<span class="do">Run <code>scripts/16_literature_validation.py</code> — a blinded audit of the predictions against the literature</span>
+<div class="means"><b>What it does:</b> for every predicted disease pair, it asks <b>OpenAlex</b> (an open index of ~250 million papers) whether the two diseases are already connected in print, and <i>when</i> that connection first appeared — sorting each prediction into <b>un-studied</b> (0 co-mentions), <b>emerging</b> (1–3), <b>established</b> (&gt;3), or <b>frontier</b> (first linked in the last 3 years).</div>
+<div class="card">
+  <ul>
+    <li><b>Calibration — it recovers known biology.</b> At full coverage (every disease id resolved via Monarch), <b>43.9%</b> of top predictions re-derive connections already <b>established</b> in the literature — the largest single category, and real checkable ones (von Hippel–Lindau ⇄ pheochromocytoma; Wiskott–Aldrich ⇄ thrombocytopenia; esophageal ⇄ colorectal cancer). Counting emerging links too, ~two-thirds have some literature footing. Strong evidence the engine is not hallucinating.</li>
+    <li><b>The discovery filter concentrates novelty.</b> The <b>Discovery Gems</b> shortlist runs <b>54% un-studied</b> (zero co-mention) versus <b>36%</b> on the broad set — the gem gate lifts genuine novelty from a plurality to a clear majority (~1.5×). The filter aims at the frontier by construction, and the audit confirms it.</li>
+    <li><b>A frontier signal.</b> <b>16 pairs (4%)</b> have their <b>first-ever</b> literature co-mention within the last three years (e.g. the two connexin-26 skin disorders, first co-mentioned in 2026) — ARIADNE independently surfacing links the field is only now making.</li>
+  </ul>
+  <div class="why"><b>Read it honestly:</b> "un-studied" is an <i>upper bound</i> on novelty — a zero can also mean the search terms missed a rare synonym, so each gem still deserves a 30-second manual check before it's called new. The definitive proof — that ARIADNE would predict a link <i>before</i> it was published — needs a frozen-knowledge re-run (train on literature up to, say, 2015; score against 2016–2026). This audit is that test's scaffolding, and the strongest signal buildable today.</div>
+  <div class="means" style="margin-bottom:0"><b>Conclusion.</b> The audit settles the first question any expert asks — <i>is this real?</i> Yes: ARIADNE re-derives known biology at scale (calibration) and, on demand, concentrates genuinely un-studied hypotheses into a majority (discovery). It recovers the known <i>and</i> proposes the new — the two things a discovery instrument must do.</div>
+</div>
+
+<hr/>
+
+<h2>How to read a discovery in one glance</h2>
+<div class="card">
+  <ul>
+    <li><b>Bright thread reaching the rim</b> → a specific, high-quality convergence. Worth reading.</li>
+    <li><b>A star with high count + high r</b> → a specific mechanism many diseases genuinely share. A bottleneck of rare disease.</li>
+    <li><b>A gene lighting several families</b> → a pleiotropic cross-domain bridge — one root, many clinical faces. The strongest discovery signal (if it sits toward the rim).</li>
+    <li><b>Everything collapsed at the centre</b> → generic scale-free hubs. Expected background, demoted on purpose.</li>
+    <li><b>A cross-family braid</b> → a non-obvious bridge; exactly what the engine is built to surface.</li>
+  </ul>
+  <div class="means" style="margin-bottom:0"><b>The one sentence:</b> you're not looking at a diagram of data — you're looking at a map of <b>ranked, testable predictions</b>. Click any thread to read its step-by-step mechanism and the experiment that would prove it wrong.</div>
+</div>
+
+<hr/>
+
+<h2><span class="n">13</span>The architect's view</h2>
+<div class="card">
+  <p style="margin:0;color:#e7e7ea;font-size:1.05rem;line-height:1.7">I'm not a biologist — I'm a systems architect. I built ARIADNE as a computational-physics instrument whose entire purpose is to <b>do the biology for me</b>: it translates the physics of the human interactome into clear visual signals on a screen, so that patterns, bottlenecks and structural anomalies in rare-disease mechanism become things you can <i>see</i> and click, without being the domain expert. I look at that map the way I'd look at any complex system — for where it concentrates, where it breaks, and where it does something it shouldn't. And what I found is that rare-disease mechanism space has a <b>hidden geometry</b>.</p>
+</div>
+<div class="why"><b>Why this framing matters:</b> it turns "a non-biologist making biological claims" into "an architect who built an instrument that makes biology legible." I'm not asserting biology — I built the thing that lets the biology assert itself, then tested whether it held (§12).</div>
+
+<h2><span class="n">14</span>What ARIADNE is actually revealing — a hidden order</h2>
+<p class="lead">A humble reflection, kept to what the instrument actually measured. Strip away the biology and look at the four things the physics established.</p>
+<div class="card">
+  <ul>
+    <li><b>1 · The interactome is hyperbolic.</b> Hyperbolic geometry is the natural geometry of trees and hierarchies. Biology embeds into the Poincaré disk because it was built by evolution's tree of duplication-and-divergence — so the Atlas is, quite literally, a shadow of the tree of life projected onto function: ancient conserved machinery at the centre (the hubs), the most derived, specialized functions at the rim. Rare diseases live at the leaves. <i>The geometry encodes evolutionary depth.</i></li>
+    <li><b>2 · It's scale-free.</b> A few hubs carry most of the traffic — the same law (preferential attachment, self-organized criticality) that governs the internet, cities, ecosystems, language. Biology isn't statistically special; it obeys the universal laws of complex adaptive networks.</li>
+    <li><b>3 · It obeys a thermodynamic law (R² = 0.94).</b> The causal graphs behave as a non-equilibrium steady state — a dissipative structure. Schrödinger's negentropy, Prigogine's dissipative structures, Friston's free-energy, all showing up as a <i>measured</i> law at the level of disease mechanisms. Life is improbable order maintained by continuous dissipation; disease is a crack in that order, and it leaves a thermodynamic fingerprint.</li>
+    <li><b>4 · It's radically low-dimensional.</b> ~7,000 diseases collapse onto a small set of master bottlenecks. The space of ways to be sick is far smaller than the space of genes — Waddington's canalization: the genotype→phenotype map is many-to-one, channeled into a few attractors. ARIADNE is measuring Waddington's landscape at the network level.</li>
+  </ul>
+</div>
+<div class="means">
+  <b>So what are rare diseases telling us about nature?</b>
+  <ul style="margin-top:8px">
+    <li><b>The map of medicine is not the territory.</b> "Neurology," "dermatology," "lysosomal storage" are administrative fictions. In the interactome there are no such borders — sialidosis and a cerebrovascular disease are neighbours. Our taxonomy of disease is a human artifact laid over a continuous mechanistic manifold.</li>
+    <li><b>Disease is information, not just error.</b> Each broken gene is a natural perturbation experiment — what the system looks like when you remove one part. You're not studying broken biology; you're using breakage to read how biology is wired. Rare disease is one of the few windows nature gives us into its own architecture.</li>
+    <li><b>The same principles run all the way down and up.</b> Hyperbolic hierarchy, scale-free criticality, dissipative order organize the interactome — but also brains, ecosystems, arguably the biosphere. Rare disease is a doorway into the general physics of biological organization.</li>
+  </ul>
+</div>
+<div class="card">
+  <b style="color:#f8fafc">On the ethics — "who are we to change it?"</b>
+  <p style="color:#cbd5e1;margin:8px 0 0">Rare disease isn't designed; it's the tail of the same variation-generating process that produced us. Intervening isn't "against nature" — we are nature's self-modeling part; evolution became able to understand itself, and using that understanding is continuous with evolution, not a betrayal of it. But here's the twist ARIADNE adds: the sweet-spot bridges — one gene across several families — mean genes are pleiotropic, so "fixing" one disease can perturb machinery shared by others. ARIADNE doesn't just hand you the power to intervene; it hands you the <b>map of shared risk</b>. The mature stance isn't "cure everything" or "touch nothing" — it's <i>"intervene, but with the dependency map in hand."</i> That's exactly what the instrument is for.</p>
+</div>
+<div class="why">
+  <b>On consciousness and the quantum — the honest boundary.</b>
+  <p style="color:#cbd5e1;margin:8px 0 0">There's a real thread and an over-reach, and it matters to keep them apart. <b>The real thread:</b> the substrate that fails in these diseases — ion channels, synaptic vesicles, mitochondrial energy, membrane lipids — is the substrate of cognition. By mapping where it fails across thousands of diseases, ARIADNE is inadvertently charting "what must not break for a mind to run" — the material conditions for consciousness. <b>The over-reach to avoid:</b> mapping the substrate is not explaining the emergence. The hard problem — why any of this <i>feels</i> like something — is untouched by knowing which proteins matter, and quantum-consciousness ideas (Penrose–Hameroff) are speculative and <i>not</i> what ARIADNE measures. The instrument's genuine profundity is thermodynamic and geometric, not quantum-mystical — and it doesn't need the mysticism. Hold the wonder and the honest boundary at once; that's the stance that stays credible.</p>
+</div>
+<div class="card">
+  <b style="color:#f8fafc">What we could do with this — beyond curing diseases</b>
+  <ul style="margin-top:8px">
+    <li>Re-draw the taxonomy of disease by <b>mechanism, not symptom</b> (Louvain communities on the interactome) — a mechanism-first nosology.</li>
+    <li><b>One-molecule-many-diseases</b> therapy via the sweet-spot bridges — the translational payoff.</li>
+    <li>Turn ARIADNE into a general instrument for the <b>geometry of biological organization</b> — a tool for reading the structure of any perturbation network, not just human disease.</li>
+    <li>Ask the frontier question it poses: <b>why does biology converge?</b> Why is the space of failure modes so small? A question about the constraints that make life low-dimensional — genuinely open, and this is one of the few instruments that can pose it quantitatively.</li>
+  </ul>
+</div>
+<div class="means" style="border-left-color:var(--accent)">
+  <b>The stance, if you want one to carry.</b> ARIADNE reveals that beneath the clinical chaos, biology has a hidden order that is <b>geometric</b> (hyperbolic, hierarchical — an echo of evolution's tree), <b>statistical</b> (scale-free, like every complex system), and <b>thermodynamic</b> (a dissipative structure maintaining improbable order). Rare diseases are the natural experiments that let us read that order. I didn't build a disease-matching tool; I built an instrument for reading the architecture of living organization — honest enough to show the parts of that architecture that must hold for a mind to exist, while staying silent on the mystery of <i>why</i> a mind exists at all. That silence is a feature: it's the difference between a scientist and a mystic, and it's the reason people can trust what the instrument found.
+</div>
+
+<hr/>
+
+<div class="foot">ARIADNE — a genetic algorithm whose organisms are scientific hypotheses. · Discovery Atlas Field Guide</div>
+
+</div>
+</body>
+</html>

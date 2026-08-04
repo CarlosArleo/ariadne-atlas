@@ -1,0 +1,54 @@
+{
+  "candidates": 29245,
+  "positive_control": {
+    "known_pairs_testable": 3837,
+    "recovered": 2403,
+    "recall_pct": 62.6,
+    "recall_specific_pct": 75.5,
+    "note": "Recall@10 (10-partner cap per seed); a conservative lower bound also limited by OMIM-vs-Monarch annotation overlap. Recovered pairs are true curated convergences."
+  },
+  "null_model": {
+    "dyads": 47389,
+    "corr_r_cqs": 0.678,
+    "null_corr_mean": 0.0,
+    "null_corr_sd": 0.005,
+    "permutations": 1000,
+    "corr_empirical_p": "<0.0010",
+    "joint_top25_real": 9163,
+    "joint_top25_null": 3407,
+    "joint_enrichment_x": 2.7,
+    "note": "Permutation test: the geometry-quality correlation, and the co-occurrence of top specificity with top quality, vastly exceed label-shuffled chance."
+  },
+  "specificity": {
+    "min_pathway_median": 30.0,
+    "pct_specific_le20": 35.2,
+    "pct_exceptional_le5": 3.5,
+    "poincare_rim_pct": 3.6,
+    "poincare_core_pct": 68.1,
+    "note": "Menche s_AB (interactome separation) is pending \u2014 it needs the BioGRID network; pathway specificity is the computed proxy."
+  },
+  "integrity": {
+    "true_fabrications_detected": 254,
+    "records_purged": 206,
+    "regex_false_positives": 392,
+    "diseases_audited": 739,
+    "corpus_fabricated": 0,
+    "corpus_fabricated_pct": 0.0
+  },
+  "falsifiability": {
+    "pct_all": 100.0,
+    "pct_elite": 100.0
+  },
+  "novelty": {
+    "pct_novel": 87.5,
+    "pct_validation": 12.5,
+    "novel": 25603,
+    "validation": 3642
+  },
+  "thermodynamics": {
+    "svne_nonzero_pct": 99.0,
+    "corr_kt_svne": -0.804,
+    "corr_svne_nodes": 0.828,
+    "note": "Real causal graphs (99% non-zero). Heat diffusion falls as spectral entropy rises (the NESS thermodynamic law); entropy scales with graph complexity."
+  }
+}
