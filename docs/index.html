@@ -357,6 +357,7 @@
             <button class="btn-action guide-subtitle" id="btn-guides" onclick="toggleGuidesMenu(event)" aria-haspopup="true" aria-expanded="false" title="Documentation & guides">Discovery Atlas Guide &#9662;</button>
             <div class="guides-menu" id="guides-menu">
                 <button onclick="window.open('atlas_guide.html','_blank'); closeGuidesMenu();">Field Guide (how to read the Atlas)</button>
+                <button onclick="window.open('literature_validation.html','_blank'); closeGuidesMenu();">From Hypotheses to Experiments (validation funnel)</button>
                 <button onclick="openDashboardModal(); closeGuidesMenu();">Master Dashboard</button>
                 <button onclick="openWhitepaperModal(); closeGuidesMenu();">Whitepaper &amp; Figures</button>
                 <button onclick="openAboutModal(); closeGuidesMenu();">How ARIADNE Works</button>
@@ -1128,7 +1129,7 @@ function updateBadge(sourceName, isFallback) {
     const badge = document.getElementById('source-badge');
     if (!badge || !allCandidates.length) return;
     const maxCqs = Math.max(...allCandidates.map(c => c.cqs));
-    const uniqueSeeds = new Set(allCandidates.map(c => c.seedName)).size;
+    const uniqueSeeds = new Set(allCandidates.map(c => c.seedId)).size;   // canonical seed IDs (matches Corpus at a Glance; names can vary per ID)
     document.getElementById('stat-total').textContent = allCandidates.length;
     document.getElementById('stat-seeds').textContent = uniqueSeeds || 205;
     document.getElementById('stat-max-cqs').textContent = maxCqs;
