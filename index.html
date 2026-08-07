@@ -452,6 +452,10 @@
             <details class="filt info-wrap">
                 <summary>Clinical Pathway Family <button class="info-btn" onclick="toggleInfo('family-info', event)" title="Family legend">?</button></summary>
                 <select id="filter-family"><option value="all">All clinical families</option></select>
+                <label style="display:block; font-size:0.72rem; color:#94a3b8; margin-top:6px; cursor:pointer;">
+                    <input type="checkbox" id="filter-familybridge" onchange="debounceRender()" style="vertical-align:middle;">
+                    Bridge mode — show only cross-family pairs (A ⇄ B). Select 2+ families to isolate bridges between them.
+                </label>
                 <div class="info-pop" id="family-info"><h4>Clinical Family Legend</h4><div id="legend-list"></div></div>
             </details>
             <details class="filt">
@@ -518,8 +522,8 @@
                 <summary>Literature Verification (RANA)</summary>
                 <select id="filter-rana">
                     <option value="all" selected>All Literature States</option>
-                    <option value="supported">PubMed Confirmed Only</option>
-                    <option value="clean">Zero Literature Conflicts</option>
+                    <option value="confirmed">PubMed Confirmed (established / emerging)</option>
+                    <option value="unstudied">Un-studied Only (novel discoveries)</option>
                 </select>
             </details>
             <details class="filt">
@@ -539,6 +543,51 @@
                     <div class="opt" data-value="calibration" onclick="applyPreset('calibration')">Allelic Calibration</div>
                 </div>
                 <div class="info-pop" id="preset-info"><h4>Presets — one-click filter recipes</h4><div style="font-size:0.74rem; color:#94a3b8; line-height:1.5;"><b>Discovery Frontier</b>: sweet-spot bridge · multi-pathway · rim-specific · well-corroborated.<br/><b>Metabolite Bridges</b>: convergence on a shared metabolite (CHEBI) · recurrent.<br/><b>Tightest Couplings</b>: pathway-mediated (not shared-gene) · specific · recurrent.<br/><b>Deep Mechanisms</b>: long, low-entropy causal chains.<br/><b>Allelic Calibration</b>: known shared-gene baseline. Use <b>Reset</b> to clear.</div></div>
+            </details>
+            <!-- Cross-Domain Filter -->
+            <details class="filt">
+                <summary>Cross-Domain Status (v2.0)</summary>
+                <select id="filter-crossdomain">
+                    <option value="all" selected>All Domain Types</option>
+                    <option value="cross">Cross-Domain Bridges Only (Gold)</option>
+                    <option value="same">Same-Domain Links Only</option>
+                </select>
+            </details>
+
+            <!-- Pharos TDL Filter -->
+            <details class="filt">
+                <summary>Pharos Target Development Level (v0.6.0)</summary>
+                <select id="filter-pharos">
+                    <option value="all" selected>All Target Levels</option>
+                    <option value="Tclin">Tclin · Approved Drug Targets</option>
+                    <option value="Tchem">Tchem · Small-Molecule Binders</option>
+                    <option value="Tbio">Tbio · Biologically Characterized</option>
+                    <option value="Tdark">Tdark · Under-Studied Dark Proteins</option>
+                </select>
+            </details>
+
+            <!-- GTEx Tissue Filter -->
+            <details class="filt">
+                <summary>GTEx v10 Expressed Tissue (v0.7.0)</summary>
+                <select id="filter-gtex">
+                    <option value="all" selected>All Tissues</option>
+                    <option value="Heart">Heart (Cardiovascular)</option>
+                    <option value="Brain">Brain (Neurologic)</option>
+                    <option value="Skin">Skin (Dermatologic)</option>
+                    <option value="Liver">Liver (Hepatic)</option>
+                    <option value="Kidney">Kidney (Renal)</option>
+                    <option value="Lung">Lung (Pulmonary)</option>
+                    <option value="Muscle">Muscle (Neuromuscular)</option>
+                </select>
+            </details>
+
+            <!-- ChEMBL Drug Overlay Filter -->
+            <details class="filt">
+                <summary>Approved Small-Molecule Overlay (v0.6.0)</summary>
+                <select id="filter-chembl">
+                    <option value="all" selected>All Candidates</option>
+                    <option value="has_drugs">With Approved/Clinical Drugs Only</option>
+                </select>
             </details>
             <button class="btn-action" id="btn-exit-reverse" onclick="exitReverseView()" style="display:none; width:100%; margin-top:4px;">Exit Reverse Partner View</button>
         </div>
@@ -1037,6 +1086,37 @@ let atlasRibbons = [];
 const MAX_DEFAULT_RIBBONS = 500;
 let currentFiltered = [];
 
+// Name-based clinical-family classifier for a SINGLE disease (familyOf reads mechanism text only).
+// Used to give each endpoint (seed, partner) its own family so cross-family bridges can be isolated.
+function diseaseFamilyByName(name) {
+    const n = (name || '').toLowerCase();
+    const M = [
+        ['lysosomal', /sialidos|galactosialidos|gaucher|niemann.?pick|tay.?sachs|sandhoff|fabry|mucopolysacchar|mucolipid|pompe|krabbe|metachromatic|leukodystrophy|ganglios|mannosidos|fucosidos|aspartylglucosamin|wolman|cholesteryl ester|cystinos|danon|schindler|salla|sphingolip|sulfatid|ceroid|lipofuscin|batten|kufs|hurler|hunter|sanfilippo|morquio|maroteaux|\bsly\b|hexosaminidase|neuraminidase|lysosom|storage/],
+        ['peroxisomal', /peroxisom|zellweger|adrenoleukodystrophy|refsum|rhizomelic|vlcfa/],
+        ['coagulation', /coagul|h[ae]mophilia|fibrinogen|afibrinogen|thrombasthenia|glanzmann|von.?willebrand|bernard.?soulier|thrombocytopenia|bleeding|thrombo|factor v|factor x/],
+        ['hematologic', /an[ae]mia|thalass|hemoglobin|haemoglobin|erythro|sickle|porphyr|neutropenia|pancytopenia|polycythemia|spherocyt|hemolytic|bone marrow failure/],
+        ['channelopathy', /long qt|brugada|epilep|seizure|periodic paralysis|myotonia congenita|hyperekplexia|channelopathy|catecholaminergic|romano.?ward/],
+        ['ciliopathy', /bardet.?biedl|joubert|meckel|nephronophthisis|senior.?loken|alstr[oö]m|usher|polycystic kidney|ciliar|ciliary dyskinesia|jeune/],
+        ['dnarepair', /xeroderma|cockayne|trichothiodystrophy|fanconi|bloom|ataxia.?telangiectasia|nijmegen|werner|rothmund|dyskeratosis|telomere/],
+        ['matrix', /marfan|ehlers.?danlos|osteogenesis imperfecta|stickler|cutis laxa|loeys.?dietz|collagen|epidermolysis bullosa/],
+        ['skeletal', /achondroplasia|dysplasia|chondro|osteo|brachydactyly|craniosynostos|dwarf|spondylo|campomelic|thanatophoric|acromicric|pseudoachondro/],
+        ['mitochondrial', /mitochondr|leigh|melas|merrf|kearns.?sayre|methylmalonic|propionic|maple syrup|aciduria|acidemia|carboxylase|respiratory chain|oxphos|coenzyme q/],
+        ['glycosylation', /congenital disorder of glycosylation|\bcdg\b|glycosylation|dystroglycanopathy|walker.?warburg|muscle.?eye.?brain/],
+        ['neuromuscular', /muscular dystrophy|myopath|myasthen|charcot.?marie.?tooth|spinal muscular atrophy|amyotrophic|myotubular|nemaline|centronuclear|sarcoglycan/],
+        ['dermatologic', /ichthyos|keratoderma|epidermoly|palmoplantar|erythrokeratoderm|netherton|darier|ectoderm|wrinkly skin/],
+        ['ophthalmologic', /retinitis|leber|cone.?rod|cataract|aniridia|microphthalm|corneal|optic atrophy|glaucoma|macular/],
+        ['renal', /nephro|renal|glomerul|tubulopath|bartter|gitelman|alport|cystinuria|nephrotic/],
+        ['hepatic', /hepat|cholestas|biliary|alagille|wilson disease|crigler|dubin|bile acid|urea cycle|citrullin|argininosuccin/],
+        ['endocrine', /diabetes|hypothyroid|hyperthyroid|adrenal|hypogonad|pituitary|growth hormone|thyroid|insulin/],
+        ['immune', /immunodeficiency|agammaglobulin|granulomatous|hyper.?ige|wiskott|severe combined|autoinflammat|periodic fever|complement deficiency|interferonopath|lymphoproliferat/],
+        ['rasopathy', /noonan|costello|cardiofaciocutaneous|legius|neurofibromatos|leopard|rasopathy|proteus syndrome|cowden|polyposis/],
+        ['chromatin', /rubinstein.?taybi|kabuki|cornelia de lange|coffin.?siris|weaver|sotos|bohring/],
+        ['neurologic', /leukoencephalopath|hypomyelinat|neurodegener|parkinson|alzheimer|dystonia|\bataxia\b|spastic|encephalopath|microcephaly|lissencephaly|intellectual developmental|neurodevelopmental/],
+    ];
+    for (const [k, rx] of M) if (rx.test(n)) return k;
+    return 'other';
+}
+
 function processRawDataset(data) {
     if (!Array.isArray(data)) return [];
     return data.map((d, i) => {
@@ -1063,14 +1143,19 @@ function processRawDataset(data) {
         const litChecks = d.literatureChecks || d.ranaVerdicts || [];
         const supportsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('SUPPORT')).length;
         const contradictsCount = litChecks.filter(c => String(c.verdict || c).toUpperCase().includes('CONTRADICT')).length;
-
+        const seedFamKey = d.seedFamily || diseaseFamilyByName(seedName);
+                const partnerFamKey = d.partnerFamily || diseaseFamilyByName(partnerName);
+                const crossDomain = d.crossDomain !== undefined ? !!d.crossDomain : (d.cross_domain !== undefined ? !!d.cross_domain : false);
+                const pharosTdl = d.pharosTdlSummary || (d.raw && d.raw.pharosTdlSummary) || {};
+                const drugOverlays = d.drugOverlays || (d.raw && d.raw.drugOverlays) || [];
+                const gtexTissues = d.gtexTissues || (d.raw && d.raw.gtexTissues) || {};
         return {
             id: i,
             seedId: d.SeedId || d.seedId || 'MONDO:0000000',
             seedName,
             partnerId: d.PartnerId || d.partnerId || 'MONDO:0000000',
             partnerName,
-            tier: d.Tier || d.tier || 'Tier 3',
+            tier: tierMeta(d.Tier || d.tier || 'Tier 3').key,
             fitness,
             cqs,
             pathwaysCount: d.Pathways || d.pathwaysCount || (d.SharedPathways ? d.SharedPathways.length : 1),
@@ -1086,6 +1171,7 @@ function processRawDataset(data) {
             nodeCount,
             supportsCount,
             contradictsCount,
+            literatureState: d.literatureState || (d.raw && d.raw.literatureState) || null,
             hub,
             logFile: d.LogFile || d.logFile || `./data/atlas/discovery_${d.FileName || 'log.json'}`,
             fileName: d.FileName || d.fileName || 'log.json',
@@ -1098,12 +1184,20 @@ function processRawDataset(data) {
             family: fam.key,
             familyLabel: fam.label,
             familyColor: fam.color,
-            overlapClass: d.OverlapClass || d.overlap_class || '—'
+            overlapClass: d.OverlapClass || d.overlap_class || '—',
+            crossDomain,
+            seedFamily: seedFamKey,
+            partnerFamily: partnerFamKey,
+            pharosTdl,
+            drugOverlays,
+            gtexTissues
         };
     }).sort((a, b) => b.cqs - a.cqs || b.fitness - a.fitness);
 }
 
 const TOP_CANDIDATES_PATHS = [
+    './data/atlas/top_candidates_enriched.json',
+    'data/atlas/top_candidates_enriched.json',
     './data/atlas/top_candidates.json',
     'data/atlas/top_candidates.json',
     './top_candidates.json',
@@ -1309,8 +1403,12 @@ function toggleEliteMode() {
     document.getElementById('filter-nodescope').value = 'all';
         document.getElementById('filter-entropy').value = 'all';
         document.getElementById('filter-rana').value = 'all';
-        document.getElementById('filter-depth').value = 'all';
-        document.getElementById('search-input').value = '';
+    document.getElementById('filter-depth').value = 'all';
+    ['filter-crossdomain', 'filter-pharos', 'filter-gtex', 'filter-chembl'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = 'all';
+    });
+    document.getElementById('search-input').value = '';
     } else {
         btn.classList.remove('active');
         btn.textContent = 'Elite Champions';
@@ -1346,6 +1444,10 @@ function getFilteredCandidates() {
     // "supported" option would exclude EVERY candidate (all supportsCount === 0). Only
     // let it filter once real literature data exists in the dataset.
     const ranaDataPresent = allCandidates.some(x => x.supportsCount > 0 || x.contradictsCount > 0);
+    const crossFilter = document.getElementById('filter-crossdomain')?.value || 'all';
+    const pharosFilter = document.getElementById('filter-pharos')?.value || 'all';
+    const gtexFilter = document.getElementById('filter-gtex')?.value || 'all';
+    const chemblFilter = document.getElementById('filter-chembl')?.value || 'all';
 
     return allCandidates.filter(c => {
         if (showEliteOnly) {
@@ -1369,8 +1471,16 @@ function getFilteredCandidates() {
         if (geneIntFilter === 'fabricated' && !c.geneFabricated) return false;
         if (hubVal === 'h3' && c.hub < 3) return false;
         if (hubVal === 'h1' && c.hub > 2) return false;
-        if (window.__famSel && window.__famSel.size) { if (!window.__famSel.has(c.family)) return false; }
-        else if (famFilter !== 'all' && c.family !== famFilter) return false;
+        const bridgeMode = document.getElementById('filter-familybridge')?.checked;
+        if (bridgeMode) {
+            // Cross-family bridge: seed and partner must be in DIFFERENT families;
+            // if families are selected, both endpoints must be within the selection.
+            if (c.seedFamily === c.partnerFamily) return false;
+            if (window.__famSel && window.__famSel.size &&
+                !(window.__famSel.has(c.seedFamily) && window.__famSel.has(c.partnerFamily))) return false;
+        } else if (window.__famSel && window.__famSel.size) {
+            if (!window.__famSel.has(c.family)) return false;
+        } else if (famFilter !== 'all' && c.family !== famFilter) return false;
 
         // Apply Poincaré Filter (Purges Hub Noise)
         if (poincareFilter === 'rim' && c.poincareR < 0.50) return false;
@@ -1390,11 +1500,27 @@ function getFilteredCandidates() {
         if (scopeFilter === 'hub' && !(c.nodeBreadthMin >= 10)) return false;
 
         // Apply RANA Filter (no-op until real literature verdicts are logged)
-        if (ranaDataPresent && ranaFilter === 'supported' && c.supportsCount === 0) return false;
-        if (ranaFilter === 'clean' && c.contradictsCount > 0) return false;
+        if (ranaFilter === 'confirmed' && !(c.literatureState === 'established' || c.literatureState === 'emerging')) return false;
+        if (ranaFilter === 'unstudied' && c.literatureState !== 'unstudied') return false;
 
         // Apply Depth Filter
         if (depthFilter === 'deep' && c.nodeCount < 4) return false;
+        if (crossFilter === 'cross' && !c.crossDomain) return false;
+        if (crossFilter === 'same' && c.crossDomain) return false;
+
+        if (pharosFilter !== 'all') {
+            const hasTdl = Object.values(c.pharosTdl || {}).includes(pharosFilter);
+            if (!hasTdl) return false;
+        }
+
+        if (gtexFilter !== 'all') {
+            const hasTissue = Object.values(c.gtexTissues || {}).some(list => 
+                list.some(t => t.toLowerCase().includes(gtexFilter.toLowerCase()))
+            );
+            if (!hasTissue) return false;
+        }
+
+        if (chemblFilter === 'has_drugs' && (!c.drugOverlays || c.drugOverlays.length === 0)) return false;
 
         if (search) {
             const haystack = `${c.seedName} ${c.partnerName} ${c.mechanism}`.toLowerCase();
@@ -1631,6 +1757,11 @@ function renderSidebar(candidates) {
             </div>
             <div class="cqs-card-title">${c.seedName} ⇄ ${c.partnerName}</div>
             <div class="cqs-card-mech">${c.mechTruncated}</div>
+            ${(c.pharosTdl && Object.keys(c.pharosTdl).length > 0) || (c.gtexTissues && Object.keys(c.gtexTissues).length > 0) ? `
+            <div style="font-size:0.7rem; margin-top:6px; padding-top:5px; border-top:1px solid rgba(255,255,255,0.05); display:flex; gap:8px; color:var(--text-muted);">
+                ${c.pharosTdl && Object.keys(c.pharosTdl).length > 0 ? `<span style="color:#10b981;" title="Translational Readiness">Pharos: ${Object.values(c.pharosTdl).includes('Tclin') ? 'Tclin (Approved)' : Object.values(c.pharosTdl)[0]}</span>` : ''}
+                ${c.gtexTissues && Object.keys(c.gtexTissues).length > 0 ? `<span style="color:#a855f7;" title="GTEx Co-expression">GTEx: ${[...new Set(Object.values(c.gtexTissues).flat())].slice(0,2).join(', ')}</span>` : ''}
+            </div>` : ''}
         </div>`;
     }).join('');
 }
@@ -1796,10 +1927,12 @@ function renderRadial(candidates) {
         return {nodes, genes};
     }
     function hashAngle(s){ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return (h%3600)/3600*2*Math.PI - Math.PI; }
-    const entityDeg={}, entityDis={}, nodeCQS={}, nodeRsum={}, nodeRn={};
+    const entityDeg={}, entityDis={}, nodeCQS={}, nodeRsum={}, nodeRn={}, nodeTdl={};
     candidates.forEach(c=>{ const e=parseEntities(c); c._nodes=e.nodes; c._genesArr=e.genes; c._core=e.nodes[0]||e.genes[0]||null;
         if(c._core) nodeCQS[c._core]=Math.max(nodeCQS[c._core]||0, c.cqs||0);
-        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; nodeRsum[k]=(nodeRsum[k]||0)+(c.poincareR||0); nodeRn[k]=(nodeRn[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); });
+        e.nodes.concat(e.genes).forEach(k=>{ entityDeg[k]=(entityDeg[k]||0)+1; nodeRsum[k]=(nodeRsum[k]||0)+(c.poincareR||0); nodeRn[k]=(nodeRn[k]||0)+1; (entityDis[k]=entityDis[k]||new Set()).add(c.seedName); entityDis[k].add(c.partnerName); }); 
+        if (c.pharosTdl) Object.entries(c.pharosTdl).forEach(([g, tdl]) => { if (!nodeTdl[g] || tdl === 'Tclin') nodeTdl[g] = tdl; });
+    });
     const _degv=Object.values(entityDeg); const lgMax=Math.log(Math.max(2, _degv.length?Math.max.apply(null,_degv):2));
     // radial position (Poincare direction): recurrence -> centre (generic hub, r->0); rare -> rim (specific, r->1)
     function entPos(k){ if(entPos._c[k]) return entPos._c[k]; const dis=entityDis[k]; if(!dis) return null;
@@ -1834,19 +1967,34 @@ function renderRadial(candidates) {
     ordered.forEach(c=>{ const core=c._core&&entPos(c._core); if(!core) return;
         const aS=diseaseAngle[c.seedName], aP=diseaseAngle[c.partnerName]; if(aS===undefined||aP===undefined) return;
         const w0=0.28+Math.min(0.75, Math.log(((c._core&&entityDeg[c._core])||1)+1)*0.18);
-        ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6), w0:w0 }); });
-
-    const typeOf = k => k.indexOf('GO:')===0?['process','#10b981'] : (k.indexOf('CHEBI:')===0?['metabolite','#f59e0b'] : ((k.indexOf('REACT')===0||k.indexOf('R-HSA')===0)?['pathway','#10b981'] : (k.indexOf('HP:')===0?['phenotype','#f43f5e']:['gene','#38bdf8'])));
-
+ribbons.push({ id:c.id, path:braid(aS,aP,core.r,core.a), col:famColor(diseaseFam[c.seedName]), core:c._core, seed:c.seedName, partner:c.partnerName, genes:(c._genesArr||[]).slice(0,3), nodes:(c._nodes||[]).slice(0,6), w0:w0, crossDomain:c.crossDomain }); });    
+        const typeOf = k => {
+            if (k.indexOf('GO:')===0) return ['process','#10b981'];
+            if (k.indexOf('CHEBI:')===0) return ['metabolite','#f59e0b'];
+            if (k.indexOf('REACT')===0||k.indexOf('R-HSA')===0) return ['pathway','#10b981'];
+            if (k.indexOf('HP:')===0) return ['phenotype','#f43f5e'];
+            
+            // It's a gene. Apply Pharos TDL color coding if available.
+            const tdl = nodeTdl[k];
+            if (tdl === 'Tclin') return ['gene (Tclin)','#10b981']; // Green (Approved)
+            if (tdl === 'Tchem') return ['gene (Tchem)','#3b82f6']; // Blue (Small Molecule)
+            if (tdl === 'Tbio')  return ['gene (Tbio)','#eab308'];  // Yellow (Bio Understood)
+            if (tdl === 'Tdark') return ['gene (Tdark)','#71717a']; // Dark Gray (Novel)
+            
+            return ['gene','#38bdf8']; // Default Cyan
+        };
     function paintRibbons(primary, secondary){
         const anyHi=!!(primary||secondary);
         ctx.save(); ctx.translate(cx,cy); ctx.clearRect(-cx,-cy,width,height); ctx.lineCap='round';
-        ribbons.forEach(rb=>{ let al,w; const bw=rb.w0||0.5;
+        ribbons.forEach(rb=>{ let al,w; const bw=rb.w0||0.5; let strokeCol = rb.col;
             if(!anyHi){ al=0.16; w=bw; }
-            else if(primary&&primary(rb)){ al=0.85; w=Math.max(0.5, bw*1.0); }
+            else if(primary&&primary(rb)){ 
+                al=0.85; w=Math.max(0.5, bw*1.0); 
+                if (rb.crossDomain) strokeCol = '#34d399'; // Emerald glow for cross-domain bridges
+            }
             else if(secondary&&secondary(rb)){ al=0.32; w=bw*0.75; }
             else { al=0.02; w=bw*0.7; }
-            ctx.globalAlpha=al; ctx.lineWidth=w; ctx.strokeStyle=rb.col; ctx.stroke(rb.path); });
+            ctx.globalAlpha=al; ctx.lineWidth=w; ctx.strokeStyle=strokeCol; ctx.stroke(rb.path); });
         ctx.globalAlpha=1;
         // brightness + size by DISCOVERY QUALITY (best CQS): specific rim convergences shine, generic hubs hush
         glowCores.forEach(k=>{ const cp=corePos[k]; const xy=polar(cp.r,cp.a); const x=xy[0],y=xy[1];
@@ -1854,7 +2002,7 @@ function renderRadial(candidates) {
             const hot=primary&&ribbons.some(rb=>rb.core===k&&primary(rb)); const warm=!hot&&secondary&&ribbons.some(rb=>rb.core===k&&secondary(rb));
             const a0=hot?0.85:(warm?0.5:0.05+q*0.28);
             const gr=ctx.createRadialGradient(x,y,0,x,y,rad*2.2); gr.addColorStop(0,'rgba(226,232,240,'+a0.toFixed(3)+')'); gr.addColorStop(1,'rgba(200,210,224,0)');
-            ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(x,y,rad*2.2,0,6.2832); ctx.fill();
+            
             ctx.fillStyle= hot?'#ffffff':'rgba(226,232,240,'+(0.18+q*0.38).toFixed(3)+')'; ctx.beginPath(); ctx.arc(x,y,rad,0,6.2832); ctx.fill(); });
         if(primary){ const hl=ribbons.filter(primary);
             if(hl.length<=8){ ctx.textAlign='center'; const seenN={}, seenD={};
@@ -1941,7 +2089,7 @@ function showTooltip(event, c) {
     }
     const tip = document.getElementById('canvas-tooltip');
     tip.style.opacity = 1;
-    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong><br/>CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>Genes: ${genes}<br/>Conv node: ${convNode}`;
+    tip.innerHTML = `<strong>${c.seedName} ⇄ ${c.partnerName}</strong>${c.crossDomain ? ' <span style="color:#34d399; font-weight:bold;">[Cross-Domain]</span>' : ''}<br/>CQS: ${c.cqs} | Fit: ${c.fitness.toFixed(3)} | Hub: ${c.hub}<br/>Pathways: ${pwCount} ${minSize ? '(' + minSize + ')' : ''}<br/>Genes: ${genes}<br/>Conv node: ${convNode}`;    
     moveTooltip(event);
 }
 function moveTooltip(event) { const tip = document.getElementById('canvas-tooltip'); tip.style.left = (event.clientX + 16) + 'px'; tip.style.top = (event.clientY - 10) + 'px'; }
@@ -2046,7 +2194,27 @@ function dossierToMarkdown(c, partners) {
     md += `- **CQS Score:** ${c.cqs}\n`;
     md += `- **Tier:** ${c.tier} · ${tm.short}\n`;
     md += `- **Fitness:** ${c.fitness.toFixed(3)}\n`;
-    md += `- **Hub:** ${c.hub} seeds\n\n`;
+    md += `- **Hub:** ${c.hub} seeds\n`;
+    md += `- **Cross-Domain Status:** ${c.crossDomain ? 'Cross-Domain Bridge (Gold)' : 'Same-Domain Link'}\n\n`;
+
+    if (c.pharosTdl && Object.keys(c.pharosTdl).length > 0) {
+        const tdlStr = Object.entries(c.pharosTdl).map(([g, t]) => `${g} (${t})`).join(', ');
+        md += `**Pharos Target Levels:** ${tdlStr}\n\n`;
+    }
+
+    if (c.gtexTissues && Object.keys(c.gtexTissues).length > 0) {
+        const gtexStr = Object.entries(c.gtexTissues).map(([g, t]) => `${g}: ${t.join(', ')}`).join(' | ');
+        md += `**GTEx Expressed Tissues:** ${gtexStr}\n\n`;
+    }
+
+    if (c.drugOverlays && c.drugOverlays.length > 0) {
+        md += `## Approved Small-Molecule Overlays (ChEMBL)\n`;
+        c.drugOverlays.forEach(d => {
+            md += `- **${d.drugName}** (${d.targetSymbol}): ${d.mechanismOfAction} [Phase ${d.maxPhase}]\n`;
+        });
+        md += `\n`;
+    }
+
 
     // Reverse partner list
     const otherSeeds = getSeedsProposingPartner(c.partnerName).filter(s => s !== c.seedName);
@@ -2232,7 +2400,60 @@ function openDossierModal(candId) {
         }
 
         const proteinInteractionHtml = getProteinInteractionHtml(c);
+const crossDomainBadge = c.crossDomain 
+            ? `<span style="background:rgba(52,211,153,0.15); color:#34d399; padding:2px 10px; border-radius:12px; font-weight:600; margin-left:10px; font-size:0.85rem;">Cross-Domain Bridge (Gold)</span>` 
+            : '';
 
+        let tdlHtml = '';
+        if (c.pharosTdl && Object.keys(c.pharosTdl).length > 0) {
+            tdlHtml = `<div style="margin-top:8px; font-size:0.78rem;">
+                <strong style="color:#e2e8f0;">Target Development Levels (Pharos):</strong><br/>
+                <div style="margin-top:3px;">
+                    ${Object.entries(c.pharosTdl).map(([gene, tdl]) => 
+                        `<span class="chip ${tdl==='Tclin'?'chip-gene':tdl==='Tdark'?'chip-phenotype':'chip-other'}" style="margin:2px; padding:2px 6px; border-radius:4px; background:rgba(255,255,255,0.1);">${gene}: ${tdl}</span>`
+                    ).join(' ')}
+                </div>
+            </div>`;
+        }
+
+        let gtexHtml = '';
+        if (c.gtexTissues && Object.keys(c.gtexTissues).length > 0) {
+            gtexHtml = `<div style="margin-top:8px; font-size:0.78rem;">
+                <strong style="color:#e2e8f0;">GTEx v10 Expressed Tissue Sites:</strong>
+                ${Object.entries(c.gtexTissues).map(([gene, tissues]) => 
+                    `<div style="font-size:0.74rem; color:#94a3b8; margin-top:2px;"><strong>${gene}:</strong> ${tissues.join(', ')}</div>`
+                ).join('')}
+            </div>`;
+        }
+
+        let drugHtml = '';
+        if (c.drugOverlays && c.drugOverlays.length > 0) {
+            drugHtml = `<div style="margin-top:10px; padding:10px; background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.25); border-radius:8px;">
+                <strong style="color:#38bdf8; font-size:0.8rem;">Approved Small-Molecule Overlays (ChEMBL):</strong>
+                <ul style="margin-top:4px; padding-left:16px; font-size:0.76rem; color:#cbd5e1;">
+                    ${c.drugOverlays.map(d => `<li><strong>${d.drugName}</strong> (${d.targetSymbol}): ${d.mechanismOfAction} <span style="color:#10b981;">[Phase ${d.maxPhase}]</span></li>`).join('')}
+                </ul>
+            </div>`;
+        }
+        let stringHtml = '';
+        if (c.stringInteractions && Object.keys(c.stringInteractions).length > 0) {
+            stringHtml = `<div style="margin-top:8px; font-size:0.78rem;">
+                <strong style="color:#e2e8f0;">STRING Extracellular & Plasma PPI Edges (v12.0):</strong>
+                ${Object.entries(c.stringInteractions).map(([gene, edges]) => 
+                    `<div style="font-size:0.74rem; color:#94a3b8; margin-top:2px;"><strong>${gene}:</strong> ${edges.slice(0,3).map(e => `${e.proteinB} (score ${e.combinedScore})`).join(', ')}</div>`
+                ).join('')}
+            </div>`;
+        }
+
+        let encodeHtml = '';
+        if (c.encodeElements && Object.keys(c.encodeElements).length > 0) {
+            encodeHtml = `<div style="margin-top:8px; font-size:0.78rem;">
+                <strong style="color:#e2e8f0;">ENCODE v4 cCRE Regulatory Elements:</strong>
+                ${Object.entries(c.encodeElements).map(([gene, elems]) => 
+                    `<div style="font-size:0.74rem; color:#94a3b8; margin-top:2px;"><strong>${gene}:</strong> ${elems.slice(0,2).map(e => `${e.elementType} (${e.tissueContext})`).join(', ')}</div>`
+                ).join('')}
+            </div>`;
+        }
         const rawId = 'raw-' + Math.random().toString(36).slice(2,8);
         document.getElementById('modal-content').innerHTML = `
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
@@ -2240,13 +2461,20 @@ function openDossierModal(candId) {
                 <span style="background:${tm.color}22; color:${tm.color}; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;">${c.tier} · ${tm.short}</span>
                 ${c.hub >= 3 ? `<span style="background:rgba(245,158,11,0.15); color:#f59e0b; padding:2px 10px; border-radius:12px;">Global Hub (${c.hub} seeds)</span>` : ''}
                 <span style="font-size:0.8rem; color:#94a3b8;">Fitness: <strong>${c.fitness.toFixed(3)}</strong></span>
+                ${crossDomainBadge}
             </div>
             
             <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#f8fafc;">${c.seedName} ⇄ ${c.partnerName}</h2>
             ${reverseHtml}
             ${geneHtml}
             ${proteinInteractionHtml}
-            <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8;">
+            ${tdlHtml}
+            ${gtexHtml}
+            ${drugHtml}
+            ${stringHtml}   <!-- ADDED -->
+            ${encodeHtml}   <!-- ADDED -->
+
+            <div style="margin-bottom:14px; font-size:0.8rem; color:#94a3b8; margin-top:10px;">
                 <strong style="color:#e2e8f0;">Shared Reactome Pathways (${c.sharedPathways.length}):</strong><br/>
                 <div style="margin-top:4px;">${c.sharedPathways.map(pw => `<a href="https://reactome.org/content/detail/${pw.replace(/^reactome:/i,'')}" target="_blank" class="pw-badge">${pw}</a>`).join(' ')}</div>
                 ${c.minPathSize ? `<div style="margin-top:6px; font-size:0.76rem;">Smallest shared pathway: <strong style="color:#e2e8f0;">${c.minPathSize} genes</strong>${c.minPathSize <= 20 ? ' — highly specific' : c.minPathSize <= 50 ? ' — specific' : ''}</div>` : ''}
@@ -2541,6 +2769,10 @@ document.getElementById('filter-geneint')?.addEventListener('change', debounceRe
 document.getElementById('filter-hub').addEventListener('change', debounceRender);
 document.getElementById('filter-family').addEventListener('change', debounceRender);
 document.getElementById('filter-tier').addEventListener('change', debounceRender);
+document.getElementById('filter-crossdomain')?.addEventListener('change', debounceRender);
+document.getElementById('filter-pharos')?.addEventListener('change', debounceRender);
+document.getElementById('filter-gtex')?.addEventListener('change', debounceRender);
+document.getElementById('filter-chembl')?.addEventListener('change', debounceRender);
 document.getElementById('search-input').addEventListener('input', debounceRender);
 window.addEventListener('resize', debounceRender);
 // --- Guides dropdown (consolidated documentation menu) ---
