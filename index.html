@@ -1198,10 +1198,10 @@ function processRawDataset(data) {
 const TOP_CANDIDATES_PATHS = [
     './data/atlas/top_candidates_enriched.json',
     'data/atlas/top_candidates_enriched.json',
-    './data/atlas/top_candidates.json',
-    'data/atlas/top_candidates.json',
-    './top_candidates.json',
-    'top_candidates.json'
+    './data/atlas/top_candidates_enriched.json',
+    'data/atlas/top_candidates_enriched.json',
+    './top_candidates_enriched.json',
+    'top_candidates_enriched.json'
 ];
 
 async function tryFetchTopCandidates() {
@@ -1210,7 +1210,7 @@ async function tryFetchTopCandidates() {
             const resp = await fetch(path + (path.includes('?') ? '&' : '?') + '_t=' + Date.now(), { cache: 'no-store' });
             if (resp.ok) {
                 const data = await resp.json();
-                console.info(`[ARIADNE] top_candidates.json loaded from "${path}".`);
+                console.info(`[ARIADNE] top_candidates_enriched.json loaded from "${path}".`);
                 return { data, path };
             }
         } catch (e) { }
