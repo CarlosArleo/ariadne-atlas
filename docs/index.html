@@ -607,8 +607,8 @@
         <!-- 5. Source badge + loader, at the very bottom -->
         <div id="source-foot">
             <span class="source-badge" id="source-badge">Loading...</span>
-            <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates.json">
-                Load top_candidates.json
+            <label class="btn-action" style="text-align:center; display:block; cursor:pointer;" title="Click to manually load top_candidates_enriched.json">
+                Load top_candidates_enriched.json
                 <input type="file" id="file-uploader" accept=".json" style="display:none;">
             </label>
         </div>
@@ -1151,6 +1151,9 @@ function processRawDataset(data) {
                 const gtexTissues = d.gtexTissues || (d.raw && d.raw.gtexTissues) || {};
         return {
             id: i,
+            cid: (d.cid !== undefined && d.cid !== null) ? d.cid : i,   // stable id -> detail shard lookup
+            stringInteractions: d.stringInteractions,   // defined only when monolithic file is loaded
+            metaboliteOverlays: d.metaboliteOverlays,
             seedId: d.SeedId || d.seedId || 'MONDO:0000000',
             seedName,
             partnerId: d.PartnerId || d.partnerId || 'MONDO:0000000',
@@ -1196,8 +1199,12 @@ function processRawDataset(data) {
 }
 
 const TOP_CANDIDATES_PATHS = [
-    './data/atlas/top_candidates_enriched.json',
-    'data/atlas/top_candidates_enriched.json',
+    // Web-servable core (light fields; heavy dossier fields live in detail/ shards)
+    './data/atlas/top_candidates.core.json',
+    'data/atlas/top_candidates.core.json',
+    './top_candidates.core.json',
+    'top_candidates.core.json',
+    // Fallback: monolithic enriched file (local dev / manual load)
     './data/atlas/top_candidates_enriched.json',
     'data/atlas/top_candidates_enriched.json',
     './top_candidates_enriched.json',
@@ -2367,10 +2374,59 @@ async function copyToClipboard(text) {
         return false;
     }
 }
-function openDossierModal(candId) {
+// ---- Lazy per-dossier detail shards --------------------------------------
+// Heavy, dossier-only fields (stringInteractions, metaboliteOverlays) are split
+// out of the core file into small shards so GitHub Pages can serve everything
+// under its 100 MB limit. They are fetched only when a dossier is opened, then
+// cached in memory. If the monolithic enriched file was loaded, the fields are
+// already on the candidate and this is a no-op.
+const DETAIL_BASE_PATHS = ['./data/atlas/detail/', 'data/atlas/detail/', './detail/', 'detail/'];
+let __detailManifest = null, __detailBase = null;
+const __shardCache = new Map();   // shard index -> Promise(shardObject)
+
+async function loadDetailManifest() {
+    if (__detailManifest) return __detailManifest;
+    for (const base of DETAIL_BASE_PATHS) {
+        try {
+            const r = await fetch(base + 'manifest.json?_t=' + Date.now(), { cache: 'no-store' });
+            if (r.ok) { __detailManifest = await r.json(); __detailBase = base; return __detailManifest; }
+        } catch (e) {}
+    }
+    return null;   // no shards deployed (e.g. monolithic file in use)
+}
+
+function fetchShard(shard) {
+    if (__shardCache.has(shard)) return __shardCache.get(shard);
+    const p = (async () => {
+        const name = 'detail_' + String(shard).padStart(3, '0') + '.json';
+        try {
+            const r = await fetch(__detailBase + name);   // default cache: shards are immutable per deploy
+            if (r.ok) return await r.json();
+        } catch (e) {}
+        return {};
+    })();
+    __shardCache.set(shard, p);
+    return p;
+}
+
+async function ensureDetail(c) {
+    if (c._detailLoaded || c.stringInteractions !== undefined) return;   // already hydrated
+    const man = await loadDetailManifest();
+    if (!man || c.cid === undefined || c.cid === null) { c._detailLoaded = true; return; }
+    const shard = Math.floor(c.cid / man.shardSize);
+    const obj = await fetchShard(shard);
+    const rec = obj[String(c.cid)] || {};
+    (man.fields || ['stringInteractions', 'metaboliteOverlays']).forEach(f => {
+        if (rec[f] !== undefined && c[f] === undefined) c[f] = rec[f];
+    });
+    c._detailLoaded = true;
+}
+
+async function openDossierModal(candId) {
     try {
         const c = allCandidates.find(x => x.id === parseInt(candId));
         if (!c) return;
+        await ensureDetail(c);   // hydrate heavy dossier-only fields from shard
         const tm = tierMeta(c.tier);
         const falsifHtml = typeof c.falsification === 'object' ? c.falsification.text : c.falsification;
         const parsed = parseMechanismDetails(c.mechanism);
@@ -2436,13 +2492,26 @@ const crossDomainBadge = c.crossDomain
             </div>`;
         }
         let stringHtml = '';
-        if (c.stringInteractions && Object.keys(c.stringInteractions).length > 0) {
-            stringHtml = `<div style="margin-top:8px; font-size:0.78rem;">
-                <strong style="color:#e2e8f0;">STRING Extracellular & Plasma PPI Edges (v12.0):</strong>
-                ${Object.entries(c.stringInteractions).map(([gene, edges]) => 
-                    `<div style="font-size:0.74rem; color:#94a3b8; margin-top:2px;"><strong>${gene}:</strong> ${edges.slice(0,3).map(e => `${e.proteinB} (score ${e.combinedScore})`).join(', ')}</div>`
-                ).join('')}
-            </div>`;
+        {
+            // stringInteractions is a flat array of edges {proteinA, proteinB, combinedScore, ...}.
+            // (Guarded to also accept a legacy {gene: [edges]} dict.)
+            const rawSI = c.stringInteractions;
+            const edgeList = Array.isArray(rawSI)
+                ? rawSI
+                : (rawSI && typeof rawSI === 'object' ? Object.values(rawSI).flat() : []);
+            if (edgeList.length > 0) {
+                const byGene = {};
+                edgeList.forEach(e => {
+                    const g = e.proteinA || e.geneSymbol || e.gene || '—';
+                    (byGene[g] = byGene[g] || []).push(e);
+                });
+                stringHtml = `<div style="margin-top:8px; font-size:0.78rem;">
+                    <strong style="color:#e2e8f0;">STRING Extracellular & Plasma PPI Edges (v12.0):</strong>
+                    ${Object.entries(byGene).map(([gene, edges]) =>
+                        `<div style="font-size:0.74rem; color:#94a3b8; margin-top:2px;"><strong>${gene}:</strong> ${edges.sort((a,b)=>(b.combinedScore||0)-(a.combinedScore||0)).slice(0,3).map(e => `${e.proteinB} (score ${e.combinedScore})`).join(', ')}</div>`
+                    ).join('')}
+                </div>`;
+            }
         }
 
         let encodeHtml = '';
